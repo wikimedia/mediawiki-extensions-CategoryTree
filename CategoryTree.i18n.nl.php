@@ -2,7 +2,7 @@
 /*
   Internationalisation file for the CategoryTree extension
   Copyright (C) 2006, Daniel Kinzler, brightbyte.de;
-  Dutch translation by JePe
+  Dutch translation by JePe and Siebrand
  
   This file is licensed under the GPL and the GFDL:
   
@@ -30,26 +30,26 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced [[:en:JavaScript|JavaScript]] functionality known as [[:en:AJAX|AJAX]].
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
+$messages['categorytree']= 'Categorieboom';
+$messages['categorytree-tab']= 'Boom';
+$messages['categorytree-header']= 
+'Geef een categorienaam in om de inhoud als een boomstructuur te bekijken.
+Let op: deze functie gebruikt [[:nl:JavaScript|JavaScript]]-functionaliteit die bekend staat als [[:nl:Ajax (webdesign)|AJAX]].
+Als u een erg verouderde browser heeft of JavaScript staat uitgeschakeld, dan werkt deze functie niet.
+';
   
 $messages['categorytree-category']= 'Categorie';
 $messages['categorytree-go']= 'Laden';
 $messages['categorytree-parents']= 'Bovenliggende categorieën';
   
 $messages['categorytree-mode-categories']= 'alleen categorieën';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
+$messages['categorytree-mode-pages']= 'geen afbeeldingen';
+$messages['categorytree-mode-all']= 'alle pagina\'s';
   
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
+$messages['categorytree-collapse']= 'inklappen';
+$messages['categorytree-expand']= 'uitklappen';
+$messages['categorytree-load']= 'laden';
+$messages['categorytree-loading']= 'aan het laden';
 $messages['categorytree-nothing-found']= 'Niets gevonden, sorry.';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages['categorytree-not-found']= "Categorie ''\$1'' niet gevonden";
 ?>
