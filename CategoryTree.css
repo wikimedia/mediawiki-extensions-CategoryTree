@@ -1,0 +1,42 @@
+/*
+ * Stylesheet for the CategoryTree extension, an AJAX based gadget 
+ * to display the category structure of a wiki
+ *
+ * @package MediaWiki
+ * @subpackage Extensions
+ * @author Daniel Kinzler <duesentrieb@brightbyte.de>
+ * @copyright © 2006 Daniel Kinzler
+ * @licence GNU General Public Licence 2.0 or later
+*/
+
+.CategoryTreeChildren {
+	margin-left: 1.5ex;
+}
+
+.CategoryTreeBullet a:link {
+	text-decoration: none;
+	color: inherit;
+	font-weight: bold;
+}
+
+.CategoryTreeLabelPage {
+	font-style: italic;
+}
+
+.CategoryTreeParents {
+	margin-top: 1.5ex;
+	font-style: italic;
+}
+
+.CategoryTreeResult {
+	margin-top: 1.5ex;
+}
+
+.CategoryTreeTag {
+	margin-top: 0.5ex;
+        margin-bottom: 0.5ex;
+}
+
+.CategoryTreeNotice {
+	font-style: italic;
+}
