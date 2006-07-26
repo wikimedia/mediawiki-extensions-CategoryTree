@@ -82,7 +82,7 @@ function efCategoryTree() {
  * This loads CategoryTreeFunctions.php and calls efCategoryTreeAjax()
  */
 function efCategoryTreeAjaxWrapper( $category, $mode = CT_MODE_CATEGORIES ) {
-	require_once( 'CategoryTreeFunctions.php' );
+	require_once( dirname( __FILE__ ) . '/CategoryTreeFunctions.php' );
 	
 	return efCategoryTreeAjax( $category, $mode );
 }
@@ -92,6 +92,8 @@ function efCategoryTreeAjaxWrapper( $category, $mode = CT_MODE_CATEGORIES ) {
  * This loads CategoryTreeFunctions.php and calls efCategoryTreeTag()
  */
 function efCategoryTreeParserHook( $cat, $argv ) {
+	require_once( dirname( __FILE__ ) . '/CategoryTreeFunctions.php' );
+	
 	$style= @$argv[ 'style' ];
 	
 	$mode= @$argv[ 'mode' ];
@@ -153,14 +155,14 @@ function efInjectCategoryTreeMessages() {
 * load the CategoryTree internationalization file
 */
 function efLoadCategoryTreeMessages() {
-	global $wgLanguageCode, $wgContLanguageCode;
+	global $wgLanguageCode, $wgContLang;
 	
 	$messages= array();
 	
 	$f= dirname( __FILE__ ) . '/CategoryTree.i18n.php';
 	include( $f );
 	
-	$f= dirname( __FILE__ ) . '/CategoryTree.i18n.' . $wgLanguageCode . '.php';
+	$f= dirname( __FILE__ ) . '/CategoryTree.i18n.' . $wgContLang->getCode() . '.php';
 	if ( file_exists( $f ) ) include( $f );
 	
 	return $messages;

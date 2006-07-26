@@ -15,8 +15,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 	die( 1 );
 }
 
-require_once( 'SpecialPage.php' );
-require_once( 'CategoryTreeFunctions.php' );
+require_once( dirname(__FILE__) . '/CategoryTreeFunctions.php' );
 
 class CategoryTree extends SpecialPage {
 	

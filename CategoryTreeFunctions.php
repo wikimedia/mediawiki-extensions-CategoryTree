@@ -104,11 +104,14 @@ function efCategoryTreeRenderChildren( &$title, $mode = CT_MODE_CATEGORIES ) {
         else if ( $mode == CT_MODE_PAGES ) $nsmatch = ' AND cat.page_namespace != ' . NS_IMAGE;
         else $nsmatch = ' AND cat.page_namespace = ' . NS_CATEGORY;
     
+        $page = $dbr->tableName( 'page' );
+        $categorylinks = $dbr->tableName( 'categorylinks' );
+        
         $sql = "SELECT cat.page_namespace, cat.page_title, 
                       if( cat.page_namespace = " . NS_CATEGORY . ", 0, 1) as presort 
                       $transFields
-                FROM page as cat
-                JOIN categorylinks ON cl_from = cat.page_id
+                FROM $page as cat
+                JOIN $categorylinks ON cl_from = cat.page_id
                 $transJoin
                 WHERE cl_to = " . $dbr->addQuotes( $title->getDBKey() ) . " 
                 $nsmatch
@@ -147,8 +150,10 @@ function efCategoryTreeRenderParents( &$title, $mode ) {
         $transJoin = '';
         $transWhere = '';
         
+        $categorylinks = $dbr->tableName( 'categorylinks' );
+        
         $sql = "SELECT " . NS_CATEGORY . " as page_namespace, cl_to as page_title $transFields
-                FROM categorylinks
+                FROM $categorylinks
                 $transJoin
                 WHERE cl_from = " . $title->getArticleID() . " 
                 $transWhere
