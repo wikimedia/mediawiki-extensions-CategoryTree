@@ -28,7 +28,7 @@ define('CT_MODE_ALL', 20);
 * Abort if AJAX is not enabled
 **/
 if ( !$wgUseAjax ) {
-	wgDebug( 'CategoryTree: Ajax is not enabled, aborting extension setup.' );
+	wfDebug( 'CategoryTree: Ajax is not enabled, aborting extension setup.' );
 	return;
 }
 
@@ -160,7 +160,7 @@ function efLoadCategoryTreeMessages() {
 	$f= dirname( __FILE__ ) . '/CategoryTree.i18n.php';
 	include( $f );
 	
-	$f= dirname( __FILE__ ) . '/CategoryTree-' . $wgLanguageCode . '.i18n.php';
+	$f= dirname( __FILE__ ) . '/CategoryTree.i18n.' . $wgLanguageCode . '.php';
 	if ( file_exists( $f ) ) include( $f );
 	
 	return $messages;
