@@ -1,4 +1,4 @@
-<?
+<?php
 /*
   Internationalisation file for the CategoryTree extension
  
