@@ -9,8 +9,18 @@
  * @licence GNU General Public Licence 2.0 or later
 */
     
+    function categoryTreeNextDiv(e) {
+      n= e.nextSibling;
+      while ( n && ( n.nodeType != 1 || n.nodeName != 'DIV') ) {
+          //alert('nodeType: ' + n.nodeType + '; nodeName: ' + n.nodeName);
+          n= n.nextSibling;
+      }
+      
+      return n;
+    }
+    
     function categoryTreeExpandNode(cat, mode, lnk) {
-      var div= lnk.parentNode.parentNode.nextSibling;
+      var div= categoryTreeNextDiv( lnk.parentNode.parentNode );
       
       div.style.display= 'block';
       lnk.innerHTML= '&ndash;';
@@ -23,7 +33,7 @@
     }
     
     function categoryTreeCollapseNode(cat, mode, lnk) {
-      var div= lnk.parentNode.parentNode.nextSibling;
+      var div= categoryTreeNextDiv( lnk.parentNode.parentNode );
       
       div.style.display= 'none';
       lnk.innerHTML= '+';

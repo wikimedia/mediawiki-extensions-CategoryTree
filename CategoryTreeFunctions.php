@@ -234,9 +234,9 @@ function efCategoryTreeRenderNode( &$title, $mode = CT_MODE_CATEGORIES, $childre
         
         $s = '';
 
-        #NOTE: things in CategoryTree.js rely on the exact order of tags and absense of text nodes!
-        #      Specifically, to get from the a tag in the bullet to the CategoryTreeChildren div,
-        #      the following is used: div= lnk.parentNode.parentNode.nextSibling
+        #NOTE: things in CategoryTree.js rely on the exact order of tags!
+        #      Specifically, the CategoryTreeChildren div must be the first
+        #      sibling with nodeName = DIV of the grandparent of the expland link.
         
         $s .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeSection' ) );
         $s .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeItem' ) );
@@ -248,7 +248,7 @@ function efCategoryTreeRenderNode( &$title, $mode = CT_MODE_CATEGORIES, $childre
         
         $s .= wfOpenElement( 'a', array( 'class' => $labelClass, 'href' => $wikiLink ) ) . $label . wfCloseElement( 'a' );
         $s .= wfCloseElement( 'div' );
-        
+        $s .= "\n\t\t";
         $s .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeChildren', 'style' => $children ? "display:block" : "display:none" ) );
         if ( $children ) $s .= efCategoryTreeRenderChildren( $title, $mode ); 
         $s .= wfCloseElement( 'div' );
