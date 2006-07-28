@@ -37,18 +37,21 @@ if ( !$wgUseAjax ) {
  *
  * $wgCategoryTreeMaxChildren - maximum number of children shown in a tree node. Default is 200
  * $wgCategoryTreeAllowTag - enable <categorytree> tag. Default is true.
+ * $wgCategoryTreeDynamicTag - loads the first level of the tree in a <categorytag> dynamically.
+ *                             This way, the cache does not need to be disabled. Default is false.
  * $wgCategoryTreeDisableCache - disabled the parser cache for pages with a <categorytree> tag. Default is true.
  */  
 if ( !isset( $wgCategoryTreeMaxChildren ) ) $wgCategoryTreeMaxChildren = 200;
 if ( !isset( $wgCategoryTreeAllowTag ) ) $wgCategoryTreeAllowTag = true;
 if ( !isset( $wgCategoryTreeDisableCache ) ) $wgCategoryTreeDisableCache = true;
+if ( !isset( $wgCategoryTreeDynamicTag ) ) $wgCategoryTreeDynamicTag = false;
 
 /**
  * Register extension setup hook and credits
  */
 $wgExtensionFunctions[] = 'efCategoryTree';
-$wgExtensionCredits['specialpage'][] = array( 'name' => 'CategoryTree', 'author' => 'Daniel Kinzler', 'url' => 'http://meta.wikimedia.org/wiki/CategoryTree extension' );
-$wgExtensionCredits['parserhook'][] = array( 'name' => 'CategoryTree', 'author' => 'Daniel Kinzler', 'url' => 'http://meta.wikimedia.org/wiki/CategoryTree extension' );
+$wgExtensionCredits['specialpage'][] = array( 'name' => 'CategoryTree', 'author' => 'Daniel Kinzler', 'url' => 'http://meta.wikimedia.org/wiki/CategoryTree_extension' );
+$wgExtensionCredits['parserhook'][] = array( 'name' => 'CategoryTree', 'author' => 'Daniel Kinzler', 'url' => 'http://meta.wikimedia.org/wiki/CategoryTree_extension' );
 
 /**
  * Register the special page

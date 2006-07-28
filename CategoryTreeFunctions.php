@@ -58,12 +58,12 @@ function efCategoryTreeAjax( $category, $mode ) {
 * load CategoryTreeFunctions.php on demand.
 */
 function efCategoryTreeTag( $category, $mode, $hideroot = false, $style = '' ) {
-	global $wgOut, $wgParser, $wgCategoryTreeDisableCache;
+	global $wgOut, $wgParser, $wgCategoryTreeDisableCache, $wgCategoryTreeDynamicTag;
 	
 	efInjectCategoryTreeMessages();
 	efCategoryTreeHeader();
 	
-	if ( $wgCategoryTreeDisableCache ) $wgParser->disableCache();
+	if ( $wgCategoryTreeDisableCache && !$wgCategoryTreeDynamicTag ) $wgParser->disableCache();
 	
 	$title = efCategoryTreeMakeTitle( $category );
 	
@@ -197,6 +197,17 @@ function efCategoryTreeRenderParents( &$title, $mode ) {
 * $title must be a Title object
 */
 function efCategoryTreeRenderNode( &$title, $mode = CT_MODE_CATEGORIES, $children = false ) {
+        global $wgCategoryTreeDynamicTag;
+        static $uniq = 0;
+        
+        $load = false;
+        
+        if ( $children && $wgCategoryTreeDynamicTag ) {
+                 $uniq += 1;
+                 
+                 $load = 'ct-' . $uniq . '-' . mt_rand( 1, 100000 );
+                 $children = false;
+        }
 
         $ns = $title->getNamespace();
         $key = $title->getDBKey();
@@ -219,17 +230,20 @@ function efCategoryTreeRenderNode( &$title, $mode = CT_MODE_CATEGORIES, $childre
         
         if ( ( $ns % 2 ) > 0 ) $labelClass .= ' CategoryTreeLabelTalk';
         
+        $linkattr= array( 'href' => 'javascript:void(0)' );
+        
+        if ( $load ) $linkattr[ 'id' ] = $load;
+        
         if ( !$children ) {
-                $js = "categoryTreeExpandNode('".addslashes($key)."','".$mode."',this);";
                 $txt = '+';
-                $ttl = wfMsg('categorytree-load'); 
-                $cls = '';
+                $linkattr[ 'onclick' ] = "categoryTreeExpandNode('".Xml::escapeJsString($key)."','".$mode."',this);";
+                $linkattr[ 'title' ] = wfMsg('categorytree-load'); 
         }
         else {
-                $js = "categoryTreeCollapseNode('".addslashes($key)."','".$mode."',this);";
-                $txt = '–'; #NOTE: that'S not a minus but a unicode ndash!
-                $ttl = wfMsg('categorytree-collapse'); 
-                $cls = 'CategoryTreeLoaded';
+                $txt = '–'; #NOTE: that's not a minus but a unicode ndash!
+                $linkattr[ 'onclick' ] = "categoryTreeCollapseNode('".Xml::escapeJsString($key)."','".$mode."',this);";
+                $linkattr[ 'title' ] = wfMsg('categorytree-collapse'); 
+                $linkattr[ 'class' ] = 'CategoryTreeLoaded';
         }
         
         $s = '';
@@ -242,7 +256,7 @@ function efCategoryTreeRenderNode( &$title, $mode = CT_MODE_CATEGORIES, $childre
         $s .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeItem' ) );
         
         $s .= wfOpenElement( 'span', array( 'class' => 'CategoryTreeBullet' ) );
-        if ( $ns == NS_CATEGORY ) $s .= '[' . wfElement( 'a', array( 'href' => 'javascript:void(0)', 'onclick' => $js, 'title' => $ttl, 'class' => $cls ), $txt ) . '] ';
+        if ( $ns == NS_CATEGORY ) $s .= '[' . wfElement( 'a', $linkattr, $txt ) . '] ';
         else $s .= ' ';
         $s .= wfCloseElement( 'span' );
         
@@ -253,6 +267,14 @@ function efCategoryTreeRenderNode( &$title, $mode = CT_MODE_CATEGORIES, $childre
         if ( $children ) $s .= efCategoryTreeRenderChildren( $title, $mode ); 
         $s .= wfCloseElement( 'div' );
         $s .= wfCloseElement( 'div' );
+        
+        if ( $load ) {
+                $s .= "\n\t\t";
+                $s .= wfOpenElement( 'script', array( 'type' => 'text/javascript' ) );
+                $s .= 'categoryTreeExpandNode("'.Xml::escapeJsString($key).'", "'.$mode.'", document.getElementById("'.$load.'") );';
+                $s .= wfCloseElement( 'script' );
+        }
+        
         $s .= "\n\t\t";
         
         return $s;

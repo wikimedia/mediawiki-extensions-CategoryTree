@@ -1,0 +1,80 @@
+--------------------------------------------------------------------------
+README for the CategoryTree extesion
+Copyright © 2006 Daniel Kinzler
+Licenses: GNU General Public Licence (GPL)
+          GNU Free Documentation License (GFDL)
+--------------------------------------------------------------------------
+
+The CategoryTree extension provides a dynamic view of the wiki's category
+structure as a tree. It uses AJAX to load parts of the tree on demand.
+
+<http://meta.wikimedia.org/wiki/CategoryTree_extension>
+
+The CategoryTree extension was originally written by Daniel Kinzler in
+2006 and is released under the GNU General Public Licence (GPL). The 
+internationalization files contain contributions by several people;
+they are mentioned in each file individually.
+
+
+INSTALLING
+--------------------------------------------------------------------------
+
+Copy the CategoryTree directory into the extenstions folder of your 
+MediaWiki installation. Then add the following lines to your
+LocalSettings.php file (near the end):
+
+  $wgUseAjax = true;
+  require_once( 'extenstions/CategoryTree/CategoryTree.php' );
+  
+Note that $wgUseAjax = true; will enable the ajax framework in MediaWiki,
+which is required by the CategoryTree extension. AJAX is a term for using
+JavaScript to load parts of a page on demand. It is supported by all
+recent graphic web browsers. For more information about AJAX see
+<http://en.wikipedia.org/wiki/Ajax_%28programming%29>.
+
+
+USAGE
+--------------------------------------------------------------------------
+
+CategoryTree can be used in two ways: as a "custom tag" to show a category
+structure inline on a wiki page, and as a special page.
+
+The special page is called Special:CategoryTree; there you can enter the
+name of a category and then browse it's content. The CategoryTree
+extension also adds a tab for this special page to every category page.
+
+The custom tag is called <categorytree>. For example, if you put
+<categorytree>Foo</categorytree> on a wiki page, it will show the contents
+of category Foo as a dynamic tree on that page. The tag accepts three
+attributes, using a HTML-like syntax:
+
+* hideroot - set this to "on" to hide the "root" node of the tree, i.e.
+             the mention of category Foo from the example.
+             
+* mode - can be "categories" (the default), "pages" or "all". "categories"
+         only lists subcategories; "pages" lists all pages in the category
+         except images; "all" shows all pages in the category.
+         
+* style - can be used to specify any CSS styles you would like for the
+          tree.
+          
+          
+OPTIONS
+--------------------------------------------------------------------------
+
+There are some options you can spefify in your LocalSettings.php file:
+
+$wgCategoryTreeMaxChildren - maximum number of children shown in a tree
+                             node. Default is 200
+                             
+$wgCategoryTreeAllowTag - enable <categorytree> tag. Default is true.
+
+$wgCategoryTreeDynamicTag - loads the first level of the tree in a 
+                            <categorytag> dynamically. This way, the cache
+                            does not need to be disabled. Default is false
+                             
+$wgCategoryTreeDisableCache - disabled the parser cache for pages with a
+                              <categorytree> tag. Default is true.
+
+--------------------------------------------------------------------------
+EOF
