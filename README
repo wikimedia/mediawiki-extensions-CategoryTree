@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------
-README for the CategoryTree extesion
+README for the CategoryTree extension
 Copyright © 2006 Daniel Kinzler
 Licenses: GNU General Public Licence (GPL)
           GNU Free Documentation License (GFDL)
@@ -19,12 +19,12 @@ they are mentioned in each file individually.
 INSTALLING
 --------------------------------------------------------------------------
 
-Copy the CategoryTree directory into the extenstions folder of your 
+Copy the CategoryTree directory into the extensions folder of your 
 MediaWiki installation. Then add the following lines to your
 LocalSettings.php file (near the end):
 
   $wgUseAjax = true;
-  require_once( 'extenstions/CategoryTree/CategoryTree.php' );
+  require_once( 'extensions/CategoryTree/CategoryTree.php' );
   
 Note that $wgUseAjax = true; will enable the ajax framework in MediaWiki,
 which is required by the CategoryTree extension. AJAX is a term for using
@@ -62,7 +62,7 @@ attributes, using a HTML-like syntax:
 OPTIONS
 --------------------------------------------------------------------------
 
-There are some options you can spefify in your LocalSettings.php file:
+There are some options you can specify in your LocalSettings.php file:
 
 $wgCategoryTreeMaxChildren - maximum number of children shown in a tree
                              node. Default is 200
