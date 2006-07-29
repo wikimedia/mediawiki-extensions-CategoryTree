@@ -15,8 +15,6 @@ if( !defined( 'MEDIAWIKI' ) ) {
 	die( 1 );
 }
 
-require_once( dirname(__FILE__) . '/CategoryTreeFunctions.php' );
-
 class CategoryTree extends SpecialPage {
 	
 	var $target = '';
@@ -27,7 +25,7 @@ class CategoryTree extends SpecialPage {
 	 */
 	function CategoryTree() {
 		global $wgOut;
-		SpecialPage::SpecialPage( 'CategoryTree', 'categorytree' );
+		SpecialPage::SpecialPage( 'CategoryTree', '', true );
 		        
 		#inject messages
 		efInjectCategoryTreeMessages();
@@ -42,6 +40,8 @@ class CategoryTree extends SpecialPage {
 		
 		$this->setHeaders();
 		
+		require_once( dirname(__FILE__) . '/CategoryTreeFunctions.php' );
+
 		if ( $par ) $this->target = $par;
 		else $this->target = $wgRequest->getVal( 'target', wfMsg( 'rootcategory') );
 		                
