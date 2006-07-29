@@ -19,12 +19,14 @@ if( !defined( 'MEDIAWIKI' ) ) {
 /**
 * Inserts code into the HTML head. This mainly links CategoryTree.js and CategoryTree.css
 */
-function efCategoryTreeHeader() {
-	global $wgOut, $wgCategoryTreeHeaderDone;
+/* function efCategoryTreeHeader() {
+	global $wgOut;
 	global $wgJsMimeType, $wgScriptPath;
+        
+	static $done = false;
 	
-	if ( $wgCategoryTreeHeaderDone ) return;
-	else $wgCategoryTreeHeaderDone = true;
+	if ( $done ) return;
+	else $done = true;
 	
 	#register css file for CategoryTree
 	$wgOut->addLink( array( 'rel' => 'stylesheet', 'type' => 'text/css', 'href' => $wgScriptPath . '/extensions/CategoryTree/CategoryTree.css' ) );
@@ -39,6 +41,21 @@ function efCategoryTreeHeader() {
 				categoryTreeLoadingMsg = \"".Xml::escapeJsString(wfMsg('categorytree-loading'))."\"; 
 				categoryTreeNothingFoundMsg = \"".Xml::escapeJsString(wfMsg('categorytree-nothing-found'))."\"; 
 			    </script>\n" );
+} */
+
+/*
+* Returns a JS script that sets up messages as global JS variables.
+*/
+function efCategoryTreeGetJsMessages() {
+	global $wgJsMimeType;
+
+	return 
+"		<script type=\"{$wgJsMimeType}\"> 
+			categoryTreeCollapseMsg = \"".Xml::escapeJsString(wfMsg('categorytree-collapse'))."\"; 
+			categoryTreeExpandMsg = \"".Xml::escapeJsString(wfMsg('categorytree-expand'))."\"; 
+			categoryTreeLoadingMsg = \"".Xml::escapeJsString(wfMsg('categorytree-loading'))."\"; 
+			categoryTreeNothingFoundMsg = \"".Xml::escapeJsString(wfMsg('categorytree-nothing-found'))."\"; 
+		</script>\n";
 }
 
 /**
@@ -46,8 +63,6 @@ function efCategoryTreeHeader() {
 * load CategoryTreeFunctions.php on demand.
 */
 function efCategoryTreeAjax( $category, $mode ) {
-	efInjectCategoryTreeMessages();
-	
 	$title = efCategoryTreeMakeTitle( $category );
 	
 	return efCategoryTreeRenderChildren( $title, $mode );
@@ -59,9 +74,7 @@ function efCategoryTreeAjax( $category, $mode ) {
 */
 function efCategoryTreeTag( $category, $mode, $hideroot = false, $style = '' ) {
 	global $wgOut, $wgParser, $wgCategoryTreeDisableCache, $wgCategoryTreeDynamicTag;
-	
-	efInjectCategoryTreeMessages();
-	efCategoryTreeHeader();
+	static $uniq = 0;
 	
 	if ( $wgCategoryTreeDisableCache && !$wgCategoryTreeDynamicTag ) $wgParser->disableCache();
 	
@@ -76,11 +89,20 @@ function efCategoryTreeTag( $category, $mode, $hideroot = false, $style = '' ) {
 		$html .= wfCloseElement( 'span' );
         }
 	else {
-		if ( !$hideroot ) $html .= efCategoryTreeRenderNode( $title, $mode, true );
-		else $html .= efCategoryTreeRenderChildren( $title, $mode );
+		if ( !$hideroot ) $html .= efCategoryTreeRenderNode( $title, $mode, true, $wgCategoryTreeDynamicTag );
+		else if ( !$wgCategoryTreeDynamicTag ) $html .= efCategoryTreeRenderChildren( $title, $mode );
+		else {
+			$uniq += 1;
+			$load = 'ct-' . $uniq . '-' . mt_rand( 1, 100000 );
+			
+			$html .= wfOpenElement( 'script', array( 'type' => 'text/javascript', 'id' => $load ) );
+			$html .= 'categoryTreeLoadChildren("' . Xml::escapeJsString( $title->getDBKey() ) . '", "' . $mode . '", document.getElementById("' . $load . '").parentNode );';
+			$html .= wfCloseElement( 'script' );
+		}
 	}
 	
 	$html .= wfCloseElement( 'div' );
+	$html .= "\n\t\t";
 	
 	return $html;
 }
@@ -196,13 +218,12 @@ function efCategoryTreeRenderParents( &$title, $mode ) {
 * Returns a string with a HTML represenation of the given page.
 * $title must be a Title object
 */
-function efCategoryTreeRenderNode( &$title, $mode = CT_MODE_CATEGORIES, $children = false ) {
-        global $wgCategoryTreeDynamicTag;
+function efCategoryTreeRenderNode( &$title, $mode = CT_MODE_CATEGORIES, $children = false, $loadchildren = false ) {
         static $uniq = 0;
         
         $load = false;
         
-        if ( $children && $wgCategoryTreeDynamicTag ) {
+        if ( $loadchildren ) {
                  $uniq += 1;
                  
                  $load = 'ct-' . $uniq . '-' . mt_rand( 1, 100000 );

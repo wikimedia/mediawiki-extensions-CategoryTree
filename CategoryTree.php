@@ -59,6 +59,7 @@ $wgExtensionCredits['parserhook'][] = array( 'name' => 'CategoryTree', 'author' 
 $wgAutoloadClasses['CategoryTree'] = dirname( __FILE__ ) . '/CategoryTreePage.php';
 $wgSpecialPages['CategoryTree'] = 'CategoryTree';
 $wgHooks['SkinTemplateTabs'][] = 'efCategoryTreeInstallTabs';
+#$wgHooks['OutputPageBeforeHTML'][] = 'efCategoryTreeHeadHook';
 
 /**
  * register Ajax function
@@ -66,18 +67,21 @@ $wgHooks['SkinTemplateTabs'][] = 'efCategoryTreeInstallTabs';
 $wgAjaxExportList[] = 'efCategoryTreeAjaxWrapper';
 
 /**
- * Internal state
- */ 
-$wgCategoryTreeHeaderDone = false; #set to true by efCategoryTreeHeader after registering the code
-$wgCategoryTreeMessagesDone = false; #set to true by efInjectCategoryTreeMessages after registering the messages
-
-/**
  * Hook it up
  */
 function efCategoryTree() {
-	global $wgParser, $wgCategoryTreeAllowTag;
+	global $wgParser, $wgOut, $wgCategoryTreeAllowTag;
+	global $wgJsMimeType, $wgScriptPath;
 	
 	if ( $wgCategoryTreeAllowTag ) $wgParser->setHook( 'categorytree' , 'efCategoryTreeParserHook' );
+	
+	#TODO: injecting scripts should be done on demand, by "somehow" using the ParserOutput
+	
+	#register css file for CategoryTree
+	$wgOut->addLink( array( 'rel' => 'stylesheet', 'type' => 'text/css', 'href' => $wgScriptPath . '/extensions/CategoryTree/CategoryTree.css' ) );
+	
+	#register main js file for CategoryTree
+	$wgOut->addScript( "<script type=\"{$wgJsMimeType}\" src=\"{$wgScriptPath}/extensions/CategoryTree/CategoryTree.js\"></script>\n" );
 }
 
 /**
@@ -87,6 +91,8 @@ function efCategoryTree() {
 function efCategoryTreeAjaxWrapper( $category, $mode = CT_MODE_CATEGORIES ) {
 	require_once( dirname( __FILE__ ) . '/CategoryTreeFunctions.php' );
 	
+	efInjectCategoryTreeMessages();
+	
 	return efCategoryTreeAjax( $category, $mode );
 }
 
@@ -95,6 +101,9 @@ function efCategoryTreeAjaxWrapper( $category, $mode = CT_MODE_CATEGORIES ) {
  * This loads CategoryTreeFunctions.php and calls efCategoryTreeTag()
  */
 function efCategoryTreeParserHook( $cat, $argv ) {
+	#global $wgParser;
+	#$wgParser->mOutput->mCategoryTreeTag = true; #HACK: flag for use by efCategoryTreeHeadHook
+	
 	require_once( dirname( __FILE__ ) . '/CategoryTreeFunctions.php' );
 	
 	$style= @$argv[ 'style' ];
@@ -118,8 +127,24 @@ function efCategoryTreeParserHook( $cat, $argv ) {
 		if ( $hideroot === '1' || $hideroot === 'yes' || $hideroot === 'on' || $hideroot === 'true' ) $hideroot = true;
 		else if ( $hideroot === '0' || $hideroot === 'no' || $hideroot === 'off' || $hideroot === 'false' ) $hideroot = false;
 	}
+        
+	efInjectCategoryTreeMessages();
+	#efCategoryTreeHeader();
 	
-	return efCategoryTreeTag( $cat, $mode, $hideroot, $style );
+	#HACK for inlining JS messages "on demand". Putting them into the head would be nicer,
+	#     but that would require some changes to ParserOutput to deal with the parser cache
+	static $messages = true;
+	
+	if ( $messages ) {
+		efInjectCategoryTreeMessages();
+		$m = efCategoryTreeGetJsMessages();
+		$messages = false;
+	}
+	else {
+		$m = '';
+	}
+	
+	return $m . efCategoryTreeTag( $cat, $mode, $hideroot, $style );
 }
 
 /**
@@ -142,14 +167,28 @@ function efCategoryTreeInstallTabs( &$skin, &$content_actions ) {
 }
 
 /**
+* Hook callback that injects messages and things into the <head> tag
+* Does nothing if $parserOutput->mCategoryTreeTag is not set
+*/
+/* function efCategoryTreeHeadHook( &$parserOutput, &$text )  {
+	if ( ! @$parserOutput->mCategoryTreeTag ) return;
+	
+	require_once( dirname( __FILE__ ) . '/CategoryTreeFunctions.php' );
+        
+	efInjectCategoryTreeMessages();
+	efCategoryTreeHeader();
+} */
+
+/**
 * inject messages used by CategoryTree into the message cache
 */
 function efInjectCategoryTreeMessages() {
-	global $wgMessageCache, $wgCategoryTreeMessagesDone;
+	global $wgMessageCache;
 	
-	if ( $wgCategoryTreeMessagesDone ) return;
-	else $wgCategoryTreeMessagesDone = true;
-	
+	static $done = false;
+	if ( $done ) return;
+	else $done = true;
+	        
 	$msg = efLoadCategoryTreeMessages();
 	$wgMessageCache->addMessages( $msg );
 }
@@ -158,14 +197,14 @@ function efInjectCategoryTreeMessages() {
 * load the CategoryTree internationalization file
 */
 function efLoadCategoryTreeMessages() {
-	global $wgLanguageCode, $wgContLang;
+	global $wgLang;
 	
 	$messages= array();
 	
 	$f= dirname( __FILE__ ) . '/CategoryTree.i18n.php';
 	include( $f );
 	
-	$f= dirname( __FILE__ ) . '/CategoryTree.i18n.' . $wgContLang->getCode() . '.php';
+	$f= dirname( __FILE__ ) . '/CategoryTree.i18n.' . $wgLang->getCode() . '.php';
 	if ( file_exists( $f ) ) include( $f );
 	
 	return $messages;

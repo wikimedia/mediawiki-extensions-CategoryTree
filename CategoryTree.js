@@ -42,15 +42,18 @@
     }
     
     function categoryTreeLoadNode(cat, mode, lnk, div) {
-      var page_request = false;
-      
-      div.innerHTML= '<i class="CategoryTreeNotice">' + categoryTreeLoadingMsg + '</i>';
       div.style.display= 'block';
       lnk.className= 'CategoryTreeLoaded';
       lnk.innerHTML= '&ndash;';
       lnk.title= categoryTreeCollapseMsg;
       lnk.onclick= function() { categoryTreeCollapseNode(cat, mode, lnk) }
-          
+
+      categoryTreeLoadChildren(cat, mode, div)
+    }
+    
+    function categoryTreeLoadChildren(cat, mode, div) {
+      div.innerHTML= '<i class="CategoryTreeNotice">' + categoryTreeLoadingMsg + '</i>';
+      
       function f( result ) {
           if ( result == '' ) result= '<i class="CategorTreeNotice">' + categoryTreeNothingFoundMsg + '</i>';
           div.innerHTML= result;

@@ -26,6 +26,7 @@ class CategoryTree extends SpecialPage {
 	 * Constructor
 	 */
 	function CategoryTree() {
+		global $wgOut;
 		SpecialPage::SpecialPage( 'CategoryTree', 'categorytree' );
 		        
 		#inject messages
@@ -60,7 +61,7 @@ class CategoryTree extends SpecialPage {
 		$wgOut->addHtml( $this->makeInputForm() );
 		
 		if( $this->target !== '' && $this->target !== NULL ) {
-			efCategoryTreeHeader();
+			$wgOut->addScript( efCategoryTreeGetJsMessages() ); #TODO: move it...
 			
 			$title = efCategoryTreeMakeTitle( $this->target );
 			
@@ -77,7 +78,7 @@ class CategoryTree extends SpecialPage {
 				$html .= wfCloseElement( 'div' );
 				
 				$html .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeResult' ) );
-				$html .= efCategoryTreeRenderNode( $title, $this->mode, true );
+				$html .= efCategoryTreeRenderNode( $title, $this->mode, true, false );
 				$html .= wfCloseElement( 'div' );
 				$wgOut->addHtml( $html );
 			}
