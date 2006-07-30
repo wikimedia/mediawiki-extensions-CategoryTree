@@ -28,7 +28,8 @@ define('CT_MODE_ALL', 20);
 * Abort if AJAX is not enabled
 **/
 if ( !$wgUseAjax ) {
-	wfDebug( 'CategoryTree: Ajax is not enabled, aborting extension setup.' );
+	#NOTE: GlobalFunctions is not yet loaded, so use standard API only.
+	trigger_error( 'CategoryTree: Ajax is not enabled, aborting extension setup.', E_USER_WARNING );
 	return;
 }
 
