@@ -217,6 +217,13 @@ function efLoadCategoryTreeMessages() {
 function & efCategoryTreeMakeTitle( $title ) {
 	global $wgContLang, $wgCanonicalNamespaceNames;
 	
+	$title = trim($title);
+	
+	if ( $title === NULL || $title === '' || $title === false ) {
+		$dummy = NULL; #php sucks
+		return $dummy;
+	}
+	
 	#HACK to strip redundant namespace name
 	$title = preg_replace( '~^\s*(' . $wgCanonicalNamespaceNames[ NS_CATEGORY ] . '|' . $wgContLang->getNsText( NS_CATEGORY ) . ')\s*:\s*~i', '', $title ); 
 	

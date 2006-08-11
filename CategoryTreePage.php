@@ -44,6 +44,8 @@ class CategoryTree extends SpecialPage {
 
 		if ( $par ) $this->target = $par;
 		else $this->target = $wgRequest->getVal( 'target', wfMsg( 'rootcategory') );
+		
+		$this->target = trim( $this->target );
 		                
 		#HACK for undefined root category
 		if ( $this->target == '<rootcategory>' || $this->target == '&lt;rootcategory&gt;' ) $this->target = NULL; 
@@ -65,7 +67,7 @@ class CategoryTree extends SpecialPage {
 			
 			$title = efCategoryTreeMakeTitle( $this->target );
 			
-			if ( $title->getArticleID() ) {
+			if ( $title && $title->getArticleID() ) {
 				$html = '';
 				$html .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeParents' ) );
 				$html .= wfElement( 'span', array( 'class' => 'CategoryTreeParents' ), wfMsg( 'categorytree-parents' ) ) . ': ';

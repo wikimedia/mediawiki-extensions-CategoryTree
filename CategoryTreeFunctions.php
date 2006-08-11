@@ -65,6 +65,8 @@ function efCategoryTreeGetJsMessages() {
 function efCategoryTreeAjax( $category, $mode ) {
 	$title = efCategoryTreeMakeTitle( $category );
 	
+	if ( ! $title ) return false; #TODO: error message?
+	
 	return efCategoryTreeRenderChildren( $title, $mode );
 }
 
@@ -76,9 +78,15 @@ function efCategoryTreeTag( $category, $mode, $hideroot = false, $style = '' ) {
 	global $wgOut, $wgParser, $wgCategoryTreeDisableCache, $wgCategoryTreeDynamicTag;
 	static $uniq = 0;
 	
+	$category = trim( $category );
+	
+	if ( $category === '' ) return false;
+	
 	if ( $wgCategoryTreeDisableCache && !$wgCategoryTreeDynamicTag ) $wgParser->disableCache();
 	
 	$title = efCategoryTreeMakeTitle( $category );
+	
+	if ( $title === false || $title === NULL ) return false;
 	
 	$html = '';
 	$html .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeTag', 'style' => $style ) );
