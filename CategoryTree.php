@@ -41,11 +41,13 @@ if ( !$wgUseAjax ) {
  * $wgCategoryTreeDynamicTag - loads the first level of the tree in a <categorytag> dynamically.
  *                             This way, the cache does not need to be disabled. Default is false.
  * $wgCategoryTreeDisableCache - disabled the parser cache for pages with a <categorytree> tag. Default is true.
+ * $wgCategoryTreeUseCache - enable HTTP cache for anon users. Default is false.
  */  
 if ( !isset( $wgCategoryTreeMaxChildren ) ) $wgCategoryTreeMaxChildren = 200;
 if ( !isset( $wgCategoryTreeAllowTag ) ) $wgCategoryTreeAllowTag = true;
 if ( !isset( $wgCategoryTreeDisableCache ) ) $wgCategoryTreeDisableCache = true;
 if ( !isset( $wgCategoryTreeDynamicTag ) ) $wgCategoryTreeDynamicTag = false;
+if ( !isset( $wgCategoryTreeHTTPCache ) ) $wgCategoryTreeHTTPCache = false;
 
 /**
  * Register extension setup hook and credits
@@ -90,6 +92,14 @@ function efCategoryTree() {
  * This loads CategoryTreeFunctions.php and calls efCategoryTreeAjax()
  */
 function efCategoryTreeAjaxWrapper( $category, $mode = CT_MODE_CATEGORIES ) {
+	global $wgAjaxCachePolicy, $wgCategoryTreeHTTPCache, $wgSquidMaxAge, $wgUseSquid;
+	
+	if ( $wgCategoryTreeHTTPCache && $wgSquidMaxAge && $wgUseSquid ) {
+		$wgAjaxCachePolicy->setPolicy( $wgSquidMaxAge );
+		$wgAjaxCachePolicy->setVary( 'Accept-Encoding, Cookie' ); #cache for anons only
+		#TODO: purge the squid cache when a category page is invalidated
+	}
+	
 	require_once( dirname( __FILE__ ) . '/CategoryTreeFunctions.php' );
 	
 	efInjectCategoryTreeMessages();
@@ -101,11 +111,10 @@ function efCategoryTreeAjaxWrapper( $category, $mode = CT_MODE_CATEGORIES ) {
  * Entry point for the <categorytree> tag parser hook.
  * This loads CategoryTreeFunctions.php and calls efCategoryTreeTag()
  */
-function efCategoryTreeParserHook( $cat, $argv ) {
-	#global $wgParser;
-	#$wgParser->mOutput->mCategoryTreeTag = true; #HACK: flag for use by efCategoryTreeHeadHook
+function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
+	#$parser->mOutput->mCategoryTreeTag = true; #HACK: flag for use by efCategoryTreeHeadHook
 	
-	require_once( dirname( __FILE__ ) . '/CategoryTreeFunctions.php' );
+	static $initialized = false;
 	
 	$style= @$argv[ 'style' ];
 	
@@ -128,24 +137,23 @@ function efCategoryTreeParserHook( $cat, $argv ) {
 		if ( $hideroot === '1' || $hideroot === 'yes' || $hideroot === 'on' || $hideroot === 'true' ) $hideroot = true;
 		else if ( $hideroot === '0' || $hideroot === 'no' || $hideroot === 'off' || $hideroot === 'false' ) $hideroot = false;
 	}
-        
-	efInjectCategoryTreeMessages();
-	#efCategoryTreeHeader();
-	
-	#HACK for inlining JS messages "on demand". Putting them into the head would be nicer,
-	#     but that would require some changes to ParserOutput to deal with the parser cache
-	static $messages = true;
-	
-	if ( $messages ) {
+
+	if ( !$initialized ) {
+		require_once( dirname( __FILE__ ) . '/CategoryTreeFunctions.php' );
+		
 		efInjectCategoryTreeMessages();
+		
+		#HACK for inlining JS messages "on demand". Putting them into the head would be nicer,
+		#     but that would require some changes to ParserOutput to deal with the parser cache
 		$m = efCategoryTreeGetJsMessages();
-		$messages = false;
 	}
 	else {
 		$m = '';
 	}
 	
-	return $m . efCategoryTreeTag( $cat, $mode, $hideroot, $style );
+	$initialized = true;
+	
+	return $m . efCategoryTreeTag( $parser, $cat, $mode, $hideroot, $style );
 }
 
 /**

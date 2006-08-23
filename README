@@ -76,5 +76,8 @@ $wgCategoryTreeDynamicTag - loads the first level of the tree in a
 $wgCategoryTreeDisableCache - disabled the parser cache for pages with a
                               <categorytree> tag. Default is true.
 
+$wgCategoryTreeHTTPCache - enable HTTP cache for anon users. Default is
+                          false.
+
 --------------------------------------------------------------------------
 EOF

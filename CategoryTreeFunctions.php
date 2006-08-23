@@ -16,33 +16,6 @@ if( !defined( 'MEDIAWIKI' ) ) {
 	die( 1 );
 }
 
-/**
-* Inserts code into the HTML head. This mainly links CategoryTree.js and CategoryTree.css
-*/
-/* function efCategoryTreeHeader() {
-	global $wgOut;
-	global $wgJsMimeType, $wgScriptPath;
-        
-	static $done = false;
-	
-	if ( $done ) return;
-	else $done = true;
-	
-	#register css file for CategoryTree
-	$wgOut->addLink( array( 'rel' => 'stylesheet', 'type' => 'text/css', 'href' => $wgScriptPath . '/extensions/CategoryTree/CategoryTree.css' ) );
-	
-	#register main js file for CategoryTree
-	$wgOut->addScript( "<script type=\"{$wgJsMimeType}\" src=\"{$wgScriptPath}/extensions/CategoryTree/CategoryTree.js\"></script>\n" );
-	
-	#make some localized messages available in JS
-	$wgOut->addScript( "<script type=\"{$wgJsMimeType}\"> 
-				categoryTreeCollapseMsg = \"".Xml::escapeJsString(wfMsg('categorytree-collapse'))."\"; 
-				categoryTreeExpandMsg = \"".Xml::escapeJsString(wfMsg('categorytree-expand'))."\"; 
-				categoryTreeLoadingMsg = \"".Xml::escapeJsString(wfMsg('categorytree-loading'))."\"; 
-				categoryTreeNothingFoundMsg = \"".Xml::escapeJsString(wfMsg('categorytree-nothing-found'))."\"; 
-			    </script>\n" );
-} */
-
 /*
 * Returns a JS script that sets up messages as global JS variables.
 */
@@ -74,15 +47,15 @@ function efCategoryTreeAjax( $category, $mode ) {
 * Custom tag implementation. This is called by efCategoryTreeParserHook, which is used to 
 * load CategoryTreeFunctions.php on demand.
 */
-function efCategoryTreeTag( $category, $mode, $hideroot = false, $style = '' ) {
-	global $wgOut, $wgParser, $wgCategoryTreeDisableCache, $wgCategoryTreeDynamicTag;
+function efCategoryTreeTag( &$parser, $category, $mode, $hideroot = false, $style = '' ) {
+	global $wgCategoryTreeDisableCache, $wgCategoryTreeDynamicTag;
 	static $uniq = 0;
 	
 	$category = trim( $category );
 	
 	if ( $category === '' ) return false;
 	
-	if ( $wgCategoryTreeDisableCache && !$wgCategoryTreeDynamicTag ) $wgParser->disableCache();
+	if ( $wgCategoryTreeDisableCache && !$wgCategoryTreeDynamicTag ) $parser->disableCache();
 	
 	$title = efCategoryTreeMakeTitle( $category );
 	
@@ -93,7 +66,7 @@ function efCategoryTreeTag( $category, $mode, $hideroot = false, $style = '' ) {
 	
 	if ( !$title->getArticleID() ) {
 		$html .= wfOpenElement( 'span', array( 'class' => 'CategoryTreeNotice' ) );
-		$html .= $wgOut->parse( wfMsg( 'categorytree-not-found' , $category ) );
+		$html .= $parser->recursiveTagParse( wfMsg( 'categorytree-not-found' , $category ) );
 		$html .= wfCloseElement( 'span' );
         }
 	else {
