@@ -31,6 +31,10 @@ $messages['categorytree-expand']= 'expand';
 $messages['categorytree-load']= 'load';
 $messages['categorytree-loading']= 'loading';
 $messages['categorytree-nothing-found']= 'nothing found';
-$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages['categorytree-not-found']= "Category <i>$1</i> not found";
+
+$messages['categorytree-show-list'] = "Show as list";
+$messages['categorytree-show-tree'] = "Show as tree";
+$messages['categorytree-too-many-subcats'] = "Can't show subcategories as a tree, there's too many of them.";
 
 ?>

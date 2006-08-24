@@ -1,5 +1,5 @@
 /*
- * JavaSCript functions for the CategoryTree extension, an AJAX based gadget 
+ * JavaScript functions for the CategoryTree extension, an AJAX based gadget 
  * to display the category structure of a wiki
  *
  * @package MediaWiki
@@ -55,7 +55,8 @@
       div.innerHTML= '<i class="CategoryTreeNotice">' + categoryTreeLoadingMsg + '</i>';
       
       function f( result ) {
-          if ( result == '' ) result= '<i class="CategorTreeNotice">' + categoryTreeNothingFoundMsg + '</i>';
+          if ( result == '' ) result= '<i class="CategoryTreeNotice">' + categoryTreeNothingFoundMsg + '</i>';
+          result = result.replace(/##LOAD##/g, categoryTreeLoadMsg);
           div.innerHTML= result;
       }
       

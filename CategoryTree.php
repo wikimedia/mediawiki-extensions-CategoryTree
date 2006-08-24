@@ -29,7 +29,7 @@ define('CT_MODE_ALL', 20);
 **/
 if ( !$wgUseAjax ) {
 	#NOTE: GlobalFunctions is not yet loaded, so use standard API only.
-	trigger_error( 'CategoryTree: Ajax is not enabled, aborting extension setup.', E_USER_WARNING );
+	trigger_error( 'CategoryTree: $wgUseAjax is not enabled, aborting extension setup.', E_USER_WARNING );
 	return;
 }
 
@@ -53,16 +53,28 @@ if ( !isset( $wgCategoryTreeHTTPCache ) ) $wgCategoryTreeHTTPCache = false;
  * Register extension setup hook and credits
  */
 $wgExtensionFunctions[] = 'efCategoryTree';
-$wgExtensionCredits['specialpage'][] = array( 'name' => 'CategoryTree', 'author' => 'Daniel Kinzler', 'url' => 'http://meta.wikimedia.org/wiki/CategoryTree_extension' );
-$wgExtensionCredits['parserhook'][] = array( 'name' => 'CategoryTree', 'author' => 'Daniel Kinzler', 'url' => 'http://meta.wikimedia.org/wiki/CategoryTree_extension' );
+$wgExtensionCredits['specialpage'][] = array( 
+	'name' => 'CategoryTree', 
+	'author' => 'Daniel Kinzler', 
+	'url' => 'http://meta.wikimedia.org/wiki/CategoryTree_extension' 
+);
+$wgExtensionCredits['parserhook'][] = array( 
+	'name' => 'CategoryTree', 
+	'author' => 'Daniel Kinzler', 
+	'url' => 'http://meta.wikimedia.org/wiki/CategoryTree_extension' 
+);
 
 /**
  * Register the special page
  */
-$wgAutoloadClasses['CategoryTree'] = dirname( __FILE__ ) . '/CategoryTreePage.php';
-$wgSpecialPages['CategoryTree'] = 'CategoryTree';
-$wgHooks['SkinTemplateTabs'][] = 'efCategoryTreeInstallTabs';
-#$wgHooks['OutputPageBeforeHTML'][] = 'efCategoryTreeHeadHook';
+$wgAutoloadClasses['CategoryTreePage'] = dirname( __FILE__ ) . '/CategoryTreePage.php';
+$wgAutoloadClasses['CategoryTree'] = dirname( __FILE__ ) . '/CategoryTreeFunctions.php';
+$wgAutoloadClasses['CategoryTreeCategoryPage'] = dirname( __FILE__ ) . '/CategoryPageSubclass.php';
+$wgSpecialPages['CategoryTree'] = 'CategoryTreePage';
+#$wgHooks['SkinTemplateTabs'][] = 'efCategoryTreeInstallTabs';
+$wgHooks['OutputPageParserOutput'][] = 'efCategoryTreeParserOutput';
+$wgHooks['LoadAllMessages'][] = 'efInjectCategoryTreeMessages';
+$wgHooks['ArticleFromTitle'][] = 'efCategoryTreeArticleFromTitle';
 
 /**
  * register Ajax function
@@ -73,23 +85,13 @@ $wgAjaxExportList[] = 'efCategoryTreeAjaxWrapper';
  * Hook it up
  */
 function efCategoryTree() {
-	global $wgParser, $wgOut, $wgCategoryTreeAllowTag;
-	global $wgJsMimeType, $wgScriptPath;
-	
+	global $wgParser, $wgCategoryTreeAllowTag;
 	if ( $wgCategoryTreeAllowTag ) $wgParser->setHook( 'categorytree' , 'efCategoryTreeParserHook' );
-	
-	#TODO: injecting scripts should be done on demand, by "somehow" using the ParserOutput
-	
-	#register css file for CategoryTree
-	$wgOut->addLink( array( 'rel' => 'stylesheet', 'type' => 'text/css', 'href' => $wgScriptPath . '/extensions/CategoryTree/CategoryTree.css' ) );
-	
-	#register main js file for CategoryTree
-	$wgOut->addScript( "<script type=\"{$wgJsMimeType}\" src=\"{$wgScriptPath}/extensions/CategoryTree/CategoryTree.js\"></script>\n" );
 }
 
 /**
  * Entry point for Ajax, registered in $wgAjaxExportList.
- * This loads CategoryTreeFunctions.php and calls efCategoryTreeAjax()
+ * This loads CategoryTreeFunctions.php and calls CategoryTree::ajax()
  */
 function efCategoryTreeAjaxWrapper( $category, $mode = CT_MODE_CATEGORIES ) {
 	global $wgAjaxCachePolicy, $wgCategoryTreeHTTPCache, $wgSquidMaxAge, $wgUseSquid;
@@ -99,20 +101,17 @@ function efCategoryTreeAjaxWrapper( $category, $mode = CT_MODE_CATEGORIES ) {
 		$wgAjaxCachePolicy->setVary( 'Accept-Encoding, Cookie' ); #cache for anons only
 		#TODO: purge the squid cache when a category page is invalidated
 	}
-	
-	require_once( dirname( __FILE__ ) . '/CategoryTreeFunctions.php' );
-	
-	efInjectCategoryTreeMessages();
-	
-	return efCategoryTreeAjax( $category, $mode );
+
+	$ct = new CategoryTree;
+	return $ct->ajax( $category, $mode );
 }
 
 /**
  * Entry point for the <categorytree> tag parser hook.
- * This loads CategoryTreeFunctions.php and calls efCategoryTreeTag()
+ * This loads CategoryTreeFunctions.php and calls CategoryTree::getTag()
  */
 function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
-	#$parser->mOutput->mCategoryTreeTag = true; #HACK: flag for use by efCategoryTreeHeadHook
+	$parser->mOutput->mCategoryTreeTag = true; # flag for use by efCategoryTreeParserOutput
 	
 	static $initialized = false;
 	
@@ -134,31 +133,22 @@ function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
 	if ( $hideroot !== NULL ) {
 		$hideroot = trim( strtolower( $hideroot ) );
 		
-		if ( $hideroot === '1' || $hideroot === 'yes' || $hideroot === 'on' || $hideroot === 'true' ) $hideroot = true;
-		else if ( $hideroot === '0' || $hideroot === 'no' || $hideroot === 'off' || $hideroot === 'false' ) $hideroot = false;
+		if ( $hideroot === '1' || $hideroot === 'yes' || $hideroot === 'on' || $hideroot === 'true' ) {
+			$hideroot = true;
+		}
+		else if ( $hideroot === '0' || $hideroot === 'no' || $hideroot === 'off' || $hideroot === 'false' ) {
+			$hideroot = false;
+		}
 	}
 
-	if ( !$initialized ) {
-		require_once( dirname( __FILE__ ) . '/CategoryTreeFunctions.php' );
-		
-		efInjectCategoryTreeMessages();
-		
-		#HACK for inlining JS messages "on demand". Putting them into the head would be nicer,
-		#     but that would require some changes to ParserOutput to deal with the parser cache
-		$m = efCategoryTreeGetJsMessages();
-	}
-	else {
-		$m = '';
-	}
-	
-	$initialized = true;
-	
-	return $m . efCategoryTreeTag( $parser, $cat, $mode, $hideroot, $style );
+	$ct = new CategoryTree;
+	return $ct->getTag( $parser, $cat, $mode, $hideroot, $style );
 }
 
 /**
 * Hook callback that installs a tab for CategoryTree on Category pages
-*/
+ */
+/*
 function efCategoryTreeInstallTabs( &$skin, &$content_actions ) {
 	global $wgTitle;
 	        
@@ -166,77 +156,39 @@ function efCategoryTreeInstallTabs( &$skin, &$content_actions ) {
 	
 	$special = Title::makeTitle( NS_SPECIAL, 'CategoryTree' );
 	
-	efInjectCategoryTreeMessages();
-	
 	$content_actions['categorytree'] = array(
 					'class' => false,
-					'text' => wfMsgHTML( 'categorytree-tab' ),
+					'text' => htmlspecialchars( CategoryTree::msg( 'tab' ) ),
 					'href' => $special->getLocalUrl() . '/' . $wgTitle->getPartialURL() );  
 	return true;
-}
+}*/
 
 /**
 * Hook callback that injects messages and things into the <head> tag
 * Does nothing if $parserOutput->mCategoryTreeTag is not set
 */
-/* function efCategoryTreeHeadHook( &$parserOutput, &$text )  {
-	if ( ! @$parserOutput->mCategoryTreeTag ) return;
-	
-	require_once( dirname( __FILE__ ) . '/CategoryTreeFunctions.php' );
-        
-	efInjectCategoryTreeMessages();
-	efCategoryTreeHeader();
-} */
+function efCategoryTreeParserOutput( &$outputPage, &$parserOutput )  {
+	if ( !empty( $parserOutput->mCategoryTreeTag ) ) {
+		CategoryTree::setHeaders( $outputPage );
+	}
+}
 
 /**
 * inject messages used by CategoryTree into the message cache
 */
 function efInjectCategoryTreeMessages() {
-	global $wgMessageCache;
-	
-	static $done = false;
-	if ( $done ) return;
-	else $done = true;
-	        
-	$msg = efLoadCategoryTreeMessages();
-	$wgMessageCache->addMessages( $msg );
+	CategoryTree::msg(false);
+	return true;
 }
 
 /**
-* load the CategoryTree internationalization file
-*/
-function efLoadCategoryTreeMessages() {
-	global $wgLang;
-	
-	$messages= array();
-	
-	$f= dirname( __FILE__ ) . '/CategoryTree.i18n.php';
-	include( $f );
-	
-	$f= dirname( __FILE__ ) . '/CategoryTree.i18n.' . $wgLang->getCode() . '.php';
-	if ( file_exists( $f ) ) include( $f );
-	
-	return $messages;
-}
-
-/**
-* Creates a Title object from a user provided (and thus unsafe) string
-*/
-function & efCategoryTreeMakeTitle( $title ) {
-	global $wgContLang, $wgCanonicalNamespaceNames;
-	
-	$title = trim($title);
-	
-	if ( $title === NULL || $title === '' || $title === false ) {
-		$dummy = NULL; #php sucks
-		return $dummy;
+ * ArticleFromTitle hook, override category page handling
+ */
+function efCategoryTreeArticleFromTitle( &$title, &$article ) {
+	if ( $title->getNamespace() == NS_CATEGORY ) {
+		$article = new CategoryTreeCategoryPage( $title );
 	}
-	
-	#HACK to strip redundant namespace name
-	$title = preg_replace( '~^\s*(' . $wgCanonicalNamespaceNames[ NS_CATEGORY ] . '|' . $wgContLang->getNsText( NS_CATEGORY ) . ')\s*:\s*~i', '', $title ); 
-	
-	$t = Title::makeTitleSafe( NS_CATEGORY, $title );
-	return $t;
+	return true;
 }
- 
+
 ?>

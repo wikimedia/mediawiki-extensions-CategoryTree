@@ -15,7 +15,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 	die( 1 );
 }
 
-class CategoryTree extends SpecialPage {
+class CategoryTreePage extends SpecialPage {
 	
 	var $target = '';
 	var $mode = CT_MODE_CATEGORIES;
@@ -23,10 +23,10 @@ class CategoryTree extends SpecialPage {
 	/**
 	 * Constructor
 	 */
-	function CategoryTree() {
+	function __construct() {
 		global $wgOut;
 		SpecialPage::SpecialPage( 'CategoryTree', '', true );
-		        
+
 		#inject messages
 		efInjectCategoryTreeMessages();
 	}
@@ -40,8 +40,6 @@ class CategoryTree extends SpecialPage {
 		
 		$this->setHeaders();
 		
-		require_once( dirname(__FILE__) . '/CategoryTreeFunctions.php' );
-
 		if ( $par ) $this->target = $par;
 		else $this->target = $wgRequest->getVal( 'target', wfMsg( 'rootcategory') );
 		
@@ -63,16 +61,19 @@ class CategoryTree extends SpecialPage {
 		$wgOut->addHtml( $this->makeInputForm() );
 		
 		if( $this->target !== '' && $this->target !== NULL ) {
-			$wgOut->addScript( efCategoryTreeGetJsMessages() ); #TODO: move it...
+			CategoryTree::setHeaders( $wgOut );
 			
-			$title = efCategoryTreeMakeTitle( $this->target );
+			$title = CategoryTree::makeTitle( $this->target );
 			
 			if ( $title && $title->getArticleID() ) {
 				$html = '';
 				$html .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeParents' ) );
-				$html .= wfElement( 'span', array( 'class' => 'CategoryTreeParents' ), wfMsg( 'categorytree-parents' ) ) . ': ';
-				
-				$parents = efCategoryTreeRenderParents( $title, $this->mode );
+				$html .= wfElement( 'span', 
+					array( 'class' => 'CategoryTreeParents' ), 
+					wfMsg( 'categorytree-parents' ) ) . ': ';
+
+				$ct = new CategoryTree;
+				$parents = $ct->renderParents( $title, $this->mode );
 				
 				if ( $parents == '' ) $html .= wfMsg( 'categorytree-nothing-found' );
 				else $html .= $parents;
@@ -80,7 +81,7 @@ class CategoryTree extends SpecialPage {
 				$html .= wfCloseElement( 'div' );
 				
 				$html .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeResult' ) );
-				$html .= efCategoryTreeRenderNode( $title, $this->mode, true, false );
+				$html .= $ct->renderNode( $title, $this->mode, true, false );
 				$html .= wfCloseElement( 'div' );
 				$wgOut->addHtml( $html );
 			}
