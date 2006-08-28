@@ -171,6 +171,7 @@ function efCategoryTreeParserOutput( &$outputPage, &$parserOutput )  {
 	if ( !empty( $parserOutput->mCategoryTreeTag ) ) {
 		CategoryTree::setHeaders( $outputPage );
 	}
+	return true;
 }
 
 /**
