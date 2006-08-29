@@ -54,15 +54,15 @@
     function categoryTreeLoadChildren(cat, mode, div) {
       div.innerHTML= '<i class="CategoryTreeNotice">' + categoryTreeLoadingMsg + '</i>';
       
-      function f( result ) {
+      function f( request ) {
+          result= request.responseText;
+          if (request.status != 200) result= "<div class='error'> " + request.status + " " + request.statusText + ": " + result + "</div>";
+          
           if ( result == '' ) result= '<i class="CategoryTreeNotice">' + categoryTreeNothingFoundMsg + '</i>';
           result = result.replace(/##LOAD##/g, categoryTreeLoadMsg);
           div.innerHTML= result;
       }
       
-      categoryTreeDoCall( cat, mode, f );
+      sajax_do_call( "efCategoryTreeAjaxWrapper", [cat, mode] , f );
     }
     
-    function categoryTreeDoCall() {
-      sajax_do_call( "efCategoryTreeAjaxWrapper", categoryTreeDoCall.arguments );
-    }

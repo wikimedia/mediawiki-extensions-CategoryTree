@@ -59,7 +59,7 @@ class CategoryTree {
 	* load CategoryTreeFunctions.php on demand.
 	*/
 	function ajax( $category, $mode ) {
-		global $wgMemc, $wgDBname;
+		global $wgDBname;
 		$title = self::makeTitle( $category );
 		
 		if ( ! $title ) return false; #TODO: error message?
@@ -73,34 +73,25 @@ class CategoryTree {
 				'page_namespace' => NS_CATEGORY,
 				'page_title' => $dbkey,
 			), __METHOD__ );
-
-		# Try to retrieve it from memcached
-		if ( $touched ) {
-			$mckey = "$wgDBname:categorytree:$dbkey";
-			$mcvalue = $wgMemc->get( $mckey );
-			if ( $mcvalue ) {
-				# Check to see if the value has been invalidated
-				if ( $touched <= $mcvalue['timestamp'] ) {
-					wfDebug( "Got $mckey from cache\n" );
-					return $mcvalue['value'];
-				} else {
-					wfDebug( "$mckey has expired\n" );
-				}
-			}
-		}
-
-		$value = $this->renderChildren( $title, $mode );
+			
+		$mckey = "$wgDBname:categorytree($mode):$dbkey";
 		
-		# Save it to memcached
-		if ( $touched ) {
-			$wgMemc->set( $mckey, 
-				array(
-					'timestamp' => wfTimestampNow(),
-					'value' => $value
-				), 86400 /* expiry 1 day */
-			);
+		$response = new AjaxResponse();
+		
+		if ( $response->checkLastModified( $touched ) ) {
+			return $response;
 		}
-		return $value;
+		
+		if ( $response->loadFromMemcached( $mckey, $touched ) ) {
+			return $response;
+		}
+		
+		$html = $this->renderChildren( $title, $mode );
+		$response->addText( $html );
+		
+		$response->storeInMemcached( $mckey, 86400 );
+
+		return $response;
 	}
 
 	/**

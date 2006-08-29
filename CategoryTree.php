@@ -94,16 +94,18 @@ function efCategoryTree() {
  * This loads CategoryTreeFunctions.php and calls CategoryTree::ajax()
  */
 function efCategoryTreeAjaxWrapper( $category, $mode = CT_MODE_CATEGORIES ) {
-	global $wgAjaxCachePolicy, $wgCategoryTreeHTTPCache, $wgSquidMaxAge, $wgUseSquid;
+	global $wgCategoryTreeHTTPCache, $wgSquidMaxAge, $wgUseSquid;
+	
+	$ct = new CategoryTree;
+	$response = $ct->ajax( $category, $mode );
 	
 	if ( $wgCategoryTreeHTTPCache && $wgSquidMaxAge && $wgUseSquid ) {
-		$wgAjaxCachePolicy->setPolicy( $wgSquidMaxAge );
-		$wgAjaxCachePolicy->setVary( 'Accept-Encoding, Cookie' ); #cache for anons only
+		$response->setCacheDuration( $wgSquidMaxAge );
+		$response->setVary( 'Accept-Encoding, Cookie' ); #cache for anons only
 		#TODO: purge the squid cache when a category page is invalidated
 	}
 
-	$ct = new CategoryTree;
-	return $ct->ajax( $category, $mode );
+	return $response;
 }
 
 /**
