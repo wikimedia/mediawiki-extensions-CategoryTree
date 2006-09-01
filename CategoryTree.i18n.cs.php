@@ -30,26 +30,31 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced [[:en:JavaScript|JavaScript]] functionality known as [[:en:AJAX|AJAX]].
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
+$messages['categorytree']= 'Strom kategorií';
+$messages['categorytree-tab']= 'Strom';
+$messages['categorytree-header']= 
+'Zadejte název kategorie k zobrazení ve stromové struktuře.
+Tato funkce vyžaduje pokročilé funkce [[JavaScript]]u známé jako [[AJAX]].
+Jestliže máte velmi starý prohlížeč nebo vypnutý JavaScript, nezobrazí se strom správně nebo vůbec.
+';
   
 $messages['categorytree-category']= 'Kategorie';
-$messages['categorytree-go']= 'Nahraj';
-$messages['categorytree-parents']= 'Nadřízené kategorie';
+$messages['categorytree-go']= 'Zobrazit';
+$messages['categorytree-parents']= 'Nadřazené kategorie';
   
 $messages['categorytree-mode-categories']= 'ukaž pouze kategorie';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
+$messages['categorytree-mode-pages']= 'stránky kromě obrázků';
+$messages['categorytree-mode-all']= 'všechny stránky';
   
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
+$messages['categorytree-collapse']= 'zavřít';
+$messages['categorytree-expand']= 'otevřít';
+$messages['categorytree-load']= 'načíst';
+$messages['categorytree-loading']= 'načítá se';
 $messages['categorytree-nothing-found']= 'bohužel nebylo nic nalezeno';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages['categorytree-not-found']= "Kategorie <i>$1</i> nebyla nalezena";
+
+$messages['categorytree-show-list'] = "Zobrazi jako seznam";
+$messages['categorytree-show-tree'] = "Zobrazit jako strom";
+$messages['categorytree-too-many-subcats'] = "Podkategorie není možné zobrazit ve stromové struktuře, protože je jich příliš mnoho..";
+
 ?>
