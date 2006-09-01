@@ -30,26 +30,29 @@ Swedish Translation Copyright (C) 2006, by Joakim Larsson
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced [[:en:JavaScript|JavaScript]] functionality known as [[:en:AJAX|AJAX]].
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
+$messages['categorytree']= 'Kategoriträd';
+$messages['categorytree-tab']= 'Träd';
+$messages['categorytree-header']= 
+'Ange en kategori för att se dess innehåll som en trädstruktur.
+Notera att stöd för AJAX, en avancerad form av [[:sv:JavaScript|JavaScript]].
+Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript är avaktiverat.
+';
   
 $messages['categorytree-category']= 'Kategori';
-$messages['categorytree-go']= 'Sök';
-$messages['categorytree-parents']= 'Föräldrarkategorier';
+$messages['categorytree-go']= 'Visa träd';
+$messages['categorytree-parents']= 'Föräldrakategorier';
   
 $messages['categorytree-mode-categories']= 'visa bara kategorier';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
+$messages['categorytree-mode-pages']= 'sidor men inte bilder';
+$messages['categorytree-mode-all']= 'alla sidor';
   
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
-$messages['categorytree-nothing-found']= 'hittade igenting';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages['categorytree-collapse']= 'minimera';
+$messages['categorytree-expand']= 'expandera';
+$messages['categorytree-load']= 'ladda';
+$messages['categorytree-loading']= 'laddar';
+$messages['categorytree-nothing-found']= 'hittade inga';
+$messages['categorytree-not-found']= "Kategorin ''\$1'' hittades ej";
+
+$messages['categorytree-show-list'] = "Visa lista";
+$messages['categorytree-show-tree'] = "Visa träd";
 ?>
