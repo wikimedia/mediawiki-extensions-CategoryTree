@@ -29,27 +29,32 @@
   along with this program; if not, write to the Free Software
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
-  
-#$messages['categorytree']= 'CategoryTree';
+
+$messages['categorytree']= 'Drzewo kategorii';
 #$messages['categorytree-tab']= 'Tree';
 #$messages['categorytree-header']= 
 #'Enter a category name to see its contents as a tree structure. 
 #Note that this requires advanced [[:en:JavaScript|JavaScript]] functionality known as [[:en:AJAX|AJAX]].
 #If you have a very old browser, or have JavaScript disabled, it will not work.
 #';
-  
+
 $messages['categorytree-category']= 'Kategoria';
 $messages['categorytree-go']= 'Ładuj kategorię';
 $messages['categorytree-parents']= 'Kategorie główne';
-  
+
 $messages['categorytree-mode-categories']= 'pokaż tylko kategorie';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
-  
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
-$messages['categorytree-nothing-found']= 'nic nie znaleziono, spróbuj ponownie';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages['categorytree-mode-pages']= 'strony poza grafika';
+$messages['categorytree-mode-all']= 'wszystkie strony';
+
+$messages['categorytree-collapse']= 'zwiń';
+$messages['categorytree-expand']= 'rozwiń';
+$messages['categorytree-load']= 'wczytaj';
+$messages['categorytree-loading']= 'wczytuję...';
+$messages['categorytree-nothing-found']= 'nic nie znaleziono';
+$messages['categorytree-not-found']= "Kategoria <i>$1</i> nie znaleziona";
+
+$messages['categorytree-show-list'] = "Pokaż listę";
+$messages['categorytree-show-tree'] = "Pokaż drzewo";
+$messages['categorytree-too-many-subcats'] = "Podkategorie nie mogą być wyświetlone w drzewie, ponieważ jest ich zbyt dużo.";
+
 ?>
