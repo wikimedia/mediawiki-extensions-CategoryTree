@@ -32,9 +32,10 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		# category pages are not, at present, invalidated.
 		$cookieName = $wgCookiePrefix.'ShowSubcatAs';
 		$cookieVal = @$_COOKIE[$cookieName];
-		if ( $wgRequest->getVal( 'showas' ) == 'list' ) {
+		$reqShowAs = $wgRequest->getVal( 'showas' );
+		if ( $reqShowAs == 'list' ) {
 			$showAs = 'list';
-		} elseif ( $wgRequest->getVal( 'showas' ) == 'tree' ) {
+		} elseif ( $reqShowAs == 'tree' ) {
 			$showAs = 'tree';
 		} elseif ( $cookieVal == 'list' || $cookieVal == 'tree' ) {
 			$showAs = $cookieVal;
@@ -42,10 +43,10 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			$showAs = 'tree';
 		}
 
-		if ( !$cookieVal ) {
+		if ( !is_null( $reqShowAs ) ) {
 			global $wgCookieExpiration, $wgCookiePath, $wgCookieDomain, $wgCookieSecure;
 			$exp = time() + $wgCookieExpiration;
-			setcookie( $cookieName, $cookieVal, $exp, $wgCookiePath, $wgCookieDomain, $wgCookieSecure );
+			setcookie( $cookieName, $showAs, $exp, $wgCookiePath, $wgCookieDomain, $wgCookieSecure );
 		}
 		
 		if ( $showAs == 'tree' && count( $this->children ) > $this->limit ) {
