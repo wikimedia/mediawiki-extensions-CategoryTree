@@ -13,7 +13,8 @@ structure as a tree. It uses AJAX to load parts of the tree on demand.
 The CategoryTree extension was originally written by Daniel Kinzler in
 2006 and is released under the GNU General Public Licence (GPL). The 
 internationalization files contain contributions by several people;
-they are mentioned in each file individually.
+they are mentioned in each file individually. Also thanks to Tim Starling
+for his contributions.
 
 
 INSTALLING
@@ -36,12 +37,14 @@ recent graphic web browsers. For more information about AJAX see
 USAGE
 --------------------------------------------------------------------------
 
-CategoryTree can be used in two ways: as a "custom tag" to show a category
-structure inline on a wiki page, and as a special page.
+CategoryTree can be used in three ways: directly on the category pages,
+as a "custom tag" to show a category structure inline on a wiki page, 
+and as a special page.
 
-The special page is called Special:CategoryTree; there you can enter the
-name of a category and then browse it's content. The CategoryTree
-extension also adds a tab for this special page to every category page.
+The CategoryTree extension replaces the subcategory section of category
+pages with a dynamic tree view. If Javascript is disabled, this appears
+as a plain list. The traditional multi column list view is available on
+demand.
 
 The custom tag is called <categorytree>. For example, if you put
 <categorytree>Foo</categorytree> on a wiki page, it will show the contents
@@ -58,6 +61,10 @@ attributes, using a HTML-like syntax:
 * style - can be used to specify any CSS styles you would like for the
           tree.
           
+The special page is called Special:CategoryTree; there you can enter the
+name of a category and then browse it's content. The CategoryTree
+extension also adds a tab for this special page to every category page.
+
           
 OPTIONS
 --------------------------------------------------------------------------

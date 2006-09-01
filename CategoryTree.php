@@ -25,15 +25,6 @@ define('CT_MODE_PAGES', 10);
 define('CT_MODE_ALL', 20);
 
 /**
-* Abort if AJAX is not enabled
-**/
-if ( !$wgUseAjax ) {
-	#NOTE: GlobalFunctions is not yet loaded, so use standard API only.
-	trigger_error( 'CategoryTree: $wgUseAjax is not enabled, aborting extension setup.', E_USER_WARNING );
-	return;
-}
-
-/**
  * Options:
  *
  * $wgCategoryTreeMaxChildren - maximum number of children shown in a tree node. Default is 200
@@ -85,7 +76,14 @@ $wgAjaxExportList[] = 'efCategoryTreeAjaxWrapper';
  * Hook it up
  */
 function efCategoryTree() {
-	global $wgParser, $wgCategoryTreeAllowTag;
+	global $wgUseAjax, $wgParser, $wgCategoryTreeAllowTag;
+
+	# Abort if AJAX is not enabled
+	if ( !$wgUseAjax ) {
+		wfDebug( 'efCategoryTree: $wgUseAjax is not enabled, aborting extension setup.' );
+		return;
+	}
+
 	if ( $wgCategoryTreeAllowTag ) $wgParser->setHook( 'categorytree' , 'efCategoryTreeParserHook' );
 }
 

@@ -171,9 +171,9 @@ class CategoryTree {
 				$transJoin
 				WHERE cl_to = " . $dbr->addQuotes( $title->getDBKey() ) . " 
 				$nsmatch
-				AND cat.page_is_redirect = 0
+				"./*AND cat.page_is_redirect = 0*/"
 				$transWhere
-				ORDER BY presort, cat.page_namespace DESC, cat.page_title
+				ORDER BY presort, cl_sortkey
 				LIMIT " . (int)$wgCategoryTreeMaxChildren;
 
 		$res = $dbr->query( $sql, __METHOD__ );
