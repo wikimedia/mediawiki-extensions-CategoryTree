@@ -34,11 +34,11 @@ define('CT_MODE_ALL', 20);
  * $wgCategoryTreeDisableCache - disabled the parser cache for pages with a <categorytree> tag. Default is true.
  * $wgCategoryTreeUseCache - enable HTTP cache for anon users. Default is false.
  */  
-if ( !isset( $wgCategoryTreeMaxChildren ) ) $wgCategoryTreeMaxChildren = 200;
-if ( !isset( $wgCategoryTreeAllowTag ) ) $wgCategoryTreeAllowTag = true;
-if ( !isset( $wgCategoryTreeDisableCache ) ) $wgCategoryTreeDisableCache = true;
-if ( !isset( $wgCategoryTreeDynamicTag ) ) $wgCategoryTreeDynamicTag = false;
-if ( !isset( $wgCategoryTreeHTTPCache ) ) $wgCategoryTreeHTTPCache = false;
+$wgCategoryTreeMaxChildren = 200;
+$wgCategoryTreeAllowTag = true;
+$wgCategoryTreeDisableCache = true;
+$wgCategoryTreeDynamicTag = false;
+$wgCategoryTreeHTTPCache = false;
 
 /**
  * Register extension setup hook and credits
@@ -115,7 +115,8 @@ function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
 	
 	static $initialized = false;
 	
-	$style= @$argv[ 'style' ];
+	$divAttribs = Sanitizer::validateTagAttributes( $argv, 'div' );
+	$style = @$divAttribs['style'];
 	
 	$mode= @$argv[ 'mode' ];
 	if ( $mode !== NULL ) {
