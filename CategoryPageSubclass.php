@@ -14,9 +14,34 @@ class CategoryTreeCategoryPage extends CategoryPage {
 class CategoryTreeCategoryViewer extends CategoryViewer {
 	var $child_titles;
 	
+	/**
+	 * Add a subcategory to the internal lists
+	 */
+	function addSubcategory( $title, $sortkey, $pageLength ) {
+		global $wgContLang, $wgOut;
+		
+		if ( ! @$GLOBALS['wgCategoryTreeUnifiedView'] ) {
+			$this->child_titles[] = $title;
+			return parent::addSubcategory( $title, $sortkey, $pageLength );
+		}
+		
+		if ( ! isset($this->categorytree) ) {
+			CategoryTree::setHeaders( $wgOut );
+			$this->categorytree = new CategoryTree;
+		}
+		
+		$this->children[] = $this->categorytree->renderNode( $title );
+
+		$this->children_start_char[] = $this->getSubcategorySortChar( $title, $sortkey );
+	}
+	
 	function getSubcategorySection() {
 		global $wgOut, $wgRequest, $wgCookiePrefix;
 
+		if ( @$GLOBALS['wgCategoryTreeUnifiedView'] ) {
+			return parent::getSubcategorySection();
+		}
+		
 		if( count( $this->children ) == 0 ) {
 			return '';
 		}
@@ -90,11 +115,6 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		parent::clearCategoryState();
 	}
 	
-	function addSubcategory( $title, $sortKey, $pageLength ) {
-		$this->child_titles[] = $title;
-		parent::addSubcategory( $title, $sortKey, $pageLength );
-	}
-
 	function finaliseCategoryState() {
 		if( $this->flip ) {
 			$this->child_titles = array_reverse( $this->child_titles );
