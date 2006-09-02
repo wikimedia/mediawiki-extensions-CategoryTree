@@ -2,7 +2,7 @@
 /*
   Internationalisation file for the CategoryTree extension
   Copyright (C) 2006, Daniel Kinzler, brightbyte.de
-  Portuguese by Waldir Pimenta.
+  Portuguese by Waldir Pimenta & Lugusto
  
   This file is licensed under the GPL and the GFDL:
   
@@ -30,26 +30,31 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced [[:en:JavaScript|JavaScript]] functionality known as [[:en:AJAX|AJAX]].
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
+$messages['categorytree']= 'Árvore de categorias';
+$messages['categorytree-tab']= 'Árvore';
+#$messages['categorytree-header']=
+'Insira o nome de uma categoria para ver seu conteúdo como uma estrutura de "árvore". 
+Note que isso requer funcionalidades avançadas de [[JavaScript]] (como, por exemplo, [[AJAX]]).
+Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desabilitado em seu navegador, isto não funcionará.
+';
   
 $messages['categorytree-category']= 'Categoria';
-$messages['categorytree-go']= 'Carregar';
+$messages['categorytree-go']= 'Exibir Árvore';
 $messages['categorytree-parents']= 'Categorias superiores';
   
 $messages['categorytree-mode-categories']= 'mostrar só categorias';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
+$messages['categorytree-mode-pages']= 'páginas com exceção de imagens';
+$messages['categorytree-mode-all']= 'todas as páginas';
   
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
+$messages['categorytree-collapse']= 'ocultar';
+$messages['categorytree-expand']= 'expandir';
+$messages['categorytree-load']= 'carregar';
+$messages['categorytree-loading']= 'carregando';
 $messages['categorytree-nothing-found']= 'Sentimos muito, não se encontrou nada';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages['categorytree-not-found']= "A categoria ''\$1'' não foi encontrada";
+
+$messages['categorytree-show-list'] = "Exibir como lista";
+$messages['categorytree-show-tree'] = "Exibir como árvore";
+$messages['categorytree-too-many-subcats'] = "Não é possível exibir as subcategorias no modo de árvore, existem muitas subcategorias.";
+
 ?>
