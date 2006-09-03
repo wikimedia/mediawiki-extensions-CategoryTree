@@ -403,6 +403,7 @@ class CategoryTree {
 		global $wgMessageCache;
 		if ( !$initialized ) {
 			$wgMessageCache->addMessages( self::loadMessages() );
+			$initialized = true;
 		}
 		if ( $msg === false ) {
 			return null;
