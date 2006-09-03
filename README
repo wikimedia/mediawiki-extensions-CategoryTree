@@ -43,8 +43,9 @@ and as a special page.
 
 The CategoryTree extension replaces the subcategory section of category
 pages with a dynamic tree view. If Javascript is disabled, this appears
-as a plain list. The traditional multi column list view is available on
-demand.
+as a plain list. The dynamic subcategory entries can be disabled using
+the URL parameter "notree" - this is intended for bots that rely on
+parsing the HTML of category pages.
 
 The custom tag is called <categorytree>. For example, if you put
 <categorytree>Foo</categorytree> on a wiki page, it will show the contents

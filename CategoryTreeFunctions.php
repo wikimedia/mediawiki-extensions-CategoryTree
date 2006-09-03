@@ -299,7 +299,7 @@ class CategoryTree {
 		
 		if ( ( $ns % 2 ) > 0 ) $labelClass .= ' CategoryTreeLabelTalk';
 		
-		$linkattr= array( 'href' => 'javascript:void(0)' );
+		$linkattr= array( 'href' => '#' );
 		
 		if ( $load ) $linkattr[ 'id' ] = $load;
 
