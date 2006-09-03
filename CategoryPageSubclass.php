@@ -24,7 +24,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			return parent::addSubcategory( $title, $sortkey, $pageLength );
 		}
 		
-		if ( ! @$GLOBALS['wgCategoryTreeUnifiedView'] ) {
+		if ( ! $GLOBALS['wgCategoryTreeUnifiedView'] ) {
 			$this->child_titles[] = $title;
 			return parent::addSubcategory( $title, $sortkey, $pageLength );
 		}
@@ -46,7 +46,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			return parent::getSubcategorySection();
 		}
 		
-		if ( @$GLOBALS['wgCategoryTreeUnifiedView'] ) {
+		if ( $GLOBALS['wgCategoryTreeUnifiedView'] ) {
 			return parent::getSubcategorySection();
 		}
 		

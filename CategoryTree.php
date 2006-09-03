@@ -39,6 +39,7 @@ $wgCategoryTreeAllowTag = true;
 $wgCategoryTreeDisableCache = true;
 $wgCategoryTreeDynamicTag = false;
 $wgCategoryTreeHTTPCache = false;
+$wgCategoryTreeUnifiedView = false;
 
 /**
  * Register extension setup hook and credits
