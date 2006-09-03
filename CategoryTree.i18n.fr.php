@@ -1,8 +1,8 @@
-<?php
+﻿<?php
 /*
   Internationalisation file for the CategoryTree extension
   Copyright (C) 2006, Daniel Kinzler, brightbyte.de
-  French by LeBron and Pyb
+  French by LeBron and Pyb and Seb35
  
   This file is licensed under the GPL and the GFDL:
   
@@ -30,26 +30,27 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced [[:en:JavaScript|JavaScript]] functionality known as [[:en:AJAX|AJAX]].
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
+$messages['categorytree']= 'Arborescence des catégories';
+$messages['categorytree-tab']= 'Arbre';
+$messages['categorytree-header']= 
+'Entrez un nom de catégorie pour voir son contenu en structure [[:fr:Arborescence|arborescente]]. Veuillez noter que ceci utilise des fonctionnalités [[:fr:JavaScript|JavaScript]] avancées connues sous le nom d\'[[:fr:Asynchronous JavaScript And XML|AJAX]]. Si vous avez un très vieux navigateur ou que vous n\'avez pas activé le JavaScript, ça ne fonctionnera pas.';
   
 $messages['categorytree-category']= 'Catégorie';
 $messages['categorytree-go']= 'charger';
-$messages['categorytree-parents']= 'Sur catégorie';
+$messages['categorytree-parents']= 'Sur-catégorie';
   
 $messages['categorytree-mode-categories']= 'seulement les catégories';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
+$messages['categorytree-mode-pages']= 'pages sans les images';
+$messages['categorytree-mode-all']= 'toutes les pages';
   
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
+$messages['categorytree-collapse']= 'Refermer';
+$messages['categorytree-expand']= 'Développer';
+$messages['categorytree-load']= 'Ouvrir';
+$messages['categorytree-loading']= 'ouverture...';
 $messages['categorytree-nothing-found']= 'Pas trouvé, désolé.';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages['categorytree-not-found']= "La catégorie <i>\$1</i> n'a pas été trouvée.";
+
+$messages['categorytree-show-list'] = "Afficher en liste";
+$messages['categorytree-show-tree'] = "Afficher en arborescence";
+$messages['categorytree-too-many-subcats'] = "Impossible d'afficher les sous-catégories sous forme d'arbre, il y en a trop.";
 ?>
