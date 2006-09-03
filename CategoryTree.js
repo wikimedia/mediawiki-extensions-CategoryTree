@@ -56,6 +56,8 @@
       
       function f( request ) {
           result= request.responseText;
+          result= result.replace(/^\s+|\s+$/, '');
+
           if (request.status != 200) result= "<div class='error'> " + request.status + " " + request.statusText + ": " + result + "</div>";
           
           if ( result == '' ) result= '<i class="CategoryTreeNotice">' + categoryTreeNothingFoundMsg + '</i>';

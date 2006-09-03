@@ -98,6 +98,9 @@ class CategoryTree {
 		}
 		
 		$html = $this->renderChildren( $title, $mode );
+		if ( $html == '' ) $html = ' ';   #HACK: Safari doesn't like empty responses. 
+						  #see Bug 7219 and http://bugzilla.opendarwin.org/show_bug.cgi?id=10716
+		
 		$response->addText( $html );
 		
 		$response->storeInMemcached( $mckey, 86400 );
