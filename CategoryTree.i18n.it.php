@@ -47,5 +47,7 @@ $messages['categorytree-expand']= 'espandi';
 $messages['categorytree-load']= 'carica';
 $messages['categorytree-loading']= 'sto caricando';
 $messages['categorytree-nothing-found']= 'nessun risultato';
+$messages['categorytree-no-subcategories']= 'nessuna sottocategoria.';
+$messages['categorytree-no-pages']= 'nessuna voce nÃ© sottocategoria.';
 $messages['categorytree-not-found']= "La categoria  ''\$1'' non è stata trovata";
 ?>

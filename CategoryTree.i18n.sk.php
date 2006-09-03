@@ -51,5 +51,7 @@ $messages['categorytree-mode-categories']= 'ukáž iba kategórie';
 #$messages['categorytree-load']= 'load';
 #$messages['categorytree-loading']= 'loading';
 $messages['categorytree-nothing-found']= 'bohužiaľ nebolo nič nájdené';
+$messages['categorytree-no-subcategories']= 'žádne podkategórie.';
+$messages['categorytree-no-pages']= 'žiadne články ani podkategórie.';
 #$messages['categorytree-not-found']= "Category ''\$1'' not found";
 ?>

@@ -49,5 +49,7 @@ $messages['categorytree-expand']= 'ausklappen';
 $messages['categorytree-load']= 'laden';
 $messages['categorytree-loading']= 'laden...';
 $messages['categorytree-nothing-found']= 'Nichts gefunden, sorry.';
+$messages['categorytree-no-subcategories']= 'Keine Unterkategorien.';
+$messages['categorytree-no-pages']= 'Keine Artikel oder Unterkategorien.';
 $messages['categorytree-not-found']= "Kategorie ''\$1'' nicht gefunden";
 ?>

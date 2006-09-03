@@ -51,5 +51,7 @@ $messages['categorytree-mode-categories']= 'mostra només categories';
 #$messages['categorytree-load']= 'load';
 #$messages['categorytree-loading']= 'loading';
 $messages['categorytree-nothing-found']= 'no se\'n ha trobat cap';
+$messages['categorytree-no-subcategories']= 'no hi ha subcategories.';
+$messages['categorytree-no-pages']= 'no hi ha articles o subcategories.';
 #$messages['categorytree-not-found']= "Category ''\$1'' not found";
 ?>

@@ -51,5 +51,7 @@ $messages['categorytree-expand']= 'uitklappen';
 $messages['categorytree-load']= 'laden';
 $messages['categorytree-loading']= 'aan het laden';
 $messages['categorytree-nothing-found']= 'Niets gevonden, sorry.';
+$messages['categorytree-no-subcategories']= 'Geen subcategorieën.';
+$messages['categorytree-no-pages']= 'Geen artikelen of subcategorieën.';
 $messages['categorytree-not-found']= "Categorie ''\$1'' niet gevonden";
 ?>

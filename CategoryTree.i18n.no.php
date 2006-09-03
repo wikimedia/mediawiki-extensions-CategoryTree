@@ -51,5 +51,7 @@ $messages['categorytree-mode-categories']= 'bare kategorier';
 #$messages['categorytree-load']= 'load';
 #$messages['categorytree-loading']= 'loading';
 $messages['categorytree-nothing-found']= 'Ingen resultater funnet.';
+$messages['categorytree-no-subcategories']= 'Ingen underkategorier.';
+$messages['categorytree-no-pages']= 'Ingen artikler eller underkategorier.';
 #$messages['categorytree-not-found']= "Category ''\$1'' not found";
 ?>

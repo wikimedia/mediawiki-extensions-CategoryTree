@@ -30,7 +30,9 @@ $messages['categorytree-collapse']= 'collapse';
 $messages['categorytree-expand']= 'expand';
 $messages['categorytree-load']= 'load';
 $messages['categorytree-loading']= 'loading';
-$messages['categorytree-nothing-found']= 'no subcategories';
+$messages['categorytree-nothing-found']= 'nothing found';
+$messages['categorytree-no-subcategories']= 'no subcategories';
+$messages['categorytree-no-pages']= 'no pages or subcategories';
 $messages['categorytree-not-found']= "Category <i>$1</i> not found";
 
 $messages['categorytree-show-list'] = "Show as list";

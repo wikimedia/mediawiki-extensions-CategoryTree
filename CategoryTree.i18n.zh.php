@@ -51,5 +51,7 @@ $messages['categorytree-mode-categories']= '只顯示分類';
 #$messages['categorytree-load']= 'load';
 #$messages['categorytree-loading']= 'loading';
 $messages['categorytree-nothing-found']= '找不到任何項目，抱歉';
+$messages['categorytree-no-subcategories']= '没有子分類。';
+$messages['categorytree-no-pages']= '没有文章或子分類。';
 #$messages['categorytree-not-found']= "Category ''\$1'' not found";
 ?>

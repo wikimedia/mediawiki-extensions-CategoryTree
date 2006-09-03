@@ -49,5 +49,7 @@ $messages['categorytree-mode-categories']= 'csak kategóriák';
 #$messages['categorytree-load']= 'load';
 #$messages['categorytree-loading']= 'loading';
 $messages['categorytree-nothing-found']= 'nincs találat';
+$messages['categorytree-no-subcategories']= 'nincs alkategória.';
+$messages['categorytree-no-pages']= 'nincs cikk vagy alkategória.';
 #$messages['categorytree-not-found']= "Category ''\$1'' not found";
 ?>

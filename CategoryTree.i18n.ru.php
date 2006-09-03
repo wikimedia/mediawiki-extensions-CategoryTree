@@ -51,5 +51,7 @@ $messages['categorytree-mode-categories']= 'только категории';
 #$messages['categorytree-load']= 'load';
 #$messages['categorytree-loading']= 'loading';
 $messages['categorytree-nothing-found']= 'Извините, но по вашему запросу ничего не найдено';
+$messages['categorytree-no-subcategories']= 'нет подкатегорий.';
+$messages['categorytree-no-pages']= 'нет статей и подкатегорий.';
 #$messages['categorytree-not-found']= "Category ''\$1'' not found";
 ?>

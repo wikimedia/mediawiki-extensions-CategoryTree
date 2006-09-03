@@ -48,6 +48,8 @@ $messages['categorytree-expand']= 'Développer';
 $messages['categorytree-load']= 'Ouvrir';
 $messages['categorytree-loading']= 'ouverture...';
 $messages['categorytree-nothing-found']= 'Pas trouvé, désolé.';
+$messages['categorytree-no-subcategories']= 'Aucune sous-catégorie.';
+$messages['categorytree-no-pages']= 'Aucun article ou sous-catégorie.';
 $messages['categorytree-not-found']= "La catégorie <i>\$1</i> n'a pas été trouvée.";
 
 $messages['categorytree-show-list'] = "Afficher en liste";

@@ -51,5 +51,7 @@ $messages['categorytree-mode-categories']= 'แสดงเฉพาะหมว
 #$messages['categorytree-load']= 'load';
 #$messages['categorytree-loading']= 'loading';
 $messages['categorytree-nothing-found']= 'ไม่พบที่ต้องการ';
+$messages['categorytree-no-subcategories']= 'ไม่มีหมวดหมู่ย่อย';
+$messages['categorytree-no-pages']= 'ไม่มีบทความหรือหมวดหมู่ย่อย';
 #$messages['categorytree-not-found']= "Category ''\$1'' not found";
 ?>

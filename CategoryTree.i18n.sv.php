@@ -51,6 +51,8 @@ $messages['categorytree-expand']= 'expandera';
 $messages['categorytree-load']= 'ladda';
 $messages['categorytree-loading']= 'laddar';
 $messages['categorytree-nothing-found']= 'hittade inga';
+$messages['categorytree-no-subcategories']= 'inga underkategorier';
+$messages['categorytree-no-pages']= 'inga artiklar eller underkategorier';
 $messages['categorytree-not-found']= "Kategorin ''\$1'' hittades ej";
 
 $messages['categorytree-show-list'] = "Visa lista";

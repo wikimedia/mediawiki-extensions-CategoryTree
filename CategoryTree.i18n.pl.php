@@ -51,6 +51,8 @@ $messages['categorytree-expand']= 'rozwiń';
 $messages['categorytree-load']= 'wczytaj';
 $messages['categorytree-loading']= 'wczytuję...';
 $messages['categorytree-nothing-found']= 'nic nie znaleziono';
+$messages['categorytree-no-subcategories']= 'brak podkategorii.';
+$messages['categorytree-no-pages']= 'brak artykułów lub podkategorii.';
 $messages['categorytree-not-found']= "Kategoria <i>$1</i> nie znaleziona";
 
 $messages['categorytree-show-list'] = "Pokaż listę";

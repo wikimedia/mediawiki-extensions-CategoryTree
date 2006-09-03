@@ -51,6 +51,8 @@ $messages['categorytree-expand']= 'otevřít';
 $messages['categorytree-load']= 'načíst';
 $messages['categorytree-loading']= 'načítá se';
 $messages['categorytree-nothing-found']= 'bohužel nebylo nic nalezeno';
+$messages['categorytree-no-subcategories']= 'žádné subkategorie.';
+$messages['categorytree-no-pages']= 'žádné články ani subkategorie.';
 $messages['categorytree-not-found']= "Kategorie <i>$1</i> nebyla nalezena";
 
 $messages['categorytree-show-list'] = "Zobrazi jako seznam";

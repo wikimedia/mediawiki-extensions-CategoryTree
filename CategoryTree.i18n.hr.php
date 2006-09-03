@@ -51,5 +51,7 @@ $messages['categorytree-mode-categories']= 'pokaži samo kategorije';
 #$messages['categorytree-load']= 'load';
 #$messages['categorytree-loading']= 'loading';
 $messages['categorytree-nothing-found']= 'Nije pronađena nijedna stavka.';
+$messages['categorytree-no-subcategories']= 'Nema potkategorija.';
+$messages['categorytree-no-pages']= 'Nema članaka ili potkategorija.';
 #$messages['categorytree-not-found']= "Category ''\$1'' not found";
 ?>

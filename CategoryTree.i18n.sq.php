@@ -51,5 +51,7 @@ $messages['categorytree-mode-categories']= 'vetëm kategoritë';
 #$messages['categorytree-load']= 'load';
 #$messages['categorytree-loading']= 'loading';
 $messages['categorytree-nothing-found']= 'Nuk u gjet asgjë, na falni.';
+$messages['categorytree-no-subcategories']= 'Asnjë nënkategori.';
+$messages['categorytree-no-pages']= 'Asnjë artikull ose nënkategori.';
 #$messages['categorytree-not-found']= "Category ''\$1'' not found";
 ?>

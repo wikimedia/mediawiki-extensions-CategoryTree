@@ -61,6 +61,8 @@ class CategoryTree {
 				categoryTreeLoadMsg = \"".Xml::escapeJsString(self::msg('load'))."\"; 
 				categoryTreeLoadingMsg = \"".Xml::escapeJsString(self::msg('loading'))."\"; 
 				categoryTreeNothingFoundMsg = \"".Xml::escapeJsString(self::msg('nothing-found'))."\"; 
+				categoryTreeNoSubcategoriesMsg = \"".Xml::escapeJsString(self::msg('no-subcategories'))."\"; 
+				categoryTreeNoPagesMsg = \"".Xml::escapeJsString(self::msg('no-pages'))."\"; 
 			</script>\n" 
 		);
 	}	

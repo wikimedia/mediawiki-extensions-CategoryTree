@@ -60,7 +60,16 @@
 
           if (request.status != 200) result= "<div class='error'> " + request.status + " " + request.statusText + ": " + result + "</div>";
           
-          if ( result == '' ) result= '<i class="CategoryTreeNotice">' + categoryTreeNothingFoundMsg + '</i>';
+          if ( result == '' ) {
+                    result= '<i class="CategoryTreeNotice">';
+                    
+                    if ( mode == 0 ) result= categoryTreeNoSubcategoriesMsg;
+                    else if ( mode == 10 ) result= categoryTreeNoPagesMsg;
+                    else result= categoryTreeNothingFoundMsg;
+                    
+                    result+= '</i>';
+          }
+          
           result = result.replace(/##LOAD##/g, categoryTreeLoadMsg);
           div.innerHTML= result;
       }
