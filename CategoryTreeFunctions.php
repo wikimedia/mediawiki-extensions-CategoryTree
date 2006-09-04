@@ -310,13 +310,13 @@ class CategoryTree {
 
 		if ( !$children ) {
 			$txt = '+';
-			$linkattr[ 'onclick' ] = "categoryTreeExpandNode('".Xml::escapeJsString($key)."','".$mode."',this);";
+			$linkattr[ 'onclick' ] = "this.href='javascript:void(0)'; categoryTreeExpandNode('".Xml::escapeJsString($key)."','".$mode."',this);";
 			# Don't load this message for ajax requests, so that we don't have to initialise $wgLang
 			$linkattr[ 'title' ] = $this->mIsAjaxRequest ? '##LOAD##' : self::msg('expand'); 
 		}
 		else {
 			$txt = '–'; #NOTE: that's not a minus but a unicode ndash!
-			$linkattr[ 'onclick' ] = "categoryTreeCollapseNode('".Xml::escapeJsString($key)."','".$mode."',this);";
+			$linkattr[ 'onclick' ] = "this.href='javascript:void(0)'; categoryTreeCollapseNode('".Xml::escapeJsString($key)."','".$mode."',this);";
 			$linkattr[ 'title' ] = self::msg('collapse'); 
 			$linkattr[ 'class' ] = 'CategoryTreeLoaded';
 		}
