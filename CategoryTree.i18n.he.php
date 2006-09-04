@@ -25,7 +25,9 @@ $messages['categorytree-collapse']= 'כיווץ';
 $messages['categorytree-expand']= 'הרחבה';
 $messages['categorytree-load']= 'טעינה';
 $messages['categorytree-loading']= 'בטעינה';
-$messages['categorytree-nothing-found']= 'אין קטגוריות משנה';
+$messages['categorytree-nothing-found']= 'לא נמצאו תוצאות';
+$messages['categorytree-no-subcategories']= 'אין קטגוריות משנה';
+$messages['categorytree-no-pages']= 'אין דפים או קטגוריות משנה';
 $messages['categorytree-not-found']= "הקטגוריה '''$1''' לא נמצאה";
 
 $messages['categorytree-show-list'] = "תצוגת רשימה";
