@@ -70,7 +70,7 @@
                     result+= '</i>';
           }
           
-          result = result.replace(/##LOAD##/g, categoryTreeLoadMsg);
+          result = result.replace(/##LOAD##/g, categoryTreeExpandMsg);
           div.innerHTML= result;
       }
       
