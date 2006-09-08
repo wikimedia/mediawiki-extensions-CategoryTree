@@ -49,6 +49,8 @@ $messages['categorytree-expand']= 'buka';
 $messages['categorytree-load']= 'muat';
 $messages['categorytree-loading']= 'memuat';
 $messages['categorytree-nothing-found']= 'tidak ditemukan';
+$messages['categorytree-no-subcategories']= 'tidak ada subkategori';
+$messages['categorytree-no-pages']= 'tidak ada halaman atau subkategori';
 $messages['categorytree-not-found']= "Kategori <i>$1</i> tidak ditemukan";
 
 $messages['categorytree-show-list'] = "Tampilkan daftar";
