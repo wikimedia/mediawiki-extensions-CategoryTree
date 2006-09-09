@@ -2,7 +2,7 @@
 /*
   Internationalisation file for the CategoryTree extension
   Copyright (C) 2006, Daniel Kinzler, brightbyte.de
-  Simplified Chinese by Bean.zj and Shinjiman
+  Simplified Chinese by Bean.zj, Shinjiman and Vipuser
  
   This file is licensed under the GPL and the GFDL:
   
@@ -30,28 +30,34 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced [[:en:JavaScript|JavaScript]] functionality known as [[:en:AJAX|AJAX]].
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
+$messages['categorytree']= '分类树';
+$messages['categorytree-tab']= '树形目录';
+$messages['categorytree-header']= 
+'在此可以查询以分类的树形结构。
+注意： 本特殊页面使用[[:zh:AJAX]]技术。
+如果您的浏览器非常老旧，或者是关闭了[[:zh:JavaScript]]，本页面将会无法正常运作。
+';
   
 $messages['categorytree-category']= '分类';
-$messages['categorytree-go']= '装载';
+$messages['categorytree-go']= '显示树形结构';
 $messages['categorytree-parents']= '上级分类';
   
 $messages['categorytree-mode-categories']= '只显示分类';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
+$messages['categorytree-mode-pages']= '除去图像页面';
+$messages['categorytree-mode-all']= '所有页面';
   
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
-$messages['categorytree-nothing-found']= '搜索结果为空，抱歉';
+$messages['categorytree-collapse']= '折叠';
+$messages['categorytree-expand']= '展开';
+$messages['categorytree-load']= '装载';
+$messages['categorytree-loading']= '装载中';
+$messages['categorytree-nothing-found']= '搜索结果为空';
 $messages['categorytree-no-subcategories']= '没有子分类。';
 $messages['categorytree-no-pages']= '没有文章或是子分类。';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages['categorytree-not-found']= "找不到分类<i>$1</i>";
+
+
+$messages['categorytree-show-list'] = "以列表显示";
+$messages['categorytree-show-tree'] = "以树形显示";
+$messages['categorytree-too-many-subcats'] = "无法以树形显示子分类，因为已经有太多了。";
+
 ?>

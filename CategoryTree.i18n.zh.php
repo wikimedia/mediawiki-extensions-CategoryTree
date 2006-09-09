@@ -2,7 +2,7 @@
 /*
   Internationalisation file for the CategoryTree extension
   Copyright (C) 2006, Daniel Kinzler, brightbyte.de
-  Traditional Chinese by Shinjiman
+  Traditional Chinese by Alex S.H. Lin and Shinjiman
  
   This file is licensed under the GPL and the GFDL:
   
@@ -30,28 +30,34 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced [[:en:JavaScript|JavaScript]] functionality known as [[:en:AJAX|AJAX]].
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
+$messages['categorytree']= '分類樹';
+$messages['categorytree-tab']= '樹狀目錄';
+$messages['categorytree-header']= 
+'在此可以查詢以分類的樹狀結構。
+注意： 本特殊頁面使用[[:zh:AJAX]]技術。
+如果您的瀏覽器非常老舊，或者是關閉了[[:zh:JavaScript]]，本頁面將會無法正常運作。
+';
   
 $messages['categorytree-category']= '分類';
-$messages['categorytree-go']= '載入';
+$messages['categorytree-go']= '顯示樹狀結構';
 $messages['categorytree-parents']= '父分類';
   
 $messages['categorytree-mode-categories']= '只顯示分類';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
+$messages['categorytree-mode-pages']= '除去圖像頁面';
+$messages['categorytree-mode-all']= '所有頁面';
   
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
-$messages['categorytree-nothing-found']= '找不到任何項目，抱歉';
-$messages['categorytree-no-subcategories']= '没有子分類。';
-$messages['categorytree-no-pages']= '没有文章或子分類。';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages['categorytree-collapse']= '摺疊';
+$messages['categorytree-expand']= '展開';
+$messages['categorytree-load']= '載入';
+$messages['categorytree-loading']= '載入中';
+$messages['categorytree-nothing-found']= '找不到任何項目';
+$messages['categorytree-no-subcategories']= '没有子分類';
+$messages['categorytree-no-pages']= '没有頁面或子分類';
+$messages['categorytree-not-found']= "找不到分類<i>$1</i>";
+
+
+$messages['categorytree-show-list'] = "以清單顯示";
+$messages['categorytree-show-tree'] = "以樹狀顯示";
+$messages['categorytree-too-many-subcats'] = "無法以樹狀顯示子分類，因為已經有太多了。";
+
 ?>
