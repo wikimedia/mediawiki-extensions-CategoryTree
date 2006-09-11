@@ -2,7 +2,9 @@
 /*
   Internationalisation file for the CategoryTree extension
   Original Copyright (C) 2006, Daniel Kinzler, brightbyte.de
-  Russian translation Copyright (C) 2006, Shtriter Andrew, http://meta.wikimedia.org/wiki/User:Shtriter
+  Russian translation Copyright
+  (C) 2006, Shtriter Andrew, http://meta.wikimedia.org/wiki/User:Shtriter
+  (C) 2006, Alexander Sigachov, http://meta.wikimedia.org/wiki/User:Ajvol
  
   This file is licensed under the GPL and the GFDL:
   
@@ -30,28 +32,28 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced [[:en:JavaScript|JavaScript]] functionality known as [[:en:AJAX|AJAX]].
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
-  
+$messages['categorytree']= 'Дерево категорий';
+$messages['categorytree-tab']= 'Дерево';
+$messages['categorytree-header']= 
+'Введите имя категории, и она будет показана в виде дерева.
+Эта возможность доступна, только если ваш браузер поддерживает [[:en:AJAX|AJAX]].
+Если у вас старая версия браузера или отключен [[:en:JavaScript|JavaScript]], показ подкатегорий в виде дерева недоступен.
+';
+
 $messages['categorytree-category']= 'Категория';
 $messages['categorytree-go']= 'Загрузить';
 $messages['categorytree-parents']= 'Родительские категории';
   
 $messages['categorytree-mode-categories']= 'только категории';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
+$messages['categorytree-mode-pages']= 'кроме изображений';
+$messages['categorytree-mode-all']= 'все страницы';
   
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
-$messages['categorytree-nothing-found']= 'Извините, но по вашему запросу ничего не найдено';
+$messages['categorytree-collapse']= 'свернуть';
+$messages['categorytree-expand']= 'развернуть';
+$messages['categorytree-load']= 'загрузить';
+$messages['categorytree-loading']= 'загрузка…';
+$messages['categorytree-nothing-found']= 'Данная категория не содержит подкатегорий.';
 $messages['categorytree-no-subcategories']= 'нет подкатегорий.';
 $messages['categorytree-no-pages']= 'нет статей и подкатегорий.';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages['categorytree-not-found']= "Категория «$1» не найдена.";
 ?>
