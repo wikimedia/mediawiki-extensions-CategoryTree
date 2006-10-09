@@ -30,28 +30,32 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced [[:en:JavaScript|JavaScript]] functionality known as [[:en:AJAX|AJAX]].
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
+$messages['categorytree']= 'StromKategórií';
+$messages['categorytree-tab']= 'Strom';
+$messages['categorytree-header']= 
+'Zadajte názov kategórie, ktorej obsah sa má zobraziť ako stromová štruktúra.
+Majte na pamäti, že táto funkcia vyžaduje JavaScriptovú funkcionalitu známu ako AJAX.
+Ak máte veľmi starý prehliadač alebo máte vypnutý JavaScrpt, nebude fungovať.
+';
   
 $messages['categorytree-category']= 'Kategória';
-$messages['categorytree-go']= 'Nahraj';
+$messages['categorytree-go']= 'Spustiť';
 $messages['categorytree-parents']= 'Nadradená kategória';
   
 $messages['categorytree-mode-categories']= 'ukáž iba kategórie';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
+$messages['categorytree-mode-pages']= 'stránky okrem obrázkov';
+$messages['categorytree-mode-all']= 'všetky stránky';
   
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
-$messages['categorytree-nothing-found']= 'bohužiaľ nebolo nič nájdené';
-$messages['categorytree-no-subcategories']= 'žádne podkategórie.';
-$messages['categorytree-no-pages']= 'žiadne články ani podkategórie.';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages['categorytree-collapse']= 'zbaliť';
+$messages['categorytree-expand']= 'rozbaliť';
+$messages['categorytree-load']= 'načítať';
+$messages['categorytree-loading']= 'načítava sa';
+$messages['categorytree-nothing-found']= 'nebolo nič nájdené';
+$messages['categorytree-no-subcategories']= 'žiadne podkategórie.';
+$messages['categorytree-no-pages']= 'žiadne stránky ani podkategórie.';
+$messages['categorytree-not-found']= "Kategória <i>$1</i> nenájdená";
+
+$messages['categorytree-show-list'] = "Zobraziť ako zoznam";
+$messages['categorytree-ahow-tree'] = "Zobraziť ako strom";
+$messages['categorytree-too-many-subcats'] = "Nemôžem zobraziť podkategórie ako strom, je ich príliš veľa.";
 ?>
