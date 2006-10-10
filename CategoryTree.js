@@ -10,7 +10,7 @@
 */
     
     function categoryTreeNextDiv(e) {
-      n= e.nextSibling;
+      var n= e.nextSibling;
       while ( n && ( n.nodeType != 1 || n.nodeName != 'DIV') ) {
           //alert('nodeType: ' + n.nodeType + '; nodeName: ' + n.nodeName);
           n= n.nextSibling;

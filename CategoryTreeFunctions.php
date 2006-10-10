@@ -56,13 +56,13 @@ class CategoryTree {
 		# Add messages 
 		$outputPage->addScript( 
 		"	<script type=\"{$wgJsMimeType}\"> 
-				categoryTreeCollapseMsg = \"".Xml::escapeJsString(self::msg('collapse'))."\"; 
-				categoryTreeExpandMsg = \"".Xml::escapeJsString(self::msg('expand'))."\"; 
-				categoryTreeLoadMsg = \"".Xml::escapeJsString(self::msg('load'))."\"; 
-				categoryTreeLoadingMsg = \"".Xml::escapeJsString(self::msg('loading'))."\"; 
-				categoryTreeNothingFoundMsg = \"".Xml::escapeJsString(self::msg('nothing-found'))."\"; 
-				categoryTreeNoSubcategoriesMsg = \"".Xml::escapeJsString(self::msg('no-subcategories'))."\"; 
-				categoryTreeNoPagesMsg = \"".Xml::escapeJsString(self::msg('no-pages'))."\"; 
+			var categoryTreeCollapseMsg = \"".Xml::escapeJsString(self::msg('collapse'))."\"; 
+			var categoryTreeExpandMsg = \"".Xml::escapeJsString(self::msg('expand'))."\"; 
+			var categoryTreeLoadMsg = \"".Xml::escapeJsString(self::msg('load'))."\"; 
+			var categoryTreeLoadingMsg = \"".Xml::escapeJsString(self::msg('loading'))."\"; 
+			var categoryTreeNothingFoundMsg = \"".Xml::escapeJsString(self::msg('nothing-found'))."\"; 
+			var categoryTreeNoSubcategoriesMsg = \"".Xml::escapeJsString(self::msg('no-subcategories'))."\"; 
+			var categoryTreeNoPagesMsg = \"".Xml::escapeJsString(self::msg('no-pages'))."\"; 
 			</script>\n" 
 		);
 	}	
