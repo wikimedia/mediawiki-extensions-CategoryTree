@@ -180,7 +180,7 @@ class CategoryTree {
 		$categorylinks = $dbr->tableName( 'categorylinks' );
 		
 		$sql = "SELECT cat.page_namespace, cat.page_title, 
-					  if( cat.page_namespace = " . NS_CATEGORY . ", 0, 1) as presort 
+				CASE WHEN cat.page_namespace=".NS_CATEGORY." THEN 0 ELSE 1 END AS presort
 					  $transFields
 				FROM $page as cat
 				JOIN $categorylinks ON cl_from = cat.page_id
