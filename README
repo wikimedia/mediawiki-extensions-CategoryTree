@@ -87,5 +87,9 @@ $wgCategoryTreeDisableCache - disabled the parser cache for pages with a
 $wgCategoryTreeHTTPCache - enable HTTP cache for anon users. Default is
                           false.
 
+$wgCategoryTreeOmitNamespace - never show namespace prefix. Default is
+                               false. Patch contributed by Manuel Schneider
+                               <manuel.schneider@wikimedia.ch>, Bug 8011
+
 --------------------------------------------------------------------------
 EOF

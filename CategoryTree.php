@@ -34,6 +34,7 @@ define('CT_MODE_ALL', 20);
  * $wgCategoryTreeDisableCache - disabled the parser cache for pages with a <categorytree> tag. Default is true.
  * $wgCategoryTreeUseCache - enable HTTP cache for anon users. Default is false.
  * $wgCategoryTreeUnifiedView - use unified view on category pages, instead of "tree" or "traditional list". Default is true.
+ * $wgCategoryTreeOmitNamespace - never show namespace prefix. Default is false 
  */  
 $wgCategoryTreeMaxChildren = 200;
 $wgCategoryTreeAllowTag = true;
@@ -41,6 +42,7 @@ $wgCategoryTreeDisableCache = true;
 $wgCategoryTreeDynamicTag = false;
 $wgCategoryTreeHTTPCache = false;
 $wgCategoryTreeUnifiedView = true;
+$wgCategoryTreeOmitNamespace = false;
 
 /**
  * Register extension setup hook and credits

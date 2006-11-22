@@ -269,6 +269,7 @@ class CategoryTree {
 	* $title must be a Title object
 	*/
 	function renderNode( &$title, $mode = CT_MODE_CATEGORIES, $children = false, $loadchildren = false ) {
+		global $wgCategoryTreeOmitNamespace;
 		static $uniq = 0;
 		
 		$load = false;
@@ -286,8 +287,9 @@ class CategoryTree {
 		#$trans = $title->getLocalizedText();
 		$trans = ''; #place holder for when translated titles are available
 		
-		#when showing only categories, omit namespace in label
-		if ( $mode == CT_MODE_CATEGORIES ) $label = htmlspecialchars( $title->getText() );
+		#when showing only categories, omit namespace in label unless we explicitely defined the configuration setting
+		#patch contributed by Manuel Schneider <manuel.schneider@wikimedia.ch>, Bug 8011
+		if ( $wgCategoryTreeOmitNamespace || $mode == CT_MODE_CATEGORIES ) $label = htmlspecialchars( $title->getText() );
 		else $label = htmlspecialchars( $title->getPrefixedText() );
 		
 		if ( $trans && $trans!=$label ) $label.= ' ' . wfElement( 'i', array( 'class' => 'translation'), $trans );
