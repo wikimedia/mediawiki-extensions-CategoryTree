@@ -120,9 +120,9 @@ function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
 	static $initialized = false;
 	
 	$divAttribs = Sanitizer::validateTagAttributes( $argv, 'div' );
-	$style = @$divAttribs['style'];
+	$style = isset( $divAttribs['style'] ) ? $divAttribs['style'] : null;
 	
-	$mode= @$argv[ 'mode' ];
+	$mode = isset( $argv[ 'mode' ] ) ? $argv[ 'mode' ] : null;
 	if ( $mode !== NULL ) {
 		$mode= trim( strtolower( $mode ) );
 		
@@ -134,7 +134,7 @@ function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
 		$mode = CT_MODE_CATEGORIES;
 	}
 	
-	$hideroot = @$argv[ 'hideroot' ];
+	$hideroot = isset( $argv[ 'hideroot' ] ) ? $argv[ 'hideroot' ] : null;
 	if ( $hideroot !== NULL ) {
 		$hideroot = trim( strtolower( $hideroot ) );
 		
