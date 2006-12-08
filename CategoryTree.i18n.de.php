@@ -28,13 +28,17 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-$messages['categorytree']= 'CategoryTree';
+$messages['categorytree']= 'Kategorien-Baum';
 $messages['categorytree-tab']= 'Baum';
 $messages['categorytree-header']= 
 'Zeigt für die angegebene Kategorie die Unterkategorien in einer Baumstruktur.
 Diese Seite benötigt bestimmte [[:de:JavaScript|JavaScript]]-Funktionen ([[:de:AJAX|AJAX]]).
 In sehr alten Browsern, oder wenn JavaScript abgeschaltet ist, kann diese Seite nicht richtig funktionieren.
 ';
+
+$messages['categorytree-show-list'] = 'Zeige als Liste';
+$messages['categorytree-show-tree'] = 'Zeige als Baum';
+$messages['categorytree-too-many-subcats'] = 'Unterkategorien können nicht als Baum dargestellt werden, da es zuviele sind.';
   
 $messages['categorytree-category']= 'Kategorie';
 $messages['categorytree-go']= 'Laden';
