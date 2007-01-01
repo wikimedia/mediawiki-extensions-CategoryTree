@@ -50,10 +50,10 @@ $messages['categorytree-collapse']= 'zavřít';
 $messages['categorytree-expand']= 'otevřít';
 $messages['categorytree-load']= 'načíst';
 $messages['categorytree-loading']= 'načítá se';
-$messages['categorytree-nothing-found']= 'bohužel nebylo nic nalezeno';
-$messages['categorytree-no-subcategories']= 'žádné subkategorie.';
-$messages['categorytree-no-pages']= 'žádné články ani subkategorie.';
-$messages['categorytree-not-found']= "Kategorie <i>$1</i> nebyla nalezena";
+$messages['categorytree-nothing-found']= 'nic nebylo nalezeno';
+$messages['categorytree-no-subcategories']= 'žádné podkategorie.';
+$messages['categorytree-no-pages']= 'žádné články ani podkategorie.';
+$messages['categorytree-not-found']= "Kategorie <i>$1</i> nenalezena";
 
 $messages['categorytree-show-list'] = "Zobrazi jako seznam";
 $messages['categorytree-show-tree'] = "Zobrazit jako strom";
