@@ -32,7 +32,7 @@
   
 $messages['categorytree']= 'Struttura ad albero delle categorie';
 $messages['categorytree-tab']= 'Albero';
-$messages['categorytree-header']= 'Inserire il nome della categoria di cui si desidera vedere il contenuto sotto forma di struttura ad albero. Si noti che la pagina richiede le funzionalità avanzate di JavaScript chiamate AJAX; qualora si stia usando un browser molto vecchio o le funzioni JavaScript siano disabilitate, questa pagina non funzionerà.';
+$messages['categorytree-header']= 'Inserire il nome della categoria di cui si desidera vedere il contenuto sotto forma di struttura ad albero. Si noti che la pagina richiede le funzionalitÃ  avanzate di JavaScript chiamate AJAX; qualora si stia usando un browser molto vecchio o le funzioni JavaScript siano disabilitate, questa pagina non funzionerÃ .';
   
 $messages['categorytree-category']= 'Categoria';
 $messages['categorytree-go']= 'Carica';
@@ -48,6 +48,6 @@ $messages['categorytree-load']= 'carica';
 $messages['categorytree-loading']= 'caricamento in corso';
 $messages['categorytree-nothing-found']= 'nessun risultato';
 $messages['categorytree-no-subcategories']= 'nessuna sottocategoria.';
-$messages['categorytree-no-pages']= 'nessuna voce né sottocategoria.';
+$messages['categorytree-no-pages']= 'nessuna voce nÃ© sottocategoria.';
 $messages['categorytree-not-found']= "Categoria  ''\$1'' non trovata";
 ?>

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
   Internationalisation file for the CategoryTree extension
   Copyright (C) 2006, Daniel Kinzler, brightbyte.de
