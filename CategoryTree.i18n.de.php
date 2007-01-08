@@ -28,12 +28,12 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-$messages['categorytree']= 'Kategorien-Baum';
+$messages['categorytree']= 'Kategorienbaum';
 $messages['categorytree-tab']= 'Baum';
 $messages['categorytree-header']= 
 'Zeigt für die angegebene Kategorie die Unterkategorien in einer Baumstruktur.
-Diese Seite benötigt bestimmte [[:de:JavaScript|JavaScript]]-Funktionen ([[:de:AJAX|AJAX]]).
-In sehr alten Browsern, oder wenn JavaScript abgeschaltet ist, kann diese Seite nicht richtig funktionieren.
+Diese Seite benötigt bestimmte [[w:de:JavaScript|JavaScript]]-Funktionen ([[w:de:AJAX|AJAX]]).
+In sehr alten Browsern, oder wenn JavaScript abgeschaltet ist, funktioniert diese Seite eventuell nicht.
 ';
 
 $messages['categorytree-show-list'] = 'Zeige als Liste';
@@ -51,9 +51,9 @@ $messages['categorytree-mode-all']= 'alle Seiten';
 $messages['categorytree-collapse']= 'einklappen';
 $messages['categorytree-expand']= 'ausklappen';
 $messages['categorytree-load']= 'laden';
-$messages['categorytree-loading']= 'laden...';
-$messages['categorytree-nothing-found']= 'Nichts gefunden, sorry.';
-$messages['categorytree-no-subcategories']= 'Keine Unterkategorien.';
-$messages['categorytree-no-pages']= 'Keine Artikel oder Unterkategorien.';
+$messages['categorytree-loading']= 'laden …';
+$messages['categorytree-nothing-found']= 'Nichts gefunden';
+$messages['categorytree-no-subcategories']= 'Keine Unterkategorien';
+$messages['categorytree-no-pages']= 'Keine Artikel oder Unterkategorien';
 $messages['categorytree-not-found']= "Kategorie ''\$1'' nicht gefunden";
 ?>
