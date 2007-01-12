@@ -33,11 +33,11 @@
 $messages['categorytree']= 'Arborescence des catégories';
 $messages['categorytree-tab']= 'Arbre';
 $messages['categorytree-header']= 
-'Entrez un nom de catégorie pour voir son contenu en structure [[:fr:Arborescence|arborescente]]. Veuillez noter que ceci utilise des fonctionnalités [[:fr:JavaScript|JavaScript]] avancées connues sous le nom d\'[[:fr:Asynchronous JavaScript And XML|AJAX]]. Si vous avez un très vieux navigateur ou que vous n\'avez pas activé le JavaScript, ça ne fonctionnera pas.';
+'Entrez un nom de catégorie pour voir son contenu en structure [[:fr:Arborescence|arborescente]]. Veuillez noter que ceci utilise des fonctionnalités [[:fr:JavaScript|JavaScript]] avancées connues sous le nom d’[[:fr:Asynchronous JavaScript And XML|AJAX]]. Si vous avez un très vieux navigateur ou que vous n’avez pas activé le JavaScript, ça ne fonctionnera pas.';
   
 $messages['categorytree-category']= 'Catégorie';
 $messages['categorytree-go']= 'charger';
-$messages['categorytree-parents']= 'Sur-catégorie';
+$messages['categorytree-parents']= 'Sur-catégorie(s) ';
   
 $messages['categorytree-mode-categories']= 'seulement les catégories';
 $messages['categorytree-mode-pages']= 'pages sans les images';
@@ -50,9 +50,9 @@ $messages['categorytree-loading']= 'ouverture...';
 $messages['categorytree-nothing-found']= 'Pas trouvé, désolé.';
 $messages['categorytree-no-subcategories']= 'Aucune sous-catégorie.';
 $messages['categorytree-no-pages']= 'Aucun article ou sous-catégorie.';
-$messages['categorytree-not-found']= "La catégorie <i>\$1</i> n'a pas été trouvée.";
+$messages['categorytree-not-found']= "La catégorie <tt>$1</tt> n’a pas été trouvée.";
 
 $messages['categorytree-show-list'] = "Afficher en liste";
 $messages['categorytree-show-tree'] = "Afficher en arborescence";
-$messages['categorytree-too-many-subcats'] = "Impossible d'afficher les sous-catégories sous forme d'arbre, il y en a trop.";
+$messages['categorytree-too-many-subcats'] = "Impossible d’afficher les sous-catégories sous forme d'arbre, il y en a trop.";
 ?>
