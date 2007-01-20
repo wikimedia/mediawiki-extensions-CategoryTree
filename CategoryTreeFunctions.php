@@ -4,8 +4,7 @@
  * Core functions for the CategoryTree extension, an AJAX based gadget 
  * to display the category structure of a wiki
  *
- * @package MediaWiki
- * @subpackage Extensions
+ * @addtogroup Extensions
  * @author Daniel Kinzler <duesentrieb@brightbyte.de>
  * @copyright © 2006 Daniel Kinzler
  * @licence GNU General Public Licence 2.0 or later

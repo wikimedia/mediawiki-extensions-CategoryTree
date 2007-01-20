@@ -3,8 +3,7 @@
 /**
  * Internationalisation file for the CategoryTree extension
  *
- * @package MediaWiki
- * @subpackage Extensions
+ * @addtogroup Extensions
  * @author Dutch translation by JePe and Siebrand, source file by Daniel Kinzler <duesentrieb@brightbyte.de>
  * @copyright © 2006 Daniel Kinzler, JePe, Siebrand
  * @licence GNU General Public Licence 2.0 or later

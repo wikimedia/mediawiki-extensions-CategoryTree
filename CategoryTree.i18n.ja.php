@@ -3,8 +3,7 @@
 /**
  * Internationalisation file for the CategoryTree extension
  *
- * @package MediaWiki
- * @subpackage Extensions
+ * @addtogroup Extensions
  */
 
 $messages['categorytree']= 'カテゴリツリー';
