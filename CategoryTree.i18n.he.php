@@ -32,6 +32,6 @@ $messages['categorytree-not-found']= "הקטגוריה '''$1''' לא נמצאה"
 
 $messages['categorytree-show-list'] = "תצוגת רשימה";
 $messages['categorytree-show-tree'] = "תצוגת עץ";
-$messages['categorytree-too-many-subcats'] = "לא ניתן להציג את קטגוריות המשנה כעץ, כיוון שהן מרובות מדי.";
+$messages['categorytree-too-many-subcats'] = "לא ניתן להציג את קטגוריות המשנה כעץ כיוון שהן מרובות מדי.";
 
 ?>
