@@ -30,7 +30,7 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-$messages['categorytree']= 'StromKategórií';
+$messages['categorytree']= 'Strom kategórií';
 $messages['categorytree-tab']= 'Strom';
 $messages['categorytree-header']= 
 'Zadajte názov kategórie, ktorej obsah sa má zobraziť ako stromová štruktúra.
