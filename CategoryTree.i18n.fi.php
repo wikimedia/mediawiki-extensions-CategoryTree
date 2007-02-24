@@ -47,6 +47,8 @@ $messages['categorytree-expand'] = 'näytä';
 $messages['categorytree-load'] = 'näytä';
 $messages['categorytree-loading'] = 'etsitään';
 $messages['categorytree-nothing-found'] = 'ei alaluokkia';
+$messages['categorytree-no-subcategories'] = 'ei alaluokkia';
+$messages['categorytree-no-pages'] = 'ei sivuja eikä alaluokkia';
 $messages['categorytree-not-found'] = "Luokkaa <i>$1</i> ei löytynyt";
 
 $messages['categorytree-show-list'] = "Näytä luettelona";
