@@ -50,13 +50,13 @@ $wgExtensionFunctions[] = 'efCategoryTree';
 $wgExtensionCredits['specialpage'][] = array( 
 	'name' => 'CategoryTree', 
 	'author' => 'Daniel Kinzler', 
-	'url' => 'http://meta.wikimedia.org/wiki/CategoryTree_extension',
+	'url' => 'http://www.mediawiki.org/wiki/Extension:CategoryTree',
 	'description' => 'AJAX based gadget to display the category structure of a wiki',
 );
 $wgExtensionCredits['parserhook'][] = array( 
 	'name' => 'CategoryTree', 
 	'author' => 'Daniel Kinzler', 
-	'url' => 'http://meta.wikimedia.org/wiki/CategoryTree_extension',
+	'url' => 'http://www.mediawiki.org/wiki/Extension:CategoryTree',
 	'description' => 'AJAX based gadget to display the category structure of a wiki',
 );
 
