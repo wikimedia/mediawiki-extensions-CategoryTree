@@ -113,7 +113,7 @@ class CategoryTree {
 	* Custom tag implementation. This is called by efCategoryTreeParserHook, which is used to 
 	* load CategoryTreeFunctions.php on demand.
 	*/
-	function getTag( &$parser, $category, $mode, $display = 'expandroot', $style = '' ) {
+	function getTag( &$parser, $category, $mode, $display = 'expandroot', $style = '', $depth=1 ) {
 		global $wgCategoryTreeDisableCache, $wgCategoryTreeDynamicTag;
 		static $uniq = 0;
 
@@ -138,8 +138,8 @@ class CategoryTree {
 			$html .= wfCloseElement( 'span' );
 			}
 		else {
-			if ( $display != 'hideroot' ) $html .= CategoryTree::renderNode( $title, $mode, $display != 'onlyroot', $wgCategoryTreeDynamicTag );
-			else if ( !$wgCategoryTreeDynamicTag ) $html .= $this->renderChildren( $title, $mode );
+			if ( $display != 'hideroot' ) $html .= CategoryTree::renderNode( $title, $mode, $depth>0, $wgCategoryTreeDynamicTag, $depth-1 );
+			else if ( !$wgCategoryTreeDynamicTag ) $html .= $this->renderChildren( $title, $mode, $depth-1 );
 			else {
 				$uniq += 1;
 				$load = 'ct-' . $uniq . '-' . mt_rand( 1, 100000 );
@@ -160,7 +160,7 @@ class CategoryTree {
 	* Returns a string with an HTML representation of the children of the given category.
 	* $title must be a Title object
 	*/
-	function renderChildren( &$title, $mode = CT_MODE_CATEGORIES ) {
+	function renderChildren( &$title, $mode = CT_MODE_CATEGORIES, $depth=0 ) {
 		global $wgCategoryTreeMaxChildren;
 		
 		$dbr =& wfGetDB( DB_SLAVE );
@@ -198,7 +198,7 @@ class CategoryTree {
 		while ( $row = $dbr->fetchRow( $res ) ) {
 				#TODO: translation support; ideally added to Title object
 				$t = Title::makeTitle( $row['page_namespace'], $row['page_title'] );
-				$s .= $this->renderNode( $t, $mode, false );
+				$s .= $this->renderNode( $t, $mode, $depth>0, false, $depth-1 );
 				$s .= "\n\t\t";
 		}
 		
@@ -267,7 +267,7 @@ class CategoryTree {
 	* Returns a string with a HTML represenation of the given page.
 	* $title must be a Title object
 	*/
-	function renderNode( &$title, $mode = CT_MODE_CATEGORIES, $children = false, $loadchildren = false ) {
+	function renderNode( &$title, $mode = CT_MODE_CATEGORIES, $children = false, $loadchildren = false, $depth = 1 ) {
 		global $wgCategoryTreeOmitNamespace;
 		static $uniq = 0;
 		
@@ -323,7 +323,7 @@ class CategoryTree {
 		}
 		
 		$s = '';
-
+		
 		#NOTE: things in CategoryTree.js rely on the exact order of tags!
 		#      Specifically, the CategoryTreeChildren div must be the first
 		#      sibling with nodeName = DIV of the grandparent of the expland link.
@@ -343,7 +343,8 @@ class CategoryTree {
 		$s .= wfCloseElement( 'div' );
 		$s .= "\n\t\t";
 		$s .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeChildren', 'style' => $children ? "display:block" : "display:none" ) );
-		if ( $children ) $s .= $this->renderChildren( $title, $mode ); 
+		//HACK here?
+		if ( $children ) $s .= $this->renderChildren( $title, $mode, $depth ); 
 		$s .= wfCloseElement( 'div' );
 		$s .= wfCloseElement( 'div' );
 		
