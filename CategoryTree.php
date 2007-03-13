@@ -5,8 +5,8 @@
  * to display the category structure of a wiki
  *
  * @addtogroup Extensions
- * @author Daniel Kinzler <duesentrieb@brightbyte.de>
- * @copyright © 2006 Daniel Kinzler
+ * @author Daniel Kinzler, brightbyte.de
+ * @copyright © 2006-2007 Daniel Kinzler
  * @licence GNU General Public Licence 2.0 or later
  */
  
@@ -112,6 +112,25 @@ function efCategoryTreeAjaxWrapper( $category, $mode = CT_MODE_CATEGORIES ) {
 }
 
 /**
+* Helper function to convert a string to a boolean value.
+* Perhaps make this a global function in MediaWiki proper
+*/
+function efCategoryTreeAsBool( $s ) {
+	if ( is_null( $s ) || is_bool( $s ) ) return $s;
+	$s = trim( strtolower( $s ) );
+
+	if ( $s === '1' || $s === 'yes' || $s === 'on' || $s === 'true' ) {
+		return true;
+	}
+	else if ( $s === '0' || $s === 'no' || $s === 'off' || $s === 'false' ) {
+		return false;
+	}
+	else {
+		return NULL;
+	}
+}
+
+/**
  * Entry point for the <categorytree> tag parser hook.
  * This loads CategoryTreeFunctions.php and calls CategoryTree::getTag()
  */
@@ -135,20 +154,15 @@ function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
 		$mode = CT_MODE_CATEGORIES;
 	}
 	
-	$hideroot = isset( $argv[ 'hideroot' ] ) ? $argv[ 'hideroot' ] : null;
-	if ( $hideroot !== NULL ) {
-		$hideroot = trim( strtolower( $hideroot ) );
-		
-		if ( $hideroot === '1' || $hideroot === 'yes' || $hideroot === 'on' || $hideroot === 'true' ) {
-			$hideroot = true;
-		}
-		else if ( $hideroot === '0' || $hideroot === 'no' || $hideroot === 'off' || $hideroot === 'false' ) {
-			$hideroot = false;
-		}
-	}
+	$hideroot = isset( $argv[ 'hideroot' ] ) ? efCategoryTreeAsBool( $argv[ 'hideroot' ] ) : null;
+	$onlyroot = isset( $argv[ 'onlyroot' ] ) ? efCategoryTreeAsBool( $argv[ 'onlyroot' ] ) : null;
+
+	if ( $onlyroot ) $display = 'onlyroot';
+	else if ( $hideroot ) $display = 'hideroot';
+	else $display = 'expandroot';
 
 	$ct = new CategoryTree;
-	return $ct->getTag( $parser, $cat, $mode, $hideroot, $style );
+	return $ct->getTag( $parser, $cat, $mode, $display, $style );
 }
 
 /**

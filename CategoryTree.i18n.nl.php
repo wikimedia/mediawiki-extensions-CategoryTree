@@ -4,7 +4,7 @@
  * Internationalisation file for the CategoryTree extension
  *
  * @addtogroup Extensions
- * @author Dutch translation by JePe and Siebrand, source file by Daniel Kinzler <duesentrieb@brightbyte.de>
+ * @author Dutch translation by JePe and Siebrand, source file by Daniel Kinzler, brightbyte.de
  * @copyright © 2006 Daniel Kinzler, JePe, Siebrand
  * @licence GNU General Public Licence 2.0 or later
  */

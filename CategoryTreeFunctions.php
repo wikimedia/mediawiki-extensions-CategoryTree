@@ -5,8 +5,8 @@
  * to display the category structure of a wiki
  *
  * @addtogroup Extensions
- * @author Daniel Kinzler <duesentrieb@brightbyte.de>
- * @copyright © 2006 Daniel Kinzler
+ * @author Daniel Kinzler, brightbyte.de
+ * @copyright © 2006-2007 Daniel Kinzler
  * @licence GNU General Public Licence 2.0 or later
  */
  
@@ -113,7 +113,7 @@ class CategoryTree {
 	* Custom tag implementation. This is called by efCategoryTreeParserHook, which is used to 
 	* load CategoryTreeFunctions.php on demand.
 	*/
-	function getTag( &$parser, $category, $mode, $hideroot = false, $style = '' ) {
+	function getTag( &$parser, $category, $mode, $display = 'expandroot', $style = '' ) {
 		global $wgCategoryTreeDisableCache, $wgCategoryTreeDynamicTag;
 		static $uniq = 0;
 
@@ -138,7 +138,7 @@ class CategoryTree {
 			$html .= wfCloseElement( 'span' );
 			}
 		else {
-			if ( !$hideroot ) $html .= CategoryTree::renderNode( $title, $mode, true, $wgCategoryTreeDynamicTag );
+			if ( $display != 'hideroot' ) $html .= CategoryTree::renderNode( $title, $mode, $display != 'onlyroot', $wgCategoryTreeDynamicTag );
 			else if ( !$wgCategoryTreeDynamicTag ) $html .= $this->renderChildren( $title, $mode );
 			else {
 				$uniq += 1;
@@ -273,7 +273,7 @@ class CategoryTree {
 		
 		$load = false;
 		
-		if ( $loadchildren ) {
+		if ( $children && $loadchildren ) {
 			$uniq += 1;
 
 			$load = 'ct-' . $uniq . '-' . mt_rand( 1, 100000 );

@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------
 README for the CategoryTree extension
-Copyright © 2006 Daniel Kinzler
+Copyright © 2006-2007 Daniel Kinzler
 Licenses: GNU General Public Licence (GPL)
           GNU Free Documentation License (GFDL)
 --------------------------------------------------------------------------
@@ -49,11 +49,13 @@ parsing the HTML of category pages.
 
 The custom tag is called <categorytree>. For example, if you put
 <categorytree>Foo</categorytree> on a wiki page, it will show the contents
-of category Foo as a dynamic tree on that page. The tag accepts three
+of category Foo as a dynamic tree on that page. The tag accepts the following
 attributes, using a HTML-like syntax:
 
 * hideroot - set this to "on" to hide the "root" node of the tree, i.e.
              the mention of category Foo from the example.
+             
+* onlyroot - set this to "on" show only the "root" node of the tree initially
              
 * mode - can be "categories" (the default), "pages" or "all". "categories"
          only lists subcategories; "pages" lists all pages in the category
