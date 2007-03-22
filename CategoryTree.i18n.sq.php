@@ -32,8 +32,7 @@
   
 $messages['categorytree']= 'Pema e kategorive';
 $messages['categorytree-tab']= 'Pemë';
-$messages['categorytree-header']= 
-"Fusni emrin e Kategorisë për të parë Nënkategoritë si Pemë kategorish. Këtij funksioni i nevoiten [[:en:JavaScript|JavaScript]] dhe [[:en:AJAX|AJAX]] për të funksionuar si duhet. Nëse keni një shfletues të vjetër, ose nëse i keni deaktivuar JavaScript kjo nuk do të funksionoj.";
+$messages['categorytree-header']= "Fusni emrin e Kategorisë për të parë Nënkategoritë si Pemë kategorish. Këtij funksioni i nevoiten JavaScript dhe AJAX për të funksionuar si duhet. Nëse keni një shfletues të vjetër, ose nëse i keni deaktivuar JavaScript kjo nuk do të funksionoj.";
 
 $messages['categorytree-category']= 'Kategori';
 $messages['categorytree-go']= 'Plotëso';

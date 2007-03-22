@@ -34,7 +34,7 @@ $messages['categorytree']= 'Strom kategorií';
 $messages['categorytree-tab']= 'Strom';
 $messages['categorytree-header']= 
 'Zadejte název kategorie k zobrazení ve stromové struktuře.
-Tato funkce vyžaduje pokročilé funkce [[JavaScript]]u známé jako [[AJAX]].
+Tato funkce vyžaduje pokročilé funkce JavaScriptu známé jako AJAX.
 Jestliže máte velmi starý prohlížeč nebo vypnutý JavaScript, nezobrazí se strom správně nebo vůbec.
 ';
   

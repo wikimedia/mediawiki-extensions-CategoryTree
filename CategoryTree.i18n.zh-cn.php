@@ -34,8 +34,8 @@ $messages['categorytree']= '分类树';
 $messages['categorytree-tab']= '树形目录';
 $messages['categorytree-header']= 
 '在此可以查询以分类的树形结构。
-注意： 本特殊页面使用[[:zh:AJAX]]技术。
-如果您的浏览器非常老旧，或者是关闭了[[:zh:JavaScript]]，本页面将会无法正常运作。
+注意： 本特殊页面使用AJAX技术。
+如果您的浏览器非常老旧，或者是关闭了JavaScript，本页面将会无法正常运作。
 ';
   
 $messages['categorytree-category']= '分类';

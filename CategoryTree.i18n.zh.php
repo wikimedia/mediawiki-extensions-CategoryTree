@@ -34,8 +34,8 @@ $messages['categorytree']= '分類樹';
 $messages['categorytree-tab']= '樹狀目錄';
 $messages['categorytree-header']= 
 '在此可以查詢以分類的樹狀結構。
-注意： 本特殊頁面使用[[:zh:AJAX]]技術。
-如果您的瀏覽器非常老舊，或者是關閉了[[:zh:JavaScript]]，本頁面將會無法正常運作。
+注意： 本特殊頁面使用AJAX技術。
+如果您的瀏覽器非常老舊，或者是關閉了JavaScript，本頁面將會無法正常運作。
 ';
   
 $messages['categorytree-category']= '分類';

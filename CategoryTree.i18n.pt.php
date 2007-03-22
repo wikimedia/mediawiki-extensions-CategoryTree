@@ -34,7 +34,7 @@ $messages['categorytree']= 'Árvore de categorias';
 $messages['categorytree-tab']= 'Árvore';
 $messages['categorytree-header']=
 'Insira o nome de uma categoria para ver seu conteúdo como uma estrutura de "árvore". 
-Note que isso requer funcionalidades avançadas de [[wikipedia:JavaScript|JavaScript]] (como, por exemplo, [[wikipedia:AJAX|AJAX]]).
+Note que isso requer funcionalidades avançadas de JavaScript (como, por exemplo, AJAX).
 Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desabilitado em seu navegador, isto não funcionará.
 ';
   

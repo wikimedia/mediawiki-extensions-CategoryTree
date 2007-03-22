@@ -20,8 +20,7 @@
 
 $messages['categorytree']= 'Kategoria Zuhaitza';
 $messages['categorytree-tab']= 'Zuhaitza';
-$messages['categorytree-header']= 
-"Idatzi kategoria baten izena bere edukia zuhaitz eran ikusteko. Kontuan izan horrek [[:en:AJAX|AJAX]] bezala ezagutzen diren [[:en:JavaScript|JavaScript]] funtzio aurreratuen beharra duela. Nabigatzaile zahar bat erabiltzen baduzu, edo JavaScript ezgaituta badaukazu, ez du funtzionatuko.";
+$messages['categorytree-header']= "Idatzi kategoria baten izena bere edukia zuhaitz eran ikusteko. Kontuan izan horrek AJAX bezala ezagutzen diren JavaScript funtzio aurreratuen beharra duela. Nabigatzaile zahar bat erabiltzen baduzu, edo JavaScript ezgaituta badaukazu, ez du funtzionatuko.";
 
 $messages['categorytree-category']= 'Kategoria';
 $messages['categorytree-go']= 'Zuhaitza Erakutsi';

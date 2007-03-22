@@ -20,8 +20,7 @@
 
 $messages['categorytree']= 'Kategoriarbo';
 $messages['categorytree-tab']= 'Arbo';
-$messages['categorytree-header']= 
-"Tajpu kategorinomon por vidi ties entenon en arbforma strukturo. Notu ke tio postulas [[JavaScript|javaskripatajn]] funkciojn nomitajn [[:en:Ajax (programming)|AJAX]]. Se via foliumilo estas tre malnova au se Javaskripto estas malaktivigita, tio ne funkcios.";
+$messages['categorytree-header']= "Tajpu kategorinomon por vidi ties entenon en arbforma strukturo. Notu ke tio postulas javaskripatajn funkciojn nomitajn AJAX. Se via foliumilo estas tre malnova au se Javaskripto estas malaktivigita, tio ne funkcios.";
 
 $messages['categorytree-category']= 'Kategorio';
 $messages['categorytree-go']= 'Montru arbon';

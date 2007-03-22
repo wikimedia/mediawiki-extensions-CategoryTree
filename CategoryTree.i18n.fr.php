@@ -32,8 +32,7 @@
   
 $messages['categorytree']= 'Arborescence des catégories';
 $messages['categorytree-tab']= 'Arbre';
-$messages['categorytree-header']= 
-'Entrez un nom de catégorie pour voir son contenu en structure [[:fr:Arborescence|arborescente]]. Veuillez noter que ceci utilise des fonctionnalités [[:fr:JavaScript|JavaScript]] avancées connues sous le nom d’[[:fr:Asynchronous JavaScript And XML|AJAX]]. Si vous avez un très vieux navigateur ou que vous n’avez pas activé le JavaScript, ça ne fonctionnera pas.';
+$messages['categorytree-header']= 'Entrez un nom de catégorie pour voir son contenu en structure arborescente. Veuillez noter que ceci utilise des fonctionnalités JavaScript avancées connues sous le nom d’AJAX. Si vous avez un très vieux navigateur ou que vous n’avez pas activé le JavaScript, ça ne fonctionnera pas.';
   
 $messages['categorytree-category']= 'Catégorie';
 $messages['categorytree-go']= 'charger';

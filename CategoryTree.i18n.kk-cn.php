@@ -12,7 +12,7 @@
 $messages['categorytree']= 'سانات بۇتاقتارى';
 $messages['categorytree-tab']= 'بۇتاقتار';
 $messages['categorytree-header']= 'سانات مازمۇنىڭ بۇتاقتار تٴۇردە كٴورۋ ٴۇشٴىن اتاۋىن ەنگٴىزٴىڭٴىز.
-اڭعارپتا: بۇل ٴىسكە [[:en:JavaScript|JavaScript]] قۇرالىنىڭ [[:en:AJAX|AJAX]] دەگەن كەڭەيتٴىلگەن قابٴىلەتٴى قاجەت بولادى.
+اڭعارپتا: بۇل ٴىسكە JavaScript قۇرالىنىڭ AJAX دەگەن كەڭەيتٴىلگەن قابٴىلەتٴى قاجەت بولادى.
 ەگەر شولعىشىڭىز ٴوتە ەسكٴى, نەمەسە JavaScript ٴوشٴىرٴىلگەن بولسا, بۇل ٴىسكە اسىرىلمايدى.';
 
 $messages['categorytree-category']= 'سانات';

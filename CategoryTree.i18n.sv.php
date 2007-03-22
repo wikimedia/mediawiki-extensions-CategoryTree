@@ -34,7 +34,7 @@ $messages['categorytree']= 'Kategoriträd';
 $messages['categorytree-tab']= 'Träd';
 $messages['categorytree-header']= 
 'Ange en kategori för att se dess innehåll som en trädstruktur.
-Notera att stöd för AJAX, en avancerad form av [[:sv:JavaScript|JavaScript]].
+Notera att stöd för AJAX, en avancerad form av JavaScript.
 Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript är avaktiverat.
 ';
   

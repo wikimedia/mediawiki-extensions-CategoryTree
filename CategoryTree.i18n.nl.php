@@ -13,7 +13,7 @@ $messages['categorytree']= 'Categorieboom';
 $messages['categorytree-tab']= 'Boom';
 $messages['categorytree-header']=
 'Geef een categorienaam in om de inhoud als een boomstructuur te bekijken.
-Let op: deze functie gebruikt [[:nl:JavaScript|JavaScript]]-functionaliteit die bekend staat als [[:nl:Ajax (webdesign)|AJAX]].
+Let op: deze functie gebruikt JavaScript-functionaliteit die bekend staat als AJAX.
 Als u een erg verouderde browser heeft of JavaScript staat uitgeschakeld, dan werkt deze functie niet.
 ';
 

@@ -12,7 +12,7 @@
 $messages['categorytree']= 'Sanat butaqtarı';
 $messages['categorytree-tab']= 'Butaqtar';
 $messages['categorytree-header']= 'Sanat mazmunıñ butaqtar türde körw üşin atawın engiziñiz.
-Añğarpta: Bul iske [[:en:JavaScript|JavaScript]] quralınıñ [[:en:AJAX|AJAX]] degen keñeýtilgen qabileti qajet boladı.
+Añğarpta: Bul iske JavaScript quralınıñ AJAX degen keñeýtilgen qabileti qajet boladı.
 Eger şolğışıñız öte eski, nemese JavaScript öşirilgen bolsa, bul iske asırılmaýdı.';
 
 $messages['categorytree-category']= 'Sanat';

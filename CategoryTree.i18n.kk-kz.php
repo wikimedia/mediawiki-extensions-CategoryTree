@@ -12,7 +12,7 @@
 $messages['categorytree']= 'Санат бұтақтары';
 $messages['categorytree-tab']= 'Бұтақтар';
 $messages['categorytree-header']= 'Санат мазмұның бұтақтар түрде көру үшін атауын енгізіңіз.
-Аңғарпта: Бұл іске [[:en:JavaScript|JavaScript]] құралының [[:en:AJAX|AJAX]] деген кеңейтілген қабілеті қажет болады.
+Аңғарпта: Бұл іске JavaScript құралының AJAX деген кеңейтілген қабілеті қажет болады.
 Егер шолғышыңыз өте ескі, немесе JavaScript өшірілген болса, бұл іске асырылмайды.';
 
 $messages['categorytree-category']= 'Санат';

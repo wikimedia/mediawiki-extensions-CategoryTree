@@ -34,7 +34,7 @@ $messages['categorytree']= '分類樹';
 $messages['categorytree-tab']= '樹';
 $messages['categorytree-header']= 
 '輸入分類名去睇佢嘅樹形結構內容。
-請留意呢個係需要進階嘅[[:zh-yue:JavaScript|JavaScript]]功能叫做[[:zh-yue:AJAX|AJAX]]。
+請留意呢個係需要進階嘅JavaScript功能叫做AJAX。
 如果你係有一個好舊嘅瀏覽器，又或者停用咗JavaScript，咁就會用唔到。
 ';
   

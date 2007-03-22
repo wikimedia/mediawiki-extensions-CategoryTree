@@ -32,7 +32,7 @@ $messages['categorytree']= 'Kategorienbaum';
 $messages['categorytree-tab']= 'Baum';
 $messages['categorytree-header']= 
 'Zeigt für die angegebene Kategorie die Unterkategorien in einer Baumstruktur.
-Diese Seite benötigt bestimmte [[w:de:JavaScript|JavaScript]]-Funktionen ([[w:de:AJAX|AJAX]]).
+Diese Seite benötigt bestimmte JavaScript-Funktionen (AJAX).
 In sehr alten Browsern, oder wenn JavaScript abgeschaltet ist, funktioniert diese Seite eventuell nicht.
 ';
 

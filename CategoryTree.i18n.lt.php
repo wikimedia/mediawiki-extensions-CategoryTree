@@ -13,7 +13,7 @@ $messages['categorytree']= 'Kategorijų medis';
 $messages['categorytree-tab']= 'Medis';
 $messages['categorytree-header']= 
 'Įveskite kategorijos pavadinimą, kad pamatytumėte jos turinį kaip medžio struktūrą. 
-Primename, kad tam reikia išplėstinis [[:lt:JavaScript|JavaScript]] fukcionalumas, kitaip žinomas kaip [[:lt:AJAX|AJAX]].
+Primename, kad tam reikia išplėstinis JavaScript fukcionalumas, kitaip žinomas kaip AJAX.
 Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.
 ';
 

@@ -34,7 +34,7 @@ $messages['categorytree']= 'Drzewo kategorii';
 #$messages['categorytree-tab']= 'Tree';
 #$messages['categorytree-header']= 
 #'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced [[:en:JavaScript|JavaScript]] functionality known as [[:en:AJAX|AJAX]].
+#Note that this requires advanced JavaScript functionality known as AJAX.
 #If you have a very old browser, or have JavaScript disabled, it will not work.
 #';
 

@@ -18,10 +18,9 @@
   Free Documentation License". 
  */
 
-$messages['categorytree']= 'Arborescncia de las categorias';
+$messages['categorytree']= 'Arborescéncia de las categorias';
 $messages['categorytree-tab']= 'Arbre';
-$messages['categorytree-header']= 
-"Picatz un nom de categoria per veire son contengut en estructura [[:oc:Arborescncia|arborescenta]]. Notatz qu'aqu utiliza de foncionalitats [[:oc:JavaScript|JavaScript]] avanadas conegudas jol nom d'[[:oc:Asynchronous JavaScript And XML|AJAX]]. S'avtz un navigaire frt vilh o qu'avtz pas activat lo JavaScript, aqu foncionar pas.";
+$messages['categorytree-header']= "Picatz un nom de categoria per veire son contengut en estructura arborescenta. Notatz qu'aquò utiliza de foncionalitats JavaScript avançadas conegudas jol nom d'AJAX. S'avètz un navigaire fòrt vièlh o qu'avètz pas activat lo JavaScript, aquò foncionarà pas.";
 
 $messages['categorytree-category']= 'Categoria';
 $messages['categorytree-go']= 'Cargar';
@@ -41,7 +40,7 @@ $messages['categorytree-no-pages']= 'Pas de pagina o de soscategoria';
 $messages['categorytree-not-found']= "La categoria <i>$1</i> es pas estada trobada.";
 
 $messages['categorytree-show-list'] = "Afichar en lista";
-$messages['categorytree-show-tree'] = "Afichar en arborescncia";
-$messages['categorytree-too-many-subcats'] = "Impossible d'afichar las soscategorias jos forma d'arbre, n'i a trp.";
+$messages['categorytree-show-tree'] = "Afichar en arborescéncia";
+$messages['categorytree-too-many-subcats'] = "Impossible d'afichar las soscategorias jos forma d'arbre, n'i a tròp.";
 
 ?>
