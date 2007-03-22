@@ -28,7 +28,7 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
+$messages['categorytree']= 'Kategóriafa';
 #$messages['categorytree-tab']= 'Tree';
 #$messages['categorytree-header']= 
 #'Enter a category name to see its contents as a tree structure. 
@@ -44,10 +44,10 @@ $messages['categorytree-mode-categories']= 'csak kategóriák';
 #$messages['categorytree-mode-pages']= 'pages except images';
 #$messages['categorytree-mode-all']= 'all pages';
   
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
+$messages['categorytree-collapse']= 'összecsuk';
+$messages['categorytree-expand']= 'kinyit';
 #$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
+$messages['categorytree-loading']= 'töltés';
 $messages['categorytree-nothing-found']= 'nincs találat';
 $messages['categorytree-no-subcategories']= 'nincs alkategória.';
 $messages['categorytree-no-pages']= 'nincs cikk vagy alkategória.';
