@@ -2,7 +2,7 @@
 /*
   Internationalisation file for the CategoryTree extension
   Copyright (C) 2006, Daniel Kinzler, brightbyte.de
-  Shqip translation by Edit
+  Shqip translation by Edit and editors of sq.wikipedia
  
   This file is licensed under the GPL and the GFDL:
   
@@ -30,28 +30,30 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced [[:en:JavaScript|JavaScript]] functionality known as [[:en:AJAX|AJAX]].
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
-  
-$messages['categorytree-category']= 'Category';
-$messages['categorytree-go']= 'Laden';
+$messages['categorytree']= 'Pema e kategorive';
+$messages['categorytree-tab']= 'Pemë';
+$messages['categorytree-header']= 
+"Fusni emrin e Kategorisë për të parë Nënkategoritë si Pemë kategorish. Këtij funksioni i nevoiten [[:en:JavaScript|JavaScript]] dhe [[:en:AJAX|AJAX]] për të funksionuar si duhet. Nëse keni një shfletues të vjetër, ose nëse i keni deaktivuar JavaScript kjo nuk do të funksionoj.";
+
+$messages['categorytree-category']= 'Kategori';
+$messages['categorytree-go']= 'Plotëso';
 $messages['categorytree-parents']= 'Kryekategoritë';
-  
+
 $messages['categorytree-mode-categories']= 'vetëm kategoritë';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
-  
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
-$messages['categorytree-nothing-found']= 'Nuk u gjet asgjë, na falni.';
+$messages['categorytree-mode-pages']= 'faqet pa figurat';
+$messages['categorytree-mode-all']= 'të gjitha faqet';
+
+$messages['categorytree-collapse']= 'mbylle';
+$messages['categorytree-expand']= 'hape';
+$messages['categorytree-load']= 'hape';
+$messages['categorytree-loading']= 'duke plotësuar';
+$messages['categorytree-nothing-found']= 'Ju kërkoj ndjesë, nuk u gjet asgjë.';
 $messages['categorytree-no-subcategories']= 'Asnjë nënkategori.';
 $messages['categorytree-no-pages']= 'Asnjë artikull ose nënkategori.';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages['categorytree-not-found']= "Kategoria <i>$1</i> nuk u gjet";
+
+$messages['categorytree-show-list'] = "Trego si listë";
+$messages['categorytree-show-tree'] = "Trego si pemë";
+$messages['categorytree-too-many-subcats'] = "Nuk mund t'i tregoj nënkategoritë si pemë, sepse ka shumë prej tyre.";
+
 ?>

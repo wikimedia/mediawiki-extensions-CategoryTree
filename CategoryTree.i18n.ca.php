@@ -2,7 +2,7 @@
 /*
   Internationalisation file for the CategoryTree extension
  Copyright (C) 2006, Daniel Kinzler, brightbyte.de;
- Catalan by Martorell
+ Catalan by Martorell and editors of ca.wikipedia
  
   This file is licensed under the GPL and the GFDL:
   
@@ -30,28 +30,25 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced [[:en:JavaScript|JavaScript]] functionality known as [[:en:AJAX|AJAX]].
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
+$messages['categorytree']= 'Categories en arbre';
+$messages['categorytree-tab']= 'Arbre';
+$messages['categorytree-header']= 
+"Entreu el nom d'una categoria per a veure l'arbre del seu contingut. Aquesta pàgina utilitza una funcionalitat avançada del [[JavaScript]] coneguda com a [[AJAX]], i no funciona en navegadors antics o que tinguin el JavaScript desactivat.";
   
 $messages['categorytree-category']= 'Categoria';
 $messages['categorytree-go']= 'Carregueu';
-$messages['categorytree-parents']= 'Parent categories';
+$messages['categorytree-parents']= 'Categories pare';
   
 $messages['categorytree-mode-categories']= 'mostra només categories';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
+$messages['categorytree-mode-pages']= 'mostra categories i pàgines';
+$messages['categorytree-mode-all']= 'mostra categories, pàgines i imatges';
   
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
-$messages['categorytree-nothing-found']= 'no se\'n ha trobat cap';
+$messages['categorytree-collapse']= 'Tancar';
+$messages['categorytree-expand']= 'Expandir';
+$messages['categorytree-load']= 'Carrega';
+$messages['categorytree-loading']= 'carregant';
+$messages['categorytree-nothing-found']= "no hi ha sub-categories";
 $messages['categorytree-no-subcategories']= 'no hi ha subcategories.';
 $messages['categorytree-no-pages']= 'no hi ha articles o subcategories.';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages['categorytree-not-found']= "No s'ha trobat la categoria ''\$1''.";
 ?>
