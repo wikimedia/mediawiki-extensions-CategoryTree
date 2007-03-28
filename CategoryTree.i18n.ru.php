@@ -56,4 +56,8 @@ $messages['categorytree-nothing-found']= 'Данная категория не �
 $messages['categorytree-no-subcategories']= 'нет подкатегорий.';
 $messages['categorytree-no-pages']= 'нет статей и подкатегорий.';
 $messages['categorytree-not-found']= "Категория «$1» не найдена.";
+
+$messages['categorytree-show-list'] = "Список";
+$messages['categorytree-show-tree'] = "Дерево";
+$messages['categorytree-too-many-subcats'] = "Невозможно показать подкатегории в виде дерева — их слишком много.";
 ?>
