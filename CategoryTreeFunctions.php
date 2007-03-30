@@ -86,7 +86,7 @@ class CategoryTree {
 				'page_title' => $dbkey,
 			), __METHOD__ );
 			
-		$mckey = "$wgDBname:categorytree($mode):$dbkey";
+		$mckey = "$wgDBname:categorytree($mode):$dbkey"; //FIXME: would need to add depth parameter.
 		
 		$response = new AjaxResponse();
 		
@@ -98,7 +98,8 @@ class CategoryTree {
 			return $response;
 		}
 		
-		$html = $this->renderChildren( $title, $mode );
+		$html = $this->renderChildren( $title, $mode ); //FIXME: would need to pass depth parameter.
+		
 		if ( $html == '' ) $html = ' ';   #HACK: Safari doesn't like empty responses. 
 						  #see Bug 7219 and http://bugzilla.opendarwin.org/show_bug.cgi?id=10716
 		
@@ -140,7 +141,7 @@ class CategoryTree {
 		else {
 			if ( $display != 'hideroot' ) $html .= CategoryTree::renderNode( $title, $mode, $depth>0, $wgCategoryTreeDynamicTag, $depth-1 );
 			else if ( !$wgCategoryTreeDynamicTag ) $html .= $this->renderChildren( $title, $mode, $depth-1 );
-			else {
+			else { //FIXME: depth would need to be propagated here. this would imact the cache key, too
 				$uniq += 1;
 				$load = 'ct-' . $uniq . '-' . mt_rand( 1, 100000 );
 				

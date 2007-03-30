@@ -106,7 +106,7 @@ function efCategoryTreeAjaxWrapper( $category, $mode = CT_MODE_CATEGORIES ) {
 	global $wgCategoryTreeHTTPCache, $wgSquidMaxAge, $wgUseSquid;
 	
 	$ct = new CategoryTree;
-	$response = $ct->ajax( $category, $mode );
+	$response = $ct->ajax( $category, $mode ); //FIXME: would need to pass on depth parameter here.
 	
 	if ( $wgCategoryTreeHTTPCache && $wgSquidMaxAge && $wgUseSquid ) {
 		$response->setCacheDuration( $wgSquidMaxAge );
