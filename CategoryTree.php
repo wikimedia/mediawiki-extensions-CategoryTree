@@ -34,11 +34,10 @@ define('CT_MODE_ALL', 20);
  * $wgCategoryTreeUseCache - enable HTTP cache for anon users. Default is false.
  * $wgCategoryTreeUnifiedView - use unified view on category pages, instead of "tree" or "traditional list". Default is true.
  * $wgCategoryTreeOmitNamespace - never show namespace prefix. Default is false
-
- * $wgCategoryMaxDepth - maximum value for depth argument; can be an
- *                       integer, or an array of two integers.  The first element is the maximum
- *                       depth for the "pages" and "all" modes; the second is for the categories
- *                       mode.  Ignored if $wgCategoryTreeDynamicTag is true.
+ * $wgCategoryTreeMaxDepth - maximum value for depth argument; An array that maps mode values to
+ *                           the maximum depth acceptable for the depth option. 
+ *                           Per default, the "categories" mode has a max depth of 2,
+ *                           all other modes have a max depth of 1.
  */  
 
 $wgCategoryTreeMaxChildren = 200;
@@ -48,7 +47,7 @@ $wgCategoryTreeDynamicTag = false;
 $wgCategoryTreeHTTPCache = false;
 $wgCategoryTreeUnifiedView = true;
 $wgCategoryTreeOmitNamespace = false;
-$wgCategoryMaxDepth = array(1,2);
+$wgCategoryTreeMaxDepth = array(CT_MODE_PAGES => 1, CT_MODE_ALL => 1, CT_MODE_CATEGORIES => 2);
 
 /**
  * Register extension setup hook and credits
@@ -122,39 +121,23 @@ function efCategoryTreeAjaxWrapper( $category, $mode = CT_MODE_CATEGORIES ) {
  * Internal function to cap depth
  */
 
-function efCategoryTreeCapDepth( $mode, $depth ) 
-{
+function efCategoryTreeCapDepth( $mode, $depth ) {
+	global $wgCategoryTreeMaxDepth;
 
-  if (is_numeric($depth))
-    $depth = intval($depth);
-  else
-    $depth = 1;
-  
+	if (is_numeric($depth))
+		$depth = intval($depth);
+	else return 1;
 
-  global $wgCategoryMaxDepth;
-  if (is_array($wgCategoryMaxDepth)) {
-    switch($mode) {
-    case CT_MODE_PAGES:
-    case CT_MODE_ALL:
-      $max = isset($wgCategoryMaxDepth[0])?$wgCategoryMaxDepth[0]:1;
-      break;
-    case CT_MODE_CATEGORIES:
-    default:
-      $max = isset($wgCategoryMaxDepth[1])?$wgCategoryMaxDepth[1]:1;
-      break;
-    }
-  } elseif (is_numeric($wgCategoryMaxDepth)) {
-    $max = $wgCategoryMaxDepth;
-  } else {
-    wfDebug( 'efCategoryTreeCapDepth: $wgCategoryMaxDepth is invalid.' );
-    $max = 1;
-  }
-  
-  //echo "mode $mode:max is $max\n";
-  if ($depth>$max)
-    $depth = $max;
-  
-  return $depth;
+	if (is_array($wgCategoryTreeMaxDepth)) {
+		$max = isset($wgCategoryTreeMaxDepth[$mode]) ? $wgCategoryTreeMaxDepth[$mode] : 1;
+	} elseif (is_numeric($wgCategoryTreeMaxDepth)) {
+		$max = $wgCategoryTreeMaxDepth;
+	} else {
+		wfDebug( 'efCategoryTreeCapDepth: $wgCategoryTreeMaxDepth is invalid.' );
+		$max = 1;
+	}
+	
+	return min($depth, $max);
 }
 
 /**
@@ -205,13 +188,10 @@ function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
 
 	$depth = efCategoryTreeCapDepth($mode,@$argv[ 'depth' ]);
 	
-	if ( $onlyroot ) $display = 'onlyroot';
-	else if ( $hideroot ) $display = 'hideroot';
-	else $display = 'expandroot';
+	if ( $onlyroot ) $depth = 0;
 
 	$ct = new CategoryTree;
 	return $ct->getTag( $parser, $cat, $mode, $hideroot, $style, $depth );
-	return $ct->getTag( $parser, $cat, $mode, $display, $style, $depth );
 }
 
 /**

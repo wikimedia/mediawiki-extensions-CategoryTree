@@ -331,13 +331,13 @@ class CategoryTree {
 		$s .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeSection' ) );
 		$s .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeItem' ) );
 		
-		$s .= wfOpenElement( 'span', array( 'class' => 'CategoryTreeBullet' ) );
 		if ( $ns == NS_CATEGORY ) {
+			$s .= wfOpenElement( 'span', array( 'class' => 'CategoryTreeBullet' ) );
 			$s .= '[' . wfElement( 'a', $linkattr, $txt ) . '] ';
+			$s .= wfCloseElement( 'span' );
 		} else {
 			$s .= ' ';
 		}
-		$s .= wfCloseElement( 'span' );
 		
 		$s .= wfOpenElement( 'a', array( 'class' => $labelClass, 'href' => $wikiLink ) ) . $label . wfCloseElement( 'a' );
 		$s .= wfCloseElement( 'div' );
