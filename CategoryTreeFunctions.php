@@ -23,7 +23,7 @@ class CategoryTree {
 	 * @param OutputPage $outputPage 
 	 */
 	static function setHeaders( &$outputPage ) {
-		global $wgJsMimeType, $wgScriptPath, $wgContLang;
+		global $wgJsMimeType, $wgScriptPath, $wgContLang, $wgCategoryTreeExtPath;
 		efInjectCategoryTreeMessages();
 		
 		# Register css file for CategoryTree
@@ -31,7 +31,7 @@ class CategoryTree {
 			array( 
 				'rel' => 'stylesheet', 
 				'type' => 'text/css', 
-				'href' => $wgScriptPath . '/extensions/CategoryTree/CategoryTree.css' 
+				'href' => $wgScriptPath . $wgCategoryTreeExtPath . '/CategoryTree.css' 
 			) 
 		);
 		
@@ -41,14 +41,14 @@ class CategoryTree {
 				array( 
 					'rel' => 'stylesheet', 
 					'type' => 'text/css', 
-					'href' => $wgScriptPath . '/extensions/CategoryTree/CategoryTree.rtl.css' 
+					'href' => $wgScriptPath . $wgCategoryTreeExtPath . '/CategoryTree.rtl.css' 
 				) 
 			);
 		}
 		
 		# Register main js file for CategoryTree
 		$outputPage->addScript( 
-			"<script type=\"{$wgJsMimeType}\" src=\"{$wgScriptPath}/extensions/CategoryTree/CategoryTree.js\">" .
+			"<script type=\"{$wgJsMimeType}\" src=\"{$wgScriptPath}{$wgCategoryTreeExtPath}/CategoryTree.js\">" .
 			"</script>\n" 
 		);
 		

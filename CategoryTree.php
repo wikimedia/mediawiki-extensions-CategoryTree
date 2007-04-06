@@ -48,6 +48,7 @@ $wgCategoryTreeHTTPCache = false;
 $wgCategoryTreeUnifiedView = true;
 $wgCategoryTreeOmitNamespace = false;
 $wgCategoryTreeMaxDepth = array(CT_MODE_PAGES => 1, CT_MODE_ALL => 1, CT_MODE_CATEGORIES => 2);
+$wgCategoryTreeExtPath = '/extensions/CategoryTree';
 
 /**
  * Register extension setup hook and credits

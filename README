@@ -94,11 +94,15 @@ $wgCategoryTreeOmitNamespace - never show namespace prefix. Default is
                                <manuel.schneider@wikimedia.ch>, Bug 8011
 
 $wgCategoryMaxDepth - maximum value for depth argument; can be an integer,
-		      or an array of two integers.  The first element is the
+                      or an array of two integers.  The first element is the
                       maximum depth for the "pages" and "all" modes; the
                       second is for the categories mode.  Ignored if
                       $wgCategoryTreeDynamicTag is true. Patch contributed by
                       Steve Sanbeg.
+
+$wgCategoryTreeExtPath - the (URL-) path where the extension is installed,
+                      relative to $wgScriptPath, with leading "/". Default is
+                      "/extensions/CategoryTree".
 
 --------------------------------------------------------------------------
 EOF
