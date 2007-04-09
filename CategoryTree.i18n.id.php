@@ -33,7 +33,7 @@ $messages['categorytree-tab']= 'Pohon';
 $messages['categorytree-header']=
 'Masukkan suatu nama kategori untuk melihat isinya dalam bentuk pohon.
 Harap diperhatikan bahwa fitur ini memerlukan dukungan JavaScript tingkat lanjut yang dikenal sebagai AJAX.
-Jika Anda menggunakan perambah web lama, atau mematikan fungsi JavaScript Anda, fitur ini tidak dapat dijalankan.
+Jika Anda menggunakan penjelajah web lama, atau mematikan fungsi JavaScript Anda, fitur ini tidak dapat dijalankan.
 ';
 
 $messages['categorytree-category']= 'Kategori';
