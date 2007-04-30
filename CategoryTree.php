@@ -49,6 +49,8 @@ $wgCategoryTreeUnifiedView = true;
 $wgCategoryTreeOmitNamespace = false;
 $wgCategoryTreeMaxDepth = array(CT_MODE_PAGES => 1, CT_MODE_ALL => 1, CT_MODE_CATEGORIES => 2);
 $wgCategoryTreeExtPath = '/extensions/CategoryTree';
+$wgCategoryTreeDefaultMode = CT_MODE_CATEGORIES;
+$wgCategoryTreeCategoryPageMode = CT_MODE_CATEGORIES;
 
 /**
  * Register extension setup hook and credits
@@ -103,7 +105,7 @@ function efCategoryTree() {
  * Entry point for Ajax, registered in $wgAjaxExportList.
  * This loads CategoryTreeFunctions.php and calls CategoryTree::ajax()
  */
-function efCategoryTreeAjaxWrapper( $category, $mode = CT_MODE_CATEGORIES ) {
+function efCategoryTreeAjaxWrapper( $category, $mode ) {
 	global $wgCategoryTreeHTTPCache, $wgSquidMaxAge, $wgUseSquid;
 	
 	$ct = new CategoryTree;
@@ -165,6 +167,8 @@ function efCategoryTreeAsBool( $s ) {
  * This loads CategoryTreeFunctions.php and calls CategoryTree::getTag()
  */
 function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
+	global $wgCategoryTreeDefaultMode;
+
 	$parser->mOutput->mCategoryTreeTag = true; # flag for use by efCategoryTreeParserOutput
 	
 	static $initialized = false;
@@ -181,7 +185,7 @@ function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
 		else if ( $mode == 'categories' ) $mode = CT_MODE_CATEGORIES;
 	}
 	else {
-		$mode = CT_MODE_CATEGORIES;
+		$mode = $wgCategoryTreeDefaultMode;
 	}
 	
 	$hideroot = isset( $argv[ 'hideroot' ] ) ? efCategoryTreeAsBool( $argv[ 'hideroot' ] ) : null;

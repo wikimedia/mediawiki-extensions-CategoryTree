@@ -114,7 +114,7 @@ class CategoryTree {
 	* Custom tag implementation. This is called by efCategoryTreeParserHook, which is used to 
 	* load CategoryTreeFunctions.php on demand.
 	*/
-	function getTag( &$parser, $category, $mode, $display = 'expandroot', $style = '', $depth=1 ) {
+	function getTag( &$parser, $category, $mode, $hideroot = false, $style = '', $depth=1 ) {
 		global $wgCategoryTreeDisableCache, $wgCategoryTreeDynamicTag;
 		static $uniq = 0;
 
@@ -139,8 +139,8 @@ class CategoryTree {
 			$html .= wfCloseElement( 'span' );
 			}
 		else {
-			if ( $display != 'hideroot' ) $html .= CategoryTree::renderNode( $title, $mode, $depth>0, $wgCategoryTreeDynamicTag, $depth-1 );
-			else if ( !$wgCategoryTreeDynamicTag ) $html .= $this->renderChildren( $title, $mode, $depth-1 );
+			if ( !$hideroot ) $html .= CategoryTree::renderNode( $title, $mode, $depth>0, $wgCategoryTreeDynamicTag, $depth-1 );
+			else if ( !$wgCategoryTreeDynamicTag ) $html .= $this->renderChildren( $title, $mode, $depth );
 			else { //FIXME: depth would need to be propagated here. this would imact the cache key, too
 				$uniq += 1;
 				$load = 'ct-' . $uniq . '-' . mt_rand( 1, 100000 );
@@ -161,8 +161,8 @@ class CategoryTree {
 	* Returns a string with an HTML representation of the children of the given category.
 	* $title must be a Title object
 	*/
-	function renderChildren( &$title, $mode = CT_MODE_CATEGORIES, $depth=0 ) {
-		global $wgCategoryTreeMaxChildren;
+	function renderChildren( &$title, $mode = NULL, $depth=0 ) {
+		global $wgCategoryTreeMaxChildren, $wgCategoryTreeDefaultMode;
 		
 		$dbr =& wfGetDB( DB_SLAVE );
 
@@ -170,6 +170,8 @@ class CategoryTree {
 		$transFields = '';
 		$transJoin = '';
 		$transWhere = '';
+
+		if ( $mode === NULL ) $wgCategoryTreeDefaultMode;
 		
 		#namespace filter. Should be configurable
 		if ( $mode == CT_MODE_ALL ) $nsmatch = '';
@@ -268,10 +270,11 @@ class CategoryTree {
 	* Returns a string with a HTML represenation of the given page.
 	* $title must be a Title object
 	*/
-	function renderNode( &$title, $mode = CT_MODE_CATEGORIES, $children = false, $loadchildren = false, $depth = 1 ) {
-		global $wgCategoryTreeOmitNamespace;
+	function renderNode( &$title, $mode = NULL, $children = false, $loadchildren = false, $depth = 1 ) {
+		global $wgCategoryTreeOmitNamespace, $wgCategoryTreeDefaultMode;
 		static $uniq = 0;
 		
+		if ( $mode === NULL ) $wgCategoryTreeDefaultMode;
 		$load = false;
 		
 		if ( $children && $loadchildren ) {

@@ -18,7 +18,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	 * Add a subcategory to the internal lists
 	 */
 	function addSubcategory( $title, $sortkey, $pageLength ) {
-		global $wgContLang, $wgOut, $wgRequest;
+		global $wgContLang, $wgOut, $wgRequest, $wgCategoryTreeCategoryPageMode;
 		
 		if ( $wgRequest->getCheck( 'notree' ) ) {
 			return parent::addSubcategory( $title, $sortkey, $pageLength );
@@ -34,13 +34,13 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			$this->categorytree = new CategoryTree;
 		}
 		
-		$this->children[] = $this->categorytree->renderNode( $title );
+		$this->children[] = $this->categorytree->renderNode( $title, $wgCategoryTreeCategoryPageMode );
 
 		$this->children_start_char[] = $this->getSubcategorySortChar( $title, $sortkey );
 	}
 	
 	function getSubcategorySection() {
-		global $wgOut, $wgRequest, $wgCookiePrefix;
+		global $wgOut, $wgRequest, $wgCookiePrefix, $wgCategoryTreeCategoryPageMode;
 
 		if ( $wgRequest->getCheck( 'notree' ) ) {
 			return parent::getSubcategorySection();
@@ -102,7 +102,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			$ct = new CategoryTree;
 
 			foreach ( $this->child_titles as $title ) {
-				$r .= $ct->renderNode( $title );
+				$r .= $ct->renderNode( $title, $wgCategoryTreeCategoryPageMode );
 			}
 		}
 		return $r;
