@@ -190,8 +190,9 @@ function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
 	
 	$hideroot = isset( $argv[ 'hideroot' ] ) ? efCategoryTreeAsBool( $argv[ 'hideroot' ] ) : null;
 	$onlyroot = isset( $argv[ 'onlyroot' ] ) ? efCategoryTreeAsBool( $argv[ 'onlyroot' ] ) : null;
+	$depthArg = isset( $argv[ 'depth' ] ) ? $argv[ 'depth' ] : null;
 
-	$depth = efCategoryTreeCapDepth($mode,@$argv[ 'depth' ]);
+	$depth = efCategoryTreeCapDepth($mode, $depthArg);
 	
 	if ( $onlyroot ) $depth = 0;
 
