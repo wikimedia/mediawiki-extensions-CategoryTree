@@ -6,7 +6,7 @@
  * @author Daniel Kinzler <duesentrieb@brightbyte.de>
  * @copyright © 2006 Daniel Kinzler
  * @licence GNU General Public Licence 2.0 or later
- * Kazakh translation by [[kk:User:AlefZet]]
+ * Kazakh Latin translation by [[kk:User:AlefZet]]
  */
 
 $messages['categorytree']= 'Sanat butaqtarı';
@@ -17,7 +17,7 @@ Eger şolğışıñız öte eski, nemese JavaScript öşirilgen bolsa, bul iske 
 
 $messages['categorytree-category']= 'Sanat';
 $messages['categorytree-go']= 'Butaqtarın körset';
-$messages['categorytree-parents']= 'Joğarğı sanattar';
+$messages['categorytree-parents']= 'Joğarğılar';
 
 $messages['categorytree-mode-categories']= 'tek sanattar';
 $messages['categorytree-mode-pages']= 'better (swretterdi sanamaý)';
@@ -28,12 +28,12 @@ $messages['categorytree-expand']= 'keñeýtw';
 $messages['categorytree-load']= 'jüktew';
 $messages['categorytree-loading']= 'jüktewde';
 $messages['categorytree-nothing-found']= 'eşteñe tabılmadı';
-$messages['categorytree-no-subcategories']= 'tömengi sanatsız';
-$messages['categorytree-no-pages']= 'betsiz ne tömengi sanatsız ';
+$messages['categorytree-no-subcategories']= 'sanatşaları joq';
+$messages['categorytree-no-pages']= 'betteri ne sanatşaları joq';
 $messages['categorytree-not-found']= "<i>$1</i> degen sanat tabılmadı";
 
-$messages['categorytree-show-list'] = "Tizimin körset";
-$messages['categorytree-show-tree'] = "Butaqtarın körset";
-$messages['categorytree-too-many-subcats'] = "Tömengi sanattar tım köp bolğandıqtan, butaqtarı körsetilmeýdi.";
+$messages['categorytree-show-list'] = "Tizimşe körset";
+$messages['categorytree-show-tree'] = "Butaqtarşa körset";
+$messages['categorytree-too-many-subcats'] = "Sanatşalar tım köp bolğandıqtan, butaqtarı körsetilmeýdi.";
 
 ?>

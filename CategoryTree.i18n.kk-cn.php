@@ -6,7 +6,7 @@
  * @author Daniel Kinzler <duesentrieb@brightbyte.de>
  * @copyright © 2006 Daniel Kinzler
  * @licence GNU General Public Licence 2.0 or later
- * Kazakh translation by [[kk:User:AlefZet]]
+ * Kazakh Arabic translation by [[kk:User:AlefZet]]
  */
 
 $messages['categorytree']= 'سانات بۇتاقتارى';
@@ -17,7 +17,7 @@ $messages['categorytree-header']= 'سانات مازمۇنىڭ بۇتاقتار 
 
 $messages['categorytree-category']= 'سانات';
 $messages['categorytree-go']= 'بۇتاقتارىن كٶرسەت';
-$messages['categorytree-parents']= 'جوعارعى ساناتتار';
+$messages['categorytree-parents']= 'جوعارعىلار';
 
 $messages['categorytree-mode-categories']= 'تەك ساناتتار';
 $messages['categorytree-mode-pages']= 'بەتتەر (سۋرەتتەردٸ ساناماي)';
@@ -28,11 +28,12 @@ $messages['categorytree-expand']= 'كەڭەيتۋ';
 $messages['categorytree-load']= 'جٷكتەۋ';
 $messages['categorytree-loading']= 'جٷكتەۋدە';
 $messages['categorytree-nothing-found']= 'ەشتەڭە تابىلمادى';
-$messages['categorytree-no-subcategories']= 'تٶمەنگٸ ساناتسىز';
-$messages['categorytree-no-pages']= 'بەتسٸز نە تٶمەنگٸ ساناتسىز ';
+$messages['categorytree-no-subcategories']= 'ساناتشالارى جوق';
+$messages['categorytree-no-pages']= 'بەتتەرٸ نە ساناتشالارى جوق';
 $messages['categorytree-not-found']= "<i>$1</i> دەگەن سانات تابىلمادى";
 
-$messages['categorytree-show-list'] = "تٸزٸمٸن كٶرسەت";
-$messages['categorytree-show-tree'] = "بۇتاقتارىن كٶرسەت";
-$messages['categorytree-too-many-subcats'] = "تٶمەنگٸ ساناتتار تىم كٶپ بولعاندىقتان, بۇتاقتارى كٶرسەتٸلمەيدٸ.";
+$messages['categorytree-show-list'] = "تٸزٸمشە كٶرسەت";
+$messages['categorytree-show-tree'] = "بۇتاقتارشا كٶرسەت";
+$messages['categorytree-too-many-subcats'] = "ساناتشالار تىم كٶپ بولعاندىقتان, بۇتاقتارى كٶرسەتٸلمەيدٸ.";
+
 ?>

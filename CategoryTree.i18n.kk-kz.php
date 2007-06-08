@@ -6,7 +6,7 @@
  * @author Daniel Kinzler <duesentrieb@brightbyte.de>
  * @copyright © 2006 Daniel Kinzler
  * @licence GNU General Public Licence 2.0 or later
- * Kazakh translation by [[kk:User:AlefZet]]
+ * Kazakh Cyrillic translation by [[kk:User:AlefZet]]
  */
 
 $messages['categorytree']= 'Санат бұтақтары';
@@ -17,7 +17,7 @@ $messages['categorytree-header']= 'Санат мазмұның бұтақтар 
 
 $messages['categorytree-category']= 'Санат';
 $messages['categorytree-go']= 'Бұтақтарын көрсет';
-$messages['categorytree-parents']= 'Жоғарғы санаттар';
+$messages['categorytree-parents']= 'Жоғарғылар';
 
 $messages['categorytree-mode-categories']= 'тек санаттар';
 $messages['categorytree-mode-pages']= 'беттер (суреттерді санамай)';
@@ -28,12 +28,12 @@ $messages['categorytree-expand']= 'кеңейту';
 $messages['categorytree-load']= 'жүктеу';
 $messages['categorytree-loading']= 'жүктеуде';
 $messages['categorytree-nothing-found']= 'ештеңе табылмады';
-$messages['categorytree-no-subcategories']= 'төменгі санатсыз';
-$messages['categorytree-no-pages']= 'бетсіз не төменгі санатсыз ';
+$messages['categorytree-no-subcategories']= 'санатшалары жоқ';
+$messages['categorytree-no-pages']= 'беттері не санатшалары жоқ';
 $messages['categorytree-not-found']= "<i>$1</i> деген санат табылмады";
 
-$messages['categorytree-show-list'] = "Тізімін көрсет";
-$messages['categorytree-show-tree'] = "Бұтақтарын көрсет";
-$messages['categorytree-too-many-subcats'] = "Төменгі санаттар тым көп болғандықтан, бұтақтары көрсетілмейді.";
+$messages['categorytree-show-list'] = "Тізімше көрсет";
+$messages['categorytree-show-tree'] = "Бұтақтарша көрсет";
+$messages['categorytree-too-many-subcats'] = "Санатшалар тым көп болғандықтан, бұтақтары көрсетілмейді.";
 
 ?>
