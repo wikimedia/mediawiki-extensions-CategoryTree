@@ -59,4 +59,4 @@ $messages['categorytree-show-list'] = "Zobrazi jako seznam";
 $messages['categorytree-show-tree'] = "Zobrazit jako strom";
 $messages['categorytree-too-many-subcats'] = "Podkategorie není možné zobrazit ve stromové struktuře, protože je jich příliš mnoho..";
 
-?>
+

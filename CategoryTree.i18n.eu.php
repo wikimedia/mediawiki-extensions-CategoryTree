@@ -43,4 +43,4 @@ $messages['categorytree-show-list'] = "Zerrenda eran erakutsi";
 $messages['categorytree-show-tree'] = "Zuhaitz eran erakutsi";
 $messages['categorytree-too-many-subcats'] = "Ezin dira azpikategoriak zuhaitz eran erakutsi, gehiegi dira-eta.";
 
-?>
+

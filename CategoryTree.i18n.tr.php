@@ -54,4 +54,3 @@ $messages['categorytree-nothing-found']= 'maalesef, sonuç yok';
 $messages['categorytree-no-subcategories']= 'alt kategori yok.';
 $messages['categorytree-no-pages']= 'alt kategori veya madde yok.';
 #$messages['categorytree-not-found']= "Category ''\$1'' not found";
-?>

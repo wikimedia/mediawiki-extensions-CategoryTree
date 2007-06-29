@@ -50,4 +50,4 @@ $messages['categorytree-nothing-found']= 'nessun risultato';
 $messages['categorytree-no-subcategories']= 'nessuna sottocategoria.';
 $messages['categorytree-no-pages']= 'nessuna voce né sottocategoria.';
 $messages['categorytree-not-found']= "Categoria  ''\$1'' non trovata";
-?>
+

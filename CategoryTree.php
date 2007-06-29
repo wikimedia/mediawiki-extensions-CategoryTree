@@ -247,4 +247,4 @@ function efCategoryTreeArticleFromTitle( &$title, &$article ) {
 	return true;
 }
 
-?>
+

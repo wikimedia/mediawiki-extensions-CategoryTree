@@ -33,4 +33,3 @@
 /* Inherit zh-Hans localisation messages */
 require_once('CategoryTree.i18n.zh-cn.php');
 
-?>

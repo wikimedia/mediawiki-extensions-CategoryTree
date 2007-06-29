@@ -56,4 +56,4 @@ $messages['categorytree-not-found']= "Kategori <i>$1</i> tidak ditemukan";
 $messages['categorytree-show-list'] = "Tampilkan daftar";
 $messages['categorytree-show-tree'] = "Tampilkan pohon";
 $messages['categorytree-too-many-subcats'] = "Tidak dapat menampilkan subkategori dalam bentuk pohon karena jumlahnya terlalu banyak.";
-?>
+

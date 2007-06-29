@@ -26,4 +26,4 @@ $messages['categorytree-show-list'] = 'بہ ترتیب فہرست';
 $messages['categorytree-show-tree'] = 'بہ ترتیب شجر';
 $messages['categorytree-too-many-subcats'] = 'ذیلی زمرہ جات کی تعداد کثیر کے باعث بہ ترتیب شجر نہیں کیا جاسکتا';
 
-?>
+

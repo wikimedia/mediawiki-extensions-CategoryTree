@@ -33,4 +33,4 @@ $messages['categorytree-show-list'] = "תצוגת רשימה";
 $messages['categorytree-show-tree'] = "תצוגת עץ";
 $messages['categorytree-too-many-subcats'] = "לא ניתן להציג את קטגוריות המשנה כעץ כיוון שהן מרובות מדי.";
 
-?>
+

@@ -58,4 +58,4 @@ $messages['categorytree-not-found']= "Kategória <i>$1</i> nenájdená";
 $messages['categorytree-show-list'] = "Zobraziť ako zoznam";
 $messages['categorytree-ahow-tree'] = "Zobraziť ako strom";
 $messages['categorytree-too-many-subcats'] = "Nemôžem zobraziť podkategórie ako strom, je ich príliš veľa.";
-?>
+

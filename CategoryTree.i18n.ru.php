@@ -60,4 +60,4 @@ $messages['categorytree-not-found']= "Категория «$1» не найде�
 $messages['categorytree-show-list'] = "Список";
 $messages['categorytree-show-tree'] = "Дерево";
 $messages['categorytree-too-many-subcats'] = "Невозможно показать подкатегории в виде дерева — их слишком много.";
-?>
+

@@ -55,4 +55,4 @@ $messages['categorytree-show-list']        = 'نمایش فهرست‌وار';
 $messages['categorytree-show-tree']        = 'نمایش درخت‌وار';
 $messages['categorytree-too-many-subcats'] = 'به خاطر شمار زیاد آنها، نمی‌توان زیررده‌ها را درخت‌وار نشان داد.';
 
-?>
+

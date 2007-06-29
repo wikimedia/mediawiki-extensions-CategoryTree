@@ -113,4 +113,4 @@ class CategoryTreePage extends SpecialPage {
 	}
 }
 
-?>
+

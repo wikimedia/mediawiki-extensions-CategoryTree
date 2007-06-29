@@ -57,4 +57,3 @@ $messages['categorytree-not-found']= "Kategorin ''\$1'' hittades ej";
 
 $messages['categorytree-show-list'] = "Visa lista";
 $messages['categorytree-show-tree'] = "Visa träd";
-?>

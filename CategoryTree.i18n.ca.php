@@ -50,4 +50,4 @@ $messages['categorytree-nothing-found']= "no hi ha sub-categories";
 $messages['categorytree-no-subcategories']= 'no hi ha subcategories.';
 $messages['categorytree-no-pages']= 'no hi ha articles o subcategories.';
 $messages['categorytree-not-found']= "No s'ha trobat la categoria ''\$1''.";
-?>
+

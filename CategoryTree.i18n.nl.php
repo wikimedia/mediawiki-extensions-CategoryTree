@@ -38,4 +38,3 @@ $messages['categorytree-show-list'] = "Toon als lijst";
 $messages['categorytree-show-tree'] = "Toon als boomstructuur";
 $messages['categorytree-too-many-subcats'] = "Kan de subcategorieën niet als boomstructuur tonen, er zijn er te veel.";
 
-?>

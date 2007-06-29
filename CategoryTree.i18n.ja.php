@@ -33,4 +33,4 @@ $messages['categorytree-show-list'] = "一覧で表示";
 $messages['categorytree-show-tree'] = "ツリー形式で表示";
 $messages['categorytree-too-many-subcats'] = "サブカテゴリの数が多すぎるため、ツリー表示できません。";
 
-?>
+

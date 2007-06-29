@@ -60,4 +60,4 @@ $messages['categorytree-show-list'] = "以列表显示";
 $messages['categorytree-show-tree'] = "以树形显示";
 $messages['categorytree-too-many-subcats'] = "无法以树形显示子分类，因为已经有太多了。";
 
-?>
+

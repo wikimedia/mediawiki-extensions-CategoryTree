@@ -55,4 +55,4 @@ $messages['categorytree-show-list'] = "Trego si listë";
 $messages['categorytree-show-tree'] = "Trego si pemë";
 $messages['categorytree-too-many-subcats'] = "Nuk mund t'i tregoj nënkategoritë si pemë, sepse ka shumë prej tyre.";
 
-?>
+

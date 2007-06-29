@@ -54,4 +54,4 @@ $messages['categorytree-not-found']= "La catégorie <tt>$1</tt> n’a pas été 
 $messages['categorytree-show-list'] = "Afficher en liste";
 $messages['categorytree-show-tree'] = "Afficher en arborescence";
 $messages['categorytree-too-many-subcats'] = "Impossible d’afficher les sous-catégories sous forme d'arbre, il y en a trop.";
-?>
+

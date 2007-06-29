@@ -55,4 +55,4 @@ $messages['categorytree-show-list'] = "Näytä luettelona";
 $messages['categorytree-show-tree'] = "Näytä puuna";
 $messages['categorytree-too-many-subcats'] = "Alaluokkia ei voida näyttää puuna, koska niitä on liian monta.";
 
-?>
+

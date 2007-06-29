@@ -59,4 +59,3 @@ $messages['categorytree-show-list'] = "Exibir como lista";
 $messages['categorytree-show-tree'] = "Exibir como árvore";
 $messages['categorytree-too-many-subcats'] = "Não é possível exibir as subcategorias no modo de árvore, existem muitas subcategorias.";
 
-?>

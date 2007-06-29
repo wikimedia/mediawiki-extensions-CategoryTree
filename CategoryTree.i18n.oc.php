@@ -43,4 +43,4 @@ $messages['categorytree-show-list'] = "Afichar en lista";
 $messages['categorytree-show-tree'] = "Afichar en arborescéncia";
 $messages['categorytree-too-many-subcats'] = "Impossible d'afichar las soscategorias jos forma d'arbre, n'i a tròp.";
 
-?>
+

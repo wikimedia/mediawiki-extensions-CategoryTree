@@ -36,4 +36,4 @@ $messages['categorytree-show-list'] = "Tizimşe körset";
 $messages['categorytree-show-tree'] = "Butaqtarşa körset";
 $messages['categorytree-too-many-subcats'] = "Sanatşalar tım köp bolğandıqtan, butaqtarı körsetilmeýdi.";
 
-?>
+

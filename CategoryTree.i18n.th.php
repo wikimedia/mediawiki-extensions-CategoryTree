@@ -54,4 +54,3 @@ $messages['categorytree-nothing-found']= 'ไม่พบที่ต้อง�
 $messages['categorytree-no-subcategories']= 'ไม่มีหมวดหมู่ย่อย';
 $messages['categorytree-no-pages']= 'ไม่มีบทความหรือหมวดหมู่ย่อย';
 #$messages['categorytree-not-found']= "Category ''\$1'' not found";
-?>

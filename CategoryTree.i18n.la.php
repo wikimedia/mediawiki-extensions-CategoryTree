@@ -55,4 +55,4 @@ $messages['categorytree-show-list'] = 'Monstra quasi indicem';
 $messages['categorytree-show-tree'] = 'Monstra quasi arborem';
 $messages['categorytree-too-many-subcats'] = 'Subcategoriae quasi arborem monstrari non possunt, nimis sunt.';
 
-?>
+

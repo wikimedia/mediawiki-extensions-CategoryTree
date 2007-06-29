@@ -36,4 +36,4 @@ $messages['categorytree-show-list'] = "تٸزٸمشە كٶرسەت";
 $messages['categorytree-show-tree'] = "بۇتاقتارشا كٶرسەت";
 $messages['categorytree-too-many-subcats'] = "ساناتشالار تىم كٶپ بولعاندىقتان, بۇتاقتارى كٶرسەتٸلمەيدٸ.";
 
-?>
+

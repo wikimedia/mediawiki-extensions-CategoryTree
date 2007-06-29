@@ -425,4 +425,4 @@ class CategoryTree {
 		}
 	}
 }
-?>
+

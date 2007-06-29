@@ -36,4 +36,4 @@ $messages['categorytree-show-list'] = "Тізімше көрсет";
 $messages['categorytree-show-tree'] = "Бұтақтарша көрсет";
 $messages['categorytree-too-many-subcats'] = "Санатшалар тым көп болғандықтан, бұтақтары көрсетілмейді.";
 
-?>
+

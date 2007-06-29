@@ -130,4 +130,4 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		parent::finaliseCategoryState();
 	}
 }
-?>
+

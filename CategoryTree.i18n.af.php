@@ -43,4 +43,4 @@ $messages['categorytree-show-list'] = "Wys as lys";
 $messages['categorytree-show-tree'] = "Wys as boom";
 $messages['categorytree-too-many-subcats'] = "Kan nie subkategorieë as boom wys nie, daar is te veel.";
 
-?>
+

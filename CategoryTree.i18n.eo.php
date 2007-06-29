@@ -43,4 +43,4 @@ $messages['categorytree-show-list'] = "Montru listforme";
 $messages['categorytree-show-tree'] = "Montru arbforme";
 $messages['categorytree-too-many-subcats'] = "Ne eblas montri subkategoriojn arbforme : estas tro multe da ili.";
 
-?>
+

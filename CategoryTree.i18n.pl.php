@@ -59,4 +59,4 @@ $messages['categorytree-show-list'] = "Pokaż listę";
 $messages['categorytree-show-tree'] = "Pokaż drzewo";
 $messages['categorytree-too-many-subcats'] = "Podkategorie nie mogą być wyświetlone w drzewie, ponieważ jest ich zbyt dużo.";
 
-?>
+

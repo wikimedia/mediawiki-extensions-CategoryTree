@@ -38,4 +38,4 @@ $messages['categorytree-show-list'] = "Rodyti kaip sąraašą";
 $messages['categorytree-show-tree'] = "Rodyti kaip medį";
 $messages['categorytree-too-many-subcats'] = "Negalima rodyti subkategorijų kaip medį, nes jų yra per daug.";
 
-?>
+

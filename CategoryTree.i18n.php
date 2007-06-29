@@ -38,4 +38,4 @@ $messages['categorytree-show-list'] = "Show as list";
 $messages['categorytree-show-tree'] = "Show as tree";
 $messages['categorytree-too-many-subcats'] = "Can't show subcategories as a tree, there's too many of them.";
 
-?>
+

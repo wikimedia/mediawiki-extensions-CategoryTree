@@ -47,4 +47,4 @@ $messages['categorytree-show-list'] = "Sýna sem lista";
 $messages['categorytree-show-tree'] = "Sýna sem tré";
 $messages['categorytree-too-many-subcats'] = "Get ekki sýnt undirflokka sem tré, eir eru of margir.";
 
-?>
+

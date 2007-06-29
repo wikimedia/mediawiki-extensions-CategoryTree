@@ -54,4 +54,3 @@ $messages['categorytree-nothing-found']= 'Không có gì.';
 $messages['categorytree-no-subcategories']= 'Không có tiểu thể loại.';
 $messages['categorytree-no-pages']= 'Không có trang hay tiểu thể loại.';
 #$messages['categorytree-not-found']= "Category ''\$1'' not found";
-?>

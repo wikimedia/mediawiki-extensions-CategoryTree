@@ -43,4 +43,4 @@ $messages['categorytree-show-list'] = "Prikaži kao listu";
 $messages['categorytree-show-tree'] = "Prikaži kao stablo";
 $messages['categorytree-too-many-subcats'] = "Ne mogu prikazati podkategorije, previše ih je.";
 
-?>
+
