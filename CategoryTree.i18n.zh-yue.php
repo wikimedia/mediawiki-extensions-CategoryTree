@@ -2,7 +2,7 @@
 /*
   Internationalisation file for the CategoryTree extension
   Copyright (C) 2006, Daniel Kinzler, brightbyte.de
-  Traditional Chinese by Alex S.H. Lin and Shinjiman
+  Cantonese by Shinjiman
  
   This file is licensed under the GPL and the GFDL:
   
@@ -32,5 +32,6 @@
 
 /* Inherit yue localisation messages */
 require_once('CategoryTree.i18n.yue.php');
+
 
 
