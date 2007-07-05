@@ -31,5 +31,6 @@
   */
 
 /* Inherit zh-Hans localisation messages */
-require_once('CategoryTree.i18n.zh-cn.php');
+require_once('CategoryTree.i18n.zh-hans.php');
+
 
