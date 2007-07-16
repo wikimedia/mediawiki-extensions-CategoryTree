@@ -51,13 +51,14 @@ $messages['categorytree-expand']= '展開';
 $messages['categorytree-load']= '載入';
 $messages['categorytree-loading']= '載入中';
 $messages['categorytree-nothing-found']= '找不到任何項目';
-$messages['categorytree-no-subcategories']= '没有子分類';
-$messages['categorytree-no-pages']= '没有頁面或子分類';
+$messages['categorytree-no-subcategories']= '沒有子分類';
+$messages['categorytree-no-pages']= '沒有頁面或子分類';
 $messages['categorytree-not-found']= "找不到分類<i>$1</i>";
 
 
 $messages['categorytree-show-list'] = "以清單顯示";
 $messages['categorytree-show-tree'] = "以樹狀顯示";
 $messages['categorytree-too-many-subcats'] = "無法以樹狀顯示子分類，因為已經有太多了。";
+
 
 
