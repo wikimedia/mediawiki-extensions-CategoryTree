@@ -30,27 +30,27 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced JavaScript functionality known as AJAX.
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
+$messages['categorytree']= 'Árbol de categorías (CategoryTree)';
+$messages['categorytree-tab']= 'Árbol';
+$messages['categorytree-header']= 
+'Escribe un nombre de categoría para ver su contenido con una estructura en árbol. 
+Ten en cuenta que esto requiere funciones JavaScript avanzadas conocidas como AJAX.
+Si tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no funcionará.
+';
   
 $messages['categorytree-category']= 'Categoría';
 $messages['categorytree-go']= 'Cargar';
 $messages['categorytree-parents']= 'Categorías superiores';
   
 $messages['categorytree-mode-categories']= 'mostrar sólo categorías';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
+$messages['categorytree-mode-pages']= 'páginas excepto imágenes';
+$messages['categorytree-mode-all']= 'todas las páginas';
   
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
+$messages['categorytree-collapse']= 'ocultar';
+$messages['categorytree-expand']= 'mostrar';
+$messages['categorytree-load']= 'cargar';
+$messages['categorytree-loading']= 'cargando';
 $messages['categorytree-nothing-found']= 'Lo sentimos, no se ha encontrado nada';
 $messages['categorytree-no-subcategories']= 'sin subcategorías.';
 $messages['categorytree-no-pages']= 'sin artículos ni subcategorías.';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages['categorytree-not-found']= "Categoría ''\$1'' no encontrada";
