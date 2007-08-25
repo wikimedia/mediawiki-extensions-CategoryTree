@@ -379,7 +379,7 @@ class CategoryTree {
 		# The title must be in the category namespace
 		# Ignore a leading Category: if there is one
 		$t = Title::newFromText( $title, NS_CATEGORY );
-		if ( $t && $t->getNamespace() != NS_CATEGORY ) {
+		if ( $t && ( $t->getNamespace() != NS_CATEGORY || $t->getInterWiki() != '' ) ) {
 			$title = "Category:$title";
 			$t = Title::newFromText( $title );
 		}
