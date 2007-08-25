@@ -55,7 +55,7 @@ class CategoryTreePage extends SpecialPage {
 		
 		$this->mode = (int)$this->mode;
 		
-		$wgOut->addWikiText( wfMsg( 'categorytree-header' ) );
+		$wgOut->addWikiText( wfMsgNoTrans( 'categorytree-header' ) );
 		
 		$wgOut->addHtml( $this->makeInputForm() );
 		
