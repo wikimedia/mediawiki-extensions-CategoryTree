@@ -51,6 +51,7 @@ $wgCategoryTreeMaxDepth = array(CT_MODE_PAGES => 1, CT_MODE_ALL => 1, CT_MODE_CA
 $wgCategoryTreeExtPath = '/extensions/CategoryTree';
 $wgCategoryTreeDefaultMode = CT_MODE_CATEGORIES;
 $wgCategoryTreeCategoryPageMode = CT_MODE_CATEGORIES;
+$wgCategoryTreeVersion = '1';
 
 /**
  * Register extension setup hook and credits

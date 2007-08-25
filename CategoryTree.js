@@ -8,7 +8,11 @@
  * @copyright © 2006 Daniel Kinzler
  * @licence GNU General Public Licence 2.0 or later
 */
-    
+
+// Default messages if new code loaded with old cached page
+var categoryTreeErrorMsg = "Problem loading data."; 
+var categoryTreeRetryMsg = "Please wait a moment and try again.";
+
     function categoryTreeNextDiv(e) {
       var n= e.nextSibling;
       while ( n && ( n.nodeType != 1 || n.nodeName != 'DIV') ) {
@@ -55,10 +59,19 @@
       div.innerHTML= '<i class="CategoryTreeNotice">' + categoryTreeLoadingMsg + '</i>';
       
       function f( request ) {
+          if (request.status != 200) {
+              div.innerHTML = '<i class="CategoryTreeNotice">' + categoryTreeErrorMsg + ' </i>';
+              var retryLink = document.createElement('a');
+              retryLink.innerHTML = categoryTreeRetryMsg;
+              retryLink.onclick = function() {
+                  categoryTreeLoadChildren(cat, mode, div);
+              }
+              div.appendChild(retryLink);
+              return;
+          }
+
           result= request.responseText;
           result= result.replace(/^\s+|\s+$/, '');
-
-          if (request.status != 200) result= "<div class='error'> " + request.status + " " + request.statusText + ": " + result + "</div>";
           
           if ( result == '' ) {
                     result= '<i class="CategoryTreeNotice">';

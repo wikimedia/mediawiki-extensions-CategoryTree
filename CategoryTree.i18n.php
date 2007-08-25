@@ -33,6 +33,8 @@ $messages['categorytree-nothing-found']= 'nothing found';
 $messages['categorytree-no-subcategories']= 'no subcategories';
 $messages['categorytree-no-pages']= 'no pages or subcategories';
 $messages['categorytree-not-found']= "Category <i>$1</i> not found";
+$messages['categorytree-error'] = 'Problem loading data.';
+$messages['categorytree-retry'] = 'Please wait a moment and try again.';
 
 $messages['categorytree-show-list'] = "Show as list";
 $messages['categorytree-show-tree'] = "Show as tree";

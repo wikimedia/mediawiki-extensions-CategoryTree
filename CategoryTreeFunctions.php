@@ -23,7 +23,7 @@ class CategoryTree {
 	 * @param OutputPage $outputPage 
 	 */
 	static function setHeaders( &$outputPage ) {
-		global $wgJsMimeType, $wgScriptPath, $wgContLang, $wgCategoryTreeExtPath;
+		global $wgJsMimeType, $wgScriptPath, $wgContLang, $wgCategoryTreeExtPath, $wgCategoryTreeVersion;
 		efInjectCategoryTreeMessages();
 		
 		# Register css file for CategoryTree
@@ -31,7 +31,7 @@ class CategoryTree {
 			array( 
 				'rel' => 'stylesheet', 
 				'type' => 'text/css', 
-				'href' => $wgScriptPath . $wgCategoryTreeExtPath . '/CategoryTree.css' 
+				'href' => "$wgScriptPath$wgCategoryTreeExtPath/CategoryTree.css?$wgCategoryTreeVersion",
 			) 
 		);
 		
@@ -41,14 +41,14 @@ class CategoryTree {
 				array( 
 					'rel' => 'stylesheet', 
 					'type' => 'text/css', 
-					'href' => $wgScriptPath . $wgCategoryTreeExtPath . '/CategoryTree.rtl.css' 
+					'href' => "$wgScriptPath$wgCategoryTreeExtPath/CategoryTree.rtl.css?$wgCategoryTreeVersion" 
 				) 
 			);
 		}
 		
 		# Register main js file for CategoryTree
 		$outputPage->addScript( 
-			"<script type=\"{$wgJsMimeType}\" src=\"{$wgScriptPath}{$wgCategoryTreeExtPath}/CategoryTree.js\">" .
+			"<script type=\"{$wgJsMimeType}\" src=\"{$wgScriptPath}{$wgCategoryTreeExtPath}/CategoryTree.js?{$wgCategoryTreeVersion}\">" .
 			"</script>\n" 
 		);
 		
@@ -62,6 +62,8 @@ class CategoryTree {
 			var categoryTreeNothingFoundMsg = \"".Xml::escapeJsString(self::msg('nothing-found'))."\"; 
 			var categoryTreeNoSubcategoriesMsg = \"".Xml::escapeJsString(self::msg('no-subcategories'))."\"; 
 			var categoryTreeNoPagesMsg = \"".Xml::escapeJsString(self::msg('no-pages'))."\"; 
+			var categoryTreeErrorMsg = \"".Xml::escapeJsString(self::msg('error'))."\"; 
+			var categoryTreeRetryMsg = \"".Xml::escapeJsString(self::msg('retry'))."\"; 
 			</script>\n" 
 		);
 	}	
