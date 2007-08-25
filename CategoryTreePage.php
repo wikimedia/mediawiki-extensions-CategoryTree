@@ -97,9 +97,11 @@ class CategoryTreePage extends SpecialPage {
 	 * Input form for entering a category
 	 */
 	function makeInputForm() {
+		global $wgScript;
 		$thisTitle = Title::makeTitle( NS_SPECIAL, $this->getName() );
 		$form = '';
-		$form .= wfOpenElement( 'form', array( 'name' => 'categorytree', 'method' => 'get', 'action' => $thisTitle->getLocalUrl() ) );
+		$form .= wfOpenElement( 'form', array( 'name' => 'categorytree', 'method' => 'get', 'action' => $wgScript ) );
+		$form .= wfElement( 'input', array( 'type' => 'hidden', 'name' => 'title', 'value' => $thisTitle->getPrefixedDbKey() ) );
 		$form .= wfElement( 'label', array( 'for' => 'target' ), wfMsg( 'categorytree-category' ) ) . ' ';
 		$form .= wfElement( 'input', array( 'type' => 'text', 'name' => 'target', 'id' => 'target', 'value' => $this->target ) ) . ' ';
 		$form .= wfOpenElement( 'select', array( 'name' => 'mode' ) );
