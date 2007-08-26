@@ -28,6 +28,8 @@ $messages['categorytree-nothing-found']= 'לא נמצאו תוצאות';
 $messages['categorytree-no-subcategories']= 'אין קטגוריות משנה';
 $messages['categorytree-no-pages']= 'אין דפים או קטגוריות משנה';
 $messages['categorytree-not-found']= "הקטגוריה '''$1''' לא נמצאה";
+$messages['categorytree-error'] = 'בעיה בטעינת המידע.';
+$messages['categorytree-retry'] = 'אנא המתינו מעט ונסו שנית.';
 
 $messages['categorytree-show-list'] = "תצוגת רשימה";
 $messages['categorytree-show-tree'] = "תצוגת עץ";
