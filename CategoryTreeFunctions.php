@@ -183,8 +183,7 @@ class CategoryTree {
 		$page = $dbr->tableName( 'page' );
 		$categorylinks = $dbr->tableName( 'categorylinks' );
 		
-		$sql = "SELECT cat.page_namespace, cat.page_title, 
-				CASE WHEN cat.page_namespace=".NS_CATEGORY." THEN 0 ELSE 1 END AS presort
+		$sql = "SELECT cat.page_namespace, cat.page_title
 					  $transFields
 				FROM $page as cat
 				JOIN $categorylinks ON cl_from = cat.page_id
@@ -193,23 +192,29 @@ class CategoryTree {
 				$nsmatch
 				"./*AND cat.page_is_redirect = 0*/"
 				$transWhere
-				ORDER BY presort, cl_sortkey
+				ORDER BY cl_sortkey
 				LIMIT " . (int)$wgCategoryTreeMaxChildren;
 
 		$res = $dbr->query( $sql, __METHOD__ );
 		
-		$s= '';
+		#collect categories separately from other pages
+		$categories= '';
+		$other= '';
 		
 		while ( $row = $dbr->fetchRow( $res ) ) {
-				#TODO: translation support; ideally added to Title object
-				$t = Title::makeTitle( $row['page_namespace'], $row['page_title'] );
-				$s .= $this->renderNode( $t, $mode, $depth>0, false, $depth-1 );
-				$s .= "\n\t\t";
+			#TODO: translation support; ideally added to Title object
+			$t = Title::makeTitle( $row['page_namespace'], $row['page_title'] );
+
+			$s = $this->renderNode( $t, $mode, $depth>0, false, $depth-1 );
+			$s .= "\n\t\t";
+
+			if ($row['page_namespace'] == NS_CATEGORY) $categories .= $s;
+			else $other .= $s;
 		}
 		
 		$dbr->freeResult( $res );
 		
-		return $s;
+		return $categories . $other;
 	}
 
 	/**
