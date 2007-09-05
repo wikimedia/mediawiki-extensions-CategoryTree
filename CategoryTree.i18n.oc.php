@@ -18,29 +18,25 @@
   Free Documentation License". 
  */
 
-$messages['categorytree']= 'Arborescéncia de las categorias';
-$messages['categorytree-tab']= 'Arbre';
-$messages['categorytree-header']= "Picatz un nom de categoria per veire son contengut en estructura arborescenta. Notatz qu'aquò utiliza de foncionalitats JavaScript avançadas conegudas jol nom d'AJAX. S'avètz un navigaire fòrt vièlh o qu'avètz pas activat lo JavaScript, aquò foncionarà pas.";
-
-$messages['categorytree-category']= 'Categoria';
-$messages['categorytree-go']= 'Cargar';
-$messages['categorytree-parents']= 'Subre-categoria(s)';
-
-$messages['categorytree-mode-categories']= 'pas que las categorias';
-$messages['categorytree-mode-pages']= 'paginas sens los imatges';
-$messages['categorytree-mode-all']= 'totas las categorias';
-
-$messages['categorytree-collapse']= 'Rebatre';
-$messages['categorytree-expand']= 'Desplegar';
-$messages['categorytree-load']= 'Dobrir';
-$messages['categorytree-loading']= 'dobertura...';
-$messages['categorytree-nothing-found']= 'Cap de soscategoria';
-$messages['categorytree-no-subcategories']= 'Pas de soscategoria';
-$messages['categorytree-no-pages']= 'Pas de pagina o de soscategoria';
-$messages['categorytree-not-found']= "La categoria <i>$1</i> es pas estada trobada.";
-
-$messages['categorytree-show-list'] = "Afichar en lista";
-$messages['categorytree-show-tree'] = "Afichar en arborescéncia";
-$messages['categorytree-too-many-subcats'] = "Impossible d'afichar las soscategorias jos forma d'arbre, n'i a tròp.";
-
-
+$messages = array(
+	'categorytree' => 'Arborescéncia de las categorias',
+	'categorytree-tab' => 'Arborescéncia',
+	'categorytree-header' => 'Picatz un nom de categoria per veire son contengut en estructura arborescenta. Notatz qu\'aquò utiliza de foncionalitats JavaScript avançadas conegudas jol nom d\'AJAX. S\'avètz un navigaire fòrt vièlh o qu\'avètz pas activat lo JavaScript, aquò foncionarà pas.',
+	'categorytree-category' => 'Categoria',
+	'categorytree-go' => 'Mostrar l\'arborescéncia',
+	'categorytree-parents' => 'Subre-categoria(s)',
+	'categorytree-mode-categories' => 'pas que las categorias',
+	'categorytree-mode-pages' => 'paginas sens los imatges',
+	'categorytree-mode-all' => 'totas las paginas',
+	'categorytree-collapse' => 'Rebatre',
+	'categorytree-expand' => 'Desplegar',
+	'categorytree-load' => 'Dobrir',
+	'categorytree-loading' => 'dobertura...',
+	'categorytree-nothing-found' => 'Cap de soscategoria',
+	'categorytree-no-subcategories' => 'Pas de soscategoria',
+	'categorytree-no-pages' => 'Pas de pagina o de soscategoria',
+	'categorytree-not-found' => 'La categoria <i>$1</i> es pas estada trobada.',
+	'categorytree-show-list' => 'Afichar en lista',
+	'categorytree-show-tree' => 'Afichar en arborescéncia',
+	'categorytree-too-many-subcats' => 'Impossible d\'afichar las soscategorias jos forma d\'arbre, n\'i a tròp.',
+);
