@@ -81,7 +81,7 @@ $wgSpecialPages['CategoryTree'] = 'CategoryTreePage';
 $wgHooks['OutputPageParserOutput'][] = 'efCategoryTreeParserOutput';
 $wgHooks['LoadAllMessages'][] = 'efInjectCategoryTreeMessages';
 $wgHooks['ArticleFromTitle'][] = 'efCategoryTreeArticleFromTitle';
-
+$wgHooks['LanguageGetMagic'][] = 'efCategoryTreeGetMagic';
 /**
  * register Ajax function
  */
@@ -99,7 +99,24 @@ function efCategoryTree() {
 		return;
 	}
 
-	if ( $wgCategoryTreeAllowTag ) $wgParser->setHook( 'categorytree' , 'efCategoryTreeParserHook' );
+	if ( $wgCategoryTreeAllowTag ) {
+		$wgParser->setHook( 'categorytree' , 'efCategoryTreeParserHook' );
+		$wgParser->setFunctionHook( 'categorytree' , 'efCategoryTreeParserFunction' );
+	}
+}
+
+/**
+* Hook magic word
+*/
+function efCategoryTreeGetMagic( &$magicWords, $langCode ) {
+	global $wgUseAjax, $wgCategoryTreeAllowTag;
+
+	if ( $wgUseAjax && $wgCategoryTreeAllowTag ) {
+		//XXX: should we allow a local alias?
+		$magicWords['categorytree'] = array( 0, 'categorytree' );
+	}
+
+	return true;
 }
 
 /**
@@ -161,6 +178,38 @@ function efCategoryTreeAsBool( $s ) {
 	else {
 		return NULL;
 	}
+}
+
+/**
+ * Entry point for the {{#categorytree}} tag parser function.
+ * This is a wrapper around efCategoryTreeParserHook
+ */
+function efCategoryTreeParserFunction( &$parser ) {
+	$params = func_get_args();
+	array_shift( $params ); //first is &$parser, strip it
+
+	//first user-supplied parameter must be category name
+	if ( !$params ) return ''; //no category specified, return nothing
+	$cat = array_shift( $params );
+
+	//build associative arguments from flat parameter list
+	$argv = array();
+	foreach ( $params as $p ) {
+		if ( preg_match('/^\s*(\S.*?)\s*=\s*(.*?)\s*$/', $p, $m) ) {
+			$k = $m[1];
+			$v = $m[2];
+		}
+		else {
+			$k = trim($p);
+			$v = true;
+		}
+
+		$argv[$k] = $v;
+	}
+
+	//now handle just like a <categorytree> tag
+	$html = efCategoryTreeParserHook( $cat, $argv, $parser );
+	return array( $html, 'noargs' => true, 'noparse' => true ); //XXX: isHTML would be right logically, but it causes extra blank lines
 }
 
 /**

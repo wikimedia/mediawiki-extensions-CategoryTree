@@ -48,9 +48,9 @@ the URL parameter "notree" - this is intended for bots that rely on
 parsing the HTML of category pages.
 
 The custom tag is called <categorytree>. For example, if you put
-<categorytree>Foo</categorytree> on a wiki page, it will show the contents
-of category Foo as a dynamic tree on that page. The tag accepts the following
-attributes, using a HTML-like syntax:
+<categorytree mode="pages">Foo</categorytree> on a wiki page, it will show
+the contents of category Foo as a dynamic tree on that page. The tag accepts
+the following attributes, using a HTML-like syntax:
 
 * hideroot - set this to "on" to hide the "root" node of the tree, i.e.
              the mention of category Foo from the example.
@@ -64,7 +64,11 @@ attributes, using a HTML-like syntax:
          
 * style - can be used to specify any CSS styles you would like for the
           tree.
-          
+
+Alternatively to the <categorytree> tag, parser-function syntax can also be
+used, e.g {{#categorytree:Foo|hideroot=yes}}. This syntax allows the use of
+magic variables, templates and template parameters for the category name.
+
 The special page is called Special:CategoryTree; there you can enter the
 name of a category and then browse it's content. The CategoryTree
 extension also adds a tab for this special page to every category page.
