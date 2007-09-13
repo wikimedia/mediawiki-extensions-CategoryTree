@@ -30,33 +30,30 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-$messages['categorytree']= 'Strom kategorií';
-$messages['categorytree-tab']= 'Strom';
-$messages['categorytree-header']= 
-'Zadejte název kategorie k zobrazení ve stromové struktuře.
+$messages = array(
+	'categorytree' => 'Strom kategorií',
+	'categorytree-tab' => 'Strom',
+	'categorytree-header' => 'Zadejte název kategorie k zobrazení ve stromové struktuře.
 Tato funkce vyžaduje pokročilé funkce JavaScriptu známé jako AJAX.
 Jestliže máte velmi starý prohlížeč nebo vypnutý JavaScript, nezobrazí se strom správně nebo vůbec.
-';
-  
-$messages['categorytree-category']= 'Kategorie';
-$messages['categorytree-go']= 'Zobrazit';
-$messages['categorytree-parents']= 'Nadřazené kategorie';
-  
-$messages['categorytree-mode-categories']= 'ukaž pouze kategorie';
-$messages['categorytree-mode-pages']= 'stránky kromě obrázků';
-$messages['categorytree-mode-all']= 'všechny stránky';
-  
-$messages['categorytree-collapse']= 'zavřít';
-$messages['categorytree-expand']= 'otevřít';
-$messages['categorytree-load']= 'načíst';
-$messages['categorytree-loading']= 'načítá se';
-$messages['categorytree-nothing-found']= 'nic nebylo nalezeno';
-$messages['categorytree-no-subcategories']= 'žádné podkategorie.';
-$messages['categorytree-no-pages']= 'žádné články ani podkategorie.';
-$messages['categorytree-not-found']= "Kategorie <i>$1</i> nenalezena";
-
-$messages['categorytree-show-list'] = "Zobrazi jako seznam";
-$messages['categorytree-show-tree'] = "Zobrazit jako strom";
-$messages['categorytree-too-many-subcats'] = "Podkategorie není možné zobrazit ve stromové struktuře, protože je jich příliš mnoho..";
-
-
+',
+	'categorytree-category' => 'Kategorie',
+	'categorytree-go' => 'Zobrazit',
+	'categorytree-parents' => 'Nadřazené kategorie',
+	'categorytree-mode-categories' => 'ukaž pouze kategorie',
+	'categorytree-mode-pages' => 'stránky kromě obrázků',
+	'categorytree-mode-all' => 'všechny stránky',
+	'categorytree-collapse' => 'zavřít',
+	'categorytree-expand' => 'otevřít',
+	'categorytree-load' => 'načíst',
+	'categorytree-loading' => 'načítá se',
+	'categorytree-nothing-found' => 'nic nebylo nalezeno',
+	'categorytree-no-subcategories' => 'žádné podkategorie.',
+	'categorytree-no-pages' => 'žádné články ani podkategorie.',
+	'categorytree-not-found' => 'Kategorie <i>$1</i> nenalezena',
+	'categorytree-error' => 'Chyba při načítání dat.',
+	'categorytree-retry' => 'Počkejte chvilku a zkuste to znova.',
+	'categorytree-show-list' => 'Zobrazi jako seznam',
+	'categorytree-show-tree' => 'Zobrazit jako strom',
+	'categorytree-too-many-subcats' => 'Podkategorie není možné zobrazit ve stromové struktuře, protože je jich příliš mnoho..',
+);
