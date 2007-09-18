@@ -166,6 +166,11 @@ class CategoryTree {
 	function renderChildren( &$title, $mode = NULL, $depth=0 ) {
 		global $wgCategoryTreeMaxChildren, $wgCategoryTreeDefaultMode;
 		
+		if( $title->getNamespace() != NS_CATEGORY ) {
+			// Non-categories can't have children. :)
+			return '';
+		}
+		
 		$dbr =& wfGetDB( DB_SLAVE );
 
 		#additional stuff to be used if "transaltion" by interwiki-links is desired
