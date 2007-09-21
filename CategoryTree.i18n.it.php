@@ -29,25 +29,26 @@
   along with this program; if not, write to the Free Software
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
-  
-$messages['categorytree']= 'Struttura ad albero delle categorie';
-$messages['categorytree-tab']= 'Albero';
-$messages['categorytree-header']= 'Inserire il nome della categoria di cui si desidera vedere il contenuto sotto forma di struttura ad albero. Si noti che la pagina richiede le funzionalità avanzate di JavaScript chiamate AJAX; qualora si stia usando un browser molto vecchio o le funzioni JavaScript siano disabilitate, questa pagina non funzionerà.';
-  
-$messages['categorytree-category']= 'Categoria';
-$messages['categorytree-go']= 'Carica';
-$messages['categorytree-parents']= 'Categorie superiori';
-  
-$messages['categorytree-mode-categories']= 'mostra solo le categorie';
-$messages['categorytree-mode-pages']= 'tutte le pagine, escluse le immagini';
-$messages['categorytree-mode-all']= 'tutte le pagine';
-  
-$messages['categorytree-collapse']= 'comprimi';
-$messages['categorytree-expand']= 'espandi';
-$messages['categorytree-load']= 'carica';
-$messages['categorytree-loading']= 'caricamento in corso';
-$messages['categorytree-nothing-found']= 'nessun risultato';
-$messages['categorytree-no-subcategories']= 'nessuna sottocategoria.';
-$messages['categorytree-no-pages']= 'nessuna voce né sottocategoria.';
-$messages['categorytree-not-found']= "Categoria  ''\$1'' non trovata";
 
+$messages = array(
+	'categorytree' => 'Struttura ad albero delle categorie',
+	'categorytree-tab' => 'Albero',
+	'categorytree-header' => 'Inserire il nome della categoria di cui si desidera vedere il contenuto sotto forma di struttura ad albero. Si noti che la pagina richiede le funzionalità avanzate di JavaScript chiamate AJAX; qualora si stia usando un browser molto vecchio o le funzioni JavaScript siano disabilitate, questa pagina non funzionerà.',
+	'categorytree-category' => 'Categoria',
+	'categorytree-go' => 'Carica',
+	'categorytree-parents' => 'Categorie superiori',
+	'categorytree-mode-categories' => 'mostra solo le categorie',
+	'categorytree-mode-pages' => 'tutte le pagine, escluse le immagini',
+	'categorytree-mode-all' => 'tutte le pagine',
+	'categorytree-collapse' => 'comprimi',
+	'categorytree-expand' => 'espandi',
+	'categorytree-load' => 'carica',
+	'categorytree-loading' => 'caricamento in corso',
+	'categorytree-nothing-found' => 'nessun risultato',
+	'categorytree-no-subcategories' => 'nessuna sottocategoria.',
+	'categorytree-no-pages' => 'nessuna voce né sottocategoria.',
+	'categorytree-not-found' => 'Categoria  \'\'$1\'\' non trovata',
+	'categorytree-show-list' => 'Lista',
+	'categorytree-show-tree' => 'Struttura ad albero',
+	'categorytree-too-many-subcats' => 'Le sottocategorie sono troppe per essere visualizzate sotto forma di struttura ad albero.',
+);
