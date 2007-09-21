@@ -25,7 +25,7 @@ MediaWiki installation. Then add the following lines to your
 LocalSettings.php file (near the end):
 
   $wgUseAjax = true;
-  require_once( "{$IP}extensions/CategoryTree/CategoryTree.php" );
+  require_once( "{$IP}/extensions/CategoryTree/CategoryTree.php" );
   
 Note that $wgUseAjax = true; will enable the Ajax framework in MediaWiki,
 which is required by the CategoryTree extension. Ajax is a term for using
