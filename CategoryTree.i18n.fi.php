@@ -1,8 +1,8 @@
 <?php
 /*
   Internationalisation file for the CategoryTree extension
-  Copyright (C) 2006, Daniel Kinzler, brightbyte.de;
-  Finnish translation by Kooma and Hartz.
+  Copyright (C) 2006-2007, Daniel Kinzler, brightbyte.de;
+  Finnish translation by Kooma, Hartz, and Betawiki users.
 
   This file is licensed under the GPL and the GFDL:
 
@@ -30,29 +30,26 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
 
-$messages['categorytree'] = 'Luokkapuu';
-$messages['categorytree-tab'] = 'Puu';
-$messages['categorytree-header'] = 'Syötä luokan nimi nähdäksesi sen sisällön puumuodossa.';
-
-$messages['categorytree-category'] = 'Luokka';
-$messages['categorytree-go'] = 'Näytä puu';
-$messages['categorytree-parents'] = 'Yläluokat';
-
-$messages['categorytree-mode-categories'] = 'vain luokat';
-$messages['categorytree-mode-pages'] = 'kaikki sivut kuvia lukuun ottamatta';
-$messages['categorytree-mode-all'] = 'kaikki sivut';
-
-$messages['categorytree-collapse'] = 'piilota';
-$messages['categorytree-expand'] = 'näytä';
-$messages['categorytree-load'] = 'näytä';
-$messages['categorytree-loading'] = 'etsitään';
-$messages['categorytree-nothing-found'] = 'ei alaluokkia';
-$messages['categorytree-no-subcategories'] = 'ei alaluokkia';
-$messages['categorytree-no-pages'] = 'ei sivuja eikä alaluokkia';
-$messages['categorytree-not-found'] = "Luokkaa <i>$1</i> ei löytynyt";
-
-$messages['categorytree-show-list'] = "Näytä luettelona";
-$messages['categorytree-show-tree'] = "Näytä puuna";
-$messages['categorytree-too-many-subcats'] = "Alaluokkia ei voida näyttää puuna, koska niitä on liian monta.";
-
-
+$messages = array(
+	'categorytree' => 'Luokkapuu',
+	'categorytree-tab' => 'Puu',
+	'categorytree-header' => 'Syötä luokan nimi nähdäksesi sen sisällön puumuodossa.',
+	'categorytree-category' => 'Luokka',
+	'categorytree-go' => 'Näytä puu',
+	'categorytree-parents' => 'Yläluokat',
+	'categorytree-mode-categories' => 'vain luokat',
+	'categorytree-mode-pages' => 'kaikki sivut kuvia lukuun ottamatta',
+	'categorytree-mode-all' => 'kaikki sivut',
+	'categorytree-collapse' => 'piilota',
+	'categorytree-expand' => 'näytä',
+	'categorytree-load' => 'näytä',
+	'categorytree-loading' => 'etsitään',
+	'categorytree-nothing-found' => 'ei alaluokkia',
+	'categorytree-no-subcategories' => 'ei alaluokkia',
+	'categorytree-no-pages' => 'ei sivuja eikä alaluokkia',
+	'categorytree-not-found' => 'Luokkaa <i>$1</i> ei löytynyt',
+	'categorytree-retry' => 'Odota hetki ja yritä uudelleen.',
+	'categorytree-show-list' => 'Näytä luettelona',
+	'categorytree-show-tree' => 'Näytä puuna',
+	'categorytree-too-many-subcats' => 'Alaluokkia ei voida näyttää puuna, koska niitä on liian monta.',
+);
