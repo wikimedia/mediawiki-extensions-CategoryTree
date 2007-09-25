@@ -48,6 +48,7 @@ $messages = array(
 	'categorytree-no-subcategories' => 'ei alaluokkia',
 	'categorytree-no-pages' => 'ei sivuja eikä alaluokkia',
 	'categorytree-not-found' => 'Luokkaa <i>$1</i> ei löytynyt',
+	'categorytree-error' => 'Ongelma tietojen latauksessa.',
 	'categorytree-retry' => 'Odota hetki ja yritä uudelleen.',
 	'categorytree-show-list' => 'Näytä luettelona',
 	'categorytree-show-tree' => 'Näytä puuna',
