@@ -19,10 +19,5 @@
  */
 
 $messages = array(
-	'categorytree' => 'Arbu e categorias',
-	'categorytree-tab' => 'Arbu',
-	'categorytree-category' => 'Categoria',
-	'categorytree-load' => 'cargal',
-	'categorytree-loading' => 'cargandu',
-	'categorytree-no-pages' => 'nu ai ni páhinas ni sucategorias',
+	'categorytree-go' => 'Vís træ',
 );
