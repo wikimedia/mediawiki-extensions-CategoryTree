@@ -30,27 +30,27 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced JavaScript functionality known as AJAX.
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
-  
-$messages['categorytree-category']= 'Kategori';
-$messages['categorytree-go']= 'Vis';
-$messages['categorytree-parents']= 'Overkategorier';
-  
-$messages['categorytree-mode-categories']= 'bare kategorier';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
-  
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
-$messages['categorytree-nothing-found']= 'Ingen resultater funnet.';
-$messages['categorytree-no-subcategories']= 'Ingen underkategorier.';
-$messages['categorytree-no-pages']= 'Ingen artikler eller underkategorier.';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages = array(
+	'categorytree' => 'Kategoritre',
+	'categorytree-tab' => 'Tre',
+	'categorytree-header' => 'Skriv inn et kategorinavn for å se dens innhold som en trestruktur. Merk at dette trenger en avansert type Javascript-funksjonalitet kjent som AJAX. Dersom du har en gammel nettleser eller har slått av Javascript vil dette ikke fungere.
+
+Enter a category name to see its contents as a tree structure. Note that this requires advanced JavaScript functionality known as AJAX. If you have a very old browser, or have JavaScript disabled, it will not work.',
+	'categorytree-category' => 'Kategori',
+	'categorytree-go' => 'Vis',
+	'categorytree-parents' => 'Overkategorier',
+	'categorytree-mode-categories' => 'bare kategorier',
+	'categorytree-mode-pages' => 'sider utenom bilder',
+	'categorytree-mode-all' => 'alle sider',
+	'categorytree-collapse' => 'skjul',
+	'categorytree-expand' => 'vis',
+	'categorytree-load' => 'last',
+	'categorytree-loading' => 'laster',
+	'categorytree-nothing-found' => 'Ingen resultater funnet.',
+	'categorytree-no-subcategories' => 'Ingen underkategorier.',
+	'categorytree-no-pages' => 'Ingen artikler eller underkategorier.',
+	'categorytree-not-found' => 'Kategorien <i>$1</i> ikke funnet',
+	'categorytree-error' => 'problem under datalasting.',
+	'categorytree-retry' => 'Vent en stund og prøv igjen.',
+	'categorytree-show-list' => 'Vis som liste',
+);
