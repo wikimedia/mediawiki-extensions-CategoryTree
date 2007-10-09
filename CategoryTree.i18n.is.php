@@ -5,7 +5,7 @@
  *
  * @package MediaWiki
  * @subpackage Extensions
- * @author editors of is.wikipedia
+ * @author editors of is.wikipedia and Betawiki
  * @copyright  2006 editors of is.wikipedia
  * @licence GNU Free Documentation License, Version 1.2
  * 
@@ -18,33 +18,20 @@
   Free Documentation License". 
  */
 
-$messages['categorytree']= 'Flokkatré';
-$messages['categorytree-tab']= 'Tré';
-$messages['categorytree-header']= 
-"Enter a category name to see its contents as a tree structure. 
-Note that this requires advanced JavaScript functionality known as AJAX.
-If you have a very old browser, or have JavaScript disabled, it will not work.
-";
-
-$messages['categorytree-category']= 'Flokkur';
-$messages['categorytree-go']= 'Sýna tré';
-$messages['categorytree-parents']= 'Parents';
-
-$messages['categorytree-mode-categories']= 'categories only';
-$messages['categorytree-mode-pages']= 'pages except images';
-$messages['categorytree-mode-all']= 'all pages';
-
-$messages['categorytree-collapse']= 'fela';
-$messages['categorytree-expand']= 'sýna';
-$messages['categorytree-load']= 'load';
-$messages['categorytree-loading']= 'loading';
-$messages['categorytree-nothing-found']= 'nothing found';
-$messages['categorytree-no-subcategories']= 'no subcategories';
-$messages['categorytree-no-pages']= 'no pages or subcategories';
-$messages['categorytree-not-found']= "Category <i>$1</i> not found";
-
-$messages['categorytree-show-list'] = "Sýna sem lista";
-$messages['categorytree-show-tree'] = "Sýna sem tré";
-$messages['categorytree-too-many-subcats'] = "Get ekki sýnt undirflokka sem tré, eir eru of margir.";
-
-
+$messages = array(
+	'categorytree' => 'Flokkatré',
+	'categorytree-tab' => 'Tré',
+	'categorytree-category' => 'Flokkur',
+	'categorytree-go' => 'Sýna tré',
+	'categorytree-mode-categories' => 'bara flokka',
+	'categorytree-mode-pages' => 'síður að myndum undanskildum',
+	'categorytree-mode-all' => 'allar síður',
+	'categorytree-collapse' => 'fela',
+	'categorytree-expand' => 'sýna',
+	'categorytree-load' => 'hlaða',
+	'categorytree-loading' => 'hleð',
+	'categorytree-no-subcategories' => 'engir undirflokkar',
+	'categorytree-show-list' => 'Sýna sem lista',
+	'categorytree-show-tree' => 'Sýna sem tré',
+	'categorytree-too-many-subcats' => 'Get ekki sýnt undirflokka sem tré, eir eru of margir.',
+);
