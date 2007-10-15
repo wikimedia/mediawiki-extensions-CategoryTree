@@ -21,6 +21,7 @@
 $messages = array(
 	'categorytree-category' => 'Kategorya',
 	'categorytree-mode-all' => 'gabos na mga pahina',
+	'categorytree-load' => 'ikarga',
 	'categorytree-loading' => 'pigkakarga',
 	'categorytree-nothing-found' => 'mayong nahanap',
 	'categorytree-no-subcategories' => 'mayong mga sub-kategorya',
