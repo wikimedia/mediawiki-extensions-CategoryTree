@@ -19,6 +19,8 @@
  */
 
 $messages = array(
+	'categorytree' => 'BólkaTræ',
 	'categorytree-category' => 'Bólkur',
 	'categorytree-go' => 'Vís træ',
+	'categorytree-mode-all' => 'allar síður',
 );
