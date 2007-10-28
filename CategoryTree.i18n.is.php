@@ -30,8 +30,9 @@ $messages = array(
 	'categorytree-expand' => 'sýna',
 	'categorytree-load' => 'hlaða',
 	'categorytree-loading' => 'hleð',
+	'categorytree-nothing-found' => 'ekkert fannst',
 	'categorytree-no-subcategories' => 'engir undirflokkar',
 	'categorytree-show-list' => 'Sýna sem lista',
 	'categorytree-show-tree' => 'Sýna sem tré',
-	'categorytree-too-many-subcats' => 'Get ekki sýnt undirflokka sem tré, eir eru of margir.',
+	'categorytree-too-many-subcats' => 'Get ekki sýnt undirflokka sem tré, þeir eru of margir.',
 );

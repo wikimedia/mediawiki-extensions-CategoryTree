@@ -2,7 +2,7 @@
 /*
   Internationalisation file for the CategoryTree extension
  Copyright (C) 2006, Daniel Kinzler, brightbyte.de
- PLTranslation v.0.1. 2006, MonteChristof for WikiMedia Foundation
+ Translation by MonteChristof and Betawiki users
  
   This file is licensed under the GPL and the GFDL:
   
@@ -30,33 +30,27 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
 
-$messages['categorytree']= 'Drzewo kategorii';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced JavaScript functionality known as AJAX.
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
-
-$messages['categorytree-category']= 'Kategoria';
-$messages['categorytree-go']= 'Ładuj kategorię';
-$messages['categorytree-parents']= 'Kategorie główne';
-
-$messages['categorytree-mode-categories']= 'pokaż tylko kategorie';
-$messages['categorytree-mode-pages']= 'strony poza grafika';
-$messages['categorytree-mode-all']= 'wszystkie strony';
-
-$messages['categorytree-collapse']= 'zwiń';
-$messages['categorytree-expand']= 'rozwiń';
-$messages['categorytree-load']= 'wczytaj';
-$messages['categorytree-loading']= 'wczytuję...';
-$messages['categorytree-nothing-found']= 'nic nie znaleziono';
-$messages['categorytree-no-subcategories']= 'brak podkategorii.';
-$messages['categorytree-no-pages']= 'brak artykułów lub podkategorii.';
-$messages['categorytree-not-found']= "Kategoria <i>$1</i> nie znaleziona";
-
-$messages['categorytree-show-list'] = "Pokaż listę";
-$messages['categorytree-show-tree'] = "Pokaż drzewo";
-$messages['categorytree-too-many-subcats'] = "Podkategorie nie mogą być wyświetlone w drzewie, ponieważ jest ich zbyt dużo.";
-
-
+$messages = array(
+	'categorytree' => 'Drzewo kategorii',
+	'categorytree-tab' => 'Drzewo',
+	'categorytree-header' => 'Wpisz nazwę kategorii by zobaczyć jej zawartość w postaci drzewa. Zauważ, że wymagana jest zaawansowana funkcjonalność JavaScriptu, znana jako AJAX. Jeśli masz bardzo starą przeglądarkę lub wyłączony JavaScript, ta funkcja nie zadziała.',
+	'categorytree-category' => 'Kategoria',
+	'categorytree-go' => 'Ładuj kategorię',
+	'categorytree-parents' => 'Kategorie główne',
+	'categorytree-mode-categories' => 'pokaż tylko kategorie',
+	'categorytree-mode-pages' => 'strony poza grafika',
+	'categorytree-mode-all' => 'wszystkie strony',
+	'categorytree-collapse' => 'zwiń',
+	'categorytree-expand' => 'rozwiń',
+	'categorytree-load' => 'wczytaj',
+	'categorytree-loading' => 'wczytuję...',
+	'categorytree-nothing-found' => 'nic nie znaleziono',
+	'categorytree-no-subcategories' => 'brak podkategorii.',
+	'categorytree-no-pages' => 'brak artykułów lub podkategorii.',
+	'categorytree-not-found' => 'Kategoria <i>$1</i> nie znaleziona',
+	'categorytree-error' => 'Problem z ładowaniem danych.',
+	'categorytree-retry' => 'Poczekaj chwilę i spróbuj ponownie.',
+	'categorytree-show-list' => 'Pokaż listę',
+	'categorytree-show-tree' => 'Pokaż drzewo',
+	'categorytree-too-many-subcats' => 'Podkategorie nie mogą być wyświetlone w drzewie, ponieważ jest ich zbyt dużo.',
+);

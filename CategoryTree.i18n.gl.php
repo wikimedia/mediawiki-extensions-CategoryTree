@@ -1,7 +1,7 @@
 <?php
 /*
   Internationalisation file for the CategoryTree extension.
-  (C) 2007 - Galego: Betawiki translators
+  (C) 2007 - Betawiki translators
 
   This file is licensed under the GPL and the GFDL:
 
@@ -30,5 +30,27 @@
   */
 
 $messages = array(
-	'categorytree' => 'Mostrar árbore de categorías',
+	'categorytree' => 'Amosar a árbore de categorías',
+	'categorytree-tab' => 'Árbore',
+	'categorytree-header' => 'Introduza o nome dunha categoría para ver o contido da estrutura da árbore. Dease conta de que se require funcionalidade de JavaScript avanzada coñecida como AJAX.
+Se vostede ten un navegador moi vello, ou deshabilitado o JavaScript, non vai funcionar.',
+	'categorytree-category' => 'Categoría',
+	'categorytree-go' => 'Amosar a Arbore',
+	'categorytree-parents' => 'Nodos superiores',
+	'categorytree-mode-categories' => 'só categorías',
+	'categorytree-mode-pages' => 'páxinas agás imaxes',
+	'categorytree-mode-all' => 'todas as páxinas',
+	'categorytree-collapse' => 'contraer',
+	'categorytree-expand' => 'ampliar',
+	'categorytree-load' => 'cargar',
+	'categorytree-loading' => 'cargando',
+	'categorytree-nothing-found' => 'nada atopado',
+	'categorytree-no-subcategories' => 'non hai subcategorías',
+	'categorytree-no-pages' => 'non hai páxinas ou subcategorías',
+	'categorytree-not-found' => 'Categoría <i>$1</i> non atopada',
+	'categorytree-error' => 'Problema da carga de datos.',
+	'categorytree-retry' => 'Por favor, agarde un momento e ténteo de novo.',
+	'categorytree-show-list' => 'Amosar coma unha listaxe',
+	'categorytree-show-tree' => 'Amosar coma unha árbore',
+	'categorytree-too-many-subcats' => 'Non se poden amosar as subcategorías coma unha árbore, hai demasiadas.',
 );
