@@ -30,29 +30,27 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-$messages['categorytree']= 'Arborescence des catégories';
-$messages['categorytree-tab']= 'Arbre';
-$messages['categorytree-header']= 'Entrez un nom de catégorie pour voir son contenu en structure arborescente. Veuillez noter que ceci utilise des fonctionnalités JavaScript avancées connues sous le nom d’AJAX. Si vous avez un très vieux navigateur ou si vous n’avez pas activé la fonctionnalité JavaScript, çela ne fonctionnera pas.';
-  
-$messages['categorytree-category']= 'Catégorie';
-$messages['categorytree-go']= 'voir l’arborescence';
-$messages['categorytree-parents']= 'Sur-catégorie(s) ';
-  
-$messages['categorytree-mode-categories']= 'seulement les catégories';
-$messages['categorytree-mode-pages']= 'pages sans les images';
-$messages['categorytree-mode-all']= 'toutes les pages';
-  
-$messages['categorytree-collapse']= 'Refermer';
-$messages['categorytree-expand']= 'Développer';
-$messages['categorytree-load']= 'Ouvrir';
-$messages['categorytree-loading']= 'ouverture...';
-$messages['categorytree-nothing-found']= 'Pas trouvé, désolé.';
-$messages['categorytree-no-subcategories']= 'Aucune sous-catégorie.';
-$messages['categorytree-no-pages']= 'Aucun article ou sous-catégorie.';
-$messages['categorytree-not-found']= "La catégorie <tt>$1</tt> n’a pas été trouvée.";
-$messages['categorytree-error'] = 'Problème de chargement des données.';
-$messages['categorytree-retry'] = 'Attendez un instant puis réessayez.';
-
-$messages['categorytree-show-list'] = "Afficher en liste";
-$messages['categorytree-show-tree'] = "Afficher en arborescence";
-$messages['categorytree-too-many-subcats'] = "Les sous-catégories sont trop nombreuses pour être affichées sous forme d’arbre.";
+$messages = array(
+	'categorytree' => 'Arborescence des catégories',
+	'categorytree-tab' => 'Arbre',
+	'categorytree-header' => 'Entrez un nom de catégorie pour voir son contenu en structure arborescente. Ceci utilise des fonctionnalités JavaScript avancées connues sous le nom d’AJAX. Si vous avez un très vieux navigateur Web ou si vous n’avez pas activé la fonctionnalité JavaScript, cela ne fonctionnera pas.',
+	'categorytree-category' => 'Catégorie',
+	'categorytree-go' => 'voir l’arborescence',
+	'categorytree-parents' => 'Sur-catégorie(s) ',
+	'categorytree-mode-categories' => 'seulement les catégories',
+	'categorytree-mode-pages' => 'pages sans les images',
+	'categorytree-mode-all' => 'toutes les pages',
+	'categorytree-collapse' => 'Refermer',
+	'categorytree-expand' => 'Développer',
+	'categorytree-load' => 'Ouvrir',
+	'categorytree-loading' => 'ouverture...',
+	'categorytree-nothing-found' => 'Pas trouvé, désolé.',
+	'categorytree-no-subcategories' => 'Aucune sous-catégorie.',
+	'categorytree-no-pages' => 'Aucun article ou sous-catégorie.',
+	'categorytree-not-found' => 'La catégorie <tt>$1</tt> n’a pas été trouvée.',
+	'categorytree-error' => 'Problème de chargement des données.',
+	'categorytree-retry' => 'Attendez un instant puis réessayez.',
+	'categorytree-show-list' => 'Afficher en liste',
+	'categorytree-show-tree' => 'Afficher en arborescence',
+	'categorytree-too-many-subcats' => 'Les sous-catégories sont trop nombreuses pour être affichées sous forme d’arbre.',
+);
