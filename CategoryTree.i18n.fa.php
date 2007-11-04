@@ -29,30 +29,27 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
 
-$messages['categorytree']                  = 'درخت رده';
-$messages['categorytree-tab']              = 'درخت';
-
-$messages['categorytree-header']           = 'نام یک رده را وارد کنید تا محتویات آن به صورت درخت نمایش یابد. توجه کنید که این کار نیاز به قابلیت‌های پیشرفتهٔ جاوااسکریپت موسوم به آژاکس دارد. اگر از مرورگری خیلی قدیمی استفاده می‌کنید یا جاوااسکریپت را غیرفعال کرده‌اید، کار نمی‌کند.';
-
-$messages['categorytree-category']         = 'رده';
-$messages['categorytree-go']               = 'نمايش درخت';
-$messages['categorytree-parents']          = 'والدین';
-
-$messages['categorytree-mode-categories']  = 'فقط رده‌ها';
-$messages['categorytree-mode-pages']       = 'صفحه‌های جز تصویر';
-$messages['categorytree-mode-all']         = 'همهٔ صفحه‌ها';
-
-$messages['categorytree-collapse']         = 'مچالش';
-$messages['categorytree-expand']           = 'گسترش';
-$messages['categorytree-load']             = 'بارکردن';
-$messages['categorytree-loading']          = 'در حال بارگیری';
-$messages['categorytree-nothing-found']    = 'هیچ‌چیز یافت نشد.';
-$messages['categorytree-no-subcategories'] = 'هیچ زیررده‌ای ندارد.';
-$messages['categorytree-no-pages']         = 'هیچ صفحه یا زیررده‌ای ندارد.';
-$messages['categorytree-not-found']        = "ردهٔ  ''\$1'' يافت نشد.";
-
-$messages['categorytree-show-list']        = 'نمایش فهرست‌وار';
-$messages['categorytree-show-tree']        = 'نمایش درخت‌وار';
-$messages['categorytree-too-many-subcats'] = 'به خاطر شمار زیاد آنها، نمی‌توان زیررده‌ها را درخت‌وار نشان داد.';
-
-
+$messages = array(
+	'categorytree' => 'درخت رده',
+	'categorytree-tab' => 'درخت',
+	'categorytree-header' => 'نام یک رده را وارد کنید تا محتویات آن به صورت درخت نمایش یابد. توجه کنید که این کار نیاز به قابلیت‌های پیشرفتهٔ جاوااسکریپت موسوم به آژاکس دارد. اگر از مرورگری خیلی قدیمی استفاده می‌کنید یا جاوااسکریپت را غیرفعال کرده‌اید، کار نمی‌کند.',
+	'categorytree-category' => 'رده',
+	'categorytree-go' => 'نمايش درخت',
+	'categorytree-parents' => 'والدین',
+	'categorytree-mode-categories' => 'فقط رده‌ها',
+	'categorytree-mode-pages' => 'صفحه‌های جز تصویر',
+	'categorytree-mode-all' => 'همهٔ صفحه‌ها',
+	'categorytree-collapse' => 'مچالش',
+	'categorytree-expand' => 'گسترش',
+	'categorytree-load' => 'بارکردن',
+	'categorytree-loading' => 'در حال بارگیری',
+	'categorytree-nothing-found' => 'هیچ‌چیز یافت نشد.',
+	'categorytree-no-subcategories' => 'هیچ زیررده‌ای ندارد.',
+	'categorytree-no-pages' => 'هیچ صفحه یا زیررده‌ای ندارد.',
+	'categorytree-not-found' => 'ردهٔ  \'\'$1\'\' يافت نشد.',
+	'categorytree-error' => 'اشکال در دریافت اطلاعات.',
+	'categorytree-retry' => 'لطفاً چند لحظه صبر کنید و سپس دوباره امتحان کنید.',
+	'categorytree-show-list' => 'نمایش فهرست‌وار',
+	'categorytree-show-tree' => 'نمایش درخت‌وار',
+	'categorytree-too-many-subcats' => 'به خاطر شمار زیاد آنها، نمی‌توان زیررده‌ها را درخت‌وار نشان داد.',
+);

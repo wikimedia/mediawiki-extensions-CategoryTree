@@ -34,8 +34,8 @@ $messages = array(
 	'categorytree' => 'Arborèscence de les catègories',
 	'categorytree-tab' => 'Âbro',
 	'categorytree-header' => 'Entrâd un nom de catègorie por vêre son contegnu en structura arborèscenta.
-Volyéd notar que cen utilise des fonccionalitâts JavaScript avanciêes cognues desot lo nom d’AJAX.
-Se vos avéd un rudo viely navigator ou que vos éd pas activâ lo JavaScript, cen fonccionerat pas.',
+Cen utilise des fonccionalitâts JavaScript avanciês cognues desot lo nom d’AJAX.
+Se vos avéd un rudo viely navigator Malyâjo ou que vos éd pas activâ la fonccionalitât JavaScript, cen fonccionerat pas.',
 	'categorytree-category' => 'Catègorie',
 	'categorytree-go' => 'Afichiér l’arborèscence',
 	'categorytree-parents' => 'Sur-catègorie(s) ',
@@ -54,5 +54,5 @@ Se vos avéd un rudo viely navigator ou que vos éd pas activâ lo JavaScript, c
 	'categorytree-retry' => 'Atendéd un moment et pués tornâd èprovar.',
 	'categorytree-show-list' => 'Afichiér en lista',
 	'categorytree-show-tree' => 'Afichiér en arborèscence',
-	'categorytree-too-many-subcats' => 'Les sot-catègories sont trop nombroses por étre afichiêes desot fôrma d’âbro.',
+	'categorytree-too-many-subcats' => 'Les sot-catègories sont trop nombroses por étre afichiês desot fôrma d’âbro.',
 );
