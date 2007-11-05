@@ -13,7 +13,7 @@ $messages['categorytree-header']=
 ';
 
 $messages['categorytree-category']= 'קטגוריה';
-$messages['categorytree-go']= 'הצג את העץ';
+$messages['categorytree-go']= 'הצגת העץ';
 $messages['categorytree-parents']= 'הורים';
 
 $messages['categorytree-mode-categories']= 'קטגוריות בלבד';
