@@ -27,6 +27,7 @@ $messages = array(
 	'categorytree-loading' => 'o kargañ',
 	'categorytree-no-subcategories' => 'isrummad ebet',
 	'categorytree-error' => 'Ur gudenn zo bet e-ser kargañ ar roadennoù.',
+	'categorytree-retry' => 'Gortozit un tamm ha klaskit en-dro.',
 	'categorytree-show-list' => 'Diskouez er mod roll',
 	'categorytree-show-tree' => 'Diskouez er mod gwezennadur',
 	'categorytree-too-many-subcats' => 'N\'haller ket diskouez an isrummadoù er mod roll, re zo anezho.',
