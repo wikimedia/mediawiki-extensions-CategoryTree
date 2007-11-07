@@ -24,6 +24,7 @@ $messages = array(
 	'categorytree-no-subcategories' => 'サブカテゴリはありません',
 	'categorytree-no-pages' => 'ページやサブカテゴリはありません',
 	'categorytree-not-found' => 'カテゴリ " <i>$1</i> " はありません',
+	'categorytree-error' => 'データの読み込み中に問題が発生しました',
 	'categorytree-retry' => '暫く経った後に再度試してください。',
 	'categorytree-show-list' => '一覧で表示',
 	'categorytree-show-tree' => 'ツリー形式で表示',
