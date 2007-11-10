@@ -30,27 +30,26 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-$messages['categorytree']= 'Árbol de categorías (CategoryTree)';
-$messages['categorytree-tab']= 'Árbol';
-$messages['categorytree-header']= 
-'Escribe un nombre de categoría para ver su contenido con una estructura en árbol. 
+$messages = array(
+	'categorytree' => 'Árbol de categorías (CategoryTree)',
+	'categorytree-tab' => 'Árbol',
+	'categorytree-header' => 'Escribe un nombre de categoría para ver su contenido con una estructura en árbol. 
 Ten en cuenta que esto requiere funciones JavaScript avanzadas conocidas como AJAX.
 Si tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no funcionará.
-';
-  
-$messages['categorytree-category']= 'Categoría';
-$messages['categorytree-go']= 'Cargar';
-$messages['categorytree-parents']= 'Categorías superiores';
-  
-$messages['categorytree-mode-categories']= 'mostrar sólo categorías';
-$messages['categorytree-mode-pages']= 'páginas excepto imágenes';
-$messages['categorytree-mode-all']= 'todas las páginas';
-  
-$messages['categorytree-collapse']= 'ocultar';
-$messages['categorytree-expand']= 'mostrar';
-$messages['categorytree-load']= 'cargar';
-$messages['categorytree-loading']= 'cargando';
-$messages['categorytree-nothing-found']= 'Lo sentimos, no se ha encontrado nada';
-$messages['categorytree-no-subcategories']= 'sin subcategorías.';
-$messages['categorytree-no-pages']= 'sin artículos ni subcategorías.';
-$messages['categorytree-not-found']= "Categoría ''\$1'' no encontrada";
+',
+	'categorytree-category' => 'Categoría',
+	'categorytree-go' => 'Cargar',
+	'categorytree-parents' => 'Categorías superiores',
+	'categorytree-mode-categories' => 'mostrar sólo categorías',
+	'categorytree-mode-pages' => 'páginas excepto imágenes',
+	'categorytree-mode-all' => 'todas las páginas',
+	'categorytree-collapse' => 'ocultar',
+	'categorytree-expand' => 'mostrar',
+	'categorytree-load' => 'cargar',
+	'categorytree-loading' => 'cargando',
+	'categorytree-nothing-found' => 'Lo sentimos, no se ha encontrado nada',
+	'categorytree-no-subcategories' => 'sin subcategorías.',
+	'categorytree-no-pages' => 'sin artículos ni subcategorías.',
+	'categorytree-not-found' => 'Categoría \'\'$1\'\' no encontrada',
+	'categorytree-error' => 'Error al cargar los datos',
+);
