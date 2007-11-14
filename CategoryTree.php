@@ -49,12 +49,8 @@ $wgCategoryTreeUnifiedView = true;
 $wgCategoryTreeOmitNamespace = false;
 $wgCategoryTreeMaxDepth = array(CT_MODE_PAGES => 1, CT_MODE_ALL => 1, CT_MODE_CATEGORIES => 2);
 $wgCategoryTreeExtPath = '/extensions/CategoryTree';
-if ( ! isset( $wgCategoryTreeDefaultMode ) ) {
-	$wgCategoryTreeDefaultMode = CT_MODE_CATEGORIES;
-}
-if ( ! isset( $wgCategoryTreeCategoryPageMode ) ) {
-	$wgCategoryTreeCategoryPageMode = CT_MODE_CATEGORIES;
-}
+$wgCategoryTreeDefaultMode = CT_MODE_CATEGORIES;
+$wgCategoryTreeCategoryPageMode = CT_MODE_CATEGORIES;
 $wgCategoryTreeVersion = '1';
 
 /**
