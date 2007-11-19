@@ -22,5 +22,6 @@ $messages = array(
 	'categorytree-tab' => 'Δέντρο',
 	'categorytree-category' => 'Κατηγορία',
 	'categorytree-parents' => 'Γονείς',
+	'categorytree-mode-all' => 'όλες οι σελίδες',
 	'categorytree-show-list' => 'Δες ως λίστα',
 );

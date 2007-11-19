@@ -1,7 +1,7 @@
 <?php
 /*
   Internationalisation file for the CategoryTree extension
- Copyright (C) 2006, Daniel Kinzler, brightbyte.de
+ Copyright (C) 2006-2007, Daniel Kinzler, brightbyte.de
  Translation by MonteChristof and Betawiki users
  
   This file is licensed under the GPL and the GFDL:
@@ -38,19 +38,19 @@ $messages = array(
 	'categorytree-go' => 'Ładuj kategorię',
 	'categorytree-parents' => 'Kategorie główne',
 	'categorytree-mode-categories' => 'pokaż tylko kategorie',
-	'categorytree-mode-pages' => 'strony poza grafika',
+	'categorytree-mode-pages' => 'strony z wyjątkiem grafik',
 	'categorytree-mode-all' => 'wszystkie strony',
 	'categorytree-collapse' => 'zwiń',
 	'categorytree-expand' => 'rozwiń',
 	'categorytree-load' => 'wczytaj',
 	'categorytree-loading' => 'wczytywanie...',
 	'categorytree-nothing-found' => 'nic nie znaleziono',
-	'categorytree-no-subcategories' => 'brak podkategorii.',
+	'categorytree-no-subcategories' => 'brak podkategorii',
 	'categorytree-no-pages' => 'brak artykułów lub podkategorii.',
 	'categorytree-not-found' => 'Kategoria <i>$1</i> nie została znaleziona',
 	'categorytree-error' => 'Problem z ładowaniem danych.',
 	'categorytree-retry' => 'Poczekaj chwilę i spróbuj ponownie.',
 	'categorytree-show-list' => 'Pokaż listę',
 	'categorytree-show-tree' => 'Pokaż drzewo',
-	'categorytree-too-many-subcats' => 'Podkategorie nie mogą być wyświetlone w drzewie, ponieważ jest ich zbyt dużo.',
+	'categorytree-too-many-subcats' => 'Podkategorie nie mogą być wyświetlone jako drzewo, ponieważ jest ich zbyt dużo.',
 );

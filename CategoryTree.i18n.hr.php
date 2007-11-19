@@ -1,8 +1,8 @@
 <?php
 /*
   Internationalisation file for the CategoryTree extension
-  Copyright (C) 2006, Daniel Kinzler, brightbyte.de
-  Croatian translation by Ivo Veletić (E.coli)
+  Copyright (C) 2006-2007, Daniel Kinzler, brightbyte.de
+  Croatian translation by Ivo Veletić (E.coli) and Betawiki editors
  
   This file is licensed under the GPL and the GFDL:
   
@@ -30,27 +30,27 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced JavaScript functionality known as AJAX.
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
-  
-$messages['categorytree-category']= 'Kategorija';
-$messages['categorytree-go']= 'Učitaj';
-$messages['categorytree-parents']= 'Rodne kategorije';
-  
-$messages['categorytree-mode-categories']= 'pokaži samo kategorije';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
-  
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
-$messages['categorytree-nothing-found']= 'Nije pronađena nijedna stavka.';
-$messages['categorytree-no-subcategories']= 'Nema potkategorija.';
-$messages['categorytree-no-pages']= 'Nema članaka ili potkategorija.';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+$messages = array(
+	'categorytree' => 'Stablasti prikaz hijerarhije kategorija',
+	'categorytree-tab' => 'Stablo',
+	'categorytree-header' => 'Upišite ime kategorije da biste vidjeli njen položaj u stablastom prikazu hijerarhije. Napomena: na strani klijenta (na Vašem računalu) potreban je web preglednik koji podržava napredni JavaScript, tj. AJAX. Ukoliko imate stari web preglednik, ili ste onemogućili izvođenje JavaScripta u njemu, neće Vam biti dostupan ovaj prikaz.',
+	'categorytree-category' => 'Kategorija',
+	'categorytree-go' => 'Učitaj',
+	'categorytree-parents' => 'Rodne kategorije',
+	'categorytree-mode-categories' => 'pokaži samo kategorije',
+	'categorytree-mode-pages' => 'pokaži kategorije i stranice (bez slika)',
+	'categorytree-mode-all' => 'sve stranice',
+	'categorytree-collapse' => 'sklopi stablo',
+	'categorytree-expand' => 'raširi stablo (expand)',
+	'categorytree-load' => 'učitaj',
+	'categorytree-loading' => 'učitavam',
+	'categorytree-nothing-found' => 'Nije pronađena nijedna stavka.',
+	'categorytree-no-subcategories' => 'Nema potkategorija.',
+	'categorytree-no-pages' => 'Nema članaka ili potkategorija.',
+	'categorytree-not-found' => 'Kategorija <i>$1</i> nije nađena',
+	'categorytree-error' => 'Problem s učitavanjem podataka.',
+	'categorytree-retry' => 'Pričekajte trenutak pa pokušajte opet.',
+	'categorytree-show-list' => 'Prikaži kao popis',
+	'categorytree-show-tree' => 'Prikaži kao stablo',
+	'categorytree-too-many-subcats' => 'Ne mogu prikazati podkategorije kao stablo, previše ih je.',
+);
