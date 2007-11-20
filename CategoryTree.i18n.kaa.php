@@ -19,5 +19,5 @@
  */
 
 $messages = array(
-	'categorytree' => 'Kategoriya teregi',
+	'categorytree' => 'Kategoriyalar teregi',
 );
