@@ -33,7 +33,7 @@
 $messages = array(
 	'categorytree' => 'Drzewo kategorii',
 	'categorytree-tab' => 'Drzewo',
-	'categorytree-header' => 'Wpisz nazwę kategorii by zobaczyć jej zawartość w postaci drzewa. Zauważ, że wymagana jest zaawansowana funkcjonalność JavaScriptu, znana jako AJAX. Jeśli masz bardzo starą przeglądarkę lub wyłączony JavaScript, ta funkcja nie zadziała.',
+	'categorytree-header' => 'Wpisz nazwę kategorii, by zobaczyć jej zawartość w postaci drzewa. Wymagana jest zaawansowana funkcjonalność JavaScriptu, znana jako AJAX. Jeśli masz bardzo starą przeglądarkę lub wyłączony JavaScript, ta funkcja nie zadziała.',
 	'categorytree-category' => 'Kategoria',
 	'categorytree-go' => 'Ładuj kategorię',
 	'categorytree-parents' => 'Kategorie główne',
@@ -50,7 +50,7 @@ $messages = array(
 	'categorytree-not-found' => 'Kategoria <i>$1</i> nie została znaleziona',
 	'categorytree-error' => 'Problem z ładowaniem danych.',
 	'categorytree-retry' => 'Poczekaj chwilę i spróbuj ponownie.',
-	'categorytree-show-list' => 'Pokaż listę',
-	'categorytree-show-tree' => 'Pokaż drzewo',
+	'categorytree-show-list' => 'Pokaż jako listę',
+	'categorytree-show-tree' => 'Pokaż jako drzewo',
 	'categorytree-too-many-subcats' => 'Podkategorie nie mogą być wyświetlone jako drzewo, ponieważ jest ich zbyt dużo.',
 );
