@@ -22,6 +22,10 @@ $messages = array(
 	'categorytree-tab' => 'Δέντρο',
 	'categorytree-category' => 'Κατηγορία',
 	'categorytree-parents' => 'Γονείς',
+	'categorytree-mode-categories' => 'μόνο κατηγορίες',
 	'categorytree-mode-all' => 'όλες οι σελίδες',
+	'categorytree-no-subcategories' => 'καμία υποκατηγορία',
+	'categorytree-no-pages' => 'καμία σελίδα ή υποκατηγορία',
+	'categorytree-not-found' => 'Η κατηγορία <i>$1</i> δεν βρέθηκε',
 	'categorytree-show-list' => 'Δες ως λίστα',
 );
