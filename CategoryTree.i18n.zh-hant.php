@@ -30,35 +30,29 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-$messages['categorytree']= '分類樹';
-$messages['categorytree-tab']= '樹狀目錄';
-$messages['categorytree-header']= 
-'在此可以查詢以分類的樹狀結構。
+$messages = array(
+	'categorytree' => '分類樹',
+	'categorytree-tab' => '樹狀目錄',
+	'categorytree-header' => '在此可以查詢以分類的樹狀結構。
 注意： 本特殊頁面使用AJAX技術。
-如果您的瀏覽器非常老舊，或者是關閉了JavaScript，本頁面將會無法正常運作。
-';
-  
-$messages['categorytree-category']= '分類';
-$messages['categorytree-go']= '顯示樹狀結構';
-$messages['categorytree-parents']= '父分類';
-  
-$messages['categorytree-mode-categories']= '只顯示分類';
-$messages['categorytree-mode-pages']= '除去圖像頁面';
-$messages['categorytree-mode-all']= '所有頁面';
-  
-$messages['categorytree-collapse']= '摺疊';
-$messages['categorytree-expand']= '展開';
-$messages['categorytree-load']= '載入';
-$messages['categorytree-loading']= '載入中';
-$messages['categorytree-nothing-found']= '找不到任何項目';
-$messages['categorytree-no-subcategories']= '沒有子分類';
-$messages['categorytree-no-pages']= '沒有頁面或子分類';
-$messages['categorytree-not-found']= "找不到分類<i>$1</i>";
-
-
-$messages['categorytree-show-list'] = "以清單顯示";
-$messages['categorytree-show-tree'] = "以樹狀顯示";
-$messages['categorytree-too-many-subcats'] = "無法以樹狀顯示子分類，因為已經有太多了。";
-
-
-
+如果您的瀏覽器非常老舊，或者是關閉了JavaScript，本頁面將會無法正常運作。',
+	'categorytree-category' => '分類',
+	'categorytree-go' => '顯示樹狀結構',
+	'categorytree-parents' => '父分類',
+	'categorytree-mode-categories' => '只顯示分類',
+	'categorytree-mode-pages' => '除去圖像頁面',
+	'categorytree-mode-all' => '所有頁面',
+	'categorytree-collapse' => '摺疊',
+	'categorytree-expand' => '展開',
+	'categorytree-load' => '載入',
+	'categorytree-loading' => '載入中',
+	'categorytree-nothing-found' => '找不到任何項目',
+	'categorytree-no-subcategories' => '沒有子分類',
+	'categorytree-no-pages' => '沒有頁面或子分類',
+	'categorytree-not-found' => '找不到分類<i>$1</i>',
+	'categorytree-error' => '載入資料時發生錯誤。',
+	'categorytree-retry' => '請稍候一會，然後再試。',
+	'categorytree-show-list' => '以清單顯示',
+	'categorytree-show-tree' => '以樹狀顯示',
+	'categorytree-too-many-subcats' => '無法以樹狀顯示子分類，因為已經有太多了。',
+);
