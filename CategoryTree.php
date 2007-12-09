@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Setup and Hooks for the CategoryTree extension, an AJAX based gadget 
+ * Setup and Hooks for the CategoryTree extension, an AJAX based gadget
  * to display the category structure of a wiki
  *
  * @addtogroup Extensions
@@ -9,7 +9,7 @@
  * @copyright © 2006-2007 Daniel Kinzler
  * @licence GNU General Public Licence 2.0 or later
  */
- 
+
 if( !defined( 'MEDIAWIKI' ) ) {
 	echo( "This file is an extension to the MediaWiki software and cannot be used standalone.\n" );
 	die( 1 );
@@ -35,10 +35,10 @@ define('CT_MODE_ALL', 20);
  * $wgCategoryTreeUnifiedView - use unified view on category pages, instead of "tree" or "traditional list". Default is true.
  * $wgCategoryTreeOmitNamespace - never show namespace prefix. Default is false
  * $wgCategoryTreeMaxDepth - maximum value for depth argument; An array that maps mode values to
- *                           the maximum depth acceptable for the depth option. 
+ *                           the maximum depth acceptable for the depth option.
  *                           Per default, the "categories" mode has a max depth of 2,
  *                           all other modes have a max depth of 1.
- */  
+ */
 
 $wgCategoryTreeMaxChildren = 200;
 $wgCategoryTreeAllowTag = true;
@@ -57,15 +57,16 @@ $wgCategoryTreeVersion = '1';
  * Register extension setup hook and credits
  */
 $wgExtensionFunctions[] = 'efCategoryTree';
-$wgExtensionCredits['specialpage'][] = array( 
-	'name' => 'CategoryTree', 
-	'author' => 'Daniel Kinzler', 
+$wgExtensionCredits['specialpage'][] = array(
+	'name' => 'CategoryTree',
+	'version' => '1.1',
+	'author' => 'Daniel Kinzler',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:CategoryTree',
 	'description' => 'AJAX based gadget to display the category structure of a wiki',
 );
-$wgExtensionCredits['parserhook'][] = array( 
-	'name' => 'CategoryTree', 
-	'author' => 'Daniel Kinzler', 
+$wgExtensionCredits['parserhook'][] = array(
+	'name' => 'CategoryTree',
+	'author' => 'Daniel Kinzler',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:CategoryTree',
 	'description' => 'AJAX based gadget to display the category structure of a wiki',
 );
@@ -125,10 +126,10 @@ function efCategoryTreeGetMagic( &$magicWords, $langCode ) {
  */
 function efCategoryTreeAjaxWrapper( $category, $mode ) {
 	global $wgCategoryTreeHTTPCache, $wgSquidMaxAge, $wgUseSquid;
-	
+
 	$ct = new CategoryTree;
 	$response = $ct->ajax( $category, $mode ); //FIXME: would need to pass on depth parameter here.
-	
+
 	if ( $wgCategoryTreeHTTPCache && $wgSquidMaxAge && $wgUseSquid ) {
 		$response->setCacheDuration( $wgSquidMaxAge );
 		$response->setVary( 'Accept-Encoding, Cookie' ); #cache for anons only
@@ -157,7 +158,7 @@ function efCategoryTreeCapDepth( $mode, $depth ) {
 		wfDebug( 'efCategoryTreeCapDepth: $wgCategoryTreeMaxDepth is invalid.' );
 		$max = 1;
 	}
-	
+
 	return min($depth, $max);
 }
 
@@ -220,16 +221,16 @@ function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
 	global $wgCategoryTreeDefaultMode;
 
 	$parser->mOutput->mCategoryTreeTag = true; # flag for use by efCategoryTreeParserOutput
-	
+
 	static $initialized = false;
-	
+
 	$divAttribs = Sanitizer::validateTagAttributes( $argv, 'div' );
 	$style = isset( $divAttribs['style'] ) ? $divAttribs['style'] : null;
-	
+
 	$mode = isset( $argv[ 'mode' ] ) ? $argv[ 'mode' ] : null;
 	if ( $mode !== NULL ) {
 		$mode= trim( strtolower( $mode ) );
-		
+
 		if ( $mode == 'all' ) $mode = CT_MODE_ALL;
 		else if ( $mode == 'pages' ) $mode = CT_MODE_PAGES;
 		else if ( $mode == 'categories' ) $mode = CT_MODE_CATEGORIES;
@@ -237,13 +238,13 @@ function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
 	else {
 		$mode = $wgCategoryTreeDefaultMode;
 	}
-	
+
 	$hideroot = isset( $argv[ 'hideroot' ] ) ? efCategoryTreeAsBool( $argv[ 'hideroot' ] ) : null;
 	$onlyroot = isset( $argv[ 'onlyroot' ] ) ? efCategoryTreeAsBool( $argv[ 'onlyroot' ] ) : null;
 	$depthArg = isset( $argv[ 'depth' ] ) ? $argv[ 'depth' ] : null;
 
 	$depth = efCategoryTreeCapDepth($mode, $depthArg);
-	
+
 	if ( $onlyroot ) $depth = 0;
 
 	$ct = new CategoryTree;
@@ -256,15 +257,15 @@ function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
 /*
 function efCategoryTreeInstallTabs( &$skin, &$content_actions ) {
 	global $wgTitle;
-	        
+
 	if ( $wgTitle->getNamespace() != NS_CATEGORY ) return true;
-	
+
 	$special = Title::makeTitle( NS_SPECIAL, 'CategoryTree' );
-	
+
 	$content_actions['categorytree'] = array(
 					'class' => false,
 					'text' => htmlspecialchars( CategoryTree::msg( 'tab' ) ),
-					'href' => $special->getLocalUrl() . '/' . $wgTitle->getPartialURL() );  
+					'href' => $special->getLocalUrl() . '/' . $wgTitle->getPartialURL() );
 	return true;
 }*/
 
@@ -296,5 +297,3 @@ function efCategoryTreeArticleFromTitle( &$title, &$article ) {
 	}
 	return true;
 }
-
-
