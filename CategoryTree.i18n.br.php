@@ -19,10 +19,12 @@
  */
 
 $messages = array(
+	'categorytree' => 'Gwezennadur ar rummadoù',
 	'categorytree-tab' => 'Gwezennadur',
 	'categorytree-category' => 'Rummad',
 	'categorytree-go' => 'Diskouez ar gwezennadur',
 	'categorytree-mode-categories' => 'Rummadoù hepken',
+	'categorytree-mode-all' => 'an holl bajennoù',
 	'categorytree-load' => 'kargañ',
 	'categorytree-loading' => 'o kargañ',
 	'categorytree-no-subcategories' => 'isrummad ebet',
