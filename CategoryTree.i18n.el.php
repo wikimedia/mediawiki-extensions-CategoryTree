@@ -27,5 +27,6 @@ $messages = array(
 	'categorytree-no-subcategories' => 'καμία υποκατηγορία',
 	'categorytree-no-pages' => 'καμία σελίδα ή υποκατηγορία',
 	'categorytree-not-found' => 'Η κατηγορία <i>$1</i> δεν βρέθηκε',
+	'categorytree-error' => 'Πρόβλημα φόρτωσης δεδομένων.',
 	'categorytree-show-list' => 'Δες ως λίστα',
 );
