@@ -30,27 +30,31 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
 
+/** Finnish (Suomi)
+ * @author Crt
+ * @author Nike
+ */
 $messages = array(
-	'categorytree' => 'Luokkapuu',
-	'categorytree-tab' => 'Puu',
-	'categorytree-header' => 'Syötä luokan nimi nähdäksesi sen sisällön puumuodossa.',
-	'categorytree-category' => 'Luokka',
-	'categorytree-go' => 'Näytä puu',
-	'categorytree-parents' => 'Yläluokat',
-	'categorytree-mode-categories' => 'vain luokat',
-	'categorytree-mode-pages' => 'kaikki sivut kuvia lukuun ottamatta',
-	'categorytree-mode-all' => 'kaikki sivut',
-	'categorytree-collapse' => 'piilota',
-	'categorytree-expand' => 'näytä',
-	'categorytree-load' => 'näytä',
-	'categorytree-loading' => 'etsitään',
-	'categorytree-nothing-found' => 'ei alaluokkia',
+	'categorytree'                  => 'Luokkapuu',
+	'categorytree-tab'              => 'Puu',
+	'categorytree-header'           => 'Syötä alle luokka, jonka haluat nähdä puumuodossa. Tämä toiminnallisuus vaatii kehittyneen JavaScript tuen, jota kutsutaan AJAXiksi. Jos sinulla on vanha selain, tai JavaScript ei ole päällä, tämä ominaisuus ei toimi.',
+	'categorytree-category'         => 'Luokka',
+	'categorytree-go'               => 'Näytä puu',
+	'categorytree-parents'          => 'Yläluokat',
+	'categorytree-mode-categories'  => 'vain luokat',
+	'categorytree-mode-pages'       => 'kaikki sivut kuvia lukuun ottamatta',
+	'categorytree-mode-all'         => 'kaikki sivut',
+	'categorytree-collapse'         => 'piilota',
+	'categorytree-expand'           => 'näytä',
+	'categorytree-load'             => 'näytä',
+	'categorytree-loading'          => 'etsitään',
+	'categorytree-nothing-found'    => 'ei alaluokkia',
 	'categorytree-no-subcategories' => 'ei alaluokkia',
-	'categorytree-no-pages' => 'ei sivuja eikä alaluokkia',
-	'categorytree-not-found' => 'Luokkaa <i>$1</i> ei löytynyt',
-	'categorytree-error' => 'Ongelma tietojen latauksessa.',
-	'categorytree-retry' => 'Odota hetki ja yritä uudelleen.',
-	'categorytree-show-list' => 'Näytä luettelona',
-	'categorytree-show-tree' => 'Näytä puuna',
+	'categorytree-no-pages'         => 'ei sivuja eikä alaluokkia',
+	'categorytree-not-found'        => 'Luokkaa <i>$1</i> ei löytynyt',
+	'categorytree-error'            => 'Ongelma tietojen latauksessa.',
+	'categorytree-retry'            => 'Odota hetki ja yritä uudelleen.',
+	'categorytree-show-list'        => 'Näytä luettelona',
+	'categorytree-show-tree'        => 'Näytä puuna',
 	'categorytree-too-many-subcats' => 'Alaluokkia ei voida näyttää puuna, koska niitä on liian monta.',
 );
