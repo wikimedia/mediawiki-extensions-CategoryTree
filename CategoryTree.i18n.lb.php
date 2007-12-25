@@ -22,6 +22,8 @@
  * @author Robby
  */
 $messages = array(
+	'categorytree-category'         => 'Kategorie',
+	'categorytree-mode-categories'  => 'nëmme Kategorien',
 	'categorytree-mode-all'         => 'all Säiten',
 	'categorytree-collapse'         => 'zouklappen',
 	'categorytree-expand'           => 'opklappen',
