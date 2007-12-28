@@ -27,6 +27,7 @@ $messages = array(
 	'categorytree-parents'          => 'Γονείς',
 	'categorytree-mode-categories'  => 'μόνο κατηγορίες',
 	'categorytree-mode-all'         => 'όλες οι σελίδες',
+	'categorytree-load'             => 'φόρτωσε',
 	'categorytree-loading'          => 'φόρτωση',
 	'categorytree-no-subcategories' => 'καμία υποκατηγορία',
 	'categorytree-no-pages'         => 'καμία σελίδα ή υποκατηγορία',
