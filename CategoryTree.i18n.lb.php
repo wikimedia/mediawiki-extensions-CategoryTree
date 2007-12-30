@@ -30,5 +30,5 @@ $messages = array(
 	'categorytree-nothing-found'    => 'Näischt fonnt',
 	'categorytree-no-subcategories' => 'Keng Ënnerkategorien',
 	'categorytree-not-found'        => "Kategorie ''$1'' net fonnt",
-	'categorytree-show-list'        => 'Als Lescht uweisen',
+	'categorytree-show-list'        => 'Als Lëscht uweisen',
 );
