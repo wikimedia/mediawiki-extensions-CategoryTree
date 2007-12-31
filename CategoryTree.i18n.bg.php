@@ -10,7 +10,7 @@
 
 /** Bulgarian (Български)
  * @author Spiritia
- * @author Dimitar Tsonev (Gregg), crossword.crozzword.com
+ * @author Borislav
  */
 $messages = array(
 	'categorytree'                  => 'Дърво на категориите',
@@ -29,10 +29,11 @@ $messages = array(
 	'categorytree-nothing-found'    => 'няма открити подкатегории',
 	'categorytree-no-subcategories' => 'няма подкатегории',
 	'categorytree-no-pages'         => 'няма страници или подкатегории',
-	'categorytree-not-found'        => 'Не беше намерена категория <i>$1</i>',
+	'categorytree-not-found'        => 'Категорията <i>$1</i> не беше намерена',
 	'categorytree-error'            => 'Възникна проблем при зареждане на информацията.',
 	'categorytree-retry'            => 'Изчакайте малко и опитайте отново.',
 	'categorytree-show-list'        => 'Показване като списък',
 	'categorytree-show-tree'        => 'Показване като дърво',
 	'categorytree-too-many-subcats' => 'Съществуват твърде много подкатегории, невъзможно е да бъдат показани като дърво.',
 );
+

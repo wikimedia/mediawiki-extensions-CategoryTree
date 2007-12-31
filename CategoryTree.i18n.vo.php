@@ -26,6 +26,10 @@ $messages = array(
 	'categorytree-tab'             => 'Bim',
 	'categorytree-category'        => 'Klad',
 	'categorytree-go'              => 'Jonolöd Bimi',
+	'categorytree-parents'         => 'Pals',
 	'categorytree-mode-categories' => 'Te klads',
+	'categorytree-mode-pages'      => 'pads pläamü magods',
 	'categorytree-mode-all'        => 'pads valik',
+	'categorytree-not-found'       => 'Klad: <i>$1</i> no petuvöl',
 );
+
