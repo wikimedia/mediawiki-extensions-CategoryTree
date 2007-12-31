@@ -18,8 +18,14 @@
   Free Documentation License". 
  */
 
+/** Volapük (Volapük)
+ * @author Malafaya
+ */
 $messages = array(
-	'categorytree-tab' => 'Bim',
-	'categorytree-category' => 'Klad',
-	'categorytree-go' => 'Jonolöd Bimi',
+	'categorytree'                 => 'KladaBim',
+	'categorytree-tab'             => 'Bim',
+	'categorytree-category'        => 'Klad',
+	'categorytree-go'              => 'Jonolöd Bimi',
+	'categorytree-mode-categories' => 'Te klads',
+	'categorytree-mode-all'        => 'pads valik',
 );
