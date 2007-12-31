@@ -24,9 +24,11 @@
 $messages = array(
 	'categorytree-category'         => 'Kategorie',
 	'categorytree-mode-categories'  => 'nëmme Kategorien',
+	'categorytree-mode-pages'       => 'Säiten ausser Biller',
 	'categorytree-mode-all'         => 'all Säiten',
 	'categorytree-collapse'         => 'zouklappen',
 	'categorytree-expand'           => 'opklappen',
+	'categorytree-load'             => 'lueden',
 	'categorytree-nothing-found'    => 'Näischt fonnt',
 	'categorytree-no-subcategories' => 'Keng Ënnerkategorien',
 	'categorytree-not-found'        => "Kategorie ''$1'' net fonnt",
