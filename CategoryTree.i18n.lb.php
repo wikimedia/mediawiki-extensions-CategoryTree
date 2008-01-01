@@ -20,6 +20,7 @@
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Kaffi
  */
 $messages = array(
 	'categorytree'                  => 'Struktur vun de Kategorien',
@@ -43,8 +44,7 @@ Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da
 	'categorytree-not-found'        => "Kategorie ''$1'' net fonnt",
 	'categorytree-error'            => 'Problem beim luede vun den Donneeën.',
 	'categorytree-retry'            => 'Waart w.e.g. een Ament a probéiert dann nach eng Kéier.',
-	'categorytree-show-list'        => 'Als Lëscht uweisen',
+	'categorytree-show-list'        => 'Als Lëscht weisen',
 	'categorytree-show-tree'        => 'Struktur weisen',
 	'categorytree-too-many-subcats' => "D'Struktur vun den Ënnerkategorien kann net duergestalt ginn, well et der zevill sinn.",
 );
-
