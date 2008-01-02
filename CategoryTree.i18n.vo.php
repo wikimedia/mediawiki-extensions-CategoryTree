@@ -31,5 +31,6 @@ $messages = array(
 	'categorytree-mode-pages'      => 'pads pläamü magods',
 	'categorytree-mode-all'        => 'pads valik',
 	'categorytree-not-found'       => 'Klad: <i>$1</i> no petuvöl',
+	'categorytree-show-list'       => 'Jonön as lised',
+	'categorytree-show-tree'       => 'Jonön as bim',
 );
-

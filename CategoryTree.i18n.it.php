@@ -30,27 +30,32 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
 
+/** Italian (Italiano)
+ * @author .anaconda
+ * @author BrokenArrow
+ * @author Gianfranco
+ */
 $messages = array(
-	'categorytree' => 'Struttura ad albero delle categorie',
-	'categorytree-tab' => 'Albero',
-	'categorytree-header' => 'Inserire il nome della categoria di cui si desidera vedere il contenuto sotto forma di struttura ad albero. Si noti che la pagina richiede le funzionalità avanzate di JavaScript chiamate AJAX; qualora si stia usando un browser molto vecchio o le funzioni JavaScript siano disabilitate, questa pagina non funzionerà.',
-	'categorytree-category' => 'Categoria',
-	'categorytree-go' => 'Carica',
-	'categorytree-parents' => 'Categorie superiori',
-	'categorytree-mode-categories' => 'mostra solo le categorie',
-	'categorytree-mode-pages' => 'tutte le pagine, escluse le immagini',
-	'categorytree-mode-all' => 'tutte le pagine',
-	'categorytree-collapse' => 'comprimi',
-	'categorytree-expand' => 'espandi',
-	'categorytree-load' => 'carica',
-	'categorytree-loading' => 'caricamento in corso',
-	'categorytree-nothing-found' => 'nessun risultato',
+	'categorytree'                  => 'Struttura ad albero delle categorie',
+	'categorytree-tab'              => 'Albero',
+	'categorytree-header'           => 'Inserire il nome della categoria di cui si desidera vedere il contenuto sotto forma di struttura ad albero. Si noti che la pagina richiede le funzionalità avanzate di JavaScript chiamate AJAX; qualora si stia usando un browser molto vecchio o le funzioni JavaScript siano disabilitate, questa pagina non funzionerà.',
+	'categorytree-category'         => 'Categoria',
+	'categorytree-go'               => 'Carica',
+	'categorytree-parents'          => 'Categorie superiori',
+	'categorytree-mode-categories'  => 'mostra solo le categorie',
+	'categorytree-mode-pages'       => 'tutte le pagine, escluse le immagini',
+	'categorytree-mode-all'         => 'tutte le pagine',
+	'categorytree-collapse'         => 'comprimi',
+	'categorytree-expand'           => 'espandi',
+	'categorytree-load'             => 'carica',
+	'categorytree-loading'          => 'caricamento in corso',
+	'categorytree-nothing-found'    => 'nessun risultato',
 	'categorytree-no-subcategories' => 'nessuna sottocategoria.',
-	'categorytree-no-pages' => 'nessuna voce né sottocategoria.',
-	'categorytree-not-found' => 'Categoria  \'\'$1\'\' non trovata',
-	'categorytree-error' => 'Problema nel caricamento dei dati.',
-	'categorytree-retry' => 'Per favore aspetta un momento e poi prova di nuovo.',
-	'categorytree-show-list' => 'Lista',
-	'categorytree-show-tree' => 'Struttura ad albero',
+	'categorytree-no-pages'         => 'nessuna voce né sottocategoria.',
+	'categorytree-not-found'        => "Categoria  ''$1'' non trovata",
+	'categorytree-error'            => 'Problema nel caricamento dei dati.',
+	'categorytree-retry'            => 'Attendere un momento e riprovare.',
+	'categorytree-show-list'        => 'Lista',
+	'categorytree-show-tree'        => 'Struttura ad albero',
 	'categorytree-too-many-subcats' => 'Le sottocategorie sono troppe per essere visualizzate sotto forma di struttura ad albero.',
 );
