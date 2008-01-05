@@ -28,27 +28,33 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-$messages['categorytree']= 'Kategóriafa';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced JavaScript functionality known as AJAX.
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
-  
-$messages['categorytree-category']= 'Kategória';
-$messages['categorytree-go']= 'Mehet';
-$messages['categorytree-parents']= 'Szülő kategóriák';
-  
-$messages['categorytree-mode-categories']= 'csak kategóriák';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
-  
-$messages['categorytree-collapse']= 'összecsuk';
-$messages['categorytree-expand']= 'kinyit';
-#$messages['categorytree-load']= 'load';
-$messages['categorytree-loading']= 'töltés';
-$messages['categorytree-nothing-found']= 'nincs találat';
-$messages['categorytree-no-subcategories']= 'nincs alkategória.';
-$messages['categorytree-no-pages']= 'nincs cikk vagy alkategória.';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+/** Hungarian (Magyar)
+ * @author KossuthRad
+ * @author Bdanee
+ */
+$messages = array(
+	'categorytree'                  => 'Kategóriafa',
+	'categorytree-tab'              => 'Fa',
+	'categorytree-header'           => 'Add meg annak a kategóriának a nevét, amelynek meg szeretnéd tekinteni
+a fastruktúráját. Ehhez egy, AJAX nevű JavaScript-technológia szükséges.
+Ha túlságosan régi böngésződ van, vagy a JavaScript le van tiltva, akkor nem fog működni.',
+	'categorytree-category'         => 'Kategória',
+	'categorytree-go'               => 'Mehet',
+	'categorytree-parents'          => 'Szülő kategóriák',
+	'categorytree-mode-categories'  => 'csak kategóriák',
+	'categorytree-mode-pages'       => 'oldalak kivéve képek',
+	'categorytree-mode-all'         => 'Az összes oldal',
+	'categorytree-collapse'         => 'összecsuk',
+	'categorytree-expand'           => 'kinyit',
+	'categorytree-load'             => 'Töltés',
+	'categorytree-loading'          => 'töltés',
+	'categorytree-nothing-found'    => 'nincs találat',
+	'categorytree-no-subcategories' => 'nincs alkategória.',
+	'categorytree-no-pages'         => 'nincs cikk vagy alkategória.',
+	'categorytree-not-found'        => 'Kategória <i>$1</i> nem található',
+	'categorytree-error'            => 'Probélma a betöltődő adattal',
+	'categorytree-retry'            => 'Kérlek várj egy pillanatot és próbáld újra.',
+	'categorytree-show-list'        => 'Mutatsd listaként',
+	'categorytree-show-tree'        => 'Mutatsd faként',
+	'categorytree-too-many-subcats' => 'Az alkategóriák nem jeleníthetőek meg, mert túl sok van belőlük.',
+);
