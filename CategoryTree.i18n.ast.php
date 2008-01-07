@@ -20,11 +20,14 @@
 
 /** Asturian (Asturianu)
  * @author SPQRobin
+ * @author Esbardu
  */
 $messages = array(
 	'categorytree'                  => 'Árbole de categoríes',
 	'categorytree-tab'              => 'Árbole',
-	'categorytree-header'           => "Introduz una categoría pa ver el so conteníu estructuráu en forma d'árbole. Recuerda que pa ello necesítase la erbía AJAX de JavaScript. Si tienes un navegador mui antiguu o'l JavaScript desactiváu, nun va funcionar.",
+	'categorytree-header'           => "Escribi un nome de categoría pa ver el so conteníu estructuráu en forma
+d'árbole. Fíxate en qu'esto requier la erbía AJAX de JavaScript. Si tienes
+un navegador mui antiguu o'l JavaScript desactiváu, nun va funcionar.",
 	'categorytree-category'         => 'Categoría',
 	'categorytree-go'               => 'Amosar árbole',
 	'categorytree-parents'          => 'Categoríes superiores',
