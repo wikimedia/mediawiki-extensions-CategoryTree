@@ -2,7 +2,6 @@
 /*
   Internationalisation file for the CategoryTree extension
   Copyright (C) 2006, Daniel Kinzler, brightbyte.de
-  Danish translation by Barklund
  
   This file is licensed under the GPL and the GFDL:
   
@@ -30,27 +29,31 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced JavaScript functionality known as AJAX.
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
-  
-$messages['categorytree-category']= 'Kategori';
-$messages['categorytree-go']= 'Henter';
-$messages['categorytree-parents']= 'Overkategorier';
-  
-$messages['categorytree-mode-categories']= 'vis kun kategorier';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
-  
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
-$messages['categorytree-nothing-found']= 'Ikke fundet, desværre.';
-$messages['categorytree-no-subcategories']= 'Ingen underkategorier.';
-$messages['categorytree-no-pages']= 'Ingen artikler eller underkategorier.';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+/** Danish (Dansk)
+ * @author Barklund
+ * @author Morten LJ
+ */
+$messages = array(
+	'categorytree'                  => 'Kategoritræ',
+	'categorytree-tab'              => 'Træ',
+	'categorytree-header'           => 'Indtast navnet på en kategori for at se indholdet som et træ. Bemærk at dette kræver avanceret JavaScript-funktionalitet kendt som AJAX, det virker ikke hvis du har en meget gammel browser eller hvis du har slået JavaScript fra.',
+	'categorytree-category'         => 'Kategori',
+	'categorytree-go'               => 'Henter',
+	'categorytree-parents'          => 'Overkategorier',
+	'categorytree-mode-categories'  => 'vis kun kategorier',
+	'categorytree-mode-pages'       => 'sider undtaget billeder',
+	'categorytree-mode-all'         => 'alle sider',
+	'categorytree-collapse'         => 'fold sammen',
+	'categorytree-expand'           => 'fold ud',
+	'categorytree-load'             => 'hent',
+	'categorytree-loading'          => 'indlæser',
+	'categorytree-nothing-found'    => 'Ikke fundet, desværre.',
+	'categorytree-no-subcategories' => 'Ingen underkategorier.',
+	'categorytree-no-pages'         => 'Ingen artikler eller underkategorier.',
+	'categorytree-not-found'        => "Kategorien ''$1'' blev ikke fundet",
+	'categorytree-error'            => 'Der opstod et problem under indlæsning af data.',
+	'categorytree-retry'            => 'Vent et øjeblik og prøv igen.',
+	'categorytree-show-list'        => 'Vis som liste',
+	'categorytree-show-tree'        => 'Vis som træ',
+	'categorytree-too-many-subcats' => 'Kan ikke vise underkategorier som træ, der er for mange.',
+);
