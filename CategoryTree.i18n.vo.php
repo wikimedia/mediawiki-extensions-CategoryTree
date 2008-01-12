@@ -20,17 +20,23 @@
 
 /** Volapük (Volapük)
  * @author Malafaya
+ * @author Smeira
  */
 $messages = array(
-	'categorytree'                 => 'KladaBim',
-	'categorytree-tab'             => 'Bim',
-	'categorytree-category'        => 'Klad',
-	'categorytree-go'              => 'Jonolöd Bimi',
-	'categorytree-parents'         => 'Pals',
-	'categorytree-mode-categories' => 'Te klads',
-	'categorytree-mode-pages'      => 'pads pläamü magods',
-	'categorytree-mode-all'        => 'pads valik',
-	'categorytree-not-found'       => 'Klad: <i>$1</i> no petuvöl',
-	'categorytree-show-list'       => 'Jonön as lised',
-	'categorytree-show-tree'       => 'Jonön as bim',
+	'categorytree'                  => 'KladaBim',
+	'categorytree-tab'              => 'Bim',
+	'categorytree-category'         => 'Klad',
+	'categorytree-go'               => 'Jonolöd Bimi',
+	'categorytree-parents'          => 'Pals',
+	'categorytree-mode-categories'  => 'Te klads',
+	'categorytree-mode-pages'       => 'pads pläamü magods',
+	'categorytree-mode-all'         => 'pads valik',
+	'categorytree-nothing-found'    => 'nos petuvon',
+	'categorytree-no-subcategories' => 'donaklads nonik',
+	'categorytree-no-pages'         => 'pads e donaklads noniks',
+	'categorytree-not-found'        => 'Klad: <i>$1</i> no petuvöl',
+	'categorytree-retry'            => 'Stebedolös, begö! timüli e steifülolös dönu.',
+	'categorytree-show-list'        => 'Jonön as lised',
+	'categorytree-show-tree'        => 'Jonön as bim',
+	'categorytree-too-many-subcats' => 'Donaklads no kanons pajonön as bim, bi binons tu mödiks.',
 );
