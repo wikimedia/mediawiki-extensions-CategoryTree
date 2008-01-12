@@ -12,29 +12,29 @@
 
 $messages['categorytree']= 'سانات بۇتاقتارى';
 $messages['categorytree-tab']= 'بۇتاقتار';
-$messages['categorytree-header']= 'سانات مازمۇنىڭ بۇتاقتار تٷردە كٶرۋ ٷشٸن اتاۋىن ەنگٸزٸڭٸز.
-اڭعارپتا: بۇل ٸسكە JavaScript قۇرالىنىڭ AJAX دەگەن كەڭەيتٸلگەن قابٸلەتٸ قاجەت بولادى.
-ەگەر شولعىشىڭىز ٶتە ەسكٸ, نەمەسە JavaScript ٶشٸرٸلگەن بولسا, بۇل ٸسكە اسىرىلمايدى.';
+$messages['categorytree-header']= 'سانات مازمۇنىڭ بۇتاقتار تۇردە كورۋ ٴۇشىن اتاۋىن ەنگىزىڭىز.
+اڭعارپتا: بۇل ىسكە JavaScript قۇرالىنىڭ AJAX دەگەن كەڭەيتىلگەن قابىلەتى قاجەت بولادى.
+ەگەر شولعىشىڭىز وتە ەسكى, نەمەسە JavaScript وشىرىلگەن بولسا, بۇل ىسكە اسىرىلمايدى.';
 
 $messages['categorytree-category']= 'سانات';
-$messages['categorytree-go']= 'بۇتاقتارىن كٶرسەت';
+$messages['categorytree-go']= 'بۇتاقتارىن كورسەت';
 $messages['categorytree-parents']= 'جوعارعىلار';
 
 $messages['categorytree-mode-categories']= 'تەك ساناتتار';
-$messages['categorytree-mode-pages']= 'بەتتەر (سۋرەتتەردٸ ساناماي)';
+$messages['categorytree-mode-pages']= 'بەتتەر (سۋرەتتەردى ساناماي)';
 $messages['categorytree-mode-all']= 'بارلىق بەت';
 
 $messages['categorytree-collapse']= 'تارىلتۋ';
 $messages['categorytree-expand']= 'كەڭەيتۋ';
-$messages['categorytree-load']= 'جٷكتەۋ';
-$messages['categorytree-loading']= 'جٷكتەۋدە';
+$messages['categorytree-load']= 'جۇكتەۋ';
+$messages['categorytree-loading']= 'جۇكتەۋدە';
 $messages['categorytree-nothing-found']= 'ەشتەڭە تابىلمادى';
 $messages['categorytree-no-subcategories']= 'ساناتشالارى جوق';
-$messages['categorytree-no-pages']= 'بەتتەرٸ نە ساناتشالارى جوق';
+$messages['categorytree-no-pages']= 'بەتتەرى نە ساناتشالارى جوق';
 $messages['categorytree-not-found']= "<i>$1</i> دەگەن سانات تابىلمادى";
-$messages['categorytree-error'] = 'دەرەكتەردٸ جٷكتەۋ كەزٸندە شاتاق شىقتى.';
-$messages['categorytree-retry'] = 'بٸر سٵت كٷتە تۇرىپ قايتالاڭىز.';
+$messages['categorytree-error'] = 'دەرەكتەردى جۇكتەۋ كەزىندە شاتاق شىقتى.';
+$messages['categorytree-retry'] = 'ٴبىر ٴسات كۇتە تۇرىپ قايتالاڭىز.';
 
-$messages['categorytree-show-list'] = "تٸزٸمشە كٶرسەت";
-$messages['categorytree-show-tree'] = "بۇتاقتارشا كٶرسەت";
-$messages['categorytree-too-many-subcats'] = "ساناتشالار تىم كٶپ بولعاندىقتان, بۇتاقتارى كٶرسەتٸلمەيدٸ.";
+$messages['categorytree-show-list'] = "تىزىمشە كورسەت";
+$messages['categorytree-show-tree'] = "بۇتاقتارشا كورسەت";
+$messages['categorytree-too-many-subcats'] = "ساناتشالار تىم كوپ بولعاندىقتان, بۇتاقتارى كورسەتىلمەيدى.";
