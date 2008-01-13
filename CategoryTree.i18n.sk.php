@@ -30,30 +30,33 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   */
   
+/** Slovak (Slovenčina)
+ * @author Helix84
+ */
 $messages = array(
-	'categorytree' => 'Strom kategórií',
-	'categorytree-tab' => 'Strom',
-	'categorytree-header' => 'Zadajte názov kategórie, ktorej obsah sa má zobraziť ako stromová štruktúra.
+	'categorytree'                  => 'Strom kategórií',
+	'categorytree-tab'              => 'Strom',
+	'categorytree-header'           => 'Zadajte názov kategórie, ktorej obsah sa má zobraziť ako stromová štruktúra.
 Majte na pamäti, že táto funkcia vyžaduje JavaScriptovú funkcionalitu známu ako AJAX.
 Ak máte veľmi starý prehliadač alebo máte vypnutý JavaScrpt, nebude fungovať.
 ',
-	'categorytree-category' => 'Kategória',
-	'categorytree-go' => 'Spustiť',
-	'categorytree-parents' => 'Nadradená kategória',
-	'categorytree-mode-categories' => 'ukáž iba kategórie',
-	'categorytree-mode-pages' => 'stránky okrem obrázkov',
-	'categorytree-mode-all' => 'všetky stránky',
-	'categorytree-collapse' => 'zbaliť',
-	'categorytree-expand' => 'rozbaliť',
-	'categorytree-load' => 'načítať',
-	'categorytree-loading' => 'načítava sa',
-	'categorytree-nothing-found' => 'nebolo nič nájdené',
+	'categorytree-category'         => 'Kategória',
+	'categorytree-go'               => 'Zobraziť strom',
+	'categorytree-parents'          => 'Nadradené kategórie',
+	'categorytree-mode-categories'  => 'iba kategórie',
+	'categorytree-mode-pages'       => 'stránky okrem obrázkov',
+	'categorytree-mode-all'         => 'všetky stránky',
+	'categorytree-collapse'         => 'zbaliť',
+	'categorytree-expand'           => 'rozbaliť',
+	'categorytree-load'             => 'načítať',
+	'categorytree-loading'          => 'načítava sa',
+	'categorytree-nothing-found'    => 'nebolo nič nájdené',
 	'categorytree-no-subcategories' => 'žiadne podkategórie.',
-	'categorytree-no-pages' => 'žiadne stránky ani podkategórie.',
-	'categorytree-not-found' => 'Kategória <i>$1</i> nenájdená',
-	'categorytree-error' => 'Problém pri načítavaní údajov.',
-	'categorytree-retry' => 'Prosím, chvíľu počkajte a skúste to znova.',
-	'categorytree-show-list' => 'Zobraziť ako zoznam',
-	'categorytree-show-tree' => 'Zobraziť ako strom',
-	'categorytree-too-many-subcats' => 'Nemôžem zobraziť podkategórie ako strom, je ich príliš veľa.',
+	'categorytree-no-pages'         => 'žiadne stránky ani podkategórie.',
+	'categorytree-not-found'        => 'Kategória <i>$1</i> nenájdená',
+	'categorytree-error'            => 'Problém pri načítavaní údajov.',
+	'categorytree-retry'            => 'Prosím, chvíľu počkajte a skúste to znova.',
+	'categorytree-show-list'        => 'Zobraziť ako zoznam',
+	'categorytree-show-tree'        => 'Zobraziť ako strom',
+	'categorytree-too-many-subcats' => 'Nie je možné zobraziť podkategórie ako strom, je ich príliš veľa.',
 );
