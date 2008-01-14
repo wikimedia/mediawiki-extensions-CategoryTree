@@ -148,7 +148,7 @@ class CategoryTree {
 				$load = 'ct-' . $uniq . '-' . mt_rand( 1, 100000 );
 				
 				$html .= wfOpenElement( 'script', array( 'type' => 'text/javascript', 'id' => $load ) );
-				$html .= 'categoryTreeLoadChildren("' . Xml::escapeJsString( $title->getDBKey() ) . '", "' . $mode . '", document.getElementById("' . $load . '").parentNode );';
+				$html .= 'categoryTreeLoadChildren("' . Xml::escapeJsString( $title->getDBkey() ) . '", "' . $mode . '", document.getElementById("' . $load . '").parentNode );';
 				$html .= wfCloseElement( 'script' );
 			}
 		}
@@ -193,7 +193,7 @@ class CategoryTree {
 				FROM $page as cat
 				JOIN $categorylinks ON cl_from = cat.page_id
 				$transJoin
-				WHERE cl_to = " . $dbr->addQuotes( $title->getDBKey() ) . " 
+				WHERE cl_to = " . $dbr->addQuotes( $title->getDBkey() ) . " 
 				$nsmatch
 				"./*AND cat.page_is_redirect = 0*/"
 				$transWhere
@@ -297,7 +297,7 @@ class CategoryTree {
 		}
 
 		$ns = $title->getNamespace();
-		$key = $title->getDBKey();
+		$key = $title->getDBkey();
 		
 		#$trans = $title->getLocalizedText();
 		$trans = ''; #place holder for when translated titles are available
