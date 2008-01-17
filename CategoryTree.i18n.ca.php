@@ -30,24 +30,30 @@
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-$messages['categorytree']= 'Categories en arbre';
-$messages['categorytree-tab']= 'Arbre';
-$messages['categorytree-header']= "Entreu el nom d'una categoria per a veure l'arbre del seu contingut. Aquesta pàgina utilitza una funcionalitat avançada del JavaScript coneguda com a AJAX, i no funciona en navegadors antics o que tinguin el JavaScript desactivat.";
-
-$messages['categorytree-category']= 'Categoria';
-$messages['categorytree-go']= 'Carregueu';
-$messages['categorytree-parents']= 'Categories pare';
-
-$messages['categorytree-mode-categories']= 'mostra només categories';
-$messages['categorytree-mode-pages']= 'mostra categories i pàgines';
-$messages['categorytree-mode-all']= 'mostra categories, pàgines i imatges';
-
-$messages['categorytree-collapse']= 'Tancar';
-$messages['categorytree-expand']= 'Expandir';
-$messages['categorytree-load']= 'Carrega';
-$messages['categorytree-loading']= 'carregant';
-$messages['categorytree-nothing-found']= "no hi ha sub-categories";
-$messages['categorytree-no-subcategories']= 'no hi ha subcategories.';
-$messages['categorytree-no-pages']= 'no hi ha articles o subcategories.';
-$messages['categorytree-not-found']= "No s'ha trobat la categoria ''\$1''.";
-
+/** Catalan (Català)
+ * @author SMP
+ */
+$messages = array(
+	'categorytree'                  => 'Categories en arbre',
+	'categorytree-tab'              => 'Arbre',
+	'categorytree-header'           => "Entreu el nom d'una categoria per a veure l'arbre del seu contingut. Aquesta pàgina utilitza una funcionalitat avançada del JavaScript coneguda com a AJAX, i no funciona en navegadors antics o que tinguin el JavaScript desactivat.",
+	'categorytree-category'         => 'Categoria',
+	'categorytree-go'               => 'Carregueu',
+	'categorytree-parents'          => 'Categories pare',
+	'categorytree-mode-categories'  => 'mostra només categories',
+	'categorytree-mode-pages'       => 'mostra categories i pàgines',
+	'categorytree-mode-all'         => 'mostra categories, pàgines i imatges',
+	'categorytree-collapse'         => 'Tancar',
+	'categorytree-expand'           => 'Expandir',
+	'categorytree-load'             => 'Carrega',
+	'categorytree-loading'          => 'carregant',
+	'categorytree-nothing-found'    => 'no hi ha sub-categories',
+	'categorytree-no-subcategories' => 'no hi ha subcategories.',
+	'categorytree-no-pages'         => 'no hi ha articles o subcategories.',
+	'categorytree-not-found'        => "No s'ha trobat la categoria ''$1''.",
+	'categorytree-error'            => 'Problema en la càrrega de dades.',
+	'categorytree-retry'            => 'Torneu-ho a intentar en uns moments.',
+	'categorytree-show-list'        => 'Mostra com a llista',
+	'categorytree-show-tree'        => 'Mostra com un arbre',
+	'categorytree-too-many-subcats' => 'Hi ha massa subcategories per a mostrar-les com a arbre.',
+);
