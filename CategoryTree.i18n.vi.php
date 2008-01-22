@@ -1,56 +1,31 @@
 <?php
-/*
-  Internationalisation file for the CategoryTree extension
-  Copyright (C) 2006, Daniel Kinzler, brightbyte.de;
-  Vietnamese by Minh Nguyen aka Mxn
- 
-  This file is licensed under the GPL and the GFDL:
-  
-  
-  Permission is granted to copy, distribute and/or modify this document
-  under the terms of the GNU Free Documentation License, Version 1.2
-  or any later version published by the Free Software Foundation;
-  with no Invariant Sections, no Front-Cover Texts, and no Back-Cover
-  Texts.  A copy of the license is included in the section entitled "GNU
-  Free Documentation License".
-  
-  
-  This program is free software; you can redistribute it and/or
-  modify it under the terms of the GNU General Public License
-  as published by the Free Software Foundation; either version 2
-  of the License, or (at your option) any later version.
-  
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
-  
-  You should have received a copy of the GNU General Public License
-  along with this program; if not, write to the Free Software
-  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-  */
-  
-#$messages['categorytree']= 'CategoryTree';
-#$messages['categorytree-tab']= 'Tree';
-#$messages['categorytree-header']= 
-#'Enter a category name to see its contents as a tree structure. 
-#Note that this requires advanced JavaScript functionality known as AJAX.
-#If you have a very old browser, or have JavaScript disabled, it will not work.
-#';
-  
-$messages['categorytree-category']= 'Thể loại';
-$messages['categorytree-go']= 'Hiển thị';
-$messages['categorytree-parents']= 'Các thể loại mẹ';
-  
-$messages['categorytree-mode-categories']= 'Chỉ liệt kê các thể loại';
-#$messages['categorytree-mode-pages']= 'pages except images';
-#$messages['categorytree-mode-all']= 'all pages';
-  
-#$messages['categorytree-collapse']= 'collapse';
-#$messages['categorytree-expand']= 'expand';
-#$messages['categorytree-load']= 'load';
-#$messages['categorytree-loading']= 'loading';
-$messages['categorytree-nothing-found']= 'Không có gì.';
-$messages['categorytree-no-subcategories']= 'Không có tiểu thể loại.';
-$messages['categorytree-no-pages']= 'Không có trang hay tiểu thể loại.';
-#$messages['categorytree-not-found']= "Category ''\$1'' not found";
+/** Vietnamese (Tiếng Việt)
+ * @author Vinhtantran
+ */
+$messages = array(
+	'categorytree'                  => 'Cây thể loại',
+	'categorytree-tab'              => 'Cây',
+	'categorytree-header'           => 'Gõ vào tên thể loại để xem nội dung của nó theo cấu trúc cây.
+Chú ý rằng chức năng này sử dụng chức năng JavaScript, với tên AJAX.
+Nếu bạn đang sử dụng trình duyệt rất cũ, hoặc đã tắt JavaScript, nó sẽ không hoạt động.',
+	'categorytree-category'         => 'Thể loại',
+	'categorytree-go'               => 'Hiển thị',
+	'categorytree-parents'          => 'Các thể loại mẹ',
+	'categorytree-mode-categories'  => 'Chỉ liệt kê các thể loại',
+	'categorytree-mode-pages'       => 'các trang ngoại trừ trang hình',
+	'categorytree-mode-all'         => 'tất cả các trang',
+	'categorytree-collapse'         => 'đóng',
+	'categorytree-expand'           => 'mở',
+	'categorytree-load'             => 'tải',
+	'categorytree-loading'          => 'đang tải',
+	'categorytree-nothing-found'    => 'Không có gì.',
+	'categorytree-no-subcategories' => 'Không có tiểu thể loại.',
+	'categorytree-no-pages'         => 'Không có trang hay tiểu thể loại.',
+	'categorytree-not-found'        => 'Không tìm thấy thể loại <i>$1</i>',
+	'categorytree-error'            => 'Có vấn đề khi tải dữ liệu.',
+	'categorytree-retry'            => 'Xin hãy chờ một chút rồi thử lại.',
+	'categorytree-show-list'        => 'Hiển thị dạng danh sách',
+	'categorytree-show-tree'        => 'Hiển thị dạng cây',
+	'categorytree-too-many-subcats' => 'Không thể hiển thị tiểu thể loại theo dạng cây, có quá nhiều tiểu thể loại',
+);
+
