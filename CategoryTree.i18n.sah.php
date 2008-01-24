@@ -19,6 +19,7 @@ $messages = array(
 	'categorytree-no-subcategories' => 'субкатегорията суох',
 	'categorytree-no-pages'         => 'ыстатыйата эбэтэр субкатегорията суох',
 	'categorytree-not-found'        => '<i>$1</i> категория көстүбэтэ',
+	'categorytree-error'            => 'Билэни суруйарга алҕас таҕыста',
 	'categorytree-retry'            => 'Кыратык кэтэһэ түһэн баран өссө боруобалаа',
 	'categorytree-show-list'        => 'Тиһик (Испииһэк)',
 	'categorytree-show-tree'        => 'Мас курдук',
