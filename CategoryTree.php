@@ -209,7 +209,7 @@ function efCategoryTreeParserFunction( &$parser ) {
 
 	//now handle just like a <categorytree> tag
 	$html = efCategoryTreeParserHook( $cat, $argv, $parser );
-	return array( $html, 'noargs' => true, 'noparse' => true ); //XXX: isHTML would be right logically, but it causes extra blank lines
+	return array( $html, 'isHTML' => true );
 }
 
 /**
