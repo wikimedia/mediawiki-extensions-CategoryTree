@@ -5,6 +5,9 @@
 $messages = array(
 	'categorytree'                  => 'Категориялар мас курдук',
 	'categorytree-tab'              => 'Мас курдук',
+	'categorytree-header'           => 'Категория аатын киллэрдэххинэ мас курдук көстүөҕэ.
+Бу кыаҕы браузерыҥ AJAX-ы туһанар эрэ буоллаҕына туттар кыахтааххын.
+Браузерыҥ эргэ буоллаҕына эбэтэр JavaScript арахсыбыт буоллаҕына субкатегорийалары мас курдук көрөр сатаммат.',
 	'categorytree-category'         => 'Категория',
 	'categorytree-go'               => 'Көрдөр',
 	'categorytree-parents'          => 'Төрөппүттэрэ',
@@ -25,4 +28,3 @@ $messages = array(
 	'categorytree-show-tree'        => 'Мас курдук',
 	'categorytree-too-many-subcats' => 'Субкатегориялары мас курдук көрдөрөр табыллыбата - элбэхтэрэ бэрт.',
 );
-
