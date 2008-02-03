@@ -11,6 +11,7 @@
 
 $messages['categorytree']= 'CategoryTree';
 $messages['categorytree-tab']= 'Tree';
+$messages['categorytree-desc'] = 'AJAX based gadget to display the category structure of a wiki';
 $messages['categorytree-header']= 
 'Enter a category name to see its contents as a tree structure. 
 Note that this requires advanced JavaScript functionality known as AJAX.

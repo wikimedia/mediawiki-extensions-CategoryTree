@@ -32,6 +32,7 @@
   
 $messages = array(
 	'categorytree' => 'Arborescence des catégories',
+	'categorytree-desc' => 'Gadget basé sur AJAX pour afficher la structure de la catégorie d’un wiki',
 	'categorytree-tab' => 'Arbre',
 	'categorytree-header' => 'Entrez un nom de catégorie pour voir son contenu en structure arborescente. Ceci utilise des fonctionnalités JavaScript avancées connues sous le nom d’AJAX. Si vous avez un très vieux navigateur Web ou si vous n’avez pas activé la fonctionnalité JavaScript, cela ne fonctionnera pas.',
 	'categorytree-category' => 'Catégorie',

@@ -62,6 +62,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'author' => 'Daniel Kinzler', 
 	'url' => 'http://www.mediawiki.org/wiki/Extension:CategoryTree',
 	'description' => 'AJAX based gadget to display the category structure of a wiki',
+	'descriptionmsg' => 'categorytree-desc',
 );
 $wgExtensionCredits['parserhook'][] = array( 
 	'name' => 'CategoryTree', 
