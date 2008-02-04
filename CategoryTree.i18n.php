@@ -1441,7 +1441,7 @@ $messages['nl'] = array(
 	'categorytree-desc'             => 'AJAX-gebaseerde uitbreiding om de [[Special:CategoryTree|categoriestructuur]] van een wiki te tonen',
 	'categorytree-header'           => 'Geef een categorienaam in om de inhoud als een boomstructuur te bekijken.
 Let op: deze functie gebruikt JavaScript-functionaliteit die bekend staat als AJAX.
-Als u een erg verouderde browser heeft of JavaScript staat uitgeschakeld, dan werkt deze functie niet.',
+Als u een verouderde browser heeft of JavaScript staat uitgeschakeld, dan werkt deze functie niet.',
 	'categorytree-category'         => 'Categorie',
 	'categorytree-go'               => 'Laden',
 	'categorytree-parents'          => 'Bovenliggende categorieën',
