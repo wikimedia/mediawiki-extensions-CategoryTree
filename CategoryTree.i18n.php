@@ -148,6 +148,7 @@ $messages['ar'] = array(
 /** Asturian (Asturianu)
  * @author SPQRobin
  * @author Esbardu
+ * @author Siebrand
  */
 $messages['ast'] = array(
 	'categorytree'                  => 'Árbole de categoríes',
@@ -394,11 +395,12 @@ $messages['co'] = array(
 /** Czech (Česky)
  * @author Danny B.
  * @author Li-sung
+ * @author Siebrand
  */
 $messages['cs'] = array(
 	'categorytree'                  => 'Strom kategorií',
 	'categorytree-tab'              => 'Strom',
-	'categorytree-desc'             => 'Na Ajaxu založená funkce zobrazující obsah [[Special:CategoryTree|kategorie ve stromové struktuře]].',
+	'categorytree-desc'             => 'Na Ajaxu založená funkce zobrazující obsah [[Special:CategoryTree|kategorie ve stromové struktuře]]',
 	'categorytree-header'           => 'Zadejte název kategorie k&nbsp;zobrazení jejího obsahu jako stromové struktury.
 
 (Tato funkce vyžaduje pokročilé funkce JavaScriptu známé jako Ajax. Jestliže máte velmi starý prohlížeč nebo vypnutý JavaScript, nezobrazí se strom správně nebo vůbec.)',
@@ -770,6 +772,14 @@ Se vos avéd un rudo viely navigator Malyâjo ou que vos éd pas activâ la fonc
 	'categorytree-too-many-subcats' => 'Les sot-catègories sont trop nombroses por étre afichiês desot fôrma d’âbro.',
 );
 
+/** Friulian (Furlan)
+ * @author MF-Warburg
+ */
+$messages['fur'] = array(
+	'categorytree'          => 'Arbul des categoriis',
+	'categorytree-category' => 'Categorie',
+);
+
 /** Galician (Galego)
  * @author Alma
  * @author Xosé
@@ -877,7 +887,7 @@ $messages['hr'] = array(
 );
 
 /** Upper Sorbian (Hornjoserbsce)
- * @author Michawiki
+ * @author Siebrand
  */
 $messages['hsb'] = array(
 	'categorytree'                  => 'Kategorijowy štom',
@@ -1431,9 +1441,24 @@ $messages['nds'] = array(
 	'categorytree-too-many-subcats' => 'Kann Ünnerkategorien nich as Boom wiesen, sünd to veel.',
 );
 
+/** Nepali (नेपाली)
+ * @author SPQRobin
+ */
+$messages['ne'] = array(
+	'categorytree-category'         => 'श्रेणी',
+	'categorytree-mode-categories'  => 'श्रेणी मात्र',
+	'categorytree-mode-pages'       => 'तस्वीरहरू बाहेकका पृष्ठहरू',
+	'categorytree-mode-all'         => 'सबै पृष्ठहरु',
+	'categorytree-collapse'         => 'खुम्च्याउनु',
+	'categorytree-expand'           => 'फैलाउनु',
+	'categorytree-nothing-found'    => 'केहीपनि फेला परेन',
+	'categorytree-no-subcategories' => 'उपश्रेणीहरू छैनन्',
+	'categorytree-no-pages'         => 'पृष्ठहरू वा उपश्रेणीहरू छैनन्',
+	'categorytree-not-found'        => 'श्रेणी <i>$1</i> फेला परेन',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
- * @author SPQRobin
  */
 $messages['nl'] = array(
 	'categorytree'                  => 'Categorieboom',
@@ -1497,6 +1522,7 @@ $messages['nn'] = array(
 $messages['no'] = array(
 	'categorytree'                  => 'Kategoritre',
 	'categorytree-tab'              => 'Tre',
+	'categorytree-desc'             => 'AJAX-basert verktøy som viser [[Special:CategoryTree|kategoristrukturen]] til en wiki',
 	'categorytree-header'           => 'Skriv inn et kategorinavn for å se dens innhold som en trestruktur. Merk at dette trenger en avansert type Javascript-funksjonalitet kjent som AJAX. Dersom du har en gammel nettleser eller har slått av Javascript vil dette ikke fungere.
 
 Enter a category name to see its contents as a tree structure. Note that this requires advanced JavaScript functionality known as AJAX. If you have a very old browser, or have JavaScript disabled, it will not work.',
@@ -1643,7 +1669,7 @@ $messages['ps'] = array(
 
 /** Portuguese (Português)
  * @author 555
- * @author Malafaya
+ * @author Siebrand
  */
 $messages['pt'] = array(
 	'categorytree'                  => 'Árvore de categorias',
@@ -1814,6 +1840,7 @@ $messages['sdc'] = array(
 
 /** Slovak (Slovenčina)
  * @author Helix84
+ * @author Siebrand
  */
 $messages['sk'] = array(
 	'categorytree'                  => 'Strom kategórií',
@@ -1977,6 +2004,7 @@ In gjucht oolde Browsere, of wan Javascript ouschalted is, funktioniert disse Si
 
 /** Swedish (Svenska)
  * @author Lejonel
+ * @author Siebrand
  */
 $messages['sv'] = array(
 	'categorytree'                  => 'Kategoriträd',
