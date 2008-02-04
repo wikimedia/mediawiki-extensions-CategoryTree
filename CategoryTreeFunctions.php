@@ -24,7 +24,7 @@ class CategoryTree {
 	 */
 	static function setHeaders( &$outputPage ) {
 		global $wgJsMimeType, $wgScriptPath, $wgContLang, $wgCategoryTreeExtPath, $wgCategoryTreeVersion;
-		efInjectCategoryTreeMessages();
+		wfLoadExtensionMessages( 'CategoryTree' );
 
 		# Register css file for CategoryTree
 		$outputPage->addLink(
@@ -399,35 +399,15 @@ class CategoryTree {
 	}
 
 	/**
-	* load the CategoryTree internationalization file
-	*/
-	static function loadMessages() {
-		global $wgLang;
-
-		$messages= array();
-
-		$f= dirname( __FILE__ ) . '/CategoryTree.i18n.php';
-		include( $f );
-
-		$f= dirname( __FILE__ ) . '/CategoryTree.i18n.' . $wgLang->getCode() . '.php';
-		if ( file_exists( $f ) ) include( $f );
-
-		return $messages;
-	}
-
-	/**
 	 * Get a CategoryTree message, "categorytree-" prefix added automatically
 	 */
 	static function msg( $msg /*, ...*/ ) {
-		static $initialized = false;
-		global $wgMessageCache;
-		if ( !$initialized ) {
-			$wgMessageCache->addMessages( self::loadMessages() );
-			$initialized = true;
-		}
+		wfLoadExtensionMessages( 'CategoryTree' );
+
 		if ( $msg === false ) {
 			return null;
 		}
+
 		$args = func_get_args();
 		$msg = array_shift( $args );
 		if ( $msg == '' ) {

@@ -59,6 +59,7 @@ $wgCategoryTreeVersion = '1';
 $wgExtensionFunctions[] = 'efCategoryTree';
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'CategoryTree',
+	'version' => '2008-02-04',
 	'author' => 'Daniel Kinzler',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:CategoryTree',
 	'description' => 'AJAX based gadget to display the category structure of a wiki',
@@ -66,21 +67,24 @@ $wgExtensionCredits['specialpage'][] = array(
 );
 $wgExtensionCredits['parserhook'][] = array(
 	'name' => 'CategoryTree',
+	'version' => '2008-02-04',
 	'author' => 'Daniel Kinzler',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:CategoryTree',
 	'description' => 'AJAX based gadget to display the category structure of a wiki',
+	'descriptionmsg' => 'categorytree-desc',
 );
 
 /**
  * Register the special page
  */
-$wgAutoloadClasses['CategoryTreePage'] = dirname( __FILE__ ) . '/CategoryTreePage.php';
-$wgAutoloadClasses['CategoryTree'] = dirname( __FILE__ ) . '/CategoryTreeFunctions.php';
-$wgAutoloadClasses['CategoryTreeCategoryPage'] = dirname( __FILE__ ) . '/CategoryPageSubclass.php';
+$dir = dirname(__FILE__) . '/';
+$wgExtensionMessagesFiles['CategoryTree'] = $dir . 'CategoryTree.i18n.php';
+$wgAutoloadClasses['CategoryTreePage'] = $dir . 'CategoryTreePage.php';
+$wgAutoloadClasses['CategoryTree'] = $dir . 'CategoryTreeFunctions.php';
+$wgAutoloadClasses['CategoryTreeCategoryPage'] = $dir . 'CategoryPageSubclass.php';
 $wgSpecialPages['CategoryTree'] = 'CategoryTreePage';
 #$wgHooks['SkinTemplateTabs'][] = 'efCategoryTreeInstallTabs';
 $wgHooks['OutputPageParserOutput'][] = 'efCategoryTreeParserOutput';
-$wgHooks['LoadAllMessages'][] = 'efInjectCategoryTreeMessages';
 $wgHooks['ArticleFromTitle'][] = 'efCategoryTreeArticleFromTitle';
 $wgHooks['LanguageGetMagic'][] = 'efCategoryTreeGetMagic';
 /**
@@ -277,14 +281,6 @@ function efCategoryTreeParserOutput( &$outputPage, &$parserOutput )  {
 	if ( !empty( $parserOutput->mCategoryTreeTag ) ) {
 		CategoryTree::setHeaders( $outputPage );
 	}
-	return true;
-}
-
-/**
-* inject messages used by CategoryTree into the message cache
-*/
-function efInjectCategoryTreeMessages() {
-	CategoryTree::msg(false);
 	return true;
 }
 
