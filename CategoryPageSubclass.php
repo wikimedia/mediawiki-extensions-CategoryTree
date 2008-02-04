@@ -13,55 +13,55 @@ class CategoryTreeCategoryPage extends CategoryPage {
 
 class CategoryTreeCategoryViewer extends CategoryViewer {
 	var $child_titles;
-	
+
 	/**
 	 * Add a subcategory to the internal lists
 	 */
 	function addSubcategory( $title, $sortkey, $pageLength ) {
 		global $wgContLang, $wgOut, $wgRequest, $wgCategoryTreeCategoryPageMode;
-		
+
 		if ( $wgRequest->getCheck( 'notree' ) ) {
 			return parent::addSubcategory( $title, $sortkey, $pageLength );
 		}
-		
+
 		if ( ! $GLOBALS['wgCategoryTreeUnifiedView'] ) {
 			$this->child_titles[] = $title;
 			return parent::addSubcategory( $title, $sortkey, $pageLength );
 		}
-		
+
 		if ( ! isset($this->categorytree) ) {
 			CategoryTree::setHeaders( $wgOut );
 			$this->categorytree = new CategoryTree;
 		}
-		
+
 		$this->children[] = $this->categorytree->renderNode( $title, $wgCategoryTreeCategoryPageMode );
 
 		$this->children_start_char[] = $this->getSubcategorySortChar( $title, $sortkey );
 	}
-	
+
 	function getSubcategorySection() {
 		global $wgOut, $wgRequest, $wgCookiePrefix, $wgCategoryTreeCategoryPageMode;
 
 		if ( $wgRequest->getCheck( 'notree' ) ) {
 			return parent::getSubcategorySection();
 		}
-		
+
 		if ( $GLOBALS['wgCategoryTreeUnifiedView'] ) {
 			return parent::getSubcategorySection();
 		}
-		
+
 		if( count( $this->children ) == 0 ) {
 			return '';
 		}
-		
+
 		$r = '<h2>' . wfMsg( 'subcategories' ) . "</h2>\n" .
 			wfMsgExt( 'subcategorycount', array( 'parse' ), count( $this->children) );
 
 		# Use a cookie to save the user's last selection, so that AJAX doesn't
 		# keep coming back to haunt them.
 		#
-		# FIXME: This doesn't work very well with IMS handling in 
-		# OutputPage::checkLastModified, because when the cookie changes, the 
+		# FIXME: This doesn't work very well with IMS handling in
+		# OutputPage::checkLastModified, because when the cookie changes, the
 		# category pages are not, at present, invalidated.
 		$cookieName = $wgCookiePrefix.'ShowSubcatAs';
 		$cookieVal = @$_COOKIE[$cookieName];
@@ -81,9 +81,9 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			$exp = time() + $wgCookieExpiration;
 			setcookie( $cookieName, $showAs, $exp, $wgCookiePath, $wgCookieDomain, $wgCookieSecure );
 		}
-		
+
 		if ( $showAs == 'tree' && count( $this->children ) > $this->limit ) {
-			# Tree doesn't page properly 
+			# Tree doesn't page properly
 			$showAs = 'list';
 			$r .= self::msg( 'too-many-subcats' );
 		} else {
@@ -94,7 +94,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 				$this->makeShowAsLink( 'list', $showAs ) .
 				'</p>';
 		}
-		
+
 		if ( $showAs == 'list' ) {
 			$r .= $this->formatList( $this->children, $this->children_start_char );
 		} else {
@@ -107,7 +107,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		}
 		return $r;
 	}
-	
+
 	function makeShowAsLink( $targetValue, $currentValue ) {
 		$msg = htmlspecialchars( CategoryTree::msg( "show-$targetValue" ) );
 
@@ -122,7 +122,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		$this->child_titles = array();
 		parent::clearCategoryState();
 	}
-	
+
 	function finaliseCategoryState() {
 		if( $this->flip ) {
 			$this->child_titles = array_reverse( $this->child_titles );
@@ -130,4 +130,3 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		parent::finaliseCategoryState();
 	}
 }
-

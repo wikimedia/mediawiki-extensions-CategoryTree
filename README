@@ -11,7 +11,7 @@ structure as a tree. It uses AJAX to load parts of the tree on demand.
 <http://meta.wikimedia.org/wiki/CategoryTree_extension>
 
 The CategoryTree extension was originally written by Daniel Kinzler in
-2006 and is released under the GNU General Public Licence (GPL). The 
+2006 and is released under the GNU General Public Licence (GPL). The
 internationalization files contain contributions by several people;
 they are mentioned in each file individually. Also thanks to Tim Starling
 for his contributions.
@@ -20,13 +20,13 @@ for his contributions.
 INSTALLING
 --------------------------------------------------------------------------
 
-Copy the CategoryTree directory into the extensions folder of your 
+Copy the CategoryTree directory into the extensions folder of your
 MediaWiki installation. Then add the following lines to your
 LocalSettings.php file (near the end):
 
   $wgUseAjax = true;
   require_once( "{$IP}/extensions/CategoryTree/CategoryTree.php" );
-  
+
 Note that $wgUseAjax = true; will enable the Ajax framework in MediaWiki,
 which is required by the CategoryTree extension. Ajax is a term for using
 JavaScript to load parts of a page on demand. It is supported by all
@@ -38,7 +38,7 @@ USAGE
 --------------------------------------------------------------------------
 
 CategoryTree can be used in three ways: directly on the category pages,
-as a "custom tag" to show a category structure inline on a wiki page, 
+as a "custom tag" to show a category structure inline on a wiki page,
 and as a special page.
 
 The CategoryTree extension replaces the subcategory section of category
@@ -54,14 +54,14 @@ the following attributes, using a HTML-like syntax:
 
 * hideroot - set this to "on" to hide the "root" node of the tree, i.e.
              the mention of category Foo from the example.
-             
+
 * onlyroot - set this to "on" show only the "root" node of the tree initially
-             
+
 * mode - can be "categories", "pages" or "all". See the Modes section below.
-         The default for this attribute is controlled by 
+         The default for this attribute is controlled by
          $wgCategoryTreeDefaultMode, and is initially set to CT_MODE_CATEGORIES,
          the equivalent of setting the mode attribute to "categories".
-         
+
 * style - can be used to specify any CSS styles you would like for the
           tree.
 
@@ -73,7 +73,7 @@ The special page is called Special:CategoryTree; there you can enter the
 name of a category and then browse it's content. The CategoryTree
 extension also adds a tab for this special page to every category page.
 
-          
+
 MODES
 --------------------------------------------------------------------------
 
@@ -92,13 +92,13 @@ There are some options you can specify in your LocalSettings.php file:
 
 $wgCategoryTreeMaxChildren - maximum number of children shown in a tree
                              node. Default is 200
-                             
+
 $wgCategoryTreeAllowTag - enable <categorytree> tag. Default is true.
 
-$wgCategoryTreeDynamicTag - loads the first level of the tree in a 
+$wgCategoryTreeDynamicTag - loads the first level of the tree in a
                             <categorytag> dynamically. This way, the cache
                             does not need to be disabled. Default is false
-                             
+
 $wgCategoryTreeDisableCache - disabled the parser cache for pages with a
                               <categorytree> tag. Default is true.
 
@@ -119,12 +119,12 @@ $wgCategoryTreeExtPath - the (URL-) path where the extension is installed,
                       relative to $wgScriptPath, with leading "/". Default is
                       "/extensions/CategoryTree".
 
-$wgCategoryTreeDefaultMode - the default mode to use when no mode attribute 
+$wgCategoryTreeDefaultMode - the default mode to use when no mode attribute
                       is specified in a <categorytree> tag. May be
                       CT_MODE_CATEGORIES (the default), CT_MODE_PAGES, or
                       CT_MODE_ALL.
 
-$wgCategoryTreeCategoryPageMode - the mode to use when rendering trees on 
+$wgCategoryTreeCategoryPageMode - the mode to use when rendering trees on
                       category pages. May be CT_MODE_CATEGORIES (the default),
                       CT_MODE_PAGES, or CT_MODE_ALL.
 

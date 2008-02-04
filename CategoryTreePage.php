@@ -1,6 +1,6 @@
 <?php
 /**
- * Special page for the  CategoryTree extension, an AJAX based gadget 
+ * Special page for the  CategoryTree extension, an AJAX based gadget
  * to display the category structure of a wiki
  *
  * @addtogroup Extensions
@@ -15,10 +15,10 @@ if( !defined( 'MEDIAWIKI' ) ) {
 }
 
 class CategoryTreePage extends SpecialPage {
-	
+
 	var $target = '';
 	var $mode = CT_MODE_CATEGORIES;
-	
+
 	/**
 	 * Constructor
 	 */
@@ -29,56 +29,56 @@ class CategoryTreePage extends SpecialPage {
 		#inject messages
 		efInjectCategoryTreeMessages();
 	}
-	
+
 	/**
 	 * Main execution function
 	 * @param $par Parameters passed to the page
 	 */
 	function execute( $par ) {
 		global $wgRequest, $wgOut, $wgMakeBotPrivileged, $wgUser;
-		
+
 		$this->setHeaders();
-		
+
 		if ( $par ) $this->target = $par;
 		else $this->target = $wgRequest->getVal( 'target', wfMsg( 'rootcategory') );
-		
+
 		$this->target = trim( $this->target );
-		                
+
 		#HACK for undefined root category
-		if ( $this->target == '<rootcategory>' || $this->target == '&lt;rootcategory&gt;' ) $this->target = NULL; 
-		                           
+		if ( $this->target == '<rootcategory>' || $this->target == '&lt;rootcategory&gt;' ) $this->target = NULL;
+
 		$this->mode = $wgRequest->getVal( 'mode', CT_MODE_CATEGORIES );
-		
+
 		if ( $this->mode == 'all' ) $this->mode = CT_MODE_ALL;
 		else if ( $this->mode == 'pages' ) $this->mode = CT_MODE_PAGES;
 		else if ( $this->mode == 'categories' ) $this->mode = CT_MODE_CATEGORIES;
-		
+
 		$this->mode = (int)$this->mode;
-		
+
 		$wgOut->addWikiText( wfMsgNoTrans( 'categorytree-header' ) );
-		
+
 		$wgOut->addHtml( $this->makeInputForm() );
-		
+
 		if( $this->target !== '' && $this->target !== NULL ) {
 			CategoryTree::setHeaders( $wgOut );
-			
+
 			$title = CategoryTree::makeTitle( $this->target );
-			
+
 			if ( $title && $title->getArticleID() ) {
 				$html = '';
 				$html .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeParents' ) );
-				$html .= wfElement( 'span', 
-					array( 'class' => 'CategoryTreeParents' ), 
+				$html .= wfElement( 'span',
+					array( 'class' => 'CategoryTreeParents' ),
 					wfMsg( 'categorytree-parents' ) ) . ': ';
 
 				$ct = new CategoryTree;
 				$parents = $ct->renderParents( $title, $this->mode );
-				
+
 				if ( $parents == '' ) $html .= wfMsg( 'categorytree-nothing-found' );
 				else $html .= $parents;
-				
+
 				$html .= wfCloseElement( 'div' );
-				
+
 				$html .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeResult' ) );
 				$html .= $ct->renderNode( $title, $this->mode, true, false );
 				$html .= wfCloseElement( 'div' );
@@ -90,9 +90,9 @@ class CategoryTreePage extends SpecialPage {
 				$wgOut->addHtml( wfCloseElement( 'div' ) );
 			}
 		}
-		
+
 	}
-	        
+
 	/**
 	 * Input form for entering a category
 	 */
@@ -114,5 +114,3 @@ class CategoryTreePage extends SpecialPage {
 		return $form;
 	}
 }
-
-
