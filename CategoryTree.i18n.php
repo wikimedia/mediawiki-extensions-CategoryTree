@@ -1296,6 +1296,7 @@ Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da
 $messages['li'] = array(
 	'categorytree'                  => 'Categorieboum',
 	'categorytree-tab'              => 'Boum',
+	'categorytree-desc'             => "AJAX-gebaseerde oetbreijing óm de [[Special:CategoryTree|categoriestructuur]] van 'ne wiki te toeane",
 	'categorytree-header'           => "Gaef 'ne categorienaam in om de inhoud es 'ne boumstructuur te bekieke.
 Let op: deze functie gebroek JavaScript-functionaliteit dae bekindj steit es AJAX.
 Esse 'ne erg verajerdje browser höbs of JavaScript steit oet, den werk dees functie neet.",
@@ -1757,6 +1758,7 @@ $messages['ro'] = array(
 $messages['ru'] = array(
 	'categorytree'                  => 'Дерево категорий',
 	'categorytree-tab'              => 'Дерево',
+	'categorytree-desc'             => 'AJAX-компонент для отображения [[Special:CategoryTree|структуры категорий]] вики',
 	'categorytree-header'           => 'Введите имя категории, и она будет показана в виде дерева.
 Эта возможность доступна, только если ваш браузер поддерживает AJAX.
 Если у вас старая версия браузера или отключен JavaScript, показ подкатегорий в виде дерева недоступен.',
@@ -1787,6 +1789,7 @@ $messages['ru'] = array(
 $messages['sah'] = array(
 	'categorytree'                  => 'Категориялар мас курдук',
 	'categorytree-tab'              => 'Мас курдук',
+	'categorytree-desc'             => 'Биики [[Special:CategoryTree|категорияларын тутулун]] көрдөрөр AJAX-компонент',
 	'categorytree-header'           => 'Категория аатын киллэрдэххинэ мас курдук көстүөҕэ.
 Бу кыаҕы браузерыҥ AJAX-ы туһанар эрэ буоллаҕына туттар кыахтааххын.
 Браузерыҥ эргэ буоллаҕына эбэтэр JavaScript арахсыбыт буоллаҕына субкатегорийалары мас курдук көрөр сатаммат.',
