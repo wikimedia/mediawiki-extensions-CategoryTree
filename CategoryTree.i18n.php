@@ -458,6 +458,7 @@ $messages['da'] = array(
 $messages['de'] = array(
 	'categorytree'                  => 'Kategorienbaum',
 	'categorytree-tab'              => 'Baum',
+	'categorytree-desc'             => 'AJAX-basiertes Gadget, um sich die [[Special:CategoryTree|Kategorien-Struktur]] eines Wikis anzuzeigen',
 	'categorytree-header'           => 'Zeigt für die angegebene Kategorie die Unterkategorien in einer Baumstruktur.
 Diese Seite benötigt bestimmte JavaScript-Funktionen (AJAX).
 In sehr alten Browsern, oder wenn JavaScript abgeschaltet ist, funktioniert diese Seite eventuell nicht.',
