@@ -46,7 +46,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 );
 
 /** Afrikaans (Afrikaans)
- * @author editors of af.wikipedia
+ * @author SPQRobin
  */
 $messages['af'] = array(
 	'categorytree'                  => 'Kategorieboom',
@@ -60,6 +60,7 @@ $messages['af'] = array(
 	'categorytree-mode-all'         => 'alle bladsye',
 	'categorytree-collapse'         => 'vou toe',
 	'categorytree-expand'           => 'vou oop',
+	'categorytree-load'             => 'laai',
 	'categorytree-loading'          => 'laai tans',
 	'categorytree-nothing-found'    => 'niks gevind nie',
 	'categorytree-no-subcategories' => 'geen subkategorieë nie',
@@ -749,6 +750,7 @@ $messages['fr'] = array(
 $messages['frp'] = array(
 	'categorytree'                  => 'Arborèscence de les catègories',
 	'categorytree-tab'              => 'Âbro',
+	'categorytree-desc'             => 'Outil basâ dessus AJAX por afichiér la [[Special:CategoryTree|structura de la catègorie]] d’un vouiqui',
 	'categorytree-header'           => 'Entrâd un nom de catègorie por vêre son contegnu en structura arborèscenta.
 Cen utilise des fonccionalitâts JavaScript avanciês cognues desot lo nom d’AJAX.
 Se vos avéd un rudo viely navigator Malyâjo ou que vos éd pas activâ la fonccionalitât JavaScript, cen fonccionerat pas.',
@@ -1607,6 +1609,7 @@ $messages['pam'] = array(
 
 /** Polish (Polski)
  * @author Derbeth
+ * @author Sp5uhe
  */
 $messages['pl'] = array(
 	'categorytree'                  => 'Drzewo kategorii',
@@ -1627,7 +1630,7 @@ $messages['pl'] = array(
 	'categorytree-no-pages'         => 'brak artykułów lub podkategorii.',
 	'categorytree-not-found'        => 'Kategoria <i>$1</i> nie została znaleziona',
 	'categorytree-error'            => 'Problem z ładowaniem danych.',
-	'categorytree-retry'            => 'Poczekaj chwilę i spróbuj ponownie.',
+	'categorytree-retry'            => 'Poczekaj chwilę i spróbuj ponownie - kliknij ten napis.',
 	'categorytree-show-list'        => 'Pokaż jako listę',
 	'categorytree-show-tree'        => 'Pokaż jako drzewo',
 	'categorytree-too-many-subcats' => 'Podkategorie nie mogą być wyświetlone jako drzewo, ponieważ jest ich zbyt dużo.',
@@ -2157,10 +2160,12 @@ $messages['ur'] = array(
 
 /** Vietnamese (Tiếng Việt)
  * @author Vinhtantran
+ * @author Minh Nguyen
  */
 $messages['vi'] = array(
 	'categorytree'                  => 'Cây thể loại',
 	'categorytree-tab'              => 'Cây',
+	'categorytree-desc'             => 'Công cụ AJAX để hiển thị [[Special:CategoryTree|cấu trúc thể loại]] của một wiki',
 	'categorytree-header'           => 'Gõ vào tên thể loại để xem nội dung của nó theo cấu trúc cây.
 Chú ý rằng chức năng này sử dụng chức năng JavaScript, với tên AJAX.
 Nếu bạn đang sử dụng trình duyệt rất cũ, hoặc đã tắt JavaScript, nó sẽ không hoạt động.',
