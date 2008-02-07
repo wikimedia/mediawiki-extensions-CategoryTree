@@ -122,6 +122,7 @@ $messages['an'] = array(
 $messages['ar'] = array(
 	'categorytree'                  => 'شجرة تصنيف',
 	'categorytree-tab'              => 'شجرة',
+	'categorytree-desc'             => 'إضافة معتمدة على الأجاكس لعرض [[Special:CategoryTree|هيكل التصنيف]] لويكي',
 	'categorytree-header'           => 'أدخل اسم تصنيف لترى محتوياته كتركيب شجري.
 لاحظ أن هذا يتطلب خاصية جافاسكريبت متقدمة معروفة كأجاكس.
 لو كنت تمتلك متصفحا قديما جدا، أو لديك الجافاسكريبت معطلة، فلن تعمل.',
@@ -227,10 +228,12 @@ $messages['bcl'] = array(
 /** Bulgarian (Български)
  * @author Spiritia
  * @author Borislav
+ * @author DCLXVI
  */
 $messages['bg'] = array(
 	'categorytree'                  => 'Дърво на категориите',
 	'categorytree-tab'              => 'Дърво',
+	'categorytree-desc'             => 'Инструмент на AJAX, който показва [[Special:CategoryTree|структурата на категориите]] в уикито',
 	'categorytree-header'           => 'Въведете категория, за да видите съдържанието й в дървовиден вид от категории. Имайте предвид, че това изисква допълнителна JavaScript-функционалност, позната като AJAX. Тази възможност не може да бъде използвана, ако използвате стар браузър или сте изключили поддържането на JavaScript.',
 	'categorytree-category'         => 'Категория',
 	'categorytree-go'               => 'Показване',
@@ -927,6 +930,7 @@ $messages['hsb'] = array(
 $messages['hu'] = array(
 	'categorytree'                  => 'Kategóriafa',
 	'categorytree-tab'              => 'Fa',
+	'categorytree-desc'             => 'AJAX alapú eszköz a wiki [[Special:CategoryTree|kategória-struktúrájának]] megjelenítéséhez',
 	'categorytree-header'           => 'Add meg annak a kategóriának a nevét, amelynek meg szeretnéd tekinteni
 a fastruktúráját. Ehhez egy, AJAX nevű JavaScript-technológia szükséges.
 Ha túlságosan régi böngésződ van, vagy a JavaScript le van tiltva, akkor nem fog működni.',
@@ -2088,10 +2092,19 @@ $messages['tet'] = array(
  * @author Ibrahim
  */
 $messages['tg'] = array(
-	'categorytree-tab'      => 'Дарахт',
-	'categorytree-category' => 'Гурӯҳ',
-	'categorytree-mode-all' => 'ҳамаи саҳифаҳо',
-	'categorytree-error'    => 'Ишкол дар дарёфти иттилоот',
+	'categorytree-tab'              => 'Дарахт',
+	'categorytree-category'         => 'Гурӯҳ',
+	'categorytree-mode-all'         => 'ҳамаи саҳифаҳо',
+	'categorytree-load'             => 'бор кардан',
+	'categorytree-loading'          => 'дар ҳоли боргирӣ',
+	'categorytree-nothing-found'    => 'ҳеҷчиз ёфт нашуд',
+	'categorytree-no-subcategories' => 'ҳеҷ зергурӯҳе надорад',
+	'categorytree-no-pages'         => 'ҳеҷ саҳифае ё зергурӯҳе',
+	'categorytree-not-found'        => 'Гурӯҳи <i>$1</i> ёфт нашуд',
+	'categorytree-error'            => 'Ишкол дар дарёфти иттилоот',
+	'categorytree-retry'            => 'Лутфан чанд лаҳза сабр кунед ва дубора имтиҳон кунед.',
+	'categorytree-show-list'        => 'Намоиш ҳамчун феҳрист',
+	'categorytree-show-tree'        => 'Намоиш ҳамчун дарахт',
 );
 
 /** Thai (ไทย)
