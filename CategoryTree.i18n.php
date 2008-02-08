@@ -2352,10 +2352,3 @@ $messages['zu'] = array(
 	'categorytree-collapse' => 'Nciphisa',
 	'categorytree-expand'   => 'Khulisa',
 );
-
-$messages['zh']     = $messages['zh-hans'];
-$messages['zh-cn']  = $messages['zh-hans'];
-$messages['zh-hk']  = $messages['zh-hant'];
-$messages['zh-sg']  = $messages['zh-hans'];
-$messages['zh-tw']  = $messages['zh-hant'];
-$messages['zh-yue'] = $messages['yue'];
