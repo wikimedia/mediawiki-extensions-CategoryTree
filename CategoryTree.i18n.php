@@ -2092,9 +2092,16 @@ $messages['tet'] = array(
  * @author Ibrahim
  */
 $messages['tg'] = array(
+	'categorytree'                  => 'ГурӯҳДарахт',
 	'categorytree-tab'              => 'Дарахт',
 	'categorytree-category'         => 'Гурӯҳ',
+	'categorytree-go'               => 'Намоиши дарахт',
+	'categorytree-parents'          => 'Волидайн',
+	'categorytree-mode-categories'  => 'Фақат гурӯҳҳо',
+	'categorytree-mode-pages'       => 'Саҳифаҳо ғайр аз аксҳо',
 	'categorytree-mode-all'         => 'ҳамаи саҳифаҳо',
+	'categorytree-collapse'         => 'фурукаш',
+	'categorytree-expand'           => 'густариш',
 	'categorytree-load'             => 'бор кардан',
 	'categorytree-loading'          => 'дар ҳоли боргирӣ',
 	'categorytree-nothing-found'    => 'ҳеҷчиз ёфт нашуд',
@@ -2105,6 +2112,7 @@ $messages['tg'] = array(
 	'categorytree-retry'            => 'Лутфан чанд лаҳза сабр кунед ва дубора имтиҳон кунед.',
 	'categorytree-show-list'        => 'Намоиш ҳамчун феҳрист',
 	'categorytree-show-tree'        => 'Намоиш ҳамчун дарахт',
+	'categorytree-too-many-subcats' => 'Ба хотири шумораи зиёди онҳо, наметавон зергурӯҳоро ҳамчун дарахт нишон дод.',
 );
 
 /** Thai (ไทย)
@@ -2352,3 +2360,4 @@ $messages['zu'] = array(
 	'categorytree-collapse' => 'Nciphisa',
 	'categorytree-expand'   => 'Khulisa',
 );
+
