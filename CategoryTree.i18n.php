@@ -2054,6 +2054,7 @@ Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript
 $messages['te'] = array(
 	'categorytree'                  => 'వర్గవృక్షం',
 	'categorytree-tab'              => 'వృక్షం',
+	'categorytree-desc'             => 'వికీ యొక్క [[Special:CategoryTree|వర్గ వృక్షాన్ని]] చూపించడానికి AJAX ఆధారిత పరికరం',
 	'categorytree-header'           => 'ఒక వర్గంలోని అంశాలను వృక్షం లాగా చూసేందుకు ఆ వర్గం పేరును ఇక్కడ ఇవ్వండి. దీనికోసం AJAX అనే ఆధునిక జావాస్క్రిప్టు నైపుణ్యం కావాలి. మీ బ్రౌజరు బాగా పాతదయినా, లేక దానిలో జావాస్క్రిప్టు అశక్తంగా ఉన్నా ఇది పనిచెయ్యదు.',
 	'categorytree-category'         => 'వర్గం',
 	'categorytree-go'               => 'వృక్షాన్ని చూపించు',
