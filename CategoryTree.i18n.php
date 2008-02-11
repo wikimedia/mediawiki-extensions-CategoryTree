@@ -292,7 +292,8 @@ $messages['bn'] = array(
 $messages['br'] = array(
 	'categorytree'                  => 'Gwezennadur ar rummadoù',
 	'categorytree-tab'              => 'Gwezennadur',
-	'categorytree-header'           => "Merkit anv ur rummad evit gwelet petra zo ennañ e stumm ur gwezennadur.
+	'categorytree-desc'             => 'Bitrak diazezet war AJAX evit diskouez [[Special:CategoryTree|framm rummad]] ur wiki',
+	'categorytree-header'           => "Merkit anv ur rummad evit gwelet petra zo ennañ e stumm ur gwezennadur. 
 Notit e rankit kaout an arc'hwelioù JavaScript araokaet anvet AJAX.
 M'eo kozh-mat stumm ho merdeer pe m'eo diweredekaet JavaScript ganeoc'h, ne'z aio ket en-dro.",
 	'categorytree-category'         => 'Rummad',
@@ -1087,10 +1088,12 @@ $messages['it'] = array(
 /** Japanese (日本語)
  * @author Kahusi
  * @author Broad-Sky
+ * @author JtFuruhata
  */
 $messages['ja'] = array(
 	'categorytree'                  => 'カテゴリツリー',
 	'categorytree-tab'              => 'ツリー',
+	'categorytree-desc'             => 'ウィキの[[Special:CategoryTree|カテゴリツリー]]を表示する、AJAXベースのガジェット',
 	'categorytree-header'           => 'カテゴリの中身をツリー構造としてを見るために、そのカテゴリ名を入力してください。この機能は、Ajaxとして知られているJavaScriptを使用していることに注意してください。もしあなたが使っているブラウザが非常に古かったり、JavaScriptを有効にしていないのであれば、動作しません。',
 	'categorytree-category'         => 'カテゴリ名: ',
 	'categorytree-go'               => 'ツリーを見る',
@@ -1674,8 +1677,10 @@ $messages['pms'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
-	'categorytree-category' => 'وېشنيزه',
-	'categorytree-mode-all' => 'ټول مخونه',
+	'categorytree-category'        => 'وېشنيزه',
+	'categorytree-mode-categories' => 'يوازې وېشنيزې',
+	'categorytree-mode-all'        => 'ټول مخونه',
+	'categorytree-not-found'       => 'د <i>$1</i> وېشنيزه و نه موندل شوه',
 );
 
 /** Portuguese (Português)
