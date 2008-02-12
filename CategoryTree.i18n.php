@@ -400,12 +400,11 @@ $messages['co'] = array(
 /** Czech (Česky)
  * @author Danny B.
  * @author Li-sung
- * @author Siebrand
  */
 $messages['cs'] = array(
 	'categorytree'                  => 'Strom kategorií',
 	'categorytree-tab'              => 'Strom',
-	'categorytree-desc'             => 'Na Ajaxu založená funkce zobrazující obsah [[Special:CategoryTree|kategorie ve stromové struktuře]]',
+	'categorytree-desc'             => 'Ajaxový nástroj zobrazující [[Special:CategoryTree|stromovou strukturu kategorií]] na této wiki',
 	'categorytree-header'           => 'Zadejte název kategorie k&nbsp;zobrazení jejího obsahu jako stromové struktury.
 
 (Tato funkce vyžaduje pokročilé funkce JavaScriptu známé jako Ajax. Jestliže máte velmi starý prohlížeč nebo vypnutý JavaScript, nezobrazí se strom správně nebo vůbec.)',
@@ -524,6 +523,13 @@ Jolic maš wjelgin stary browser abo jolic JavaScript jo wótšaltowane, toś te
 	'categorytree-show-list'        => 'Ako lisćinu pokazaś',
 	'categorytree-show-tree'        => 'Ako bom pokazaś',
 	'categorytree-too-many-subcats' => 'Pódkategorije njedaju se ako bom pokazaś, jo pśewjele z nich.',
+);
+
+/** Ewe (Eʋegbe)
+ * @author M.M.S.
+ */
+$messages['ee'] = array(
+	'categorytree-mode-all' => 'axawo katã',
 );
 
 /** Greek (Ελληνικά)
@@ -1558,6 +1564,23 @@ Enter a category name to see its contents as a tree structure. Note that this re
 	'categorytree-show-list'        => 'Vis som liste',
 	'categorytree-show-tree'        => 'Vis som tre',
 	'categorytree-too-many-subcats' => 'Kan ikke vise underkategorier som tre, det er for mange av dem.',
+);
+
+/** Northern Sotho (Sesotho sa Leboa)
+ * @author Mohau
+ */
+$messages['nso'] = array(
+	'categorytree-tab'       => 'Sehlare',
+	'categorytree-category'  => 'Sehlopha',
+	'categorytree-go'        => 'Bontsha Sehlare',
+	'categorytree-parents'   => 'Batswadi',
+	'categorytree-mode-all'  => 'matlakala kamoka',
+	'categorytree-collapse'  => 'tswalela',
+	'categorytree-expand'    => 'bula',
+	'categorytree-no-pages'  => 'gago matlakala goba dihlophana',
+	'categorytree-not-found' => 'Sehlopha <i>$1</i> ga se humanege',
+	'categorytree-show-list' => 'Laetša bjalo ka lenano',
+	'categorytree-show-tree' => 'Laetša bjalo ka sehlare',
 );
 
 /** Occitan (Occitan)
