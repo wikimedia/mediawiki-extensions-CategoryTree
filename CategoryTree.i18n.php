@@ -1589,6 +1589,7 @@ $messages['nso'] = array(
 $messages['oc'] = array(
 	'categorytree'                  => 'Arborescéncia de las categorias',
 	'categorytree-tab'              => 'Arborescéncia',
+	'categorytree-desc'             => "Gadget basat sus AJAX per afichar l'[[Special:CategoryTree|estructura de la categoria]] d’un wiki",
 	'categorytree-header'           => "Picatz un nom de categoria per veire son contengut en estructura arborescenta. Notatz qu'aquò utiliza de foncionalitats JavaScript avançadas conegudas jol nom d'AJAX. S'avètz un navigaire fòrt vièlh o qu'avètz pas activat lo JavaScript, aquò foncionarà pas.",
 	'categorytree-category'         => 'Categoria',
 	'categorytree-go'               => "Mostrar l'arborescéncia",
@@ -1646,6 +1647,7 @@ $messages['pam'] = array(
 $messages['pl'] = array(
 	'categorytree'                  => 'Drzewo kategorii',
 	'categorytree-tab'              => 'Drzewo',
+	'categorytree-desc'             => 'Gadżet oparty na technologii AJAX, wyświetlający [[Special:CategoryTree|drzewo kategorii]]',
 	'categorytree-header'           => 'Wpisz nazwę kategorii, by zobaczyć jej zawartość w postaci drzewa. Wymagana jest zaawansowana funkcjonalność JavaScriptu, znana jako AJAX. Jeśli masz bardzo starą przeglądarkę lub wyłączony JavaScript, ta funkcja nie zadziała.',
 	'categorytree-category'         => 'Kategoria',
 	'categorytree-go'               => 'Ładuj kategorię',
@@ -1700,10 +1702,13 @@ $messages['pms'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'categorytree'                 => 'د وېشنيزو ونه',
 	'categorytree-category'        => 'وېشنيزه',
 	'categorytree-mode-categories' => 'يوازې وېشنيزې',
 	'categorytree-mode-all'        => 'ټول مخونه',
 	'categorytree-not-found'       => 'د <i>$1</i> وېشنيزه و نه موندل شوه',
+	'categorytree-show-list'       => 'د لړليک په څېر ښکاره کول',
+	'categorytree-show-tree'       => 'د ونې په څېر ښکاره کول',
 );
 
 /** Portuguese (Português)
