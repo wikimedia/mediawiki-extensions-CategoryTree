@@ -262,6 +262,7 @@ $messages['bg'] = array(
 $messages['bn'] = array(
 	'categorytree'                  => 'বিষয়শ্রেণীবৃক্ষ',
 	'categorytree-tab'              => 'বৃক্ষ',
+	'categorytree-desc'             => 'কোন উইকির [[Special:CategoryTree|বিষয়শ্রেণী কাঠামো]] প্রদর্শনের জন্য এজ্যাক্স-ভিত্তিক গ্যাজেট',
 	'categorytree-header'           => 'যে বিষয়শ্রেণীটির অন্তর্ভুক্ত বিষয়বস্তু বৃক্ষাকারে দেখতে চান, সেটির নাম প্রবেশ করান।
 লক্ষ্য করুন এর জন্য এজ্যাক্স নামের একটি অগ্রসর জাভাস্ক্রিপ্ট কৌশল ব্যবহার করা হয়।
 যদি আপনার ব্রাউজারটি খুব পুরনো হয়, বা যদি জাভাস্ক্রিপ্ট নিষ্ক্রিয় করা থাকে, তবে এটি কাজ করবে না।',
@@ -2083,6 +2084,7 @@ Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript
 /** Telugu (తెలుగు)
  * @author Mpradeep
  * @author Veeven
+ * @author వైజాసత్య
  */
 $messages['te'] = array(
 	'categorytree'                  => 'వర్గవృక్షం',
@@ -2096,7 +2098,7 @@ $messages['te'] = array(
 	'categorytree-mode-pages'       => 'బొమ్మలను మినహాయించి మిగిలిన పేజీలు',
 	'categorytree-mode-all'         => 'అన్ని పేజీలు',
 	'categorytree-collapse'         => 'మూసివేయి',
-	'categorytree-expand'           => 'విడదీయి',
+	'categorytree-expand'           => 'విస్తరించు',
 	'categorytree-load'             => 'లోడు చెయ్యి',
 	'categorytree-loading'          => 'లోడవుతూంది',
 	'categorytree-nothing-found'    => 'ఏమీ లేవు',
