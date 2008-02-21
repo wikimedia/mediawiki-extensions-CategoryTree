@@ -614,6 +614,7 @@ $messages['et'] = array(
 	'categorytree-category'         => 'Kategooria',
 	'categorytree-mode-categories'  => 'ainult kategooriad',
 	'categorytree-mode-pages'       => 'leheküljed, välja arvatud pildid',
+	'categorytree-mode-all'         => 'kõik leheküljed',
 	'categorytree-no-subcategories' => 'alamkategooriaid ei ole',
 	'categorytree-show-list'        => 'Näita nimekirjana',
 	'categorytree-show-tree'        => 'Näita kategooriapuuna',
