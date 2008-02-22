@@ -94,6 +94,7 @@ $messages['am'] = array(
 $messages['an'] = array(
 	'categorytree'                  => 'Árbol de categorías',
 	'categorytree-tab'              => 'Árbol',
+	'categorytree-desc'             => "Traste basato en AJAX t'amostrar a [[Special:CategoryTree|estrutura de categorías]] d'una wiki",
 	'categorytree-header'           => "Escriba un nombre de categoría ta beyer os suyos contenius en forma d'árbol. Pare cuenta que ista pachina requiere as funzions JavaScriptz abanzatas conoixitas como AJAX. Si tiene un nabegador antigo, u tiene desautibato JavaScript, a pachina no funzionará.",
 	'categorytree-category'         => 'Categoría',
 	'categorytree-go'               => "Amostrar l'Árbol",
