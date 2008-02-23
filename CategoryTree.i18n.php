@@ -1705,13 +1705,21 @@ $messages['pms'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
-	'categorytree'                 => 'د وېشنيزو ونه',
-	'categorytree-category'        => 'وېشنيزه',
-	'categorytree-mode-categories' => 'يوازې وېشنيزې',
-	'categorytree-mode-all'        => 'ټول مخونه',
-	'categorytree-not-found'       => 'د <i>$1</i> وېشنيزه و نه موندل شوه',
-	'categorytree-show-list'       => 'د لړليک په څېر ښکاره کول',
-	'categorytree-show-tree'       => 'د ونې په څېر ښکاره کول',
+	'categorytree'                  => 'د وېشنيزو ونه',
+	'categorytree-tab'              => 'ونه',
+	'categorytree-category'         => 'وېشنيزه',
+	'categorytree-go'               => 'ونه ښکاره کول',
+	'categorytree-mode-categories'  => 'يوازې وېشنيزې',
+	'categorytree-mode-all'         => 'ټول مخونه',
+	'categorytree-expand'           => 'غځول',
+	'categorytree-nothing-found'    => 'هېڅ هم و نه موندل شو',
+	'categorytree-no-subcategories' => 'هېڅ وړې-وېشنيزې نشته',
+	'categorytree-no-pages'         => 'هېڅ مخ يا وړه-وېشنيزه نشته',
+	'categorytree-not-found'        => 'د <i>$1</i> وېشنيزه و نه موندل شوه',
+	'categorytree-retry'            => 'مهرباني وکړی لږ څه تم شی او بيا يې وآزمايۍ',
+	'categorytree-show-list'        => 'د لړليک په څېر ښکاره کول',
+	'categorytree-show-tree'        => 'د ونې په څېر ښکاره کول',
+	'categorytree-too-many-subcats' => 'وړې-وېشنيزې د ونې په څېر نه شو ښکاره کولای، همدلته ډېرې زياتې وړې وېشنيزې دي.',
 );
 
 /** Portuguese (Português)
