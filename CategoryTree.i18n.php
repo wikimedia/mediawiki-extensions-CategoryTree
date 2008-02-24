@@ -1072,6 +1072,7 @@ Ef þú notast við gamlan vafra eða hefur slökkt á JavaScript mun þetta ekk
 $messages['it'] = array(
 	'categorytree'                  => 'Struttura ad albero delle categorie',
 	'categorytree-tab'              => 'Albero',
+	'categorytree-desc'             => 'Accessorio AJAX per visualizzare la [[Special:CategoryTree|struttura delle categorie]] del sito',
 	'categorytree-header'           => 'Inserire il nome della categoria di cui si desidera vedere il contenuto sotto forma di struttura ad albero. Si noti che la pagina richiede le funzionalità avanzate di JavaScript chiamate AJAX; qualora si stia usando un browser molto vecchio o le funzioni JavaScript siano disabilitate, questa pagina non funzionerà.',
 	'categorytree-category'         => 'Categoria',
 	'categorytree-go'               => 'Carica',
@@ -1216,6 +1217,31 @@ Eger şolğışıñız öte eski, nemese JavaScript öşirilgen bolsa, bul iske 
 	'categorytree-too-many-subcats' => 'Sanatşalar tım köp bolğandıqtan, butaqtarı körsetilmeýdi.',
 );
 
+/** Khmer (ភាសាខ្មែរ)
+ * @author Chhorran
+ */
+$messages['km'] = array(
+	'categorytree'                  => 'ដើមឈើចំណាត់ក្រុម',
+	'categorytree-tab'              => 'ដើមឈើ',
+	'categorytree-category'         => 'ចំណាត់ក្រុម',
+	'categorytree-go'               => 'បង្ហាញដើមឈើ',
+	'categorytree-mode-categories'  => 'ចំណាត់ក្រុម តែប៉ុណ្ណោះ',
+	'categorytree-mode-pages'       => 'ទំព័រ លើកលែងតែរូបភាព',
+	'categorytree-mode-all'         => 'គ្រប់ទំព័រ',
+	'categorytree-expand'           => 'ពង្រីក',
+	'categorytree-load'             => 'ផ្ទុក',
+	'categorytree-loading'          => 'កំពុងផ្ទុក',
+	'categorytree-nothing-found'    => 'រកមិនឃើញអ្វី',
+	'categorytree-no-subcategories' => 'គ្មាន ចំណាត់ក្រុមរង',
+	'categorytree-no-pages'         => 'គ្មានទំព័រ ឬ ចំណាត់ក្រុមរង',
+	'categorytree-not-found'        => 'រកមិនឃើញ ចំណាត់ក្រុម <i>$1</i>',
+	'categorytree-error'            => 'មានបញ្ហា ផ្ទុកទិន្នន័យ។',
+	'categorytree-retry'            => 'ចាំមួយភ្លែត សឹម ព្យាយាមម្តងទៀត ។',
+	'categorytree-show-list'        => 'បង្ហាញជា បញ្ជី',
+	'categorytree-show-tree'        => 'បង្ហាញជា ដើមឈើ',
+	'categorytree-too-many-subcats' => 'មិនអាចបង្ហាញ ចំណាត់ក្រុមរង ជា ដើមឈើ, វាមានចំណាត់ក្រុមរង ច្រើនពេក ។',
+);
+
 /** Korean (한국어)
  * @author Klutzy
  */
@@ -1341,7 +1367,9 @@ Esse 'ne erg verajerdje browser höbs of JavaScript steit oet, den werk dees fun
 	'categorytree-too-many-subcats' => "Kin de óngercategorië neet es boumstructuur toeane, d'r zeen d'rs te väöl.",
 );
 
-/** Lao (ລາວ) */
+/** Lao (ລາວ)
+ * @author Passawuth
+ */
 $messages['lo'] = array(
 	'categorytree'                  => 'ໂຄງສ້າງໝວດ',
 	'categorytree-tab'              => 'ໂຄງສ້າງ',
@@ -2163,6 +2191,7 @@ $messages['tg'] = array(
 
 /** Thai (ไทย)
  * @author Manop
+ * @author Passawuth
  */
 $messages['th'] = array(
 	'categorytree-category'         => 'หมวดหมู่',
