@@ -731,6 +731,7 @@ $messages['fo'] = array(
 );
 
 /** French (Français)
+ * @author Meithal
  * @author Sherbrooke
  */
 $messages['fr'] = array(
@@ -748,7 +749,7 @@ $messages['fr'] = array(
 	'categorytree-expand'           => 'Développer',
 	'categorytree-load'             => 'Ouvrir',
 	'categorytree-loading'          => 'ouverture...',
-	'categorytree-nothing-found'    => 'Pas trouvé, désolé.',
+	'categorytree-nothing-found'    => 'Aucune',
 	'categorytree-no-subcategories' => 'Aucune sous-catégorie.',
 	'categorytree-no-pages'         => 'Aucun article ou sous-catégorie.',
 	'categorytree-not-found'        => 'La catégorie <tt>$1</tt> n’a pas été trouvée.',
@@ -792,10 +793,12 @@ Se vos avéd un rudo viely navigator Malyâjo ou que vos éd pas activâ la fonc
 
 /** Friulian (Furlan)
  * @author MF-Warburg
+ * @author Klenje
  */
 $messages['fur'] = array(
-	'categorytree'          => 'Arbul des categoriis',
-	'categorytree-category' => 'Categorie',
+	'categorytree'                  => 'Arbul des categoriis',
+	'categorytree-category'         => 'Categorie',
+	'categorytree-no-subcategories' => 'nissune sot categorie.',
 );
 
 /** Galician (Galego)
@@ -1417,6 +1420,28 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
 	'categorytree-show-list'        => 'Rodyti kaip sąraašą',
 	'categorytree-show-tree'        => 'Rodyti kaip medį',
 	'categorytree-too-many-subcats' => 'Negalima rodyti subkategorijų kaip medį, nes jų yra per daug.',
+);
+
+/** Marathi (मराठी)
+ * @author Mahitgar
+ */
+$messages['mr'] = array(
+	'categorytree'                  => 'वर्गवृक्ष',
+	'categorytree-tab'              => 'वृक्ष',
+	'categorytree-category'         => 'वर्ग',
+	'categorytree-go'               => 'वृक्ष दाखवा',
+	'categorytree-parents'          => 'पालक',
+	'categorytree-mode-categories'  => 'केवळ वर्ग',
+	'categorytree-mode-pages'       => 'चित्रे नसलेली पाने',
+	'categorytree-mode-all'         => 'सर्व पाने',
+	'categorytree-collapse'         => 'कोलॅप्स',
+	'categorytree-expand'           => 'विस्तार',
+	'categorytree-load'             => 'चढवा',
+	'categorytree-loading'          => 'चढवत आहे',
+	'categorytree-nothing-found'    => 'काहीच गवसले नाही',
+	'categorytree-no-subcategories' => 'उपवर्ग नाहीत',
+	'categorytree-show-list'        => 'सूची स्वरूपात दाखवा',
+	'categorytree-show-tree'        => 'वृक्ष स्वरूपात दाखवा',
 );
 
 /** Malay (Bahasa Melayu)
