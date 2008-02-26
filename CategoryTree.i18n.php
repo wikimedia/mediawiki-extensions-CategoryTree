@@ -295,7 +295,7 @@ $messages['br'] = array(
 	'categorytree'                  => 'Gwezennadur ar rummadoù',
 	'categorytree-tab'              => 'Gwezennadur',
 	'categorytree-desc'             => 'Bitrak diazezet war AJAX evit diskouez [[Special:CategoryTree|framm rummad]] ur wiki',
-	'categorytree-header'           => "Merkit anv ur rummad evit gwelet petra zo ennañ e stumm ur gwezennadur. 
+	'categorytree-header'           => "Merkit anv ur rummad evit gwelet petra zo ennañ e stumm ur gwezennadur.
 Notit e rankit kaout an arc'hwelioù JavaScript araokaet anvet AJAX.
 M'eo kozh-mat stumm ho merdeer pe m'eo diweredekaet JavaScript ganeoc'h, ne'z aio ket en-dro.",
 	'categorytree-category'         => 'Rummad',
@@ -1001,6 +1001,7 @@ $messages['hy'] = array(
 /** Indonesian (Bahasa Indonesia) */
 $messages['id'] = array(
 	'categorytree'                  => 'Pohon kategori',
+	'categorytree-desc'             => 'Gadget berbasis AJAX untuk menampilkan [[Special:CategoryTree|struktur kategori]] suatu wiki',
 	'categorytree-tab'              => 'Pohon',
 	'categorytree-header'           => 'Masukkan suatu nama kategori untuk melihat isinya dalam bentuk pohon.
 Harap diperhatikan bahwa fitur ini memerlukan dukungan JavaScript tingkat lanjut yang dikenal sebagai AJAX.
@@ -1019,6 +1020,9 @@ Jika Anda menggunakan penjelajah web lama, atau mematikan fungsi JavaScript Anda
 	'categorytree-no-subcategories' => 'tidak ada subkategori',
 	'categorytree-no-pages'         => 'tidak ada halaman atau subkategori',
 	'categorytree-not-found'        => 'Kategori <i>$1</i> tidak ditemukan',
+	'categorytree-error'            => 'Problem memuat data.',
+	'categorytree-retry'            => 'Tunggulah sesaat dan coba lagi.',
+
 	'categorytree-show-list'        => 'Tampilkan daftar',
 	'categorytree-show-tree'        => 'Tampilkan pohon',
 	'categorytree-too-many-subcats' => 'Tidak dapat menampilkan subkategori dalam bentuk pohon karena jumlahnya terlalu banyak.',
