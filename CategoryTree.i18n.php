@@ -2150,6 +2150,18 @@ Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript
 	'categorytree-too-many-subcats' => 'Underkategorierna kan inte visas som ett träd, det finns för många av dem.',
 );
 
+/** Tamil (தமிழ்)
+ * @author Trengarasu
+ */
+$messages['ta'] = array(
+	'categorytree'                  => 'பகுப்பு மரம்',
+	'categorytree-category'         => 'பகுப்பு',
+	'categorytree-go'               => 'மரத்தைக் காட்டு',
+	'categorytree-no-subcategories' => 'துணைப்பகுப்புகள் கிடையாது',
+	'categorytree-no-pages'         => 'பக்கங்களோ அல்லது துணைப்பகுப்புகளோ கிடையாது',
+	'categorytree-not-found'        => '<i>$1</i> பகுப்பு காணப்படவில்லை',
+);
+
 /** Telugu (తెలుగు)
  * @author Mpradeep
  * @author Veeven
