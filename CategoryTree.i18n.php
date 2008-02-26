@@ -998,7 +998,9 @@ $messages['hy'] = array(
 	'categorytree-too-many-subcats' => 'Հնարավոր չէ ցուցադրել ենթակատեգորիաները ծառի տեսքով՝ չափից շատ են։',
 );
 
-/** Indonesian (Bahasa Indonesia) */
+/** Indonesian (Bahasa Indonesia)
+ * @author IvanLanin
+ */
 $messages['id'] = array(
 	'categorytree'                  => 'Pohon kategori',
 	'categorytree-desc'             => 'Gadget berbasis AJAX untuk menampilkan [[Special:CategoryTree|struktur kategori]] suatu wiki',
