@@ -51,7 +51,7 @@ $wgCategoryTreeMaxDepth = array(CT_MODE_PAGES => 1, CT_MODE_ALL => 1, CT_MODE_CA
 $wgCategoryTreeExtPath = '/extensions/CategoryTree';
 $wgCategoryTreeDefaultMode = CT_MODE_CATEGORIES;
 $wgCategoryTreeCategoryPageMode = CT_MODE_CATEGORIES;
-$wgCategoryTreeVersion = '1';
+$wgCategoryTreeVersion = '1';  #NOTE: bump this when you change the CSS or JS files!
 
 /**
  * Register extension setup hook and credits
@@ -59,7 +59,7 @@ $wgCategoryTreeVersion = '1';
 $wgExtensionFunctions[] = 'efCategoryTree';
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'CategoryTree',
-	'version' => '2008-02-04',
+	'version' => preg_replace('/^.* (\d\d\d\d-\d\d-\d\d) .*$/', '\1', '$LastChangedDate$'), #just the date of the last change
 	'author' => 'Daniel Kinzler',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:CategoryTree',
 	'description' => 'AJAX based gadget to display the category structure of a wiki',
@@ -67,7 +67,7 @@ $wgExtensionCredits['specialpage'][] = array(
 );
 $wgExtensionCredits['parserhook'][] = array(
 	'name' => 'CategoryTree',
-	'version' => '2008-02-04',
+	'version' => preg_replace('/^.* (\d\d\d\d-\d\d-\d\d) .*$/', '\1', '$LastChangedDate$'), #just the date of the last change
 	'author' => 'Daniel Kinzler',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:CategoryTree',
 	'description' => 'AJAX based gadget to display the category structure of a wiki',
