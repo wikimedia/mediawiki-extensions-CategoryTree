@@ -1230,7 +1230,7 @@ Eger şolğışıñız öte eski, nemese JavaScript öşirilgen bolsa, bul iske 
  * @author Chhorran
  */
 $messages['km'] = array(
-	'categorytree'                  => 'ដើមឈើចំណាត់ក្រុម',
+	'categorytree'                  => 'ដើមឈើ ចំណាត់ក្រុម',
 	'categorytree-tab'              => 'ដើមឈើ',
 	'categorytree-category'         => 'ចំណាត់ក្រុម',
 	'categorytree-go'               => 'បង្ហាញដើមឈើ',
