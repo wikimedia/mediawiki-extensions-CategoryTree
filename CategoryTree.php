@@ -96,7 +96,7 @@ $wgAjaxExportList[] = 'efCategoryTreeAjaxWrapper';
  * Hook it up
  */
 function efCategoryTree() {
-	global $wgUseAjax, $wgParser, $wgCategoryTreeAllowTag;
+	global $wgUseAjax, $wgHooks;
 
 	# Abort if AJAX is not enabled
 	if ( !$wgUseAjax ) {
@@ -104,10 +104,21 @@ function efCategoryTree() {
 		return;
 	}
 
+	if ( defined( 'MW_SUPPORTS_PARSERFIRSTCALLINIT' ) ) {
+		$wgHooks['ParserFirstCallInit'][] = 'efCategoryTreeSetHooks';
+	} else {
+		efCategoryTreeSetHooks();
+	}
+
+}
+
+function efCategoryTreeSetHooks() {
+	global $wgParser, $wgCategoryTreeAllowTag;
 	if ( $wgCategoryTreeAllowTag ) {
 		$wgParser->setHook( 'categorytree' , 'efCategoryTreeParserHook' );
 		$wgParser->setFunctionHook( 'categorytree' , 'efCategoryTreeParserFunction' );
 	}
+	return true;
 }
 
 /**
