@@ -555,6 +555,7 @@ $messages['el'] = array(
 
 /** Esperanto (Esperanto)
  * @author Tlustulimu
+ * @author Yekrats
  */
 $messages['eo'] = array(
 	'categorytree'                  => 'Kategoriarbo',
@@ -565,7 +566,7 @@ $messages['eo'] = array(
 	'categorytree-parents'          => 'praul(ar)o',
 	'categorytree-mode-categories'  => 'nur kategorioj',
 	'categorytree-mode-pages'       => 'pagoj krom bildpagoj',
-	'categorytree-mode-all'         => 'ciuj pagoj',
+	'categorytree-mode-all'         => 'ĉiuj pagoj',
 	'categorytree-collapse'         => 'kunfaldu',
 	'categorytree-expand'           => 'etendu',
 	'categorytree-load'             => 'elsutu',
@@ -1234,7 +1235,7 @@ $messages['km'] = array(
 	'categorytree-tab'              => 'ដើមឈើ',
 	'categorytree-category'         => 'ចំណាត់ក្រុម',
 	'categorytree-go'               => 'បង្ហាញដើមឈើ',
-	'categorytree-mode-categories'  => 'ចំណាត់ក្រុម តែប៉ុណ្ណោះ',
+	'categorytree-mode-categories'  => 'ចំពោះតែ ចំណាត់ក្រុម',
 	'categorytree-mode-pages'       => 'ទំព័រ លើកលែងតែរូបភាព',
 	'categorytree-mode-all'         => 'គ្រប់ទំព័រ',
 	'categorytree-expand'           => 'ពង្រីក',
@@ -2212,6 +2213,10 @@ $messages['tet'] = array(
 $messages['tg'] = array(
 	'categorytree'                  => 'ГурӯҳДарахт',
 	'categorytree-tab'              => 'Дарахт',
+	'categorytree-desc'             => 'Абзоре дар асоси AJAX барои намоиши [[Special:CategoryTree|сохтори гурӯҳи]] вики.',
+	'categorytree-header'           => 'Номи як гурӯҳро ворид кунед, то мӯҳтавиёти он ба сурати дарахт намоиш ёбад.
+Таваҷҷӯҳ кунед, ки ин кор ба қобилиятҳои пешрафтаи ҶаваСкрипт бо номи Аҷакс ниёз дорад.
+Агар аз мурургари хеле кӯҳна истифода мекунед ё ҶаваСкриптро ғайрифаъол кардаед, дар ин ҳол он кор нахоҳад кард.',
 	'categorytree-category'         => 'Гурӯҳ',
 	'categorytree-go'               => 'Намоиши дарахт',
 	'categorytree-parents'          => 'Волидайн',
