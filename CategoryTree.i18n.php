@@ -1436,6 +1436,9 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
 $messages['mr'] = array(
 	'categorytree'                  => 'वर्गवृक्ष',
 	'categorytree-tab'              => 'वृक्ष',
+	'categorytree-desc'             => 'एखाद्या विकिची [[Special:CategoryTree|वर्गीकरण मांडणी]] दाखवण्याकरिता AJAX वापरून बनवलेले उपकरण',
+	'categorytree-header'           => 'एखाद्या वर्गीकरणातील मसुदा वृक्ष स्वरूपात पहाण्याकरिता  त्या वर्गाचे नाव भरा.
+या सुविधेकरिता AJAX नावाची आधुनिक जावास्क्रीप्ट सुविधेची गरज भासते हे लक्षात घ्या.हि सुविधा,जर तुमचा विचरक खूप जुना असेल, अथवा त्यातील जावास्क्रीप्ट सुविधा अनुपलब्ध ठेवली असेल तर, काम करणार नाही.',
 	'categorytree-category'         => 'वर्ग',
 	'categorytree-go'               => 'वृक्ष दाखवा',
 	'categorytree-parents'          => 'पालक',
@@ -1448,8 +1451,13 @@ $messages['mr'] = array(
 	'categorytree-loading'          => 'चढवत आहे',
 	'categorytree-nothing-found'    => 'काहीच गवसले नाही',
 	'categorytree-no-subcategories' => 'उपवर्ग नाहीत',
+	'categorytree-no-pages'         => 'पाने अथवा उपवर्ग नाहीत',
+	'categorytree-not-found'        => 'वर्ग <i>$1</i> आढळला नाही',
+	'categorytree-error'            => 'विदा चढवताना त्रूटी.',
+	'categorytree-retry'            => 'कृपया,क्षणभर थांबा आणि पुन्हा प्रयत्न करा.',
 	'categorytree-show-list'        => 'सूची स्वरूपात दाखवा',
 	'categorytree-show-tree'        => 'वृक्ष स्वरूपात दाखवा',
+	'categorytree-too-many-subcats' => 'उपवर्ग वृक्ष स्वरूपात दाखवता येणार नाहीत, कारण ते खूप अधीक आहेत.',
 );
 
 /** Malay (Bahasa Melayu)
@@ -1771,6 +1779,7 @@ $messages['ps'] = array(
 	'categorytree-category'         => 'وېشنيزه',
 	'categorytree-go'               => 'ونه ښکاره کول',
 	'categorytree-mode-categories'  => 'يوازې وېشنيزې',
+	'categorytree-mode-pages'       => 'مخونه پرته د انځورونو نه',
 	'categorytree-mode-all'         => 'ټول مخونه',
 	'categorytree-expand'           => 'غځول',
 	'categorytree-nothing-found'    => 'هېڅ هم و نه موندل شو',
