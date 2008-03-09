@@ -1347,6 +1347,13 @@ Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da
 	'categorytree-too-many-subcats' => "D'Struktur vun den Ënnerkategorien kann net duergestalt ginn, well et der zevill sinn.",
 );
 
+/** Lezghian (Лезги)
+ * @author M.M.S.
+ */
+$messages['lez'] = array(
+	'categorytree-tab' => 'Тар',
+);
+
 /** Limburgish (Limburgs)
  * @author Ooswesthoesbes
  */
