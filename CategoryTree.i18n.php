@@ -350,6 +350,7 @@ $messages['bs'] = array(
 $messages['ca'] = array(
 	'categorytree'                  => 'Categories en arbre',
 	'categorytree-tab'              => 'Arbre',
+	'categorytree-desc'             => "Gadget fet amb AJAX per a mostrar l'[[Special:CategoryTree|estructura de les categories]] d'un wiki",
 	'categorytree-header'           => "Entreu el nom d'una categoria per a veure l'arbre del seu contingut. Aquesta pàgina utilitza una funcionalitat avançada del JavaScript coneguda com a AJAX, i no funciona en navegadors antics o que tinguin el JavaScript desactivat.",
 	'categorytree-category'         => 'Categoria',
 	'categorytree-go'               => 'Carregueu',
@@ -433,7 +434,7 @@ $messages['cs'] = array(
 
 /** Danish (Dansk)
  * @author Barklund
- * @author Morten LJ
+ * @author Morten
  */
 $messages['da'] = array(
 	'categorytree'                  => 'Kategoritræ',
@@ -1229,13 +1230,14 @@ Eger şolğışıñız öte eski, nemese JavaScript öşirilgen bolsa, bul iske 
 
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
+ * @author Lovekhmer
  */
 $messages['km'] = array(
-	'categorytree'                  => 'ដើមឈើ ចំណាត់ក្រុម',
-	'categorytree-tab'              => 'ដើមឈើ',
-	'categorytree-category'         => 'ចំណាត់ក្រុម',
+	'categorytree'                  => 'មែកធាងនៃចំណាត់ថ្នាក់ក្រុម',
+	'categorytree-tab'              => 'មែកធាង',
+	'categorytree-category'         => 'ចំណាត់ថ្នាក់ក្រុម',
 	'categorytree-go'               => 'បង្ហាញដើមឈើ',
-	'categorytree-mode-categories'  => 'ចំពោះតែ ចំណាត់ក្រុម',
+	'categorytree-mode-categories'  => 'សំរាប់តែចំណាត់ថ្នាក់ក្រុមប៉ុណ្ណោះ',
 	'categorytree-mode-pages'       => 'ទំព័រ លើកលែងតែរូបភាព',
 	'categorytree-mode-all'         => 'គ្រប់ទំព័រ',
 	'categorytree-expand'           => 'ពង្រីក',
@@ -1561,7 +1563,7 @@ $messages['ne'] = array(
 $messages['nl'] = array(
 	'categorytree'                  => 'Categorieboom',
 	'categorytree-tab'              => 'Boom',
-	'categorytree-desc'             => 'AJAX-gebaseerde uitbreiding om de [[Special:CategoryTree|categoriestructuur]] van een wiki te tonen',
+	'categorytree-desc'             => 'AJAX-gebaseerde uitbreiding om de [[Special:CategoryTree|categoriestructuur]] van een wiki te bekijken',
 	'categorytree-header'           => 'Geef een categorienaam in om de inhoud als een boomstructuur te bekijken.
 Let op: deze functie gebruikt JavaScript-functionaliteit die bekend staat als AJAX.
 Als u een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze functie niet.',
@@ -1581,9 +1583,9 @@ Als u een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze
 	'categorytree-not-found'        => "Categorie ''$1'' niet gevonden",
 	'categorytree-error'            => 'Probleem bij het laden van de gegevens.',
 	'categorytree-retry'            => 'Wacht alstublieft even en probeer het dan opnieuw.',
-	'categorytree-show-list'        => 'Toon als lijst',
-	'categorytree-show-tree'        => 'Toon als boomstructuur',
-	'categorytree-too-many-subcats' => 'Kan de ondercategorieën niet als boomstructuur tonen, er zijn er te veel.',
+	'categorytree-show-list'        => 'Als lijst weergeven',
+	'categorytree-show-tree'        => 'Als boomstructuur weergeven',
+	'categorytree-too-many-subcats' => 'Kan de ondercategorieën niet als boomstructuur weergeven. Het zijn er te veel.',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
