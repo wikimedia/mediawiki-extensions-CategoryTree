@@ -76,7 +76,7 @@ $messages['af'] = array(
  */
 $messages['am'] = array(
 	'categorytree'           => 'የመደቦች ዛፍ',
-	'categorytree-header'    => "[+] ተጭነው ንዑሱ-መደብ ይዘረጋል፣ [-] ተጭነው ደግሞ ይመልሳል።
+	'categorytree-header'    => "[+] ተጭነው ንዑሱ-መደብ ይዘረጋል፣ [-] ተጭነው ደግሞ ይመልሳል። 
 
 በግራ በኩል ባለው ሳጥን ውስጥ የመደቡን ስም ዝም ብለው መጻፍ ይችላሉ። (የዚሁ ዊኪ መደብ ስሞች ለመመልከት፣ [[Special:Mostlinkedcategories|እዚህ ይጫኑ]]።) ከዚያ፥ ምን ያሕል ንዑስ-መደቦች እንዳሉበት ለማየት «ዛፉ ይታይ» የሚለውን ይጫኑ። በቀኝ በኩል ካለው ሳጥን 'all pages' ከመረጡ፥ በየመደቡ ውስጥ ያሉት መጣጥፎች በተጨማሪ ይታያሉ።
 
@@ -2141,6 +2141,7 @@ In gjucht oolde Browsere, of wan Javascript ouschalted is, funktioniert disse Si
 );
 
 /** Swedish (Svenska)
+ * @author Sannab
  * @author Lejonel
  * @author Siebrand
  */
@@ -2148,28 +2149,28 @@ $messages['sv'] = array(
 	'categorytree'                  => 'Kategoriträd',
 	'categorytree-tab'              => 'Träd',
 	'categorytree-desc'             => 'AJAX-baserat verktyg som visar [[Special:CategoryTree|kategoristrukturen]] på en wiki',
-	'categorytree-header'           => 'Ange en kategori för att se dess innehåll som en trädstruktur.
+	'categorytree-header'           => 'Fyll i ett kategorinamn för att se dess innehåll som en trädstruktur.
 Notera att detta kräver stöd för AJAX, en avancerad form av JavaScript.
 Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript är avaktiverat.',
 	'categorytree-category'         => 'Kategori',
 	'categorytree-go'               => 'Visa träd',
 	'categorytree-parents'          => 'Föräldrakategorier',
 	'categorytree-mode-categories'  => 'visa bara kategorier',
-	'categorytree-mode-pages'       => 'sidor men inte bilder',
+	'categorytree-mode-pages'       => 'sidor utom bilder',
 	'categorytree-mode-all'         => 'alla sidor',
-	'categorytree-collapse'         => 'minimera',
+	'categorytree-collapse'         => 'göm',
 	'categorytree-expand'           => 'expandera',
 	'categorytree-load'             => 'ladda',
 	'categorytree-loading'          => 'laddar',
-	'categorytree-nothing-found'    => 'hittade inga',
+	'categorytree-nothing-found'    => 'hittade inget',
 	'categorytree-no-subcategories' => 'inga underkategorier',
 	'categorytree-no-pages'         => 'inga artiklar eller underkategorier',
-	'categorytree-not-found'        => "Kategorin ''$1'' hittades ej",
+	'categorytree-not-found'        => "Kategori ''$1'' hittades ej",
 	'categorytree-error'            => 'Problem med att ladda data.',
 	'categorytree-retry'            => 'Vänta en stund och försök igen.',
-	'categorytree-show-list'        => 'Visa lista',
-	'categorytree-show-tree'        => 'Visa träd',
-	'categorytree-too-many-subcats' => 'Underkategorierna kan inte visas som ett träd, det finns för många av dem.',
+	'categorytree-show-list'        => 'Visa som lista',
+	'categorytree-show-tree'        => 'Visa som träd',
+	'categorytree-too-many-subcats' => 'Kan inte visa underkategorier som ett träd eftersom det finns för många.',
 );
 
 /** Tamil (தமிழ்)
