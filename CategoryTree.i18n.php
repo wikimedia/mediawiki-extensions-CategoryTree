@@ -1137,6 +1137,35 @@ $messages['ja'] = array(
 	'categorytree-too-many-subcats' => 'サブカテゴリの数が多すぎるため、ツリー表示できません。',
 );
 
+/** Jutish (Jysk)
+ * @author Huslåke
+ */
+$messages['jut'] = array(
+	'categorytree'                  => 'Klyngetræ',
+	'categorytree-tab'              => 'Træ',
+	'categorytree-desc'             => 'AJAX based gadget til display a [[Special:CategoryTree|klynge struktur]] ener wiki',
+	'categorytree-header'           => "Indtast navnet på en kategori for at se indholdet som et træ. Bemærk at dette kræver avanceret JavaScript-funktionalitet kendt som AJAX, det verker ig'n hves du harst en meget gammel browser zller hves du harst slået JavaScript frå.",
+	'categorytree-category'         => 'Klynge',
+	'categorytree-go'               => 'Henter',
+	'categorytree-parents'          => 'Åverklynger',
+	'categorytree-mode-categories'  => 'ves kun klynger',
+	'categorytree-mode-pages'       => 'sider undtaget billeter',
+	'categorytree-mode-all'         => 'ål sider',
+	'categorytree-collapse'         => 'fold sammen',
+	'categorytree-expand'           => 'fold ud',
+	'categorytree-load'             => 'hent',
+	'categorytree-loading'          => 'endlæser',
+	'categorytree-nothing-found'    => "Ig'n funder, desvære.",
+	'categorytree-no-subcategories' => "Ig'n underklynger.",
+	'categorytree-no-pages'         => "Ig'n ertikler æller underklynger.",
+	'categorytree-not-found'        => "Æ klynge ''$1'' blev ekke fundet",
+	'categorytree-error'            => 'Der åpstød et pråblæm under endlæsnenge åf data.',
+	'categorytree-retry'            => 'Vent et øjeblek og prøv egen.',
+	'categorytree-show-list'        => 'Ves søm liste.',
+	'categorytree-show-tree'        => 'Ves søm træ',
+	'categorytree-too-many-subcats' => 'Ken ekke vese underklynger søm træ, der er før mange.',
+);
+
 /** Kara-Kalpak (Qaraqalpaqsha)
  * @author AlefZet
  */
