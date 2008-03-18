@@ -1666,6 +1666,7 @@ $messages['ne'] = array(
 $messages['nl'] = array(
 	'categorytree'                  => 'Categorieboom',
 	'categorytree-tab'              => 'Boom',
+	'categorytree-legend'           => 'Categorieboom weergeven',
 	'categorytree-desc'             => 'AJAX-gebaseerde uitbreiding om de [[Special:CategoryTree|categoriestructuur]] van een wiki te bekijken',
 	'categorytree-header'           => 'Geef een categorienaam in om de inhoud als een boomstructuur te bekijken.
 Let op: deze functie gebruikt JavaScript-functionaliteit die bekend staat als AJAX.
