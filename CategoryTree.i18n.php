@@ -74,6 +74,7 @@ $messages['af'] = array(
 
 /** Amharic (አማርኛ)
  * @author Codex Sinaiticus
+ * @author Siebrand
  */
 $messages['am'] = array(
 	'categorytree'           => 'የመደቦች ዛፍ',
@@ -82,7 +83,7 @@ $messages['am'] = array(
 በግራ በኩል ባለው ሳጥን ውስጥ የመደቡን ስም ዝም ብለው መጻፍ ይችላሉ። (የዚሁ ዊኪ መደብ ስሞች ለመመልከት፣ [[Special:Mostlinkedcategories|እዚህ ይጫኑ]]።) ከዚያ፥ ምን ያሕል ንዑስ-መደቦች እንዳሉበት ለማየት «ዛፉ ይታይ» የሚለውን ይጫኑ። በቀኝ በኩል ካለው ሳጥን 'all pages' ከመረጡ፥ በየመደቡ ውስጥ ያሉት መጣጥፎች በተጨማሪ ይታያሉ።
 
 ''(ማስታወሻ: ይህ በኮምፒውተርዎ እንዲሠራ 'ጃቫ' የሚችል ዌብ-ብራውዘር ያስፈልጋል።)''",
-	'categorytree-category'  => 'የመደብ ስም፦',
+	'categorytree-category'  => 'የመደብ ስም፦:',
 	'categorytree-go'        => 'ዛፉ ይታይ',
 	'categorytree-parents'   => 'ላዕላይ መደቦች',
 	'categorytree-loading'   => 'ሊመጣ ነው',
@@ -91,13 +92,14 @@ $messages['am'] = array(
 
 /** Aragonese (Aragonés)
  * @author Juanpabl
+ * @author Siebrand
  */
 $messages['an'] = array(
 	'categorytree'                  => 'Árbol de categorías',
 	'categorytree-tab'              => 'Árbol',
 	'categorytree-desc'             => "Traste basato en AJAX t'amostrar a [[Special:CategoryTree|estrutura de categorías]] d'una wiki",
 	'categorytree-header'           => "Escriba un nombre de categoría ta beyer os suyos contenius en forma d'árbol. Pare cuenta que ista pachina requiere as funzions JavaScriptz abanzatas conoixitas como AJAX. Si tiene un nabegador antigo, u tiene desautibato JavaScript, a pachina no funzionará.",
-	'categorytree-category'         => 'Categoría',
+	'categorytree-category'         => 'Categoría:',
 	'categorytree-go'               => "Amostrar l'Árbol",
 	'categorytree-parents'          => 'Categorías mais',
 	'categorytree-mode-categories'  => 'amostrar nomás categorías',
@@ -120,6 +122,7 @@ $messages['an'] = array(
 
 /** Arabic (العربية)
  * @author Meno25
+ * @author Siebrand
  */
 $messages['ar'] = array(
 	'categorytree'                  => 'شجرة تصنيف',
@@ -128,7 +131,7 @@ $messages['ar'] = array(
 	'categorytree-header'           => 'أدخل اسم تصنيف لترى محتوياته كتركيب شجري.
 لاحظ أن هذا يتطلب خاصية جافاسكريبت متقدمة معروفة كأجاكس.
 لو كنت تمتلك متصفحا قديما جدا، أو لديك الجافاسكريبت معطلة، فلن تعمل.',
-	'categorytree-category'         => 'تصنيف',
+	'categorytree-category'         => ':تصنيف',
 	'categorytree-go'               => 'عرض الشجرة',
 	'categorytree-parents'          => 'مصنف تحت',
 	'categorytree-mode-categories'  => 'تصنيفات فقط',
@@ -151,8 +154,8 @@ $messages['ar'] = array(
 
 /** Asturian (Asturianu)
  * @author SPQRobin
- * @author Esbardu
  * @author Siebrand
+ * @author Esbardu
  */
 $messages['ast'] = array(
 	'categorytree'                  => 'Árbole de categoríes',
@@ -161,7 +164,7 @@ $messages['ast'] = array(
 	'categorytree-header'           => "Escribi un nome de categoría pa ver el so conteníu estructuráu en forma
 d'árbole. Fíxate en qu'esto requier la erbía AJAX de JavaScript. Si tienes
 un navegador mui antiguu o'l JavaScript desactiváu, nun va funcionar.",
-	'categorytree-category'         => 'Categoría',
+	'categorytree-category'         => 'Categoría:',
 	'categorytree-go'               => 'Amosar árbole',
 	'categorytree-parents'          => 'Categoríes superiores',
 	'categorytree-mode-categories'  => 'categoríes namái',
@@ -184,6 +187,7 @@ un navegador mui antiguu o'l JavaScript desactiváu, nun va funcionar.",
 
 /** Kotava (Kotava)
  * @author Wikimistusik
+ * @author Siebrand
  */
 $messages['avk'] = array(
 	'categorytree'                  => 'LomaAal',
@@ -191,7 +195,7 @@ $messages['avk'] = array(
 	'categorytree-header'           => 'Ta wira va aaldrekoraf cek va lomayolt bazel !
 Stragal da batcoba va AJAX JavaScript fliaca kucilar.
 Ede va guazafi exulesiki favel oke ede JavaScript fliaceem tir metegis, batcoba me guyundeter.',
-	'categorytree-category'         => 'Loma',
+	'categorytree-category'         => 'Loma:',
 	'categorytree-go'               => 'Nedira va aal',
 	'categorytree-parents'          => 'Veylomeem',
 	'categorytree-mode-categories'  => 'Anton lomeem',
@@ -214,9 +218,10 @@ Ede va guazafi exulesiki favel oke ede JavaScript fliaceem tir metegis, batcoba 
 
 /** Bikol Central (Bikol Central)
  * @author Filipinayzd
+ * @author Siebrand
  */
 $messages['bcl'] = array(
-	'categorytree-category'         => 'Kategorya',
+	'categorytree-category'         => 'Kategorya:',
 	'categorytree-mode-all'         => 'gabos na mga pahina',
 	'categorytree-load'             => 'ikarga',
 	'categorytree-loading'          => 'pigkakarga',
@@ -260,6 +265,7 @@ $messages['bg'] = array(
 
 /** Bengali (বাংলা)
  * @author Zaheen
+ * @author Siebrand
  */
 $messages['bn'] = array(
 	'categorytree'                  => 'বিষয়শ্রেণীবৃক্ষ',
@@ -268,7 +274,7 @@ $messages['bn'] = array(
 	'categorytree-header'           => 'যে বিষয়শ্রেণীটির অন্তর্ভুক্ত বিষয়বস্তু বৃক্ষাকারে দেখতে চান, সেটির নাম প্রবেশ করান।
 লক্ষ্য করুন এর জন্য এজ্যাক্স নামের একটি অগ্রসর জাভাস্ক্রিপ্ট কৌশল ব্যবহার করা হয়।
 যদি আপনার ব্রাউজারটি খুব পুরনো হয়, বা যদি জাভাস্ক্রিপ্ট নিষ্ক্রিয় করা থাকে, তবে এটি কাজ করবে না।',
-	'categorytree-category'         => 'বিষয়শ্রেণী',
+	'categorytree-category'         => 'বিষয়শ্রেণী:',
 	'categorytree-go'               => 'বৃক্ষ দেখানো হোক',
 	'categorytree-parents'          => 'পিতামাতা',
 	'categorytree-mode-categories'  => 'শুধুমাত্র বিষয়শ্রেণী',
@@ -291,15 +297,16 @@ $messages['bn'] = array(
 
 /** Breton (Brezhoneg)
  * @author Fulup
+ * @author Siebrand
  */
 $messages['br'] = array(
 	'categorytree'                  => 'Gwezennadur ar rummadoù',
 	'categorytree-tab'              => 'Gwezennadur',
 	'categorytree-desc'             => 'Bitrak diazezet war AJAX evit diskouez [[Special:CategoryTree|framm rummad]] ur wiki',
-	'categorytree-header'           => "Merkit anv ur rummad evit gwelet petra zo ennañ e stumm ur gwezennadur.
+	'categorytree-header'           => "Merkit anv ur rummad evit gwelet petra zo ennañ e stumm ur gwezennadur. 
 Notit e rankit kaout an arc'hwelioù JavaScript araokaet anvet AJAX.
 M'eo kozh-mat stumm ho merdeer pe m'eo diweredekaet JavaScript ganeoc'h, ne'z aio ket en-dro.",
-	'categorytree-category'         => 'Rummad',
+	'categorytree-category'         => 'Rummad:',
 	'categorytree-go'               => 'Diskouez ar gwezennadur',
 	'categorytree-parents'          => 'Usrummadoù',
 	'categorytree-mode-categories'  => 'Rummadoù hepken',
@@ -394,9 +401,10 @@ $messages['cdo'] = array(
 
 /** Corsican (Corsu)
  * @author SPQRobin
+ * @author Siebrand
  */
 $messages['co'] = array(
-	'categorytree-category'   => 'Categuria',
+	'categorytree-category'   => 'Categuria:',
 	'categorytree-mode-pages' => 'pagine senza imagin',
 	'categorytree-mode-all'   => 'tutte e pagine',
 );
@@ -502,15 +510,17 @@ $messages['de-formal'] = array(
 );
 
 /** Zazaki (Zazaki)
+ * @author Siebrand
  * @author SPQRobin
  */
 $messages['diq'] = array(
 	'categorytree'          => 'Dara Kategoriye',
-	'categorytree-category' => 'Kategoriye',
+	'categorytree-category' => 'Kategoriye:',
 );
 
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
+ * @author Siebrand
  */
 $messages['dsb'] = array(
 	'categorytree'                  => 'Bom kategorijow',
@@ -518,7 +528,7 @@ $messages['dsb'] = array(
 	'categorytree-header'           => 'Zapodaj mě kategorije, aby jeje wopśimjeśe ako bomowu strukturu wiźeł.
 Glědaj, až se to wěste funkcije JavaScripta pomina, znate ako AJAX.
 Jolic maš wjelgin stary browser abo jolic JavaScript jo wótšaltowane, toś ten bok ewentuelnje njefunkcioněrujo.',
-	'categorytree-category'         => 'Kategorija',
+	'categorytree-category'         => 'Kategorija:',
 	'categorytree-go'               => 'Bom pokazaś',
 	'categorytree-parents'          => 'Wuše kategorije',
 	'categorytree-mode-categories'  => 'jano kategorije',
@@ -548,10 +558,11 @@ $messages['ee'] = array(
 
 /** Greek (Ελληνικά)
  * @author Consta
+ * @author Siebrand
  */
 $messages['el'] = array(
 	'categorytree-tab'              => 'Δέντρο',
-	'categorytree-category'         => 'Κατηγορία',
+	'categorytree-category'         => 'Κατηγορία:',
 	'categorytree-parents'          => 'Γονείς',
 	'categorytree-mode-categories'  => 'μόνο κατηγορίες',
 	'categorytree-mode-all'         => 'όλες οι σελίδες',
@@ -622,10 +633,11 @@ Si tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no fu
 
 /** Estonian (Eesti)
  * @author SPQRobin
+ * @author Siebrand
  */
 $messages['et'] = array(
 	'categorytree'                  => 'Kategooriapuu',
-	'categorytree-category'         => 'Kategooria',
+	'categorytree-category'         => 'Kategooria:',
 	'categorytree-mode-categories'  => 'ainult kategooriad',
 	'categorytree-mode-pages'       => 'leheküljed, välja arvatud pildid',
 	'categorytree-mode-all'         => 'kõik leheküljed',
@@ -664,11 +676,12 @@ $messages['eu'] = array(
 
 /** Extremaduran (Estremeñu)
  * @author Better
+ * @author Siebrand
  */
 $messages['ext'] = array(
 	'categorytree'          => 'Arbu e categorias',
 	'categorytree-tab'      => 'Arbu',
-	'categorytree-category' => 'Categoria',
+	'categorytree-category' => 'Categoria:',
 	'categorytree-load'     => 'cargal',
 	'categorytree-loading'  => 'cargandu',
 	'categorytree-no-pages' => 'nu ai ni páhinas ni sucategorias',
@@ -735,10 +748,11 @@ $messages['fi'] = array(
 
 /** Faroese (Føroyskt)
  * @author Spacebirdy
+ * @author Siebrand
  */
 $messages['fo'] = array(
 	'categorytree'          => 'BólkaTræ',
-	'categorytree-category' => 'Bólkur',
+	'categorytree-category' => 'Bólkur:',
 	'categorytree-go'       => 'Vís træ',
 	'categorytree-mode-all' => 'allar síður',
 );
@@ -775,6 +789,7 @@ $messages['fr'] = array(
 
 /** Franco-Provençal (Arpetan)
  * @author ChrisPtDe
+ * @author Siebrand
  */
 $messages['frp'] = array(
 	'categorytree'                  => 'Arborèscence de les catègories',
@@ -783,7 +798,7 @@ $messages['frp'] = array(
 	'categorytree-header'           => 'Entrâd un nom de catègorie por vêre son contegnu en structura arborèscenta.
 Cen utilise des fonccionalitâts JavaScript avanciês cognues desot lo nom d’AJAX.
 Se vos avéd un rudo viely navigator Malyâjo ou que vos éd pas activâ la fonccionalitât JavaScript, cen fonccionerat pas.',
-	'categorytree-category'         => 'Catègorie',
+	'categorytree-category'         => 'Catègorie:',
 	'categorytree-go'               => 'Afichiér l’arborèscence',
 	'categorytree-parents'          => 'Sur-catègorie(s) ',
 	'categorytree-mode-categories'  => 'ren que les catègories',
@@ -805,12 +820,13 @@ Se vos avéd un rudo viely navigator Malyâjo ou que vos éd pas activâ la fonc
 );
 
 /** Friulian (Furlan)
- * @author MF-Warburg
  * @author Klenje
+ * @author Siebrand
+ * @author MF-Warburg
  */
 $messages['fur'] = array(
 	'categorytree'                  => 'Arbul des categoriis',
-	'categorytree-category'         => 'Categorie',
+	'categorytree-category'         => 'Categorie:',
 	'categorytree-no-subcategories' => 'nissune sot categorie.',
 );
 
@@ -848,13 +864,14 @@ Se vostede ten un navegador moi vello, ou deshabilitado o JavaScript, non vai fu
  * @author Alma
  * @author Xosé
  * @author Toliño
+ * @author Siebrand
  */
 $messages['gl'] = array(
 	'categorytree'                  => 'Amosar a árbore de categorías',
 	'categorytree-tab'              => 'Árbore',
 	'categorytree-header'           => 'Introduza o nome dunha categoría para ver o contido da estrutura da árbore. Dease conta de que se require funcionalidade de JavaScript avanzada coñecida como AJAX.
 Se vostede ten un navegador moi vello, ou deshabilitado o JavaScript, non vai funcionar.',
-	'categorytree-category'         => 'Categoría',
+	'categorytree-category'         => 'Categoría:',
 	'categorytree-go'               => 'Amosar a árbore',
 	'categorytree-parents'          => 'Nodos superiores',
 	'categorytree-mode-categories'  => 'só categorías',
@@ -890,10 +907,11 @@ $messages['gu'] = array(
 
 /** Hakka (Hak-kâ-fa)
  * @author Hakka
+ * @author Siebrand
  */
 $messages['hak'] = array(
 	'categorytree'          => 'Fûn-lui-su',
-	'categorytree-category' => 'Fûn-lui',
+	'categorytree-category' => 'Fûn-lui:',
 	'categorytree-expand'   => 'Chán-khôi',
 );
 
@@ -1014,6 +1032,7 @@ Ha túlságosan régi böngésződ van, vagy a JavaScript le van tiltva, akkor n
 
 /** Armenian (Հայերեն)
  * @author Teak
+ * @author Siebrand
  */
 $messages['hy'] = array(
 	'categorytree'                  => 'Կատեգորիաների ծառ',
@@ -1021,7 +1040,7 @@ $messages['hy'] = array(
 	'categorytree-header'           => 'Մուտքագրեք կատեգորիայի անունը` ծառի համակարգը տեսնելու համար։
 Ի նկատի ունեցեք, որ սա հնարավոր է միայն ձեր բրաուզերի կողմից AJAX-ի ֆունկցիանալության դեպքում։
 Եթե դուք աշխատում եք շատ հին բրաուզերով, կամ ձեր JavaScript-ը անջատված է` այն չի գործի։',
-	'categorytree-category'         => 'Կատեգորիա',
+	'categorytree-category'         => 'Կատեգորիա:',
 	'categorytree-go'               => 'Ցույց տալ ծառը',
 	'categorytree-parents'          => 'Ծնողներ',
 	'categorytree-mode-categories'  => 'միայն կատեգորիաները',
@@ -1076,10 +1095,11 @@ Jika Anda menggunakan penjelajah web lama, atau mematikan fungsi JavaScript Anda
 
 /** Ido (Ido)
  * @author Malafaya
+ * @author Siebrand
  */
 $messages['io'] = array(
 	'categorytree-tab'              => 'Arboro',
-	'categorytree-category'         => 'Kategorio',
+	'categorytree-category'         => 'Kategorio:',
 	'categorytree-go'               => 'Montrar Arboro',
 	'categorytree-mode-all'         => 'omna pagini',
 	'categorytree-no-subcategories' => 'nula subkategorii',
@@ -1089,6 +1109,7 @@ $messages['io'] = array(
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
  * @author Spacebirdy
+ * @author Siebrand
  */
 $messages['is'] = array(
 	'categorytree'                  => 'Flokkatré',
@@ -1096,7 +1117,7 @@ $messages['is'] = array(
 	'categorytree-header'           => 'Sláðu inn heiti flokks til að sjá innihald hans sem tré.
 Hafðu í huga að þetta krefst þróaðra virkni JavaScript sem nefnist AJAX.
 Ef þú notast við gamlan vafra eða hefur slökkt á JavaScript mun þetta ekki virka.',
-	'categorytree-category'         => 'Flokkur',
+	'categorytree-category'         => 'Flokkur:',
 	'categorytree-go'               => 'Sýna tré',
 	'categorytree-parents'          => 'Undirrætur',
 	'categorytree-mode-categories'  => 'bara flokka',
@@ -1181,13 +1202,14 @@ $messages['ja'] = array(
 
 /** Jutish (Jysk)
  * @author Huslåke
+ * @author Siebrand
  */
 $messages['jut'] = array(
 	'categorytree'                  => 'Klyngetræ',
 	'categorytree-tab'              => 'Træ',
 	'categorytree-desc'             => 'AJAX based gadget til display a [[Special:CategoryTree|klynge struktur]] ener wiki',
 	'categorytree-header'           => "Indtast navnet på en kategori for at se indholdet som et træ. Bemærk at dette kræver avanceret JavaScript-funktionalitet kendt som AJAX, det verker ig'n hves du harst en meget gammel browser zller hves du harst slået JavaScript frå.",
-	'categorytree-category'         => 'Klynge',
+	'categorytree-category'         => 'Klynge:',
 	'categorytree-go'               => 'Henter',
 	'categorytree-parents'          => 'Åverklynger',
 	'categorytree-mode-categories'  => 'ves kun klynger',
@@ -1302,11 +1324,12 @@ Eger şolğışıñız öte eski, nemese JavaScript öşirilgen bolsa, bul iske 
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
+ * @author Siebrand
  */
 $messages['km'] = array(
 	'categorytree'                  => 'មែកធាងនៃចំណាត់ថ្នាក់ក្រុម',
 	'categorytree-tab'              => 'មែកធាង',
-	'categorytree-category'         => 'ចំណាត់ថ្នាក់ក្រុម',
+	'categorytree-category'         => 'ចំណាត់ថ្នាក់ក្រុម:',
 	'categorytree-go'               => 'បង្ហាញដើមឈើ',
 	'categorytree-parents'          => 'ចំណាត់ថ្នាក់ក្រុមកំរិតខ្ពស់',
 	'categorytree-mode-categories'  => 'សំរាប់តែចំណាត់ថ្នាក់ក្រុមប៉ុណ្ណោះ',
@@ -1329,6 +1352,7 @@ $messages['km'] = array(
 
 /** Korean (한국어)
  * @author Klutzy
+ * @author Siebrand
  */
 $messages['ko'] = array(
 	'categorytree'                  => '분류 트리',
@@ -1337,7 +1361,7 @@ $messages['ko'] = array(
 	'categorytree-header'           => '트리 구조로 볼 분류 이름을 입력해주세요.
 이 기능을 사용하려면 웹 브라우저에서 AJAX를 지원해야 합니다.
 오래 된 브라우저를 사용하거나, 브라우저에서 자바스크립트를 사용하지 않도록 설정했다면 트리 기능이 동작하지 않습니다.',
-	'categorytree-category'         => '분류',
+	'categorytree-category'         => '분류:',
 	'categorytree-go'               => '트리 보기',
 	'categorytree-parents'          => '상위 분류',
 	'categorytree-mode-categories'  => '분류 문서만 표시',
@@ -1394,14 +1418,15 @@ $messages['la'] = array(
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  * @author Kaffi
+ * @author Siebrand
  */
 $messages['lb'] = array(
 	'categorytree'                  => 'Struktur vun de Kategorien',
 	'categorytree-tab'              => 'Bam',
 	'categorytree-header'           => 'Gitt den Numm vun enger Kategorie an, fir hiren Inhalt als Bam-Struktur ze gesinn.
-Bedenkt, datt dës Fonctioun Java Script Funktioune benotzt, déi als AJAX bekannt sinn.
+Bedenkt, datt dës Fonctioun Java Script Funktioune benotzt, déi als AJAX bekannt sinn. 
 Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da fonktionnéiert dëst bei Iech net.',
-	'categorytree-category'         => 'Kategorie',
+	'categorytree-category'         => 'Kategorie:',
 	'categorytree-go'               => 'Struktur weisen',
 	'categorytree-parents'          => 'Uewerkategorien',
 	'categorytree-mode-categories'  => 'nëmme Kategorien',
@@ -1431,6 +1456,7 @@ $messages['lez'] = array(
 
 /** Limburgish (Limburgs)
  * @author Ooswesthoesbes
+ * @author Siebrand
  */
 $messages['li'] = array(
 	'categorytree'                  => 'Categorieboum',
@@ -1439,7 +1465,7 @@ $messages['li'] = array(
 	'categorytree-header'           => "Gaef 'ne categorienaam in om de inhoud es 'ne boumstructuur te bekieke.
 Let op: deze functie gebroek JavaScript-functionaliteit dae bekindj steit es AJAX.
 Esse 'ne erg verajerdje browser höbs of JavaScript steit oet, den werk dees functie neet.",
-	'categorytree-category'         => 'Categorie',
+	'categorytree-category'         => 'Categorie:',
 	'categorytree-go'               => 'Laje',
 	'categorytree-parents'          => 'Baoveligkendje categorië',
 	'categorytree-mode-categories'  => 'allein categorië',
@@ -1514,6 +1540,7 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
 
 /** Marathi (मराठी)
  * @author Mahitgar
+ * @author Siebrand
  */
 $messages['mr'] = array(
 	'categorytree'                  => 'वर्गवृक्ष',
@@ -1521,7 +1548,7 @@ $messages['mr'] = array(
 	'categorytree-desc'             => 'एखाद्या विकिची [[Special:CategoryTree|वर्गीकरण मांडणी]] दाखवण्याकरिता AJAX वापरून बनवलेले उपकरण',
 	'categorytree-header'           => 'एखाद्या वर्गीकरणातील मसुदा वृक्ष स्वरूपात पहाण्याकरिता  त्या वर्गाचे नाव भरा.
 या सुविधेकरिता AJAX नावाची आधुनिक जावास्क्रीप्ट सुविधेची गरज भासते हे लक्षात घ्या.हि सुविधा,जर तुमचा विचरक खूप जुना असेल, अथवा त्यातील जावास्क्रीप्ट सुविधा अनुपलब्ध ठेवली असेल तर, काम करणार नाही.',
-	'categorytree-category'         => 'वर्ग',
+	'categorytree-category'         => 'वर्ग:',
 	'categorytree-go'               => 'वृक्ष दाखवा',
 	'categorytree-parents'          => 'पालक',
 	'categorytree-mode-categories'  => 'केवळ वर्ग',
@@ -1574,9 +1601,10 @@ Sekiranya anda menggunakan pelayar web yang lama, atau mematikan JavaScript, cir
 
 /** Erzya (эрзянь кель)
  * @author Amdf
+ * @author Siebrand
  */
 $messages['myv'] = array(
-	'categorytree-category' => 'Категория',
+	'categorytree-category' => 'Категория:',
 	'categorytree-mode-all' => 'весе лопатне',
 );
 
@@ -1588,12 +1616,13 @@ $messages['nan'] = array(
 
 /** Low German (Plattdüütsch)
  * @author Slomox
+ * @author Siebrand
  */
 $messages['nds'] = array(
 	'categorytree'                  => 'Kategorie-Boom',
 	'categorytree-tab'              => 'Boom',
 	'categorytree-header'           => 'Kategorienaam ingeven, den Inholt as Boomstruktur to sehn. Schasst di bewusst wesen, dat Javascript un de AJAX-Funkschoon dor för bruukt warrt. Wenn dien Nettkieker to oolt is oder du keen Javascript hest, denn warrt dat nix.',
-	'categorytree-category'         => 'Kategorie',
+	'categorytree-category'         => 'Kategorie:',
 	'categorytree-go'               => 'Boom wiesen',
 	'categorytree-parents'          => 'Öllernkategorien',
 	'categorytree-mode-categories'  => 'blot Kategorien',
@@ -1616,9 +1645,10 @@ $messages['nds'] = array(
 
 /** Nepali (नेपाली)
  * @author SPQRobin
+ * @author Siebrand
  */
 $messages['ne'] = array(
-	'categorytree-category'         => 'श्रेणी',
+	'categorytree-category'         => 'श्रेणी:',
 	'categorytree-mode-categories'  => 'श्रेणी मात्र',
 	'categorytree-mode-pages'       => 'तस्वीरहरू बाहेकका पृष्ठहरू',
 	'categorytree-mode-all'         => 'सबै पृष्ठहरु',
@@ -1663,12 +1693,13 @@ Als u een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Eirik
+ * @author Siebrand
  */
 $messages['nn'] = array(
 	'categorytree'                  => 'Kategoritre',
 	'categorytree-tab'              => 'Tre',
 	'categorytree-header'           => 'Skriv inn eit kategorinamn for å sjå innhaldet som ein trestruktur. Merk at denne funksjonen nyttar avansert [[JavaScript]]-funksjonalitet ([[AJAX]]). Dersom du brukar ein veldig gammal nettlesar, eller har slått av JavaScript-støtte, vil dette ikkje fungere.',
-	'categorytree-category'         => 'Kategori',
+	'categorytree-category'         => 'Kategori:',
 	'categorytree-go'               => 'Vis kategoritre',
 	'categorytree-parents'          => 'Overkategoriar',
 	'categorytree-mode-categories'  => 'berre kategoriane',
@@ -1722,10 +1753,11 @@ Enter a category name to see its contents as a tree structure. Note that this re
 
 /** Northern Sotho (Sesotho sa Leboa)
  * @author Mohau
+ * @author Siebrand
  */
 $messages['nso'] = array(
 	'categorytree-tab'       => 'Sehlare',
-	'categorytree-category'  => 'Sehlopha',
+	'categorytree-category'  => 'Sehlopha:',
 	'categorytree-go'        => 'Bontsha Sehlare',
 	'categorytree-parents'   => 'Batswadi',
 	'categorytree-mode-all'  => 'matlakala kamoka',
@@ -1739,13 +1771,14 @@ $messages['nso'] = array(
 
 /** Occitan (Occitan)
  * @author Cedric31
+ * @author Siebrand
  */
 $messages['oc'] = array(
 	'categorytree'                  => 'Arborescéncia de las categorias',
 	'categorytree-tab'              => 'Arborescéncia',
 	'categorytree-desc'             => "Gadget basat sus AJAX per afichar l'[[Special:CategoryTree|estructura de la categoria]] d’un wiki",
 	'categorytree-header'           => "Picatz un nom de categoria per veire son contengut en estructura arborescenta. Notatz qu'aquò utiliza de foncionalitats JavaScript avançadas conegudas jol nom d'AJAX. S'avètz un navigaire fòrt vièlh o qu'avètz pas activat lo JavaScript, aquò foncionarà pas.",
-	'categorytree-category'         => 'Categoria',
+	'categorytree-category'         => 'Categoria:',
 	'categorytree-go'               => "Mostrar l'arborescéncia",
 	'categorytree-parents'          => 'Subre-categoria(s)',
 	'categorytree-mode-categories'  => 'pas que las categorias',
@@ -1826,12 +1859,13 @@ $messages['pl'] = array(
 
 /** Piemontèis (Piemontèis)
  * @author Bèrto 'd Sèra
+ * @author Siebrand
  */
 $messages['pms'] = array(
 	'categorytree'                  => 'Erbo dle categorìe',
 	'categorytree-tab'              => 'Erbo',
 	'categorytree-header'           => "Ch'a buta ël nòm ëd na categorìa për ës-ciairene ij contnù e la strutura. Ch'a ten-a present che përchè sòn a travaja a-i va na fonsion Javascript avansà ch'as ciama AJAX. Se un a l'ha un navigator vej ò pura a l'ha nen abilità Javascript sossì a travaja nen.",
-	'categorytree-category'         => 'Categorìa',
+	'categorytree-category'         => 'Categorìa:',
 	'categorytree-go'               => "Deurbe l'erbo",
 	'categorytree-parents'          => 'Cé',
 	'categorytree-mode-categories'  => 'smon mach le categorìe',
@@ -1854,11 +1888,12 @@ $messages['pms'] = array(
 
 /** Pashto (پښتو)
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ * @author Siebrand
  */
 $messages['ps'] = array(
 	'categorytree'                  => 'د وېشنيزو ونه',
 	'categorytree-tab'              => 'ونه',
-	'categorytree-category'         => 'وېشنيزه',
+	'categorytree-category'         => ':وېشنيزه',
 	'categorytree-go'               => 'ونه ښکاره کول',
 	'categorytree-mode-categories'  => 'يوازې وېشنيزې',
 	'categorytree-mode-pages'       => 'مخونه پرته د انځورونو نه',
@@ -1908,13 +1943,14 @@ Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desab
 
 /** Quechua (Runa Simi)
  * @author AlimanRuna
+ * @author Siebrand
  */
 $messages['qu'] = array(
 	'categorytree'                  => "Katiguriya sach'a (CategoryTree)",
 	'categorytree-tab'              => "Sach'a",
 	'categorytree-header'           => "Katiguriya sutita yaykuchiy samiqninta sach'a hinata rikunaykipaq.
 Musyariy, kaytaqa AJAX nisqa sapaq JavaScript ruranallawanmi llamk'achiyta atinki. Mawk'a wamp'unawanqa icha JavaScript nisqaman ama nispaqa manam atinkichu.",
-	'categorytree-category'         => 'Katiguriya',
+	'categorytree-category'         => 'Katiguriya:',
 	'categorytree-go'               => "Sach'ata rikuchiy",
 	'categorytree-parents'          => 'Mama katiguriyakuna',
 	'categorytree-mode-categories'  => 'Katiguriyakunalla',
@@ -1936,11 +1972,12 @@ Musyariy, kaytaqa AJAX nisqa sapaq JavaScript ruranallawanmi llamk'achiyta atink
 
 /** Romanian (Română)
  * @author KlaudiuMihaila
+ * @author Siebrand
  */
 $messages['ro'] = array(
 	'categorytree-tab'              => 'Arbore',
 	'categorytree-header'           => 'Introduceţi numele categoriei pentru vizualizarea conţinutului în structură arborescentă. Notaţi faptul că această operaţie necesită funcţionalităţi JavaScript avansate cunoscute sub numele de AJAX. Dacă aveţi un browser vechi sau nu aveţi activat JavaScript, nu va funcţiona.',
-	'categorytree-category'         => 'Categorie',
+	'categorytree-category'         => 'Categorie:',
 	'categorytree-go'               => 'Arată arborele',
 	'categorytree-parents'          => 'Părinţi',
 	'categorytree-mode-categories'  => 'doar categorii',
@@ -1990,6 +2027,7 @@ $messages['ru'] = array(
 
 /** Yakut (Саха тыла)
  * @author HalanTul
+ * @author Siebrand
  */
 $messages['sah'] = array(
 	'categorytree'                  => 'Категориялар мас курдук',
@@ -1998,7 +2036,7 @@ $messages['sah'] = array(
 	'categorytree-header'           => 'Категория аатын киллэрдэххинэ мас курдук көстүөҕэ.
 Бу кыаҕы браузерыҥ AJAX-ы туһанар эрэ буоллаҕына туттар кыахтааххын.
 Браузерыҥ эргэ буоллаҕына эбэтэр JavaScript арахсыбыт буоллаҕына субкатегорийалары мас курдук көрөр сатаммат.',
-	'categorytree-category'         => 'Категория',
+	'categorytree-category'         => 'Категория:',
 	'categorytree-go'               => 'Көрдөр',
 	'categorytree-parents'          => 'Төрөппүттэрэ',
 	'categorytree-mode-categories'  => 'категориялар эрэ',
@@ -2021,12 +2059,13 @@ $messages['sah'] = array(
 
 /** Sassaresu (Sassaresu)
  * @author Felis
+ * @author Siebrand
  */
 $messages['sdc'] = array(
 	'categorytree'                  => "Sthruttura ad'àiburu di li categuri",
 	'categorytree-tab'              => 'Àiburu',
 	'categorytree-header'           => "Insirì l'innommu di la categuria di la quari si vó vidé lu cuntinuddu attrabessu la sthruttura ad'àiburu. Amminta chi la pàgina vó li funzionariddai abanzaddi di JavaScript ciamaddi AJAX; s'ài un nabiggddori vécciu o cu' li funzioni JavaScript disàbiritaddi, chistha pàgina nò funziunerà.",
-	'categorytree-category'         => 'Categuria',
+	'categorytree-category'         => 'Categuria:',
 	'categorytree-go'               => 'Carrigga',
 	'categorytree-parents'          => 'Categuri superiori',
 	'categorytree-mode-categories'  => 'musthra soru li categuri',
@@ -2129,8 +2168,9 @@ $messages['sq'] = array(
 	'categorytree-too-many-subcats' => "Nuk mund t'i tregoj nënkategoritë si pemë, sepse ka shumë prej tyre.",
 );
 
-/** ћирилица (ћирилица)
+/** Serbian Cyrillic ekavian (ћирилица)
  * @author Sasa Stefanovic
+ * @author Siebrand
  */
 $messages['sr-ec'] = array(
 	'categorytree'                  => 'Дрво категорија',
@@ -2138,7 +2178,7 @@ $messages['sr-ec'] = array(
 	'categorytree-header'           => 'Унесите име категорији чији садржај желите да видите као дрво.
 Ово захтева напредну ЈаваСкрип функцију познату као AJAX.
 Уколико имате веома стари браузер, или се искључили ЈаваСкрипт, дрво категорија неће радити.',
-	'categorytree-category'         => 'Категорија',
+	'categorytree-category'         => 'Категорија:',
 	'categorytree-go'               => 'Прикажи дрво',
 	'categorytree-mode-categories'  => 'само категорије',
 	'categorytree-mode-pages'       => 'странице изузев слика',
@@ -2160,11 +2200,12 @@ $messages['sr-ec'] = array(
 
 /** Southern Sotho (Sesotho)
  * @author SPQRobin
+ * @author Siebrand
  */
 $messages['st'] = array(
 	'categorytree'                  => 'Lenane le Mekga',
 	'categorytree-tab'              => 'Lenane',
-	'categorytree-category'         => 'Mokga',
+	'categorytree-category'         => 'Mokga:',
 	'categorytree-go'               => 'Mpontshe lenane',
 	'categorytree-mode-categories'  => 'mekga feela',
 	'categorytree-mode-pages'       => 'maqephe ntle le ditshwantsho',
@@ -2183,6 +2224,7 @@ $messages['st'] = array(
 
 /** Seeltersk (Seeltersk)
  * @author Pyt
+ * @author Siebrand
  */
 $messages['stq'] = array(
 	'categorytree'                  => 'Kategorieboom',
@@ -2190,7 +2232,7 @@ $messages['stq'] = array(
 	'categorytree-header'           => 'Wiest foar ju anroate Kategorie do Unnerkategorien in n Boomstruktuur.
 Disse Siede bruukt bestimde JavaScript-Funktione (AJAX).
 In gjucht oolde Browsere, of wan Javascript ouschalted is, funktioniert disse Siede eventuell nit.',
-	'categorytree-category'         => 'Kategorie',
+	'categorytree-category'         => 'Kategorie:',
 	'categorytree-go'               => 'Leede',
 	'categorytree-parents'          => 'Buppekategorien',
 	'categorytree-mode-categories'  => 'bloot Kategorien',
@@ -2209,6 +2251,17 @@ In gjucht oolde Browsere, of wan Javascript ouschalted is, funktioniert disse Si
 	'categorytree-show-list'        => 'Wies as Lieste',
 	'categorytree-show-tree'        => 'Wies as Boom',
 	'categorytree-too-many-subcats' => 'Unnerkategorien konnen nit as Boom deerstoald wäide, deer dät toufuul sunt.',
+);
+
+/** Sundanese (Basa Sunda)
+ * @author Kandar
+ * @author Siebrand
+ */
+$messages['su'] = array(
+	'categorytree-category'  => 'Kategori:',
+	'categorytree-mode-all'  => 'sadaya kaca',
+	'categorytree-load'      => 'muatkeun',
+	'categorytree-not-found' => 'Kategori <i>$1</i> teu kapanggih',
 );
 
 /** Swedish (Svenska)
@@ -2246,10 +2299,11 @@ Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript
 
 /** Tamil (தமிழ்)
  * @author Trengarasu
+ * @author Siebrand
  */
 $messages['ta'] = array(
 	'categorytree'                  => 'பகுப்பு மரம்',
-	'categorytree-category'         => 'பகுப்பு',
+	'categorytree-category'         => 'பகுப்பு:',
 	'categorytree-go'               => 'மரத்தைக் காட்டு',
 	'categorytree-no-subcategories' => 'துணைப்பகுப்புகள் கிடையாது',
 	'categorytree-no-pages'         => 'பக்கங்களோ அல்லது துணைப்பகுப்புகளோ கிடையாது',
@@ -2260,13 +2314,14 @@ $messages['ta'] = array(
  * @author Mpradeep
  * @author Veeven
  * @author వైజాసత్య
+ * @author Siebrand
  */
 $messages['te'] = array(
 	'categorytree'                  => 'వర్గవృక్షం',
 	'categorytree-tab'              => 'వృక్షం',
 	'categorytree-desc'             => 'వికీ యొక్క [[Special:CategoryTree|వర్గ వృక్షాన్ని]] చూపించడానికి AJAX ఆధారిత పరికరం',
 	'categorytree-header'           => 'ఒక వర్గంలోని అంశాలను వృక్షం లాగా చూసేందుకు ఆ వర్గం పేరును ఇక్కడ ఇవ్వండి. దీనికోసం AJAX అనే ఆధునిక జావాస్క్రిప్టు నైపుణ్యం కావాలి. మీ బ్రౌజరు బాగా పాతదయినా, లేక దానిలో జావాస్క్రిప్టు అశక్తంగా ఉన్నా ఇది పనిచెయ్యదు.',
-	'categorytree-category'         => 'వర్గం',
+	'categorytree-category'         => 'వర్గం:',
 	'categorytree-go'               => 'వృక్షాన్ని చూపించు',
 	'categorytree-parents'          => 'మాతృవర్గాలు',
 	'categorytree-mode-categories'  => 'వర్గాలు మాత్రమే',
@@ -2289,11 +2344,12 @@ $messages['te'] = array(
 
 /** Tetum (Tetun)
  * @author MF-Warburg
+ * @author Siebrand
  */
 $messages['tet'] = array(
 	'categorytree'                 => 'Ai-hun kategoria',
 	'categorytree-tab'             => 'Ai-hun',
-	'categorytree-category'        => 'Kategoria',
+	'categorytree-category'        => 'Kategoria:',
 	'categorytree-go'              => 'Hatudu ai-hun',
 	'categorytree-mode-categories' => "hatudu de'it kategoria",
 	'categorytree-mode-all'        => 'pájina hotu',
@@ -2301,6 +2357,7 @@ $messages['tet'] = array(
 
 /** Tajik (Тоҷикӣ)
  * @author Ibrahim
+ * @author Siebrand
  */
 $messages['tg'] = array(
 	'categorytree'                  => 'ГурӯҳДарахт',
@@ -2309,7 +2366,7 @@ $messages['tg'] = array(
 	'categorytree-header'           => 'Номи як гурӯҳро ворид кунед, то мӯҳтавиёти он ба сурати дарахт намоиш ёбад.
 Таваҷҷӯҳ кунед, ки ин кор ба қобилиятҳои пешрафтаи ҶаваСкрипт бо номи Аҷакс ниёз дорад.
 Агар аз мурургари хеле кӯҳна истифода мекунед ё ҶаваСкриптро ғайрифаъол кардаед, дар ин ҳол он кор нахоҳад кард.',
-	'categorytree-category'         => 'Гурӯҳ',
+	'categorytree-category'         => 'Гурӯҳ:',
 	'categorytree-go'               => 'Намоиши дарахт',
 	'categorytree-parents'          => 'Волидайн',
 	'categorytree-mode-categories'  => 'Фақат гурӯҳҳо',
@@ -2346,10 +2403,11 @@ $messages['th'] = array(
 
 /** Tonga (faka-Tonga)
  * @author SPQRobin
+ * @author Siebrand
  */
 $messages['to'] = array(
 	'categorytree'          => 'Fuʻuʻakau faʻahinga',
-	'categorytree-category' => 'Faʻahinga',
+	'categorytree-category' => 'Faʻahinga:',
 	'categorytree-go'       => 'ʻAsi mai',
 	'categorytree-collapse' => 'holo',
 	'categorytree-expand'   => 'fano',
@@ -2432,12 +2490,13 @@ Nếu bạn đang sử dụng trình duyệt rất cũ, hoặc đã tắt JavaSc
 /** Volapük (Volapük)
  * @author Smeira
  * @author Malafaya
+ * @author Siebrand
  */
 $messages['vo'] = array(
 	'categorytree'                  => 'KladaBim',
 	'categorytree-tab'              => 'Bim',
 	'categorytree-header'           => 'Penolös kladanemi ad logön ninädi klada as bimabinod. Küpälolös, das atos flagon dili ela JavaScript labü nem: AJAX. No oplöpon if labol bevüresodanafömi vönädik, ud if enemogüköl eli JavaScript.',
-	'categorytree-category'         => 'Klad',
+	'categorytree-category'         => 'Klad:',
 	'categorytree-go'               => 'Jonolöd Bimi',
 	'categorytree-parents'          => 'Pals',
 	'categorytree-mode-categories'  => 'Te klads',
