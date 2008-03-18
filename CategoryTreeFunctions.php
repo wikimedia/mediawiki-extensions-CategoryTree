@@ -7,7 +7,7 @@
  * @addtogroup Extensions
  * @author Daniel Kinzler, brightbyte.de
  * @copyright © 2006-2007 Daniel Kinzler
- * @licence GNU General Public Licence 2.0 or later
+ * @license GNU General Public Licence 2.0 or later
  */
 
 if( !defined( 'MEDIAWIKI' ) ) {
@@ -133,12 +133,12 @@ class CategoryTree {
 		if ( $title === false || $title === NULL ) return false;
 
 		$html = '';
-		$html .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeTag', 'style' => $style ) );
+		$html .= Xml::openElement( 'div', array( 'class' => 'CategoryTreeTag', 'style' => $style ) );
 
 		if ( !$title->getArticleID() ) {
-			$html .= wfOpenElement( 'span', array( 'class' => 'CategoryTreeNotice' ) );
+			$html .= Xml::openElement( 'span', array( 'class' => 'CategoryTreeNotice' ) );
 			$html .= self::msg( 'not-found' , htmlspecialchars( $category ) );
-			$html .= wfCloseElement( 'span' );
+			$html .= Xml::closeElement( 'span' );
 			}
 		else {
 			if ( !$hideroot ) $html .= CategoryTree::renderNode( $title, $mode, $depth>0, $wgCategoryTreeDynamicTag, $depth-1 );
@@ -147,13 +147,13 @@ class CategoryTree {
 				$uniq += 1;
 				$load = 'ct-' . $uniq . '-' . mt_rand( 1, 100000 );
 
-				$html .= wfOpenElement( 'script', array( 'type' => 'text/javascript', 'id' => $load ) );
+				$html .= Xml::openElement( 'script', array( 'type' => 'text/javascript', 'id' => $load ) );
 				$html .= 'categoryTreeLoadChildren("' . Xml::escapeJsString( $title->getDBkey() ) . '", "' . $mode . '", document.getElementById("' . $load . '").parentNode );';
-				$html .= wfCloseElement( 'script' );
+				$html .= Xml::closeElement( 'script' );
 			}
 		}
 
-		$html .= wfCloseElement( 'div' );
+		$html .= Xml::closeElement( 'div' );
 		$html .= "\n\t\t";
 
 		return $html;
@@ -260,15 +260,15 @@ class CategoryTree {
 			$trans = ''; #place holder for when translated titles are available
 
 			$label = htmlspecialchars( $t->getText() );
-			if ( $trans && $trans!=$label ) $label.= ' ' . wfElement( 'i', array( 'class' => 'translation'), $trans );
+			if ( $trans && $trans!=$label ) $label.= ' ' . Xml::element( 'i', array( 'class' => 'translation'), $trans );
 
 			$wikiLink = $special->getLocalURL( 'target=' . $t->getPartialURL() . '&mode=' . $mode );
 
 			if ( $s !== '' ) $s .= ' | ';
 
-			$s .= wfOpenElement( 'span', array( 'class' => 'CategoryTreeItem' ) );
-			$s .= wfOpenElement( 'a', array( 'class' => 'CategoryTreeLabel', 'href' => $wikiLink ) ) . $label . wfCloseElement( 'a' );
-			$s .= wfCloseElement( 'span' );
+			$s .= Xml::openElement( 'span', array( 'class' => 'CategoryTreeItem' ) );
+			$s .= Xml::openElement( 'a', array( 'class' => 'CategoryTreeLabel', 'href' => $wikiLink ) ) . $label . Xml::closeElement( 'a' );
+			$s .= Xml::closeElement( 'span' );
 
 			$s .= "\n\t\t";
 		}
@@ -307,7 +307,7 @@ class CategoryTree {
 		if ( $wgCategoryTreeOmitNamespace || $mode == CT_MODE_CATEGORIES ) $label = htmlspecialchars( $title->getText() );
 		else $label = htmlspecialchars( $title->getPrefixedText() );
 
-		if ( $trans && $trans!=$label ) $label.= ' ' . wfElement( 'i', array( 'class' => 'translation'), $trans );
+		if ( $trans && $trans!=$label ) $label.= ' ' . Xml::element( 'i', array( 'class' => 'translation'), $trans );
 
 		$wikiLink = $title->getLocalURL();
 
@@ -344,31 +344,31 @@ class CategoryTree {
 		#      Specifically, the CategoryTreeChildren div must be the first
 		#      sibling with nodeName = DIV of the grandparent of the expland link.
 
-		$s .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeSection' ) );
-		$s .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeItem' ) );
+		$s .= Xml::openElement( 'div', array( 'class' => 'CategoryTreeSection' ) );
+		$s .= Xml::openElement( 'div', array( 'class' => 'CategoryTreeItem' ) );
 
 		if ( $ns == NS_CATEGORY ) {
-			$s .= wfOpenElement( 'span', array( 'class' => 'CategoryTreeBullet' ) );
-			$s .= '[' . wfElement( 'a', $linkattr, $txt ) . '] ';
-			$s .= wfCloseElement( 'span' );
+			$s .= Xml::openElement( 'span', array( 'class' => 'CategoryTreeBullet' ) );
+			$s .= '[' . Xml::element( 'a', $linkattr, $txt ) . '] ';
+			$s .= Xml::closeElement( 'span' );
 		} else {
 			$s .= ' ';
 		}
 
-		$s .= wfOpenElement( 'a', array( 'class' => $labelClass, 'href' => $wikiLink ) ) . $label . wfCloseElement( 'a' );
-		$s .= wfCloseElement( 'div' );
+		$s .= Xml::openElement( 'a', array( 'class' => $labelClass, 'href' => $wikiLink ) ) . $label . Xml::closeElement( 'a' );
+		$s .= Xml::closeElement( 'div' );
 		$s .= "\n\t\t";
-		$s .= wfOpenElement( 'div', array( 'class' => 'CategoryTreeChildren', 'style' => $children ? "display:block" : "display:none" ) );
+		$s .= Xml::openElement( 'div', array( 'class' => 'CategoryTreeChildren', 'style' => $children ? "display:block" : "display:none" ) );
 		//HACK here?
 		if ( $children ) $s .= $this->renderChildren( $title, $mode, $depth );
-		$s .= wfCloseElement( 'div' );
-		$s .= wfCloseElement( 'div' );
+		$s .= Xml::closeElement( 'div' );
+		$s .= Xml::closeElement( 'div' );
 
 		if ( $load ) {
 			$s .= "\n\t\t";
-			$s .= wfOpenElement( 'script', array( 'type' => 'text/javascript' ) );
+			$s .= Xml::openElement( 'script', array( 'type' => 'text/javascript' ) );
 			$s .= 'categoryTreeExpandNode("'.Xml::escapeJsString($key).'", "'.$mode.'", document.getElementById("'.$load.'") );';
-			$s .= wfCloseElement( 'script' );
+			$s .= Xml::closeElement( 'script' );
 		}
 
 		$s .= "\n\t\t";

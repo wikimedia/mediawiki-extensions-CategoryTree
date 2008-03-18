@@ -1,27 +1,28 @@
 <?php
 /**
- * Internationalisation file for extension Gadgets.
+ * Internationalisation file for extension CategoryTree.
  *
  * @addtogroup Extensions
  * @author Daniel Kinzler, brightbyte.de
  * @copyright © 2006-2008 Daniel Kinzler
- * @licence GNU General Public Licence 2.0 or later
+ * @license GNU General Public Licence 2.0 or later
  */
 
 $messages = array();
 
-/* English
+/** English
  * @author Daniel Kinzler, brightbyte.de
  */
 $messages['en'] = array(
 	'categorytree'                  => 'CategoryTree',
 	'categorytree-tab'              => 'Tree',
+	'categorytree-legend'           => 'Show category tree',
 	'categorytree-desc'             => 'AJAX based gadget to display the [[Special:CategoryTree|category structure]] of a wiki',
 	'categorytree-header'           => 'Enter a category name to see its contents as a tree structure.
 Note that this requires advanced JavaScript functionality known as AJAX.
 If you have a very old browser, or have JavaScript disabled, it will not work.',
 
-	'categorytree-category'         => 'Category',
+	'categorytree-category'         => 'Category:',
 	'categorytree-go'               => 'Show Tree',
 	'categorytree-parents'          => 'Parents',
 
@@ -461,15 +462,18 @@ $messages['da'] = array(
 	'categorytree-too-many-subcats' => 'Kan ikke vise underkategorier som træ, der er for mange.',
 );
 
-/** German (Deutsch) */
+/** German (Deutsch)
+ * @author Raimond Spekking
+ */
 $messages['de'] = array(
 	'categorytree'                  => 'Kategorienbaum',
 	'categorytree-tab'              => 'Baum',
+	'categorytree-legend'           => 'Zeige Kategorienbaum',
 	'categorytree-desc'             => 'AJAX-basiertes Gadget, um sich die [[Special:CategoryTree|Kategorien-Struktur]] eines Wikis anzuzeigen',
 	'categorytree-header'           => 'Zeigt für die angegebene Kategorie die Unterkategorien in einer Baumstruktur.
 Diese Seite benötigt bestimmte JavaScript-Funktionen (AJAX).
 In sehr alten Browsern, oder wenn JavaScript abgeschaltet ist, funktioniert diese Seite eventuell nicht.',
-	'categorytree-category'         => 'Kategorie',
+	'categorytree-category'         => 'Kategorie:',
 	'categorytree-go'               => 'Laden',
 	'categorytree-parents'          => 'Oberkategorien',
 	'categorytree-mode-categories'  => 'nur Kategorien',
@@ -482,12 +486,19 @@ In sehr alten Browsern, oder wenn JavaScript abgeschaltet ist, funktioniert dies
 	'categorytree-nothing-found'    => 'Nichts gefunden',
 	'categorytree-no-subcategories' => 'Keine Unterkategorien',
 	'categorytree-no-pages'         => 'Keine Seite oder Unterkategorien',
-	'categorytree-not-found'        => "Kategorie ''$1'' nicht gefunden",
+	'categorytree-not-found'        => "Kategorie „$1“ nicht gefunden",
 	'categorytree-error'            => 'Probleme beim Laden der Daten.',
 	'categorytree-retry'            => 'Bitte warte einen Moment und versuche es dann erneut.',
 	'categorytree-show-list'        => 'Zeige als Liste',
 	'categorytree-show-tree'        => 'Zeige als Baum',
 	'categorytree-too-many-subcats' => 'Unterkategorien können nicht als Baum dargestellt werden, da es zuviele sind.',
+);
+
+/** German - formal address (Deutsch - förmliche Anrede)
+ * @author Raimond Spekking
+ */
+$messages['de-formal'] = array(
+	'categorytree-retry'            => 'Bitte warten Sie einen Moment und versuchen Sie es dann erneut.',
 );
 
 /** Zazaki (Zazaki)
