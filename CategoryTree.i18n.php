@@ -760,10 +760,12 @@ $messages['fo'] = array(
 /** French (Français)
  * @author Meithal
  * @author Sherbrooke
+ * @author Grondin
  */
 $messages['fr'] = array(
 	'categorytree'                  => 'Arborescence des catégories',
 	'categorytree-tab'              => 'Arbre',
+	'categorytree-legend'           => 'Visionner l’arborescence de la catégorie',
 	'categorytree-desc'             => 'Gadget basé sur AJAX pour afficher la [[Special:CategoryTree|structure de la catégorie]] d’un wiki',
 	'categorytree-header'           => 'Entrez un nom de catégorie pour voir son contenu en structure arborescente. Ceci utilise des fonctionnalités JavaScript avancées connues sous le nom d’AJAX. Si vous avez un très vieux navigateur Web ou si vous n’avez pas activé la fonctionnalité JavaScript, cela ne fonctionnera pas.',
 	'categorytree-category'         => 'Catégorie',
@@ -1917,6 +1919,7 @@ $messages['ps'] = array(
 $messages['pt'] = array(
 	'categorytree'                  => 'Árvore de categorias',
 	'categorytree-tab'              => 'Árvore',
+	'categorytree-legend'           => 'Exibir a árvore de categorias',
 	'categorytree-desc'             => 'Acessório (gadget) baseado em AJAX que apresenta a [[Special:CategoryTree|estrutura]] de um wiki',
 	'categorytree-header'           => 'Insira o nome de uma categoria para ver seu conteúdo como uma estrutura de "árvore".
 Note que isso requer funcionalidades avançadas de JavaScript (como, por exemplo, AJAX).
