@@ -83,7 +83,7 @@ $messages['am'] = array(
 በግራ በኩል ባለው ሳጥን ውስጥ የመደቡን ስም ዝም ብለው መጻፍ ይችላሉ። (የዚሁ ዊኪ መደብ ስሞች ለመመልከት፣ [[Special:Mostlinkedcategories|እዚህ ይጫኑ]]።) ከዚያ፥ ምን ያሕል ንዑስ-መደቦች እንዳሉበት ለማየት «ዛፉ ይታይ» የሚለውን ይጫኑ። በቀኝ በኩል ካለው ሳጥን 'all pages' ከመረጡ፥ በየመደቡ ውስጥ ያሉት መጣጥፎች በተጨማሪ ይታያሉ።
 
 ''(ማስታወሻ: ይህ በኮምፒውተርዎ እንዲሠራ 'ጃቫ' የሚችል ዌብ-ብራውዘር ያስፈልጋል።)''",
-	'categorytree-category'  => 'የመደብ ስም፦:',
+	'categorytree-category'  => 'የመደብ ስም፦',
 	'categorytree-go'        => 'ዛፉ ይታይ',
 	'categorytree-parents'   => 'ላዕላይ መደቦች',
 	'categorytree-loading'   => 'ሊመጣ ነው',
@@ -127,6 +127,7 @@ $messages['an'] = array(
 $messages['ar'] = array(
 	'categorytree'                  => 'شجرة تصنيف',
 	'categorytree-tab'              => 'شجرة',
+	'categorytree-legend'           => 'عرض شجرة التصنيف',
 	'categorytree-desc'             => 'إضافة معتمدة على الأجاكس لعرض [[Special:CategoryTree|هيكل التصنيف]] لويكي',
 	'categorytree-header'           => 'أدخل اسم تصنيف لترى محتوياته كتركيب شجري.
 لاحظ أن هذا يتطلب خاصية جافاسكريبت متقدمة معروفة كأجاكس.
@@ -416,6 +417,7 @@ $messages['co'] = array(
 $messages['cs'] = array(
 	'categorytree'                  => 'Strom kategorií',
 	'categorytree-tab'              => 'Strom',
+	'categorytree-legend'           => 'Zobrazí strom kategorie',
 	'categorytree-desc'             => 'Ajaxový nástroj zobrazující [[Special:CategoryTree|stromovou strukturu kategorií]] na této wiki',
 	'categorytree-header'           => 'Zadejte název kategorie k&nbsp;zobrazení jejího obsahu jako stromové struktury.
 
@@ -558,6 +560,7 @@ $messages['ee'] = array(
 
 /** Greek (Ελληνικά)
  * @author Consta
+ * @author ZaDiak
  * @author Siebrand
  */
 $messages['el'] = array(
@@ -566,6 +569,7 @@ $messages['el'] = array(
 	'categorytree-parents'          => 'Γονείς',
 	'categorytree-mode-categories'  => 'μόνο κατηγορίες',
 	'categorytree-mode-all'         => 'όλες οι σελίδες',
+	'categorytree-expand'           => 'επέκτασε',
 	'categorytree-load'             => 'φόρτωσε',
 	'categorytree-loading'          => 'φόρτωση',
 	'categorytree-no-subcategories' => 'καμία υποκατηγορία',
@@ -577,12 +581,14 @@ $messages['el'] = array(
 );
 
 /** Esperanto (Esperanto)
- * @author Tlustulimu
  * @author Yekrats
+ * @author Tlustulimu
  */
 $messages['eo'] = array(
 	'categorytree'                  => 'Kategoriarbo',
 	'categorytree-tab'              => 'Arbo',
+	'categorytree-legend'           => 'Montru kategorian arbon',
+	'categorytree-desc'             => 'AJAX-bazita aldonaĵo por montri la [[Special:CategoryTree|kategorian strukturon]] de vikio',
 	'categorytree-header'           => 'Tajpu kategorinomon por vidi ties entenon en arbforma strukturo. Notu ke tio postulas javaskripatajn funkciojn nomitajn AJAX. Se via foliumilo estas tre malnova au se Javaskripto estas malaktivigita, tio ne funkcios.',
 	'categorytree-category'         => 'Kategorio',
 	'categorytree-go'               => 'Montru arbon',
@@ -1007,6 +1013,7 @@ $messages['hsb'] = array(
 $messages['hu'] = array(
 	'categorytree'                  => 'Kategóriafa',
 	'categorytree-tab'              => 'Fa',
+	'categorytree-legend'           => 'Mutatsd faként',
 	'categorytree-desc'             => 'AJAX alapú eszköz a wiki [[Special:CategoryTree|kategória-struktúrájának]] megjelenítéséhez',
 	'categorytree-header'           => 'Add meg annak a kategóriának a nevét, amelynek meg szeretnéd tekinteni
 a fastruktúráját. Ehhez egy, AJAX nevű JavaScript-technológia szükséges.
@@ -1425,6 +1432,7 @@ $messages['la'] = array(
 $messages['lb'] = array(
 	'categorytree'                  => 'Struktur vun de Kategorien',
 	'categorytree-tab'              => 'Bam',
+	'categorytree-legend'           => 'Weis Kategoriestruktur',
 	'categorytree-header'           => 'Gitt den Numm vun enger Kategorie an, fir hiren Inhalt als Bam-Struktur ze gesinn.
 Bedenkt, datt dës Fonctioun Java Script Funktioune benotzt, déi als AJAX bekannt sinn. 
 Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da fonktionnéiert dëst bei Iech net.',
@@ -1543,10 +1551,12 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
 /** Marathi (मराठी)
  * @author Mahitgar
  * @author Siebrand
+ * @author Kaustubh
  */
 $messages['mr'] = array(
 	'categorytree'                  => 'वर्गवृक्ष',
 	'categorytree-tab'              => 'वृक्ष',
+	'categorytree-legend'           => 'वर्गवृक्ष दाखवा',
 	'categorytree-desc'             => 'एखाद्या विकिची [[Special:CategoryTree|वर्गीकरण मांडणी]] दाखवण्याकरिता AJAX वापरून बनवलेले उपकरण',
 	'categorytree-header'           => 'एखाद्या वर्गीकरणातील मसुदा वृक्ष स्वरूपात पहाण्याकरिता  त्या वर्गाचे नाव भरा.
 या सुविधेकरिता AJAX नावाची आधुनिक जावास्क्रीप्ट सुविधेची गरज भासते हे लक्षात घ्या.हि सुविधा,जर तुमचा विचरक खूप जुना असेल, अथवा त्यातील जावास्क्रीप्ट सुविधा अनुपलब्ध ठेवली असेल तर, काम करणार नाही.',
@@ -2097,6 +2107,7 @@ $messages['sdc'] = array(
 $messages['sk'] = array(
 	'categorytree'                  => 'Strom kategórií',
 	'categorytree-tab'              => 'Strom',
+	'categorytree-legend'           => 'Zobraziť strom kategórií',
 	'categorytree-desc'             => 'AJAXový nástroj na zobrazovanie [[Special:CategoryTree|štruktúry kategórií]] wiki',
 	'categorytree-header'           => 'Zadajte názov kategórie, ktorej obsah sa má zobraziť ako stromová štruktúra.
 Majte na pamäti, že táto funkcia vyžaduje JavaScriptovú funkcionalitu známu ako AJAX.
@@ -2272,10 +2283,12 @@ $messages['su'] = array(
  * @author Sannab
  * @author Lejonel
  * @author Siebrand
+ * @author M.M.S.
  */
 $messages['sv'] = array(
 	'categorytree'                  => 'Kategoriträd',
 	'categorytree-tab'              => 'Träd',
+	'categorytree-legend'           => 'Visa kategoriträd',
 	'categorytree-desc'             => 'AJAX-baserat verktyg som visar [[Special:CategoryTree|kategoristrukturen]] på en wiki',
 	'categorytree-header'           => 'Fyll i ett kategorinamn för att se dess innehåll som en trädstruktur.
 Notera att detta kräver stöd för AJAX, en avancerad form av JavaScript.
@@ -2466,6 +2479,7 @@ $messages['ur'] = array(
 $messages['vi'] = array(
 	'categorytree'                  => 'Cây thể loại',
 	'categorytree-tab'              => 'Cây',
+	'categorytree-legend'           => 'Hiển thị cây thể loại',
 	'categorytree-desc'             => 'Công cụ AJAX để hiển thị [[Special:CategoryTree|cấu trúc thể loại]] của một wiki',
 	'categorytree-header'           => 'Gõ vào tên thể loại để xem nội dung của nó theo cấu trúc cây.
 Chú ý rằng chức năng này sử dụng chức năng JavaScript, với tên AJAX.
