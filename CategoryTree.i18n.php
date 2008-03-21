@@ -730,6 +730,8 @@ $messages['fa'] = array(
 $messages['fi'] = array(
 	'categorytree'                  => 'Luokkapuu',
 	'categorytree-tab'              => 'Puu',
+	'categorytree-legend'           => 'Näytä luokkapuu',
+	'categorytree-desc'             => 'AJAX-pohjainen laajennus, joka näyttää wikin [[Special:CategoryTree|luokkapuurakenteen]].',
 	'categorytree-header'           => 'Syötä alle luokka, jonka haluat nähdä puumuodossa. Tämä toiminnallisuus vaatii kehittyneen JavaScript tuen, jota kutsutaan AJAXiksi. Jos sinulla on vanha selain, tai JavaScript ei ole päällä, tämä ominaisuus ei toimi.',
 	'categorytree-category'         => 'Luokka',
 	'categorytree-go'               => 'Näytä puu',
@@ -1502,6 +1504,7 @@ Esse 'ne erg verajerdje browser höbs of JavaScript steit oet, den werk dees fun
 $messages['lo'] = array(
 	'categorytree'                  => 'ໂຄງສ້າງໝວດ',
 	'categorytree-tab'              => 'ໂຄງສ້າງ',
+	'categorytree-legend'           => 'ສະແດງແຜນຜັງໝວດ',
 	'categorytree-header'           => 'ພິມຊື່ໝວດໃສ່ ເພື່ອເບິ່ງໂຄງສ້າງມັນ. ຟັງຊັງຕ້ອງການໃຊ້ AJAX ໃນ JavaScript. ຖ້າ ທ່ານ ໃຊ້ໂປຣແກຣມທ່ອງເວັບເກົ່າ ຫຼື ບໍ່ອະນຸຍາດ JavaScript, ມັນກໍ່ຈະບໍ່ເຮັດວຽກ.',
 	'categorytree-category'         => 'ໝວດ',
 	'categorytree-go'               => 'ສະແດງໂຄງສ້າງ',
@@ -1517,6 +1520,8 @@ $messages['lo'] = array(
 	'categorytree-no-subcategories' => 'ບໍ່ມີໝວດຍ່ອຍ',
 	'categorytree-no-pages'         => 'ບໍ່ມີໜ້າ ຫຼື ໝວດຍ່ອຍ',
 	'categorytree-not-found'        => 'ບໍ່ເຫັນ',
+	'categorytree-error'            => 'ການໂຫຼດຂໍ້ມູນມີປັນຫາ',
+	'categorytree-retry'            => 'ກະລຸນາຮອສັກຄູ່ ແລ້ວລອງໂຫຼດໃໝ່',
 	'categorytree-show-list'        => 'ສະແດງເປັນລາຍການ',
 	'categorytree-show-tree'        => 'ສະແດງເປັນໂຄງສ້າງ',
 	'categorytree-too-many-subcats' => 'ບໍ່ສາມາດສະແດງໝວດເປັນໂຄງສ້າງ ເພາະມັນມີຫຼາຍໝວດໂພດ',
@@ -1733,12 +1738,13 @@ $messages['nn'] = array(
 	'categorytree-too-many-subcats' => 'Kan ikkje vise underkategoriar som tre, det er for mange av dei.',
 );
 
-/** Norwegian (‪Norsk (bokmål)‬)
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
 	'categorytree'                  => 'Kategoritre',
 	'categorytree-tab'              => 'Tre',
+	'categorytree-legend'           => 'Vis kategoritre',
 	'categorytree-desc'             => 'AJAX-basert verktøy som viser [[Special:CategoryTree|kategoristrukturen]] til en wiki',
 	'categorytree-header'           => 'Skriv inn et kategorinavn for å se dens innhold som en trestruktur. Merk at dette trenger en avansert type Javascript-funksjonalitet kjent som AJAX. Dersom du har en gammel nettleser eller har slått av Javascript vil dette ikke fungere.
 
@@ -1789,6 +1795,7 @@ $messages['nso'] = array(
 $messages['oc'] = array(
 	'categorytree'                  => 'Arborescéncia de las categorias',
 	'categorytree-tab'              => 'Arborescéncia',
+	'categorytree-legend'           => 'Visionar l’arborescéncia de la categoria',
 	'categorytree-desc'             => "Gadget basat sus AJAX per afichar l'[[Special:CategoryTree|estructura de la categoria]] d’un wiki",
 	'categorytree-header'           => "Picatz un nom de categoria per veire son contengut en estructura arborescenta. Notatz qu'aquò utiliza de foncionalitats JavaScript avançadas conegudas jol nom d'AJAX. S'avètz un navigaire fòrt vièlh o qu'avètz pas activat lo JavaScript, aquò foncionarà pas.",
 	'categorytree-category'         => 'Categoria:',
@@ -2014,6 +2021,7 @@ $messages['ro'] = array(
 $messages['ru'] = array(
 	'categorytree'                  => 'Дерево категорий',
 	'categorytree-tab'              => 'Дерево',
+	'categorytree-legend'           => 'Показать дерево категорий',
 	'categorytree-desc'             => 'AJAX-компонент для отображения [[Special:CategoryTree|структуры категорий]] вики',
 	'categorytree-header'           => 'Введите имя категории, и она будет показана в виде дерева.
 Эта возможность доступна, только если ваш браузер поддерживает AJAX.
@@ -2409,6 +2417,7 @@ $messages['tg'] = array(
  * @author Passawuth
  */
 $messages['th'] = array(
+	'categorytree-legend'           => 'แสดงผังหมวดหมู่',
 	'categorytree-category'         => 'หมวดหมู่',
 	'categorytree-go'               => 'โหลด',
 	'categorytree-parents'          => 'หมวดหมู่ใหญ่',
@@ -2416,6 +2425,8 @@ $messages['th'] = array(
 	'categorytree-nothing-found'    => 'ไม่พบที่ต้องการ',
 	'categorytree-no-subcategories' => 'ไม่มีหมวดหมู่ย่อย',
 	'categorytree-no-pages'         => 'ไม่มีบทความหรือหมวดหมู่ย่อย',
+	'categorytree-error'            => 'การโหลดข้อมูลมีปัญหา',
+	'categorytree-retry'            => 'กรุณารอสักครู่ แล้วลองโหลดใหม่อีกครั้ง',
 );
 
 /** Tonga (faka-Tonga)
