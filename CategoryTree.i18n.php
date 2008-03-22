@@ -234,13 +234,14 @@ $messages['bcl'] = array(
 );
 
 /** Bulgarian (Български)
+ * @author DCLXVI
  * @author Spiritia
  * @author Borislav
- * @author DCLXVI
  */
 $messages['bg'] = array(
 	'categorytree'                  => 'Дърво на категориите',
 	'categorytree-tab'              => 'Дърво',
+	'categorytree-legend'           => 'Показване на дървото с категориите',
 	'categorytree-desc'             => 'Инструмент на AJAX, който показва [[Special:CategoryTree|структурата на категориите]] в уикито',
 	'categorytree-header'           => 'Въведете категория, за да видите съдържанието й в дървовиден вид от категории. Имайте предвид, че това изисква допълнителна JavaScript-функционалност, позната като AJAX. Тази възможност не може да бъде използвана, ако използвате стар браузър или сте изключили поддържането на JavaScript.',
 	'categorytree-category'         => 'Категория',
@@ -1849,17 +1850,19 @@ $messages['pam'] = array(
 
 /** Polish (Polski)
  * @author Derbeth
+ * @author Matma Rex
  * @author Sp5uhe
  */
 $messages['pl'] = array(
 	'categorytree'                  => 'Drzewo kategorii',
 	'categorytree-tab'              => 'Drzewo',
+	'categorytree-legend'           => 'Pokaż drzewo kategorii',
 	'categorytree-desc'             => 'Gadżet oparty na technologii AJAX, wyświetlający [[Special:CategoryTree|drzewo kategorii]]',
 	'categorytree-header'           => 'Wpisz nazwę kategorii, by zobaczyć jej zawartość w postaci drzewa. Wymagana jest zaawansowana funkcjonalność JavaScriptu, znana jako AJAX. Jeśli masz bardzo starą przeglądarkę lub wyłączony JavaScript, ta funkcja nie zadziała.',
-	'categorytree-category'         => 'Kategoria',
+	'categorytree-category'         => 'Kategoria:',
 	'categorytree-go'               => 'Ładuj kategorię',
 	'categorytree-parents'          => 'Kategorie główne',
-	'categorytree-mode-categories'  => 'pokaż tylko kategorie',
+	'categorytree-mode-categories'  => 'tylko kategorie',
 	'categorytree-mode-pages'       => 'strony z wyjątkiem grafik',
 	'categorytree-mode-all'         => 'wszystkie strony',
 	'categorytree-collapse'         => 'zwiń',
