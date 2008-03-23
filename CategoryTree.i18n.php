@@ -78,6 +78,7 @@ $messages['af'] = array(
  */
 $messages['am'] = array(
 	'categorytree'           => 'የመደቦች ዛፍ',
+	'categorytree-legend'    => 'የመደቦች ዛፍ ለማየት',
 	'categorytree-header'    => "[+] ተጭነው ንዑሱ-መደብ ይዘረጋል፣ [-] ተጭነው ደግሞ ይመልሳል። 
 
 በግራ በኩል ባለው ሳጥን ውስጥ የመደቡን ስም ዝም ብለው መጻፍ ይችላሉ። (የዚሁ ዊኪ መደብ ስሞች ለመመልከት፣ [[Special:Mostlinkedcategories|እዚህ ይጫኑ]]።) ከዚያ፥ ምን ያሕል ንዑስ-መደቦች እንዳሉበት ለማየት «ዛፉ ይታይ» የሚለውን ይጫኑ። በቀኝ በኩል ካለው ሳጥን 'all pages' ከመረጡ፥ በየመደቡ ውስጥ ያሉት መጣጥፎች በተጨማሪ ይታያሉ።
