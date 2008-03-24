@@ -875,14 +875,16 @@ Se vostede ten un navegador moi vello, ou deshabilitado o JavaScript, non vai fu
 
 /** Galician (Galego)
  * @author Alma
- * @author Xosé
  * @author Toliño
+ * @author Xosé
  * @author Siebrand
  */
 $messages['gl'] = array(
 	'categorytree'                  => 'Amosar a árbore de categorías',
 	'categorytree-tab'              => 'Árbore',
-	'categorytree-header'           => 'Introduza o nome dunha categoría para ver o contido da estrutura da árbore. Dease conta de que se require funcionalidade de JavaScript avanzada coñecida como AJAX.
+	'categorytree-legend'           => 'Amosar a árbore de categorías',
+	'categorytree-header'           => 'Introduza o nome dunha categoría para ver o contido da estrutura da árbore.
+Déase conta de que se require funcionalidade de JavaScript avanzada coñecida como AJAX.
 Se vostede ten un navegador moi vello, ou deshabilitado o JavaScript, non vai funcionar.',
 	'categorytree-category'         => 'Categoría:',
 	'categorytree-go'               => 'Amosar a árbore',
@@ -901,7 +903,7 @@ Se vostede ten un navegador moi vello, ou deshabilitado o JavaScript, non vai fu
 	'categorytree-error'            => 'Problema da carga de datos.',
 	'categorytree-retry'            => 'Por favor, agarde un momento e ténteo de novo.',
 	'categorytree-show-list'        => 'Amosar coma unha listaxe',
-	'categorytree-show-tree'        => 'Amosar coma unha árbore',
+	'categorytree-show-tree'        => 'Amosar como unha árbore',
 	'categorytree-too-many-subcats' => 'Non se poden amosar as subcategorías coma unha árbore, hai demasiadas.',
 );
 
@@ -2286,10 +2288,27 @@ In gjucht oolde Browsere, of wan Javascript ouschalted is, funktioniert disse Si
  * @author Siebrand
  */
 $messages['su'] = array(
-	'categorytree-category'  => 'Kategori:',
-	'categorytree-mode-all'  => 'sadaya kaca',
-	'categorytree-load'      => 'muatkeun',
-	'categorytree-not-found' => 'Kategori <i>$1</i> teu kapanggih',
+	'categorytree'                  => 'TangkalKategori',
+	'categorytree-tab'              => 'Tangkal',
+	'categorytree-legend'           => 'Témbongkeun tangkal kategori',
+	'categorytree-category'         => 'Kategori:',
+	'categorytree-go'               => 'Témbongkeun Tangkal',
+	'categorytree-parents'          => 'Luluhur',
+	'categorytree-mode-categories'  => 'kategori wungkul',
+	'categorytree-mode-all'         => 'sadaya kaca',
+	'categorytree-collapse'         => 'tilep',
+	'categorytree-expand'           => 'buka',
+	'categorytree-load'             => 'muatkeun',
+	'categorytree-loading'          => 'ngamuat',
+	'categorytree-nothing-found'    => 'teu manggih nanaon',
+	'categorytree-no-subcategories' => 'euweuh subkategori',
+	'categorytree-no-pages'         => 'euweuh kaca atawa subkategori',
+	'categorytree-not-found'        => 'Kategori <i>$1</i> teu kapanggih',
+	'categorytree-error'            => 'Aya masalah dina ngamuat data.',
+	'categorytree-retry'            => 'Dago sakedap, lajeng coba deui.',
+	'categorytree-show-list'        => 'Béréndélkeun',
+	'categorytree-show-tree'        => 'Témbongkeun salaku tangkal',
+	'categorytree-too-many-subcats' => 'Loba teuing subkategori, teu bisa dipidangkeun dina wanda tangkal.',
 );
 
 /** Swedish (Svenska)
