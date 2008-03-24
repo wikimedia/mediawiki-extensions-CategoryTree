@@ -448,12 +448,13 @@ $messages['cs'] = array(
 /** Danish (Dansk)
  * @author Barklund
  * @author Morten
+ * @author Jon Harald Søby
  */
 $messages['da'] = array(
 	'categorytree'                  => 'Kategoritræ',
 	'categorytree-tab'              => 'Træ',
 	'categorytree-header'           => 'Indtast navnet på en kategori for at se indholdet som et træ. Bemærk at dette kræver avanceret JavaScript-funktionalitet kendt som AJAX, det virker ikke hvis du har en meget gammel browser eller hvis du har slået JavaScript fra.',
-	'categorytree-category'         => 'Kategori',
+	'categorytree-category'         => 'Kategori:',
 	'categorytree-go'               => 'Henter',
 	'categorytree-parents'          => 'Overkategorier',
 	'categorytree-mode-categories'  => 'vis kun kategorier',
@@ -592,7 +593,7 @@ $messages['eo'] = array(
 	'categorytree-legend'           => 'Montru kategorian arbon',
 	'categorytree-desc'             => 'AJAX-bazita aldonaĵo por montri la [[Special:CategoryTree|kategorian strukturon]] de vikio',
 	'categorytree-header'           => 'Tajpu kategorinomon por vidi ties entenon en arbforma strukturo. Notu ke tio postulas javaskripatajn funkciojn nomitajn AJAX. Se via foliumilo estas tre malnova au se Javaskripto estas malaktivigita, tio ne funkcios.',
-	'categorytree-category'         => 'Kategorio',
+	'categorytree-category'         => 'Kategorio:',
 	'categorytree-go'               => 'Montru arbon',
 	'categorytree-parents'          => 'praul(ar)o',
 	'categorytree-mode-categories'  => 'nur kategorioj',
@@ -1751,7 +1752,7 @@ $messages['no'] = array(
 	'categorytree-header'           => 'Skriv inn et kategorinavn for å se dens innhold som en trestruktur. Merk at dette trenger en avansert type Javascript-funksjonalitet kjent som AJAX. Dersom du har en gammel nettleser eller har slått av Javascript vil dette ikke fungere.
 
 Enter a category name to see its contents as a tree structure. Note that this requires advanced JavaScript functionality known as AJAX. If you have a very old browser, or have JavaScript disabled, it will not work.',
-	'categorytree-category'         => 'Kategori',
+	'categorytree-category'         => 'Kategori:',
 	'categorytree-go'               => 'Vis',
 	'categorytree-parents'          => 'Overkategorier',
 	'categorytree-mode-categories'  => 'bare kategorier',
@@ -2294,8 +2295,9 @@ $messages['su'] = array(
 /** Swedish (Svenska)
  * @author Sannab
  * @author Lejonel
- * @author Siebrand
+ * @author Jon Harald Søby
  * @author M.M.S.
+ * @author Siebrand
  */
 $messages['sv'] = array(
 	'categorytree'                  => 'Kategoriträd',
@@ -2305,7 +2307,7 @@ $messages['sv'] = array(
 	'categorytree-header'           => 'Fyll i ett kategorinamn för att se dess innehåll som en trädstruktur.
 Notera att detta kräver stöd för AJAX, en avancerad form av JavaScript.
 Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript är avaktiverat.',
-	'categorytree-category'         => 'Kategori',
+	'categorytree-category'         => 'Kategori:',
 	'categorytree-go'               => 'Visa träd',
 	'categorytree-parents'          => 'Föräldrakategorier',
 	'categorytree-mode-categories'  => 'visa bara kategorier',
