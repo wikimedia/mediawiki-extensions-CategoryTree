@@ -482,10 +482,9 @@ $messages['de'] = array(
 	'categorytree'                  => 'Kategorienbaum',
 	'categorytree-tab'              => 'Baum',
 	'categorytree-legend'           => 'Zeige Kategorienbaum',
-	'categorytree-desc'             => 'AJAX-basiertes Gadget, um sich die [[Special:CategoryTree|Kategorien-Struktur]] eines Wikis anzuzeigen',
+	'categorytree-desc'             => 'Ajax-basiertes Gadget, um die [[Special:CategoryTree|Kategorien-Struktur]] eines Wikis anzuzeigen',
 	'categorytree-header'           => 'Zeigt für die angegebene Kategorie die Unterkategorien in einer Baumstruktur.
-Diese Seite benötigt bestimmte JavaScript-Funktionen (AJAX).
-In sehr alten Browsern, oder wenn JavaScript abgeschaltet ist, funktioniert diese Seite eventuell nicht.',
+Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert möglicherweise nicht, wenn JavaScript ausgeschaltet ist oder ein sehr alter Browser verwendet wird.',
 	'categorytree-category'         => 'Kategorie:',
 	'categorytree-go'               => 'Laden',
 	'categorytree-parents'          => 'Oberkategorien',
@@ -2689,4 +2688,3 @@ $messages['zu'] = array(
 	'categorytree-collapse' => 'Nciphisa',
 	'categorytree-expand'   => 'Khulisa',
 );
-
