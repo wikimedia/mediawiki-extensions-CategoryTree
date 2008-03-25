@@ -908,11 +908,12 @@ Se vostede ten un navegador moi vello, ou deshabilitado o JavaScript, non vai fu
 
 /** Gujarati (ગુજરાતી)
  * @author SPQRobin
+ * @author Dsvyas
  */
 $messages['gu'] = array(
 	'categorytree-tab'           => 'વૃક્ષ',
-	'categorytree-go'            => 'ઝાડ બતાવવું',
-	'categorytree-parents'       => 'માતાઓ-પિતાઓ',
+	'categorytree-go'            => 'વૃક્ષ બતાવો',
+	'categorytree-parents'       => 'પિતૃ',
 	'categorytree-mode-all'      => 'બધા પાનાં',
 	'categorytree-nothing-found' => 'કઈ ન મળ્યું',
 	'categorytree-show-list'     => 'સૂચીના રૂપમાં',
@@ -2294,6 +2295,7 @@ $messages['su'] = array(
 	'categorytree-go'               => 'Témbongkeun Tangkal',
 	'categorytree-parents'          => 'Luluhur',
 	'categorytree-mode-categories'  => 'kategori wungkul',
+	'categorytree-mode-pages'       => 'kaca iwal gambar',
 	'categorytree-mode-all'         => 'sadaya kaca',
 	'categorytree-collapse'         => 'tilep',
 	'categorytree-expand'           => 'buka',
@@ -2688,3 +2690,4 @@ $messages['zu'] = array(
 	'categorytree-collapse' => 'Nciphisa',
 	'categorytree-expand'   => 'Khulisa',
 );
+
