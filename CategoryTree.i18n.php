@@ -363,7 +363,7 @@ $messages['ca'] = array(
 	'categorytree-tab'              => 'Arbre',
 	'categorytree-desc'             => "Gadget fet amb AJAX per a mostrar l'[[Special:CategoryTree|estructura de les categories]] d'un wiki",
 	'categorytree-header'           => "Entreu el nom d'una categoria per a veure l'arbre del seu contingut. Aquesta pàgina utilitza una funcionalitat avançada del JavaScript coneguda com a AJAX, i no funciona en navegadors antics o que tinguin el JavaScript desactivat.",
-	'categorytree-category'         => 'Categoria',
+	'categorytree-category'         => 'Categoria:',
 	'categorytree-go'               => 'Carregueu',
 	'categorytree-parents'          => 'Categories pare',
 	'categorytree-mode-categories'  => 'mostra només categories',
@@ -1558,6 +1558,17 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
 	'categorytree-too-many-subcats' => 'Negalima rodyti subkategorijų kaip medį, nes jų yra per daug.',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Shijualex
+ */
+$messages['ml'] = array(
+	'categorytree-mode-all'  => 'എല്ലാ താളുകളും',
+	'categorytree-collapse'  => 'അടയ്ക്കുക',
+	'categorytree-expand'    => 'വികസിപ്പിക്കുക',
+	'categorytree-retry'     => 'കുറച്ചു നേരം കഴിഞ്ഞ് വീണ്ടും പരിശ്രമിക്കുക',
+	'categorytree-show-list' => 'പട്ടികയായി പ്രദര്‍ശിപ്പിക്കുക',
+);
+
 /** Marathi (मराठी)
  * @author Mahitgar
  * @author Siebrand
@@ -2291,6 +2302,7 @@ $messages['su'] = array(
 	'categorytree'                  => 'TangkalKategori',
 	'categorytree-tab'              => 'Tangkal',
 	'categorytree-legend'           => 'Témbongkeun tangkal kategori',
+	'categorytree-desc'             => 'Gajet AJAX pikeun némbongkeun [[Special:CategoryTree|wangun kategori]] dina hiji wiki',
 	'categorytree-category'         => 'Kategori:',
 	'categorytree-go'               => 'Témbongkeun Tangkal',
 	'categorytree-parents'          => 'Luluhur',
@@ -2692,3 +2704,4 @@ $messages['zu'] = array(
 	'categorytree-collapse' => 'Nciphisa',
 	'categorytree-expand'   => 'Khulisa',
 );
+
