@@ -2629,6 +2629,7 @@ $messages['yue'] = array(
 $messages['zh-hans'] = array(
 	'categorytree'                  => '分类树',
 	'categorytree-tab'              => '树形目录',
+	'categorytree-desc'             => '以AJAX技术显示[[Special:CategoryTree|分类结构]]',
 	'categorytree-header'           => '在此可以查询以分类的树形结构。
 注意： 本特殊页面使用AJAX技术。
 如果您的浏览器非常老旧，或者是关闭了JavaScript，本页面将会无法正常运作。',
@@ -2659,6 +2660,7 @@ $messages['zh-hans'] = array(
 $messages['zh-hant'] = array(
 	'categorytree'                  => '分類樹',
 	'categorytree-tab'              => '樹狀目錄',
+	'categorytree-desc'             => '以AJAX技術顯示[[Special:CategoryTree|分類結構]]',
 	'categorytree-header'           => '在此可以查詢以分類的樹狀結構。
 注意： 本特殊頁面使用AJAX技術。
 如果您的瀏覽器非常老舊，或者是關閉了JavaScript，本頁面將會無法正常運作。',
@@ -2690,4 +2692,3 @@ $messages['zu'] = array(
 	'categorytree-collapse' => 'Nciphisa',
 	'categorytree-expand'   => 'Khulisa',
 );
-
