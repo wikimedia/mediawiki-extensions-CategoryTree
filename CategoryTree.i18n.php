@@ -1562,6 +1562,7 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
  * @author Shijualex
  */
 $messages['ml'] = array(
+	'categorytree-category'  => 'വിഭാഗം:',
 	'categorytree-mode-all'  => 'എല്ലാ താളുകളും',
 	'categorytree-collapse'  => 'അടയ്ക്കുക',
 	'categorytree-expand'    => 'വികസിപ്പിക്കുക',
@@ -2533,7 +2534,7 @@ $messages['vi'] = array(
 	'categorytree-header'           => 'Gõ vào tên thể loại để xem nội dung của nó theo cấu trúc cây.
 Chú ý rằng chức năng này sử dụng chức năng JavaScript, với tên AJAX.
 Nếu bạn đang sử dụng trình duyệt rất cũ, hoặc đã tắt JavaScript, nó sẽ không hoạt động.',
-	'categorytree-category'         => 'Thể loại',
+	'categorytree-category'         => 'Thể loại:',
 	'categorytree-go'               => 'Hiển thị',
 	'categorytree-parents'          => 'Các thể loại mẹ',
 	'categorytree-mode-categories'  => 'Chỉ liệt kê các thể loại',
