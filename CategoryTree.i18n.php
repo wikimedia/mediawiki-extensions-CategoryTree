@@ -305,6 +305,7 @@ $messages['bn'] = array(
 $messages['br'] = array(
 	'categorytree'                  => 'Gwezennadur ar rummadoù',
 	'categorytree-tab'              => 'Gwezennadur',
+	'categorytree-legend'           => 'Gwelet gwezennadur ar rummad',
 	'categorytree-desc'             => 'Bitrak diazezet war AJAX evit diskouez [[Special:CategoryTree|framm rummad]] ur wiki',
 	'categorytree-header'           => "Merkit anv ur rummad evit gwelet petra zo ennañ e stumm ur gwezennadur. 
 Notit e rankit kaout an arc'hwelioù JavaScript araokaet anvet AJAX.
