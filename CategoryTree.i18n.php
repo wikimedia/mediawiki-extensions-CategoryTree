@@ -918,7 +918,7 @@ $messages['gu'] = array(
 	'categorytree-mode-all'      => 'બધા પાનાં',
 	'categorytree-nothing-found' => 'કઈ ન મળ્યું',
 	'categorytree-show-list'     => 'સૂચીના રૂપમાં',
-	'categorytree-show-tree'     => 'ઝાડના રૂપમાં',
+	'categorytree-show-tree'     => 'વૃક્ષ રૂપમાં',
 );
 
 /** Hakka (Hak-kâ-fa)
@@ -1441,6 +1441,7 @@ $messages['lb'] = array(
 	'categorytree'                  => 'Struktur vun de Kategorien',
 	'categorytree-tab'              => 'Bam',
 	'categorytree-legend'           => 'Weis Kategoriestruktur',
+	'categorytree-desc'             => "Gadget deen op Ajax opgebaut ass fir d'[[Special:CategoryTree|Kategorie-Struktur]] vun enger Wiki duerzestellen",
 	'categorytree-header'           => 'Gitt den Numm vun enger Kategorie an, fir hiren Inhalt als Bam-Struktur ze gesinn.
 Bedenkt, datt dës Fonctioun Java Script Funktioune benotzt, déi als AJAX bekannt sinn. 
 Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da fonktionnéiert dëst bei Iech net.',
@@ -2507,6 +2508,16 @@ $messages['tr'] = array(
 	'categorytree-too-many-subcats' => 'Çok fazla nesne olduğundan, hiyerarşik olarak gösterilemiyor.',
 );
 
+/** Ukrainian (Українська)
+ * @author Ahonc
+ */
+$messages['uk'] = array(
+	'categorytree'        => 'Дерево категорій',
+	'categorytree-tab'    => 'Дерево',
+	'categorytree-legend' => 'Показати дерево категорій',
+	'categorytree-desc'   => 'AJAX-компонент для відображення [[Special:CategoryTree|структури категорій]] вікі',
+);
+
 /** Urdu (اردو) */
 $messages['ur'] = array(
 	'categorytree'                  => 'شجر ِزمرہ',
@@ -2671,10 +2682,12 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Shinjiman
+ * @author Alexsh
  */
 $messages['zh-hant'] = array(
 	'categorytree'                  => '分類樹',
 	'categorytree-tab'              => '樹狀目錄',
+	'categorytree-legend'           => '顯示分類樹',
 	'categorytree-desc'             => '以AJAX技術顯示[[Special:CategoryTree|分類結構]]',
 	'categorytree-header'           => '在此可以查詢以分類的樹狀結構。
 注意： 本特殊頁面使用AJAX技術。
