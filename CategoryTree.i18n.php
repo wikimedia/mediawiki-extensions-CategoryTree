@@ -2607,12 +2607,13 @@ $messages['wuu'] = array(
 	'categorytree-too-many-subcats' => '子分类忒多哉，显示弗过来哉。',
 );
 
-/** Yue (粵語)
+/** Cantonese (廣東話)
  * @author Shinjiman
  */
 $messages['yue'] = array(
 	'categorytree'                  => '分類樹',
 	'categorytree-tab'              => '樹',
+	'categorytree-desc'             => '一個以AJAX為主嘅小工具去顯示響一個wiki嘅[[Special:CategoryTree|分類架構]]',
 	'categorytree-header'           => '輸入分類名去睇佢嘅樹形結構內容。
 請留意呢個係需要進階嘅JavaScript功能叫做AJAX。
 如果你係有一個好舊嘅瀏覽器，又或者停用咗JavaScript，咁就會用唔到。',
