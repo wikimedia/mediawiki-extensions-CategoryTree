@@ -1564,12 +1564,27 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
  * @author Shijualex
  */
 $messages['ml'] = array(
-	'categorytree-category'  => 'വിഭാഗം:',
-	'categorytree-mode-all'  => 'എല്ലാ താളുകളും',
-	'categorytree-collapse'  => 'അടയ്ക്കുക',
-	'categorytree-expand'    => 'വികസിപ്പിക്കുക',
-	'categorytree-retry'     => 'കുറച്ചു നേരം കഴിഞ്ഞ് വീണ്ടും പരിശ്രമിക്കുക',
-	'categorytree-show-list' => 'പട്ടികയായി പ്രദര്‍ശിപ്പിക്കുക',
+	'categorytree'                  => 'വര്‍ഗ്ഗവൃക്ഷം',
+	'categorytree-tab'              => 'വൃക്ഷം',
+	'categorytree-legend'           => 'വര്‍ഗ്ഗവൃക്ഷം പ്രദര്‍ശിപ്പിക്കുക',
+	'categorytree-category'         => 'വിഭാഗം:',
+	'categorytree-go'               => 'വൃക്ഷം പ്രദര്‍ശിപ്പിക്കുക',
+	'categorytree-mode-categories'  => 'വിഭാഗങ്ങള്‍ മാത്രം',
+	'categorytree-mode-pages'       => 'ചിത്രങ്ങള്‍ ഒഴിച്ചുള്ള താളുകള്‍',
+	'categorytree-mode-all'         => 'എല്ലാ താളുകളും',
+	'categorytree-collapse'         => 'അടയ്ക്കുക',
+	'categorytree-expand'           => 'വികസിപ്പിക്കുക',
+	'categorytree-load'             => 'ലോഡ് ചെയ്യുക',
+	'categorytree-loading'          => 'ലോഡ് ചെയ്തുകൊണ്ടിരിക്കുന്നു...',
+	'categorytree-nothing-found'    => 'ഒന്നും കണ്ടെത്തിയില്ല',
+	'categorytree-no-subcategories' => 'ഉപവിഭാഗങ്ങളില്ല',
+	'categorytree-no-pages'         => 'താളുകളോ ഉപവിഭാഗങ്ങളോ ഇല്ല',
+	'categorytree-not-found'        => "''$1'' എന്ന വിഭാഗം കണ്ടില്ല",
+	'categorytree-error'            => 'ഡാറ്റ ലോഡ് ചെയ്യുന്നതില്‍ പിശക്.',
+	'categorytree-retry'            => 'കുറച്ചു നേരം കഴിഞ്ഞ് വീണ്ടും പരിശ്രമിക്കുക',
+	'categorytree-show-list'        => 'പട്ടികയായി പ്രദര്‍ശിപ്പിക്കുക',
+	'categorytree-show-tree'        => 'വൃക്ഷമായി പ്രദര്‍ശിപ്പിക്കുക',
+	'categorytree-too-many-subcats' => 'വളരെയധികം ഉപവര്‍ഗ്ഗങ്ങളുള്ളതിനാല്‍ അതിനെ വൃക്ഷമായി പ്രദര്‍ശിപ്പിക്കാനാവില്ല.',
 );
 
 /** Marathi (मराठी)
@@ -2038,6 +2053,7 @@ $messages['ro'] = array(
 
 /** Russian (Русский)
  * @author .:Ajvol:.
+ * @author Ahonc
  */
 $messages['ru'] = array(
 	'categorytree'                  => 'Дерево категорий',
@@ -2047,7 +2063,7 @@ $messages['ru'] = array(
 	'categorytree-header'           => 'Введите имя категории, и она будет показана в виде дерева.
 Эта возможность доступна, только если ваш браузер поддерживает AJAX.
 Если у вас старая версия браузера или отключен JavaScript, показ подкатегорий в виде дерева недоступен.',
-	'categorytree-category'         => 'Категория',
+	'categorytree-category'         => 'Категория:',
 	'categorytree-go'               => 'Загрузить',
 	'categorytree-parents'          => 'Родительские категории',
 	'categorytree-mode-categories'  => 'только категории',
@@ -2428,6 +2444,7 @@ $messages['tet'] = array(
 $messages['tg'] = array(
 	'categorytree'                  => 'ГурӯҳДарахт',
 	'categorytree-tab'              => 'Дарахт',
+	'categorytree-legend'           => 'Намоиши дарахти гурӯҳ',
 	'categorytree-desc'             => 'Абзоре дар асоси AJAX барои намоиши [[Special:CategoryTree|сохтори гурӯҳи]] вики.',
 	'categorytree-header'           => 'Номи як гурӯҳро ворид кунед, то мӯҳтавиёти он ба сурати дарахт намоиш ёбад.
 Таваҷҷӯҳ кунед, ки ин кор ба қобилиятҳои пешрафтаи ҶаваСкрипт бо номи Аҷакс ниёз дорад.
@@ -2512,10 +2529,17 @@ $messages['tr'] = array(
  * @author Ahonc
  */
 $messages['uk'] = array(
-	'categorytree'        => 'Дерево категорій',
-	'categorytree-tab'    => 'Дерево',
-	'categorytree-legend' => 'Показати дерево категорій',
-	'categorytree-desc'   => 'AJAX-компонент для відображення [[Special:CategoryTree|структури категорій]] вікі',
+	'categorytree'                 => 'Дерево категорій',
+	'categorytree-tab'             => 'Дерево',
+	'categorytree-legend'          => 'Показати дерево категорій',
+	'categorytree-desc'            => 'AJAX-компонент для відображення [[Special:CategoryTree|структури категорій]] вікі',
+	'categorytree-header'          => 'Уведіть назву категорії, і вона буде показана у вигляді дерева.
+Ця можливість доступна, тільки якщо ваш браузер підтримує AJAX.
+Якщо у вас стара версія браузера або відключений JavaScript, відображення підкатегорій у вигляді дерева недоступне.',
+	'categorytree-category'        => 'Категорія:',
+	'categorytree-go'              => 'Показати дерево',
+	'categorytree-parents'         => 'Батьківські категорії',
+	'categorytree-mode-categories' => 'тільки категорії',
 );
 
 /** Urdu (اردو) */
