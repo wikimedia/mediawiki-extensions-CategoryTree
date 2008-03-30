@@ -2529,17 +2529,32 @@ $messages['tr'] = array(
  * @author Ahonc
  */
 $messages['uk'] = array(
-	'categorytree'                 => 'Дерево категорій',
-	'categorytree-tab'             => 'Дерево',
-	'categorytree-legend'          => 'Показати дерево категорій',
-	'categorytree-desc'            => 'AJAX-компонент для відображення [[Special:CategoryTree|структури категорій]] вікі',
-	'categorytree-header'          => 'Уведіть назву категорії, і вона буде показана у вигляді дерева.
+	'categorytree'                  => 'Дерево категорій',
+	'categorytree-tab'              => 'Дерево',
+	'categorytree-legend'           => 'Показати дерево категорій',
+	'categorytree-desc'             => 'AJAX-компонент для відображення [[Special:CategoryTree|структури категорій]] вікі',
+	'categorytree-header'           => 'Уведіть назву категорії, і вона буде показана у вигляді дерева.
 Ця можливість доступна, тільки якщо ваш браузер підтримує AJAX.
 Якщо у вас стара версія браузера або відключений JavaScript, відображення підкатегорій у вигляді дерева недоступне.',
-	'categorytree-category'        => 'Категорія:',
-	'categorytree-go'              => 'Показати дерево',
-	'categorytree-parents'         => 'Батьківські категорії',
-	'categorytree-mode-categories' => 'тільки категорії',
+	'categorytree-category'         => 'Категорія:',
+	'categorytree-go'               => 'Показати дерево',
+	'categorytree-parents'          => 'Батьківські категорії',
+	'categorytree-mode-categories'  => 'тільки категорії',
+	'categorytree-mode-pages'       => 'окрім зображень',
+	'categorytree-mode-all'         => 'усі сторінки',
+	'categorytree-collapse'         => 'згорнути',
+	'categorytree-expand'           => 'розгорнути',
+	'categorytree-load'             => 'завантажити',
+	'categorytree-loading'          => 'завантаження…',
+	'categorytree-nothing-found'    => 'Ця категорія не містить підкатегорій.',
+	'categorytree-no-subcategories' => 'нема підкатегорій',
+	'categorytree-no-pages'         => 'нема статей і підкатегорій',
+	'categorytree-not-found'        => 'Категорія «$1» не знайдена.',
+	'categorytree-error'            => 'Помилка завантаження даних.',
+	'categorytree-retry'            => 'Будь ласка, зачекайте і спробуйте ще раз.',
+	'categorytree-show-list'        => 'Список',
+	'categorytree-show-tree'        => 'Дерево',
+	'categorytree-too-many-subcats' => 'Неможливо показати підкатегорії у вигляді дерева — їх дуже багато.',
 );
 
 /** Urdu (اردو) */
