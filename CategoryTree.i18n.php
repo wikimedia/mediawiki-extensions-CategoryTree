@@ -2441,7 +2441,7 @@ $messages['tet'] = array(
  * @author Ibrahim
  * @author Siebrand
  */
-$messages['tg'] = array(
+$messages['tg-cyrl'] = array(
 	'categorytree'                  => 'ГурӯҳДарахт',
 	'categorytree-tab'              => 'Дарахт',
 	'categorytree-legend'           => 'Намоиши дарахти гурӯҳ',
