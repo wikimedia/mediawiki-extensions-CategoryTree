@@ -358,10 +358,12 @@ $messages['bs'] = array(
 
 /** Catalan (Català)
  * @author SMP
+ * @author Paucabot
  */
 $messages['ca'] = array(
 	'categorytree'                  => 'Categories en arbre',
 	'categorytree-tab'              => 'Arbre',
+	'categorytree-legend'           => "Mostra l'arbre de categories",
 	'categorytree-desc'             => "Gadget fet amb AJAX per a mostrar l'[[Special:CategoryTree|estructura de les categories]] d'un wiki",
 	'categorytree-header'           => "Entreu el nom d'una categoria per a veure l'arbre del seu contingut. Aquesta pàgina utilitza una funcionalitat avançada del JavaScript coneguda com a AJAX, i no funciona en navegadors antics o que tinguin el JavaScript desactivat.",
 	'categorytree-category'         => 'Categoria:',
@@ -957,12 +959,43 @@ $messages['he'] = array(
 	'categorytree-too-many-subcats' => 'לא ניתן להציג את קטגוריות המשנה כעץ כיוון שהן מרובות מדי.',
 );
 
+/** Hindi (हिन्दी)
+ * @author Kaustubh
+ */
+$messages['hi'] = array(
+	'categorytree'                  => 'श्रेणीवृक्ष',
+	'categorytree-tab'              => 'वृक्ष',
+	'categorytree-legend'           => 'श्रेणीवृक्ष दिखायें',
+	'categorytree-desc'             => 'विकिकी [[Special:CategoryTree|श्रेणीयाँ]] दिखानेके लिये AJAX से बना औज़ार',
+	'categorytree-category'         => 'श्रेणी:',
+	'categorytree-go'               => 'वृक्ष दिखायें',
+	'categorytree-parents'          => 'पालक',
+	'categorytree-mode-categories'  => 'सिर्फ श्रेणीयाँ',
+	'categorytree-mode-pages'       => 'चित्र ना होने वाले पन्ने',
+	'categorytree-mode-all'         => 'सभी पन्ने',
+	'categorytree-collapse'         => 'छोटा करें',
+	'categorytree-expand'           => 'बडा करें',
+	'categorytree-load'             => 'लोड करें',
+	'categorytree-loading'          => 'लोड कर रहें हैं...',
+	'categorytree-nothing-found'    => 'कुछ भी मिला नहीं',
+	'categorytree-no-subcategories' => 'उपश्रेणीयाँ नहीं हैं',
+	'categorytree-no-pages'         => 'लेख या उपश्रेणीयाँ नहीं हैं',
+	'categorytree-not-found'        => 'श्रेणी <i>$1</i> मिली नहीं',
+	'categorytree-error'            => 'डाटा लोड करने में समस्या।',
+	'categorytree-retry'            => 'कृपया थोडे समय के बाद फिरसे यत्न करें।',
+	'categorytree-show-list'        => 'सूची दर्शायें',
+	'categorytree-show-tree'        => 'वृक्ष दर्शायें',
+	'categorytree-too-many-subcats' => 'उपश्रेणियाँ वृक्ष के रूप में नहीं दिखा पा रहें हैं, क्योंकि वे बहुत ज्यादा हैं।',
+);
+
 /** Croatian (Hrvatski)
  * @author SpeedyGonsales
+ * @author Suradnik13
  */
 $messages['hr'] = array(
 	'categorytree'                  => 'Stablasti prikaz hijerarhije kategorija',
 	'categorytree-tab'              => 'Stablo',
+	'categorytree-legend'           => 'Prikaži stablo kategorija',
 	'categorytree-header'           => 'Upišite ime kategorije da biste vidjeli njen položaj u stablastom prikazu hijerarhije. Napomena: na strani klijenta (na Vašem računalu) potreban je web preglednik koji podržava napredni JavaScript, tj. AJAX. Ukoliko imate stari web preglednik, ili ste onemogućili izvođenje JavaScripta u njemu, neće Vam biti dostupan ovaj prikaz.',
 	'categorytree-category'         => 'Kategorija',
 	'categorytree-go'               => 'Učitaj',
@@ -1567,6 +1600,10 @@ $messages['ml'] = array(
 	'categorytree'                  => 'വര്‍ഗ്ഗവൃക്ഷം',
 	'categorytree-tab'              => 'വൃക്ഷം',
 	'categorytree-legend'           => 'വര്‍ഗ്ഗവൃക്ഷം പ്രദര്‍ശിപ്പിക്കുക',
+	'categorytree-desc'             => 'വിക്കിയിലെ [[Special:CategoryTree|വിഭാഗങ്ങളുടെ ഘടന]] പ്രദര്‍ശിപ്പിക്കുവാനുള്ള  AJAX സാങ്കേതികവിദ്യ ഉപയോഗിക്കുന്ന ഗാഡ്ജറ്റ്.',
+	'categorytree-header'           => 'വിഭാഗങ്ങളുടെ ഘടന വ്യക്ഷരൂപത്തില്‍ കാണുവാന്‍ ഒരു വിഭാഗത്തിന്റെ പേരു ചേര്‍ക്കുക.
+ഇതു പ്രവര്‍ത്തിക്കണമെങ്കില്‍ AJAX എന്ന ചുരുക്കനാമത്തിലറിയപ്പെടുന്ന അഡ്‌വാന്‍സ്‌ഡ് ജാവാസ്ക്രിപ്റ്റ് സാങ്കേതികവിദ്യ ആവശ്യമാണ്‌.
+താങ്കളുടെ ബ്രൗസറില്‍ ജാവാസ്ക്രിപ്റ്റ് പ്രവര്‍ത്തനരഹിതമാക്കിയതാണെങ്കിലോ അല്ലെങ്കില്‍ ബ്രൗസര്‍ കാലഹരണപ്പെട്ടതാണെങ്കിലോ ഇതു പ്രവര്‍ത്തിക്കില്ല.',
 	'categorytree-category'         => 'വിഭാഗം:',
 	'categorytree-go'               => 'വൃക്ഷം പ്രദര്‍ശിപ്പിക്കുക',
 	'categorytree-mode-categories'  => 'വിഭാഗങ്ങള്‍ മാത്രം',
@@ -1883,8 +1920,8 @@ $messages['pam'] = array(
 
 /** Polish (Polski)
  * @author Derbeth
- * @author Matma Rex
  * @author Sp5uhe
+ * @author Matma Rex
  */
 $messages['pl'] = array(
 	'categorytree'                  => 'Drzewo kategorii',
@@ -1908,9 +1945,9 @@ $messages['pl'] = array(
 	'categorytree-not-found'        => 'Kategoria <i>$1</i> nie została znaleziona',
 	'categorytree-error'            => 'Problem z ładowaniem danych.',
 	'categorytree-retry'            => 'Poczekaj chwilę i spróbuj ponownie - kliknij ten napis.',
-	'categorytree-show-list'        => 'Pokaż jako listę',
-	'categorytree-show-tree'        => 'Pokaż jako drzewo',
-	'categorytree-too-many-subcats' => 'Podkategorie nie mogą być wyświetlone jako drzewo, ponieważ jest ich zbyt dużo.',
+	'categorytree-show-list'        => 'Prezentuj jako listę',
+	'categorytree-show-tree'        => 'Prezentuj w formie drzewa',
+	'categorytree-too-many-subcats' => 'Podkategorie nie mogą być wyświetlone jako drzewo, ponieważ jest ich zbyt wiele.',
 );
 
 /** Piemontèis (Piemontèis)
