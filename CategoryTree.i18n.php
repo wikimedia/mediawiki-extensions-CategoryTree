@@ -1465,6 +1465,13 @@ $messages['la'] = array(
 	'categorytree-too-many-subcats' => 'Subcategoriae quasi arborem monstrari non possunt, nimis sunt.',
 );
 
+/** Ladino (Ladino)
+ * @author Runningfridgesrule
+ */
+$messages['lad'] = array(
+	'categorytree-category' => 'Kategoría:',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  * @author Kaffi
