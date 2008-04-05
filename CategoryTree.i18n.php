@@ -566,6 +566,7 @@ $messages['ee'] = array(
 /** Greek (Ελληνικά)
  * @author Consta
  * @author ZaDiak
+ * @author Badseed
  * @author Siebrand
  */
 $messages['el'] = array(
@@ -574,7 +575,7 @@ $messages['el'] = array(
 	'categorytree-parents'          => 'Γονείς',
 	'categorytree-mode-categories'  => 'μόνο κατηγορίες',
 	'categorytree-mode-all'         => 'όλες οι σελίδες',
-	'categorytree-expand'           => 'επέκτασε',
+	'categorytree-expand'           => 'επέκτεινε',
 	'categorytree-load'             => 'φόρτωσε',
 	'categorytree-loading'          => 'φόρτωση',
 	'categorytree-no-subcategories' => 'καμία υποκατηγορία',
@@ -1441,7 +1442,9 @@ $messages['ku-latn'] = array(
 	'categorytree-no-subcategories' => 'binekategorî tune',
 );
 
-/** Latin (Latina) */
+/** Latin (Latina)
+ * @author UV
+ */
 $messages['la'] = array(
 	'categorytree'                  => 'Categoriarum arbor',
 	'categorytree-tab'              => 'Arbor',
@@ -1455,7 +1458,7 @@ $messages['la'] = array(
 	'categorytree-collapse'         => 'collabi',
 	'categorytree-expand'           => 'dilatare',
 	'categorytree-load'             => 'onerare',
-	'categorytree-loading'          => 'onerans',
+	'categorytree-loading'          => 'depromens…',
 	'categorytree-nothing-found'    => 'nullum inventum',
 	'categorytree-no-subcategories' => 'nullae subcategoriae',
 	'categorytree-no-pages'         => 'nec paginae nec subcategoriae',
@@ -1520,6 +1523,7 @@ $messages['lez'] = array(
 $messages['li'] = array(
 	'categorytree'                  => 'Categorieboum',
 	'categorytree-tab'              => 'Boum',
+	'categorytree-legend'           => 'Categorieboum laote zeen',
 	'categorytree-desc'             => "AJAX-gebaseerde oetbreijing óm de [[Special:CategoryTree|categoriestructuur]] van 'ne wiki te toeane",
 	'categorytree-header'           => "Gaef 'ne categorienaam in om de inhoud es 'ne boumstructuur te bekieke.
 Let op: deze functie gebroek JavaScript-functionaliteit dae bekindj steit es AJAX.
