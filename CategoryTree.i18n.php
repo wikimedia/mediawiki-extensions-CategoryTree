@@ -842,8 +842,23 @@ Se vos avéd un rudo viely navigator Malyâjo ou que vos éd pas activâ la fonc
  */
 $messages['fur'] = array(
 	'categorytree'                  => 'Arbul des categoriis',
+	'categorytree-tab'              => 'Arbul',
+	'categorytree-legend'           => 'Mostre arbul des categoriis',
+	'categorytree-header'           => 'Inserìs il non de categorie di cui tu vuelis viodi i siei contignûts intune struture a arbul.
+Cheste funzion e à bisugne di funzions avanzadis JavaScript, cognossudis come AJAX.
+Se tu âs un sgarfadôr a vonde vieri, o tu âs disativât JavaScript, cheste pagjine no funzionarà.',
 	'categorytree-category'         => 'Categorie:',
+	'categorytree-mode-categories'  => 'mostre dome lis categoriis',
+	'categorytree-mode-pages'       => 'dutis lis pagjinis, fûr che lis figuris',
+	'categorytree-mode-all'         => 'dutis lis pagjinis',
+	'categorytree-collapse'         => 'strenç',
+	'categorytree-expand'           => 'slargje',
+	'categorytree-load'             => 'cjame',
+	'categorytree-loading'          => 'daûr a cjamâ',
 	'categorytree-no-subcategories' => 'nissune sot categorie.',
+	'categorytree-no-pages'         => 'nissune pagjine ni sotcategorie',
+	'categorytree-show-list'        => 'Liste',
+	'categorytree-show-tree'        => 'Arbul',
 );
 
 /** Galician (Galego)
@@ -1083,7 +1098,6 @@ Ha túlságosan régi böngésződ van, vagy a JavaScript le van tiltva, akkor n
 
 /** Armenian (Հայերեն)
  * @author Teak
- * @author Siebrand
  */
 $messages['hy'] = array(
 	'categorytree'                  => 'Կատեգորիաների ծառ',
@@ -1091,7 +1105,7 @@ $messages['hy'] = array(
 	'categorytree-header'           => 'Մուտքագրեք կատեգորիայի անունը` ծառի համակարգը տեսնելու համար։
 Ի նկատի ունեցեք, որ սա հնարավոր է միայն ձեր բրաուզերի կողմից AJAX-ի ֆունկցիանալության դեպքում։
 Եթե դուք աշխատում եք շատ հին բրաուզերով, կամ ձեր JavaScript-ը անջատված է` այն չի գործի։',
-	'categorytree-category'         => 'Կատեգորիա:',
+	'categorytree-category'         => 'Կատեգորիա.',
 	'categorytree-go'               => 'Ցույց տալ ծառը',
 	'categorytree-parents'          => 'Ծնողներ',
 	'categorytree-mode-categories'  => 'միայն կատեգորիաները',
@@ -1457,7 +1471,7 @@ $messages['la'] = array(
 	'categorytree-mode-all'         => 'omnes paginae',
 	'categorytree-collapse'         => 'collabi',
 	'categorytree-expand'           => 'dilatare',
-	'categorytree-load'             => 'onerare',
+	'categorytree-load'             => 'depromere',
 	'categorytree-loading'          => 'depromens…',
 	'categorytree-nothing-found'    => 'nullum inventum',
 	'categorytree-no-subcategories' => 'nullae subcategoriae',
@@ -2486,7 +2500,7 @@ $messages['tet'] = array(
 	'categorytree-mode-all'        => 'pájina hotu',
 );
 
-/** Tajik (Тоҷикӣ)
+/** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
  * @author Ibrahim
  * @author Siebrand
  */
@@ -2507,7 +2521,7 @@ $messages['tg-cyrl'] = array(
 	'categorytree-collapse'         => 'фурукаш',
 	'categorytree-expand'           => 'густариш',
 	'categorytree-load'             => 'бор кардан',
-	'categorytree-loading'          => 'дар ҳоли боргирӣ',
+	'categorytree-loading'          => 'дар ҳоли бор шудан…',
 	'categorytree-nothing-found'    => 'ҳеҷчиз ёфт нашуд',
 	'categorytree-no-subcategories' => 'ҳеҷ зергурӯҳе надорад',
 	'categorytree-no-pages'         => 'ҳеҷ саҳифае ё зергурӯҳе',
@@ -2620,6 +2634,36 @@ $messages['ur'] = array(
 	'categorytree-show-list'        => 'بہ ترتیب فہرست',
 	'categorytree-show-tree'        => 'بہ ترتیب شجر',
 	'categorytree-too-many-subcats' => 'ذیلی زمرہ جات کی تعداد کثیر کے باعث بہ ترتیب شجر نہیں کیا جاسکتا',
+);
+
+/** Vèneto (Vèneto)
+ * @author Candalua
+ */
+$messages['vec'] = array(
+	'categorytree'                  => 'Strutura ad àlbaro de le categorie',
+	'categorytree-tab'              => 'Àlbaro',
+	'categorytree-legend'           => "Mostra l'àlbaro de le categorie",
+	'categorytree-desc'             => 'Acessorio AJAX par visualizar la [[Special:CategoryTree|strutura de le categorie]] del sito',
+	'categorytree-header'           => 'Inserissi el nome de la categoria de cui te vol védar el contenuto soto forma de strutura ad àlbaro. Nota che la pagina la richiede le funzionalità avanzade de JavaScript ciamà AJAX; se te stè doparando un browser vecio assè o le funzion JavaScript le xe disabilità, sta pagina no la funzionarà mìa.',
+	'categorytree-category'         => 'Categoria',
+	'categorytree-go'               => "Mostra l'àlbaro",
+	'categorytree-parents'          => 'Categorie superiori',
+	'categorytree-mode-categories'  => 'mostra solo le categorie',
+	'categorytree-mode-pages'       => 'tute le pagine, via de le imagini',
+	'categorytree-mode-all'         => 'tute le pagine',
+	'categorytree-collapse'         => 'conprimi',
+	'categorytree-expand'           => 'espandi',
+	'categorytree-load'             => 'carga',
+	'categorytree-loading'          => 'sto cargando…',
+	'categorytree-nothing-found'    => 'nissun risultato',
+	'categorytree-no-subcategories' => 'nissuna sotocategoria',
+	'categorytree-no-pages'         => 'nissuna voçe né sotocategoria',
+	'categorytree-not-found'        => 'Categoria <i>$1</i> mìa catà',
+	'categorytree-error'            => 'Ghe xe un problema nel caricamento dei dati.',
+	'categorytree-retry'            => "Speta n'atimo e dopo próa de novo.",
+	'categorytree-show-list'        => 'Mostra come lista',
+	'categorytree-show-tree'        => 'Mostra come àlbaro',
+	'categorytree-too-many-subcats' => 'Ghe xe massa categorie par mostrarle ad àlbaro.',
 );
 
 /** Vietnamese (Tiếng Việt)
