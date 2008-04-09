@@ -699,12 +699,13 @@ $messages['ext'] = array(
 	'categorytree-no-pages' => 'nu ai ni páhinas ni sucategorias',
 );
 
-/** فارسی (فارسی)
+/** Persian (فارسی)
  * @author Huji
  */
 $messages['fa'] = array(
 	'categorytree'                  => 'درخت رده',
 	'categorytree-tab'              => 'درخت',
+	'categorytree-legend'           => 'نمایش درخت رده',
 	'categorytree-desc'             => 'ابزار مبتنی بر AJAX برای نمایش [[Special:CategoryTree|ساختار رده‌های]] یک ویکی',
 	'categorytree-header'           => 'نام یک رده را وارد کنید تا محتویات آن به صورت درخت نمایش یابد. توجه کنید که این کار نیاز به قابلیت‌های پیشرفتهٔ جاوااسکریپت موسوم به آژاکس دارد. اگر از مرورگری خیلی قدیمی استفاده می‌کنید یا جاوااسکریپت را غیرفعال کرده‌اید، کار نمی‌کند.',
 	'categorytree-category'         => 'رده',
@@ -726,7 +727,6 @@ $messages['fa'] = array(
 	'categorytree-show-list'        => 'نمایش فهرست‌وار',
 	'categorytree-show-tree'        => 'نمایش درخت‌وار',
 	'categorytree-too-many-subcats' => 'به خاطر شمار زیاد آنها، نمی‌توان زیررده‌ها را درخت‌وار نشان داد.',
-
 );
 
 /** Finnish (Suomi)
