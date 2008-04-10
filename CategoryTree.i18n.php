@@ -914,7 +914,7 @@ Se vostede ten un navegador moi vello, ou deshabilitado o JavaScript, non vai fu
 	'categorytree-collapse'         => 'contraer',
 	'categorytree-expand'           => 'ampliar',
 	'categorytree-load'             => 'cargar',
-	'categorytree-loading'          => 'cargando',
+	'categorytree-loading'          => 'cargando…',
 	'categorytree-nothing-found'    => 'nada atopado',
 	'categorytree-no-subcategories' => 'non hai subcategorías',
 	'categorytree-no-pages'         => 'non hai páxinas ou subcategorías',
@@ -984,6 +984,9 @@ $messages['hi'] = array(
 	'categorytree-tab'              => 'वृक्ष',
 	'categorytree-legend'           => 'श्रेणीवृक्ष दिखायें',
 	'categorytree-desc'             => 'विकिकी [[Special:CategoryTree|श्रेणीयाँ]] दिखानेके लिये AJAX से बना औज़ार',
+	'categorytree-header'           => 'एक श्रेणीके कन्टेन्ट्स वृक्ष के रूपमें देखने के लिये उसका नाम दें।
+इस सुविधाके लिये AJAX नाम के एक जावास्क्रीप्ट की जरुरत होती हैं, इसपर ध्यान दें।
+अगर आपका ब्राउज़र बहुत पुराना हैं, या जावास्क्रीप्ट बंद रखी हुई हैं तो यह काम नहीं करेगा।',
 	'categorytree-category'         => 'श्रेणी:',
 	'categorytree-go'               => 'वृक्ष दिखायें',
 	'categorytree-parents'          => 'पालक',
@@ -1037,10 +1040,12 @@ $messages['hr'] = array(
 
 /** Upper Sorbian (Hornjoserbsce)
  * @author Siebrand
+ * @author Michawiki
  */
 $messages['hsb'] = array(
 	'categorytree'                  => 'Kategorijowy štom',
 	'categorytree-tab'              => 'Štom',
+	'categorytree-legend'           => 'Kategorijowy štom pokazać',
 	'categorytree-desc'             => 'Přisłušk (gadget) na zakładźe AJAX za [[Special:CategoryTree|zwobraznjenje struktury]] wikija',
 	'categorytree-header'           => 'Zapisaj mjeno kategorije, zo by jeje wobsah jako štomowu strukturu widźał. Wobkedźbuj, zo su za to wěste JavaScriptowe funkcije (AJAX) trjeba. Jeli maš jara stary wobhladowak abo jeli JavaScript je wupinjeny, to snano njebudźe fungować.',
 	'categorytree-category'         => 'Kategorija',
@@ -1294,6 +1299,22 @@ $messages['jut'] = array(
 	'categorytree-show-list'        => 'Ves søm liste.',
 	'categorytree-show-tree'        => 'Ves søm træ',
 	'categorytree-too-many-subcats' => 'Ken ekke vese underklynger søm træ, der er før mange.',
+);
+
+/** Javanese (Basa Jawa)
+ * @author Meursault2004
+ */
+$messages['jv'] = array(
+	'categorytree-category'         => 'Kategori:',
+	'categorytree-mode-pages'       => 'kaca-kaca kejaba gambar-gambar',
+	'categorytree-load'             => 'unggah',
+	'categorytree-loading'          => 'ngunggahaké…',
+	'categorytree-nothing-found'    => 'ora ditemokaké',
+	'categorytree-no-subcategories' => 'ora ana subkategori',
+	'categorytree-not-found'        => 'Kategori <i>$1</i> ora ditemokaké',
+	'categorytree-error'            => 'Ana masalah ngunggahaké data.',
+	'categorytree-retry'            => 'Tulung ditunggu sadélok lan dicoba manèh.',
+	'categorytree-show-list'        => 'Tuduhna minangka daftar',
 );
 
 /** Kara-Kalpak (Qaraqalpaqsha)
