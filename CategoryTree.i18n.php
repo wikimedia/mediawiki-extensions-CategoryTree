@@ -1305,16 +1305,27 @@ $messages['jut'] = array(
  * @author Meursault2004
  */
 $messages['jv'] = array(
+	'categorytree'                  => 'Uwit kategori',
+	'categorytree-tab'              => 'Uwit',
+	'categorytree-legend'           => 'Tuduhna uwit kategori',
 	'categorytree-category'         => 'Kategori:',
+	'categorytree-go'               => 'Tuduhna uwit',
+	'categorytree-mode-categories'  => 'kategori waé',
 	'categorytree-mode-pages'       => 'kaca-kaca kejaba gambar-gambar',
+	'categorytree-mode-all'         => 'kabèh kaca',
+	'categorytree-collapse'         => 'ciyutna',
+	'categorytree-expand'           => 'ambakna',
 	'categorytree-load'             => 'unggah',
 	'categorytree-loading'          => 'ngunggahaké…',
 	'categorytree-nothing-found'    => 'ora ditemokaké',
 	'categorytree-no-subcategories' => 'ora ana subkategori',
+	'categorytree-no-pages'         => 'ora ana kaca utawa subkategori',
 	'categorytree-not-found'        => 'Kategori <i>$1</i> ora ditemokaké',
 	'categorytree-error'            => 'Ana masalah ngunggahaké data.',
 	'categorytree-retry'            => 'Tulung ditunggu sadélok lan dicoba manèh.',
 	'categorytree-show-list'        => 'Tuduhna minangka daftar',
+	'categorytree-show-tree'        => 'Tuduhna minangka uwit',
+	'categorytree-too-many-subcats' => 'Ora bisa nuduhaké subkategori minangka uwit, amerga cacahé kakèhan.',
 );
 
 /** Kara-Kalpak (Qaraqalpaqsha)
