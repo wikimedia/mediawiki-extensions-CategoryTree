@@ -899,12 +899,12 @@ Se vostede ten un navegador moi vello, ou deshabilitado o JavaScript, non vai fu
  * @author Siebrand
  */
 $messages['gl'] = array(
-	'categorytree'                  => 'Amosar a árbore de categorías',
+	'categorytree'                  => 'Árbore de categorías',
 	'categorytree-tab'              => 'Árbore',
 	'categorytree-legend'           => 'Amosar a árbore de categorías',
 	'categorytree-header'           => 'Introduza o nome dunha categoría para ver o contido da estrutura da árbore.
-Déase conta de que se require funcionalidade de JavaScript avanzada coñecida como AJAX.
-Se vostede ten un navegador moi vello, ou deshabilitado o JavaScript, non vai funcionar.',
+Déase conta de que se require a funcionalidade avanzada do JavaScript, coñecida como AJAX.
+Se ten un navegador moi vello, ou deshabilitado para o JavaScript, non vai funcionar.',
 	'categorytree-category'         => 'Categoría:',
 	'categorytree-go'               => 'Amosar a árbore',
 	'categorytree-parents'          => 'Nodos superiores',
@@ -918,7 +918,7 @@ Se vostede ten un navegador moi vello, ou deshabilitado o JavaScript, non vai fu
 	'categorytree-nothing-found'    => 'nada atopado',
 	'categorytree-no-subcategories' => 'non hai subcategorías',
 	'categorytree-no-pages'         => 'non hai páxinas ou subcategorías',
-	'categorytree-not-found'        => 'Categoría <i>$1</i> non atopada',
+	'categorytree-not-found'        => 'A categoría <i>"$1"</i> non foi atopada',
 	'categorytree-error'            => 'Problema da carga de datos.',
 	'categorytree-retry'            => 'Por favor, agarde un momento e ténteo de novo.',
 	'categorytree-show-list'        => 'Amosar coma unha listaxe',
@@ -1162,6 +1162,13 @@ Jika Anda menggunakan penjelajah web lama, atau mematikan fungsi JavaScript Anda
 	'categorytree-show-list'        => 'Tampilkan daftar',
 	'categorytree-show-tree'        => 'Tampilkan pohon',
 	'categorytree-too-many-subcats' => 'Tidak dapat menampilkan subkategori dalam bentuk pohon karena jumlahnya terlalu banyak.',
+);
+
+/** Interlingue (Interlingue)
+ * @author Malafaya
+ */
+$messages['ie'] = array(
+	'categorytree-category' => 'Categorie:',
 );
 
 /** Ido (Ido)
