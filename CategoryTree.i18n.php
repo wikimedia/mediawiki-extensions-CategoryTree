@@ -98,6 +98,7 @@ $messages['am'] = array(
 $messages['an'] = array(
 	'categorytree'                  => 'Árbol de categorías',
 	'categorytree-tab'              => 'Árbol',
+	'categorytree-legend'           => "Amostar l'árbol de categorías",
 	'categorytree-desc'             => "Traste basato en AJAX t'amostrar a [[Special:CategoryTree|estrutura de categorías]] d'una wiki",
 	'categorytree-header'           => "Escriba un nombre de categoría ta beyer os suyos contenius en forma d'árbol. Pare cuenta que ista pachina requiere as funzions JavaScriptz abanzatas conoixitas como AJAX. Si tiene un nabegador antigo, u tiene desautibato JavaScript, a pachina no funzionará.",
 	'categorytree-category'         => 'Categoría:',
@@ -1317,6 +1318,7 @@ $messages['jv'] = array(
 	'categorytree-legend'           => 'Tuduhna uwit kategori',
 	'categorytree-category'         => 'Kategori:',
 	'categorytree-go'               => 'Tuduhna uwit',
+	'categorytree-parents'          => 'Kategori sing luwih dhuwur',
 	'categorytree-mode-categories'  => 'kategori waé',
 	'categorytree-mode-pages'       => 'kaca-kaca kejaba gambar-gambar',
 	'categorytree-mode-all'         => 'kabèh kaca',
@@ -1984,8 +1986,8 @@ $messages['pam'] = array(
 );
 
 /** Polish (Polski)
- * @author Derbeth
  * @author Sp5uhe
+ * @author Derbeth
  * @author Matma Rex
  */
 $messages['pl'] = array(
@@ -1994,11 +1996,11 @@ $messages['pl'] = array(
 	'categorytree-legend'           => 'Pokaż drzewo kategorii',
 	'categorytree-desc'             => 'Gadżet oparty na technologii AJAX, wyświetlający [[Special:CategoryTree|drzewo kategorii]]',
 	'categorytree-header'           => 'Wpisz nazwę kategorii, by zobaczyć jej zawartość w postaci drzewa. Wymagana jest zaawansowana funkcjonalność JavaScriptu, znana jako AJAX. Jeśli masz bardzo starą przeglądarkę lub wyłączony JavaScript, ta funkcja nie zadziała.',
-	'categorytree-category'         => 'Kategoria:',
+	'categorytree-category'         => 'Kategoria',
 	'categorytree-go'               => 'Ładuj kategorię',
 	'categorytree-parents'          => 'Kategorie główne',
 	'categorytree-mode-categories'  => 'tylko kategorie',
-	'categorytree-mode-pages'       => 'strony z wyjątkiem grafik',
+	'categorytree-mode-pages'       => 'strony oprócz grafik',
 	'categorytree-mode-all'         => 'wszystkie strony',
 	'categorytree-collapse'         => 'zwiń',
 	'categorytree-expand'           => 'rozwiń',
@@ -2009,7 +2011,7 @@ $messages['pl'] = array(
 	'categorytree-no-pages'         => 'brak artykułów lub podkategorii.',
 	'categorytree-not-found'        => 'Kategoria <i>$1</i> nie została znaleziona',
 	'categorytree-error'            => 'Problem z ładowaniem danych.',
-	'categorytree-retry'            => 'Poczekaj chwilę i spróbuj ponownie - kliknij ten napis.',
+	'categorytree-retry'            => 'Poczekaj chwilę i spróbuj ponownie – kliknij ten napis.',
 	'categorytree-show-list'        => 'Prezentuj jako listę',
 	'categorytree-show-tree'        => 'Prezentuj w formie drzewa',
 	'categorytree-too-many-subcats' => 'Podkategorie nie mogą być wyświetlone jako drzewo, ponieważ jest ich zbyt wiele.',
