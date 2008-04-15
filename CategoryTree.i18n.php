@@ -941,6 +941,20 @@ $messages['gu'] = array(
 	'categorytree-show-tree'     => 'વૃક્ષ રૂપમાં',
 );
 
+/** Manx (Gaelg)
+ * @author MacTire02
+ */
+$messages['gv'] = array(
+	'categorytree'                 => 'BilleyRonnaghyn',
+	'categorytree-tab'             => 'Billey',
+	'categorytree-legend'          => 'Billey ronnaghyn y haishbyney',
+	'categorytree-category'        => 'Ronney:',
+	'categorytree-go'              => 'Billey y haishbyney',
+	'categorytree-mode-categories' => 'ronnaghyn ynrican',
+	'categorytree-load'            => 'dy lughtaghey',
+	'categorytree-loading'         => 'lughtaghey...',
+);
+
 /** Hakka (Hak-kâ-fa)
  * @author Hakka
  * @author Siebrand
