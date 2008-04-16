@@ -951,6 +951,7 @@ $messages['gv'] = array(
 	'categorytree-category'        => 'Ronney:',
 	'categorytree-go'              => 'Billey y haishbyney',
 	'categorytree-mode-categories' => 'ronnaghyn ynrican',
+	'categorytree-mode-all'        => 'dagh ooilley ghuillag',
 	'categorytree-load'            => 'dy lughtaghey',
 	'categorytree-loading'         => 'lughtaghey...',
 );
