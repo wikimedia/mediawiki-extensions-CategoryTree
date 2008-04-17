@@ -1458,8 +1458,8 @@ $messages['km'] = array(
 	'categorytree-mode-categories'  => 'សំរាប់តែចំណាត់ថ្នាក់ក្រុមប៉ុណ្ណោះ',
 	'categorytree-mode-pages'       => 'ទំព័រ លើកលែងតែរូបភាព',
 	'categorytree-mode-all'         => 'គ្រប់ទំព័រ',
-	'categorytree-collapse'         => 'វេញ',
-	'categorytree-expand'           => 'ពង្រីក',
+	'categorytree-collapse'         => 'បង្រួម',
+	'categorytree-expand'           => 'ពន្លាត',
 	'categorytree-load'             => 'ផ្ទុក',
 	'categorytree-loading'          => 'កំពុងផ្ទុក',
 	'categorytree-nothing-found'    => 'រកមិនឃើញអ្វី',
@@ -1650,10 +1650,13 @@ $messages['lo'] = array(
 	'categorytree-too-many-subcats' => 'ບໍ່ສາມາດສະແດງໝວດເປັນໂຄງສ້າງ ເພາະມັນມີຫຼາຍໝວດໂພດ',
 );
 
-/** Lithuanian (Lietuvių) */
+/** Lithuanian (Lietuvių)
+ * @author Hugo.arg
+ */
 $messages['lt'] = array(
 	'categorytree'                  => 'Kategorijų medis',
 	'categorytree-tab'              => 'Medis',
+	'categorytree-legend'           => 'Rodyti kategorijų medį',
 	'categorytree-header'           => 'Įveskite kategorijos pavadinimą, kad pamatytumėte jos turinį kaip medžio struktūrą.
 Primename, kad tam reikia išplėstinis JavaScript fukcionalumas, kitaip žinomas kaip AJAX.
 Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
@@ -1671,6 +1674,8 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
 	'categorytree-no-subcategories' => 'nėra jokių subkategorijų',
 	'categorytree-no-pages'         => 'jokių puslapių ar subkategorijų',
 	'categorytree-not-found'        => 'Kategorija <i>$1</i> nerasta',
+	'categorytree-error'            => 'Duomenų įkėlimo problema.',
+	'categorytree-retry'            => 'Palaukite šiek tiek, ir bandykite iš naujo.',
 	'categorytree-show-list'        => 'Rodyti kaip sąraašą',
 	'categorytree-show-tree'        => 'Rodyti kaip medį',
 	'categorytree-too-many-subcats' => 'Negalima rodyti subkategorijų kaip medį, nes jų yra per daug.',
