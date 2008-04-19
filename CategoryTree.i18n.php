@@ -1085,6 +1085,38 @@ $messages['hsb'] = array(
 	'categorytree-too-many-subcats' => 'Njemóžno podkategorije jako štom zwobraznić, je přewjele z nich',
 );
 
+/** Haitian (Kreyòl ayisyen)
+ * @author Masterches
+ */
+$messages['ht'] = array(
+	'categorytree'                  => 'Òganizasyon kategori yo',
+	'categorytree-tab'              => 'Kategori, pyebwa òganizasyon',
+	'categorytree-legend'           => 'Montre òganizasyon pou kategori a',
+	'categorytree-desc'             => 'Jwèt, gadjèt sòti nan AJAX pou montre [[Special:CategoryTree|òganizasyon kategori ]] yon wiki.',
+	'categorytree-header'           => 'Antre non yon kategori pou wè sa l genyen anndan l, òganizasyon l.
+Tande byen ke sa mande fonksyon JavaScript ki gen wo nivo tankou AJAX.
+Si ou ta genyen yon vye navigatè (navigatè, bwozè entènèt), oubyen JavaScript pa aktive, li pe ke mache byen.',
+	'categorytree-category'         => 'Kategori:',
+	'categorytree-go'               => 'Montre òganizasyon, estrikti',
+	'categorytree-parents'          => 'Papa ak manman',
+	'categorytree-mode-categories'  => 'Kategori yo sèlman',
+	'categorytree-mode-pages'       => 'paj san imaj, retire tout imaj nan paj an',
+	'categorytree-mode-all'         => 'tout paj yo',
+	'categorytree-collapse'         => 'fème tout seksyon yo',
+	'categorytree-expand'           => 'Elaji seksyon an',
+	'categorytree-load'             => 'Chaje, ouvri',
+	'categorytree-loading'          => 'ap chaje...',
+	'categorytree-nothing-found'    => 'nou pa twouve anyen ki ap koresponn',
+	'categorytree-no-subcategories' => 'kategori sa pa gen pitit, pa gen kategori pi ba.',
+	'categorytree-no-pages'         => 'pa gen paj oubyen atik oubyen kategori pi ba',
+	'categorytree-not-found'        => 'Nou pa twouve kategori <i>$1</i>',
+	'categorytree-error'            => 'Pwoblèm lè nou tap chaje, ouvri done yo.',
+	'categorytree-retry'            => 'Souple, rete yon enstan, yon moman epi eseye ankò.',
+	'categorytree-show-list'        => 'Montre nan yon lis eleman, yonn anba lòt',
+	'categorytree-show-tree'        => 'Montre tankou yon pyebwa, fèy yo ak depann de yon branch',
+	'categorytree-too-many-subcats' => 'Kategori pi piti yo twòp, nou pa kapab afiche yo tankou pyebwa.',
+);
+
 /** Hungarian (Magyar)
  * @author KossuthRad
  * @author Dani
@@ -1949,7 +1981,6 @@ $messages['nso'] = array(
 
 /** Occitan (Occitan)
  * @author Cedric31
- * @author Siebrand
  */
 $messages['oc'] = array(
 	'categorytree'                  => 'Arborescéncia de las categorias',
@@ -1957,9 +1988,9 @@ $messages['oc'] = array(
 	'categorytree-legend'           => 'Visionar l’arborescéncia de la categoria',
 	'categorytree-desc'             => "Gadget basat sus AJAX per afichar l'[[Special:CategoryTree|estructura de la categoria]] d’un wiki",
 	'categorytree-header'           => "Picatz un nom de categoria per veire son contengut en estructura arborescenta. Notatz qu'aquò utiliza de foncionalitats JavaScript avançadas conegudas jol nom d'AJAX. S'avètz un navigaire fòrt vièlh o qu'avètz pas activat lo JavaScript, aquò foncionarà pas.",
-	'categorytree-category'         => 'Categoria:',
+	'categorytree-category'         => 'Categoria :',
 	'categorytree-go'               => "Mostrar l'arborescéncia",
-	'categorytree-parents'          => 'Subre-categoria(s)',
+	'categorytree-parents'          => 'Subrecategoria(s)',
 	'categorytree-mode-categories'  => 'pas que las categorias',
 	'categorytree-mode-pages'       => 'paginas sens los imatges',
 	'categorytree-mode-all'         => 'totas las paginas',
@@ -2763,13 +2794,14 @@ Nếu bạn đang sử dụng trình duyệt rất cũ, hoặc đã tắt JavaSc
 );
 
 /** Volapük (Volapük)
- * @author Smeira
  * @author Malafaya
+ * @author Smeira
  * @author Siebrand
  */
 $messages['vo'] = array(
 	'categorytree'                  => 'KladaBim',
 	'categorytree-tab'              => 'Bim',
+	'categorytree-legend'           => 'Jonolöd kladabimi',
 	'categorytree-header'           => 'Penolös kladanemi ad logön ninädi klada as bimabinod. Küpälolös, das atos flagon dili ela JavaScript labü nem: AJAX. No oplöpon if labol bevüresodanafömi vönädik, ud if enemogüköl eli JavaScript.',
 	'categorytree-category'         => 'Klad:',
 	'categorytree-go'               => 'Jonolöd Bimi',
