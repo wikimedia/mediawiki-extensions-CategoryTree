@@ -235,6 +235,34 @@ $messages['bcl'] = array(
 	'categorytree-show-list'        => 'Ipahiling an lista',
 );
 
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author EugeneZelenko
+ */
+$messages['be-tarask'] = array(
+	'categorytree'                  => 'Дрэва катэгорый',
+	'categorytree-tab'              => 'Дрэва',
+	'categorytree-desc'             => 'Заснаваная на AJAX прылада для паказу [[Special:CategoryTree|структуры катэгорый]] {{GRAMMAR:родны|{{SITENAME}}}}',
+	'categorytree-category'         => 'Катэгорыя:',
+	'categorytree-go'               => 'Паказаць дрэва',
+	'categorytree-parents'          => 'Продкі',
+	'categorytree-mode-categories'  => 'толькі катэгорыі',
+	'categorytree-mode-pages'       => 'старонкі за выключэньнем файлаў',
+	'categorytree-mode-all'         => 'усе старонкі',
+	'categorytree-collapse'         => 'згарнуць',
+	'categorytree-expand'           => 'разгарнуць',
+	'categorytree-load'             => 'загрузіць',
+	'categorytree-loading'          => 'загрузка…',
+	'categorytree-nothing-found'    => 'нічога ня знойдзена',
+	'categorytree-no-subcategories' => 'няма падкатэгорый',
+	'categorytree-no-pages'         => 'няма старонак ці падкатэгорый',
+	'categorytree-not-found'        => 'Катэгорыя <i>$1</i> ня знойдзена',
+	'categorytree-error'            => 'Праблема загрузкі зьвестак.',
+	'categorytree-retry'            => 'Калі ласка, пачакайце і паспрабуйце яшчэ раз.',
+	'categorytree-show-list'        => 'Паказаць сьпіс',
+	'categorytree-show-tree'        => 'Паказаць дрэва',
+	'categorytree-too-many-subcats' => 'Немагчыма паказаць падкатэгорыі ў выглядзе дрэва, бо іх занадта шмат.',
+);
+
 /** Bulgarian (Български)
  * @author DCLXVI
  * @author Spiritia
@@ -1364,6 +1392,10 @@ $messages['jv'] = array(
 	'categorytree'                  => 'Uwit kategori',
 	'categorytree-tab'              => 'Uwit',
 	'categorytree-legend'           => 'Tuduhna uwit kategori',
+	'categorytree-desc'             => 'Gadget adhedhasar AJAX kanggo nuduhaké [[Special:CategoryTree|struktur kategori]] sawijining wiki',
+	'categorytree-header'           => 'Lebokna sawijining jeneng kategori kanggo deleng isiné minangka sawijining wujud uwit.
+Mangga diwigatèkaké yèn fitur iki merlokaké fungsionalitas JavaScript canggih sing diarani AJAX.
+Menawa panjenengan panjlajah wèbé kalebu vèrsi lawa, utawa fitur JavaScript dipatèni, fungsi iki ora bisa dilakokaké.',
 	'categorytree-category'         => 'Kategori:',
 	'categorytree-go'               => 'Tuduhna uwit',
 	'categorytree-parents'          => 'Kategori sing luwih dhuwur',
@@ -1508,10 +1540,12 @@ $messages['km'] = array(
 /** Korean (한국어)
  * @author Klutzy
  * @author Siebrand
+ * @author ToePeu
  */
 $messages['ko'] = array(
 	'categorytree'                  => '분류 트리',
 	'categorytree-tab'              => '트리',
+	'categorytree-legend'           => '분류 트리 보기',
 	'categorytree-desc'             => '위키의 [[Special:CategoryTree|분류 구조]]를 볼 수 있는 AJAX 도구',
 	'categorytree-header'           => '트리 구조로 볼 분류 이름을 입력해주세요.
 이 기능을 사용하려면 웹 브라우저에서 AJAX를 지원해야 합니다.
@@ -2445,6 +2479,8 @@ $messages['st'] = array(
 $messages['stq'] = array(
 	'categorytree'                  => 'Kategorieboom',
 	'categorytree-tab'              => 'Boom',
+	'categorytree-legend'           => 'Wies Kategorienboom',
+	'categorytree-desc'             => 'AJAX-basierd Gadget uum ju [[Special:CategoryTree|Kategorien-Struktuur]] fon n Wiki antouwiesen',
 	'categorytree-header'           => 'Wiest foar ju anroate Kategorie do Unnerkategorien in n Boomstruktuur.
 Disse Siede bruukt bestimde JavaScript-Funktione (AJAX).
 In gjucht oolde Browsere, of wan Javascript ouschalted is, funktioniert disse Siede eventuell nit.',
