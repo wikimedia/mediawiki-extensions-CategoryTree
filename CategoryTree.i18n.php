@@ -1417,6 +1417,16 @@ Menawa panjenengan panjlajah wèbé kalebu vèrsi lawa, utawa fitur JavaScript d
 	'categorytree-too-many-subcats' => 'Ora bisa nuduhaké subkategori minangka uwit, amerga cacahé kakèhan.',
 );
 
+/** Georgian (ქართული)
+ * @author Malafaya
+ */
+$messages['ka'] = array(
+	'categorytree-tab'      => 'ხე',
+	'categorytree-category' => 'კატეგორია:',
+	'categorytree-go'       => 'ხის ჩვენება',
+	'categorytree-mode-all' => 'ყველა გვერდი',
+);
+
 /** Kara-Kalpak (Qaraqalpaqsha)
  * @author AlefZet
  */
