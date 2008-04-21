@@ -236,6 +236,7 @@ $messages['bcl'] = array(
 );
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author Red Winged Duck
  * @author EugeneZelenko
  */
 $messages['be-tarask'] = array(
@@ -1873,6 +1874,7 @@ $messages['nan'] = array(
 $messages['nds'] = array(
 	'categorytree'                  => 'Kategorie-Boom',
 	'categorytree-tab'              => 'Boom',
+	'categorytree-legend'           => 'Kategorieboom wiesen',
 	'categorytree-header'           => 'Kategorienaam ingeven, den Inholt as Boomstruktur to sehn. Schasst di bewusst wesen, dat Javascript un de AJAX-Funkschoon dor för bruukt warrt. Wenn dien Nettkieker to oolt is oder du keen Javascript hest, denn warrt dat nix.',
 	'categorytree-category'         => 'Kategorie:',
 	'categorytree-go'               => 'Boom wiesen',
@@ -2051,6 +2053,22 @@ $messages['oc'] = array(
 	'categorytree-show-list'        => 'Afichar en lista',
 	'categorytree-show-tree'        => 'Afichar en arborescéncia',
 	'categorytree-too-many-subcats' => "Impossible d'afichar las soscategorias jos forma d'arbre, n'i a tròp.",
+);
+
+/** Ossetic (Иронау)
+ * @author Amikeco
+ */
+$messages['os'] = array(
+	'categorytree-tab'              => 'Бæлас',
+	'categorytree-category'         => 'Категори:',
+	'categorytree-go'               => 'Равдис бæлас',
+	'categorytree-mode-all'         => 'æппæт фæрстæ',
+	'categorytree-nothing-found'    => 'Ацы категорийы мидæг дæлкатегоритæ нæ разынд',
+	'categorytree-no-pages'         => 'фæрстæ æмæ дæлкатегоритæ нæй',
+	'categorytree-not-found'        => 'Категори «$1» не ссардæуы.',
+	'categorytree-show-list'        => 'Номхыгъды хуызы равдис',
+	'categorytree-show-tree'        => 'Бæласы хуызы равдис',
+	'categorytree-too-many-subcats' => 'Дæлкатегоритæ бæласы хуызы равдисæн нæй — æгæр бирæ сты.',
 );
 
 /** Pangasinan (Pangasinan)
