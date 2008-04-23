@@ -2722,10 +2722,12 @@ $messages['to'] = array(
 
 /** Turkish (Türkçe)
  * @author SPQRobin
+ * @author Mach
  */
 $messages['tr'] = array(
 	'categorytree'                  => 'Kategori hiyerarşisi',
 	'categorytree-tab'              => 'Hiyerarşik',
+	'categorytree-legend'           => 'Kategori ağacını göster',
 	'categorytree-header'           => 'Kategori ismini girip, içeriğini hiyerarşik şekilde görebilirsiniz. Bu özellik AJAX adıyla bilinen gelişmiş JavaScript ile çalışabilir. Eğer tarayıcınız eski ise ya da JavaScript kullanımı kapalı ise, çalışmaz.',
 	'categorytree-category'         => 'Kategori',
 	'categorytree-go'               => 'Yükle',
