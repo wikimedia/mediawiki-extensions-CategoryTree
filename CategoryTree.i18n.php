@@ -2309,6 +2309,7 @@ $messages['ru'] = array(
 $messages['sah'] = array(
 	'categorytree'                  => 'Категориялар мас курдук',
 	'categorytree-tab'              => 'Мас курдук',
+	'categorytree-legend'           => 'Категориялар тутулларын көрдөр',
 	'categorytree-desc'             => 'Биики [[Special:CategoryTree|категорияларын тутулун]] көрдөрөр AJAX-компонент',
 	'categorytree-header'           => 'Категория аатын киллэрдэххинэ мас курдук көстүөҕэ.
 Бу кыаҕы браузерыҥ AJAX-ы туһанар эрэ буоллаҕына туттар кыахтааххын.
