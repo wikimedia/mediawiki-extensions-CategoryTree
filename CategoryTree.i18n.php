@@ -894,32 +894,36 @@ Se tu âs un sgarfadôr a vonde vieri, o tu âs disativât JavaScript, cheste pa
 /** Irish (Gaeilge)
  * @author Alma
  * @author Xosé
+ * @author Moilleadóir
  * @author Spacebirdy
  */
 $messages['ga'] = array(
 	'categorytree'                  => 'Crann na gCatagóirí',
-	'categorytree-tab'              => 'Árbore',
-	'categorytree-header'           => 'Introduza o nome dunha categoría para ver o contido da estrutura da árbore. Dease conta de que se require funcionalidade de JavaScript avanzada coñecida como AJAX.
-Se vostede ten un navegador moi vello, ou deshabilitado o JavaScript, non vai funcionar.',
-	'categorytree-category'         => 'Categoría',
-	'categorytree-go'               => 'Amosar a Arbore',
-	'categorytree-parents'          => 'Nodos superiores',
+	'categorytree-tab'              => 'Crann',
+	'categorytree-legend'           => 'Taispeáin crann na gcatagóirí',
+	'categorytree-desc'             => 'Giuirléid AJAX a thaispeánann an [[Special:CategoryTree|struchtúr catagóirí]] i vicí',
+	'categorytree-header'           => 'Cuir isteach ainm catagóra chun a hinneachar a thaispeáint i struchtúr crainn.
+Tabhair faoi deara gur riachtanach ardfheidhmiúlacht JavaScript (AJAX) a bheith agat.
+Má tá do bhrabhsálaí róshean, nó má dhíchumasaigh tú JavaScript, ní oibreoidh sé.',
+	'categorytree-category'         => 'Catagóir',
+	'categorytree-go'               => 'Taispeán an Crann',
+	'categorytree-parents'          => 'Máthairnóid',
 	'categorytree-mode-categories'  => 'catagóirí amháin',
-	'categorytree-mode-pages'       => 'páxinas agás imaxes',
-	'categorytree-mode-all'         => 'gach leathanaigh',
-	'categorytree-collapse'         => 'contraer',
-	'categorytree-expand'           => 'ampliar',
-	'categorytree-load'             => 'cargar',
-	'categorytree-loading'          => 'lódáil',
-	'categorytree-nothing-found'    => 'nada atopado',
-	'categorytree-no-subcategories' => 'níl aon fo-chatagóirí',
-	'categorytree-no-pages'         => 'níl aon leathanaigh ná fo-chatagóirí',
-	'categorytree-not-found'        => 'Categoría <i>$1</i> non atopada',
-	'categorytree-error'            => 'Problema da carga de datos.',
-	'categorytree-retry'            => 'Por favor, agarde un momento e ténteo de novo.',
-	'categorytree-show-list'        => 'Amosar coma unha listaxe',
-	'categorytree-show-tree'        => 'Amosar coma unha árbore',
-	'categorytree-too-many-subcats' => 'Non se poden amosar as subcategorías coma unha árbore, hai demasiadas.',
+	'categorytree-mode-pages'       => 'leathanaigh seachas íomhánna',
+	'categorytree-mode-all'         => 'gach leathanach',
+	'categorytree-collapse'         => 'dún',
+	'categorytree-expand'           => 'oscail',
+	'categorytree-load'             => 'lódáil',
+	'categorytree-loading'          => 'ag lódáil…',
+	'categorytree-nothing-found'    => 'Ní bhfuarthas dada',
+	'categorytree-no-subcategories' => 'gan fho-chatagóir',
+	'categorytree-no-pages'         => 'gan leathanach ná fo-chatagóir',
+	'categorytree-not-found'        => 'Ní bhfuarthas Catagóir <i>$1</i>',
+	'categorytree-error'            => 'Earráid agus sonraí dá lódáil.',
+	'categorytree-retry'            => 'Fan nóiméad, le do thoil, roimh triail eile a bhaint as.',
+	'categorytree-show-list'        => 'Taispeáin mar liosta',
+	'categorytree-show-tree'        => 'Taispeáin mar chrann',
+	'categorytree-too-many-subcats' => 'Ní féidir na fo-chatagóirí a thaispeáint mar chrann, tá an iomarca díobh ann.',
 );
 
 /** Galician (Galego)
@@ -1777,7 +1781,7 @@ $messages['ml'] = array(
 	'categorytree-collapse'         => 'അടയ്ക്കുക',
 	'categorytree-expand'           => 'വികസിപ്പിക്കുക',
 	'categorytree-load'             => 'ലോഡ് ചെയ്യുക',
-	'categorytree-loading'          => 'ലോഡ് ചെയ്തുകൊണ്ടിരിക്കുന്നു...',
+	'categorytree-loading'          => 'ശേഖരിച്ചുകൊണ്ടിരിക്കുന്നു…',
 	'categorytree-nothing-found'    => 'ഒന്നും കണ്ടെത്തിയില്ല',
 	'categorytree-no-subcategories' => 'ഉപവിഭാഗങ്ങളില്ല',
 	'categorytree-no-pages'         => 'താളുകളോ ഉപവിഭാഗങ്ങളോ ഇല്ല',
