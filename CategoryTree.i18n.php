@@ -163,6 +163,7 @@ $messages['ar'] = array(
 $messages['ast'] = array(
 	'categorytree'                  => 'Árbole de categoríes',
 	'categorytree-tab'              => 'Árbole',
+	'categorytree-legend'           => "Amosar l'árbole de categoríes",
 	'categorytree-desc'             => "Accesoriu basáu n'AJAX qu'amuesa la [[Special:CategoryTree|estructura de categoríes]] d'una wiki",
 	'categorytree-header'           => "Escribi un nome de categoría pa ver el so conteníu estructuráu en forma
 d'árbole. Fíxate en qu'esto requier la erbía AJAX de JavaScript. Si tienes
@@ -1213,6 +1214,15 @@ $messages['hy'] = array(
 	'categorytree-too-many-subcats' => 'Հնարավոր չէ ցուցադրել ենթակատեգորիաները ծառի տեսքով՝ չափից շատ են։',
 );
 
+/** Interlingua (Interlingua)
+ * @author Malafaya
+ */
+$messages['ia'] = array(
+	'categorytree-tab'      => 'Arbore',
+	'categorytree-category' => 'Categoria:',
+	'categorytree-mode-all' => 'tote le paginas',
+);
+
 /** Indonesian (Bahasa Indonesia)
  * @author IvanLanin
  */
@@ -1260,6 +1270,7 @@ $messages['io'] = array(
 	'categorytree-tab'              => 'Arboro',
 	'categorytree-category'         => 'Kategorio:',
 	'categorytree-go'               => 'Montrar Arboro',
+	'categorytree-mode-categories'  => 'nur kategorii',
 	'categorytree-mode-all'         => 'omna pagini',
 	'categorytree-no-subcategories' => 'nula subkategorii',
 	'categorytree-no-pages'         => 'nula pagini o subkategorii',
