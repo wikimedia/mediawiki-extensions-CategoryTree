@@ -1597,6 +1597,13 @@ $messages['ko'] = array(
 	'categorytree-too-many-subcats' => '하위 분류가 너무 많아 트리를 만들 수 없습니다.',
 );
 
+/** Kinaray-a (Kinaray-a)
+ * @author Jose77
+ */
+$messages['krj'] = array(
+	'categorytree-category' => 'Kategorya:',
+);
+
 /** Kurdish (Kurdî / كوردی) */
 $messages['ku-latn'] = array(
 	'categorytree-tab'              => 'Dar',
