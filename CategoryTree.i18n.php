@@ -1687,6 +1687,14 @@ $messages['lez'] = array(
 	'categorytree-tab' => 'Тар',
 );
 
+/** Lingua Franca Nova (Lingua Franca Nova)
+ * @author Malafaya
+ */
+$messages['lfn'] = array(
+	'categorytree-tab'      => 'Arbor',
+	'categorytree-category' => 'Categoria:',
+);
+
 /** Limburgish (Limburgs)
  * @author Ooswesthoesbes
  * @author Siebrand
