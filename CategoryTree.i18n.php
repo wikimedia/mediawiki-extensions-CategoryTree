@@ -1788,6 +1788,24 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
 	'categorytree-too-many-subcats' => 'Negalima rodyti subkategorijų kaip medį, nes jų yra per daug.',
 );
 
+/** Latvian (Latviešu)
+ * @author Yyy
+ */
+$messages['lv'] = array(
+	'categorytree'                 => 'KategorijuKoks',
+	'categorytree-legend'          => 'Rādīt kategoriju koku',
+	'categorytree-header'          => 'Ievadi kategorijas nosaukumu lai apskatītos tās saturu kā koka struktūru. 
+Tam ir nepieciešama JavaScript (AJAX) funkcionalitāte. 
+Ja tev ir veca interneta pārlūkprogramma, vai arī JavaScript ir atslēgts, šitas te nedarbosies.',
+	'categorytree-category'        => 'Kategorija:',
+	'categorytree-go'              => 'Parādīt koku',
+	'categorytree-mode-categories' => 'tikai kategorijas',
+	'categorytree-mode-pages'      => 'lapas (bez attēlu lapām)',
+	'categorytree-mode-all'        => 'visas lapas',
+	'categorytree-collapse'        => 'sakļaut',
+	'categorytree-expand'          => 'izplest',
+);
+
 /** Malayalam (മലയാളം)
  * @author Shijualex
  */
