@@ -937,6 +937,7 @@ $messages['gl'] = array(
 	'categorytree'                  => 'Árbore de categorías',
 	'categorytree-tab'              => 'Árbore',
 	'categorytree-legend'           => 'Amosar a árbore de categorías',
+	'categorytree-desc'             => 'Trebello baseado no AJAX para amosar a [[Special:CategoryTree|estrutura das categorías]] dun wiki',
 	'categorytree-header'           => 'Introduza o nome dunha categoría para ver o contido da estrutura da árbore.
 Déase conta de que se require a funcionalidade avanzada do JavaScript, coñecida como AJAX.
 Se ten un navegador moi vello, ou deshabilitado para o JavaScript, non vai funcionar.',
@@ -1792,18 +1793,27 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
  * @author Yyy
  */
 $messages['lv'] = array(
-	'categorytree'                 => 'KategorijuKoks',
-	'categorytree-legend'          => 'Rādīt kategoriju koku',
-	'categorytree-header'          => 'Ievadi kategorijas nosaukumu lai apskatītos tās saturu kā koka struktūru. 
+	'categorytree'                  => 'KategorijuKoks',
+	'categorytree-tab'              => 'Koks',
+	'categorytree-legend'           => 'Rādīt kategoriju koku',
+	'categorytree-header'           => 'Ievadi kategorijas nosaukumu lai apskatītos tās saturu kā koka struktūru. 
 Tam ir nepieciešama JavaScript (AJAX) funkcionalitāte. 
 Ja tev ir veca interneta pārlūkprogramma, vai arī JavaScript ir atslēgts, šitas te nedarbosies.',
-	'categorytree-category'        => 'Kategorija:',
-	'categorytree-go'              => 'Parādīt koku',
-	'categorytree-mode-categories' => 'tikai kategorijas',
-	'categorytree-mode-pages'      => 'lapas (bez attēlu lapām)',
-	'categorytree-mode-all'        => 'visas lapas',
-	'categorytree-collapse'        => 'sakļaut',
-	'categorytree-expand'          => 'izplest',
+	'categorytree-category'         => 'Kategorija:',
+	'categorytree-go'               => 'Parādīt koku',
+	'categorytree-mode-categories'  => 'tikai kategorijas',
+	'categorytree-mode-pages'       => 'lapas (bez attēlu lapām)',
+	'categorytree-mode-all'         => 'visas lapas',
+	'categorytree-collapse'         => 'sakļaut',
+	'categorytree-expand'           => 'izplest',
+	'categorytree-loading'          => 'ielādējas...',
+	'categorytree-nothing-found'    => 'neko neatrada',
+	'categorytree-no-subcategories' => 'nav apakškategoriju',
+	'categorytree-no-pages'         => 'nav ne lapu, ne apakškategoriju',
+	'categorytree-not-found'        => 'Kategorija <i>$1</i> netika atrasta',
+	'categorytree-show-list'        => 'Rādīt kā sarakstu',
+	'categorytree-show-tree'        => 'Rādīt kā koku',
+	'categorytree-too-many-subcats' => 'Nevar parādīt apakškategorijas kā koku, jo to ir pārāk daudz',
 );
 
 /** Malayalam (മലയാളം)
