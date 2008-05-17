@@ -635,7 +635,7 @@ $messages['eo'] = array(
 	'categorytree-mode-all'         => 'ĉiuj pagoj',
 	'categorytree-collapse'         => 'kunfaldu',
 	'categorytree-expand'           => 'etendu',
-	'categorytree-load'             => 'elsutu',
+	'categorytree-load'             => 'ŝarĝi',
 	'categorytree-loading'          => 'elsutante',
 	'categorytree-nothing-found'    => 'nenio trovita',
 	'categorytree-no-subcategories' => 'neniu subkategorio',
@@ -1540,11 +1540,13 @@ Eger şolğışıñız öte eski, nemese JavaScript öşirilgen bolsa, bul iske 
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
+ * @author គីមស៊្រុន
  * @author Siebrand
  */
 $messages['km'] = array(
 	'categorytree'                  => 'មែកធាងនៃចំណាត់ថ្នាក់ក្រុម',
 	'categorytree-tab'              => 'មែកធាង',
+	'categorytree-legend'           => 'បង្ហាញមែកធាងចំនាត់ថ្នាក់ក្រុម',
 	'categorytree-category'         => 'ចំណាត់ថ្នាក់ក្រុម:',
 	'categorytree-go'               => 'បង្ហាញដើមឈើ',
 	'categorytree-parents'          => 'ចំណាត់ថ្នាក់ក្រុមកំរិតខ្ពស់',
