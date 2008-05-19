@@ -1538,8 +1538,8 @@ Eger şolğışıñız öte eski, nemese JavaScript öşirilgen bolsa, bul iske 
 );
 
 /** Khmer (ភាសាខ្មែរ)
- * @author Chhorran
  * @author Lovekhmer
+ * @author Chhorran
  * @author គីមស៊្រុន
  * @author Siebrand
  */
@@ -1551,16 +1551,16 @@ $messages['km'] = array(
 	'categorytree-go'               => 'បង្ហាញដើមឈើ',
 	'categorytree-parents'          => 'ចំណាត់ថ្នាក់ក្រុមកំរិតខ្ពស់',
 	'categorytree-mode-categories'  => 'សំរាប់តែចំណាត់ថ្នាក់ក្រុមប៉ុណ្ណោះ',
-	'categorytree-mode-pages'       => 'ទំព័រ លើកលែងតែរូបភាព',
+	'categorytree-mode-pages'       => 'ទំព័រលើកលែងតែរូបភាព',
 	'categorytree-mode-all'         => 'គ្រប់ទំព័រ',
 	'categorytree-collapse'         => 'បង្រួម',
 	'categorytree-expand'           => 'ពន្លាត',
 	'categorytree-load'             => 'ផ្ទុក',
 	'categorytree-loading'          => 'កំពុងផ្ទុក',
 	'categorytree-nothing-found'    => 'រកមិនឃើញអ្វី',
-	'categorytree-no-subcategories' => 'គ្មានចំណាត់ថ្នាក់ក្រុមរង',
-	'categorytree-no-pages'         => 'គ្មានទំព័រ ឬ ចំណាត់ក្រុមរង',
-	'categorytree-not-found'        => 'រកមិនឃើញ ចំណាត់ក្រុម <i>$1</i>',
+	'categorytree-no-subcategories' => 'មិនមានចំនាត់ថ្នាក់ក្រុមរងទេ',
+	'categorytree-no-pages'         => 'មិនមានទំព័រឬចំនាត់ថ្នាក់ក្រុមរងទេ',
+	'categorytree-not-found'        => 'រកមិនឃើញចំនាត់ថ្នាក់ក្រុម <i>$1</i> ទេ',
 	'categorytree-error'            => 'មានបញ្ហា ផ្ទុកទិន្នន័យ។',
 	'categorytree-retry'            => 'ចាំមួយភ្លែត សឹម ព្យាយាមម្តងទៀត ។',
 	'categorytree-show-list'        => 'បង្ហាញជាបញ្ជី',
