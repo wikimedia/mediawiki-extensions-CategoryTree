@@ -47,13 +47,15 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 );
 
 /** Afrikaans (Afrikaans)
+ * @author Arnobarnard
  * @author SPQRobin
  */
 $messages['af'] = array(
 	'categorytree'                  => 'Kategorieboom',
 	'categorytree-tab'              => 'Boom',
+	'categorytree-legend'           => 'Wys kategorieboom',
 	'categorytree-header'           => "Tik 'n kategorienaam om sy inhoud as 'n boomstruktuur te sien. Hierdie benodig gevorderde JavaScript-funksionaliteit bekend as AJAX. Met 'n baie ou blaaier, of as JavaScript gedeaktiveer is, sal dit nie werk nie.",
-	'categorytree-category'         => 'Kategorie',
+	'categorytree-category'         => 'Kategorie:',
 	'categorytree-go'               => 'Wys boom',
 	'categorytree-parents'          => 'ouers',
 	'categorytree-mode-categories'  => 'slegs kategorieë',
