@@ -481,6 +481,38 @@ $messages['cs'] = array(
 	'categorytree-too-many-subcats' => 'Podkategorie není možné zobrazit ve stromové struktuře, protože je jich příliš mnoho.',
 );
 
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'categorytree'                  => 'CoedenGategori',
+	'categorytree-tab'              => 'Coeden',
+	'categorytree-legend'           => 'Dangos y goeden gategori',
+	'categorytree-desc'             => "Teclyn AJAX yn arddangos [[Special:CAtegoryTree|adeiledd categorïau]]'r wici",
+	'categorytree-header'           => "Teipiwch enw categori yn y blwch er mwyn gweld ei gynnwys ar lun coeden. 
+Sylwer bod yn rhaid defnyddio offer uwch Sgript Java o'r enw AJAX er mwyn gwneud hyn. 
+Ni lwydda'r gofyniad os yw'ch porwr yn hen iawn neu os nad yw Sgript Java wedi ei alluogi.",
+	'categorytree-category'         => 'Categori:',
+	'categorytree-go'               => 'Dangos y Goeden',
+	'categorytree-parents'          => 'Rhieni',
+	'categorytree-mode-categories'  => 'categorïau yn unig',
+	'categorytree-mode-pages'       => 'tudalennau ag eithrio delweddau',
+	'categorytree-mode-all'         => 'pob tudalen',
+	'categorytree-collapse'         => 'crebachu',
+	'categorytree-expand'           => 'ehangu',
+	'categorytree-load'             => 'llwytho',
+	'categorytree-loading'          => "wrthi'n llwytho...",
+	'categorytree-nothing-found'    => "dim i'w gael",
+	'categorytree-no-subcategories' => 'dim is-gategorïau',
+	'categorytree-no-pages'         => 'dim tudalennau nag is-gategorïau',
+	'categorytree-not-found'        => "Heb ddod o hyd i'r categori <i>$1</i>",
+	'categorytree-error'            => "Cafwyd problem wrth lwytho'r data.",
+	'categorytree-retry'            => 'Arhoswch ennyd, yna ceisiwch eto.',
+	'categorytree-show-list'        => 'Dangos ar lun rhestr',
+	'categorytree-show-tree'        => 'Dangos ar lun coeden',
+	'categorytree-too-many-subcats' => 'Yn methu dangos yr is-gategorïau ar lun coeden gan bod gormod ohonynt.',
+);
+
 /** Danish (Dansk)
  * @author Barklund
  * @author Morten
