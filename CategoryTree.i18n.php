@@ -1262,11 +1262,13 @@ $messages['ia'] = array(
 
 /** Indonesian (Bahasa Indonesia)
  * @author IvanLanin
+ * @author Rex
  */
 $messages['id'] = array(
 	'categorytree'                  => 'Pohon kategori',
-	'categorytree-desc'             => 'Gadget berbasis AJAX untuk menampilkan [[Special:CategoryTree|struktur kategori]] suatu wiki',
 	'categorytree-tab'              => 'Pohon',
+	'categorytree-legend'           => 'Tampilkan pohon kategori',
+	'categorytree-desc'             => 'Gadget berbasis AJAX untuk menampilkan [[Special:CategoryTree|struktur kategori]] suatu wiki',
 	'categorytree-header'           => 'Masukkan suatu nama kategori untuk melihat isinya dalam bentuk pohon.
 Harap diperhatikan bahwa fitur ini memerlukan dukungan JavaScript tingkat lanjut yang dikenal sebagai AJAX.
 Jika Anda menggunakan penjelajah web lama, atau mematikan fungsi JavaScript Anda, fitur ini tidak dapat dijalankan.',
@@ -1286,7 +1288,6 @@ Jika Anda menggunakan penjelajah web lama, atau mematikan fungsi JavaScript Anda
 	'categorytree-not-found'        => 'Kategori <i>$1</i> tidak ditemukan',
 	'categorytree-error'            => 'Problem memuat data.',
 	'categorytree-retry'            => 'Tunggulah sesaat dan coba lagi.',
-
 	'categorytree-show-list'        => 'Tampilkan daftar',
 	'categorytree-show-tree'        => 'Tampilkan pohon',
 	'categorytree-too-many-subcats' => 'Tidak dapat menampilkan subkategori dalam bentuk pohon karena jumlahnya terlalu banyak.',
@@ -2550,6 +2551,7 @@ $messages['sq'] = array(
 $messages['sr-ec'] = array(
 	'categorytree'                  => 'Дрво категорија',
 	'categorytree-tab'              => 'Дрво',
+	'categorytree-legend'           => 'Прикажи дрво категорија',
 	'categorytree-header'           => 'Унесите име категорији чији садржај желите да видите као дрво.
 Ово захтева напредну ЈаваСкрип функцију познату као AJAX.
 Уколико имате веома стари браузер, или се искључили ЈаваСкрипт, дрво категорија неће радити.',
