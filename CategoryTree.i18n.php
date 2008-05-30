@@ -3016,6 +3016,7 @@ $messages['wuu'] = array(
 $messages['yue'] = array(
 	'categorytree'                  => '分類樹',
 	'categorytree-tab'              => '樹',
+	'categorytree-legend'           => '顯示分類樹',
 	'categorytree-desc'             => '一個以AJAX為主嘅小工具去顯示響一個wiki嘅[[Special:CategoryTree|分類架構]]',
 	'categorytree-header'           => '輸入分類名去睇佢嘅樹形結構內容。
 請留意呢個係需要進階嘅JavaScript功能叫做AJAX。
@@ -3047,6 +3048,7 @@ $messages['yue'] = array(
 $messages['zh-hans'] = array(
 	'categorytree'                  => '分类树',
 	'categorytree-tab'              => '树形目录',
+	'categorytree-legend'           => '显示分类树',
 	'categorytree-desc'             => '以AJAX技术显示[[Special:CategoryTree|分类结构]]',
 	'categorytree-header'           => '在此可以查询以分类的树形结构。
 注意： 本特殊页面使用AJAX技术。
