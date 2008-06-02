@@ -670,7 +670,7 @@ $messages['eo'] = array(
 	'categorytree-collapse'         => 'kunfaldu',
 	'categorytree-expand'           => 'etendu',
 	'categorytree-load'             => 'alŝuti',
-	'categorytree-loading'          => 'elsutante',
+	'categorytree-loading'          => 'ŝarĝante',
 	'categorytree-nothing-found'    => 'nenio trovita',
 	'categorytree-no-subcategories' => 'neniu subkategorio',
 	'categorytree-no-pages'         => 'neniu pago o subkategorio',
@@ -1642,6 +1642,13 @@ $messages['ko'] = array(
  */
 $messages['krj'] = array(
 	'categorytree-category' => 'Kategorya:',
+);
+
+/** Ripoarisch (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'categorytree-header' => "'''Opjepaßß:'''&nbsp;<small>Dat hee brurr_en JavaSkripp_Aadëijl, dä AJAX häijß. Wänn_De enne besöndoß aale Brauser häß, oddo wänn_De JavaSkripp affjeschalldt häß, dann dëijd_et nit.</small> Jivv_enne Saachjroppe_Name enn, dann krėßß_De fun dä Saachjropp dä iere Ennhalld_alls_enne Boum aanjezëijsch.",
 );
 
 /** Kurdish (Kurdî / كوردی) */
@@ -2635,12 +2642,16 @@ In gjucht oolde Browsere, of wan Javascript ouschalted is, funktioniert disse Si
 /** Sundanese (Basa Sunda)
  * @author Kandar
  * @author Siebrand
+ * @author Irwangatot
  */
 $messages['su'] = array(
 	'categorytree'                  => 'TangkalKategori',
 	'categorytree-tab'              => 'Tangkal',
 	'categorytree-legend'           => 'Témbongkeun tangkal kategori',
 	'categorytree-desc'             => 'Gajet AJAX pikeun némbongkeun [[Special:CategoryTree|wangun kategori]] dina hiji wiki',
+	'categorytree-header'           => 'Asupkeun hiji ngaran kategori pikeun nempo eusina dina wangun tangkal.
+Perhatikeun yén fitur ieu merlukeun pangrojong Javascript tingkat tuluy anu dipikawanoh minangka AJAX.
+Lamun Anjeun ngagunakeun panyungsi nu lila, atawa maehan fungsi Javascript Anjeun, fitur ieu henteu bisa dijalankeun.',
 	'categorytree-category'         => 'Kategori:',
 	'categorytree-go'               => 'Témbongkeun Tangkal',
 	'categorytree-parents'          => 'Luluhur',
@@ -2821,6 +2832,7 @@ $messages['to'] = array(
 
 /** Turkish (Türkçe)
  * @author SPQRobin
+ * @author Runningfridgesrule
  * @author Mach
  */
 $messages['tr'] = array(
@@ -2842,6 +2854,7 @@ $messages['tr'] = array(
 	'categorytree-no-subcategories' => 'alt kategori yok.',
 	'categorytree-no-pages'         => 'alt kategori veya madde yok.',
 	'categorytree-not-found'        => '<i>"$1"</i> isimli kategori bulunamadı',
+	'categorytree-retry'            => 'Lütfen kısa süre için bekleyin, sonra bir kere daha deneyin.',
 	'categorytree-show-list'        => 'Liste olarak göster',
 	'categorytree-show-tree'        => 'Hiyerarşik olarak göster',
 	'categorytree-too-many-subcats' => 'Çok fazla nesne olduğundan, hiyerarşik olarak gösterilemiyor.',
