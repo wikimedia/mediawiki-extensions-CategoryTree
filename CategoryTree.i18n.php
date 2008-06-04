@@ -913,6 +913,7 @@ $messages['fur'] = array(
 Cheste funzion e à bisugne di funzions avanzadis JavaScript, cognossudis come AJAX.
 Se tu âs un sgarfadôr a vonde vieri, o tu âs disativât JavaScript, cheste pagjine no funzionarà.',
 	'categorytree-category'         => 'Categorie:',
+	'categorytree-go'               => 'Mostre arbul',
 	'categorytree-mode-categories'  => 'mostre dome lis categoriis',
 	'categorytree-mode-pages'       => 'dutis lis pagjinis, fûr che lis figuris',
 	'categorytree-mode-all'         => 'dutis lis pagjinis',
