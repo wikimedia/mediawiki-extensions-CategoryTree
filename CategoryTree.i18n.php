@@ -481,6 +481,12 @@ $messages['cs'] = array(
 	'categorytree-too-many-subcats' => 'Podkategorie není možné zobrazit ve stromové struktuře, protože je jich příliš mnoho.',
 );
 
+/** Church Slavic (Словѣньскъ) */
+$messages['cu'] = array(
+	'categorytree-category' => 'катигорі́ꙗ :',
+	'categorytree-mode-all' => 'вьсѩ́ страни́цѧ',
+);
+
 /** Welsh (Cymraeg)
  * @author Lloffiwr
  */
@@ -1649,6 +1655,7 @@ $messages['krj'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
+	'categorytree-tab'    => 'Boum',
 	'categorytree-header' => "'''Opjepaßß:'''&nbsp;<small>Dat hee brurr_en JavaSkripp_Aadëijl, dä AJAX häijß. Wänn_De enne besöndoß aale Brauser häß, oddo wänn_De JavaSkripp affjeschalldt häß, dann dëijd_et nit.</small> Jivv_enne Saachjroppe_Name enn, dann krėßß_De fun dä Saachjropp dä iere Ennhalld_alls_enne Boum aanjezëijsch.",
 );
 
@@ -1667,6 +1674,7 @@ $messages['ku-latn'] = array(
 $messages['la'] = array(
 	'categorytree'                  => 'Categoriarum arbor',
 	'categorytree-tab'              => 'Arbor',
+	'categorytree-legend'           => 'Categoriarum arborem monstrare',
 	'categorytree-header'           => 'Titulum categoriae inscribe ad categoriam hanc quasi arborem videndum. JavaScript et AJAX necesse sunt. Si navigatrum veterrimum habes vel si JavaScript potestatem non fecisti, hac pagina non uti poteris.',
 	'categorytree-category'         => 'Categoria',
 	'categorytree-go'               => 'Arborem monstrare',
@@ -1843,6 +1851,7 @@ $messages['lv'] = array(
 	'categorytree'                  => 'KategorijuKoks',
 	'categorytree-tab'              => 'Koks',
 	'categorytree-legend'           => 'Rādīt kategoriju koku',
+	'categorytree-desc'             => "AJAX bāzēts ''gadget'', kuru lieto lai attēlotu wiki [[Special:CategoryTree|kategoriju struktūru]]",
 	'categorytree-header'           => 'Ievadi kategorijas nosaukumu lai apskatītos tās saturu kā koka struktūru. 
 Tam ir nepieciešama JavaScript (AJAX) funkcionalitāte. 
 Ja tev ir veca interneta pārlūkprogramma, vai arī JavaScript ir atslēgts, šitas te nedarbosies.',
@@ -1858,6 +1867,8 @@ Ja tev ir veca interneta pārlūkprogramma, vai arī JavaScript ir atslēgts, š
 	'categorytree-no-subcategories' => 'nav apakškategoriju',
 	'categorytree-no-pages'         => 'nav ne lapu, ne apakškategoriju',
 	'categorytree-not-found'        => 'Kategorija <i>$1</i> netika atrasta',
+	'categorytree-error'            => 'Problēma ar datu ielādi.',
+	'categorytree-retry'            => 'Pagaidi mazliet un mēģini vēlreiz.',
 	'categorytree-show-list'        => 'Rādīt kā sarakstu',
 	'categorytree-show-tree'        => 'Rādīt kā koku',
 	'categorytree-too-many-subcats' => 'Nevar parādīt apakškategorijas kā koku, jo to ir pārāk daudz',
