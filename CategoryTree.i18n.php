@@ -481,7 +481,9 @@ $messages['cs'] = array(
 	'categorytree-too-many-subcats' => 'Podkategorie není možné zobrazit ve stromové struktuře, protože je jich příliš mnoho.',
 );
 
-/** Church Slavic (Словѣньскъ) */
+/** Church Slavic (Словѣньскъ)
+ * @author ОйЛ
+ */
 $messages['cu'] = array(
 	'categorytree-category' => 'катигорі́ꙗ :',
 	'categorytree-mode-all' => 'вьсѩ́ страни́цѧ',
