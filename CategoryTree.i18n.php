@@ -935,6 +935,31 @@ Se tu âs un sgarfadôr a vonde vieri, o tu âs disativât JavaScript, cheste pa
 	'categorytree-show-tree'        => 'Arbul',
 );
 
+/** Western Frisian (Frysk)
+ * @author Snakesteuben
+ */
+$messages['fy'] = array(
+	'categorytree'                  => 'Kategorybeam',
+	'categorytree-tab'              => 'Beam',
+	'categorytree-header'           => 'Folje in kategorynamme yn om de ynhâld yn in beamstruktuer te sjen. Tink derom dat dit spesjale [[:en:JavaScript|JavaScript]] funksjes brûkt bekend as [[:en:Ajax (programming)|AJAX]]. At jo in tige âlde blêdzjer hawwe of jo hawwe JavaScript net oan stean, dan wurket dit net.',
+	'categorytree-category'         => 'Kategory:',
+	'categorytree-go'               => 'Beam',
+	'categorytree-mode-categories'  => 'allinne kategoryen',
+	'categorytree-mode-pages'       => 'alle siden útsein ôfbylden',
+	'categorytree-mode-all'         => 'alle siden',
+	'categorytree-collapse'         => 'ticht',
+	'categorytree-expand'           => 'iepen',
+	'categorytree-load'             => 'ynlade',
+	'categorytree-loading'          => 'ynlade...',
+	'categorytree-nothing-found'    => 'neat fûn',
+	'categorytree-no-subcategories' => 'gjin ûnderlizzende kategoryen',
+	'categorytree-no-pages'         => 'gjin siden of ûnderlizzende siden',
+	'categorytree-not-found'        => 'Kategory <i>$1</i> net fûn',
+	'categorytree-show-list'        => 'Lit sjen as list',
+	'categorytree-show-tree'        => 'Lit sjen as beam',
+	'categorytree-too-many-subcats' => 'Underlizzende kategoryen kinne net as beam sjen litten wurde; der binne tefolle.',
+);
+
 /** Irish (Gaeilge)
  * @author Alma
  * @author Xosé
@@ -1042,6 +1067,15 @@ $messages['hak'] = array(
 	'categorytree'          => 'Fûn-lui-su',
 	'categorytree-category' => 'Fûn-lui:',
 	'categorytree-expand'   => 'Chán-khôi',
+);
+
+/** Hawaiian (Hawai`i)
+ * @author Singularity
+ */
+$messages['haw'] = array(
+	'categorytree-category' => 'Mahele:',
+	'categorytree-load'     => 'ho‘ouka',
+	'categorytree-loading'  => 'ke ho‘ouka nei…',
 );
 
 /** Hebrew (עברית) */
@@ -2920,6 +2954,13 @@ $messages['ur'] = array(
 	'categorytree-show-list'        => 'بہ ترتیب فہرست',
 	'categorytree-show-tree'        => 'بہ ترتیب شجر',
 	'categorytree-too-many-subcats' => 'ذیلی زمرہ جات کی تعداد کثیر کے باعث بہ ترتیب شجر نہیں کیا جاسکتا',
+);
+
+/** Uzbek (O'zbek)
+ * @author Abdulla
+ */
+$messages['uz'] = array(
+	'categorytree-category' => 'Turkum:',
 );
 
 /** Vèneto (Vèneto)
