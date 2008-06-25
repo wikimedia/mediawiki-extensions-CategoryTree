@@ -157,6 +157,34 @@ $messages['ar'] = array(
 	'categorytree-too-many-subcats' => 'لا يمكن عرض التصنيفات الفرعية كشجرة، يوجد الكثير منهم.',
 );
 
+/** Assamese (অসমীয়া)
+ * @author Rajuonline
+ */
+$messages['as'] = array(
+	'categorytree'                  => 'শ্রেণীবৃক্ষ্য',
+	'categorytree-tab'              => 'বৃক্ষ্য',
+	'categorytree-legend'           => 'শ্রেণীবৃক্ষ্য দেখুৱাওক',
+	'categorytree-category'         => 'শ্রেণী',
+	'categorytree-go'               => 'বৃক্ষ্য দেখুৱাওক',
+	'categorytree-parents'          => 'পালক',
+	'categorytree-mode-categories'  => 'কেবল শ্রেণী',
+	'categorytree-mode-pages'       => 'চিত্রবিহীন পৃষ্ঠাসমুহ',
+	'categorytree-mode-all'         => 'সকলো পৃষ্ঠা',
+	'categorytree-collapse'         => 'সৰু কৰক',
+	'categorytree-expand'           => 'বহলাওক',
+	'categorytree-load'             => 'লোড কৰক',
+	'categorytree-loading'          => 'লোড কৰি থকা হৈছে...',
+	'categorytree-nothing-found'    => 'একো পোৱা নগল',
+	'categorytree-no-subcategories' => 'কোনো উপশ্রেণী নাই',
+	'categorytree-no-pages'         => 'কোনো পৃষ্ঠা বা উপশ্রেণী নাই',
+	'categorytree-not-found'        => '<i>$1</i> শ্রেণীতো পোৱা নগল',
+	'categorytree-error'            => 'তথ্য জমাবলৈ সমস্যা হৈছে',
+	'categorytree-retry'            => 'অনুগ্রহ কৰি কিছু সময় অপেক্ষা কৰি তাৰ পিছত চেষ্টা কৰক।',
+	'categorytree-show-list'        => 'তালিকা হিচাপে দেখুৱাওক',
+	'categorytree-show-tree'        => 'বৃক্ষ্যৰূপে দেখুৱাওক',
+	'categorytree-too-many-subcats' => 'উপশ্রেণী সমুহক বৃক্ষ্যৰূপে দেখুৱাব নোৱাৰি, বহুত বেছি উপশ্রেণী আছে।',
+);
+
 /** Asturian (Asturianu)
  * @author SPQRobin
  * @author Siebrand
@@ -2902,6 +2930,7 @@ $messages['tr'] = array(
 	'categorytree-no-subcategories' => 'alt kategori yok.',
 	'categorytree-no-pages'         => 'alt kategori veya madde yok.',
 	'categorytree-not-found'        => '<i>"$1"</i> isimli kategori bulunamadı',
+	'categorytree-error'            => 'Bilgi yüklenmesi ile bir problem var.',
 	'categorytree-retry'            => 'Lütfen kısa süre için bekleyin, sonra bir kere daha deneyin.',
 	'categorytree-show-list'        => 'Liste olarak göster',
 	'categorytree-show-tree'        => 'Hiyerarşik olarak göster',
