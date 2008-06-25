@@ -85,6 +85,7 @@ $wgAutoloadClasses['CategoryTreePage'] = $dir . 'CategoryTreePage.php';
 $wgAutoloadClasses['CategoryTree'] = $dir . 'CategoryTreeFunctions.php';
 $wgAutoloadClasses['CategoryTreeCategoryPage'] = $dir . 'CategoryPageSubclass.php';
 $wgSpecialPages['CategoryTree'] = 'CategoryTreePage';
+$wgSpecialPageGroups['CrossNamespaceLinks'] = 'pages';
 #$wgHooks['SkinTemplateTabs'][] = 'efCategoryTreeInstallTabs';
 $wgHooks['OutputPageParserOutput'][] = 'efCategoryTreeParserOutput';
 $wgHooks['ArticleFromTitle'][] = 'efCategoryTreeArticleFromTitle';
