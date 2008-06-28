@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------
 README for the CategoryTree extension
-Copyright © 2006-2007 Daniel Kinzler
+Copyright © 2006-2008 Daniel Kinzler and others
 Licenses: GNU General Public Licence (GPL)
           GNU Free Documentation License (GFDL)
 --------------------------------------------------------------------------
@@ -8,125 +8,12 @@ Licenses: GNU General Public Licence (GPL)
 The CategoryTree extension provides a dynamic view of the wiki's category
 structure as a tree. It uses AJAX to load parts of the tree on demand.
 
-<http://meta.wikimedia.org/wiki/CategoryTree_extension>
-
 The CategoryTree extension was originally written by Daniel Kinzler in
 2006 and is released under the GNU General Public Licence (GPL). The
 internationalization files contain contributions by several people;
 they are mentioned in each file individually. Also thanks to Tim Starling
 for his contributions.
 
+Instructions on installing and using this extension are available at
+<http://www.mediawiki.org/wiki/Extension:CategoryTree>
 
-INSTALLING
---------------------------------------------------------------------------
-
-Copy the CategoryTree directory into the extensions folder of your
-MediaWiki installation. Then add the following lines to your
-LocalSettings.php file (near the end):
-
-  $wgUseAjax = true;
-  require_once( "{$IP}/extensions/CategoryTree/CategoryTree.php" );
-
-Note that $wgUseAjax = true; will enable the Ajax framework in MediaWiki,
-which is required by the CategoryTree extension. Ajax is a term for using
-JavaScript to load parts of a page on demand. It is supported by all
-recent graphic web browsers. For more information about Ajax see
-<http://en.wikipedia.org/wiki/Ajax_%28programming%29>.
-
-
-USAGE
---------------------------------------------------------------------------
-
-CategoryTree can be used in three ways: directly on the category pages,
-as a "custom tag" to show a category structure inline on a wiki page,
-and as a special page.
-
-The CategoryTree extension replaces the subcategory section of category
-pages with a dynamic tree view. If Javascript is disabled, this appears
-as a plain list. The dynamic subcategory entries can be disabled using
-the URL parameter "notree" - this is intended for bots that rely on
-parsing the HTML of category pages.
-
-The custom tag is called <categorytree>. For example, if you put
-<categorytree mode="pages">Foo</categorytree> on a wiki page, it will show
-the contents of category Foo as a dynamic tree on that page. The tag accepts
-the following attributes, using a HTML-like syntax:
-
-* hideroot - set this to "on" to hide the "root" node of the tree, i.e.
-             the mention of category Foo from the example.
-
-* onlyroot - set this to "on" show only the "root" node of the tree initially
-
-* mode - can be "categories", "pages" or "all". See the Modes section below.
-         The default for this attribute is controlled by
-         $wgCategoryTreeDefaultMode, and is initially set to CT_MODE_CATEGORIES,
-         the equivalent of setting the mode attribute to "categories".
-
-* style - can be used to specify any CSS styles you would like for the
-          tree.
-
-Alternatively to the <categorytree> tag, parser-function syntax can also be
-used, e.g {{#categorytree:Foo|hideroot=yes}}. This syntax allows the use of
-magic variables, templates and template parameters for the category name.
-
-The special page is called Special:CategoryTree; there you can enter the
-name of a category and then browse it's content. The CategoryTree
-extension also adds a tab for this special page to every category page.
-
-
-MODES
---------------------------------------------------------------------------
-
-The category tree can be shown in different modes, determining what types of
-"leaves" the "tree" has:
-* categories (constant CT_MODE_CATEGORIES): show subcategories only
-* pages (constant CT_MODE_PAGES): show subcategories and pages, except images
-* all (constant CT_MODE_ALL): show all pages, subcategories, images, etc
-
-The CT_MODE_XXX constants can be used with configuration optiosn (see below).
-
-OPTIONS
---------------------------------------------------------------------------
-
-There are some options you can specify in your LocalSettings.php file:
-
-$wgCategoryTreeMaxChildren - maximum number of children shown in a tree
-                             node. Default is 200
-
-$wgCategoryTreeAllowTag - enable <categorytree> tag. Default is true.
-
-$wgCategoryTreeDynamicTag - loads the first level of the tree in a
-                            <categorytag> dynamically. This way, the cache
-                            does not need to be disabled. Default is false
-
-$wgCategoryTreeDisableCache - disabled the parser cache for pages with a
-                              <categorytree> tag. Default is true.
-
-$wgCategoryTreeHTTPCache - enable HTTP cache for anon users. Default is
-                          false.
-
-$wgCategoryTreeOmitNamespace - never show namespace prefix. Default is
-                               false. Patch contributed by Manuel Schneider
-                               <manuel.schneider@wikimedia.ch>, Bug 8011
-
-$wgCategoryMaxDepth - maximum value for depth argument; can be an integer,
-                      or an associative array, mapping CT_MODE_XXX constants
-                      to the maximum depth for that mode.
-                      Ignored if $wgCategoryTreeDynamicTag is true. Introduced
-                      by Steve Sanbeg.
-
-$wgCategoryTreeExtPath - the (URL-) path where the extension is installed,
-                      relative to $wgScriptPath, with leading "/". Default is
-                      "/extensions/CategoryTree".
-
-$wgCategoryTreeDefaultMode - the default mode to use when no mode attribute
-                      is specified in a <categorytree> tag. May be
-                      CT_MODE_CATEGORIES (the default), CT_MODE_PAGES, or
-                      CT_MODE_ALL.
-
-$wgCategoryTreeCategoryPageMode - the mode to use when rendering trees on
-                      category pages. May be CT_MODE_CATEGORIES (the default),
-                      CT_MODE_PAGES, or CT_MODE_ALL.
-
---------------------------------------------------------------------------
-EOF

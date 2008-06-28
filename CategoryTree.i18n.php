@@ -17,7 +17,7 @@ $messages['en'] = array(
 	'categorytree'                  => 'CategoryTree',
 	'categorytree-tab'              => 'Tree',
 	'categorytree-legend'           => 'Show category tree',
-	'categorytree-desc'             => 'AJAX based gadget to display the [[Special:CategoryTree|category structure]] of a wiki',
+	'categorytree-desc'             => 'Dynamically navigate the [[Special:CategoryTree|category structure]]',
 	'categorytree-header'           => 'Enter a category name to see its contents as a tree structure.
 Note that this requires advanced JavaScript functionality known as AJAX.
 If you have a very old browser, or have JavaScript disabled, it will not work.',
@@ -32,6 +32,10 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 
 	'categorytree-collapse'         => 'collapse',
 	'categorytree-expand'           => 'expand',
+	'categorytree-collapse-bullet'  => '[<b>&#x2212;</b>]',
+	'categorytree-expand-bullet'    => '[<b>+</b>]',
+	'categorytree-page-bullet'      => '&nbsp;',
+
 	'categorytree-load'             => 'load',
 	'categorytree-loading'          => 'loading…',
 	'categorytree-nothing-found'    => 'nothing found',
@@ -586,7 +590,7 @@ $messages['de'] = array(
 	'categorytree'                  => 'Kategorienbaum',
 	'categorytree-tab'              => 'Baum',
 	'categorytree-legend'           => 'Zeige Kategorienbaum',
-	'categorytree-desc'             => 'Ajax-basiertes Gadget, um die [[Special:CategoryTree|Kategorien-Struktur]] eines Wikis anzuzeigen',
+	'categorytree-desc'             => 'Dynamische Navigation für die [[Special:CategoryTree|Kategorien-Struktur]]',
 	'categorytree-header'           => 'Zeigt für die angegebene Kategorie die Unterkategorien in einer Baumstruktur.
 Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert möglicherweise nicht, wenn JavaScript ausgeschaltet ist oder ein sehr alter Browser verwendet wird.',
 	'categorytree-category'         => 'Kategorie:',

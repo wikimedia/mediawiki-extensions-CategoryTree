@@ -17,6 +17,62 @@ if( !defined( 'MEDIAWIKI' ) ) {
 
 class CategoryTree {
 	var $mIsAjaxRequest = false;
+	var $mOptions = array();
+
+	function __construct( $options, $ajax = false ) {
+		global $wgCategoryTreeDefaultOptions;
+
+		$this->mIsAjaxRequest = $ajax;
+
+		#ensure default values and order of options. Order may become important, it may influence the cache key!
+		foreach ( $wgCategoryTreeDefaultOptions as $option => $default ) {
+			if ( isset( $options[$option] ) && !is_null( $options[$option] ) ) $this->mOptions[$option] = $options[$option];
+			else $this->mOptions[$option] = $default;
+		}
+
+		$this->mOptions['mode'] = self::decodeMode( $this->mOptions['mode'] );
+		$this->mOptions['hideprefix'] = self::decodeBoolean( $this->mOptions['hideprefix'] );
+	}
+
+	function getOption( $name ) {
+		return $this->mOptions[$name];
+	}
+
+	static function decodeMode( $mode ) {
+		global $wgCategoryTreeDefaultOptions;
+
+		if ( is_null( $mode ) ) return $wgCategoryTreeDefaultOptions['mode'];
+		if ( is_int( $mode ) ) return $mode;
+
+		$mode = trim( strtolower( $mode ) );
+
+		if ( is_numeric( $mode ) ) return (int)$mode;
+
+		if ( $mode == 'all' ) $mode = CT_MODE_ALL;
+		else if ( $mode == 'pages' ) $mode = CT_MODE_PAGES;
+		else if ( $mode == 'categories' ) $mode = CT_MODE_CATEGORIES;
+		else if ( $mode == 'default' ) $mode = $wgCategoryTreeDefaultOptions['mode'];
+
+		return (int)$mode;
+	}
+
+	/**
+	* Helper function to convert a string to a boolean value.
+	* Perhaps make this a global function in MediaWiki proper
+	*/
+	static function decodeBoolean( $value ) {
+		if ( is_null( $value ) ) return NULL;
+		if ( is_bool( $value ) ) return $value;
+		if ( is_int( $value ) ) return ( $value > 0 );
+
+		$value = trim( strtolower( $value ) );
+		if ( is_numeric( $value ) ) return ( (int)$mode > 0 );
+
+		if ( $value == 'yes' || $value == 'y' || $value == 'true' || $value == 't' || $value == 'on' ) return true;
+		else if ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) return false;
+		else if ( $value == 'null' || $value == 'default' || $value == 'none' || $value == 'x' ) return NULL;
+		else return false;
+	}
 
 	/**
 	 * Set the script tags in an OutputPage object
@@ -57,6 +113,8 @@ class CategoryTree {
 		"	<script type=\"{$wgJsMimeType}\">
 			var categoryTreeCollapseMsg = \"".Xml::escapeJsString(self::msg('collapse'))."\";
 			var categoryTreeExpandMsg = \"".Xml::escapeJsString(self::msg('expand'))."\";
+			var categoryTreeCollapseBulletMsg = \"".Xml::escapeJsString(self::msg('collapse-bullet'))."\";
+			var categoryTreeExpandBulletMsg = \"".Xml::escapeJsString(self::msg('expand-bullet'))."\";
 			var categoryTreeLoadMsg = \"".Xml::escapeJsString(self::msg('load'))."\";
 			var categoryTreeLoadingMsg = \"".Xml::escapeJsString(self::msg('loading'))."\";
 			var categoryTreeNothingFoundMsg = \"".Xml::escapeJsString(self::msg('nothing-found'))."\";
@@ -68,16 +126,101 @@ class CategoryTree {
 		);
 	}
 
+	static function getJsonCodec() {
+		static $json = NULL;
+
+		if (!$json) {
+			$json = new Services_JSON(); #recycle API's JSON codec implementation
+		}
+
+		return $json;
+	}
+
+	static function encodeOptions( $options, $enc ) {
+		if ( $enc == 'mode' || $enc == '' ) {
+			$opt =$options['mode'];
+		} elseif ( $enc == 'json' ) {
+			$json = self::getJsonCodec(); //XXX: this may be a bit heavy...
+			$opt = $json->encode( $options );
+		} else {
+			throw new MWException( 'Unknown encoding for CategoryTree options: ' . $enc );
+		}
+
+		return $opt;
+	}
+
+	static function decodeOptions( $options, $enc ) {
+		if ( $enc == 'mode' || $enc == '' ) {
+			$opt = array( "mode" => $options );
+		} elseif ( $enc == 'json' ) {
+			$json = self::getJsonCodec(); //XXX: this may be a bit heavy...
+			$opt = $json->decode( $options );
+			$opt = get_object_vars( $opt );
+		} /* elseif () {
+			foreach ( $oo as $o ) {
+				if ($o === "") continue;
+		
+				if ( preg_match( '!^(.*?)=(.*)$!', $o, $m ) {
+					$n = $m[1];
+					$opt[$n] = $m[2];
+				} else {
+					$opt[$o] = true;
+				}
+			}
+		} */ else {
+			throw new MWException( 'Unknown encoding for CategoryTree options: ' . $enc );
+		}
+
+		return $opt;
+	}
+
+	function getOptionsAsCacheKey( $depth = NULL ) {
+		$key = "";
+
+		foreach ( $this->mOptions as $k => $v ) {
+			$key .= $k . ':' . $v . ';';
+		}
+
+		if ( !is_null( $depth ) ) $key .= ";depth=" . $depth;
+		return $key;
+	}
+
+	function getOptionsAsJsStructure( $depth = NULL ) {
+		if ( !is_null( $depth ) ) {
+			$opt = $this->mOptions;
+			$opt['depth'] = $depth;
+			$s = self::encodeOptions( $opt, 'json' );
+		} else {
+			$s = self::encodeOptions( $this->mOptions, 'json' );
+		}
+
+		return $s;
+	}
+
+	function getOptionsAsJsString( $depth = NULL ) {
+		return Xml::escapeJsString( $s );
+	}
+
+	function getOptionsAsUrlParameters() {
+		$u = '';
+
+		foreach ( $this->mOptions as $k => $v ) {
+			if ( $u != '' ) $u .= '&';
+			$u .= $k . '=' . urlencode($v) ;
+		}
+
+		return $u;
+	}
+
 	/**
 	* Ajax call. This is called by efCategoryTreeAjaxWrapper, which is used to
 	* load CategoryTreeFunctions.php on demand.
 	*/
-	function ajax( $category, $mode ) {
+	function ajax( $category, $depth = 1 ) {
 		global $wgDBname;
 		$title = self::makeTitle( $category );
 
 		if ( ! $title ) return false; #TODO: error message?
-		$this->mIsAjaxRequest = true;
 
 		# Retrieve page_touched for the category
 		$dbkey = $title->getDBkey();
@@ -88,7 +231,7 @@ class CategoryTree {
 				'page_title' => $dbkey,
 			), __METHOD__ );
 
-		$mckey = "$wgDBname:categorytree($mode):$dbkey"; //FIXME: would need to add depth parameter.
+		$mckey = "$wgDBname:categorytree(" . $this->getOptionsAsCacheKey( $depth ) . "):$dbkey"; 
 
 		$response = new AjaxResponse();
 
@@ -100,7 +243,7 @@ class CategoryTree {
 			return $response;
 		}
 
-		$html = $this->renderChildren( $title, $mode ); //FIXME: would need to pass depth parameter.
+		$html = $this->renderChildren( $title, $depth ); 
 
 		if ( $html == '' ) $html = ' ';   #HACK: Safari doesn't like empty responses.
 						  #see Bug 7219 and http://bugzilla.opendarwin.org/show_bug.cgi?id=10716
@@ -116,11 +259,10 @@ class CategoryTree {
 	* Custom tag implementation. This is called by efCategoryTreeParserHook, which is used to
 	* load CategoryTreeFunctions.php on demand.
 	*/
-	function getTag( &$parser, $category, $mode, $hideroot = false, $style = '', $depth=1 ) {
+	function getTag( &$parser, $category, $hideroot = false, $style = '', $depth=1 ) {
 		global $wgCategoryTreeDisableCache, $wgCategoryTreeDynamicTag;
 		static $uniq = 0;
 
-		$this->mIsAjaxRequest = false;
 		$category = trim( $category );
 		if ( $category === '' ) {
 			return false;
@@ -141,14 +283,14 @@ class CategoryTree {
 			$html .= Xml::closeElement( 'span' );
 			}
 		else {
-			if ( !$hideroot ) $html .= CategoryTree::renderNode( $title, $mode, $depth>0, $wgCategoryTreeDynamicTag, $depth-1 );
-			else if ( !$wgCategoryTreeDynamicTag ) $html .= $this->renderChildren( $title, $mode, $depth-1 );
-			else { //FIXME: depth would need to be propagated here. this would imact the cache key, too
+			if ( !$hideroot ) $html .= CategoryTree::renderNode( $title, $depth, $wgCategoryTreeDynamicTag );
+			else if ( !$wgCategoryTreeDynamicTag ) $html .= $this->renderChildren( $title, $depth );
+			else { 
 				$uniq += 1;
 				$load = 'ct-' . $uniq . '-' . mt_rand( 1, 100000 );
 
 				$html .= Xml::openElement( 'script', array( 'type' => 'text/javascript', 'id' => $load ) );
-				$html .= 'categoryTreeLoadChildren("' . Xml::escapeJsString( $title->getDBkey() ) . '", "' . $mode . '", document.getElementById("' . $load . '").parentNode );';
+				$html .= 'categoryTreeLoadChildren("' . Xml::escapeJsString( $title->getDBkey() ) . '", ' . $this->getOptionsAsJsStructure( $depth ) . ', document.getElementById("' . $load . '").parentNode);';
 				$html .= Xml::closeElement( 'script' );
 			}
 		}
@@ -163,8 +305,8 @@ class CategoryTree {
 	* Returns a string with an HTML representation of the children of the given category.
 	* $title must be a Title object
 	*/
-	function renderChildren( &$title, $mode = NULL, $depth=0 ) {
-		global $wgCategoryTreeMaxChildren, $wgCategoryTreeDefaultMode;
+	function renderChildren( &$title, $depth=1 ) {
+		global $wgCategoryTreeMaxChildren;
 
 		if( $title->getNamespace() != NS_CATEGORY ) {
 			// Non-categories can't have children. :)
@@ -178,7 +320,7 @@ class CategoryTree {
 		$transJoin = '';
 		$transWhere = '';
 
-		if ( $mode === NULL ) $wgCategoryTreeDefaultMode;
+		$mode = $this->getOption('mode');
 
 		#namespace filter. Should be configurable
 		if ( $mode == CT_MODE_ALL ) $nsmatch = '';
@@ -210,7 +352,7 @@ class CategoryTree {
 			#TODO: translation support; ideally added to Title object
 			$t = Title::makeTitle( $row['page_namespace'], $row['page_title'] );
 
-			$s = $this->renderNode( $t, $mode, $depth>0, false, $depth-1 );
+			$s = $this->renderNode( $t, $depth-1, false );
 			$s .= "\n\t\t";
 
 			if ($row['page_namespace'] == NS_CATEGORY) $categories .= $s;
@@ -226,7 +368,7 @@ class CategoryTree {
 	* Returns a string with an HTML representation of the parents of the given category.
 	* $title must be a Title object
 	*/
-	static function renderParents( &$title, $mode ) {
+	function renderParents( &$title ) {
 		global $wgCategoryTreeMaxChildren;
 
 		$dbr =& wfGetDB( DB_SLAVE );
@@ -262,7 +404,7 @@ class CategoryTree {
 			$label = htmlspecialchars( $t->getText() );
 			if ( $trans && $trans!=$label ) $label.= ' ' . Xml::element( 'i', array( 'class' => 'translation'), $trans );
 
-			$wikiLink = $special->getLocalURL( 'target=' . $t->getPartialURL() . '&mode=' . $mode );
+			$wikiLink = $special->getLocalURL( 'target=' . $t->getPartialURL() . '&' . $this->getOptionsAsUrlParameters() );
 
 			if ( $s !== '' ) $s .= ' | ';
 
@@ -282,18 +424,17 @@ class CategoryTree {
 	* Returns a string with a HTML represenation of the given page.
 	* $title must be a Title object
 	*/
-	function renderNode( &$title, $mode = NULL, $children = false, $loadchildren = false, $depth = 1 ) {
-		global $wgCategoryTreeOmitNamespace, $wgCategoryTreeDefaultMode;
+	function renderNode( &$title, $children = 0, $loadchildren = false ) {
+		global $wgCategoryTreeDefaultMode;
 		static $uniq = 0;
 
-		if ( $mode === NULL ) $wgCategoryTreeDefaultMode;
+		$mode = $this->getOption('mode');
 		$load = false;
 
-		if ( $children && $loadchildren ) {
+		if ( $children > 0 && $loadchildren ) {
 			$uniq += 1;
 
 			$load = 'ct-' . $uniq . '-' . mt_rand( 1, 100000 );
-			$children = false;
 		}
 
 		$ns = $title->getNamespace();
@@ -304,7 +445,7 @@ class CategoryTree {
 
 		#when showing only categories, omit namespace in label unless we explicitely defined the configuration setting
 		#patch contributed by Manuel Schneider <manuel.schneider@wikimedia.ch>, Bug 8011
-		if ( $wgCategoryTreeOmitNamespace || $mode == CT_MODE_CATEGORIES ) $label = htmlspecialchars( $title->getText() );
+		if ( $this->getOption('hideprefix') || $mode == CT_MODE_CATEGORIES ) $label = htmlspecialchars( $title->getText() );
 		else $label = htmlspecialchars( $title->getPrefixedText() );
 
 		if ( $trans && $trans!=$label ) $label.= ' ' . Xml::element( 'i', array( 'class' => 'translation'), $trans );
@@ -321,23 +462,6 @@ class CategoryTree {
 
 		if ( ( $ns % 2 ) > 0 ) $labelClass .= ' CategoryTreeLabelTalk';
 
-		$linkattr= array( 'href' => '#' );
-
-		if ( $load ) $linkattr[ 'id' ] = $load;
-
-		if ( !$children ) {
-			$txt = '+';
-			$linkattr[ 'onclick' ] = "this.href='javascript:void(0)'; categoryTreeExpandNode('".Xml::escapeJsString($key)."','".$mode."',this);";
-			# Don't load this message for ajax requests, so that we don't have to initialise $wgLang
-			$linkattr[ 'title' ] = $this->mIsAjaxRequest ? '##LOAD##' : self::msg('expand');
-		}
-		else {
-			$txt = '–'; #NOTE: that's not a minus but a unicode ndash!
-			$linkattr[ 'onclick' ] = "this.href='javascript:void(0)'; categoryTreeCollapseNode('".Xml::escapeJsString($key)."','".$mode."',this);";
-			$linkattr[ 'title' ] = self::msg('collapse');
-			$linkattr[ 'class' ] = 'CategoryTreeLoaded';
-		}
-
 		$s = '';
 
 		#NOTE: things in CategoryTree.js rely on the exact order of tags!
@@ -347,27 +471,48 @@ class CategoryTree {
 		$s .= Xml::openElement( 'div', array( 'class' => 'CategoryTreeSection' ) );
 		$s .= Xml::openElement( 'div', array( 'class' => 'CategoryTreeItem' ) );
 
+		$attr = array( 'class' => 'CategoryTreeBullet' );
+		$s .= Xml::openElement( 'span', $attr );
+
 		if ( $ns == NS_CATEGORY ) {
-			$s .= Xml::openElement( 'span', array( 'class' => 'CategoryTreeBullet' ) );
-			$s .= '[' . Xml::element( 'a', $linkattr, $txt ) . '] ';
-			$s .= Xml::closeElement( 'span' );
+			$linkattr= array( 'href' => '#' );
+			if ( $load ) $linkattr[ 'id' ] = $load;
+
+			$linkattr[ 'class' ] = "CategoryTreeToggle";
+
+			if ( $children == 0 || $loadchildren ) {
+				$txt = $this->msg('expand-bullet');
+				$linkattr[ 'onclick' ] = "this.href='javascript:void(0)'; categoryTreeExpandNode('".Xml::escapeJsString($key)."',".$this->getOptionsAsJsStructure().",this);";
+				# Don't load this message for ajax requests, so that we don't have to initialise $wgLang
+				$linkattr[ 'title' ] = $this->mIsAjaxRequest ? '##LOAD##' : self::msg('expand');
+			}
+			else {
+				$txt = $this->msg('collapse-bullet');
+				$linkattr[ 'onclick' ] = "this.href='javascript:void(0)'; categoryTreeCollapseNode('".Xml::escapeJsString($key)."',".$this->getOptionsAsJsStructure().",this);";
+				$linkattr[ 'title' ] = self::msg('collapse');
+				$linkattr[ 'class' ] .= ' CategoryTreeLoaded';
+			}
+
+			$s .= Xml::openElement( 'a', $linkattr ) . $txt . Xml::closeElement( 'a' ) . ' ';
 		} else {
-			$s .= ' ';
+			$s .= $this->msg('page-bullet');
 		}
+
+		$s .= Xml::closeElement( 'span' );
 
 		$s .= Xml::openElement( 'a', array( 'class' => $labelClass, 'href' => $wikiLink ) ) . $label . Xml::closeElement( 'a' );
 		$s .= Xml::closeElement( 'div' );
 		$s .= "\n\t\t";
-		$s .= Xml::openElement( 'div', array( 'class' => 'CategoryTreeChildren', 'style' => $children ? "display:block" : "display:none" ) );
-		//HACK here?
-		if ( $children ) $s .= $this->renderChildren( $title, $mode, $depth );
+		$s .= Xml::openElement( 'div', array( 'class' => 'CategoryTreeChildren', 'style' => $children > 0 ? "display:block" : "display:none" ) );
+		
+		if ( $children > 0 && !$loadchildren) $s .= $this->renderChildren( $title, $children );
 		$s .= Xml::closeElement( 'div' );
 		$s .= Xml::closeElement( 'div' );
 
 		if ( $load ) {
 			$s .= "\n\t\t";
 			$s .= Xml::openElement( 'script', array( 'type' => 'text/javascript' ) );
-			$s .= 'categoryTreeExpandNode("'.Xml::escapeJsString($key).'", "'.$mode.'", document.getElementById("'.$load.'") );';
+			$s .= 'categoryTreeExpandNode("'.Xml::escapeJsString($key).'", '.$this->getOptionsAsJsStructure($children).', document.getElementById("'.$load.'"));';
 			$s .= Xml::closeElement( 'script' );
 		}
 

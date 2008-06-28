@@ -26,40 +26,80 @@ var categoryTreeRetryMsg = "Please wait a moment and try again.";
       return n;
     }
 
-    function categoryTreeExpandNode(cat, mode, lnk) {
+    function categoryTreeExpandNode(cat, options, lnk) {
       var div= categoryTreeNextDiv( lnk.parentNode.parentNode );
 
       div.style.display= 'block';
-      lnk.innerHTML= '&ndash;';
+      lnk.innerHTML= categoryTreeCollapseBulletMsg;
       lnk.title= categoryTreeCollapseMsg;
-      lnk.onclick= function() { categoryTreeCollapseNode(cat, mode, lnk) }
+      lnk.onclick= function() { categoryTreeCollapseNode(cat, options, lnk) }
 
       if (lnk.className != "CategoryTreeLoaded") {
-        categoryTreeLoadNode(cat, mode, lnk, div);
+        categoryTreeLoadNode(cat, options, lnk, div);
       }
     }
 
-    function categoryTreeCollapseNode(cat, mode, lnk) {
+    function categoryTreeCollapseNode(cat, options, lnk) {
       var div= categoryTreeNextDiv( lnk.parentNode.parentNode );
 
       div.style.display= 'none';
-      lnk.innerHTML= '+';
+      lnk.innerHTML= categoryTreeExpandBulletMsg;
       lnk.title= categoryTreeExpandMsg;
-      lnk.onclick= function() { categoryTreeExpandNode(cat, mode, lnk) }
+      lnk.onclick= function() { categoryTreeExpandNode(cat, options, lnk) }
     }
 
-    function categoryTreeLoadNode(cat, mode, lnk, div) {
+    function categoryTreeLoadNode(cat, options, lnk, div) {
       div.style.display= 'block';
       lnk.className= 'CategoryTreeLoaded';
-      lnk.innerHTML= '&ndash;';
+      lnk.innerHTML= categoryTreeCollapseBulletMsg;
       lnk.title= categoryTreeCollapseMsg;
-      lnk.onclick= function() { categoryTreeCollapseNode(cat, mode, lnk) }
+      lnk.onclick= function() { categoryTreeCollapseNode(cat, options, lnk) }
 
-      categoryTreeLoadChildren(cat, mode, div)
+      categoryTreeLoadChildren(cat, options, div)
     }
 
-    function categoryTreeLoadChildren(cat, mode, div) {
+    function categoryTreeEncodeOptions(options) {
+      var opt = "";
+
+      for (k in options) {
+          v = options[k];
+
+          switch (typeof v) {
+              case 'string': 
+                  v = '"' + v.replace(/([\\"'])/g, "\\$1") + '"';
+                  break;
+
+              case 'number':
+              case 'boolean':
+              case 'null':
+                  v = String(v);
+                  break;
+
+              case 'object':
+                  if ( !v ) v = 'null';
+                  else throw new Error("categoryTreeLoadChildren can not encode complex types");
+                  break;
+
+              default:
+                  throw new Error("categoryTreeLoadChildren encountered strange variable type " + (typeof v));
+          }
+
+          if ( opt != "" ) opt += ", ";
+          opt += k;
+          opt += ":";
+          opt += v;
+      }
+      
+      opt = "{"+opt+"}";
+      return opt;
+    }
+
+    function categoryTreeLoadChildren(cat, options, div) {
       div.innerHTML= '<i class="CategoryTreeNotice">' + categoryTreeLoadingMsg + '</i>';
+
+      if ( typeof options == "string" ) { //hack for backward compatibility
+          options = { mode : options };
+      }
 
       function f( request ) {
           if (request.status != 200) {
@@ -67,7 +107,7 @@ var categoryTreeRetryMsg = "Please wait a moment and try again.";
               var retryLink = document.createElement('a');
               retryLink.innerHTML = categoryTreeRetryMsg;
               retryLink.onclick = function() {
-                  categoryTreeLoadChildren(cat, mode, div);
+                  categoryTreeLoadChildren(cat, options, div, enc);
               }
               div.appendChild(retryLink);
               return;
@@ -79,8 +119,8 @@ var categoryTreeRetryMsg = "Please wait a moment and try again.";
           if ( result == '' ) {
                     result= '<i class="CategoryTreeNotice">';
 
-                    if ( mode == 0 ) result= categoryTreeNoSubcategoriesMsg;
-                    else if ( mode == 10 ) result= categoryTreeNoPagesMsg;
+                    if ( options.mode == 0 ) result= categoryTreeNoSubcategoriesMsg;
+                    else if ( options.mode == 10 ) result= categoryTreeNoPagesMsg;
                     else result= categoryTreeNothingFoundMsg;
 
                     result+= '</i>';
@@ -90,5 +130,6 @@ var categoryTreeRetryMsg = "Please wait a moment and try again.";
           div.innerHTML= result;
       }
 
-      sajax_do_call( "efCategoryTreeAjaxWrapper", [cat, mode] , f );
+      var opt = categoryTreeEncodeOptions(options);
+      sajax_do_call( "efCategoryTreeAjaxWrapper", [cat, opt, 'json'] , f );
     }

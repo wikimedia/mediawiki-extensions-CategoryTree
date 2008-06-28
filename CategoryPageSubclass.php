@@ -14,11 +14,23 @@ class CategoryTreeCategoryPage extends CategoryPage {
 class CategoryTreeCategoryViewer extends CategoryViewer {
 	var $child_titles;
 
+	function getCategoryTree() {
+		global $wgOut, $wgCategoryTreeCategoryPageOptions;
+
+		if ( ! isset($this->categorytree) ) {
+			CategoryTree::setHeaders( $wgOut );
+
+			$this->categorytree = new CategoryTree( $wgCategoryTreeCategoryPageOptions );
+		}
+
+		return $this->categorytree;
+	}
+
 	/**
 	 * Add a subcategory to the internal lists
 	 */
 	function addSubcategory( $title, $sortkey, $pageLength ) {
-		global $wgContLang, $wgOut, $wgRequest, $wgCategoryTreeCategoryPageMode;
+		global $wgContLang, $wgOut, $wgRequest;
 
 		if ( $wgRequest->getCheck( 'notree' ) ) {
 			return parent::addSubcategory( $title, $sortkey, $pageLength );
@@ -29,18 +41,15 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			return parent::addSubcategory( $title, $sortkey, $pageLength );
 		}
 
-		if ( ! isset($this->categorytree) ) {
-			CategoryTree::setHeaders( $wgOut );
-			$this->categorytree = new CategoryTree;
-		}
+		$tree = $this->getCategoryTree();
 
-		$this->children[] = $this->categorytree->renderNode( $title, $wgCategoryTreeCategoryPageMode );
+		$this->children[] = $tree->renderNode( $title );
 
 		$this->children_start_char[] = $this->getSubcategorySortChar( $title, $sortkey );
 	}
 
 	function getSubcategorySection() {
-		global $wgOut, $wgRequest, $wgCookiePrefix, $wgCategoryTreeCategoryPageMode;
+		global $wgOut, $wgRequest, $wgCookiePrefix;
 
 		if ( $wgRequest->getCheck( 'notree' ) ) {
 			return parent::getSubcategorySection();
@@ -98,11 +107,10 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		if ( $showAs == 'list' ) {
 			$r .= $this->formatList( $this->children, $this->children_start_char );
 		} else {
-			CategoryTree::setHeaders( $wgOut );
-			$ct = new CategoryTree;
+			$ct = getCategoryTree();
 
 			foreach ( $this->child_titles as $title ) {
-				$r .= $ct->renderNode( $title, $wgCategoryTreeCategoryPageMode );
+				$r .= $ct->renderNode( $title );
 			}
 		}
 		return $r;
