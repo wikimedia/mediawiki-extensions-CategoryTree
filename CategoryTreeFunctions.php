@@ -475,7 +475,7 @@ class CategoryTree {
 		$s .= Xml::openElement( 'span', $attr );
 
 		if ( $ns == NS_CATEGORY ) {
-			$linkattr= array( 'href' => '#' );
+			$linkattr= array( 'href' => $wikiLink );
 			if ( $load ) $linkattr[ 'id' ] = $load;
 
 			$linkattr[ 'class' ] = "CategoryTreeToggle";
