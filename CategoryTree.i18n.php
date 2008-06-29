@@ -32,9 +32,9 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 
 	'categorytree-collapse'         => 'collapse',
 	'categorytree-expand'           => 'expand',
-	'categorytree-collapse-bullet'  => '[<b>&#x2212;</b>]',
-	'categorytree-expand-bullet'    => '[<b>+</b>]',
-	'categorytree-page-bullet'      => '&nbsp;',
+	'categorytree-collapse-bullet'  => '[<b>&#x2212;</b>]', # do not translate or duplicate this message to other languages
+	'categorytree-expand-bullet'    => '[<b>+</b>]', # do not translate or duplicate this message to other languages
+	'categorytree-page-bullet'      => '&nbsp;', # do not translate or duplicate this message to other languages
 
 	'categorytree-load'             => 'load',
 	'categorytree-loading'          => 'loading…',
