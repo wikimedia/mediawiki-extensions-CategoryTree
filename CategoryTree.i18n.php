@@ -1129,6 +1129,7 @@ $messages['he'] = array(
 	'categorytree-mode-all'         => 'כל הדפים',
 	'categorytree-collapse'         => 'כיווץ',
 	'categorytree-expand'           => 'הרחבה',
+	'categorytree-member-counts'    => 'כוללת $1 קטגוריות משנה, $2 דפים, ו־$3 קבצים',
 	'categorytree-load'             => 'טעינה',
 	'categorytree-loading'          => 'בטעינה',
 	'categorytree-nothing-found'    => 'לא נמצאו תוצאות',
