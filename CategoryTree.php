@@ -16,12 +16,21 @@ if( !defined( 'MEDIAWIKI' ) ) {
 }
 
 /**
-* Constants for use with efCategoryTreeRenderChildren,
+* Constants for use with the mode,
 * defining what should be shown in the tree
 */
 define('CT_MODE_CATEGORIES', 0);
 define('CT_MODE_PAGES', 10);
 define('CT_MODE_ALL', 20);
+
+/**
+* Constants for use with the hideprefix option,
+* defining when the namespace prefix should be hidden
+*/
+define('CT_HIDEPREFIX_NEVER', 0);
+define('CT_HIDEPREFIX_ALWAYS', 10);
+define('CT_HIDEPREFIX_CATEGORIES', 20);
+define('CT_HIDEPREFIX_AUTO', 30);
 
 /**
  * Options:
@@ -52,7 +61,7 @@ $wgCategoryTreeMaxDepth = array(CT_MODE_PAGES => 1, CT_MODE_ALL => 1, CT_MODE_CA
 $wgCategoryTreeExtPath = '/extensions/CategoryTree';
 $wgCategoryTreeVersion = '2';  #NOTE: bump this when you change the CSS or JS files!
 
-$wgCategoryTreeOmitNamespace = false;
+$wgCategoryTreeOmitNamespace = CT_HIDEPREFIX_CATEGORIES;
 $wgCategoryTreeDefaultMode = CT_MODE_CATEGORIES;
 $wgCategoryTreeDefaultOptions = array(); #Default values for most options. ADD NEW OPTIONS HERE!
 $wgCategoryTreeDefaultOptions['mode'] = NULL; # will be set to $wgCategoryTreeDefaultMode in efCategoryTree(); compatibility quirk

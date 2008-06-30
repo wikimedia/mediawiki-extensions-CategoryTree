@@ -31,7 +31,7 @@ class CategoryTree {
 		}
 
 		$this->mOptions['mode'] = self::decodeMode( $this->mOptions['mode'] );
-		$this->mOptions['hideprefix'] = self::decodeBoolean( $this->mOptions['hideprefix'] );
+		$this->mOptions['hideprefix'] = self::decodeHidePrefix( $this->mOptions['hideprefix'] );
 		$this->mOptions['showcount']  = self::decodeBoolean( $this->mOptions['showcount'] );
 	}
 
@@ -73,6 +73,26 @@ class CategoryTree {
 		else if ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) return false;
 		else if ( $value == 'null' || $value == 'default' || $value == 'none' || $value == 'x' ) return NULL;
 		else return false;
+	}
+
+	static function decodeHidePrefix( $value ) {
+		global $wgCategoryTreeDefaultOptions;
+
+		if ( is_null( $value ) ) return $wgCategoryTreeDefaultOptions['hideprefix'];
+		if ( is_int( $value ) ) return $value;
+		if ( $value === true ) return CT_HIDEPREFIX_ALWAYS;
+		if ( $value === false ) return CT_HIDEPREFIX_NEVER;
+
+		$value = trim( strtolower( $value ) );
+
+		if ( $value == 'yes' || $value == 'y' || $value == 'true' || $value == 't' || $value == 'on' ) return CT_HIDEPREFIX_ALWAYS;
+		else if ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) return CT_HIDEPREFIX_NEVER;
+		//else if ( $value == 'null' || $value == 'default' || $value == 'none' || $value == 'x' ) return $wgCategoryTreeDefaultOptions['hideprefix'];
+		else if ( $value == 'always' ) return CT_HIDEPREFIX_ALWAYS;
+		else if ( $value == 'never' ) return CT_HIDEPREFIX_NEVER;
+		else if ( $value == 'auto' ) return CT_HIDEPREFIX_AUTO;
+		else if ( $value == 'categories' || $value == 'category' || $value == 'smart' ) return CT_HIDEPREFIX_CATEGORIES;
+		else return $wgCategoryTreeDefaultOptions['hideprefix'];
 	}
 
 	/**
@@ -475,9 +495,16 @@ class CategoryTree {
 		#$trans = $title->getLocalizedText();
 		$trans = ''; #place holder for when translated titles are available
 
+		$hideprefix = $this->getOption('hideprefix');
+
+		if ( $hideprefix == CT_HIDEPREFIX_ALWAYS ) $hideprefix = true;
+		else if ( $hideprefix == CT_HIDEPREFIX_AUTO ) $hideprefix = ($mode == CT_MODE_CATEGORIES);
+		else if ( $hideprefix == CT_HIDEPREFIX_CATEGORIES ) $hideprefix = ($ns == NS_CATEGORY);
+		else $hideprefix = true;
+
 		#when showing only categories, omit namespace in label unless we explicitely defined the configuration setting
 		#patch contributed by Manuel Schneider <manuel.schneider@wikimedia.ch>, Bug 8011
-		if ( $this->getOption('hideprefix') || $mode == CT_MODE_CATEGORIES ) $label = htmlspecialchars( $title->getText() );
+		if ( $hideprefix ) $label = htmlspecialchars( $title->getText() );
 		else $label = htmlspecialchars( $title->getPrefixedText() );
 
 		if ( $trans && $trans!=$label ) $label.= ' ' . Xml::element( 'i', array( 'class' => 'translation'), $trans );
