@@ -274,8 +274,7 @@ function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
 
 	$ct = new CategoryTree( $argv );
 
-	$divAttribs = Sanitizer::validateTagAttributes( $argv, 'div' );
-	$style = isset( $divAttribs['style'] ) ? $divAttribs['style'] : null;
+	$attr = Sanitizer::validateTagAttributes( $argv, 'div' );
 
 	$hideroot = isset( $argv[ 'hideroot' ] ) ? CategoryTree::decodeBoolean( $argv[ 'hideroot' ] ) : null;
 	$onlyroot = isset( $argv[ 'onlyroot' ] ) ? CategoryTree::decodeBoolean( $argv[ 'onlyroot' ] ) : null;
@@ -284,7 +283,7 @@ function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
 	$depth = efCategoryTreeCapDepth( $ct->getOption( 'mode' ), $depthArg );
 	if ( $onlyroot ) $depth = 0;
 
-	return $ct->getTag( $parser, $cat, $hideroot, $style, $depth );
+	return $ct->getTag( $parser, $cat, $hideroot, $attr, $depth );
 }
 
 /**
