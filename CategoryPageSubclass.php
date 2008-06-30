@@ -12,7 +12,7 @@ class CategoryTreeCategoryPage extends CategoryPage {
 }
 
 class CategoryTreeCategoryViewer extends CategoryViewer {
-	var $child_titles;
+	var $child_cats;
 
 	function getCategoryTree() {
 		global $wgOut, $wgCategoryTreeCategoryPageOptions;
@@ -29,25 +29,29 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	/**
 	 * Add a subcategory to the internal lists
 	 */
-	function addSubcategory( $title, $sortkey, $pageLength ) {
+	function addSubcategoryObject( $cat, $sortkey, $pageLength ) {
 		global $wgContLang, $wgOut, $wgRequest;
 
+		$title = $cat->getTitle();
+
 		if ( $wgRequest->getCheck( 'notree' ) ) {
-			return parent::addSubcategory( $title, $sortkey, $pageLength );
+			return parent::addSubcategoryObject( $cat, $sortkey, $pageLength );
 		}
 
-		if ( ! $GLOBALS['wgCategoryTreeUnifiedView'] ) {
-			$this->child_titles[] = $title;
-			return parent::addSubcategory( $title, $sortkey, $pageLength );
-		}
+		/*if ( ! $GLOBALS['wgCategoryTreeUnifiedView'] ) {
+			$this->child_cats[] = $cat;
+			return parent::addSubcategory( $cat, $sortkey, $pageLength );
+		}*/
 
 		$tree = $this->getCategoryTree();
 
-		$this->children[] = $tree->renderNode( $title );
+		$this->children[] = $tree->renderNodeInfo( $title, $cat );
 
 		$this->children_start_char[] = $this->getSubcategorySortChar( $title, $sortkey );
 	}
 
+	/* 
+	# this is a pain to keep this consistent, and no one should be using wgCategoryTreeUnifiedView = false anyway.
 	function getSubcategorySection() {
 		global $wgOut, $wgRequest, $wgCookiePrefix;
 
@@ -107,14 +111,14 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		if ( $showAs == 'list' ) {
 			$r .= $this->formatList( $this->children, $this->children_start_char );
 		} else {
-			$ct = getCategoryTree();
+			$ct = $this->getCategoryTree();
 
-			foreach ( $this->child_titles as $title ) {
-				$r .= $ct->renderNode( $title );
+			foreach ( $this->child_cats as $cat ) {
+				$r .= $ct->renderNodeInfo( $cat->getTitle(), $cat );
 			}
 		}
 		return $r;
-	}
+	}*/
 
 	function makeShowAsLink( $targetValue, $currentValue ) {
 		$msg = htmlspecialchars( CategoryTree::msg( "show-$targetValue" ) );
@@ -127,13 +131,13 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	}
 
 	function clearCategoryState() {
-		$this->child_titles = array();
+		$this->child_cats = array();
 		parent::clearCategoryState();
 	}
 
 	function finaliseCategoryState() {
 		if( $this->flip ) {
-			$this->child_titles = array_reverse( $this->child_titles );
+			$this->child_cats = array_reverse( $this->child_cats );
 		}
 		parent::finaliseCategoryState();
 	}

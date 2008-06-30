@@ -32,6 +32,7 @@ class CategoryTree {
 
 		$this->mOptions['mode'] = self::decodeMode( $this->mOptions['mode'] );
 		$this->mOptions['hideprefix'] = self::decodeBoolean( $this->mOptions['hideprefix'] );
+		$this->mOptions['showcount']  = self::decodeBoolean( $this->mOptions['showcount'] );
 	}
 
 	function getOption( $name ) {
@@ -66,7 +67,7 @@ class CategoryTree {
 		if ( is_int( $value ) ) return ( $value > 0 );
 
 		$value = trim( strtolower( $value ) );
-		if ( is_numeric( $value ) ) return ( (int)$mode > 0 );
+		if ( is_numeric( $value ) ) return ( (int)$value > 0 );
 
 		if ( $value == 'yes' || $value == 'y' || $value == 'true' || $value == 't' || $value == 'on' ) return true;
 		else if ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) return false;
@@ -306,7 +307,7 @@ class CategoryTree {
 	* $title must be a Title object
 	*/
 	function renderChildren( &$title, $depth=1 ) {
-		global $wgCategoryTreeMaxChildren;
+		global $wgCategoryTreeMaxChildren, $wgVersion;
 
 		if( $title->getNamespace() != NS_CATEGORY ) {
 			// Non-categories can't have children. :)
@@ -315,10 +316,6 @@ class CategoryTree {
 
 		$dbr =& wfGetDB( DB_SLAVE );
 
-		#additional stuff to be used if "transaltion" by interwiki-links is desired
-		$transFields = '';
-		$transJoin = '';
-		$transWhere = '';
 
 		$mode = $this->getOption('mode');
 
@@ -327,14 +324,33 @@ class CategoryTree {
 		else if ( $mode == CT_MODE_PAGES ) $nsmatch = ' AND cat.page_namespace != ' . NS_IMAGE;
 		else $nsmatch = ' AND cat.page_namespace = ' . NS_CATEGORY;
 
+		#additional stuff to be used if "transaltion" by interwiki-links is desired
+		$transFields = '';
+		$transJoin = '';
+		$transWhere = '';
+
+		# fetch member count if possible
+		$doCount = version_compare( $wgVersion, "1.12", '>' );
+
+		$countFields = '';
+		$countJoin = '';
+
+		if ( $doCount ) {
+			$cat = $dbr->tableName( 'category' );
+			$countJoin = " LEFT JOIN $cat ON cat_title = page_title AND page_namespace = " . NS_CATEGORY;
+			$countFields = ', cat_id, cat_title, cat_subcats, cat_pages, cat_files';
+		}
+
 		$page = $dbr->tableName( 'page' );
 		$categorylinks = $dbr->tableName( 'categorylinks' );
 
 		$sql = "SELECT cat.page_namespace, cat.page_title
 					  $transFields
+					  $countFields
 				FROM $page as cat
 				JOIN $categorylinks ON cl_from = cat.page_id
 				$transJoin
+				$countJoin
 				WHERE cl_to = " . $dbr->addQuotes( $title->getDBkey() ) . "
 				$nsmatch
 				"./*AND cat.page_is_redirect = 0*/"
@@ -348,14 +364,20 @@ class CategoryTree {
 		$categories= '';
 		$other= '';
 
-		while ( $row = $dbr->fetchRow( $res ) ) {
+		while ( $row = $dbr->fetchObject( $res ) ) {
 			#TODO: translation support; ideally added to Title object
-			$t = Title::makeTitle( $row['page_namespace'], $row['page_title'] );
+			$t = Title::newFromRow( $row );
 
-			$s = $this->renderNode( $t, $depth-1, false );
+			$cat = NULL;
+
+			if ( $doCount && $row->page_namespace == NS_CATEGORY ) {
+				$cat = Category::newFromRow( $row, $t );
+			}
+
+			$s = $this->renderNodeInfo( $t, $cat, $depth-1, false );
 			$s .= "\n\t\t";
 
-			if ($row['page_namespace'] == NS_CATEGORY) $categories .= $s;
+			if ($row->page_namespace == NS_CATEGORY) $categories .= $s;
 			else $other .= $s;
 		}
 
@@ -394,9 +416,9 @@ class CategoryTree {
 
 		$s= '';
 
-		while ( $row = $dbr->fetchRow( $res ) ) {
+		while ( $row = $dbr->fetchObject( $res ) ) {
 			#TODO: translation support; ideally added to Title object
-			$t = Title::makeTitle( $row['page_namespace'], $row['page_title'] );
+			$t = Title::newFromRow( $row );
 
 			#$trans = $title->getLocalizedText();
 			$trans = ''; #place holder for when translated titles are available
@@ -424,8 +446,18 @@ class CategoryTree {
 	* Returns a string with a HTML represenation of the given page.
 	* $title must be a Title object
 	*/
-	function renderNode( &$title, $children = 0, $loadchildren = false ) {
-		global $wgCategoryTreeDefaultMode;
+	function renderNode( $title, $children = 0, $loadchildren = false ) {
+		if ( $title->getNamespace() == NS_CATEGORY ) $cat = Category::newFromTitle( $title );
+		else $cat = NULL;
+
+		return $this->renderNodeInfo( $title, $cat, $children, $loadchildren );
+	}
+
+	/**
+	* Returns a string with a HTML represenation of the given page.
+	* $info must be an associative array, containing at least a Title object under the 'title' key.
+	*/
+	function renderNodeInfo( $title, $cat, $children = 0, $loadchildren = false ) {
 		static $uniq = 0;
 
 		$mode = $this->getOption('mode');
@@ -462,6 +494,7 @@ class CategoryTree {
 
 		if ( ( $ns % 2 ) > 0 ) $labelClass .= ' CategoryTreeLabelTalk';
 
+		$count = false;
 		$s = '';
 
 		#NOTE: things in CategoryTree.js rely on the exact order of tags!
@@ -475,25 +508,37 @@ class CategoryTree {
 		$s .= Xml::openElement( 'span', $attr );
 
 		if ( $ns == NS_CATEGORY ) {
+			if ( $cat ) {
+				if ( $mode == CT_MODE_CATEGORIES ) $count = $cat->getSubcatCount();
+				else if ( $mode == CT_MODE_PAGES ) $count = $cat->getPageCount() - $cat->getFileCount();
+				else $count = $cat->getPageCount();
+			}
+	
 			$linkattr= array( 'href' => $wikiLink );
 			if ( $load ) $linkattr[ 'id' ] = $load;
 
 			$linkattr[ 'class' ] = "CategoryTreeToggle";
 
-			if ( $children == 0 || $loadchildren ) {
+			if ( $count === 0 ) {
+				$tag = 'span';
+				$txt = $this->msg('empty-bullet');
+			}
+			else if ( $children == 0 || $loadchildren ) {
+				$tag = 'a';
 				$txt = $this->msg('expand-bullet');
 				$linkattr[ 'onclick' ] = "this.href='javascript:void(0)'; categoryTreeExpandNode('".Xml::escapeJsString($key)."',".$this->getOptionsAsJsStructure().",this);";
 				# Don't load this message for ajax requests, so that we don't have to initialise $wgLang
 				$linkattr[ 'title' ] = $this->mIsAjaxRequest ? '##LOAD##' : self::msg('expand');
 			}
 			else {
+				$tag = 'a';
 				$txt = $this->msg('collapse-bullet');
 				$linkattr[ 'onclick' ] = "this.href='javascript:void(0)'; categoryTreeCollapseNode('".Xml::escapeJsString($key)."',".$this->getOptionsAsJsStructure().",this);";
 				$linkattr[ 'title' ] = self::msg('collapse');
 				$linkattr[ 'class' ] .= ' CategoryTreeLoaded';
 			}
 
-			$s .= Xml::openElement( 'a', $linkattr ) . $txt . Xml::closeElement( 'a' ) . ' ';
+			$s .= Xml::openElement( $tag, $linkattr ) . $txt . Xml::closeElement( $tag ) . ' ';
 		} else {
 			$s .= $this->msg('page-bullet');
 		}
@@ -501,6 +546,17 @@ class CategoryTree {
 		$s .= Xml::closeElement( 'span' );
 
 		$s .= Xml::openElement( 'a', array( 'class' => $labelClass, 'href' => $wikiLink ) ) . $label . Xml::closeElement( 'a' );
+
+		if ( $count !== false && $this->getOption( 'showcount' ) ) {
+			$pages = $cat->getPageCount() - $cat->getSubcatCount() - $cat->getFileCount();
+
+			$attr = array(
+				'title' => $this->msg( 'member-counts', $cat->getSubcatCount(), $pages , $cat->getFileCount() )
+			);
+
+			$s .= Xml::element( 'span', $attr, ' (' . $count . ')' );
+		}
+
 		$s .= Xml::closeElement( 'div' );
 		$s .= "\n\t\t";
 		$s .= Xml::openElement( 'div', array( 'class' => 'CategoryTreeChildren', 'style' => $children > 0 ? "display:block" : "display:none" ) );

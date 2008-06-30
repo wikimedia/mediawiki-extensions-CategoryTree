@@ -40,7 +40,7 @@ class CategoryTreePage extends SpecialPage {
 	 * @param $par Parameters passed to the page
 	 */
 	function execute( $par ) {
-		global $wgRequest, $wgOut, $wgMakeBotPrivileged, $wgUser, $wgCategoryTreeDefaultOptions;
+		global $wgRequest, $wgOut, $wgCategoryTreeDefaultOptions, $wgCategoryTreeSpecialPageOptions;
 
 		$this->setHeaders();
 
@@ -56,6 +56,9 @@ class CategoryTreePage extends SpecialPage {
 
 		# grab all known options from the request. Normalization is done by the CategoryTree class
 		foreach ( $wgCategoryTreeDefaultOptions as $option => $default ) {
+			if ( isset( $wgCategoryTreeSpecialPageOptions[$option] ) )
+				$default = $wgCategoryTreeSpecialPageOptions[$option];
+
 			$options[$option] = $wgRequest->getVal( $option, $default );
 		}
 

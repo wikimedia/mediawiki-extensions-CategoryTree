@@ -34,7 +34,10 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 	'categorytree-expand'           => 'expand',
 	'categorytree-collapse-bullet'  => '[<b>&#x2212;</b>]', # do not translate or duplicate this message to other languages
 	'categorytree-expand-bullet'    => '[<b>+</b>]', # do not translate or duplicate this message to other languages
+	'categorytree-empty-bullet'     => '[<b>&#215</b>]', # do not translate or duplicate this message to other languages
 	'categorytree-page-bullet'      => '&nbsp;', # do not translate or duplicate this message to other languages
+
+	'categorytree-member-counts'    => 'contains $1 subcategories, $2 pages, and $3 files',
 
 	'categorytree-load'             => 'load',
 	'categorytree-loading'          => 'loading…',
@@ -596,6 +599,7 @@ Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert m�
 	'categorytree-category'         => 'Kategorie:',
 	'categorytree-go'               => 'Laden',
 	'categorytree-parents'          => 'Oberkategorien',
+	'categorytree-member-counts'    => 'enthält $1 Unterkategorien, $2 Seiten und $3 Dateien',
 	'categorytree-mode-categories'  => 'nur Kategorien',
 	'categorytree-mode-pages'       => 'Seiten außer Bilder',
 	'categorytree-mode-all'         => 'alle Seiten',

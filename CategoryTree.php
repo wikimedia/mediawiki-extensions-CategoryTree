@@ -32,12 +32,13 @@ define('CT_MODE_ALL', 20);
  *                             This way, the cache does not need to be disabled. Default is false.
  * $wgCategoryTreeDisableCache - disabled the parser cache for pages with a <categorytree> tag. Default is true.
  * $wgCategoryTreeUseCache - enable HTTP cache for anon users. Default is false.
- * $wgCategoryTreeUnifiedView - use unified view on category pages, instead of "tree" or "traditional list". Default is true.
- * $wgCategoryTreeOmitNamespace - never show namespace prefix. Default is false
  * $wgCategoryTreeMaxDepth - maximum value for depth argument; An array that maps mode values to
  *                           the maximum depth acceptable for the depth option.
  *                           Per default, the "categories" mode has a max depth of 2,
  *                           all other modes have a max depth of 1.
+ * $wgCategoryTreeDefaultOptions - default options for the <categorytree> tag.
+ * $wgCategoryTreeCategoryPageOptions - options to apply on category pages.
+ * $wgCategoryTreeSpecialPageOptions - options to apply on Special:CategoryTree.
  */
 
 $wgCategoryTreeMaxChildren = 200;
@@ -45,7 +46,7 @@ $wgCategoryTreeAllowTag = true;
 $wgCategoryTreeDisableCache = true;
 $wgCategoryTreeDynamicTag = false;
 $wgCategoryTreeHTTPCache = false;
-$wgCategoryTreeUnifiedView = true;
+#$wgCategoryTreeUnifiedView = true;
 $wgCategoryTreeMaxDepth = array(CT_MODE_PAGES => 1, CT_MODE_ALL => 1, CT_MODE_CATEGORIES => 2);
 
 $wgCategoryTreeExtPath = '/extensions/CategoryTree';
@@ -56,11 +57,16 @@ $wgCategoryTreeDefaultMode = CT_MODE_CATEGORIES;
 $wgCategoryTreeDefaultOptions = array(); #Default values for most options. ADD NEW OPTIONS HERE!
 $wgCategoryTreeDefaultOptions['mode'] = NULL; # will be set to $wgCategoryTreeDefaultMode in efCategoryTree(); compatibility quirk
 $wgCategoryTreeDefaultOptions['hideprefix'] = NULL; # will be set to $wgCategoryTreeDefaultMode in efCategoryTree(); compatibility quirk
+$wgCategoryTreeDefaultOptions['showcount'] = false;
 #TODO: hideprefix: always, never, catonly, catonly_if_onlycat
 
 $wgCategoryTreeCategoryPageMode = CT_MODE_CATEGORIES;
 $wgCategoryTreeCategoryPageOptions = array(); #Options to be used for category pages
 $wgCategoryTreeCategoryPageOptions['mode'] = NULL; # will be set to $wgCategoryTreeDefaultMode in efCategoryTree(); compatibility quirk
+$wgCategoryTreeCategoryPageOptions['showcount'] = true;
+
+$wgCategoryTreeSpecialPageOptions = array(); #Options to be used for Special:CategoryTree
+$wgCategoryTreeSpecialPageOptions['showcount'] = true;
 
 /**
  * Register extension setup hook and credits
