@@ -37,7 +37,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 	'categorytree-empty-bullet'     => '[<b>&#215</b>]', # do not translate or duplicate this message to other languages
 	'categorytree-page-bullet'      => '&nbsp;', # do not translate or duplicate this message to other languages
 
-	'categorytree-member-counts'    => 'contains $1 subcategories, $2 pages, and $3 files',
+	'categorytree-member-counts'    => 'contains {{PLURAL:$1|1 subcategory|$1 subcategories}}, {{PLURAL:$2|1 page|$2 pages}}, and {{PLURAL:$3|1 file|$3 files}}',
 
 	'categorytree-load'             => 'load',
 	'categorytree-loading'          => 'loading…',
@@ -48,9 +48,9 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 	'categorytree-error'            => 'Problem loading data.',
 	'categorytree-retry'            => 'Please wait a moment and try again.',
 
-	'categorytree-show-list'        => 'Show as list',
-	'categorytree-show-tree'        => 'Show as tree',
-	'categorytree-too-many-subcats' => "Cannot show subcategories as a tree, there are too many of them.",
+	#'categorytree-show-list'        => 'Show as list', # deprecated
+	#'categorytree-show-tree'        => 'Show as tree', # deprecated
+	#'categorytree-too-many-subcats' => "Cannot show subcategories as a tree, there are too many of them.",
 );
 
 /** Afrikaans (Afrikaans)
@@ -76,9 +76,9 @@ $messages['af'] = array(
 	'categorytree-no-subcategories' => 'geen subkategorieë nie',
 	'categorytree-no-pages'         => 'geen bladsye of subkategorieë nie',
 	'categorytree-not-found'        => 'Kategorie <i>$1</i> nie gevind nie',
-	'categorytree-show-list'        => 'Wys as lys',
-	'categorytree-show-tree'        => 'Wys as boom',
-	'categorytree-too-many-subcats' => 'Kan nie subkategorieë as boom wys nie, daar is te veel.',
+	#'categorytree-show-list'        => 'Wys as lys',
+	#'categorytree-show-tree'        => 'Wys as boom',
+	#'categorytree-too-many-subcats' => 'Kan nie subkategorieë as boom wys nie, daar is te veel.',
 );
 
 /** Amharic (አማርኛ)
@@ -126,9 +126,9 @@ $messages['an'] = array(
 	'categorytree-not-found'        => "Categoría ''$1'' no trobata",
 	'categorytree-error'            => 'Error en cargar os datos',
 	'categorytree-retry'            => 'Por fabor, aspere bels intes y prebe de nuebas.',
-	'categorytree-show-list'        => 'Amostrar como una lista',
-	'categorytree-show-tree'        => 'Amostrar como un árbol',
-	'categorytree-too-many-subcats' => "No se pueden amostrar as subcategorías como un árbol porque bi'n ha masiadas.",
+	#'categorytree-show-list'        => 'Amostrar como una lista',
+	#'categorytree-show-tree'        => 'Amostrar como un árbol',
+	#'categorytree-too-many-subcats' => "No se pueden amostrar as subcategorías como un árbol porque bi'n ha masiadas.",
 );
 
 /** Arabic (العربية)
@@ -159,9 +159,9 @@ $messages['ar'] = array(
 	'categorytree-not-found'        => 'التصنيف <i>$1</i> لم يتم العثور عليه',
 	'categorytree-error'            => 'مشكلة في تحميل البيانات.',
 	'categorytree-retry'            => 'من فضلك انتظر لحظة وحاول مرة أخرى.',
-	'categorytree-show-list'        => 'اعرض كقائمة',
-	'categorytree-show-tree'        => 'اعرض كشجرة',
-	'categorytree-too-many-subcats' => 'لا يمكن عرض التصنيفات الفرعية كشجرة، يوجد الكثير منهم.',
+	#'categorytree-show-list'        => 'اعرض كقائمة',
+	#'categorytree-show-tree'        => 'اعرض كشجرة',
+	#'categorytree-too-many-subcats' => 'لا يمكن عرض التصنيفات الفرعية كشجرة، يوجد الكثير منهم.',
 );
 
 /** Assamese (অসমীয়া)
@@ -187,9 +187,9 @@ $messages['as'] = array(
 	'categorytree-not-found'        => '<i>$1</i> শ্রেণীতো পোৱা নগল',
 	'categorytree-error'            => 'তথ্য জমাবলৈ সমস্যা হৈছে',
 	'categorytree-retry'            => 'অনুগ্রহ কৰি কিছু সময় অপেক্ষা কৰি তাৰ পিছত চেষ্টা কৰক।',
-	'categorytree-show-list'        => 'তালিকা হিচাপে দেখুৱাওক',
-	'categorytree-show-tree'        => 'বৃক্ষ্যৰূপে দেখুৱাওক',
-	'categorytree-too-many-subcats' => 'উপশ্রেণী সমুহক বৃক্ষ্যৰূপে দেখুৱাব নোৱাৰি, বহুত বেছি উপশ্রেণী আছে।',
+	#'categorytree-show-list'        => 'তালিকা হিচাপে দেখুৱাওক',
+	#'categorytree-show-tree'        => 'বৃক্ষ্যৰূপে দেখুৱাওক',
+	#'categorytree-too-many-subcats' => 'উপশ্রেণী সমুহক বৃক্ষ্যৰূপে দেখুৱাব নোৱাৰি, বহুত বেছি উপশ্রেণী আছে।',
 );
 
 /** Asturian (Asturianu)
@@ -221,9 +221,9 @@ un navegador mui antiguu o'l JavaScript desactiváu, nun va funcionar.",
 	'categorytree-not-found'        => "Nun s'atopó la categoría <i>$1</i>",
 	'categorytree-error'            => 'Hebo un problema al cargar los datos.',
 	'categorytree-retry'            => 'Por favor, espera unos momentos y inténtalo otra vuelta.',
-	'categorytree-show-list'        => 'Amosar como llista',
-	'categorytree-show-tree'        => 'Amosar como árbole',
-	'categorytree-too-many-subcats' => "Nun se puen amosar les subcategoríes en forma d'árbole porque hai demasiaes.",
+	#'categorytree-show-list'        => 'Amosar como llista',
+	#'categorytree-show-tree'        => 'Amosar como árbole',
+	#'categorytree-too-many-subcats' => "Nun se puen amosar les subcategoríes en forma d'árbole porque hai demasiaes.",
 );
 
 /** Kotava (Kotava)
@@ -252,9 +252,9 @@ Ede va guazafi exulesiki favel oke ede JavaScript fliaceem tir metegis, batcoba 
 	'categorytree-not-found'        => '<i>$1</i> loma metrasiyina',
 	'categorytree-error'            => 'Zvak remi origvajara.',
 	'categorytree-retry'            => 'Vay kemel aze tolyawal !',
-	'categorytree-show-list'        => 'Vexalakorafa nedira',
-	'categorytree-show-tree'        => 'Aalkorafa nedira',
-	'categorytree-too-many-subcats' => 'Aalkorafa nedira me rotir kire slika volveyloma tid.',
+	#'categorytree-show-list'        => 'Vexalakorafa nedira',
+	#'categorytree-show-tree'        => 'Aalkorafa nedira',
+	#'categorytree-too-many-subcats' => 'Aalkorafa nedira me rotir kire slika volveyloma tid.',
 );
 
 /** Bikol Central (Bikol Central)
@@ -270,7 +270,7 @@ $messages['bcl'] = array(
 	'categorytree-no-subcategories' => 'mayong mga sub-kategorya',
 	'categorytree-no-pages'         => 'mayong mga pahina o sub-kategorya',
 	'categorytree-retry'            => 'Paki halat mûna tapos probaran giraray.',
-	'categorytree-show-list'        => 'Ipahiling an lista',
+	#'categorytree-show-list'        => 'Ipahiling an lista',
 );
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
@@ -297,9 +297,9 @@ $messages['be-tarask'] = array(
 	'categorytree-not-found'        => 'Катэгорыя <i>$1</i> ня знойдзена',
 	'categorytree-error'            => 'Праблема загрузкі зьвестак.',
 	'categorytree-retry'            => 'Калі ласка, пачакайце і паспрабуйце яшчэ раз.',
-	'categorytree-show-list'        => 'Паказаць сьпіс',
-	'categorytree-show-tree'        => 'Паказаць дрэва',
-	'categorytree-too-many-subcats' => 'Немагчыма паказаць падкатэгорыі ў выглядзе дрэва, бо іх занадта шмат.',
+	#'categorytree-show-list'        => 'Паказаць сьпіс',
+	#'categorytree-show-tree'        => 'Паказаць дрэва',
+	#'categorytree-too-many-subcats' => 'Немагчыма паказаць падкатэгорыі ў выглядзе дрэва, бо іх занадта шмат.',
 );
 
 /** Bulgarian (Български)
@@ -329,9 +329,9 @@ $messages['bg'] = array(
 	'categorytree-not-found'        => 'Категорията <i>$1</i> не беше намерена',
 	'categorytree-error'            => 'Възникна проблем при зареждане на информацията.',
 	'categorytree-retry'            => 'Изчакайте малко и опитайте отново.',
-	'categorytree-show-list'        => 'Показване като списък',
-	'categorytree-show-tree'        => 'Показване като дърво',
-	'categorytree-too-many-subcats' => 'Съществуват твърде много подкатегории, невъзможно е да бъдат показани като дърво.',
+	#'categorytree-show-list'        => 'Показване като списък',
+	#'categorytree-show-tree'        => 'Показване като дърво',
+	#'categorytree-too-many-subcats' => 'Съществуват твърде много подкатегории, невъзможно е да бъдат показани като дърво.',
 );
 
 /** Bengali (বাংলা)
@@ -361,9 +361,9 @@ $messages['bn'] = array(
 	'categorytree-not-found'        => '<i>$1</i> বিষয়শ্রেণীটি খুঁজে পাওয়া যায়নি',
 	'categorytree-error'            => 'উপাত্ত নিয়ে আসতে সমস্যা।',
 	'categorytree-retry'            => 'অনুগ্রহ করে একটু অপেক্ষা করে আবার চেষ্টা করুন।',
-	'categorytree-show-list'        => 'তালিকা আকারে দেখানো হোক',
-	'categorytree-show-tree'        => 'বৃক্ষাকারে দেখানো হোক',
-	'categorytree-too-many-subcats' => 'উপবিষয়শ্রেণীগুলি সংখ্যায় খুব বেশি বলে এগুলি বৃক্ষাকারে দেখানো গেল না।',
+	#'categorytree-show-list'        => 'তালিকা আকারে দেখানো হোক',
+	#'categorytree-show-tree'        => 'বৃক্ষাকারে দেখানো হোক',
+	#'categorytree-too-many-subcats' => 'উপবিষয়শ্রেণীগুলি সংখ্যায় খুব বেশি বলে এগুলি বৃক্ষাকারে দেখানো গেল না।',
 );
 
 /** Breton (Brezhoneg)
@@ -394,9 +394,9 @@ M'eo kozh-mat stumm ho merdeer pe m'eo diweredekaet JavaScript ganeoc'h, ne'z ai
 	'categorytree-not-found'        => "N'eo ket bet kavet ar rummad <i>$1</i>",
 	'categorytree-error'            => 'Ur gudenn zo bet e-ser kargañ ar roadennoù.',
 	'categorytree-retry'            => 'Gortozit un tamm ha klaskit en-dro.',
-	'categorytree-show-list'        => 'Diskouez er mod roll',
-	'categorytree-show-tree'        => 'Diskouez er mod gwezennadur',
-	'categorytree-too-many-subcats' => "N'haller ket diskouez an isrummadoù er mod roll, re zo anezho.",
+	#'categorytree-show-list'        => 'Diskouez er mod roll',
+	#'categorytree-show-tree'        => 'Diskouez er mod gwezennadur',
+	#'categorytree-too-many-subcats' => "N'haller ket diskouez an isrummadoù er mod roll, re zo anezho.",
 );
 
 /** Bosnian (Bosanski)
@@ -419,9 +419,9 @@ $messages['bs'] = array(
 	'categorytree-nothing-found'    => 'nema podkategorija',
 	'categorytree-no-subcategories' => 'nema podkategorija',
 	'categorytree-no-pages'         => 'nema podkategorija ili clanaka',
-	'categorytree-show-list'        => 'Prikaži kao listu',
-	'categorytree-show-tree'        => 'Prikaži kao stablo',
-	'categorytree-too-many-subcats' => 'Ne mogu prikazati podkategorije, previše ih je.',
+	#'categorytree-show-list'        => 'Prikaži kao listu',
+	#'categorytree-show-tree'        => 'Prikaži kao stablo',
+	#'categorytree-too-many-subcats' => 'Ne mogu prikazati podkategorije, previše ih je.',
 );
 
 /** Catalan (Català)
@@ -450,9 +450,9 @@ $messages['ca'] = array(
 	'categorytree-not-found'        => "No s'ha trobat la categoria ''$1''.",
 	'categorytree-error'            => 'Problema en la càrrega de dades.',
 	'categorytree-retry'            => 'Torneu-ho a intentar en uns moments.',
-	'categorytree-show-list'        => 'Mostra com a llista',
-	'categorytree-show-tree'        => 'Mostra com un arbre',
-	'categorytree-too-many-subcats' => 'Hi ha massa subcategories per a mostrar-les com a arbre.',
+	#'categorytree-show-list'        => 'Mostra com a llista',
+	#'categorytree-show-tree'        => 'Mostra com un arbre',
+	#'categorytree-too-many-subcats' => 'Hi ha massa subcategories per a mostrar-les com a arbre.',
 );
 
 /** Mìng-dĕ̤ng-ngṳ̄ (Mìng-dĕ̤ng-ngṳ̄)
@@ -511,9 +511,9 @@ $messages['cs'] = array(
 	'categorytree-not-found'        => 'Kategorie <em>$1</em> nenalezena',
 	'categorytree-error'            => 'Chyba při načítání dat.',
 	'categorytree-retry'            => 'Počkejte chvilku a zkuste to znova.',
-	'categorytree-show-list'        => 'Zobrazi jako seznam',
-	'categorytree-show-tree'        => 'Zobrazit jako strom',
-	'categorytree-too-many-subcats' => 'Podkategorie není možné zobrazit ve stromové struktuře, protože je jich příliš mnoho.',
+	#'categorytree-show-list'        => 'Zobrazi jako seznam',
+	#'categorytree-show-tree'        => 'Zobrazit jako strom',
+	#'categorytree-too-many-subcats' => 'Podkategorie není možné zobrazit ve stromové struktuře, protože je jich příliš mnoho.',
 );
 
 /** Church Slavic (Словѣньскъ)
@@ -551,9 +551,9 @@ Ni lwydda'r gofyniad os yw'ch porwr yn hen iawn neu os nad yw Sgript Java wedi e
 	'categorytree-not-found'        => "Heb ddod o hyd i'r categori <i>$1</i>",
 	'categorytree-error'            => "Cafwyd problem wrth lwytho'r data.",
 	'categorytree-retry'            => 'Arhoswch ennyd, yna ceisiwch eto.',
-	'categorytree-show-list'        => 'Dangos ar lun rhestr',
-	'categorytree-show-tree'        => 'Dangos ar lun coeden',
-	'categorytree-too-many-subcats' => 'Yn methu dangos yr is-gategorïau ar lun coeden gan bod gormod ohonynt.',
+	#'categorytree-show-list'        => 'Dangos ar lun rhestr',
+	#'categorytree-show-tree'        => 'Dangos ar lun coeden',
+	#'categorytree-too-many-subcats' => 'Yn methu dangos yr is-gategorïau ar lun coeden gan bod gormod ohonynt.',
 );
 
 /** Danish (Dansk)
@@ -581,9 +581,9 @@ $messages['da'] = array(
 	'categorytree-not-found'        => "Kategorien ''$1'' blev ikke fundet",
 	'categorytree-error'            => 'Der opstod et problem under indlæsning af data.',
 	'categorytree-retry'            => 'Vent et øjeblik og prøv igen.',
-	'categorytree-show-list'        => 'Vis som liste',
-	'categorytree-show-tree'        => 'Vis som træ',
-	'categorytree-too-many-subcats' => 'Kan ikke vise underkategorier som træ, der er for mange.',
+	#'categorytree-show-list'        => 'Vis som liste',
+	#'categorytree-show-tree'        => 'Vis som træ',
+	#'categorytree-too-many-subcats' => 'Kan ikke vise underkategorier som træ, der er for mange.',
 );
 
 /** German (Deutsch)
@@ -599,7 +599,7 @@ Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert m�
 	'categorytree-category'         => 'Kategorie:',
 	'categorytree-go'               => 'Laden',
 	'categorytree-parents'          => 'Oberkategorien',
-	'categorytree-member-counts'    => 'enthält $1 Unterkategorien, $2 Seiten und $3 Dateien',
+	'categorytree-member-counts'    => 'enthält {{PLURAL:$1|1 Unterkategorie|$1 Unterkategorien}}, {{PLURAL:$2|1 Seite|$2 Seiten}} und {{PLURAL:$3|1 Datei|$3 Dateien}}',
 	'categorytree-mode-categories'  => 'nur Kategorien',
 	'categorytree-mode-pages'       => 'Seiten außer Bilder',
 	'categorytree-mode-all'         => 'alle Seiten',
@@ -613,9 +613,9 @@ Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert m�
 	'categorytree-not-found'        => "Kategorie „$1“ nicht gefunden",
 	'categorytree-error'            => 'Probleme beim Laden der Daten.',
 	'categorytree-retry'            => 'Bitte warte einen Moment und versuche es dann erneut.',
-	'categorytree-show-list'        => 'Zeige als Liste',
-	'categorytree-show-tree'        => 'Zeige als Baum',
-	'categorytree-too-many-subcats' => 'Unterkategorien können nicht als Baum dargestellt werden, da es zuviele sind.',
+	#'categorytree-show-list'        => 'Zeige als Liste',
+	#'categorytree-show-tree'        => 'Zeige als Baum',
+	#'categorytree-too-many-subcats' => 'Unterkategorien können nicht als Baum dargestellt werden, da es zuviele sind.',
 );
 
 /** German - formal address (Deutsch - förmliche Anrede)
@@ -660,9 +660,9 @@ Jolic maš wjelgin stary browser abo jolic JavaScript jo wótšaltowane, toś te
 	'categorytree-not-found'        => 'Kategorija <i>$1</i> njenamakana',
 	'categorytree-error'            => 'Problem pśi lodowanju datow.',
 	'categorytree-retry'            => 'Pócakaj pšosym moment a wopytaj hyšći raz.',
-	'categorytree-show-list'        => 'Ako lisćinu pokazaś',
-	'categorytree-show-tree'        => 'Ako bom pokazaś',
-	'categorytree-too-many-subcats' => 'Pódkategorije njedaju se ako bom pokazaś, jo pśewjele z nich.',
+	#'categorytree-show-list'        => 'Ako lisćinu pokazaś',
+	#'categorytree-show-tree'        => 'Ako bom pokazaś',
+	#'categorytree-too-many-subcats' => 'Pódkategorije njedaju se ako bom pokazaś, jo pśewjele z nich.',
 );
 
 /** Ewe (Eʋegbe)
@@ -692,7 +692,7 @@ $messages['el'] = array(
 	'categorytree-not-found'        => 'Η κατηγορία <i>$1</i> δεν βρέθηκε',
 	'categorytree-error'            => 'Πρόβλημα φόρτωσης δεδομένων.',
 	'categorytree-retry'            => 'Παρακαλώ περιμένετε μια στιγμή και προσπαθήστε ξανά.',
-	'categorytree-show-list'        => 'Δες ως λίστα',
+	#'categorytree-show-list'        => 'Δες ως λίστα',
 );
 
 /** Esperanto (Esperanto)
@@ -721,9 +721,9 @@ $messages['eo'] = array(
 	'categorytree-not-found'        => 'La kategorio <i>$1</i> ne estis trovita.',
 	'categorytree-error'            => 'Problemo ŝarĝante datojn',
 	'categorytree-retry'            => 'Bonvolu atendi momenton kaj provi denove.',
-	'categorytree-show-list'        => 'Montru listforme',
-	'categorytree-show-tree'        => 'Montru arbforme',
-	'categorytree-too-many-subcats' => 'Ne eblas montri subkategoriojn arbforme : estas tro multe da ili.',
+	#'categorytree-show-list'        => 'Montru listforme',
+	#'categorytree-show-tree'        => 'Montru arbforme',
+	#'categorytree-too-many-subcats' => 'Ne eblas montri subkategoriojn arbforme : estas tro multe da ili.',
 );
 
 /** Spanish (Español)
@@ -763,8 +763,8 @@ $messages['et'] = array(
 	'categorytree-mode-pages'       => 'leheküljed, välja arvatud pildid',
 	'categorytree-mode-all'         => 'kõik leheküljed',
 	'categorytree-no-subcategories' => 'alamkategooriaid ei ole',
-	'categorytree-show-list'        => 'Näita nimekirjana',
-	'categorytree-show-tree'        => 'Näita kategooriapuuna',
+	#'categorytree-show-list'        => 'Näita nimekirjana',
+	#'categorytree-show-tree'        => 'Näita kategooriapuuna',
 );
 
 /** Basque (Euskara)
@@ -790,9 +790,9 @@ $messages['eu'] = array(
 	'categorytree-not-found'        => 'Ez da <i>$1</i> kategoria aurkitu',
 	'categorytree-error'            => 'Arazoa datuak kargatzerakoan.',
 	'categorytree-retry'            => 'Itxaron pixka bat eta saiatu berriz.',
-	'categorytree-show-list'        => 'Zerrenda eran erakutsi',
-	'categorytree-show-tree'        => 'Zuhaitz eran erakutsi',
-	'categorytree-too-many-subcats' => 'Ezin dira azpikategoriak zuhaitz eran erakutsi, gehiegi dira-eta.',
+	#'categorytree-show-list'        => 'Zerrenda eran erakutsi',
+	#'categorytree-show-tree'        => 'Zuhaitz eran erakutsi',
+	#'categorytree-too-many-subcats' => 'Ezin dira azpikategoriak zuhaitz eran erakutsi, gehiegi dira-eta.',
 );
 
 /** Extremaduran (Estremeñu)
@@ -833,9 +833,9 @@ $messages['fa'] = array(
 	'categorytree-not-found'        => "ردهٔ  ''$1'' يافت نشد.",
 	'categorytree-error'            => 'اشکال در دریافت اطلاعات.',
 	'categorytree-retry'            => 'لطفاً چند لحظه صبر کنید و سپس دوباره امتحان کنید.',
-	'categorytree-show-list'        => 'نمایش فهرست‌وار',
-	'categorytree-show-tree'        => 'نمایش درخت‌وار',
-	'categorytree-too-many-subcats' => 'به خاطر شمار زیاد آنها، نمی‌توان زیررده‌ها را درخت‌وار نشان داد.',
+	#'categorytree-show-list'        => 'نمایش فهرست‌وار',
+	#'categorytree-show-tree'        => 'نمایش درخت‌وار',
+	#'categorytree-too-many-subcats' => 'به خاطر شمار زیاد آنها، نمی‌توان زیررده‌ها را درخت‌وار نشان داد.',
 );
 
 /** Finnish (Suomi)
@@ -864,9 +864,9 @@ $messages['fi'] = array(
 	'categorytree-not-found'        => 'Luokkaa <i>$1</i> ei löytynyt',
 	'categorytree-error'            => 'Ongelma tietojen latauksessa.',
 	'categorytree-retry'            => 'Odota hetki ja yritä uudelleen.',
-	'categorytree-show-list'        => 'Näytä luettelona',
-	'categorytree-show-tree'        => 'Näytä puuna',
-	'categorytree-too-many-subcats' => 'Alaluokkia ei voida näyttää puuna, koska niitä on liian monta.',
+	#'categorytree-show-list'        => 'Näytä luettelona',
+	#'categorytree-show-tree'        => 'Näytä puuna',
+	#'categorytree-too-many-subcats' => 'Alaluokkia ei voida näyttää puuna, koska niitä on liian monta.',
 );
 
 /** Faroese (Føroyskt)
@@ -907,9 +907,9 @@ $messages['fr'] = array(
 	'categorytree-not-found'        => 'La catégorie <tt>$1</tt> n’a pas été trouvée.',
 	'categorytree-error'            => 'Problème de chargement des données.',
 	'categorytree-retry'            => 'Attendez un instant puis réessayez.',
-	'categorytree-show-list'        => 'Afficher en liste',
-	'categorytree-show-tree'        => 'Afficher en arborescence',
-	'categorytree-too-many-subcats' => 'Les sous-catégories sont trop nombreuses pour être affichées sous forme d’arbre.',
+	#'categorytree-show-list'        => 'Afficher en liste',
+	#'categorytree-show-tree'        => 'Afficher en arborescence',
+	#'categorytree-too-many-subcats' => 'Les sous-catégories sont trop nombreuses pour être affichées sous forme d’arbre.',
 );
 
 /** Franco-Provençal (Arpetan)
@@ -939,9 +939,9 @@ Se vos avéd un rudo viely navigator Malyâjo ou que vos éd pas activâ la fonc
 	'categorytree-not-found'        => 'La catègorie <tt>$1</tt> at pas étâ trovâ.',
 	'categorytree-error'            => 'Problèmo de chargement de les balyês.',
 	'categorytree-retry'            => 'Atendéd un moment et pués tornâd èprovar.',
-	'categorytree-show-list'        => 'Afichiér en lista',
-	'categorytree-show-tree'        => 'Afichiér en arborèscence',
-	'categorytree-too-many-subcats' => 'Les sot-catègories sont trop nombroses por étre afichiês desot fôrma d’âbro.',
+	#'categorytree-show-list'        => 'Afichiér en lista',
+	#'categorytree-show-tree'        => 'Afichiér en arborèscence',
+	#'categorytree-too-many-subcats' => 'Les sot-catègories sont trop nombroses por étre afichiês desot fôrma d’âbro.',
 );
 
 /** Friulian (Furlan)
@@ -967,8 +967,8 @@ Se tu âs un sgarfadôr a vonde vieri, o tu âs disativât JavaScript, cheste pa
 	'categorytree-loading'          => 'daûr a cjamâ',
 	'categorytree-no-subcategories' => 'nissune sot categorie.',
 	'categorytree-no-pages'         => 'nissune pagjine ni sotcategorie',
-	'categorytree-show-list'        => 'Liste',
-	'categorytree-show-tree'        => 'Arbul',
+	#'categorytree-show-list'        => 'Liste',
+	#'categorytree-show-tree'        => 'Arbul',
 );
 
 /** Western Frisian (Frysk)
@@ -991,9 +991,9 @@ $messages['fy'] = array(
 	'categorytree-no-subcategories' => 'gjin ûnderlizzende kategoryen',
 	'categorytree-no-pages'         => 'gjin siden of ûnderlizzende siden',
 	'categorytree-not-found'        => 'Kategory <i>$1</i> net fûn',
-	'categorytree-show-list'        => 'Lit sjen as list',
-	'categorytree-show-tree'        => 'Lit sjen as beam',
-	'categorytree-too-many-subcats' => 'Underlizzende kategoryen kinne net as beam sjen litten wurde; der binne tefolle.',
+	#'categorytree-show-list'        => 'Lit sjen as list',
+	#'categorytree-show-tree'        => 'Lit sjen as beam',
+	#'categorytree-too-many-subcats' => 'Underlizzende kategoryen kinne net as beam sjen litten wurde; der binne tefolle.',
 );
 
 /** Irish (Gaeilge)
@@ -1026,9 +1026,9 @@ Má tá do bhrabhsálaí róshean, nó má dhíchumasaigh tú JavaScript, ní oi
 	'categorytree-not-found'        => 'Ní bhfuarthas Catagóir <i>$1</i>',
 	'categorytree-error'            => 'Earráid agus sonraí dá lódáil.',
 	'categorytree-retry'            => 'Fan nóiméad, le do thoil, roimh triail eile a bhaint as.',
-	'categorytree-show-list'        => 'Taispeáin mar liosta',
-	'categorytree-show-tree'        => 'Taispeáin mar chrann',
-	'categorytree-too-many-subcats' => 'Ní féidir na fo-chatagóirí a thaispeáint mar chrann, tá an iomarca díobh ann.',
+	#'categorytree-show-list'        => 'Taispeáin mar liosta',
+	#'categorytree-show-tree'        => 'Taispeáin mar chrann',
+	#'categorytree-too-many-subcats' => 'Ní féidir na fo-chatagóirí a thaispeáint mar chrann, tá an iomarca díobh ann.',
 );
 
 /** Galician (Galego)
@@ -1061,9 +1061,9 @@ Se ten un navegador moi vello, ou deshabilitado para o JavaScript, non vai funci
 	'categorytree-not-found'        => 'A categoría <i>"$1"</i> non foi atopada',
 	'categorytree-error'            => 'Problema da carga de datos.',
 	'categorytree-retry'            => 'Por favor, agarde un momento e ténteo de novo.',
-	'categorytree-show-list'        => 'Amosar coma unha listaxe',
-	'categorytree-show-tree'        => 'Amosar como unha árbore',
-	'categorytree-too-many-subcats' => 'Non se poden amosar as subcategorías coma unha árbore, hai demasiadas.',
+	#'categorytree-show-list'        => 'Amosar coma unha listaxe',
+	#'categorytree-show-tree'        => 'Amosar como unha árbore',
+	#'categorytree-too-many-subcats' => 'Non se poden amosar as subcategorías coma unha árbore, hai demasiadas.',
 );
 
 /** Gujarati (ગુજરાતી)
@@ -1076,8 +1076,8 @@ $messages['gu'] = array(
 	'categorytree-parents'       => 'પિતૃ',
 	'categorytree-mode-all'      => 'બધા પાનાં',
 	'categorytree-nothing-found' => 'કઈ ન મળ્યું',
-	'categorytree-show-list'     => 'સૂચીના રૂપમાં',
-	'categorytree-show-tree'     => 'વૃક્ષ રૂપમાં',
+	#'categorytree-show-list'     => 'સૂચીના રૂપમાં',
+	#'categorytree-show-tree'     => 'વૃક્ષ રૂપમાં',
 );
 
 /** Manx (Gaelg)
@@ -1138,9 +1138,9 @@ $messages['he'] = array(
 	'categorytree-not-found'        => "הקטגוריה '''$1''' לא נמצאה",
 	'categorytree-error'            => 'בעיה בטעינת המידע.',
 	'categorytree-retry'            => 'אנא המתינו מעט ונסו שנית.',
-	'categorytree-show-list'        => 'תצוגת רשימה',
-	'categorytree-show-tree'        => 'תצוגת עץ',
-	'categorytree-too-many-subcats' => 'לא ניתן להציג את קטגוריות המשנה כעץ כיוון שהן מרובות מדי.',
+	#'categorytree-show-list'        => 'תצוגת רשימה',
+	#'categorytree-show-tree'        => 'תצוגת עץ',
+	#'categorytree-too-many-subcats' => 'לא ניתן להציג את קטגוריות המשנה כעץ כיוון שהן מרובות מדי.',
 );
 
 /** Hindi (हिन्दी)
@@ -1170,9 +1170,9 @@ $messages['hi'] = array(
 	'categorytree-not-found'        => 'श्रेणी <i>$1</i> मिली नहीं',
 	'categorytree-error'            => 'डाटा लोड करने में समस्या।',
 	'categorytree-retry'            => 'कृपया थोडे समय के बाद फिरसे यत्न करें।',
-	'categorytree-show-list'        => 'सूची दर्शायें',
-	'categorytree-show-tree'        => 'वृक्ष दर्शायें',
-	'categorytree-too-many-subcats' => 'उपश्रेणियाँ वृक्ष के रूप में नहीं दिखा पा रहें हैं, क्योंकि वे बहुत ज्यादा हैं।',
+	#'categorytree-show-list'        => 'सूची दर्शायें',
+	#'categorytree-show-tree'        => 'वृक्ष दर्शायें',
+	#'categorytree-too-many-subcats' => 'उपश्रेणियाँ वृक्ष के रूप में नहीं दिखा पा रहें हैं, क्योंकि वे बहुत ज्यादा हैं।',
 );
 
 /** Croatian (Hrvatski)
@@ -1200,9 +1200,9 @@ $messages['hr'] = array(
 	'categorytree-not-found'        => 'Kategorija <i>$1</i> nije nađena',
 	'categorytree-error'            => 'Problem s učitavanjem podataka.',
 	'categorytree-retry'            => 'Pričekajte trenutak pa pokušajte opet.',
-	'categorytree-show-list'        => 'Prikaži kao popis',
-	'categorytree-show-tree'        => 'Prikaži kao stablo',
-	'categorytree-too-many-subcats' => 'Ne mogu prikazati podkategorije kao stablo, previše ih je.',
+	#'categorytree-show-list'        => 'Prikaži kao popis',
+	#'categorytree-show-tree'        => 'Prikaži kao stablo',
+	#'categorytree-too-many-subcats' => 'Ne mogu prikazati podkategorije kao stablo, previše ih je.',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -1231,9 +1231,9 @@ $messages['hsb'] = array(
 	'categorytree-not-found'        => "Kategorija ''$1'' njenamakana",
 	'categorytree-error'            => 'Problem při čitanju datow.',
 	'categorytree-retry'            => 'Prošu čakaj wokomik a spytaj potom hišće raz.',
-	'categorytree-show-list'        => 'Jako lisćinu zwobraznić',
-	'categorytree-show-tree'        => 'Jako štom zwobraznić',
-	'categorytree-too-many-subcats' => 'Njemóžno podkategorije jako štom zwobraznić, je přewjele z nich',
+	#'categorytree-show-list'        => 'Jako lisćinu zwobraznić',
+	#'categorytree-show-tree'        => 'Jako štom zwobraznić',
+	#'categorytree-too-many-subcats' => 'Njemóžno podkategorije jako štom zwobraznić, je přewjele z nich',
 );
 
 /** Haitian (Kreyòl ayisyen)
@@ -1263,9 +1263,9 @@ Si ou ta genyen yon vye navigatè (navigatè, bwozè entènèt), oubyen JavaScri
 	'categorytree-not-found'        => 'Nou pa twouve kategori <i>$1</i>',
 	'categorytree-error'            => 'Pwoblèm lè nou tap chaje, ouvri done yo.',
 	'categorytree-retry'            => 'Souple, rete yon enstan, yon moman epi eseye ankò.',
-	'categorytree-show-list'        => 'Montre nan yon lis eleman, yonn anba lòt',
-	'categorytree-show-tree'        => 'Montre tankou yon pyebwa, fèy yo ak depann de yon branch',
-	'categorytree-too-many-subcats' => 'Kategori pi piti yo twòp, nou pa kapab afiche yo tankou pyebwa.',
+	#'categorytree-show-list'        => 'Montre nan yon lis eleman, yonn anba lòt',
+	#'categorytree-show-tree'        => 'Montre tankou yon pyebwa, fèy yo ak depann de yon branch',
+	#'categorytree-too-many-subcats' => 'Kategori pi piti yo twòp, nou pa kapab afiche yo tankou pyebwa.',
 );
 
 /** Hungarian (Magyar)
@@ -1296,9 +1296,9 @@ Ha túlságosan régi böngésződ van, vagy a JavaScript le van tiltva, akkor n
 	'categorytree-not-found'        => 'Kategória <i>$1</i> nem található',
 	'categorytree-error'            => 'Probélma a betöltődő adattal',
 	'categorytree-retry'            => 'Kérlek várj egy pillanatot és próbáld újra.',
-	'categorytree-show-list'        => 'Mutatsd listaként',
-	'categorytree-show-tree'        => 'Mutatsd faként',
-	'categorytree-too-many-subcats' => 'Az alkategóriák nem jeleníthetőek meg, mert túl sok van belőlük.',
+	#'categorytree-show-list'        => 'Mutatsd listaként',
+	#'categorytree-show-tree'        => 'Mutatsd faként',
+	#'categorytree-too-many-subcats' => 'Az alkategóriák nem jeleníthetőek meg, mert túl sok van belőlük.',
 );
 
 /** Armenian (Հայերեն)
@@ -1326,9 +1326,9 @@ $messages['hy'] = array(
 	'categorytree-not-found'        => '«<i>$1</i>» կատեգորիան չի գտնվել',
 	'categorytree-error'            => 'Տվյալների բեռնումը չհաջողվեց',
 	'categorytree-retry'            => 'Խնդրում ենք սպասել մեկ ակնթարթ և փորձել կրկին։',
-	'categorytree-show-list'        => 'Ցանկի տեսքով',
-	'categorytree-show-tree'        => 'Ծառի տեսքով',
-	'categorytree-too-many-subcats' => 'Հնարավոր չէ ցուցադրել ենթակատեգորիաները ծառի տեսքով՝ չափից շատ են։',
+	#'categorytree-show-list'        => 'Ցանկի տեսքով',
+	#'categorytree-show-tree'        => 'Ծառի տեսքով',
+	#'categorytree-too-many-subcats' => 'Հնարավոր չէ ցուցադրել ենթակատեգորիաները ծառի տեսքով՝ չափից շատ են։',
 );
 
 /** Interlingua (Interlingua)
@@ -1368,9 +1368,9 @@ Jika Anda menggunakan penjelajah web lama, atau mematikan fungsi JavaScript Anda
 	'categorytree-not-found'        => 'Kategori <i>$1</i> tidak ditemukan',
 	'categorytree-error'            => 'Problem memuat data.',
 	'categorytree-retry'            => 'Tunggulah sesaat dan coba lagi.',
-	'categorytree-show-list'        => 'Tampilkan daftar',
-	'categorytree-show-tree'        => 'Tampilkan pohon',
-	'categorytree-too-many-subcats' => 'Tidak dapat menampilkan subkategori dalam bentuk pohon karena jumlahnya terlalu banyak.',
+	#'categorytree-show-list'        => 'Tampilkan daftar',
+	#'categorytree-show-tree'        => 'Tampilkan pohon',
+	#'categorytree-too-many-subcats' => 'Tidak dapat menampilkan subkategori dalam bentuk pohon karena jumlahnya terlalu banyak.',
 );
 
 /** Interlingue (Interlingue)
@@ -1422,9 +1422,9 @@ Ef þú notast við gamlan vafra eða hefur slökkt á JavaScript mun þetta ekk
 	'categorytree-not-found'        => 'Flokkurinn <i>$1</i> fannst ekki',
 	'categorytree-error'            => 'Villa við hleðslu gagna.',
 	'categorytree-retry'            => 'Gjörðu svo vel og reyndu síðar.',
-	'categorytree-show-list'        => 'Sýna sem lista',
-	'categorytree-show-tree'        => 'Sýna sem tré',
-	'categorytree-too-many-subcats' => 'Get ekki sýnt undirflokka sem tré, þeir eru of margir.',
+	#'categorytree-show-list'        => 'Sýna sem lista',
+	#'categorytree-show-tree'        => 'Sýna sem tré',
+	#'categorytree-too-many-subcats' => 'Get ekki sýnt undirflokka sem tré, þeir eru of margir.',
 );
 
 /** Italian (Italiano)
@@ -1453,9 +1453,9 @@ $messages['it'] = array(
 	'categorytree-not-found'        => "Categoria  ''$1'' non trovata",
 	'categorytree-error'            => 'Problema nel caricamento dei dati.',
 	'categorytree-retry'            => 'Attendere un momento e riprovare.',
-	'categorytree-show-list'        => 'Lista',
-	'categorytree-show-tree'        => 'Struttura ad albero',
-	'categorytree-too-many-subcats' => 'Le sottocategorie sono troppe per essere visualizzate sotto forma di struttura ad albero.',
+	#'categorytree-show-list'        => 'Lista',
+	#'categorytree-show-tree'        => 'Struttura ad albero',
+	#'categorytree-too-many-subcats' => 'Le sottocategorie sono troppe per essere visualizzate sotto forma di struttura ad albero.',
 );
 
 /** Japanese (日本語)
@@ -1484,9 +1484,9 @@ $messages['ja'] = array(
 	'categorytree-not-found'        => 'カテゴリ " <i>$1</i> " はありません',
 	'categorytree-error'            => 'データの読み込み中に問題が発生しました',
 	'categorytree-retry'            => '暫く経った後に再度試してください。',
-	'categorytree-show-list'        => '一覧で表示',
-	'categorytree-show-tree'        => 'ツリー形式で表示',
-	'categorytree-too-many-subcats' => 'サブカテゴリの数が多すぎるため、ツリー表示できません。',
+	#'categorytree-show-list'        => '一覧で表示',
+	#'categorytree-show-tree'        => 'ツリー形式で表示',
+	#'categorytree-too-many-subcats' => 'サブカテゴリの数が多すぎるため、ツリー表示できません。',
 );
 
 /** Jutish (Jysk)
@@ -1514,9 +1514,9 @@ $messages['jut'] = array(
 	'categorytree-not-found'        => "Æ klynge ''$1'' blev ekke fundet",
 	'categorytree-error'            => 'Der åpstød et pråblæm under endlæsnenge åf data.',
 	'categorytree-retry'            => 'Vent et øjeblek og prøv egen.',
-	'categorytree-show-list'        => 'Ves søm liste.',
-	'categorytree-show-tree'        => 'Ves søm træ',
-	'categorytree-too-many-subcats' => 'Ken ekke vese underklynger søm træ, der er før mange.',
+	#'categorytree-show-list'        => 'Ves søm liste.',
+	#'categorytree-show-tree'        => 'Ves søm træ',
+	#'categorytree-too-many-subcats' => 'Ken ekke vese underklynger søm træ, der er før mange.',
 );
 
 /** Javanese (Basa Jawa)
@@ -1546,9 +1546,9 @@ Menawa panjenengan panjlajah wèbé kalebu vèrsi lawa, utawa fitur JavaScript d
 	'categorytree-not-found'        => 'Kategori <i>$1</i> ora ditemokaké',
 	'categorytree-error'            => 'Ana masalah ngunggahaké data.',
 	'categorytree-retry'            => 'Tulung ditunggu sadélok lan dicoba manèh.',
-	'categorytree-show-list'        => 'Tuduhna minangka daftar',
-	'categorytree-show-tree'        => 'Tuduhna minangka uwit',
-	'categorytree-too-many-subcats' => 'Ora bisa nuduhaké subkategori minangka uwit, amerga cacahé kakèhan.',
+	#'categorytree-show-list'        => 'Tuduhna minangka daftar',
+	#'categorytree-show-tree'        => 'Tuduhna minangka uwit',
+	#'categorytree-too-many-subcats' => 'Ora bisa nuduhaké subkategori minangka uwit, amerga cacahé kakèhan.',
 );
 
 /** Georgian (ქართული)
@@ -1591,9 +1591,9 @@ $messages['kk-arab'] = array(
 	'categorytree-not-found'        => '<i>$1</i> دەگەن سانات تابىلمادى',
 	'categorytree-error'            => 'دەرەكتەردى جۇكتەۋ كەزىندە شاتاق شىقتى.',
 	'categorytree-retry'            => 'ٴبىر ٴسات كۇتە تۇرىپ قايتالاڭىز.',
-	'categorytree-show-list'        => 'تىزىمشە كورسەت',
-	'categorytree-show-tree'        => 'بۇتاقتارشا كورسەت',
-	'categorytree-too-many-subcats' => 'ساناتشالار تىم كوپ بولعاندىقتان, بۇتاقتارى كورسەتىلمەيدى.',
+	#'categorytree-show-list'        => 'تىزىمشە كورسەت',
+	#'categorytree-show-tree'        => 'بۇتاقتارشا كورسەت',
+	#'categorytree-too-many-subcats' => 'ساناتشالار تىم كوپ بولعاندىقتان, بۇتاقتارى كورسەتىلمەيدى.',
 );
 
 /** Kazakh (Cyrillic) (Қазақша (Cyrillic)) */
@@ -1619,9 +1619,9 @@ $messages['kk-cyrl'] = array(
 	'categorytree-not-found'        => '<i>$1</i> деген санат табылмады',
 	'categorytree-error'            => 'Деректерді жүктеу кезінде шатақ шықты.',
 	'categorytree-retry'            => 'Бір сәт күте тұрып қайталаңыз.',
-	'categorytree-show-list'        => 'Тізімше көрсет',
-	'categorytree-show-tree'        => 'Бұтақтарша көрсет',
-	'categorytree-too-many-subcats' => 'Санатшалар тым көп болғандықтан, бұтақтары көрсетілмейді.',
+	#'categorytree-show-list'        => 'Тізімше көрсет',
+	#'categorytree-show-tree'        => 'Бұтақтарша көрсет',
+	#'categorytree-too-many-subcats' => 'Санатшалар тым көп болғандықтан, бұтақтары көрсетілмейді.',
 );
 
 /** Kazakh (Latin) (Қазақша (Latin)) */
@@ -1647,9 +1647,9 @@ Eger şolğışıñız öte eski, nemese JavaScript öşirilgen bolsa, bul iske 
 	'categorytree-not-found'        => '<i>$1</i> degen sanat tabılmadı',
 	'categorytree-error'            => 'Derekterdi jüktew kezinde şataq şıqtı.',
 	'categorytree-retry'            => 'Bir sät küte turıp qaýtalañız.',
-	'categorytree-show-list'        => 'Tizimşe körset',
-	'categorytree-show-tree'        => 'Butaqtarşa körset',
-	'categorytree-too-many-subcats' => 'Sanatşalar tım köp bolğandıqtan, butaqtarı körsetilmeýdi.',
+	#'categorytree-show-list'        => 'Tizimşe körset',
+	#'categorytree-show-tree'        => 'Butaqtarşa körset',
+	#'categorytree-too-many-subcats' => 'Sanatşalar tım köp bolğandıqtan, butaqtarı körsetilmeýdi.',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -1678,9 +1678,9 @@ $messages['km'] = array(
 	'categorytree-not-found'        => 'រកមិនឃើញចំនាត់ថ្នាក់ក្រុម <i>$1</i> ទេ',
 	'categorytree-error'            => 'មានបញ្ហា ផ្ទុកទិន្នន័យ។',
 	'categorytree-retry'            => 'ចាំមួយភ្លែត សឹម ព្យាយាមម្តងទៀត ។',
-	'categorytree-show-list'        => 'បង្ហាញជាបញ្ជី',
-	'categorytree-show-tree'        => 'បង្ហាញជាមែកធាង',
-	'categorytree-too-many-subcats' => 'មិនអាចបង្ហាញ ចំណាត់ក្រុមរង ជា ដើមឈើ, វាមានចំណាត់ក្រុមរង ច្រើនពេក ។',
+	#'categorytree-show-list'        => 'បង្ហាញជាបញ្ជី',
+	#'categorytree-show-tree'        => 'បង្ហាញជាមែកធាង',
+	#'categorytree-too-many-subcats' => 'មិនអាចបង្ហាញ ចំណាត់ក្រុមរង ជា ដើមឈើ, វាមានចំណាត់ក្រុមរង ច្រើនពេក ។',
 );
 
 /** Korean (한국어)
@@ -1712,9 +1712,9 @@ $messages['ko'] = array(
 	'categorytree-not-found'        => '‘$1’ 분류가 존재하지 않음',
 	'categorytree-error'            => '값을 불러오는 중 오류 발생',
 	'categorytree-retry'            => '잠시 후에 다시 시도해주세요.',
-	'categorytree-show-list'        => '목록으로 보기',
-	'categorytree-show-tree'        => '트리로 보기',
-	'categorytree-too-many-subcats' => '하위 분류가 너무 많아 트리를 만들 수 없습니다.',
+	#'categorytree-show-list'        => '목록으로 보기',
+	#'categorytree-show-tree'        => '트리로 보기',
+	#'categorytree-too-many-subcats' => '하위 분류가 너무 많아 트리를 만들 수 없습니다.',
 );
 
 /** Kinaray-a (Kinaray-a)
@@ -1763,9 +1763,9 @@ $messages['la'] = array(
 	'categorytree-no-subcategories' => 'nullae subcategoriae',
 	'categorytree-no-pages'         => 'nec paginae nec subcategoriae',
 	'categorytree-not-found'        => 'Categoria <i>$1</i> non inventa',
-	'categorytree-show-list'        => 'Monstra quasi indicem',
-	'categorytree-show-tree'        => 'Monstra quasi arborem',
-	'categorytree-too-many-subcats' => 'Subcategoriae quasi arborem monstrari non possunt, nimis sunt.',
+	#'categorytree-show-list'        => 'Monstra quasi indicem',
+	#'categorytree-show-tree'        => 'Monstra quasi arborem',
+	#'categorytree-too-many-subcats' => 'Subcategoriae quasi arborem monstrari non possunt, nimis sunt.',
 );
 
 /** Ladino (Ladino)
@@ -1804,9 +1804,9 @@ Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da
 	'categorytree-not-found'        => "Kategorie ''$1'' net fonnt",
 	'categorytree-error'            => 'Problem beim luede vun den Donneeën.',
 	'categorytree-retry'            => 'Waart w.e.g. een Ament a probéiert dann nach eng Kéier.',
-	'categorytree-show-list'        => 'Als Lëscht weisen',
-	'categorytree-show-tree'        => 'Struktur weisen',
-	'categorytree-too-many-subcats' => "D'Struktur vun den Ënnerkategorien kann net duergestalt ginn, well et der zevill sinn.",
+	#'categorytree-show-list'        => 'Als Lëscht weisen',
+	#'categorytree-show-tree'        => 'Struktur weisen',
+	#'categorytree-too-many-subcats' => "D'Struktur vun den Ënnerkategorien kann net duergestalt ginn, well et der zevill sinn.",
 );
 
 /** Lezghian (Лезги)
@@ -1852,9 +1852,9 @@ Esse 'ne erg verajerdje browser höbs of JavaScript steit oet, den werk dees fun
 	'categorytree-not-found'        => "Categorie ''$1'' neet gevónje",
 	'categorytree-error'            => "Perbleem bie 't laje van de gegaeves.",
 	'categorytree-retry'            => "Wach estebleef ef en perbeer 't den opnuuj.",
-	'categorytree-show-list'        => 'Toean es lies.',
-	'categorytree-show-tree'        => 'Toean es boumstructuur.',
-	'categorytree-too-many-subcats' => "Kin de óngercategorië neet es boumstructuur toeane, d'r zeen d'rs te väöl.",
+	#'categorytree-show-list'        => 'Toean es lies.',
+	#'categorytree-show-tree'        => 'Toean es boumstructuur.',
+	#'categorytree-too-many-subcats' => "Kin de óngercategorië neet es boumstructuur toeane, d'r zeen d'rs te väöl.",
 );
 
 /** Lao (ລາວ)
@@ -1881,9 +1881,9 @@ $messages['lo'] = array(
 	'categorytree-not-found'        => 'ບໍ່ເຫັນ',
 	'categorytree-error'            => 'ການໂຫຼດຂໍ້ມູນມີປັນຫາ',
 	'categorytree-retry'            => 'ກະລຸນາຮອສັກຄູ່ ແລ້ວລອງໂຫຼດໃໝ່',
-	'categorytree-show-list'        => 'ສະແດງເປັນລາຍການ',
-	'categorytree-show-tree'        => 'ສະແດງເປັນໂຄງສ້າງ',
-	'categorytree-too-many-subcats' => 'ບໍ່ສາມາດສະແດງໝວດເປັນໂຄງສ້າງ ເພາະມັນມີຫຼາຍໝວດໂພດ',
+	#'categorytree-show-list'        => 'ສະແດງເປັນລາຍການ',
+	#'categorytree-show-tree'        => 'ສະແດງເປັນໂຄງສ້າງ',
+	#'categorytree-too-many-subcats' => 'ບໍ່ສາມາດສະແດງໝວດເປັນໂຄງສ້າງ ເພາະມັນມີຫຼາຍໝວດໂພດ',
 );
 
 /** Lithuanian (Lietuvių)
@@ -1912,9 +1912,9 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
 	'categorytree-not-found'        => 'Kategorija <i>$1</i> nerasta',
 	'categorytree-error'            => 'Duomenų įkėlimo problema.',
 	'categorytree-retry'            => 'Palaukite šiek tiek, ir bandykite iš naujo.',
-	'categorytree-show-list'        => 'Rodyti kaip sąraašą',
-	'categorytree-show-tree'        => 'Rodyti kaip medį',
-	'categorytree-too-many-subcats' => 'Negalima rodyti subkategorijų kaip medį, nes jų yra per daug.',
+	#'categorytree-show-list'        => 'Rodyti kaip sąraašą',
+	#'categorytree-show-tree'        => 'Rodyti kaip medį',
+	#'categorytree-too-many-subcats' => 'Negalima rodyti subkategorijų kaip medį, nes jų yra per daug.',
 );
 
 /** Latvian (Latviešu)
@@ -1942,9 +1942,9 @@ Ja tev ir veca interneta pārlūkprogramma, vai arī JavaScript ir atslēgts, š
 	'categorytree-not-found'        => 'Kategorija <i>$1</i> netika atrasta',
 	'categorytree-error'            => 'Problēma ar datu ielādi.',
 	'categorytree-retry'            => 'Pagaidi mazliet un mēģini vēlreiz.',
-	'categorytree-show-list'        => 'Rādīt kā sarakstu',
-	'categorytree-show-tree'        => 'Rādīt kā koku',
-	'categorytree-too-many-subcats' => 'Nevar parādīt apakškategorijas kā koku, jo to ir pārāk daudz',
+	#'categorytree-show-list'        => 'Rādīt kā sarakstu',
+	#'categorytree-show-tree'        => 'Rādīt kā koku',
+	#'categorytree-too-many-subcats' => 'Nevar parādīt apakškategorijas kā koku, jo to ir pārāk daudz',
 );
 
 /** Malayalam (മലയാളം)
@@ -1973,9 +1973,9 @@ $messages['ml'] = array(
 	'categorytree-not-found'        => "''$1'' എന്ന വിഭാഗം കണ്ടില്ല",
 	'categorytree-error'            => 'ഡാറ്റ ലോഡ് ചെയ്യുന്നതില്‍ പിശക്.',
 	'categorytree-retry'            => 'കുറച്ചു നേരം കഴിഞ്ഞ് വീണ്ടും പരിശ്രമിക്കുക',
-	'categorytree-show-list'        => 'പട്ടികയായി പ്രദര്‍ശിപ്പിക്കുക',
-	'categorytree-show-tree'        => 'വൃക്ഷമായി പ്രദര്‍ശിപ്പിക്കുക',
-	'categorytree-too-many-subcats' => 'വളരെയധികം ഉപവര്‍ഗ്ഗങ്ങളുള്ളതിനാല്‍ അതിനെ വൃക്ഷമായി പ്രദര്‍ശിപ്പിക്കാനാവില്ല.',
+	#'categorytree-show-list'        => 'പട്ടികയായി പ്രദര്‍ശിപ്പിക്കുക',
+	#'categorytree-show-tree'        => 'വൃക്ഷമായി പ്രദര്‍ശിപ്പിക്കുക',
+	#'categorytree-too-many-subcats' => 'വളരെയധികം ഉപവര്‍ഗ്ഗങ്ങളുള്ളതിനാല്‍ അതിനെ വൃക്ഷമായി പ്രദര്‍ശിപ്പിക്കാനാവില്ല.',
 );
 
 /** Marathi (मराठी)
@@ -2006,9 +2006,9 @@ $messages['mr'] = array(
 	'categorytree-not-found'        => 'वर्ग <i>$1</i> आढळला नाही',
 	'categorytree-error'            => 'विदा चढवताना त्रूटी.',
 	'categorytree-retry'            => 'कृपया,क्षणभर थांबा आणि पुन्हा प्रयत्न करा.',
-	'categorytree-show-list'        => 'सूची स्वरूपात दाखवा',
-	'categorytree-show-tree'        => 'वृक्ष स्वरूपात दाखवा',
-	'categorytree-too-many-subcats' => 'उपवर्ग वृक्ष स्वरूपात दाखवता येणार नाहीत, कारण ते खूप अधीक आहेत.',
+	#'categorytree-show-list'        => 'सूची स्वरूपात दाखवा',
+	#'categorytree-show-tree'        => 'वृक्ष स्वरूपात दाखवा',
+	#'categorytree-too-many-subcats' => 'उपवर्ग वृक्ष स्वरूपात दाखवता येणार नाहीत, कारण ते खूप अधीक आहेत.',
 );
 
 /** Malay (Bahasa Melayu)
@@ -2036,9 +2036,9 @@ Sekiranya anda menggunakan pelayar web yang lama, atau mematikan JavaScript, cir
 	'categorytree-not-found'        => 'Kategori <i>$1</i> tiada',
 	'categorytree-error'            => 'Berlaku masalah ketika memuat data.',
 	'categorytree-retry'            => 'Sila tunggu sebentar dan cuba lagi.',
-	'categorytree-show-list'        => 'Tunjuk dalam bentuk senarai',
-	'categorytree-show-tree'        => 'Tunjuk dalam bentuk salasilah',
-	'categorytree-too-many-subcats' => 'Terlalu banyak subkategori, tidak boleh menunjukkannya dalam bentuk salasilah.',
+	#'categorytree-show-list'        => 'Tunjuk dalam bentuk senarai',
+	#'categorytree-show-tree'        => 'Tunjuk dalam bentuk salasilah',
+	#'categorytree-too-many-subcats' => 'Terlalu banyak subkategori, tidak boleh menunjukkannya dalam bentuk salasilah.',
 );
 
 /** Erzya (эрзянь кель)
@@ -2081,9 +2081,9 @@ $messages['nds'] = array(
 	'categorytree-not-found'        => 'Kategorie <i>$1</i> nich funnen',
 	'categorytree-error'            => 'Problem bi’t Laden vun de Daten',
 	'categorytree-retry'            => 'Tööv en beten un denn versöök dat noch wedder.',
-	'categorytree-show-list'        => 'as List wiesen',
-	'categorytree-show-tree'        => 'as Boom wiesen',
-	'categorytree-too-many-subcats' => 'Kann Ünnerkategorien nich as Boom wiesen, sünd to veel.',
+	#'categorytree-show-list'        => 'as List wiesen',
+	#'categorytree-show-tree'        => 'as Boom wiesen',
+	#'categorytree-too-many-subcats' => 'Kann Ünnerkategorien nich as Boom wiesen, sünd to veel.',
 );
 
 /** Nepali (नेपाली)
@@ -2130,9 +2130,9 @@ Als u een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze
 	'categorytree-not-found'        => "Categorie ''$1'' niet gevonden",
 	'categorytree-error'            => 'Probleem bij het laden van de gegevens.',
 	'categorytree-retry'            => 'Wacht alstublieft even en probeer het dan opnieuw.',
-	'categorytree-show-list'        => 'Als lijst weergeven',
-	'categorytree-show-tree'        => 'Als boomstructuur weergeven',
-	'categorytree-too-many-subcats' => 'Kan de ondercategorieën niet als boomstructuur weergeven. Het zijn er te veel.',
+	#'categorytree-show-list'        => 'Als lijst weergeven',
+	#'categorytree-show-tree'        => 'Als boomstructuur weergeven',
+	#'categorytree-too-many-subcats' => 'Kan de ondercategorieën niet als boomstructuur weergeven. Het zijn er te veel.',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -2159,9 +2159,9 @@ $messages['nn'] = array(
 	'categorytree-not-found'        => 'Fann ikkje kategorien <i>$1</i>',
 	'categorytree-error'            => 'Problem med innlasting av data.',
 	'categorytree-retry'            => 'Ver venleg og vent litt før du prøvar ein gong til.',
-	'categorytree-show-list'        => 'Vis som liste',
-	'categorytree-show-tree'        => 'Vis som tre',
-	'categorytree-too-many-subcats' => 'Kan ikkje vise underkategoriar som tre, det er for mange av dei.',
+	#'categorytree-show-list'        => 'Vis som liste',
+	#'categorytree-show-tree'        => 'Vis som tre',
+	#'categorytree-too-many-subcats' => 'Kan ikkje vise underkategoriar som tre, det er for mange av dei.',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -2191,9 +2191,9 @@ Enter a category name to see its contents as a tree structure. Note that this re
 	'categorytree-not-found'        => 'Kategorien <i>$1</i> ikke funnet',
 	'categorytree-error'            => 'problem under datalasting.',
 	'categorytree-retry'            => 'Vent en stund og prøv igjen.',
-	'categorytree-show-list'        => 'Vis som liste',
-	'categorytree-show-tree'        => 'Vis som tre',
-	'categorytree-too-many-subcats' => 'Kan ikke vise underkategorier som tre, det er for mange av dem.',
+	#'categorytree-show-list'        => 'Vis som liste',
+	#'categorytree-show-tree'        => 'Vis som tre',
+	#'categorytree-too-many-subcats' => 'Kan ikke vise underkategorier som tre, det er for mange av dem.',
 );
 
 /** Northern Sotho (Sesotho sa Leboa)
@@ -2210,8 +2210,8 @@ $messages['nso'] = array(
 	'categorytree-expand'    => 'bula',
 	'categorytree-no-pages'  => 'gago matlakala goba dihlophana',
 	'categorytree-not-found' => 'Sehlopha <i>$1</i> ga se humanege',
-	'categorytree-show-list' => 'Laetša bjalo ka lenano',
-	'categorytree-show-tree' => 'Laetša bjalo ka sehlare',
+	#'categorytree-show-list' => 'Laetša bjalo ka lenano',
+	#'categorytree-show-tree' => 'Laetša bjalo ka sehlare',
 );
 
 /** Occitan (Occitan)
@@ -2239,9 +2239,9 @@ $messages['oc'] = array(
 	'categorytree-not-found'        => 'La categoria <i>$1</i> es pas estada trobada.',
 	'categorytree-error'            => 'Problèma de cargament de las donadas.',
 	'categorytree-retry'            => 'Esperatz un moment puèi tornatz ensajar.',
-	'categorytree-show-list'        => 'Afichar en lista',
-	'categorytree-show-tree'        => 'Afichar en arborescéncia',
-	'categorytree-too-many-subcats' => "Impossible d'afichar las soscategorias jos forma d'arbre, n'i a tròp.",
+	#'categorytree-show-list'        => 'Afichar en lista',
+	#'categorytree-show-tree'        => 'Afichar en arborescéncia',
+	#'categorytree-too-many-subcats' => "Impossible d'afichar las soscategorias jos forma d'arbre, n'i a tròp.",
 );
 
 /** Ossetic (Иронау)
@@ -2255,9 +2255,9 @@ $messages['os'] = array(
 	'categorytree-nothing-found'    => 'Ацы категорийы мидæг дæлкатегоритæ нæ разынд',
 	'categorytree-no-pages'         => 'фæрстæ æмæ дæлкатегоритæ нæй',
 	'categorytree-not-found'        => 'Категори «$1» не ссардæуы.',
-	'categorytree-show-list'        => 'Номхыгъды хуызы равдис',
-	'categorytree-show-tree'        => 'Бæласы хуызы равдис',
-	'categorytree-too-many-subcats' => 'Дæлкатегоритæ бæласы хуызы равдисæн нæй — æгæр бирæ сты.',
+	#'categorytree-show-list'        => 'Номхыгъды хуызы равдис',
+	#'categorytree-show-tree'        => 'Бæласы хуызы равдис',
+	#'categorytree-too-many-subcats' => 'Дæлкатегоритæ бæласы хуызы равдисæн нæй — æгæр бирæ сты.',
 );
 
 /** Pangasinan (Pangasinan)
@@ -2271,7 +2271,7 @@ $messages['pag'] = array(
 	'categorytree-load'          => 'I-lugan',
 	'categorytree-nothing-found' => 'anggapoy naanap',
 	'categorytree-no-pages'      => 'Anggapoy bolong odino subcategory',
-	'categorytree-show-list'     => 'Ipanengneng so listaan',
+	#'categorytree-show-list'     => 'Ipanengneng so listaan',
 );
 
 /** Pampanga (Kapampangan)
@@ -2285,7 +2285,7 @@ $messages['pam'] = array(
 	'categorytree-load'          => 'lulan',
 	'categorytree-loading'       => 'Lululan',
 	'categorytree-nothing-found' => 'alang meyakit',
-	'categorytree-show-list'     => 'Pakit ya antimong listaan o talaan',
+	#'categorytree-show-list'     => 'Pakit ya antimong listaan o talaan',
 );
 
 /** Polish (Polski)
@@ -2315,9 +2315,9 @@ $messages['pl'] = array(
 	'categorytree-not-found'        => 'Kategoria <i>$1</i> nie została znaleziona',
 	'categorytree-error'            => 'Problem z ładowaniem danych.',
 	'categorytree-retry'            => 'Poczekaj chwilę i spróbuj ponownie – kliknij ten napis.',
-	'categorytree-show-list'        => 'Prezentuj jako listę',
-	'categorytree-show-tree'        => 'Prezentuj w formie drzewa',
-	'categorytree-too-many-subcats' => 'Podkategorie nie mogą być wyświetlone jako drzewo, ponieważ jest ich zbyt wiele.',
+	#'categorytree-show-list'        => 'Prezentuj jako listę',
+	#'categorytree-show-tree'        => 'Prezentuj w formie drzewa',
+	#'categorytree-too-many-subcats' => 'Podkategorie nie mogą być wyświetlone jako drzewo, ponieważ jest ich zbyt wiele.',
 );
 
 /** Piemontèis (Piemontèis)
@@ -2344,9 +2344,9 @@ $messages['pms'] = array(
 	'categorytree-not-found'        => "A l'é pa trovasse la categorìa <i>$1</i>.",
 	'categorytree-error'            => 'Problema ën cariand ij dat',
 	'categorytree-retry'            => "Për piasì, ch'a speta na minuta e peuj ch'as preuva n'àutra vira.",
-	'categorytree-show-list'        => 'smon-e coma lista',
-	'categorytree-show-tree'        => 'smon-e coma erbo',
-	'categorytree-too-many-subcats' => "As peulo nen ësmon-se le sot-categorìe coma erbo për via ch'a-i n'a-i é tròpe.",
+	#'categorytree-show-list'        => 'smon-e coma lista',
+	#'categorytree-show-tree'        => 'smon-e coma erbo',
+	#'categorytree-too-many-subcats' => "As peulo nen ësmon-se le sot-categorìe coma erbo për via ch'a-i n'a-i é tròpe.",
 );
 
 /** Pashto (پښتو)
@@ -2367,9 +2367,9 @@ $messages['ps'] = array(
 	'categorytree-no-pages'         => 'هېڅ مخ يا وړه-وېشنيزه نشته',
 	'categorytree-not-found'        => 'د <i>$1</i> وېشنيزه و نه موندل شوه',
 	'categorytree-retry'            => 'مهرباني وکړی لږ څه تم شی او بيا يې وآزمايۍ',
-	'categorytree-show-list'        => 'د لړليک په څېر ښکاره کول',
-	'categorytree-show-tree'        => 'د ونې په څېر ښکاره کول',
-	'categorytree-too-many-subcats' => 'وړې-وېشنيزې د ونې په څېر نه شو ښکاره کولای، همدلته ډېرې زياتې وړې وېشنيزې دي.',
+	#'categorytree-show-list'        => 'د لړليک په څېر ښکاره کول',
+	#'categorytree-show-tree'        => 'د ونې په څېر ښکاره کول',
+	#'categorytree-too-many-subcats' => 'وړې-وېشنيزې د ونې په څېر نه شو ښکاره کولای، همدلته ډېرې زياتې وړې وېشنيزې دي.',
 );
 
 /** Portuguese (Português)
@@ -2400,9 +2400,9 @@ Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desab
 	'categorytree-not-found'        => "A categoria ''$1'' não foi encontrada",
 	'categorytree-error'            => 'Problema ao carregar os dados.',
 	'categorytree-retry'            => 'Por gentileza, aguarde um momento e tente novamente.',
-	'categorytree-show-list'        => 'Exibir como lista',
-	'categorytree-show-tree'        => 'Exibir como árvore',
-	'categorytree-too-many-subcats' => 'Não é possível exibir as subcategorias no modo de árvore, existem muitas subcategorias.',
+	#'categorytree-show-list'        => 'Exibir como lista',
+	#'categorytree-show-tree'        => 'Exibir como árvore',
+	#'categorytree-too-many-subcats' => 'Não é possível exibir as subcategorias no modo de árvore, existem muitas subcategorias.',
 );
 
 /** Quechua (Runa Simi)
@@ -2430,8 +2430,8 @@ Musyariy, kaytaqa AJAX nisqa sapaq JavaScript ruranallawanmi llamk'achiyta atink
 	'categorytree-not-found'        => '<i>$1</i> sutiyuq katiguriyaqa manam tarisqachu',
 	'categorytree-error'            => 'Manam atinichu willakunata chaqnayta.',
 	'categorytree-retry'            => 'Asllata suyaspa musuqmanta ruraykachay.',
-	'categorytree-show-list'        => 'Sutisuyuta rikuchiy',
-	'categorytree-show-tree'        => "Sach'a hinata rikuchiy",
+	#'categorytree-show-list'        => 'Sutisuyuta rikuchiy',
+	#'categorytree-show-tree'        => "Sach'a hinata rikuchiy",
 );
 
 /** Romanian (Română)
@@ -2454,8 +2454,8 @@ $messages['ro'] = array(
 	'categorytree-no-subcategories' => 'nici o subcategorie',
 	'categorytree-no-pages'         => 'nici o pagină sau subcategorie',
 	'categorytree-not-found'        => 'Categoria <i>$1</i> nu a fost găsită',
-	'categorytree-show-list'        => 'Arată ca listă',
-	'categorytree-show-tree'        => 'Arată ca arbore',
+	#'categorytree-show-list'        => 'Arată ca listă',
+	#'categorytree-show-tree'        => 'Arată ca arbore',
 );
 
 /** Russian (Русский)
@@ -2486,9 +2486,9 @@ $messages['ru'] = array(
 	'categorytree-not-found'        => 'Категория «$1» не найдена.',
 	'categorytree-error'            => 'Ошибка загрузки данных.',
 	'categorytree-retry'            => 'Пожалуйста, подождите и попробуйте ещё раз.',
-	'categorytree-show-list'        => 'Список',
-	'categorytree-show-tree'        => 'Дерево',
-	'categorytree-too-many-subcats' => 'Невозможно показать подкатегории в виде дерева — их слишком много.',
+	#'categorytree-show-list'        => 'Список',
+	#'categorytree-show-tree'        => 'Дерево',
+	#'categorytree-too-many-subcats' => 'Невозможно показать подкатегории в виде дерева — их слишком много.',
 );
 
 /** Yakut (Саха тыла)
@@ -2519,9 +2519,9 @@ $messages['sah'] = array(
 	'categorytree-not-found'        => '<i>$1</i> категория көстүбэтэ',
 	'categorytree-error'            => 'Билэни суруйарга алҕас таҕыста',
 	'categorytree-retry'            => 'Кыратык кэтэһэ түһэн баран өссө боруобалаа',
-	'categorytree-show-list'        => 'Тиһик (Испииһэк)',
-	'categorytree-show-tree'        => 'Мас курдук',
-	'categorytree-too-many-subcats' => 'Субкатегориялары мас курдук көрдөрөр табыллыбата - элбэхтэрэ бэрт.',
+	#'categorytree-show-list'        => 'Тиһик (Испииһэк)',
+	#'categorytree-show-tree'        => 'Мас курдук',
+	#'categorytree-too-many-subcats' => 'Субкатегориялары мас курдук көрдөрөр табыллыбата - элбэхтэрэ бэрт.',
 );
 
 /** Sassaresu (Sassaresu)
@@ -2548,9 +2548,9 @@ $messages['sdc'] = array(
 	'categorytree-not-found'        => "Categuria ''$1'' nò acciappadda",
 	'categorytree-error'            => "Probrema i' lu carriggamentu di li dati.",
 	'categorytree-retry'            => "Pa piazeri aisetta un'àttimu e poi torra a prubà.",
-	'categorytree-show-list'        => 'Listha',
-	'categorytree-show-tree'        => "Sthruttura ad'àiburu",
-	'categorytree-too-many-subcats' => "Li sottucateguri sò troppi pa assé visuarizzaddi attrabessu la sthruttura ad'àiburu.",
+	#'categorytree-show-list'        => 'Listha',
+	#'categorytree-show-tree'        => "Sthruttura ad'àiburu",
+	#'categorytree-too-many-subcats' => "Li sottucateguri sò troppi pa assé visuarizzaddi attrabessu la sthruttura ad'àiburu.",
 );
 
 /** Slovak (Slovenčina)
@@ -2581,9 +2581,9 @@ Ak máte veľmi starý prehliadač alebo máte vypnutý JavaScrpt, nebude fungov
 	'categorytree-not-found'        => 'Kategória <i>$1</i> nenájdená',
 	'categorytree-error'            => 'Problém pri načítavaní údajov.',
 	'categorytree-retry'            => 'Prosím, chvíľu počkajte a skúste to znova.',
-	'categorytree-show-list'        => 'Zobraziť ako zoznam',
-	'categorytree-show-tree'        => 'Zobraziť ako strom',
-	'categorytree-too-many-subcats' => 'Nie je možné zobraziť podkategórie ako strom, je ich príliš veľa.',
+	#'categorytree-show-list'        => 'Zobraziť ako zoznam',
+	#'categorytree-show-tree'        => 'Zobraziť ako strom',
+	#'categorytree-too-many-subcats' => 'Nie je možné zobraziť podkategórie ako strom, je ich príliš veľa.',
 );
 
 /** Slovenian (Slovenščina)
@@ -2607,9 +2607,9 @@ $messages['sl'] = array(
 	'categorytree-no-subcategories' => 'ni podkategorij',
 	'categorytree-no-pages'         => 'ni strani ali podkategorij',
 	'categorytree-not-found'        => 'Kategorije <i>$1</i> ni moc najti',
-	'categorytree-show-list'        => 'Prikaži kot seznam',
-	'categorytree-show-tree'        => 'Prikaži kot drevo',
-	'categorytree-too-many-subcats' => 'Podkategorij ni moc prikazati kot drevo, saj jih je prevec.',
+	#'categorytree-show-list'        => 'Prikaži kot seznam',
+	#'categorytree-show-tree'        => 'Prikaži kot drevo',
+	#'categorytree-too-many-subcats' => 'Podkategorij ni moc prikazati kot drevo, saj jih je prevec.',
 );
 
 /** Albanian (Shqip) */
@@ -2631,9 +2631,9 @@ $messages['sq'] = array(
 	'categorytree-no-subcategories' => 'Asnjë nënkategori.',
 	'categorytree-no-pages'         => 'Asnjë artikull ose nënkategori.',
 	'categorytree-not-found'        => 'Kategoria <i>$1</i> nuk u gjet',
-	'categorytree-show-list'        => 'Trego si listë',
-	'categorytree-show-tree'        => 'Trego si pemë',
-	'categorytree-too-many-subcats' => "Nuk mund t'i tregoj nënkategoritë si pemë, sepse ka shumë prej tyre.",
+	#'categorytree-show-list'        => 'Trego si listë',
+	#'categorytree-show-tree'        => 'Trego si pemë',
+	#'categorytree-too-many-subcats' => "Nuk mund t'i tregoj nënkategoritë si pemë, sepse ka shumë prej tyre.",
 );
 
 /** Serbian Cyrillic ekavian (ћирилица)
@@ -2662,9 +2662,9 @@ $messages['sr-ec'] = array(
 	'categorytree-not-found'        => 'Категорија <i>$1</i> није пронађена',
 	'categorytree-error'            => 'Проблем при учитавању података.',
 	'categorytree-retry'            => 'Молимо сачекајте тренутак и покушајте поново',
-	'categorytree-show-list'        => 'Прикажи као списак',
-	'categorytree-show-tree'        => 'Прикажи као дрво',
-	'categorytree-too-many-subcats' => 'Не могу приказати подкатегорије као дрво, има их превише.',
+	#'categorytree-show-list'        => 'Прикажи као списак',
+	#'categorytree-show-tree'        => 'Прикажи као дрво',
+	#'categorytree-too-many-subcats' => 'Не могу приказати подкатегорије као дрво, има их превише.',
 );
 
 /** Southern Sotho (Sesotho)
@@ -2686,9 +2686,9 @@ $messages['st'] = array(
 	'categorytree-no-subcategories' => 'ntle le mekgana',
 	'categorytree-no-pages'         => 'ntle le maqephe le mekgana',
 	'categorytree-not-found'        => 'Mokga wa <i>$1</i> ha o a fumanwa',
-	'categorytree-show-list'        => 'E hlahise e le lethathama',
-	'categorytree-show-tree'        => 'E hlahise e le lenane',
-	'categorytree-too-many-subcats' => 'Mekgana e ka se hlahiswe e le lenane hobane e mengata ha holo',
+	#'categorytree-show-list'        => 'E hlahise e le lethathama',
+	#'categorytree-show-tree'        => 'E hlahise e le lenane',
+	#'categorytree-too-many-subcats' => 'Mekgana e ka se hlahiswe e le lenane hobane e mengata ha holo',
 );
 
 /** Seeltersk (Seeltersk)
@@ -2719,9 +2719,9 @@ In gjucht oolde Browsere, of wan Javascript ouschalted is, funktioniert disse Si
 	'categorytree-not-found'        => "Kategorie ''$1'' nit fuunen",
 	'categorytree-error'            => 'Probleme bie dät Leeden fon do Doaten.',
 	'categorytree-retry'            => 'Täif ieuwen un fersäik et dan fon näien.',
-	'categorytree-show-list'        => 'Wies as Lieste',
-	'categorytree-show-tree'        => 'Wies as Boom',
-	'categorytree-too-many-subcats' => 'Unnerkategorien konnen nit as Boom deerstoald wäide, deer dät toufuul sunt.',
+	#'categorytree-show-list'        => 'Wies as Lieste',
+	#'categorytree-show-tree'        => 'Wies as Boom',
+	#'categorytree-too-many-subcats' => 'Unnerkategorien konnen nit as Boom deerstoald wäide, deer dät toufuul sunt.',
 );
 
 /** Sundanese (Basa Sunda)
@@ -2753,9 +2753,9 @@ Lamun Anjeun ngagunakeun panyungsi nu lila, atawa maehan fungsi Javascript Anjeu
 	'categorytree-not-found'        => 'Kategori <i>$1</i> teu kapanggih',
 	'categorytree-error'            => 'Aya masalah dina ngamuat data.',
 	'categorytree-retry'            => 'Dago sakedap, lajeng coba deui.',
-	'categorytree-show-list'        => 'Béréndélkeun',
-	'categorytree-show-tree'        => 'Témbongkeun salaku tangkal',
-	'categorytree-too-many-subcats' => 'Loba teuing subkategori, teu bisa dipidangkeun dina wanda tangkal.',
+	#'categorytree-show-list'        => 'Béréndélkeun',
+	#'categorytree-show-tree'        => 'Témbongkeun salaku tangkal',
+	#'categorytree-too-many-subcats' => 'Loba teuing subkategori, teu bisa dipidangkeun dina wanda tangkal.',
 );
 
 /** Swedish (Svenska)
@@ -2789,9 +2789,9 @@ Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript
 	'categorytree-not-found'        => "Kategori ''$1'' hittades ej",
 	'categorytree-error'            => 'Problem med att ladda data.',
 	'categorytree-retry'            => 'Vänta en stund och försök igen.',
-	'categorytree-show-list'        => 'Visa som lista',
-	'categorytree-show-tree'        => 'Visa som träd',
-	'categorytree-too-many-subcats' => 'Kan inte visa underkategorier som ett träd eftersom det finns för många.',
+	#'categorytree-show-list'        => 'Visa som lista',
+	#'categorytree-show-tree'        => 'Visa som träd',
+	#'categorytree-too-many-subcats' => 'Kan inte visa underkategorier som ett träd eftersom det finns för många.',
 );
 
 /** Tamil (தமிழ்)
@@ -2835,9 +2835,9 @@ $messages['te'] = array(
 	'categorytree-not-found'        => '<i>$1</i> అనే వర్గం కనపడలేదు',
 	'categorytree-error'            => 'డేటా లోడు చెయ్యడంలో లోపం దొర్లింది',
 	'categorytree-retry'            => 'కాస్త ఆగి మళ్ళీ ప్రయత్నించండి.',
-	'categorytree-show-list'        => 'జాబితాగా చూపించు',
-	'categorytree-show-tree'        => 'వృక్షంగా చూపించు',
-	'categorytree-too-many-subcats' => 'ఉపవర్గాలు మరీ ఎక్కువగా ఉన్నాయి, వాటన్నిటినీ వృక్షం లాగా చూపించలేము',
+	#'categorytree-show-list'        => 'జాబితాగా చూపించు',
+	#'categorytree-show-tree'        => 'వృక్షంగా చూపించు',
+	#'categorytree-too-many-subcats' => 'ఉపవర్గాలు మరీ ఎక్కువగా ఉన్నాయి, వాటన్నిటినీ వృక్షం లాగా చూపించలేము',
 );
 
 /** Tetum (Tetun)
@@ -2881,9 +2881,9 @@ $messages['tg-cyrl'] = array(
 	'categorytree-not-found'        => 'Гурӯҳи <i>$1</i> ёфт нашуд',
 	'categorytree-error'            => 'Ишкол дар дарёфти иттилоот',
 	'categorytree-retry'            => 'Лутфан чанд лаҳза сабр кунед ва дубора имтиҳон кунед.',
-	'categorytree-show-list'        => 'Намоиш ҳамчун феҳрист',
-	'categorytree-show-tree'        => 'Намоиш ҳамчун дарахт',
-	'categorytree-too-many-subcats' => 'Ба хотири шумораи зиёди онҳо, наметавон зергурӯҳоро ҳамчун дарахт нишон дод.',
+	#'categorytree-show-list'        => 'Намоиш ҳамчун феҳрист',
+	#'categorytree-show-tree'        => 'Намоиш ҳамчун дарахт',
+	#'categorytree-too-many-subcats' => 'Ба хотири шумораи зиёди онҳо, наметавон зергурӯҳоро ҳамчун дарахт нишон дод.',
 );
 
 /** Thai (ไทย)
@@ -2941,9 +2941,9 @@ $messages['tr'] = array(
 	'categorytree-not-found'        => '<i>"$1"</i> isimli kategori bulunamadı',
 	'categorytree-error'            => 'Bilgi yüklenmesi ile bir problem var.',
 	'categorytree-retry'            => 'Lütfen kısa süre için bekleyin, sonra bir kere daha deneyin.',
-	'categorytree-show-list'        => 'Liste olarak göster',
-	'categorytree-show-tree'        => 'Hiyerarşik olarak göster',
-	'categorytree-too-many-subcats' => 'Çok fazla nesne olduğundan, hiyerarşik olarak gösterilemiyor.',
+	#'categorytree-show-list'        => 'Liste olarak göster',
+	#'categorytree-show-tree'        => 'Hiyerarşik olarak göster',
+	#'categorytree-too-many-subcats' => 'Çok fazla nesne olduğundan, hiyerarşik olarak gösterilemiyor.',
 );
 
 /** Ukrainian (Українська)
@@ -2973,9 +2973,9 @@ $messages['uk'] = array(
 	'categorytree-not-found'        => 'Категорія «$1» не знайдена.',
 	'categorytree-error'            => 'Помилка завантаження даних.',
 	'categorytree-retry'            => 'Будь ласка, зачекайте і спробуйте ще раз.',
-	'categorytree-show-list'        => 'Список',
-	'categorytree-show-tree'        => 'Дерево',
-	'categorytree-too-many-subcats' => 'Неможливо показати підкатегорії у вигляді дерева — їх дуже багато.',
+	#'categorytree-show-list'        => 'Список',
+	#'categorytree-show-tree'        => 'Дерево',
+	#'categorytree-too-many-subcats' => 'Неможливо показати підкатегорії у вигляді дерева — їх дуже багато.',
 );
 
 /** Urdu (اردو) */
@@ -2989,9 +2989,9 @@ $messages['ur'] = array(
 	'categorytree-loading'          => 'دوران اثقال',
 	'categorytree-nothing-found'    => 'کچھ دستیاب نہیں',
 	'categorytree-no-subcategories' => 'کوئی ذیلی زمرہ نہیں',
-	'categorytree-show-list'        => 'بہ ترتیب فہرست',
-	'categorytree-show-tree'        => 'بہ ترتیب شجر',
-	'categorytree-too-many-subcats' => 'ذیلی زمرہ جات کی تعداد کثیر کے باعث بہ ترتیب شجر نہیں کیا جاسکتا',
+	#'categorytree-show-list'        => 'بہ ترتیب فہرست',
+	#'categorytree-show-tree'        => 'بہ ترتیب شجر',
+	#'categorytree-too-many-subcats' => 'ذیلی زمرہ جات کی تعداد کثیر کے باعث بہ ترتیب شجر نہیں کیا جاسکتا',
 );
 
 /** Uzbek (O'zbek)
@@ -3026,9 +3026,9 @@ $messages['vec'] = array(
 	'categorytree-not-found'        => 'Categoria <i>$1</i> mìa catà',
 	'categorytree-error'            => 'Ghe xe un problema nel caricamento dei dati.',
 	'categorytree-retry'            => "Speta n'atimo e dopo próa de novo.",
-	'categorytree-show-list'        => 'Mostra come lista',
-	'categorytree-show-tree'        => 'Mostra come àlbaro',
-	'categorytree-too-many-subcats' => 'Ghe xe massa categorie par mostrarle ad àlbaro.',
+	#'categorytree-show-list'        => 'Mostra come lista',
+	#'categorytree-show-tree'        => 'Mostra come àlbaro',
+	#'categorytree-too-many-subcats' => 'Ghe xe massa categorie par mostrarle ad àlbaro.',
 );
 
 /** Vietnamese (Tiếng Việt)
@@ -3059,9 +3059,9 @@ Nếu bạn đang sử dụng trình duyệt rất cũ, hoặc đã tắt JavaSc
 	'categorytree-not-found'        => 'Không tìm thấy thể loại <i>$1</i>',
 	'categorytree-error'            => 'Có vấn đề khi tải dữ liệu.',
 	'categorytree-retry'            => 'Xin hãy chờ một chút rồi thử lại.',
-	'categorytree-show-list'        => 'Hiển thị dạng danh sách',
-	'categorytree-show-tree'        => 'Hiển thị dạng cây',
-	'categorytree-too-many-subcats' => 'Không thể hiển thị tiểu thể loại theo dạng cây, có quá nhiều tiểu thể loại',
+	#'categorytree-show-list'        => 'Hiển thị dạng danh sách',
+	#'categorytree-show-tree'        => 'Hiển thị dạng cây',
+	#'categorytree-too-many-subcats' => 'Không thể hiển thị tiểu thể loại theo dạng cây, có quá nhiều tiểu thể loại',
 );
 
 /** Volapük (Volapük)
@@ -3090,9 +3090,9 @@ $messages['vo'] = array(
 	'categorytree-not-found'        => 'Klad: <i>$1</i> no petuvöl',
 	'categorytree-error'            => 'No eplöpos ad lodön nünis.',
 	'categorytree-retry'            => 'Stebedolös, begö! timüli e steifülolös dönu.',
-	'categorytree-show-list'        => 'Jonön as lised',
-	'categorytree-show-tree'        => 'Jonön as bim',
-	'categorytree-too-many-subcats' => 'Donaklads no kanons pajonön as bim, bi binons tu mödiks.',
+	#'categorytree-show-list'        => 'Jonön as lised',
+	#'categorytree-show-tree'        => 'Jonön as bim',
+	#'categorytree-too-many-subcats' => 'Donaklads no kanons pajonön as bim, bi binons tu mödiks.',
 );
 
 /** Wu (吴语)
@@ -3111,9 +3111,9 @@ $messages['wuu'] = array(
 	'categorytree-nothing-found'    => '一样也朆寻着',
 	'categorytree-no-subcategories' => '呒拨子分类',
 	'categorytree-no-pages'         => '呒拨页面或者子分类',
-	'categorytree-show-list'        => '显示成功列表',
-	'categorytree-show-tree'        => '显示成功树',
-	'categorytree-too-many-subcats' => '子分类忒多哉，显示弗过来哉。',
+	#'categorytree-show-list'        => '显示成功列表',
+	#'categorytree-show-tree'        => '显示成功树',
+	#'categorytree-too-many-subcats' => '子分类忒多哉，显示弗过来哉。',
 );
 
 /** Cantonese (廣東話)
@@ -3143,9 +3143,9 @@ $messages['yue'] = array(
 	'categorytree-not-found'        => '搵唔到<i>$1</i>分類',
 	'categorytree-error'            => '載入資料嗰陣發生咗錯誤。',
 	'categorytree-retry'            => '請等多一陣再試過。',
-	'categorytree-show-list'        => '顯示做表',
-	'categorytree-show-tree'        => '顯示做樹',
-	'categorytree-too-many-subcats' => '唔可以將細分類顯示做樹，因為已經有太多喇。',
+	#'categorytree-show-list'        => '顯示做表',
+	#'categorytree-show-tree'        => '顯示做樹',
+	#'categorytree-too-many-subcats' => '唔可以將細分類顯示做樹，因為已經有太多喇。',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
@@ -3175,9 +3175,9 @@ $messages['zh-hans'] = array(
 	'categorytree-not-found'        => '找不到分类<i>$1</i>',
 	'categorytree-error'            => '载入数据时发生错误。',
 	'categorytree-retry'            => '请稍候一会，然后再试。',
-	'categorytree-show-list'        => '以列表显示',
-	'categorytree-show-tree'        => '以树形显示',
-	'categorytree-too-many-subcats' => '无法以树形显示子分类，因为已经有太多了。',
+	#'categorytree-show-list'        => '以列表显示',
+	#'categorytree-show-tree'        => '以树形显示',
+	#'categorytree-too-many-subcats' => '无法以树形显示子分类，因为已经有太多了。',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
@@ -3208,9 +3208,9 @@ $messages['zh-hant'] = array(
 	'categorytree-not-found'        => '找不到分類<i>$1</i>',
 	'categorytree-error'            => '載入資料時發生錯誤。',
 	'categorytree-retry'            => '請稍候一會，然後再試。',
-	'categorytree-show-list'        => '以清單顯示',
-	'categorytree-show-tree'        => '以樹狀顯示',
-	'categorytree-too-many-subcats' => '無法以樹狀顯示子分類，因為已經有太多了。',
+	#'categorytree-show-list'        => '以清單顯示',
+	#'categorytree-show-tree'        => '以樹狀顯示',
+	#'categorytree-too-many-subcats' => '無法以樹狀顯示子分類，因為已經有太多了。',
 );
 
 /** Zulu (isiZulu)

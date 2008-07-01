@@ -118,7 +118,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			}
 		}
 		return $r;
-	}*/
+	}
 
 	function makeShowAsLink( $targetValue, $currentValue ) {
 		$msg = htmlspecialchars( CategoryTree::msg( "show-$targetValue" ) );
@@ -128,7 +128,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		} else {
 			return $this->getSkin()->makeKnownLinkObj( $this->title, $msg, "showas=$targetValue" );
 		}
-	}
+	} */
 
 	function clearCategoryState() {
 		$this->child_cats = array();

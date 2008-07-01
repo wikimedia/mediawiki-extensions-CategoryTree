@@ -101,7 +101,7 @@ class CategoryTree {
 	 */
 	static function setHeaders( &$outputPage ) {
 		global $wgJsMimeType, $wgScriptPath, $wgContLang, $wgCategoryTreeExtPath, $wgCategoryTreeVersion;
-		wfLoadExtensionMessages( 'CategoryTree' );
+		self::init();
 
 		# Register css file for CategoryTree
 		$outputPage->addLink(
@@ -132,17 +132,17 @@ class CategoryTree {
 		# Add messages
 		$outputPage->addScript(
 		"	<script type=\"{$wgJsMimeType}\">
-			var categoryTreeCollapseMsg = \"".Xml::escapeJsString(self::msg('collapse'))."\";
-			var categoryTreeExpandMsg = \"".Xml::escapeJsString(self::msg('expand'))."\";
-			var categoryTreeCollapseBulletMsg = \"".Xml::escapeJsString(self::msg('collapse-bullet'))."\";
-			var categoryTreeExpandBulletMsg = \"".Xml::escapeJsString(self::msg('expand-bullet'))."\";
-			var categoryTreeLoadMsg = \"".Xml::escapeJsString(self::msg('load'))."\";
-			var categoryTreeLoadingMsg = \"".Xml::escapeJsString(self::msg('loading'))."\";
-			var categoryTreeNothingFoundMsg = \"".Xml::escapeJsString(self::msg('nothing-found'))."\";
-			var categoryTreeNoSubcategoriesMsg = \"".Xml::escapeJsString(self::msg('no-subcategories'))."\";
-			var categoryTreeNoPagesMsg = \"".Xml::escapeJsString(self::msg('no-pages'))."\";
-			var categoryTreeErrorMsg = \"".Xml::escapeJsString(self::msg('error'))."\";
-			var categoryTreeRetryMsg = \"".Xml::escapeJsString(self::msg('retry'))."\";
+			var categoryTreeCollapseMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-collapse'))."\";
+			var categoryTreeExpandMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-expand'))."\";
+			var categoryTreeCollapseBulletMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-collapse-bullet'))."\";
+			var categoryTreeExpandBulletMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-expand-bullet'))."\";
+			var categoryTreeLoadMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-load'))."\";
+			var categoryTreeLoadingMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-loading'))."\";
+			var categoryTreeNothingFoundMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-nothing-found'))."\";
+			var categoryTreeNoSubcategoriesMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-no-subcategories'))."\";
+			var categoryTreeNoPagesMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-no-pages'))."\";
+			var categoryTreeErrorMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-error'))."\";
+			var categoryTreeRetryMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-retry'))."\";
 			</script>\n"
 		);
 	}
@@ -303,7 +303,7 @@ class CategoryTree {
 
 		if ( !$title->getArticleID() ) {
 			$html .= Xml::openElement( 'span', array( 'class' => 'CategoryTreeNotice' ) );
-			$html .= self::msg( 'not-found' , htmlspecialchars( $category ) );
+			$html .= wfMsgExt( 'categorytree-not-found', 'parserinline', htmlspecialchars( $category ) );
 			$html .= Xml::closeElement( 'span' );
 			}
 		else {
@@ -483,6 +483,8 @@ class CategoryTree {
 	function renderNodeInfo( $title, $cat, $children = 0, $loadchildren = false ) {
 		static $uniq = 0;
 
+		$this->init(); # initialize messages
+
 		$mode = $this->getOption('mode');
 		$load = false;
 
@@ -551,26 +553,26 @@ class CategoryTree {
 
 			if ( $count === 0 ) {
 				$tag = 'span';
-				$txt = $this->msg('empty-bullet');
+				$txt = wfMsgNoTrans( 'categorytree-empty-bullet' );
 			}
 			else if ( $children == 0 || $loadchildren ) {
 				$tag = 'a';
-				$txt = $this->msg('expand-bullet');
+				$txt = wfMsgNoTrans( 'categorytree-expand-bullet' );
 				$linkattr[ 'onclick' ] = "this.href='javascript:void(0)'; categoryTreeExpandNode('".Xml::escapeJsString($key)."',".$this->getOptionsAsJsStructure().",this);";
 				# Don't load this message for ajax requests, so that we don't have to initialise $wgLang
-				$linkattr[ 'title' ] = $this->mIsAjaxRequest ? '##LOAD##' : self::msg('expand');
+				$linkattr[ 'title' ] = $this->mIsAjaxRequest ? '##LOAD##' : wfMsgNoTrans('categorytree-expand');
 			}
 			else {
 				$tag = 'a';
-				$txt = $this->msg('collapse-bullet');
+				$txt = wfMsgNoTrans( 'categorytree-collapse-bullet' );
 				$linkattr[ 'onclick' ] = "this.href='javascript:void(0)'; categoryTreeCollapseNode('".Xml::escapeJsString($key)."',".$this->getOptionsAsJsStructure().",this);";
-				$linkattr[ 'title' ] = self::msg('collapse');
+				$linkattr[ 'title' ] = wfMsgNoTrans('categorytree-collapse');
 				$linkattr[ 'class' ] .= ' CategoryTreeLoaded';
 			}
 
 			$s .= Xml::openElement( $tag, $linkattr ) . $txt . Xml::closeElement( $tag ) . ' ';
 		} else {
-			$s .= $this->msg('page-bullet');
+			$s .= wfMsgNoTrans( 'categorytree-page-bullet' );
 		}
 
 		$s .= Xml::closeElement( 'span' );
@@ -581,7 +583,7 @@ class CategoryTree {
 			$pages = $cat->getPageCount() - $cat->getSubcatCount() - $cat->getFileCount();
 
 			$attr = array(
-				'title' => $this->msg( 'member-counts', $cat->getSubcatCount(), $pages , $cat->getFileCount() )
+				'title' => wfMsgExt( 'categorytree-member-counts', 'parsemag', $cat->getSubcatCount(), $pages , $cat->getFileCount() )
 			);
 
 			$s .= Xml::element( 'span', $attr, ' (' . $count . ')' );
@@ -630,21 +632,16 @@ class CategoryTree {
 	}
 
 	/**
-	 * Get a CategoryTree message, "categorytree-" prefix added automatically
+	 * Initialize. Load messages, if not ajax request.
 	 */
-	static function msg( $msg /*, ...*/ ) {
-		wfLoadExtensionMessages( 'CategoryTree' );
+	static function init( ) {
+		static $initialized = false;
+		if ( $initialized ) return;
+		$initialized = true;
 
-		if ( $msg === false ) {
-			return null;
-		}
-
-		$args = func_get_args();
-		$msg = array_shift( $args );
-		if ( $msg == '' ) {
-			return wfMsgReal( $msg, $args );
-		} else {
-			return wfMsgReal( "categorytree-$msg", $args );
-		}
+		#NOTE: don't load messages for ajax requests. Ajax requests are cachable and language-neutral.
+		#      Messages used in JS are defined by setHeaders
+		if ( !isset( $this ) || !$this->mIsAjaxRequest ) 
+			wfLoadExtensionMessages( 'CategoryTree' );
 	}
 }

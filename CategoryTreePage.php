@@ -64,9 +64,9 @@ class CategoryTreePage extends SpecialPage {
 
 		$this->tree = new CategoryTree( $options );
 
-		$wgOut->addWikiText( wfMsgNoTrans( 'categorytree-header' ) );
+		$wgOut->addWikiMsg( 'categorytree-header' );
 
-		$wgOut->addHtml( $this->makeInputForm() );
+		$this->executeInputForm();
 
 		if( $this->target !== '' && $this->target !== NULL ) {
 			CategoryTree::setHeaders( $wgOut );
@@ -74,28 +74,27 @@ class CategoryTreePage extends SpecialPage {
 			$title = CategoryTree::makeTitle( $this->target );
 
 			if ( $title && $title->getArticleID() ) {
-				$html = Xml::openElement( 'div', array( 'class' => 'CategoryTreeParents' ) );
-				$html .= wfMsg( 'categorytree-parents' ) . ': ';
+				$wgOut->addHtml( Xml::openElement( 'div', array( 'class' => 'CategoryTreeParents' ) ) );
+				$wgOut->addHtml( wfMsgExt( 'categorytree-parents', 'parseinline' ) );
+				$wgOut->addHtml( ': ' );
 
 				$parents = $this->tree->renderParents( $title );
 
 				if ( $parents == '' ) {
-					$html .= wfMsg( 'categorytree-nothing-found' );
+					$wgOut->addHtml( wfMsgExt( 'categorytree-nothing-found', 'parseinline' ) );
 				} else {
-					$html .= $parents;
+					$wgOut->addHtml( $parents );
 				}
 
-				$html .= Xml::closeElement( 'div' );
+				$wgOut->addHtml( Xml::closeElement( 'div' ) );
 
-				$html .=  Xml::openElement( 'div', array( 'class' => 'CategoryTreeResult' ) );
-				$html .=  $this->tree->renderNode( $title, 1 ) .
-				$html .=  Xml::closeElement( 'div' );
-
-				$wgOut->addHtml( $html );
+				$wgOut->addHtml( Xml::openElement( 'div', array( 'class' => 'CategoryTreeResult' ) ) );
+				$wgOut->addHtml( $this->tree->renderNode( $title, 1 ) );
+				$wgOut->addHtml( Xml::closeElement( 'div' ) );
 			}
 			else {
 				$wgOut->addHtml( Xml::openElement( 'div', array( 'class' => 'CategoryTreeNotice' ) ) );
-				$wgOut->addWikiText( wfMsg( 'categorytree-not-found' , $this->target ) );
+				$wgOut->addHtml( wfMsgExt( 'categorytree-not-found', 'parseinline' , $this->target ) );
 				$wgOut->addHtml( Xml::closeElement( 'div' ) );
 			}
 		}
@@ -105,24 +104,23 @@ class CategoryTreePage extends SpecialPage {
 	/**
 	 * Input form for entering a category
 	 */
-	function makeInputForm() {
-		global $wgScript;
+	function executeInputForm() {
+		global $wgScript, $wgOut;
 		$thisTitle = Title::makeTitle( NS_SPECIAL, $this->getName() );
 		$mode = $this->getOption('mode');
 
-		$form = Xml::openElement( 'form', array( 'name' => 'categorytree', 'method' => 'get', 'action' => $wgScript, 'id' => 'mw-categorytree-form' ) ) .
-			Xml::openElement( 'fieldset' ) .
-			Xml::element( 'legend', null, wfMsg( 'categorytree-legend' ) ) .
-			Xml::hidden( 'title', $thisTitle->getPrefixedDbKey() ) .
-			Xml::inputLabel( wfMsg( 'categorytree-category' ), 'target', 'target', 20, $this->target ) . ' ' .
-			Xml::openElement( 'select', array( 'name' => 'mode' ) ) .
-			Xml::option( wfMsg( 'categorytree-mode-categories' ), 'categories', $mode == CT_MODE_CATEGORIES ? true : false ) .
-			Xml::option( wfMsg( 'categorytree-mode-pages' ), 'pages', $mode == CT_MODE_PAGES ? true : false ) .
-			Xml::option( wfMsg( 'categorytree-mode-all' ), 'all', $mode == CT_MODE_ALL ? true : false ) .
-			Xml::closeElement( 'select' ) . ' ' .
-			Xml::submitButton( wfMsg( 'categorytree-go' ), array( 'name' => 'dotree' ) ) .
-			Xml::closeElement( 'fieldset' ) .
-			Xml::closeElement( 'form' );
-		return $form;
+		$wgOut->addHTML( Xml::openElement( 'form', array( 'name' => 'categorytree', 'method' => 'get', 'action' => $wgScript, 'id' => 'mw-categorytree-form' ) ) );
+		$wgOut->addHTML( Xml::openElement( 'fieldset' ) );
+		$wgOut->addHTML( Xml::element( 'legend', null, wfMsgNoTrans( 'categorytree-legend' ) ) );
+		$wgOut->addHTML( Xml::hidden( 'title', $thisTitle->getPrefixedDbKey() ) );
+		$wgOut->addHTML( Xml::inputLabel( wfMsgNoTrans( 'categorytree-category' ), 'target', 'target', 20, $this->target ) . ' ' );
+		$wgOut->addHTML( Xml::openElement( 'select', array( 'name' => 'mode' ) ) );
+		$wgOut->addHTML( Xml::option( wfMsgNoTrans( 'categorytree-mode-categories' ), 'categories', $mode == CT_MODE_CATEGORIES ? true : false ) );
+		$wgOut->addHTML( Xml::option( wfMsgNoTrans( 'categorytree-mode-pages' ), 'pages', $mode == CT_MODE_PAGES ? true : false ) );
+		$wgOut->addHTML( Xml::option( wfMsgNoTrans( 'categorytree-mode-all' ), 'all', $mode == CT_MODE_ALL ? true : false ) );
+		$wgOut->addHTML( Xml::closeElement( 'select' ) . ' ' );
+		$wgOut->addHTML( Xml::submitButton( wfMsgNoTrans( 'categorytree-go' ), array( 'name' => 'dotree' ) ) );
+		$wgOut->addHTML( Xml::closeElement( 'fieldset' ) );
+		$wgOut->addHTML( Xml::closeElement( 'form' ) );
 	}
 }
