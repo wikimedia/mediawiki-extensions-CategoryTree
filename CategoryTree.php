@@ -67,7 +67,7 @@ $wgCategoryTreeDefaultOptions = array(); #Default values for most options. ADD N
 $wgCategoryTreeDefaultOptions['mode'] = NULL; # will be set to $wgCategoryTreeDefaultMode in efCategoryTree(); compatibility quirk
 $wgCategoryTreeDefaultOptions['hideprefix'] = NULL; # will be set to $wgCategoryTreeDefaultMode in efCategoryTree(); compatibility quirk
 $wgCategoryTreeDefaultOptions['showcount'] = false;
-#TODO: hideprefix: always, never, catonly, catonly_if_onlycat
+$wgCategoryTreeDefaultOptions['namespaces'] = false; # false means "no filter"
 
 $wgCategoryTreeCategoryPageMode = CT_MODE_CATEGORIES;
 $wgCategoryTreeCategoryPageOptions = array(); #Options to be used for category pages
@@ -114,7 +114,6 @@ $wgSpecialPageGroups['CategoryTree'] = 'pages';
 $wgHooks['OutputPageParserOutput'][] = 'efCategoryTreeParserOutput';
 $wgHooks['ArticleFromTitle'][] = 'efCategoryTreeArticleFromTitle';
 $wgHooks['LanguageGetMagic'][] = 'efCategoryTreeGetMagic';
-
 
 /**
  * register Ajax function

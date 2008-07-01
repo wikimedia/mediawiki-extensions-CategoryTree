@@ -34,7 +34,7 @@ var categoryTreeRetryMsg = "Please wait a moment and try again.";
       lnk.title= categoryTreeCollapseMsg;
       lnk.onclick= function() { categoryTreeCollapseNode(cat, options, lnk) }
 
-      if (lnk.className != "CategoryTreeLoaded") {
+      if (!lnk.className.match(/(^| )CategoryTreeLoaded($| )/)) {
         categoryTreeLoadNode(cat, options, lnk, div);
       }
     }
@@ -58,40 +58,52 @@ var categoryTreeRetryMsg = "Please wait a moment and try again.";
       categoryTreeLoadChildren(cat, options, div)
     }
 
-    function categoryTreeEncodeOptions(options) {
-      var opt = "";
+    function categoryTreeEncodeValue(value) {
+          switch (typeof value) {
+              case 'function': 
+                  throw new Error("categoryTreeEncodeValue encountered a function");
+                  break;
 
-      for (k in options) {
-          v = options[k];
-
-          switch (typeof v) {
               case 'string': 
-                  v = '"' + v.replace(/([\\"'])/g, "\\$1") + '"';
+                  s = '"' + value.replace(/([\\"'])/g, "\\$1") + '"';
                   break;
 
               case 'number':
               case 'boolean':
               case 'null':
-                  v = String(v);
+                  s = String(value);
                   break;
 
               case 'object':
-                  if ( !v ) v = 'null';
-                  else throw new Error("categoryTreeLoadChildren can not encode complex types");
+                  if ( !value ) {
+                      s = 'null';
+                  }
+                  else if (typeof value.length === 'number' && !(value.propertyIsEnumerable('length'))) {
+                      s = '';
+                      for (i = 0; i<value.length; i++) {
+                          v = value[i];
+                          if ( s!='' ) s += ', ';
+                          s += categoryTreeEncodeValue( v );
+                      }
+                      s = '[' + s + ']';
+                  }
+                  else {
+                      s = '';
+                      for (k in value) {
+                          v = value[k];
+                          if ( s!='' ) s += ', ';
+                          s += categoryTreeEncodeValue( k );
+                          s += ': ';
+                          s += categoryTreeEncodeValue( v );
+                      }
+                      s = '{' + s + '}';
+                  }
                   break;
-
               default:
-                  throw new Error("categoryTreeLoadChildren encountered strange variable type " + (typeof v));
+                  throw new Error("categoryTreeEncodeValue encountered strange variable type " + (typeof value));
           }
 
-          if ( opt != "" ) opt += ", ";
-          opt += k;
-          opt += ":";
-          opt += v;
-      }
-      
-      opt = "{"+opt+"}";
-      return opt;
+      return s;
     }
 
     function categoryTreeLoadChildren(cat, options, div) {
@@ -130,6 +142,6 @@ var categoryTreeRetryMsg = "Please wait a moment and try again.";
           div.innerHTML= result;
       }
 
-      var opt = categoryTreeEncodeOptions(options);
+      var opt = categoryTreeEncodeValue(options);
       sajax_do_call( "efCategoryTreeAjaxWrapper", [cat, opt, 'json'] , f );
     }

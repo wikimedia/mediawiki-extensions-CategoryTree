@@ -33,10 +33,58 @@ class CategoryTree {
 		$this->mOptions['mode'] = self::decodeMode( $this->mOptions['mode'] );
 		$this->mOptions['hideprefix'] = self::decodeHidePrefix( $this->mOptions['hideprefix'] );
 		$this->mOptions['showcount']  = self::decodeBoolean( $this->mOptions['showcount'] );
+		$this->mOptions['namespaces']  = self::decodeNamespaces( $this->mOptions['namespaces'] );
+
+		if ( $this->mOptions['namespaces'] ) {
+			# automatically adjust mode to match namespace filter
+			if ( sizeof( $this->mOptions['namespaces'] ) === 1  
+				&& $this->mOptions['namespaces'][0] == NS_CATEGORY ) {
+				$this->mOptions['mode'] = CT_MODE_CATEGORIES;
+			} else if ( !in_array( NS_IMAGE, $this->mOptions['namespaces'] ) ) {
+				$this->mOptions['mode'] = CT_MODE_PAGES;
+			} else {
+				$this->mOptions['mode'] = CT_MODE_ALL;
+			}
+		}
 	}
 
 	function getOption( $name ) {
 		return $this->mOptions[$name];
+	}
+
+	static function decodeNamespaces( $nn ) {
+		global $wgContLang;
+
+		if ( !$nn )
+			return false;
+
+		if ( !is_array($nn) ) 
+			$nn = preg_split( '![\s#:|]+!', $nn );
+
+		$namespaces = array();
+
+		foreach ( $nn as $n ) {
+			if ( is_int( $n ) ) {
+				$ns = $n;
+			}
+			else {
+				$n = trim( $n );
+				if ( $n === '' ) continue;
+	
+				$lower = strtolower( $n );
+	
+				if ( is_numeric($n) )  $ns = (int)$n;
+				elseif ( $n == '-' || $n == '_' || $n == '*' || $lower == 'main' ) $ns = NS_MAIN;
+				else $ns = $wgContLang->getNsIndex( $n );
+			}
+
+			if ( is_int( $ns ) ) {
+				$namespaces[] = $ns;
+			}
+		}
+
+		sort( $namespaces ); # get elements into canonical order
+		return $namespaces;
 	}
 
 	static function decodeMode( $mode ) {
@@ -199,6 +247,7 @@ class CategoryTree {
 		$key = "";
 
 		foreach ( $this->mOptions as $k => $v ) {
+			if ( is_array( $v ) ) $v = implode( '|', $v );
 			$key .= $k . ':' . $v . ';';
 		}
 
@@ -341,11 +390,19 @@ class CategoryTree {
 
 
 		$mode = $this->getOption('mode');
+		$namespaces = $this->getOption('namespaces');
 
-		#namespace filter. Should be configurable
-		if ( $mode == CT_MODE_ALL ) $nsmatch = '';
-		else if ( $mode == CT_MODE_PAGES ) $nsmatch = ' AND cat.page_namespace != ' . NS_IMAGE;
-		else $nsmatch = ' AND cat.page_namespace = ' . NS_CATEGORY;
+		#namespace filter. 
+		if ( $namespaces ) {
+			#NOTE: we assume that the $namespaces array contains only integers!
+			if ( sizeof( $namespaces ) === 1 ) $nsmatch = ' AND cat.page_namespace = ' . $namespaces[0] . ' ';
+			else $nsmatch = ' AND cat.page_namespace IN ( ' . implode( ', ', $namespaces ) . ') ';
+		}
+		else {
+			if ( $mode == CT_MODE_ALL ) $nsmatch = '';
+			else if ( $mode == CT_MODE_PAGES ) $nsmatch = ' AND cat.page_namespace != ' . NS_IMAGE;
+			else $nsmatch = ' AND cat.page_namespace = ' . NS_CATEGORY;
+		}
 
 		#additional stuff to be used if "transaltion" by interwiki-links is desired
 		$transFields = '';
@@ -551,13 +608,15 @@ class CategoryTree {
 
 			$linkattr[ 'class' ] = "CategoryTreeToggle";
 
-			if ( $count === 0 ) {
+			/*if ( $count === 0 ) {
 				$tag = 'span';
 				$txt = wfMsgNoTrans( 'categorytree-empty-bullet' );
 			}
-			else if ( $children == 0 || $loadchildren ) {
+			else*/ 
+			if ( $children == 0 || $loadchildren ) {
 				$tag = 'a';
-				$txt = wfMsgNoTrans( 'categorytree-expand-bullet' );
+				if ( $count === 0 ) $txt = wfMsgNoTrans( 'categorytree-empty-bullet' );
+				else $txt = wfMsgNoTrans( 'categorytree-expand-bullet' );
 				$linkattr[ 'onclick' ] = "this.href='javascript:void(0)'; categoryTreeExpandNode('".Xml::escapeJsString($key)."',".$this->getOptionsAsJsStructure().",this);";
 				# Don't load this message for ajax requests, so that we don't have to initialise $wgLang
 				$linkattr[ 'title' ] = $this->mIsAjaxRequest ? '##LOAD##' : wfMsgNoTrans('categorytree-expand');
@@ -593,7 +652,19 @@ class CategoryTree {
 		$s .= "\n\t\t";
 		$s .= Xml::openElement( 'div', array( 'class' => 'CategoryTreeChildren', 'style' => $children > 0 ? "display:block" : "display:none" ) );
 		
-		if ( $children > 0 && !$loadchildren) $s .= $this->renderChildren( $title, $children );
+		if ( $ns == NS_CATEGORY && $children > 0 && !$loadchildren) {
+			$children = $this->renderChildren( $title, $children );
+			if ( $children == '' ) {
+				$s .= Xml::openElement( 'i', array( 'class' => 'CategoryTreeNotice' ) );
+				if ( $mode == CT_MODE_CATEGORIES ) $s .= wfMsgExt( 'categorytree-no-subcategories', 'parsemag');
+				else if ( $mode == CT_MODE_PAGES ) $s .= wfMsgExt( 'categorytree-no-pages', 'parsemag');
+				else $s .= wfMsgExt( 'categorytree-nothing-found', 'parsemag');
+				$s .= Xml::closeElement( 'i' );
+			} else {
+				$s .= $children;
+			}
+		}
+
 		$s .= Xml::closeElement( 'div' );
 		$s .= Xml::closeElement( 'div' );
 
