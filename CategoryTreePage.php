@@ -40,7 +40,7 @@ class CategoryTreePage extends SpecialPage {
 	 * @param $par Parameters passed to the page
 	 */
 	function execute( $par ) {
-		global $wgRequest, $wgOut, $wgCategoryTreeDefaultOptions, $wgCategoryTreeSpecialPageOptions;
+		global $wgRequest, $wgOut, $wgCategoryTreeDefaultOptions, $wgCategoryTreeSpecialPageOptions, $wgCategoryTreeForceHeaders;
 
 		$this->setHeaders();
 
@@ -69,7 +69,7 @@ class CategoryTreePage extends SpecialPage {
 		$this->executeInputForm();
 
 		if( $this->target !== '' && $this->target !== NULL ) {
-			CategoryTree::setHeaders( $wgOut );
+			if ( !$wgCategoryTreeForceHeaders ) CategoryTree::setHeaders( $wgOut );
 
 			$title = CategoryTree::makeTitle( $this->target );
 

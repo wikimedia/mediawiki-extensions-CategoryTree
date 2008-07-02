@@ -58,6 +58,10 @@ $wgCategoryTreeHTTPCache = false;
 #$wgCategoryTreeUnifiedView = true;
 $wgCategoryTreeMaxDepth = array(CT_MODE_PAGES => 1, CT_MODE_ALL => 1, CT_MODE_CATEGORIES => 2);
 
+# Set $wgCategoryTreeForceHeaders to true to force the JS and CSS headers for CategoryTree to be included on every page. 
+# May be usefull for using CategoryTree from within system messages, in the sidebar, or a custom skin.
+$wgCategoryTreeForceHeaders = false; 
+
 $wgCategoryTreeExtPath = '/extensions/CategoryTree';
 $wgCategoryTreeVersion = '2';  #NOTE: bump this when you change the CSS or JS files!
 
@@ -111,7 +115,6 @@ $wgAutoloadClasses['CategoryTreeCategoryPage'] = $dir . 'CategoryPageSubclass.ph
 $wgSpecialPages['CategoryTree'] = 'CategoryTreePage';
 $wgSpecialPageGroups['CategoryTree'] = 'pages';
 #$wgHooks['SkinTemplateTabs'][] = 'efCategoryTreeInstallTabs';
-$wgHooks['OutputPageParserOutput'][] = 'efCategoryTreeParserOutput';
 $wgHooks['ArticleFromTitle'][] = 'efCategoryTreeArticleFromTitle';
 $wgHooks['LanguageGetMagic'][] = 'efCategoryTreeGetMagic';
 
@@ -124,9 +127,10 @@ $wgAjaxExportList[] = 'efCategoryTreeAjaxWrapper';
  * Hook it up
  */
 function efCategoryTree() {
-	global $wgUseAjax, $wgHooks;
+	global $wgUseAjax, $wgHooks, $wgOut;
 	global $wgCategoryTreeDefaultOptions, $wgCategoryTreeDefaultMode, $wgCategoryTreeOmitNamespace;
 	global $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeCategoryPageMode;
+	global $wgCategoryTreeForceHeaders;
 
 	# Abort if AJAX is not enabled
 	if ( !$wgUseAjax ) {
@@ -150,6 +154,13 @@ function efCategoryTree() {
 
 	if ( !isset( $wgCategoryTreeCategoryPageOptions['mode'] ) || is_null( $wgCategoryTreeCategoryPageOptions['mode'] ) ) {
 		$wgCategoryTreeCategoryPageOptions['mode'] = $wgCategoryTreeCategoryPageMode;
+	}
+
+	if ( $wgCategoryTreeForceHeaders ) {
+		CategoryTree::setHeaders( $wgOut );
+	}
+	else {
+		$wgHooks['OutputPageParserOutput'][] = 'efCategoryTreeParserOutput';
 	}
 }
 

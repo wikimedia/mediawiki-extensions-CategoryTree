@@ -15,10 +15,10 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	var $child_cats;
 
 	function getCategoryTree() {
-		global $wgOut, $wgCategoryTreeCategoryPageOptions;
+		global $wgOut, $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeForceHeaders;
 
 		if ( ! isset($this->categorytree) ) {
-			CategoryTree::setHeaders( $wgOut );
+			if ( !$wgCategoryTreeForceHeaders ) CategoryTree::setHeaders( $wgOut );
 
 			$this->categorytree = new CategoryTree( $wgCategoryTreeCategoryPageOptions );
 		}
