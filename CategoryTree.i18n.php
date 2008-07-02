@@ -15,7 +15,8 @@ $messages = array();
  */
 $messages['en'] = array(
 	'categorytree'                  => 'CategoryTree',
-	'categorytree-tab'              => 'Tree',
+	'categorytree-portlet'          => 'Categories',
+#	'categorytree-tab'              => 'Tree',
 	'categorytree-legend'           => 'Show category tree',
 	'categorytree-desc'             => 'Dynamically navigate the [[Special:CategoryTree|category structure]]',
 	'categorytree-header'           => 'Enter a category name to see its contents as a tree structure.
@@ -592,6 +593,7 @@ $messages['da'] = array(
  */
 $messages['de'] = array(
 	'categorytree'                  => 'Kategorienbaum',
+	'categorytree-portlet'          => 'Kategorien',
 	'categorytree-tab'              => 'Baum',
 	'categorytree-legend'           => 'Zeige Kategorienbaum',
 	'categorytree-desc'             => 'Dynamische Navigation für die [[Special:CategoryTree|Kategorien-Struktur]]',

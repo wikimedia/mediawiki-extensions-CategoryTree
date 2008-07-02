@@ -62,6 +62,7 @@ $wgCategoryTreeMaxDepth = array(CT_MODE_PAGES => 1, CT_MODE_ALL => 1, CT_MODE_CA
 # Set $wgCategoryTreeForceHeaders to true to force the JS and CSS headers for CategoryTree to be included on every page. 
 # May be usefull for using CategoryTree from within system messages, in the sidebar, or a custom skin.
 $wgCategoryTreeForceHeaders = false; 
+$wgCategoryTreeSidebarRoot = NULL;
 
 $wgCategoryTreeExtPath = '/extensions/CategoryTree';
 $wgCategoryTreeVersion = '2';  #NOTE: bump this when you change the CSS or JS files!
@@ -82,6 +83,14 @@ $wgCategoryTreeCategoryPageOptions['showcount'] = true;
 
 $wgCategoryTreeSpecialPageOptions = array(); #Options to be used for Special:CategoryTree
 $wgCategoryTreeSpecialPageOptions['showcount'] = true;
+
+$wgCategoryTreeSidebarOptions = array(); #Options to be used in the sidebar (for use with $wgCategoryTreeSidebarRoot)
+$wgCategoryTreeSidebarOptions['mode'] = CT_MODE_CATEGORIES;
+$wgCategoryTreeSidebarOptions['hideprefix'] = CT_HIDEPREFIX_CATEGORIES;
+$wgCategoryTreeSidebarOptions['showcount'] = false;
+$wgCategoryTreeSidebarOptions['hideroot'] = true;
+$wgCategoryTreeSidebarOptions['namespaces'] = false; 
+$wgCategoryTreeSidebarOptions['depth'] = 1;
 
 /**
  * Register extension setup hook and credits
@@ -132,12 +141,17 @@ function efCategoryTree() {
 	global $wgUseAjax, $wgHooks, $wgOut;
 	global $wgCategoryTreeDefaultOptions, $wgCategoryTreeDefaultMode, $wgCategoryTreeOmitNamespace;
 	global $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeCategoryPageMode;
-	global $wgCategoryTreeForceHeaders;
+	global $wgCategoryTreeSidebarRoot, $wgCategoryTreeForceHeaders;
 
 	# Abort if AJAX is not enabled
 	if ( !$wgUseAjax ) {
 		wfDebug( 'efCategoryTree: $wgUseAjax is not enabled, aborting extension setup.' );
 		return;
+	}
+
+	if ( $wgCategoryTreeSidebarRoot ) {
+		$wgCategoryTreeForceHeaders = true; # needed on every page anyway
+		$wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'efCategoryTreeSkinTemplateOutputPageBeforeExec';
 	}
 
 	if ( defined( 'MW_SUPPORTS_PARSERFIRSTCALLINIT' ) ) {
@@ -274,15 +288,32 @@ function efCategoryTreeParserFunction( &$parser ) {
 }
 
 /**
+ * Hook implementation for injecting a category tree into the sidebar.
+ * Registered automatically if $wgCategoryTreeSidebarRoot is set to a category name.
+ */
+function efCategoryTreeSkinTemplateOutputPageBeforeExec( &$skin, &$tpl ) {
+	global $wgCategoryTreeSidebarRoot, $wgCategoryTreeSidebarOptions;
+	
+	$html = efCategoryTreeParserHook( $wgCategoryTreeSidebarRoot, $wgCategoryTreeSidebarOptions );
+	if ( $html ) $tpl->data['sidebar']['categorytree-portlet'] = $html; //requires MW 1.13, r36917
+
+	return true;
+}
+
+
+/**
  * Entry point for the <categorytree> tag parser hook.
  * This loads CategoryTreeFunctions.php and calls CategoryTree::getTag()
  */
-function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
-	global $wgCategoryTreeDefaultMode;
+function efCategoryTreeParserHook( $cat, $argv, $parser = NULL ) {
+	global $wgCategoryTreeDefaultMode, $wgOut;
 
-	$parser->mOutput->mCategoryTreeTag = true; # flag for use by efCategoryTreeParserOutput
-
-	static $initialized = false;
+	if ( $parser ) {
+		$parser->mOutput->mCategoryTreeTag = true; # flag for use by efCategoryTreeParserOutput
+	}
+	else {
+		CategoryTree::setHeaders( $wgOut );
+	}
 
 	$ct = new CategoryTree( $argv );
 
@@ -290,7 +321,7 @@ function efCategoryTreeParserHook( $cat, $argv, &$parser ) {
 
 	$hideroot = isset( $argv[ 'hideroot' ] ) ? CategoryTree::decodeBoolean( $argv[ 'hideroot' ] ) : null;
 	$onlyroot = isset( $argv[ 'onlyroot' ] ) ? CategoryTree::decodeBoolean( $argv[ 'onlyroot' ] ) : null;
-	$depthArg = isset( $argv[ 'depth' ] ) ? $argv[ 'depth' ] : null;
+	$depthArg = isset( $argv[ 'depth' ] ) ? (int)$argv[ 'depth' ] : null;
 
 	$depth = efCategoryTreeCapDepth( $ct->getOption( 'mode' ), $depthArg );
 	if ( $onlyroot ) $depth = 0;

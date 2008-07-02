@@ -340,7 +340,7 @@ class CategoryTree {
 	* Custom tag implementation. This is called by efCategoryTreeParserHook, which is used to
 	* load CategoryTreeFunctions.php on demand.
 	*/
-	function getTag( &$parser, $category, $hideroot = false, $attr, $depth=1 ) {
+	function getTag( $parser, $category, $hideroot = false, $attr, $depth=1 ) {
 		global $wgCategoryTreeDisableCache, $wgCategoryTreeDynamicTag;
 		static $uniq = 0;
 
@@ -348,7 +348,7 @@ class CategoryTree {
 		if ( $category === '' ) {
 			return false;
 		}
-		if ( $wgCategoryTreeDisableCache && !$wgCategoryTreeDynamicTag ) {
+		if ( $parser && $wgCategoryTreeDisableCache && !$wgCategoryTreeDynamicTag ) {
 			$parser->disableCache();
 		}
 		$title = self::makeTitle( $category );
