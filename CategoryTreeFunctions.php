@@ -340,7 +340,7 @@ class CategoryTree {
 	* Custom tag implementation. This is called by efCategoryTreeParserHook, which is used to
 	* load CategoryTreeFunctions.php on demand.
 	*/
-	function getTag( $parser, $category, $hideroot = false, $attr, $depth=1 ) {
+	function getTag( $parser, $category, $hideroot = false, $attr, $depth=1, $allowMissing = false ) {
 		global $wgCategoryTreeDisableCache, $wgCategoryTreeDynamicTag;
 		static $uniq = 0;
 
@@ -361,7 +361,7 @@ class CategoryTree {
 		$html = '';
 		$html .= Xml::openElement( 'div', $attr );
 
-		if ( !$title->getArticleID() ) {
+		if ( !$allowMissing && !$title->getArticleID() ) {
 			$html .= Xml::openElement( 'span', array( 'class' => 'CategoryTreeNotice' ) );
 			$html .= wfMsgExt( 'categorytree-not-found', 'parserinline', htmlspecialchars( $category ) );
 			$html .= Xml::closeElement( 'span' );
@@ -405,12 +405,14 @@ class CategoryTree {
 
 		if ( $inverse ) {
 			$ctJoinCond = ' cl_to = cat.page_title AND cat.page_namespace = ' . NS_CATEGORY;
-			$ctWhere = " cl_from = " . $title->getArticleId();
+			$ctWhere = ' cl_from = ' . $title->getArticleId();
+			$ctJoin = ' RIGHT JOIN ';
 			$nsmatch = '';
 		}
 		else {
 			$ctJoinCond = ' cl_from = cat.page_id ';
-			$ctWhere = " cl_to = " . $dbr->addQuotes( $title->getDBkey() );
+			$ctWhere = ' cl_to = ' . $dbr->addQuotes( $title->getDBkey() );
+			$ctJoin = ' JOIN ';
 
 			#namespace filter. 
 			if ( $namespaces ) {
@@ -445,11 +447,12 @@ class CategoryTree {
 		$page = $dbr->tableName( 'page' );
 		$categorylinks = $dbr->tableName( 'categorylinks' );
 
-		$sql = "SELECT cat.page_namespace, cat.page_title
+		$sql = "SELECT cat.page_namespace, cat.page_title,
+				cl_to, cl_from
 					  $transFields
 					  $countFields
 				FROM $page as cat
-				JOIN $categorylinks ON $ctJoinCond
+				$ctJoin $categorylinks ON $ctJoinCond
 				$transJoin
 				$countJoin
 				WHERE $ctWhere
@@ -466,8 +469,15 @@ class CategoryTree {
 		$other= '';
 
 		while ( $row = $dbr->fetchObject( $res ) ) {
-			#TODO: translation support; ideally added to Title object
-			$t = Title::newFromRow( $row );
+			#NOTE: in inverse mode, the page record may be null, because we use a right join.
+			#      happens for categories with no category page (red cat links)
+			if ( $inverse && $row->page_title === NULL ) {
+				$t = Title::makeTitle( NS_CATEGORY, $row->cl_to );
+			}
+			else {
+				#TODO: translation support; ideally added to Title object
+				$t = Title::newFromRow( $row );
+			}
 
 			$cat = NULL;
 
@@ -596,9 +606,14 @@ class CategoryTree {
 
 		if ( $trans && $trans!=$label ) $label.= ' ' . Xml::element( 'i', array( 'class' => 'translation'), $trans );
 
-		$wikiLink = $title->getLocalURL();
-
 		$labelClass = 'CategoryTreeLabel ' . ' CategoryTreeLabelNs' . $ns;
+
+		if ( !$title->getArticleId() ) {
+			$labelClass .= ' new';
+			$wikiLink = $title->getLocalURL( 'action=edit&redlink=1' );
+		} else {
+			$wikiLink = $title->getLocalURL();
+		}
 
 		if ( $ns == NS_CATEGORY ) {
 			$labelClass .= ' CategoryTreeLabelCategory';
