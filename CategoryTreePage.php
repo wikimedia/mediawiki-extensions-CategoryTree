@@ -81,7 +81,7 @@ class CategoryTreePage extends SpecialPage {
 				$parents = $this->tree->renderParents( $title );
 
 				if ( $parents == '' ) {
-					$wgOut->addHtml( wfMsgExt( 'categorytree-nothing-found', 'parseinline' ) );
+					$wgOut->addHtml( wfMsgExt( 'categorytree-no-parent-categories', 'parseinline' ) );
 				} else {
 					$wgOut->addHtml( $parents );
 				}

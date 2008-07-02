@@ -22,6 +22,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 define('CT_MODE_CATEGORIES', 0);
 define('CT_MODE_PAGES', 10);
 define('CT_MODE_ALL', 20);
+define('CT_MODE_PARENTS', 100);
 
 /**
 * Constants for use with the hideprefix option,
@@ -64,6 +65,7 @@ $wgCategoryTreeForceHeaders = false;
 
 $wgCategoryTreeExtPath = '/extensions/CategoryTree';
 $wgCategoryTreeVersion = '2';  #NOTE: bump this when you change the CSS or JS files!
+$wgCategoryTreeUseCategoryTable = version_compare( $wgVersion, "1.13", '>=' );
 
 $wgCategoryTreeOmitNamespace = CT_HIDEPREFIX_CATEGORIES;
 $wgCategoryTreeDefaultMode = CT_MODE_CATEGORIES;

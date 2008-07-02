@@ -133,6 +133,7 @@ var categoryTreeRetryMsg = "Please wait a moment and try again.";
 
                     if ( options.mode == 0 ) result= categoryTreeNoSubcategoriesMsg;
                     else if ( options.mode == 10 ) result= categoryTreeNoPagesMsg;
+                    else if ( options.mode == 100 ) result= categoryTreeNoParentCategoriesMsg;
                     else result= categoryTreeNothingFoundMsg;
 
                     result+= '</i>';

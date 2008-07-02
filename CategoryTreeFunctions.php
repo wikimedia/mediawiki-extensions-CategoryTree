@@ -31,6 +31,11 @@ class CategoryTree {
 		}
 
 		$this->mOptions['mode'] = self::decodeMode( $this->mOptions['mode'] );
+
+		if ( $this->mOptions['mode'] == CT_MODE_PARENTS ) {
+			 $this->mOptions['namespaces'] = false; #namespace filter makes no sense with CT_MODE_PARENTS
+		}
+
 		$this->mOptions['hideprefix'] = self::decodeHidePrefix( $this->mOptions['hideprefix'] );
 		$this->mOptions['showcount']  = self::decodeBoolean( $this->mOptions['showcount'] );
 		$this->mOptions['namespaces']  = self::decodeNamespaces( $this->mOptions['namespaces'] );
@@ -50,6 +55,10 @@ class CategoryTree {
 
 	function getOption( $name ) {
 		return $this->mOptions[$name];
+	}
+
+	function isInverse( ) {
+		return $this->getOption('mode') == CT_MODE_PARENTS;
 	}
 
 	static function decodeNamespaces( $nn ) {
@@ -99,7 +108,8 @@ class CategoryTree {
 
 		if ( $mode == 'all' ) $mode = CT_MODE_ALL;
 		else if ( $mode == 'pages' ) $mode = CT_MODE_PAGES;
-		else if ( $mode == 'categories' ) $mode = CT_MODE_CATEGORIES;
+		else if ( $mode == 'categories' || $mode == 'sub' ) $mode = CT_MODE_CATEGORIES;
+		else if ( $mode == 'parents' || $mode == 'super' || $mode == 'inverse' ) $mode = CT_MODE_PARENTS;
 		else if ( $mode == 'default' ) $mode = $wgCategoryTreeDefaultOptions['mode'];
 
 		return (int)$mode;
@@ -188,6 +198,7 @@ class CategoryTree {
 			var categoryTreeLoadingMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-loading'))."\";
 			var categoryTreeNothingFoundMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-nothing-found'))."\";
 			var categoryTreeNoSubcategoriesMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-no-subcategories'))."\";
+			var categoryTreeNoParentCategoriesMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-no-parent-categories'))."\";
 			var categoryTreeNoPagesMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-no-pages'))."\";
 			var categoryTreeErrorMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-error'))."\";
 			var categoryTreeRetryMsg = \"".Xml::escapeJsString(wfMsgNoTrans('categorytree-retry'))."\";
@@ -379,7 +390,7 @@ class CategoryTree {
 	* $title must be a Title object
 	*/
 	function renderChildren( &$title, $depth=1 ) {
-		global $wgCategoryTreeMaxChildren, $wgVersion;
+		global $wgCategoryTreeMaxChildren, $wgCategoryTreeUseCategoryTable;
 
 		if( $title->getNamespace() != NS_CATEGORY ) {
 			// Non-categories can't have children. :)
@@ -388,20 +399,30 @@ class CategoryTree {
 
 		$dbr =& wfGetDB( DB_SLAVE );
 
-
+		$inverse = $this->isInverse();
 		$mode = $this->getOption('mode');
 		$namespaces = $this->getOption('namespaces');
 
-		#namespace filter. 
-		if ( $namespaces ) {
-			#NOTE: we assume that the $namespaces array contains only integers!
-			if ( sizeof( $namespaces ) === 1 ) $nsmatch = ' AND cat.page_namespace = ' . $namespaces[0] . ' ';
-			else $nsmatch = ' AND cat.page_namespace IN ( ' . implode( ', ', $namespaces ) . ') ';
+		if ( $inverse ) {
+			$ctJoinCond = ' cl_to = cat.page_title AND cat.page_namespace = ' . NS_CATEGORY;
+			$ctWhere = " cl_from = " . $title->getArticleId();
+			$nsmatch = '';
 		}
 		else {
-			if ( $mode == CT_MODE_ALL ) $nsmatch = '';
-			else if ( $mode == CT_MODE_PAGES ) $nsmatch = ' AND cat.page_namespace != ' . NS_IMAGE;
-			else $nsmatch = ' AND cat.page_namespace = ' . NS_CATEGORY;
+			$ctJoinCond = ' cl_from = cat.page_id ';
+			$ctWhere = " cl_to = " . $dbr->addQuotes( $title->getDBkey() );
+
+			#namespace filter. 
+			if ( $namespaces ) {
+				#NOTE: we assume that the $namespaces array contains only integers! decodeNamepsaces makes it so.
+				if ( sizeof( $namespaces ) === 1 ) $nsmatch = ' AND cat.page_namespace = ' . $namespaces[0] . ' ';
+				else $nsmatch = ' AND cat.page_namespace IN ( ' . implode( ', ', $namespaces ) . ') ';
+			}
+			else {
+				if ( $mode == CT_MODE_ALL ) $nsmatch = '';
+				else if ( $mode == CT_MODE_PAGES ) $nsmatch = ' AND cat.page_namespace != ' . NS_IMAGE;
+				else $nsmatch = ' AND cat.page_namespace = ' . NS_CATEGORY;
+			}
 		}
 
 		#additional stuff to be used if "transaltion" by interwiki-links is desired
@@ -410,7 +431,7 @@ class CategoryTree {
 		$transWhere = '';
 
 		# fetch member count if possible
-		$doCount = version_compare( $wgVersion, "1.12", '>' );
+		$doCount = !$inverse && $wgCategoryTreeUseCategoryTable;
 
 		$countFields = '';
 		$countJoin = '';
@@ -428,10 +449,10 @@ class CategoryTree {
 					  $transFields
 					  $countFields
 				FROM $page as cat
-				JOIN $categorylinks ON cl_from = cat.page_id
+				JOIN $categorylinks ON $ctJoinCond
 				$transJoin
 				$countJoin
-				WHERE cl_to = " . $dbr->addQuotes( $title->getDBkey() ) . "
+				WHERE $ctWhere
 				$nsmatch
 				"./*AND cat.page_is_redirect = 0*/"
 				$transWhere
@@ -527,7 +548,11 @@ class CategoryTree {
 	* $title must be a Title object
 	*/
 	function renderNode( $title, $children = 0, $loadchildren = false ) {
-		if ( $title->getNamespace() == NS_CATEGORY ) $cat = Category::newFromTitle( $title );
+		global $wgCategoryTreeUseCategoryTable;
+
+		if ( $wgCategoryTreeUseCategoryTable && $title->getNamespace() == NS_CATEGORY && !$this->isInverse() ) {
+			$cat = Category::newFromTitle( $title );
+		}
 		else $cat = NULL;
 
 		return $this->renderNodeInfo( $title, $cat, $children, $loadchildren );
@@ -658,6 +683,7 @@ class CategoryTree {
 				$s .= Xml::openElement( 'i', array( 'class' => 'CategoryTreeNotice' ) );
 				if ( $mode == CT_MODE_CATEGORIES ) $s .= wfMsgExt( 'categorytree-no-subcategories', 'parsemag');
 				else if ( $mode == CT_MODE_PAGES ) $s .= wfMsgExt( 'categorytree-no-pages', 'parsemag');
+				else if ( $mode == CT_MODE_PARENTS ) $s .= wfMsgExt( 'categorytree-no-parent-categories', 'parsemag');
 				else $s .= wfMsgExt( 'categorytree-nothing-found', 'parsemag');
 				$s .= Xml::closeElement( 'i' );
 			} else {
