@@ -270,7 +270,7 @@ function efCategoryTreeParserFunction( &$parser ) {
 
 	//now handle just like a <categorytree> tag
 	$html = efCategoryTreeParserHook( $cat, $argv, $parser );
-	return array( $html, 'isHTML' => true );
+	return array( $html, 'noparse' => true, 'isHTML' => true );
 }
 
 /**
