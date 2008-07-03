@@ -1011,6 +1011,7 @@ $messages['haw'] = array(
 /** Hebrew (עברית) */
 $messages['he'] = array(
 	'categorytree'                      => 'עץ קטגוריות',
+	'categorytree-portlet'              => 'קטגוריות',
 	'categorytree-legend'               => 'הצגת עץ קטגוריות',
 	'categorytree-desc'                 => 'כלי מבוסס AJAX להצגת [[Special:CategoryTree|מבנה הקטגוריות]] של אתר ויקי',
 	'categorytree-header'               => 'הקלידו שם קטגוריה כדי לראות את תכניה במבנה עץ. שימו לב שהדבר דורש תכונת JavaScript מתקדמת, הידועה בשם AJAX. אם יש לכם דפדפן ישן מאוד, או ש־JavaScript מנוטרלת אצלכם בדפדפן, הוא לא יעבוד.',
