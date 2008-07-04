@@ -358,6 +358,8 @@ class CategoryTree {
 		if ( isset( $attr['class'] ) ) $attr['class'] .= ' CategoryTreeTag';
 		else $attr['class'] = ' CategoryTreeTag';
 
+		$this->init();
+
 		$html = '';
 		$html .= Xml::openElement( 'div', $attr );
 
