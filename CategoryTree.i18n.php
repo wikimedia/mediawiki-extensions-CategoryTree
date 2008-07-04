@@ -103,26 +103,29 @@ $messages['am'] = array(
  * @author Siebrand
  */
 $messages['an'] = array(
-	'categorytree'                  => 'Árbol de categorías',
-	'categorytree-legend'           => "Amostar l'árbol de categorías",
-	'categorytree-desc'             => "Traste basato en AJAX t'amostrar a [[Special:CategoryTree|estrutura de categorías]] d'una wiki",
-	'categorytree-header'           => "Escriba un nombre de categoría ta beyer os suyos contenius en forma d'árbol. Pare cuenta que ista pachina requiere as funzions JavaScriptz abanzatas conoixitas como AJAX. Si tiene un nabegador antigo, u tiene desautibato JavaScript, a pachina no funzionará.",
-	'categorytree-category'         => 'Categoría:',
-	'categorytree-go'               => "Amostrar l'Árbol",
-	'categorytree-parents'          => 'Categorías mais',
-	'categorytree-mode-categories'  => 'amostrar nomás categorías',
-	'categorytree-mode-pages'       => 'pachinas pero no imachens',
-	'categorytree-mode-all'         => 'todas as pachinas',
-	'categorytree-collapse'         => 'amagar',
-	'categorytree-expand'           => 'amostrar',
-	'categorytree-load'             => 'cargar',
-	'categorytree-loading'          => 'cargando',
-	'categorytree-nothing-found'    => "No s'ha trobato cosa",
-	'categorytree-no-subcategories' => 'no bi ha subcategorías',
-	'categorytree-no-pages'         => 'No bi ha articlos ni subcategorías',
-	'categorytree-not-found'        => "Categoría ''$1'' no trobata",
-	'categorytree-error'            => 'Error en cargar os datos',
-	'categorytree-retry'            => 'Por fabor, aspere bels intes y prebe de nuebas.',
+	'categorytree'                      => 'Árbol de categorías',
+	'categorytree-portlet'              => 'Categorías',
+	'categorytree-legend'               => "Amostar l'árbol de categorías",
+	'categorytree-desc'                 => "Traste basato en AJAX t'amostrar a [[Special:CategoryTree|estrutura de categorías]] d'una wiki",
+	'categorytree-header'               => "Escriba un nombre de categoría ta beyer os suyos contenius en forma d'árbol. Pare cuenta que ista pachina requiere as funzions JavaScriptz abanzatas conoixitas como AJAX. Si tiene un nabegador antigo, u tiene desautibato JavaScript, a pachina no funzionará.",
+	'categorytree-category'             => 'Categoría:',
+	'categorytree-go'                   => "Amostrar l'Árbol",
+	'categorytree-parents'              => 'Categorías mais',
+	'categorytree-mode-categories'      => 'amostrar nomás categorías',
+	'categorytree-mode-pages'           => 'pachinas pero no imachens',
+	'categorytree-mode-all'             => 'todas as pachinas',
+	'categorytree-collapse'             => 'amagar',
+	'categorytree-expand'               => 'amostrar',
+	'categorytree-member-counts'        => 'contiene {{PLURAL:$1|1 sucategoría|$1 subcategorías}}, {{PLURAL:$2|1 pachina|$2 pachinas}}, y {{PLURAL:$3|1 archibo|$3 archibos}}',
+	'categorytree-load'                 => 'cargar',
+	'categorytree-loading'              => 'cargando',
+	'categorytree-nothing-found'        => "No s'ha trobato cosa",
+	'categorytree-no-subcategories'     => 'no bi ha subcategorías',
+	'categorytree-no-parent-categories' => 'Garra categoría mai',
+	'categorytree-no-pages'             => 'No bi ha articlos ni subcategorías',
+	'categorytree-not-found'            => "Categoría ''$1'' no trobata",
+	'categorytree-error'                => 'Error en cargar os datos',
+	'categorytree-retry'                => 'Por fabor, aspere bels intes y prebe de nuebas.',
 );
 
 /** Arabic (العربية)
@@ -437,31 +440,34 @@ $messages['co'] = array(
 /** Czech (Česky)
  * @author Danny B.
  * @author Li-sung
+ * @author Siebrand
  */
 $messages['cs'] = array(
-	'categorytree'                  => 'Strom kategorií',
-	'categorytree-legend'           => 'Zobrazí strom kategorie',
-	'categorytree-desc'             => 'Ajaxový nástroj zobrazující [[Special:CategoryTree|stromovou strukturu kategorií]] na této wiki',
-	'categorytree-header'           => 'Zadejte název kategorie k&nbsp;zobrazení jejího obsahu jako stromové struktury.
+	'categorytree'                      => 'Strom kategorií',
+	'categorytree-portlet'              => 'Kategorie',
+	'categorytree-legend'               => 'Zobrazí strom kategorie',
+	'categorytree-desc'                 => 'Ajaxový nástroj zobrazující [[Special:CategoryTree|stromovou strukturu kategorií]] na této wiki',
+	'categorytree-header'               => 'Zadejte název kategorie k&nbsp;zobrazení jejího obsahu jako stromové struktury.
 
 (Tato funkce vyžaduje pokročilé funkce JavaScriptu známé jako Ajax. Jestliže máte velmi starý prohlížeč nebo vypnutý JavaScript, nezobrazí se strom správně nebo vůbec.)',
-	'categorytree-category'         => 'Kategorie',
-	'categorytree-go'               => 'Zobrazit',
-	'categorytree-parents'          => 'Nadřazené kategorie',
-	'categorytree-mode-categories'  => 'pouze kategorie',
-	'categorytree-mode-pages'       => 'stránky kromě souborů',
-	'categorytree-mode-all'         => 'všechny stránky',
-	'categorytree-collapse'         => 'zavřít',
-	'categorytree-expand'           => 'otevřít',
-	'categorytree-member-counts'    => 'obsahuje {{PLURAL:$1|1 podkategorii|$1 podkategorie|$1 podkategorií}}, {{PLURAL:$2|1 stránku|$2 stránky|$2 stránek}} a {{PLURAL:$3|1 soubor|$3 soubory|$3 souborů}}',
-	'categorytree-load'             => 'načíst',
-	'categorytree-loading'          => 'načítá se',
-	'categorytree-nothing-found'    => 'nic nebylo nalezeno',
-	'categorytree-no-subcategories' => 'žádné podkategorie.',
-	'categorytree-no-pages'         => 'žádné články ani podkategorie.',
-	'categorytree-not-found'        => 'Kategorie <em>$1</em> nenalezena',
-	'categorytree-error'            => 'Chyba při načítání dat.',
-	'categorytree-retry'            => 'Počkejte chvilku a zkuste to znova.',
+	'categorytree-category'             => 'Kategorie',
+	'categorytree-go'                   => 'Zobrazit',
+	'categorytree-parents'              => 'Nadřazené kategorie',
+	'categorytree-mode-categories'      => 'pouze kategorie',
+	'categorytree-mode-pages'           => 'stránky kromě souborů',
+	'categorytree-mode-all'             => 'všechny stránky',
+	'categorytree-collapse'             => 'zavřít',
+	'categorytree-expand'               => 'otevřít',
+	'categorytree-member-counts'        => 'obsahuje {{PLURAL:$1|1 podkategorii|$1 podkategorie|$1 podkategorií}}, {{PLURAL:$2|1 stránku|$2 stránky|$2 stránek}} a {{PLURAL:$3|1 soubor|$3 soubory|$3 souborů}}',
+	'categorytree-load'                 => 'načíst',
+	'categorytree-loading'              => 'načítá se',
+	'categorytree-nothing-found'        => 'nic nebylo nalezeno',
+	'categorytree-no-subcategories'     => 'žádné podkategorie.',
+	'categorytree-no-parent-categories' => 'žádné nadřazené kategorie',
+	'categorytree-no-pages'             => 'žádné články ani podkategorie.',
+	'categorytree-not-found'            => 'Kategorie <em>$1</em> nenalezena',
+	'categorytree-error'                => 'Chyba při načítání dat.',
+	'categorytree-retry'                => 'Počkejte chvilku a zkuste to znova.',
 );
 
 /** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
@@ -939,6 +945,7 @@ Má tá do bhrabhsálaí róshean, nó má dhíchumasaigh tú JavaScript, ní oi
  */
 $messages['gl'] = array(
 	'categorytree'                      => 'Árbore de categorías',
+	'categorytree-portlet'              => 'Categorías',
 	'categorytree-legend'               => 'Amosar a árbore de categorías',
 	'categorytree-desc'                 => 'Trebello baseado no AJAX para amosar a [[Special:CategoryTree|estrutura das categorías]] dun wiki',
 	'categorytree-header'               => 'Introduza o nome dunha categoría para ver o contido da estrutura da árbore.
@@ -1212,28 +1219,31 @@ $messages['ia'] = array(
  * @author Rex
  */
 $messages['id'] = array(
-	'categorytree'                  => 'Pohon kategori',
-	'categorytree-legend'           => 'Tampilkan pohon kategori',
-	'categorytree-desc'             => 'Gadget berbasis AJAX untuk menampilkan [[Special:CategoryTree|struktur kategori]] suatu wiki',
-	'categorytree-header'           => 'Masukkan suatu nama kategori untuk melihat isinya dalam bentuk pohon.
+	'categorytree'                      => 'Pohon kategori',
+	'categorytree-portlet'              => 'Kategori',
+	'categorytree-legend'               => 'Tampilkan pohon kategori',
+	'categorytree-desc'                 => 'Gadget berbasis AJAX untuk menampilkan [[Special:CategoryTree|struktur kategori]] suatu wiki',
+	'categorytree-header'               => 'Masukkan suatu nama kategori untuk melihat isinya dalam bentuk pohon.
 Harap diperhatikan bahwa fitur ini memerlukan dukungan JavaScript tingkat lanjut yang dikenal sebagai AJAX.
 Jika Anda menggunakan penjelajah web lama, atau mematikan fungsi JavaScript Anda, fitur ini tidak dapat dijalankan.',
-	'categorytree-category'         => 'Kategori',
-	'categorytree-go'               => 'Tampilkan',
-	'categorytree-parents'          => 'Atasan',
-	'categorytree-mode-categories'  => 'hanya kategori',
-	'categorytree-mode-pages'       => 'halaman kecuali berkas',
-	'categorytree-mode-all'         => 'semua halaman',
-	'categorytree-collapse'         => 'tutup',
-	'categorytree-expand'           => 'buka',
-	'categorytree-load'             => 'muat',
-	'categorytree-loading'          => 'memuat',
-	'categorytree-nothing-found'    => 'tidak ditemukan',
-	'categorytree-no-subcategories' => 'tidak ada subkategori',
-	'categorytree-no-pages'         => 'tidak ada halaman atau subkategori',
-	'categorytree-not-found'        => 'Kategori <i>$1</i> tidak ditemukan',
-	'categorytree-error'            => 'Problem memuat data.',
-	'categorytree-retry'            => 'Tunggulah sesaat dan coba lagi.',
+	'categorytree-category'             => 'Kategori',
+	'categorytree-go'                   => 'Tampilkan',
+	'categorytree-parents'              => 'Atasan',
+	'categorytree-mode-categories'      => 'hanya kategori',
+	'categorytree-mode-pages'           => 'halaman kecuali berkas',
+	'categorytree-mode-all'             => 'semua halaman',
+	'categorytree-collapse'             => 'tutup',
+	'categorytree-expand'               => 'buka',
+	'categorytree-member-counts'        => 'memiliki {{PLURAL:$1|1 subkategori|$1 subkategori}}, {{PLURAL:$2|1 halaman|$2 halaman}}, dan {{PLURAL:$3|1 berkas|$3 berkas}}',
+	'categorytree-load'                 => 'muat',
+	'categorytree-loading'              => 'memuat',
+	'categorytree-nothing-found'        => 'tidak ditemukan',
+	'categorytree-no-subcategories'     => 'tidak ada subkategori',
+	'categorytree-no-parent-categories' => 'tidak ada kategori lebih tinggi',
+	'categorytree-no-pages'             => 'tidak ada halaman atau subkategori',
+	'categorytree-not-found'            => 'Kategori <i>$1</i> tidak ditemukan',
+	'categorytree-error'                => 'Problem memuat data.',
+	'categorytree-retry'                => 'Tunggulah sesaat dan coba lagi.',
 );
 
 /** Interlingue (Interlingue)
@@ -1290,28 +1300,32 @@ Ef þú notast við gamlan vafra eða hefur slökkt á JavaScript mun þetta ekk
  * @author BrokenArrow
  * @author Gianfranco
  * @author Cruccone
+ * @author Darth Kule
  */
 $messages['it'] = array(
-	'categorytree'                  => 'Struttura ad albero delle categorie',
-	'categorytree-legend'           => "Mostra l'albero delle categorie",
-	'categorytree-desc'             => 'Accessorio AJAX per visualizzare la [[Special:CategoryTree|struttura delle categorie]] del sito',
-	'categorytree-header'           => 'Inserire il nome della categoria di cui si desidera vedere il contenuto sotto forma di struttura ad albero. Si noti che la pagina richiede le funzionalità avanzate di JavaScript chiamate AJAX; qualora si stia usando un browser molto vecchio o le funzioni JavaScript siano disabilitate, questa pagina non funzionerà.',
-	'categorytree-category'         => 'Categoria',
-	'categorytree-go'               => 'Carica',
-	'categorytree-parents'          => 'Categorie superiori',
-	'categorytree-mode-categories'  => 'mostra solo le categorie',
-	'categorytree-mode-pages'       => 'tutte le pagine, escluse le immagini',
-	'categorytree-mode-all'         => 'tutte le pagine',
-	'categorytree-collapse'         => 'comprimi',
-	'categorytree-expand'           => 'espandi',
-	'categorytree-load'             => 'carica',
-	'categorytree-loading'          => 'caricamento in corso',
-	'categorytree-nothing-found'    => 'nessun risultato',
-	'categorytree-no-subcategories' => 'nessuna sottocategoria.',
-	'categorytree-no-pages'         => 'nessuna voce né sottocategoria.',
-	'categorytree-not-found'        => "Categoria  ''$1'' non trovata",
-	'categorytree-error'            => 'Problema nel caricamento dei dati.',
-	'categorytree-retry'            => 'Attendere un momento e riprovare.',
+	'categorytree'                      => 'Struttura ad albero delle categorie',
+	'categorytree-portlet'              => 'Categorie',
+	'categorytree-legend'               => "Mostra l'albero delle categorie",
+	'categorytree-desc'                 => 'Accessorio AJAX per visualizzare la [[Special:CategoryTree|struttura delle categorie]] del sito',
+	'categorytree-header'               => 'Inserire il nome della categoria di cui si desidera vedere il contenuto sotto forma di struttura ad albero. Si noti che la pagina richiede le funzionalità avanzate di JavaScript chiamate AJAX; qualora si stia usando un browser molto vecchio o le funzioni JavaScript siano disabilitate, questa pagina non funzionerà.',
+	'categorytree-category'             => 'Categoria',
+	'categorytree-go'                   => 'Carica',
+	'categorytree-parents'              => 'Categorie superiori',
+	'categorytree-mode-categories'      => 'mostra solo le categorie',
+	'categorytree-mode-pages'           => 'tutte le pagine, escluse le immagini',
+	'categorytree-mode-all'             => 'tutte le pagine',
+	'categorytree-collapse'             => 'comprimi',
+	'categorytree-expand'               => 'espandi',
+	'categorytree-member-counts'        => 'contiene {{PLURAL:$1|1 sottocategoria|$1 sottocategorie}}, {{PLURAL:$2|1 pagina|$2 pagine}} e {{PLURAL:$3|1 file|$3 file}}',
+	'categorytree-load'                 => 'carica',
+	'categorytree-loading'              => 'caricamento in corso',
+	'categorytree-nothing-found'        => 'nessun risultato',
+	'categorytree-no-subcategories'     => 'nessuna sottocategoria.',
+	'categorytree-no-parent-categories' => 'nessuna categoria superiore',
+	'categorytree-no-pages'             => 'nessuna voce né sottocategoria.',
+	'categorytree-not-found'            => "Categoria  ''$1'' non trovata",
+	'categorytree-error'                => 'Problema nel caricamento dei dati.',
+	'categorytree-retry'                => 'Attendere un momento e riprovare.',
 );
 
 /** Japanese (日本語)
@@ -1566,24 +1580,26 @@ $messages['ku-latn'] = array(
  * @author UV
  */
 $messages['la'] = array(
-	'categorytree'                  => 'Categoriarum arbor',
-	'categorytree-legend'           => 'Categoriarum arborem monstrare',
-	'categorytree-header'           => 'Titulum categoriae inscribe ad categoriam hanc quasi arborem videndum. JavaScript et AJAX necesse sunt. Si navigatrum veterrimum habes vel si JavaScript potestatem non fecisti, hac pagina non uti poteris.',
-	'categorytree-category'         => 'Categoria',
-	'categorytree-go'               => 'Arborem monstrare',
-	'categorytree-parents'          => 'Parentes',
-	'categorytree-mode-categories'  => 'modo categoriae',
-	'categorytree-mode-pages'       => 'paginae nisi imagines',
-	'categorytree-mode-all'         => 'omnes paginae',
-	'categorytree-collapse'         => 'collabi',
-	'categorytree-expand'           => 'dilatare',
-	'categorytree-member-counts'    => 'continet {{PLURAL:$1|1 subcategoriam|$1 subcategorias}}, {{PLURAL:$2|1 paginam|$2 paginas}} et {{PLURAL:$3|1 fasciculum|$3 fasciculos}}',
-	'categorytree-load'             => 'depromere',
-	'categorytree-loading'          => 'depromens…',
-	'categorytree-nothing-found'    => 'nullum inventum',
-	'categorytree-no-subcategories' => 'nullae subcategoriae',
-	'categorytree-no-pages'         => 'nec paginae nec subcategoriae',
-	'categorytree-not-found'        => 'Categoria <i>$1</i> non inventa',
+	'categorytree'                      => 'Categoriarum arbor',
+	'categorytree-portlet'              => 'Categoriae',
+	'categorytree-legend'               => 'Categoriarum arborem monstrare',
+	'categorytree-header'               => 'Titulum categoriae inscribe ad categoriam hanc quasi arborem videndum. JavaScript et AJAX necesse sunt. Si navigatrum veterrimum habes vel si JavaScript potestatem non fecisti, hac pagina non uti poteris.',
+	'categorytree-category'             => 'Categoria',
+	'categorytree-go'                   => 'Arborem monstrare',
+	'categorytree-parents'              => 'Parentes',
+	'categorytree-mode-categories'      => 'modo categoriae',
+	'categorytree-mode-pages'           => 'paginae nisi imagines',
+	'categorytree-mode-all'             => 'omnes paginae',
+	'categorytree-collapse'             => 'collabi',
+	'categorytree-expand'               => 'dilatare',
+	'categorytree-member-counts'        => 'continet {{PLURAL:$1|1 subcategoriam|$1 subcategorias}}, {{PLURAL:$2|1 paginam|$2 paginas}} et {{PLURAL:$3|1 fasciculum|$3 fasciculos}}',
+	'categorytree-load'                 => 'depromere',
+	'categorytree-loading'              => 'depromens…',
+	'categorytree-nothing-found'        => 'nullum inventum',
+	'categorytree-no-subcategories'     => 'nullae subcategoriae',
+	'categorytree-no-parent-categories' => 'nullae supercategoriae',
+	'categorytree-no-pages'             => 'nec paginae nec subcategoriae',
+	'categorytree-not-found'            => 'Categoria <i>$1</i> non inventa',
 );
 
 /** Ladino (Ladino)
@@ -1599,28 +1615,31 @@ $messages['lad'] = array(
  * @author Siebrand
  */
 $messages['lb'] = array(
-	'categorytree'                  => 'Struktur vun de Kategorien',
-	'categorytree-legend'           => 'Weis Kategoriestruktur',
-	'categorytree-desc'             => "Gadget deen op Ajax opgebaut ass fir d'[[Special:CategoryTree|Kategorie-Struktur]] vun enger Wiki duerzestellen",
-	'categorytree-header'           => 'Gitt den Numm vun enger Kategorie an, fir hiren Inhalt als Bam-Struktur ze gesinn.
+	'categorytree'                      => 'Struktur vun de Kategorien',
+	'categorytree-portlet'              => 'Kategorien',
+	'categorytree-legend'               => 'Weis Kategoriestruktur',
+	'categorytree-desc'                 => "Gadget deen op Ajax opgebaut ass fir d'[[Special:CategoryTree|Kategorie-Struktur]] vun enger Wiki duerzestellen",
+	'categorytree-header'               => 'Gitt den Numm vun enger Kategorie an, fir hiren Inhalt als Bam-Struktur ze gesinn.
 Bedenkt, datt dës Fonctioun Java Script Funktioune benotzt, déi als AJAX bekannt sinn. 
 Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da fonktionnéiert dëst bei Iech net.',
-	'categorytree-category'         => 'Kategorie:',
-	'categorytree-go'               => 'Struktur weisen',
-	'categorytree-parents'          => 'Uewerkategorien',
-	'categorytree-mode-categories'  => 'nëmme Kategorien',
-	'categorytree-mode-pages'       => 'Säiten ausser Biller',
-	'categorytree-mode-all'         => 'all Säiten',
-	'categorytree-collapse'         => 'Verstopp',
-	'categorytree-expand'           => 'Weis',
-	'categorytree-load'             => 'lueden',
-	'categorytree-loading'          => 'lueden …',
-	'categorytree-nothing-found'    => 'Näischt fonnt',
-	'categorytree-no-subcategories' => 'Keng Ënnerkategorien',
-	'categorytree-no-pages'         => 'Keng Säiten oder Ënnerkategorien',
-	'categorytree-not-found'        => "Kategorie ''$1'' net fonnt",
-	'categorytree-error'            => 'Problem beim luede vun den Donneeën.',
-	'categorytree-retry'            => 'Waart w.e.g. een Ament a probéiert dann nach eng Kéier.',
+	'categorytree-category'             => 'Kategorie:',
+	'categorytree-go'                   => 'Struktur weisen',
+	'categorytree-parents'              => 'Uewerkategorien',
+	'categorytree-mode-categories'      => 'nëmme Kategorien',
+	'categorytree-mode-pages'           => 'Säiten ausser Biller',
+	'categorytree-mode-all'             => 'all Säiten',
+	'categorytree-collapse'             => 'Verstopp',
+	'categorytree-expand'               => 'Weis',
+	'categorytree-member-counts'        => 'besteet aus {{PLURAL:$1|1 Ënnerkategorie|$1 Ënnerkategorien}}, {{PLURAL:$2|1 Säit|$1 Säiten}}, an {{PLURAL:$3|1 Fichier|$3 Fichieren}}',
+	'categorytree-load'                 => 'lueden',
+	'categorytree-loading'              => 'lueden …',
+	'categorytree-nothing-found'        => 'Näischt fonnt',
+	'categorytree-no-subcategories'     => 'Keng Ënnerkategorien',
+	'categorytree-no-parent-categories' => 'Keng Iwwerkategorien',
+	'categorytree-no-pages'             => 'Keng Säiten oder Ënnerkategorien',
+	'categorytree-not-found'            => "Kategorie ''$1'' net fonnt",
+	'categorytree-error'                => 'Problem beim luede vun den Donneeën.',
+	'categorytree-retry'                => 'Waart w.e.g. een Ament a probéiert dann nach eng Kéier.',
 );
 
 /** Lingua Franca Nova (Lingua Franca Nova)
@@ -2046,9 +2065,11 @@ $messages['pam'] = array(
  * @author Sp5uhe
  * @author Derbeth
  * @author Matma Rex
+ * @author Airwolf
  */
 $messages['pl'] = array(
 	'categorytree'                  => 'Drzewo kategorii',
+	'categorytree-portlet'          => 'Kategorie',
 	'categorytree-legend'           => 'Pokaż drzewo kategorii',
 	'categorytree-desc'             => 'Gadżet oparty na technologii AJAX, wyświetlający [[Special:CategoryTree|drzewo kategorii]]',
 	'categorytree-header'           => 'Wpisz nazwę kategorii, by zobaczyć jej zawartość w postaci drzewa. Wymagana jest zaawansowana funkcjonalność JavaScriptu, znana jako AJAX. Jeśli masz bardzo starą przeglądarkę lub wyłączony JavaScript, ta funkcja nie zadziała.',
@@ -2199,29 +2220,31 @@ $messages['ro'] = array(
  * @author Ahonc
  */
 $messages['ru'] = array(
-	'categorytree'                  => 'Дерево категорий',
-	'categorytree-legend'           => 'Показать дерево категорий',
-	'categorytree-desc'             => 'AJAX-компонент для отображения [[Special:CategoryTree|структуры категорий]] вики',
-	'categorytree-header'           => 'Введите имя категории, и она будет показана в виде дерева.
+	'categorytree'                      => 'Дерево категорий',
+	'categorytree-portlet'              => 'Категории',
+	'categorytree-legend'               => 'Показать дерево категорий',
+	'categorytree-desc'                 => 'AJAX-компонент для отображения [[Special:CategoryTree|структуры категорий]] вики',
+	'categorytree-header'               => 'Введите имя категории, и она будет показана в виде дерева.
 Эта возможность доступна, только если ваш браузер поддерживает AJAX.
 Если у вас старая версия браузера или отключен JavaScript, показ подкатегорий в виде дерева недоступен.',
-	'categorytree-category'         => 'Категория:',
-	'categorytree-go'               => 'Загрузить',
-	'categorytree-parents'          => 'Родительские категории',
-	'categorytree-mode-categories'  => 'только категории',
-	'categorytree-mode-pages'       => 'кроме изображений',
-	'categorytree-mode-all'         => 'все страницы',
-	'categorytree-collapse'         => 'свернуть',
-	'categorytree-expand'           => 'развернуть',
-	'categorytree-member-counts'    => 'содержит $1 {{PLURAL:$1|подкатегорию|подкатегории|подкатегорий}}, $2 {{PLURAL:$2|страницу|страницы|страниц}} и $3 {{PLURAL:$3|файл|файла|файлов}}',
-	'categorytree-load'             => 'загрузить',
-	'categorytree-loading'          => 'загрузка…',
-	'categorytree-nothing-found'    => 'Данная категория не содержит подкатегорий.',
-	'categorytree-no-subcategories' => 'нет подкатегорий.',
-	'categorytree-no-pages'         => 'нет статей и подкатегорий.',
-	'categorytree-not-found'        => 'Категория «$1» не найдена.',
-	'categorytree-error'            => 'Ошибка загрузки данных.',
-	'categorytree-retry'            => 'Пожалуйста, подождите и попробуйте ещё раз.',
+	'categorytree-category'             => 'Категория:',
+	'categorytree-go'                   => 'Загрузить',
+	'categorytree-parents'              => 'Родительские категории',
+	'categorytree-mode-categories'      => 'только категории',
+	'categorytree-mode-pages'           => 'кроме изображений',
+	'categorytree-mode-all'             => 'все страницы',
+	'categorytree-collapse'             => 'свернуть',
+	'categorytree-expand'               => 'развернуть',
+	'categorytree-member-counts'        => 'содержит $1 {{PLURAL:$1|подкатегорию|подкатегории|подкатегорий}}, $2 {{PLURAL:$2|страницу|страницы|страниц}} и $3 {{PLURAL:$3|файл|файла|файлов}}',
+	'categorytree-load'                 => 'загрузить',
+	'categorytree-loading'              => 'загрузка…',
+	'categorytree-nothing-found'        => 'Данная категория не содержит подкатегорий.',
+	'categorytree-no-subcategories'     => 'нет подкатегорий.',
+	'categorytree-no-parent-categories' => 'не родительских категорий',
+	'categorytree-no-pages'             => 'нет статей и подкатегорий.',
+	'categorytree-not-found'            => 'Категория «$1» не найдена.',
+	'categorytree-error'                => 'Ошибка загрузки данных.',
+	'categorytree-retry'                => 'Пожалуйста, подождите и попробуйте ещё раз.',
 );
 
 /** Yakut (Саха тыла)
@@ -2284,6 +2307,7 @@ $messages['sdc'] = array(
  */
 $messages['sk'] = array(
 	'categorytree'                      => 'Strom kategórií',
+	'categorytree-portlet'              => 'Kategórie',
 	'categorytree-legend'               => 'Zobraziť strom kategórií',
 	'categorytree-desc'                 => 'AJAXový nástroj na zobrazovanie [[Special:CategoryTree|štruktúry kategórií]] wiki',
 	'categorytree-header'               => 'Zadajte názov kategórie, ktorej obsah sa má zobraziť ako stromová štruktúra.
@@ -2514,6 +2538,7 @@ $messages['ta'] = array(
  */
 $messages['te'] = array(
 	'categorytree'                  => 'వర్గవృక్షం',
+	'categorytree-portlet'          => 'వర్గాలు',
 	'categorytree-legend'           => 'వర్గ వృక్షాన్ని చూపించు',
 	'categorytree-desc'             => 'వికీ యొక్క [[Special:CategoryTree|వర్గ వృక్షాన్ని]] చూపించడానికి AJAX ఆధారిత పరికరం',
 	'categorytree-header'           => 'ఒక వర్గంలోని అంశాలను వృక్షం లాగా చూసేందుకు ఆ వర్గం పేరును ఇక్కడ ఇవ్వండి. దీనికోసం AJAX అనే ఆధునిక జావాస్క్రిప్టు నైపుణ్యం కావాలి. మీ బ్రౌజరు బాగా పాతదయినా, లేక దానిలో జావాస్క్రిప్టు అశక్తంగా ఉన్నా ఇది పనిచెయ్యదు.',
