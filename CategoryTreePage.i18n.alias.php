@@ -14,12 +14,19 @@ $aliases = array();
  * @author Daniel Kinzler, brightbyte.de
  */
 $aliases['en'] = array(
-	'CategoryTree'                  => array('CategoryTree', 'Categorytree')
+	'CategoryTree' => array( 'CategoryTree', 'Categorytree' ),
 );
 
 /** German
  * @author Daniel Kinzler, brightbyte.de
  */
 $aliases['de'] = array(
-	'CategoryTree'                  => array('Kategorienbaum', 'Kategoriebaum')
+	'CategoryTree' => array( 'Kategorienbaum', 'Kategoriebaum' ),
+);
+
+/** Hebrew (עברית)
+ * @author Rotem Liss
+ */
+$aliases['he'] = array(
+	'CategoryTree' => array( 'עץ_קטגוריות' ),
 );
