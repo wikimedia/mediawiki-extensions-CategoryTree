@@ -14,7 +14,7 @@ $aliases = array();
  * @author Daniel Kinzler, brightbyte.de
  */
 $aliases['en'] = array(
-	'CategoryTree' => array( 'CategoryTree', 'Categorytree' ),
+	'CategoryTree' => array( 'CategoryTree' ),
 );
 
 /** German
