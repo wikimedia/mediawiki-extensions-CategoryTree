@@ -2634,9 +2634,11 @@ $messages['to'] = array(
  * @author SPQRobin
  * @author Runningfridgesrule
  * @author Mach
+ * @author Karduelis
  */
 $messages['tr'] = array(
 	'categorytree'                  => 'Kategori hiyerarşisi',
+	'categorytree-portlet'          => 'Kategoriler',
 	'categorytree-legend'           => 'Kategori ağacını göster',
 	'categorytree-header'           => 'Kategori ismini girip, içeriğini hiyerarşik şekilde görebilirsiniz. Bu özellik AJAX adıyla bilinen gelişmiş JavaScript ile çalışabilir. Eğer tarayıcınız eski ise ya da JavaScript kullanımı kapalı ise, çalışmaz.',
 	'categorytree-category'         => 'Kategori',
@@ -2662,29 +2664,31 @@ $messages['tr'] = array(
  * @author AS
  */
 $messages['uk'] = array(
-	'categorytree'                  => 'Дерево категорій',
-	'categorytree-legend'           => 'Показати дерево категорій',
-	'categorytree-desc'             => 'AJAX-компонент для відображення [[Special:CategoryTree|структури категорій]] вікі',
-	'categorytree-header'           => 'Уведіть назву категорії, і вона буде показана у вигляді дерева.
+	'categorytree'                      => 'Дерево категорій',
+	'categorytree-portlet'              => 'Категорії',
+	'categorytree-legend'               => 'Показати дерево категорій',
+	'categorytree-desc'                 => 'AJAX-компонент для відображення [[Special:CategoryTree|структури категорій]] вікі',
+	'categorytree-header'               => 'Уведіть назву категорії, і вона буде показана у вигляді дерева.
 Ця можливість доступна, тільки якщо ваш браузер підтримує AJAX.
 Якщо у вас стара версія браузера або відключений JavaScript, відображення підкатегорій у вигляді дерева недоступне.',
-	'categorytree-category'         => 'Категорія:',
-	'categorytree-go'               => 'Показати дерево',
-	'categorytree-parents'          => 'Батьківські категорії',
-	'categorytree-mode-categories'  => 'тільки категорії',
-	'categorytree-mode-pages'       => 'окрім зображень',
-	'categorytree-mode-all'         => 'усі сторінки',
-	'categorytree-collapse'         => 'згорнути',
-	'categorytree-expand'           => 'розгорнути',
-	'categorytree-member-counts'    => 'містить $1 {{PLURAL:$1|підкатегорію|підкатегорії|підкатегорій}}, $2 {{PLURAL:$2|сторінку|сторінки|сторінок}} та $3 {{PLURAL:$3|файл|файли|файлів}}',
-	'categorytree-load'             => 'завантажити',
-	'categorytree-loading'          => 'завантаження…',
-	'categorytree-nothing-found'    => 'Ця категорія не містить підкатегорій.',
-	'categorytree-no-subcategories' => 'нема підкатегорій',
-	'categorytree-no-pages'         => 'нема статей і підкатегорій',
-	'categorytree-not-found'        => 'Категорія «$1» не знайдена.',
-	'categorytree-error'            => 'Помилка завантаження даних.',
-	'categorytree-retry'            => 'Будь ласка, зачекайте і спробуйте ще раз.',
+	'categorytree-category'             => 'Категорія:',
+	'categorytree-go'                   => 'Показати дерево',
+	'categorytree-parents'              => 'Батьківські категорії',
+	'categorytree-mode-categories'      => 'тільки категорії',
+	'categorytree-mode-pages'           => 'окрім зображень',
+	'categorytree-mode-all'             => 'усі сторінки',
+	'categorytree-collapse'             => 'згорнути',
+	'categorytree-expand'               => 'розгорнути',
+	'categorytree-member-counts'        => 'містить $1 {{PLURAL:$1|підкатегорію|підкатегорії|підкатегорій}}, $2 {{PLURAL:$2|сторінку|сторінки|сторінок}} та $3 {{PLURAL:$3|файл|файли|файлів}}',
+	'categorytree-load'                 => 'завантажити',
+	'categorytree-loading'              => 'завантаження…',
+	'categorytree-nothing-found'        => 'Ця категорія не містить підкатегорій.',
+	'categorytree-no-subcategories'     => 'нема підкатегорій',
+	'categorytree-no-parent-categories' => 'нема батьківських категорій',
+	'categorytree-no-pages'             => 'нема статей і підкатегорій',
+	'categorytree-not-found'            => 'Категорія «$1» не знайдена.',
+	'categorytree-error'                => 'Помилка завантаження даних.',
+	'categorytree-retry'                => 'Будь ласка, зачекайте і спробуйте ще раз.',
 );
 
 /** Urdu (اردو) */

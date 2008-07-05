@@ -30,3 +30,11 @@ $aliases['de'] = array(
 $aliases['he'] = array(
 	'CategoryTree' => array( 'עץ_קטגוריות' ),
 );
+
+$aliases['la'] = array(
+	'CategoryTree' => array( 'Categoriarum arbor' ),
+);
+
+$aliases['nl'] = array(
+	'CategoryTree' => array( 'Categorieboom' ),
+);
