@@ -284,26 +284,29 @@ $messages['be-tarask'] = array(
  * @author Borislav
  */
 $messages['bg'] = array(
-	'categorytree'                  => 'Дърво на категориите',
-	'categorytree-legend'           => 'Показване на дървото с категориите',
-	'categorytree-desc'             => 'Инструмент на AJAX, който показва [[Special:CategoryTree|структурата на категориите]] в уикито',
-	'categorytree-header'           => 'Въведете категория, за да видите съдържанието й в дървовиден вид от категории. Имайте предвид, че това изисква допълнителна JavaScript-функционалност, позната като AJAX. Тази възможност не може да бъде използвана, ако използвате стар браузър или сте изключили поддържането на JavaScript.',
-	'categorytree-category'         => 'Категория',
-	'categorytree-go'               => 'Показване',
-	'categorytree-parents'          => 'Родителски категории',
-	'categorytree-mode-categories'  => 'само категории',
-	'categorytree-mode-pages'       => 'страници, без файлове',
-	'categorytree-mode-all'         => 'всички страници',
-	'categorytree-collapse'         => 'събиране',
-	'categorytree-expand'           => 'разпъване',
-	'categorytree-load'             => 'зареждане',
-	'categorytree-loading'          => 'зареждане',
-	'categorytree-nothing-found'    => 'няма открити подкатегории',
-	'categorytree-no-subcategories' => 'няма подкатегории',
-	'categorytree-no-pages'         => 'няма страници или подкатегории',
-	'categorytree-not-found'        => 'Категорията <i>$1</i> не беше намерена',
-	'categorytree-error'            => 'Възникна проблем при зареждане на информацията.',
-	'categorytree-retry'            => 'Изчакайте малко и опитайте отново.',
+	'categorytree'                      => 'Дърво на категориите',
+	'categorytree-portlet'              => 'Категории',
+	'categorytree-legend'               => 'Показване на дървото с категориите',
+	'categorytree-desc'                 => 'Инструмент на AJAX, който показва [[Special:CategoryTree|структурата на категориите]] в уикито',
+	'categorytree-header'               => 'Въведете категория, за да видите съдържанието й в дървовиден вид от категории. Имайте предвид, че това изисква допълнителна JavaScript-функционалност, позната като AJAX. Тази възможност не може да бъде използвана, ако използвате стар браузър или сте изключили поддържането на JavaScript.',
+	'categorytree-category'             => 'Категория',
+	'categorytree-go'                   => 'Показване',
+	'categorytree-parents'              => 'Родителски категории',
+	'categorytree-mode-categories'      => 'само категории',
+	'categorytree-mode-pages'           => 'страници, без файлове',
+	'categorytree-mode-all'             => 'всички страници',
+	'categorytree-collapse'             => 'събиране',
+	'categorytree-expand'               => 'разпъване',
+	'categorytree-member-counts'        => 'съдържа {{PLURAL:$1|една подкатегория|$1 подкатегории}}, {{PLURAL:$2|една страница|$2 страници}} и {{PLURAL:$3|един файл|$3 файла}}',
+	'categorytree-load'                 => 'зареждане',
+	'categorytree-loading'              => 'зареждане',
+	'categorytree-nothing-found'        => 'няма открити подкатегории',
+	'categorytree-no-subcategories'     => 'няма подкатегории',
+	'categorytree-no-parent-categories' => 'няма родителски категории',
+	'categorytree-no-pages'             => 'няма страници или подкатегории',
+	'categorytree-not-found'            => 'Категорията <i>$1</i> не беше намерена',
+	'categorytree-error'                => 'Възникна проблем при зареждане на информацията.',
+	'categorytree-retry'                => 'Изчакайте малко и опитайте отново.',
 );
 
 /** Bengali (বাংলা)
@@ -812,6 +815,7 @@ $messages['fo'] = array(
  */
 $messages['fr'] = array(
 	'categorytree'                      => 'Arborescence des catégories',
+	'categorytree-portlet'              => 'Catégories',
 	'categorytree-legend'               => 'Visionner l’arborescence de la catégorie',
 	'categorytree-desc'                 => 'Gadget basé sur AJAX pour afficher la [[Special:CategoryTree|structure de la catégorie]] d’un wiki',
 	'categorytree-header'               => 'Entrez un nom de catégorie pour voir son contenu en structure arborescente. Ceci utilise des fonctionnalités JavaScript avancées connues sous le nom d’AJAX. Si vous avez un très vieux navigateur Web ou si vous n’avez pas activé la fonctionnalité JavaScript, cela ne fonctionnera pas.',
@@ -2821,6 +2825,13 @@ $messages['wuu'] = array(
 	'categorytree-nothing-found'    => '一样也朆寻着',
 	'categorytree-no-subcategories' => '呒拨子分类',
 	'categorytree-no-pages'         => '呒拨页面或者子分类',
+);
+
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'categorytree-category' => 'קאטעגאריע:',
 );
 
 /** Yue (粵語)
