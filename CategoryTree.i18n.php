@@ -767,9 +767,11 @@ $messages['fa'] = array(
 /** Finnish (Suomi)
  * @author Crt
  * @author Nike
+ * @author Str4nd
  */
 $messages['fi'] = array(
 	'categorytree'                  => 'Luokkapuu',
+	'categorytree-portlet'          => 'Luokat',
 	'categorytree-legend'           => 'Näytä luokkapuu',
 	'categorytree-desc'             => 'AJAX-pohjainen laajennus, joka näyttää wikin [[Special:CategoryTree|luokkapuurakenteen]].',
 	'categorytree-header'           => 'Syötä alle luokka, jonka haluat nähdä puumuodossa. Tämä toiminnallisuus vaatii kehittyneen JavaScript tuen, jota kutsutaan AJAXiksi. Jos sinulla on vanha selain, tai JavaScript ei ole päällä, tämä ominaisuus ei toimi.',
@@ -1156,28 +1158,31 @@ Si ou ta genyen yon vye navigatè (navigatè, bwozè entènèt), oubyen JavaScri
  * @author Dani
  */
 $messages['hu'] = array(
-	'categorytree'                  => 'Kategóriafa',
-	'categorytree-legend'           => 'Mutatsd faként',
-	'categorytree-desc'             => 'AJAX alapú eszköz a wiki [[Special:CategoryTree|kategória-struktúrájának]] megjelenítéséhez',
-	'categorytree-header'           => 'Add meg annak a kategóriának a nevét, amelynek meg szeretnéd tekinteni
+	'categorytree'                      => 'Kategóriafa',
+	'categorytree-portlet'              => 'Kategóriák',
+	'categorytree-legend'               => 'Mutatsd faként',
+	'categorytree-desc'                 => 'AJAX alapú eszköz a wiki [[Special:CategoryTree|kategória-struktúrájának]] megjelenítéséhez',
+	'categorytree-header'               => 'Add meg annak a kategóriának a nevét, amelynek meg szeretnéd tekinteni
 a fastruktúráját. Ehhez egy, AJAX nevű JavaScript-technológia szükséges.
 Ha túlságosan régi böngésződ van, vagy a JavaScript le van tiltva, akkor nem fog működni.',
-	'categorytree-category'         => 'Kategória',
-	'categorytree-go'               => 'Mehet',
-	'categorytree-parents'          => 'Szülő kategóriák',
-	'categorytree-mode-categories'  => 'csak kategóriák',
-	'categorytree-mode-pages'       => 'oldalak kivéve képek',
-	'categorytree-mode-all'         => 'Az összes oldal',
-	'categorytree-collapse'         => 'összecsuk',
-	'categorytree-expand'           => 'kinyit',
-	'categorytree-load'             => 'Töltés',
-	'categorytree-loading'          => 'töltés',
-	'categorytree-nothing-found'    => 'nincs találat',
-	'categorytree-no-subcategories' => 'nincs alkategória.',
-	'categorytree-no-pages'         => 'nincs cikk vagy alkategória.',
-	'categorytree-not-found'        => 'Kategória <i>$1</i> nem található',
-	'categorytree-error'            => 'Probélma a betöltődő adattal',
-	'categorytree-retry'            => 'Kérlek várj egy pillanatot és próbáld újra.',
+	'categorytree-category'             => 'Kategória',
+	'categorytree-go'                   => 'Mehet',
+	'categorytree-parents'              => 'Szülő kategóriák',
+	'categorytree-mode-categories'      => 'csak kategóriák',
+	'categorytree-mode-pages'           => 'oldalak kivéve képek',
+	'categorytree-mode-all'             => 'Az összes oldal',
+	'categorytree-collapse'             => 'összecsuk',
+	'categorytree-expand'               => 'kinyit',
+	'categorytree-member-counts'        => '{{PLURAL:$1|egy|$1}} alkategóriát, {{PLURAL:$2|egy|$2}} lapot, és {{PLURAL:$3|egy|$3}} fájlt tartalmaz',
+	'categorytree-load'                 => 'Töltés',
+	'categorytree-loading'              => 'töltés',
+	'categorytree-nothing-found'        => 'nincs találat',
+	'categorytree-no-subcategories'     => 'nincs alkategória.',
+	'categorytree-no-parent-categories' => 'nincsenek szülőkategóriái',
+	'categorytree-no-pages'             => 'nincs cikk vagy alkategória.',
+	'categorytree-not-found'            => 'Kategória <i>$1</i> nem található',
+	'categorytree-error'                => 'Probélma a betöltődő adattal',
+	'categorytree-retry'                => 'Kérlek várj egy pillanatot és próbáld újra.',
 );
 
 /** Armenian (Հայերեն)
@@ -1816,28 +1821,31 @@ $messages['mr'] = array(
  * @author Aviator
  */
 $messages['ms'] = array(
-	'categorytree'                  => 'SalasilahKategori',
-	'categorytree-legend'           => 'Papar salasilah kategori',
-	'categorytree-desc'             => 'Alat berdasarkan AJAX yang memaparkan [[Special:CategoryTree|struktur kategori]] bagi sesebuah wiki',
-	'categorytree-header'           => 'Masukkan suatu nama kategori untuk melihat kandungannya dalam bentuk struktur salasilah.
+	'categorytree'                      => 'SalasilahKategori',
+	'categorytree-portlet'              => 'Kategori',
+	'categorytree-legend'               => 'Papar salasilah kategori',
+	'categorytree-desc'                 => 'Alat berdasarkan AJAX yang memaparkan [[Special:CategoryTree|struktur kategori]] bagi sesebuah wiki',
+	'categorytree-header'               => 'Masukkan suatu nama kategori untuk melihat kandungannya dalam bentuk struktur salasilah.
 Ciri ini memerlukan kebolehan JavaScript maju yang dikenali sebagai AJAX.
 Sekiranya anda menggunakan pelayar web yang lama, atau mematikan JavaScript, ciri ini tidak akan menjadi.',
-	'categorytree-category'         => 'Kategori',
-	'categorytree-go'               => 'Tunjukkan Salasilah',
-	'categorytree-parents'          => 'Induk',
-	'categorytree-mode-categories'  => 'kategori sahaja',
-	'categorytree-mode-pages'       => 'laman kecuali imej',
-	'categorytree-mode-all'         => 'semua laman',
-	'categorytree-collapse'         => 'tutup',
-	'categorytree-expand'           => 'buka',
-	'categorytree-load'             => 'muat',
-	'categorytree-loading'          => 'memuat',
-	'categorytree-nothing-found'    => 'kosong',
-	'categorytree-no-subcategories' => 'tiada subkategori',
-	'categorytree-no-pages'         => 'tiada laman atau subkategori',
-	'categorytree-not-found'        => 'Kategori <i>$1</i> tiada',
-	'categorytree-error'            => 'Berlaku masalah ketika memuat data.',
-	'categorytree-retry'            => 'Sila tunggu sebentar dan cuba lagi.',
+	'categorytree-category'             => 'Kategori',
+	'categorytree-go'                   => 'Tunjukkan Salasilah',
+	'categorytree-parents'              => 'Induk',
+	'categorytree-mode-categories'      => 'kategori sahaja',
+	'categorytree-mode-pages'           => 'laman kecuali imej',
+	'categorytree-mode-all'             => 'semua laman',
+	'categorytree-collapse'             => 'tutup',
+	'categorytree-expand'               => 'buka',
+	'categorytree-member-counts'        => 'mengandungi $1 subkategori, $1 laman, dan $3 fail',
+	'categorytree-load'                 => 'muat',
+	'categorytree-loading'              => 'memuat',
+	'categorytree-nothing-found'        => 'kosong',
+	'categorytree-no-subcategories'     => 'tiada subkategori',
+	'categorytree-no-parent-categories' => 'tiada kategori induk',
+	'categorytree-no-pages'             => 'tiada laman atau subkategori',
+	'categorytree-not-found'            => 'Kategori <i>$1</i> tiada',
+	'categorytree-error'                => 'Berlaku masalah ketika memuat data.',
+	'categorytree-retry'                => 'Sila tunggu sebentar dan cuba lagi.',
 );
 
 /** Erzya (Эрзянь)
@@ -1958,28 +1966,31 @@ $messages['nn'] = array(
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
-	'categorytree'                  => 'Kategoritre',
-	'categorytree-legend'           => 'Vis kategoritre',
-	'categorytree-desc'             => 'AJAX-basert verktøy som viser [[Special:CategoryTree|kategoristrukturen]] til en wiki',
-	'categorytree-header'           => 'Skriv inn et kategorinavn for å se dens innhold som en trestruktur. Merk at dette trenger en avansert type Javascript-funksjonalitet kjent som AJAX. Dersom du har en gammel nettleser eller har slått av Javascript vil dette ikke fungere.
+	'categorytree'                      => 'Kategoritre',
+	'categorytree-portlet'              => 'Kategorier',
+	'categorytree-legend'               => 'Vis kategoritre',
+	'categorytree-desc'                 => 'AJAX-basert verktøy som viser [[Special:CategoryTree|kategoristrukturen]] til en wiki',
+	'categorytree-header'               => 'Skriv inn et kategorinavn for å se dens innhold som en trestruktur. Merk at dette trenger en avansert type Javascript-funksjonalitet kjent som AJAX. Dersom du har en gammel nettleser eller har slått av Javascript vil dette ikke fungere.
 
 Enter a category name to see its contents as a tree structure. Note that this requires advanced JavaScript functionality known as AJAX. If you have a very old browser, or have JavaScript disabled, it will not work.',
-	'categorytree-category'         => 'Kategori:',
-	'categorytree-go'               => 'Vis',
-	'categorytree-parents'          => 'Overkategorier',
-	'categorytree-mode-categories'  => 'bare kategorier',
-	'categorytree-mode-pages'       => 'sider utenom bilder',
-	'categorytree-mode-all'         => 'alle sider',
-	'categorytree-collapse'         => 'skjul',
-	'categorytree-expand'           => 'vis',
-	'categorytree-load'             => 'last',
-	'categorytree-loading'          => 'laster',
-	'categorytree-nothing-found'    => 'Ingen resultater funnet.',
-	'categorytree-no-subcategories' => 'Ingen underkategorier.',
-	'categorytree-no-pages'         => 'Ingen artikler eller underkategorier.',
-	'categorytree-not-found'        => 'Kategorien <i>$1</i> ikke funnet',
-	'categorytree-error'            => 'problem under datalasting.',
-	'categorytree-retry'            => 'Vent en stund og prøv igjen.',
+	'categorytree-category'             => 'Kategori:',
+	'categorytree-go'                   => 'Vis',
+	'categorytree-parents'              => 'Overkategorier',
+	'categorytree-mode-categories'      => 'bare kategorier',
+	'categorytree-mode-pages'           => 'sider utenom bilder',
+	'categorytree-mode-all'             => 'alle sider',
+	'categorytree-collapse'             => 'skjul',
+	'categorytree-expand'               => 'vis',
+	'categorytree-member-counts'        => 'inneholder {{PLURAL:$1|én underkategori|$1 underkategorier}}, {{PLURAL:$2|én side|$2 sider}} og {{PLURAL:$3|én fil|$3 filer}}',
+	'categorytree-load'                 => 'last',
+	'categorytree-loading'              => 'laster',
+	'categorytree-nothing-found'        => 'Ingen resultater funnet.',
+	'categorytree-no-subcategories'     => 'Ingen underkategorier.',
+	'categorytree-no-parent-categories' => 'ingen foreldrekategorier',
+	'categorytree-no-pages'             => 'Ingen artikler eller underkategorier.',
+	'categorytree-not-found'            => 'Kategorien <i>$1</i> ikke funnet',
+	'categorytree-error'                => 'problem under datalasting.',
+	'categorytree-retry'                => 'Vent en stund og prøv igjen.',
 );
 
 /** Northern Sotho (Sesotho sa Leboa)
@@ -2714,26 +2725,29 @@ $messages['uz'] = array(
  * @author Candalua
  */
 $messages['vec'] = array(
-	'categorytree'                  => 'Strutura ad àlbaro de le categorie',
-	'categorytree-legend'           => "Mostra l'àlbaro de le categorie",
-	'categorytree-desc'             => 'Acessorio AJAX par visualizar la [[Special:CategoryTree|strutura de le categorie]] del sito',
-	'categorytree-header'           => 'Inserissi el nome de la categoria de cui te vol védar el contenuto soto forma de strutura ad àlbaro. Nota che la pagina la richiede le funzionalità avanzade de JavaScript ciamà AJAX; se te stè doparando un browser vecio assè o le funzion JavaScript le xe disabilità, sta pagina no la funzionarà mìa.',
-	'categorytree-category'         => 'Categoria',
-	'categorytree-go'               => "Mostra l'àlbaro",
-	'categorytree-parents'          => 'Categorie superiori',
-	'categorytree-mode-categories'  => 'mostra solo le categorie',
-	'categorytree-mode-pages'       => 'tute le pagine, via de le imagini',
-	'categorytree-mode-all'         => 'tute le pagine',
-	'categorytree-collapse'         => 'conprimi',
-	'categorytree-expand'           => 'espandi',
-	'categorytree-load'             => 'carga',
-	'categorytree-loading'          => 'sto cargando…',
-	'categorytree-nothing-found'    => 'nissun risultato',
-	'categorytree-no-subcategories' => 'nissuna sotocategoria',
-	'categorytree-no-pages'         => 'nissuna voçe né sotocategoria',
-	'categorytree-not-found'        => 'Categoria <i>$1</i> mìa catà',
-	'categorytree-error'            => 'Ghe xe un problema nel caricamento dei dati.',
-	'categorytree-retry'            => "Speta n'atimo e dopo próa de novo.",
+	'categorytree'                      => 'Strutura ad àlbaro de le categorie',
+	'categorytree-portlet'              => 'Categorie',
+	'categorytree-legend'               => "Mostra l'àlbaro de le categorie",
+	'categorytree-desc'                 => 'Acessorio AJAX par visualizar la [[Special:CategoryTree|strutura de le categorie]] del sito',
+	'categorytree-header'               => 'Inserissi el nome de la categoria de cui te vol védar el contenuto soto forma de strutura ad àlbaro. Nota che la pagina la richiede le funzionalità avanzade de JavaScript ciamà AJAX; se te stè doparando un browser vecio assè o le funzion JavaScript le xe disabilità, sta pagina no la funzionarà mìa.',
+	'categorytree-category'             => 'Categoria',
+	'categorytree-go'                   => "Mostra l'àlbaro",
+	'categorytree-parents'              => 'Categorie superiori',
+	'categorytree-mode-categories'      => 'mostra solo le categorie',
+	'categorytree-mode-pages'           => 'tute le pagine, via de le imagini',
+	'categorytree-mode-all'             => 'tute le pagine',
+	'categorytree-collapse'             => 'conprimi',
+	'categorytree-expand'               => 'espandi',
+	'categorytree-member-counts'        => 'la contien {{PLURAL:$1|1 sotocategoria|$1 sotocategorie}}, {{PLURAL:$2|1 pagina|$2 pagine}} e {{PLURAL:$3|1 file|$3 file}}',
+	'categorytree-load'                 => 'carga',
+	'categorytree-loading'              => 'sto cargando…',
+	'categorytree-nothing-found'        => 'nissun risultato',
+	'categorytree-no-subcategories'     => 'nissuna sotocategoria',
+	'categorytree-no-parent-categories' => 'nissuna categoria superior',
+	'categorytree-no-pages'             => 'nissuna voçe né sotocategoria',
+	'categorytree-not-found'            => 'Categoria <i>$1</i> mìa catà',
+	'categorytree-error'                => 'Ghe xe un problema nel caricamento dei dati.',
+	'categorytree-retry'                => "Speta n'atimo e dopo próa de novo.",
 );
 
 /** Vietnamese (Tiếng Việt)

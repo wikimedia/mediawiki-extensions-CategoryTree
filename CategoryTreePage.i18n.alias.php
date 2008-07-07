@@ -24,11 +24,19 @@ $aliases['de'] = array(
 	'CategoryTree' => array( 'Kategorienbaum', 'Kategoriebaum' ),
 );
 
+$aliases['fi'] = array(
+	'CategoryTree' => array( 'Luokkapuu' ),
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */
 $aliases['he'] = array(
 	'CategoryTree' => array( 'עץ_קטגוריות' ),
+);
+
+$aliases['hu'] = array(
+	'CategoryTree' => array( 'Kategóriafa' ),
 );
 
 $aliases['la'] = array(
