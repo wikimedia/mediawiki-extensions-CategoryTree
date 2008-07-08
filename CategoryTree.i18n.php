@@ -14,7 +14,7 @@ $messages = array();
  * @author Daniel Kinzler, brightbyte.de
  */
 $messages['en'] = array(
-	'categorytree'                  => 'CategoryTree',
+	'categorytree'                  => 'Category tree',
 	'categorytree-portlet'          => 'Categories',
 #	'categorytree-tab'              => 'Tree',
 	'categorytree-legend'           => 'Show category tree',
@@ -24,7 +24,7 @@ Note that this requires advanced JavaScript functionality known as AJAX.
 If you have a very old browser, or have JavaScript disabled, it will not work.',
 
 	'categorytree-category'         => 'Category:',
-	'categorytree-go'               => 'Show Tree',
+	'categorytree-go'               => 'Show tree',
 	'categorytree-parents'          => 'Parents',
 
 	'categorytree-mode-categories'  => 'categories only',
