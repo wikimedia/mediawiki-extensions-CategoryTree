@@ -591,26 +591,31 @@ $messages['diq'] = array(
  * @author Siebrand
  */
 $messages['dsb'] = array(
-	'categorytree'                  => 'Bom kategorijow',
-	'categorytree-header'           => 'Zapodaj mě kategorije, aby jeje wopśimjeśe ako bomowu strukturu wiźeł.
+	'categorytree'                      => 'Bom kategorijow',
+	'categorytree-portlet'              => 'Kategorije',
+	'categorytree-legend'               => 'Kategorijowy bom pokazaś',
+	'categorytree-desc'                 => 'Dynamiski pśez [[Special:CategoryTree|kategorijowu strukturu]] nawigěrowaś',
+	'categorytree-header'               => 'Zapodaj mě kategorije, aby jeje wopśimjeśe ako bomowu strukturu wiźeł.
 Glědaj, až se to wěste funkcije JavaScripta pomina, znate ako AJAX.
 Jolic maš wjelgin stary browser abo jolic JavaScript jo wótšaltowane, toś ten bok ewentuelnje njefunkcioněrujo.',
-	'categorytree-category'         => 'Kategorija:',
-	'categorytree-go'               => 'Bom pokazaś',
-	'categorytree-parents'          => 'Wuše kategorije',
-	'categorytree-mode-categories'  => 'jano kategorije',
-	'categorytree-mode-pages'       => 'Boki mimo wobrazow',
-	'categorytree-mode-all'         => 'wšykne boki',
-	'categorytree-collapse'         => 'złožyś',
-	'categorytree-expand'           => 'rozłožyś',
-	'categorytree-load'             => 'lodowaś',
-	'categorytree-loading'          => 'lodujo se...',
-	'categorytree-nothing-found'    => 'Nic namakany',
-	'categorytree-no-subcategories' => 'Žedne pódkategorije',
-	'categorytree-no-pages'         => 'Žedne boki abo pódkategorije',
-	'categorytree-not-found'        => 'Kategorija <i>$1</i> njenamakana',
-	'categorytree-error'            => 'Problem pśi lodowanju datow.',
-	'categorytree-retry'            => 'Pócakaj pšosym moment a wopytaj hyšći raz.',
+	'categorytree-category'             => 'Kategorija:',
+	'categorytree-go'                   => 'Bom pokazaś',
+	'categorytree-parents'              => 'Wuše kategorije',
+	'categorytree-mode-categories'      => 'jano kategorije',
+	'categorytree-mode-pages'           => 'Boki mimo wobrazow',
+	'categorytree-mode-all'             => 'wšykne boki',
+	'categorytree-collapse'             => 'złožyś',
+	'categorytree-expand'               => 'rozłožyś',
+	'categorytree-member-counts'        => 'wopśimujo {{PLURAL:$1|1 pódkategoriju|$1 pódkategoriji|$1 pódkategorije|$1 pódkategorijow}}, {{PLURAL:$2|1 bok|$2 boka|$2 boki|$2 bokow}} a {{PLURAL:$3|1 dataju|$3 dataji|$3 dataje|$3 datajow}}',
+	'categorytree-load'                 => 'lodowaś',
+	'categorytree-loading'              => 'lodujo se...',
+	'categorytree-nothing-found'        => 'Nic namakany',
+	'categorytree-no-subcategories'     => 'Žedne pódkategorije',
+	'categorytree-no-parent-categories' => 'žedne wuše kategorije',
+	'categorytree-no-pages'             => 'Žedne boki abo pódkategorije',
+	'categorytree-not-found'            => 'Kategorija <i>$1</i> njenamakana',
+	'categorytree-error'                => 'Problem pśi lodowanju datow.',
+	'categorytree-retry'                => 'Pócakaj pšosym moment a wopytaj hyšći raz.',
 );
 
 /** Ewe (Eʋegbe)
@@ -878,6 +883,7 @@ Se vos avéd un rudo viely navigator Malyâjo ou que vos éd pas activâ la fonc
  */
 $messages['fur'] = array(
 	'categorytree'                  => 'Arbul des categoriis',
+	'categorytree-portlet'          => 'Categoriis',
 	'categorytree-legend'           => 'Mostre arbul des categoriis',
 	'categorytree-header'           => 'Inserìs il non de categorie di cui tu vuelis viodi i siei contignûts intune struture a arbul.
 Cheste funzion e à bisugne di funzions avanzadis JavaScript, cognossudis come AJAX.
@@ -889,10 +895,12 @@ Se tu âs un sgarfadôr a vonde vieri, o tu âs disativât JavaScript, cheste pa
 	'categorytree-mode-all'         => 'dutis lis pagjinis',
 	'categorytree-collapse'         => 'strenç',
 	'categorytree-expand'           => 'slargje',
+	'categorytree-member-counts'    => 'e à dentri {{PLURAL:$1|1 sotcategorie|$1 sotcategoriis}}, {{PLURAL:$2|1 pagjine|$2 pagjinis}} e {{PLURAL:$3|1 file|$3 files}}',
 	'categorytree-load'             => 'cjame',
 	'categorytree-loading'          => 'daûr a cjamâ',
 	'categorytree-no-subcategories' => 'nissune sot categorie.',
 	'categorytree-no-pages'         => 'nissune pagjine ni sotcategorie',
+	'categorytree-not-found'        => 'Categorie <i>$1</i> no cjatade',
 );
 
 /** Western Frisian (Frysk)
