@@ -148,6 +148,7 @@ $messages['ar'] = array(
 	'categorytree-mode-all'             => 'كل الصفحات',
 	'categorytree-collapse'             => 'ضغط',
 	'categorytree-expand'               => 'فرد',
+	'categorytree-member-counts'        => 'يحتوي على {{PLURAL:$1|1 تصنيف فرعي|$1 تصنيف فرعي}}، {{PLURAL:$2|1 صفحة|$2 صفحة}}، و {{PLURAL:$3|1 ملف|$3 ملف}}',
 	'categorytree-load'                 => 'تحميل',
 	'categorytree-loading'              => 'جاري التحميل',
 	'categorytree-nothing-found'        => 'لم يتم العثور على شيء',
