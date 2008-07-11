@@ -158,7 +158,8 @@ class CategoryTree {
 	 * @param OutputPage $outputPage
 	 */
 	static function setHeaders( &$outputPage ) {
-		global $wgJsMimeType, $wgScriptPath, $wgContLang, $wgCategoryTreeExtPath, $wgCategoryTreeVersion;
+		global $wgJsMimeType, $wgScriptPath, $wgContLang;
+		global $wgCategoryTreeHijackPageCategories, $wgCategoryTreeExtPath, $wgCategoryTreeVersion;
 		self::init();
 
 		# Register css file for CategoryTree
@@ -169,6 +170,14 @@ class CategoryTree {
 				'href' => "$wgScriptPath$wgCategoryTreeExtPath/CategoryTree.css?$wgCategoryTreeVersion",
 			)
 		);
+
+		if ( $wgCategoryTreeHijackPageCategories ) {
+			# Register MSIE quirks
+			$outputPage->addScript(
+				"<!--[if IE]><link rel=\"stylesheet\" type=\"text/css\" src=\"{$wgScriptPath}{$wgCategoryTreeExtPath}/CategoryTreeIE.css?{$wgCategoryTreeVersion}\"/><![endif]-->
+	\n"
+			);
+		}
 
 		# Register css RTL file for CategoryTree
 		if( $wgContLang->isRTL() ) {

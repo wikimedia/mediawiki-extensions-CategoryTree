@@ -100,7 +100,7 @@ $wgCategoryTreePageCategoryOptions['showcount'] = false;
 $wgCategoryTreePageCategoryOptions['hideroot'] = false;
 $wgCategoryTreePageCategoryOptions['namespaces'] = false;
 $wgCategoryTreePageCategoryOptions['depth'] = 0;
-$wgCategoryTreePageCategoryOptions['class'] = 'CategoryTreeInlineNode';
+#$wgCategoryTreePageCategoryOptions['class'] = 'CategoryTreeInlineNode';
 
 $wgExtensionAliasesFiles['CategoryTree'] = dirname(__FILE__) . '/CategoryTreePage.i18n.alias.php';
 
@@ -169,6 +169,7 @@ function efCategoryTree() {
 	if ( $wgCategoryTreeHijackPageCategories ) {
 		$wgCategoryTreeForceHeaders = true; # needed on almost every page anyway
 		$wgHooks['OutputPageMakeCategoryLinks'][] = 'efCategoryTreeOutputPageMakeCategoryLinks';
+		$wgHooks['SkinJoinCategoryLinks'][] = 'efCategoryTreeSkinJoinCategoryLinks';
 	}
 
 	if ( defined( 'MW_SUPPORTS_PARSERFIRSTCALLINIT' ) ) {
@@ -378,6 +379,18 @@ function efCategoryTreeOutputPageMakeCategoryLinks( &$out, &$categories, &$links
 	foreach ( $categories as $category => $type ) {
 		$links[$type][] = efCategoryTreeParserHook( $category, $wgCategoryTreePageCategoryOptions, NULL, true );
 	}
+
+	return false;
+}
+
+
+function efCategoryTreeSkinJoinCategoryLinks( &$skin, &$links, &$result ) {
+	$embed = '<div class="CategoryTreePretendInlineMSIE CategoryTreeCategoryBarItem">';
+	$pop = '</div>';
+	$sep = ' ';
+
+#	$result = '<div class="CategoryTreeCatBarWrapper" style="border:1px solid blue">' . $embed . implode ( "{$pop} {$sep} {$embed}" , $links ) . $pop . '</div>';
+	$result = $embed . implode ( "{$pop} {$sep} {$embed}" , $links ) . $pop;
 
 	return false;
 }

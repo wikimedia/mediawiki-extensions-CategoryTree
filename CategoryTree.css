@@ -47,7 +47,16 @@
 	font-style: italic;
 }
 
+/*
 div.CategoryTreeInlineNode,
 div.CategoryTreeInlineNode div {
 	display: table-cell;
+}
+*/
+
+.CategoryTreeCategoryBarItem {
+	display:-moz-inline-box; display:inline-block; /* yes, specify display twice! quirk for FF2 */
+	margin:-0.5ex 0 0 1ex; /* why is the -0.5ex needed? */
+	padding:0;
+	vertical-align: top;
 }
