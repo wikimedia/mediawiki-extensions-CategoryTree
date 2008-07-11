@@ -684,10 +684,11 @@ class CategoryTree {
 			$pages = $cat->getPageCount() - $cat->getSubcatCount() - $cat->getFileCount();
 
 			$attr = array(
-				'title' => wfMsgExt( 'categorytree-member-counts', 'parsemag', $cat->getSubcatCount(), $pages , $cat->getFileCount() )
+				'title' => wfMsgExt( 'categorytree-member-counts', 'parsemag', $cat->getSubcatCount(), $pages , $cat->getFileCount(), $cat->getPageCount(), $count )
 			);
 
-			$s .= Xml::element( 'span', $attr, ' (' . $count . ')' );
+			$s .= ' ';
+			$s .= Xml::element( 'span', $attr, wfMsgExt( 'categorytree-member-num', 'parsemag', $cat->getSubcatCount(), $pages , $cat->getFileCount(), $cat->getPageCount(), $count ) );
 		}
 
 		$s .= Xml::closeElement( 'div' );
