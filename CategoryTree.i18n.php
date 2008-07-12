@@ -2411,28 +2411,32 @@ $messages['sq'] = array(
 /** Serbian Cyrillic ekavian (ћирилица)
  * @author Sasa Stefanovic
  * @author Siebrand
+ * @author Millosh
  */
 $messages['sr-ec'] = array(
-	'categorytree'                  => 'Дрво категорија',
-	'categorytree-legend'           => 'Прикажи дрво категорија',
-	'categorytree-header'           => 'Унесите име категорији чији садржај желите да видите као дрво.
+	'categorytree'                      => 'Дрво категорија',
+	'categorytree-portlet'              => 'категорије',
+	'categorytree-legend'               => 'Прикажи дрво категорија',
+	'categorytree-header'               => 'Унесите име категорији чији садржај желите да видите као дрво.
 Ово захтева напредну ЈаваСкрип функцију познату као AJAX.
 Уколико имате веома стари браузер, или се искључили ЈаваСкрипт, дрво категорија неће радити.',
-	'categorytree-category'         => 'Категорија:',
-	'categorytree-go'               => 'Прикажи дрво',
-	'categorytree-mode-categories'  => 'само категорије',
-	'categorytree-mode-pages'       => 'странице изузев слика',
-	'categorytree-mode-all'         => 'све странице',
-	'categorytree-collapse'         => 'сакриј',
-	'categorytree-expand'           => 'прикажи',
-	'categorytree-load'             => 'учитај',
-	'categorytree-loading'          => 'учитавање',
-	'categorytree-nothing-found'    => 'ништа није пронађено',
-	'categorytree-no-subcategories' => 'нема подкатегорија',
-	'categorytree-no-pages'         => 'нема страница или подкатегорија',
-	'categorytree-not-found'        => 'Категорија <i>$1</i> није пронађена',
-	'categorytree-error'            => 'Проблем при учитавању података.',
-	'categorytree-retry'            => 'Молимо сачекајте тренутак и покушајте поново',
+	'categorytree-category'             => 'Категорија:',
+	'categorytree-go'                   => 'Прикажи дрво',
+	'categorytree-parents'              => 'родитељи',
+	'categorytree-mode-categories'      => 'само категорије',
+	'categorytree-mode-pages'           => 'странице изузев слика',
+	'categorytree-mode-all'             => 'све странице',
+	'categorytree-collapse'             => 'сакриј',
+	'categorytree-expand'               => 'прикажи',
+	'categorytree-load'                 => 'учитај',
+	'categorytree-loading'              => 'учитавање',
+	'categorytree-nothing-found'        => 'ништа није пронађено',
+	'categorytree-no-subcategories'     => 'нема подкатегорија',
+	'categorytree-no-parent-categories' => 'без наткатегорије',
+	'categorytree-no-pages'             => 'нема страница или подкатегорија',
+	'categorytree-not-found'            => 'Категорија <i>$1</i> није пронађена',
+	'categorytree-error'                => 'Проблем при учитавању података.',
+	'categorytree-retry'                => 'Молимо сачекајте тренутак и покушајте поново',
 );
 
 /** Southern Sotho (Sesotho)
