@@ -76,6 +76,11 @@ $aliases['la'] = array(
 	'CategoryTree' => array( 'Categoriarum arbor' ),
 );
 
+/** Luxembourgish (Lëtzebuergesch) */
+$aliases['lb'] = array(
+	'CategoryTree' => array( 'Struktur vun de Kategorien' ),
+);
+
 /** Malay (Bahasa Melayu) */
 $aliases['ms'] = array(
 	'CategoryTree' => array( 'Salasilah_kategori', 'Kategori_asal' ),
