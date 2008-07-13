@@ -59,25 +59,32 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author SPQRobin
+ * @author Naudefj
  */
 $messages['af'] = array(
-	'categorytree'                  => 'Kategorieboom',
-	'categorytree-legend'           => 'Wys kategorieboom',
-	'categorytree-header'           => "Tik 'n kategorienaam om sy inhoud as 'n boomstruktuur te sien. Hierdie benodig gevorderde JavaScript-funksionaliteit bekend as AJAX. Met 'n baie ou blaaier, of as JavaScript gedeaktiveer is, sal dit nie werk nie.",
-	'categorytree-category'         => 'Kategorie:',
-	'categorytree-go'               => 'Wys boom',
-	'categorytree-parents'          => 'ouers',
-	'categorytree-mode-categories'  => 'slegs kategorieë',
-	'categorytree-mode-pages'       => 'bladsye met prentbladsye uitgesluit',
-	'categorytree-mode-all'         => 'alle bladsye',
-	'categorytree-collapse'         => 'vou toe',
-	'categorytree-expand'           => 'vou oop',
-	'categorytree-load'             => 'laai',
-	'categorytree-loading'          => 'laai tans',
-	'categorytree-nothing-found'    => 'niks gevind nie',
-	'categorytree-no-subcategories' => 'geen subkategorieë nie',
-	'categorytree-no-pages'         => 'geen bladsye of subkategorieë nie',
-	'categorytree-not-found'        => 'Kategorie <i>$1</i> nie gevind nie',
+	'categorytree'                      => 'Kategorieboom',
+	'categorytree-portlet'              => 'Kategorieë',
+	'categorytree-legend'               => 'Wys kategorieboom',
+	'categorytree-desc'                 => "Bekyk en navigeer deur die [[Special:CategoryTree|kategoriestruktuur]] van 'n wiki",
+	'categorytree-header'               => "Tik 'n kategorienaam om sy inhoud as 'n boomstruktuur te sien. Hierdie benodig gevorderde JavaScript-funksionaliteit bekend as AJAX. Met 'n baie ou blaaier, of as JavaScript gedeaktiveer is, sal dit nie werk nie.",
+	'categorytree-category'             => 'Kategorie:',
+	'categorytree-go'                   => 'Wys boom',
+	'categorytree-parents'              => 'ouers',
+	'categorytree-mode-categories'      => 'slegs kategorieë',
+	'categorytree-mode-pages'           => 'bladsye met prentbladsye uitgesluit',
+	'categorytree-mode-all'             => 'alle bladsye',
+	'categorytree-collapse'             => 'vou toe',
+	'categorytree-expand'               => 'vou oop',
+	'categorytree-member-counts'        => 'bevat {{PLURAL:$1|een subkategorie|$1 subkategorieë}}, {{PLURAL:$2|een bladsy|$2 blaaie}} en {{PLURAL:$3|een lêer|$3 lêers}}',
+	'categorytree-load'                 => 'laai',
+	'categorytree-loading'              => 'laai tans',
+	'categorytree-nothing-found'        => 'niks gevind nie',
+	'categorytree-no-subcategories'     => 'geen subkategorieë nie',
+	'categorytree-no-parent-categories' => 'geen kategorieë boontoe',
+	'categorytree-no-pages'             => 'geen bladsye of subkategorieë nie',
+	'categorytree-not-found'            => 'Kategorie <i>$1</i> nie gevind nie',
+	'categorytree-error'                => 'Probleem met die laai van die data.',
+	'categorytree-retry'                => "Wag asseblief 'n rukkie en probeer weer.",
 );
 
 /** Amharic (አማርኛ)
@@ -1093,9 +1100,11 @@ $messages['hi'] = array(
 /** Croatian (Hrvatski)
  * @author SpeedyGonsales
  * @author Suradnik13
+ * @author Dalibor Bosits
  */
 $messages['hr'] = array(
 	'categorytree'                  => 'Stablasti prikaz hijerarhije kategorija',
+	'categorytree-portlet'          => 'Kategorije',
 	'categorytree-legend'           => 'Prikaži stablo kategorija',
 	'categorytree-header'           => 'Upišite ime kategorije da biste vidjeli njen položaj u stablastom prikazu hijerarhije. Napomena: na strani klijenta (na Vašem računalu) potreban je web preglednik koji podržava napredni JavaScript, tj. AJAX. Ukoliko imate stari web preglednik, ili ste onemogućili izvođenje JavaScripta u njemu, neće Vam biti dostupan ovaj prikaz.',
 	'categorytree-category'         => 'Kategorija',
@@ -2417,6 +2426,7 @@ $messages['sr-ec'] = array(
 	'categorytree'                      => 'Дрво категорија',
 	'categorytree-portlet'              => 'категорије',
 	'categorytree-legend'               => 'Прикажи дрво категорија',
+	'categorytree-desc'                 => 'Динамичка навигација [[Special:CategoryTree|структуре категорија]].',
 	'categorytree-header'               => 'Унесите име категорији чији садржај желите да видите као дрво.
 Ово захтева напредну ЈаваСкрип функцију познату као AJAX.
 Уколико имате веома стари браузер, или се искључили ЈаваСкрипт, дрво категорија неће радити.',
@@ -2781,28 +2791,31 @@ $messages['vec'] = array(
  * @author Minh Nguyen
  */
 $messages['vi'] = array(
-	'categorytree'                  => 'Cây thể loại',
-	'categorytree-legend'           => 'Hiển thị cây thể loại',
-	'categorytree-desc'             => 'Công cụ AJAX để hiển thị [[Special:CategoryTree|cấu trúc thể loại]] của một wiki',
-	'categorytree-header'           => 'Gõ vào tên thể loại để xem nội dung của nó theo cấu trúc cây.
+	'categorytree'                      => 'Cây thể loại',
+	'categorytree-portlet'              => 'Thể loại',
+	'categorytree-legend'               => 'Hiển thị cây thể loại',
+	'categorytree-desc'                 => 'Công cụ AJAX để hiển thị [[Special:CategoryTree|cấu trúc thể loại]] của một wiki',
+	'categorytree-header'               => 'Gõ vào tên thể loại để xem nội dung của nó theo cấu trúc cây.
 Chú ý rằng chức năng này sử dụng chức năng JavaScript, với tên AJAX.
 Nếu bạn đang sử dụng trình duyệt rất cũ, hoặc đã tắt JavaScript, nó sẽ không hoạt động.',
-	'categorytree-category'         => 'Thể loại:',
-	'categorytree-go'               => 'Hiển thị',
-	'categorytree-parents'          => 'Các thể loại mẹ',
-	'categorytree-mode-categories'  => 'Chỉ liệt kê các thể loại',
-	'categorytree-mode-pages'       => 'các trang ngoại trừ trang hình',
-	'categorytree-mode-all'         => 'tất cả các trang',
-	'categorytree-collapse'         => 'đóng',
-	'categorytree-expand'           => 'mở',
-	'categorytree-load'             => 'tải',
-	'categorytree-loading'          => 'đang tải',
-	'categorytree-nothing-found'    => 'Không có gì.',
-	'categorytree-no-subcategories' => 'Không có tiểu thể loại.',
-	'categorytree-no-pages'         => 'Không có trang hay tiểu thể loại.',
-	'categorytree-not-found'        => 'Không tìm thấy thể loại <i>$1</i>',
-	'categorytree-error'            => 'Có vấn đề khi tải dữ liệu.',
-	'categorytree-retry'            => 'Xin hãy chờ một chút rồi thử lại.',
+	'categorytree-category'             => 'Thể loại:',
+	'categorytree-go'                   => 'Hiển thị',
+	'categorytree-parents'              => 'Các thể loại mẹ',
+	'categorytree-mode-categories'      => 'Chỉ liệt kê các thể loại',
+	'categorytree-mode-pages'           => 'các trang ngoại trừ trang hình',
+	'categorytree-mode-all'             => 'tất cả các trang',
+	'categorytree-collapse'             => 'đóng',
+	'categorytree-expand'               => 'mở',
+	'categorytree-member-counts'        => 'có $1 tiểu thể loại, $2 trang, và $3 tập tin',
+	'categorytree-load'                 => 'tải',
+	'categorytree-loading'              => 'đang tải',
+	'categorytree-nothing-found'        => 'Không có gì.',
+	'categorytree-no-subcategories'     => 'Không có tiểu thể loại.',
+	'categorytree-no-parent-categories' => 'không nằm trong thể loại nào',
+	'categorytree-no-pages'             => 'Không có trang hay tiểu thể loại.',
+	'categorytree-not-found'            => 'Không tìm thấy thể loại <i>$1</i>',
+	'categorytree-error'                => 'Có vấn đề khi tải dữ liệu.',
+	'categorytree-retry'                => 'Xin hãy chờ một chút rồi thử lại.',
 );
 
 /** Volapük (Volapük)
