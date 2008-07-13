@@ -27,11 +27,16 @@ $aliases['arz'] = array(
 	'CategoryTree' => array( 'شجرة تصنيف' ),
 );
 
-/** German
+/** German (Deutsch)
  * @author Daniel Kinzler, brightbyte.de
  */
 $aliases['de'] = array(
 	'CategoryTree' => array( 'Kategorienbaum', 'Kategoriebaum' ),
+);
+
+/** Lower Sorbian (Dolnoserbski) */
+$aliases['dsb'] = array(
+	'CategoryTree' => array( 'Kategorijow bom' ),
 );
 
 /** Finnish (Suomi) */
@@ -49,6 +54,11 @@ $aliases['fr'] = array(
  */
 $aliases['he'] = array(
 	'CategoryTree' => array( 'עץ_קטגוריות' ),
+);
+
+/** Upper Sorbian (Hornjoserbsce) */
+$aliases['hsb'] = array(
+	'CategoryTree' => array( 'Kategorijowy štom' ),
 );
 
 /** Haitian (Kreyòl ayisyen) */
@@ -71,13 +81,33 @@ $aliases['ms'] = array(
 	'CategoryTree' => array( 'Salasilah_kategori', 'Kategori_asal' ),
 );
 
+/** Maltese (Malti) */
+$aliases['mt'] = array(
+	'CategoryTree' => array( 'SiġraKategorika' ),
+);
+
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'CategoryTree' => array( 'Categorieboom' ),
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
+$aliases['no'] = array(
+	'CategoryTree' => array( 'Kategoritre' ),
+);
+
+/** Portuguese (Português) */
+$aliases['pt'] = array(
+	'CategoryTree' => array( 'Árvore de categorias', 'Árvore de categoria' ),
+);
+
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
 	'CategoryTree' => array( 'Kategoriträd' ),
+);
+
+/** Yiddish (ייִדיש) */
+$aliases['yi'] = array(
+	'CategoryTree' => array( 'קאטעגאריע בוים' ),
 );
 
