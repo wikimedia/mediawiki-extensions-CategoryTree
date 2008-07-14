@@ -27,6 +27,11 @@ $aliases['arz'] = array(
 	'CategoryTree' => array( 'شجرة تصنيف' ),
 );
 
+/** Bikol Central (Bikol Central) */
+$aliases['bcl'] = array(
+	'CategoryTree' => array( 'KahoyNinKategorya' ),
+);
+
 /** German (Deutsch)
  * @author Daniel Kinzler, brightbyte.de
  */
