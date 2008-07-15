@@ -76,6 +76,11 @@ $aliases['hu'] = array(
 	'CategoryTree' => array( 'Kategóriafa' ),
 );
 
+/** Khmer (ភាសាខ្មែរ) */
+$aliases['km'] = array(
+	'CategoryTree' => array( 'មែកធាងចំនាត់ថ្នាក់ក្រុម' ),
+);
+
 /** Latin (Latina) */
 $aliases['la'] = array(
 	'CategoryTree' => array( 'Categoriarum arbor' ),
