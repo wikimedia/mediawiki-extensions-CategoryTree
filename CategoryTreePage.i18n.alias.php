@@ -54,6 +54,11 @@ $aliases['fr'] = array(
 	'CategoryTree' => array( 'ArbreCatégorie', 'ArbreCategorie', 'Arbre catégorie' ),
 );
 
+/** Galician (Galego) */
+$aliases['gl'] = array(
+	'CategoryTree' => array( 'Árbore de categorías' ),
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */
