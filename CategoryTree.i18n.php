@@ -1271,10 +1271,34 @@ $messages['hy'] = array(
 
 /** Interlingua (Interlingua)
  * @author Malafaya
+ * @author McDutchie
  */
 $messages['ia'] = array(
-	'categorytree-category' => 'Categoria:',
-	'categorytree-mode-all' => 'tote le paginas',
+	'categorytree'                      => 'Arbore de categorias',
+	'categorytree-portlet'              => 'Categorias',
+	'categorytree-legend'               => 'Monstrar arbore de categorias',
+	'categorytree-desc'                 => 'Navigar dynamicamente per le [[Special:CategoryTree|structura de categorias]]',
+	'categorytree-header'               => 'Entra le nomine de un categoria pro vider su contento como un structura arboree.
+Nota que isto require un functionalitate de JavaScript avantiate cognoscite como AJAX.
+Si tu ha un navigator multo vetule, o ha disactivate JavaScript, isto non functionara.',
+	'categorytree-category'             => 'Categoria:',
+	'categorytree-go'                   => 'Monstrar arbore',
+	'categorytree-parents'              => 'Categorias superior',
+	'categorytree-mode-categories'      => 'categorias solmente',
+	'categorytree-mode-pages'           => 'paginas excepte imagines',
+	'categorytree-mode-all'             => 'tote le paginas',
+	'categorytree-collapse'             => 'collaber',
+	'categorytree-expand'               => 'expander',
+	'categorytree-member-counts'        => 'contine {{PLURAL:$1|1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|1 pagina|$2 paginas}}, e {{PLURAL:$3|1 file|$3 files}}',
+	'categorytree-load'                 => 'cargar',
+	'categorytree-loading'              => 'cargamento in curso…',
+	'categorytree-nothing-found'        => 'nihil trovate',
+	'categorytree-no-subcategories'     => 'nulle subcategorias',
+	'categorytree-no-parent-categories' => 'nulle categorias superior',
+	'categorytree-no-pages'             => 'nulle paginas o subcategorias',
+	'categorytree-not-found'            => 'Categoria <i>$1</i> non trovate',
+	'categorytree-error'                => 'Problema al cargar le datos.',
+	'categorytree-retry'                => 'Per favor attende un momento e reprova.',
 );
 
 /** Indonesian (Bahasa Indonesia)
