@@ -253,28 +253,30 @@ Ede va guazafi exulesiki favel oke ede JavaScript fliaceem tir metegis, batcoba 
  * @author Mostafadaneshvar
  */
 $messages['bcc'] = array(
-	'categorytree'                  => 'درچک دسته',
-	'categorytree-legend'           => 'پیش دار درچ دستهء',
-	'categorytree-desc'             => 'گجت آن آژاکسی په پیش دارگ [[Special:CategoryTree|شکل دسته]] یک ویکی',
-	'categorytree-header'           => 'یک نام دسته ای وارد کنیت تا شکل درچکی آییء پیش داریت.
+	'categorytree'                      => 'درچک دسته',
+	'categorytree-portlet'              => 'دسته جات',
+	'categorytree-legend'               => 'پیش دار درچ دستهء',
+	'categorytree-desc'                 => 'گجت آن آژاکسی په پیش دارگ [[Special:CategoryTree|شکل دسته]] یک ویکی',
+	'categorytree-header'               => 'یک نام دسته ای وارد کنیت تا شکل درچکی آییء پیش داریت.
 توجه بیت که شی نیاز په پیشرپتگین عملگری جاوا اسکریپت په داب آژاکس داریت.
 اگر شما را یک کهنه بروزر ای هستن یا جاوا اسکریپ غیر غعال انت آیی کار نه کنت.',
-	'categorytree-category'         => 'دسته:',
-	'categorytree-go'               => 'پیش دار درچکء',
-	'categorytree-parents'          => 'پت و مات آن',
-	'categorytree-mode-categories'  => 'فقط دسته جات',
-	'categorytree-mode-pages'       => 'صفحات بجر عکسان',
-	'categorytree-mode-all'         => 'کل صفحات',
-	'categorytree-collapse'         => 'سقوط',
-	'categorytree-expand'           => 'پچ',
-	'categorytree-load'             => 'لود',
-	'categorytree-loading'          => 'لودبیت...',
-	'categorytree-nothing-found'    => 'هچی در نه بوت',
-	'categorytree-no-subcategories' => 'هچ زیر دسته ای',
-	'categorytree-no-pages'         => 'هچ صفحه یا زیر دسته',
-	'categorytree-not-found'        => 'دسته  <i>$1</i> در نه بوت',
-	'categorytree-error'            => 'مشکل لود دیتا',
-	'categorytree-retry'            => 'یک لحظه ای صبر کنیت و پدا دگه تلاش کن',
+	'categorytree-category'             => 'دسته:',
+	'categorytree-go'                   => 'پیش دار درچکء',
+	'categorytree-parents'              => 'پت و مات آن',
+	'categorytree-mode-categories'      => 'فقط دسته جات',
+	'categorytree-mode-pages'           => 'صفحات بجر عکسان',
+	'categorytree-mode-all'             => 'کل صفحات',
+	'categorytree-collapse'             => 'سقوط',
+	'categorytree-expand'               => 'پچ',
+	'categorytree-load'                 => 'لود',
+	'categorytree-loading'              => 'لودبیت...',
+	'categorytree-nothing-found'        => 'هچی در نه بوت',
+	'categorytree-no-subcategories'     => 'هچ زیر دسته ای',
+	'categorytree-no-parent-categories' => 'دسته جات بی پت و مات',
+	'categorytree-no-pages'             => 'هچ صفحه یا زیر دسته',
+	'categorytree-not-found'            => 'دسته  <i>$1</i> در نه بوت',
+	'categorytree-error'                => 'مشکل لود دیتا',
+	'categorytree-retry'                => 'یک لحظه ای صبر کنیت و پدا دگه تلاش کن',
 );
 
 /** Bikol Central (Bikol Central)
