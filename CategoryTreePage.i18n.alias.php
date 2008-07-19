@@ -116,6 +116,11 @@ $aliases['no'] = array(
 	'CategoryTree' => array( 'Kategoritre' ),
 );
 
+/** Pashto (پښتو) */
+$aliases['ps'] = array(
+	'CategoryTree' => array( 'د وېشنيزو ونه' ),
+);
+
 /** Portuguese (Português) */
 $aliases['pt'] = array(
 	'CategoryTree' => array( 'Árvore de categorias', 'Árvore de categoria' ),
