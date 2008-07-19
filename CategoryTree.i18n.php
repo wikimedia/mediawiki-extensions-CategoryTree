@@ -10,6 +10,59 @@
 
 $messages = array();
 
+/** Message documentation (Message documentation)
+ * @author Александр Сигачёв
+ * @author Jon Harald Søby
+ */
+$messages['qqq'] = array(
+	'categorytree'    => 'Title of Special:CategoryTree',
+	'categorytree-portlet'          => 'Title for the CategoryPortlet, when shown in the side bar',
+	'categorytree-legend'           => 'Legend for the fieldset on Special:CategoryTree, especially for use by screen readers',
+	'categorytree-desc'             => 'Short description of the CategoryTree extension, shown on Special:Version',
+	'categorytree-header'           => 'Header-text shown on Special:CategoryTree',
+
+	'categorytree-category'         => 'Label for the category input field on Special:CategoryTree',
+	'categorytree-go'               => 'Label for the submit button on Special:CategoryTree',
+	'categorytree-parents'          => 'Label for the list of parent categories on Special:CategoryTree',
+
+	'categorytree-mode-categories'  => 'Item for the mode choice on Special:CategoryTree, indicating that only categories are listed',
+	'categorytree-mode-pages'       => 'Item for the mode choice on Special:CategoryTree, indicating that no images are categories are listed',
+	'categorytree-mode-all'         => 'Item for the mode choice on Special:CategoryTree, indicating that all pages are listed',
+
+	'categorytree-collapse'         => 'Tooltip for the "collapse" button',
+	'categorytree-expand'           => 'Tooltip for the "expend" button',
+	'categorytree-collapse-bullet'  => 'Visible form of the "collapse" button (symbolic, do not translate)', # do not translate or duplicate this message to other languages
+	'categorytree-expand-bullet'    => 'Visible form of the "expand" button (symbolic, do not translate)', # do not translate or duplicate this message to other languages
+	'categorytree-empty-bullet'     => 'Visible form of the "expand" button for empty branches (symbolic, do not translate)', # do not translate or duplicate this message to other languages
+	'categorytree-page-bullet'      => 'Visible bullet for non-category items in the tree (symbolic, do not translate)', # do not translate or duplicate this message to other languages
+
+	'categorytree-member-counts'    => 'Tooltip showing a detailed summary of subcategory member counts. Parameters: 
+			$1 = number of subcategories, 
+			$2 = number of pages (without subcategories and images), 
+			$3 = number of images, 
+			$4 = total number of members, 
+			$5 = members to be shown in the tree, depending on mode. 
+			Use with { {PLURAL} }',
+	'categorytree-member-num'    => 'Short summary of subcategory member counts, to be shown inline.
+			Usually numeric, translation should not be neccessary. Parameters: 
+			$1 = number of subcategories, 
+			$2 = number of pages (without subcategories and images), 
+			$3 = number of images, 
+			$4 = total number of members, 
+			$5 = members to be shown in the tree, depending on mode. 
+			Use with { {PLURAL} }', # do not translate or duplicate this message to other languages
+
+	'categorytree-load'             => 'Tooltip for the "expend" button, if the content was not yet loaded',
+	'categorytree-loading'          => 'Status message shown while loading content',
+	'categorytree-nothing-found'    => 'Indicates items with matching criteria have been found',
+	'categorytree-no-subcategories' => 'Indicates that there are no subcategories to be shown',
+	'categorytree-no-parent-categories' => 'Indicates that there are no parent categories to be shown',
+	'categorytree-no-pages'         => 'Indicates that there are no pages or subcategories to be shown',
+	'categorytree-not-found'        => 'Indicates that the given category ($1) was not found',
+	'categorytree-error'            => 'Indicates that an error has occurred while loading the node\'s content',
+	'categorytree-retry'            => 'Instruction to try again later',
+);
+
 /** English
  * @author Daniel Kinzler, brightbyte.de
  */
