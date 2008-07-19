@@ -10,6 +10,47 @@
 
 $messages = array();
 
+/** English
+ * @author Daniel Kinzler, brightbyte.de
+ */
+$messages['en'] = array(
+	'categorytree'                  => 'Category tree',
+	'categorytree-portlet'          => 'Categories',
+	'categorytree-legend'           => 'Show category tree',
+	'categorytree-desc'             => 'Dynamically navigate the [[Special:CategoryTree|category structure]]',
+	'categorytree-header'           => 'Enter a category name to see its contents as a tree structure.
+Note that this requires advanced JavaScript functionality known as AJAX.
+If you have a very old browser, or have JavaScript disabled, it will not work.',
+
+	'categorytree-category'         => 'Category:',
+	'categorytree-go'               => 'Show tree',
+	'categorytree-parents'          => 'Parents',
+
+	'categorytree-mode-categories'  => 'categories only',
+	'categorytree-mode-pages'       => 'pages except images',
+	'categorytree-mode-all'         => 'all pages',
+
+	'categorytree-collapse'         => 'collapse',
+	'categorytree-expand'           => 'expand',
+	'categorytree-collapse-bullet'  => '[<b>−</b>]', # do not translate or duplicate this message to other languages
+	'categorytree-expand-bullet'    => '[<b>+</b>]', # do not translate or duplicate this message to other languages
+	'categorytree-empty-bullet'     => '[<b>×</b>]', # do not translate or duplicate this message to other languages
+	'categorytree-page-bullet'      => '&nbsp;', # do not translate or duplicate this message to other languages
+
+	'categorytree-member-counts'    => 'contains {{PLURAL:$1|1 subcategory|$1 subcategories}}, {{PLURAL:$2|1 page|$2 pages}}, and {{PLURAL:$3|1 file|$3 files}}', # $1=subcategories, $2=subpages, $3=images, $4=total, $5=shown-in-tree
+	'categorytree-member-num'    => '($5)', # do not translate or duplicate this message to other languages
+
+	'categorytree-load'             => 'load',
+	'categorytree-loading'          => 'loading…',
+	'categorytree-nothing-found'    => 'nothing found',
+	'categorytree-no-subcategories' => 'no subcategories',
+	'categorytree-no-parent-categories' => 'no parent categories',
+	'categorytree-no-pages'         => 'no pages or subcategories',
+	'categorytree-not-found'        => 'Category <i>$1</i> not found',
+	'categorytree-error'            => 'Problem loading data.',
+	'categorytree-retry'            => 'Please wait a moment and try again.',
+);
+
 /** Message documentation (Message documentation)
  * @author Александр Сигачёв
  * @author Jon Harald Søby
@@ -61,52 +102,6 @@ $messages['qqq'] = array(
 	'categorytree-not-found'        => 'Indicates that the given category ($1) was not found',
 	'categorytree-error'            => 'Indicates that an error has occurred while loading the node\'s content',
 	'categorytree-retry'            => 'Instruction to try again later',
-);
-
-/** English
- * @author Daniel Kinzler, brightbyte.de
- */
-$messages['en'] = array(
-	'categorytree'                  => 'Category tree',
-	'categorytree-portlet'          => 'Categories',
-#	'categorytree-tab'              => 'Tree',
-	'categorytree-legend'           => 'Show category tree',
-	'categorytree-desc'             => 'Dynamically navigate the [[Special:CategoryTree|category structure]]',
-	'categorytree-header'           => 'Enter a category name to see its contents as a tree structure.
-Note that this requires advanced JavaScript functionality known as AJAX.
-If you have a very old browser, or have JavaScript disabled, it will not work.',
-
-	'categorytree-category'         => 'Category:',
-	'categorytree-go'               => 'Show tree',
-	'categorytree-parents'          => 'Parents',
-
-	'categorytree-mode-categories'  => 'categories only',
-	'categorytree-mode-pages'       => 'pages except images',
-	'categorytree-mode-all'         => 'all pages',
-
-	'categorytree-collapse'         => 'collapse',
-	'categorytree-expand'           => 'expand',
-	'categorytree-collapse-bullet'  => '[<b>−</b>]', # do not translate or duplicate this message to other languages
-	'categorytree-expand-bullet'    => '[<b>+</b>]', # do not translate or duplicate this message to other languages
-	'categorytree-empty-bullet'     => '[<b>×</b>]', # do not translate or duplicate this message to other languages
-	'categorytree-page-bullet'      => '&nbsp;', # do not translate or duplicate this message to other languages
-
-	'categorytree-member-counts'    => 'contains {{PLURAL:$1|1 subcategory|$1 subcategories}}, {{PLURAL:$2|1 page|$2 pages}}, and {{PLURAL:$3|1 file|$3 files}}', # $1=subcategories, $2=subpages, $3=images, $4=total, $5=shown-in-tree
-	'categorytree-member-num'    => '($5)', # do not translate or duplicate this message to other languages
-
-	'categorytree-load'             => 'load',
-	'categorytree-loading'          => 'loading…',
-	'categorytree-nothing-found'    => 'nothing found',
-	'categorytree-no-subcategories' => 'no subcategories',
-	'categorytree-no-parent-categories' => 'no parent categories',
-	'categorytree-no-pages'         => 'no pages or subcategories',
-	'categorytree-not-found'        => 'Category <i>$1</i> not found',
-	'categorytree-error'            => 'Problem loading data.',
-	'categorytree-retry'            => 'Please wait a moment and try again.',
-
-	#'categorytree-show-list'        => 'Show as list', # deprecated
-	#'categorytree-show-tree'        => 'Show as tree', # deprecated
-	#'categorytree-too-many-subcats' => "Cannot show subcategories as a tree, there are too many of them.",
 );
 
 /** Afrikaans (Afrikaans)
@@ -408,29 +403,32 @@ $messages['bg'] = array(
 /** Bengali (বাংলা)
  * @author Zaheen
  * @author Siebrand
+ * @author Bellayet
  */
 $messages['bn'] = array(
-	'categorytree'                  => 'বিষয়শ্রেণীবৃক্ষ',
-	'categorytree-desc'             => 'কোন উইকির [[Special:CategoryTree|বিষয়শ্রেণী কাঠামো]] প্রদর্শনের জন্য এজ্যাক্স-ভিত্তিক গ্যাজেট',
-	'categorytree-header'           => 'যে বিষয়শ্রেণীটির অন্তর্ভুক্ত বিষয়বস্তু বৃক্ষাকারে দেখতে চান, সেটির নাম প্রবেশ করান।
+	'categorytree'                      => 'বিষয়শ্রেণীবৃক্ষ',
+	'categorytree-portlet'              => 'বিষয়শ্রেণী',
+	'categorytree-desc'                 => 'কোন উইকির [[Special:CategoryTree|বিষয়শ্রেণী কাঠামো]] প্রদর্শনের জন্য এজ্যাক্স-ভিত্তিক গ্যাজেট',
+	'categorytree-header'               => 'যে বিষয়শ্রেণীটির অন্তর্ভুক্ত বিষয়বস্তু বৃক্ষাকারে দেখতে চান, সেটির নাম প্রবেশ করান।
 লক্ষ্য করুন এর জন্য এজ্যাক্স নামের একটি অগ্রসর জাভাস্ক্রিপ্ট কৌশল ব্যবহার করা হয়।
 যদি আপনার ব্রাউজারটি খুব পুরনো হয়, বা যদি জাভাস্ক্রিপ্ট নিষ্ক্রিয় করা থাকে, তবে এটি কাজ করবে না।',
-	'categorytree-category'         => 'বিষয়শ্রেণী:',
-	'categorytree-go'               => 'বৃক্ষ দেখানো হোক',
-	'categorytree-parents'          => 'পিতামাতা',
-	'categorytree-mode-categories'  => 'শুধুমাত্র বিষয়শ্রেণী',
-	'categorytree-mode-pages'       => 'ছবি ব্যতীত সব পাতা',
-	'categorytree-mode-all'         => 'সব পাতা',
-	'categorytree-collapse'         => 'গুটিয়ে ফেলা হোক',
-	'categorytree-expand'           => 'প্রসারিত করা হোক',
-	'categorytree-load'             => 'নিয়ে আসা হোক',
-	'categorytree-loading'          => 'নিয়ে আসা হচ্ছে',
-	'categorytree-nothing-found'    => 'কিছু পাওয়া যায়নি',
-	'categorytree-no-subcategories' => 'কোন উপ-বিষয়শ্রেণী নেই',
-	'categorytree-no-pages'         => 'কোন পাতা বা উপ-বিষয়শ্রেণী নেই',
-	'categorytree-not-found'        => '<i>$1</i> বিষয়শ্রেণীটি খুঁজে পাওয়া যায়নি',
-	'categorytree-error'            => 'উপাত্ত নিয়ে আসতে সমস্যা।',
-	'categorytree-retry'            => 'অনুগ্রহ করে একটু অপেক্ষা করে আবার চেষ্টা করুন।',
+	'categorytree-category'             => 'বিষয়শ্রেণী:',
+	'categorytree-go'                   => 'বৃক্ষ দেখানো হোক',
+	'categorytree-parents'              => 'পিতামাতা',
+	'categorytree-mode-categories'      => 'শুধুমাত্র বিষয়শ্রেণী',
+	'categorytree-mode-pages'           => 'ছবি ব্যতীত সব পাতা',
+	'categorytree-mode-all'             => 'সব পাতা',
+	'categorytree-collapse'             => 'গুটিয়ে ফেলা হোক',
+	'categorytree-expand'               => 'প্রসারিত করা হোক',
+	'categorytree-load'                 => 'নিয়ে আসা হোক',
+	'categorytree-loading'              => 'নিয়ে আসা হচ্ছে',
+	'categorytree-nothing-found'        => 'কিছু পাওয়া যায়নি',
+	'categorytree-no-subcategories'     => 'কোন উপ-বিষয়শ্রেণী নেই',
+	'categorytree-no-parent-categories' => 'কোন মূল বিষয়শ্রেণী নাই',
+	'categorytree-no-pages'             => 'কোন পাতা বা উপ-বিষয়শ্রেণী নেই',
+	'categorytree-not-found'            => '<i>$1</i> বিষয়শ্রেণীটি খুঁজে পাওয়া যায়নি',
+	'categorytree-error'                => 'উপাত্ত নিয়ে আসতে সমস্যা।',
+	'categorytree-retry'                => 'অনুগ্রহ করে একটু অপেক্ষা করে আবার চেষ্টা করুন।',
 );
 
 /** Breton (Brezhoneg)
@@ -2277,6 +2275,7 @@ $messages['pms'] = array(
  */
 $messages['ps'] = array(
 	'categorytree'                  => 'د وېشنيزو ونه',
+	'categorytree-portlet'          => 'وېشنيزې',
 	'categorytree-legend'           => 'د وېشنيزې ونه ښکاره کول',
 	'categorytree-category'         => ':وېشنيزه',
 	'categorytree-go'               => 'ونه ښکاره کول',
