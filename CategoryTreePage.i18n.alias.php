@@ -126,6 +126,11 @@ $aliases['pt'] = array(
 	'CategoryTree' => array( 'Árvore de categorias', 'Árvore de categoria' ),
 );
 
+/** Brazilian Portuguese (Português do Brasil) */
+$aliases['pt-br'] = array(
+	'CategoryTree' => array( 'Árvore de categorias', 'Árvore de categoria' ),
+);
+
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
 	'CategoryTree' => array( 'Kategoriträd' ),
