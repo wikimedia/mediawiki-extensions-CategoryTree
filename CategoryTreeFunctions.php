@@ -697,7 +697,8 @@ class CategoryTree {
 			);
 
 			$s .= ' ';
-			$s .= Xml::element( 'span', $attr, wfMsgExt( 'categorytree-member-num', 'parsemag', $cat->getSubcatCount(), $pages , $cat->getFileCount(), $cat->getPageCount(), $count ) );
+			global $wgLang;
+			$s .= Xml::element( 'span', $attr, wfMsgExt( 'categorytree-member-num', 'parsemag', $cat->getSubcatCount(), $pages , $cat->getFileCount(), $cat->getPageCount(), $wgLang->formatNum( $count ) ) );
 		}
 
 		$s .= Xml::closeElement( 'div' );
