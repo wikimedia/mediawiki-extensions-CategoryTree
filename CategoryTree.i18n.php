@@ -976,25 +976,26 @@ Se vos avéd un rudo viely navigator Malyâjo ou que vos éd pas activâ la fonc
  * @author MF-Warburg
  */
 $messages['fur'] = array(
-	'categorytree'                  => 'Arbul des categoriis',
-	'categorytree-portlet'          => 'Categoriis',
-	'categorytree-legend'           => 'Mostre arbul des categoriis',
-	'categorytree-header'           => 'Inserìs il non de categorie di cui tu vuelis viodi i siei contignûts intune struture a arbul.
+	'categorytree'                      => 'Arbul des categoriis',
+	'categorytree-portlet'              => 'Categoriis',
+	'categorytree-legend'               => 'Mostre arbul des categoriis',
+	'categorytree-header'               => 'Inserìs il non de categorie di cui tu vuelis viodi i siei contignûts intune struture a arbul.
 Cheste funzion e à bisugne di funzions avanzadis JavaScript, cognossudis come AJAX.
 Se tu âs un sgarfadôr a vonde vieri, o tu âs disativât JavaScript, cheste pagjine no funzionarà.',
-	'categorytree-category'         => 'Categorie:',
-	'categorytree-go'               => 'Mostre arbul',
-	'categorytree-mode-categories'  => 'mostre dome lis categoriis',
-	'categorytree-mode-pages'       => 'dutis lis pagjinis, fûr che lis figuris',
-	'categorytree-mode-all'         => 'dutis lis pagjinis',
-	'categorytree-collapse'         => 'strenç',
-	'categorytree-expand'           => 'slargje',
-	'categorytree-member-counts'    => 'e à dentri {{PLURAL:$1|1 sotcategorie|$1 sotcategoriis}}, {{PLURAL:$2|1 pagjine|$2 pagjinis}} e {{PLURAL:$3|1 file|$3 files}}',
-	'categorytree-load'             => 'cjame',
-	'categorytree-loading'          => 'daûr a cjamâ',
-	'categorytree-no-subcategories' => 'nissune sot categorie.',
-	'categorytree-no-pages'         => 'nissune pagjine ni sotcategorie',
-	'categorytree-not-found'        => 'Categorie <i>$1</i> no cjatade',
+	'categorytree-category'             => 'Categorie:',
+	'categorytree-go'                   => 'Mostre arbul',
+	'categorytree-mode-categories'      => 'mostre dome lis categoriis',
+	'categorytree-mode-pages'           => 'dutis lis pagjinis, fûr che lis figuris',
+	'categorytree-mode-all'             => 'dutis lis pagjinis',
+	'categorytree-collapse'             => 'strenç',
+	'categorytree-expand'               => 'slargje',
+	'categorytree-member-counts'        => 'e à dentri {{PLURAL:$1|1 sotcategorie|$1 sotcategoriis}}, {{PLURAL:$2|1 pagjine|$2 pagjinis}} e {{PLURAL:$3|1 file|$3 files}}',
+	'categorytree-load'                 => 'cjame',
+	'categorytree-loading'              => 'daûr a cjamâ',
+	'categorytree-no-subcategories'     => 'nissune sot categorie.',
+	'categorytree-no-parent-categories' => 'nissune categorie parsore',
+	'categorytree-no-pages'             => 'nissune pagjine ni sotcategorie',
+	'categorytree-not-found'            => 'Categorie <i>$1</i> no cjatade',
 );
 
 /** Western Frisian (Frysk)
@@ -1081,6 +1082,28 @@ Se ten un navegador moi vello, ou deshabilitado para o JavaScript, non vai funci
 	'categorytree-not-found'            => 'A categoría "<i>$1</i>" non foi atopada',
 	'categorytree-error'                => 'Problema da carga de datos.',
 	'categorytree-retry'                => 'Por favor, agarde un momento e ténteo de novo.',
+);
+
+/** Ancient Greek (Ἀρχαία ἑλληνικὴ)
+ * @author Omnipaedista
+ * @author LeighvsOptimvsMaximvs
+ */
+$messages['grc'] = array(
+	'categorytree'                      => 'Δένδρον κατηγοριῶν',
+	'categorytree-portlet'              => 'Κατηγορίαι',
+	'categorytree-category'             => 'Κατηγορία:',
+	'categorytree-go'                   => 'Ἐμφανίζειν δένδρον',
+	'categorytree-parents'              => 'Γονεῖς',
+	'categorytree-mode-categories'      => 'Κατηγορίαι μόνον',
+	'categorytree-mode-all'             => 'πᾶσαι αἱ δέλτοι',
+	'categorytree-collapse'             => 'συστέλλειν',
+	'categorytree-expand'               => 'διαστέλλειν',
+	'categorytree-load'                 => 'φορτίζειν',
+	'categorytree-nothing-found'        => 'οὐδὲν εὑρεθέν',
+	'categorytree-no-subcategories'     => 'οὐδεμία ὑποκατηγορία',
+	'categorytree-no-parent-categories' => 'οὐδεμία γονεικὴ κατηγορία',
+	'categorytree-not-found'            => 'Κατηγορία <i>$1</i> μὴ εὑρεθεῖσα',
+	'categorytree-error'                => 'Πρόβλημα τοῦ φορτίζειν δεδομένα',
 );
 
 /** Gujarati (ગુજરાતી)
@@ -1442,9 +1465,10 @@ Ef þú notast við gamlan vafra eða hefur slökkt á JavaScript mun þetta ekk
  * @author Gianfranco
  * @author Cruccone
  * @author Darth Kule
+ * @author Nemo bis
  */
 $messages['it'] = array(
-	'categorytree'                      => 'Struttura ad albero delle categorie',
+	'categorytree'                      => 'Albero delle categorie',
 	'categorytree-portlet'              => 'Categorie',
 	'categorytree-legend'               => "Mostra l'albero delle categorie",
 	'categorytree-desc'                 => 'Accessorio AJAX per visualizzare la [[Special:CategoryTree|struttura delle categorie]] del sito',
