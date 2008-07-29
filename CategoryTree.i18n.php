@@ -1735,7 +1735,7 @@ $messages['ksh'] = array(
 	'categorytree'                      => 'Saachjruppe als Boum',
 	'categorytree-portlet'              => 'Saachjruppe',
 	'categorytree-legend'               => 'Zeich de Saachjruppe als ene Boum',
-	'categorytree-desc'                 => 'Jangk dorsch der [[Special:CategoryTree|Saachjruppe-Boum]]',
+	'categorytree-desc'                 => 'Jangk dorsch der [[Special:CategoryTree|Saachjruppe-Boum]].',
 	'categorytree-header'               => "'''Opjepaßß:'''&nbsp;<small>Dat hee brurr_en JavaSkripp_Aadëijl, dä AJAX häijß. Wänn_De enne besöndoß aale Brauser häß, oddo wänn_De JavaSkripp affjeschalldt häß, dann dëijd_et nit.</small> Jivv_enne Saachjroppe_Name enn, dann krėßß_De fun dä Saachjropp dä iere Ennhalld_alls_enne Boum aanjezëijsch.",
 	'categorytree-category'             => 'Saachjrupp:',
 	'categorytree-go'                   => 'dä Boum zeije',
@@ -1841,30 +1841,34 @@ $messages['lfn'] = array(
 /** Limburgish (Limburgs)
  * @author Ooswesthoesbes
  * @author Siebrand
+ * @author Matthias
  */
 $messages['li'] = array(
-	'categorytree'                  => 'Categorieboum',
-	'categorytree-legend'           => 'Categorieboum laote zeen',
-	'categorytree-desc'             => "AJAX-gebaseerde oetbreijing óm de [[Special:CategoryTree|categoriestructuur]] van 'ne wiki te toeane",
-	'categorytree-header'           => "Gaef 'ne categorienaam in om de inhoud es 'ne boumstructuur te bekieke.
+	'categorytree'                      => 'Categorieboum',
+	'categorytree-portlet'              => 'Categorië',
+	'categorytree-legend'               => 'Categorieboum laote zeen',
+	'categorytree-desc'                 => "AJAX-gebaseerde oetbreijing óm de [[Special:CategoryTree|categoriestructuur]] van 'ne wiki te toeane",
+	'categorytree-header'               => "Gaef 'ne categorienaam in om de inhoud es 'ne boumstructuur te bekieke.
 Let op: deze functie gebroek JavaScript-functionaliteit dae bekindj steit es AJAX.
 Esse 'ne erg verajerdje browser höbs of JavaScript steit oet, den werk dees functie neet.",
-	'categorytree-category'         => 'Categorie:',
-	'categorytree-go'               => 'Laje',
-	'categorytree-parents'          => 'Baoveligkendje categorië',
-	'categorytree-mode-categories'  => 'allein categorië',
-	'categorytree-mode-pages'       => 'gein aafbeildinge',
-	'categorytree-mode-all'         => "alle pazjena's",
-	'categorytree-collapse'         => 'instorte',
-	'categorytree-expand'           => 'oetklappe',
-	'categorytree-load'             => 'laje',
-	'categorytree-loading'          => "aan 't laje",
-	'categorytree-nothing-found'    => 'Dees categorie haet gein subcategorië.',
-	'categorytree-no-subcategories' => 'Gein subcategorië.',
-	'categorytree-no-pages'         => "Gein pazjena's of óngercategorië.",
-	'categorytree-not-found'        => "Categorie ''$1'' neet gevónje",
-	'categorytree-error'            => "Perbleem bie 't laje van de gegaeves.",
-	'categorytree-retry'            => "Wach estebleef ef en perbeer 't den opnuuj.",
+	'categorytree-category'             => 'Categorie:',
+	'categorytree-go'                   => 'Laje',
+	'categorytree-parents'              => 'Baoveligkendje categorië',
+	'categorytree-mode-categories'      => 'allein categorië',
+	'categorytree-mode-pages'           => 'gein aafbeildinge',
+	'categorytree-mode-all'             => "alle pazjena's",
+	'categorytree-collapse'             => 'instorte',
+	'categorytree-expand'               => 'oetklappe',
+	'categorytree-member-counts'        => "bevat {{PLURAL:$1|éin ondercategorie|$1 ondercategorië}}, {{PLURAL:$2|éin pagina|$2 pagina's}} en {{PLURAL:$3|éin bestand|$3 bestande}}",
+	'categorytree-load'                 => 'laje',
+	'categorytree-loading'              => "aan 't laje",
+	'categorytree-nothing-found'        => 'Dees categorie haet gein subcategorië.',
+	'categorytree-no-subcategories'     => 'Gein subcategorië.',
+	'categorytree-no-parent-categories' => 'gein baovecategorië',
+	'categorytree-no-pages'             => "Gein pazjena's of óngercategorië.",
+	'categorytree-not-found'            => "Categorie ''$1'' neet gevónje",
+	'categorytree-error'                => "Perbleem bie 't laje van de gegaeves.",
+	'categorytree-retry'                => "Wach estebleef ef en perbeer 't den opnuuj.",
 );
 
 /** Lao (ລາວ)
@@ -2241,6 +2245,13 @@ $messages['os'] = array(
 	'categorytree-nothing-found' => 'Ацы категорийы мидæг дæлкатегоритæ нæ разынд',
 	'categorytree-no-pages'      => 'фæрстæ æмæ дæлкатегоритæ нæй',
 	'categorytree-not-found'     => 'Категори «$1» не ссардæуы.',
+);
+
+/** Punjabi (ਪੰਜਾਬੀ)
+ * @author Gman124
+ */
+$messages['pa'] = array(
+	'categorytree-mode-all' => 'ਸਬ ਪੇਜ਼',
 );
 
 /** Pangasinan (Pangasinan)
