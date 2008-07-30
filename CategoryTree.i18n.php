@@ -490,6 +490,7 @@ $messages['bs'] = array(
  */
 $messages['ca'] = array(
 	'categorytree'                  => 'Categories en arbre',
+	'categorytree-portlet'          => 'Categories',
 	'categorytree-legend'           => "Mostra l'arbre de categories",
 	'categorytree-desc'             => "Gadget fet amb AJAX per a mostrar l'[[Special:CategoryTree|estructura de les categories]] d'un wiki",
 	'categorytree-header'           => "Entreu el nom d'una categoria per a veure l'arbre del seu contingut. Aquesta pàgina utilitza una funcionalitat avançada del JavaScript coneguda com a AJAX, i no funciona en navegadors antics o que tinguin el JavaScript desactivat.",
@@ -2009,7 +2010,7 @@ $messages['mr'] = array(
  * @author Aviator
  */
 $messages['ms'] = array(
-	'categorytree'                      => 'SalasilahKategori',
+	'categorytree'                      => 'Salasilah kategori',
 	'categorytree-portlet'              => 'Kategori',
 	'categorytree-legend'               => 'Papar salasilah kategori',
 	'categorytree-desc'                 => 'Alat berdasarkan AJAX yang memaparkan [[Special:CategoryTree|struktur kategori]] bagi sesebuah wiki',
@@ -2066,25 +2067,27 @@ $messages['nan'] = array(
  * @author Siebrand
  */
 $messages['nds'] = array(
-	'categorytree'                  => 'Kategorie-Boom',
-	'categorytree-legend'           => 'Kategorieboom wiesen',
-	'categorytree-header'           => 'Kategorienaam ingeven, den Inholt as Boomstruktur to sehn. Schasst di bewusst wesen, dat Javascript un de AJAX-Funkschoon dor för bruukt warrt. Wenn dien Nettkieker to oolt is oder du keen Javascript hest, denn warrt dat nix.',
-	'categorytree-category'         => 'Kategorie:',
-	'categorytree-go'               => 'Boom wiesen',
-	'categorytree-parents'          => 'Öllernkategorien',
-	'categorytree-mode-categories'  => 'blot Kategorien',
-	'categorytree-mode-pages'       => 'Sieden ahn Biller',
-	'categorytree-mode-all'         => 'all Sieden',
-	'categorytree-collapse'         => 'nich ganz wiesen',
-	'categorytree-expand'           => 'ganz wiesen',
-	'categorytree-load'             => 'laden',
-	'categorytree-loading'          => 'läädt',
-	'categorytree-nothing-found'    => 'nix funnen',
-	'categorytree-no-subcategories' => 'kene Ünnerkategorien',
-	'categorytree-no-pages'         => 'kene Sieden oder Ünnerkategorien',
-	'categorytree-not-found'        => 'Kategorie <i>$1</i> nich funnen',
-	'categorytree-error'            => 'Problem bi’t Laden vun de Daten',
-	'categorytree-retry'            => 'Tööv en beten un denn versöök dat noch wedder.',
+	'categorytree'                      => 'Kategorie-Boom',
+	'categorytree-portlet'              => 'Kategorien',
+	'categorytree-legend'               => 'Kategorieboom wiesen',
+	'categorytree-header'               => 'Kategorienaam ingeven, den Inholt as Boomstruktur to sehn. Schasst di bewusst wesen, dat Javascript un de AJAX-Funkschoon dor för bruukt warrt. Wenn dien Nettkieker to oolt is oder du keen Javascript hest, denn warrt dat nix.',
+	'categorytree-category'             => 'Kategorie:',
+	'categorytree-go'                   => 'Boom wiesen',
+	'categorytree-parents'              => 'Öllernkategorien',
+	'categorytree-mode-categories'      => 'blot Kategorien',
+	'categorytree-mode-pages'           => 'Sieden ahn Biller',
+	'categorytree-mode-all'             => 'all Sieden',
+	'categorytree-collapse'             => 'nich ganz wiesen',
+	'categorytree-expand'               => 'ganz wiesen',
+	'categorytree-load'                 => 'laden',
+	'categorytree-loading'              => 'läädt',
+	'categorytree-nothing-found'        => 'nix funnen',
+	'categorytree-no-subcategories'     => 'kene Ünnerkategorien',
+	'categorytree-no-parent-categories' => 'Kene Öllernkategorien',
+	'categorytree-no-pages'             => 'kene Sieden oder Ünnerkategorien',
+	'categorytree-not-found'            => 'Kategorie <i>$1</i> nich funnen',
+	'categorytree-error'                => 'Problem bi’t Laden vun de Daten',
+	'categorytree-retry'                => 'Tööv en beten un denn versöök dat noch wedder.',
 );
 
 /** Nepali (नेपाली)
@@ -2251,7 +2254,8 @@ $messages['os'] = array(
  * @author Gman124
  */
 $messages['pa'] = array(
-	'categorytree-mode-all' => 'ਸਬ ਪੇਜ਼',
+	'categorytree-mode-pages' => 'ਤਸਵੀਰਾਂ ਦੇ ਇਲਾਵਾ ਪੇਜ',
+	'categorytree-mode-all'   => 'ਸਬ ਪੇਜ',
 );
 
 /** Pangasinan (Pangasinan)
