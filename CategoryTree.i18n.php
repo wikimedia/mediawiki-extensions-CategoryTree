@@ -345,28 +345,30 @@ $messages['bcl'] = array(
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author Red Winged Duck
  * @author EugeneZelenko
+ * @author Cesco
  */
 $messages['be-tarask'] = array(
-	'categorytree'                  => 'Дрэва катэгорый',
-	'categorytree-portlet'          => 'Катэгорыі',
-	'categorytree-legend'           => 'Паказаць дрэва катэгорый',
-	'categorytree-desc'             => 'Заснаваная на AJAX прылада для паказу [[Special:CategoryTree|структуры катэгорый]] {{GRAMMAR:родны|{{SITENAME}}}}',
-	'categorytree-category'         => 'Катэгорыя:',
-	'categorytree-go'               => 'Паказаць дрэва',
-	'categorytree-parents'          => 'Продкі',
-	'categorytree-mode-categories'  => 'толькі катэгорыі',
-	'categorytree-mode-pages'       => 'старонкі за выключэньнем файлаў',
-	'categorytree-mode-all'         => 'усе старонкі',
-	'categorytree-collapse'         => 'згарнуць',
-	'categorytree-expand'           => 'разгарнуць',
-	'categorytree-load'             => 'загрузіць',
-	'categorytree-loading'          => 'загрузка…',
-	'categorytree-nothing-found'    => 'нічога ня знойдзена',
-	'categorytree-no-subcategories' => 'няма падкатэгорый',
-	'categorytree-no-pages'         => 'няма старонак ці падкатэгорый',
-	'categorytree-not-found'        => 'Катэгорыя <i>$1</i> ня знойдзена',
-	'categorytree-error'            => 'Праблема загрузкі зьвестак.',
-	'categorytree-retry'            => 'Калі ласка, пачакайце і паспрабуйце яшчэ раз.',
+	'categorytree'                      => 'Дрэва катэгорый',
+	'categorytree-portlet'              => 'Катэгорыі',
+	'categorytree-legend'               => 'Паказаць дрэва катэгорый',
+	'categorytree-desc'                 => 'Заснаваная на AJAX прылада для паказу [[Special:CategoryTree|структуры катэгорый]] {{GRAMMAR:родны|{{SITENAME}}}}',
+	'categorytree-category'             => 'Катэгорыя:',
+	'categorytree-go'                   => 'Паказаць дрэва',
+	'categorytree-parents'              => 'Продкі',
+	'categorytree-mode-categories'      => 'толькі катэгорыі',
+	'categorytree-mode-pages'           => 'старонкі за выключэньнем файлаў',
+	'categorytree-mode-all'             => 'усе старонкі',
+	'categorytree-collapse'             => 'згарнуць',
+	'categorytree-expand'               => 'разгарнуць',
+	'categorytree-load'                 => 'загрузіць',
+	'categorytree-loading'              => 'загрузка…',
+	'categorytree-nothing-found'        => 'нічога ня знойдзена',
+	'categorytree-no-subcategories'     => 'няма падкатэгорый',
+	'categorytree-no-parent-categories' => 'няма бацькаўскіх катэгорыяў',
+	'categorytree-no-pages'             => 'няма старонак ці падкатэгорый',
+	'categorytree-not-found'            => 'Катэгорыя <i>$1</i> ня знойдзена',
+	'categorytree-error'                => 'Праблема загрузкі зьвестак.',
+	'categorytree-retry'                => 'Калі ласка, пачакайце і паспрабуйце яшчэ раз.',
 );
 
 /** Bulgarian (Български)
@@ -875,6 +877,7 @@ $messages['fa'] = array(
  * @author Crt
  * @author Nike
  * @author Str4nd
+ * @author Agony
  */
 $messages['fi'] = array(
 	'categorytree'                  => 'Luokkapuu',
@@ -890,6 +893,7 @@ $messages['fi'] = array(
 	'categorytree-mode-all'         => 'kaikki sivut',
 	'categorytree-collapse'         => 'piilota',
 	'categorytree-expand'           => 'näytä',
+	'categorytree-member-counts'    => 'sisältää {{PLURAL:$1|1 alaluokan|$1 alaluokkaa}}, {{PLURAL:$2|1 sivun|$2 sivua}} ja {{PLURAL:$3|1 tiedoston|$3 tiedostoa}}',
 	'categorytree-load'             => 'näytä',
 	'categorytree-loading'          => 'etsitään',
 	'categorytree-nothing-found'    => 'ei alaluokkia',
@@ -2070,6 +2074,7 @@ $messages['nds'] = array(
 	'categorytree'                      => 'Kategorie-Boom',
 	'categorytree-portlet'              => 'Kategorien',
 	'categorytree-legend'               => 'Kategorieboom wiesen',
+	'categorytree-desc'                 => 'Dynaamsche Navigatschoon för de [[Special:CategoryTree|Kategorien-Struktur]]',
 	'categorytree-header'               => 'Kategorienaam ingeven, den Inholt as Boomstruktur to sehn. Schasst di bewusst wesen, dat Javascript un de AJAX-Funkschoon dor för bruukt warrt. Wenn dien Nettkieker to oolt is oder du keen Javascript hest, denn warrt dat nix.',
 	'categorytree-category'             => 'Kategorie:',
 	'categorytree-go'                   => 'Boom wiesen',
@@ -2079,6 +2084,7 @@ $messages['nds'] = array(
 	'categorytree-mode-all'             => 'all Sieden',
 	'categorytree-collapse'             => 'nich ganz wiesen',
 	'categorytree-expand'               => 'ganz wiesen',
+	'categorytree-member-counts'        => 'bargt {{PLURAL:$1|ene Ünnerkategorie|$1 Ünnerkategorien}}, {{PLURAL:$2|ene Sied|$2 Sieden}} un {{PLURAL:$3|ene Datei|$3 Datein}}',
 	'categorytree-load'                 => 'laden',
 	'categorytree-loading'              => 'läädt',
 	'categorytree-nothing-found'        => 'nix funnen',
@@ -2254,6 +2260,7 @@ $messages['os'] = array(
  * @author Gman124
  */
 $messages['pa'] = array(
+	'categorytree-category'   => 'ਸ਼੍ਰੇਣੀ:',
 	'categorytree-mode-pages' => 'ਤਸਵੀਰਾਂ ਦੇ ਇਲਾਵਾ ਪੇਜ',
 	'categorytree-mode-all'   => 'ਸਬ ਪੇਜ',
 );
