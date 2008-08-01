@@ -200,7 +200,7 @@ $messages['ar'] = array(
 	'categorytree-go'                   => 'عرض الشجرة',
 	'categorytree-parents'              => 'مصنف تحت',
 	'categorytree-mode-categories'      => 'تصنيفات فقط',
-	'categorytree-mode-pages'           => 'الصفحات ماعدا الصور',
+	'categorytree-mode-pages'           => 'الصفحات ماعدا الملفات',
 	'categorytree-mode-all'             => 'كل الصفحات',
 	'categorytree-collapse'             => 'ضغط',
 	'categorytree-expand'               => 'فرد',
@@ -639,6 +639,7 @@ $messages['da'] = array(
 /** German (Deutsch)
  * @author Daniel Kinzler, brightbyte.de
  * @author Raimond Spekking
+ * @author Raymond
  */
 $messages['de'] = array(
 	'categorytree'                      => 'Kategorienbaum',
@@ -651,7 +652,7 @@ Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert m�
 	'categorytree-go'                   => 'Laden',
 	'categorytree-parents'              => 'Oberkategorien',
 	'categorytree-mode-categories'      => 'nur Kategorien',
-	'categorytree-mode-pages'           => 'Seiten außer Bilder',
+	'categorytree-mode-pages'           => 'Seiten außer Dateien',
 	'categorytree-mode-all'             => 'alle Seiten',
 	'categorytree-collapse'             => 'einklappen',
 	'categorytree-expand'               => 'ausklappen',
@@ -1820,7 +1821,7 @@ Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da
 	'categorytree-go'                   => 'Struktur weisen',
 	'categorytree-parents'              => 'Uewerkategorien',
 	'categorytree-mode-categories'      => 'nëmme Kategorien',
-	'categorytree-mode-pages'           => 'Säiten ausser Biller',
+	'categorytree-mode-pages'           => 'Säiten ausser Fichieren',
 	'categorytree-mode-all'             => 'all Säiten',
 	'categorytree-collapse'             => 'Verstopp',
 	'categorytree-expand'               => 'Weis',
@@ -2262,7 +2263,7 @@ $messages['os'] = array(
 $messages['pa'] = array(
 	'categorytree-category'   => 'ਸ਼੍ਰੇਣੀ:',
 	'categorytree-mode-pages' => 'ਤਸਵੀਰਾਂ ਦੇ ਇਲਾਵਾ ਪੇਜ',
-	'categorytree-mode-all'   => 'ਸਬ ਪੇਜ',
+	'categorytree-mode-all'   => 'ਸਭ ਪੇਜ',
 );
 
 /** Pangasinan (Pangasinan)
@@ -2323,7 +2324,7 @@ $messages['pl'] = array(
 	'categorytree-retry'                => 'Poczekaj chwilę i spróbuj ponownie – kliknij ten napis.',
 );
 
-/** Piemontèis (Piemontèis)
+/** Piedmontese (Piemontèis)
  * @author Bèrto 'd Sèra
  * @author Siebrand
  */
