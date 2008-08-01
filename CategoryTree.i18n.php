@@ -27,7 +27,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 	'categorytree-parents'          => 'Parents',
 
 	'categorytree-mode-categories'  => 'categories only',
-	'categorytree-mode-pages'       => 'pages except images',
+	'categorytree-mode-pages'       => 'pages except files',
 	'categorytree-mode-all'         => 'all pages',
 
 	'categorytree-collapse'         => 'collapse',
@@ -37,7 +37,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 	'categorytree-empty-bullet'     => '[<b>×</b>]', # do not translate or duplicate this message to other languages
 	'categorytree-page-bullet'      => '&nbsp;', # do not translate or duplicate this message to other languages
 
-	'categorytree-member-counts'    => 'contains {{PLURAL:$1|1 subcategory|$1 subcategories}}, {{PLURAL:$2|1 page|$2 pages}}, and {{PLURAL:$3|1 file|$3 files}}', # $1=subcategories, $2=subpages, $3=images, $4=total, $5=shown-in-tree
+	'categorytree-member-counts'    => 'contains {{PLURAL:$1|1 subcategory|$1 subcategories}}, {{PLURAL:$2|1 page|$2 pages}}, and {{PLURAL:$3|1 file|$3 files}}', # $1=subcategories, $2=subpages, $3=files, $4=total, $5=shown-in-tree
 	'categorytree-member-num'    => '($5)', # do not translate or duplicate this message to other languages
 
 	'categorytree-load'             => 'load',
@@ -67,7 +67,7 @@ $messages['qqq'] = array(
 	'categorytree-parents'          => 'Label for the list of parent categories on Special:CategoryTree',
 
 	'categorytree-mode-categories'  => 'Item for the mode choice on Special:CategoryTree, indicating that only categories are listed',
-	'categorytree-mode-pages'       => 'Item for the mode choice on Special:CategoryTree, indicating that no images are categories are listed',
+	'categorytree-mode-pages'       => 'Item for the mode choice on Special:CategoryTree, indicating that no files are categories are listed',
 	'categorytree-mode-all'         => 'Item for the mode choice on Special:CategoryTree, indicating that all pages are listed',
 
 	'categorytree-collapse'         => 'Tooltip for the "collapse" button',
@@ -79,16 +79,16 @@ $messages['qqq'] = array(
 
 	'categorytree-member-counts'    => 'Tooltip showing a detailed summary of subcategory member counts. Parameters: 
 			$1 = number of subcategories, 
-			$2 = number of pages (without subcategories and images), 
-			$3 = number of images, 
+			$2 = number of pages (without subcategories and files), 
+			$3 = number of files, 
 			$4 = total number of members, 
 			$5 = members to be shown in the tree, depending on mode. 
 			Use with { {PLURAL} }',
 	'categorytree-member-num'    => 'Short summary of subcategory member counts, to be shown inline.
 			Usually numeric, translation should not be neccessary. Parameters: 
 			$1 = number of subcategories, 
-			$2 = number of pages (without subcategories and images), 
-			$3 = number of images, 
+			$2 = number of pages (without subcategories and files), 
+			$3 = number of files, 
 			$4 = total number of members, 
 			$5 = members to be shown in the tree, depending on mode. 
 			Use with { {PLURAL} }', # do not translate or duplicate this message to other languages
