@@ -1165,7 +1165,9 @@ $messages['haw'] = array(
 	'categorytree-loading'  => 'ke ho‘ouka nei…',
 );
 
-/** Hebrew (עברית) */
+/** Hebrew (עברית)
+ * @author Rotem Liss
+ */
 $messages['he'] = array(
 	'categorytree'                      => 'עץ קטגוריות',
 	'categorytree-portlet'              => 'קטגוריות',
@@ -1176,7 +1178,7 @@ $messages['he'] = array(
 	'categorytree-go'                   => 'הצגת העץ',
 	'categorytree-parents'              => 'הורים',
 	'categorytree-mode-categories'      => 'קטגוריות בלבד',
-	'categorytree-mode-pages'           => 'דפים שאינם תמונות',
+	'categorytree-mode-pages'           => 'דפים שאינם קבצים',
 	'categorytree-mode-all'             => 'כל הדפים',
 	'categorytree-collapse'             => 'כיווץ',
 	'categorytree-expand'               => 'הרחבה',
