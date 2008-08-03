@@ -19,12 +19,12 @@ $aliases['en'] = array(
 
 /** Arabic (العربية) */
 $aliases['ar'] = array(
-	'CategoryTree' => array( 'شجرة تصنيف' ),
+	'CategoryTree' => array( 'شجرة_تصنيف' ),
 );
 
 /** Egyptian Spoken Arabic (مصرى) */
 $aliases['arz'] = array(
-	'CategoryTree' => array( 'شجرة تصنيف' ),
+	'CategoryTree' => array( 'شجرة_تصنيف' ),
 );
 
 /** Bikol Central (Bikol Central) */
@@ -134,6 +134,11 @@ $aliases['pt-br'] = array(
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
 	'CategoryTree' => array( 'Kategoriträd' ),
+);
+
+/** Vèneto (Vèneto) */
+$aliases['vec'] = array(
+	'CategoryTree' => array( 'ÀlbaroCategorie' ),
 );
 
 /** Yiddish (ייִדיש) */
