@@ -241,33 +241,34 @@ $messages['as'] = array(
 );
 
 /** Asturian (Asturianu)
- * @author SPQRobin
- * @author Siebrand
  * @author Esbardu
  */
 $messages['ast'] = array(
-	'categorytree'                  => 'Árbole de categoríes',
-	'categorytree-legend'           => "Amosar l'árbole de categoríes",
-	'categorytree-desc'             => "Accesoriu basáu n'AJAX qu'amuesa la [[Special:CategoryTree|estructura de categoríes]] d'una wiki",
-	'categorytree-header'           => "Escribi un nome de categoría pa ver el so conteníu estructuráu en forma
+	'categorytree'                      => 'Árbole de categoríes',
+	'categorytree-portlet'              => 'Categoríes',
+	'categorytree-legend'               => "Amosar l'árbole de categoríes",
+	'categorytree-desc'                 => "Accesoriu basáu n'AJAX qu'amuesa la [[Special:CategoryTree|estructura de categoríes]] d'una wiki",
+	'categorytree-header'               => "Escribi un nome de categoría pa ver el so conteníu estructuráu en forma
 d'árbole. Fíxate en qu'esto requier la erbía AJAX de JavaScript. Si tienes
 un navegador mui antiguu o'l JavaScript desactiváu, nun va funcionar.",
-	'categorytree-category'         => 'Categoría:',
-	'categorytree-go'               => 'Amosar árbole',
-	'categorytree-parents'          => 'Categoríes superiores',
-	'categorytree-mode-categories'  => 'categoríes namái',
-	'categorytree-mode-pages'       => 'páxines sacante les imáxenes',
-	'categorytree-mode-all'         => 'toles páxines',
-	'categorytree-collapse'         => 'esconder',
-	'categorytree-expand'           => 'espandir',
-	'categorytree-load'             => 'cargar',
-	'categorytree-loading'          => 'cargando',
-	'categorytree-nothing-found'    => "nun s'atopó nada",
-	'categorytree-no-subcategories' => 'nun hai subcategoríes',
-	'categorytree-no-pages'         => 'ensin páxines nin subcategoríes',
-	'categorytree-not-found'        => "Nun s'atopó la categoría <i>$1</i>",
-	'categorytree-error'            => 'Hebo un problema al cargar los datos.',
-	'categorytree-retry'            => 'Por favor, espera unos momentos y inténtalo otra vuelta.',
+	'categorytree-category'             => 'Categoría:',
+	'categorytree-go'                   => 'Amosar árbole',
+	'categorytree-parents'              => 'Categoríes superiores',
+	'categorytree-mode-categories'      => 'categoríes namái',
+	'categorytree-mode-pages'           => 'páxines sacante los archivos',
+	'categorytree-mode-all'             => 'toles páxines',
+	'categorytree-collapse'             => 'esconder',
+	'categorytree-expand'               => 'espandir',
+	'categorytree-member-counts'        => 'contién {{PLURAL:$1|1 subcategoría|$1 subcategoríes}}, {{PLURAL:$2|1 páxina|$2 páxines}} y {{PLURAL:$3|1 archivu|$3 archivos}}',
+	'categorytree-load'                 => 'cargar',
+	'categorytree-loading'              => 'cargando',
+	'categorytree-nothing-found'        => "nun s'atopó nada",
+	'categorytree-no-subcategories'     => 'nun hai subcategoríes',
+	'categorytree-no-parent-categories' => 'nun hai categoríes padre',
+	'categorytree-no-pages'             => 'ensin páxines nin subcategoríes',
+	'categorytree-not-found'            => "Nun s'atopó la categoría <i>$1</i>",
+	'categorytree-error'                => 'Hebo un problema al cargar los datos.',
+	'categorytree-retry'                => 'Por favor, espera unos momentos y inténtalo otra vuelta.',
 );
 
 /** Kotava (Kotava)
@@ -312,7 +313,7 @@ $messages['bcc'] = array(
 	'categorytree-go'                   => 'پیش دار درچکء',
 	'categorytree-parents'              => 'پت و مات آن',
 	'categorytree-mode-categories'      => 'فقط دسته جات',
-	'categorytree-mode-pages'           => 'صفحات بجر عکسان',
+	'categorytree-mode-pages'           => 'صفحات بجر فایلان',
 	'categorytree-mode-all'             => 'کل صفحات',
 	'categorytree-collapse'             => 'سقوط',
 	'categorytree-expand'               => 'پچ',
@@ -404,7 +405,6 @@ $messages['bg'] = array(
 
 /** Bengali (বাংলা)
  * @author Zaheen
- * @author Siebrand
  * @author Bellayet
  */
 $messages['bn'] = array(
@@ -419,7 +419,7 @@ $messages['bn'] = array(
 	'categorytree-go'                   => 'বৃক্ষ দেখানো হোক',
 	'categorytree-parents'              => 'পিতামাতা',
 	'categorytree-mode-categories'      => 'শুধুমাত্র বিষয়শ্রেণী',
-	'categorytree-mode-pages'           => 'ছবি ব্যতীত সব পাতা',
+	'categorytree-mode-pages'           => 'ফাইল ব্যতীত পাতাসমূহ',
 	'categorytree-mode-all'             => 'সব পাতা',
 	'categorytree-collapse'             => 'গুটিয়ে ফেলা হোক',
 	'categorytree-expand'               => 'প্রসারিত করা হোক',
@@ -529,6 +529,14 @@ $messages['cdo'] = array(
 	'categorytree-no-subcategories' => 'mò̤ cṳ̄-lôi-biék',
 	'categorytree-no-pages'         => 'mò̤ hiĕk-miêng hĕ̤k cṳ̄-lôi-biék',
 	'categorytree-not-found'        => 'Mò̤ tō̤ diŏh lôi-biék <i>$1</i>',
+);
+
+/** Cebuano (Cebuano)
+ * @author Abastillas
+ */
+$messages['ceb'] = array(
+	'categorytree-portlet'  => 'Mga kategoriya',
+	'categorytree-category' => 'Kategoriya:',
 );
 
 /** Corsican (Corsu)
@@ -881,28 +889,29 @@ $messages['fa'] = array(
  * @author Agony
  */
 $messages['fi'] = array(
-	'categorytree'                  => 'Luokkapuu',
-	'categorytree-portlet'          => 'Luokat',
-	'categorytree-legend'           => 'Näytä luokkapuu',
-	'categorytree-desc'             => 'AJAX-pohjainen laajennus, joka näyttää wikin [[Special:CategoryTree|luokkapuurakenteen]].',
-	'categorytree-header'           => 'Syötä alle luokka, jonka haluat nähdä puumuodossa. Tämä toiminnallisuus vaatii kehittyneen JavaScript tuen, jota kutsutaan AJAXiksi. Jos sinulla on vanha selain, tai JavaScript ei ole päällä, tämä ominaisuus ei toimi.',
-	'categorytree-category'         => 'Luokka',
-	'categorytree-go'               => 'Näytä puu',
-	'categorytree-parents'          => 'Yläluokat',
-	'categorytree-mode-categories'  => 'vain luokat',
-	'categorytree-mode-pages'       => 'kaikki sivut kuvia lukuun ottamatta',
-	'categorytree-mode-all'         => 'kaikki sivut',
-	'categorytree-collapse'         => 'piilota',
-	'categorytree-expand'           => 'näytä',
-	'categorytree-member-counts'    => 'sisältää {{PLURAL:$1|1 alaluokan|$1 alaluokkaa}}, {{PLURAL:$2|1 sivun|$2 sivua}} ja {{PLURAL:$3|1 tiedoston|$3 tiedostoa}}',
-	'categorytree-load'             => 'näytä',
-	'categorytree-loading'          => 'etsitään',
-	'categorytree-nothing-found'    => 'ei alaluokkia',
-	'categorytree-no-subcategories' => 'ei alaluokkia',
-	'categorytree-no-pages'         => 'ei sivuja eikä alaluokkia',
-	'categorytree-not-found'        => 'Luokkaa <i>$1</i> ei löytynyt',
-	'categorytree-error'            => 'Ongelma tietojen latauksessa.',
-	'categorytree-retry'            => 'Odota hetki ja yritä uudelleen.',
+	'categorytree'                      => 'Luokkapuu',
+	'categorytree-portlet'              => 'Luokat',
+	'categorytree-legend'               => 'Näytä luokkapuu',
+	'categorytree-desc'                 => 'AJAX-pohjainen laajennus, joka näyttää wikin [[Special:CategoryTree|luokkapuurakenteen]].',
+	'categorytree-header'               => 'Syötä alle luokka, jonka haluat nähdä puumuodossa. Tämä toiminnallisuus vaatii kehittyneen JavaScript tuen, jota kutsutaan AJAXiksi. Jos sinulla on vanha selain, tai JavaScript ei ole päällä, tämä ominaisuus ei toimi.',
+	'categorytree-category'             => 'Luokka',
+	'categorytree-go'                   => 'Näytä puu',
+	'categorytree-parents'              => 'Yläluokat',
+	'categorytree-mode-categories'      => 'vain luokat',
+	'categorytree-mode-pages'           => 'kaikki sivut kuvia lukuun ottamatta',
+	'categorytree-mode-all'             => 'kaikki sivut',
+	'categorytree-collapse'             => 'piilota',
+	'categorytree-expand'               => 'näytä',
+	'categorytree-member-counts'        => 'sisältää {{PLURAL:$1|1 alaluokan|$1 alaluokkaa}}, {{PLURAL:$2|1 sivun|$2 sivua}} ja {{PLURAL:$3|1 tiedoston|$3 tiedostoa}}',
+	'categorytree-load'                 => 'näytä',
+	'categorytree-loading'              => 'etsitään',
+	'categorytree-nothing-found'        => 'ei alaluokkia',
+	'categorytree-no-subcategories'     => 'ei alaluokkia',
+	'categorytree-no-parent-categories' => 'ei yläluokkia',
+	'categorytree-no-pages'             => 'ei sivuja eikä alaluokkia',
+	'categorytree-not-found'            => 'Luokkaa <i>$1</i> ei löytynyt',
+	'categorytree-error'                => 'Ongelma tietojen latauksessa.',
+	'categorytree-retry'                => 'Odota hetki ja yritä uudelleen.',
 );
 
 /** Faroese (Føroyskt)
@@ -1807,7 +1816,6 @@ $messages['lad'] = array(
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  * @author Kaffi
- * @author Siebrand
  */
 $messages['lb'] = array(
 	'categorytree'                      => 'Struktur vun de Kategorien',
@@ -2737,7 +2745,6 @@ Lamun Anjeun ngagunakeun panyungsi nu lila, atawa maehan fungsi Javascript Anjeu
  * @author Lejonel
  * @author Jon Harald Søby
  * @author M.M.S.
- * @author Siebrand
  * @author Boivie
  */
 $messages['sv'] = array(
@@ -2752,7 +2759,7 @@ Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript
 	'categorytree-go'                   => 'Visa träd',
 	'categorytree-parents'              => 'Föräldrakategorier',
 	'categorytree-mode-categories'      => 'visa bara kategorier',
-	'categorytree-mode-pages'           => 'sidor utom bilder',
+	'categorytree-mode-pages'           => 'sidor utom filer',
 	'categorytree-mode-all'             => 'alla sidor',
 	'categorytree-collapse'             => 'göm',
 	'categorytree-expand'               => 'expandera',
@@ -2983,7 +2990,7 @@ $messages['vec'] = array(
 	'categorytree-go'                   => "Mostra l'àlbaro",
 	'categorytree-parents'              => 'Categorie superiori',
 	'categorytree-mode-categories'      => 'mostra solo le categorie',
-	'categorytree-mode-pages'           => 'tute le pagine, via de le imagini',
+	'categorytree-mode-pages'           => 'tute le pagine, via de i file',
 	'categorytree-mode-all'             => 'tute le pagine',
 	'categorytree-collapse'             => 'conprimi',
 	'categorytree-expand'               => 'espandi',
