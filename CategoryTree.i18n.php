@@ -137,21 +137,22 @@ $messages['af'] = array(
 
 /** Amharic (አማርኛ)
  * @author Codex Sinaiticus
- * @author Siebrand
  */
 $messages['am'] = array(
-	'categorytree'           => 'የመደቦች ዛፍ',
-	'categorytree-legend'    => 'የመደቦች ዛፍ ለማየት',
-	'categorytree-header'    => "[+] ተጭነው ንዑሱ-መደብ ይዘረጋል፣ [-] ተጭነው ደግሞ ይመልሳል። 
+	'categorytree'                  => 'የመደቦች ዛፍ',
+	'categorytree-legend'           => 'የመደቦች ዛፍ ለማየት',
+	'categorytree-header'           => "[+] ተጭነው ንዑሱ-መደብ ይዘረጋል፣ [-] ተጭነው ደግሞ ይመልሳል። 
 
 በግራ በኩል ባለው ሳጥን ውስጥ የመደቡን ስም ዝም ብለው መጻፍ ይችላሉ። (የዚሁ ዊኪ መደብ ስሞች ለመመልከት፣ [[Special:Mostlinkedcategories|እዚህ ይጫኑ]]።) ከዚያ፥ ምን ያሕል ንዑስ-መደቦች እንዳሉበት ለማየት «ዛፉ ይታይ» የሚለውን ይጫኑ። በቀኝ በኩል ካለው ሳጥን 'all pages' ከመረጡ፥ በየመደቡ ውስጥ ያሉት መጣጥፎች በተጨማሪ ይታያሉ።
 
 ''(ማስታወሻ: ይህ በኮምፒውተርዎ እንዲሠራ 'ጃቫ' የሚችል ዌብ-ብራውዘር ያስፈልጋል።)''",
-	'categorytree-category'  => 'የመደብ ስም፦',
-	'categorytree-go'        => 'ዛፉ ይታይ',
-	'categorytree-parents'   => 'ላዕላይ መደቦች',
-	'categorytree-loading'   => 'ሊመጣ ነው',
-	'categorytree-not-found' => '«$1» የተባለ መደብ የለም።',
+	'categorytree-category'         => 'የመደብ ስም፦',
+	'categorytree-go'               => 'ዛፉ ይታይ',
+	'categorytree-parents'          => 'ላዕላይ መደቦች',
+	'categorytree-loading'          => 'ሊመጣ ነው',
+	'categorytree-nothing-found'    => 'የለም',
+	'categorytree-no-subcategories' => 'ንዑስ መደብ የለም',
+	'categorytree-not-found'        => '«$1» የተባለ መደብ የለም።',
 );
 
 /** Aragonese (Aragonés)
@@ -214,6 +215,34 @@ $messages['ar'] = array(
 	'categorytree-not-found'            => 'التصنيف <i>$1</i> لم يتم العثور عليه',
 	'categorytree-error'                => 'مشكلة في تحميل البيانات.',
 	'categorytree-retry'                => 'من فضلك انتظر لحظة وحاول مرة أخرى.',
+);
+
+/** Egyptian Spoken Arabic (مصرى)
+ * @author Ramsis1978
+ * @author Ghaly
+ */
+$messages['arz'] = array(
+	'categorytree'                      => 'شجرة تصنيف',
+	'categorytree-portlet'              => 'تصنيفات',
+	'categorytree-legend'               => 'عرض شجرة التصنيف',
+	'categorytree-category'             => 'تصنيف:',
+	'categorytree-go'                   => 'عرض الشجره',
+	'categorytree-parents'              => 'متصنف تحت',
+	'categorytree-mode-categories'      => 'تصانيف بس',
+	'categorytree-mode-pages'           => 'الصفحات من غير الملفات',
+	'categorytree-mode-all'             => 'كل الصفحات',
+	'categorytree-collapse'             => 'اضغط',
+	'categorytree-expand'               => 'اتوسع',
+	'categorytree-member-counts'        => 'فيه {{PLURAL:$1|1 تصنيف فرعي|$1 تصنيف فرعي}}، {{PLURAL:$2|1 صفحة|$2 صفحة}}، و {{PLURAL:$3|1 ملف|$3 ملف}}',
+	'categorytree-load'                 => 'تحميل',
+	'categorytree-loading'              => 'بيحمل',
+	'categorytree-nothing-found'        => 'مالقيناش حاجة',
+	'categorytree-no-subcategories'     => 'مافيش تصنيفات فرعية',
+	'categorytree-no-parent-categories' => 'مافيش تصانيف أصلية',
+	'categorytree-no-pages'             => 'مافيش ولا في صفحات ولا تصانيف فرعية',
+	'categorytree-not-found'            => 'التصنيف <i>$1</i> مش متلاقي',
+	'categorytree-error'                => 'مشكلة في تحميل البيانات.',
+	'categorytree-retry'                => 'لو سمحت تستنا لحظة و بعدين حاول تاني',
 );
 
 /** Assamese (অসমীয়া)
@@ -2052,6 +2081,13 @@ Sekiranya anda menggunakan pelayar web yang lama, atau mematikan JavaScript, cir
 	'categorytree-retry'                => 'Sila tunggu sebentar dan cuba lagi.',
 );
 
+/** Maltese (Malti)
+ * @author Roderick Mallia
+ */
+$messages['mt'] = array(
+	'categorytree' => 'Siġra tal-kategoriji',
+);
+
 /** Erzya (Эрзянь)
  * @author Amdf
  * @author Siebrand
@@ -2318,7 +2354,7 @@ $messages['pl'] = array(
 	'categorytree-go'                   => 'Ładuj kategorię',
 	'categorytree-parents'              => 'Kategorie główne',
 	'categorytree-mode-categories'      => 'tylko kategorie',
-	'categorytree-mode-pages'           => 'strony oprócz grafik',
+	'categorytree-mode-pages'           => 'strony oprócz plików',
 	'categorytree-mode-all'             => 'wszystkie strony',
 	'categorytree-collapse'             => 'zwiń',
 	'categorytree-expand'               => 'rozwiń',
