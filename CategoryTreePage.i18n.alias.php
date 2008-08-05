@@ -102,7 +102,7 @@ $aliases['lb'] = array(
 
 /** Malay (Bahasa Melayu) */
 $aliases['ms'] = array(
-	'CategoryTree' => array( 'Salasilah_kategori', 'Kategori_asal' ),
+	'CategoryTree' => array( 'Salasilah_kategori' ),
 );
 
 /** Maltese (Malti) */
