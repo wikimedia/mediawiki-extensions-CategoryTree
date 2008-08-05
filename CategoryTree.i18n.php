@@ -1480,10 +1480,10 @@ $messages['io'] = array(
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
  * @author Spacebirdy
- * @author Siebrand
  */
 $messages['is'] = array(
 	'categorytree'                  => 'Flokkatré',
+	'categorytree-portlet'          => 'Flokkar',
 	'categorytree-legend'           => 'Sýna flokkatré',
 	'categorytree-header'           => 'Sláðu inn heiti flokks til að sjá innihald hans sem tré.
 Hafðu í huga að þetta krefst þróaðra virkni JavaScript sem nefnist AJAX.
