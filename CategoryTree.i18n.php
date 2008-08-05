@@ -615,6 +615,7 @@ $messages['cs'] = array(
  * @author ОйЛ
  */
 $messages['cu'] = array(
+	'categorytree-portlet'  => 'катигорі́ѩ',
 	'categorytree-category' => 'катигорі́ꙗ :',
 	'categorytree-mode-all' => 'вьсѩ́ страни́цѧ',
 );
@@ -764,15 +765,15 @@ $messages['ee'] = array(
  * @author Consta
  * @author ZaDiak
  * @author Badseed
- * @author Siebrand
  */
 $messages['el'] = array(
+	'categorytree-portlet'          => 'Κατηγορίες',
 	'categorytree-category'         => 'Κατηγορία:',
 	'categorytree-parents'          => 'Γονείς',
 	'categorytree-mode-categories'  => 'μόνο κατηγορίες',
 	'categorytree-mode-all'         => 'όλες οι σελίδες',
 	'categorytree-expand'           => 'επέκτεινε',
-	'categorytree-load'             => 'φόρτωσε',
+	'categorytree-load'             => 'φορτώστε',
 	'categorytree-loading'          => 'φόρτωση',
 	'categorytree-no-subcategories' => 'καμία υποκατηγορία',
 	'categorytree-no-pages'         => 'καμία σελίδα ή υποκατηγορία',
@@ -1408,7 +1409,7 @@ Si tu ha un navigator multo vetule, o ha disactivate JavaScript, isto non functi
 	'categorytree-go'                   => 'Monstrar arbore',
 	'categorytree-parents'              => 'Categorias superior',
 	'categorytree-mode-categories'      => 'categorias solmente',
-	'categorytree-mode-pages'           => 'paginas excepte imagines',
+	'categorytree-mode-pages'           => 'paginas excepte files',
 	'categorytree-mode-all'             => 'tote le paginas',
 	'categorytree-collapse'             => 'collaber',
 	'categorytree-expand'               => 'expander',
@@ -1970,9 +1971,11 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
 
 /** Latvian (Latviešu)
  * @author Yyy
+ * @author Xil
  */
 $messages['lv'] = array(
 	'categorytree'                  => 'KategorijuKoks',
+	'categorytree-portlet'          => 'Kategorijas',
 	'categorytree-legend'           => 'Rādīt kategoriju koku',
 	'categorytree-desc'             => "AJAX bāzēts ''gadget'', kuru lieto lai attēlotu wiki [[Special:CategoryTree|kategoriju struktūru]]",
 	'categorytree-header'           => 'Ievadi kategorijas nosaukumu lai apskatītos tās saturu kā koka struktūru. 
