@@ -157,7 +157,6 @@ $messages['am'] = array(
 
 /** Aragonese (Aragonés)
  * @author Juanpabl
- * @author Siebrand
  */
 $messages['an'] = array(
 	'categorytree'                      => 'Árbol de categorías',
@@ -169,7 +168,7 @@ $messages['an'] = array(
 	'categorytree-go'                   => "Amostrar l'Árbol",
 	'categorytree-parents'              => 'Categorías mais',
 	'categorytree-mode-categories'      => 'amostrar nomás categorías',
-	'categorytree-mode-pages'           => 'pachinas pero no imachens',
+	'categorytree-mode-pages'           => 'pachinas pero no archibos',
 	'categorytree-mode-all'             => 'todas as pachinas',
 	'categorytree-collapse'             => 'amagar',
 	'categorytree-expand'               => 'amostrar',
