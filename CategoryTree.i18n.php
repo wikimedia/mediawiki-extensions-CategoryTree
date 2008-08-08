@@ -137,9 +137,11 @@ $messages['af'] = array(
 
 /** Amharic (አማርኛ)
  * @author Codex Sinaiticus
+ * @author Elfalem
  */
 $messages['am'] = array(
 	'categorytree'                  => 'የመደቦች ዛፍ',
+	'categorytree-portlet'          => 'መደቦች',
 	'categorytree-legend'           => 'የመደቦች ዛፍ ለማየት',
 	'categorytree-header'           => "[+] ተጭነው ንዑሱ-መደብ ይዘረጋል፣ [-] ተጭነው ደግሞ ይመልሳል። 
 
@@ -149,10 +151,14 @@ $messages['am'] = array(
 	'categorytree-category'         => 'የመደብ ስም፦',
 	'categorytree-go'               => 'ዛፉ ይታይ',
 	'categorytree-parents'          => 'ላዕላይ መደቦች',
+	'categorytree-mode-categories'  => 'መደቦች ብቻ',
+	'categorytree-mode-all'         => 'ሁሉም ገጾች',
 	'categorytree-loading'          => 'ሊመጣ ነው',
 	'categorytree-nothing-found'    => 'የለም',
 	'categorytree-no-subcategories' => 'ንዑስ መደብ የለም',
+	'categorytree-no-pages'         => 'ምንም ገጾችና ንዑስ-መደቦች የሉም',
 	'categorytree-not-found'        => '«$1» የተባለ መደብ የለም።',
+	'categorytree-retry'            => 'ትንሽ ቆይተው እንደገና ይሞክሩ',
 );
 
 /** Aragonese (Aragonés)
@@ -580,7 +586,7 @@ $messages['co'] = array(
 /** Czech (Česky)
  * @author Danny B.
  * @author Li-sung
- * @author Siebrand
+ * @author Mormegil
  */
 $messages['cs'] = array(
 	'categorytree'                      => 'Strom kategorií',
@@ -800,8 +806,8 @@ $messages['eo'] = array(
 	'categorytree-collapse'             => 'kunfaldu',
 	'categorytree-expand'               => 'etendu',
 	'categorytree-member-counts'        => 'enhavas {{PLURAL:$1|1 subkategorion|$1 subkategoriojn}}, {{PLURAL:$2|1 paĝon|$2 paĝojn}}, kaj {{PLURAL:$3|1 dosieron|$3 dosierojn}}',
-	'categorytree-load'                 => 'alŝuti',
-	'categorytree-loading'              => 'ŝarĝante',
+	'categorytree-load'                 => 'elŝuti',
+	'categorytree-loading'              => 'elŝutante...',
 	'categorytree-nothing-found'        => 'nenio trovita',
 	'categorytree-no-subcategories'     => 'neniu subkategorio',
 	'categorytree-no-parent-categories' => 'neniuj superaj kategorioj',
