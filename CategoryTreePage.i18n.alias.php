@@ -36,6 +36,11 @@ $aliases['bcl'] = array(
 	'CategoryTree' => array( 'KahoyNinKategorya' ),
 );
 
+/** Danish (Dansk) */
+$aliases['da'] = array(
+	'CategoryTree' => array( 'Kategoritræ' ),
+);
+
 /** German (Deutsch)
  * @author Daniel Kinzler, brightbyte.de
  */
