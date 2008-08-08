@@ -115,6 +115,11 @@ $aliases['mt'] = array(
 	'CategoryTree' => array( 'SiġraKategorika' ),
 );
 
+/** Low German (Plattdüütsch) */
+$aliases['nds'] = array(
+	'CategoryTree' => array( 'Kategorieboom' ),
+);
+
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'CategoryTree' => array( 'Categorieboom' ),
