@@ -351,7 +351,7 @@ function efCategoryTreeParserHook( $cat, $argv, $parser = NULL, $allowMissing = 
 * Hook callback that injects messages and things into the <head> tag
 * Does nothing if $parserOutput->mCategoryTreeTag is not set
 */
-function efCategoryTreeParserOutput( &$outputPage, &$parserOutput )  {
+function efCategoryTreeParserOutput( &$outputPage, $parserOutput )  {
 	if ( !empty( $parserOutput->mCategoryTreeTag ) ) {
 		CategoryTree::setHeaders( $outputPage );
 	}
