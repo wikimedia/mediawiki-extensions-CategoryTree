@@ -52,8 +52,9 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 );
 
 /** Message documentation (Message documentation)
+ * @author Jon Harald Søby
  * @author Meno25
- * @author Raymond
+ * @author Raimond Spekking
  * @author Александр Сигачёв
  */
 $messages['qqq'] = array(
@@ -883,6 +884,7 @@ $messages['ext'] = array(
  */
 $messages['fa'] = array(
 	'categorytree' => 'درخت رده',
+	'categorytree-portlet' => 'رده‌ها',
 	'categorytree-legend' => 'نمایش درخت رده',
 	'categorytree-desc' => 'ابزار مبتنی بر AJAX برای نمایش [[Special:CategoryTree|ساختار رده‌های]] یک ویکی',
 	'categorytree-header' => 'نام یک رده را وارد کنید تا محتویات آن به صورت درخت نمایش یابد. توجه کنید که این کار نیاز به قابلیت‌های پیشرفتهٔ جاوااسکریپت موسوم به آژاکس دارد. اگر از مرورگری خیلی قدیمی استفاده می‌کنید یا جاوااسکریپت را غیرفعال کرده‌اید، کار نمی‌کند.',
@@ -894,10 +896,12 @@ $messages['fa'] = array(
 	'categorytree-mode-all' => 'همهٔ صفحه‌ها',
 	'categorytree-collapse' => 'مچالش',
 	'categorytree-expand' => 'گسترش',
+	'categorytree-member-counts' => 'شامل {{PLURAL:$1|یک زیررده|$1 زیررده}}، {{PLURAL:$2|یک صفحه|$2 صفحه}} و {{PLURAL:$3|یک پرونده|$3 پرونده است}}',
 	'categorytree-load' => 'بارکردن',
 	'categorytree-loading' => 'در حال بارگیری',
 	'categorytree-nothing-found' => 'هیچ‌چیز یافت نشد.',
 	'categorytree-no-subcategories' => 'هیچ زیررده‌ای ندارد.',
+	'categorytree-no-parent-categories' => 'فاقد ردهٔ بالاتر',
 	'categorytree-no-pages' => 'هیچ صفحه یا زیررده‌ای ندارد.',
 	'categorytree-not-found' => "ردهٔ  ''$1'' يافت نشد.",
 	'categorytree-error' => 'اشکال در دریافت اطلاعات.',
@@ -2510,6 +2514,7 @@ $messages['ru'] = array(
  */
 $messages['sah'] = array(
 	'categorytree' => 'Категориялар мас курдук',
+	'categorytree-portlet' => 'Категориялар',
 	'categorytree-legend' => 'Категориялар тутулларын көрдөр',
 	'categorytree-desc' => 'Биики [[Special:CategoryTree|категорияларын тутулун]] көрдөрөр AJAX-компонент',
 	'categorytree-header' => 'Категория аатын киллэрдэххинэ мас курдук көстүөҕэ.
@@ -2523,10 +2528,12 @@ $messages['sah'] = array(
 	'categorytree-mode-all' => 'бары сирэйдэр',
 	'categorytree-collapse' => 'сап',
 	'categorytree-expand' => 'тэнит',
+	'categorytree-member-counts' => '$1 {{PLURAL:$1|субкатегориялаах|субкатегориялардаах}}, $2 {{PLURAL:$2|сирэйдээх|сирэйдэрдээх}} уонна $3 {{PLURAL:$3|билэлээх|билэлэрдээх}}',
 	'categorytree-load' => 'киллэр',
 	'categorytree-loading' => 'киллэрии',
 	'categorytree-nothing-found' => 'бу категория подкатегорията суох',
 	'categorytree-no-subcategories' => 'субкатегорията суох',
+	'categorytree-no-parent-categories' => 'төрөппүт категорията суох',
 	'categorytree-no-pages' => 'ыстатыйата эбэтэр субкатегорията суох',
 	'categorytree-not-found' => '<i>$1</i> категория көстүбэтэ',
 	'categorytree-error' => 'Билэни суруйарга алҕас таҕыста',
