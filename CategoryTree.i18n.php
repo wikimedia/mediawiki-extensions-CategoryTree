@@ -1251,21 +1251,24 @@ $messages['hr'] = array(
 	'categorytree' => 'Stablasti prikaz hijerarhije kategorija',
 	'categorytree-portlet' => 'Kategorije',
 	'categorytree-legend' => 'Prikaži stablo kategorija',
+	'categorytree-desc' => 'Dinamička navigacija kroz [[Special:CategoryTree|strukturu kategorija]]',
 	'categorytree-header' => 'Upišite ime kategorije da biste vidjeli njen položaj u stablastom prikazu hijerarhije. Napomena: na strani klijenta (na Vašem računalu) potreban je web preglednik koji podržava napredni JavaScript, tj. AJAX. Ukoliko imate stari web preglednik, ili ste onemogućili izvođenje JavaScripta u njemu, neće Vam biti dostupan ovaj prikaz.',
-	'categorytree-category' => 'Kategorija',
-	'categorytree-go' => 'Učitaj',
-	'categorytree-parents' => 'Rodne kategorije',
+	'categorytree-category' => 'Kategorija:',
+	'categorytree-go' => 'Pokaži stablo',
+	'categorytree-parents' => 'Više kategorije',
 	'categorytree-mode-categories' => 'pokaži samo kategorije',
-	'categorytree-mode-pages' => 'pokaži kategorije i stranice (bez slika)',
+	'categorytree-mode-pages' => 'stranice bez datoteka',
 	'categorytree-mode-all' => 'sve stranice',
 	'categorytree-collapse' => 'sklopi stablo',
-	'categorytree-expand' => 'raširi stablo (expand)',
+	'categorytree-expand' => 'raširi stablo',
+	'categorytree-member-counts' => 'sadrži {{PLURAL:$1|1 podkategoriju|$1 podkategorija}}, {{PLURAL:$2|1 stranicu|$2 stranica}}, i {{PLURAL:$3|1 datoteku|$3 datoteka}}',
 	'categorytree-load' => 'učitaj',
 	'categorytree-loading' => 'učitavam',
 	'categorytree-nothing-found' => 'Nije pronađena nijedna stavka.',
-	'categorytree-no-subcategories' => 'Nema potkategorija.',
-	'categorytree-no-pages' => 'Nema članaka ili potkategorija.',
-	'categorytree-not-found' => 'Kategorija <i>$1</i> nije nađena',
+	'categorytree-no-subcategories' => 'Nema podkategorija.',
+	'categorytree-no-parent-categories' => 'nema viših kategorija',
+	'categorytree-no-pages' => 'Nema članaka ili podkategorija.',
+	'categorytree-not-found' => 'Kategorija <i>$1</i> nije pronađena',
 	'categorytree-error' => 'Problem s učitavanjem podataka.',
 	'categorytree-retry' => 'Pričekajte trenutak pa pokušajte opet.',
 );
@@ -2072,6 +2075,7 @@ Sekiranya anda menggunakan pelayar web yang lama, atau mematikan JavaScript, cir
  */
 $messages['mt'] = array(
 	'categorytree' => 'Siġra tal-kategoriji',
+	'categorytree-mode-all' => 'il-paġni kollha',
 );
 
 /** Erzya (Эрзянь)
@@ -2450,6 +2454,7 @@ Musyariy, kaytaqa AJAX nisqa sapaq JavaScript ruranallawanmi llamk'achiyta atink
 
 /** Romanian (Română)
  * @author KlaudiuMihaila
+ * @author Mihai
  */
 $messages['ro'] = array(
 	'categorytree' => 'Arborele categoriilor',
@@ -2461,7 +2466,7 @@ $messages['ro'] = array(
 	'categorytree-go' => 'Arată arborele',
 	'categorytree-parents' => 'Părinţi',
 	'categorytree-mode-categories' => 'doar categorii',
-	'categorytree-mode-pages' => 'pagini, fără imagini',
+	'categorytree-mode-pages' => 'pagini fără imagini',
 	'categorytree-mode-all' => 'toate paginile',
 	'categorytree-collapse' => 'restrânge',
 	'categorytree-expand' => 'extinde',
