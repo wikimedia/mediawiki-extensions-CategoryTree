@@ -3021,7 +3021,7 @@ Nếu bạn đang sử dụng trình duyệt rất cũ, hoặc đã tắt JavaSc
 	'categorytree-go' => 'Hiển thị',
 	'categorytree-parents' => 'Các thể loại mẹ',
 	'categorytree-mode-categories' => 'Chỉ liệt kê các thể loại',
-	'categorytree-mode-pages' => 'các trang ngoại trừ trang hình',
+	'categorytree-mode-pages' => 'các trang ngoại trừ trang tập tin',
 	'categorytree-mode-all' => 'tất cả các trang',
 	'categorytree-collapse' => 'đóng',
 	'categorytree-expand' => 'mở',
