@@ -1041,9 +1041,9 @@ Se tu âs un sgarfadôr a vonde vieri, o tu âs disativât JavaScript, cheste pa
  */
 $messages['fy'] = array(
 	'categorytree' => 'Kategorybeam',
-	'categorytree-header' => 'Folje in kategorynamme yn om de ynhâld yn in beamstruktuer te sjen. Tink derom dat dit spesjale [[:en:JavaScript|JavaScript]] funksjes brûkt bekend as [[:en:Ajax (programming)|AJAX]]. At jo in tige âlde blêdzjer hawwe of jo hawwe JavaScript net oan stean, dan wurket dit net.',
-	'categorytree-category' => 'Kategory:',
-	'categorytree-go' => 'Beam',
+	'categorytree-header' => 'Folje in kategorynamme yn om de ynhâld yn in beamstruktuer te sjen. Tink dêrom dat dit spesjale JavaScript funksjes brûkt bekend as AJAX. At jo in tige âlde blêdzjer hawwe of jo hawwe JavaScript net oan stean, dan wurket dit net.',
+	'categorytree-category' => 'Kategory beam',
+	'categorytree-go' => 'Los',
 	'categorytree-mode-categories' => 'allinne kategoryen',
 	'categorytree-mode-pages' => 'alle siden útsein ôfbylden',
 	'categorytree-mode-all' => 'alle siden',
@@ -1812,7 +1812,7 @@ $messages['la'] = array(
 	'categorytree-go' => 'Arborem monstrare',
 	'categorytree-parents' => 'Parentes',
 	'categorytree-mode-categories' => 'modo categoriae',
-	'categorytree-mode-pages' => 'paginae nisi imagines',
+	'categorytree-mode-pages' => 'paginae nisi fasciculi',
 	'categorytree-mode-all' => 'omnes paginae',
 	'categorytree-collapse' => 'collabi',
 	'categorytree-expand' => 'dilatare',
