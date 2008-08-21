@@ -125,6 +125,11 @@ $aliases['nds'] = array(
 	'CategoryTree' => array( 'Kategorieboom' ),
 );
 
+/** Nedersaksisch (Nedersaksisch) */
+$aliases['nds-nl'] = array(
+	'CategoryTree' => array( 'Kattegerieboom' ),
+);
+
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'CategoryTree' => array( 'Categorieboom' ),

@@ -1105,7 +1105,7 @@ Se ten un navegador moi vello, ou deshabilitado para o JavaScript, non vai funci
 	'categorytree-go' => 'Amosar a árbore',
 	'categorytree-parents' => 'Nodos superiores',
 	'categorytree-mode-categories' => 'só categorías',
-	'categorytree-mode-pages' => 'páxinas agás imaxes',
+	'categorytree-mode-pages' => 'páxinas agás ficheiros',
 	'categorytree-mode-all' => 'todas as páxinas',
 	'categorytree-collapse' => 'contraer',
 	'categorytree-expand' => 'ampliar',
@@ -1532,12 +1532,15 @@ $messages['it'] = array(
 );
 
 /** Japanese (日本語)
+ * @author Aotake
  * @author Broad-Sky
  * @author JtFuruhata
  * @author Kahusi
  */
 $messages['ja'] = array(
 	'categorytree' => 'カテゴリツリー',
+	'categorytree-portlet' => 'カテゴリ',
+	'categorytree-legend' => 'カテゴリツリーを表示',
 	'categorytree-desc' => 'ウィキの[[Special:CategoryTree|カテゴリツリー]]を表示する、AJAXベースのガジェット',
 	'categorytree-header' => 'カテゴリの中身をツリー構造としてを見るために、そのカテゴリ名を入力してください。この機能は、Ajaxとして知られているJavaScriptを使用していることに注意してください。もしあなたが使っているブラウザが非常に古かったり、JavaScriptを有効にしていないのであれば、動作しません。',
 	'categorytree-category' => 'カテゴリ名: ',
@@ -1548,10 +1551,12 @@ $messages['ja'] = array(
 	'categorytree-mode-all' => 'すべてのページ',
 	'categorytree-collapse' => '下位カテゴリを非表示',
 	'categorytree-expand' => '下位カテゴリを再表示',
+	'categorytree-member-counts' => '$1個のサブカテゴリ、$2件のページ、$3個のファイルを含んでいます',
 	'categorytree-load' => '下位カテゴリを表示',
 	'categorytree-loading' => '読み込み中',
 	'categorytree-nothing-found' => '存在しません',
 	'categorytree-no-subcategories' => 'サブカテゴリはありません',
+	'categorytree-no-parent-categories' => '親カテゴリなし',
 	'categorytree-no-pages' => 'ページやサブカテゴリはありません',
 	'categorytree-not-found' => 'カテゴリ " <i>$1</i> " はありません',
 	'categorytree-error' => 'データの読み込み中に問題が発生しました',
@@ -1615,6 +1620,7 @@ Menawa panjenengan panjlajah wèbé kalebu vèrsi lawa, utawa fitur JavaScript d
  * @author Malafaya
  */
 $messages['ka'] = array(
+	'categorytree-portlet' => 'კატეგორიები',
 	'categorytree-category' => 'კატეგორია:',
 	'categorytree-go' => 'ხის ჩვენება',
 	'categorytree-mode-all' => 'ყველა გვერდი',
@@ -2371,6 +2377,17 @@ $messages['pms'] = array(
 	'categorytree-not-found' => "A l'é pa trovasse la categorìa <i>$1</i>.",
 	'categorytree-error' => 'Problema ën cariand ij dat',
 	'categorytree-retry' => "Për piasì, ch'a speta na minuta e peuj ch'as preuva n'àutra vira.",
+);
+
+/** Pontic (Ποντιακά)
+ * @author Sinopeus
+ */
+$messages['pnt'] = array(
+	'categorytree-portlet' => 'Κατηγορίας',
+	'categorytree-category' => 'Κατηγορία:',
+	'categorytree-mode-all' => "ούλ' σελίδας",
+	'categorytree-load' => 'φόρτωμαν',
+	'categorytree-loading' => "φορτών'",
 );
 
 /** Pashto (پښتو)
