@@ -1990,6 +1990,37 @@ Ja tev ir veca interneta pārlūkprogramma, vai arī JavaScript ir atslēgts, š
 	'categorytree-retry' => 'Pagaidi mazliet un mēģini vēlreiz.',
 );
 
+/** Macedonian (Македонски)
+ * @author Brest2008
+ */
+$messages['mk'] = array(
+	'categorytree' => 'Дрво на категории',
+	'categorytree-portlet' => 'Категории',
+	'categorytree-legend' => 'Прикажи дрво на категории',
+	'categorytree-desc' => 'Динамичка навигација низ [[Special:CategoryTree|структурата на категории]]',
+	'categorytree-header' => 'Внесете назив на категорија за да ја видите нејзината содржина во форма на дрво.
+Да напоменеме дека оваа функција побарува JavaScript т.е. AJAX.
+Ако имате доста стар прелистувач, или JavaScript функционалноста вие е стопирана, ова нема да функционира.',
+	'categorytree-category' => 'Категорија:',
+	'categorytree-go' => 'Приажи дрво',
+	'categorytree-parents' => 'Родители',
+	'categorytree-mode-categories' => 'само категории',
+	'categorytree-mode-pages' => 'страници без датотеки',
+	'categorytree-mode-all' => 'сите страници',
+	'categorytree-collapse' => 'затвори',
+	'categorytree-expand' => 'отвори',
+	'categorytree-member-counts' => 'содржи {{PLURAL:$1|една подкатегорија|$1 подкатегории}}, {{PLURAL:$2|една страница|$2 страници}}, и {{PLURAL:$3|една датотека|$3 датотеки}}',
+	'categorytree-load' => 'вчитување',
+	'categorytree-loading' => 'вчитување...',
+	'categorytree-nothing-found' => 'не е најдено ништо',
+	'categorytree-no-subcategories' => 'нема подкатегории',
+	'categorytree-no-parent-categories' => 'нема родителски категории',
+	'categorytree-no-pages' => 'нема страници или подкатегории',
+	'categorytree-not-found' => 'Не е пронајдена категорија <i>$1</i>',
+	'categorytree-error' => 'Проблеми со вчитување на податоците.',
+	'categorytree-retry' => 'Ве молиме почекајте неколку моменти и обидетесе повторно.',
+);
+
 /** Malayalam (മലയാളം)
  * @author Shijualex
  */
