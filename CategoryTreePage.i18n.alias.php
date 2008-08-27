@@ -120,6 +120,11 @@ $aliases['mt'] = array(
 	'CategoryTree' => array( 'SiġraKategorika' ),
 );
 
+/** Erzya (Эрзянь) */
+$aliases['myv'] = array(
+	'CategoryTree' => array( 'КатегорияньЧувто' ),
+);
+
 /** Low German (Plattdüütsch) */
 $aliases['nds'] = array(
 	'CategoryTree' => array( 'Kategorieboom' ),

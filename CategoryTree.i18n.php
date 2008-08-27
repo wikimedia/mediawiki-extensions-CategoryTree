@@ -812,10 +812,13 @@ $messages['eo'] = array(
 );
 
 /** Spanish (Español)
+ * @author Muro de Aguas
  * @author Spacebirdy
  */
 $messages['es'] = array(
 	'categorytree' => 'Árbol de categorías (CategoryTree)',
+	'categorytree-portlet' => 'Categorías',
+	'categorytree-legend' => 'Mostrar el árbol de categorías',
 	'categorytree-header' => 'Escribe un nombre de categoría para ver su contenido con una estructura en árbol.
 Ten en cuenta que esto requiere funciones JavaScript avanzadas conocidas como AJAX.
 Si tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no funcionará.',
@@ -834,6 +837,7 @@ Si tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no fu
 	'categorytree-no-pages' => 'sin artículos ni subcategorías.',
 	'categorytree-not-found' => "Categoría ''$1'' no encontrada",
 	'categorytree-error' => 'Error al cargar los datos',
+	'categorytree-retry' => 'Por favor, espera un momento y vuelve a intentarlo.',
 );
 
 /** Estonian (Eesti) */
@@ -3097,7 +3101,7 @@ $messages['vo'] = array(
 	'categorytree-go' => 'Jonolöd Bimi',
 	'categorytree-parents' => 'Pals',
 	'categorytree-mode-categories' => 'Te klads',
-	'categorytree-mode-pages' => 'pads pläamü magods',
+	'categorytree-mode-pages' => 'pads pläamü ragivs',
 	'categorytree-mode-all' => 'pads valik',
 	'categorytree-collapse' => 'brefükön',
 	'categorytree-expand' => 'stäänükön',
