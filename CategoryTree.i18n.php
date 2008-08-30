@@ -657,7 +657,6 @@ Ni lwydda'r gofyniad os yw'ch porwr yn hen iawn neu os nad yw Sgript Java wedi e
 
 /** Danish (Dansk)
  * @author Barklund
- * @author Morten
  * @author Jon Harald Søby
  */
 $messages['da'] = array(
@@ -1148,6 +1147,37 @@ $messages['grc'] = array(
 	'categorytree-error' => 'Πρόβλημα τοῦ φορτίζειν δεδομένα',
 );
 
+/** Swiss German (Alemannisch)
+ * @author Hendergassler
+ */
+$messages['gsw'] = array(
+	'categorytree' => 'Kategoriboim',
+	'categorytree-portlet' => 'Kategori',
+	'categorytree-legend' => 'Kategori boïm zeiga',
+	'categorytree-desc' => 'Dynamischi Navigation fer di [[Special:CategoryTree|Kategorien-Struktur]]',
+	'categorytree-header' => "Ge a Kategori nama un leuï d'r Enhald von d'r Boïm Struktur.
+Dang drà dass brüchd bsonderi kantnis fo javaskrept bekannt als AJAX.
+Hesch a alda Browser , oder esch Javaskrept ned a , gehts net.",
+	'categorytree-category' => 'Kategori:',
+	'categorytree-go' => 'boim zaïga',
+	'categorytree-parents' => 'Eldera',
+	'categorytree-mode-categories' => "Noma d'kategoria",
+	'categorytree-mode-pages' => 'Syda üsgnoma Dateïa',
+	'categorytree-mode-all' => 'Alli syda',
+	'categorytree-collapse' => 'zueklappe',
+	'categorytree-expand' => 'ufklappe',
+	'categorytree-member-counts' => 'het {{PLURAL:$1|1 subcategory|$1 underkategoria}}, {{PLURAL:$2|1 syt|$2 syda}}, un {{PLURAL:$3|1 Dàtei|$3 Dàteia}}',
+	'categorytree-load' => 'làda',
+	'categorytree-loading' => 'sword glàda ...',
+	'categorytree-nothing-found' => 'nix gfunda',
+	'categorytree-no-subcategories' => 'ke underkategoria',
+	'categorytree-no-parent-categories' => 'Ke eldera kategori',
+	'categorytree-no-pages' => 'ke syda oder untekategoria',
+	'categorytree-not-found' => 'Kategori <i>$1</i> net gfunda',
+	'categorytree-error' => 'Broblem bim làda fo da Data',
+	'categorytree-retry' => 'Wàerd a wil un fersuers noch a mol',
+);
+
 /** Gujarati (ગુજરાતી)
  * @author Dsvyas
  */
@@ -1548,7 +1578,7 @@ $messages['ja'] = array(
 	'categorytree-legend' => 'カテゴリツリーを表示',
 	'categorytree-desc' => 'ウィキの[[Special:CategoryTree|カテゴリツリー]]を表示する、AJAXベースのガジェット',
 	'categorytree-header' => 'カテゴリの中身をツリー構造としてを見るために、そのカテゴリ名を入力してください。この機能は、Ajaxとして知られているJavaScriptを使用していることに注意してください。もしあなたが使っているブラウザが非常に古かったり、JavaScriptを有効にしていないのであれば、動作しません。',
-	'categorytree-category' => 'カテゴリ名: ',
+	'categorytree-category' => 'カテゴリ名:',
 	'categorytree-go' => 'ツリーを見る',
 	'categorytree-parents' => '上位カテゴリ',
 	'categorytree-mode-categories' => 'カテゴリのみ',
@@ -3097,6 +3127,7 @@ Nếu bạn đang sử dụng trình duyệt rất cũ, hoặc đã tắt JavaSc
  */
 $messages['vo'] = array(
 	'categorytree' => 'KladaBim',
+	'categorytree-portlet' => 'Klads',
 	'categorytree-legend' => 'Jonolöd kladabimi',
 	'categorytree-header' => 'Penolös kladanemi ad logön ninädi klada as bimabinod. Küpälolös, das atos flagon dili ela JavaScript labü nem: AJAX. No oplöpon if labol bevüresodanafömi vönädik, ud if enemogüköl eli JavaScript.',
 	'categorytree-category' => 'Klad:',
