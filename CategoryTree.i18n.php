@@ -230,6 +230,7 @@ $messages['ar'] = array(
 
 /** Egyptian Spoken Arabic (مصرى)
  * @author Ghaly
+ * @author Meno25
  * @author Ramsis II
  */
 $messages['arz'] = array(
@@ -250,9 +251,9 @@ $messages['arz'] = array(
 	'categorytree-nothing-found' => 'مالقيناش حاجة',
 	'categorytree-no-subcategories' => 'مافيش تصنيفات فرعية',
 	'categorytree-no-parent-categories' => 'مافيش تصانيف أصلية',
-	'categorytree-no-pages' => 'مافيش ولا في صفحات ولا تصانيف فرعية',
+	'categorytree-no-pages' => 'مافيش ولا فى صفحات ولا تصانيف فرعية',
 	'categorytree-not-found' => 'التصنيف <i>$1</i> مش متلاقي',
-	'categorytree-error' => 'مشكلة في تحميل البيانات.',
+	'categorytree-error' => 'مشكلة فى تحميل البيانات.',
 	'categorytree-retry' => 'لو سمحت تستنا لحظة و بعدين حاول تاني',
 );
 
@@ -1731,6 +1732,7 @@ $messages['km'] = array(
 	'categorytree-loading' => 'កំពុងផ្ទុក',
 	'categorytree-nothing-found' => 'រកមិនឃើញអ្វី',
 	'categorytree-no-subcategories' => 'មិនមានចំនាត់ថ្នាក់ក្រុមរងទេ',
+	'categorytree-no-parent-categories' => 'មិនមានចំនាត់ថ្នាក់ក្រុមមេទេ',
 	'categorytree-no-pages' => 'មិនមានទំព័រឬចំនាត់ថ្នាក់ក្រុមរងទេ',
 	'categorytree-not-found' => 'រកមិនឃើញចំនាត់ថ្នាក់ក្រុម <i>$1</i> ទេ',
 	'categorytree-error' => 'មានបញ្ហាក្នុងផ្ទុកទិន្នន័យ។',

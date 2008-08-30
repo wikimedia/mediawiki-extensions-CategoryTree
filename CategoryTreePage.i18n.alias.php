@@ -90,6 +90,11 @@ $aliases['hu'] = array(
 	'CategoryTree' => array( 'Kategóriafa' ),
 );
 
+/** Indonesian (Bahasa Indonesia) */
+$aliases['id'] = array(
+	'CategoryTree' => array( 'Pohon kategori' ),
+);
+
 /** Khmer (ភាសាខ្មែរ) */
 $aliases['km'] = array(
 	'CategoryTree' => array( 'មែកធាងចំនាត់ថ្នាក់ក្រុម' ),
