@@ -237,6 +237,10 @@ $messages['arz'] = array(
 	'categorytree' => 'شجرة تصنيف',
 	'categorytree-portlet' => 'تصنيفات',
 	'categorytree-legend' => 'عرض شجرة التصنيف',
+	'categorytree-desc' => 'ابحار بديناميكية في  [[Special:CategoryTree|هيكل التصنيف]]',
+	'categorytree-header' => 'دخل اسم التصنيف علشان تشوف المحتويات بتاعته على هيئة شجرة.
+لاحظ ان دا بيعوز خاصية جافاسكريبت متقدمة اسمها اجاكس.
+لو البراوز بتاعك قديم جدا،او الجافاسكريبت عندك متعطلة،دا مش ح يشتغل.',
 	'categorytree-category' => 'تصنيف:',
 	'categorytree-go' => 'عرض الشجره',
 	'categorytree-parents' => 'متصنف تحت',
