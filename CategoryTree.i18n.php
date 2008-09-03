@@ -237,7 +237,7 @@ $messages['arz'] = array(
 	'categorytree' => 'شجرة تصنيف',
 	'categorytree-portlet' => 'تصنيفات',
 	'categorytree-legend' => 'عرض شجرة التصنيف',
-	'categorytree-desc' => 'ابحار بديناميكية في  [[Special:CategoryTree|هيكل التصنيف]]',
+	'categorytree-desc' => 'ابحار بديناميكية فى  [[Special:CategoryTree|هيكل التصنيف]]',
 	'categorytree-header' => 'دخل اسم التصنيف علشان تشوف المحتويات بتاعته على هيئة شجرة.
 لاحظ ان دا بيعوز خاصية جافاسكريبت متقدمة اسمها اجاكس.
 لو البراوز بتاعك قديم جدا،او الجافاسكريبت عندك متعطلة،دا مش ح يشتغل.',
@@ -1317,6 +1317,7 @@ $messages['hr'] = array(
  */
 $messages['hsb'] = array(
 	'categorytree' => 'Kategorijowy štom',
+	'categorytree-portlet' => 'Kategorije',
 	'categorytree-legend' => 'Kategorijowy štom pokazać',
 	'categorytree-desc' => 'Přisłušk (gadget) na zakładźe AJAX za [[Special:CategoryTree|zwobraznjenje struktury]] wikija',
 	'categorytree-header' => 'Zapisaj mjeno kategorije, zo by jeje wobsah jako štomowu strukturu widźał. Wobkedźbuj, zo su za to wěste JavaScriptowe funkcije (AJAX) trjeba. Jeli maš jara stary wobhladowak abo jeli JavaScript je wupinjeny, to snano njebudźe fungować.',
@@ -1915,6 +1916,8 @@ Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da
  * @author Malafaya
  */
 $messages['lfn'] = array(
+	'categorytree' => 'Arbor de categorias',
+	'categorytree-portlet' => 'Categorias',
 	'categorytree-category' => 'Categoria:',
 );
 
@@ -2250,7 +2253,7 @@ Als u een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze
 	'categorytree-no-pages' => "Geen pagina's of ondercategorieën.",
 	'categorytree-not-found' => "Categorie ''$1'' niet gevonden",
 	'categorytree-error' => 'Probleem bij het laden van de gegevens.',
-	'categorytree-retry' => 'Wacht alstublieft even en probeer het dan opnieuw.',
+	'categorytree-retry' => 'Wacht even en probeer het dan opnieuw.',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -2952,17 +2955,33 @@ $messages['tg-cyrl'] = array(
 
 /** Thai (ไทย)
  * @author Manop
+ * @author Octahedron80
  * @author Passawuth
  */
 $messages['th'] = array(
+	'categorytree' => 'หมวดหมู่แบบผังต้นไม้',
+	'categorytree-portlet' => 'หมวดหมู่',
 	'categorytree-legend' => 'แสดงผังหมวดหมู่',
+	'categorytree-desc' => 'สำรวจ[[Special:CategoryTree|โครงสร้างหมวดหมู่]]แบบพลวัต',
+	'categorytree-header' => 'ป้อนชื่อหมวดหมู่เพื่อดูเนื้อหาเป็นโครงสร้างผังต้นไม้
+การทำงานนี้จำเป็นต้องใช้ความสามารถขั้นสูงของจาวาสคริปต์ที่เรียกว่า เอแจ็กซ์
+หากคุณใช้เบราว์เซอร์รุ่นเก่า หรือปิดการใช้งานจาวาสคริปต์ ความสามารถนี้จะไม่ทำงาน',
 	'categorytree-category' => 'หมวดหมู่',
 	'categorytree-go' => 'โหลด',
 	'categorytree-parents' => 'หมวดหมู่ใหญ่',
 	'categorytree-mode-categories' => 'แสดงเฉพาะหมวดหมู่',
+	'categorytree-mode-pages' => 'หน้าต่างๆ ยกเว้นไฟล์',
+	'categorytree-mode-all' => 'หน้าทุกหน้า',
+	'categorytree-collapse' => 'ย่อ',
+	'categorytree-expand' => 'ขยาย',
+	'categorytree-member-counts' => 'มี {{PLURAL:$1|1 หมวดหมู่ย่อย|$1 หมวดหมู่ย่อย}}, {{PLURAL:$2|1 หน้า|$2 หน้า}}, และ {{PLURAL:$3|1 ไฟล์|$3 ไฟล์}}',
+	'categorytree-load' => 'โหลด',
+	'categorytree-loading' => 'กำลังโหลด...',
 	'categorytree-nothing-found' => 'ไม่พบที่ต้องการ',
 	'categorytree-no-subcategories' => 'ไม่มีหมวดหมู่ย่อย',
+	'categorytree-no-parent-categories' => 'ไม่มีหมวดหมู่ระดับบน',
 	'categorytree-no-pages' => 'ไม่มีบทความหรือหมวดหมู่ย่อย',
+	'categorytree-not-found' => 'ไม่พบหมวดหมู่ <i>$1</i>',
 	'categorytree-error' => 'การโหลดข้อมูลมีปัญหา',
 	'categorytree-retry' => 'กรุณารอสักครู่ แล้วลองโหลดใหม่อีกครั้ง',
 );
