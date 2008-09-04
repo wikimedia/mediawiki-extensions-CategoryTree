@@ -1660,6 +1660,7 @@ Menawa panjenengan panjlajah wèbé kalebu vèrsi lawa, utawa fitur JavaScript d
  * @author Malafaya
  */
 $messages['ka'] = array(
+	'categorytree' => 'კატეგორიების ხე',
 	'categorytree-portlet' => 'კატეგორიები',
 	'categorytree-category' => 'კატეგორია:',
 	'categorytree-go' => 'ხის ჩვენება',
