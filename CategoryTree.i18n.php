@@ -767,18 +767,31 @@ $messages['ee'] = array(
 /** Greek (Ελληνικά)
  * @author Badseed
  * @author Consta
+ * @author Dead3y3
  * @author ZaDiak
  */
 $messages['el'] = array(
+	'categorytree' => 'Δέντρο κατηγορίας',
 	'categorytree-portlet' => 'Κατηγορίες',
+	'categorytree-legend' => 'Εμφάνιση δέντρου κατηγορίας',
+	'categorytree-desc' => 'Πλοηγηθείτε δυναμικά στη [[Special:CategoryTree|δομή της κατηγορίας]]',
+	'categorytree-header' => 'Εισάγετε ένα όνομα κατηγορίας για να δείτε τα περιεχόμενά της ως δεντρική δομή.
+Σημειώστε ότι αυτό απαιτεί προηγμένη λειτουργικότητα JavaScript, γνωστή ως AJAX.
+Αν έχετε έναν πολύ παλιό browser ή την JavaScript απενεργοποιημένη, δεν θα δουλέψει.',
 	'categorytree-category' => 'Κατηγορία:',
+	'categorytree-go' => 'Εμφάνιση δέντρου',
 	'categorytree-parents' => 'Γονείς',
 	'categorytree-mode-categories' => 'μόνο κατηγορίες',
+	'categorytree-mode-pages' => 'Σελίδες εξαιρουμένων αρχείων',
 	'categorytree-mode-all' => 'όλες οι σελίδες',
+	'categorytree-collapse' => 'κατάρρευση',
 	'categorytree-expand' => 'επέκτεινε',
+	'categorytree-member-counts' => 'περιέχει {{PLURAL:$1|1 υποκατηγορία|$1 υποκατηγορίες}}, {{PLURAL:$2|1 σελίδα|$2 σελίδες}} και {{PLURAL:$3|1 αρχείο|$3 αρχεία}}',
 	'categorytree-load' => 'φορτώστε',
 	'categorytree-loading' => 'φόρτωση',
+	'categorytree-nothing-found' => 'δεν βρέθηκε τίποτα',
 	'categorytree-no-subcategories' => 'καμία υποκατηγορία',
+	'categorytree-no-parent-categories' => 'δεν υπάρχουν πατρικές κατηγορίες',
 	'categorytree-no-pages' => 'καμία σελίδα ή υποκατηγορία',
 	'categorytree-not-found' => 'Η κατηγορία <i>$1</i> δεν βρέθηκε',
 	'categorytree-error' => 'Πρόβλημα φόρτωσης δεδομένων.',
@@ -1776,6 +1789,7 @@ $messages['km'] = array(
 );
 
 /** Korean (한국어)
+ * @author Ficell
  * @author Klutzy
  * @author ToePeu
  */
@@ -1790,7 +1804,7 @@ $messages['ko'] = array(
 	'categorytree-go' => '트리 보기',
 	'categorytree-parents' => '상위 분류',
 	'categorytree-mode-categories' => '분류 문서만 표시',
-	'categorytree-mode-pages' => '그림을 제외한 모든 문서를 표시',
+	'categorytree-mode-pages' => '파일을 제외한 모든 문서를 표시',
 	'categorytree-mode-all' => '모든 문서를 표시',
 	'categorytree-collapse' => '접기',
 	'categorytree-expand' => '펼치기',
