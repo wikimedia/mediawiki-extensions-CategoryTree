@@ -2588,6 +2588,14 @@ $messages['ro'] = array(
 	'categorytree-retry' => 'Vă rugăm să aşteptaţi câteva momente şi să încercaţi din nou.',
 );
 
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'categorytree-portlet' => 'Categorije',
+	'categorytree-mode-all' => 'tutte le pàggene',
+);
+
 /** Russian (Русский)
  * @author Ahonc
  * @author Александр Сигачёв
