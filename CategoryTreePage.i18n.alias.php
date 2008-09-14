@@ -53,6 +53,11 @@ $aliases['dsb'] = array(
 	'CategoryTree' => array( 'Kategorijow bom' ),
 );
 
+/** Greek (Ελληνικά) */
+$aliases['el'] = array(
+	'CategoryTree' => array( 'ΔέντροΚατηγορίας' ),
+);
+
 /** Finnish (Suomi) */
 $aliases['fi'] = array(
 	'CategoryTree' => array( 'Luokkapuu' ),
