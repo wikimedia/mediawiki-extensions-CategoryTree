@@ -36,6 +36,11 @@ $aliases['bcl'] = array(
 	'CategoryTree' => array( 'KahoyNinKategorya' ),
 );
 
+/** Catalan (Català) */
+$aliases['ca'] = array(
+	'CategoryTree' => array( 'Categories en arbre' ),
+);
+
 /** Danish (Dansk) */
 $aliases['da'] = array(
 	'CategoryTree' => array( 'Kategoritræ' ),
