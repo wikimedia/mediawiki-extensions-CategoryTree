@@ -848,7 +848,7 @@ $messages['es'] = array(
 	'categorytree' => 'Árbol de categorías (CategoryTree)',
 	'categorytree-portlet' => 'Categorías',
 	'categorytree-legend' => 'Mostrar el árbol de categorías',
-	'categorytree-desc' => 'Navigar dinámicamente la [[Special:CategoryTree|estructura de categorías]]',
+	'categorytree-desc' => 'Navegar dinámicamente por la [[Special:CategoryTree|estructura de categorías]]',
 	'categorytree-header' => 'Escribe un nombre de categoría para ver su contenido con una estructura en árbol.
 Ten en cuenta que esto requiere funciones JavaScript avanzadas conocidas como AJAX.
 Si tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no funcionará.',
@@ -860,7 +860,7 @@ Si tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no fu
 	'categorytree-mode-all' => 'todas las páginas',
 	'categorytree-collapse' => 'ocultar',
 	'categorytree-expand' => 'mostrar',
-	'categorytree-member-counts' => 'contiene {{PLURAL:$1|1 subcategoría|$1 subcategorías}}, {{PLURAL:$2|1 página|$2 páginas}}, y {{PLURAL:$3|1 archivo|$3 archivos}}',
+	'categorytree-member-counts' => 'contiene {{PLURAL:$1|una subcategoría|$1 subcategorías}}, {{PLURAL:$2|una página|$2 páginas}}, y {{PLURAL:$3|un archivo|$3 archivos}}',
 	'categorytree-load' => 'cargar',
 	'categorytree-loading' => 'cargando',
 	'categorytree-nothing-found' => 'Lo sentimos, no se ha encontrado nada',
