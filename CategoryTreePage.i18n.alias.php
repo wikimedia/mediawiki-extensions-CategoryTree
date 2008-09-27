@@ -38,7 +38,7 @@ $aliases['bcl'] = array(
 
 /** Catalan (Català) */
 $aliases['ca'] = array(
-	'CategoryTree' => array( 'Categories en arbre' ),
+	'CategoryTree' => array( 'Categories en arbre', 'Arbre de categories' ),
 );
 
 /** Danish (Dansk) */
