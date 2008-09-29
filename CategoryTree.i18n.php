@@ -561,6 +561,7 @@ $messages['ca'] = array(
 	'categorytree-loading' => 'carregant',
 	'categorytree-nothing-found' => 'no hi ha sub-categories',
 	'categorytree-no-subcategories' => 'no hi ha subcategories.',
+	'categorytree-no-parent-categories' => "No s'han trobat categories mare",
 	'categorytree-no-pages' => 'no hi ha articles o subcategories.',
 	'categorytree-not-found' => "No s'ha trobat la categoria ''$1''.",
 	'categorytree-error' => 'Problema en la càrrega de dades.',
