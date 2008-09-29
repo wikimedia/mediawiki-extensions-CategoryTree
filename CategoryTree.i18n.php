@@ -873,7 +873,9 @@ Si tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no fu
 	'categorytree-retry' => 'Por favor, espera un momento y vuelve a intentarlo.',
 );
 
-/** Estonian (Eesti) */
+/** Estonian (Eesti)
+ * @author Jaan513
+ */
 $messages['et'] = array(
 	'categorytree' => 'Kategooriapuu',
 	'categorytree-category' => 'Kategooria:',
@@ -881,6 +883,7 @@ $messages['et'] = array(
 	'categorytree-mode-pages' => 'leheküljed, välja arvatud pildid',
 	'categorytree-mode-all' => 'kõik leheküljed',
 	'categorytree-no-subcategories' => 'alamkategooriaid ei ole',
+	'categorytree-retry' => 'Palun oota hetk ja proovi uuesti.',
 );
 
 /** Basque (Euskara) */
