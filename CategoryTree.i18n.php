@@ -2158,32 +2158,33 @@ $messages['mr'] = array(
 
 /** Malay (Bahasa Melayu)
  * @author Aviator
+ * @author Kurniasan
  */
 $messages['ms'] = array(
 	'categorytree' => 'Salasilah kategori',
 	'categorytree-portlet' => 'Kategori',
 	'categorytree-legend' => 'Papar salasilah kategori',
 	'categorytree-desc' => 'Alat berdasarkan AJAX yang memaparkan [[Special:CategoryTree|struktur kategori]] bagi sesebuah wiki',
-	'categorytree-header' => 'Masukkan suatu nama kategori untuk melihat kandungannya dalam bentuk struktur salasilah.
-Ciri ini memerlukan kebolehan JavaScript maju yang dikenali sebagai AJAX.
-Sekiranya anda menggunakan pelayar web yang lama, atau mematikan JavaScript, ciri ini tidak akan menjadi.',
+	'categorytree-header' => 'Masukkan satu nama kategori untuk melihat kandungannya dalam bentuk struktur salasilah.
+Ambil perhatian bahawa ini memerlukan kefungsian JavaScript yang maju dikenali sebagai AJAX.
+Jika anda menggunakan pelayar yang ketinggalan, atau mematikan JavaScript, ianya tidak akan menjadi.',
 	'categorytree-category' => 'Kategori',
-	'categorytree-go' => 'Tunjukkan Salasilah',
+	'categorytree-go' => 'Tunjukkan salasilah',
 	'categorytree-parents' => 'Induk',
 	'categorytree-mode-categories' => 'kategori sahaja',
 	'categorytree-mode-pages' => 'laman kecuali imej',
 	'categorytree-mode-all' => 'semua laman',
-	'categorytree-collapse' => 'tutup',
-	'categorytree-expand' => 'buka',
+	'categorytree-collapse' => 'runtuhkan',
+	'categorytree-expand' => 'kembangkan',
 	'categorytree-member-counts' => 'mengandungi $1 subkategori, $1 laman, dan $3 fail',
 	'categorytree-load' => 'muat',
-	'categorytree-loading' => 'memuat',
+	'categorytree-loading' => 'memuat...',
 	'categorytree-nothing-found' => 'kosong',
 	'categorytree-no-subcategories' => 'tiada subkategori',
 	'categorytree-no-parent-categories' => 'tiada kategori induk',
 	'categorytree-no-pages' => 'tiada laman atau subkategori',
-	'categorytree-not-found' => 'Kategori <i>$1</i> tiada',
-	'categorytree-error' => 'Berlaku masalah ketika memuat data.',
+	'categorytree-not-found' => 'Kategori <i>$1</i> tidak ditemui',
+	'categorytree-error' => 'Masalah memuat data.',
 	'categorytree-retry' => 'Sila tunggu sebentar dan cuba lagi.',
 );
 
