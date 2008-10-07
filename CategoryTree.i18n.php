@@ -346,6 +346,7 @@ Ede va guazafi exulesiki favel oke ede JavaScript fliaceem tir metegis, batcoba 
  * @author Hugo.arg
  */
 $messages['bat-smg'] = array(
+	'categorytree' => 'Kateguorėju medis',
 	'categorytree-category' => 'Kateguorėjė:',
 	'categorytree-mode-all' => 'vėsė poslapē',
 );
