@@ -2166,9 +2166,9 @@ $messages['ms'] = array(
 	'categorytree-portlet' => 'Kategori',
 	'categorytree-legend' => 'Papar salasilah kategori',
 	'categorytree-desc' => 'Alat berdasarkan AJAX yang memaparkan [[Special:CategoryTree|struktur kategori]] bagi sesebuah wiki',
-	'categorytree-header' => 'Masukkan satu nama kategori untuk melihat kandungannya dalam bentuk struktur salasilah.
-Ambil perhatian bahawa ini memerlukan kefungsian JavaScript yang maju dikenali sebagai AJAX.
-Jika anda menggunakan pelayar yang ketinggalan, atau mematikan JavaScript, ianya tidak akan menjadi.',
+	'categorytree-header' => 'Masukkan suatu nama kategori untuk melihat kandungannya dalam bentuk struktur salasilah.
+Ciri ini memerlukan kefungsian JavaScript yang maju dikenali sebagai AJAX.
+Jika anda menggunakan pelayar web yang sudah ketinggalan, atau mematikan JavaScript, ciri ini tidak akan menjadi.',
 	'categorytree-category' => 'Kategori',
 	'categorytree-go' => 'Tunjukkan salasilah',
 	'categorytree-parents' => 'Induk',
@@ -2179,7 +2179,7 @@ Jika anda menggunakan pelayar yang ketinggalan, atau mematikan JavaScript, ianya
 	'categorytree-expand' => 'bentang',
 	'categorytree-member-counts' => 'mengandungi $1 subkategori, $1 laman, dan $3 fail',
 	'categorytree-load' => 'muat',
-	'categorytree-loading' => 'memuat...',
+	'categorytree-loading' => 'memuat…',
 	'categorytree-nothing-found' => 'kosong',
 	'categorytree-no-subcategories' => 'tiada subkategori',
 	'categorytree-no-parent-categories' => 'tiada kategori induk',
