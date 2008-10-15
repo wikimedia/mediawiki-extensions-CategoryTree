@@ -1514,7 +1514,7 @@ Jika Anda menggunakan penjelajah web lama, atau mematikan fungsi JavaScript Anda
 	'categorytree-expand' => 'buka',
 	'categorytree-member-counts' => 'memiliki {{PLURAL:$1|1 subkategori|$1 subkategori}}, {{PLURAL:$2|1 halaman|$2 halaman}}, dan {{PLURAL:$3|1 berkas|$3 berkas}}',
 	'categorytree-load' => 'muat',
-	'categorytree-loading' => 'memuat',
+	'categorytree-loading' => 'memuat…',
 	'categorytree-nothing-found' => 'tidak ditemukan',
 	'categorytree-no-subcategories' => 'tidak ada subkategori',
 	'categorytree-no-parent-categories' => 'tidak ada kategori lebih tinggi',
@@ -1864,7 +1864,7 @@ $messages['ksh'] = array(
 	'categorytree-mode-all' => 'alles: nomaal Sigge, Saachjruppe, un Medije',
 	'categorytree-collapse' => 'zosammefallde',
 	'categorytree-expand' => 'opfallde',
-	'categorytree-member-counts' => 'do dren sin {{PLURAL:$1|ein Ungerjrupp|$1 Ungerjruppe|kein Ungerjrupp}}, {{PLURAL:$2|ein Sigg|$2 Sigge|kein Sigg}}, un {{PLURAL:$3|ein Datei|$3 Dateie|kein Dateie}}, zosamme {{PLURAL:$4|ein Saach|$4 Saache|och nix}}, aanjezeich {{PLURAL:$5|weed ein|wäde $5|weed nix}}.',
+	'categorytree-member-counts' => 'do dren sin {{PLURAL:$1|ein Ungerjrupp|$1 Ungerjruppe|kein Ungerjrupp}}, {{PLURAL:$2|ein Sigg|$2 Sigge|kein Sigg}}, un {{PLURAL:$3|ein Datei|$3 Dateie|kein Dateie}}, zosamme {{PLURAL:$4|ein Saach|$4 Saache|och nix}}<!--, aanjezeich {{PLURAL:$5|weed ein|wäde $5|weed nix}}-->.',
 	'categorytree-load' => 'lade',
 	'categorytree-loading' => 'am lade…',
 	'categorytree-nothing-found' => 'nix jefonge',
@@ -2199,10 +2199,16 @@ $messages['mt'] = array(
 
 /** Erzya (Эрзянь)
  * @author Amdf
+ * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
+	'categorytree-portlet' => 'Категорият',
 	'categorytree-category' => 'Категория:',
+	'categorytree-mode-categories' => 'ансяк категорият',
 	'categorytree-mode-all' => 'весе лопатне',
+	'categorytree-collapse' => 'теингавтомс',
+	'categorytree-expand' => 'келемтемс',
+	'categorytree-no-subcategories' => 'алкс категорият арасть',
 );
 
 /** Nahuatl (Nāhuatl)
