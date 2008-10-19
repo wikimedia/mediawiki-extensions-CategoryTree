@@ -649,7 +649,7 @@ $messages['cu'] = array(
 $messages['cy'] = array(
 	'categorytree' => 'CoedenGategori',
 	'categorytree-legend' => 'Dangos y goeden gategori',
-	'categorytree-desc' => "Teclyn AJAX yn arddangos [[Special:CAtegoryTree|adeiledd categorïau]]'r wici",
+	'categorytree-desc' => "Teclyn AJAX yn arddangos [[Special:CategoryTree|adeiledd categorïau]]'r wici",
 	'categorytree-header' => "Teipiwch enw categori yn y blwch er mwyn gweld ei gynnwys ar lun coeden. 
 Sylwer bod yn rhaid defnyddio offer uwch Sgript Java o'r enw AJAX er mwyn gwneud hyn. 
 Ni lwydda'r gofyniad os yw'ch porwr yn hen iawn neu os nad yw Sgript Java wedi ei alluogi.",
@@ -673,10 +673,13 @@ Ni lwydda'r gofyniad os yw'ch porwr yn hen iawn neu os nad yw Sgript Java wedi e
 
 /** Danish (Dansk)
  * @author Barklund
+ * @author Fredelige
  * @author Jon Harald Søby
  */
 $messages['da'] = array(
 	'categorytree' => 'Kategoritræ',
+	'categorytree-portlet' => 'Kategorier',
+	'categorytree-legend' => 'Vis kategoritræ',
 	'categorytree-header' => 'Indtast navnet på en kategori for at se indholdet som et træ. Bemærk at dette kræver avanceret JavaScript-funktionalitet kendt som AJAX, det virker ikke hvis du har en meget gammel browser eller hvis du har slået JavaScript fra.',
 	'categorytree-category' => 'Kategori:',
 	'categorytree-go' => 'Henter',
@@ -755,7 +758,7 @@ Jolic maš wjelgin stary browser abo jolic JavaScript jo wótšaltowane, toś te
 	'categorytree-go' => 'Bom pokazaś',
 	'categorytree-parents' => 'Wuše kategorije',
 	'categorytree-mode-categories' => 'jano kategorije',
-	'categorytree-mode-pages' => 'Boki mimo wobrazow',
+	'categorytree-mode-pages' => 'Boki mimo datajow',
 	'categorytree-mode-all' => 'wšykne boki',
 	'categorytree-collapse' => 'złožyś',
 	'categorytree-expand' => 'rozłožyś',
@@ -1177,6 +1180,7 @@ $messages['grc'] = array(
 	'categorytree-collapse' => 'συστέλλειν',
 	'categorytree-expand' => 'διαστέλλειν',
 	'categorytree-load' => 'φορτίζειν',
+	'categorytree-loading' => 'φορτίζειν...',
 	'categorytree-nothing-found' => 'οὐδὲν εὑρεθέν',
 	'categorytree-no-subcategories' => 'οὐδεμία ὑποκατηγορία',
 	'categorytree-no-parent-categories' => 'οὐδεμία γονεικὴ κατηγορία',
@@ -1230,13 +1234,17 @@ $messages['gu'] = array(
  */
 $messages['gv'] = array(
 	'categorytree' => 'BilleyRonnaghyn',
+	'categorytree-portlet' => 'Ronnaghyn',
 	'categorytree-legend' => 'Billey ronnaghyn y haishbyney',
 	'categorytree-category' => 'Ronney:',
 	'categorytree-go' => 'Billey y haishbyney',
 	'categorytree-mode-categories' => 'ronnaghyn ynrican',
 	'categorytree-mode-all' => 'dagh ooilley ghuillag',
+	'categorytree-collapse' => 'filley',
+	'categorytree-expand' => 'mooadaghey',
 	'categorytree-load' => 'dy lughtaghey',
 	'categorytree-loading' => 'lughtaghey...',
+	'categorytree-no-subcategories' => 'gyn fo-ronnaghyn',
 );
 
 /** Hakka (Hak-kâ-fa)
@@ -1700,6 +1708,7 @@ $messages['ka'] = array(
 	'categorytree-category' => 'კატეგორია:',
 	'categorytree-go' => 'ხის ჩვენება',
 	'categorytree-mode-all' => 'ყველა გვერდი',
+	'categorytree-not-found' => 'კატეგორია <i>$1</i> არ არსებობს',
 );
 
 /** Kara-Kalpak (Qaraqalpaqsha)
@@ -1961,6 +1970,7 @@ $messages['lfn'] = array(
 /** Limburgish (Limburgs)
  * @author Matthias
  * @author Ooswesthoesbes
+ * @author Pahles
  */
 $messages['li'] = array(
 	'categorytree' => 'Categorieboum',
@@ -1976,7 +1986,7 @@ Esse 'ne erg verajerdje browser höbs of JavaScript steit oet, den werk dees fun
 	'categorytree-mode-categories' => 'allein categorië',
 	'categorytree-mode-pages' => 'gein aafbeildinge',
 	'categorytree-mode-all' => "alle pazjena's",
-	'categorytree-collapse' => 'instorte',
+	'categorytree-collapse' => 'inklappe',
 	'categorytree-expand' => 'oetklappe',
 	'categorytree-member-counts' => "bevat {{PLURAL:$1|éin ondercategorie|$1 ondercategorië}}, {{PLURAL:$2|éin pagina|$2 pagina's}} en {{PLURAL:$3|éin bestand|$3 bestande}}",
 	'categorytree-load' => 'laje',
@@ -1987,7 +1997,7 @@ Esse 'ne erg verajerdje browser höbs of JavaScript steit oet, den werk dees fun
 	'categorytree-no-pages' => "Gein pazjena's of óngercategorië.",
 	'categorytree-not-found' => "Categorie ''$1'' neet gevónje",
 	'categorytree-error' => "Perbleem bie 't laje van de gegaeves.",
-	'categorytree-retry' => "Wach estebleef ef en perbeer 't den opnuuj.",
+	'categorytree-retry' => "Wach estebleef effe en perbeer 't den opnuuj.",
 );
 
 /** Lao (ລາວ)
