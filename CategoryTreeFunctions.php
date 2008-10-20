@@ -698,7 +698,14 @@ class CategoryTree {
 
 			$s .= ' ';
 			global $wgLang;
-			$s .= Xml::tags( 'span', $attr, wfMsgExt( 'categorytree-member-num', array( 'parseinline', 'escapenoentities' ), $cat->getSubcatCount(), $pages , $cat->getFileCount(), $cat->getPageCount(), $wgLang->formatNum( $count ) ) );
+			$s .= Xml::tags( 'span', $attr,
+				wfMsgExt( 'categorytree-member-num',
+					array( 'parsemag', 'escapenoentities' ),
+					$cat->getSubcatCount(),
+					$pages,
+					$cat->getFileCount(),
+					$cat->getPageCount(),
+					$wgLang->formatNum( $count ) ) );
 		}
 
 		$s .= Xml::closeElement( 'div' );
