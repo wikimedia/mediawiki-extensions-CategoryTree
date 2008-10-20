@@ -63,6 +63,11 @@ $aliases['el'] = array(
 	'CategoryTree' => array( 'ΔέντροΚατηγορίας' ),
 );
 
+/** Persian (فارسی) */
+$aliases['fa'] = array(
+	'CategoryTree' => array( 'درخت_رده' ),
+);
+
 /** Finnish (Suomi) */
 $aliases['fi'] = array(
 	'CategoryTree' => array( 'Luokkapuu' ),
@@ -125,6 +130,11 @@ $aliases['lb'] = array(
 	'CategoryTree' => array( 'Struktur vun de Kategorien' ),
 );
 
+/** Macedonian (Македонски) */
+$aliases['mk'] = array(
+	'CategoryTree' => array( 'ДрвоНаКатегории' ),
+);
+
 /** Malay (Bahasa Melayu) */
 $aliases['ms'] = array(
 	'CategoryTree' => array( 'Salasilah_kategori' ),
@@ -158,6 +168,11 @@ $aliases['nl'] = array(
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
 $aliases['no'] = array(
 	'CategoryTree' => array( 'Kategoritre' ),
+);
+
+/** Occitan (Occitan) */
+$aliases['oc'] = array(
+	'CategoryTree' => array( 'ArbreCategoria', 'ArbreCategoria', 'Arbre categoria' ),
 );
 
 /** Pashto (پښتو) */
