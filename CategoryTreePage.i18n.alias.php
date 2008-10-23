@@ -175,6 +175,11 @@ $aliases['oc'] = array(
 	'CategoryTree' => array( 'ArbreCategoria', 'ArbreCategoria', 'Arbre categoria' ),
 );
 
+/** Polish (Polski) */
+$aliases['pl'] = array(
+	'CategoryTree' => array( 'Drzewo kategorii' ),
+);
+
 /** Pashto (پښتو) */
 $aliases['ps'] = array(
 	'CategoryTree' => array( 'د وېشنيزو ونه' ),

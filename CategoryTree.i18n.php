@@ -2573,6 +2573,15 @@ Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desab
 	'categorytree-retry' => 'Por gentileza, aguarde um momento e tente novamente.',
 );
 
+/** Brazilian Portuguese (Português do Brasil)
+ * @author Carla404
+ */
+$messages['pt-br'] = array(
+	'categorytree-collapse' => 'ocultar',
+	'categorytree-expand' => 'expandir',
+	'categorytree-member-counts' => 'contém {{PLURAL:$1|1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|1 página|$2 páginas}} e {{PLURAL:$3|1 arquivo|$3 arquivos}}',
+);
+
 /** Quechua (Runa Simi)
  * @author AlimanRuna
  */
