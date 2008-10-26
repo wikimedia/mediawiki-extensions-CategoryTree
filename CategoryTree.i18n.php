@@ -55,7 +55,9 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
  * @author Jon Harald Søby
  * @author Meno25
  * @author Raimond Spekking
+ * @author Raymond
  * @author Александр Сигачёв
+ * @author פוילישער
  */
 $messages['qqq'] = array(
 	'categorytree' => 'Title of [[Special:CategoryTree]]',
@@ -76,7 +78,7 @@ Label for the category input field on Special:CategoryTree',
 
 Item for the mode choice on Special:CategoryTree, indicating that all pages are listed',
 	'categorytree-collapse' => 'Tooltip for the "collapse" button',
-	'categorytree-expand' => 'Tooltip for the "expend" button',
+	'categorytree-expand' => 'Tooltip for the "expand" button',
 	'categorytree-collapse-bullet' => 'Visible form of the "collapse" button (symbolic, do not translate)', # do not translate or duplicate this message to other languages
 	'categorytree-expand-bullet' => 'Visible form of the "expand" button (symbolic, do not translate)', # do not translate or duplicate this message to other languages
 	'categorytree-empty-bullet' => 'Visible form of the "expand" button for empty branches (symbolic, do not translate)', # do not translate or duplicate this message to other languages
@@ -607,7 +609,7 @@ $messages['co'] = array(
  * @author Mormegil
  */
 $messages['cs'] = array(
-	'categorytree' => 'Strom kategorií',
+	'categorytree' => 'Strom kategorie',
 	'categorytree-portlet' => 'Kategorie',
 	'categorytree-legend' => 'Zobrazí strom kategorie',
 	'categorytree-desc' => 'Ajaxový nástroj zobrazující [[Special:CategoryTree|stromovou strukturu kategorií]] na této wiki',
@@ -3272,7 +3274,21 @@ $messages['wuu'] = array(
  * @author פוילישער
  */
 $messages['yi'] = array(
+	'categorytree' => 'קאַטעגאריע בוים',
+	'categorytree-portlet' => 'קאַטעגאריעס',
+	'categorytree-legend' => 'ווײַזן קאַטעגאריע בוים',
 	'categorytree-category' => 'קאטעגאריע:',
+	'categorytree-go' => 'ווײַזן בוים',
+	'categorytree-parents' => 'העכערע קאַטעגאריעס',
+	'categorytree-mode-categories' => 'נאר קאַטעגאריעס',
+	'categorytree-mode-pages' => 'בלעטער וואס זענען נישט טעקעס',
+	'categorytree-mode-all' => 'אַלע בלעטער',
+	'categorytree-collapse' => 'אײַנציען',
+	'categorytree-expand' => 'פֿאַרברייטערן',
+	'categorytree-nothing-found' => 'גארנישט געפֿונען',
+	'categorytree-no-subcategories' => 'נישטא קיין אונטער-קאַטעגאריעס',
+	'categorytree-no-pages' => 'נישטא קיין בלעטער אדער אונטער-קאַטעגאריעס',
+	'categorytree-not-found' => "קאַטעגאריע '''$1''' נישט געפֿונען",
 );
 
 /** Yue (粵語)
