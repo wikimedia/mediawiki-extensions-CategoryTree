@@ -1709,6 +1709,7 @@ $messages['ka'] = array(
 	'categorytree-portlet' => 'კატეგორიები',
 	'categorytree-category' => 'კატეგორია:',
 	'categorytree-go' => 'ხის ჩვენება',
+	'categorytree-mode-categories' => 'te klads',
 	'categorytree-mode-all' => 'ყველა გვერდი',
 	'categorytree-not-found' => 'კატეგორია <i>$1</i> არ არსებობს',
 );
