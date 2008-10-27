@@ -137,7 +137,7 @@ $aliases['mk'] = array(
 
 /** Malay (Bahasa Melayu) */
 $aliases['ms'] = array(
-	'CategoryTree' => array( 'Salasilah_kategori' ),
+	'CategoryTree' => array( 'Salasilah kategori' ),
 );
 
 /** Maltese (Malti) */
