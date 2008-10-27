@@ -36,6 +36,11 @@ $aliases['bcl'] = array(
 	'CategoryTree' => array( 'KahoyNinKategorya' ),
 );
 
+/** Bosnian (Bosanski) */
+$aliases['bs'] = array(
+	'CategoryTree' => array( 'StabloKategorija' ),
+);
+
 /** Catalan (Català) */
 $aliases['ca'] = array(
 	'CategoryTree' => array( 'Categories en arbre', 'Arbre de categories' ),
@@ -61,6 +66,11 @@ $aliases['dsb'] = array(
 /** Greek (Ελληνικά) */
 $aliases['el'] = array(
 	'CategoryTree' => array( 'ΔέντροΚατηγορίας' ),
+);
+
+/** Spanish (Español) */
+$aliases['es'] = array(
+	'CategoryTree' => array( 'Árbol:_de_Categorías' ),
 );
 
 /** Persian (فارسی) */
