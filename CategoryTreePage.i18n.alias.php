@@ -120,6 +120,11 @@ $aliases['id'] = array(
 	'CategoryTree' => array( 'Pohon kategori' ),
 );
 
+/** Japanese (日本語) */
+$aliases['ja'] = array(
+	'CategoryTree' => array( 'カテゴリツリー' ),
+);
+
 /** Khmer (ភាសាខ្មែរ) */
 $aliases['km'] = array(
 	'CategoryTree' => array( 'មែកធាងចំនាត់ថ្នាក់ក្រុម' ),
@@ -182,7 +187,7 @@ $aliases['no'] = array(
 
 /** Occitan (Occitan) */
 $aliases['oc'] = array(
-	'CategoryTree' => array( 'ArbreCategoria', 'ArbreCategoria', 'Arbre categoria' ),
+	'CategoryTree' => array( 'ArbreCategoria', 'Arbre categoria' ),
 );
 
 /** Polish (Polski) */
