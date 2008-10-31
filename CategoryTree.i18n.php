@@ -609,7 +609,7 @@ $messages['co'] = array(
  * @author Mormegil
  */
 $messages['cs'] = array(
-	'categorytree' => 'Strom kategorie',
+	'categorytree' => 'Strom kategorií',
 	'categorytree-portlet' => 'Kategorie',
 	'categorytree-legend' => 'Zobrazí strom kategorie',
 	'categorytree-desc' => 'Ajaxový nástroj zobrazující [[Special:CategoryTree|stromovou strukturu kategorií]] na této wiki',
