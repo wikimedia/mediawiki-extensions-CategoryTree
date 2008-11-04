@@ -70,7 +70,7 @@ $aliases['el'] = array(
 
 /** Spanish (Español) */
 $aliases['es'] = array(
-	'CategoryTree' => array( 'Árbol:_de_Categorías' ),
+	'CategoryTree' => array( 'ÁrbolDeCategorías', 'Árbol de categorías' ),
 );
 
 /** Persian (فارسی) */
