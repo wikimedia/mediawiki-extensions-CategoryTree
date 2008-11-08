@@ -36,6 +36,11 @@ $aliases['bcl'] = array(
 	'CategoryTree' => array( 'KahoyNinKategorya' ),
 );
 
+/** Bulgarian (Български) */
+$aliases['bg'] = array(
+	'CategoryTree' => array( 'Дърво на категориите' ),
+);
+
 /** Bosnian (Bosanski) */
 $aliases['bs'] = array(
 	'CategoryTree' => array( 'StabloKategorija' ),
