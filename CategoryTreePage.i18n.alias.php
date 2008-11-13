@@ -17,6 +17,11 @@ $aliases['en'] = array(
 	'CategoryTree' => array( 'CategoryTree' ),
 );
 
+/** Aragonese (Aragonés) */
+$aliases['an'] = array(
+	'CategoryTree' => array( 'Árbol de categorías' ),
+);
+
 /** Arabic (العربية)
  * @author Meno25
  */
