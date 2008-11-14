@@ -290,7 +290,7 @@ function efCategoryTreeParserFunction( &$parser ) {
 	foreach ( $params as $p ) {
 		if ( preg_match('/^\s*(\S.*?)\s*=\s*(.*?)\s*$/', $p, $m) ) {
 			$k = $m[1];
-			$v = $m[2];
+			$v = preg_replace('/^"\s*(.*?)"\s*$/', '$1', $m[2]); //strip any quotes enclusing the value
 		}
 		else {
 			$k = trim($p);
