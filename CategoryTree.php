@@ -66,7 +66,7 @@ $wgCategoryTreeSidebarRoot = NULL;
 $wgCategoryTreeHijackPageCategories = false; # EXPERIMENTAL! NOT YET FOR PRODUCTION USE! Main problem is general HTML/CSS layout cruftiness.
 
 $wgCategoryTreeExtPath = '/extensions/CategoryTree';
-$wgCategoryTreeVersion = '3';  #NOTE: bump this when you change the CSS or JS files!
+$wgCategoryTreeVersion = '4';  #NOTE: bump this when you change the CSS or JS files!
 $wgCategoryTreeUseCategoryTable = version_compare( $wgVersion, "1.13", '>=' );
 
 $wgCategoryTreeOmitNamespace = CT_HIDEPREFIX_CATEGORIES;
