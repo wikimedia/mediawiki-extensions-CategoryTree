@@ -889,6 +889,7 @@ $messages['et'] = array(
 	'categorytree-mode-pages' => 'leheküljed, välja arvatud pildid',
 	'categorytree-mode-all' => 'kõik leheküljed',
 	'categorytree-no-subcategories' => 'alamkategooriaid ei ole',
+	'categorytree-not-found' => 'Kategooriat <i>$1</i> ei leitud.',
 	'categorytree-retry' => 'Palun oota hetk ja proovi uuesti.',
 );
 
@@ -1675,9 +1676,11 @@ $messages['jut'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author Pras
  */
 $messages['jv'] = array(
 	'categorytree' => 'Uwit kategori',
+	'categorytree-portlet' => 'Kategori-kategori',
 	'categorytree-legend' => 'Tuduhna uwit kategori',
 	'categorytree-desc' => 'Gadget adhedhasar AJAX kanggo nuduhaké [[Special:CategoryTree|struktur kategori]] sawijining wiki',
 	'categorytree-header' => 'Lebokna sawijining jeneng kategori kanggo deleng isiné minangka sawijining wujud uwit.
@@ -1687,14 +1690,16 @@ Menawa panjenengan panjlajah wèbé kalebu vèrsi lawa, utawa fitur JavaScript d
 	'categorytree-go' => 'Tuduhna uwit',
 	'categorytree-parents' => 'Kategori sing luwih dhuwur',
 	'categorytree-mode-categories' => 'kategori waé',
-	'categorytree-mode-pages' => 'kaca-kaca kejaba gambar-gambar',
+	'categorytree-mode-pages' => 'kaca kajaba berkas',
 	'categorytree-mode-all' => 'kabèh kaca',
 	'categorytree-collapse' => 'ciyutna',
 	'categorytree-expand' => 'ambakna',
+	'categorytree-member-counts' => 'ngandhut {{PLURAL:$1|1 subkategori|$1 subkategori}}, {{PLURAL:$2|1 kaca|$2 kaca}}, lan {{PLURAL:$3|1 berkas|$3 berkas}}',
 	'categorytree-load' => 'unggah',
 	'categorytree-loading' => 'ngunggahaké…',
 	'categorytree-nothing-found' => 'ora ditemokaké',
 	'categorytree-no-subcategories' => 'ora ana subkategori',
+	'categorytree-no-parent-categories' => 'ora ana kategori indhuk',
 	'categorytree-no-pages' => 'ora ana kaca utawa subkategori',
 	'categorytree-not-found' => 'Kategori <i>$1</i> ora ditemokaké',
 	'categorytree-error' => 'Ana masalah ngunggahaké data.',
