@@ -999,6 +999,7 @@ $messages['fo'] = array(
 
 /** French (Français)
  * @author Grondin
+ * @author IAlex
  * @author Meithal
  * @author Sherbrooke
  * @author Verdy p
@@ -1023,7 +1024,7 @@ $messages['fr'] = array(
 	'categorytree-nothing-found' => 'Aucune',
 	'categorytree-no-subcategories' => 'Aucune sous-catégorie.',
 	'categorytree-no-parent-categories' => 'Aucune catégorie parente',
-	'categorytree-no-pages' => 'Aucun article ou sous-catégorie.',
+	'categorytree-no-pages' => 'Aucune page ou sous-catégorie.',
 	'categorytree-not-found' => 'La catégorie <tt>$1</tt> n’a pas été trouvée.',
 	'categorytree-error' => 'Problème de chargement des données.',
 	'categorytree-retry' => 'Attendez un instant puis réessayez.',
