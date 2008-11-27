@@ -520,10 +520,12 @@ M'eo kozh-mat stumm ho merdeer pe m'eo diweredekaet JavaScript ganeoc'h, ne'z ai
 );
 
 /** Bosnian (Bosanski)
+ * @author CERminator
  * @author editors of bs.wikipedia
  */
 $messages['bs'] = array(
 	'categorytree' => 'Stablo kategorije',
+	'categorytree-portlet' => 'Kategorije',
 	'categorytree-header' => 'Unesite ime kategorije da vidite njen sadržaj kao strukturno stablo. Ovo zahtijeva proširenu JavaScript funkcionalnost kao AJAX. Ako imate neki stariji Internet preglednik, ili ste iskljucili JavaScript, ovo nece raditi.',
 	'categorytree-category' => 'Kategorija',
 	'categorytree-go' => 'Prikaži stablo',
