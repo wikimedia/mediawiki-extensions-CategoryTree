@@ -1630,14 +1630,14 @@ $messages['ja'] = array(
 	'categorytree' => 'カテゴリツリー',
 	'categorytree-portlet' => 'カテゴリ',
 	'categorytree-legend' => 'カテゴリツリーを表示',
-	'categorytree-desc' => 'ウィキの[[Special:CategoryTree|カテゴリツリー]]を表示する、AJAXベースのガジェット',
+	'categorytree-desc' => 'ウィキの[[Special:CategoryTree|カテゴリの構造]]をツリー形式で表示する',
 	'categorytree-header' => 'カテゴリの中身をツリー構造としてを見るために、そのカテゴリ名を入力してください。この機能は、Ajaxとして知られているJavaScriptを使用していることに注意してください。もしあなたが使っているブラウザが非常に古かったり、JavaScriptを有効にしていないのであれば、動作しません。',
 	'categorytree-category' => 'カテゴリ名:',
 	'categorytree-go' => 'ツリーを見る',
 	'categorytree-parents' => '上位カテゴリ',
 	'categorytree-mode-categories' => 'カテゴリのみ',
 	'categorytree-mode-pages' => '画像以外の全ページ',
-	'categorytree-mode-all' => 'すべてのページ',
+	'categorytree-mode-all' => '全ページ',
 	'categorytree-collapse' => '下位カテゴリを非表示',
 	'categorytree-expand' => '下位カテゴリを再表示',
 	'categorytree-member-counts' => '$1個のサブカテゴリ、$2件のページ、$3個のファイルを含んでいます',
@@ -2747,8 +2747,31 @@ $messages['sdc'] = array(
  * @author නන්දිමිතුරු
  */
 $messages['si'] = array(
+	'categorytree' => 'ප්‍රවර්ග රුක',
 	'categorytree-portlet' => 'ප්‍රවර්ග',
+	'categorytree-legend' => 'ප්‍රවර්ග රුක පෙන්වන්න',
+	'categorytree-desc' => '[[Special:CategoryTree|ප්‍රවර්ග ව්‍යුහය]] ගතික වශයෙන් සංචලනය කරන්න',
+	'categorytree-header' => 'එහි අන්තර්ගතයන්  රුක් ව්‍යුවහයක් ලෙස නැරඹීම සඳහා ප්‍රවර්ග නාමයක් ඇතුලත් කරන්න.
+AJAX නමින් හැඳින්වෙන ප්‍රගත ජාවාස්ක්‍රිප්ට් ශ්‍රීතියතායව මේ සඳහා අවශ්‍ය බව සටහන් කර ගන්න.
+ඔබ සතුව ඇත්තේ ඉතා පැරණි බ්‍රවුසරයක් නම් හෝ ජාවාස්ක්‍රිප්ට් අක්‍රීය කොට තිබේ නම් මෙය ක්‍රි‍යාත්මක නොවනු ඇත.',
 	'categorytree-category' => 'ප්‍රවර්ගය:',
+	'categorytree-go' => 'රුක පෙන්වන්න',
+	'categorytree-parents' => 'මාපියන්',
+	'categorytree-mode-categories' => 'ප්‍රවර්ග පමණයි',
+	'categorytree-mode-pages' => 'ගොනු හැර ඉතිරි පිටු',
+	'categorytree-mode-all' => 'සියළු පිටු',
+	'categorytree-collapse' => 'හකුලන්න',
+	'categorytree-expand' => 'විදහන්න',
+	'categorytree-member-counts' => '{{PLURAL:$1|එක් උපප්‍රවර්ගයක්|උපප්‍රවර්ග $1 ක්}}, {{PLURAL:$2|එක් පිටුවක්|පිටු $2 ක්}}, සහ {{PLURAL:$3|එක් ගොනුවක්|ගොනු $3 ක්}} අඩංගුය',
+	'categorytree-load' => 'බාගන්න',
+	'categorytree-loading' => 'බාගනිමින්…',
+	'categorytree-nothing-found' => 'කිසිවක් හමුනොවිනි',
+	'categorytree-no-subcategories' => 'උපප්‍රවර්ග නොමැත',
+	'categorytree-no-parent-categories' => 'මාපිය උපප්‍රවර්ග නොමැත',
+	'categorytree-no-pages' => 'පිටු හෝ උපප්‍රවර්ග නොමැත',
+	'categorytree-not-found' => '<i>$1</i>  ප්‍රවර්ගය සොයාගත නොහැකි විය',
+	'categorytree-error' => 'දත්ත බාගැනීමේ ගැටළු පැවතිණි.',
+	'categorytree-retry' => 'කරුණාකර බිඳක් සිට යළි උත්සාහ කරන්න.',
 );
 
 /** Slovak (Slovenčina)
