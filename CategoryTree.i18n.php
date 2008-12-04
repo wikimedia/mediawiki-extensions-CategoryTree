@@ -526,6 +526,8 @@ M'eo kozh-mat stumm ho merdeer pe m'eo diweredekaet JavaScript ganeoc'h, ne'z ai
 $messages['bs'] = array(
 	'categorytree' => 'Stablo kategorije',
 	'categorytree-portlet' => 'Kategorije',
+	'categorytree-legend' => 'Prikazuje stablo kategorija',
+	'categorytree-desc' => 'Dinamičko pregledavanje [[Special:CategoryTree|strukture kategorija]]',
 	'categorytree-header' => 'Unesite ime kategorije da vidite njen sadržaj kao strukturno stablo. Ovo zahtijeva proširenu JavaScript funkcionalnost kao AJAX. Ako imate neki stariji Internet preglednik, ili ste iskljucili JavaScript, ovo nece raditi.',
 	'categorytree-category' => 'Kategorija',
 	'categorytree-go' => 'Prikaži stablo',
@@ -535,11 +537,16 @@ $messages['bs'] = array(
 	'categorytree-mode-all' => 'sve stranice',
 	'categorytree-collapse' => 'sakrij',
 	'categorytree-expand' => 'proširi',
+	'categorytree-member-counts' => 'sadrži {{PLURAL:$1|jednu podkategoriju|$1 podkategorije|$1 podkategorija}}, {{PLURAL:$2|jednu stranicu|$2 stranice|$2 stranica}} i {{PLURAL:$3|jednu datoteku|$3 datoteke|$3 datoteka}}',
 	'categorytree-load' => 'ucitaj',
 	'categorytree-loading' => 'ucitavam',
 	'categorytree-nothing-found' => 'nema podkategorija',
 	'categorytree-no-subcategories' => 'nema podkategorija',
+	'categorytree-no-parent-categories' => 'nema nadređene kategorije',
 	'categorytree-no-pages' => 'nema podkategorija ili clanaka',
+	'categorytree-not-found' => 'Kategorija <i>$1</i> nije nađena',
+	'categorytree-error' => 'Problem pri punjenju podataka.',
+	'categorytree-retry' => 'Molimo pričekate trenutak i pokušajte ponovno.',
 );
 
 /** Catalan (Català)
@@ -1108,6 +1115,7 @@ $messages['fy'] = array(
 );
 
 /** Irish (Gaeilge)
+ * @author Alison
  * @author Alma
  * @author Moilleadóir
  * @author Spacebirdy
@@ -1115,6 +1123,7 @@ $messages['fy'] = array(
  */
 $messages['ga'] = array(
 	'categorytree' => 'Crann na gCatagóirí',
+	'categorytree-portlet' => 'Catagóirí',
 	'categorytree-legend' => 'Taispeáin crann na gcatagóirí',
 	'categorytree-desc' => 'Giuirléid AJAX a thaispeánann an [[Special:CategoryTree|struchtúr catagóirí]] i vicí',
 	'categorytree-header' => 'Cuir isteach ainm catagóra chun a hinneachar a thaispeáint i struchtúr crainn.
@@ -1124,7 +1133,7 @@ Má tá do bhrabhsálaí róshean, nó má dhíchumasaigh tú JavaScript, ní oi
 	'categorytree-go' => 'Taispeán an Crann',
 	'categorytree-parents' => 'Máthairnóid',
 	'categorytree-mode-categories' => 'catagóirí amháin',
-	'categorytree-mode-pages' => 'leathanaigh seachas íomhánna',
+	'categorytree-mode-pages' => 'leathanaigh seachas comhaid',
 	'categorytree-mode-all' => 'gach leathanach',
 	'categorytree-collapse' => 'dún',
 	'categorytree-expand' => 'oscail',
@@ -1807,10 +1816,10 @@ Eger şolğışıñız öte eski, nemese JavaScript öşirilgen bolsa, bul iske 
  * @author គីមស៊្រុន
  */
 $messages['km'] = array(
-	'categorytree' => 'មែកធាងនៃចំណាត់ថ្នាក់ក្រុម',
+	'categorytree' => 'មែកធាងនៃចំនាត់ថ្នាក់ក្រុម',
 	'categorytree-portlet' => 'ចំនាត់ថ្នាក់ក្រុម',
 	'categorytree-legend' => 'បង្ហាញមែកធាងចំនាត់ថ្នាក់ក្រុម',
-	'categorytree-category' => 'ចំណាត់ថ្នាក់ក្រុម:',
+	'categorytree-category' => 'ចំនាត់ថ្នាក់ក្រុម:',
 	'categorytree-go' => 'បង្ហាញមែកធាង',
 	'categorytree-parents' => 'ចំណាត់ថ្នាក់ក្រុមកំរិតខ្ពស់',
 	'categorytree-mode-categories' => 'សំរាប់តែចំណាត់ថ្នាក់ក្រុមប៉ុណ្ណោះ',
@@ -2850,6 +2859,7 @@ $messages['sq'] = array(
 /** Serbian Cyrillic ekavian (ћирилица)
  * @author Millosh
  * @author Sasa Stefanovic
+ * @author Slaven Kosanovic
  */
 $messages['sr-ec'] = array(
 	'categorytree' => 'Дрво категорија',
@@ -2861,18 +2871,19 @@ $messages['sr-ec'] = array(
 Уколико имате веома стари браузер, или се искључили ЈаваСкрипт, дрво категорија неће радити.',
 	'categorytree-category' => 'Категорија:',
 	'categorytree-go' => 'Прикажи дрво',
-	'categorytree-parents' => 'родитељи',
+	'categorytree-parents' => 'надређене категорије',
 	'categorytree-mode-categories' => 'само категорије',
 	'categorytree-mode-pages' => 'странице изузев слика',
 	'categorytree-mode-all' => 'све странице',
 	'categorytree-collapse' => 'сакриј',
 	'categorytree-expand' => 'прикажи',
+	'categorytree-member-counts' => 'садржи {{PLURAL:$1|1 поткатегорију|$1 поткатегорија}}, {{PLURAL:$2|1 страницу|$2 страница}}, и {{PLURAL:$3|1 фајл|$3 фајлова}}',
 	'categorytree-load' => 'учитај',
 	'categorytree-loading' => 'учитавање',
 	'categorytree-nothing-found' => 'ништа није пронађено',
-	'categorytree-no-subcategories' => 'нема подкатегорија',
+	'categorytree-no-subcategories' => 'нема поткатегорија',
 	'categorytree-no-parent-categories' => 'без наткатегорије',
-	'categorytree-no-pages' => 'нема страница или подкатегорија',
+	'categorytree-no-pages' => 'нема страница или поткатегорија',
 	'categorytree-not-found' => 'Категорија <i>$1</i> није пронађена',
 	'categorytree-error' => 'Проблем при учитавању података.',
 	'categorytree-retry' => 'Молимо сачекајте тренутак и покушајте поново',

@@ -225,6 +225,11 @@ $aliases['sv'] = array(
 	'CategoryTree' => array( 'Kategoriträd' ),
 );
 
+/** Swahili (Kiswahili) */
+$aliases['sw'] = array(
+	'CategoryTree' => array( 'SafuyaJamii' ),
+);
+
 /** Vèneto (Vèneto) */
 $aliases['vec'] = array(
 	'CategoryTree' => array( 'ÀlbaroCategorie' ),
