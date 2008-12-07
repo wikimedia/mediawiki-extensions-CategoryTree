@@ -762,7 +762,7 @@ $messages['dsb'] = array(
 	'categorytree-portlet' => 'Kategorije',
 	'categorytree-legend' => 'Kategorijowy bom pokazaś',
 	'categorytree-desc' => 'Dynamiski pśez [[Special:CategoryTree|kategorijowu strukturu]] nawigěrowaś',
-	'categorytree-header' => 'Zapodaj mě kategorije, aby jeje wopśimjeśe ako bomowu strukturu wiźeł.
+	'categorytree-header' => 'Zapódaj mě kategorije, aby jeje wopśimjeśe ako bomowu strukturu wiźeł.
 Glědaj, až se to wěste funkcije JavaScripta pomina, znate ako AJAX.
 Jolic maš wjelgin stary browser abo jolic JavaScript jo wótšaltowane, toś ten bok ewentuelnje njefunkcioněrujo.',
 	'categorytree-category' => 'Kategorija:',
