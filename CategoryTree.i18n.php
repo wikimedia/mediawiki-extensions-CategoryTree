@@ -1813,28 +1813,29 @@ Eger şolğışıñız öte eski, nemese JavaScript öşirilgen bolsa, bul iske 
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
+ * @author Thearith
  * @author គីមស៊្រុន
  */
 $messages['km'] = array(
-	'categorytree' => 'មែកធាងនៃចំនាត់ថ្នាក់ក្រុម',
-	'categorytree-portlet' => 'ចំនាត់ថ្នាក់ក្រុម',
-	'categorytree-legend' => 'បង្ហាញមែកធាងចំនាត់ថ្នាក់ក្រុម',
-	'categorytree-category' => 'ចំនាត់ថ្នាក់ក្រុម:',
+	'categorytree' => 'មែកធាងនៃចំណាត់ថ្នាក់ក្រុម',
+	'categorytree-portlet' => 'ចំណាត់ថ្នាក់ក្រុម',
+	'categorytree-legend' => 'បង្ហាញមែកធាងចំណាត់ថ្នាក់ក្រុម',
+	'categorytree-category' => 'ចំណាត់ថ្នាក់ក្រុម:',
 	'categorytree-go' => 'បង្ហាញមែកធាង',
-	'categorytree-parents' => 'ចំណាត់ថ្នាក់ក្រុមកំរិតខ្ពស់',
-	'categorytree-mode-categories' => 'សំរាប់តែចំណាត់ថ្នាក់ក្រុមប៉ុណ្ណោះ',
+	'categorytree-parents' => 'ចំណាត់ថ្នាក់ក្រុមកម្រិតខ្ពស់',
+	'categorytree-mode-categories' => 'សម្រាប់តែចំណាត់ថ្នាក់ក្រុមប៉ុណ្ណោះ',
 	'categorytree-mode-pages' => 'ទំព័រលើកលែងតែរូបភាព',
 	'categorytree-mode-all' => 'គ្រប់ទំព័រ',
 	'categorytree-collapse' => 'បង្រួម',
 	'categorytree-expand' => 'ពន្លាត',
-	'categorytree-member-counts' => 'មាន{{PLURAL:$1|១ចំនាត់ថ្នាក់ក្រុមរង|$1ចំនាត់ថ្នាក់ក្រុមរង}} {{PLURAL:$2|១ទំព័រ|$2ទំព័រ}} និង{{PLURAL:$3|១ឯកសារ|$3ឯកសារ}}',
+	'categorytree-member-counts' => 'មាន{{PLURAL:$1|១ចំណាត់ថ្នាក់ក្រុមរង|$1ចំណាត់ថ្នាក់ក្រុមរង}} {{PLURAL:$2|១ទំព័រ|$2ទំព័រ}} និង{{PLURAL:$3|១ឯកសារ|$3ឯកសារ}}',
 	'categorytree-load' => 'ផ្ទុក',
 	'categorytree-loading' => 'កំពុងផ្ទុក',
 	'categorytree-nothing-found' => 'រកមិនឃើញអ្វីទេ',
-	'categorytree-no-subcategories' => 'មិនមានចំនាត់ថ្នាក់ក្រុមរងទេ',
-	'categorytree-no-parent-categories' => 'មិនមានចំនាត់ថ្នាក់ក្រុមមេទេ',
-	'categorytree-no-pages' => 'មិនមានទំព័រឬចំនាត់ថ្នាក់ក្រុមរងទេ',
-	'categorytree-not-found' => 'រកមិនឃើញចំនាត់ថ្នាក់ក្រុម <i>$1</i> ទេ',
+	'categorytree-no-subcategories' => 'មិនមានចំណាត់ថ្នាក់ក្រុមរងទេ',
+	'categorytree-no-parent-categories' => 'មិនមានចំណាត់ថ្នាក់ក្រុមមេទេ',
+	'categorytree-no-pages' => 'មិនមានទំព័រឬចំណាត់ថ្នាក់ក្រុមរងទេ',
+	'categorytree-not-found' => 'រកមិនឃើញចំណាត់ថ្នាក់ក្រុម <i>$1</i> ទេ',
 	'categorytree-error' => 'មានបញ្ហាក្នុងផ្ទុកទិន្នន័យ។',
 	'categorytree-retry' => 'សូមរងចាំមួយភ្លែតរួចព្យាយាមម្តងទៀត។',
 );
