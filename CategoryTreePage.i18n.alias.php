@@ -103,6 +103,11 @@ $aliases['gl'] = array(
 	'CategoryTree' => array( 'Árbore de categorías' ),
 );
 
+/** Swiss German (Alemannisch) */
+$aliases['gsw'] = array(
+	'CategoryTree' => array( 'Kategoriebaum' ),
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */

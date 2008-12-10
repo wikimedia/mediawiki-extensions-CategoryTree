@@ -1204,34 +1204,34 @@ $messages['grc'] = array(
 );
 
 /** Swiss German (Alemannisch)
+ * @author Als-Holder
  * @author Hendergassler
  */
 $messages['gsw'] = array(
-	'categorytree' => 'Kategoriboim',
+	'categorytree' => 'Kategoriebaum',
 	'categorytree-portlet' => 'Kategori',
-	'categorytree-legend' => 'Kategori boïm zeiga',
-	'categorytree-desc' => 'Dynamischi Navigation fer di [[Special:CategoryTree|Kategorien-Struktur]]',
-	'categorytree-header' => "Ge a Kategori nama un leuï d'r Enhald von d'r Boïm Struktur.
-Dang drà dass brüchd bsonderi kantnis fo javaskrept bekannt als AJAX.
-Hesch a alda Browser , oder esch Javaskrept ned a , gehts net.",
+	'categorytree-legend' => 'Kategoriebaum aazeige',
+	'categorytree-desc' => 'Dynamischi Navigation fir d [[Special:CategoryTree|Kategorie-Struktur]]',
+	'categorytree-header' => 'Gib e Kategoriname yy zum dr Inhalt vun ere as Baumstruktur aazluege.
+Des brucht fortgschritteneri JavaScript-Funktione (Ajax). Wänn JavaScript abgschalden isch oder e eltere Browser brucht wird, cha s syy, ass es nit goht.',
 	'categorytree-category' => 'Kategori:',
-	'categorytree-go' => 'boim zaïga',
-	'categorytree-parents' => 'Eldera',
-	'categorytree-mode-categories' => "Noma d'kategoria",
-	'categorytree-mode-pages' => 'Syda üsgnoma Dateïa',
-	'categorytree-mode-all' => 'Alli syda',
+	'categorytree-go' => 'Baum zeige',
+	'categorytree-parents' => 'Iberkategorie',
+	'categorytree-mode-categories' => 'Nume d Kategorie',
+	'categorytree-mode-pages' => 'Syte user Dateie',
+	'categorytree-mode-all' => 'Alli Syte',
 	'categorytree-collapse' => 'zueklappe',
 	'categorytree-expand' => 'ufklappe',
-	'categorytree-member-counts' => 'het {{PLURAL:$1|1 subcategory|$1 underkategoria}}, {{PLURAL:$2|1 syt|$2 syda}}, un {{PLURAL:$3|1 Dàtei|$3 Dàteia}}',
-	'categorytree-load' => 'làda',
-	'categorytree-loading' => 'sword glàda ...',
-	'categorytree-nothing-found' => 'nix gfunda',
-	'categorytree-no-subcategories' => 'ke underkategoria',
-	'categorytree-no-parent-categories' => 'Ke eldera kategori',
-	'categorytree-no-pages' => 'ke syda oder untekategoria',
-	'categorytree-not-found' => 'Kategori <i>$1</i> net gfunda',
-	'categorytree-error' => 'Broblem bim làda fo da Data',
-	'categorytree-retry' => 'Wàerd a wil un fersuers noch a mol',
+	'categorytree-member-counts' => 'het {{PLURAL:$1|1 Unterkategori|$1 Unterkategorie}}, {{PLURAL:$2|1 Syte|$2 Syte}}, un {{PLURAL:$3|1 Datei|$3 Dateie}}',
+	'categorytree-load' => 'lade',
+	'categorytree-loading' => 's isch am Laade ...',
+	'categorytree-nothing-found' => 'nyt gfunde',
+	'categorytree-no-subcategories' => 'Kaini Unterkategorie',
+	'categorytree-no-parent-categories' => 'Kaini Iberkategorie',
+	'categorytree-no-pages' => 'Kai Syte oder Unterkategorie',
+	'categorytree-not-found' => 'Kategori <i>$1</i> nit gfunde',
+	'categorytree-error' => 'Problem bim Lade vo dr Date',
+	'categorytree-retry' => 'Wart e Rung un versuech s derno non emol.',
 );
 
 /** Gujarati (ગુજરાતી)
