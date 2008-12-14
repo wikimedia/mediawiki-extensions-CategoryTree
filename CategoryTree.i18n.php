@@ -2837,11 +2837,13 @@ $messages['sl'] = array(
 	'categorytree-not-found' => 'Kategorije <i>$1</i> ni moc najti',
 );
 
-/** Albanian (Shqip) */
+/** Albanian (Shqip)
+ * @author Eagleal
+ */
 $messages['sq'] = array(
 	'categorytree' => 'Pema e kategorive',
 	'categorytree-header' => 'Fusni emrin e Kategorisë për të parë Nënkategoritë si Pemë kategorish. Këtij funksioni i nevoiten JavaScript dhe AJAX për të funksionuar si duhet. Nëse keni një shfletues të vjetër, ose nëse i keni deaktivuar JavaScript kjo nuk do të funksionoj.',
-	'categorytree-category' => 'Kategori',
+	'categorytree-category' => 'Kategoria:',
 	'categorytree-go' => 'Plotëso',
 	'categorytree-parents' => 'Kryekategoritë',
 	'categorytree-mode-categories' => 'vetëm kategoritë',
@@ -3268,6 +3270,11 @@ Nếu bạn đang sử dụng trình duyệt rất cũ, hoặc đã tắt JavaSc
 	'categorytree-not-found' => 'Không tìm thấy thể loại <i>$1</i>',
 	'categorytree-error' => 'Có vấn đề khi tải dữ liệu.',
 	'categorytree-retry' => 'Xin hãy chờ một chút rồi thử lại.',
+);
+
+/** West-Vlams (West-Vlams) */
+$messages['vls'] = array(
+	'categorytree-collapse' => 'toesmytn',
 );
 
 /** Volapük (Volapük)
