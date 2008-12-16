@@ -868,7 +868,7 @@ $messages['es'] = array(
 	'categorytree-header' => 'Escribe un nombre de categoría para ver su contenido con una estructura en árbol.
 Ten en cuenta que esto requiere funciones JavaScript avanzadas conocidas como AJAX.
 Si tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no funcionará.',
-	'categorytree-category' => 'Categoría',
+	'categorytree-category' => 'Categoría:',
 	'categorytree-go' => 'Cargar',
 	'categorytree-parents' => 'Categorías superiores',
 	'categorytree-mode-categories' => 'mostrar sólo categorías',
@@ -1843,10 +1843,12 @@ $messages['km'] = array(
 /** Korean (한국어)
  * @author Ficell
  * @author Klutzy
+ * @author Kwj2772
  * @author ToePeu
  */
 $messages['ko'] = array(
 	'categorytree' => '분류 트리',
+	'categorytree-portlet' => '분류',
 	'categorytree-legend' => '분류 트리 보기',
 	'categorytree-desc' => '위키의 [[Special:CategoryTree|분류 구조]]를 볼 수 있는 AJAX 도구',
 	'categorytree-header' => '트리 구조로 볼 분류 이름을 입력해주세요.
@@ -1864,6 +1866,7 @@ $messages['ko'] = array(
 	'categorytree-loading' => '불러오는 중',
 	'categorytree-nothing-found' => '결과 없음',
 	'categorytree-no-subcategories' => '하위 분류 없음',
+	'categorytree-no-parent-categories' => '상위 분류가 없습니다.',
 	'categorytree-no-pages' => '문서/하위 분류 없음',
 	'categorytree-not-found' => '‘$1’ 분류가 존재하지 않음',
 	'categorytree-error' => '값을 불러오는 중 오류 발생',
@@ -3001,6 +3004,15 @@ Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript
 	'categorytree-retry' => 'Vänta en stund och försök igen.',
 );
 
+/** Swahili (Kiswahili)
+ * @author Muddyb Blast Producer
+ */
+$messages['sw'] = array(
+	'categorytree' => 'Mfumo wa jamii',
+	'categorytree-portlet' => 'Jamii',
+	'categorytree-legend' => 'Onyesha mfumo wa jamii',
+);
+
 /** Tamil (தமிழ்)
  * @author Trengarasu
  */
@@ -3014,6 +3026,7 @@ $messages['ta'] = array(
 );
 
 /** Telugu (తెలుగు)
+ * @author C.Chandra Kanth Rao
  * @author Mpradeep
  * @author Veeven
  * @author వైజాసత్య
@@ -3028,7 +3041,7 @@ $messages['te'] = array(
 	'categorytree-go' => 'వృక్షాన్ని చూపించు',
 	'categorytree-parents' => 'మాతృవర్గాలు',
 	'categorytree-mode-categories' => 'వర్గాలు మాత్రమే',
-	'categorytree-mode-pages' => 'బొమ్మలను మినహాయించి మిగిలిన పేజీలు',
+	'categorytree-mode-pages' => 'ఫైళ్ళను మినహాయించి మిగిలిన పేజీలు',
 	'categorytree-mode-all' => 'అన్ని పేజీలు',
 	'categorytree-collapse' => 'మూసివేయి',
 	'categorytree-expand' => 'విస్తరించు',
@@ -3036,6 +3049,7 @@ $messages['te'] = array(
 	'categorytree-loading' => 'లోడవుతూంది',
 	'categorytree-nothing-found' => 'ఏమీ లేవు',
 	'categorytree-no-subcategories' => 'ఉపవర్గాలు లేవు',
+	'categorytree-no-parent-categories' => 'మాతృవర్గం లేదు',
 	'categorytree-no-pages' => 'పేజీలు గానీ, ఉపవర్గాలు గానీ లేవు',
 	'categorytree-not-found' => '<i>$1</i> అనే వర్గం కనపడలేదు',
 	'categorytree-error' => 'డేటా లోడు చెయ్యడంలో లోపం దొర్లింది',
