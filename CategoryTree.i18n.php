@@ -3011,6 +3011,11 @@ $messages['sw'] = array(
 	'categorytree' => 'Mfumo wa jamii',
 	'categorytree-portlet' => 'Jamii',
 	'categorytree-legend' => 'Onyesha mfumo wa jamii',
+	'categorytree-desc' => 'Chungulia kwenye mfumo wa jamii',
+	'categorytree-header' => "Ingiza jina la jamii ili kuona yaliyomo kwenye mfumo wa jamii. '''Ilani''': hii itahitaji JavaScript ya kisasa ijulilkanayo kwa jina la AJAX. Endapo utakuwa na ya zamani, au JavaScript yako imezimwa, basi hii hatofanya kazi kabisa.",
+	'categorytree-category' => 'Jamii',
+	'categorytree-go' => 'Onyesha mfumo',
+	'categorytree-parents' => 'Kuu',
 );
 
 /** Tamil (தமிழ்)
