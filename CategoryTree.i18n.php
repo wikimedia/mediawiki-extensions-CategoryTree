@@ -659,6 +659,7 @@ $messages['cu'] = array(
  */
 $messages['cy'] = array(
 	'categorytree' => 'CoedenGategori',
+	'categorytree-portlet' => 'Categorïau',
 	'categorytree-legend' => 'Dangos y goeden gategori',
 	'categorytree-desc' => "Teclyn AJAX yn arddangos [[Special:CategoryTree|adeiledd categorïau]]'r wici",
 	'categorytree-header' => "Teipiwch enw categori yn y blwch er mwyn gweld ei gynnwys ar lun coeden. 
@@ -672,10 +673,12 @@ Ni lwydda'r gofyniad os yw'ch porwr yn hen iawn neu os nad yw Sgript Java wedi e
 	'categorytree-mode-all' => 'pob tudalen',
 	'categorytree-collapse' => 'crebachu',
 	'categorytree-expand' => 'ehangu',
+	'categorytree-member-counts' => 'yn cynnwys y canlynol: {{PLURAL:$#|$1 is-gategori}}, $2 {{PLURAL:$2|tudalen|dudalen|dudalen|tudalen|thudalen|tudalen}}, {{PLURAL:$#|$1 ffeil}}',
 	'categorytree-load' => 'llwytho',
 	'categorytree-loading' => "wrthi'n llwytho...",
 	'categorytree-nothing-found' => "dim i'w gael",
 	'categorytree-no-subcategories' => 'dim is-gategorïau',
+	'categorytree-no-parent-categories' => 'dim uwch-gategorïau',
 	'categorytree-no-pages' => 'dim tudalennau nag is-gategorïau',
 	'categorytree-not-found' => "Heb ddod o hyd i'r categori <i>$1</i>",
 	'categorytree-error' => "Cafwyd problem wrth lwytho'r data.",
@@ -2339,22 +2342,27 @@ Als u een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Eirik
+ * @author Harald Khan
  */
 $messages['nn'] = array(
 	'categorytree' => 'Kategoritre',
+	'categorytree-portlet' => 'Kategoriar',
+	'categorytree-legend' => 'Vis kategoritre',
 	'categorytree-header' => 'Skriv inn eit kategorinamn for å sjå innhaldet som ein trestruktur. Merk at denne funksjonen nyttar avansert [[JavaScript]]-funksjonalitet ([[AJAX]]). Dersom du brukar ein veldig gammal nettlesar, eller har slått av JavaScript-støtte, vil dette ikkje fungere.',
 	'categorytree-category' => 'Kategori:',
 	'categorytree-go' => 'Vis kategoritre',
 	'categorytree-parents' => 'Overkategoriar',
 	'categorytree-mode-categories' => 'berre kategoriane',
-	'categorytree-mode-pages' => 'sider, men ikkje filer',
+	'categorytree-mode-pages' => 'sider med unntak av filer',
 	'categorytree-mode-all' => 'alle sidene',
 	'categorytree-collapse' => 'gøym',
 	'categorytree-expand' => 'vis',
+	'categorytree-member-counts' => 'inneheld {{PLURAL:$1|éin underkategori|$1 underkategoriar}}, {{PLURAL:$2|éi sida|$2 sider}} og {{PLURAL:$3|éi fil|$3 filer}}',
 	'categorytree-load' => 'last inn',
 	'categorytree-loading' => 'lastar inn',
 	'categorytree-nothing-found' => 'fann ikkje noko',
 	'categorytree-no-subcategories' => 'ingen underkategoriar',
+	'categorytree-no-parent-categories' => 'ingen foreldrekategoriar',
 	'categorytree-no-pages' => 'ingen sider eller underkategoriar',
 	'categorytree-not-found' => 'Fann ikkje kategorien <i>$1</i>',
 	'categorytree-error' => 'Problem med innlasting av data.',
