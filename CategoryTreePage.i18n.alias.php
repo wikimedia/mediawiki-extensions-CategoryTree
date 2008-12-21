@@ -142,7 +142,7 @@ $aliases['ja'] = array(
 
 /** Khmer (ភាសាខ្មែរ) */
 $aliases['km'] = array(
-	'CategoryTree' => array( 'មែកធាងចំនាត់ថ្នាក់ក្រុម' ),
+	'CategoryTree' => array( 'មែកធាងចំណាត់ថ្នាក់ក្រុម' ),
 );
 
 /** Korean (한국어) */
