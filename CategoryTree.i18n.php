@@ -56,6 +56,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
  * @author Meno25
  * @author Raimond Spekking
  * @author Raymond
+ * @author Siebrand
  * @author Александр Сигачёв
  * @author פוילישער
  */
@@ -84,12 +85,12 @@ Item for the mode choice on Special:CategoryTree, indicating that all pages are 
 	'categorytree-empty-bullet' => 'Visible form of the "expand" button for empty branches (symbolic, do not translate)', # do not translate or duplicate this message to other languages
 	'categorytree-page-bullet' => 'Visible bullet for non-category items in the tree (symbolic, do not translate)', # do not translate or duplicate this message to other languages
 	'categorytree-member-counts' => 'Tooltip showing a detailed summary of subcategory member counts. Parameters: 
-			$1 = number of subcategories, 
-			$2 = number of pages (without subcategories and files), 
-			$3 = number of files, 
-			$4 = total number of members, 
-			$5 = members to be shown in the tree, depending on mode. 
-			Use with { {PLURAL} }',
+* $1 = number of subcategories, 
+* $2 = number of pages (without subcategories and files), 
+* $3 = number of files, 
+* $4 = total number of members, 
+* $5 = members to be shown in the tree, depending on mode. 
+Use with { {PLURAL} }',
 	'categorytree-member-num' => 'Short summary of subcategory member counts, to be shown inline.
 			Usually numeric, translation should not be neccessary. Parameters: 
 			$1 = number of subcategories, 
@@ -553,6 +554,7 @@ $messages['bs'] = array(
  * @author Aleator
  * @author Paucabot
  * @author SMP
+ * @author Vriullop
  */
 $messages['ca'] = array(
 	'categorytree' => 'Categories en arbre',
@@ -568,7 +570,7 @@ $messages['ca'] = array(
 	'categorytree-mode-all' => 'mostra categories, pàgines i imatges',
 	'categorytree-collapse' => 'Tancar',
 	'categorytree-expand' => 'Expandir',
-	'categorytree-member-counts' => 'conté {{PLURAL:$1|1 subcategoria|$1 subcategories}}, {{PLURAL:$2|1 pàgina|$2 pàgines}}, i {{PLURAL:$3|1 arxiu|$3 arxius}}',
+	'categorytree-member-counts' => 'conté {{PLURAL:$1|1 subcategoria|$1 subcategories}}, {{PLURAL:$2|1 pàgina|$2 pàgines}}, i {{PLURAL:$3|1 fitxer|$3 fitxers}}',
 	'categorytree-load' => 'Carrega',
 	'categorytree-loading' => 'carregant',
 	'categorytree-nothing-found' => 'no hi ha sub-categories',
@@ -1842,7 +1844,7 @@ $messages['km'] = array(
 	'categorytree-no-pages' => 'មិនមានទំព័រឬចំណាត់ថ្នាក់ក្រុមរងទេ',
 	'categorytree-not-found' => 'រកមិនឃើញចំណាត់ថ្នាក់ក្រុម <i>$1</i> ទេ',
 	'categorytree-error' => 'មានបញ្ហាក្នុងផ្ទុកទិន្នន័យ។',
-	'categorytree-retry' => 'សូមរងចាំមួយភ្លែតរួចព្យាយាមម្តងទៀត។',
+	'categorytree-retry' => 'សូម​រង់ចាំ​មួយភ្លែត​រួច​ព្យាយាម​ម្តងទៀត​។',
 );
 
 /** Korean (한국어)
@@ -1867,6 +1869,7 @@ $messages['ko'] = array(
 	'categorytree-mode-all' => '모든 문서를 표시',
 	'categorytree-collapse' => '접기',
 	'categorytree-expand' => '펼치기',
+	'categorytree-member-counts' => '분류는 {{PLURAL:$1|1개의 하위 분류|$1개의 하위 분류}}와, {{PLURAL:$2|1개의 문서|$2개의 문서}}, 그리고 {{PLURAL:$3|1개의 파일|$3개의 파일}}을 포함하고 있습니다.',
 	'categorytree-load' => '불러오기',
 	'categorytree-loading' => '불러오는 중',
 	'categorytree-nothing-found' => '결과 없음',
@@ -1902,7 +1905,7 @@ $messages['ksh'] = array(
 	'categorytree-mode-all' => 'alles: nomaal Sigge, Saachjruppe, un Medije',
 	'categorytree-collapse' => 'zosammefallde',
 	'categorytree-expand' => 'opfallde',
-	'categorytree-member-counts' => 'Do dren {{PLURAL:$1|{{PLURAL:$4|sin|es|es}} ein Ungerjrupp|sin $1 Ungerjruppe|es kein Ungerjrupp}}, {{PLURAL:$2|ein Sigg|$2 Sigge|kein Sigg}}, un {{PLURAL:$3|ein Datei|$3 Dateie|kein Dateie}}, zosamme {{PLURAL:$4|ein Saach|$4 Saache|och nix}}<!--, aanjezeich {{PLURAL:$5|weed ein|{{#ifeq:{{#expr:$4-$5}}|wäde|wöödte}} $5|weed nix}}-->.',
+	'categorytree-member-counts' => 'Do dren {{PLURAL:$1|{{PLURAL:$4|sin|es|es}} ein Ungerjrupp|sin $1 Ungerjruppe|es kein Ungerjrupp}}, {{PLURAL:$2|ein Sigg|$2 Sigge|kein Sigg}}, un {{PLURAL:$3|ein Datei|$3 Dateie|kein Dateie}}, zosamme {{PLURAL:$4|ein Saach|$4 Saache|och nix}}',
 	'categorytree-load' => 'lade',
 	'categorytree-loading' => 'am lade…',
 	'categorytree-nothing-found' => 'nix jefonge',
@@ -2348,6 +2351,7 @@ $messages['nn'] = array(
 	'categorytree' => 'Kategoritre',
 	'categorytree-portlet' => 'Kategoriar',
 	'categorytree-legend' => 'Vis kategoritre',
+	'categorytree-desc' => 'AJAX-basert verktøy som viser [[Special:CategoryTree|kategoristrukturen]] til ein wiki',
 	'categorytree-header' => 'Skriv inn eit kategorinamn for å sjå innhaldet som ein trestruktur. Merk at denne funksjonen nyttar avansert [[JavaScript]]-funksjonalitet ([[AJAX]]). Dersom du brukar ein veldig gammal nettlesar, eller har slått av JavaScript-støtte, vil dette ikkje fungere.',
 	'categorytree-category' => 'Kategori:',
 	'categorytree-go' => 'Vis kategoritre',
