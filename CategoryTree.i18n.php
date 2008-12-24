@@ -2352,7 +2352,7 @@ $messages['nn'] = array(
 	'categorytree-portlet' => 'Kategoriar',
 	'categorytree-legend' => 'Vis kategoritre',
 	'categorytree-desc' => 'AJAX-basert verktøy som viser [[Special:CategoryTree|kategoristrukturen]] til ein wiki',
-	'categorytree-header' => 'Skriv inn eit kategorinamn for å sjå innhaldet som ein trestruktur. Merk at denne funksjonen nyttar avansert [[JavaScript]]-funksjonalitet ([[AJAX]]). Dersom du brukar ein veldig gammal nettlesar, eller har slått av JavaScript-støtte, vil dette ikkje fungere.',
+	'categorytree-header' => 'Skriv inn eit kategorinamn for å sjå innhaldet som ein trestruktur. Merk at denne funksjonen nyttar avansert [[JavaScript]]-funksjonalitet ([[AJAX]]). Dersom du bruker ein veldig gammal nettlesar, eller har slått av JavaScript-støtte, vil dette ikkje fungere.',
 	'categorytree-category' => 'Kategori:',
 	'categorytree-go' => 'Vis kategoritre',
 	'categorytree-parents' => 'Overkategoriar',
@@ -2370,7 +2370,7 @@ $messages['nn'] = array(
 	'categorytree-no-pages' => 'ingen sider eller underkategoriar',
 	'categorytree-not-found' => 'Fann ikkje kategorien <i>$1</i>',
 	'categorytree-error' => 'Problem med innlasting av data.',
-	'categorytree-retry' => 'Ver venleg og vent litt før du prøvar ein gong til.',
+	'categorytree-retry' => 'Ver venleg og vent litt før du prøver ein gong til.',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
