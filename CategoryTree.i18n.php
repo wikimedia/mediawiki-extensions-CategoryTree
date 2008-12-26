@@ -1639,6 +1639,7 @@ $messages['it'] = array(
 /** Japanese (日本語)
  * @author Aotake
  * @author Broad-Sky
+ * @author Fryed-peach
  * @author JtFuruhata
  * @author Kahusi
  */
@@ -1647,7 +1648,7 @@ $messages['ja'] = array(
 	'categorytree-portlet' => 'カテゴリ',
 	'categorytree-legend' => 'カテゴリツリーを表示',
 	'categorytree-desc' => 'ウィキの[[Special:CategoryTree|カテゴリの構造]]をツリー形式で表示する',
-	'categorytree-header' => 'カテゴリの中身をツリー構造としてを見るために、そのカテゴリ名を入力してください。この機能は、Ajaxとして知られているJavaScriptを使用していることに注意してください。もしあなたが使っているブラウザが非常に古かったり、JavaScriptを有効にしていないのであれば、動作しません。',
+	'categorytree-header' => 'カテゴリの中身を木構造として表示するために、そのカテゴリ名を入力してください。この機能は Ajax という高度な JavaScript 機能を使用していることに注意してください。もしあなたが使っているブラウザが非常に古かったり、JavaScript を有効にしていないのであれば、動作しません。',
 	'categorytree-category' => 'カテゴリ名:',
 	'categorytree-go' => 'ツリーを見る',
 	'categorytree-parents' => '上位カテゴリ',
