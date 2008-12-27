@@ -907,9 +907,14 @@ $messages['et'] = array(
 	'categorytree-retry' => 'Palun oota hetk ja proovi uuesti.',
 );
 
-/** Basque (Euskara) */
+/** Basque (Euskara)
+ * @author Theklan
+ */
 $messages['eu'] = array(
 	'categorytree' => 'Kategoria Zuhaitza',
+	'categorytree-portlet' => 'Kategoriak',
+	'categorytree-legend' => 'Erakutsi kategoria zuhaitza',
+	'categorytree-desc' => 'Dinamikoki nabigatu [[Berezi:KategoriaZuhaitza|kategoria zuhaitza]]',
 	'categorytree-header' => 'Idatzi kategoria baten izena bere edukia zuhaitz eran ikusteko. Kontuan izan horrek AJAX bezala ezagutzen diren JavaScript funtzio aurreratuen beharra duela. Nabigatzaile zahar bat erabiltzen baduzu, edo JavaScript ezgaituta badaukazu, ez du funtzionatuko.',
 	'categorytree-category' => 'Kategoria',
 	'categorytree-go' => 'Zuhaitza Erakutsi',
@@ -919,10 +924,12 @@ $messages['eu'] = array(
 	'categorytree-mode-all' => 'orrialde guztiak',
 	'categorytree-collapse' => 'itxi',
 	'categorytree-expand' => 'zabaldu',
+	'categorytree-member-counts' => '{{PLURAL:$1|azpikategoria 1|$1 azpikategoria}}, {{PLURAL:$2|orrialde 1|$2 orrialde}} eta {{PLURALK:$3|fitxategi 1|$3 fitxategi}} ditu',
 	'categorytree-load' => 'kargatu',
 	'categorytree-loading' => 'kargatzen',
 	'categorytree-nothing-found' => 'ez da ezer aurkitu',
 	'categorytree-no-subcategories' => 'ez dago azpikategoriarik',
+	'categorytree-no-parent-categories' => 'ez dago kategoria gurasorik',
 	'categorytree-no-pages' => 'ez dago orrialde edo azpikategoriarik',
 	'categorytree-not-found' => 'Ez da <i>$1</i> kategoria aurkitu',
 	'categorytree-error' => 'Arazoa datuak kargatzerakoan.',
