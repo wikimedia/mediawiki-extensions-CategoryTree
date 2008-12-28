@@ -894,14 +894,18 @@ Si tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no fu
 );
 
 /** Estonian (Eesti)
+ * @author Avjoska
  * @author Jaan513
  */
 $messages['et'] = array(
 	'categorytree' => 'Kategooriapuu',
+	'categorytree-portlet' => 'Kategooriad',
+	'categorytree-legend' => 'Näita kategooriapuud',
 	'categorytree-category' => 'Kategooria:',
 	'categorytree-mode-categories' => 'ainult kategooriad',
 	'categorytree-mode-pages' => 'leheküljed, välja arvatud pildid',
 	'categorytree-mode-all' => 'kõik leheküljed',
+	'categorytree-nothing-found' => 'ei leitud midagi',
 	'categorytree-no-subcategories' => 'alamkategooriaid ei ole',
 	'categorytree-not-found' => 'Kategooriat <i>$1</i> ei leitud.',
 	'categorytree-retry' => 'Palun oota hetk ja proovi uuesti.',
@@ -2754,6 +2758,35 @@ $messages['sah'] = array(
 	'categorytree-retry' => 'Кыратык кэтэһэ түһэн баран өссө боруобалаа',
 );
 
+/** Sicilian (Sicilianu)
+ * @author Santu
+ */
+$messages['scn'] = array(
+	'categorytree' => 'Àrvulu  di li catigurìi',
+	'categorytree-portlet' => 'Catigurìi',
+	'categorytree-legend' => "Ammustra l'àrvuru di li catigurìi",
+	'categorytree-desc' => 'Accissòriu AJAX pi taliari la [[Special:CategoryTree|struttura di li catigurìi]] dû situ',
+	'categorytree-header' => 'Nziriri lu nomu dâ catigirìa di unni si disìa taliari lu cuntinutu sutta furma di struttura a àrvulu. La pàggina addumanna li funziunalitati avanzati di JavaScript saputi sèntiri AJAX; si veni usatu nu browser  vecchiu assai o li funzioni JavaScript sunnu disabbilitati, sta pàggina non funziona.',
+	'categorytree-category' => 'Catigurìa:',
+	'categorytree-go' => 'Càrica',
+	'categorytree-parents' => 'Catigurìi cchiù àuti',
+	'categorytree-mode-categories' => 'ammustra sulu li catigurìi',
+	'categorytree-mode-pages' => 'tutti li pàggini, lassannu fora li mmàggini',
+	'categorytree-mode-all' => 'tutti li pàggini',
+	'categorytree-collapse' => 'cumprimi',
+	'categorytree-expand' => 'spanni',
+	'categorytree-member-counts' => 'cunteni {{PLURAL:$1|1 suttacatigurìa|$1 suttacatigurìi}}, {{PLURAL:$2|1 pàggina|$2 pàggini}} e {{PLURAL:$3|1 file|$3 file}}',
+	'categorytree-load' => 'càrica',
+	'categorytree-loading' => 'sta caricannu...',
+	'categorytree-nothing-found' => 'nuddu risurtatu',
+	'categorytree-no-subcategories' => 'nudda suttacatigurìa.',
+	'categorytree-no-parent-categories' => 'nudda catigurìa cchià àuta',
+	'categorytree-no-pages' => 'nudda vuci e nudda suttacatigurìa.',
+	'categorytree-not-found' => "Catigurìa  ''$1'' non attruvata",
+	'categorytree-error' => 'Prubbrema nnô caricamentu dî dati.',
+	'categorytree-retry' => "Aspittari tanticchia e appoi pruvari n'ùutra vota.",
+);
+
 /** Sassaresu (Sassaresu)
  * @author Felis
  */
@@ -3088,6 +3121,7 @@ $messages['te'] = array(
  */
 $messages['tet'] = array(
 	'categorytree' => 'Ai-hun kategoria',
+	'categorytree-portlet' => 'Kategoria sira',
 	'categorytree-category' => 'Kategoria:',
 	'categorytree-go' => 'Hatudu ai-hun',
 	'categorytree-mode-categories' => "hatudu de'it kategoria",
