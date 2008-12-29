@@ -225,6 +225,11 @@ $aliases['pt-br'] = array(
 	'CategoryTree' => array( 'Árvore de categorias', 'Árvore de categoria' ),
 );
 
+/** Romanian (Română) */
+$aliases['ro'] = array(
+	'CategoryTree' => array( 'Arborele categoriilor' ),
+);
+
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
 	'CategoryTree' => array( 'Kategoriträd' ),
