@@ -401,6 +401,7 @@ $messages['bcl'] = array(
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author Cesco
  * @author EugeneZelenko
+ * @author Jim-by
  * @author Red Winged Duck
  */
 $messages['be-tarask'] = array(
@@ -408,6 +409,9 @@ $messages['be-tarask'] = array(
 	'categorytree-portlet' => 'Катэгорыі',
 	'categorytree-legend' => 'Паказаць дрэва катэгорый',
 	'categorytree-desc' => 'Заснаваная на AJAX прылада для паказу [[Special:CategoryTree|структуры катэгорый]] {{GRAMMAR:родны|{{SITENAME}}}}',
+	'categorytree-header' => 'Увядзіце назву катэгорыі, каб пабачыць яе ў выглядзе дрэва.
+Заўважце, што гэта патрабуе функцыянальнасьці JavaScript, вядомай як AJAX.
+Калі ў Вас вельмі стары браўзэр, ці адключана JavaScript, гэта функцыя працаваць ня будзе.',
 	'categorytree-category' => 'Катэгорыя:',
 	'categorytree-go' => 'Паказаць дрэва',
 	'categorytree-parents' => 'Продкі',
@@ -416,6 +420,7 @@ $messages['be-tarask'] = array(
 	'categorytree-mode-all' => 'усе старонкі',
 	'categorytree-collapse' => 'згарнуць',
 	'categorytree-expand' => 'разгарнуць',
+	'categorytree-member-counts' => 'утрымлівае $1 {{PLURAL:$1|падкатэгорыю|падкатэгорыі|падкатэгорыяў}}, $2 {{PLURAL:$2|старонку|старонкі|старонак}} і $3 {{PLURAL:$3|файл|файлы|файлаў}}',
 	'categorytree-load' => 'загрузіць',
 	'categorytree-loading' => 'загрузка…',
 	'categorytree-nothing-found' => 'нічога ня знойдзена',
