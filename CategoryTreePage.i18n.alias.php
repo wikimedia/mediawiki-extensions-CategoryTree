@@ -83,6 +83,11 @@ $aliases['es'] = array(
 	'CategoryTree' => array( 'ÁrbolDeCategorías', 'Árbol de categorías' ),
 );
 
+/** Basque (Euskara) */
+$aliases['eu'] = array(
+	'CategoryTree' => array( 'KategoriaZuhaitza' ),
+);
+
 /** Persian (فارسی) */
 $aliases['fa'] = array(
 	'CategoryTree' => array( 'درخت_رده' ),
