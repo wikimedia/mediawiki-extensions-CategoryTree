@@ -1667,7 +1667,7 @@ $messages['ja'] = array(
 	'categorytree-portlet' => 'カテゴリ',
 	'categorytree-legend' => 'カテゴリツリーを表示',
 	'categorytree-desc' => 'ウィキの[[Special:CategoryTree|カテゴリの構造]]をツリー形式で表示する',
-	'categorytree-header' => 'カテゴリの中身を木構造として表示するために、そのカテゴリ名を入力してください。この機能は Ajax という高度な JavaScript 機能を使用していることに注意してください。もしあなたが使っているブラウザが非常に古かったり、JavaScript を有効にしていないのであれば、動作しません。',
+	'categorytree-header' => 'カテゴリの中身をツリー形式で表示するために、そのカテゴリ名を入力してください。この機能は Ajax という高度な JavaScript 機能を使用していることに注意してください。もしあなたが使っているブラウザが非常に古かったり、JavaScript を有効にしていないのであれば、動作しません。',
 	'categorytree-category' => 'カテゴリ名:',
 	'categorytree-go' => 'ツリーを見る',
 	'categorytree-parents' => '上位カテゴリ',
@@ -1749,11 +1749,13 @@ Menawa panjenengan panjlajah wèbé kalebu vèrsi lawa, utawa fitur JavaScript d
  * @author Malafaya
  */
 $messages['ka'] = array(
-	'categorytree' => 'კატეგორიების ხე',
+	'categorytree' => 'კატეგორიების სქემა',
 	'categorytree-portlet' => 'კატეგორიები',
+	'categorytree-legend' => 'კატეგორიების სქემის ჩვენება',
 	'categorytree-category' => 'კატეგორია:',
-	'categorytree-go' => 'ხის ჩვენება',
-	'categorytree-mode-categories' => 'te klads',
+	'categorytree-go' => 'სქემის ჩვენება',
+	'categorytree-mode-categories' => 'მხოლოდ კატეგორიები',
+	'categorytree-mode-pages' => 'გვერდები ფაილების გარდა',
 	'categorytree-mode-all' => 'ყველა გვერდი',
 	'categorytree-not-found' => 'კატეგორია <i>$1</i> არ არსებობს',
 );
@@ -2471,6 +2473,7 @@ $messages['oc'] = array(
  * @author Amikeco
  */
 $messages['os'] = array(
+	'categorytree-portlet' => 'Категоритæ',
 	'categorytree-category' => 'Категори:',
 	'categorytree-go' => 'Равдис бæлас',
 	'categorytree-mode-all' => 'æппæт фæрстæ',
@@ -3416,7 +3419,7 @@ $messages['vo'] = array(
 	'categorytree-category' => 'Klad:',
 	'categorytree-go' => 'Jonolöd Bimi',
 	'categorytree-parents' => 'Pals',
-	'categorytree-mode-categories' => 'Te klads',
+	'categorytree-mode-categories' => 'te klads',
 	'categorytree-mode-pages' => 'pads pläamü ragivs',
 	'categorytree-mode-all' => 'pads valik',
 	'categorytree-collapse' => 'brefükön',
