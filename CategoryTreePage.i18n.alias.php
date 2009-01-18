@@ -235,6 +235,11 @@ $aliases['ro'] = array(
 	'CategoryTree' => array( 'Arborele categoriilor' ),
 );
 
+/** Sanskrit (संस्कृत) */
+$aliases['sa'] = array(
+	'CategoryTree' => array( 'वर्गवृक्ष:' ),
+);
+
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
 	'CategoryTree' => array( 'Kategoriträd' ),
