@@ -3087,7 +3087,13 @@ $messages['sw'] = array(
 	'categorytree-category' => 'Jamii',
 	'categorytree-go' => 'Onyesha mfumo',
 	'categorytree-parents' => 'Kuu',
+	'categorytree-mode-categories' => 'jamii tu',
+	'categorytree-mode-pages' => 'kurasa isipokuwa mafaili',
 	'categorytree-mode-all' => 'kurasa zote',
+	'categorytree-no-subcategories' => 'jamii ndogo zake hakuna',
+	'categorytree-no-parent-categories' => 'jamii kuu hakuna',
+	'categorytree-no-pages' => 'hakuna kurasa wala jamii ndogo zake',
+	'categorytree-not-found' => 'Jamii inayoitwa $1 haikupatikana',
 );
 
 /** Tamil (தமிழ்)
