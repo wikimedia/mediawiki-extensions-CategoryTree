@@ -155,6 +155,11 @@ $aliases['ko'] = array(
 	'CategoryTree' => array( '분류트리' ),
 );
 
+/** Ripoarisch (Ripoarisch) */
+$aliases['ksh'] = array(
+	'CategoryTree' => array( 'Saachjruppeboum' ),
+);
+
 /** Latin (Latina) */
 $aliases['la'] = array(
 	'CategoryTree' => array( 'Categoriarum arbor' ),

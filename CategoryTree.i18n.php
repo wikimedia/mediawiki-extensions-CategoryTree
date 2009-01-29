@@ -751,6 +751,13 @@ Diese Seite benÃ¶tigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert mÃ
 	'categorytree-retry' => 'Bitte warte einen Moment und versuche es dann erneut.',
 );
 
+/** Swiss High German (Schweizer Hochdeutsch)
+ * @author MichaelFrey
+ */
+$messages['de-ch'] = array(
+	'categorytree-mode-pages' => 'Seiten ausser Dateien',
+);
+
 /** German (formal address) (Deutsch (Sie-Form))
  * @author Raimond Spekking
  */
@@ -917,16 +924,17 @@ $messages['et'] = array(
 );
 
 /** Basque (Euskara)
+ * @author An13sa
  * @author Theklan
  */
 $messages['eu'] = array(
 	'categorytree' => 'Kategoria Zuhaitza',
 	'categorytree-portlet' => 'Kategoriak',
 	'categorytree-legend' => 'Erakutsi kategoria zuhaitza',
-	'categorytree-desc' => 'Dinamikoki nabigatu [[Berezi:KategoriaZuhaitza|kategoria zuhaitza]]',
+	'categorytree-desc' => 'Dinamikoki nabigatu [[Special:CategoryTree|kategoria zuhaitza]]',
 	'categorytree-header' => 'Idatzi kategoria baten izena bere edukia zuhaitz eran ikusteko. Kontuan izan horrek AJAX bezala ezagutzen diren JavaScript funtzio aurreratuen beharra duela. Nabigatzaile zahar bat erabiltzen baduzu, edo JavaScript ezgaituta badaukazu, ez du funtzionatuko.',
 	'categorytree-category' => 'Kategoria',
-	'categorytree-go' => 'Zuhaitza Erakutsi',
+	'categorytree-go' => 'Zuhaitza erakutsi',
 	'categorytree-parents' => 'Gurasoak',
 	'categorytree-mode-categories' => 'kategoriak bakarrik',
 	'categorytree-mode-pages' => 'orrialdeak, irudiak ezik',
