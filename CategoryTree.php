@@ -229,7 +229,7 @@ function efCategoryTreeGetMagic( &$magicWords, $langCode ) {
  * This loads CategoryTreeFunctions.php and calls CategoryTree::ajax()
  */
 function efCategoryTreeAjaxWrapper( $category, $options, $enc = '' ) {
-	global $wgCategoryTreeHTTPCache, $wgSquidMaxAge, $wgUseSquid;
+	global $wgCategoryTreeHTTPCache, $wgSquidMaxage, $wgUseSquid;
 
 	if ( is_string( $options ) ) {
 		$options = CategoryTree::decodeOptions( $options, $enc );
@@ -241,8 +241,8 @@ function efCategoryTreeAjaxWrapper( $category, $options, $enc = '' ) {
 	$depth = efCategoryTreeCapDepth( $ct->getOption('mode'), $depth );
 	$response = $ct->ajax( $category, $depth );
 
-	if ( $wgCategoryTreeHTTPCache && $wgSquidMaxAge && $wgUseSquid ) {
-		$response->setCacheDuration( $wgSquidMaxAge );
+	if ( $wgCategoryTreeHTTPCache && $wgSquidMaxage && $wgUseSquid ) {
+		$response->setCacheDuration( $wgSquidMaxage );
 		$response->setVary( 'Accept-Encoding, Cookie' ); #cache for anons only
 		#TODO: purge the squid cache when a category page is invalidated
 	}
