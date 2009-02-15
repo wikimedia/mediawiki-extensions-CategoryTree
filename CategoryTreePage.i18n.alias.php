@@ -135,6 +135,11 @@ $aliases['hu'] = array(
 	'CategoryTree' => array( 'Kategóriafa' ),
 );
 
+/** Interlingua (Interlingua) */
+$aliases['ia'] = array(
+	'CategoryTree' => array( 'ArboreDeCategorias' ),
+);
+
 /** Indonesian (Bahasa Indonesia) */
 $aliases['id'] = array(
 	'CategoryTree' => array( 'Pohon kategori' ),
@@ -253,6 +258,11 @@ $aliases['sv'] = array(
 /** Swahili (Kiswahili) */
 $aliases['sw'] = array(
 	'CategoryTree' => array( 'SafuyaJamii' ),
+);
+
+/** Tagalog (Tagalog) */
+$aliases['tl'] = array(
+	'CategoryTree' => array( 'Puno ng kaurian' ),
 );
 
 /** Vèneto (Vèneto) */
