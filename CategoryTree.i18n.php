@@ -345,6 +345,17 @@ Ede va guazafi exulesiki favel oke ede JavaScript fliaceem tir metegis, batcoba 
 	'categorytree-retry' => 'Vay kemel aze tolyawal !',
 );
 
+/** Bavarian (Boarisch)
+ * @author Man77
+ */
+$messages['bar'] = array(
+	'categorytree' => 'Kategorienbam',
+	'categorytree-portlet' => 'Kategorien',
+	'categorytree-legend' => 'in Kategorienbam ãnzoang',
+	'categorytree-collapse' => 'eiklåppm',
+	'categorytree-expand' => 'ausklåppm',
+);
+
 /** Samogitian (Žemaitėška)
  * @author Hugo.arg
  */
@@ -1683,7 +1694,7 @@ $messages['ja'] = array(
 	'categorytree-mode-pages' => 'ファイル以外の全ページ',
 	'categorytree-mode-all' => '全ページ',
 	'categorytree-collapse' => '下位カテゴリを非表示',
-	'categorytree-expand' => '下位カテゴリを再表示',
+	'categorytree-expand' => '下位カテゴリを表示',
 	'categorytree-member-counts' => '$1個のサブカテゴリ、$2件のページ、$3個のファイルを含んでいます',
 	'categorytree-load' => '下位カテゴリを表示',
 	'categorytree-loading' => '読み込み中…',
