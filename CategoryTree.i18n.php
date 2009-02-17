@@ -354,6 +354,7 @@ $messages['bar'] = array(
 	'categorytree-legend' => 'in Kategorienbam ãnzoang',
 	'categorytree-collapse' => 'eiklåppm',
 	'categorytree-expand' => 'ausklåppm',
+	'categorytree-load' => 'lådn',
 );
 
 /** Samogitian (Žemaitėška)
@@ -1603,10 +1604,12 @@ $messages['ie'] = array(
  * @author Malafaya
  */
 $messages['io'] = array(
+	'categorytree-portlet' => 'Kategorii',
 	'categorytree-category' => 'Kategorio:',
 	'categorytree-go' => 'Montrar Arboro',
 	'categorytree-mode-categories' => 'nur kategorii',
 	'categorytree-mode-all' => 'omna pagini',
+	'categorytree-nothing-found' => 'nulo trovita',
 	'categorytree-no-subcategories' => 'nula subkategorii',
 	'categorytree-no-pages' => 'nula pagini o subkategorii',
 );
@@ -2751,7 +2754,7 @@ $messages['ru'] = array(
 	'categorytree-loading' => 'загрузка…',
 	'categorytree-nothing-found' => 'Данная категория не содержит подкатегорий.',
 	'categorytree-no-subcategories' => 'нет подкатегорий.',
-	'categorytree-no-parent-categories' => 'не родительских категорий',
+	'categorytree-no-parent-categories' => 'нет родительских категорий',
 	'categorytree-no-pages' => 'нет статей и подкатегорий.',
 	'categorytree-not-found' => 'Категория «$1» не найдена.',
 	'categorytree-error' => 'Ошибка загрузки данных.',
