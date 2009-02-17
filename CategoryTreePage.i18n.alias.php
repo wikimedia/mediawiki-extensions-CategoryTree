@@ -137,7 +137,7 @@ $aliases['hu'] = array(
 
 /** Interlingua (Interlingua) */
 $aliases['ia'] = array(
-	'CategoryTree' => array( 'ArboreDeCategorias' ),
+	'CategoryTree' => array( 'Arbore de categorias' ),
 );
 
 /** Indonesian (Bahasa Indonesia) */
