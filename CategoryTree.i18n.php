@@ -53,6 +53,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 
 /** Message documentation (Message documentation)
  * @author Jon Harald Søby
+ * @author Malafaya
  * @author Meno25
  * @author Raimond Spekking
  * @author Raymond
@@ -74,7 +75,7 @@ Label for the category input field on Special:CategoryTree',
 	'categorytree-go' => 'Label for the submit button on [[Special:CategoryTree]]',
 	'categorytree-parents' => 'Label for the list of parent categories on [[Special:CategoryTree]]',
 	'categorytree-mode-categories' => 'Item for the mode choice on [[Special:CategoryTree]], indicating that only categories are listed',
-	'categorytree-mode-pages' => 'Item for the mode choice on [[Special:CategoryTree]], indicating that no images are categories are listed',
+	'categorytree-mode-pages' => 'Item for the mode choice on [[Special:CategoryTree]], indicating that no images in categories are listed',
 	'categorytree-mode-all' => '{{Identical|All pages}}
 
 Item for the mode choice on Special:CategoryTree, indicating that all pages are listed',
@@ -1068,16 +1069,16 @@ $messages['fr'] = array(
 	'categorytree-mode-all' => 'toutes les pages',
 	'categorytree-collapse' => 'Refermer',
 	'categorytree-expand' => 'Développer',
-	'categorytree-member-counts' => 'contient {{PLURAL:$1|1 sous-catégorie|$1 sous-catégories}}, {{PLURAL:$2|1 page|$2 pages}}, et {{PLURAL:$3|1 fichier|$3 fichiers}}',
-	'categorytree-load' => 'Ouvrir',
-	'categorytree-loading' => 'ouverture...',
-	'categorytree-nothing-found' => 'Aucune',
-	'categorytree-no-subcategories' => 'Aucune sous-catégorie.',
+	'categorytree-member-counts' => 'contient $1 sous-catégorie{{PLURAL:$1||s}}, $2 page{{PLURAL:$2||s}} et $3 fichier{{PLURAL:$3||s}}',
+	'categorytree-load' => 'charger',
+	'categorytree-loading' => 'chargement...',
+	'categorytree-nothing-found' => 'Aucune trouvée',
+	'categorytree-no-subcategories' => 'Aucune sous-catégorie',
 	'categorytree-no-parent-categories' => 'Aucune catégorie parente',
 	'categorytree-no-pages' => 'Aucune page ou sous-catégorie.',
-	'categorytree-not-found' => 'La catégorie <tt>$1</tt> n’a pas été trouvée.',
+	'categorytree-not-found' => 'Catégorie <tt>$1</tt> introuvable',
 	'categorytree-error' => 'Problème de chargement des données.',
-	'categorytree-retry' => 'Attendez un instant puis réessayez.',
+	'categorytree-retry' => 'Veuillez attendre un instant puis réessayer.',
 );
 
 /** Franco-Provençal (Arpetan)
@@ -1608,10 +1609,12 @@ $messages['io'] = array(
 	'categorytree-category' => 'Kategorio:',
 	'categorytree-go' => 'Montrar Arboro',
 	'categorytree-mode-categories' => 'nur kategorii',
+	'categorytree-mode-pages' => 'pagini ecepte arkivi',
 	'categorytree-mode-all' => 'omna pagini',
 	'categorytree-nothing-found' => 'nulo trovita',
 	'categorytree-no-subcategories' => 'nula subkategorii',
 	'categorytree-no-pages' => 'nula pagini o subkategorii',
+	'categorytree-not-found' => 'Kategorio <i>$1</i> ne trovita',
 );
 
 /** Icelandic (Íslenska)
