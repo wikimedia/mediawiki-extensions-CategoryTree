@@ -2661,11 +2661,34 @@ Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desab
 
 /** Brazilian Portuguese (Português do Brasil)
  * @author Carla404
+ * @author Eduardo.mps
  */
 $messages['pt-br'] = array(
+	'categorytree' => 'Árvore de categorias',
+	'categorytree-portlet' => 'Categorias',
+	'categorytree-legend' => 'Exibir a árvore de categorias',
+	'categorytree-desc' => 'Acessório (gadget) baseado em AJAX que apresenta a [[Special:CategoryTree|estrutura]] de um wiki',
+	'categorytree-header' => 'Insira o nome de uma categoria para ver seu conteúdo como uma estrutura de "árvore".
+Note que isso requer funcionalidades avançadas de JavaScript (como, por exemplo, AJAX).
+Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desabilitado em seu navegador, isto não funcionará.',
+	'categorytree-category' => 'Categoria:',
+	'categorytree-go' => 'Exibir Árvore',
+	'categorytree-parents' => 'Categorias superiores',
+	'categorytree-mode-categories' => 'mostrar apenas as categorias',
+	'categorytree-mode-pages' => 'páginas, exceto imagens',
+	'categorytree-mode-all' => 'todas as páginas',
 	'categorytree-collapse' => 'ocultar',
 	'categorytree-expand' => 'expandir',
 	'categorytree-member-counts' => 'contém {{PLURAL:$1|1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|1 página|$2 páginas}} e {{PLURAL:$3|1 arquivo|$3 arquivos}}',
+	'categorytree-load' => 'carregar',
+	'categorytree-loading' => 'carregando',
+	'categorytree-nothing-found' => 'Sentimos muito, não se encontrou nada',
+	'categorytree-no-subcategories' => 'sem subcategorias',
+	'categorytree-no-parent-categories' => 'não há categorias superiores',
+	'categorytree-no-pages' => 'sem páginas nem subcategorias',
+	'categorytree-not-found' => 'A categoria <i>$1</i> não foi encontrada',
+	'categorytree-error' => 'Problema ao carregar os dados.',
+	'categorytree-retry' => 'Por gentileza, aguarde um momento e tente novamente.',
 );
 
 /** Quechua (Runa Simi)
