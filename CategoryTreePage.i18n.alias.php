@@ -265,6 +265,11 @@ $aliases['tl'] = array(
 	'CategoryTree' => array( 'Puno ng kaurian' ),
 );
 
+/** Turkish (Türkçe) */
+$aliases['tr'] = array(
+	'CategoryTree' => array( 'KategoriHiyerarşisi' ),
+);
+
 /** Vèneto (Vèneto) */
 $aliases['vec'] = array(
 	'CategoryTree' => array( 'ÀlbaroCategorie' ),
