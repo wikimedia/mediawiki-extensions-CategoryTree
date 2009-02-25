@@ -41,6 +41,11 @@ $aliases['bcl'] = array(
 	'CategoryTree' => array( 'KahoyNinKategorya' ),
 );
 
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца)) */
+$aliases['be-tarask'] = array(
+	'CategoryTree' => array( 'Дрэва_катэгорыяў' ),
+);
+
 /** Bulgarian (Български) */
 $aliases['bg'] = array(
 	'CategoryTree' => array( 'Дърво на категориите' ),

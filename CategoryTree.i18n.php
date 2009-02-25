@@ -418,10 +418,10 @@ $messages['bcl'] = array(
  * @author Red Winged Duck
  */
 $messages['be-tarask'] = array(
-	'categorytree' => 'Дрэва катэгорый',
+	'categorytree' => 'Дрэва катэгорыяў',
 	'categorytree-portlet' => 'Катэгорыі',
-	'categorytree-legend' => 'Паказаць дрэва катэгорый',
-	'categorytree-desc' => 'Заснаваная на AJAX прылада для паказу [[Special:CategoryTree|структуры катэгорый]] {{GRAMMAR:родны|{{SITENAME}}}}',
+	'categorytree-legend' => 'Паказаць дрэва катэгорыяў',
+	'categorytree-desc' => 'Заснаваная на AJAX прылада для паказу [[Special:CategoryTree|структуры катэгорыяў]] {{GRAMMAR:родны|{{SITENAME}}}}',
 	'categorytree-header' => 'Увядзіце назву катэгорыі, каб пабачыць яе ў выглядзе дрэва.
 Заўважце, што гэта патрабуе функцыянальнасьці JavaScript, вядомай як AJAX.
 Калі ў Вас вельмі стары браўзэр, ці адключаны JavaScript, гэтая функцыя працаваць ня будзе.',
@@ -437,9 +437,9 @@ $messages['be-tarask'] = array(
 	'categorytree-load' => 'загрузіць',
 	'categorytree-loading' => 'загрузка…',
 	'categorytree-nothing-found' => 'нічога ня знойдзена',
-	'categorytree-no-subcategories' => 'няма падкатэгорый',
+	'categorytree-no-subcategories' => 'няма падкатэгорыяў',
 	'categorytree-no-parent-categories' => 'няма бацькаўскіх катэгорыяў',
-	'categorytree-no-pages' => 'няма старонак ці падкатэгорый',
+	'categorytree-no-pages' => 'няма старонак ці падкатэгорыяў',
 	'categorytree-not-found' => 'Катэгорыя <i>$1</i> ня знойдзена',
 	'categorytree-error' => 'Праблема загрузкі зьвестак.',
 	'categorytree-retry' => 'Калі ласка, пачакайце і паспрабуйце яшчэ раз.',
@@ -707,6 +707,7 @@ Ni lwydda'r gofyniad os yw'ch porwr yn hen iawn neu os nad yw Sgript Java wedi e
 
 /** Danish (Dansk)
  * @author Barklund
+ * @author Byrial
  * @author Fredelige
  * @author Jon Harald Søby
  */
@@ -716,7 +717,7 @@ $messages['da'] = array(
 	'categorytree-legend' => 'Vis kategoritræ',
 	'categorytree-header' => 'Indtast navnet på en kategori for at se indholdet som et træ. Bemærk at dette kræver avanceret JavaScript-funktionalitet kendt som AJAX, det virker ikke hvis du har en meget gammel browser eller hvis du har slået JavaScript fra.',
 	'categorytree-category' => 'Kategori:',
-	'categorytree-go' => 'Henter',
+	'categorytree-go' => 'Vis træ',
 	'categorytree-parents' => 'Overkategorier',
 	'categorytree-mode-categories' => 'vis kun kategorier',
 	'categorytree-mode-pages' => 'sider undtaget billeder',
