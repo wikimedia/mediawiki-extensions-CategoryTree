@@ -1617,6 +1617,7 @@ $messages['io'] = array(
 	'categorytree-mode-categories' => 'nur kategorii',
 	'categorytree-mode-pages' => 'pagini ecepte arkivi',
 	'categorytree-mode-all' => 'omna pagini',
+	'categorytree-member-counts' => 'kontenas {{PLURAL:$1|1 subkategorio|$1 subkategorii}}, {{PLURAL:$2|1 pagino|$2 pagini}}, ed {{PLURAL:$3|1 arkivo|$3 arkivi}}',
 	'categorytree-nothing-found' => 'nulo trovita',
 	'categorytree-no-subcategories' => 'nula subkategorii',
 	'categorytree-no-pages' => 'nula pagini o subkategorii',
