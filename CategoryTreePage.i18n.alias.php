@@ -215,6 +215,11 @@ $aliases['nl'] = array(
 	'CategoryTree' => array( 'Categorieboom' ),
 );
 
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬) */
+$aliases['nn'] = array(
+	'CategoryTree' => array( 'Kategoritre' ),
+);
+
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
 $aliases['no'] = array(
 	'CategoryTree' => array( 'Kategoritre' ),
