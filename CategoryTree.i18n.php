@@ -52,6 +52,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 );
 
 /** Message documentation (Message documentation)
+ * @author Aotake
  * @author Jon Harald Søby
  * @author Malafaya
  * @author Meno25
@@ -76,15 +77,11 @@ Label for the category input field on Special:CategoryTree',
 	'categorytree-parents' => 'Label for the list of parent categories on [[Special:CategoryTree]]',
 	'categorytree-mode-categories' => 'Item for the mode choice on [[Special:CategoryTree]], indicating that only categories are listed',
 	'categorytree-mode-pages' => 'Item for the mode choice on [[Special:CategoryTree]], indicating that no images in categories are listed',
-	'categorytree-mode-all' => '{{Identical|All pages}}
+	'categorytree-mode-all' => 'Item for the mode choice on [[Special:CategoryTree]], indicating that all pages are listed.
 
-Item for the mode choice on Special:CategoryTree, indicating that all pages are listed',
+{{Identical|All pages}}',
 	'categorytree-collapse' => 'Tooltip for the "collapse" button',
 	'categorytree-expand' => 'Tooltip for the "expand" button',
-	'categorytree-collapse-bullet' => 'Visible form of the "collapse" button (symbolic, do not translate)', # do not translate or duplicate this message to other languages
-	'categorytree-expand-bullet' => 'Visible form of the "expand" button (symbolic, do not translate)', # do not translate or duplicate this message to other languages
-	'categorytree-empty-bullet' => 'Visible form of the "expand" button for empty branches (symbolic, do not translate)', # do not translate or duplicate this message to other languages
-	'categorytree-page-bullet' => 'Visible bullet for non-category items in the tree (symbolic, do not translate)', # do not translate or duplicate this message to other languages
 	'categorytree-member-counts' => 'Tooltip showing a detailed summary of subcategory member counts. Parameters: 
 * $1 = number of subcategories, 
 * $2 = number of pages (without subcategories and files), 
@@ -92,14 +89,6 @@ Item for the mode choice on Special:CategoryTree, indicating that all pages are 
 * $4 = total number of members, 
 * $5 = members to be shown in the tree, depending on mode. 
 Use with { {PLURAL} }',
-	'categorytree-member-num' => 'Short summary of subcategory member counts, to be shown inline.
-			Usually numeric, translation should not be neccessary. Parameters: 
-			$1 = number of subcategories, 
-			$2 = number of pages (without subcategories and files), 
-			$3 = number of files, 
-			$4 = total number of members, 
-			$5 = members to be shown in the tree, depending on mode. 
-			Use with { {PLURAL} }', # do not translate or duplicate this message to other languages
 	'categorytree-load' => '{{Identical|Load}}
 
 Tooltip for the "expend" button, if the content was not yet loaded',
@@ -3183,6 +3172,7 @@ $messages['te'] = array(
 	'categorytree-mode-all' => 'అన్ని పేజీలు',
 	'categorytree-collapse' => 'మూసివేయి',
 	'categorytree-expand' => 'విస్తరించు',
+	'categorytree-member-counts' => '{{PLURAL:$1|1 ఉపవర్గం|$1 ఉపవర్గాలూ}}, {{PLURAL:$2|1 పేజీ|$2 పేజీలూ}}, మరియు {{PLURAL:$3|1 ఫైలూ|$3 ఫైళ్ళూ}} ఉన్నాయి',
 	'categorytree-load' => 'లోడు చెయ్యి',
 	'categorytree-loading' => 'లోడవుతూంది',
 	'categorytree-nothing-found' => 'ఏమీ లేవు',
