@@ -1968,6 +1968,15 @@ $messages['ku-latn'] = array(
 	'categorytree-no-subcategories' => 'binekategorî tune',
 );
 
+/** Cornish (Kernewek)
+ * @author Kw-Moon
+ */
+$messages['kw'] = array(
+	'categorytree-portlet' => 'Klasyansow',
+	'categorytree-category' => 'Klasyans:',
+	'categorytree-mode-all' => 'oll folennow',
+);
+
 /** Latin (Latina)
  * @author UV
  */
@@ -2748,7 +2757,11 @@ $messages['ro'] = array(
 $messages['roa-tara'] = array(
 	'categorytree' => 'Arvule de le categorije',
 	'categorytree-portlet' => 'Categorije',
+	'categorytree-category' => 'Categorije:',
+	'categorytree-go' => "Fa vedè l'arvule",
 	'categorytree-mode-all' => 'tutte le pàggene',
+	'categorytree-collapse' => 'achiude',
+	'categorytree-expand' => 'spanne',
 );
 
 /** Russian (Русский)
