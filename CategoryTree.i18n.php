@@ -2068,7 +2068,7 @@ Esse 'ne erg verajerdje browser höbs of JavaScript steit oet, den werk dees fun
 	'categorytree-go' => 'Laje',
 	'categorytree-parents' => 'Baoveligkendje categorië',
 	'categorytree-mode-categories' => 'allein categorië',
-	'categorytree-mode-pages' => 'gein aafbeildinge',
+	'categorytree-mode-pages' => 'paazjes behaueve aafbeildinge',
 	'categorytree-mode-all' => "alle pazjena's",
 	'categorytree-collapse' => 'inklappe',
 	'categorytree-expand' => 'oetklappe',
