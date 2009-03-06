@@ -658,6 +658,7 @@ class CategoryTree {
 			if ( $load ) $linkattr[ 'id' ] = $load;
 
 			$linkattr[ 'class' ] = "CategoryTreeToggle";
+			$linkattr['style'] = 'display: none;'; // Unhidden by JS
 
 			/*if ( $count === 0 ) {
 				$tag = 'span';
