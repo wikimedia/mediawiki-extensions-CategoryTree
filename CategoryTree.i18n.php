@@ -2704,6 +2704,9 @@ Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desab
  */
 $messages['qu'] = array(
 	'categorytree' => "Katiguriya sach'a (CategoryTree)",
+	'categorytree-portlet' => 'Katiguriyakuna',
+	'categorytree-legend' => "Katiguriya sach'ata rikuchiy",
+	'categorytree-desc' => "[[Special:CategoryTree|Katiguriya sach'anta]] kuyuylla wamp'uy",
 	'categorytree-header' => "Katiguriya sutita yaykuchiy samiqninta sach'a hinata rikunaykipaq.
 Musyariy, kaytaqa AJAX nisqa sapaq JavaScript ruranallawanmi llamk'achiyta atinki. Mawk'a wamp'unawanqa icha JavaScript nisqaman ama nispaqa manam atinkichu.",
 	'categorytree-category' => 'Katiguriya:',
@@ -2714,10 +2717,12 @@ Musyariy, kaytaqa AJAX nisqa sapaq JavaScript ruranallawanmi llamk'achiyta atink
 	'categorytree-mode-all' => "tukuy p'anqakuna",
 	'categorytree-collapse' => 'pakay',
 	'categorytree-expand' => 'rikuchiy',
+	'categorytree-member-counts' => "{{PLURAL:$1|huk urin katiguriyayuqmi|$1 urin katiguriyayuqmi}}, {{PLURAL:$2|huk p'anqayuqmi|$2 p'anqayuqmi}}, {{PLURAL:$3|huk willañiqiyuqmi|$3 willañiqiyuqmi}}",
 	'categorytree-load' => 'chaqnay',
 	'categorytree-loading' => 'chaqnaspa',
 	'categorytree-nothing-found' => 'manam imapas tarisqachu',
 	'categorytree-no-subcategories' => 'mana ima urin katiguriyapas',
+	'categorytree-no-parent-categories' => 'manam kanchu mama katiguriyakuna',
 	'categorytree-no-pages' => 'mana ima urin qillqapas ni katiguriyapas',
 	'categorytree-not-found' => '<i>$1</i> sutiyuq katiguriyaqa manam tarisqachu',
 	'categorytree-error' => 'Manam atinichu willakunata chaqnayta.',
@@ -2828,6 +2833,13 @@ $messages['sah'] = array(
 	'categorytree-not-found' => '<i>$1</i> категория көстүбэтэ',
 	'categorytree-error' => 'Билэни суруйарга алҕас таҕыста',
 	'categorytree-retry' => 'Кыратык кэтэһэ түһэн баран өссө боруобалаа',
+);
+
+/** Sardinian (Sardu)
+ * @author Marzedu
+ */
+$messages['sc'] = array(
+	'categorytree-category' => 'Categoria:',
 );
 
 /** Sicilian (Sicilianu)
