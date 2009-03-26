@@ -110,8 +110,6 @@ $wgExtensionAliasesFiles['CategoryTree'] = dirname(__FILE__) . '/CategoryTreePag
 $wgExtensionFunctions[] = 'efCategoryTree';
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'CategoryTree',
-	'svn-date' => '$LastChangedDate$',
-	'svn-revision' => '$LastChangedRevision$',
 	'author' => 'Daniel Kinzler',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:CategoryTree',
 	'description' => 'Dynamically navigate the category structure',
@@ -119,8 +117,6 @@ $wgExtensionCredits['specialpage'][] = array(
 );
 $wgExtensionCredits['parserhook'][] = array(
 	'name' => 'CategoryTree',
-	'svn-date' => '$LastChangedDate$',
-	'svn-revision' => '$LastChangedRevision$',
 	'author' => 'Daniel Kinzler',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:CategoryTree',
 	'description' => 'Dynamically navigate the category structure',
