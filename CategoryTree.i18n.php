@@ -3547,10 +3547,14 @@ $messages['yi'] = array(
 	'categorytree-mode-all' => 'אַלע בלעטער',
 	'categorytree-collapse' => 'אײַנציען',
 	'categorytree-expand' => 'פֿאַרברייטערן',
+	'categorytree-load' => 'לאָדן',
+	'categorytree-loading' => 'לאָדנדיק…',
 	'categorytree-nothing-found' => 'גארנישט געפֿונען',
 	'categorytree-no-subcategories' => 'נישטא קיין אונטער-קאַטעגאריעס',
+	'categorytree-no-parent-categories' => 'נישטא קיין עלטערן קאַטעגאריעס',
 	'categorytree-no-pages' => 'נישטא קיין בלעטער אדער אונטער-קאַטעגאריעס',
 	'categorytree-not-found' => "קאַטעגאריע '''$1''' נישט געפֿונען",
+	'categorytree-retry' => 'ביטע וואַרט אַ רגע און פרובירט נאכאַמאָל',
 );
 
 /** Yue (粵語)
