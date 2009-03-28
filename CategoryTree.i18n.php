@@ -2520,7 +2520,7 @@ $messages['os'] = array(
  */
 $messages['pa'] = array(
 	'categorytree-category' => 'ਸ਼੍ਰੇਣੀ:',
-	'categorytree-mode-pages' => 'ਤਸਵੀਰਾਂ ਦੇ ਇਲਾਵਾ ਪੇਜ',
+	'categorytree-mode-pages' => 'ਫਾਇਲਾਂ ਤੋਂ ਬਿਨਾਂ ਪੇਜ',
 	'categorytree-mode-all' => 'ਸਭ ਪੇਜ',
 );
 
@@ -2839,7 +2839,9 @@ $messages['sah'] = array(
  * @author Marzedu
  */
 $messages['sc'] = array(
+	'categorytree-portlet' => 'Categorias',
 	'categorytree-category' => 'Categoria:',
+	'categorytree-mode-all' => 'totu is pàginas',
 );
 
 /** Sicilian (Sicilianu)
