@@ -285,6 +285,11 @@ $aliases['vec'] = array(
 	'CategoryTree' => array( 'ÀlbaroCategorie' ),
 );
 
+/** Veps (Vepsan kel') */
+$aliases['vep'] = array(
+	'CategoryTree' => array( 'KategorijoidenPu' ),
+);
+
 /** Yiddish (ייִדיש) */
 $aliases['yi'] = array(
 	'CategoryTree' => array( 'קאטעגאריע בוים' ),
