@@ -270,6 +270,11 @@ $aliases['sw'] = array(
 	'CategoryTree' => array( 'SafuyaJamii' ),
 );
 
+/** Thai (ไทย) */
+$aliases['th'] = array(
+	'CategoryTree' => array( 'หมวดหมู่แบบผังต้นไม้' ),
+);
+
 /** Tagalog (Tagalog) */
 $aliases['tl'] = array(
 	'CategoryTree' => array( 'Puno ng kaurian' ),
@@ -293,5 +298,10 @@ $aliases['vep'] = array(
 /** Yiddish (ייִדיש) */
 $aliases['yi'] = array(
 	'CategoryTree' => array( 'קאטעגאריע בוים' ),
+);
+
+/** Simplified Chinese (‪中文(简体)‬) */
+$aliases['zh-hans'] = array(
+	'CategoryTree' => array( '分类树' ),
 );
 
