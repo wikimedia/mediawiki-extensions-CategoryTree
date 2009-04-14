@@ -374,7 +374,11 @@ class CategoryTree {
 
 		if ( !$allowMissing && !$title->getArticleID() ) {
 			$html .= Xml::openElement( 'span', array( 'class' => 'CategoryTreeNotice' ) );
-			$html .= wfMsgExt( 'categorytree-not-found', 'parseinline', htmlspecialchars( $category ) );
+			if( $parser ) {
+				$html .= $parser->recursiveTagParse( wfMsgNoTrans( 'categorytree-not-found', $category ) );
+			} else {
+				$html .= wfMsgExt( 'categorytree-not-found', 'parseinline', htmlspecialchars( $category ) );
+			}
 			$html .= Xml::closeElement( 'span' );
 			}
 		else {
