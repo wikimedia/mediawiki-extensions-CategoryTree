@@ -2306,6 +2306,8 @@ $messages['myv'] = array(
 	'categorytree-collapse' => 'теингавтомс',
 	'categorytree-expand' => 'келемтемс',
 	'categorytree-no-subcategories' => 'алкс категорият арасть',
+	'categorytree-no-parent-categories' => 'верькс категорият арасть',
+	'categorytree-not-found' => '«$1» категориясь а муеви.',
 );
 
 /** Nahuatl (Nāhuatl)
@@ -3007,6 +3009,7 @@ $messages['sq'] = array(
  * @author Millosh
  * @author Sasa Stefanovic
  * @author Slaven Kosanovic
+ * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'categorytree' => 'Дрво категорија',
@@ -3020,7 +3023,7 @@ $messages['sr-ec'] = array(
 	'categorytree-go' => 'Прикажи дрво',
 	'categorytree-parents' => 'надређене категорије',
 	'categorytree-mode-categories' => 'само категорије',
-	'categorytree-mode-pages' => 'странице изузев слика',
+	'categorytree-mode-pages' => 'страноце које нису слике',
 	'categorytree-mode-all' => 'све странице',
 	'categorytree-collapse' => 'сакриј',
 	'categorytree-expand' => 'прикажи',
