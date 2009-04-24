@@ -108,6 +108,11 @@ $aliases['fr'] = array(
 	'CategoryTree' => array( 'ArbreCatégorie', 'ArbreCategorie', 'Arbre catégorie' ),
 );
 
+/** Franco-Provençal (Arpetan) */
+$aliases['frp'] = array(
+	'CategoryTree' => array( 'Arborèscence de les catègories', 'ArborèscenceDeLesCatègories' ),
+);
+
 /** Galician (Galego) */
 $aliases['gl'] = array(
 	'CategoryTree' => array( 'Árbore de categorías' ),
