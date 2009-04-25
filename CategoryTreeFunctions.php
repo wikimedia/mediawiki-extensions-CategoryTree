@@ -588,6 +588,7 @@ class CategoryTree {
 	* $info must be an associative array, containing at least a Title object under the 'title' key.
 	*/
 	function renderNodeInfo( $title, $cat, $children = 0, $loadchildren = false ) {
+		global $wgContLang;
 		static $uniq = 0;
 
 		$this->init(); # initialize messages
@@ -618,6 +619,8 @@ class CategoryTree {
 		#patch contributed by Manuel Schneider <manuel.schneider@wikimedia.ch>, Bug 8011
 		if ( $hideprefix ) $label = htmlspecialchars( $title->getText() );
 		else $label = htmlspecialchars( $title->getPrefixedText() );
+
+		$label = $wgContLang->convert( $label, true );
 
 		if ( $trans && $trans!=$label ) $label.= ' ' . Xml::element( 'i', array( 'class' => 'translation'), $trans );
 
