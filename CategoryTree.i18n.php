@@ -1275,13 +1275,29 @@ Des brucht fortgschritteneri JavaScript-Funktione (Ajax). Wänn JavaScript abgsc
 );
 
 /** Gujarati (ગુજરાતી)
+ * @author Ashok modhvadia
  * @author Dsvyas
  */
 $messages['gu'] = array(
+	'categorytree' => 'શ્રેણીવૃક્ષ',
+	'categorytree-portlet' => 'શ્રેણીઓ',
+	'categorytree-legend' => 'શ્રેણીવૃક્ષ બતાવો',
+	'categorytree-header' => 'શ્રેણીની વિષયસૂચી ને વૃક્ષસંરચનામાં જોવા માટે શ્રેણીનું નામ દાખલ કરો.<br>
+આ માટે AJAX તરીકે ઓળખાતી સુધરેલી જાવાસ્ક્રિપ્ટ કાર્યક્ષમતા જરૂરી છે.<br>
+જો તમારૂં બ્રાઉઝર અતિ જુનું હોય,કે જાવાસ્ક્રિપ્ટ નિરુપયોગી કરેલ હોય,તો આ કાર્ય કરશે નહીં.',
+	'categorytree-category' => 'શ્રેણી:',
 	'categorytree-go' => 'વૃક્ષ બતાવો',
 	'categorytree-parents' => 'પિતૃ',
+	'categorytree-mode-categories' => 'ફક્ત શ્રેણીઓ',
 	'categorytree-mode-all' => 'બધા પાનાં',
+	'categorytree-collapse' => 'સંકેલો',
+	'categorytree-expand' => 'વિસ્તારો',
 	'categorytree-nothing-found' => 'કઈ ન મળ્યું',
+	'categorytree-no-subcategories' => 'ઉપશ્રેણીઓ નથી',
+	'categorytree-no-parent-categories' => 'પૈતૃકશ્રેણીઓ નથી',
+	'categorytree-no-pages' => 'પાનાઓ કે ઉપશ્રેણીઓ નથી',
+	'categorytree-not-found' => 'શ્રેણી <i>$1</i> મળેલ નથી',
+	'categorytree-retry' => 'કૃપયા એક ક્ષણ પ્રતીક્ષા કરી ફરી પ્રયત્ન કરો',
 );
 
 /** Manx (Gaelg)

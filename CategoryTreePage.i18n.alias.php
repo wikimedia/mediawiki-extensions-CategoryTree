@@ -155,6 +155,11 @@ $aliases['id'] = array(
 	'CategoryTree' => array( 'Pohon kategori' ),
 );
 
+/** Ido (Ido) */
+$aliases['io'] = array(
+	'CategoryTree' => array( 'KategorioArboro' ),
+);
+
 /** Japanese (日本語) */
 $aliases['ja'] = array(
 	'CategoryTree' => array( 'カテゴリツリー' ),
