@@ -123,6 +123,11 @@ $aliases['gsw'] = array(
 	'CategoryTree' => array( 'Kategoriebaum' ),
 );
 
+/** Gujarati (ગુજરાતી) */
+$aliases['gu'] = array(
+	'CategoryTree' => array( 'શ્રેણીવેલી' ),
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */
