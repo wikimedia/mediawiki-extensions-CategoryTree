@@ -2792,6 +2792,7 @@ $messages['roa-tara'] = array(
 
 /** Russian (Русский)
  * @author Ahonc
+ * @author Lockal
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -2806,7 +2807,7 @@ $messages['ru'] = array(
 	'categorytree-go' => 'Загрузить',
 	'categorytree-parents' => 'Родительские категории',
 	'categorytree-mode-categories' => 'только категории',
-	'categorytree-mode-pages' => 'кроме изображений',
+	'categorytree-mode-pages' => 'кроме файлов',
 	'categorytree-mode-all' => 'все страницы',
 	'categorytree-collapse' => 'свернуть',
 	'categorytree-expand' => 'развернуть',
