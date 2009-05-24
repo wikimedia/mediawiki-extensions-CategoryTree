@@ -102,7 +102,7 @@ $wgCategoryTreePageCategoryOptions['namespaces'] = false;
 $wgCategoryTreePageCategoryOptions['depth'] = 0;
 #$wgCategoryTreePageCategoryOptions['class'] = 'CategoryTreeInlineNode';
 
-$wgExtensionAliasesFiles['CategoryTree'] = dirname(__FILE__) . '/CategoryTreePage.i18n.alias.php';
+$wgExtensionAliasesFiles['CategoryTree'] = dirname(__FILE__) . '/CategoryTree.alias.php';
 
 /**
  * Register extension setup hook and credits
