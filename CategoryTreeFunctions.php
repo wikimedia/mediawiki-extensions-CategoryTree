@@ -588,7 +588,6 @@ class CategoryTree {
 	* $info must be an associative array, containing at least a Title object under the 'title' key.
 	*/
 	function renderNodeInfo( $title, $cat, $children = 0, $loadchildren = false ) {
-		global $wgContLang;
 		static $uniq = 0;
 
 		$this->init(); # initialize messages
