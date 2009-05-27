@@ -616,8 +616,10 @@ class CategoryTree {
 
 		#when showing only categories, omit namespace in label unless we explicitely defined the configuration setting
 		#patch contributed by Manuel Schneider <manuel.schneider@wikimedia.ch>, Bug 8011
-		if ( $hideprefix ) $label = $wgContLang->convertHtml( $title->getText(), true );
-		else $label = $wgContLang->convertHtml( $title->getPrefixedText(), true );
+		if ( $hideprefix ) $label = htmlspecialchars( $title->getText() );
+		else $label = htmlspecialchars( $title->getPrefixedText() );
+
+		$label = $wgContLang->convert( $label, true );
 
 		if ( $trans && $trans!=$label ) $label.= ' ' . Xml::element( 'i', array( 'class' => 'translation'), $trans );
 
