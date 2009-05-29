@@ -207,7 +207,7 @@ $aliases['ms'] = array(
 
 /** Maltese (Malti) */
 $aliases['mt'] = array(
-	'CategoryTree' => array( 'SiġraKategorika' ),
+	'CategoryTree' => array( 'SiġraKategorija' ),
 );
 
 /** Erzya (Эрзянь) */
