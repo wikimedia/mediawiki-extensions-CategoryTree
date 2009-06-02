@@ -3490,7 +3490,7 @@ Nếu bạn đang sử dụng trình duyệt rất cũ, hoặc đã tắt JavaSc
 	'categorytree-mode-all' => 'tất cả các trang',
 	'categorytree-collapse' => 'đóng',
 	'categorytree-expand' => 'mở',
-	'categorytree-member-counts' => 'có $1 tiểu thể loại, $2 trang, và $3 tập tin',
+	'categorytree-member-counts' => 'có {{PLURAL:$1|1 tiểu thể loại|$1 tiểu thể loại}} , {{PLURAL:$2|1 trang|$2 trang}}, và {{PLURAL:$3|1 tập tin|$3 tập tin}}',
 	'categorytree-load' => 'tải',
 	'categorytree-loading' => 'đang tải',
 	'categorytree-nothing-found' => 'Không có gì.',
