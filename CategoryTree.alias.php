@@ -200,6 +200,11 @@ $aliases['mk'] = array(
 	'CategoryTree' => array( 'ДрвоНаКатегории' ),
 );
 
+/** Marathi (मराठी) */
+$aliases['mr'] = array(
+	'CategoryTree' => array( 'वर्गवृक्ष' ),
+);
+
 /** Malay (Bahasa Melayu) */
 $aliases['ms'] = array(
 	'CategoryTree' => array( 'Salasilah kategori' ),
