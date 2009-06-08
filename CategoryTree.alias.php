@@ -125,7 +125,7 @@ $aliases['gsw'] = array(
 
 /** Gujarati (ગુજરાતી) */
 $aliases['gu'] = array(
-	'CategoryTree' => array( 'શ્રેણીવેલી' ),
+	'CategoryTree' => array( 'શ્રેણીવૃક્ષ' ),
 );
 
 /** Hebrew (עברית)
@@ -323,5 +323,10 @@ $aliases['yi'] = array(
 /** Simplified Chinese (‪中文(简体)‬) */
 $aliases['zh-hans'] = array(
 	'CategoryTree' => array( '分类树' ),
+);
+
+/** Chinese (Taiwan) (‪中文(台灣)‬) */
+$aliases['zh-tw'] = array(
+	'CategoryTree' => array( '分類樹' ),
 );
 
