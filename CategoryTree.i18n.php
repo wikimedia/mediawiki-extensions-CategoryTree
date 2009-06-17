@@ -2564,6 +2564,13 @@ $messages['pam'] = array(
 	'categorytree-nothing-found' => 'alang meyakit',
 );
 
+/** Deitsch (Deitsch)
+ * @author Xqt
+ */
+$messages['pdc'] = array(
+	'categorytree-mode-all' => 'alle Bledder',
+);
+
 /** Polish (Polski)
  * @author Airwolf
  * @author Derbeth
