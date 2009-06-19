@@ -2568,6 +2568,7 @@ $messages['pam'] = array(
  * @author Xqt
  */
 $messages['pdc'] = array(
+	'categorytree-parents' => 'Eldere',
 	'categorytree-mode-all' => 'alle Bledder',
 );
 
