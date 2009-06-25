@@ -1577,6 +1577,7 @@ Si tu ha un navigator multo vetule, o ha disactivate JavaScript, isto non functi
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author Bennylin
  * @author IvanLanin
  * @author Rex
  */
@@ -1588,7 +1589,7 @@ $messages['id'] = array(
 	'categorytree-header' => 'Masukkan suatu nama kategori untuk melihat isinya dalam bentuk pohon.
 Harap diperhatikan bahwa fitur ini memerlukan dukungan JavaScript tingkat lanjut yang dikenal sebagai AJAX.
 Jika Anda menggunakan penjelajah web lama, atau mematikan fungsi JavaScript Anda, fitur ini tidak dapat dijalankan.',
-	'categorytree-category' => 'Kategori',
+	'categorytree-category' => 'Kategori:',
 	'categorytree-go' => 'Tampilkan',
 	'categorytree-parents' => 'Atasan',
 	'categorytree-mode-categories' => 'hanya kategori',
@@ -1597,7 +1598,7 @@ Jika Anda menggunakan penjelajah web lama, atau mematikan fungsi JavaScript Anda
 	'categorytree-collapse' => 'tutup',
 	'categorytree-expand' => 'buka',
 	'categorytree-member-counts' => 'memiliki {{PLURAL:$1|1 subkategori|$1 subkategori}}, {{PLURAL:$2|1 halaman|$2 halaman}}, dan {{PLURAL:$3|1 berkas|$3 berkas}}',
-	'categorytree-load' => 'muat',
+	'categorytree-load' => 'muatkan',
 	'categorytree-loading' => 'memuat…',
 	'categorytree-nothing-found' => 'tidak ditemukan',
 	'categorytree-no-subcategories' => 'tidak ada subkategori',
