@@ -1599,7 +1599,7 @@ Jika Anda menggunakan penjelajah web lama, atau mematikan fungsi JavaScript Anda
 	'categorytree-expand' => 'buka',
 	'categorytree-member-counts' => 'memiliki {{PLURAL:$1|1 subkategori|$1 subkategori}}, {{PLURAL:$2|1 halaman|$2 halaman}}, dan {{PLURAL:$3|1 berkas|$3 berkas}}',
 	'categorytree-load' => 'muatkan',
-	'categorytree-loading' => 'memuat…',
+	'categorytree-loading' => 'memuat...',
 	'categorytree-nothing-found' => 'tidak ditemukan',
 	'categorytree-no-subcategories' => 'tidak ada subkategori',
 	'categorytree-no-parent-categories' => 'tidak ada kategori lebih tinggi',
