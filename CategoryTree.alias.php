@@ -157,7 +157,7 @@ $aliases['ia'] = array(
 
 /** Indonesian (Bahasa Indonesia) */
 $aliases['id'] = array(
-	'CategoryTree' => array( 'Pohon kategori' ),
+	'CategoryTree' => array( 'Pohon kategori', 'PohonKategori' ),
 );
 
 /** Ido (Ido) */
