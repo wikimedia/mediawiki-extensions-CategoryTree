@@ -2272,6 +2272,7 @@ $messages['mr'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Aurora
  * @author Aviator
  * @author Kurniasan
  */
@@ -2283,7 +2284,7 @@ $messages['ms'] = array(
 	'categorytree-header' => 'Masukkan suatu nama kategori untuk melihat kandungannya dalam bentuk struktur salasilah.
 Ciri ini memerlukan kefungsian JavaScript yang maju dikenali sebagai AJAX.
 Jika anda menggunakan pelayar web yang sudah ketinggalan, atau mematikan JavaScript, ciri ini tidak akan menjadi.',
-	'categorytree-category' => 'Kategori',
+	'categorytree-category' => 'Kategori:',
 	'categorytree-go' => 'Tunjukkan salasilah',
 	'categorytree-parents' => 'Induk',
 	'categorytree-mode-categories' => 'kategori sahaja',
