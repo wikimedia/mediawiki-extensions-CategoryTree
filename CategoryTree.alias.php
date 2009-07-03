@@ -75,7 +75,7 @@ $aliases['de'] = array(
 
 /** Lower Sorbian (Dolnoserbski) */
 $aliases['dsb'] = array(
-	'CategoryTree' => array( 'Kategorijow bom' ),
+	'CategoryTree' => array( 'Bom kategorijow' ),
 );
 
 /** Greek (Ελληνικά) */

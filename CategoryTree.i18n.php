@@ -878,6 +878,7 @@ $messages['eo'] = array(
 );
 
 /** Spanish (Español)
+ * @author Locos epraix
  * @author Muro de Aguas
  * @author Remember the dot
  * @author Sanbec
@@ -886,7 +887,7 @@ $messages['eo'] = array(
 $messages['es'] = array(
 	'categorytree' => 'Árbol de categorías (CategoryTree)',
 	'categorytree-portlet' => 'Categorías',
-	'categorytree-legend' => 'Mostrar el árbol de categorías',
+	'categorytree-legend' => 'Mostrar árbol de categorías',
 	'categorytree-desc' => 'Navegar dinámicamente por la [[Special:CategoryTree|estructura de categorías]]',
 	'categorytree-header' => 'Escribe un nombre de categoría para ver su contenido con una estructura en árbol.
 Ten en cuenta que esto requiere funciones JavaScript avanzadas conocidas como AJAX.
