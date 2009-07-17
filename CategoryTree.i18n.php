@@ -221,6 +221,15 @@ $messages['ar'] = array(
 	'categorytree-retry' => 'من فضلك انتظر لحظة وحاول مرة أخرى.',
 );
 
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
+$messages['arc'] = array(
+	'categorytree-legend' => 'ܚܘܝ ܐܝܠܢܐ ܕܣܘܕܪܐ',
+	'categorytree-category' => 'ܣܕܪܐ:',
+	'categorytree-go' => 'ܚܘܝ ܐܝܠܢܐ',
+);
+
 /** Egyptian Spoken Arabic (مصرى)
  * @author Ghaly
  * @author Meno25
