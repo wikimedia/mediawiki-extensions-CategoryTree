@@ -280,6 +280,11 @@ $aliases['sa'] = array(
 	'CategoryTree' => array( 'वर्गवृक्ष:' ),
 );
 
+/** Slovak (Slovenčina) */
+$aliases['sk'] = array(
+	'CategoryTree' => array( 'StromKategórií' ),
+);
+
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
 	'CategoryTree' => array( 'Kategoriträd' ),
