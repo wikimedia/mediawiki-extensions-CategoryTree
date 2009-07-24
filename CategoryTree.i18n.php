@@ -1056,6 +1056,7 @@ $messages['fo'] = array(
  * @author IAlex
  * @author Meithal
  * @author Sherbrooke
+ * @author Urhixidur
  * @author Verdy p
  */
 $messages['fr'] = array(
@@ -1070,7 +1071,7 @@ $messages['fr'] = array(
 	'categorytree-mode-categories' => 'seulement les catégories',
 	'categorytree-mode-pages' => 'pages sans les images',
 	'categorytree-mode-all' => 'toutes les pages',
-	'categorytree-collapse' => 'Refermer',
+	'categorytree-collapse' => 'Replier',
 	'categorytree-expand' => 'Développer',
 	'categorytree-member-counts' => 'contient $1 sous-catégorie{{PLURAL:$1||s}}, $2 page{{PLURAL:$2||s}} et $3 fichier{{PLURAL:$3||s}}',
 	'categorytree-load' => 'charger',
@@ -1078,7 +1079,7 @@ $messages['fr'] = array(
 	'categorytree-nothing-found' => 'Aucune trouvée',
 	'categorytree-no-subcategories' => 'Aucune sous-catégorie',
 	'categorytree-no-parent-categories' => 'Aucune catégorie parente',
-	'categorytree-no-pages' => 'Aucune page ou sous-catégorie.',
+	'categorytree-no-pages' => 'Aucune page ou sous-catégorie',
 	'categorytree-not-found' => 'Catégorie <tt>$1</tt> introuvable',
 	'categorytree-error' => 'Problème de chargement des données.',
 	'categorytree-retry' => 'Veuillez attendre un instant puis réessayer.',
@@ -2381,6 +2382,34 @@ $messages['nds'] = array(
 	'categorytree-not-found' => 'Kategorie <i>$1</i> nich funnen',
 	'categorytree-error' => 'Problem bi’t Laden vun de Daten',
 	'categorytree-retry' => 'Tööv en beten un denn versöök dat noch wedder.',
+);
+
+/** Nedersaksisch (Nedersaksisch)
+ * @author Servien
+ */
+$messages['nds-nl'] = array(
+	'categorytree' => 'Kattegerieboom',
+	'categorytree-portlet' => 'Kattegerieën',
+	'categorytree-desc' => 'Dynamische navigasie veur de [[Special:CategoryTree|kattegeriestructuur]]',
+	'categorytree-header' => 'Voer een kattegerienaam in um de inhoud in boomstructuur te bekieken. 
+NB: Veur disse functie he-j de [[JavaScript]]functionaliteit, AJAX neudig. A-j een hele ouwe webkieker hemmen, of je JavaScript uut-eschakeld hemmen, dan zal disse functie neet warken.',
+	'categorytree-category' => 'Kattegerie:',
+	'categorytree-go' => 'Laojen',
+	'categorytree-parents' => 'Ouwerkattegerieën',
+	'categorytree-mode-categories' => 'allinnig kattegerieën',
+	'categorytree-mode-pages' => "pagina's, gien ofbeeldingen",
+	'categorytree-mode-all' => "alle pagina's",
+	'categorytree-collapse' => 'inklappen',
+	'categorytree-expand' => 'uutklappen',
+	'categorytree-load' => 'laojen',
+	'categorytree-loading' => 'bezig mit laojen...',
+	'categorytree-nothing-found' => 'niks evunnen',
+	'categorytree-no-subcategories' => 'gien subkattegerieën',
+	'categorytree-no-parent-categories' => 'gien ouwerkattegerieën',
+	'categorytree-no-pages' => "gien pagina's of subkattegerieën",
+	'categorytree-not-found' => 'Kattegerie <i>$1</i> neet evunnen',
+	'categorytree-error' => "Prebleem bie 't laojen van de gegevens.",
+	'categorytree-retry' => "Wach even en prebeer 't opniej",
 );
 
 /** Nepali (नेपाली) */
