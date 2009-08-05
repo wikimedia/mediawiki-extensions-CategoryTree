@@ -924,11 +924,15 @@ Si tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no fu
 /** Estonian (Eesti)
  * @author Avjoska
  * @author Jaan513
+ * @author Pikne
  */
 $messages['et'] = array(
 	'categorytree' => 'Kategooriapuu',
 	'categorytree-portlet' => 'Kategooriad',
 	'categorytree-legend' => 'Näita kategooriapuud',
+	'categorytree-header' => 'Sisesta kategooria nimi, et näha selle ülesehitust liigendatud loendina.
+Toimingu jaoks on vaja peent JavaScripti, mida kutsutakse AJAXiks.
+Kui sul on väga vana veebilehitseja või JavaScrip keelatud, see ei toimi.',
 	'categorytree-category' => 'Kategooria:',
 	'categorytree-mode-categories' => 'ainult kategooriad',
 	'categorytree-mode-pages' => 'leheküljed, välja arvatud pildid',
@@ -2003,9 +2007,9 @@ $messages['ku-latn'] = array(
  * @author Kw-Moon
  */
 $messages['kw'] = array(
-	'categorytree-portlet' => 'Klasyansow',
-	'categorytree-category' => 'Klasyans:',
-	'categorytree-mode-all' => 'oll folennow',
+	'categorytree-portlet' => 'Clasyansow',
+	'categorytree-category' => 'Clasyans:',
+	'categorytree-mode-all' => 'oll folednow',
 );
 
 /** Latin (Latina)
