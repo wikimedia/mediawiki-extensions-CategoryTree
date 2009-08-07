@@ -3664,6 +3664,7 @@ $messages['yue'] = array(
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author PhiLiP
  * @author Shinjiman
  */
 $messages['zh-hans'] = array(
@@ -3684,7 +3685,7 @@ $messages['zh-hans'] = array(
 	'categorytree-expand' => '展开',
 	'categorytree-member-counts' => '含有$1个子分类、$2个页面和$3个文件',
 	'categorytree-load' => '装载',
-	'categorytree-loading' => '装载中…',
+	'categorytree-loading' => '正在载入……',
 	'categorytree-nothing-found' => '搜索结果为空',
 	'categorytree-no-subcategories' => '没有子分类',
 	'categorytree-no-parent-categories' => '没有父分类',
