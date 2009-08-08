@@ -2007,9 +2007,9 @@ $messages['ku-latn'] = array(
  * @author Kw-Moon
  */
 $messages['kw'] = array(
-	'categorytree-portlet' => 'Clasyansow',
-	'categorytree-category' => 'Clasyans:',
-	'categorytree-mode-all' => 'oll folednow',
+	'categorytree-portlet' => 'Klasyansow',
+	'categorytree-category' => 'Klasyans:',
+	'categorytree-mode-all' => 'oll folennow',
 );
 
 /** Latin (Latina)
