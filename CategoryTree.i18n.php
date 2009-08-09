@@ -930,6 +930,7 @@ $messages['et'] = array(
 	'categorytree' => 'Kategooriapuu',
 	'categorytree-portlet' => 'Kategooriad',
 	'categorytree-legend' => 'Näita kategooriapuud',
+	'categorytree-desc' => '[[Special:CategoryTree|Kategooriate ülesehituse]] dünaamiline vaatamine.',
 	'categorytree-header' => 'Sisesta kategooria nimi, et näha selle ülesehitust liigendatud loendina.
 Toimingu jaoks on vaja peent JavaScripti, mida kutsutakse AJAXiks.
 Kui sul on väga vana veebilehitseja või JavaScrip keelatud, see ei toimi.',
@@ -1923,6 +1924,13 @@ $messages['km'] = array(
 	'categorytree-not-found' => 'រកមិនឃើញចំណាត់ថ្នាក់ក្រុម <i>$1</i> ទេ',
 	'categorytree-error' => 'មានបញ្ហាក្នុងផ្ទុកទិន្នន័យ។',
 	'categorytree-retry' => 'សូម​រង់ចាំ​មួយភ្លែត​រួច​ព្យាយាម​ម្តងទៀត​។',
+);
+
+/** Kannada (ಕನ್ನಡ)
+ * @author Nayvik
+ */
+$messages['kn'] = array(
+	'categorytree-category' => 'ವರ್ಗ:',
 );
 
 /** Korean (한국어)
