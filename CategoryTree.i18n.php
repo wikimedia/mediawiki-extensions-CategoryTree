@@ -1068,7 +1068,7 @@ $messages['fr'] = array(
 	'categorytree' => 'Arborescence des catégories',
 	'categorytree-portlet' => 'Catégories',
 	'categorytree-legend' => 'Visionner l’arborescence de la catégorie',
-	'categorytree-desc' => 'Gadget basé sur AJAX pour afficher la [[Special:CategoryTree|structure de la catégorie]] d’un wiki',
+	'categorytree-desc' => 'Visite dynamiquement la [[Special:CategoryTree|structure des catégories]]',
 	'categorytree-header' => 'Entrez un nom de catégorie pour voir son contenu en structure arborescente. Ceci utilise des fonctionnalités JavaScript avancées connues sous le nom d’AJAX. Si vous avez un très vieux navigateur Web ou si vous n’avez pas activé la fonctionnalité JavaScript, cela ne fonctionnera pas.',
 	'categorytree-category' => 'Catégorie',
 	'categorytree-go' => 'voir l’arborescence',
@@ -3115,6 +3115,37 @@ $messages['sr-ec'] = array(
 	'categorytree-not-found' => 'Категорија <i>$1</i> није пронађена',
 	'categorytree-error' => 'Проблем при учитавању података.',
 	'categorytree-retry' => 'Молимо сачекајте тренутак и покушајте поново',
+);
+
+/** latinica (latinica)
+ * @author Michaello
+ */
+$messages['sr-el'] = array(
+	'categorytree' => 'Drvo kategorija',
+	'categorytree-portlet' => 'kategorije',
+	'categorytree-legend' => 'Prikaži drvo kategorija',
+	'categorytree-desc' => 'Dinamička navigacija [[Special:CategoryTree|strukture kategorija]].',
+	'categorytree-header' => 'Unesite ime kategoriji čiji sadržaj želite da vidite kao drvo.
+Ovo zahteva naprednu JavaSkrip funkciju poznatu kao AJAX.
+Ukoliko imate veoma stari brauzer, ili se isključili JavaSkript, drvo kategorija neće raditi.',
+	'categorytree-category' => 'Kategorija:',
+	'categorytree-go' => 'Prikaži drvo',
+	'categorytree-parents' => 'nadređene kategorije',
+	'categorytree-mode-categories' => 'samo kategorije',
+	'categorytree-mode-pages' => 'stranoce koje nisu slike',
+	'categorytree-mode-all' => 'sve stranice',
+	'categorytree-collapse' => 'sakrij',
+	'categorytree-expand' => 'prikaži',
+	'categorytree-member-counts' => 'sadrži {{PLURAL:$1|1 potkategoriju|$1 potkategorija}}, {{PLURAL:$2|1 stranicu|$2 stranica}}, i {{PLURAL:$3|1 fajl|$3 fajlova}}',
+	'categorytree-load' => 'učitaj',
+	'categorytree-loading' => 'učitavanje',
+	'categorytree-nothing-found' => 'ništa nije pronađeno',
+	'categorytree-no-subcategories' => 'nema potkategorija',
+	'categorytree-no-parent-categories' => 'bez natkategorije',
+	'categorytree-no-pages' => 'nema stranica ili potkategorija',
+	'categorytree-not-found' => 'Kategorija <i>$1</i> nije pronađena',
+	'categorytree-error' => 'Problem pri učitavanju podataka.',
+	'categorytree-retry' => 'Molimo sačekajte trenutak i pokušajte ponovo',
 );
 
 /** Southern Sotho (Sesotho) */
