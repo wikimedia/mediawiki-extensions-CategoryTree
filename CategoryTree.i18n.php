@@ -1943,7 +1943,7 @@ $messages['ko'] = array(
 	'categorytree' => '분류 트리',
 	'categorytree-portlet' => '분류',
 	'categorytree-legend' => '분류 트리 보기',
-	'categorytree-desc' => '위키의 [[Special:CategoryTree|분류 구조]]를 볼 수 있는 AJAX 도구',
+	'categorytree-desc' => '[[Special:CategoryTree|분류 구조]]를 동적으로 볼 수 있는 AJAX 도구',
 	'categorytree-header' => '트리 구조로 볼 분류 이름을 입력해주세요.
 이 기능을 사용하려면 웹 브라우저에서 AJAX를 지원해야 합니다.
 오래 된 브라우저를 사용하거나, 브라우저에서 자바스크립트를 사용하지 않도록 설정했다면 트리 기능이 동작하지 않습니다.',
@@ -1955,14 +1955,14 @@ $messages['ko'] = array(
 	'categorytree-mode-all' => '모든 문서를 표시',
 	'categorytree-collapse' => '접기',
 	'categorytree-expand' => '펼치기',
-	'categorytree-member-counts' => '분류는 {{PLURAL:$1|1개의 하위 분류|$1개의 하위 분류}}와, {{PLURAL:$2|1개의 문서|$2개의 문서}}, 그리고 {{PLURAL:$3|1개의 파일|$3개의 파일}}을 포함하고 있습니다.',
+	'categorytree-member-counts' => '하위 분류 $1개, 문서 $2개, 파일 $3개를 포함하고 있습니다.',
 	'categorytree-load' => '불러오기',
 	'categorytree-loading' => '불러오는 중',
 	'categorytree-nothing-found' => '결과 없음',
 	'categorytree-no-subcategories' => '하위 분류 없음',
 	'categorytree-no-parent-categories' => '상위 분류가 없습니다.',
 	'categorytree-no-pages' => '문서/하위 분류 없음',
-	'categorytree-not-found' => '‘$1’ 분류가 존재하지 않음',
+	'categorytree-not-found' => '‘$1’ 분류가 없습니다',
 	'categorytree-error' => '값을 불러오는 중 오류 발생',
 	'categorytree-retry' => '잠시 후에 다시 시도해주세요.',
 );
@@ -2016,7 +2016,7 @@ $messages['ku-latn'] = array(
  */
 $messages['kw'] = array(
 	'categorytree-portlet' => 'Klasyansow',
-	'categorytree-category' => 'Klasyans:',
+	'categorytree-category' => 'Klass:',
 	'categorytree-mode-all' => 'oll folennow',
 );
 
