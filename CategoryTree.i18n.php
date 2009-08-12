@@ -2844,11 +2844,29 @@ $messages['ro'] = array(
 $messages['roa-tara'] = array(
 	'categorytree' => 'Arvule de le categorije',
 	'categorytree-portlet' => 'Categorije',
+	'categorytree-legend' => "Fa vedè l'arvule de le categorije",
+	'categorytree-desc' => "Dinamicamende naveghesce 'a [[Special:CategoryTree|struttura de le categorije]]",
+	'categorytree-header' => "'Nzerisce 'nu nome de categorije pe vedè 'u condenute sue cumme a 'na strutture a arvule.<br />
+Note ca quiste richiede funzionalità de JavaScript avanzate canusciute cumme AJAX.<br />
+Ce tu è 'nu browser assaije vecchie, o tìne 'u JavaScript disabbilitate, non ge pò fatijà.",
 	'categorytree-category' => 'Categorije:',
 	'categorytree-go' => "Fa vedè l'arvule",
+	'categorytree-parents' => 'Attane',
+	'categorytree-mode-categories' => 'sulamende categorije',
+	'categorytree-mode-pages' => 'pàggene eccette le file',
 	'categorytree-mode-all' => 'tutte le pàggene',
 	'categorytree-collapse' => 'achiude',
 	'categorytree-expand' => 'spanne',
+	'categorytree-member-counts' => 'condene {{PLURAL:$1|1 sotte categorije|$1 sotte categorije}}, {{PLURAL:$2|1 pàgene|$2 pàggene}}, e {{PLURAL:$3|1 file|$3 file}}',
+	'categorytree-load' => 'careche',
+	'categorytree-loading' => 'stoche a careche…',
+	'categorytree-nothing-found' => 'acchiate ninde',
+	'categorytree-no-subcategories' => 'nisciuna sotte categorije',
+	'categorytree-no-parent-categories' => 'nisciuna categorije attane',
+	'categorytree-no-pages' => 'nisciune pàgene o sotte categorije',
+	'categorytree-not-found' => 'Categorije <i>$1</i> non acchiate',
+	'categorytree-error' => 'Probbleme carecanne le date.',
+	'categorytree-retry' => "Aspitte 'nu mumende e pruève 'n'otra vote.",
 );
 
 /** Russian (Русский)
