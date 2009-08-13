@@ -1148,10 +1148,13 @@ Se tu âs un sgarfadôr a vonde vieri, o tu âs disativât JavaScript, cheste pa
 );
 
 /** Western Frisian (Frysk)
+ * @author SK-luuut
  * @author Snakesteuben
  */
 $messages['fy'] = array(
 	'categorytree' => 'Kategorybeam',
+	'categorytree-portlet' => 'Kategoryen',
+	'categorytree-legend' => 'Lit kategorystambeam sjen',
 	'categorytree-header' => 'Folje in kategorynamme yn om de ynhâld yn in beamstruktuer te sjen. Tink dêrom dat dit spesjale JavaScript funksjes brûkt bekend as AJAX. At jo in tige âlde blêdzjer hawwe of jo hawwe JavaScript net oan stean, dan wurket dit net.',
 	'categorytree-category' => 'Kategory beam',
 	'categorytree-go' => 'Los',
@@ -2340,14 +2343,18 @@ $messages['mt'] = array(
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
+	'categorytree' => 'Явкс чувто',
 	'categorytree-portlet' => 'Категорият',
+	'categorytree-legend' => 'Невтемс явкс чувтонть',
 	'categorytree-category' => 'Категория:',
 	'categorytree-mode-categories' => 'ансяк категорият',
 	'categorytree-mode-all' => 'весе лопатне',
 	'categorytree-collapse' => 'теингавтомс',
 	'categorytree-expand' => 'келемтемс',
+	'categorytree-nothing-found' => 'мезеяк а муеви',
 	'categorytree-no-subcategories' => 'алкс категорият арасть',
 	'categorytree-no-parent-categories' => 'верькс категорият арасть',
+	'categorytree-no-pages' => 'кодамояк лопат эли алкс категорият арасть',
 	'categorytree-not-found' => '«$1» категориясь а муеви.',
 );
 
