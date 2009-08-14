@@ -2269,6 +2269,13 @@ $messages['ml'] = array(
 	'categorytree-retry' => 'കുറച്ചു നേരം കഴിഞ്ഞ് വീണ്ടും പരിശ്രമിക്കുക',
 );
 
+/** Mongolian (Монгол)
+ * @author Chinneeb
+ */
+$messages['mn'] = array(
+	'categorytree-loading' => 'уншиж байна...',
+);
+
 /** Marathi (मराठी)
  * @author Kaustubh
  * @author Mahitgar
