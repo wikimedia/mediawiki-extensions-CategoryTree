@@ -129,6 +129,11 @@ $wgExtensionCredits['parserhook'][] = array(
  * Register the special page
  */
 $dir = dirname(__FILE__) . '/';
+
+if ( $wgUseAjax && $wgCategoryTreeAllowTag ) {
+	$wgExtensionMessagesFiles['CategoryTreeMagic'] = $dir . 'CategoryTree.i18n.magic.php';
+}
+
 $wgExtensionMessagesFiles['CategoryTree'] = $dir . 'CategoryTree.i18n.php';
 $wgAutoloadClasses['CategoryTreePage'] = $dir . 'CategoryTreePage.php';
 $wgAutoloadClasses['CategoryTree'] = $dir . 'CategoryTreeFunctions.php';
@@ -137,7 +142,6 @@ $wgSpecialPages['CategoryTree'] = 'CategoryTreePage';
 $wgSpecialPageGroups['CategoryTree'] = 'pages';
 #$wgHooks['SkinTemplateTabs'][] = 'efCategoryTreeInstallTabs';
 $wgHooks['ArticleFromTitle'][] = 'efCategoryTreeArticleFromTitle';
-$wgHooks['LanguageGetMagic'][] = 'efCategoryTreeGetMagic';
 
 /**
  * register Ajax function
@@ -202,20 +206,6 @@ function efCategoryTreeSetHooks() {
 		$wgParser->setHook( 'categorytree' , 'efCategoryTreeParserHook' );
 		$wgParser->setFunctionHook( 'categorytree' , 'efCategoryTreeParserFunction' );
 	}
-	return true;
-}
-
-/**
-* Hook magic word
-*/
-function efCategoryTreeGetMagic( &$magicWords, $langCode ) {
-	global $wgUseAjax, $wgCategoryTreeAllowTag;
-
-	if ( $wgUseAjax && $wgCategoryTreeAllowTag ) {
-		//XXX: should we allow a local alias?
-		$magicWords['categorytree'] = array( 0, 'categorytree' );
-	}
-
 	return true;
 }
 
