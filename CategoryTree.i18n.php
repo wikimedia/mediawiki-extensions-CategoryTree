@@ -2156,11 +2156,14 @@ $messages['lo'] = array(
 );
 
 /** Lithuanian (Lietuvių)
+ * @author Garas
  * @author Hugo.arg
  */
 $messages['lt'] = array(
 	'categorytree' => 'Kategorijų medis',
+	'categorytree-portlet' => 'Kategorijos',
 	'categorytree-legend' => 'Rodyti kategorijų medį',
+	'categorytree-desc' => 'Dinamiškai naršykite [[Special:CategoryTree|kategorijų struktūroje]]',
 	'categorytree-header' => 'Įveskite kategorijos pavadinimą, kad pamatytumėte jos turinį kaip medžio struktūrą.
 Primename, kad tam reikia išplėstinis JavaScript fukcionalumas, kitaip žinomas kaip AJAX.
 Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
@@ -2172,10 +2175,12 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
 	'categorytree-mode-all' => 'visi puslapiai',
 	'categorytree-collapse' => 'suskleisti',
 	'categorytree-expand' => 'išskleisti',
+	'categorytree-member-counts' => 'turi $1 {{PLURAL:$1|subkategoriją|subkategorijas|subkategorijų}}, $2 {{PLURAL:$2|puslapį|puslapius|puslapių}}, ir $3 {{PLURAL:$3|failą|failus|failų}}',
 	'categorytree-load' => 'įkelti',
 	'categorytree-loading' => 'įkeliama',
 	'categorytree-nothing-found' => 'nieko nerasta',
 	'categorytree-no-subcategories' => 'nėra jokių subkategorijų',
+	'categorytree-no-parent-categories' => 'jokių aukštesniojo lygio kategorijų',
 	'categorytree-no-pages' => 'jokių puslapių ar subkategorijų',
 	'categorytree-not-found' => 'Kategorija <i>$1</i> nerasta',
 	'categorytree-error' => 'Duomenų įkėlimo problema.',
