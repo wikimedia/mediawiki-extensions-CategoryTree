@@ -21,3 +21,7 @@ $magicWords['ar'] = array(
 $magicWords['nl'] = array(
 	'categorytree'   => array( '0', 'categorieboom', 'categorytree' ),
 );
+
+$magicWords['ru'] = array(
+	'categorytree'   => array( '0', 'деревокатегорий', 'categorytree' ),
+);

@@ -2736,6 +2736,7 @@ $messages['ps'] = array(
 
 /** Portuguese (Português)
  * @author 555
+ * @author Giro720
  */
 $messages['pt'] = array(
 	'categorytree' => 'Árvore de categorias',
@@ -2746,7 +2747,7 @@ $messages['pt'] = array(
 Note que isso requer funcionalidades avançadas de JavaScript (como, por exemplo, AJAX).
 Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desabilitado em seu navegador, isto não funcionará.',
 	'categorytree-category' => 'Categoria:',
-	'categorytree-go' => 'Exibir Árvore',
+	'categorytree-go' => 'Exibir árvore',
 	'categorytree-parents' => 'Categorias superiores',
 	'categorytree-mode-categories' => 'mostrar apenas as categorias',
 	'categorytree-mode-pages' => 'páginas, exceto imagens',
