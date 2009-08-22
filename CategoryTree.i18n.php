@@ -520,7 +520,7 @@ M'eo kozh-mat stumm ho merdeer pe m'eo diweredekaet JavaScript ganeoc'h, ne'z ai
 	'categorytree-go' => 'Diskouez ar gwezennadur',
 	'categorytree-parents' => 'Usrummadoù',
 	'categorytree-mode-categories' => 'Rummadoù hepken',
-	'categorytree-mode-pages' => 'Pajennoù hep ar skeudennoù',
+	'categorytree-mode-pages' => 'pajennoù hep ar skeudennoù',
 	'categorytree-mode-all' => 'an holl bajennoù',
 	'categorytree-collapse' => 'Serriñ',
 	'categorytree-expand' => 'Dispakañ',
