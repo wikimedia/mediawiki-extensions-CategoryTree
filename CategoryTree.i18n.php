@@ -942,6 +942,7 @@ Kui sul on väga vana veebilehitseja või JavaScrip keelatud, see ei toimi.',
 	'categorytree-mode-all' => 'kõik leheküljed',
 	'categorytree-collapse' => 'peida',
 	'categorytree-expand' => 'näita',
+	'categorytree-member-counts' => 'sisaldab {{PLURAL:$1|üht|$1}} alamkategooriat, {{PLURAL:$2|üht|$2}} lehekülge ja {{PLURAL:$3|üht|$3}} faili',
 	'categorytree-loading' => 'laadimine...',
 	'categorytree-nothing-found' => 'ei leitud midagi',
 	'categorytree-no-subcategories' => 'alamkategooriaid ei ole',
@@ -3698,6 +3699,9 @@ $messages['yi'] = array(
 	'categorytree' => 'קאַטעגאריע בוים',
 	'categorytree-portlet' => 'קאַטעגאריעס',
 	'categorytree-legend' => 'ווײַזן קאַטעגאריע בוים',
+	'categorytree-header' => 'לייגט אריין א קאטעגאריע נאמען צו זען איר אינהאלט אלס א בוים סטרוקטור. 
+באמערקט אז דאס פארלאנגט פארגעשריטענע JavaScript מעגליכקייטן, באקאנט אלס AJAX. 
+אויב איר ניצט אן אלטן בלעטערער, אדער איר ערלויבט נישט קיין JavaScript, וועט דאס נישט ווירקן.',
 	'categorytree-category' => 'קאטעגאריע:',
 	'categorytree-go' => 'ווײַזן בוים',
 	'categorytree-parents' => 'העכערע קאַטעגאריעס',
