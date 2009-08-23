@@ -935,11 +935,18 @@ $messages['et'] = array(
 Toimingu jaoks on vaja peent JavaScripti, mida kutsutakse AJAXiks.
 Kui sul on väga vana veebilehitseja või JavaScrip keelatud, see ei toimi.',
 	'categorytree-category' => 'Kategooria:',
+	'categorytree-go' => 'Näita puud',
+	'categorytree-parents' => 'Ülemkategooriad',
 	'categorytree-mode-categories' => 'ainult kategooriad',
-	'categorytree-mode-pages' => 'leheküljed, välja arvatud pildid',
+	'categorytree-mode-pages' => 'failideta',
 	'categorytree-mode-all' => 'kõik leheküljed',
+	'categorytree-collapse' => 'peida',
+	'categorytree-expand' => 'näita',
+	'categorytree-loading' => 'laadimine...',
 	'categorytree-nothing-found' => 'ei leitud midagi',
 	'categorytree-no-subcategories' => 'alamkategooriaid ei ole',
+	'categorytree-no-parent-categories' => 'ülemkategooriad pole',
+	'categorytree-no-pages' => 'lehekülgi ega alamkategooriad pole',
 	'categorytree-not-found' => 'Kategooriat <i>$1</i> ei leitud.',
 	'categorytree-retry' => 'Palun oota hetk ja proovi uuesti.',
 );
@@ -3121,7 +3128,7 @@ $messages['sq'] = array(
 	'categorytree-not-found' => 'Kategoria <i>$1</i> nuk u gjet',
 );
 
-/** Serbian Cyrillic ekavian (ћирилица)
+/** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Millosh
  * @author Sasa Stefanovic
  * @author Slaven Kosanovic
@@ -3155,7 +3162,7 @@ $messages['sr-ec'] = array(
 	'categorytree-retry' => 'Молимо сачекајте тренутак и покушајте поново',
 );
 
-/** latinica (latinica)
+/** Serbian Latin ekavian (Srpski (latinica))
  * @author Michaello
  */
 $messages['sr-el'] = array(
