@@ -943,12 +943,14 @@ Kui sul on väga vana veebilehitseja või JavaScrip keelatud, see ei toimi.',
 	'categorytree-collapse' => 'peida',
 	'categorytree-expand' => 'näita',
 	'categorytree-member-counts' => 'sisaldab {{PLURAL:$1|üht|$1}} alamkategooriat, {{PLURAL:$2|üht|$2}} lehekülge ja {{PLURAL:$3|üht|$3}} faili',
+	'categorytree-load' => 'laadi',
 	'categorytree-loading' => 'laadimine...',
 	'categorytree-nothing-found' => 'ei leitud midagi',
 	'categorytree-no-subcategories' => 'alamkategooriaid ei ole',
 	'categorytree-no-parent-categories' => 'ülemkategooriad pole',
 	'categorytree-no-pages' => 'lehekülgi ega alamkategooriad pole',
 	'categorytree-not-found' => 'Kategooriat <i>$1</i> ei leitud.',
+	'categorytree-error' => 'Probleem andmete laadimisel.',
 	'categorytree-retry' => 'Palun oota hetk ja proovi uuesti.',
 );
 
@@ -3342,6 +3344,7 @@ $messages['ta'] = array(
 
 /** Telugu (తెలుగు)
  * @author C.Chandra Kanth Rao
+ * @author Kiranmayee
  * @author Mpradeep
  * @author Veeven
  * @author వైజాసత్య
@@ -3361,8 +3364,8 @@ $messages['te'] = array(
 	'categorytree-collapse' => 'మూసివేయి',
 	'categorytree-expand' => 'విస్తరించు',
 	'categorytree-member-counts' => '{{PLURAL:$1|1 ఉపవర్గం|$1 ఉపవర్గాలూ}}, {{PLURAL:$2|1 పేజీ|$2 పేజీలూ}}, మరియు {{PLURAL:$3|1 ఫైలూ|$3 ఫైళ్ళూ}} ఉన్నాయి',
-	'categorytree-load' => 'లోడు చెయ్యి',
-	'categorytree-loading' => 'లోడవుతూంది',
+	'categorytree-load' => 'లోడు',
+	'categorytree-loading' => 'లోడవుతోంది...',
 	'categorytree-nothing-found' => 'ఏమీ లేవు',
 	'categorytree-no-subcategories' => 'ఉపవర్గాలు లేవు',
 	'categorytree-no-parent-categories' => 'మాతృవర్గం లేదు',
@@ -3772,7 +3775,7 @@ $messages['zh-hans'] = array(
 	'categorytree-collapse' => '折叠',
 	'categorytree-expand' => '展开',
 	'categorytree-member-counts' => '含有$1个子分类、$2个页面和$3个文件',
-	'categorytree-load' => '装载',
+	'categorytree-load' => '载入',
 	'categorytree-loading' => '正在载入……',
 	'categorytree-nothing-found' => '搜索结果为空',
 	'categorytree-no-subcategories' => '没有子分类',
