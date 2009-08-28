@@ -512,11 +512,11 @@ $messages['br'] = array(
 	'categorytree' => 'Gwezennadur ar rummadoù',
 	'categorytree-portlet' => 'Rummadoù',
 	'categorytree-legend' => 'Gwelet gwezennadur ar rummad',
-	'categorytree-desc' => 'Bitrak diazezet war AJAX evit diskouez [[Special:CategoryTree|framm rummad]] ur wiki',
+	'categorytree-desc' => 'Furchal a ra ent dinamek [[Special:CategoryTree|framm ar rummadoù]]',
 	'categorytree-header' => "Merkit anv ur rummad evit gwelet petra zo ennañ e stumm ur gwezennadur. 
 Notit e rankit kaout an arc'hwelioù JavaScript araokaet anvet AJAX.
 M'eo kozh-mat stumm ho merdeer pe m'eo diweredekaet JavaScript ganeoc'h, ne'z aio ket en-dro.",
-	'categorytree-category' => 'Rummad:',
+	'categorytree-category' => 'Rummad :',
 	'categorytree-go' => 'Diskouez ar gwezennadur',
 	'categorytree-parents' => 'Usrummadoù',
 	'categorytree-mode-categories' => 'Rummadoù hepken',
@@ -527,7 +527,7 @@ M'eo kozh-mat stumm ho merdeer pe m'eo diweredekaet JavaScript ganeoc'h, ne'z ai
 	'categorytree-member-counts' => 'ennañ {{PLURAL:$1|1 isrummad|$1 isrummad}}, {{PLURAL:$2|1 bajenn|$2 pajenn}}, ha {{PLURAL:$3|1 restr|$3 restr}}',
 	'categorytree-load' => 'kargañ',
 	'categorytree-loading' => 'o kargañ',
-	'categorytree-nothing-found' => 'Netra bet kavet',
+	'categorytree-nothing-found' => "N'eus bet kavet netra",
 	'categorytree-no-subcategories' => 'isrummad ebet',
 	'categorytree-no-parent-categories' => 'Rummad kar ebet',
 	'categorytree-no-pages' => 'Pennad ebet hag isrummad ebet',
