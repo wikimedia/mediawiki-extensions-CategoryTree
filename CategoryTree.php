@@ -154,7 +154,7 @@ $wgAjaxExportList[] = 'efCategoryTreeAjaxWrapper';
 function efCategoryTree() {
 	global $wgUseAjax, $wgHooks, $wgOut;
 	global $wgCategoryTreeDefaultOptions, $wgCategoryTreeDefaultMode, $wgCategoryTreeOmitNamespace;
-	global $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeCategoryPageMode;
+	global $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeCategoryPageMode, $wgCategoryTreeAllowTag;
 	global $wgCategoryTreeSidebarRoot, $wgCategoryTreeForceHeaders, $wgCategoryTreeHijackPageCategories;
 
 	# Abort if AJAX is not enabled
@@ -174,10 +174,8 @@ function efCategoryTree() {
 		$wgHooks['SkinJoinCategoryLinks'][] = 'efCategoryTreeSkinJoinCategoryLinks';
 	}
 
-	if ( defined( 'MW_SUPPORTS_PARSERFIRSTCALLINIT' ) ) {
+	if( $wgCategoryTreeAllowTag ) {
 		$wgHooks['ParserFirstCallInit'][] = 'efCategoryTreeSetHooks';
-	} else {
-		efCategoryTreeSetHooks();
 	}
 
 	if ( !isset( $wgCategoryTreeDefaultOptions['mode'] ) || is_null( $wgCategoryTreeDefaultOptions['mode'] ) ) {
@@ -200,12 +198,9 @@ function efCategoryTree() {
 	}
 }
 
-function efCategoryTreeSetHooks() {
-	global $wgParser, $wgCategoryTreeAllowTag;
-	if ( $wgCategoryTreeAllowTag ) {
-		$wgParser->setHook( 'categorytree' , 'efCategoryTreeParserHook' );
-		$wgParser->setFunctionHook( 'categorytree' , 'efCategoryTreeParserFunction' );
-	}
+function efCategoryTreeSetHooks( &$parser ) {
+	$parser->setHook( 'categorytree' , 'efCategoryTreeParserHook' );
+	$parser->setFunctionHook( 'categorytree' , 'efCategoryTreeParserFunction' );
 	return true;
 }
 
