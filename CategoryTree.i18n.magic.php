@@ -18,6 +18,10 @@ $magicWords['ar'] = array(
 	'categorytree'   => array( '0', 'شجرة_تصنيف', 'categorytree' ),
 );
 
+$magicWords['br'] = array(
+	'categorytree'   => array( '0', 'GwezennadurRummad', 'categorytree' ),
+);
+
 $magicWords['nl'] = array(
 	'categorytree'   => array( '0', 'categorieboom', 'categorytree' ),
 );
