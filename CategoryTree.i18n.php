@@ -1104,11 +1104,11 @@ $messages['fr'] = array(
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
-	'categorytree' => 'Arborèscence de les catègories',
+	'categorytree' => 'Structura d’âbro de les catègories',
 	'categorytree-desc' => 'Outil basâ dessus AJAX por afichiér la [[Special:CategoryTree|structura de la catègorie]] d’un vouiqui',
-	'categorytree-header' => 'Entrâd un nom de catègorie por vêre son contegnu en structura arborèscenta.
+	'categorytree-header' => 'Buchiéd un nom de catègorie por vêre son contegnu en structura d’âbro.
 Cen utilise des fonccionalitâts JavaScript avanciês cognues desot lo nom d’AJAX.
-Se vos avéd un rudo viely navigator Malyâjo ou que vos éd pas activâ la fonccionalitât JavaScript, cen fonccionerat pas.',
+Se vos avéd un rudo viely navigator ou ben se vos éd pas activâ la fonccionalitât JavaScript, cen fonccionerat pas.',
 	'categorytree-category' => 'Catègorie:',
 	'categorytree-go' => 'Afichiér l’arborèscence',
 	'categorytree-parents' => 'Sur-catègorie(s) ',
