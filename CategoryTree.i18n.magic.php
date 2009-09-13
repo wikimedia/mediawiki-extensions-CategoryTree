@@ -14,12 +14,24 @@ $magicWords['en'] = array(
 	'categorytree' => array( 0, 'categorytree' ),
 );
 
+$magicWords['af'] = array(
+	'categorytree'   => array( '0', 'kategorieboom', 'categorytree' ),
+);
+
 $magicWords['ar'] = array(
 	'categorytree'   => array( '0', 'شجرة_تصنيف', 'categorytree' ),
 );
 
 $magicWords['br'] = array(
 	'categorytree'   => array( '0', 'GwezennadurRummad', 'categorytree' ),
+);
+
+$magicWords['et'] = array(
+	'categorytree'   => array( '0', 'kategooriapuu', 'categorytree' ),
+);
+
+$magicWords['ml'] = array(
+	'categorytree'   => array( '0', 'വർഗ്ഗവൃക്ഷം', 'categorytree' ),
 );
 
 $magicWords['nl'] = array(
