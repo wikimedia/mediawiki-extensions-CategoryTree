@@ -1518,6 +1518,7 @@ Si ou ta genyen yon vye navigatè (navigatè, bwozè entènèt), oubyen JavaScri
 
 /** Hungarian (Magyar)
  * @author Dani
+ * @author Glanthor Reviol
  * @author KossuthRad
  */
 $messages['hu'] = array(
@@ -1537,7 +1538,7 @@ Ha túlságosan régi böngésződ van, vagy a JavaScript le van tiltva, akkor n
 	'categorytree-collapse' => 'összecsuk',
 	'categorytree-expand' => 'kinyit',
 	'categorytree-member-counts' => '{{PLURAL:$1|egy|$1}} alkategóriát, {{PLURAL:$2|egy|$2}} lapot, és {{PLURAL:$3|egy|$3}} fájlt tartalmaz',
-	'categorytree-load' => 'Töltés',
+	'categorytree-load' => 'betöltés',
 	'categorytree-loading' => 'töltés',
 	'categorytree-nothing-found' => 'nincs találat',
 	'categorytree-no-subcategories' => 'nincs alkategória.',
@@ -2030,13 +2031,14 @@ $messages['ku-latn'] = array(
 	'categorytree-no-subcategories' => 'binekategorî tune',
 );
 
-/** Cornish (Kernewek)
+/** Cornish (Kernowek)
+ * @author Kernoweger
  * @author Kw-Moon
  */
 $messages['kw'] = array(
-	'categorytree-portlet' => 'Klasyansow',
-	'categorytree-category' => 'Klass:',
-	'categorytree-mode-all' => 'oll folennow',
+	'categorytree-portlet' => 'Classys',
+	'categorytree-category' => 'Class:',
+	'categorytree-mode-all' => 'oll folednow',
 );
 
 /** Latin (Latina)
