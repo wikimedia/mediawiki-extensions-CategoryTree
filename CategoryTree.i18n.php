@@ -3629,6 +3629,22 @@ $messages['vec'] = array(
 	'categorytree-retry' => "Speta n'atimo e dopo próa de novo.",
 );
 
+/** Veps (Vepsan kel')
+ * @author Игорь Бродский
+ */
+$messages['vep'] = array(
+	'categorytree' => 'Kategorijoiden pu',
+	'categorytree-portlet' => 'Kategorijad',
+	'categorytree-legend' => 'Ozutada kategorijoiden pu',
+	'categorytree-category' => 'Kategorii:',
+	'categorytree-go' => 'Ozutada pu',
+	'categorytree-parents' => 'Ülembaižed kategorijad',
+	'categorytree-mode-categories' => 'vaiše kategorijad',
+	'categorytree-mode-pages' => 'lehtpoled failoita',
+	'categorytree-mode-all' => 'kaik lehtpoled',
+	'categorytree-no-subcategories' => 'ei ole alakategorijoid',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  * @author Vinhtantran
