@@ -2038,7 +2038,7 @@ $messages['ku-latn'] = array(
 $messages['kw'] = array(
 	'categorytree-portlet' => 'Classys',
 	'categorytree-category' => 'Class:',
-	'categorytree-mode-all' => 'oll folednow',
+	'categorytree-mode-all' => 'oll folennow',
 );
 
 /** Latin (Latina)
