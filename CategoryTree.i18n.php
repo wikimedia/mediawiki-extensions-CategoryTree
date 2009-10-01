@@ -2122,7 +2122,7 @@ $messages['lfn'] = array(
  */
 $messages['li'] = array(
 	'categorytree' => 'Categorieboum',
-	'categorytree-portlet' => 'Categorië',
+	'categorytree-portlet' => 'Categorieë',
 	'categorytree-legend' => 'Categorieboum laote zeen',
 	'categorytree-desc' => "AJAX-gebaseerde oetbreijing óm de [[Special:CategoryTree|categoriestructuur]] van 'ne wiki te toeane",
 	'categorytree-header' => "Gaef 'ne categorienaam in om de inhoud es 'ne boumstructuur te bekieke.
