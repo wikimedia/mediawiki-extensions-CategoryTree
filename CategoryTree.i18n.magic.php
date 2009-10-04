@@ -34,6 +34,10 @@ $magicWords['ml'] = array(
 	'categorytree'   => array( '0', 'വർഗ്ഗവൃക്ഷം', 'categorytree' ),
 );
 
+$magicWords['mr'] = array(
+	'categorytree'   => array( '0', 'वर्गवृक्ष', 'categorytree' ),
+);
+
 $magicWords['nl'] = array(
 	'categorytree'   => array( '0', 'categorieboom', 'categorytree' ),
 );
