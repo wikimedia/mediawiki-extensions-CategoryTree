@@ -894,7 +894,7 @@ $messages['eo'] = array(
  * @author Spacebirdy
  */
 $messages['es'] = array(
-	'categorytree' => 'Árbol de categorías (CategoryTree)',
+	'categorytree' => 'Árbol de categorías',
 	'categorytree-portlet' => 'Categorías',
 	'categorytree-legend' => 'Mostrar árbol de categorías',
 	'categorytree-desc' => 'Navegar dinámicamente por la [[Special:CategoryTree|estructura de categorías]]',
@@ -913,10 +913,10 @@ Si tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no fu
 	'categorytree-load' => 'cargar',
 	'categorytree-loading' => 'cargando',
 	'categorytree-nothing-found' => 'Lo sentimos, no se ha encontrado nada',
-	'categorytree-no-subcategories' => 'sin subcategorías.',
+	'categorytree-no-subcategories' => 'sin subcategorías',
 	'categorytree-no-parent-categories' => 'no hay categorías superiores',
 	'categorytree-no-pages' => 'sin artículos ni subcategorías.',
-	'categorytree-not-found' => "Categoría ''$1'' no encontrada",
+	'categorytree-not-found' => 'Categoría <i>$1</i> no encontrada',
 	'categorytree-error' => 'Error al cargar los datos',
 	'categorytree-retry' => 'Por favor, espera un momento y vuelve a intentarlo.',
 );
