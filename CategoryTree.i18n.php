@@ -3342,6 +3342,7 @@ $messages['sw'] = array(
 	'categorytree-mode-categories' => 'jamii tu',
 	'categorytree-mode-pages' => 'kurasa isipokuwa mafaili',
 	'categorytree-mode-all' => 'kurasa zote',
+	'categorytree-member-counts' => 'Imo {{PLURAL:$1|1 subcategory|$1 subcategories}}, {{PLURAL:$2|ukurasa 1|kurasa $2}}, na {{PLURAL:$3|faili 1|mafaili $3}}',
 	'categorytree-no-subcategories' => 'jamii ndogo zake hakuna',
 	'categorytree-no-parent-categories' => 'jamii kuu hakuna',
 	'categorytree-no-pages' => 'hakuna kurasa wala jamii ndogo zake',
