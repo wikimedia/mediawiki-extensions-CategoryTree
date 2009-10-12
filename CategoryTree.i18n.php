@@ -1110,7 +1110,7 @@ $messages['frp'] = array(
 Cen utilise des fonccionalitâts JavaScript avanciês cognues desot lo nom d’AJAX.
 Se vos avéd un rudo viely navigator ou ben se vos éd pas activâ la fonccionalitât JavaScript, cen fonccionerat pas.',
 	'categorytree-category' => 'Catègorie:',
-	'categorytree-go' => 'Afichiér l’arborèscence',
+	'categorytree-go' => 'Fâre vêre la structura d’âbro',
 	'categorytree-parents' => 'Sur-catègorie(s) ',
 	'categorytree-mode-categories' => 'ren que les catègories',
 	'categorytree-mode-pages' => 'pâges sen les émâges',
@@ -2270,10 +2270,12 @@ $messages['mk'] = array(
 );
 
 /** Malayalam (മലയാളം)
+ * @author Praveenp
  * @author Shijualex
  */
 $messages['ml'] = array(
 	'categorytree' => 'വര്‍ഗ്ഗവൃക്ഷം',
+	'categorytree-portlet' => 'വർഗ്ഗങ്ങൾ',
 	'categorytree-legend' => 'വര്‍ഗ്ഗവൃക്ഷം പ്രദര്‍ശിപ്പിക്കുക',
 	'categorytree-desc' => 'വിക്കിയിലെ [[Special:CategoryTree|വിഭാഗങ്ങളുടെ ഘടന]] പ്രദര്‍ശിപ്പിക്കുവാനുള്ള  AJAX സാങ്കേതികവിദ്യ ഉപയോഗിക്കുന്ന ഗാഡ്ജറ്റ്.',
 	'categorytree-header' => 'വിഭാഗങ്ങളുടെ ഘടന വ്യക്ഷരൂപത്തില്‍ കാണുവാന്‍ ഒരു വിഭാഗത്തിന്റെ പേരു ചേര്‍ക്കുക.
@@ -2282,7 +2284,7 @@ $messages['ml'] = array(
 	'categorytree-category' => 'വര്‍ഗ്ഗം:',
 	'categorytree-go' => 'വൃക്ഷം പ്രദര്‍ശിപ്പിക്കുക',
 	'categorytree-mode-categories' => 'വിഭാഗങ്ങള്‍ മാത്രം',
-	'categorytree-mode-pages' => 'ചിത്രങ്ങള്‍ ഒഴിച്ചുള്ള താളുകള്‍',
+	'categorytree-mode-pages' => 'പ്രമാണങ്ങൾ അല്ലാതെയുള്ള താളുകൾ',
 	'categorytree-mode-all' => 'എല്ലാ താളുകളും',
 	'categorytree-collapse' => 'അടയ്ക്കുക',
 	'categorytree-expand' => 'വികസിപ്പിക്കുക',
@@ -2782,7 +2784,7 @@ Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desab
 	'categorytree-mode-all' => 'todas as páginas',
 	'categorytree-collapse' => 'ocultar',
 	'categorytree-expand' => 'expandir',
-	'categorytree-member-counts' => 'possui {{PLURAL:$1|uma subcategoria|$1 subcategorias}}, {{PLURAL:$2|uma página|$2 páginas}} e {{PLURAL:$3|um ficheiro|$3 ficheiros}}',
+	'categorytree-member-counts' => 'possui {{PLURAL:$1|$1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|$2 página|$2 páginas}} e {{PLURAL:$3|$3 ficheiro|$3 ficheiros}}',
 	'categorytree-load' => 'carregar',
 	'categorytree-loading' => 'carregando',
 	'categorytree-nothing-found' => 'Sentimos muito, não se encontrou nada',
