@@ -780,10 +780,32 @@ $messages['de-formal'] = array(
 	'categorytree-retry' => 'Bitte warten Sie einen Moment und versuchen Sie es dann erneut.',
 );
 
-/** Zazaki (Zazaki) */
+/** Zazaki (Zazaki)
+ * @author Xoser
+ */
 $messages['diq'] = array(
 	'categorytree' => 'Dara Kategoriye',
+	'categorytree-portlet' => 'Kategoriyan',
+	'categorytree-legend' => 'Darê kategorîyî bimucne',
+	'categorytree-desc' => '[[Special:CategoryTree|structureyê kategorîyî]] de analiz bike',
 	'categorytree-category' => 'Kategoriye:',
+	'categorytree-go' => 'Dar bimucne',
+	'categorytree-parents' => 'Ebeveynî',
+	'categorytree-mode-categories' => 'teyna kategoriyan',
+	'categorytree-mode-pages' => 'Teyna pelan, dosyayan hesab meke',
+	'categorytree-mode-all' => 'pelanê hemî',
+	'categorytree-collapse' => 'qic bike',
+	'categorytree-expand' => 'gird bike',
+	'categorytree-member-counts' => ' {{PLURAL:$1|1 subkategorî|$1 subkategorîyan}}, {{PLURAL:$2|1 pel|$2 pelan}} u {{PLURAL:$3|1 dosya|$3 dosyayn}} esto',
+	'categorytree-load' => 'bar bike',
+	'categorytree-loading' => 'Bar keno...',
+	'categorytree-nothing-found' => 'çik çini yo',
+	'categorytree-no-subcategories' => 'subkategorîyan çini yo',
+	'categorytree-no-parent-categories' => 'Kategorîyê ser çini yo',
+	'categorytree-no-pages' => 'pelan yazi subkategorîyan çini yo',
+	'categorytree-not-found' => 'Kategorî <i>$1</i> nidiyo',
+	'categorytree-error' => 'Data bar kerdişî de ğelet esto.',
+	'categorytree-retry' => 'Yew di dekika bivinder u reyna kilik bike.',
 );
 
 /** Lower Sorbian (Dolnoserbski)
