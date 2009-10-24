@@ -1561,7 +1561,7 @@ Ha túlságosan régi böngésződ van, vagy a JavaScript le van tiltva, akkor n
 	'categorytree-expand' => 'kinyit',
 	'categorytree-member-counts' => '{{PLURAL:$1|egy|$1}} alkategóriát, {{PLURAL:$2|egy|$2}} lapot, és {{PLURAL:$3|egy|$3}} fájlt tartalmaz',
 	'categorytree-load' => 'betöltés',
-	'categorytree-loading' => 'töltés',
+	'categorytree-loading' => 'betöltés…',
 	'categorytree-nothing-found' => 'nincs találat',
 	'categorytree-no-subcategories' => 'nincs alkategória.',
 	'categorytree-no-parent-categories' => 'nincsenek szülőkategóriái',
