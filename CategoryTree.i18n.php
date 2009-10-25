@@ -788,6 +788,9 @@ $messages['diq'] = array(
 	'categorytree-portlet' => 'Kategoriyan',
 	'categorytree-legend' => 'Darê kategorîyî bimucne',
 	'categorytree-desc' => '[[Special:CategoryTree|structureyê kategorîyî]] de analiz bike',
+	'categorytree-header' => 'Qe vînayîşê structureyê darî, yew nameyê kategorîyî binuse.
+Qe hebitnayiş, komputer de gani JavaScriptê AJAXî bibi.
+Eka browseyê tu kihanî ya zi tu JavaScript qefilmayiyo, program nihebitiyeno.',
 	'categorytree-category' => 'Kategoriye:',
 	'categorytree-go' => 'Dar bimucne',
 	'categorytree-parents' => 'Ebeveynî',
