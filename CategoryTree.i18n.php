@@ -2708,7 +2708,9 @@ $messages['pl'] = array(
 	'categorytree-portlet' => 'Kategorie',
 	'categorytree-legend' => 'Pokaż drzewo kategorii',
 	'categorytree-desc' => 'Gadżet oparty na technologii AJAX, wyświetlający [[Special:CategoryTree|drzewo kategorii]]',
-	'categorytree-header' => 'Wpisz nazwę kategorii, by zobaczyć jej zawartość w postaci drzewa. Wymagana jest zaawansowana funkcjonalność JavaScriptu, znana jako AJAX. Jeśli masz bardzo starą przeglądarkę lub wyłączony JavaScript, ta funkcja nie zadziała.',
+	'categorytree-header' => 'Wpisz nazwę kategorii, by zobaczyć jej zawartość w postaci drzewa.
+Ta funkcjonalność używa zaawansowanego JavaScriptu, korzystającego z technologii AJAX.
+Jeśli masz bardzo starą przeglądarkę lub wyłączony JavaScript, ta funkcja nie zadziała.',
 	'categorytree-category' => 'Kategoria',
 	'categorytree-go' => 'Ładuj kategorię',
 	'categorytree-parents' => 'Kategorie główne',
@@ -2717,7 +2719,7 @@ $messages['pl'] = array(
 	'categorytree-mode-all' => 'wszystkie strony',
 	'categorytree-collapse' => 'zwiń',
 	'categorytree-expand' => 'rozwiń',
-	'categorytree-member-counts' => 'zawiera {{PLURAL:$1|1 podkategorię|$1 podkategorie|$1 podkategorii}}, {{PLURAL:$2|1 stronę|$2 strony|$2 stron}} oraz {{PLURAL:$3|1 plik|$3 pliki|$3 plików}}',
+	'categorytree-member-counts' => 'Zawiera {{PLURAL:$1|1 podkategorię|$1 podkategorie|$1 podkategorii}}, {{PLURAL:$2|1 stronę|$2 strony|$2 stron}} i {{PLURAL:$3|1 plik|$3 pliki|$3 plików}}',
 	'categorytree-load' => 'wczytaj',
 	'categorytree-loading' => 'wczytywanie...',
 	'categorytree-nothing-found' => 'nic nie znaleziono',
