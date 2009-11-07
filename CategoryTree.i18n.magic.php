@@ -30,12 +30,24 @@ $magicWords['et'] = array(
 	'categorytree'   => array( '0', 'kategooriapuu', 'categorytree' ),
 );
 
+$magicWords['ko'] = array(
+	'categorytree'   => array( '0', '분류트리', 'categorytree' ),
+);
+
+$magicWords['mg'] = array(
+	'categorytree'   => array( '0', 'karazantsokajy', 'categorytree' ),
+);
+
 $magicWords['ml'] = array(
 	'categorytree'   => array( '0', 'വർഗ്ഗവൃക്ഷം', 'categorytree' ),
 );
 
 $magicWords['mr'] = array(
 	'categorytree'   => array( '0', 'वर्गवृक्ष', 'categorytree' ),
+);
+
+$magicWords['nds-nl'] = array(
+	'categorytree'   => array( '0', 'kattegerieboom', 'categorieboom', 'categorytree' ),
 );
 
 $magicWords['nl'] = array(
