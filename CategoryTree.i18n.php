@@ -1634,7 +1634,7 @@ Si tu ha un navigator multo vetule, o ha disactivate JavaScript, isto non functi
 	'categorytree-no-pages' => 'nulle paginas o subcategorias',
 	'categorytree-not-found' => 'Categoria <i>$1</i> non trovate',
 	'categorytree-error' => 'Problema al cargar le datos.',
-	'categorytree-retry' => 'Per favor attende un momento e reprova.',
+	'categorytree-retry' => 'Per favor attende un momento e reproba.',
 );
 
 /** Indonesian (Bahasa Indonesia)
