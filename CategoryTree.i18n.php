@@ -2799,17 +2799,18 @@ $messages['ps'] = array(
 /** Portuguese (Português)
  * @author 555
  * @author Giro720
+ * @author Hamilton Abreu
  */
 $messages['pt'] = array(
 	'categorytree' => 'Árvore de categorias',
 	'categorytree-portlet' => 'Categorias',
-	'categorytree-legend' => 'Exibir a árvore de categorias',
+	'categorytree-legend' => 'Mostrar a árvore de categorias',
 	'categorytree-desc' => 'Acessório (gadget) baseado em AJAX que apresenta a [[Special:CategoryTree|estrutura]] de um wiki',
 	'categorytree-header' => 'Insira o nome de uma categoria para ver seu conteúdo como uma estrutura de "árvore".
 Note que isso requer funcionalidades avançadas de JavaScript (como, por exemplo, AJAX).
 Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desabilitado em seu navegador, isto não funcionará.',
 	'categorytree-category' => 'Categoria:',
-	'categorytree-go' => 'Exibir árvore',
+	'categorytree-go' => 'Mostrar árvore',
 	'categorytree-parents' => 'Categorias superiores',
 	'categorytree-mode-categories' => 'mostrar apenas as categorias',
 	'categorytree-mode-pages' => 'páginas, exceto imagens',
