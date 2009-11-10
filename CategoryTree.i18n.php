@@ -2173,6 +2173,32 @@ Esse 'ne erg verajerdje browser höbs of JavaScript steit oet, den werk dees fun
 	'categorytree-retry' => "Wach estebleef effe en perbeer 't den opnuuj.",
 );
 
+/** Lumbaart (Lumbaart)
+ * @author Dakrismeno
+ */
+$messages['lmo'] = array(
+	'categorytree' => 'Àlbur di categurij',
+	'categorytree-portlet' => 'Categurij',
+	'categorytree-legend' => "Fàm ved l'àlbur di categurij",
+	'categorytree-category' => 'Categuria:',
+	'categorytree-go' => "Mustra l'àlbur",
+	'categorytree-parents' => 'Categurij süperiur',
+	'categorytree-mode-categories' => 'mustra dumà i categurij',
+	'categorytree-mode-pages' => 'tüt i paginn, fö che i sumejanz',
+	'categorytree-mode-all' => 'tüt i paginn',
+	'categorytree-collapse' => 'sara sü',
+	'categorytree-expand' => 'slarga',
+	'categorytree-load' => 'carega',
+	'categorytree-loading' => 'adree a caregà...',
+	'categorytree-nothing-found' => 'nissün resültaa',
+	'categorytree-no-subcategories' => 'nissüna suta-categuria',
+	'categorytree-no-parent-categories' => 'nissüna categuria süperiur',
+	'categorytree-no-pages' => 'mía de paginn o de suta-categurij',
+	'categorytree-not-found' => 'Categuria <i>$1</i> mía truada',
+	'categorytree-error' => "Prublema cun 'l caregament di dati.",
+	'categorytree-retry' => 'Per piasè, specia un mument e pö pröva ancamò.',
+);
+
 /** Lao (ລາວ)
  * @author Passawuth
  */
