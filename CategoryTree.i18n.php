@@ -598,6 +598,16 @@ $messages['ca'] = array(
 	'categorytree-retry' => 'Torneu-ho a intentar en uns moments.',
 );
 
+/** Chavacano de Zamboanga (Chavacano de Zamboanga)
+ * @author Weekeejames
+ */
+$messages['cbk-zam'] = array(
+	'categorytree' => 'El pono de maga categoria',
+	'categorytree-category' => 'Categoria:',
+	'categorytree-collapse' => 'esconde',
+	'categorytree-expand' => 'extende',
+);
+
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄)
  * @author GnuDoyng
  */
@@ -2846,13 +2856,13 @@ Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desab
 	'categorytree-member-counts' => 'possui {{PLURAL:$1|$1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|$2 página|$2 páginas}} e {{PLURAL:$3|$3 ficheiro|$3 ficheiros}}',
 	'categorytree-load' => 'carregar',
 	'categorytree-loading' => 'carregando',
-	'categorytree-nothing-found' => 'Sentimos muito, não se encontrou nada',
+	'categorytree-nothing-found' => 'não foi encontrado nada',
 	'categorytree-no-subcategories' => 'sem subcategorias',
 	'categorytree-no-parent-categories' => 'não há categorias superiores',
 	'categorytree-no-pages' => 'sem páginas nem subcategorias',
 	'categorytree-not-found' => 'A categoria <i>$1</i> não foi encontrada',
 	'categorytree-error' => 'Problema ao carregar os dados.',
-	'categorytree-retry' => 'Por gentileza, aguarde um momento e tente novamente.',
+	'categorytree-retry' => 'Por favor, aguarde um momento e tente novamente.',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
