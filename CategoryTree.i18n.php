@@ -225,9 +225,12 @@ $messages['ar'] = array(
  * @author Basharh
  */
 $messages['arc'] = array(
+	'categorytree' => 'ܐܝܠܢܐ ܕܣܕܪܐ',
+	'categorytree-portlet' => 'ܣܕܪ̈ܐ',
 	'categorytree-legend' => 'ܚܘܝ ܐܝܠܢܐ ܕܣܘܕܪܐ',
 	'categorytree-category' => 'ܣܕܪܐ:',
 	'categorytree-go' => 'ܚܘܝ ܐܝܠܢܐ',
+	'categorytree-mode-all' => 'ܟܠ ܦܐܬܬ̈ܐ',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
