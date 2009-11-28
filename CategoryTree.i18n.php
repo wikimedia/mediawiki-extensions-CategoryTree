@@ -2845,9 +2845,9 @@ $messages['pt'] = array(
 	'categorytree-portlet' => 'Categorias',
 	'categorytree-legend' => 'Mostrar a árvore de categorias',
 	'categorytree-desc' => "Acessório ''(gadget)'' baseado em AJAX que apresenta a [[Special:CategoryTree|estrutura]] de uma wiki",
-	'categorytree-header' => 'Insira o nome de uma categoria para ver seu conteúdo como uma estrutura de "árvore".
-Note que isso requer funcionalidades avançadas de JavaScript (como, por exemplo, AJAX).
-Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desabilitado em seu navegador, isto não funcionará.',
+	'categorytree-header' => 'Introduza o nome de uma categoria para ver o seu conteúdo numa estrutura de árvore.
+Note que isto requer uma funcionalidade avançada do JavaScript, conhecida por AJAX.
+Caso o seu navegador seja razoavelmente antigo ou o JavaScript esteja desactivado, não funcionará.',
 	'categorytree-category' => 'Categoria:',
 	'categorytree-go' => 'Mostrar árvore',
 	'categorytree-parents' => 'Categorias superiores',
