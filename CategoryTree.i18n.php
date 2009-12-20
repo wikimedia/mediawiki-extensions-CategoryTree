@@ -2302,6 +2302,7 @@ Ja tev ir veca interneta pārlūkprogramma, vai arī JavaScript ir atslēgts, š
 );
 
 /** Macedonian (Македонски)
+ * @author Bjankuloski06
  * @author Brest
  * @author Brest2008
  */
@@ -2322,8 +2323,8 @@ $messages['mk'] = array(
 	'categorytree-collapse' => 'затвори',
 	'categorytree-expand' => 'отвори',
 	'categorytree-member-counts' => 'содржи {{PLURAL:$1|една подкатегорија|$1 подкатегории}}, {{PLURAL:$2|една страница|$2 страници}} и {{PLURAL:$3|една податотека|$3 податотеки}}',
-	'categorytree-load' => 'вчитување',
-	'categorytree-loading' => 'вчитување...',
+	'categorytree-load' => 'вчитај',
+	'categorytree-loading' => 'вчитувам...',
 	'categorytree-nothing-found' => 'не е најдено ништо',
 	'categorytree-no-subcategories' => 'нема подкатегории',
 	'categorytree-no-parent-categories' => 'нема родителски категории',
