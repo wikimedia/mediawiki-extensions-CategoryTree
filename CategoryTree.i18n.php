@@ -3546,6 +3546,22 @@ $messages['th'] = array(
 	'categorytree-retry' => 'กรุณารอสักครู่ แล้วลองโหลดใหม่อีกครั้ง',
 );
 
+/** Turkmen (Türkmençe)
+ * @author Hanberke
+ */
+$messages['tk'] = array(
+	'categorytree-portlet' => 'Kategoriýalar',
+	'categorytree-category' => 'Kategoriýa:',
+	'categorytree-mode-categories' => 'diňe kategoriýalar',
+	'categorytree-mode-all' => 'ähli sahypalar',
+	'categorytree-load' => 'ýükle',
+	'categorytree-loading' => 'ýüklenýär...',
+	'categorytree-nothing-found' => 'hiç zat tapylmady',
+	'categorytree-no-subcategories' => 'kiçi kategoriýa ýok',
+	'categorytree-no-pages' => 'sahypa ýa-da kiçi kategoriýa ýok',
+	'categorytree-not-found' => '<i>"$1"</i> kategoriýasy tapylmady',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
