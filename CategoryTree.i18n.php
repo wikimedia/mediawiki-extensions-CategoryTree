@@ -1988,6 +1988,7 @@ $messages['km'] = array(
  * @author Nayvik
  */
 $messages['kn'] = array(
+	'categorytree-portlet' => 'ವರ್ಗಗಳು',
 	'categorytree-category' => 'ವರ್ಗ:',
 );
 
@@ -3550,16 +3551,25 @@ $messages['th'] = array(
  * @author Hanberke
  */
 $messages['tk'] = array(
+	'categorytree' => 'Kategoriýa agajy',
 	'categorytree-portlet' => 'Kategoriýalar',
+	'categorytree-legend' => 'Kategoriýa agajyny görkez',
 	'categorytree-category' => 'Kategoriýa:',
+	'categorytree-go' => 'Agajy görkez',
+	'categorytree-parents' => 'Ene kategoriýalar',
 	'categorytree-mode-categories' => 'diňe kategoriýalar',
+	'categorytree-mode-pages' => 'faýldan başga sahypalar',
 	'categorytree-mode-all' => 'ähli sahypalar',
+	'categorytree-collapse' => 'ýygna',
+	'categorytree-expand' => 'giňelt',
 	'categorytree-load' => 'ýükle',
 	'categorytree-loading' => 'ýüklenýär...',
 	'categorytree-nothing-found' => 'hiç zat tapylmady',
 	'categorytree-no-subcategories' => 'kiçi kategoriýa ýok',
 	'categorytree-no-pages' => 'sahypa ýa-da kiçi kategoriýa ýok',
 	'categorytree-not-found' => '<i>"$1"</i> kategoriýasy tapylmady',
+	'categorytree-error' => 'Maglumat ýükleme problemsy.',
+	'categorytree-retry' => 'Bir sellem garaşyň we gaýtadan synaň.',
 );
 
 /** Tagalog (Tagalog)
@@ -3916,6 +3926,7 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Alexsh
+ * @author Mark85296341
  * @author Shinjiman
  */
 $messages['zh-hant'] = array(
@@ -3930,7 +3941,7 @@ $messages['zh-hant'] = array(
 	'categorytree-go' => '顯示樹狀結構',
 	'categorytree-parents' => '父分類',
 	'categorytree-mode-categories' => '只顯示分類',
-	'categorytree-mode-pages' => '除去圖像頁面',
+	'categorytree-mode-pages' => '除去圖片頁面',
 	'categorytree-mode-all' => '所有頁面',
 	'categorytree-collapse' => '摺疊',
 	'categorytree-expand' => '展開',
