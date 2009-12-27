@@ -3514,6 +3514,36 @@ $messages['tg-cyrl'] = array(
 	'categorytree-retry' => 'Лутфан чанд лаҳза сабр кунед ва дубора имтиҳон кунед.',
 );
 
+/** Tajik (Latin) (Тоҷикӣ (Latin))
+ * @author Liangent
+ */
+$messages['tg-latn'] = array(
+	'categorytree' => 'GurūhDaraxt',
+	'categorytree-portlet' => 'Gurūhho',
+	'categorytree-legend' => 'Namoişi daraxti gurūh',
+	'categorytree-desc' => 'Abzore dar asosi AJAX baroi namoişi [[Special:CategoryTree|soxtori gurūhi]] viki.',
+	'categorytree-header' => "Nomi jak gurūhro vorid kuned, to mūhtavijoti on ba surati daraxt namoiş jobad.
+Tavaççūh kuned, ki in kor ba qobilijathoi peşraftai ÇavaSkript bo nomi Açaks nijoz dorad.
+Agar az mururgari xele kūhna istifoda mekuned jo ÇavaSkriptro ƣajrifa'ol kardaed, dar in hol on kor naxohad kard.",
+	'categorytree-category' => 'Gurūh:',
+	'categorytree-go' => 'Namoişi daraxt',
+	'categorytree-parents' => 'Volidajn',
+	'categorytree-mode-categories' => 'Faqat gurūhho',
+	'categorytree-mode-pages' => 'sahifaho ƣajr az aksho',
+	'categorytree-mode-all' => 'hamai sahifaho',
+	'categorytree-collapse' => 'furukaş',
+	'categorytree-expand' => 'gustariş',
+	'categorytree-load' => 'bor kardan',
+	'categorytree-loading' => 'dar holi bor şudan…',
+	'categorytree-nothing-found' => 'heçciz joft naşud',
+	'categorytree-no-subcategories' => 'heç zergurūhe nadorad',
+	'categorytree-no-parent-categories' => 'gurūhi bolotare nest',
+	'categorytree-no-pages' => 'heç sahifae jo zergurūhe',
+	'categorytree-not-found' => 'Gurūhi <i>$1</i> joft naşud',
+	'categorytree-error' => 'Işkol dar darjofti ittiloot',
+	'categorytree-retry' => 'Lutfan cand lahza sabr kuned va dubora imtihon kuned.',
+);
+
 /** Thai (ไทย)
  * @author Manop
  * @author Octahedron80
@@ -3554,6 +3584,10 @@ $messages['tk'] = array(
 	'categorytree' => 'Kategoriýa agajy',
 	'categorytree-portlet' => 'Kategoriýalar',
 	'categorytree-legend' => 'Kategoriýa agajyny görkez',
+	'categorytree-desc' => '[[Special:CategoryTree|Kategoriýa gurluşyny]] dinamik ýagdaýda dolandyr',
+	'categorytree-header' => 'Kategoriýanyň adyny ýazyp, onuň mazmunyny agaç gurluşy hökmünde görüp bilersiňiz. 
+Bu aýratynlyk AJAX ady bilen tanalýan ösen JavaScript bilen işleýändir. 
+Eger brauzeriňiz köne bolsa ýa-da JavaScript ýapyk bolsa, onda ol işlemez.',
 	'categorytree-category' => 'Kategoriýa:',
 	'categorytree-go' => 'Agajy görkez',
 	'categorytree-parents' => 'Ene kategoriýalar',
@@ -3562,10 +3596,12 @@ $messages['tk'] = array(
 	'categorytree-mode-all' => 'ähli sahypalar',
 	'categorytree-collapse' => 'ýygna',
 	'categorytree-expand' => 'giňelt',
+	'categorytree-member-counts' => '{{PLURAL:$1|1 kiçi kategoriýany|$1 kiçi kategoriýany}}, {{PLURAL:$2|1 sahypany|$2 sahypany}} we {{PLURAL:$3|1 faýly|$3 faýly}} öz içine alýar',
 	'categorytree-load' => 'ýükle',
 	'categorytree-loading' => 'ýüklenýär...',
 	'categorytree-nothing-found' => 'hiç zat tapylmady',
 	'categorytree-no-subcategories' => 'kiçi kategoriýa ýok',
+	'categorytree-no-parent-categories' => 'ene kategoriýa ýok',
 	'categorytree-no-pages' => 'sahypa ýa-da kiçi kategoriýa ýok',
 	'categorytree-not-found' => '<i>"$1"</i> kategoriýasy tapylmady',
 	'categorytree-error' => 'Maglumat ýükleme problemsy.',
