@@ -1143,6 +1143,8 @@ $messages['fr'] = array(
  */
 $messages['frp'] = array(
 	'categorytree' => 'Structura d’âbro de les catègories',
+	'categorytree-portlet' => 'Catègories',
+	'categorytree-legend' => 'Vêre la structura d’âbro de la catègorie',
 	'categorytree-desc' => 'Outil basâ dessus AJAX por afichiér la [[Special:CategoryTree|structura de la catègorie]] d’un vouiqui',
 	'categorytree-header' => 'Buchiéd un nom de catègorie por vêre son contegnu en structura d’âbro.
 Cen utilise des fonccionalitâts JavaScript avanciês cognues desot lo nom d’AJAX.
@@ -1155,10 +1157,12 @@ Se vos avéd un rudo viely navigator ou ben se vos éd pas activâ la fonccional
 	'categorytree-mode-all' => 'totes les pâges',
 	'categorytree-collapse' => 'Recllôre',
 	'categorytree-expand' => 'Dèvelopar',
+	'categorytree-member-counts' => 'contint $1 sot-catègorie{{PLURAL:$1||s}}, $2 pâge{{PLURAL:$2||s}} et $3 fichiér{{PLURAL:$3||s}}',
 	'categorytree-load' => 'Uvrir',
 	'categorytree-loading' => 'uvèrtura...',
 	'categorytree-nothing-found' => 'Pas trovâ, dèsolâ.',
 	'categorytree-no-subcategories' => 'Gins de sot-catègorie.',
+	'categorytree-no-parent-categories' => 'gins de catègorie parenta',
 	'categorytree-no-pages' => 'Gins d’articllo ou de sot-catègorie.',
 	'categorytree-not-found' => 'La catègorie <tt>$1</tt> at pas étâ trovâ.',
 	'categorytree-error' => 'Problèmo de chargement de les balyês.',
