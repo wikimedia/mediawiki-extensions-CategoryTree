@@ -22,6 +22,10 @@ $magicWords['ar'] = array(
 	'categorytree'   => array( '0', 'شجرة_تصنيف', 'categorytree' ),
 );
 
+$magicWords['arz'] = array(
+	'categorytree'   => array( '0', 'شجرة_تصنيف', 'categorytree' ),
+);
+
 $magicWords['br'] = array(
 	'categorytree'   => array( '0', 'GwezennadurRummad', 'categorytree' ),
 );
@@ -56,4 +60,8 @@ $magicWords['nl'] = array(
 
 $magicWords['ru'] = array(
 	'categorytree'   => array( '0', 'деревокатегорий', 'categorytree' ),
+);
+
+$magicWords['tr'] = array(
+	'categorytree'   => array( '0', 'kategorihiyerarşisi', 'categorytree' ),
 );

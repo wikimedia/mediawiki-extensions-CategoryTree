@@ -1646,9 +1646,9 @@ Si tu ha un navigator multo vetule, o ha disactivate JavaScript, isto non functi
 	'categorytree-load' => 'cargar',
 	'categorytree-loading' => 'cargamento in curso…',
 	'categorytree-nothing-found' => 'nihil trovate',
-	'categorytree-no-subcategories' => 'nulle subcategorias',
-	'categorytree-no-parent-categories' => 'nulle categorias superior',
-	'categorytree-no-pages' => 'nulle paginas o subcategorias',
+	'categorytree-no-subcategories' => 'nulle subcategoria',
+	'categorytree-no-parent-categories' => 'nulle categoria superior',
+	'categorytree-no-pages' => 'nulle pagina o subcategoria',
 	'categorytree-not-found' => 'Categoria <i>$1</i> non trovate',
 	'categorytree-error' => 'Problema al cargar le datos.',
 	'categorytree-retry' => 'Per favor attende un momento e reproba.',
@@ -2066,7 +2066,7 @@ $messages['ksh'] = array(
 	'categorytree-retry' => 'Bess_esu joot un donn et noh enem Moment norr_ens probeere',
 );
 
-/** Kurdish (Latin) (Kurdî / كوردی (Latin)) */
+/** Kurdish (Latin) (Kurdî (Latin)) */
 $messages['ku-latn'] = array(
 	'categorytree-category' => 'Kategorî',
 	'categorytree-load' => 'bar bike',
