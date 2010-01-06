@@ -62,7 +62,7 @@ $wgCategoryTreeMaxDepth = array(CT_MODE_PAGES => 1, CT_MODE_ALL => 1, CT_MODE_CA
 # Set $wgCategoryTreeForceHeaders to true to force the JS and CSS headers for CategoryTree to be included on every page. 
 # May be usefull for using CategoryTree from within system messages, in the sidebar, or a custom skin.
 $wgCategoryTreeForceHeaders = false; 
-$wgCategoryTreeSidebarRoot = NULL;
+$wgCategoryTreeSidebarRoot = null;
 $wgCategoryTreeHijackPageCategories = false; # EXPERIMENTAL! NOT YET FOR PRODUCTION USE! Main problem is general HTML/CSS layout cruftiness.
 
 $wgCategoryTreeExtPath = '/extensions/CategoryTree';
@@ -72,8 +72,8 @@ $wgCategoryTreeUseCategoryTable = version_compare( $wgVersion, "1.13", '>=' );
 $wgCategoryTreeOmitNamespace = CT_HIDEPREFIX_CATEGORIES;
 $wgCategoryTreeDefaultMode = CT_MODE_CATEGORIES;
 $wgCategoryTreeDefaultOptions = array(); #Default values for most options. ADD NEW OPTIONS HERE!
-$wgCategoryTreeDefaultOptions['mode'] = NULL; # will be set to $wgCategoryTreeDefaultMode in efCategoryTree(); compatibility quirk
-$wgCategoryTreeDefaultOptions['hideprefix'] = NULL; # will be set to $wgCategoryTreeDefaultMode in efCategoryTree(); compatibility quirk
+$wgCategoryTreeDefaultOptions['mode'] = null; # will be set to $wgCategoryTreeDefaultMode in efCategoryTree(); compatibility quirk
+$wgCategoryTreeDefaultOptions['hideprefix'] = null; # will be set to $wgCategoryTreeDefaultMode in efCategoryTree(); compatibility quirk
 $wgCategoryTreeDefaultOptions['showcount'] = false;
 $wgCategoryTreeDefaultOptions['namespaces'] = false; # false means "no filter"
 
@@ -306,7 +306,7 @@ function efCategoryTreeSkinTemplateOutputPageBeforeExec( &$skin, &$tpl ) {
  * Entry point for the <categorytree> tag parser hook.
  * This loads CategoryTreeFunctions.php and calls CategoryTree::getTag()
  */
-function efCategoryTreeParserHook( $cat, $argv, $parser = NULL, $allowMissing = false ) {
+function efCategoryTreeParserHook( $cat, $argv, $parser = null, $allowMissing = false ) {
 	global $wgOut;
 
 	if ( $parser ) {
@@ -360,7 +360,7 @@ function efCategoryTreeOutputPageMakeCategoryLinks( &$out, &$categories, &$links
 	$ct = new CategoryTree( $wgCategoryTreePageCategoryOptions );
 
 	foreach ( $categories as $category => $type ) {
-		$links[$type][] = efCategoryTreeParserHook( $category, $wgCategoryTreePageCategoryOptions, NULL, true );
+		$links[$type][] = efCategoryTreeParserHook( $category, $wgCategoryTreePageCategoryOptions, null, true );
 	}
 
 	return false;

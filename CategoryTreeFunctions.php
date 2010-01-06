@@ -120,7 +120,7 @@ class CategoryTree {
 	* Perhaps make this a global function in MediaWiki proper
 	*/
 	static function decodeBoolean( $value ) {
-		if ( is_null( $value ) ) return NULL;
+		if ( is_null( $value ) ) return null;
 		if ( is_bool( $value ) ) return $value;
 		if ( is_int( $value ) ) return ( $value > 0 );
 
@@ -129,7 +129,7 @@ class CategoryTree {
 
 		if ( $value == 'yes' || $value == 'y' || $value == 'true' || $value == 't' || $value == 'on' ) return true;
 		else if ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) return false;
-		else if ( $value == 'null' || $value == 'default' || $value == 'none' || $value == 'x' ) return NULL;
+		else if ( $value == 'null' || $value == 'default' || $value == 'none' || $value == 'x' ) return null;
 		else return false;
 	}
 
@@ -216,7 +216,7 @@ class CategoryTree {
 	}
 
 	static function getJsonCodec() {
-		static $json = NULL;
+		static $json = null;
 
 		if (!$json) {
 			$json = new Services_JSON(); #recycle API's JSON codec implementation
@@ -263,7 +263,7 @@ class CategoryTree {
 		return $opt;
 	}
 
-	function getOptionsAsCacheKey( $depth = NULL ) {
+	function getOptionsAsCacheKey( $depth = null ) {
 		$key = "";
 
 		foreach ( $this->mOptions as $k => $v ) {
@@ -275,7 +275,7 @@ class CategoryTree {
 		return $key;
 	}
 
-	function getOptionsAsJsStructure( $depth = NULL ) {
+	function getOptionsAsJsStructure( $depth = null ) {
 		if ( !is_null( $depth ) ) {
 			$opt = $this->mOptions;
 			$opt['depth'] = $depth;
@@ -362,7 +362,7 @@ class CategoryTree {
 		}
 		$title = self::makeTitle( $category );
 
-		if ( $title === false || $title === NULL ) return false;
+		if ( $title === false || $title === null ) return false;
 
 		if ( isset( $attr['class'] ) ) $attr['class'] .= ' CategoryTreeTag';
 		else $attr['class'] = ' CategoryTreeTag';
@@ -486,7 +486,7 @@ class CategoryTree {
 		while ( $row = $dbr->fetchObject( $res ) ) {
 			#NOTE: in inverse mode, the page record may be null, because we use a right join.
 			#      happens for categories with no category page (red cat links)
-			if ( $inverse && $row->page_title === NULL ) {
+			if ( $inverse && $row->page_title === null ) {
 				$t = Title::makeTitle( NS_CATEGORY, $row->cl_to );
 			}
 			else {
@@ -494,7 +494,7 @@ class CategoryTree {
 				$t = Title::newFromRow( $row );
 			}
 
-			$cat = NULL;
+			$cat = null;
 
 			if ( $doCount && $row->page_namespace == NS_CATEGORY ) {
 				$cat = Category::newFromRow( $row, $t );
@@ -755,8 +755,8 @@ class CategoryTree {
 
 		$title = trim($title);
 
-		if ( $title === NULL || $title === '' || $title === false ) {
-			return NULL;
+		if ( $title === null || $title === '' || $title === false ) {
+			return null;
 		}
 
 		# The title must be in the category namespace
