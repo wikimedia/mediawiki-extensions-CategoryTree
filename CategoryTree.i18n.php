@@ -2618,6 +2618,7 @@ $messages['nn'] = array(
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Audun
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
@@ -2638,7 +2639,7 @@ Enter a category name to see its contents as a tree structure. Note that this re
 	'categorytree-expand' => 'vis',
 	'categorytree-member-counts' => 'inneholder {{PLURAL:$1|én underkategori|$1 underkategorier}}, {{PLURAL:$2|én side|$2 sider}} og {{PLURAL:$3|én fil|$3 filer}}',
 	'categorytree-load' => 'last',
-	'categorytree-loading' => 'laster',
+	'categorytree-loading' => 'laster...',
 	'categorytree-nothing-found' => 'Ingen resultater funnet.',
 	'categorytree-no-subcategories' => 'Ingen underkategorier.',
 	'categorytree-no-parent-categories' => 'ingen foreldrekategorier',
