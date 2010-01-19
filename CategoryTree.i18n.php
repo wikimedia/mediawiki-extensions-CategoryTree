@@ -2375,7 +2375,24 @@ $messages['ml'] = array(
  * @author Chinneeb
  */
 $messages['mn'] = array(
+	'categorytree' => 'Ангиллын мод',
+	'categorytree-header' => 'Ангиллын нэрийг бичиж модны бүтэц байдлаар агуулгыг нь харна уу.
+Үүнийг ашиглахын тулд AJAX гэгдэх ЖаваСкрипт функц хэрэгтэй.
+Та маш хуучин вэб хөтөчтэй, эсвэл ЖаваСкриптыг хориглосон байвал ажиллахгүй болохыг анхаарна уу.',
+	'categorytree-category' => 'Ангилал:',
+	'categorytree-go' => 'Модыг үзүүлэх',
+	'categorytree-parents' => 'Эх ангиллууд',
+	'categorytree-mode-categories' => 'Зөвхөн ангиллууд',
+	'categorytree-mode-pages' => 'зурагнаас бусад хуудсууд',
+	'categorytree-mode-all' => 'бүх хуудас',
+	'categorytree-expand' => 'дэлгэх',
+	'categorytree-load' => 'унших',
 	'categorytree-loading' => 'уншиж байна...',
+	'categorytree-nothing-found' => 'юу ч олдсонгүй',
+	'categorytree-no-subcategories' => 'дэд ангилалгүй байна',
+	'categorytree-no-pages' => 'хуудас буюу дэд ангилалгүй байна',
+	'categorytree-not-found' => '<i>$1</i> ангилал олдсонгүй',
+	'categorytree-retry' => 'Түр хүлээгээд дахин оролдоно уу.',
 );
 
 /** Marathi (मराठी)
