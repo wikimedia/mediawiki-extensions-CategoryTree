@@ -2757,10 +2757,23 @@ $messages['pam'] = array(
  * @author Xqt
  */
 $messages['pdc'] = array(
+	'categorytree' => 'Baam vun Abdeelinge',
 	'categorytree-portlet' => 'Abdeelinge',
+	'categorytree-legend' => 'Baam vun de Abdeeling zeige',
 	'categorytree-category' => 'Abdeeling:',
+	'categorytree-go' => 'Baam zeige',
 	'categorytree-parents' => 'Eldere',
+	'categorytree-mode-categories' => 'nur Abdeelinge',
+	'categorytree-mode-pages' => 'Bledder ohne Feils',
 	'categorytree-mode-all' => 'alle Bledder',
+	'categorytree-member-counts' => 'hot {{PLURAL:$1|1 Unnerabdeeling|$1 Unnerabdeelinge}}, {{PLURAL:$2|1 Blatt|$2 Bledder}} unn {{PLURAL:$3|1 Feil|$3 Feils}}',
+	'categorytree-load' => 'laade',
+	'categorytree-loading' => 'laade…',
+	'categorytree-nothing-found' => 'nix gfunne',
+	'categorytree-no-subcategories' => 'Ken Unnerabdeeling',
+	'categorytree-no-parent-categories' => 'Ken Owwerabdeeling',
+	'categorytree-no-pages' => 'Ken Bledder odder Unnerabdeelinge',
+	'categorytree-not-found' => 'Abdeeling „$1“ net gfunne',
 );
 
 /** Polish (Polski)
