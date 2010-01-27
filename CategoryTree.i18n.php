@@ -2079,8 +2079,8 @@ $messages['ku-latn'] = array(
  * @author Kw-Moon
  */
 $messages['kw'] = array(
-	'categorytree-portlet' => 'Classys',
-	'categorytree-category' => 'Class:',
+	'categorytree-portlet' => 'Klassys',
+	'categorytree-category' => 'Klass:',
 	'categorytree-mode-all' => 'oll folennow',
 );
 
