@@ -2066,12 +2066,17 @@ $messages['ksh'] = array(
 	'categorytree-retry' => 'Bess_esu joot un donn et noh enem Moment norr_ens probeere',
 );
 
-/** Kurdish (Latin) (Kurdî (Latin)) */
+/** Kurdish (Latin) (Kurdî (Latin))
+ * @author Erdal Ronahi
+ */
 $messages['ku-latn'] = array(
+	'categorytree' => 'Dara kategoriyan',
+	'categorytree-portlet' => 'Kategorî',
 	'categorytree-category' => 'Kategorî',
 	'categorytree-load' => 'bar bike',
 	'categorytree-loading' => 'tê barkirin',
 	'categorytree-no-subcategories' => 'binekategorî tune',
+	'categorytree-not-found' => 'Kategoriya <i>$1</i> nehate dîtin',
 );
 
 /** Cornish (Kernowek)
@@ -2315,7 +2320,7 @@ $messages['mk'] = array(
 	'categorytree' => 'Дрво на категории',
 	'categorytree-portlet' => 'Категории',
 	'categorytree-legend' => 'Прикажи дрво на категории',
-	'categorytree-desc' => 'Динамичка навигација низ [[Special:CategoryTree|структурата на категории]]',
+	'categorytree-desc' => 'Динамичка навигација низ [[Special:CategoryTree|структурата на категориите]]',
 	'categorytree-header' => 'Внесете назив на категорија за да ја видите нејзината содржина во форма на дрво.
 Да напоменеме дека оваа функција побарува JavaScript т.е. AJAX.
 Ако имате доста стар прелистувач, или JavaScript функционалноста вие е стопирана, ова нема да функционира.',
