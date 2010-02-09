@@ -474,9 +474,9 @@ class CategoryTree {
 				$nsmatch
 				"./*AND cat.page_is_redirect = 0*/"
 				$transWhere
-				ORDER BY cl_sortkey
-				LIMIT " . (int)$wgCategoryTreeMaxChildren;
-
+				ORDER BY cl_sortkey";
+		$sql = $dbr->limitResult($sql, (int)$wgCategoryTreeMaxChildren);
+		
 		$res = $dbr->query( $sql, __METHOD__ );
 
 		#collect categories separately from other pages
@@ -533,8 +533,8 @@ class CategoryTree {
 				$transJoin
 				WHERE cl_from = " . $title->getArticleID() . "
 				$transWhere
-				ORDER BY cl_to
-				LIMIT " . (int)$wgCategoryTreeMaxChildren;
+				ORDER BY cl_to";
+		$sql = $dbr->limitResult($sql, (int)$wgCategoryTreeMaxChildren);
 
 		$res = $dbr->query( $sql, __METHOD__ );
 
