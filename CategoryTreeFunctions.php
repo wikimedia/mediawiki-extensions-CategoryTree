@@ -314,7 +314,7 @@ class CategoryTree {
 
 		# Retrieve page_touched for the category
 		$dbkey = $title->getDBkey();
-		$dbr =& wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_SLAVE );
 		$touched = $dbr->selectField( 'page', 'page_touched',
 			array(
 				'page_namespace' => NS_CATEGORY,
@@ -412,7 +412,7 @@ class CategoryTree {
 			return '';
 		}
 
-		$dbr =& wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_SLAVE );
 
 		$inverse = $this->isInverse();
 		$mode = $this->getOption('mode');
@@ -519,7 +519,7 @@ class CategoryTree {
 	function renderParents( &$title ) {
 		global $wgCategoryTreeMaxChildren;
 
-		$dbr =& wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_SLAVE );
 
 		#additional stuff to be used if "transaltion" by interwiki-links is desired
 		$transFields = '';
