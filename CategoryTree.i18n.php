@@ -1177,11 +1177,13 @@ $messages['fur'] = array(
 	'categorytree' => 'Arbul des categoriis',
 	'categorytree-portlet' => 'Categoriis',
 	'categorytree-legend' => 'Mostre arbul des categoriis',
+	'categorytree-desc' => 'Navigazion dinamic te [[Special:CategoryTree|struture des categoriis]]',
 	'categorytree-header' => 'Inserìs il non de categorie di cui tu vuelis viodi i siei contignûts intune struture a arbul.
 Cheste funzion e à bisugne di funzions avanzadis JavaScript, cognossudis come AJAX.
 Se tu âs un sgarfadôr a vonde vieri, o tu âs disativât JavaScript, cheste pagjine no funzionarà.',
 	'categorytree-category' => 'Categorie:',
 	'categorytree-go' => 'Mostre arbul',
+	'categorytree-parents' => 'Categoriis superiôrs',
 	'categorytree-mode-categories' => 'mostre dome lis categoriis',
 	'categorytree-mode-pages' => 'dutis lis pagjinis, fûr che i files',
 	'categorytree-mode-all' => 'dutis lis pagjinis',
@@ -3468,11 +3470,18 @@ $messages['sw'] = array(
 	'categorytree-mode-categories' => 'jamii tu',
 	'categorytree-mode-pages' => 'kurasa isipokuwa mafaili',
 	'categorytree-mode-all' => 'kurasa zote',
-	'categorytree-member-counts' => 'Imo {{PLURAL:$1|1 subcategory|$1 subcategories}}, {{PLURAL:$2|ukurasa 1|kurasa $2}}, na {{PLURAL:$3|faili 1|mafaili $3}}',
+	'categorytree-collapse' => 'kunja',
+	'categorytree-expand' => 'kutanua',
+	'categorytree-member-counts' => 'Imo {{PLURAL:$1|kijamii 1|vijamii $1}}, {{PLURAL:$2|ukurasa 1|kurasa $2}}, na {{PLURAL:$3|faili 1|mafaili $3}}',
+	'categorytree-load' => 'kupakia',
+	'categorytree-loading' => 'inapakizwa...',
+	'categorytree-nothing-found' => 'hakupatikana kitu',
 	'categorytree-no-subcategories' => 'jamii ndogo zake hakuna',
 	'categorytree-no-parent-categories' => 'jamii kuu hakuna',
 	'categorytree-no-pages' => 'hakuna kurasa wala jamii ndogo zake',
 	'categorytree-not-found' => 'Jamii inayoitwa $1 haikupatikana',
+	'categorytree-error' => 'Ilitokea tatizo zilipopakizwa data.',
+	'categorytree-retry' => 'Subiri kidogo tafadhali, halafu jaribu tena.',
 );
 
 /** Tamil (தமிழ்)
