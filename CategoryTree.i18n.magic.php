@@ -30,6 +30,10 @@ $magicWords['br'] = array(
 	'categorytree'   => array( '0', 'GwezennadurRummad', 'categorytree' ),
 );
 
+$magicWords['es'] = array(
+	'categorytree'   => array( '0', 'árboldecategorías', 'arboldecategorias', 'categorytree' ),
+);
+
 $magicWords['et'] = array(
 	'categorytree'   => array( '0', 'kategooriapuu', 'categorytree' ),
 );
@@ -58,10 +62,22 @@ $magicWords['nl'] = array(
 	'categorytree'   => array( '0', 'categorieboom', 'categorytree' ),
 );
 
+$magicWords['no'] = array(
+	'categorytree'   => array( '0', 'kategoritre', 'categorytree' ),
+);
+
 $magicWords['ru'] = array(
 	'categorytree'   => array( '0', 'деревокатегорий', 'categorytree' ),
 );
 
+$magicWords['sv'] = array(
+	'categorytree'   => array( '0', 'kategoriträd', 'categorytree' ),
+);
+
 $magicWords['tr'] = array(
 	'categorytree'   => array( '0', 'kategorihiyerarşisi', 'categorytree' ),
+);
+
+$magicWords['uk'] = array(
+	'categorytree'   => array( '0', 'деревокатегорій', 'деревокатегорий', 'categorytree' ),
 );
