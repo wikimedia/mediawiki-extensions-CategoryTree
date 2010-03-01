@@ -1867,6 +1867,7 @@ Menawa panjenengan panjlajah wèbé kalebu vèrsi lawa, utawa fitur JavaScript d
 );
 
 /** Georgian (ქართული)
+ * @author BRUTE
  * @author Malafaya
  */
 $messages['ka'] = array(
@@ -1878,6 +1879,7 @@ $messages['ka'] = array(
 	'categorytree-mode-categories' => 'მხოლოდ კატეგორიები',
 	'categorytree-mode-pages' => 'გვერდები ფაილების გარდა',
 	'categorytree-mode-all' => 'ყველა გვერდი',
+	'categorytree-loading' => 'იტვირთება…',
 	'categorytree-not-found' => 'კატეგორია <i>$1</i> არ არსებობს',
 );
 
