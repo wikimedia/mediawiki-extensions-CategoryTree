@@ -192,7 +192,7 @@ $aliases['ko'] = array(
 	'CategoryTree' => array( '분류트리' ),
 );
 
-/** Ripoarisch (Ripoarisch) */
+/** Colognian (Ripoarisch) */
 $aliases['ksh'] = array(
 	'CategoryTree' => array( 'Saachjruppeboum' ),
 );
