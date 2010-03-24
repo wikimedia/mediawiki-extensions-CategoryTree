@@ -3228,6 +3228,7 @@ Ak máte veľmi starý prehliadač alebo máte vypnutý JavaScrpt, nebude fungov
 );
 
 /** Slovenian (Slovenščina)
+ * @author Dbc334
  * @author Freakolowsky
  * @author editors of sl.wikipedia
  */
@@ -3236,7 +3237,7 @@ $messages['sl'] = array(
 	'categorytree-portlet' => 'Kategorije',
 	'categorytree-legend' => 'Prikaži drevo kategorij',
 	'categorytree-desc' => 'Dinamično navigiraj po [[Special:CategoryTree|strukturi kategorij]]',
-	'categorytree-header' => 'Vnesite ime kategorije, katere vsebino želite videti kot drevesno strukturo. Upoštevajte, da je za to potreben AJAX, poseben nacin za delovanje JavaScripta. Ce je vaš brskalnik zelo star oziroma je JavaScript v njem onemogocen, drevo kategorij ne bo prikazano.',
+	'categorytree-header' => 'Vnesite ime kategorije, katere vsebino želite videti kot drevesno strukturo. Upoštevajte, da je za to potreben Ajax, poseben način za delovanje JavaScripta. Ce je vaš brskalnik zelo star oziroma je JavaScript v njem onemogocen, drevo kategorij ne bo prikazano.',
 	'categorytree-category' => 'Kategorija',
 	'categorytree-go' => 'Pokaži drevo',
 	'categorytree-parents' => 'Starši',
@@ -3252,8 +3253,8 @@ $messages['sl'] = array(
 	'categorytree-no-subcategories' => 'ni podkategorij',
 	'categorytree-no-parent-categories' => 'ni matičnih kategorij',
 	'categorytree-no-pages' => 'ni strani ali podkategorij',
-	'categorytree-not-found' => 'Kategorije <i>$1</i> ni moc najti',
-	'categorytree-error' => 'Problem pri nalaganju podatkov',
+	'categorytree-not-found' => 'Kategorije <i>$1</i> ni moč najti',
+	'categorytree-error' => 'Težava pri nalaganju podatkov.',
 	'categorytree-retry' => 'Prosimo, počakajte trenutek in poskusite znova.',
 );
 
