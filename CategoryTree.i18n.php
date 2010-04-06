@@ -2353,17 +2353,17 @@ $messages['mk'] = array(
  * @author Shijualex
  */
 $messages['ml'] = array(
-	'categorytree' => 'വര്‍ഗ്ഗവൃക്ഷം',
+	'categorytree' => 'വർഗ്ഗവൃക്ഷം',
 	'categorytree-portlet' => 'വർഗ്ഗങ്ങൾ',
-	'categorytree-legend' => 'വര്‍ഗ്ഗവൃക്ഷം പ്രദര്‍ശിപ്പിക്കുക',
-	'categorytree-desc' => 'വിക്കിയിലെ [[Special:CategoryTree|വർഗ്ഗങ്ങളുടെ ഘടന]] പ്രദര്‍ശിപ്പിക്കുവാനുള്ള  AJAX സാങ്കേതികവിദ്യ ഉപയോഗിക്കുന്ന ഗാഡ്ജറ്റ്.',
-	'categorytree-header' => 'വർഗ്ഗങ്ങളുടെ ഘടന വ്യക്ഷരൂപത്തില്‍ കാണുവാന്‍ ഒരു വർഗ്ഗത്തിന്റെ പേരു ചേര്‍ക്കുക.
-ഇതു പ്രവര്‍ത്തിക്കണമെങ്കില്‍ AJAX എന്ന ചുരുക്കനാമത്തിലറിയപ്പെടുന്ന അഡ്‌വാന്‍സ്‌ഡ് ജാവാസ്ക്രിപ്റ്റ് സാങ്കേതികവിദ്യ ആവശ്യമാണ്‌.
-താങ്കളുടെ ബ്രൗസറില്‍ ജാവാസ്ക്രിപ്റ്റ് പ്രവര്‍ത്തനരഹിതമാക്കിയതാണെങ്കിലോ അല്ലെങ്കില്‍ ബ്രൗസര്‍ കാലഹരണപ്പെട്ടതാണെങ്കിലോ ഇതു പ്രവര്‍ത്തിക്കില്ല.',
-	'categorytree-category' => 'വര്‍ഗ്ഗം:',
-	'categorytree-go' => 'വൃക്ഷം പ്രദര്‍ശിപ്പിക്കുക',
+	'categorytree-legend' => 'വർഗ്ഗവൃക്ഷം പ്രദർശിപ്പിക്കുക',
+	'categorytree-desc' => 'വിക്കിയിലെ [[Special:CategoryTree|വർഗ്ഗങ്ങളുടെ ഘടന]] പ്രദർശിപ്പിക്കുവാനുള്ള  AJAX സാങ്കേതികവിദ്യ ഉപയോഗിക്കുന്ന ഗാഡ്ജറ്റ്.',
+	'categorytree-header' => 'വർഗ്ഗങ്ങളുടെ ഘടന വ്യക്ഷരൂപത്തിൽ കാണുവാൻ ഒരു വർഗ്ഗത്തിന്റെ പേരു ചേർക്കുക.
+ഇതു പ്രവർത്തിക്കണമെങ്കിൽ AJAX എന്ന ചുരുക്കനാമത്തിലറിയപ്പെടുന്ന അഡ്‌വാൻസ്‌ഡ് ജാവാസ്ക്രിപ്റ്റ് സാങ്കേതികവിദ്യ ആവശ്യമാണ്‌.
+താങ്കളുടെ ബ്രൗസറിൽ ജാവാസ്ക്രിപ്റ്റ് പ്രവർത്തനരഹിതമാക്കിയതാണെങ്കിലോ അല്ലെങ്കിൽ ബ്രൗസർ കാലഹരണപ്പെട്ടതാണെങ്കിലോ ഇതു പ്രവർത്തിക്കില്ല.',
+	'categorytree-category' => 'വർഗ്ഗം:',
+	'categorytree-go' => 'വൃക്ഷം പ്രദർശിപ്പിക്കുക',
 	'categorytree-parents' => 'താവഴി',
-	'categorytree-mode-categories' => 'വർഗ്ഗങ്ങള്‍ മാത്രം',
+	'categorytree-mode-categories' => 'വർഗ്ഗങ്ങൾ മാത്രം',
 	'categorytree-mode-pages' => 'പ്രമാണങ്ങൾ അല്ലാതെയുള്ള താളുകൾ',
 	'categorytree-mode-all' => 'എല്ലാ താളുകളും',
 	'categorytree-collapse' => 'അടയ്ക്കുക',
@@ -2375,8 +2375,8 @@ $messages['ml'] = array(
 	'categorytree-no-subcategories' => 'ഉപവർഗ്ഗങ്ങളില്ല',
 	'categorytree-no-parent-categories' => 'മാതൃവർഗ്ഗങ്ങൾ ഇല്ല',
 	'categorytree-no-pages' => 'താളുകളോ ഉപവർഗ്ഗങ്ങളോ ഇല്ല',
-	'categorytree-not-found' => "''$1'' എന്ന വര്‍ഗ്ഗം കണ്ടില്ല",
-	'categorytree-error' => 'ഡാറ്റ ലോഡ് ചെയ്യുന്നതില്‍ പിഴവ്.',
+	'categorytree-not-found' => "''$1'' എന്ന വർഗ്ഗം കണ്ടില്ല",
+	'categorytree-error' => 'ഡാറ്റ ലോഡ് ചെയ്യുന്നതിൽ പിഴവ്.',
 	'categorytree-retry' => 'കുറച്ചു നേരം കഴിഞ്ഞ് വീണ്ടും പരിശ്രമിക്കുക',
 );
 
@@ -2895,7 +2895,7 @@ $messages['pt'] = array(
 	'categorytree-desc' => "Acessório ''(gadget)'' baseado em AJAX que apresenta a [[Special:CategoryTree|estrutura]] de uma wiki",
 	'categorytree-header' => 'Introduza o nome de uma categoria para ver o seu conteúdo numa estrutura de árvore.
 Note que isto requer uma funcionalidade avançada do JavaScript, conhecida por AJAX.
-Caso o seu navegador seja razoavelmente antigo ou o JavaScript esteja desactivado, não funcionará.',
+Caso o seu browser seja razoavelmente antigo ou o JavaScript esteja desactivado, não funcionará.',
 	'categorytree-category' => 'Categoria:',
 	'categorytree-go' => 'Mostrar árvore',
 	'categorytree-parents' => 'Categorias superiores',
