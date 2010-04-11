@@ -1881,6 +1881,7 @@ $messages['ka'] = array(
 	'categorytree-mode-all' => 'ყველა გვერდი',
 	'categorytree-loading' => 'იტვირთება…',
 	'categorytree-not-found' => 'კატეგორია <i>$1</i> არ არსებობს',
+	'categorytree-retry' => 'გთხოვთ, დაიცადეთ ცოტა ხნით და კვლავ სცადეთ.',
 );
 
 /** Kara-Kalpak (Qaraqalpaqsha)
