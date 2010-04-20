@@ -9,13 +9,12 @@
  * @license GNU General Public Licence 2.0 or later
  */
 
-if( !defined( 'MEDIAWIKI' ) ) {
+if ( !defined( 'MEDIAWIKI' ) ) {
 	echo( "This file is part of an extension to the MediaWiki software and cannot be used standalone.\n" );
 	die( 1 );
 }
 
 class CategoryTreePage extends SpecialPage {
-
 	var $target = '';
 	var $tree = null;
 
@@ -45,11 +44,11 @@ class CategoryTreePage extends SpecialPage {
 		$this->setHeaders();
 
 		if ( $par ) $this->target = $par;
-		else $this->target = $wgRequest->getVal( 'target', wfMsg( 'rootcategory') );
+		else $this->target = $wgRequest->getVal( 'target', wfMsg( 'rootcategory' ) );
 
 		$this->target = trim( $this->target );
 
-		#HACK for undefined root category
+		# HACK for undefined root category
 		if ( $this->target == '<rootcategory>' || $this->target == '&lt;rootcategory&gt;' ) $this->target = null;
 
 		$options = array();
@@ -68,7 +67,7 @@ class CategoryTreePage extends SpecialPage {
 
 		$this->executeInputForm();
 
-		if( $this->target !== '' && $this->target !== null ) {
+		if ( $this->target !== '' && $this->target !== null ) {
 			if ( !$wgCategoryTreeForceHeaders ) CategoryTree::setHeaders( $wgOut );
 
 			$title = CategoryTree::makeTitle( $this->target );
@@ -98,7 +97,6 @@ class CategoryTreePage extends SpecialPage {
 				$wgOut->addHTML( Xml::closeElement( 'div' ) );
 			}
 		}
-
 	}
 
 	/**
@@ -107,7 +105,7 @@ class CategoryTreePage extends SpecialPage {
 	function executeInputForm() {
 		global $wgScript, $wgOut;
 		$thisTitle = Title::makeTitle( NS_SPECIAL, $this->getName() );
-		$mode = $this->getOption('mode');
+		$mode = $this->getOption( 'mode' );
 
 		$wgOut->addHTML( Xml::openElement( 'form', array( 'name' => 'categorytree', 'method' => 'get', 'action' => $wgScript, 'id' => 'mw-categorytree-form' ) ) );
 		$wgOut->addHTML( Xml::openElement( 'fieldset' ) );

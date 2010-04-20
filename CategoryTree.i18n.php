@@ -82,12 +82,12 @@ Label for the category input field on Special:CategoryTree',
 {{Identical|All pages}}',
 	'categorytree-collapse' => 'Tooltip for the "collapse" button',
 	'categorytree-expand' => 'Tooltip for the "expand" button',
-	'categorytree-member-counts' => 'Tooltip showing a detailed summary of subcategory member counts. Parameters: 
-* $1 = number of subcategories, 
-* $2 = number of pages (without subcategories and files), 
-* $3 = number of files, 
-* $4 = total number of members, 
-* $5 = members to be shown in the tree, depending on mode. 
+	'categorytree-member-counts' => 'Tooltip showing a detailed summary of subcategory member counts. Parameters:
+* $1 = number of subcategories,
+* $2 = number of pages (without subcategories and files),
+* $3 = number of files,
+* $4 = total number of members,
+* $5 = members to be shown in the tree, depending on mode.
 Use with { {PLURAL} }',
 	'categorytree-load' => '{{Identical|Load}}
 
@@ -143,7 +143,7 @@ $messages['am'] = array(
 	'categorytree' => 'የመደቦች ዛፍ',
 	'categorytree-portlet' => 'መደቦች',
 	'categorytree-legend' => 'የመደቦች ዛፍ ለማየት',
-	'categorytree-header' => "[+] ተጭነው ንዑሱ-መደብ ይዘረጋል፣ [-] ተጭነው ደግሞ ይመልሳል። 
+	'categorytree-header' => "[+] ተጭነው ንዑሱ-መደብ ይዘረጋል፣ [-] ተጭነው ደግሞ ይመልሳል።
 
 በግራ በኩል ባለው ሳጥን ውስጥ የመደቡን ስም ዝም ብለው መጻፍ ይችላሉ። (የዚሁ ዊኪ መደብ ስሞች ለመመልከት፣ [[Special:Mostlinkedcategories|እዚህ ይጫኑ]]።) ከዚያ፥ ምን ያሕል ንዑስ-መደቦች እንዳሉበት ለማየት «ዛፉ ይታይ» የሚለውን ይጫኑ። በቀኝ በኩል ካለው ሳጥን 'all pages' ከመረጡ፥ በየመደቡ ውስጥ ያሉት መጣጥፎች በተጨማሪ ይታያሉ።
 
@@ -516,7 +516,7 @@ $messages['br'] = array(
 	'categorytree-portlet' => 'Rummadoù',
 	'categorytree-legend' => 'Gwelet gwezennadur ar rummad',
 	'categorytree-desc' => 'Furchal a ra ent dinamek [[Special:CategoryTree|framm ar rummadoù]]',
-	'categorytree-header' => "Merkit anv ur rummad evit gwelet petra zo ennañ e stumm ur gwezennadur. 
+	'categorytree-header' => "Merkit anv ur rummad evit gwelet petra zo ennañ e stumm ur gwezennadur.
 Notit e rankit kaout an arc'hwelioù JavaScript araokaet anvet AJAX.
 M'eo kozh-mat stumm ho merdeer pe m'eo diweredekaet JavaScript ganeoc'h, ne'z aio ket en-dro.",
 	'categorytree-category' => 'Rummad :',
@@ -693,8 +693,8 @@ $messages['cy'] = array(
 	'categorytree-portlet' => 'Categorïau',
 	'categorytree-legend' => 'Dangos y goeden gategori',
 	'categorytree-desc' => "Teclyn AJAX yn arddangos [[Special:CategoryTree|adeiledd categorïau]]'r wici",
-	'categorytree-header' => "Teipiwch enw categori yn y blwch er mwyn gweld ei gynnwys ar lun coeden. 
-Sylwer bod yn rhaid defnyddio offer uwch Sgript Java o'r enw AJAX er mwyn gwneud hyn. 
+	'categorytree-header' => "Teipiwch enw categori yn y blwch er mwyn gweld ei gynnwys ar lun coeden.
+Sylwer bod yn rhaid defnyddio offer uwch Sgript Java o'r enw AJAX er mwyn gwneud hyn.
 Ni lwydda'r gofyniad os yw'ch porwr yn hen iawn neu os nad yw Sgript Java wedi ei alluogi.",
 	'categorytree-category' => 'Categori:',
 	'categorytree-go' => 'Dangos y Goeden',
@@ -2137,7 +2137,7 @@ $messages['lb'] = array(
 	'categorytree-legend' => 'Weis Kategoriestruktur',
 	'categorytree-desc' => "Gadget deen op Ajax opgebaut ass fir d'[[Special:CategoryTree|Kategorie-Struktur]] vun enger Wiki duerzestellen",
 	'categorytree-header' => 'Gitt den Numm vun enger Kategorie an, fir hiren Inhalt als Bam-Struktur ze gesinn.
-Bedenkt, datt dës Fonctioun Java Script Funktioune benotzt, déi als AJAX bekannt sinn. 
+Bedenkt, datt dës Fonctioun Java Script Funktioune benotzt, déi als AJAX bekannt sinn.
 Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da fonktionnéiert dëst bei Iech net.',
 	'categorytree-category' => 'Kategorie:',
 	'categorytree-go' => 'Struktur weisen',
@@ -2293,8 +2293,8 @@ $messages['lv'] = array(
 	'categorytree-portlet' => 'Kategorijas',
 	'categorytree-legend' => 'Rādīt kategoriju koku',
 	'categorytree-desc' => "AJAX bāzēts ''gadget'', kuru lieto lai attēlotu wiki [[Special:CategoryTree|kategoriju struktūru]]",
-	'categorytree-header' => 'Ievadi kategorijas nosaukumu lai apskatītos tās saturu kā koka struktūru. 
-Tam ir nepieciešama JavaScript (AJAX) funkcionalitāte. 
+	'categorytree-header' => 'Ievadi kategorijas nosaukumu lai apskatītos tās saturu kā koka struktūru.
+Tam ir nepieciešama JavaScript (AJAX) funkcionalitāte.
 Ja tev ir veca interneta pārlūkprogramma, vai arī JavaScript ir atslēgts, šitas te nedarbosies.',
 	'categorytree-category' => 'Kategorija:',
 	'categorytree-go' => 'Parādīt koku',
@@ -2547,7 +2547,7 @@ $messages['nds-nl'] = array(
 	'categorytree-portlet' => 'Kattegerieën',
 	'categorytree-legend' => 'Laot kattegerieboom zien',
 	'categorytree-desc' => 'Dynamische navigasie veur de [[Special:CategoryTree|kattegeriestructuur]]',
-	'categorytree-header' => 'Voer een kattegerienaam in um de inhoud in boomstructuur te bekieken. 
+	'categorytree-header' => 'Voer een kattegerienaam in um de inhoud in boomstructuur te bekieken.
 NB: Veur disse functie he-j de [[JavaScript]]functionaliteit, AJAX neudig. A-j een hele ouwe webkieker hemmen, of je JavaScript uut-eschakeld hemmen, dan zal disse functie neet warken.',
 	'categorytree-category' => 'Kattegerie:',
 	'categorytree-go' => 'Laojen',
@@ -3646,8 +3646,8 @@ $messages['tk'] = array(
 	'categorytree-portlet' => 'Kategoriýalar',
 	'categorytree-legend' => 'Kategoriýa agajyny görkez',
 	'categorytree-desc' => '[[Special:CategoryTree|Kategoriýa gurluşyny]] dinamik ýagdaýda dolandyr',
-	'categorytree-header' => 'Kategoriýanyň adyny ýazyp, onuň mazmunyny agaç gurluşy hökmünde görüp bilersiňiz. 
-Bu aýratynlyk AJAX ady bilen tanalýan ösen JavaScript bilen işleýändir. 
+	'categorytree-header' => 'Kategoriýanyň adyny ýazyp, onuň mazmunyny agaç gurluşy hökmünde görüp bilersiňiz.
+Bu aýratynlyk AJAX ady bilen tanalýan ösen JavaScript bilen işleýändir.
 Eger brauzeriňiz köne bolsa ýa-da JavaScript ýapyk bolsa, onda ol işlemez.',
 	'categorytree-category' => 'Kategoriýa:',
 	'categorytree-go' => 'Agajy görkez',
@@ -3937,8 +3937,8 @@ $messages['yi'] = array(
 	'categorytree' => 'קאַטעגאריע בוים',
 	'categorytree-portlet' => 'קאַטעגאריעס',
 	'categorytree-legend' => 'ווײַזן קאַטעגאריע בוים',
-	'categorytree-header' => 'לייגט אריין א קאטעגאריע נאמען צו זען איר אינהאלט אלס א בוים סטרוקטור. 
-באמערקט אז דאס פארלאנגט פארגעשריטענע JavaScript מעגליכקייטן, באקאנט אלס AJAX. 
+	'categorytree-header' => 'לייגט אריין א קאטעגאריע נאמען צו זען איר אינהאלט אלס א בוים סטרוקטור.
+באמערקט אז דאס פארלאנגט פארגעשריטענע JavaScript מעגליכקייטן, באקאנט אלס AJAX.
 אויב איר ניצט אן אלטן בלעטערער, אדער איר ערלויבט נישט קיין JavaScript, וועט דאס נישט ווירקן.',
 	'categorytree-category' => 'קאטעגאריע:',
 	'categorytree-go' => 'ווײַזן בוים',
