@@ -2042,7 +2042,7 @@ $messages['krj'] = array(
 	'categorytree-category' => 'Kategorya:',
 );
 
-/** Ripoarisch (Ripoarisch)
+/** Colognian (Ripoarisch)
  * @author Purodha
  */
 $messages['ksh'] = array(
@@ -2084,7 +2084,7 @@ $messages['ku-latn'] = array(
 	'categorytree-not-found' => 'Kategoriya <i>$1</i> nehate dîtin',
 );
 
-/** Cornish (Kernowek)
+/** Cornish (Kernewek)
  * @author Kernoweger
  * @author Kw-Moon
  */
@@ -3968,7 +3968,7 @@ $messages['yo'] = array(
 	'categorytree-mode-all' => 'gbogbo àwọn ojúewé',
 );
 
-/** Yue (粵語)
+/** Cantonese (粵語)
  * @author Shinjiman
  */
 $messages['yue'] = array(
