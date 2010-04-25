@@ -3958,6 +3958,16 @@ $messages['yi'] = array(
 	'categorytree-retry' => 'ביטע וואַרט אַ רגע און פרובירט נאכאַמאָל',
 );
 
+/** Yoruba (Yorùbá)
+ * @author Demmy
+ */
+$messages['yo'] = array(
+	'categorytree-portlet' => 'Àwọn ẹ̀ka',
+	'categorytree-category' => 'Ẹ̀ka:',
+	'categorytree-parents' => 'Àwọn òbí',
+	'categorytree-mode-all' => 'gbogbo àwọn ojúewé',
+);
+
 /** Yue (粵語)
  * @author Shinjiman
  */
