@@ -2548,7 +2548,7 @@ $messages['nds-nl'] = array(
 	'categorytree-legend' => 'Laot kattegerieboom zien',
 	'categorytree-desc' => 'Dynamische navigasie veur de [[Special:CategoryTree|kattegeriestructuur]]',
 	'categorytree-header' => 'Voer een kattegerienaam in um de inhoud in boomstructuur te bekieken.
-NB: Veur disse functie he-j de [[JavaScript]]functionaliteit, AJAX neudig. A-j een hele ouwe webkieker hemmen, of je JavaScript uut-eschakeld hemmen, dan zal disse functie neet warken.',
+NB: Veur disse functie he-j de JavaScript-functionaliteit, AJAX neudig. A-j een hele ouwe webkieker hemmen, of je JavaScript uut-eschakeld hemmen, dan zal disse functie neet warken.',
 	'categorytree-category' => 'Kattegerie:',
 	'categorytree-go' => 'Laojen',
 	'categorytree-parents' => 'Ouwerkattegerieën',
