@@ -2035,6 +2035,13 @@ $messages['ko'] = array(
 	'categorytree-retry' => '잠시 후에 다시 시도해주세요.',
 );
 
+/** Karachay-Balkar (Къарачай-Малкъар)
+ * @author Iltever
+ */
+$messages['krc'] = array(
+	'categorytree-legend' => 'Категорияланы терегин кёргюз',
+);
+
 /** Kinaray-a (Kinaray-a)
  * @author Jose77
  */
