@@ -30,12 +30,20 @@ $magicWords['br'] = array(
 	'categorytree'   => array( '0', 'GwezennadurRummad', 'categorytree' ),
 );
 
+$magicWords['eo'] = array(
+	'categorytree'   => array( '0', 'kategoriarbo', 'categorytree' ),
+);
+
 $magicWords['es'] = array(
 	'categorytree'   => array( '0', 'árboldecategorías', 'arboldecategorias', 'categorytree' ),
 );
 
 $magicWords['et'] = array(
 	'categorytree'   => array( '0', 'kategooriapuu', 'categorytree' ),
+);
+
+$magicWords['ja'] = array(
+	'categorytree'   => array( '0', 'カテゴリツリー', 'categorytree' ),
 );
 
 $magicWords['ko'] = array(
