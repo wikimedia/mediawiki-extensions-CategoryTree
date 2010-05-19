@@ -2995,16 +2995,16 @@ $messages['ro'] = array(
 	'categorytree-portlet' => 'Categorii',
 	'categorytree-legend' => 'Arată arborele categoriilor',
 	'categorytree-desc' => 'Navighează dinamic în [[Special:CategoryTree|stuctura categoriilor]]',
-	'categorytree-header' => 'Introduceţi numele categoriei pentru vizualizarea conţinutului în structură arborescentă. Notaţi faptul că această operaţie necesită funcţionalităţi JavaScript avansate cunoscute sub numele de AJAX. Dacă aveţi un browser vechi sau nu aveţi activat JavaScript, nu va funcţiona.',
+	'categorytree-header' => 'Introduceți numele categoriei pentru vizualizarea conținutului în structură arborescentă. Notați faptul că această operație necesită funcționalități JavaScript avansate cunoscute sub numele de AJAX. Dacă aveți un browser vechi sau nu aveți activat JavaScript, nu va funcționa.',
 	'categorytree-category' => 'Categorie:',
 	'categorytree-go' => 'Arată arborele',
-	'categorytree-parents' => 'Părinţi',
+	'categorytree-parents' => 'Părinți',
 	'categorytree-mode-categories' => 'doar categorii',
 	'categorytree-mode-pages' => 'pagini fără imagini',
 	'categorytree-mode-all' => 'toate paginile',
 	'categorytree-collapse' => 'restrânge',
 	'categorytree-expand' => 'extinde',
-	'categorytree-member-counts' => 'conţine {{PLURAL:$1|1 subcategorie|$1 subcategorii}}, {{PLURAL:$2|1 pagină|$2 pagini}} şi {{PLURAL:$3|1 fişier|$3 fişiere}}',
+	'categorytree-member-counts' => 'conține {{PLURAL:$1|1 subcategorie|$1 subcategorii}}, {{PLURAL:$2|1 pagină|$2 pagini}} și {{PLURAL:$3|1 fișier|$3 fișiere}}',
 	'categorytree-load' => 'încarcă',
 	'categorytree-loading' => 'încărcare…',
 	'categorytree-nothing-found' => 'fără subcategorii',
@@ -3013,7 +3013,7 @@ $messages['ro'] = array(
 	'categorytree-no-pages' => 'nici o pagină sau subcategorie',
 	'categorytree-not-found' => 'Categoria <i>$1</i> nu a fost găsită',
 	'categorytree-error' => 'Problemă la încărcarea datelor',
-	'categorytree-retry' => 'Vă rugăm să aşteptaţi câteva momente şi să încercaţi din nou.',
+	'categorytree-retry' => 'Vă rugăm să așteptați câteva momente și să încercați din nou.',
 );
 
 /** Tarandíne (Tarandíne)
