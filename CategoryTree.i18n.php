@@ -1057,7 +1057,7 @@ $messages['fa'] = array(
 	'categorytree-no-subcategories' => 'هیچ زیررده‌ای ندارد.',
 	'categorytree-no-parent-categories' => 'فاقد ردهٔ بالاتر',
 	'categorytree-no-pages' => 'هیچ صفحه یا زیررده‌ای ندارد.',
-	'categorytree-not-found' => "ردهٔ  ''$1'' يافت نشد.",
+	'categorytree-not-found' => 'ردهٔ <i>$1</i> يافت نشد',
 	'categorytree-error' => 'اشکال در دریافت اطلاعات.',
 	'categorytree-retry' => 'لطفاً چند لحظه صبر کنید و سپس دوباره امتحان کنید.',
 );
