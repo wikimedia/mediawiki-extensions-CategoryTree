@@ -24,7 +24,6 @@ class CategoryTreePage extends SpecialPage {
 	function __construct() {
 		global $wgOut;
 		SpecialPage::SpecialPage( 'CategoryTree', '', true );
-		wfLoadExtensionMessages( 'CategoryTree' );
 	}
 
 	function getOption( $name ) {
