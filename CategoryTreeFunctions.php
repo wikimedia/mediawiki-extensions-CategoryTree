@@ -674,7 +674,6 @@ class CategoryTree {
 		$s .= Xml::openElement( 'div', array( 'class' => 'CategoryTreeItem' ) );
 
 		$attr = array( 'class' => 'CategoryTreeBullet' );
-		$s .= Xml::openElement( 'span', $attr );
 
 		if ( $ns == NS_CATEGORY ) {
 			if ( $cat ) {
@@ -685,43 +684,44 @@ class CategoryTree {
 				} else {
 					$count = $cat->getPageCount();
 				}
+				# Fix conversion to string for ===
+				$count = intval( $count );
 			}
-
-			$linkattr = array( );
-			if ( $load ) {
-				$linkattr[ 'id' ] = $load;
-			}
-
-			$linkattr[ 'class' ] = "CategoryTreeToggle";
-			$linkattr['style'] = 'display: none;'; // Unhidden by JS
-
-			if ( $children == 0 || $loadchildren ) {
-				$tag = 'span';
-				if ( $count === 0 ) {
-					$txt = wfMsgNoTrans( 'categorytree-empty-bullet' );
-				} else {
-					$txt = wfMsgNoTrans( 'categorytree-expand-bullet' );
-				}
-				$linkattr[ 'onclick' ] = "if (this.href) this.href='javascript:void(0)'; categoryTreeExpandNode('" . Xml::escapeJsString( $key ) . "'," . $this->getOptionsAsJsStructure() . ",this);";
-				# Don't load this message for ajax requests, so that we don't have to initialise $wgLang
-				$linkattr[ 'title' ] = $this->mIsAjaxRequest ? '##LOAD##' : wfMsgNoTrans( 'categorytree-expand' );
+			if ( $count === 0 ) {
+				$bullet = wfMsgNoTrans( 'categorytree-empty-bullet' ) . ' ';
+				$attr['class'] = 'CategoryTreeEmptyBullet';
 			} else {
-				$tag = 'span';
-				$txt = wfMsgNoTrans( 'categorytree-collapse-bullet' );
-				$linkattr[ 'onclick' ] = "if (this.href) this.href='javascript:void(0)'; categoryTreeCollapseNode('" . Xml::escapeJsString( $key ) . "'," . $this->getOptionsAsJsStructure() . ",this);";
-				$linkattr[ 'title' ] = wfMsgNoTrans( 'categorytree-collapse' );
-				$linkattr[ 'class' ] .= ' CategoryTreeLoaded';
-			}
+				$linkattr = array( );
+				if ( $load ) {
+					$linkattr[ 'id' ] = $load;
+				}
 
-			if ( $tag == 'a' ) {
-				$linkattr[ 'href' ] = $wikiLink;
+				$linkattr[ 'class' ] = "CategoryTreeToggle";
+				$linkattr['style'] = 'display: none;'; // Unhidden by JS
+
+				if ( $children == 0 || $loadchildren ) {
+					$tag = 'span';
+					$txt = wfMsgNoTrans( 'categorytree-expand-bullet' );
+					$linkattr[ 'onclick' ] = "if (this.href) this.href='javascript:void(0)'; categoryTreeExpandNode('" . Xml::escapeJsString( $key ) . "'," . $this->getOptionsAsJsStructure() . ",this);";
+					# Don't load this message for ajax requests, so that we don't have to initialise $wgLang
+					$linkattr[ 'title' ] = $this->mIsAjaxRequest ? '##LOAD##' : wfMsgNoTrans( 'categorytree-expand' );
+				} else {
+					$tag = 'span';
+					$txt = wfMsgNoTrans( 'categorytree-collapse-bullet' );
+					$linkattr[ 'onclick' ] = "if (this.href) this.href='javascript:void(0)'; categoryTreeCollapseNode('" . Xml::escapeJsString( $key ) . "'," . $this->getOptionsAsJsStructure() . ",this);";
+					$linkattr[ 'title' ] = wfMsgNoTrans( 'categorytree-collapse' );
+					$linkattr[ 'class' ] .= ' CategoryTreeLoaded';
+				}
+
+				if ( $tag == 'a' ) {
+					$linkattr[ 'href' ] = $wikiLink;
+				}
+				$bullet = Xml::openElement( $tag, $linkattr ) . $txt . Xml::closeElement( $tag ) . ' ';
 			}
-			$s .= Xml::openElement( $tag, $linkattr ) . $txt . Xml::closeElement( $tag ) . ' ';
 		} else {
-			$s .= wfMsgNoTrans( 'categorytree-page-bullet' );
+			$bullet = wfMsgNoTrans( 'categorytree-page-bullet' );
 		}
-
-		$s .= Xml::closeElement( 'span' );
+		$s .= Xml::tags( 'span', $attr, $bullet );
 
 		$s .= Xml::openElement( 'a', array( 'class' => $labelClass, 'href' => $wikiLink ) ) . $label . Xml::closeElement( 'a' );
 

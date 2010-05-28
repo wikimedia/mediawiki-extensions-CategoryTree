@@ -21,6 +21,9 @@
 	cursor: pointer;
 	cursor: hand; /* hack for MSIE 5.0 and 5.5 */
 }
+.CategoryTreeEmptyBullet {
+	cursor: default;
+}
 
 .CategoryTreeBullet a,
 .CategoryTreeBullet a:link,
