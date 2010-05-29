@@ -2295,6 +2295,19 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
 	'categorytree-retry' => 'Palaukite šiek tiek, ir bandykite iš naujo.',
 );
 
+/** Latgalian (Latgaļu)
+ * @author Dark Eagle
+ */
+$messages['ltg'] = array(
+	'categorytree' => 'Kategoreju kūks',
+	'categorytree-portlet' => 'Kategorejis',
+	'categorytree-legend' => 'Paruodeit kategoreju kūku',
+	'categorytree-category' => 'Kategoreja:',
+	'categorytree-go' => 'Paruodeit kūku',
+	'categorytree-mode-categories' => 'kategorejis viņ',
+	'categorytree-mode-all' => 'vysys puslopys',
+);
+
 /** Latvian (Latviešu)
  * @author Xil
  * @author Yyy
