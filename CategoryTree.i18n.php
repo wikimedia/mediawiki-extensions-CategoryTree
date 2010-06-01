@@ -628,6 +628,14 @@ $messages['cdo'] = array(
 	'categorytree-not-found' => 'Mò̤ tō̤ diŏh lôi-biék <i>$1</i>',
 );
 
+/** Chechen (Нохчийн)
+ * @author Sasan700
+ */
+$messages['ce'] = array(
+	'categorytree-portlet' => 'Кадегарш',
+	'categorytree-category' => 'Кадегар',
+);
+
 /** Cebuano (Cebuano)
  * @author Abastillas
  */
