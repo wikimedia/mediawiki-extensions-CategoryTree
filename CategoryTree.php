@@ -36,6 +36,7 @@ define( 'CT_HIDEPREFIX_AUTO', 30 );
  * Options:
  *
  * $wgCategoryTreeMaxChildren - maximum number of children shown in a tree node. Default is 200
+ * $wgCategoryTreeMaxScanRows - maximum number of rows the DBMS may scan while showing a tree node.
  * $wgCategoryTreeAllowTag - enable <categorytree> tag. Default is true.
  * $wgCategoryTreeDynamicTag - loads the first level of the tree in a <categorytag> dynamically.
  *                             This way, the cache does not need to be disabled. Default is false.
@@ -51,6 +52,7 @@ define( 'CT_HIDEPREFIX_AUTO', 30 );
  */
 
 $wgCategoryTreeMaxChildren = 200;
+$wgCategoryTreeMaxScanRows = 10000;
 $wgCategoryTreeAllowTag = true;
 $wgCategoryTreeDisableCache = true;
 $wgCategoryTreeDynamicTag = false;

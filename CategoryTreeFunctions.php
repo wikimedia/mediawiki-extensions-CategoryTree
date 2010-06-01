@@ -603,6 +603,7 @@ class CategoryTree {
 	* $info must be an associative array, containing at least a Title object under the 'title' key.
 	*/
 	function renderNodeInfo( $title, $cat, $children = 0, $loadchildren = false ) {
+		global $wgCategoryTreeMaxScanRows;
 		static $uniq = 0;
 
 		$mode = $this->getOption( 'mode' );
@@ -675,19 +676,23 @@ class CategoryTree {
 
 		$attr = array( 'class' => 'CategoryTreeBullet' );
 
+		# Get counts, with conversion to integer so === works
+		$pageCount = intval( $cat->getPageCount() );
+		$subcatCount = intval( $cat->getSubcatCount() );
+		$fileCount = intval( $cat->getFileCount() );
+
 		if ( $ns == NS_CATEGORY ) {
+
 			if ( $cat ) {
 				if ( $mode == CT_MODE_CATEGORIES ) {
-					$count = $cat->getSubcatCount();
+					$count = $subcatCount;
 				} else if ( $mode == CT_MODE_PAGES ) {
-					$count = $cat->getPageCount() - $cat->getFileCount();
+					$count = $pageCount - $fileCount;
 				} else {
-					$count = $cat->getPageCount();
+					$count = $pageCount;
 				}
-				# Fix conversion to string for ===
-				$count = intval( $count );
 			}
-			if ( $count === 0 ) {
+			if ( $count === 0 || $pageCount > $wgCategoryTreeMaxScanRows ) {
 				$bullet = wfMsgNoTrans( 'categorytree-empty-bullet' ) . ' ';
 				$attr['class'] = 'CategoryTreeEmptyBullet';
 			} else {
@@ -721,15 +726,15 @@ class CategoryTree {
 		} else {
 			$bullet = wfMsgNoTrans( 'categorytree-page-bullet' );
 		}
-		$s .= Xml::tags( 'span', $attr, $bullet );
+		$s .= Xml::tags( 'span', $attr, $bullet ) . ' ';
 
 		$s .= Xml::openElement( 'a', array( 'class' => $labelClass, 'href' => $wikiLink ) ) . $label . Xml::closeElement( 'a' );
 
 		if ( $count !== false && $this->getOption( 'showcount' ) ) {
-			$pages = $cat->getPageCount() - $cat->getSubcatCount() - $cat->getFileCount();
+			$pages = $pageCount - $subcatCount - $fileCount;
 
 			$attr = array(
-				'title' => wfMsgExt( 'categorytree-member-counts', 'parsemag', $cat->getSubcatCount(), $pages , $cat->getFileCount(), $cat->getPageCount(), $count )
+				'title' => wfMsgExt( 'categorytree-member-counts', 'parsemag', $subcatCount, $pages , $fileCount, $pageCount, $count )
 			);
 
 			$s .= ' ';
@@ -737,10 +742,10 @@ class CategoryTree {
 			$s .= Xml::tags( 'span', $attr,
 				wfMsgExt( 'categorytree-member-num',
 					array( 'parsemag', 'escapenoentities' ),
-					$cat->getSubcatCount(),
+					$subcatCount,
 					$pages,
-					$cat->getFileCount(),
-					$cat->getPageCount(),
+					$fileCount,
+					$pageCount,
 					$wgLang->formatNum( $count ) ) );
 		}
 
