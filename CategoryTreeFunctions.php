@@ -677,9 +677,9 @@ class CategoryTree {
 		$attr = array( 'class' => 'CategoryTreeBullet' );
 
 		# Get counts, with conversion to integer so === works
-		$pageCount = intval( $cat->getPageCount() );
-		$subcatCount = intval( $cat->getSubcatCount() );
-		$fileCount = intval( $cat->getFileCount() );
+		$pageCount = $cat ? intval( $cat->getPageCount() ) : 0;
+		$subcatCount = $cat ? intval( $cat->getSubcatCount() ) : 0;
+		$fileCount = $cat ? intval( $cat->getFileCount() ) : 0;
 
 		if ( $ns == NS_CATEGORY ) {
 
