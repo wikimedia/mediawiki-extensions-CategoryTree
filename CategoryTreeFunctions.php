@@ -159,7 +159,7 @@ class CategoryTree {
 	 * Set the script tags in an OutputPage object
 	 * @param OutputPage $outputPage
 	 */
-	static function setHeaders( &$outputPage ) {
+	static function setHeaders( $outputPage ) {
 		global $wgJsMimeType, $wgScriptPath, $wgContLang;
 		global $wgCategoryTreeHijackPageCategories, $wgCategoryTreeExtPath, $wgCategoryTreeVersion;
 
@@ -409,7 +409,7 @@ class CategoryTree {
 	* Returns a string with an HTML representation of the children of the given category.
 	* $title must be a Title object
 	*/
-	function renderChildren( &$title, $depth = 1 ) {
+	function renderChildren( $title, $depth = 1 ) {
 		global $wgCategoryTreeMaxChildren, $wgCategoryTreeUseCategoryTable;
 
 		if ( $title->getNamespace() != NS_CATEGORY ) {
@@ -530,7 +530,7 @@ class CategoryTree {
 	* Returns a string with an HTML representation of the parents of the given category.
 	* $title must be a Title object
 	*/
-	function renderParents( &$title ) {
+	function renderParents( $title ) {
 		global $wgCategoryTreeMaxChildren;
 
 		$dbr = wfGetDB( DB_SLAVE );
