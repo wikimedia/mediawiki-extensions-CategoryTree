@@ -758,13 +758,14 @@ $messages['da'] = array(
 
 /** German (Deutsch)
  * @author Daniel Kinzler, brightbyte.de
+ * @author Kghbln
  * @author Raimond Spekking
  */
 $messages['de'] = array(
 	'categorytree' => 'Kategorienbaum',
 	'categorytree-portlet' => 'Kategorien',
 	'categorytree-legend' => 'Zeige Kategorienbaum',
-	'categorytree-desc' => 'Dynamische Navigation für die [[Special:CategoryTree|Kategorien-Struktur]]',
+	'categorytree-desc' => 'Ermöglicht eine dynamische Navigation für die [[Special:CategoryTree|Kategorien-Struktur]]',
 	'categorytree-header' => 'Zeigt für die angegebene Kategorie die Unterkategorien in einer Baumstruktur.
 Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert möglicherweise nicht, wenn JavaScript ausgeschaltet ist oder ein sehr alter Browser verwendet wird.',
 	'categorytree-category' => 'Kategorie:',
@@ -1068,7 +1069,7 @@ $messages['fa'] = array(
 	'categorytree-no-pages' => 'هیچ صفحه یا زیررده‌ای ندارد.',
 	'categorytree-not-found' => 'ردهٔ <i>$1</i> يافت نشد',
 	'categorytree-error' => 'اشکال در دریافت اطلاعات.',
-	'categorytree-retry' => 'لطفاً دمی درنگ کنید و باز امتحان کنید.',
+	'categorytree-retry' => 'لطفاً یک لحظه صبر کنید و دوباره امتحان کنید.',
 );
 
 /** Finnish (Suomi)
@@ -2375,7 +2376,7 @@ $messages['mk'] = array(
 	'categorytree-nothing-found' => 'не е најдено ништо',
 	'categorytree-no-subcategories' => 'нема поткатегории',
 	'categorytree-no-parent-categories' => 'нема родителски категории',
-	'categorytree-no-pages' => 'нема страници или подкатегории',
+	'categorytree-no-pages' => 'нема страници или поткатегории',
 	'categorytree-not-found' => 'Не е пронајдена категорија <i>$1</i>',
 	'categorytree-error' => 'Проблеми со вчитување на податоците.',
 	'categorytree-retry' => 'Ве молиме почекајте неколку моменти и обидетесе повторно.',
