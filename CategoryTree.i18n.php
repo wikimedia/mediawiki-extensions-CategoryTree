@@ -1884,16 +1884,26 @@ $messages['ka'] = array(
 	'categorytree' => 'კატეგორიების სქემა',
 	'categorytree-portlet' => 'კატეგორიები',
 	'categorytree-legend' => 'კატეგორიების სქემის ჩვენება',
+	'categorytree-header' => 'შეიყვანეთ კატეგორიის სახელი, რომ დაინახოთ მისი შიგთავსი ხის სტრუქტურის მსგავსად.
+გაითვალისწინეთ, რომ ამისთვის საჭიროა რთული ჯავასკრიპტის ფუნქციონალობა, რომელიც ცნობილია AJAX სახელით.
+თუ ძალიან ძველი ბრაუზერი გაქვთ, ან ჯავასკრიპტი გაუქმებულია, მაშინ ის არ იმუშავებს.',
 	'categorytree-category' => 'კატეგორია:',
 	'categorytree-go' => 'სქემის ჩვენება',
 	'categorytree-parents' => 'მშობლები',
 	'categorytree-mode-categories' => 'მხოლოდ კატეგორიები',
 	'categorytree-mode-pages' => 'გვერდები ფაილების გარდა',
 	'categorytree-mode-all' => 'ყველა გვერდი',
+	'categorytree-collapse' => 'ჩაკეცვა',
+	'categorytree-expand' => 'გაშლა',
 	'categorytree-member-counts' => 'შეიცავს {{PLURAL:$1|1 ქვეკატეგორიას|$1 ქვეკატეგორიას}},  {{PLURAL:$2|1 გვერდს|$2 გვერდს}},  და {{PLURAL:$3|1 ფაილს|$3 ფაილს}}',
+	'categorytree-load' => 'ჩატვირთვა',
 	'categorytree-loading' => 'იტვირთება…',
-	'categorytree-no-subcategories' => 'ქვეკატეგორიები არ არის',
-	'categorytree-not-found' => 'კატეგორია <i>$1</i> არ არსებობს',
+	'categorytree-nothing-found' => 'ვერაფერი მოიძებნა',
+	'categorytree-no-subcategories' => 'ქვეკატეგორიები არაა',
+	'categorytree-no-parent-categories' => 'მშობელი კატეგორიები არაა',
+	'categorytree-no-pages' => 'არაა გვერდები ან ქვეკატეგორიები',
+	'categorytree-not-found' => 'კატეგორია <i>$1</i> ვერ მოიძებნა',
+	'categorytree-error' => 'ხარვეზი მონაცემთა ჩატვირთვაში.',
 	'categorytree-retry' => 'გთხოვთ, დაიცადეთ ცოტა ხნით და კვლავ სცადეთ.',
 );
 
