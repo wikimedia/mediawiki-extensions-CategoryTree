@@ -2,7 +2,8 @@
 /**
  * Internationalisation file for extension CategoryTree.
  *
- * @addtogroup Extensions
+ * @file
+ * @ingroup Extensions
  * @author Daniel Kinzler, brightbyte.de
  * @copyright © 2006-2008 Daniel Kinzler
  * @license GNU General Public Licence 2.0 or later
