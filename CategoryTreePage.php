@@ -105,7 +105,7 @@ class CategoryTreePage extends SpecialPage {
 	 */
 	function executeInputForm() {
 		global $wgScript, $wgOut;
-		$thisTitle = Title::makeTitle( NS_SPECIAL, $this->getName() );
+		$thisTitle = SpecialPage::getTitleFor( $this->getName() );
 		$mode = $this->getOption( 'mode' );
 
 		$wgOut->addHTML( Xml::openElement( 'form', array( 'name' => 'categorytree', 'method' => 'get', 'action' => $wgScript, 'id' => 'mw-categorytree-form' ) ) );

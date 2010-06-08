@@ -553,7 +553,7 @@ class CategoryTree {
 
 		$res = $dbr->query( $sql, __METHOD__ );
 
-		$special = Title::makeTitle( NS_SPECIAL, 'CategoryTree' );
+		$special = SpecialPage::getTitleFor( 'CategoryTree' );
 
 		$s = '';
 
