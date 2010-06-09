@@ -169,16 +169,16 @@ $messages['an'] = array(
 	'categorytree-portlet' => 'Categorías',
 	'categorytree-legend' => "Amostar l'árbol de categorías",
 	'categorytree-desc' => "Traste basato en AJAX t'amostrar a [[Special:CategoryTree|estrutura de categorías]] d'una wiki",
-	'categorytree-header' => "Escriba un nombre de categoría ta beyer os suyos contenius en forma d'árbol. Pare cuenta que ista pachina requiere as funzions JavaScriptz abanzatas conoixitas como AJAX. Si tiene un nabegador antigo, u tiene desautibato JavaScript, a pachina no funzionará.",
+	'categorytree-header' => "Escriba un nombre de categoría ta veyer os suyos contenius en forma d'árbol. Pare cuenta que ista pachina requiere as funcions JavaScriptz avanzatas conoixitas como AJAX. Si tiene un navegador antigo, u tiene desactivato JavaScript, a pachina no funcionará.",
 	'categorytree-category' => 'Categoría:',
 	'categorytree-go' => "Amostrar l'Árbol",
 	'categorytree-parents' => 'Categorías mais',
 	'categorytree-mode-categories' => 'amostrar nomás categorías',
-	'categorytree-mode-pages' => 'pachinas pero no archibos',
+	'categorytree-mode-pages' => 'pachinas pero no ficheros',
 	'categorytree-mode-all' => 'todas as pachinas',
 	'categorytree-collapse' => 'amagar',
 	'categorytree-expand' => 'amostrar',
-	'categorytree-member-counts' => 'contiene {{PLURAL:$1|1 sucategoría|$1 subcategorías}}, {{PLURAL:$2|1 pachina|$2 pachinas}}, y {{PLURAL:$3|1 archibo|$3 archibos}}',
+	'categorytree-member-counts' => 'contiene {{PLURAL:$1|1 sucategoría|$1 subcategorías}}, {{PLURAL:$2|1 pachina|$2 pachinas}}, y {{PLURAL:$3|1 fichero|$3 ficheros}}',
 	'categorytree-load' => 'cargar',
 	'categorytree-loading' => 'cargando',
 	'categorytree-nothing-found' => "No s'ha trobato cosa",
@@ -187,7 +187,7 @@ $messages['an'] = array(
 	'categorytree-no-pages' => 'No bi ha articlos ni subcategorías',
 	'categorytree-not-found' => "Categoría ''$1'' no trobata",
 	'categorytree-error' => 'Error en cargar os datos',
-	'categorytree-retry' => 'Por fabor, aspere bels intes y prebe de nuebas.',
+	'categorytree-retry' => 'Por favor, aspere bels intes y prebe de nuevas.',
 );
 
 /** Arabic (العربية)
