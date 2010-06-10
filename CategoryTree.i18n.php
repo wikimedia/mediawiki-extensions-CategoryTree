@@ -2637,7 +2637,7 @@ $messages['nl'] = array(
 	'categorytree-header' => 'Geef een categorienaam in om de inhoud als een boomstructuur te bekijken.
 Let op: deze functie gebruikt JavaScript-functionaliteit die bekend staat als AJAX.
 Als u een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze functie niet.',
-	'categorytree-category' => 'Categorie',
+	'categorytree-category' => 'Categorie:',
 	'categorytree-go' => 'Laden',
 	'categorytree-parents' => 'Bovenliggende categorieën',
 	'categorytree-mode-categories' => 'alleen categorieën',
