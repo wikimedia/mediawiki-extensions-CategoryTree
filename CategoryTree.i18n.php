@@ -634,6 +634,7 @@ $messages['cdo'] = array(
 $messages['ce'] = array(
 	'categorytree-portlet' => 'Кадегарш',
 	'categorytree-category' => 'Кадегар',
+	'categorytree-collapse' => 'къайла яккха',
 );
 
 /** Cebuano (Cebuano)
@@ -2331,11 +2332,12 @@ $messages['ltg'] = array(
 );
 
 /** Latvian (Latviešu)
+ * @author Marozols
  * @author Xil
  * @author Yyy
  */
 $messages['lv'] = array(
-	'categorytree' => 'KategorijuKoks',
+	'categorytree' => 'Kategoriju koks',
 	'categorytree-portlet' => 'Kategorijas',
 	'categorytree-legend' => 'Rādīt kategoriju koku',
 	'categorytree-desc' => "AJAX bāzēts ''gadget'', kuru lieto lai attēlotu wiki [[Special:CategoryTree|kategoriju struktūru]]",
