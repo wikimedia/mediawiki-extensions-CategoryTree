@@ -3028,6 +3028,7 @@ Musyariy, kaytaqa AJAX nisqa sapaq JavaScript ruranallawanmi llamk'achiyta atink
 );
 
 /** Romanian (Română)
+ * @author Cin
  * @author KlaudiuMihaila
  * @author Mihai
  */
@@ -3048,13 +3049,13 @@ $messages['ro'] = array(
 	'categorytree-member-counts' => 'conține {{PLURAL:$1|1 subcategorie|$1 subcategorii}}, {{PLURAL:$2|1 pagină|$2 pagini}} și {{PLURAL:$3|1 fișier|$3 fișiere}}',
 	'categorytree-load' => 'încarcă',
 	'categorytree-loading' => 'încărcare…',
-	'categorytree-nothing-found' => 'fără subcategorii',
+	'categorytree-nothing-found' => 'nimic găsit',
 	'categorytree-no-subcategories' => 'nici o subcategorie',
 	'categorytree-no-parent-categories' => 'nici o categorie părinte',
 	'categorytree-no-pages' => 'nici o pagină sau subcategorie',
 	'categorytree-not-found' => 'Categoria <i>$1</i> nu a fost găsită',
 	'categorytree-error' => 'Problemă la încărcarea datelor',
-	'categorytree-retry' => 'Vă rugăm să așteptați câteva momente și să încercați din nou.',
+	'categorytree-retry' => 'Vă rugăm să așteptați o clipă și să încercați din nou.',
 );
 
 /** Tarandíne (Tarandíne)
