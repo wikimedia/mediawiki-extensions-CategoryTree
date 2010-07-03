@@ -1119,6 +1119,7 @@ $messages['fo'] = array(
  * @author Grondin
  * @author IAlex
  * @author Meithal
+ * @author Peter17
  * @author Sherbrooke
  * @author Urhixidur
  * @author Verdy p
@@ -1129,7 +1130,7 @@ $messages['fr'] = array(
 	'categorytree-legend' => 'Visionner l’arborescence de la catégorie',
 	'categorytree-desc' => 'Visite dynamiquement la [[Special:CategoryTree|structure des catégories]]',
 	'categorytree-header' => 'Entrez un nom de catégorie pour voir son contenu en structure arborescente. Ceci utilise des fonctionnalités JavaScript avancées connues sous le nom d’AJAX. Si vous avez un très vieux navigateur Web ou si vous n’avez pas activé la fonctionnalité JavaScript, cela ne fonctionnera pas.',
-	'categorytree-category' => 'Catégorie',
+	'categorytree-category' => 'Catégorie :',
 	'categorytree-go' => 'voir l’arborescence',
 	'categorytree-parents' => 'super-catégorie(s)',
 	'categorytree-mode-categories' => 'seulement les catégories',
