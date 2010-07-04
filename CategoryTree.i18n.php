@@ -2847,7 +2847,7 @@ $messages['pl'] = array(
 	'categorytree-legend' => 'Pokaż drzewo kategorii',
 	'categorytree-desc' => 'Gadżet oparty na technologii AJAX, wyświetlający [[Special:CategoryTree|drzewo kategorii]]',
 	'categorytree-header' => 'Wpisz nazwę kategorii, by zobaczyć jej zawartość w postaci drzewa.
-Ta funkcjonalność używa zaawansowanego JavaScriptu, korzystającego z technologii AJAX.
+Ta funkcja używa zaawansowanego JavaScriptu, korzystającego z technologii AJAX.
 Jeśli masz bardzo starą przeglądarkę lub wyłączony JavaScript, ta funkcja nie zadziała.',
 	'categorytree-category' => 'Kategoria',
 	'categorytree-go' => 'Ładuj kategorię',
