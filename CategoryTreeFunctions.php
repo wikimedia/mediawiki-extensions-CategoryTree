@@ -792,8 +792,6 @@ class CategoryTree {
 	* Creates a Title object from a user provided (and thus unsafe) string
 	*/
 	static function makeTitle( $title ) {
-		global $wgContLang, $wgCanonicalNamespaceNames;
-
 		$title = trim( $title );
 
 		if ( $title === null || $title === '' || $title === false ) {

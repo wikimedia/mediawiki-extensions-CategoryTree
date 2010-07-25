@@ -362,7 +362,7 @@ function efCategoryTreeArticleFromTitle( $title, &$article ) {
  * OutputPageMakeCategoryLinks hook, override category links
  */
 function efCategoryTreeOutputPageMakeCategoryLinks( $out, &$categories, &$links ) {
-	global $wgContLang, $wgCategoryTreePageCategoryOptions;
+	global $wgCategoryTreePageCategoryOptions;
 
 	$ct = new CategoryTree( $wgCategoryTreePageCategoryOptions );
 
