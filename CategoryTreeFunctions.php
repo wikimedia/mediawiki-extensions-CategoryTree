@@ -387,7 +387,7 @@ class CategoryTree {
 			}
 		else {
 			if ( !$hideroot ) {
-				$html .= CategoryTree::renderNode( $title, $depth, $wgCategoryTreeDynamicTag );
+				$html .= $this->renderNode( $title, $depth, $wgCategoryTreeDynamicTag );
 			} else if ( !$wgCategoryTreeDynamicTag ) {
 				$html .= $this->renderChildren( $title, $depth );
 			} else {
