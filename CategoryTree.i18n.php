@@ -1708,6 +1708,23 @@ $messages['ie'] = array(
 	'categorytree-category' => 'Categorie:',
 );
 
+/** Igbo (Igbo)
+ * @author Ukabia
+ */
+$messages['ig'] = array(
+	'categorytree' => 'Egbü nke ébéanọr',
+	'categorytree-portlet' => 'Ébéanọr',
+	'categorytree-legend' => 'Zi egbü nke ébéanọr',
+	'categorytree-category' => 'Ébéonọr:',
+	'categorytree-parents' => 'Ndi mụrụ',
+	'categorytree-mode-categories' => 'Náni ébéanọr',
+	'categorytree-mode-all' => 'Ihü nílé',
+	'categorytree-collapse' => 'Zekpùdo',
+	'categorytree-expand' => 'Sá àsáá',
+	'categorytree-load' => 'mẹ kó byá',
+	'categorytree-loading' => 'ó byáwálá...',
+);
+
 /** Ido (Ido)
  * @author Malafaya
  */
