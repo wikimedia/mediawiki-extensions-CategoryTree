@@ -2174,9 +2174,19 @@ $messages['la'] = array(
 
 /** Ladino (Ladino)
  * @author Runningfridgesrule
+ * @author Universal Life
  */
 $messages['lad'] = array(
+	'categorytree' => 'Árvole de katēggorías',
+	'categorytree-portlet' => 'Katēggorías',
+	'categorytree-legend' => 'Amostrar el árvole de katēggorías',
 	'categorytree-category' => 'Kategoría:',
+	'categorytree-go' => 'Amostrar el árvole',
+	'categorytree-parents' => 'Parientes',
+	'categorytree-mode-categories' => 'sólo katēggorías',
+	'categorytree-mode-all' => 'todas las hojas',
+	'categorytree-load' => 'cargar',
+	'categorytree-loading' => 'cargando...',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -3816,6 +3826,33 @@ $messages['ts'] = array(
 	'categorytree-portlet' => 'Swiyenge',
 	'categorytree-legend' => 'Kombisa swi yenge',
 	'categorytree-category' => 'Xiyenge:',
+);
+
+/** Tatar (Cyrillic) (Татарча/Tatarça (Cyrillic))
+ * @author Ильнар
+ */
+$messages['tt-cyrl'] = array(
+	'categorytree' => 'Тәркемнәр "агачы".',
+	'categorytree-portlet' => 'Төркемнәр',
+	'categorytree-desc' => '[[Special:CategoryTree|Төркемнәрнең асылы]]н аңлату өчен төзелгән AJAX-бит',
+	'categorytree-category' => 'Төркем:',
+	'categorytree-go' => 'Йөкләү',
+	'categorytree-parents' => 'Төп төркемнәр',
+	'categorytree-mode-categories' => 'бары тик төркемнәр генә урнаштырылган',
+	'categorytree-mode-pages' => 'файллардан башка',
+	'categorytree-mode-all' => 'барлык битләр',
+	'categorytree-collapse' => 'яшерү',
+	'categorytree-expand' => 'ачарга',
+	'categorytree-member-counts' => '$1 {{PLURAL:$1|тәркемчәне|тәркемчәләрне|тәркемчәләрдән}}, $2 {{PLURAL:$2|битне|битләрне|битләрдән}} и $3 {{PLURAL:$3|файл|файл|файллар}} ны үз эченә ала',
+	'categorytree-load' => 'йөкләү',
+	'categorytree-loading' => 'йөкләү бара…',
+	'categorytree-nothing-found' => 'бернидә табылмады',
+	'categorytree-no-subcategories' => 'мондый төркемчәләр юк',
+	'categorytree-no-parent-categories' => 'төп бүлекләр юк',
+	'categorytree-no-pages' => 'мондый бит яки төркемчә юк',
+	'categorytree-not-found' => '<i>$1</i> бүлеге табылмады',
+	'categorytree-error' => 'Хата',
+	'categorytree-retry' => 'Зинһар бераз көтеп торыгыз һәм тагын бер кат йөкләүне башкарып карагыз.',
 );
 
 /** Ukrainian (Українська)
