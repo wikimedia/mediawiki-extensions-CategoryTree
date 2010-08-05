@@ -1716,6 +1716,7 @@ $messages['ig'] = array(
 	'categorytree-portlet' => 'Ébéanọr',
 	'categorytree-legend' => 'Zi egbü nke ébéanọr',
 	'categorytree-category' => 'Ébéonọr:',
+	'categorytree-go' => 'Zí oshíshí',
 	'categorytree-parents' => 'Ndi mụrụ',
 	'categorytree-mode-categories' => 'Náni ébéanọr',
 	'categorytree-mode-all' => 'Ihü nílé',
@@ -1723,6 +1724,8 @@ $messages['ig'] = array(
 	'categorytree-expand' => 'Sá àsáá',
 	'categorytree-load' => 'mẹ kó byá',
 	'categorytree-loading' => 'ó byáwálá...',
+	'categorytree-no-subcategories' => 'ébéonọr-ime àdíghị',
+	'categorytree-no-pages' => 'ihü ma ébéonọr-ímé àdíghị',
 );
 
 /** Ido (Ido)
@@ -4107,6 +4110,7 @@ $messages['yue'] = array(
 /** Simplified Chinese (‪中文(简体)‬)
  * @author PhiLiP
  * @author Shinjiman
+ * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
 	'categorytree' => '分类树',
@@ -4116,24 +4120,24 @@ $messages['zh-hans'] = array(
 	'categorytree-header' => '在此可以查询以分类的树形结构。
 注意： 本特殊页面使用AJAX技术。
 如果您的浏览器非常老旧，或者是关闭了JavaScript，本页面将会无法正常运作。',
-	'categorytree-category' => '分类',
-	'categorytree-go' => '显示树形结构',
-	'categorytree-parents' => '上级分类',
+	'categorytree-category' => '分类：',
+	'categorytree-go' => '显示分类树',
+	'categorytree-parents' => '父分类',
 	'categorytree-mode-categories' => '只显示分类',
-	'categorytree-mode-pages' => '除去图像页面',
+	'categorytree-mode-pages' => '排除文件页面',
 	'categorytree-mode-all' => '所有页面',
 	'categorytree-collapse' => '折叠',
 	'categorytree-expand' => '展开',
-	'categorytree-member-counts' => '含有$1个子分类、$2个页面和$3个文件',
+	'categorytree-member-counts' => '包含$1个子分类，$2个页面和$3个文件',
 	'categorytree-load' => '载入',
-	'categorytree-loading' => '正在载入……',
-	'categorytree-nothing-found' => '搜索结果为空',
-	'categorytree-no-subcategories' => '没有子分类',
-	'categorytree-no-parent-categories' => '没有父分类',
-	'categorytree-no-pages' => '没有文章或是子分类。',
+	'categorytree-loading' => '正在载入',
+	'categorytree-nothing-found' => '无结果',
+	'categorytree-no-subcategories' => '无子分类',
+	'categorytree-no-parent-categories' => '无父分类',
+	'categorytree-no-pages' => '无页面或子分类',
 	'categorytree-not-found' => '找不到分类<i>$1</i>',
-	'categorytree-error' => '载入数据时发生错误。',
-	'categorytree-retry' => '请稍候一会，然后再试。',
+	'categorytree-error' => '载入数据时出错。',
+	'categorytree-retry' => '请片刻后再次尝试。',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
