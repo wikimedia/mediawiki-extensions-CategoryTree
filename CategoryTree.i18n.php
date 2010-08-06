@@ -1409,6 +1409,11 @@ $messages['gv'] = array(
 	'categorytree-no-subcategories' => 'gyn fo-ronnaghyn',
 );
 
+/** Hausa (هَوُسَ) */
+$messages['ha'] = array(
+	'categorytree-category' => 'Rukuni:',
+);
+
 /** Hakka (Hak-kâ-fa)
  * @author Hakka
  */
