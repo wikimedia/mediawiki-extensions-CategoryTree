@@ -645,6 +645,11 @@ $messages['ceb'] = array(
 	'categorytree-category' => 'Kategoriya:',
 );
 
+/** Sorani (کوردی) */
+$messages['ckb'] = array(
+	'categorytree-category' => 'پۆل:',
+);
+
 /** Corsican (Corsu) */
 $messages['co'] = array(
 	'categorytree-category' => 'Categuria:',
@@ -3369,23 +3374,24 @@ $messages['sq'] = array(
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Millosh
+ * @author Rancher
  * @author Sasa Stefanovic
  * @author Slaven Kosanovic
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
-	'categorytree' => 'Дрво категорија',
+	'categorytree' => 'Стабло категорија',
 	'categorytree-portlet' => 'категорије',
-	'categorytree-legend' => 'Прикажи дрво категорија',
+	'categorytree-legend' => 'Прикажи стабло категорија',
 	'categorytree-desc' => 'Динамичка навигација [[Special:CategoryTree|структуре категорија]].',
 	'categorytree-header' => 'Унесите име категорији чији садржај желите да видите као дрво.
 Ово захтева напредну ЈаваСкрип функцију познату као AJAX.
 Уколико имате веома стари браузер, или се искључили ЈаваСкрипт, дрво категорија неће радити.',
 	'categorytree-category' => 'Категорија:',
-	'categorytree-go' => 'Прикажи дрво',
+	'categorytree-go' => 'Прикажи стабло',
 	'categorytree-parents' => 'надређене категорије',
 	'categorytree-mode-categories' => 'само категорије',
-	'categorytree-mode-pages' => 'страноце које нису слике',
+	'categorytree-mode-pages' => 'странице изузевши датотеке',
 	'categorytree-mode-all' => 'све странице',
 	'categorytree-collapse' => 'сакриј',
 	'categorytree-expand' => 'прикажи',
@@ -3398,7 +3404,7 @@ $messages['sr-ec'] = array(
 	'categorytree-no-pages' => 'нема страница или поткатегорија',
 	'categorytree-not-found' => 'Категорија <i>$1</i> није пронађена',
 	'categorytree-error' => 'Проблем при учитавању података.',
-	'categorytree-retry' => 'Молимо сачекајте тренутак и покушајте поново',
+	'categorytree-retry' => 'Молимо, сачекајте тренутак и покушајте поново.',
 );
 
 /** Serbian Latin ekavian (Srpski (latinica))
