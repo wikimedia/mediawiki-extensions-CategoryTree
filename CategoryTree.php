@@ -122,7 +122,6 @@ $wgExtensionCredits['parserhook'][] = array(
 	'name' => 'CategoryTree',
 	'author' => 'Daniel Kinzler',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:CategoryTree',
-	'description' => 'Dynamically navigate the category structure',
 	'descriptionmsg' => 'categorytree-desc',
 );
 
