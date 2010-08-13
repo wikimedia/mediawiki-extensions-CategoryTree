@@ -424,79 +424,49 @@ class CategoryTree {
 		$mode = $this->getOption( 'mode' );
 		$namespaces = $this->getOption( 'namespaces' );
 
+		$tables = array( 'page', 'categorylinks' );
+		$fields = array( 'page_namespace', 'page_title', 'cl_to', 'cl_from' );
+		$where = array();
+		$joins = array();
+
 		if ( $inverse ) {
-			$ctJoinCond = ' cl_to = cat.page_title AND cat.page_namespace = ' . NS_CATEGORY;
-			$ctWhere = ' cl_from = ' . $title->getArticleId();
-			$ctJoin = ' RIGHT JOIN ';
-			$nsmatch = '';
-		}
-		else {
-			$ctJoinCond = ' cl_from = cat.page_id ';
-			$ctWhere = ' cl_to = ' . $dbr->addQuotes( $title->getDBkey() );
-			$ctJoin = ' JOIN ';
+			$joins['categorylinks'] = array( 'RIGHT JOIN', 'cl_to = page_title AND page_namespace = ' . NS_CATEGORY );
+			$where['cl_from'] = $title->getArticleId();
+		} else {
+			$joins['categorylinks'] = array( 'JOIN', 'cl_from = page_id' );
+			$where['cl_to'] = $title->getDBkey();
 
 			# namespace filter.
 			if ( $namespaces ) {
 				# NOTE: we assume that the $namespaces array contains only integers! decodeNamepsaces makes it so.
-				if ( sizeof( $namespaces ) === 1 ) {
-					$nsmatch = ' AND cat.page_namespace = ' . $namespaces[0] . ' ';
+				$where['page_namespace'] = $namespaces;
+			} elseif ( $mode != CT_MODE_ALL ) {
+				if ( $mode == CT_MODE_PAGES ) {
+					$where = array_merge( $where, array( 'page_namespace != ' . NS_IMAGE ) );
 				} else {
-					$nsmatch = ' AND cat.page_namespace IN ( ' . implode( ', ', $namespaces ) . ') ';
-				}
-			}
-			else {
-				if ( $mode == CT_MODE_ALL ) {
-					$nsmatch = '';
-				} else if ( $mode == CT_MODE_PAGES ) {
-					$nsmatch = ' AND cat.page_namespace != ' . NS_IMAGE;
-				} else {
-					$nsmatch = ' AND cat.page_namespace = ' . NS_CATEGORY;
+					$where['page_namespace'] = NS_CATEGORY;
 				}
 			}
 		}
-
-		# additional stuff to be used if "transaltion" by interwiki-links is desired
-		$transFields = '';
-		$transJoin = '';
-		$transWhere = '';
 
 		# fetch member count if possible
 		$doCount = !$inverse && $wgCategoryTreeUseCategoryTable;
 
-		$countFields = '';
-		$countJoin = '';
-
 		if ( $doCount ) {
-			$cat = $dbr->tableName( 'category' );
-			$countJoin = " LEFT JOIN $cat ON cat_title = page_title AND page_namespace = " . NS_CATEGORY;
-			$countFields = ', cat_id, cat_title, cat_subcats, cat_pages, cat_files';
+			$tables = array_merge( $tables, array( 'category' ) );
+			$fields = array_merge( $fields, array( 'cat_id', 'cat_title', 'cat_subcats', 'cat_pages', 'cat_files' ) );
+			$joins['category'] = array( 'LEFT JOIN', 'cat_title = page_title AND page_namespace = ' . NS_CATEGORY );
 		}
 
-		$page = $dbr->tableName( 'page' );
-		$categorylinks = $dbr->tableName( 'categorylinks' );
-
-		$sql = "SELECT cat.page_namespace, cat.page_title,
-				cl_to, cl_from
-					  $transFields
-					  $countFields
-				FROM $page as cat
-				$ctJoin $categorylinks ON $ctJoinCond
-				$transJoin
-				$countJoin
-				WHERE $ctWhere
-				$nsmatch
-				" . /*AND cat.page_is_redirect = 0*/"
-				$transWhere
-				ORDER BY cl_sortkey";
-		$sql = $dbr->limitResult( $sql, (int)$wgCategoryTreeMaxChildren );
-
-		$res = $dbr->query( $sql, __METHOD__ );
+		$res = $dbr->select( $tables, $fields, $where, __METHOD__,
+			array( 'ORDER BY' => 'cl_sortkey', 'LIMIT' => $wgCategoryTreeMaxChildren ),
+			$joins );
 
 		# collect categories separately from other pages
 		$categories = '';
 		$other = '';
 
-		while ( $row = $dbr->fetchObject( $res ) ) {
+		foreach ( $res as $row ) {
 			# NOTE: in inverse mode, the page record may be null, because we use a right join.
 			#      happens for categories with no category page (red cat links)
 			if ( $inverse && $row->page_title === null ) {
@@ -512,7 +482,7 @@ class CategoryTree {
 				$cat = Category::newFromRow( $row, $t );
 			}
 
-			$s = $this->renderNodeInfo( $t, $cat, $depth -1, false );
+			$s = $this->renderNodeInfo( $t, $cat, $depth - 1, false );
 			$s .= "\n\t\t";
 
 			if ( $row->page_namespace == NS_CATEGORY ) {
@@ -521,8 +491,6 @@ class CategoryTree {
 				$other .= $s;
 			}
 		}
-
-		$dbr->freeResult( $res );
 
 		return $categories . $other;
 	}
