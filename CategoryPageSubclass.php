@@ -1,15 +1,7 @@
 <?php
 
 class CategoryTreeCategoryPage extends CategoryPage {
-	function closeShowCategory() {
-		global $wgOut, $wgRequest;
-
-		$from = $wgRequest->getVal( 'from' );
-		$until = $wgRequest->getVal( 'until' );
-
-		$viewer = new CategoryTreeCategoryViewer( $this->mTitle, $from, $until );
-		$wgOut->addHTML( $viewer->getHTML() );
-	}
+	protected $mCategoryViewerClass = 'CategoryTreeCategoryViewer';
 }
 
 class CategoryTreeCategoryViewer extends CategoryViewer {
