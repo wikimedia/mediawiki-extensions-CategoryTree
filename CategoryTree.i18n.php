@@ -1166,7 +1166,7 @@ $messages['frp'] = array(
 	'categorytree-header' => 'Buchiéd un nom de catègorie por vêre son contegnu en structura d’âbro.
 Cen utilise des fonccionalitâts JavaScript avanciês cognues desot lo nom d’AJAX.
 Se vos avéd un rudo viely navigator ou ben se vos éd pas activâ la fonccionalitât JavaScript, cen fonccionerat pas.',
-	'categorytree-category' => 'Catègorie:',
+	'categorytree-category' => 'Catègorie :',
 	'categorytree-go' => 'Fâre vêre la structura d’âbro',
 	'categorytree-parents' => 'Sur-catègorie(s) ',
 	'categorytree-mode-categories' => 'ren que les catègories',
