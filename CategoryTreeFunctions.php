@@ -425,7 +425,9 @@ class CategoryTree {
 		$namespaces = $this->getOption( 'namespaces' );
 
 		$tables = array( 'page', 'categorylinks' );
-		$fields = array( 'page_namespace', 'page_title', 'cl_to', 'cl_from' );
+		$fields = array( 'page_id', 'page_namespace', 'page_title',
+			'page_is_redirect', 'page_len', 'page_latest', 'cl_to',
+			'cl_from' );
 		$where = array();
 		$joins = array();
 
