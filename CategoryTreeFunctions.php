@@ -444,9 +444,9 @@ class CategoryTree {
 				$where['page_namespace'] = $namespaces;
 			} elseif ( $mode != CT_MODE_ALL ) {
 				if ( $mode == CT_MODE_PAGES ) {
-					$where = array_merge( $where, array( 'page_namespace != ' . NS_IMAGE ) );
+					$where['cl_type'] = array( 'page', 'subcat' );
 				} else {
-					$where['page_namespace'] = NS_CATEGORY;
+					$where['cl_type'] = 'subcat';
 				}
 			}
 		}
@@ -461,7 +461,7 @@ class CategoryTree {
 		}
 
 		$res = $dbr->select( $tables, $fields, $where, __METHOD__,
-			array( 'ORDER BY' => 'cl_sortkey', 'LIMIT' => $wgCategoryTreeMaxChildren ),
+			array( 'ORDER BY' => 'cl_type, cl_sortkey', 'LIMIT' => $wgCategoryTreeMaxChildren ),
 			$joins );
 
 		# collect categories separately from other pages
@@ -574,7 +574,6 @@ class CategoryTree {
 	* $info must be an associative array, containing at least a Title object under the 'title' key.
 	*/
 	function renderNodeInfo( $title, $cat, $children = 0, $loadchildren = false ) {
-		global $wgCategoryTreeMaxScanRows;
 		static $uniq = 0;
 
 		$mode = $this->getOption( 'mode' );
@@ -663,7 +662,7 @@ class CategoryTree {
 					$count = $pageCount;
 				}
 			}
-			if ( $count === 0 || $pageCount > $wgCategoryTreeMaxScanRows ) {
+			if ( $count === 0 ) {
 				$bullet = wfMsgNoTrans( 'categorytree-empty-bullet' ) . ' ';
 				$attr['class'] = 'CategoryTreeEmptyBullet';
 			} else {
