@@ -3848,7 +3848,11 @@ $messages['ts'] = array(
 $messages['tt-cyrl'] = array(
 	'categorytree' => 'Тәркемнәр "агачы".',
 	'categorytree-portlet' => 'Төркемнәр',
+	'categorytree-legend' => 'Төркемнәрнең шәҗәрәсен ачарга',
 	'categorytree-desc' => '[[Special:CategoryTree|Төркемнәрнең асылы]]н аңлату өчен төзелгән AJAX-бит',
+	'categorytree-header' => 'Төркемнең исемен кертегез һәм ул шәҗәрә рәвешендә күрсәтеләчәк.
+Бу мөмкинчелек сезнең браузерның AJAX ны тәэмин итүдән генә торырга мөмкин.
+Әгәр дә сезнең браузерыгыз иске яки JavaScript сүндерелгән булса, бу мөмкинчелек эшләмәячәк.',
 	'categorytree-category' => 'Төркем:',
 	'categorytree-go' => 'Йөкләү',
 	'categorytree-parents' => 'Төп төркемнәр',
