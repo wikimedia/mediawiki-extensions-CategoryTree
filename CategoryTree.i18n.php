@@ -59,6 +59,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
  * @author Raimond Spekking
  * @author Raymond
  * @author Siebrand
+ * @author The Evil IP address
  * @author Александр Сигачёв
  * @author פוילישער
  */
@@ -68,7 +69,7 @@ $messages['qqq'] = array(
 
 Title for the CategoryPortlet, when shown in the side bar',
 	'categorytree-legend' => 'Legend of the fieldset around the input form of [[Special:Categorytree]].',
-	'categorytree-desc' => 'Short description of the CategoryTree extension, shown on [[Special:Version]]',
+	'categorytree-desc' => '{{desc}}',
 	'categorytree-header' => 'Header-text shown on [[Special:CategoryTree]]',
 	'categorytree-category' => '{{Identical|Category}}
 
