@@ -772,7 +772,7 @@ $messages['de'] = array(
 	'categorytree' => 'Kategorienbaum',
 	'categorytree-portlet' => 'Kategorien',
 	'categorytree-legend' => 'Zeige Kategorienbaum',
-	'categorytree-desc' => 'Ermöglicht eine dynamische Navigation für die [[Special:CategoryTree|Kategorien-Struktur]]',
+	'categorytree-desc' => 'Ermöglicht eine dynamische Navigation für die Spezialseite [[Special:CategoryTree|Kategorienbaum]]',
 	'categorytree-header' => 'Zeigt für die angegebene Kategorie die Unterkategorien in einer Baumstruktur.
 Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert möglicherweise nicht, wenn JavaScript ausgeschaltet ist oder ein sehr alter Browser verwendet wird.',
 	'categorytree-category' => 'Kategorie:',
@@ -785,7 +785,7 @@ Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert m�
 	'categorytree-expand' => 'ausklappen',
 	'categorytree-member-counts' => 'enthält {{PLURAL:$1|1 Unterkategorie|$1 Unterkategorien}}, {{PLURAL:$2|1 Seite|$2 Seiten}} und {{PLURAL:$3|1 Datei|$3 Dateien}}',
 	'categorytree-load' => 'laden',
-	'categorytree-loading' => 'laden …',
+	'categorytree-loading' => 'lade …',
 	'categorytree-nothing-found' => 'Nichts gefunden',
 	'categorytree-no-subcategories' => 'Keine Unterkategorien',
 	'categorytree-no-parent-categories' => 'Keine Oberkategorien',
