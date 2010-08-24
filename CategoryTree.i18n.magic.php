@@ -31,6 +31,10 @@ $magicWords['br'] = array(
 	'categorytree'   => array( '0', 'GwezennadurRummad', 'categorytree' ),
 );
 
+$magicWords['ce'] = array(
+	'categorytree'   => array( '0', 'кадегардит', 'деревокатегорий', 'categorytree' ),
+);
+
 $magicWords['eo'] = array(
 	'categorytree'   => array( '0', 'kategoriarbo', 'categorytree' ),
 );
@@ -43,12 +47,20 @@ $magicWords['et'] = array(
 	'categorytree'   => array( '0', 'kategooriapuu', 'categorytree' ),
 );
 
+$magicWords['ig'] = array(
+	'categorytree'   => array( '0', 'óshíshíébéonọr', 'categorytree' ),
+);
+
 $magicWords['ja'] = array(
 	'categorytree'   => array( '0', 'カテゴリツリー', 'categorytree' ),
 );
 
 $magicWords['ko'] = array(
 	'categorytree'   => array( '0', '분류트리', 'categorytree' ),
+);
+
+$magicWords['lad'] = array(
+	'categorytree'   => array( '0', 'árvoledekateggorías', 'árboldecategorías', 'arboldecategorias', 'categorytree' ),
 );
 
 $magicWords['mg'] = array(
@@ -89,4 +101,8 @@ $magicWords['tr'] = array(
 
 $magicWords['uk'] = array(
 	'categorytree'   => array( '0', 'деревокатегорій', 'деревокатегорий', 'categorytree' ),
+);
+
+$magicWords['zh-hans'] = array(
+	'categorytree'   => array( '0', '分类树', 'categorytree' ),
 );
