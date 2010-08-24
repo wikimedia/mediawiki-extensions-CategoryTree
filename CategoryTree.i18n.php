@@ -1060,7 +1060,7 @@ $messages['fa'] = array(
 	'categorytree-desc' => 'ابزار مبتنی بر AJAX برای نمایش [[Special:CategoryTree|ساختار رده‌های]] یک ویکی',
 	'categorytree-header' => 'نام یک رده را وارد کنید تا محتویات آن به صورت درخت نمایش یابد. توجه کنید که این کار نیاز به قابلیت‌های پیشرفتهٔ جاوااسکریپت موسوم به آژاکس دارد. اگر از مرورگری خیلی قدیمی استفاده می‌کنید یا جاوااسکریپت را غیرفعال کرده‌اید، کار نمی‌کند.',
 	'categorytree-category' => 'رده',
-	'categorytree-go' => 'نمايش درخت',
+	'categorytree-go' => 'نمایش درخت',
 	'categorytree-parents' => 'والدین',
 	'categorytree-mode-categories' => 'فقط رده‌ها',
 	'categorytree-mode-pages' => 'صفحه‌های جز تصویر',
@@ -1074,7 +1074,7 @@ $messages['fa'] = array(
 	'categorytree-no-subcategories' => 'هیچ زیررده‌ای ندارد.',
 	'categorytree-no-parent-categories' => 'فاقد ردهٔ بالاتر',
 	'categorytree-no-pages' => 'هیچ صفحه یا زیررده‌ای ندارد.',
-	'categorytree-not-found' => 'ردهٔ <i>$1</i> يافت نشد',
+	'categorytree-not-found' => 'ردهٔ <i>$1</i> یافت نشد',
 	'categorytree-error' => 'اشکال در دریافت اطلاعات.',
 	'categorytree-retry' => 'لطفاً یک لحظه صبر کنید و دوباره امتحان کنید.',
 );
@@ -2155,8 +2155,8 @@ $messages['ku-latn'] = array(
  * @author Kw-Moon
  */
 $messages['kw'] = array(
-	'categorytree-portlet' => 'Klassys',
-	'categorytree-category' => 'Klass:',
+	'categorytree-portlet' => 'Classys',
+	'categorytree-category' => 'Class:',
 	'categorytree-mode-all' => 'oll folennow',
 );
 
