@@ -23,7 +23,7 @@ class CategoryTreePage extends SpecialPage {
 	 * Constructor
 	 */
 	function __construct() {
-		parent::SpecialPage( 'CategoryTree', '', true );
+		parent::__construct( 'CategoryTree', '', true );
 		wfLoadExtensionMessages( 'CategoryTree' );
 	}
 
