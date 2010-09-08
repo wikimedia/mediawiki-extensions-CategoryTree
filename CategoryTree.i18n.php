@@ -671,7 +671,7 @@ $messages['cs'] = array(
 	'categorytree-header' => 'Zadejte název kategorie k&nbsp;zobrazení jejího obsahu jako stromové struktury.
 
 (Tato funkce vyžaduje pokročilé funkce JavaScriptu známé jako Ajax. Jestliže máte velmi starý prohlížeč nebo vypnutý JavaScript, nezobrazí se strom správně nebo vůbec.)',
-	'categorytree-category' => 'Kategorie',
+	'categorytree-category' => 'Kategorie:',
 	'categorytree-go' => 'Zobrazit',
 	'categorytree-parents' => 'Nadřazené kategorie',
 	'categorytree-mode-categories' => 'pouze kategorie',
@@ -1059,7 +1059,7 @@ $messages['fa'] = array(
 	'categorytree-legend' => 'نمایش درخت رده',
 	'categorytree-desc' => 'ابزار مبتنی بر AJAX برای نمایش [[Special:CategoryTree|ساختار رده‌های]] یک ویکی',
 	'categorytree-header' => 'نام یک رده را وارد کنید تا محتویات آن به صورت درخت نمایش یابد. توجه کنید که این کار نیاز به قابلیت‌های پیشرفتهٔ جاوااسکریپت موسوم به آژاکس دارد. اگر از مرورگری خیلی قدیمی استفاده می‌کنید یا جاوااسکریپت را غیرفعال کرده‌اید، کار نمی‌کند.',
-	'categorytree-category' => 'رده',
+	'categorytree-category' => 'رده:',
 	'categorytree-go' => 'نمایش درخت',
 	'categorytree-parents' => 'والدین',
 	'categorytree-mode-categories' => 'فقط رده‌ها',
@@ -1228,7 +1228,7 @@ $messages['fy'] = array(
 	'categorytree-portlet' => 'Kategoryen',
 	'categorytree-legend' => 'Lit kategorystambeam sjen',
 	'categorytree-header' => 'Folje in kategorynamme yn om de ynhâld yn in beamstruktuer te sjen. Tink dêrom dat dit spesjale JavaScript funksjes brûkt bekend as AJAX. At jo in tige âlde blêdzjer hawwe of jo hawwe JavaScript net oan stean, dan wurket dit net.',
-	'categorytree-category' => 'Kategory beam',
+	'categorytree-category' => 'Kategory:',
 	'categorytree-go' => 'Los',
 	'categorytree-mode-categories' => 'allinne kategoryen',
 	'categorytree-mode-pages' => 'alle siden útsein ôfbylden',
@@ -1258,7 +1258,7 @@ $messages['ga'] = array(
 	'categorytree-header' => 'Cuir isteach ainm catagóra chun a hinneachar a thaispeáint i struchtúr crainn.
 Tabhair faoi deara gur riachtanach ardfheidhmiúlacht JavaScript (AJAX) a bheith agat.
 Má tá do bhrabhsálaí róshean, nó má dhíchumasaigh tú JavaScript, ní oibreoidh sé.',
-	'categorytree-category' => 'Catagóir',
+	'categorytree-category' => 'Catagóir:',
 	'categorytree-go' => 'Taispeán an Crann',
 	'categorytree-parents' => 'Máthairnóid',
 	'categorytree-mode-categories' => 'catagóirí amháin',
@@ -1447,7 +1447,7 @@ $messages['he'] = array(
 	'categorytree-legend' => 'הצגת עץ קטגוריות',
 	'categorytree-desc' => 'כלי מבוסס AJAX להצגת [[Special:CategoryTree|מבנה הקטגוריות]] של אתר ויקי',
 	'categorytree-header' => 'הקלידו שם קטגוריה כדי לראות את תכניה במבנה עץ. שימו לב שהדבר דורש תכונת JavaScript מתקדמת, הידועה בשם AJAX. אם יש לכם דפדפן ישן מאוד, או ש־JavaScript מנוטרלת אצלכם בדפדפן, הוא לא יעבוד.',
-	'categorytree-category' => 'קטגוריה',
+	'categorytree-category' => 'קטגוריה:',
 	'categorytree-go' => 'הצגת העץ',
 	'categorytree-parents' => 'הורים',
 	'categorytree-mode-categories' => 'קטגוריות בלבד',
@@ -1627,7 +1627,7 @@ $messages['hy'] = array(
 	'categorytree-header' => 'Մուտքագրեք կատեգորիայի անունը` ծառի համակարգը տեսնելու համար։
 Ի նկատի ունեցեք, որ սա հնարավոր է միայն ձեր բրաուզերի կողմից AJAX-ի ֆունկցիանալության դեպքում։
 Եթե դուք աշխատում եք շատ հին բրաուզերով, կամ ձեր JavaScript-ը անջատված է` այն չի գործի։',
-	'categorytree-category' => 'Կատեգորիա.',
+	'categorytree-category' => 'Կատեգորիա:',
 	'categorytree-go' => 'Ցույց տալ ծառը',
 	'categorytree-parents' => 'Ծնող-կատեգորիաներ',
 	'categorytree-mode-categories' => 'միայն կատեգորիաները',
@@ -1956,7 +1956,7 @@ $messages['kk-arab'] = array(
 	'categorytree-header' => 'سانات مازمۇنىڭ بۇتاقتار تۇردە كورۋ ٴۇشىن اتاۋىن ەنگىزىڭىز.
 اڭعارپتا: بۇل ىسكە JavaScript قۇرالىنىڭ AJAX دەگەن كەڭەيتىلگەن قابىلەتى قاجەت بولادى.
 ەگەر شولعىشىڭىز وتە ەسكى, نەمەسە JavaScript وشىرىلگەن بولسا, بۇل ىسكە اسىرىلمايدى.',
-	'categorytree-category' => 'سانات',
+	'categorytree-category' => 'سانات:',
 	'categorytree-go' => 'بۇتاقتارىن كورسەت',
 	'categorytree-parents' => 'جوعارعىلار',
 	'categorytree-mode-categories' => 'تەك ساناتتار',
@@ -1980,7 +1980,7 @@ $messages['kk-cyrl'] = array(
 	'categorytree-header' => 'Санат мазмұның бұтақтар түрде көру үшін атауын енгізіңіз.
 Аңғарпта: Бұл іске JavaScript құралының AJAX деген кеңейтілген қабілеті қажет болады.
 Егер шолғышыңыз өте ескі, немесе JavaScript өшірілген болса, бұл іске асырылмайды.',
-	'categorytree-category' => 'Санат',
+	'categorytree-category' => 'Санат:',
 	'categorytree-go' => 'Бұтақтарын көрсет',
 	'categorytree-parents' => 'Жоғарғылар',
 	'categorytree-mode-categories' => 'тек санаттар',
@@ -2004,7 +2004,7 @@ $messages['kk-latn'] = array(
 	'categorytree-header' => 'Sanat mazmunıñ butaqtar türde körw üşin atawın engiziñiz.
 Añğarpta: Bul iske JavaScript quralınıñ AJAX degen keñeýtilgen qabileti qajet boladı.
 Eger şolğışıñız öte eski, nemese JavaScript öşirilgen bolsa, bul iske asırılmaýdı.',
-	'categorytree-category' => 'Sanat',
+	'categorytree-category' => 'Sanat:',
 	'categorytree-go' => 'Butaqtarın körset',
 	'categorytree-parents' => 'Joğarğılar',
 	'categorytree-mode-categories' => 'tek sanattar',
@@ -2340,7 +2340,7 @@ $messages['lt'] = array(
 	'categorytree-header' => 'Įveskite kategorijos pavadinimą, kad pamatytumėte jos turinį kaip medžio struktūrą.
 Primename, kad tam reikia išplėstinis JavaScript fukcionalumas, kitaip žinomas kaip AJAX.
 Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
-	'categorytree-category' => 'Kategorija',
+	'categorytree-category' => 'Kategorija:',
 	'categorytree-go' => 'Rodyti medį',
 	'categorytree-parents' => 'Aukštesnio lygio kategorija',
 	'categorytree-mode-categories' => 'tik kategorijos',
@@ -3300,7 +3300,7 @@ $messages['sk'] = array(
 	'categorytree-header' => 'Zadajte názov kategórie, ktorej obsah sa má zobraziť ako stromová štruktúra.
 Majte na pamäti, že táto funkcia vyžaduje JavaScriptovú funkcionalitu známu ako AJAX.
 Ak máte veľmi starý prehliadač alebo máte vypnutý JavaScrpt, nebude fungovať.',
-	'categorytree-category' => 'Kategória',
+	'categorytree-category' => 'Kategória:',
 	'categorytree-go' => 'Zobraziť strom',
 	'categorytree-parents' => 'Nadradené kategórie',
 	'categorytree-mode-categories' => 'iba kategórie',
@@ -3331,7 +3331,7 @@ $messages['sl'] = array(
 	'categorytree-legend' => 'Prikaži drevo kategorij',
 	'categorytree-desc' => 'Dinamično navigiraj po [[Special:CategoryTree|strukturi kategorij]]',
 	'categorytree-header' => 'Vnesite ime kategorije, katere vsebino želite videti kot drevesno strukturo. Upoštevajte, da je za to potreben Ajax, poseben način za delovanje JavaScripta. Ce je vaš brskalnik zelo star oziroma je JavaScript v njem onemogocen, drevo kategorij ne bo prikazano.',
-	'categorytree-category' => 'Kategorija',
+	'categorytree-category' => 'Kategorija:',
 	'categorytree-go' => 'Pokaži drevo',
 	'categorytree-parents' => 'Starši',
 	'categorytree-mode-categories' => 'samo kategorije',
@@ -4169,7 +4169,7 @@ $messages['zh-hant'] = array(
 	'categorytree-header' => '在此可以查詢以分類的樹狀結構。
 注意： 本特殊頁面使用AJAX技術。
 如果您的瀏覽器非常老舊，或者是關閉了JavaScript，本頁面將會無法正常運作。',
-	'categorytree-category' => '分類',
+	'categorytree-category' => '分類：',
 	'categorytree-go' => '顯示樹狀結構',
 	'categorytree-parents' => '父分類',
 	'categorytree-mode-categories' => '只顯示分類',
