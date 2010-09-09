@@ -22,7 +22,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	/**
 	 * Add a subcategory to the internal lists
 	 */
-	function addSubcategoryObject( $cat, $sortkey, $pageLength ) {
+	function addSubcategoryObject( Category $cat, $sortkey, $pageLength ) {
 		global $wgRequest;
 
 		$title = $cat->getTitle();
