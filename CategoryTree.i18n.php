@@ -350,9 +350,10 @@ Ede va guazafi exulesiki favel oke ede JavaScript fliaceem tir metegis, batcoba 
 
 /** Bavarian (Boarisch)
  * @author Man77
+ * @author Mucalexx
  */
 $messages['bar'] = array(
-	'categorytree' => 'Kategorienbam',
+	'categorytree' => 'Kategoriinbaam',
 	'categorytree-portlet' => 'Kategorien',
 	'categorytree-legend' => 'in Kategorienbam ãnzoang',
 	'categorytree-collapse' => 'eiklåppm',
