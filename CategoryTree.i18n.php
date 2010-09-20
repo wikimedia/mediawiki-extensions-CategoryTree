@@ -3583,15 +3583,30 @@ $messages['sw'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author TRYPPN
  * @author Trengarasu
  */
 $messages['ta'] = array(
 	'categorytree' => 'பகுப்பு மரம்',
+	'categorytree-portlet' => 'பகுப்புகள்',
+	'categorytree-legend' => 'பகுப்பு மரத்தை காட்டு',
 	'categorytree-category' => 'பகுப்பு:',
 	'categorytree-go' => 'மரத்தைக் காட்டு',
+	'categorytree-parents' => 'மூலங்கள்',
+	'categorytree-mode-categories' => 'பகுப்புக்கள் மட்டும்',
+	'categorytree-mode-pages' => 'பக்கங்கள் மட்டும், கோப்புக்கள் தவிர',
+	'categorytree-mode-all' => 'எல்லா பக்கங்களும்',
+	'categorytree-collapse' => 'சுருக்கு',
+	'categorytree-expand' => 'விரிவாக்கு',
+	'categorytree-load' => 'ஏற்று',
+	'categorytree-loading' => 'ஏற்றப்படுகிறது...',
+	'categorytree-nothing-found' => 'ஒன்றும் காணப்படவில்லை',
 	'categorytree-no-subcategories' => 'துணைப்பகுப்புகள் கிடையாது',
+	'categorytree-no-parent-categories' => 'மூலபகுப்புக்கள் ஏதுமில்லை',
 	'categorytree-no-pages' => 'பக்கங்களோ அல்லது துணைப்பகுப்புகளோ கிடையாது',
 	'categorytree-not-found' => '<i>$1</i> பகுப்பு காணப்படவில்லை',
+	'categorytree-error' => 'குறிப்புகளை ஏற்றுவதில் சிக்கல்',
+	'categorytree-retry' => 'கொஞ்ச நேரம் பொறுத்திருந்தபின் மீண்டும் முயற்சி செய்யுங்கள்.',
 );
 
 /** Telugu (తెలుగు)
