@@ -2382,6 +2382,7 @@ $messages['ltg'] = array(
 );
 
 /** Latvian (Latviešu)
+ * @author GreenZeb
  * @author Marozols
  * @author Xil
  * @author Yyy
@@ -2391,9 +2392,9 @@ $messages['lv'] = array(
 	'categorytree-portlet' => 'Kategorijas',
 	'categorytree-legend' => 'Rādīt kategoriju koku',
 	'categorytree-desc' => "AJAX bāzēts ''gadget'', kuru lieto lai attēlotu wiki [[Special:CategoryTree|kategoriju struktūru]]",
-	'categorytree-header' => 'Ievadi kategorijas nosaukumu lai apskatītos tās saturu kā koka struktūru.
+	'categorytree-header' => 'Ievadi kategorijas nosaukumu, lai apskatītos tās saturu kā koka veida struktūru.
 Tam ir nepieciešama JavaScript (AJAX) funkcionalitāte.
-Ja tev ir veca interneta pārlūkprogramma, vai arī JavaScript ir atslēgts, šitas te nedarbosies.',
+Ja tev ir veca interneta pārlūkprogramma vai arī JavaScript ir atslēgts, šī iespēja nedarbosies.',
 	'categorytree-category' => 'Kategorija:',
 	'categorytree-go' => 'Parādīt koku',
 	'categorytree-parents' => 'Augšējā līmeņa kategorijas',
