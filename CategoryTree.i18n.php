@@ -3176,6 +3176,17 @@ $messages['ru'] = array(
 	'categorytree-retry' => 'Пожалуйста, подождите и попробуйте ещё раз.',
 );
 
+/** Rusyn (Русиньскый)
+ * @author Gazeb
+ */
+$messages['rue'] = array(
+	'categorytree-portlet' => 'Катеґорії',
+	'categorytree-category' => 'Катеґорія:',
+	'categorytree-mode-all' => 'вшыткы сторінкы',
+	'categorytree-loading' => 'начітавать ся...',
+	'categorytree-no-subcategories' => 'жадны підкатеґорії',
+);
+
 /** Yakut (Саха тыла)
  * @author HalanTul
  */
