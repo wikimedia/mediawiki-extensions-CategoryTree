@@ -2754,9 +2754,7 @@ $messages['no'] = array(
 	'categorytree-portlet' => 'Kategorier',
 	'categorytree-legend' => 'Vis kategoritre',
 	'categorytree-desc' => 'AJAX-basert verktøy som viser [[Special:CategoryTree|kategoristrukturen]] til en wiki',
-	'categorytree-header' => 'Skriv inn et kategorinavn for å se dens innhold som en trestruktur. Merk at dette trenger en avansert type Javascript-funksjonalitet kjent som AJAX. Dersom du har en gammel nettleser eller har slått av Javascript vil dette ikke fungere.
-
-Enter a category name to see its contents as a tree structure. Note that this requires advanced JavaScript functionality known as AJAX. If you have a very old browser, or have JavaScript disabled, it will not work.',
+	'categorytree-header' => 'Skriv inn et kategorinavn for å se dens innhold som en trestruktur. Merk at dette trenger en avansert type Javascript-funksjonalitet kjent som AJAX. Dersom du har en gammel nettleser eller har slått av JavaScript vil ikke dette fungere.',
 	'categorytree-category' => 'Kategori:',
 	'categorytree-go' => 'Vis',
 	'categorytree-parents' => 'Overkategorier',
