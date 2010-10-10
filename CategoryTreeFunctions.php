@@ -298,7 +298,7 @@ class CategoryTree {
 	* load CategoryTreeFunctions.php on demand.
 	*/
 	function ajax( $category, $depth = 1 ) {
-		global $wgDBname, $wgUser;
+		global $wgUser;
 		$title = self::makeTitle( $category );
 
 		if ( ! $title ) {
@@ -317,7 +317,7 @@ class CategoryTree {
 				'page_title' => $dbkey,
 			), __METHOD__ );
 
-		$mckey = "$wgDBname:categorytree(" . $this->getOptionsAsCacheKey( $depth ) . "):$dbkey:$configkey";
+		$mckey = wfMemcKey( "categorytree(" . $this->getOptionsAsCacheKey( $depth ) . ")", $dbkey, $configkey );
 
 		$response = new AjaxResponse();
 
