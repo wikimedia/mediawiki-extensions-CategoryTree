@@ -3178,11 +3178,23 @@ $messages['ru'] = array(
  * @author Gazeb
  */
 $messages['rue'] = array(
+	'categorytree' => 'Дерево катеґорій',
 	'categorytree-portlet' => 'Катеґорії',
+	'categorytree-legend' => 'Указати дерево катеґорій',
 	'categorytree-category' => 'Катеґорія:',
+	'categorytree-go' => 'Указати дерево',
+	'categorytree-parents' => 'Родичовскы катеґорії',
+	'categorytree-mode-categories' => 'лем катеґорії',
+	'categorytree-mode-pages' => 'сторінкы окрім файлів',
 	'categorytree-mode-all' => 'вшыткы сторінкы',
+	'categorytree-collapse' => 'згорнути',
+	'categorytree-expand' => 'розгорнути',
+	'categorytree-load' => 'начітати',
 	'categorytree-loading' => 'начітавать ся...',
+	'categorytree-nothing-found' => 'ніч не найджене',
 	'categorytree-no-subcategories' => 'жадны підкатеґорії',
+	'categorytree-no-pages' => 'жадны статї ані підкатеґорії',
+	'categorytree-not-found' => 'Катеґорія <em>$1</em> ненайджена',
 );
 
 /** Yakut (Саха тыла)
