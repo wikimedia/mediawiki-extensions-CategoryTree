@@ -348,6 +348,29 @@ Ede va guazafi exulesiki favel oke ede JavaScript fliaceem tir metegis, batcoba 
 	'categorytree-retry' => 'Vay kemel aze tolyawal !',
 );
 
+/** Bashkir (Башҡорт)
+ * @author Haqmar
+ */
+$messages['ba'] = array(
+	'categorytree-category' => 'Категория:',
+	'categorytree-go' => 'Тейәү',
+	'categorytree-parents' => 'Төп категориялар',
+	'categorytree-mode-categories' => 'категориялар ғына',
+	'categorytree-mode-pages' => 'файлдарҙан башҡа',
+	'categorytree-mode-all' => 'бар биттәр',
+	'categorytree-collapse' => 'төрөргә',
+	'categorytree-expand' => 'асырға',
+	'categorytree-load' => 'тейәү',
+	'categorytree-loading' => 'тейәү бара...',
+	'categorytree-nothing-found' => 'бер ни ҙә табылманы',
+	'categorytree-no-subcategories' => 'эске категориялар юҡ.',
+	'categorytree-no-parent-categories' => 'төп категориялар юҡ',
+	'categorytree-no-pages' => 'мәҡәләләр йәки эске категориялар юҡ.',
+	'categorytree-not-found' => '<i>$1</i> категорияһы табылманы.',
+	'categorytree-error' => 'Мәғлүмәт тейәүҙә хата бар.',
+	'categorytree-retry' => 'Зинһар, бер аҙ көткәндән һуң яңынан ҡабатлап ҡарағыҙ.',
+);
+
 /** Bavarian (Boarisch)
  * @author Man77
  * @author Mucalexx
