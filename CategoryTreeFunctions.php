@@ -298,15 +298,12 @@ class CategoryTree {
 	* load CategoryTreeFunctions.php on demand.
 	*/
 	function ajax( $category, $depth = 1 ) {
-		global $wgUser;
+		global $wgContLang, $wgRenderHashAppend;
 		$title = self::makeTitle( $category );
 
 		if ( ! $title ) {
 			return false; # TODO: error message?
 		}
-
-		# configkey needed to take into account variant and secure options.
-		$configkey = $wgUser->getPageRenderingHash();
 
 		# Retrieve page_touched for the category
 		$dbkey = $title->getDBkey();
@@ -317,7 +314,7 @@ class CategoryTree {
 				'page_title' => $dbkey,
 			), __METHOD__ );
 
-		$mckey = wfMemcKey( "categorytree(" . $this->getOptionsAsCacheKey( $depth ) . ")", $dbkey, $configkey );
+		$mckey = wfMemcKey( "categorytree(" . $this->getOptionsAsCacheKey( $depth ) . ")", $dbkey, $wgContLang->getExtraHashOptions(), $wgRenderHashAppend );
 
 		$response = new AjaxResponse();
 
