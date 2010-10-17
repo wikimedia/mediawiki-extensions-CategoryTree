@@ -3204,6 +3204,10 @@ $messages['rue'] = array(
 	'categorytree' => 'Дерево катеґорій',
 	'categorytree-portlet' => 'Катеґорії',
 	'categorytree-legend' => 'Указати дерево катеґорій',
+	'categorytree-desc' => 'AJAX-компонент про зображіня [[Special:CategoryTree|штруктуры катеґорій]] вікі',
+	'categorytree-header' => 'Зазначте назву катеґорії ку&nbsp;зображіню єй обсягу як стромовой штруктуры.
+
+(Тота функція потребує покрочілы функції JavaScript знамы як Ajax. Кідь маєте дуже старый переглядач або выпнутый JavaScript, не укаже ся стром правилно або нияк.)',
 	'categorytree-category' => 'Катеґорія:',
 	'categorytree-go' => 'Указати дерево',
 	'categorytree-parents' => 'Родичовскы катеґорії',
@@ -3212,12 +3216,16 @@ $messages['rue'] = array(
 	'categorytree-mode-all' => 'вшыткы сторінкы',
 	'categorytree-collapse' => 'згорнути',
 	'categorytree-expand' => 'розгорнути',
+	'categorytree-member-counts' => 'обсягує {{PLURAL:$1|1 підкатеґорію|$1 підкатеґорії|$1 підкатеґорій}}, {{PLURAL:$2|1 сторінку|$2 сторінкы|$2 сторінок}} і {{PLURAL:$3|1 файл|$3 файлы|$3 файлів}}',
 	'categorytree-load' => 'начітати',
 	'categorytree-loading' => 'начітавать ся...',
 	'categorytree-nothing-found' => 'ніч не найджене',
 	'categorytree-no-subcategories' => 'жадны підкатеґорії',
+	'categorytree-no-parent-categories' => 'не має родичовскы катеґорії',
 	'categorytree-no-pages' => 'жадны статї ані підкатеґорії',
 	'categorytree-not-found' => 'Катеґорія <em>$1</em> ненайджена',
+	'categorytree-error' => 'Хыба начітаня дат.',
+	'categorytree-retry' => 'Кус почекайте і потім спробуйте знову.',
 );
 
 /** Yakut (Саха тыла)
@@ -4160,6 +4168,12 @@ $messages['yo'] = array(
 	'categorytree-category' => 'Ẹ̀ka:',
 	'categorytree-parents' => 'Àwọn òbí',
 	'categorytree-mode-all' => 'gbogbo àwọn ojúewé',
+	'categorytree-member-counts' => 'ní {{PLURAL:$1|ẹ̀kaabẹ́ 1|àwọn ẹ̀kaabẹ́ $1}}, {{PLURAL:$2|ojúewé 1 page|àwọn ojúewé $2}}, àti {{PLURAL:$3|fáìlì 1|àwọn fáìlì $3}} nínú',
+	'categorytree-load' => 'ìgbéyọ',
+	'categorytree-loading' => 'úngbéyọ...',
+	'categorytree-nothing-found' => 'kò sí ùnkankan',
+	'categorytree-no-subcategories' => 'Kò sí àwọn ẹ̀kaabẹ́',
+	'categorytree-not-found' => 'Ẹ̀ka <i>$1</i> kò ṣe é wárí',
 );
 
 /** Cantonese (粵語)
