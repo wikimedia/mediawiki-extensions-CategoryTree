@@ -3645,13 +3645,14 @@ $messages['sw'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Surya Prakash.S.A.
  * @author TRYPPN
  * @author Trengarasu
  */
 $messages['ta'] = array(
 	'categorytree' => 'பகுப்பு மரம்',
 	'categorytree-portlet' => 'பகுப்புகள்',
-	'categorytree-legend' => 'பகுப்பு மரத்தை காட்டு',
+	'categorytree-legend' => 'பகுப்பு மரத்தைக் காட்டு',
 	'categorytree-category' => 'பகுப்பு:',
 	'categorytree-go' => 'மரத்தைக் காட்டு',
 	'categorytree-parents' => 'மூலங்கள்',
