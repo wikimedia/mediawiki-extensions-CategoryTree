@@ -3881,6 +3881,15 @@ $messages['to'] = array(
 	'categorytree-expand' => 'fano',
 );
 
+/** Tok Pisin (Tok Pisin)
+ * @author Iketsi
+ */
+$messages['tpi'] = array(
+	'categorytree-portlet' => 'Ol grup',
+	'categorytree-category' => 'Grup:',
+	'categorytree-mode-all' => 'Ol pes',
+);
+
 /** Turkish (Türkçe)
  * @author Joseph
  * @author Karduelis
