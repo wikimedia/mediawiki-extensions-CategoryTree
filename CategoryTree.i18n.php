@@ -231,7 +231,10 @@ $messages['arc'] = array(
 	'categorytree-legend' => 'ܚܘܝ ܐܝܠܢܐ ܕܣܘܕܪܐ',
 	'categorytree-category' => 'ܣܕܪܐ:',
 	'categorytree-go' => 'ܚܘܝ ܐܝܠܢܐ',
+	'categorytree-mode-categories' => 'ܣܕܪ̈ܐ ܒܠܚܘܕ',
 	'categorytree-mode-all' => 'ܟܠ ܦܐܬܬ̈ܐ',
+	'categorytree-no-subcategories' => 'ܠܝܬ ܣܕܪ̈ܐ ܦܪ̈ܥܝܐ',
+	'categorytree-not-found' => 'ܣܕܪܐ <i>$1</i> ܠܐ ܐܫܟܚܬ',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -2445,6 +2448,14 @@ Ja tev ir veca interneta pārlūkprogramma vai arī JavaScript ir atslēgts, š�
 	'categorytree-not-found' => 'Kategorija <i>$1</i> netika atrasta',
 	'categorytree-error' => 'Problēma ar datu ielādi.',
 	'categorytree-retry' => 'Pagaidi mazliet un mēģini vēlreiz.',
+);
+
+/** Malagasy (Malagasy)
+ * @author Jagwar
+ */
+$messages['mg'] = array(
+	'categorytree' => "Fisampanan'ny sokajy",
+	'categorytree-portlet' => 'Sokajy',
 );
 
 /** Macedonian (Македонски)
