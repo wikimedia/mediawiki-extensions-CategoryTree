@@ -390,7 +390,7 @@ $messages['bar'] = array(
 /** Samogitian (Žemaitėška)
  * @author Hugo.arg
  */
-$messages['bat-smg'] = array(
+$messages['sgs'] = array(
 	'categorytree' => 'Kateguorėju medis',
 	'categorytree-category' => 'Kateguorėjė:',
 	'categorytree-mode-all' => 'vėsė poslapē',
