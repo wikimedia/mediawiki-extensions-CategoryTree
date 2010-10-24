@@ -352,9 +352,17 @@ Ede va guazafi exulesiki favel oke ede JavaScript fliaceem tir metegis, batcoba 
 );
 
 /** Bashkir (Башҡорт)
+ * @author Assele
  * @author Haqmar
  */
 $messages['ba'] = array(
+	'categorytree' => 'Категориялар ағасы',
+	'categorytree-portlet' => 'Категориялар',
+	'categorytree-legend' => 'Категориялар ағасын күрһәтергә',
+	'categorytree-desc' => '[[Special:CategoryTree|Категориялар төҙөлөшө]] буйлап динамик йөрөү мөмкинлеге',
+	'categorytree-header' => 'Категорияның исемен керетегеҙ, һәм ул ағас төҙөлөшөндә күрһәтеләсәк.
+Иғтибар итегеҙ — был JavaScript-тың AJAX мөмкинлеген талап итә.
+Әгәр һеҙҙә браузерҙың бик иҫке өлгөһө булһа, йәки JavaScript һүндерелгән булһа,  ул эшләмәйәсәк.',
 	'categorytree-category' => 'Категория:',
 	'categorytree-go' => 'Тейәү',
 	'categorytree-parents' => 'Төп категориялар',
@@ -363,14 +371,15 @@ $messages['ba'] = array(
 	'categorytree-mode-all' => 'бар биттәр',
 	'categorytree-collapse' => 'төрөргә',
 	'categorytree-expand' => 'асырға',
-	'categorytree-load' => 'тейәү',
-	'categorytree-loading' => 'тейәү бара...',
+	'categorytree-member-counts' => '{{PLURAL:$1|$1 эске категорияһы}}, {{PLURAL:$2|$2 бите}} һәм {{PLURAL:$3|$3 файлы}} бар',
+	'categorytree-load' => 'сығарырға',
+	'categorytree-loading' => 'сығарыу бара...',
 	'categorytree-nothing-found' => 'бер ни ҙә табылманы',
 	'categorytree-no-subcategories' => 'эске категориялар юҡ.',
 	'categorytree-no-parent-categories' => 'төп категориялар юҡ',
 	'categorytree-no-pages' => 'мәҡәләләр йәки эске категориялар юҡ.',
 	'categorytree-not-found' => '<i>$1</i> категорияһы табылманы.',
-	'categorytree-error' => 'Мәғлүмәт тейәүҙә хата бар.',
+	'categorytree-error' => 'Мәғлүмәт сығарыуҙа хата бар.',
 	'categorytree-retry' => 'Зинһар, бер аҙ көткәндән һуң яңынан ҡабатлап ҡарағыҙ.',
 );
 
@@ -385,15 +394,6 @@ $messages['bar'] = array(
 	'categorytree-collapse' => 'eiklåppm',
 	'categorytree-expand' => 'ausklåppm',
 	'categorytree-load' => 'lådn',
-);
-
-/** Samogitian (Žemaitėška)
- * @author Hugo.arg
- */
-$messages['sgs'] = array(
-	'categorytree' => 'Kateguorėju medis',
-	'categorytree-category' => 'Kateguorėjė:',
-	'categorytree-mode-all' => 'vėsė poslapē',
 );
 
 /** Southern Balochi (بلوچی مکرانی)
@@ -2528,6 +2528,8 @@ $messages['ml'] = array(
  */
 $messages['mn'] = array(
 	'categorytree' => 'Ангиллын мод',
+	'categorytree-portlet' => 'Ангиллууд',
+	'categorytree-legend' => 'Ангиллын модыг үзүүлэх',
 	'categorytree-header' => 'Ангиллын нэрийг бичиж модны бүтэц байдлаар агуулгыг нь харна уу.
 Үүнийг ашиглахын тулд AJAX гэгдэх ЖаваСкрипт функц хэрэгтэй.
 Та маш хуучин вэб хөтөчтэй, эсвэл ЖаваСкриптыг хориглосон байвал ажиллахгүй болохыг анхаарна уу.',
@@ -2537,13 +2539,17 @@ $messages['mn'] = array(
 	'categorytree-mode-categories' => 'Зөвхөн ангиллууд',
 	'categorytree-mode-pages' => 'зурагнаас бусад хуудсууд',
 	'categorytree-mode-all' => 'бүх хуудас',
+	'categorytree-collapse' => 'буулгах',
 	'categorytree-expand' => 'дэлгэх',
+	'categorytree-member-counts' => '{{PLURAL:$1|1 дэд ангилал|$1 дэд ангилал}}, {{PLURAL:$2|1 хуудас|$2 хуудас}}, {{PLURAL:$3|1 файл|$3 файл}} агуулагдаж байна',
 	'categorytree-load' => 'унших',
 	'categorytree-loading' => 'уншиж байна...',
 	'categorytree-nothing-found' => 'юу ч олдсонгүй',
 	'categorytree-no-subcategories' => 'дэд ангилалгүй байна',
+	'categorytree-no-parent-categories' => 'эх ангилал байхгүй байна',
 	'categorytree-no-pages' => 'хуудас буюу дэд ангилалгүй байна',
 	'categorytree-not-found' => '<i>$1</i> ангилал олдсонгүй',
+	'categorytree-error' => 'Өгөгдлийг ачааллахад асуудал үүсэв.',
 	'categorytree-retry' => 'Түр хүлээгээд дахин оролдоно уу.',
 );
 
@@ -3339,6 +3345,15 @@ $messages['sdc'] = array(
 	'categorytree-not-found' => "Categuria ''$1'' nò acciappadda",
 	'categorytree-error' => "Probrema i' lu carriggamentu di li dati.",
 	'categorytree-retry' => "Pa piazeri aisetta un'àttimu e poi torra a prubà.",
+);
+
+/** Samogitian (Žemaitėška)
+ * @author Hugo.arg
+ */
+$messages['sgs'] = array(
+	'categorytree' => 'Kateguorėju medis',
+	'categorytree-category' => 'Kateguorėjė:',
+	'categorytree-mode-all' => 'vėsė poslapē',
 );
 
 /** Sinhala (සිංහල)
