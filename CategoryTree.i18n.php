@@ -388,12 +388,12 @@ $messages['ba'] = array(
  * @author Mucalexx
  */
 $messages['bar'] = array(
-	'categorytree' => 'Kategoriinbaam',
-	'categorytree-portlet' => 'Kategorien',
-	'categorytree-legend' => 'in Kategorienbam ãnzoang',
-	'categorytree-collapse' => 'eiklåppm',
-	'categorytree-expand' => 'ausklåppm',
-	'categorytree-load' => 'lådn',
+	'categorytree' => 'Kategorijnbaam',
+	'categorytree-portlet' => 'Kategorijn',
+	'categorytree-legend' => 'an Kategorijnbaam åzoang',
+	'categorytree-collapse' => 'eikloppm',
+	'categorytree-expand' => 'auskloppm',
+	'categorytree-load' => 'loon',
 );
 
 /** Southern Balochi (بلوچی مکرانی)
@@ -3354,6 +3354,34 @@ $messages['sgs'] = array(
 	'categorytree' => 'Kateguorėju medis',
 	'categorytree-category' => 'Kateguorėjė:',
 	'categorytree-mode-all' => 'vėsė poslapē',
+);
+
+/** Serbo-Croatian (Srpskohrvatski / Српскохрватски)
+ * @author OC Ripper
+ */
+$messages['sh'] = array(
+	'categorytree' => 'Stablasti prikaz hijerarhije kategorija',
+	'categorytree-portlet' => 'Kategorije',
+	'categorytree-legend' => 'Prikaži stablo kategorija',
+	'categorytree-desc' => 'Dinamička navigacija [[Special:CategoryTree|strukture kategorija]].',
+	'categorytree-header' => 'Unesite ime kategorije da vidite njen sadržaj kao strukturno stablo. Ovo zahtijeva proširenu JavaScript funkcionalnost kao AJAX. Ako imate neki stariji preglednik, ili ste isključili JavaScript, ovo neće raditi.',
+	'categorytree-category' => 'Kategorija:',
+	'categorytree-go' => 'Prikaži stablo',
+	'categorytree-parents' => 'Nadkategorije',
+	'categorytree-mode-categories' => 'samo kategorije',
+	'categorytree-mode-pages' => 'stranice bez datoteka',
+	'categorytree-mode-all' => 'sve stranice',
+	'categorytree-collapse' => 'sakrij',
+	'categorytree-expand' => 'proširi',
+	'categorytree-member-counts' => 'sadrži {{PLURAL:$1|jednu podkategoriju|$1 podkategorije|$1 podkategorija}}, {{PLURAL:$2|jednu stranicu|$2 stranice|$2 stranica}} i {{PLURAL:$3|jednu datoteku|$3 datoteke|$3 datoteka}}',
+	'categorytree-load' => 'učitaj',
+	'categorytree-loading' => 'učitavam…',
+	'categorytree-nothing-found' => 'ništa nije pronađeno',
+	'categorytree-no-subcategories' => 'nema potkategorija',
+	'categorytree-no-parent-categories' => 'nema nadkategorija',
+	'categorytree-no-pages' => 'nema ni stranica ni podkategorija',
+	'categorytree-not-found' => 'Kategorija <i>$1</i> nije nađena',
+	'categorytree-error' => 'Problem pri učitavanju podataka.',
 );
 
 /** Sinhala (සිංහල)
