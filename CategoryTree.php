@@ -361,8 +361,6 @@ function efCategoryTreeArticleFromTitle( $title, &$article ) {
 function efCategoryTreeOutputPageMakeCategoryLinks( $out, &$categories, &$links ) {
 	global $wgCategoryTreePageCategoryOptions;
 
-	$ct = new CategoryTree( $wgCategoryTreePageCategoryOptions );
-
 	foreach ( $categories as $category => $type ) {
 		$links[$type][] = efCategoryTreeParserHook( $category, $wgCategoryTreePageCategoryOptions, null, true );
 	}
