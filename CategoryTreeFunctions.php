@@ -524,7 +524,7 @@ class CategoryTree {
 
 		$s = '';
 
-		while ( $row = $dbr->fetchObject( $res ) ) {
+		foreach ( $res as $row ) {
 			# TODO: translation support; ideally added to Title object
 			$t = Title::newFromRow( $row );
 
