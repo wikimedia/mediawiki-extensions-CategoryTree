@@ -109,7 +109,7 @@ class CategoryTreePage extends SpecialPage {
 		$wgOut->addHTML( Xml::openElement( 'form', array( 'name' => 'categorytree', 'method' => 'get', 'action' => $wgScript, 'id' => 'mw-categorytree-form' ) ) );
 		$wgOut->addHTML( Xml::openElement( 'fieldset' ) );
 		$wgOut->addHTML( Xml::element( 'legend', null, wfMsgNoTrans( 'categorytree-legend' ) ) );
-		$wgOut->addHTML( Xml::hidden( 'title', $thisTitle->getPrefixedDbKey() ) );
+		$wgOut->addHTML( Xml::Html( 'title', $thisTitle->getPrefixedDbKey() ) );
 		$wgOut->addHTML( Xml::inputLabel( wfMsgNoTrans( 'categorytree-category' ), 'target', 'target', 20, $this->target ) . ' ' );
 		$wgOut->addHTML( Xml::openElement( 'select', array( 'name' => 'mode' ) ) );
 		$wgOut->addHTML( Xml::option( wfMsgNoTrans( 'categorytree-mode-categories' ), 'categories', $mode == CT_MODE_CATEGORIES ? true : false ) );
