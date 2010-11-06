@@ -3946,11 +3946,12 @@ $messages['to'] = array(
 
 /** Tok Pisin (Tok Pisin)
  * @author Iketsi
+ * @author Wantok
  */
 $messages['tpi'] = array(
 	'categorytree-portlet' => 'Ol grup',
 	'categorytree-category' => 'Grup:',
-	'categorytree-mode-all' => 'Ol pes',
+	'categorytree-mode-all' => 'Olgeta pes',
 );
 
 /** Turkish (Türkçe)
