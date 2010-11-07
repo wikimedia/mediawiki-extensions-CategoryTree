@@ -4231,6 +4231,7 @@ $messages['yi'] = array(
 	'categorytree-no-parent-categories' => 'נישטא קיין עלטערן קאַטעגאריעס',
 	'categorytree-no-pages' => 'נישטא קיין בלעטער אדער אונטער-קאַטעגאריעס',
 	'categorytree-not-found' => "קאַטעגאריע '''$1''' נישט געפֿונען",
+	'categorytree-error' => 'פּראָבלעם בײַם ארויפֿלאָדן דאַטן.',
 	'categorytree-retry' => 'ביטע וואַרט אַ רגע און פרובירט נאכאַמאָל',
 );
 
