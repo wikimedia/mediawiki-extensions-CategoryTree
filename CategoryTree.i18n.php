@@ -2631,6 +2631,7 @@ $messages['myv'] = array(
 	'categorytree-portlet' => 'Категорият',
 	'categorytree-legend' => 'Невтемс явкс чувтонть',
 	'categorytree-category' => 'Категория:',
+	'categorytree-go' => 'Невтемс чувтонзо',
 	'categorytree-mode-categories' => 'ансяк категорият',
 	'categorytree-mode-all' => 'весе лопатне',
 	'categorytree-collapse' => 'теингавтомс',
@@ -2932,6 +2933,13 @@ $messages['pdc'] = array(
 	'categorytree-no-parent-categories' => 'Ken Owwerabdeeling',
 	'categorytree-no-pages' => 'Ken Bledder odder Unnerabdeelinge',
 	'categorytree-not-found' => 'Abdeeling „$1“ net gfunne',
+);
+
+/** Pfälzisch (Pfälzisch)
+ * @author Xqt
+ */
+$messages['pfl'] = array(
+	'categorytree-mode-all' => 'alle Saide',
 );
 
 /** Polish (Polski)
