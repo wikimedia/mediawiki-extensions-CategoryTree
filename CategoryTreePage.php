@@ -29,8 +29,11 @@ class CategoryTreePage extends SpecialPage {
 	function getOption( $name ) {
 		global $wgCategoryTreeDefaultOptions;
 
-		if ( $this->tree ) return $this->tree->getOption( $name );
-		else return $wgCategoryTreeDefaultOptions[$name];
+		if ( $this->tree ) {
+			return $this->tree->getOption( $name );
+		} else {
+			return $wgCategoryTreeDefaultOptions[$name];
+		}
 	}
 
 	/**
@@ -48,7 +51,9 @@ class CategoryTreePage extends SpecialPage {
 		$this->target = trim( $this->target );
 
 		# HACK for undefined root category
-		if ( $this->target == '<rootcategory>' || $this->target == '&lt;rootcategory&gt;' ) $this->target = null;
+		if ( $this->target == '<rootcategory>' || $this->target == '&lt;rootcategory&gt;' ) {
+			$this->target = null;
+		}
 
 		$options = array();
 
@@ -109,7 +114,7 @@ class CategoryTreePage extends SpecialPage {
 		$wgOut->addHTML( Xml::openElement( 'form', array( 'name' => 'categorytree', 'method' => 'get', 'action' => $wgScript, 'id' => 'mw-categorytree-form' ) ) );
 		$wgOut->addHTML( Xml::openElement( 'fieldset' ) );
 		$wgOut->addHTML( Xml::element( 'legend', null, wfMsgNoTrans( 'categorytree-legend' ) ) );
-		$wgOut->addHTML( Xml::Html( 'title', $thisTitle->getPrefixedDbKey() ) );
+		$wgOut->addHTML( Html::Hidden( 'title', $thisTitle->getPrefixedDbKey() ) );
 		$wgOut->addHTML( Xml::inputLabel( wfMsgNoTrans( 'categorytree-category' ), 'target', 'target', 20, $this->target ) . ' ' );
 		$wgOut->addHTML( Xml::openElement( 'select', array( 'name' => 'mode' ) ) );
 		$wgOut->addHTML( Xml::option( wfMsgNoTrans( 'categorytree-mode-categories' ), 'categories', $mode == CT_MODE_CATEGORIES ? true : false ) );
