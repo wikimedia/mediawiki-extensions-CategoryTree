@@ -2947,7 +2947,7 @@ $messages['pdc'] = array(
 	'categorytree-no-subcategories' => 'Ken Unnerabdeeling',
 	'categorytree-no-parent-categories' => 'Ken Owwerabdeeling',
 	'categorytree-no-pages' => 'Ken Bledder odder Unnerabdeelinge',
-	'categorytree-not-found' => 'Abdeeling „$1“ net gfunne',
+	'categorytree-not-found' => 'Abdeeling „$1“ naett gfunne',
 );
 
 /** Pfälzisch (Pfälzisch)
