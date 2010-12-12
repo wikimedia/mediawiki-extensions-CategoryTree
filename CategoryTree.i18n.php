@@ -1512,6 +1512,7 @@ $messages['he'] = array(
 
 /** Hindi (हिन्दी)
  * @author Kaustubh
+ * @author Shyam123.ckp
  */
 $messages['hi'] = array(
 	'categorytree' => 'श्रेणीवृक्ष',
@@ -1524,7 +1525,7 @@ $messages['hi'] = array(
 	'categorytree-go' => 'वृक्ष दिखायें',
 	'categorytree-parents' => 'पालक',
 	'categorytree-mode-categories' => 'सिर्फ श्रेणीयाँ',
-	'categorytree-mode-pages' => 'चित्र ना होने वाले पन्ने',
+	'categorytree-mode-pages' => 'श्रेणी पेड़ मोड पृष्ठों',
 	'categorytree-mode-all' => 'सभी पन्ने',
 	'categorytree-collapse' => 'छोटा करें',
 	'categorytree-expand' => 'बडा करें',
