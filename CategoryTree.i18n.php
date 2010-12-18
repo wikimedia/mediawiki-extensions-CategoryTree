@@ -271,15 +271,16 @@ $messages['arz'] = array(
 );
 
 /** Assamese (অসমীয়া)
+ * @author Chaipau
  * @author Rajuonline
  */
 $messages['as'] = array(
-	'categorytree' => 'শ্রেণীবৃক্ষ্য',
-	'categorytree-legend' => 'শ্রেণীবৃক্ষ্য দেখুৱাওক',
-	'categorytree-category' => 'শ্রেণী',
+	'categorytree' => 'শ্ৰেণীবৃক্ষ্য',
+	'categorytree-legend' => 'শ্ৰেণীবৃক্ষ্য দেখুৱাওক',
+	'categorytree-category' => 'শ্ৰেণী',
 	'categorytree-go' => 'বৃক্ষ্য দেখুৱাওক',
 	'categorytree-parents' => 'পালক',
-	'categorytree-mode-categories' => 'কেবল শ্রেণী',
+	'categorytree-mode-categories' => 'কেবল শ্ৰেণী',
 	'categorytree-mode-pages' => 'চিত্রবিহীন পৃষ্ঠাসমুহ',
 	'categorytree-mode-all' => 'সকলো পৃষ্ঠা',
 	'categorytree-collapse' => 'সৰু কৰক',
@@ -287,11 +288,11 @@ $messages['as'] = array(
 	'categorytree-load' => 'লোড কৰক',
 	'categorytree-loading' => 'লোড কৰি থকা হৈছে...',
 	'categorytree-nothing-found' => 'একো পোৱা নগল',
-	'categorytree-no-subcategories' => 'কোনো উপশ্রেণী নাই',
-	'categorytree-no-pages' => 'কোনো পৃষ্ঠা বা উপশ্রেণী নাই',
-	'categorytree-not-found' => '<i>$1</i> শ্রেণীতো পোৱা নগল',
+	'categorytree-no-subcategories' => 'কোনো উপশ্ৰেণী নাই',
+	'categorytree-no-pages' => 'কোনো পৃষ্ঠা বা উপশ্ৰেণী নাই',
+	'categorytree-not-found' => '<i>$1</i> শ্ৰেণীতো পোৱা নগল',
 	'categorytree-error' => 'তথ্য জমাবলৈ সমস্যা হৈছে',
-	'categorytree-retry' => 'অনুগ্রহ কৰি কিছু সময় অপেক্ষা কৰি তাৰ পিছত চেষ্টা কৰক।',
+	'categorytree-retry' => 'অনুগ্ৰহ কৰি কিছু সময় অপেক্ষা কৰি তাৰ পিছত চেষ্টা কৰক।',
 );
 
 /** Asturian (Asturianu)
@@ -3505,9 +3506,13 @@ $messages['sl'] = array(
 
 /** Albanian (Shqip)
  * @author Eagleal
+ * @author Olsi
  */
 $messages['sq'] = array(
 	'categorytree' => 'Pema e kategorive',
+	'categorytree-portlet' => 'Kategoritë',
+	'categorytree-legend' => 'Shfaqni pemën e kategorive',
+	'categorytree-desc' => 'Lundroni shpejt [[Special:CategoryTree|strukturën e kategorisë]]',
 	'categorytree-header' => 'Fusni emrin e Kategorisë për të parë Nënkategoritë si Pemë kategorish. Këtij funksioni i nevoiten JavaScript dhe AJAX për të funksionuar si duhet. Nëse keni një shfletues të vjetër, ose nëse i keni deaktivuar JavaScript kjo nuk do të funksionoj.',
 	'categorytree-category' => 'Kategoria:',
 	'categorytree-go' => 'Plotëso',
@@ -3517,12 +3522,16 @@ $messages['sq'] = array(
 	'categorytree-mode-all' => 'të gjitha faqet',
 	'categorytree-collapse' => 'mbylle',
 	'categorytree-expand' => 'hape',
+	'categorytree-member-counts' => 'përmban $1 nënkategori, $2 faqe, dhe {{PLURAL:$3|1 skedë|$3 skeda}}',
 	'categorytree-load' => 'hape',
 	'categorytree-loading' => 'duke plotësuar',
 	'categorytree-nothing-found' => 'Ju kërkoj ndjesë, nuk u gjet asgjë.',
 	'categorytree-no-subcategories' => 'Asnjë nënkategori.',
+	'categorytree-no-parent-categories' => 'nuk ka kategori prindërore',
 	'categorytree-no-pages' => 'Asnjë artikull ose nënkategori.',
 	'categorytree-not-found' => 'Kategoria <i>$1</i> nuk u gjet',
+	'categorytree-error' => 'Problem gjatë ngarkimit të të dhënave.',
+	'categorytree-retry' => 'Ju lutemi prisni një moment dhe provojeni përsëri.',
 );
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
