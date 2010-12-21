@@ -2899,12 +2899,22 @@ $messages['os'] = array(
 );
 
 /** Punjabi (ਪੰਜਾਬੀ)
+ * @author Aalam
  * @author Gman124
  */
 $messages['pa'] = array(
+	'categorytree-portlet' => 'ਕੈਟਾਗਰੀਆਂ',
+	'categorytree-legend' => 'ਕੈਟਾਗਰੀ ਲੜੀ ਵੇਖੋ',
 	'categorytree-category' => 'ਸ਼੍ਰੇਣੀ:',
+	'categorytree-go' => 'ਲੜੀ ਵੇਖੋ',
+	'categorytree-parents' => 'ਮੁੱਢਲਾ',
+	'categorytree-mode-categories' => 'ਕੇਵਲ ਕੈਟਾਗਰੀ',
 	'categorytree-mode-pages' => 'ਫਾਇਲਾਂ ਤੋਂ ਬਿਨਾਂ ਪੇਜ',
 	'categorytree-mode-all' => 'ਸਭ ਪੇਜ',
+	'categorytree-collapse' => 'ਸਮੇਟੋ',
+	'categorytree-expand' => 'ਫੈਲਾਓ',
+	'categorytree-load' => 'ਲੋਡ ਕਰੋ',
+	'categorytree-loading' => 'ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...',
 );
 
 /** Pangasinan (Pangasinan) */
