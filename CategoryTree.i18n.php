@@ -553,6 +553,13 @@ $messages['bn'] = array(
 	'categorytree-retry' => 'অনুগ্রহ করে একটু অপেক্ষা করে আবার চেষ্টা করুন।',
 );
 
+/** Tibetan (བོད་ཡིག)
+ * @author Freeyak
+ */
+$messages['bo'] = array(
+	'categorytree-portlet' => 'རྣམ་གྲངས།',
+);
+
 /** Breton (Brezhoneg)
  * @author Fulup
  */
@@ -1710,8 +1717,8 @@ Si tu ha un navigator multo vetule, o ha disactivate JavaScript, isto non functi
 	'categorytree-mode-categories' => 'categorias solmente',
 	'categorytree-mode-pages' => 'paginas excepte files',
 	'categorytree-mode-all' => 'tote le paginas',
-	'categorytree-collapse' => 'collaber',
-	'categorytree-expand' => 'expander',
+	'categorytree-collapse' => 'plicar',
+	'categorytree-expand' => 'displicar',
 	'categorytree-member-counts' => 'contine {{PLURAL:$1|1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|1 pagina|$2 paginas}}, e {{PLURAL:$3|1 file|$3 files}}',
 	'categorytree-load' => 'cargar',
 	'categorytree-loading' => 'cargamento in curso…',
@@ -3500,7 +3507,7 @@ $messages['sl'] = array(
 	'categorytree-mode-categories' => 'samo kategorije',
 	'categorytree-mode-pages' => 'strani z izjemo slik',
 	'categorytree-mode-all' => 'vse strani',
-	'categorytree-collapse' => 'skrci',
+	'categorytree-collapse' => 'skrči',
 	'categorytree-expand' => 'razširi',
 	'categorytree-member-counts' => 'vsebuje $1 {{PLURAL:$1|podkategorijo|podkategoriji|podkategorije|podkategorij}}, $2 {{PLURAL:$2|stran|strani|strani}} in $3 {{PLURAL:$3|datoteko|datoteki|datoteke|datotek}}',
 	'categorytree-load' => 'naloži',
