@@ -2488,9 +2488,9 @@ $messages['mg'] = array(
  * @author Brest2008
  */
 $messages['mk'] = array(
-	'categorytree' => 'Дрво на категории',
+	'categorytree' => 'Стебло на категории',
 	'categorytree-portlet' => 'Категории',
-	'categorytree-legend' => 'Прикажи дрво на категории',
+	'categorytree-legend' => 'Прикажи стебло на категории',
 	'categorytree-desc' => 'Динамичка навигација низ [[Special:CategoryTree|структурата на категориите]]',
 	'categorytree-header' => 'Внесете назив на категорија за да ја видите нејзината содржина во форма на дрво.
 Да напоменеме дека оваа функција побарува JavaScript т.е. AJAX.
