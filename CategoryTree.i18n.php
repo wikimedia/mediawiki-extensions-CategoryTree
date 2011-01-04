@@ -1608,20 +1608,21 @@ $messages['hsb'] = array(
 );
 
 /** Haitian (Kreyòl ayisyen)
+ * @author Boukman
  * @author Masterches
  */
 $messages['ht'] = array(
 	'categorytree' => 'Òganizasyon kategori yo',
 	'categorytree-legend' => 'Montre òganizasyon pou kategori a',
-	'categorytree-desc' => 'Jwèt, gadjèt sòti nan AJAX pou montre [[Special:CategoryTree|òganizasyon kategori ]] yon wiki.',
-	'categorytree-header' => 'Antre non yon kategori pou wè sa l genyen anndan l, òganizasyon l.
-Tande byen ke sa mande fonksyon JavaScript ki gen wo nivo tankou AJAX.
-Si ou ta genyen yon vye navigatè (navigatè, bwozè entènèt), oubyen JavaScript pa aktive, li pe ke mache byen.',
+	'categorytree-desc' => 'Gade [[Special:CategoryTree|òganizasyon kategori]] toutpandan l ap chanje.',
+	'categorytree-header' => 'Antre non yon kategori pou wè sa li genyen anndan li sou plizyè nivo.
+Note byen ke sa mande fonksyon avanse JavaScript ki rele AJAX.
+Si ou genyen yon ansyen navigatè entènèt, oubyen JavaScript pa aktive, li pap mache.',
 	'categorytree-category' => 'Kategori:',
-	'categorytree-go' => 'Montre òganizasyon, estrikti',
-	'categorytree-parents' => 'Papa ak manman',
+	'categorytree-go' => 'Montre òganizasyon sou plizyè nivo',
+	'categorytree-parents' => 'kategori ki gen pi wo nivo',
 	'categorytree-mode-categories' => 'Kategori yo sèlman',
-	'categorytree-mode-pages' => 'paj san imaj, retire tout imaj nan paj an',
+	'categorytree-mode-pages' => 'paj yo (pa gen imaj yo)',
 	'categorytree-mode-all' => 'tout paj yo',
 	'categorytree-collapse' => 'fème tout seksyon yo',
 	'categorytree-expand' => 'Elaji seksyon an',
@@ -1629,10 +1630,10 @@ Si ou ta genyen yon vye navigatè (navigatè, bwozè entènèt), oubyen JavaScri
 	'categorytree-loading' => 'ap chaje...',
 	'categorytree-nothing-found' => 'nou pa twouve anyen ki ap koresponn',
 	'categorytree-no-subcategories' => 'kategori sa pa gen pitit, pa gen kategori pi ba.',
-	'categorytree-no-pages' => 'pa gen paj oubyen atik oubyen kategori pi ba',
+	'categorytree-no-pages' => 'pa gen paj oubyen kategori ki pi ba',
 	'categorytree-not-found' => 'Nou pa twouve kategori <i>$1</i>',
 	'categorytree-error' => 'Pwoblèm lè nou tap chaje, ouvri done yo.',
-	'categorytree-retry' => 'Souple, rete yon enstan, yon moman epi eseye ankò.',
+	'categorytree-retry' => 'Tanpri, tann yon moman epi eseye ankò.',
 );
 
 /** Hungarian (Magyar)
