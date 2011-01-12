@@ -684,9 +684,16 @@ $messages['cdo'] = array(
  * @author Sasan700
  */
 $messages['ce'] = array(
+	'categorytree' => 'Кадегарши дит',
 	'categorytree-portlet' => 'Кадегарш',
-	'categorytree-category' => 'Кадегар',
+	'categorytree-legend' => 'Гайта кадегарши дит',
+	'categorytree-category' => 'Кадегар:',
+	'categorytree-go' => 'Чуйаккха',
+	'categorytree-parents' => 'Кхолламан кадегарш',
+	'categorytree-mode-all' => 'массо агlонаш',
 	'categorytree-collapse' => 'къайла яккха',
+	'categorytree-expand' => 'хьайаста',
+	'categorytree-not-found' => 'Кадегар «$1» ца карийна.',
 );
 
 /** Cebuano (Cebuano)
