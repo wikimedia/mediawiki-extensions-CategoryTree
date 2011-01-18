@@ -352,6 +352,14 @@ Ede va guazafi exulesiki favel oke ede JavaScript fliaceem tir metegis, batcoba 
 	'categorytree-retry' => 'Vay kemel aze tolyawal !',
 );
 
+/** Azerbaijani (Azərbaycanca)
+ * @author PPerviz
+ */
+$messages['az'] = array(
+	'categorytree-portlet' => 'Kateqoriyalar',
+	'categorytree-category' => 'Kateqoriya:',
+);
+
 /** Bashkir (Башҡорт)
  * @author Assele
  * @author Haqmar
