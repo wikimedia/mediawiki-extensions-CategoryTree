@@ -701,6 +701,8 @@ $messages['ce'] = array(
 	'categorytree-mode-all' => 'массо агlонаш',
 	'categorytree-collapse' => 'къайла яккха',
 	'categorytree-expand' => 'хьайаста',
+	'categorytree-loading' => 'чуйолуш…',
+	'categorytree-no-subcategories' => 'йац бухаркадегарш',
 	'categorytree-not-found' => 'Кадегар «$1» ца карийна.',
 );
 
