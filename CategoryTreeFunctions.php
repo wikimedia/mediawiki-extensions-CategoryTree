@@ -430,7 +430,7 @@ class CategoryTree {
 		$options = array( 'ORDER BY' => 'cl_type, cl_sortkey', 'LIMIT' => $wgCategoryTreeMaxChildren );
 
 		if ( $inverse ) {
-			$joins['categorylinks'] = array( 'RIGHT JOIN', 'cl_to = page_title AND page_namespace = ' . NS_CATEGORY );
+			$joins['categorylinks'] = array( 'RIGHT JOIN', array( 'cl_to = page_title', 'page_namespace' => NS_CATEGORY ) );
 			$where['cl_from'] = $title->getArticleId();
 		} else {
 			$joins['categorylinks'] = array( 'JOIN', 'cl_from = page_id' );
@@ -456,7 +456,7 @@ class CategoryTree {
 		if ( $doCount ) {
 			$tables = array_merge( $tables, array( 'category' ) );
 			$fields = array_merge( $fields, array( 'cat_id', 'cat_title', 'cat_subcats', 'cat_pages', 'cat_files' ) );
-			$joins['category'] = array( 'LEFT JOIN', 'cat_title = page_title AND page_namespace = ' . NS_CATEGORY );
+			$joins['category'] = array( 'LEFT JOIN', array( 'cat_title = page_title', 'page_namespace' => NS_CATEGORY ) );
 		}
 
 		$res = $dbr->select( $tables, $fields, $where, __METHOD__, $options, $joins );
