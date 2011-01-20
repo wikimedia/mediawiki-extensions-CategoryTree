@@ -32,7 +32,7 @@ function categoryTreeExpandNode(cat, options, lnk) {
 	div.style.display= 'block';
 	lnk.innerHTML= categoryTreeCollapseBulletMsg;
 	lnk.title= categoryTreeCollapseMsg;
-	lnk.onclick= function() { categoryTreeCollapseNode(cat, options, lnk) }
+	lnk.onclick= function() { categoryTreeCollapseNode(cat, options, lnk) };
 
 	if (!lnk.className.match(/(^| )CategoryTreeLoaded($| )/)) {
 		categoryTreeLoadNode(cat, options, lnk, div);
@@ -53,7 +53,7 @@ function categoryTreeLoadNode(cat, options, lnk, div) {
 	lnk.className= 'CategoryTreeLoaded';
 	lnk.innerHTML= categoryTreeCollapseBulletMsg;
 	lnk.title= categoryTreeCollapseMsg;
-	lnk.onclick= function() { categoryTreeCollapseNode(cat, options, lnk) }
+	lnk.onclick= function() { categoryTreeCollapseNode(cat, options, lnk) };
 
 	categoryTreeLoadChildren(cat, options, div)
 }
@@ -116,7 +116,7 @@ function categoryTreeLoadChildren(cat, options, div) {
 			retryLink.innerHTML = categoryTreeRetryMsg;
 			retryLink.onclick = function() {
 				categoryTreeLoadChildren(cat, options, div, enc);
-			}
+			};
 			div.appendChild(retryLink);
 			return;
 		}
