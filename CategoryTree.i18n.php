@@ -2209,11 +2209,15 @@ $messages['ksh'] = array(
 
 /** Kurdish (Latin) (Kurdî (Latin))
  * @author Erdal Ronahi
+ * @author George Animal
  */
 $messages['ku-latn'] = array(
 	'categorytree' => 'Dara kategoriyan',
 	'categorytree-portlet' => 'Kategorî',
+	'categorytree-legend' => 'Dara kategoriyan şanî bide',
 	'categorytree-category' => 'Kategorî',
+	'categorytree-go' => 'Darê nîşan bide',
+	'categorytree-mode-all' => 'hemû rûpel',
 	'categorytree-load' => 'bar bike',
 	'categorytree-loading' => 'tê barkirin',
 	'categorytree-no-subcategories' => 'binekategorî tune',
