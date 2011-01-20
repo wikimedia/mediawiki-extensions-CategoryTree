@@ -427,6 +427,7 @@ class CategoryTree {
 			'cl_from' );
 		$where = array();
 		$joins = array();
+		$options = array( 'ORDER BY' => 'cl_type, cl_sortkey', 'LIMIT' => $wgCategoryTreeMaxChildren );
 
 		if ( $inverse ) {
 			$joins['categorylinks'] = array( 'RIGHT JOIN', 'cl_to = page_title AND page_namespace = ' . NS_CATEGORY );
@@ -434,6 +435,7 @@ class CategoryTree {
 		} else {
 			$joins['categorylinks'] = array( 'JOIN', 'cl_from = page_id' );
 			$where['cl_to'] = $title->getDBkey();
+			$options['USE INDEX']['categorylinks'] = 'cl_sortkey';
 
 			# namespace filter.
 			if ( $namespaces ) {
@@ -457,9 +459,7 @@ class CategoryTree {
 			$joins['category'] = array( 'LEFT JOIN', 'cat_title = page_title AND page_namespace = ' . NS_CATEGORY );
 		}
 
-		$res = $dbr->select( $tables, $fields, $where, __METHOD__,
-			array( 'ORDER BY' => 'cl_type, cl_sortkey', 'LIMIT' => $wgCategoryTreeMaxChildren ),
-			$joins );
+		$res = $dbr->select( $tables, $fields, $where, __METHOD__, $options, $joins );
 
 		# collect categories separately from other pages
 		$categories = '';
