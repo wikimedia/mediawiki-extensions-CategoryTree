@@ -2217,6 +2217,7 @@ $messages['ku-latn'] = array(
 	'categorytree-legend' => 'Dara kategoriyan şanî bide',
 	'categorytree-category' => 'Kategorî',
 	'categorytree-go' => 'Darê nîşan bide',
+	'categorytree-mode-categories' => 'tenê kategoriyan',
 	'categorytree-mode-all' => 'hemû rûpel',
 	'categorytree-load' => 'bar bike',
 	'categorytree-loading' => 'tê barkirin',
