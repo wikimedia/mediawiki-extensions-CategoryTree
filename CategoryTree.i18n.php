@@ -360,7 +360,7 @@ $messages['az'] = array(
 	'categorytree-category' => 'Kateqoriya:',
 );
 
-/** Bashkir (Башҡорт)
+/** Bashkir (Башҡортса)
  * @author Assele
  * @author Haqmar
  */
@@ -458,7 +458,7 @@ $messages['be'] = array(
 	'categorytree-mode-all' => 'усе старонкі',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author Cesco
  * @author EugeneZelenko
  * @author Jim-by
@@ -870,7 +870,7 @@ $messages['de-ch'] = array(
 	'categorytree-mode-pages' => 'Seiten ausser Dateien',
 );
 
-/** German (formal address) (Deutsch (Sie-Form))
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author Raimond Spekking
  */
 $messages['de-formal'] = array(
@@ -2225,7 +2225,7 @@ $messages['ku-latn'] = array(
 	'categorytree-not-found' => 'Kategoriya <i>$1</i> nehate dîtin',
 );
 
-/** Cornish (Kernewek)
+/** Cornish (Kernowek)
  * @author Kernoweger
  * @author Kw-Moon
  */
@@ -2992,7 +2992,7 @@ $messages['pdc'] = array(
 	'categorytree-not-found' => 'Abdeeling „$1“ naett gfunne',
 );
 
-/** Pfälzisch (Pfälzisch)
+/** Pälzisch (Pälzisch)
  * @author Xqt
  */
 $messages['pfl'] = array(
@@ -3574,7 +3574,7 @@ $messages['sq'] = array(
 	'categorytree-retry' => 'Ju lutemi prisni një moment dhe provojeni përsëri.',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Millosh
  * @author Rancher
  * @author Sasa Stefanovic
@@ -3609,7 +3609,7 @@ $messages['sr-ec'] = array(
 	'categorytree-retry' => 'Молимо, сачекајте тренутак и покушајте поново.',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica))
+/** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -4435,6 +4435,15 @@ $messages['zh-hant'] = array(
 	'categorytree-not-found' => '找不到分類<i>$1</i>',
 	'categorytree-error' => '載入資料時發生錯誤。',
 	'categorytree-retry' => '請稍候一會，然後再試。',
+);
+
+/** Chinese (Taiwan) (‪中文(台灣)‬)
+ * @author Ffaarr
+ */
+$messages['zh-tw'] = array(
+	'categorytree' => '分類樹',
+	'categorytree-category' => '分類：',
+	'categorytree-mode-all' => '所有頁面',
 );
 
 /** Zulu (isiZulu) */
