@@ -2767,11 +2767,13 @@ NB: Veur disse functie he-j de JavaScript-functionaliteit, AJAX neudig. A-j een 
 	'categorytree-retry' => "Wach even en prebeer 't opniej",
 );
 
-/** Nepali (नेपाली) */
+/** Nepali (नेपाली)
+ * @author Bhawani Gautam Rhk
+ */
 $messages['ne'] = array(
 	'categorytree-category' => 'श्रेणी:',
 	'categorytree-mode-categories' => 'श्रेणी मात्र',
-	'categorytree-mode-pages' => 'तस्वीरहरू बाहेकका पृष्ठहरू',
+	'categorytree-mode-pages' => 'पृष्ठहरु फ़ाइलहरुका अतिरिक्त',
 	'categorytree-mode-all' => 'सबै पृष्ठहरु',
 	'categorytree-collapse' => 'खुम्च्याउनु',
 	'categorytree-expand' => 'फैलाउनु',
