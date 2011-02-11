@@ -496,7 +496,7 @@ class CategoryTree {
 
 	/**
 	* Returns a string with an HTML representation of the parents of the given category.
-	* $title must be a Title object
+	* @var $title Title
 	*/
 	function renderParents( $title ) {
 		global $wgCategoryTreeMaxChildren;
@@ -544,8 +544,6 @@ class CategoryTree {
 
 			$s .= "\n\t\t";
 		}
-
-		$dbr->freeResult( $res );
 
 		return $s;
 	}
