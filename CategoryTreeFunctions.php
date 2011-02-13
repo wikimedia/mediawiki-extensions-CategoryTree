@@ -765,7 +765,9 @@ class CategoryTree {
 		# The title must be in the category namespace
 		# Ignore a leading Category: if there is one
 		$t = Title::newFromText( $title, NS_CATEGORY );
-		if ( $t && ( $t->getNamespace() != NS_CATEGORY || $t->getInterWiki() != '' ) ) {
+		if ( !$t || $t->getNamespace() != NS_CATEGORY || $t->getInterWiki() != '' ) {
+			// If we were given something like "Wikipedia:Foo" or "Template:",
+			// try it again but forced.
 			$title = "Category:$title";
 			$t = Title::newFromText( $title );
 		}
