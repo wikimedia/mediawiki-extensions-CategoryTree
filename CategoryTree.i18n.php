@@ -2222,6 +2222,7 @@ $messages['ku-latn'] = array(
 	'categorytree-load' => 'bar bike',
 	'categorytree-loading' => 'tê barkirin',
 	'categorytree-no-subcategories' => 'binekategorî tune',
+	'categorytree-no-pages' => 'ti rûpel û binkategorî tinin',
 	'categorytree-not-found' => 'Kategoriya <i>$1</i> nehate dîtin',
 );
 
