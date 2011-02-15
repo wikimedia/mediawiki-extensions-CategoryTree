@@ -4104,6 +4104,13 @@ $messages['tt-cyrl'] = array(
 	'categorytree-retry' => 'Зинһар бераз көтеп торыгыз һәм тагын бер кат йөкләүне башкарып карагыз.',
 );
 
+/** Tuvinian (Тыва дыл)
+ * @author Sborsody
+ */
+$messages['tyv'] = array(
+	'categorytree-mode-all' => 'шупту арыннар',
+);
+
 /** Ukrainian (Українська)
  * @author AS
  * @author Ahonc
