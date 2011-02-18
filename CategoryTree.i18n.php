@@ -2695,12 +2695,14 @@ $messages['myv'] = array(
 
 /** Nahuatl (Nāhuatl)
  * @author Fluence
+ * @author Teòtlalili
  */
 $messages['nah'] = array(
 	'categorytree-portlet' => 'Neneuhcāyōtl',
 	'categorytree-category' => 'Neneuhcāyōtl:',
 	'categorytree-loading' => 'tēmohua...',
 	'categorytree-no-subcategories' => 'ahmo neneuhcāyōtl',
+	'categorytree-retry' => 'Timitztlatlauhtiä, ximochia chîtòn kàn oksepa xikyêyeko.',
 );
 
 /** Min Nan Chinese (Bân-lâm-gú) */
