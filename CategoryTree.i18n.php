@@ -2698,10 +2698,30 @@ $messages['myv'] = array(
  * @author Teòtlalili
  */
 $messages['nah'] = array(
-	'categorytree-portlet' => 'Neneuhcāyōtl',
-	'categorytree-category' => 'Neneuhcāyōtl:',
-	'categorytree-loading' => 'tēmohua...',
-	'categorytree-no-subcategories' => 'ahmo neneuhcāyōtl',
+	'categorytree' => 'Tlaìxmatkàtlàlilòmàmàyòtl',
+	'categorytree-portlet' => 'Tlaìxmatkàtlàlilòmë',
+	'categorytree-legend' => 'Mà monèxti tlaìxmatkàtlàlilòmàmàyòtl',
+	'categorytree-desc' => 'Nènemòwalòtiwétzìlistli ìpan in [[Special:CategoryTree|tlaìxmatkàtlàlilòtekpànyòtl]]',
+	'categorytree-header' => 'Xikîkuilo sè tlaìxmatkàtlàlilòtòkâtli, ìka tikỉtílìs in ìtlamàmàyòtekpànalpialòl.
+Xikmauhtie, molwi yankuik JavaScript tekitìliskàyòtl tètech moneki, ìxmatkàyö kèn AJAX.
+Intlà molwi yi wêkàuhkáyòtl in monetzànìltzòwîkàuh, nòso tiksewîtok in JavaScript, awel tlen monèxtis.',
+	'categorytree-category' => 'Tlaìxmatkàtlàlilòtl:',
+	'categorytree-go' => 'Mà monèxti màmàyòtl',
+	'categorytree-parents' => 'Achkàuhkàtlaìxmatkàtlàlilòmë',
+	'categorytree-mode-categories' => 'San tlaìxmatkàtlàlilòmë mà monèxtìkàn',
+	'categorytree-mode-pages' => 'tlaìxpaltin âmìwàn ìxiptin',
+	'categorytree-mode-all' => 'Nochtin in tlaìxpaltin',
+	'categorytree-collapse' => 'motlàtis',
+	'categorytree-expand' => 'monèxtis',
+	'categorytree-member-counts' => 'kipia {{PLURAL:$1|sè tlaìxmatkàtlàlilòpilòtl|$1 tlaìxmatkàtlàlilòpilòmë}}, {{PLURAL:$2|tlaìxpalli|$2 tlaìxpaltin}}, y {{PLURAL:$3|sè èwalli|$3 èwaltin}}',
+	'categorytree-load' => 'motémòwis',
+	'categorytree-loading' => 'wàltémòtíkä...',
+	'categorytree-nothing-found' => 'âmò tlen òmâsik',
+	'categorytree-no-subcategories' => 'âmìnwàn tlaìxmatkàtlàlilòpilòmë',
+	'categorytree-no-parent-categories' => 'ayàkë achkàuhkàtlaìxmatkàtlàlilòmë',
+	'categorytree-no-pages' => 'ayàkë tlaìxpaltin nòso tlaìxmatkàtlàlilòpilòmë',
+	'categorytree-not-found' => 'Tlaìxmatkàtlàlilòtl <i>$1</i> âmò tlâxìli',
+	'categorytree-error' => 'Âwel témò in tlamatilisèwalli',
 	'categorytree-retry' => 'Timitztlatlauhtiä, ximochia chîtòn kàn oksepa xikyêyeko.',
 );
 
