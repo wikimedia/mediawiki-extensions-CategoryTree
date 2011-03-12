@@ -105,6 +105,16 @@ Status message shown while loading content',
 	'categorytree-retry' => 'Instruction to try again later',
 );
 
+/** Dusun Bundu-liwan (Dusun Bundu-liwan)
+ * @author FRANCIS5091
+ */
+$messages['dtp'] = array(
+	'categorytree-portlet' => 'Tinanansar',
+	'categorytree-category' => 'Tinansar',
+	'categorytree-mode-all' => 'Oinsanan bobolikon',
+	'categorytree-no-subcategories' => 'Ingaa kawo do kalas',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author Naudefj
