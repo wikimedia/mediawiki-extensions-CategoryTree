@@ -2703,6 +2703,13 @@ $messages['myv'] = array(
 	'categorytree-not-found' => '«$1» категориясь а муеви.',
 );
 
+/** Mazanderani (مازِرونی)
+ * @author محک
+ */
+$messages['mzn'] = array(
+	'categorytree-portlet' => 'رج‌ئون',
+);
+
 /** Nahuatl (Nāhuatl)
  * @author Fluence
  * @author Teòtlalili
