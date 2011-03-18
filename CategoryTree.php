@@ -67,7 +67,7 @@ $wgCategoryTreeHijackPageCategories = false; # EXPERIMENTAL! NOT YET FOR PRODUCT
 
 $wgCategoryTreeExtPath = '/extensions/CategoryTree';
 $wgCategoryTreeVersion = '6';  # NOTE: bump this when you change the CSS or JS files!
-$wgCategoryTreeUseCategoryTable = version_compare( $wgVersion, "1.13", '>=' );
+$wgCategoryTreeUseCategoryTable = true;
 
 $wgCategoryTreeOmitNamespace = CT_HIDEPREFIX_CATEGORIES;
 $wgCategoryTreeDefaultMode = CT_MODE_CATEGORIES;
