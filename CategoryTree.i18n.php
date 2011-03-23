@@ -724,9 +724,30 @@ $messages['ceb'] = array(
 	'categorytree-category' => 'Kategoriya:',
 );
 
-/** Sorani (کوردی) */
+/** Sorani (کوردی)
+ * @author Asoxor
+ */
 $messages['ckb'] = array(
+	'categorytree' => 'درەختی پۆل',
+	'categorytree-portlet' => 'پۆلەكان',
+	'categorytree-legend' => 'درەختی پۆل نیشانبدە',
+	'categorytree-header' => 'ناوی پۆلێک بنووسە بۆ بینینی ناوەرۆک و پێکھاتە درەختییەکەی.
+ئاگادار بە کە ئەمە پێویستی بە کارگێڕییەکی پێشکەوتووی JavaScript ھەیە کە بە AJAX ناسراوە.
+ئەگەر وێبگەڕێکی زۆر کۆنت ھەیە یان JavaScriptت لەکارخستووە، کار ناکات.',
 	'categorytree-category' => 'پۆل:',
+	'categorytree-go' => 'دەرختەکە نیشانبدە',
+	'categorytree-mode-categories' => 'تەنیا پۆلەکان',
+	'categorytree-mode-all' => 'گشت پەڕەکان',
+	'categorytree-collapse' => 'کۆیبکەوە',
+	'categorytree-expand' => 'بڵاویبکەوە',
+	'categorytree-member-counts' => '{{PLURAL:$1|یەک ژێرپۆل|$1 ژێرپۆل}}، {{PLURAL:$2|یەک پەڕە|$2 پەڕە}}، and {{PLURAL:$3|یەک پەڕگە|$3 پەڕگە}} لەبەردەگرێتەوە',
+	'categorytree-load' => 'باربکە',
+	'categorytree-loading' => 'بارکردن...',
+	'categorytree-nothing-found' => 'ھیچ نەدۆزرایەوە',
+	'categorytree-no-subcategories' => 'ھیچ ژێرھاوپۆلێک نییە',
+	'categorytree-not-found' => 'پۆلی <i>$1</i> نەدۆزرایەوە',
+	'categorytree-error' => 'کێشە لە بارکردنی داتا.',
+	'categorytree-retry' => 'تکایە دەمێک ڕاوەستە و دیسان تاقیبکەوە.',
 );
 
 /** Corsican (Corsu) */
