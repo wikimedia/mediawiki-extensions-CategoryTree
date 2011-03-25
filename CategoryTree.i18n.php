@@ -2661,6 +2661,7 @@ $messages['mr'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
  * @author Aurora
  * @author Aviator
  * @author Kurniasan
@@ -2680,7 +2681,7 @@ Jika anda menggunakan pelayar web yang sudah ketinggalan, atau mematikan JavaScr
 	'categorytree-mode-pages' => 'laman kecuali imej',
 	'categorytree-mode-all' => 'semua laman',
 	'categorytree-collapse' => 'lipat',
-	'categorytree-expand' => 'bentang',
+	'categorytree-expand' => 'bentangkan',
 	'categorytree-member-counts' => 'mengandungi $1 subkategori, $1 laman, dan $3 fail',
 	'categorytree-load' => 'muat',
 	'categorytree-loading' => 'memuat…',
