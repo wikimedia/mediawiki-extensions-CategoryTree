@@ -2980,6 +2980,14 @@ $messages['oc'] = array(
 	'categorytree-retry' => 'Esperatz un moment puèi tornatz ensajar.',
 );
 
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Psubhashish
+ */
+$messages['or'] = array(
+	'categorytree-category' => 'ଶ୍ରେଣି:',
+	'categorytree-mode-categories' => 'କେବଳ ଶ୍ରେଣିଗୁଡ଼ିକ',
+);
+
 /** Ossetic (Иронау)
  * @author Amikeco
  */
