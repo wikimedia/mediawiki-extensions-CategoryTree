@@ -2984,8 +2984,13 @@ $messages['oc'] = array(
  * @author Psubhashish
  */
 $messages['or'] = array(
-	'categorytree-category' => 'ଶ୍ରେଣି:',
-	'categorytree-mode-categories' => 'କେବଳ ଶ୍ରେଣିଗୁଡ଼ିକ',
+	'categorytree-portlet' => 'ବିଭାଗସବୁ',
+	'categorytree-legend' => 'ବିଭାଗିକରଣ',
+	'categorytree-desc' => '[[Special:CategoryTree|ବିଭାଗିକରଣ]]କୁ ଚାଲିଯିବା',
+	'categorytree-category' => 'ବିଭାଗ:',
+	'categorytree-mode-categories' => 'କେବଳ ବିଭାଗସବୁ',
+	'categorytree-collapse' => 'ଚାପିଦେବା',
+	'categorytree-expand' => 'ଖୋଲିକରି ଦେଖାଇବା',
 );
 
 /** Ossetic (Иронау)
