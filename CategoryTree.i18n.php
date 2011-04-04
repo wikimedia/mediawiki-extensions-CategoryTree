@@ -1718,6 +1718,7 @@ Ha túlságosan régi böngésződ van, vagy a JavaScript le van tiltva, akkor n
 );
 
 /** Armenian (Հայերեն)
+ * @author Chaojoker
  * @author Teak
  */
 $messages['hy'] = array(
@@ -1736,7 +1737,7 @@ $messages['hy'] = array(
 	'categorytree-mode-all' => 'բոլոր էջերը',
 	'categorytree-collapse' => 'փակել',
 	'categorytree-expand' => 'բացել',
-	'categorytree-member-counts' => 'պարունակում է {{PLURAL:$1|1 ենթակատեգորիա|$1 ենթակատեգորիա}}, {{PLURAL:$2|1 էջ|$2 էջ}} և {{PLURAL:$3|1 ֆայլ|$3 ֆայլ}}',
+	'categorytree-member-counts' => 'պարունակում է {{PLURAL:$1|1 ենթակատեգորիա|$1 ենթակատեգորիա}}, {{PLURAL:$2|1 էջ|$2 էջ}} և {{PLURAL:$3|1 նիշք|$3 նիշք}}',
 	'categorytree-load' => 'բեռնել',
 	'categorytree-loading' => 'բեռնվում է',
 	'categorytree-nothing-found' => 'ոչինչ չի գտնվել',
@@ -3664,9 +3665,9 @@ $messages['sr-ec'] = array(
 	'categorytree-portlet' => 'категорије',
 	'categorytree-legend' => 'Прикажи стабло категорија',
 	'categorytree-desc' => 'Динамичка навигација [[Special:CategoryTree|структуре категорија]].',
-	'categorytree-header' => 'Унесите име категорији чији садржај желите да видите као дрво.
-Ово захтева напредну ЈаваСкрип функцију познату као AJAX.
-Уколико имате веома стари браузер, или се искључили ЈаваСкрипт, дрво категорија неће радити.',
+	'categorytree-header' => 'Унесите назив категорије чији садржај желите да видите у стабластој структури.
+Ово захтева напредну могућност јаваскрипта познату као ајакс.
+Ако имате старији прегледач или сте онемогућили јаваскрипт, стабласти приказ неће радити.',
 	'categorytree-category' => 'Категорија:',
 	'categorytree-go' => 'Прикажи стабло',
 	'categorytree-parents' => 'надређене категорије',
