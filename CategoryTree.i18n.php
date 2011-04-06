@@ -2996,8 +2996,10 @@ $messages['or'] = array(
 
 /** Ossetic (Иронау)
  * @author Amikeco
+ * @author Amire80
  */
 $messages['os'] = array(
+	'categorytree' => 'Категориты бæлас',
 	'categorytree-portlet' => 'Категоритæ',
 	'categorytree-category' => 'Категори:',
 	'categorytree-go' => 'Равдис бæлас',
