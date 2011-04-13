@@ -2985,11 +2985,11 @@ $messages['oc'] = array(
  * @author Psubhashish
  */
 $messages['or'] = array(
-	'categorytree-portlet' => 'ବିଭାଗସବୁ',
-	'categorytree-legend' => 'ବିଭାଗିକରଣ',
-	'categorytree-desc' => '[[Special:CategoryTree|ବିଭାଗିକରଣ]]କୁ ଚାଲିଯିବା',
-	'categorytree-category' => 'ବିଭାଗ:',
-	'categorytree-mode-categories' => 'କେବଳ ବିଭାଗସବୁ',
+	'categorytree-portlet' => 'ଶ୍ରେଣୀସବୁ',
+	'categorytree-legend' => 'ଶ୍ରେଣୀବିଭାଗ',
+	'categorytree-desc' => '[[Special:CategoryTree|ଶ୍ରେଣୀବିଭାଗ]]କୁ ଚାଲିଯିବା',
+	'categorytree-category' => 'ଶ୍ରେଣୀ:',
+	'categorytree-mode-categories' => 'କେବଳ ଶ୍ରେଣୀସବୁ',
 	'categorytree-collapse' => 'ଚାପିଦେବା',
 	'categorytree-expand' => 'ଖୋଲିକରି ଦେଖାଇବା',
 );
