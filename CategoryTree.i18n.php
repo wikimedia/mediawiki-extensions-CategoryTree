@@ -105,16 +105,6 @@ Status message shown while loading content',
 	'categorytree-retry' => 'Instruction to try again later',
 );
 
-/** Dusun Bundu-liwan (Dusun Bundu-liwan)
- * @author FRANCIS5091
- */
-$messages['dtp'] = array(
-	'categorytree-portlet' => 'Tinanansar',
-	'categorytree-category' => 'Tinansar',
-	'categorytree-mode-all' => 'Oinsanan bobolikon',
-	'categorytree-no-subcategories' => 'Ingaa kawo do kalas',
-);
-
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author Naudefj
@@ -968,6 +958,16 @@ Jolic maš wjelgin stary browser abo jolic JavaScript jo wótšaltowane, toś te
 	'categorytree-not-found' => 'Kategorija <i>$1</i> njenamakana',
 	'categorytree-error' => 'Problem pśi lodowanju datow.',
 	'categorytree-retry' => 'Pócakaj pšosym moment a wopytaj hyšći raz.',
+);
+
+/** Dusun Bundu-liwan (Dusun Bundu-liwan)
+ * @author FRANCIS5091
+ */
+$messages['dtp'] = array(
+	'categorytree-portlet' => 'Tinanansar',
+	'categorytree-category' => 'Tinansar',
+	'categorytree-mode-all' => 'Oinsanan bobolikon',
+	'categorytree-no-subcategories' => 'Ingaa kawo do kalas',
 );
 
 /** Ewe (Eʋegbe) */
@@ -2989,9 +2989,16 @@ $messages['or'] = array(
 	'categorytree-legend' => 'ଶ୍ରେଣୀବିଭାଗ',
 	'categorytree-desc' => '[[Special:CategoryTree|ଶ୍ରେଣୀବିଭାଗ]]କୁ ଚାଲିଯିବା',
 	'categorytree-category' => 'ଶ୍ରେଣୀ:',
+	'categorytree-parents' => 'ମୂଳ',
 	'categorytree-mode-categories' => 'କେବଳ ଶ୍ରେଣୀସବୁ',
+	'categorytree-mode-all' => 'ସବୁ ପୃଷ୍ଠା',
 	'categorytree-collapse' => 'ଚାପିଦେବା',
 	'categorytree-expand' => 'ଖୋଲିକରି ଦେଖାଇବା',
+	'categorytree-load' => 'ଖୋଲିବା',
+	'categorytree-loading' => 'ଖୋଲୁଛି...',
+	'categorytree-nothing-found' => 'କିଛି ମିଳିଲା ନାହିଁ',
+	'categorytree-no-subcategories' => 'ଶ୍ରେଣୀ ନାହିଁ',
+	'categorytree-no-parent-categories' => 'କିଛି ମୂଳ ଶ୍ରେଣୀ ନାହିଁ',
 );
 
 /** Ossetic (Иронау)
