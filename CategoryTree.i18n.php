@@ -1777,7 +1777,7 @@ Si tu ha un navigator multo vetule, o ha disactivate JavaScript, isto non functi
 	'categorytree-no-parent-categories' => 'nulle categoria superior',
 	'categorytree-no-pages' => 'nulle pagina o subcategoria',
 	'categorytree-not-found' => 'Categoria <i>$1</i> non trovate',
-	'categorytree-error' => 'Problema al cargar le datos.',
+	'categorytree-error' => 'Problema de cargamento de datos.',
 	'categorytree-retry' => 'Per favor attende un momento e reproba.',
 );
 
@@ -2985,20 +2985,28 @@ $messages['oc'] = array(
  * @author Psubhashish
  */
 $messages['or'] = array(
+	'categorytree' => 'ଶ୍ରେଣୀବିଭାଗ',
 	'categorytree-portlet' => 'ଶ୍ରେଣୀସବୁ',
 	'categorytree-legend' => 'ଶ୍ରେଣୀବିଭାଗ',
 	'categorytree-desc' => '[[Special:CategoryTree|ଶ୍ରେଣୀବିଭାଗ]]କୁ ଚାଲିଯିବା',
 	'categorytree-category' => 'ଶ୍ରେଣୀ:',
+	'categorytree-go' => 'ବିଭାଗଗୁଡ଼ିକ ଦେଖାଇବା',
 	'categorytree-parents' => 'ମୂଳ',
 	'categorytree-mode-categories' => 'କେବଳ ଶ୍ରେଣୀସବୁ',
+	'categorytree-mode-pages' => 'ଫାଇଲ ନଥିବା ପୃଷ୍ଠାସବୁ',
 	'categorytree-mode-all' => 'ସବୁ ପୃଷ୍ଠା',
 	'categorytree-collapse' => 'ଚାପିଦେବା',
 	'categorytree-expand' => 'ଖୋଲିକରି ଦେଖାଇବା',
+	'categorytree-member-counts' => 'ଏହା ଭିତରେ {{PLURAL:$1|1ଟି ଶ୍ରେଣୀ|$1 ଟି ସାନଶ୍ରେଣୀ}}, {{PLURAL:$2|1 ପୃଷ୍ଠା|$2 ଟି ପୃଷ୍ଠା}} ଓ {{PLURAL:$3|1 ଟି ଫାଇଲ|$3 ଟି ଫାଇଲ}} ଅଛି ।',
 	'categorytree-load' => 'ଖୋଲିବା',
 	'categorytree-loading' => 'ଖୋଲୁଛି...',
 	'categorytree-nothing-found' => 'କିଛି ମିଳିଲା ନାହିଁ',
 	'categorytree-no-subcategories' => 'ଶ୍ରେଣୀ ନାହିଁ',
 	'categorytree-no-parent-categories' => 'କିଛି ମୂଳ ଶ୍ରେଣୀ ନାହିଁ',
+	'categorytree-no-pages' => 'କିଛି ପୃଷ୍ଠା ବା ସାନଶ୍ରେଣୀ ନାହିଁ',
+	'categorytree-not-found' => '<i>$1</i> ଶ୍ରେଣୀଟି ମିଳିଲା ନାହିଁ',
+	'categorytree-error' => 'ଡାଟା ଖୋଲିବା ପାଇଁ ଅସୁବିଧା ହେଉଛି',
+	'categorytree-retry' => 'ଦୟାକରି କିଛି ସମୟ ପରେ ଚେଷ୍ଟା କରନ୍ତୁ ।',
 );
 
 /** Ossetic (Иронау)
