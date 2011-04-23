@@ -193,6 +193,7 @@ $messages['an'] = array(
 
 /** Arabic (العربية)
  * @author Meno25
+ * @author OsamaK
  */
 $messages['ar'] = array(
 	'categorytree' => 'شجرة تصنيف',
@@ -208,7 +209,7 @@ $messages['ar'] = array(
 	'categorytree-mode-categories' => 'تصنيفات فقط',
 	'categorytree-mode-pages' => 'الصفحات ماعدا الملفات',
 	'categorytree-mode-all' => 'كل الصفحات',
-	'categorytree-collapse' => 'ضغط',
+	'categorytree-collapse' => 'اطوِ',
 	'categorytree-expand' => 'فرد',
 	'categorytree-member-counts' => 'يحتوي على {{PLURAL:$1|1 تصنيف فرعي|$1 تصنيف فرعي}}، {{PLURAL:$2|1 صفحة|$2 صفحة}}، و {{PLURAL:$3|1 ملف|$3 ملف}}',
 	'categorytree-load' => 'تحميل',
@@ -353,11 +354,18 @@ Ede va guazafi exulesiki favel oke ede JavaScript fliaceem tir metegis, batcoba 
 );
 
 /** Azerbaijani (Azərbaycanca)
+ * @author Cekli829
  * @author PPerviz
  */
 $messages['az'] = array(
 	'categorytree-portlet' => 'Kateqoriyalar',
 	'categorytree-category' => 'Kateqoriya:',
+	'categorytree-mode-all' => 'bütün səhifələr',
+	'categorytree-collapse' => 'qaytar',
+	'categorytree-expand' => 'genişləndir',
+	'categorytree-load' => 'yüklə',
+	'categorytree-loading' => 'yüklənir…',
+	'categorytree-no-subcategories' => 'alt kateqoriyalar yoxdur',
 );
 
 /** Bashkir (Башҡортса)
