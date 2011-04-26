@@ -356,20 +356,32 @@ Ede va guazafi exulesiki favel oke ede JavaScript fliaceem tir metegis, batcoba 
 /** Azerbaijani (Azərbaycanca)
  * @author Cekli829
  * @author PPerviz
+ * @author Vugar 1981
  */
 $messages['az'] = array(
 	'categorytree' => 'Kateqoriya ağacı',
 	'categorytree-portlet' => 'Kateqoriyalar',
+	'categorytree-legend' => 'Kateqoriya ağacını göstər.',
+	'categorytree-desc' => '[[Special:CategoryTree|Kategori sistemini]] dinamik idarə et',
+	'categorytree-header' => 'Kategoriya adını girib, içerisini ierarxik şəkildə görə bilərsiniz. Bu özəllik AJAX adıyla biliən JavaScript ilə oşləyər. əgər operatorunuz köhnə isə ya da JavaScript istifadəsi mümkün deyilsə, işləməz.',
 	'categorytree-category' => 'Kateqoriya:',
 	'categorytree-go' => 'Yüklə',
 	'categorytree-parents' => 'Üst kateqoriyalar',
 	'categorytree-mode-categories' => 'sadəcə kateqoriyaları göstər',
+	'categorytree-mode-pages' => 'Fayllardan əlavə səhifələr',
 	'categorytree-mode-all' => 'bütün səhifələr',
 	'categorytree-collapse' => 'qaytar',
 	'categorytree-expand' => 'genişləndir',
+	'categorytree-member-counts' => '{{PLURAL:$1|1 altkategoriya|$1 altkategoriya}}, {{PLURAL:$2|1 səhifə|$2 səhifə}}, ve {{PLURAL:$3|1 şəkil|$3 şəkil}}dən ibarətdir',
 	'categorytree-load' => 'yüklə',
 	'categorytree-loading' => 'yüklənir…',
+	'categorytree-nothing-found' => 'Təəsüf edirik, nəticə yoxdur.',
 	'categorytree-no-subcategories' => 'alt kateqoriyalar yoxdur',
+	'categorytree-no-parent-categories' => 'Üst kateqoriya yoxdur.',
+	'categorytree-no-pages' => 'Alt kateqoriya və məqalə yoxdur.',
+	'categorytree-not-found' => '<i>"$1"</i> adlı kateqoriya tapılmadı.',
+	'categorytree-error' => 'Məlumat bazasında problem var.',
+	'categorytree-retry' => 'Xahiş edirik bir az gözləyin və yenidən yoxlayın.',
 );
 
 /** Bashkir (Башҡортса)
@@ -2353,6 +2365,13 @@ Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da
 	'categorytree-not-found' => "Kategorie ''$1'' net fonnt",
 	'categorytree-error' => 'Problem beim luede vun den Donneeën.',
 	'categorytree-retry' => 'Waart w.e.g. een Ament a probéiert dann nach eng Kéier.',
+);
+
+/** Lezghian (Лезги)
+ * @author Namik
+ */
+$messages['lez'] = array(
+	'categorytree-category' => 'Klватlалар:',
 );
 
 /** Lingua Franca Nova (Lingua Franca Nova)
