@@ -2744,6 +2744,7 @@ $messages['myv'] = array(
 	'categorytree-legend' => 'Невтемс явкс чувтонть',
 	'categorytree-category' => 'Категория:',
 	'categorytree-go' => 'Невтемс чувтонзо',
+	'categorytree-parents' => 'Тетянзо-аванзо',
 	'categorytree-mode-categories' => 'ансяк категорият',
 	'categorytree-mode-all' => 'весе лопатне',
 	'categorytree-collapse' => 'теингавтомс',
