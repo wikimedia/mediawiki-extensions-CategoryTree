@@ -808,9 +808,10 @@ $messages['cs'] = array(
  * @author ОйЛ
  */
 $messages['cu'] = array(
-	'categorytree-portlet' => 'катигорі́ѩ',
-	'categorytree-category' => 'катигорі́ꙗ :',
-	'categorytree-mode-all' => 'вьсѩ́ страни́цѧ',
+	'categorytree' => 'катигорїи дрѣво',
+	'categorytree-portlet' => 'катигорїѩ',
+	'categorytree-category' => 'катигорїꙗ :',
+	'categorytree-mode-all' => 'вьсѩ страницѧ',
 );
 
 /** Welsh (Cymraeg)
@@ -2908,6 +2909,15 @@ Als u een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze
 	'categorytree-not-found' => "Categorie ''$1'' niet gevonden",
 	'categorytree-error' => 'Probleem bij het laden van de gegevens.',
 	'categorytree-retry' => 'Wacht even en probeer het dan opnieuw.',
+);
+
+/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'categorytree-header' => 'Geef een categorienaam in om de inhoud als een boomstructuur te bekijken.
+Let op: deze functie gebruikt JavaScript-functionaliteit die bekend staat als AJAX.
+Als je een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze functie niet.',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
