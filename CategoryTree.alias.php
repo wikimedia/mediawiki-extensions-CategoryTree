@@ -11,9 +11,7 @@
 
 $specialPageAliases = array();
 
-/** English
- * @author Daniel Kinzler, brightbyte.de
- */
+/** English (English) */
 $specialPageAliases['en'] = array(
 	'CategoryTree' => array( 'CategoryTree' ),
 );
@@ -43,7 +41,7 @@ $specialPageAliases['bcl'] = array(
 	'CategoryTree' => array( 'KahoyNinKategorya' ),
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца)) */
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬) */
 $specialPageAliases['be-tarask'] = array(
 	'CategoryTree' => array( 'Дрэва_катэгорыяў' ),
 );
@@ -95,7 +93,7 @@ $specialPageAliases['el'] = array(
 
 /** Esperanto (Esperanto) */
 $specialPageAliases['eo'] = array(
-	'CategoryTree' => array( 'Kategoriarbo' ),
+	'CategoryTree' => array( 'Kategorio-arbo' ),
 );
 
 /** Spanish (Español) */
@@ -135,7 +133,7 @@ $specialPageAliases['frp'] = array(
 
 /** Galician (Galego) */
 $specialPageAliases['gl'] = array(
-	'CategoryTree' => array( 'Árbore de categorías' ),
+	'CategoryTree' => array( 'Árbore_de_categorías' ),
 );
 
 /** Swiss German (Alemannisch) */
@@ -158,9 +156,14 @@ $specialPageAliases['hsb'] = array(
 	'CategoryTree' => array( 'Kategorijowy_štom' ),
 );
 
+/** 湘语 (湘语) */
+$specialPageAliases['hsn'] = array(
+	'CategoryTree' => array( '类别树' ),
+);
+
 /** Haitian (Kreyòl ayisyen) */
 $specialPageAliases['ht'] = array(
-	'CategoryTree' => array( 'KategoriPlant' ),
+	'CategoryTree' => array( 'NivoKategori' ),
 );
 
 /** Hungarian (Magyar) */
@@ -193,6 +196,11 @@ $specialPageAliases['ja'] = array(
 	'CategoryTree' => array( 'カテゴリツリー' ),
 );
 
+/** Georgian (ქართული) */
+$specialPageAliases['ka'] = array(
+	'CategoryTree' => array( 'კატეგორიის_ხე' ),
+);
+
 /** Khmer (ភាសាខ្មែរ) */
 $specialPageAliases['km'] = array(
 	'CategoryTree' => array( 'មែកធាងចំណាត់ថ្នាក់ក្រុម' ),
@@ -206,6 +214,11 @@ $specialPageAliases['ko'] = array(
 /** Colognian (Ripoarisch) */
 $specialPageAliases['ksh'] = array(
 	'CategoryTree' => array( 'Saachjruppeboum' ),
+);
+
+/** Kurdish (Kurdî) */
+$specialPageAliases['ku'] = array(
+	'CategoryTree' => array( 'Dara_kategoriyan' ),
 );
 
 /** Latin (Latina) */
@@ -350,7 +363,7 @@ $specialPageAliases['tl'] = array(
 
 /** Turkish (Türkçe) */
 $specialPageAliases['tr'] = array(
-	'CategoryTree' => array( 'KategoriHiyerarşisi' ),
+	'CategoryTree' => array( 'KategoriAğacı', 'KategoriHiyerarşisi', 'UlamAğacı', 'UlamHiyerarşisi' ),
 );
 
 /** Vèneto (Vèneto) */
