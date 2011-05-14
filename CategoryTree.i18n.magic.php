@@ -23,7 +23,7 @@ $magicWords['af'] = array(
 
 /** Arabic (العربية) */
 $magicWords['ar'] = array(
-	'categorytree' => array( 0, 'شجرة_تصنيف', 'categorytree' ),
+	'categorytree' => array( 0, 'شجرة_تصنيف' ),
 );
 
 /** Egyptian Spoken Arabic (مصرى) */
@@ -33,7 +33,7 @@ $magicWords['arz'] = array(
 
 /** Breton (Brezhoneg) */
 $magicWords['br'] = array(
-	'categorytree' => array( 0, 'GwezennadurRummad', 'categorytree' ),
+	'categorytree' => array( 0, 'GwezennadurRummad' ),
 );
 
 /** Chechen (Нохчийн) */
@@ -76,6 +76,11 @@ $magicWords['ko'] = array(
 	'categorytree' => array( 0, '분류트리' ),
 );
 
+/** ‪Kurdî (latînî)‬ (‪Kurdî (latînî)‬) */
+$magicWords['ku-latn'] = array(
+	'categorytree' => array( 0, 'dara_kategoriyan' ),
+);
+
 /** Ladino (Ladino) */
 $magicWords['lad'] = array(
 	'categorytree' => array( 0, 'árvoledekateggorías', 'árboldecategorías', 'arboldecategorias', 'categorytree' ),
@@ -84,6 +89,11 @@ $magicWords['lad'] = array(
 /** Malagasy (Malagasy) */
 $magicWords['mg'] = array(
 	'categorytree' => array( 0, 'karazantsokajy', 'categorytree' ),
+);
+
+/** Macedonian (Македонски) */
+$magicWords['mk'] = array(
+	'categorytree' => array( 0, 'стеблонакатегории' ),
 );
 
 /** Malayalam (മലയാളം) */
@@ -113,7 +123,12 @@ $magicWords['no'] = array(
 
 /** Russian (Русский) */
 $magicWords['ru'] = array(
-	'categorytree' => array( 0, 'деревокатегорий', 'categorytree' ),
+	'categorytree' => array( 0, 'деревокатегорий' ),
+);
+
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬) */
+$magicWords['sr-ec'] = array(
+	'categorytree' => array( 0, 'стаблокатегорије', 'стабло_категорије' ),
 );
 
 /** Swedish (Svenska) */
@@ -123,12 +138,12 @@ $magicWords['sv'] = array(
 
 /** Turkish (Türkçe) */
 $magicWords['tr'] = array(
-	'categorytree' => array( 0, 'kategorihiyerarşisi', 'categorytree' ),
+	'categorytree' => array( 0, 'kategorihiyerarşisi' ),
 );
 
 /** Татарча (Татарча) */
 $magicWords['tt-cyrl'] = array(
-	'categorytree' => array( 0, 'төркемнәр_шәҗәрәсе', 'деревокатегорий' ),
+	'categorytree' => array( 0, 'төркемнәр_шәҗәрәсе' ),
 );
 
 /** Ukrainian (Українська) */
@@ -143,5 +158,5 @@ $magicWords['vi'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬) */
 $magicWords['zh-hans'] = array(
-	'categorytree' => array( 0, '分类树', 'categorytree' ),
+	'categorytree' => array( 0, '分类树' ),
 );
