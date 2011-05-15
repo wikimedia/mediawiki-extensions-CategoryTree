@@ -3590,6 +3590,7 @@ $messages['sh'] = array(
 );
 
 /** Sinhala (සිංහල)
+ * @author Singhalawap
  * @author නන්දිමිතුරු
  */
 $messages['si'] = array(
@@ -3601,7 +3602,7 @@ $messages['si'] = array(
 AJAX නමින් හැඳින්වෙන ප්‍රගත ජාවාස්ක්‍රිප්ට් ශ්‍රීතියතායව මේ සඳහා අවශ්‍ය බව සටහන් කර ගන්න.
 ඔබ සතුව ඇත්තේ ඉතා පැරණි බ්‍රවුසරයක් නම් හෝ ජාවාස්ක්‍රිප්ට් අක්‍රීය කොට තිබේ නම් මෙය ක්‍රි‍යාත්මක නොවනු ඇත.',
 	'categorytree-category' => 'ප්‍රවර්ගය:',
-	'categorytree-go' => 'රුක පෙන්වන්න',
+	'categorytree-go' => 'ගස පෙන්වන්න',
 	'categorytree-parents' => 'මාපියන්',
 	'categorytree-mode-categories' => 'ප්‍රවර්ග පමණයි',
 	'categorytree-mode-pages' => 'ගොනු හැර ඉතිරි පිටු',
@@ -3613,7 +3614,7 @@ AJAX නමින් හැඳින්වෙන ප්‍රගත ජාවා
 	'categorytree-loading' => 'බාගනිමින්…',
 	'categorytree-nothing-found' => 'කිසිවක් හමුනොවිනි',
 	'categorytree-no-subcategories' => 'උපප්‍රවර්ග නොමැත',
-	'categorytree-no-parent-categories' => 'මාපිය උපප්‍රවර්ග නොමැත',
+	'categorytree-no-parent-categories' => 'මවු ප්‍රවර්ග නැත',
 	'categorytree-no-pages' => 'පිටු හෝ උපප්‍රවර්ග නොමැත',
 	'categorytree-not-found' => '<i>$1</i>  ප්‍රවර්ගය සොයාගත නොහැකි විය',
 	'categorytree-error' => 'දත්ත බාගැනීමේ ගැටළු පැවතිණි.',
