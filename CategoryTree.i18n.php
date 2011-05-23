@@ -3683,6 +3683,14 @@ $messages['sl'] = array(
 	'categorytree-retry' => 'Prosimo, počakajte trenutek in poskusite znova.',
 );
 
+/** Somali (Soomaaliga)
+ * @author Maax
+ */
+$messages['so'] = array(
+	'categorytree-category' => 'Qeybta:',
+	'categorytree-not-found' => 'Qeybta  <i>$1</i> lama helin',
+);
+
 /** Albanian (Shqip)
  * @author Eagleal
  * @author Olsi
