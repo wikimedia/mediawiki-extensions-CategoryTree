@@ -2717,7 +2717,7 @@ Jika anda menggunakan pelayar web yang sudah ketinggalan, atau mematikan JavaScr
 	'categorytree-expand' => 'bentangkan',
 	'categorytree-member-counts' => 'mengandungi $1 subkategori, $1 laman, dan $3 fail',
 	'categorytree-load' => 'muat',
-	'categorytree-loading' => 'sedang dimuatkan…',
+	'categorytree-loading' => 'memuatkan…',
 	'categorytree-nothing-found' => 'kosong',
 	'categorytree-no-subcategories' => 'tiada subkategori',
 	'categorytree-no-parent-categories' => 'tiada kategori induk',
