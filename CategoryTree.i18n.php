@@ -818,7 +818,7 @@ $messages['cu'] = array(
  * @author Lloffiwr
  */
 $messages['cy'] = array(
-	'categorytree' => 'CoedenGategori',
+	'categorytree' => 'Coeden gategori',
 	'categorytree-portlet' => 'Categorïau',
 	'categorytree-legend' => 'Dangos y goeden gategori',
 	'categorytree-desc' => "Teclyn AJAX yn arddangos [[Special:CategoryTree|adeiledd categorïau]]'r wici",
