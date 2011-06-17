@@ -48,7 +48,7 @@ class CategoryTree {
 			if ( sizeof( $this->mOptions['namespaces'] ) === 1
 				&& $this->mOptions['namespaces'][0] == NS_CATEGORY ) {
 				$this->mOptions['mode'] = CT_MODE_CATEGORIES;
-			} else if ( !in_array( NS_IMAGE, $this->mOptions['namespaces'] ) ) {
+			} elseif ( !in_array( NS_IMAGE, $this->mOptions['namespaces'] ) ) {
 				$this->mOptions['mode'] = CT_MODE_PAGES;
 			} else {
 				$this->mOptions['mode'] = CT_MODE_ALL;
@@ -110,10 +110,10 @@ class CategoryTree {
 		if ( is_numeric( $mode ) ) return (int)$mode;
 
 		if ( $mode == 'all' ) $mode = CT_MODE_ALL;
-		else if ( $mode == 'pages' ) $mode = CT_MODE_PAGES;
-		else if ( $mode == 'categories' || $mode == 'sub' ) $mode = CT_MODE_CATEGORIES;
-		else if ( $mode == 'parents' || $mode == 'super' || $mode == 'inverse' ) $mode = CT_MODE_PARENTS;
-		else if ( $mode == 'default' ) $mode = $wgCategoryTreeDefaultOptions['mode'];
+		elseif ( $mode == 'pages' ) $mode = CT_MODE_PAGES;
+		elseif ( $mode == 'categories' || $mode == 'sub' ) $mode = CT_MODE_CATEGORIES;
+		elseif ( $mode == 'parents' || $mode == 'super' || $mode == 'inverse' ) $mode = CT_MODE_PARENTS;
+		elseif ( $mode == 'default' ) $mode = $wgCategoryTreeDefaultOptions['mode'];
 
 		return (int)$mode;
 	}
@@ -131,8 +131,8 @@ class CategoryTree {
 		if ( is_numeric( $value ) ) return ( (int)$value > 0 );
 
 		if ( $value == 'yes' || $value == 'y' || $value == 'true' || $value == 't' || $value == 'on' ) return true;
-		else if ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) return false;
-		else if ( $value == 'null' || $value == 'default' || $value == 'none' || $value == 'x' ) return null;
+		elseif ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) return false;
+		elseif ( $value == 'null' || $value == 'default' || $value == 'none' || $value == 'x' ) return null;
 		else return false;
 	}
 
@@ -147,12 +147,12 @@ class CategoryTree {
 		$value = trim( strtolower( $value ) );
 
 		if ( $value == 'yes' || $value == 'y' || $value == 'true' || $value == 't' || $value == 'on' ) return CT_HIDEPREFIX_ALWAYS;
-		else if ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) return CT_HIDEPREFIX_NEVER;
-		// else if ( $value == 'null' || $value == 'default' || $value == 'none' || $value == 'x' ) return $wgCategoryTreeDefaultOptions['hideprefix'];
-		else if ( $value == 'always' ) return CT_HIDEPREFIX_ALWAYS;
-		else if ( $value == 'never' ) return CT_HIDEPREFIX_NEVER;
-		else if ( $value == 'auto' ) return CT_HIDEPREFIX_AUTO;
-		else if ( $value == 'categories' || $value == 'category' || $value == 'smart' ) return CT_HIDEPREFIX_CATEGORIES;
+		elseif ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) return CT_HIDEPREFIX_NEVER;
+		// elseif ( $value == 'null' || $value == 'default' || $value == 'none' || $value == 'x' ) return $wgCategoryTreeDefaultOptions['hideprefix'];
+		elseif ( $value == 'always' ) return CT_HIDEPREFIX_ALWAYS;
+		elseif ( $value == 'never' ) return CT_HIDEPREFIX_NEVER;
+		elseif ( $value == 'auto' ) return CT_HIDEPREFIX_AUTO;
+		elseif ( $value == 'categories' || $value == 'category' || $value == 'smart' ) return CT_HIDEPREFIX_CATEGORIES;
 		else return $wgCategoryTreeDefaultOptions['hideprefix'];
 	}
 
@@ -331,7 +331,7 @@ class CategoryTree {
 		if ( $html == '' ) {
 			# HACK: Safari doesn't like empty responses.
 			# see Bug 7219 and http://bugzilla.opendarwin.org/show_bug.cgi?id=10716
-			$html = ' ';   
+			$html = ' ';
 		}
 
 		$response->addText( $html );
@@ -385,7 +385,7 @@ class CategoryTree {
 		else {
 			if ( !$hideroot ) {
 				$html .= $this->renderNode( $title, $depth, $wgCategoryTreeDynamicTag );
-			} else if ( !$wgCategoryTreeDynamicTag ) {
+			} elseif ( !$wgCategoryTreeDynamicTag ) {
 				$html .= $this->renderChildren( $title, $depth );
 			} else {
 				$uniq += 1;
@@ -590,9 +590,9 @@ class CategoryTree {
 
 		if ( $hideprefix == CT_HIDEPREFIX_ALWAYS ) {
 			$hideprefix = true;
-		} else if ( $hideprefix == CT_HIDEPREFIX_AUTO ) {
+		} elseif ( $hideprefix == CT_HIDEPREFIX_AUTO ) {
 			$hideprefix = ( $mode == CT_MODE_CATEGORIES );
-		} else if ( $hideprefix == CT_HIDEPREFIX_CATEGORIES ) {
+		} elseif ( $hideprefix == CT_HIDEPREFIX_CATEGORIES ) {
 			$hideprefix = ( $ns == NS_CATEGORY );
 		} else {
 			$hideprefix = true;
@@ -651,7 +651,7 @@ class CategoryTree {
 			if ( $cat ) {
 				if ( $mode == CT_MODE_CATEGORIES ) {
 					$count = $subcatCount;
-				} else if ( $mode == CT_MODE_PAGES ) {
+				} elseif ( $mode == CT_MODE_PAGES ) {
 					$count = $pageCount - $fileCount;
 				} else {
 					$count = $pageCount;
@@ -724,9 +724,9 @@ class CategoryTree {
 				$s .= Xml::openElement( 'i', array( 'class' => 'CategoryTreeNotice' ) );
 				if ( $mode == CT_MODE_CATEGORIES ) {
 					$s .= wfMsgExt( 'categorytree-no-subcategories', 'parsemag' );
-				} else if ( $mode == CT_MODE_PAGES ) {
+				} elseif ( $mode == CT_MODE_PAGES ) {
 					$s .= wfMsgExt( 'categorytree-no-pages', 'parsemag' );
-				} else if ( $mode == CT_MODE_PARENTS ) {
+				} elseif ( $mode == CT_MODE_PARENTS ) {
 					$s .= wfMsgExt( 'categorytree-no-parent-categories', 'parsemag' );
 				} else {
 					$s .= wfMsgExt( 'categorytree-nothing-found', 'parsemag' );
