@@ -3459,6 +3459,14 @@ $messages['rue'] = array(
 	'categorytree-retry' => 'Кус почекайте і потім спробуйте знову.',
 );
 
+/** Sanskrit (संस्कृत)
+ * @author Vibhijain
+ */
+$messages['sa'] = array(
+	'categorytree-load' => 'लोड',
+	'categorytree-loading' => 'भारारोपण',
+);
+
 /** Yakut (Саха тыла)
  * @author HalanTul
  */
