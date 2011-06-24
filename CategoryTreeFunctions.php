@@ -702,8 +702,8 @@ class CategoryTree {
 				'title' => wfMsgExt( 'categorytree-member-counts', 'parsemag', $subcatCount, $pages , $fileCount, $pageCount, $count )
 			);
 
-			$s .= ' ';
-			global $wgLang;
+			global $wgContLang, $wgLang;
+			$s .= $wgContLang->getDirMark() . ' ';
 			$s .= Xml::tags( 'span', $attr,
 				wfMsgExt( 'categorytree-member-num',
 					array( 'parsemag', 'escapenoentities' ),
