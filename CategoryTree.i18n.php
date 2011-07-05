@@ -1866,6 +1866,13 @@ $messages['ig'] = array(
 	'categorytree-no-pages' => 'ihü ma ébéonọr-ímé àdíghị',
 );
 
+/** Ingush (ГІалгІай Ğalğaj)
+ * @author Sapral Mikail
+ */
+$messages['inh'] = array(
+	'categorytree-portlet' => 'Цатегаш',
+);
+
 /** Ido (Ido)
  * @author Malafaya
  */
