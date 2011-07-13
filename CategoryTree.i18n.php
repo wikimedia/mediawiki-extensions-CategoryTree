@@ -2721,7 +2721,7 @@ Jika anda menggunakan pelayar web yang sudah ketinggalan, atau mematikan JavaScr
 	'categorytree-mode-pages' => 'laman kecuali imej',
 	'categorytree-mode-all' => 'semua laman',
 	'categorytree-collapse' => 'lipat',
-	'categorytree-expand' => 'bentangkan',
+	'categorytree-expand' => 'kembangkan',
 	'categorytree-member-counts' => 'mengandungi $1 subkategori, $1 laman, dan $3 fail',
 	'categorytree-load' => 'muat',
 	'categorytree-loading' => 'memuatkan…',
