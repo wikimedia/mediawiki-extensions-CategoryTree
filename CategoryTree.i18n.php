@@ -421,12 +421,30 @@ $messages['ba'] = array(
  * @author Mucalexx
  */
 $messages['bar'] = array(
-	'categorytree' => 'Kategorijnbaam',
-	'categorytree-portlet' => 'Kategorijn',
-	'categorytree-legend' => 'an Kategorijnbaam åzoang',
-	'categorytree-collapse' => 'eikloppm',
+	'categorytree' => 'Kategorienbaam',
+	'categorytree-portlet' => 'Kategorien',
+	'categorytree-legend' => 'an Kategorienbaam åzoang',
+	'categorytree-desc' => "Dameeglicht a dynaamische Navigazion fyr d' Speziaalseiten [[Special:CategoryTree|Kategorienbaam]]",
+	'categorytree-header' => "Zoagt fyr d' ågeewane Kategorie d' Unterkategorie in ner Baamstruktur.
+De Seiten braucht bstimmte JavaScript-Funkzionen (Ajax) und funkzionird meeglicherweis ned, wånn JavaScript ausgschoiden is oder a uroider Browser vawendt werd.",
+	'categorytree-category' => 'Kategorie:',
+	'categorytree-go' => 'Loner',
+	'categorytree-parents' => 'Owerkategorien',
+	'categorytree-mode-categories' => 'netter Kategorien',
+	'categorytree-mode-pages' => "Seiten ausser d' Daatein",
+	'categorytree-mode-all' => 'olle Seiten',
+	'categorytree-collapse' => 'eihkloppm',
 	'categorytree-expand' => 'auskloppm',
+	'categorytree-member-counts' => 'enthoit {{PLURAL:$1|1 Unterkategorie|$1 Unterkategorien}}, {{PLURAL:$2|1 Seite|$2 Seiten}} und {{PLURAL:$3|1 Datei|$3 Datein}}',
 	'categorytree-load' => 'loon',
+	'categorytree-loading' => 'lood ...',
+	'categorytree-nothing-found' => 'Nix gfunden',
+	'categorytree-no-subcategories' => 'Koah Unterkategorie',
+	'categorytree-no-parent-categories' => 'Koane Owerkategorien',
+	'categorytree-no-pages' => 'Koane Seiten oder Unterkategorien',
+	'categorytree-not-found' => 'Kategorie „$1“ ned gfunden',
+	'categorytree-error' => 'Probleem beim Loon voh de Daaten.',
+	'categorytree-retry' => 'Bittschee wort a Momenterl und vasuachs dånn nuamoi.',
 );
 
 /** Southern Balochi (بلوچی مکرانی)
