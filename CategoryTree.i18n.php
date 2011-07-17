@@ -3049,6 +3049,7 @@ $messages['oc'] = array(
 );
 
 /** Oriya (ଓଡ଼ିଆ)
+ * @author Odisha1
  * @author Psubhashish
  */
 $messages['or'] = array(
@@ -3063,7 +3064,7 @@ $messages['or'] = array(
 	'categorytree-mode-pages' => 'ଫାଇଲ ନଥିବା ପୃଷ୍ଠାସବୁ',
 	'categorytree-mode-all' => 'ସବୁ ପୃଷ୍ଠା',
 	'categorytree-collapse' => 'ଚାପିଦେବା',
-	'categorytree-expand' => 'ଖୋଲିକରି ଦେଖାଇବା',
+	'categorytree-expand' => 'ସମ୍ପ୍ରସାରଣ',
 	'categorytree-member-counts' => 'ଏହା ଭିତରେ {{PLURAL:$1|1ଟି ଶ୍ରେଣୀ|$1 ଟି ସାନଶ୍ରେଣୀ}}, {{PLURAL:$2|1 ପୃଷ୍ଠା|$2 ଟି ପୃଷ୍ଠା}} ଓ {{PLURAL:$3|1 ଟି ଫାଇଲ|$3 ଟି ଫାଇଲ}} ଅଛି ।',
 	'categorytree-load' => 'ଖୋଲିବେ',
 	'categorytree-loading' => 'ଖୋଲୁଛି...',
