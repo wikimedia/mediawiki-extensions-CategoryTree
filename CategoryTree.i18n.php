@@ -2862,30 +2862,30 @@ $messages['nds'] = array(
  * @author Servien
  */
 $messages['nds-nl'] = array(
-	'categorytree' => 'Kattegerieboom',
-	'categorytree-portlet' => 'Kattegerieën',
-	'categorytree-legend' => 'Laot kattegerieboom zien',
-	'categorytree-desc' => 'Dynamische navigasie veur de [[Special:CategoryTree|kattegeriestructuur]]',
-	'categorytree-header' => 'Voer een kattegerienaam in um de inhoud in boomstructuur te bekieken.
-NB: Veur disse functie he-j de JavaScript-functionaliteit, AJAX neudig. A-j een hele ouwe webkieker hemmen, of je JavaScript uut-eschakeld hemmen, dan zal disse functie neet warken.',
-	'categorytree-category' => 'Kattegerie:',
+	'categorytree' => 'Kategorieboom',
+	'categorytree-portlet' => 'Kategorieën',
+	'categorytree-legend' => 'Laot kategorieboom zien',
+	'categorytree-desc' => 'Dynamiese navigasie veur de [[Special:CategoryTree|kategoriestruktuur]]',
+	'categorytree-header' => "Voer een kategorienaam in um de inhoud in boomstruktuur te bekieken.
+NB: veur disse funksie he'j de JavaScript-funksionaliteit AJAX neudig. A'j een hele ouwe webkieker hebben, of je JavaScript uuteschakeld hebben, dan zal disse funksie niet warken.",
+	'categorytree-category' => 'Kategorie:',
 	'categorytree-go' => 'Laojen',
-	'categorytree-parents' => 'Ouwerkattegerieën',
-	'categorytree-mode-categories' => 'allinnig kattegerieën',
-	'categorytree-mode-pages' => "pagina's, gien ofbeeldingen",
+	'categorytree-parents' => 'Ouwerkategorieën',
+	'categorytree-mode-categories' => 'allenig kategorieën',
+	'categorytree-mode-pages' => "pagina's, gien aofbeeldingen",
 	'categorytree-mode-all' => "alle pagina's",
 	'categorytree-collapse' => 'inklappen',
 	'categorytree-expand' => 'uutklappen',
-	'categorytree-member-counts' => "bevat {{PLURAL:$1|één onderkattegerie|$1 onderkattegerieën}}, {{PLURAL:$2|één pagina|$2 pagina's}} en {{PLURAL:$3|één bestaand|$3 bestanen}}",
+	'categorytree-member-counts' => "bevat {{PLURAL:$1|één onderkategorie|$1 onderkategorieën}}, {{PLURAL:$2|één pagina|$2 pagina's}} en {{PLURAL:$3|één bestaand|$3 bestaanden}}",
 	'categorytree-load' => 'laojen',
 	'categorytree-loading' => 'bezig mit laojen...',
 	'categorytree-nothing-found' => 'niks evunnen',
-	'categorytree-no-subcategories' => 'gien subkattegerieën',
-	'categorytree-no-parent-categories' => 'gien ouwerkattegerieën',
-	'categorytree-no-pages' => "gien pagina's of subkattegerieën",
-	'categorytree-not-found' => 'Kattegerie <i>$1</i> neet evunnen',
-	'categorytree-error' => "Prebleem bie 't laojen van de gegevens.",
-	'categorytree-retry' => "Wach even en prebeer 't opniej",
+	'categorytree-no-subcategories' => 'gien subkategorieën',
+	'categorytree-no-parent-categories' => 'gien ouwerkategorieën',
+	'categorytree-no-pages' => "gien pagina's of subkategorieën",
+	'categorytree-not-found' => 'Kategorie <i>$1</i> niet evunnen',
+	'categorytree-error' => 'Probleem bie t laojen van de gegevens.',
+	'categorytree-retry' => 'Wacht even en probeer t opniej',
 );
 
 /** Nepali (नेपाली)
@@ -3628,9 +3628,9 @@ $messages['sh'] = array(
  * @author නන්දිමිතුරු
  */
 $messages['si'] = array(
-	'categorytree' => 'ප්‍රවර්ග රුක',
+	'categorytree' => 'ප්‍රවර්ග ගස',
 	'categorytree-portlet' => 'ප්‍රවර්ග',
-	'categorytree-legend' => 'ප්‍රවර්ග රුක පෙන්වන්න',
+	'categorytree-legend' => 'ප්‍රවර්ග ගස පෙන්වන්න',
 	'categorytree-desc' => '[[Special:CategoryTree|ප්‍රවර්ග ව්‍යුහය]] ගතික වශයෙන් සංචලනය කරන්න',
 	'categorytree-header' => 'එහි අන්තර්ගතයන්  රුක් ව්‍යුවහයක් ලෙස නැරඹීම සඳහා ප්‍රවර්ග නාමයක් ඇතුලත් කරන්න.
 AJAX නමින් හැඳින්වෙන ප්‍රගත ජාවාස්ක්‍රිප්ට් ශ්‍රීතියතායව මේ සඳහා අවශ්‍ය බව සටහන් කර ගන්න.
@@ -3642,7 +3642,7 @@ AJAX නමින් හැඳින්වෙන ප්‍රගත ජාවා
 	'categorytree-mode-pages' => 'ගොනු හැර ඉතිරි පිටු',
 	'categorytree-mode-all' => 'සියළු පිටු',
 	'categorytree-collapse' => 'හකුලන්න',
-	'categorytree-expand' => 'විදහන්න',
+	'categorytree-expand' => 'විදහාලන්න',
 	'categorytree-member-counts' => '{{PLURAL:$1|එක් උපප්‍රවර්ගයක්|උපප්‍රවර්ග $1 ක්}}, {{PLURAL:$2|එක් පිටුවක්|පිටු $2 ක්}}, සහ {{PLURAL:$3|එක් ගොනුවක්|ගොනු $3 ක්}} අඩංගුය',
 	'categorytree-load' => 'බාගන්න',
 	'categorytree-loading' => 'බාගනිමින්…',
