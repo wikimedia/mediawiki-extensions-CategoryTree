@@ -2292,6 +2292,7 @@ $messages['ksh'] = array(
 /** Kurdish (Latin) (Kurdî (Latin))
  * @author Erdal Ronahi
  * @author George Animal
+ * @author Welathêja
  */
 $messages['ku-latn'] = array(
 	'categorytree' => 'Dara kategoriyan',
@@ -2303,6 +2304,7 @@ $messages['ku-latn'] = array(
 	'categorytree-mode-all' => 'hemû rûpel',
 	'categorytree-load' => 'bar bike',
 	'categorytree-loading' => 'tê barkirin',
+	'categorytree-nothing-found' => 'Tu tişt nehat dîtin',
 	'categorytree-no-subcategories' => 'binekategorî tune',
 	'categorytree-no-pages' => 'ti rûpel û binkategorî tinin',
 	'categorytree-not-found' => 'Kategoriya <i>$1</i> nehate dîtin',
@@ -3064,7 +3066,7 @@ $messages['or'] = array(
 	'categorytree-mode-pages' => 'ଫାଇଲ ନଥିବା ପୃଷ୍ଠାସବୁ',
 	'categorytree-mode-all' => 'ସବୁ ପୃଷ୍ଠା',
 	'categorytree-collapse' => 'ଚାପିଦେବା',
-	'categorytree-expand' => 'ସମ୍ପ୍ରସାରଣ',
+	'categorytree-expand' => 'ବଢ଼ାଇବେ',
 	'categorytree-member-counts' => 'ଏହା ଭିତରେ {{PLURAL:$1|1ଟି ଶ୍ରେଣୀ|$1 ଟି ସାନଶ୍ରେଣୀ}}, {{PLURAL:$2|1 ପୃଷ୍ଠା|$2 ଟି ପୃଷ୍ଠା}} ଓ {{PLURAL:$3|1 ଟି ଫାଇଲ|$3 ଟି ଫାଇଲ}} ଅଛି ।',
 	'categorytree-load' => 'ଖୋଲିବେ',
 	'categorytree-loading' => 'ଖୋଲୁଛି...',
