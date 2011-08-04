@@ -2868,8 +2868,8 @@ $messages['nds-nl'] = array(
 	'categorytree-portlet' => 'Kategorieën',
 	'categorytree-legend' => 'Laot kategorieboom zien',
 	'categorytree-desc' => 'Dynamiese navigasie veur de [[Special:CategoryTree|kategoriestruktuur]]',
-	'categorytree-header' => "Voer een kategorienaam in um de inhoud in boomstruktuur te bekieken.
-NB: veur disse funksie he'j de JavaScript-funksionaliteit AJAX neudig. A'j een hele ouwe webkieker hebben, of je JavaScript uuteschakeld hebben, dan zal disse funksie niet warken.",
+	'categorytree-header' => "Voer n kategorienaam in um de inhoud in boomstruktuur te bekieken.
+NB: veur disse funksie he'j de JavaScript-funksionaliteit AJAX neudig. A'j n hele ouwe webkieker hebben, of je JavaScript uuteschakeld hebben, dan zal disse funksie niet warken.",
 	'categorytree-category' => 'Kategorie:',
 	'categorytree-go' => 'Laojen',
 	'categorytree-parents' => 'Ouwerkategorieën',
@@ -4584,7 +4584,7 @@ $messages['zh-hans'] = array(
 	'categorytree-expand' => '展开',
 	'categorytree-member-counts' => '包含$1个子分类，$2个页面和$3个文件',
 	'categorytree-load' => '载入',
-	'categorytree-loading' => '载入中……',
+	'categorytree-loading' => '正在载入...',
 	'categorytree-nothing-found' => '无结果',
 	'categorytree-no-subcategories' => '无子分类',
 	'categorytree-no-parent-categories' => '无父分类',
