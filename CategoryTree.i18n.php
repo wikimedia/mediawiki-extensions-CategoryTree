@@ -572,6 +572,13 @@ $messages['bh'] = array(
 	'categorytree-portlet' => 'श्रेणी',
 );
 
+/** Bhojpuri (भोजपुरी)
+ * @author Ganesh
+ */
+$messages['bho'] = array(
+	'categorytree-portlet' => 'श्रेणी',
+);
+
 /** Bengali (বাংলা)
  * @author Bellayet
  * @author Zaheen
@@ -1003,7 +1010,7 @@ Jolic maš wjelgin stary browser abo jolic JavaScript jo wótšaltowane, toś te
 	'categorytree-retry' => 'Pócakaj pšosym moment a wopytaj hyšći raz.',
 );
 
-/** Dusun Bundu-liwan (Dusun Bundu-liwan)
+/** Central Dusun (Dusun Bundu-liwan)
  * @author FRANCIS5091
  */
 $messages['dtp'] = array(
@@ -2891,6 +2898,7 @@ NB: veur disse funksie he'j de JavaScript-funksionaliteit AJAX neudig. A'j n hel
 );
 
 /** Nepali (नेपाली)
+ * @author Bhawani Gautam
  * @author Bhawani Gautam Rhk
  */
 $messages['ne'] = array(
@@ -3079,7 +3087,7 @@ $messages['or'] = array(
 	'categorytree-retry' => 'ଦୟାକରି କିଛି ସମୟ ପରେ ଚେଷ୍ଟା କରନ୍ତୁ ।',
 );
 
-/** Ossetic (Иронау)
+/** Ossetic (Ирон)
  * @author Amikeco
  * @author Amire80
  */
@@ -3495,7 +3503,7 @@ $messages['sa'] = array(
 	'categorytree-loading' => 'भारारोपण',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -4193,7 +4201,7 @@ Kapag mayroon kang isang napakatandang/napakalumang pantingin-tingin (''browser'
 	'categorytree-retry' => 'Maghintay lamang ng isang sandali at subuking muli.',
 );
 
-/** Tonga (lea faka-Tonga) */
+/** Tongan (lea faka-Tonga) */
 $messages['to'] = array(
 	'categorytree' => 'Fuʻuʻakau faʻahinga',
 	'categorytree-category' => 'Faʻahinga:',
