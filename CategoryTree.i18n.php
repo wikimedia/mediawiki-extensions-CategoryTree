@@ -2880,7 +2880,7 @@ NB: veur disse funksie he'j de JavaScript-funksionaliteit AJAX neudig. A'j n hel
 	'categorytree-category' => 'Kategorie:',
 	'categorytree-go' => 'Laojen',
 	'categorytree-parents' => 'Ouwerkategorieën',
-	'categorytree-mode-categories' => 'allenig kategorieën',
+	'categorytree-mode-categories' => 'allinnig kategorieën',
 	'categorytree-mode-pages' => "pagina's, gien aofbeeldingen",
 	'categorytree-mode-all' => "alle pagina's",
 	'categorytree-collapse' => 'inklappen',
