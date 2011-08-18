@@ -2109,6 +2109,13 @@ $messages['kaa'] = array(
 	'categorytree' => 'Kategoriyalar teregi',
 );
 
+/** کھوار (کھوار)
+ * @author Rachitrali
+ */
+$messages['khw'] = array(
+	'categorytree-portlet' => 'زمرہ جات',
+);
+
 /** Kazakh (Arabic script) (‫قازاقشا (تٴوتە)‬) */
 $messages['kk-arab'] = array(
 	'categorytree' => 'سانات بۇتاقتارى',
