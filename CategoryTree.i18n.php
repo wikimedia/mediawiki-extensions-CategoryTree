@@ -3245,6 +3245,31 @@ $messages['pms'] = array(
 	'categorytree-retry' => "Për piasì, ch'a speta na minuta e peuj ch'as preuva n'àutra vira.",
 );
 
+/** Western Punjabi (پنجابی)
+ * @author Khalid Mahmood
+ */
+$messages['pnb'] = array(
+	'categorytree' => 'گٹھ لین',
+	'categorytree-portlet' => 'گٹھاں',
+	'categorytree-legend' => 'گٹھ لین وکھاؤ',
+	'categorytree-category' => 'گٹھ:',
+	'categorytree-go' => 'لین وکھاؤ',
+	'categorytree-parents' => 'وڈوڈیرے',
+	'categorytree-mode-categories' => 'صرف گٹھاں',
+	'categorytree-mode-pages' => 'فائلاں بنا صفے',
+	'categorytree-mode-all' => 'سارے صفے',
+	'categorytree-collapse' => 'مک گیا',
+	'categorytree-expand' => 'ودھاؤ',
+	'categorytree-load' => 'چڑھاؤ',
+	'categorytree-loading' => 'چڑ رئی اے۔',
+	'categorytree-nothing-found' => 'کج نیں لبیا',
+	'categorytree-no-subcategories' => 'مڈلیاں گٹھاں کوئی نیں',
+	'categorytree-no-parent-categories' => 'کوئی مڈلیاں گٹھاں نیں۔',
+	'categorytree-no-pages' => 'ناں صفے یا نکیاں گٹھاں',
+	'categorytree-error' => 'ڈیٹا چڑھان چ رپھڑ۔',
+	'categorytree-retry' => 'مہربانی کرکے تھوڑا صبر کرو تے فیر کوشش کرو۔',
+);
+
 /** Pontic (Ποντιακά)
  * @author Sinopeus
  */
