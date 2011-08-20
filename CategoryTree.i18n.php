@@ -353,6 +353,13 @@ Ede va guazafi exulesiki favel oke ede JavaScript fliaceem tir metegis, batcoba 
 	'categorytree-retry' => 'Vay kemel aze tolyawal !',
 );
 
+/** Aymara (Aymar aru)
+ * @author Dferg
+ */
+$messages['ay'] = array(
+	'categorytree-category' => 'Patawi:',
+);
+
 /** Azerbaijani (Azərbaycanca)
  * @author Cekli829
  * @author PPerviz
