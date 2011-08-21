@@ -298,6 +298,7 @@ $messages['as'] = array(
 
 /** Asturian (Asturianu)
  * @author Esbardu
+ * @author Xuacu
  */
 $messages['ast'] = array(
 	'categorytree' => 'Árbole de categoríes',
@@ -313,7 +314,7 @@ un navegador mui antiguu o'l JavaScript desactiváu, nun va funcionar.",
 	'categorytree-mode-categories' => 'categoríes namái',
 	'categorytree-mode-pages' => 'páxines sacante los archivos',
 	'categorytree-mode-all' => 'toles páxines',
-	'categorytree-collapse' => 'esconder',
+	'categorytree-collapse' => 'anubrir',
 	'categorytree-expand' => 'espandir',
 	'categorytree-member-counts' => 'contién {{PLURAL:$1|1 subcategoría|$1 subcategoríes}}, {{PLURAL:$2|1 páxina|$2 páxines}} y {{PLURAL:$3|1 archivu|$3 archivos}}',
 	'categorytree-load' => 'cargar',
@@ -2714,6 +2715,7 @@ $messages['mn'] = array(
 );
 
 /** Marathi (मराठी)
+ * @author Htt
  * @author Kaustubh
  * @author Mahitgar
  */
@@ -3259,6 +3261,10 @@ $messages['pnb'] = array(
 	'categorytree' => 'گٹھ لین',
 	'categorytree-portlet' => 'گٹھاں',
 	'categorytree-legend' => 'گٹھ لین وکھاؤ',
+	'categorytree-desc' => 'ویکھ کے [[Special:CategoryTree|گٹھاں]] دی کھوج کرو',
+	'categorytree-header' => 'کسی گٹھ دا ناں لکھو تاکے ایدا مال رکھ ورگی مورت چ ویکھو۔
+Note that this requires advanced JavaScript functionality known as AJAX.
+If you have a very old browser, or have JavaScript disabled, it will not work.',
 	'categorytree-category' => 'گٹھ:',
 	'categorytree-go' => 'لین وکھاؤ',
 	'categorytree-parents' => 'وڈوڈیرے',
@@ -3267,12 +3273,14 @@ $messages['pnb'] = array(
 	'categorytree-mode-all' => 'سارے صفے',
 	'categorytree-collapse' => 'مک گیا',
 	'categorytree-expand' => 'ودھاؤ',
+	'categorytree-member-counts' => 'ایدے چ  {{PLURAL:$1|1 نکی گٹھ|$1 گٹھاں}}, {{PLURAL:$2|1 صفحہ|$2 صفحے}}, تے {{PLURAL:$3|1 فائل|$3 فائلاں}} ہیگیاں نیں۔',
 	'categorytree-load' => 'چڑھاؤ',
 	'categorytree-loading' => 'چڑ رئی اے۔',
 	'categorytree-nothing-found' => 'کج نیں لبیا',
 	'categorytree-no-subcategories' => 'مڈلیاں گٹھاں کوئی نیں',
 	'categorytree-no-parent-categories' => 'کوئی مڈلیاں گٹھاں نیں۔',
 	'categorytree-no-pages' => 'ناں صفے یا نکیاں گٹھاں',
+	'categorytree-not-found' => '<i>$1</i> گٹھ نئیں لبی',
 	'categorytree-error' => 'ڈیٹا چڑھان چ رپھڑ۔',
 	'categorytree-retry' => 'مہربانی کرکے تھوڑا صبر کرو تے فیر کوشش کرو۔',
 );
