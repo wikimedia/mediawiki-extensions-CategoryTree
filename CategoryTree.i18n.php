@@ -365,6 +365,7 @@ $messages['ay'] = array(
  * @author Cekli829
  * @author PPerviz
  * @author Vugar 1981
+ * @author Wertuose
  */
 $messages['az'] = array(
 	'categorytree' => 'Kateqoriya ağacı',
@@ -378,7 +379,7 @@ $messages['az'] = array(
 	'categorytree-mode-categories' => 'sadəcə kateqoriyaları göstər',
 	'categorytree-mode-pages' => 'Fayllardan əlavə səhifələr',
 	'categorytree-mode-all' => 'bütün səhifələr',
-	'categorytree-collapse' => 'qaytar',
+	'categorytree-collapse' => 'gizlə',
 	'categorytree-expand' => 'genişləndir',
 	'categorytree-member-counts' => '{{PLURAL:$1|1 altkategoriya|$1 altkategoriya}}, {{PLURAL:$2|1 səhifə|$2 səhifə}}, ve {{PLURAL:$3|1 şəkil|$3 şəkil}}dən ibarətdir',
 	'categorytree-load' => 'yüklə',
