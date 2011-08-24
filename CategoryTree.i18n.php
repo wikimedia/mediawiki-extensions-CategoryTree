@@ -3933,6 +3933,7 @@ In gjucht oolde Browsere, of wan Javascript ouschalted is, funktioniert disse Si
  */
 $messages['su'] = array(
 	'categorytree' => 'TangkalKategori',
+	'categorytree-portlet' => 'Kategori',
 	'categorytree-legend' => 'Témbongkeun tangkal kategori',
 	'categorytree-desc' => 'Gajet AJAX pikeun némbongkeun [[Special:CategoryTree|wangun kategori]] dina hiji wiki',
 	'categorytree-header' => 'Asupkeun hiji ngaran kategori pikeun nempo eusina dina wangun tangkal.
@@ -3942,14 +3943,16 @@ Lamun Anjeun ngagunakeun panyungsi nu lila, atawa maehan fungsi Javascript Anjeu
 	'categorytree-go' => 'Témbongkeun Tangkal',
 	'categorytree-parents' => 'Luluhur',
 	'categorytree-mode-categories' => 'kategori wungkul',
-	'categorytree-mode-pages' => 'kaca iwal gambar',
+	'categorytree-mode-pages' => 'kaca iwal berkas',
 	'categorytree-mode-all' => 'sadaya kaca',
 	'categorytree-collapse' => 'tilep',
 	'categorytree-expand' => 'buka',
+	'categorytree-member-counts' => 'mibanda {{PLURAL:$1|1 subkategori|$1 subkategori}}, {{PLURAL:$2|1 kaca|$2 kaca}}, jeung {{PLURAL:$3|1 berkas|$3 berkas}}',
 	'categorytree-load' => 'muatkeun',
 	'categorytree-loading' => 'ngamuat',
 	'categorytree-nothing-found' => 'teu manggih nanaon',
 	'categorytree-no-subcategories' => 'euweuh subkategori',
+	'categorytree-no-parent-categories' => 'taya kategori luhureunana',
 	'categorytree-no-pages' => 'euweuh kaca atawa subkategori',
 	'categorytree-not-found' => 'Kategori <i>$1</i> teu kapanggih',
 	'categorytree-error' => 'Aya masalah dina ngamuat data.',
