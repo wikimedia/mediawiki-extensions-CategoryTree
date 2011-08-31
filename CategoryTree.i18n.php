@@ -3081,7 +3081,7 @@ $messages['oc'] = array(
  */
 $messages['or'] = array(
 	'categorytree' => 'ଶ୍ରେଣୀବିଭାଗ',
-	'categorytree-portlet' => 'ଶ୍ରେଣୀସବୁ',
+	'categorytree-portlet' => 'ଶ୍ରେଣୀସମୂହ',
 	'categorytree-legend' => 'ଶ୍ରେଣୀବିଭାଗ',
 	'categorytree-desc' => '[[Special:CategoryTree|ଶ୍ରେଣୀବିଭାଗ]]କୁ ଚାଲିଯିବା',
 	'categorytree-category' => 'ବିଭାଗ:',
