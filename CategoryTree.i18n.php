@@ -1270,13 +1270,16 @@ $messages['fi'] = array(
 );
 
 /** Faroese (Føroyskt)
+ * @author Diupwijk
  * @author Spacebirdy
  */
 $messages['fo'] = array(
 	'categorytree' => 'BólkaTræ',
 	'categorytree-category' => 'Bólkur:',
 	'categorytree-go' => 'Vís træ',
+	'categorytree-mode-categories' => 'bert bólkar',
 	'categorytree-mode-all' => 'allar síður',
+	'categorytree-loading' => 'lesur inn',
 );
 
 /** French (Français)
