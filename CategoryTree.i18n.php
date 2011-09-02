@@ -2496,6 +2496,16 @@ $messages['lmo'] = array(
 	'categorytree-retry' => 'Per piasè, specia un mument e pö pröva ancamò.',
 );
 
+/** Lingala (Lingála)
+ * @author Eruedin
+ */
+$messages['ln'] = array(
+	'categorytree-portlet' => 'Ndéngé',
+	'categorytree-category' => 'Katégoli:',
+	'categorytree-mode-all' => 'Nkásá ínsɔ',
+	'categorytree-no-subcategories' => 'Ndéngé-bǎna té',
+);
+
 /** Lao (ລາວ)
  * @author Passawuth
  */
