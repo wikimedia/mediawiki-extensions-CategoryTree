@@ -3097,13 +3097,16 @@ $messages['or'] = array(
 	'categorytree-portlet' => 'ଶ୍ରେଣୀସମୂହ',
 	'categorytree-legend' => 'ଶ୍ରେଣୀବିଭାଗ',
 	'categorytree-desc' => '[[Special:CategoryTree|ଶ୍ରେଣୀବିଭାଗ]]କୁ ଚାଲିଯିବା',
+	'categorytree-header' => 'ଶ୍ରେଣିସବୁର ଗଛ ପରି ସଜାଣି ଦେଖିବା ନିମନ୍ତେ ତାହାର ନାମ ଦିଅନ୍ତୁ ।
+ମନେରକନ୍ତୁ, ଏହା ପାଇଁ ଜାଭାସ୍କ୍ରିପ୍ଟ ଲୋଡ଼ା ଯାହା AJAX ନାମରେ ମଧ୍ୟ ଜଣା ।
+ଯଦି ଆପଣଙ୍କ ପାଖରେ ପୁରୁଣା ବ୍ରାଉଜରଟିଏ ଅଛି ବା ଜାଭାସ୍କ୍ରିପ୍ଟ ଅଚଳ ଅଛି, ତେବେ ଏହା କାମ କରିବ ନାହିଁ ।',
 	'categorytree-category' => 'ବିଭାଗ:',
 	'categorytree-go' => 'ଶ୍ରେଣୀବିଭାଗଗୁଡ଼ିକ ଦେଖାଇବା',
 	'categorytree-parents' => 'ମୂଳ',
 	'categorytree-mode-categories' => 'କେବଳ ଶ୍ରେଣୀସବୁ',
 	'categorytree-mode-pages' => 'ଫାଇଲ ନଥିବା ପୃଷ୍ଠାସବୁ',
 	'categorytree-mode-all' => 'ସବୁ ପୃଷ୍ଠା',
-	'categorytree-collapse' => 'ଚାପିଦେବା',
+	'categorytree-collapse' => 'ଚାପିଦେବେ',
 	'categorytree-expand' => 'ବଢ଼ାଇବେ',
 	'categorytree-member-counts' => 'ଏହା ଭିତରେ {{PLURAL:$1|1ଟି ଶ୍ରେଣୀ|$1 ଟି ସାନଶ୍ରେଣୀ}}, {{PLURAL:$2|1 ପୃଷ୍ଠା|$2 ଟି ପୃଷ୍ଠା}} ଓ {{PLURAL:$3|1 ଟି ଫାଇଲ|$3 ଟି ଫାଇଲ}} ଅଛି ।',
 	'categorytree-load' => 'ଖୋଲିବେ',
