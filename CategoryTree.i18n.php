@@ -60,6 +60,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
  * @author Raymond
  * @author Siebrand
  * @author The Evil IP address
+ * @author Yekrats
  * @author Александр Сигачёв
  * @author פוילישער
  */
@@ -89,7 +90,7 @@ Label for the category input field on Special:CategoryTree',
 * $3 = number of files,
 * $4 = total number of members,
 * $5 = members to be shown in the tree, depending on mode.
-Use with { {PLURAL} }',
+Use with <nowiki>{{PLURAL}}</nowiki>',
 	'categorytree-load' => '{{Identical|Load}}
 
 Tooltip for the "expend" button, if the content was not yet loaded',
@@ -1085,7 +1086,7 @@ $messages['eo'] = array(
 	'categorytree-mode-pages' => 'paĝoj krom dosieroj',
 	'categorytree-mode-all' => 'ĉiuj paĝoj',
 	'categorytree-collapse' => 'kaŝi',
-	'categorytree-expand' => 'etendi',
+	'categorytree-expand' => 'montri',
 	'categorytree-member-counts' => 'enhavas {{PLURAL:$1|1 subkategorion|$1 subkategoriojn}}, {{PLURAL:$2|1 paĝon|$2 paĝojn}}, kaj {{PLURAL:$3|1 dosieron|$3 dosierojn}}',
 	'categorytree-load' => 'elŝuti',
 	'categorytree-loading' => 'ŝarĝante...',
