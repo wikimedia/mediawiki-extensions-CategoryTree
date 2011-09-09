@@ -298,7 +298,7 @@ class CategoryTree {
 	* load CategoryTreeFunctions.php on demand.
 	*/
 	function ajax( $category, $depth = 1 ) {
-		global $wgContLang, $wgRenderHashAppend;
+		global $wgLang, $wgContLang, $wgRenderHashAppend;
 		$title = self::makeTitle( $category );
 
 		if ( ! $title ) {
@@ -314,7 +314,7 @@ class CategoryTree {
 				'page_title' => $dbkey,
 			), __METHOD__ );
 
-		$mckey = wfMemcKey( "categorytree(" . $this->getOptionsAsCacheKey( $depth ) . ")", $dbkey, $wgContLang->getExtraHashOptions(), $wgRenderHashAppend );
+		$mckey = wfMemcKey( "categorytree(" . $this->getOptionsAsCacheKey( $depth ) . ")", $dbkey, $wgLang->getCode(), $wgContLang->getExtraHashOptions(), $wgRenderHashAppend );
 
 		$response = new AjaxResponse();
 
