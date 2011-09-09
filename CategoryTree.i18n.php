@@ -3101,7 +3101,7 @@ $messages['or'] = array(
 	'categorytree-header' => 'ଶ୍ରେଣିସବୁର ଗଛ ପରି ସଜାଣି ଦେଖିବା ନିମନ୍ତେ ତାହାର ନାମ ଦିଅନ୍ତୁ ।
 ମନେରକନ୍ତୁ, ଏହା ପାଇଁ ଜାଭାସ୍କ୍ରିପ୍ଟ ଲୋଡ଼ା ଯାହା AJAX ନାମରେ ମଧ୍ୟ ଜଣା ।
 ଯଦି ଆପଣଙ୍କ ପାଖରେ ପୁରୁଣା ବ୍ରାଉଜରଟିଏ ଅଛି ବା ଜାଭାସ୍କ୍ରିପ୍ଟ ଅଚଳ ଅଛି, ତେବେ ଏହା କାମ କରିବ ନାହିଁ ।',
-	'categorytree-category' => 'ବିଭାଗ:',
+	'categorytree-category' => 'ଶ୍ରେଣୀ:',
 	'categorytree-go' => 'ଶ୍ରେଣୀବିଭାଗଗୁଡ଼ିକ ଦେଖାଇବା',
 	'categorytree-parents' => 'ମୂଳ',
 	'categorytree-mode-categories' => 'କେବଳ ଶ୍ରେଣୀସବୁ',
