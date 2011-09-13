@@ -48,7 +48,7 @@ $specialPageAliases['be-tarask'] = array(
 
 /** Bulgarian (Български) */
 $specialPageAliases['bg'] = array(
-	'CategoryTree' => array( 'Дърво на категориите' ),
+	'CategoryTree' => array( 'Дърво_на_категориите' ),
 );
 
 /** Breton (Brezhoneg) */
@@ -236,6 +236,11 @@ $specialPageAliases['lb'] = array(
 	'CategoryTree' => array( 'Struktur_vun_de_Kategorien' ),
 );
 
+/** Malagasy (Malagasy) */
+$specialPageAliases['mg'] = array(
+	'CategoryTree' => array( 'Hazon-tsokajy' ),
+);
+
 /** Macedonian (Македонски) */
 $specialPageAliases['mk'] = array(
 	'CategoryTree' => array( 'ДрвоНаКатегории' ),
@@ -273,7 +278,7 @@ $specialPageAliases['nds'] = array(
 
 /** Nedersaksisch (Nedersaksisch) */
 $specialPageAliases['nds-nl'] = array(
-	'CategoryTree' => array( 'Kattegerieboom' ),
+	'CategoryTree' => array( 'Kategorieboom' ),
 );
 
 /** Dutch (Nederlands) */
