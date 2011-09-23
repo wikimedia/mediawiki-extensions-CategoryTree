@@ -1211,16 +1211,17 @@ $messages['ext'] = array(
 /** Persian (فارسی)
  * @author Ebraminio
  * @author Huji
+ * @author ZxxZxxZ
  */
 $messages['fa'] = array(
 	'categorytree' => 'درخت رده',
 	'categorytree-portlet' => 'رده‌ها',
 	'categorytree-legend' => 'نمایش درخت رده',
 	'categorytree-desc' => 'ابزار مبتنی بر AJAX برای نمایش [[Special:CategoryTree|ساختار رده‌های]] یک ویکی',
-	'categorytree-header' => 'نام یک رده را وارد کنید تا محتویات آن به صورت درخت نمایش یابد. توجه کنید که این کار نیاز به قابلیت‌های پیشرفتهٔ جاوااسکریپت موسوم به ای‌جکس دارد. اگر از مرورگری خیلی قدیمی استفاده می‌کنید یا جاوااسکریپت را غیرفعال کرده‌اید، کار نمی‌کند.',
+	'categorytree-header' => 'نام رده‌ای را وارد کنید تا محتویات آن به صورت درختی نمایش یابد. توجه کنید که این کار نیاز به قابلیت‌های پیشرفتهٔ جاوااسکریپت موسوم به ای‌جکس دارد. اگر از مرورگری خیلی قدیمی استفاده می‌کنید یا جاوااسکریپت را غیرفعال کرده‌اید، کار نمی‌کند.',
 	'categorytree-category' => 'رده:',
 	'categorytree-go' => 'نمایش درخت',
-	'categorytree-parents' => 'والدین',
+	'categorytree-parents' => 'ریشه',
 	'categorytree-mode-categories' => 'فقط رده‌ها',
 	'categorytree-mode-pages' => 'صفحه‌های جز تصویر',
 	'categorytree-mode-all' => 'همهٔ صفحه‌ها',
@@ -1235,7 +1236,7 @@ $messages['fa'] = array(
 	'categorytree-no-pages' => 'هیچ صفحه یا زیررده‌ای ندارد.',
 	'categorytree-not-found' => 'ردهٔ <i>$1</i> یافت نشد',
 	'categorytree-error' => 'اشکال در دریافت اطلاعات.',
-	'categorytree-retry' => 'لطفاً یک لحظه صبر کنید و دوباره امتحان کنید.',
+	'categorytree-retry' => 'لطفاً کمی صبر و دوباره امتحان کنید.',
 );
 
 /** Finnish (Suomi)
