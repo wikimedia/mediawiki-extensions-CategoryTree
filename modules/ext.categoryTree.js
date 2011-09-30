@@ -31,7 +31,7 @@ new ( function( $, mw ) {
 	 * Handles clicks on the expand buttons, and calls the appropriate function
 	 */
 	this.handleNode = function() {
-		$link = $( this );
+		var $link = $( this );
 		if ( $link.data( 'ctState' ) == 'collapsed' ) {
 			that.expandNode( $link );
 		} else {
@@ -89,7 +89,7 @@ new ( function( $, mw ) {
 			+ mw.msg( 'categorytree-loading' ) + "</i>"
 		);
 
-		$parentTag = $link.parents( '.CategoryTreeTag' );
+		var $parentTag = $link.parents( '.CategoryTreeTag' );
 
 		if ( $parentTag.length == 0 ) {
 			// Probably a CategoryPage
@@ -134,7 +134,7 @@ new ( function( $, mw ) {
 				that.showToggles();
 			} )
 			.error( function() {
-				$retryLink = $( '<a />' )
+				var $retryLink = $( '<a />' )
 					.text( mw.msg( 'categorytree-retry' ) )
 					.attr( 'href', '#' )
 					.click( function() { that.loadChildren( $link, $children ) } );
