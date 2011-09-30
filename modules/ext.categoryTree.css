@@ -68,6 +68,9 @@ div.CategoryTreeInlineNode div {
 	margin:-0.5ex 0 0 1ex; /* why is the -0.5ex needed? */
 	padding:0;
 	vertical-align: top;
+	/* IE6-7 Hack for display: inline-block */
+	zoom: 1;
+	*display: inline;
 }
 
 .CategoryTreeSection {

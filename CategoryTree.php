@@ -64,9 +64,6 @@ $wgCategoryTreeMaxDepth = array( CT_MODE_PAGES => 1, CT_MODE_ALL => 1, CT_MODE_C
 $wgCategoryTreeForceHeaders = false;
 $wgCategoryTreeSidebarRoot = null;
 $wgCategoryTreeHijackPageCategories = false; # EXPERIMENTAL! NOT YET FOR PRODUCTION USE! Main problem is general HTML/CSS layout cruftiness.
-
-$wgCategoryTreeExtPath = '/extensions/CategoryTree';
-$wgCategoryTreeVersion = '6';  # NOTE: bump this when you change the CSS or JS files!
 $wgCategoryTreeUseCategoryTable = true;
 
 $wgCategoryTreeOmitNamespace = CT_HIDEPREFIX_CATEGORIES;
@@ -138,6 +135,16 @@ $wgHooks['ArticleFromTitle'][] = 'efCategoryTreeArticleFromTitle';
  * register Ajax function
  */
 $wgAjaxExportList[] = 'efCategoryTreeAjaxWrapper';
+
+/**
+ * Register ResourceLoader modules
+ */
+$wgResourceModules['ext.categoryTree'] = array(
+	'localBasePath' => dirname( __FILE__ ) . '/modules',
+	'remoteExtPath' => 'CategoryTree/modules',
+	'styles' => 'ext.categoryTree.css',
+	'scripts' => 'ext.categoryTree.js',
+);
 
 /**
  * Hook it up

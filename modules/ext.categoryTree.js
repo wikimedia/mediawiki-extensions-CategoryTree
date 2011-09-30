@@ -159,4 +159,4 @@ function categoryTreeShowToggles() {
 }
 
 // Re-show the CategoryTreeToggles
-addOnloadHook(categoryTreeShowToggles);
+jQuery( categoryTreeShowToggles );

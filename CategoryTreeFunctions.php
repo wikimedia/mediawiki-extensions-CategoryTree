@@ -164,39 +164,8 @@ class CategoryTree {
 		global $wgJsMimeType, $wgScriptPath, $wgContLang;
 		global $wgCategoryTreeHijackPageCategories, $wgCategoryTreeExtPath, $wgCategoryTreeVersion;
 
-		# Register css file for CategoryTree
-		$outputPage->addLink(
-			array(
-				'rel' => 'stylesheet',
-				'type' => 'text/css',
-				'href' => "$wgScriptPath$wgCategoryTreeExtPath/CategoryTree.css?$wgCategoryTreeVersion",
-			)
-		);
-
-		if ( $wgCategoryTreeHijackPageCategories ) {
-			# Register MSIE quirks
-			$outputPage->addScript(
-				"<!--[if IE]><link rel=\"stylesheet\" type=\"text/css\" src=\"{$wgScriptPath}{$wgCategoryTreeExtPath}/CategoryTreeIE.css?{$wgCategoryTreeVersion}\"/><![endif]-->
-	\n"
-			);
-		}
-
-		# Register css RTL file for CategoryTree
-		if ( $wgContLang->isRTL() ) {
-			$outputPage->addLink(
-				array(
-					'rel' => 'stylesheet',
-					'type' => 'text/css',
-					'href' => "$wgScriptPath$wgCategoryTreeExtPath/CategoryTree.rtl.css?$wgCategoryTreeVersion"
-				)
-			);
-		}
-
-		# Register main js file for CategoryTree
-		$outputPage->addScript(
-			"<script type=\"{$wgJsMimeType}\" src=\"{$wgScriptPath}{$wgCategoryTreeExtPath}/CategoryTree.js?{$wgCategoryTreeVersion}\">" .
-			"</script>\n"
-		);
+		# Add the module
+		$outputPage->addModules( 'ext.categoryTree' );
 
 		# Add messages
 		$outputPage->addScript(
