@@ -248,7 +248,7 @@ class CategoryTree {
 	}
 
 	function getOptionsAsJsString( $depth = NULL ) {
-		return Xml::escapeJsString( $s );
+		return Xml::escapeJsString( $this->getOptionsAsJsStructure( $depth ) );
 	}
 
 	function getOptionsAsUrlParameters() {
@@ -338,6 +338,9 @@ class CategoryTree {
 		} else {
 			$attr['class'] = ' CategoryTreeTag';
 		}
+
+		$attr['data-ct-mode'] = $this->mOptions['mode'];
+		$attr['data-ct-options'] = Xml::escapeTagsOnly( $this->getOptionsAsJsStructure() );
 
 		$html = '';
 		$html .= Xml::openElement( 'div', $attr );
@@ -637,19 +640,20 @@ class CategoryTree {
 
 				$linkattr[ 'class' ] = "CategoryTreeToggle";
 				$linkattr['style'] = 'display: none;'; // Unhidden by JS
+				$linkattr['data-ct-title'] = $key;
 
 				if ( $children == 0 || $loadchildren ) {
 					$tag = 'span';
 					$txt = wfMsgNoTrans( 'categorytree-expand-bullet' );
-					$linkattr[ 'onclick' ] = "if (this.href) this.href='javascript:void(0)'; categoryTreeExpandNode('" . Xml::escapeJsString( $key ) . "'," . $this->getOptionsAsJsStructure() . ",this);";
 					# Don't load this message for ajax requests, so that we don't have to initialise $wgLang
 					$linkattr[ 'title' ] = $this->mIsAjaxRequest ? '##LOAD##' : wfMsgNoTrans( 'categorytree-expand' );
+					$linkattr[ 'data-ct-state' ] = 'collapsed';
 				} else {
 					$tag = 'span';
 					$txt = wfMsgNoTrans( 'categorytree-collapse-bullet' );
-					$linkattr[ 'onclick' ] = "if (this.href) this.href='javascript:void(0)'; categoryTreeCollapseNode('" . Xml::escapeJsString( $key ) . "'," . $this->getOptionsAsJsStructure() . ",this);";
 					$linkattr[ 'title' ] = wfMsgNoTrans( 'categorytree-collapse' );
-					$linkattr[ 'class' ] .= ' CategoryTreeLoaded';
+					$linkattr[ 'data-ct-loaded' ] = true;
+					$linkattr[ 'data-ct-state' ] = 'expanded';
 				}
 
 				if ( $tag == 'a' ) {

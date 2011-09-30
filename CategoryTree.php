@@ -144,6 +144,20 @@ $wgResourceModules['ext.categoryTree'] = array(
 	'remoteExtPath' => 'CategoryTree/modules',
 	'styles' => 'ext.categoryTree.css',
 	'scripts' => 'ext.categoryTree.js',
+	'messages' => array(
+		'categorytree-collapse',
+		'categorytree-expand',
+		'categorytree-collapse-bullet',
+		'categorytree-expand-bullet',
+		'categorytree-load',
+		'categorytree-loading',
+		'categorytree-nothing-found',
+		'categorytree-no-subcategories',
+		'categorytree-no-parent-categories',
+		'categorytree-no-pages',
+		'categorytree-error',
+		'categorytree-retry',
+	),
 );
 
 /**
@@ -193,6 +207,8 @@ function efCategoryTree() {
 	} else {
 		$wgHooks['OutputPageParserOutput'][] = 'efCategoryTreeParserOutput';
 	}
+
+	$wgHooks['ResourceLoaderGetConfigVars'][] = 'efCategoryTreeGetConfigVars';
 }
 
 function efCategoryTreeSetHooks( $parser ) {
@@ -368,11 +384,20 @@ function efCategoryTreeOutputPageMakeCategoryLinks( $out, &$categories, &$links 
 }
 
 function efCategoryTreeSkinJoinCategoryLinks( $skin, &$links, &$result ) {
-	$embed = '<div class="CategoryTreePretendInlineMSIE CategoryTreeCategoryBarItem">';
+	$embed = '<div class="CategoryTreeCategoryBarItem">';
 	$pop = '</div>';
 	$sep = ' ';
 
 	$result = $embed . implode ( "{$pop} {$sep} {$embed}" , $links ) . $pop;
 
 	return false;
+}
+
+function efCategoryTreeGetConfigVars( &$vars ) {
+	global $wgCategoryTreeCategoryPageOptions;
+
+	// Look this is pretty bad but Category tree is just whacky, it needs to be rewritten
+	$ct = new CategoryTree( $wgCategoryTreeCategoryPageOptions );
+	$vars['wgCategoryTreePageCategoryOptions'] = $ct->getOptionsAsJsStructure();
+	return true;
 }

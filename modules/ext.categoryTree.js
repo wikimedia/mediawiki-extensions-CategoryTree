@@ -12,151 +12,144 @@
  *       in CategoryTree.php to avoid users getting stale copies from cache.
  */
 
-// Default messages if new code loaded with old cached page
-var categoryTreeErrorMsg = "Problem loading data.";
-var categoryTreeRetryMsg = "Please wait a moment and try again.";
+new ( function( $, mw ) {
+	/**
+	 * Reference to this
+	 *
+	 * @var {this}
+	 */
+	var that = this;
 
-function categoryTreeNextDiv(e) {
-	var n= e.nextSibling;
-	while ( n && ( n.nodeType != 1 || n.nodeName != 'DIV') ) {
-		//alert('nodeType: ' + n.nodeType + '; nodeName: ' + n.nodeName);
-		n= n.nextSibling;
+	/**
+	 * Sets display inline to tree toggle
+	 */
+	this.showToggles = function() {
+		$( 'span.CategoryTreeToggle' ).css( 'display', 'inline' );
+	};
+
+	/**
+	 * Handles clicks on the expand buttons, and calls the appropriate function
+	 */
+	this.handleNode = function() {
+		$link = $( this );
+		if ( $link.data( 'ctState' ) == 'collapsed' ) {
+			that.expandNode( $link );
+		} else {
+			that.collapseNode( $link );
+		}
 	}
 
-	return n;
-}
+	/**
+	 * Expands a given node (loading it's children if not loaded)
+	 *
+	 * @param {jQuery} $link
+	 */
+	this.expandNode = function( $link ) {
+		// Show the children node
+		$children = $link.parents( '.CategoryTreeItem' )
+				.siblings( '.CategoryTreeChildren' );
+		$children.show();
 
-function categoryTreeExpandNode(cat, options, lnk) {
-	var div= categoryTreeNextDiv( lnk.parentNode.parentNode );
+		$link
+			.html( mw.msg( 'categorytree-collapse-bullet' ) )
+			.attr( 'title', mw.msg( 'categorytree-collapse' ) )
+			.data( 'ctState', 'expanded' );
 
-	div.style.display= 'block';
-	lnk.innerHTML= categoryTreeCollapseBulletMsg;
-	lnk.title= categoryTreeCollapseMsg;
-	lnk.onclick= function() { categoryTreeCollapseNode(cat, options, lnk) };
+		if ( !$link.data( 'ctLoaded' ) ) {
+			that.loadChildren( $link, $children );
+		}
+	};
 
-	if (!lnk.className.match(/(^| )CategoryTreeLoaded($| )/)) {
-		categoryTreeLoadNode(cat, options, lnk, div);
-	}
-}
+	/**
+	 * Collapses a node
+	 *
+	 * @param {jQuery} $link
+	 */
+	this.collapseNode = function( $link ) {
+		// Hide the children node
+		$link.parents( '.CategoryTreeItem' )
+			.siblings( '.CategoryTreeChildren' ).hide();
 
-function categoryTreeCollapseNode(cat, options, lnk) {
-	var div= categoryTreeNextDiv( lnk.parentNode.parentNode );
+		$link
+			.html( mw.msg( 'categorytree-expand-bullet' ) )
+			.attr( 'title', mw.msg( 'categorytree-expand' ) )
+			.data( 'ctState', 'collapsed' );
+	};
 
-	div.style.display= 'none';
-	lnk.innerHTML= categoryTreeExpandBulletMsg;
-	lnk.title= categoryTreeExpandMsg;
-	lnk.onclick= function() { categoryTreeExpandNode(cat, options, lnk) }
-}
+	/**
+	 * Loads children for a node
+	 *
+	 * @param {jQuery} $link
+	 * @param {jQuery} $children
+	 */
+	this.loadChildren = function( $link, $children ) {
+		$link.data( 'ctLoaded', true );
+		$children.html(
+			'<i class="CategoryTreeNotice">'
+			+ mw.msg( 'categorytree-loading' ) + "</i>"
+		);
 
-function categoryTreeLoadNode(cat, options, lnk, div) {
-	div.style.display= 'block';
-	lnk.className= 'CategoryTreeLoaded';
-	lnk.innerHTML= categoryTreeCollapseBulletMsg;
-	lnk.title= categoryTreeCollapseMsg;
-	lnk.onclick= function() { categoryTreeCollapseNode(cat, options, lnk) };
+		$parentTag = $link.parents( '.CategoryTreeTag' );
 
-	categoryTreeLoadChildren(cat, options, div)
-}
-
-// FIXME Why can't this just use uneval()?
-function categoryTreeEncodeValue(value) {
-	switch (typeof value) {
-		case 'function':
-			throw new Error("categoryTreeEncodeValue encountered a function");
-			break;
-		case 'string':
-			s = '"' + value.replace(/([\\"'])/g, "\\$1") + '"';
-			break;
-		case 'number':
-		case 'boolean':
-		case 'null':
-			s = String(value);
-			break;
-		case 'object':
-			if ( !value ) {
-				s = 'null';
-			} else if (typeof value.length === 'number' && !(value.propertyIsEnumerable('length'))) {
-				s = '';
-				for (i = 0; i<value.length; i++) {
-					v = value[i];
-					if ( s!='' ) s += ', ';
-					s += categoryTreeEncodeValue( v );
-				}
-				s = '[' + s + ']';
-			} else {
-				s = '';
-				for (k in value) {
-					v = value[k];
-					if ( s!='' ) s += ', ';
-					s += categoryTreeEncodeValue( k );
-					s += ': ';
-					s += categoryTreeEncodeValue( v );
-				}
-				s = '{' + s + '}';
-			}
-			break;
-		default:
-			throw new Error("categoryTreeEncodeValue encountered strange variable type " + (typeof value));
-	}
-
-	return s;
-}
-
-function categoryTreeLoadChildren(cat, options, div) {
-	div.innerHTML= '<i class="CategoryTreeNotice">' + categoryTreeLoadingMsg + '</i>';
-
-	if ( typeof options == "string" ) { //hack for backward compatibility
-		options = { mode : options };
-	}
-
-	function f( request ) {
-		if (request.status != 200) {
-			div.innerHTML = '<i class="CategoryTreeNotice">' + categoryTreeErrorMsg + ' </i>';
-			var retryLink = document.createElement('a');
-			retryLink.innerHTML = categoryTreeRetryMsg;
-			retryLink.onclick = function() {
-				categoryTreeLoadChildren(cat, options, div, enc);
-			};
-			div.appendChild(retryLink);
-			return;
+		if ( $parentTag.length == 0 ) {
+			// Probably a CategoryPage
+			$parentTag = $( '<div />' )
+				.hide()
+				.data( 'ctOptions', mw.config.get( 'wgCategoryTreePageCategoryOptions' ) )
 		}
 
-		result= request.responseText;
-		result= result.replace(/^\s+|\s+$/, '');
-
-		if ( result == '' ) {
-			result= '<i class="CategoryTreeNotice">';
-
-			if ( options.mode == 0 ) {
-				result= categoryTreeNoSubcategoriesMsg;
-			} else if ( options.mode == 10 ) {
-				result= categoryTreeNoPagesMsg;
-			} else if ( options.mode == 100 ) {
-					result= categoryTreeNoParentCategoriesMsg;
-			} else {
-				result= categoryTreeNothingFoundMsg;
+		$.get(
+			mw.util.wikiScript(), {
+				action: 'ajax',
+				rs: 'efCategoryTreeAjaxWrapper',
+				rsargs: [$link.data( 'ctTitle' ), $parentTag.data( 'ctOptions' ), 'json'] // becomes &rsargs[]=arg1&rsargs[]=arg2...
 			}
+		)
+			.success( function ( data ) {
+				data = data.replace(/^\s+|\s+$/, '');
+				data = data.replace(/##LOAD##/g, mw.msg( 'categorytree-expand' ) );
 
-			result+= '</i>';
-		}
+				if ( data == '' ) {
+					switch ( $parentTag.data( 'ctMode' ) ) {
+						case 0:
+							data = mw.msg( 'categorytree-no-subcategories' );
+							break;
+						case 10:
+							data = mw.msg( 'categorytree-no-pages' );
+							break;
+						case 100:
+							data = mw.msg( 'categorytree-no-parent-categories' );
+							break;
+						default:
+							data = mw.msg( 'categorytree-nothing-found' );
+					}
 
-		result = result.replace(/##LOAD##/g, categoryTreeExpandMsg);
-		div.innerHTML= result;
+					data = $( '<i class="CategoryTreeNotice" />' ).text( data );
+				}
 
-		categoryTreeShowToggles();
+				$children
+					.html( data )
+					.find( '.CategoryTreeToggle' )
+						.click( that.handleNode );
+				that.showToggles();
+			} )
+			.error( function() {
+				$retryLink = $( '<a />' )
+					.text( mw.msg( 'categorytree-retry' ) )
+					.attr( 'href', '#' )
+					.click( function() { that.loadChildren( $link, $children ) } );
+				$children
+					.text( mw.msg( 'categorytree-error' ) )
+					.append( $retryLink );
+			} );
 	}
 
-	var opt = categoryTreeEncodeValue(options);
-	sajax_do_call( "efCategoryTreeAjaxWrapper", [cat, opt, 'json'] , f );
-}
+	/**
+	 * Register any click events
+	 */
+	$( function( $ ) {
+		$( '.CategoryTreeToggle' ).click( that.handleNode );
 
-function categoryTreeShowToggles() {
-	var toggles = getElementsByClassName( document, 'span', 'CategoryTreeToggle' );
-
-	for( var i = 0; i<toggles.length; ++i ) {
-		toggles[i].style.display = 'inline';
-	}
-}
-
-// Re-show the CategoryTreeToggles
-jQuery( categoryTreeShowToggles );
+		that.showToggles();
+	} );
+} )( jQuery, mediaWiki );
