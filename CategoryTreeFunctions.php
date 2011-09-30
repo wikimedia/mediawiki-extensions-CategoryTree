@@ -161,29 +161,8 @@ class CategoryTree {
 	 * @param OutputPage $outputPage
 	 */
 	static function setHeaders( $outputPage ) {
-		global $wgJsMimeType, $wgScriptPath, $wgContLang;
-		global $wgCategoryTreeHijackPageCategories, $wgCategoryTreeExtPath, $wgCategoryTreeVersion;
-
 		# Add the module
 		$outputPage->addModules( 'ext.categoryTree' );
-
-		# Add messages
-		$outputPage->addScript(
-		"	<script type=\"{$wgJsMimeType}\">
-		var categoryTreeCollapseMsg = \"" . Xml::escapeJsString( wfMsgNoTrans( 'categorytree-collapse' ) ) . "\";
-		var categoryTreeExpandMsg = \"" . Xml::escapeJsString( wfMsgNoTrans( 'categorytree-expand' ) ) . "\";
-		var categoryTreeCollapseBulletMsg = \"" . Xml::escapeJsString( wfMsgNoTrans( 'categorytree-collapse-bullet' ) ) . "\";
-		var categoryTreeExpandBulletMsg = \"" . Xml::escapeJsString( wfMsgNoTrans( 'categorytree-expand-bullet' ) ) . "\";
-		var categoryTreeLoadMsg = \"" . Xml::escapeJsString( wfMsgNoTrans( 'categorytree-load' ) ) . "\";
-		var categoryTreeLoadingMsg = \"" . Xml::escapeJsString( wfMsgNoTrans( 'categorytree-loading' ) ) . "\";
-		var categoryTreeNothingFoundMsg = \"" . Xml::escapeJsString( wfMsgNoTrans( 'categorytree-nothing-found' ) ) . "\";
-		var categoryTreeNoSubcategoriesMsg = \"" . Xml::escapeJsString( wfMsgNoTrans( 'categorytree-no-subcategories' ) ) . "\";
-		var categoryTreeNoParentCategoriesMsg = \"" . Xml::escapeJsString( wfMsgNoTrans( 'categorytree-no-parent-categories' ) ) . "\";
-		var categoryTreeNoPagesMsg = \"" . Xml::escapeJsString( wfMsgNoTrans( 'categorytree-no-pages' ) ) . "\";
-		var categoryTreeErrorMsg = \"" . Xml::escapeJsString( wfMsgNoTrans( 'categorytree-error' ) ) . "\";
-		var categoryTreeRetryMsg = \"" . Xml::escapeJsString( wfMsgNoTrans( 'categorytree-retry' ) ) . "\";
-	</script>\n"
-		);
 	}
 
 	static function getJsonCodec() {
