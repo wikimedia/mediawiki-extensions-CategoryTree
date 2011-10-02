@@ -12,41 +12,39 @@
  *       in CategoryTree.php to avoid users getting stale copies from cache.
  */
 
-new ( function( $, mw ) {
-	/**
-	 * Reference to this
-	 *
-	 * @var {this}
-	 */
-	var that = this;
+(function( $, mw ) {
 
+var categoryTree = {
 	/**
 	 * Sets display inline to tree toggle
 	 */
-	this.showToggles = function() {
+	showToggles: function() {
 		$( 'span.CategoryTreeToggle' ).css( 'display', 'inline' );
-	};
-
+	},
+	
 	/**
 	 * Handles clicks on the expand buttons, and calls the appropriate function
+	 *
+	 * @context {Element} CategoryTreeToggle
+	 * @param e {jQuery.Event}
 	 */
-	this.handleNode = function() {
+	handleNode: function( e ) {
 		var $link = $( this );
-		if ( $link.data( 'ctState' ) == 'collapsed' ) {
-			that.expandNode( $link );
+		if ( $link.data( 'ctState' ) === 'collapsed' ) {
+			categoryTree.expandNode( $link );
 		} else {
-			that.collapseNode( $link );
+			categoryTree.collapseNode( $link );
 		}
-	}
+	},
 
 	/**
 	 * Expands a given node (loading it's children if not loaded)
 	 *
 	 * @param {jQuery} $link
 	 */
-	this.expandNode = function( $link ) {
+	expandNode: function( $link ) {
 		// Show the children node
-		$children = $link.parents( '.CategoryTreeItem' )
+		var $children = $link.parents( '.CategoryTreeItem' )
 				.siblings( '.CategoryTreeChildren' );
 		$children.show();
 
@@ -56,16 +54,16 @@ new ( function( $, mw ) {
 			.data( 'ctState', 'expanded' );
 
 		if ( !$link.data( 'ctLoaded' ) ) {
-			that.loadChildren( $link, $children );
+			categoryTree.loadChildren( $link, $children );
 		}
-	};
+	},
 
 	/**
 	 * Collapses a node
 	 *
 	 * @param {jQuery} $link
 	 */
-	this.collapseNode = function( $link ) {
+	collapseNode: function( $link ) {
 		// Hide the children node
 		$link.parents( '.CategoryTreeItem' )
 			.siblings( '.CategoryTreeChildren' ).hide();
@@ -74,28 +72,28 @@ new ( function( $, mw ) {
 			.html( mw.msg( 'categorytree-expand-bullet' ) )
 			.attr( 'title', mw.msg( 'categorytree-expand' ) )
 			.data( 'ctState', 'collapsed' );
-	};
+	},
 
 	/**
-	 * Loads children for a node
+	 * Loads children for a node via an HTTP call
 	 *
 	 * @param {jQuery} $link
 	 * @param {jQuery} $children
 	 */
-	this.loadChildren = function( $link, $children ) {
+	loadChildren: function( $link, $children ) {
 		$link.data( 'ctLoaded', true );
 		$children.html(
-			'<i class="CategoryTreeNotice">'
-			+ mw.msg( 'categorytree-loading' ) + "</i>"
+			$( '<i class="CategoryTreeNotice"></i>' )
+				.text( mw.msg( 'categorytree-loading' ) )
 		);
 
 		var $parentTag = $link.parents( '.CategoryTreeTag' );
 
-		if ( $parentTag.length == 0 ) {
+		if ( $parentTag.length === 0 ) {
 			// Probably a CategoryPage
 			$parentTag = $( '<div />' )
 				.hide()
-				.data( 'ctOptions', mw.config.get( 'wgCategoryTreePageCategoryOptions' ) )
+				.data( 'ctOptions', mw.config.get( 'wgCategoryTreePageCategoryOptions' ) );
 		}
 
 		$.get(
@@ -109,7 +107,7 @@ new ( function( $, mw ) {
 				data = data.replace(/^\s+|\s+$/, '');
 				data = data.replace(/##LOAD##/g, mw.msg( 'categorytree-expand' ) );
 
-				if ( data == '' ) {
+				if ( data === '' ) {
 					switch ( $parentTag.data( 'ctMode' ) ) {
 						case 0:
 							data = mw.msg( 'categorytree-no-subcategories' );
@@ -124,32 +122,31 @@ new ( function( $, mw ) {
 							data = mw.msg( 'categorytree-nothing-found' );
 					}
 
-					data = $( '<i class="CategoryTreeNotice" />' ).text( data );
+					data = $( '<i class="CategoryTreeNotice"></i>' ).text( data );
 				}
 
 				$children
 					.html( data )
 					.find( '.CategoryTreeToggle' )
-						.click( that.handleNode );
-				that.showToggles();
+						.click( categoryTree.handleNode );
+				categoryTree.showToggles();
 			} )
 			.error( function() {
 				var $retryLink = $( '<a />' )
 					.text( mw.msg( 'categorytree-retry' ) )
 					.attr( 'href', '#' )
-					.click( function() { that.loadChildren( $link, $children ) } );
+					.click( function() { categoryTree.loadChildren( $link, $children ); } );
 				$children
 					.text( mw.msg( 'categorytree-error' ) )
 					.append( $retryLink );
 			} );
 	}
+};
 
-	/**
-	 * Register any click events
-	 */
-	$( function( $ ) {
-		$( '.CategoryTreeToggle' ).click( that.handleNode );
+// Register click events and show toggle buttons
+$( function( $ ) {
+	$( '.CategoryTreeToggle' ).click( categoryTree.handleNode );
+	categoryTree.showToggles();
+} );
 
-		that.showToggles();
-	} );
 } )( jQuery, mediaWiki );
