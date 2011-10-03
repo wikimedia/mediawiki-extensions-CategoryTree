@@ -305,6 +305,7 @@ $messages['arz'] = array(
 
 /** Assamese (অসমীয়া)
  * @author Chaipau
+ * @author Psneog
  * @author Rajuonline
  */
 $messages['as'] = array(
@@ -318,12 +319,12 @@ $messages['as'] = array(
 	'categorytree-mode-all' => 'সকলো পৃষ্ঠা',
 	'categorytree-collapse' => 'সৰু কৰক',
 	'categorytree-expand' => 'বহলাওক',
-	'categorytree-load' => 'লোড কৰক',
-	'categorytree-loading' => 'লোড কৰি থকা হৈছে...',
+	'categorytree-load' => "ল'ড কৰক",
+	'categorytree-loading' => "ল'ড কৰি থকা হৈছে...",
 	'categorytree-nothing-found' => 'একো পোৱা নগল',
-	'categorytree-no-subcategories' => 'কোনো উপশ্ৰেণী নাই',
-	'categorytree-no-pages' => 'কোনো পৃষ্ঠা বা উপশ্ৰেণী নাই',
-	'categorytree-not-found' => '<i>$1</i> শ্ৰেণীতো পোৱা নগল',
+	'categorytree-no-subcategories' => 'উপশ্ৰেণী নাই',
+	'categorytree-no-pages' => 'এনে কোনো পৃষ্ঠা বা উপশ্ৰেণী নাই',
+	'categorytree-not-found' => '<i>$1</i> শ্ৰেণীটো বিচাৰি পোৱা নগল',
 	'categorytree-error' => 'তথ্য জমাবলৈ সমস্যা হৈছে',
 	'categorytree-retry' => 'অনুগ্ৰহ কৰি কিছু সময় অপেক্ষা কৰি তাৰ পিছত চেষ্টা কৰক।',
 );
