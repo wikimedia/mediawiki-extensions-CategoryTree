@@ -3359,6 +3359,7 @@ $messages['ps'] = array(
 	'categorytree-mode-categories' => 'يوازې وېشنيزې',
 	'categorytree-mode-pages' => 'مخونه پرته د دوتنو نه',
 	'categorytree-mode-all' => 'ټول مخونه',
+	'categorytree-collapse' => 'پرځول',
 	'categorytree-expand' => 'غځول',
 	'categorytree-load' => 'برسېرول',
 	'categorytree-loading' => 'د برسېرېدلو په حال کې...',
