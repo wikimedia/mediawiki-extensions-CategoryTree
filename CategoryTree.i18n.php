@@ -223,6 +223,7 @@ $messages['an'] = array(
 /** Arabic (العربية)
  * @author Meno25
  * @author OsamaK
+ * @author زكريا
  */
 $messages['ar'] = array(
 	'categorytree' => 'شجرة تصنيف',
@@ -238,7 +239,7 @@ $messages['ar'] = array(
 	'categorytree-mode-categories' => 'تصنيفات فقط',
 	'categorytree-mode-pages' => 'الصفحات ماعدا الملفات',
 	'categorytree-mode-all' => 'كل الصفحات',
-	'categorytree-collapse' => 'اطوِ',
+	'categorytree-collapse' => 'اطو',
 	'categorytree-expand' => 'فرد',
 	'categorytree-member-counts' => 'يحتوي على {{PLURAL:$1|1 تصنيف فرعي|$1 تصنيف فرعي}}، {{PLURAL:$2|1 صفحة|$2 صفحة}}، و {{PLURAL:$3|1 ملف|$3 ملف}}',
 	'categorytree-load' => 'تحميل',
@@ -3864,7 +3865,7 @@ $messages['sq'] = array(
 	'categorytree-retry' => 'Ju lutemi prisni një moment dhe provojeni përsëri.',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Millosh
  * @author Rancher
  * @author Sasa Stefanovic
@@ -3874,10 +3875,10 @@ $messages['sq'] = array(
 $messages['sr-ec'] = array(
 	'categorytree' => 'Стабло категорија',
 	'categorytree-portlet' => 'категорије',
-	'categorytree-legend' => 'Прикажи стабло категорија',
-	'categorytree-desc' => 'Динамичка навигација [[Special:CategoryTree|структуре категорија]].',
+	'categorytree-legend' => 'Приказ стабла категорија',
+	'categorytree-desc' => 'Динамичка навигација кроз [[Special:CategoryTree|структуру категорија]]',
 	'categorytree-header' => 'Унесите назив категорије чији садржај желите да видите у стабластој структури.
-Ово захтева напредну могућност јаваскрипта познату као ајакс.
+Ово захтева напредну функцију јаваскрипта познату као ајакс.
 Ако имате старији прегледач или сте онемогућили јаваскрипт, стабласти приказ неће радити.',
 	'categorytree-category' => 'Категорија:',
 	'categorytree-go' => 'Прикажи стабло',
@@ -3887,7 +3888,7 @@ $messages['sr-ec'] = array(
 	'categorytree-mode-all' => 'све странице',
 	'categorytree-collapse' => 'сакриј',
 	'categorytree-expand' => 'прикажи',
-	'categorytree-member-counts' => 'садржи {{PLURAL:$1|1 поткатегорију|$1 поткатегорија}}, {{PLURAL:$2|1 страницу|$2 страница}}, и {{PLURAL:$3|1 фајл|$3 фајлова}}',
+	'categorytree-member-counts' => 'садржи {{PLURAL:$1|једну поткатегорију|$1 поткатегорије|$1 поткатегорија}}, {{PLURAL:$2|једну страницу|$2 странице|$2 страница}} и {{PLURAL:$3|једну датотеку|$3 датотеке|$3 датотека}}',
 	'categorytree-load' => 'учитај',
 	'categorytree-loading' => 'учитавање',
 	'categorytree-nothing-found' => 'ништа није пронађено',
