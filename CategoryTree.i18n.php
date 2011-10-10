@@ -306,27 +306,29 @@ $messages['arz'] = array(
 
 /** Assamese (অসমীয়া)
  * @author Chaipau
+ * @author Gitartha.bordoloi
  * @author Psneog
  * @author Rajuonline
  */
 $messages['as'] = array(
-	'categorytree' => 'শ্ৰেণীবৃক্ষ্য',
-	'categorytree-legend' => 'শ্ৰেণীবৃক্ষ্য দেখুৱাওক',
+	'categorytree' => 'শ্ৰেণীবৃক্ষ',
+	'categorytree-portlet' => 'শ্ৰেণী',
+	'categorytree-legend' => 'শ্ৰেণীবৃক্ষ দেখুৱাওক',
 	'categorytree-category' => 'শ্ৰেণী',
-	'categorytree-go' => 'বৃক্ষ্য দেখুৱাওক',
+	'categorytree-go' => 'বৃক্ষ দেখুৱাওক',
 	'categorytree-parents' => 'পালক',
-	'categorytree-mode-categories' => 'কেবল শ্ৰেণী',
+	'categorytree-mode-categories' => 'কেৱল শ্ৰেণী',
 	'categorytree-mode-pages' => 'ফাইল বাদে পৃষ্ঠাসমুহ',
 	'categorytree-mode-all' => 'সকলো পৃষ্ঠা',
 	'categorytree-collapse' => 'সৰু কৰক',
 	'categorytree-expand' => 'বহলাওক',
 	'categorytree-load' => "ল'ড কৰক",
 	'categorytree-loading' => "ল'ড কৰি থকা হৈছে...",
-	'categorytree-nothing-found' => 'একো পোৱা নগল',
+	'categorytree-nothing-found' => "একো পোৱা নগ'ল",
 	'categorytree-no-subcategories' => 'উপশ্ৰেণী নাই',
 	'categorytree-no-pages' => 'এনে কোনো পৃষ্ঠা বা উপশ্ৰেণী নাই',
 	'categorytree-not-found' => '<i>$1</i> শ্ৰেণীটো বিচাৰি পোৱা নগল',
-	'categorytree-error' => 'তথ্য জমাবলৈ সমস্যা হৈছে',
+	'categorytree-error' => "তথ্য ল'ড কৰাত সমস্যা হৈছে।",
 	'categorytree-retry' => 'অনুগ্ৰহ কৰি কিছু সময় অপেক্ষা কৰি তাৰ পিছত চেষ্টা কৰক।',
 );
 
