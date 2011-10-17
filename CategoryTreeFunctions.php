@@ -650,12 +650,31 @@ class CategoryTree {
 		if ( $count !== false && $this->getOption( 'showcount' ) ) {
 			$pages = $pageCount - $subcatCount - $fileCount;
 
+			global $wgContLang, $wgLang;
 			$attr = array(
-				'title' => wfMsgExt( 'categorytree-member-counts', 'parsemag', $subcatCount, $pages , $fileCount, $pageCount, $count )
+				'title' => wfMsgExt( 'categorytree-member-counts', 'parsemag', $subcatCount, $pages , $fileCount, $pageCount, $count ),
+				'dir' => $wgLang->getDir() # numbers and commas get messed up in a mixed dir env
 			);
 
-			global $wgContLang, $wgLang;
 			$s .= $wgContLang->getDirMark() . ' ';
+
+			# Create a list of category members with only non-zero member counts
+			$memberNums = array();
+			if ( $subcatCount ) {
+				$memberNums[] = wfMessage( 'categorytree-num-categories', $wgLang->formatNum( $subcatCount ) )->text();
+			}
+			if ( $pageCount ) {
+				$memberNums[] = wfMessage( 'categorytree-num-pages', $wgLang->formatNum( $pageCount ) )->text();
+			}
+			if ( $fileCount ) {
+				$memberNums[] = wfMessage( 'categorytree-num-files', $wgLang->formatNum( $fileCount ) )->text();
+			}
+			$memberNumsShort = $memberNums
+				? $wgLang->commaList( $memberNums )
+				: wfMessage( 'categorytree-num-empty' )->text();
+
+			# Only $5 is actually used in the default message.
+			# Other arguments can be used in a customized message.
 			$s .= Xml::tags( 'span', $attr,
 				wfMsgExt( 'categorytree-member-num',
 					array( 'parsemag', 'escapenoentities' ),
@@ -663,7 +682,7 @@ class CategoryTree {
 					$pages,
 					$fileCount,
 					$pageCount,
-					$wgLang->formatNum( $count ) ) );
+					$memberNumsShort ) );
 		}
 
 		$s .= Xml::closeElement( 'div' );

@@ -38,7 +38,11 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 	'categorytree-page-bullet'      => '&nbsp;', # do not translate or duplicate this message to other languages
 
 	'categorytree-member-counts'    => 'contains {{PLURAL:$1|1 subcategory|$1 subcategories}}, {{PLURAL:$2|1 page|$2 pages}}, and {{PLURAL:$3|1 file|$3 files}}', # $1=subcategories, $2=subpages, $3=files, $4=total, $5=shown-in-tree
-	'categorytree-member-num'    => '($5)', # do not translate or duplicate this message to other languages
+	'categorytree-member-num'       => '($5)', # do not translate or duplicate this message to other languages
+	'categorytree-num-categories'   => '$1 C',
+	'categorytree-num-pages'        => '$1 P',
+	'categorytree-num-files'        => '$1 F',
+	'categorytree-num-empty'        => 'empty',
 
 	'categorytree-load'             => 'load',
 	'categorytree-loading'          => 'loading…',
@@ -63,6 +67,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
  * @author Yekrats
  * @author Александр Сигачёв
  * @author פוילישער
+ * @author Amire80
  */
 $messages['qqq'] = array(
 	'categorytree' => 'Title of [[Special:CategoryTree]]',
@@ -91,6 +96,11 @@ Label for the category input field on Special:CategoryTree',
 * $4 = total number of members,
 * $5 = members to be shown in the tree, depending on mode.
 Use with <nowiki>{{PLURAL}}</nowiki>',
+	'categorytree-member-num' => 'Do not translate or duplicate this message to other languages. It can be customized locally on a wiki.',
+	'categorytree-num-categories' => 'Number of sub-categories in a category. The word "categories" should be abbreviated. Appears in brackets after a name of an empty category. This message supports PLURAL.',
+	'categorytree-num-pages' => 'Number of pages in a category. The word "pages" should be abbreviated. Appears in brackets after a name of an empty category. This message supports PLURAL.',
+	'categorytree-num-files' => 'Number of sub-categories in a category. The word "files" should be abbreviated.  Appears in brackets after a name of an empty category. This message supports PLURAL.',
+	'categorytree-num-empty' => 'The word "empty", as in "empty category". Appears in brackets after a name of an empty category.',
 	'categorytree-load' => '{{Identical|Load}}
 
 Tooltip for the "expend" button, if the content was not yet loaded',
@@ -1654,6 +1664,10 @@ $messages['he'] = array(
 	'categorytree-collapse' => 'כיווץ',
 	'categorytree-expand' => 'הרחבה',
 	'categorytree-member-counts' => 'כוללת {{PLURAL:$1|קטגוריית משנה אחת|$1 קטגוריות משנה}}, {{PLURAL:$2|דף אחד|$2 דפים}}, ו{{PLURAL:$3|קובץ אחד|־$3 קבצים}}',
+	'categorytree-num-categories' => '{{PLURAL:$1|קט אחת|$1 קט}}',
+	'categorytree-num-pages' => '{{PLURAL:$1|דף אחד|$1 דפים}}',
+	'categorytree-num-files' => '{{PLURAL:$1|קובץ אחד|$1 קב}}',
+	'categorytree-num-empty' => 'ריקה',
 	'categorytree-load' => 'טעינה',
 	'categorytree-loading' => 'בטעינה',
 	'categorytree-nothing-found' => 'לא נמצאו תוצאות',
