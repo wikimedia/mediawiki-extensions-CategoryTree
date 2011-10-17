@@ -56,6 +56,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 );
 
 /** Message documentation (Message documentation)
+ * @author Amire80
  * @author Aotake
  * @author Jon Harald Søby
  * @author Malafaya
@@ -67,7 +68,6 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
  * @author Yekrats
  * @author Александр Сигачёв
  * @author פוילישער
- * @author Amire80
  */
 $messages['qqq'] = array(
 	'categorytree' => 'Title of [[Special:CategoryTree]]',
@@ -96,14 +96,13 @@ Label for the category input field on Special:CategoryTree',
 * $4 = total number of members,
 * $5 = members to be shown in the tree, depending on mode.
 Use with <nowiki>{{PLURAL}}</nowiki>',
-	'categorytree-member-num' => 'Do not translate or duplicate this message to other languages. It can be customized locally on a wiki.',
 	'categorytree-num-categories' => 'Number of sub-categories in a category. The word "categories" should be abbreviated. Appears in brackets after a name of an empty category. This message supports PLURAL.',
 	'categorytree-num-pages' => 'Number of pages in a category. The word "pages" should be abbreviated. Appears in brackets after a name of an empty category. This message supports PLURAL.',
 	'categorytree-num-files' => 'Number of sub-categories in a category. The word "files" should be abbreviated.  Appears in brackets after a name of an empty category. This message supports PLURAL.',
 	'categorytree-num-empty' => 'The word "empty", as in "empty category". Appears in brackets after a name of an empty category.',
 	'categorytree-load' => '{{Identical|Load}}
 
-Tooltip for the "expend" button, if the content was not yet loaded',
+Tooltip for the "expand" button, if the content was not yet loaded',
 	'categorytree-loading' => '{{Identical|Loading}}
 
 Status message shown while loading content',
@@ -873,6 +872,10 @@ $messages['cs'] = array(
 	'categorytree-collapse' => 'zavřít',
 	'categorytree-expand' => 'otevřít',
 	'categorytree-member-counts' => 'obsahuje {{PLURAL:$1|1 podkategorii|$1 podkategorie|$1 podkategorií}}, {{PLURAL:$2|1 stránku|$2 stránky|$2 stránek}} a {{PLURAL:$3|1 soubor|$3 soubory|$3 souborů}}',
+	'categorytree-num-categories' => '$1 kat.',
+	'categorytree-num-pages' => '$1 str.',
+	'categorytree-num-files' => '$1 soub.',
+	'categorytree-num-empty' => 'prázdná',
 	'categorytree-load' => 'načíst',
 	'categorytree-loading' => 'načítá se',
 	'categorytree-nothing-found' => 'nic nebylo nalezeno',
@@ -930,6 +933,7 @@ Ni lwydda'r gofyniad os yw'ch porwr yn hen iawn neu os nad yw Sgript Java wedi e
  * @author Byrial
  * @author Fredelige
  * @author Jon Harald Søby
+ * @author Peter Alberti
  */
 $messages['da'] = array(
 	'categorytree' => 'Kategoritræ',
@@ -946,6 +950,10 @@ $messages['da'] = array(
 	'categorytree-collapse' => 'fold sammen',
 	'categorytree-expand' => 'fold ud',
 	'categorytree-member-counts' => 'indeholder {{PLURAL:$1|én underkategori|$1 underkategorier}}, {{PLURAL:$2|én side|$2 sider}} og {{PLURAL:$3|én fil|$3 filer}}',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 S',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'tom',
 	'categorytree-load' => 'hent',
 	'categorytree-loading' => 'indlæser',
 	'categorytree-nothing-found' => 'intet fundet',
@@ -961,6 +969,7 @@ $messages['da'] = array(
  * @author Daniel Kinzler, brightbyte.de
  * @author Kghbln
  * @author Raimond Spekking
+ * @author SVG
  */
 $messages['de'] = array(
 	'categorytree' => 'Kategorienbaum',
@@ -978,6 +987,10 @@ Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert m�
 	'categorytree-collapse' => 'einklappen',
 	'categorytree-expand' => 'ausklappen',
 	'categorytree-member-counts' => 'enthält {{PLURAL:$1|1 Unterkategorie|$1 Unterkategorien}}, {{PLURAL:$2|1 Seite|$2 Seiten}} und {{PLURAL:$3|1 Datei|$3 Dateien}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'leer',
 	'categorytree-load' => 'laden',
 	'categorytree-loading' => 'lade …',
 	'categorytree-nothing-found' => 'Nichts gefunden',
@@ -2706,6 +2719,9 @@ $messages['mk'] = array(
 	'categorytree-collapse' => 'затвори',
 	'categorytree-expand' => 'отвори',
 	'categorytree-member-counts' => 'содржи {{PLURAL:$1|една поткатегорија|$1 поткатегории}}, {{PLURAL:$2|една страница|$2 страници}} и {{PLURAL:$3|една податотека|$3 податотеки}}',
+	'categorytree-num-categories' => '$1 К',
+	'categorytree-num-pages' => '$1 С',
+	'categorytree-num-files' => '$1 П',
 	'categorytree-load' => 'вчитај',
 	'categorytree-loading' => 'вчитувам...',
 	'categorytree-nothing-found' => 'не е најдено ништо',
@@ -2997,6 +3013,7 @@ $messages['ne'] = array(
 );
 
 /** Dutch (Nederlands)
+ * @author SPQRobin
  * @author Siebrand
  */
 $messages['nl'] = array(
@@ -3016,6 +3033,10 @@ Als u een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze
 	'categorytree-collapse' => 'inklappen',
 	'categorytree-expand' => 'uitvouwen',
 	'categorytree-member-counts' => "bevat {{PLURAL:$1|één ondercategorie|$1 ondercategorieën}}, {{PLURAL:$2|één pagina|$2 pagina's}} en {{PLURAL:$3|één bestand|$3 bestanden}}",
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 B',
+	'categorytree-num-empty' => 'leeg',
 	'categorytree-load' => 'laden',
 	'categorytree-loading' => 'aan het laden…',
 	'categorytree-nothing-found' => 'niets gevonden',
