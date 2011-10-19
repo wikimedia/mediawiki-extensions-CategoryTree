@@ -233,6 +233,7 @@ $messages['an'] = array(
 );
 
 /** Arabic (العربية)
+ * @author AwamerT
  * @author Meno25
  * @author OsamaK
  * @author زكريا
@@ -254,7 +255,11 @@ $messages['ar'] = array(
 	'categorytree-collapse' => 'اطو',
 	'categorytree-expand' => 'فرد',
 	'categorytree-member-counts' => 'يحتوي على {{PLURAL:$1|1 تصنيف فرعي|$1 تصنيف فرعي}}، {{PLURAL:$2|1 صفحة|$2 صفحة}}، و {{PLURAL:$3|1 ملف|$3 ملف}}',
-	'categorytree-load' => 'تحميل',
+	'categorytree-num-categories' => '$1 ت',
+	'categorytree-num-pages' => ' $1 ص',
+	'categorytree-num-files' => ' $1 م',
+	'categorytree-num-empty' => 'فارغ',
+	'categorytree-load' => 'حمل',
 	'categorytree-loading' => 'جاري التحميل',
 	'categorytree-nothing-found' => 'لم يتم العثور على شيء',
 	'categorytree-no-subcategories' => 'لا تصنيفات فرعية',
@@ -584,6 +589,9 @@ $messages['be-tarask'] = array(
 	'categorytree-collapse' => 'згарнуць',
 	'categorytree-expand' => 'разгарнуць',
 	'categorytree-member-counts' => 'утрымлівае $1 {{PLURAL:$1|падкатэгорыю|падкатэгорыі|падкатэгорыяў}}, $2 {{PLURAL:$2|старонку|старонкі|старонак}} і $3 {{PLURAL:$3|файл|файлы|файлаў}}',
+	'categorytree-num-categories' => '$1 К',
+	'categorytree-num-pages' => '$1 С',
+	'categorytree-num-files' => '$1 Ф',
 	'categorytree-num-empty' => 'пуста',
 	'categorytree-load' => 'загрузіць',
 	'categorytree-loading' => 'загрузка…',
@@ -3429,6 +3437,7 @@ $messages['ps'] = array(
 	'categorytree-mode-all' => 'ټول مخونه',
 	'categorytree-collapse' => 'پرځول',
 	'categorytree-expand' => 'غځول',
+	'categorytree-num-empty' => 'تش',
 	'categorytree-load' => 'برسېرول',
 	'categorytree-loading' => 'د برسېرېدلو په حال کې...',
 	'categorytree-nothing-found' => 'هېڅ هم و نه موندل شو',
@@ -4598,6 +4607,10 @@ Nếu bạn đang sử dụng trình duyệt rất cũ, hoặc đã tắt JavaSc
 	'categorytree-collapse' => 'đóng',
 	'categorytree-expand' => 'mở',
 	'categorytree-member-counts' => 'có {{PLURAL:$1|1 tiểu thể loại|$1 tiểu thể loại}} , {{PLURAL:$2|1 trang|$2 trang}}, và {{PLURAL:$3|1 tập tin|$3 tập tin}}',
+	'categorytree-num-categories' => '$1 tl.',
+	'categorytree-num-pages' => '$1 tr.',
+	'categorytree-num-files' => '$1 tt.',
+	'categorytree-num-empty' => 'trống',
 	'categorytree-load' => 'tải',
 	'categorytree-loading' => 'đang tải…',
 	'categorytree-nothing-found' => 'Không có gì.',
