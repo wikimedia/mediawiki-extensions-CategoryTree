@@ -933,6 +933,10 @@ Ni lwydda'r gofyniad os yw'ch porwr yn hen iawn neu os nad yw Sgript Java wedi e
 	'categorytree-collapse' => 'crebachu',
 	'categorytree-expand' => 'ehangu',
 	'categorytree-member-counts' => 'yn cynnwys y canlynol: {{PLURAL:$1|$1 is-gategori}}, $2 {{PLURAL:$2|tudalen|dudalen|dudalen|tudalen|thudalen|tudalen}}, {{PLURAL:$3|$3 ffeil}}',
+	'categorytree-num-categories' => '$1 Cat',
+	'categorytree-num-pages' => '$1 Tud',
+	'categorytree-num-files' => '$1 Ff',
+	'categorytree-num-empty' => 'gwag',
 	'categorytree-load' => 'llwytho',
 	'categorytree-loading' => "wrthi'n llwytho...",
 	'categorytree-nothing-found' => "dim i'w gael",
@@ -1589,6 +1593,7 @@ $messages['grc'] = array(
 );
 
 /** Swiss German (Alemannisch)
+ * @author Als-Chlämens
  * @author Als-Holder
  * @author Hendergassler
  */
@@ -1608,6 +1613,10 @@ Des brucht fortgschritteneri JavaScript-Funktione (Ajax). Wänn JavaScript abgsc
 	'categorytree-collapse' => 'zueklappe',
 	'categorytree-expand' => 'ufklappe',
 	'categorytree-member-counts' => 'het {{PLURAL:$1|1 Unterkategori|$1 Unterkategorie}}, {{PLURAL:$2|1 Syte|$2 Syte}}, un {{PLURAL:$3|1 Datei|$3 Dateie}}',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 S',
+	'categorytree-num-files' => '$1 D',
+	'categorytree-num-empty' => 'läär',
 	'categorytree-load' => 'lade',
 	'categorytree-loading' => 's isch am Laade ...',
 	'categorytree-nothing-found' => 'nyt gfunde',
@@ -3356,6 +3365,10 @@ Jeśli masz bardzo starą przeglądarkę lub wyłączony JavaScript, ta funkcja 
 	'categorytree-collapse' => 'zwiń',
 	'categorytree-expand' => 'rozwiń',
 	'categorytree-member-counts' => 'Zawiera {{PLURAL:$1|1 podkategorię|$1 podkategorie|$1 podkategorii}}, {{PLURAL:$2|1 stronę|$2 strony|$2 stron}} i {{PLURAL:$3|1 plik|$3 pliki|$3 plików}}',
+	'categorytree-num-categories' => '$1 kat.',
+	'categorytree-num-pages' => '$1 str.',
+	'categorytree-num-files' => '$1 pl.',
+	'categorytree-num-empty' => 'pusta',
 	'categorytree-load' => 'wczytaj',
 	'categorytree-loading' => 'wczytywanie...',
 	'categorytree-nothing-found' => 'nic nie znaleziono',
@@ -4169,6 +4182,7 @@ $messages['sw'] = array(
 	'categorytree-collapse' => 'kunja',
 	'categorytree-expand' => 'kutanua',
 	'categorytree-member-counts' => 'Imo {{PLURAL:$1|kijamii 1|vijamii $1}}, {{PLURAL:$2|ukurasa 1|kurasa $2}}, na {{PLURAL:$3|faili 1|mafaili $3}}',
+	'categorytree-num-empty' => 'tupu',
 	'categorytree-load' => 'kupakia',
 	'categorytree-loading' => 'inapakizwa...',
 	'categorytree-nothing-found' => 'hakupatikana kitu',
