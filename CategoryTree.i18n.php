@@ -707,6 +707,10 @@ M'eo kozh-mat stumm ho merdeer pe m'eo diweredekaet JavaScript ganeoc'h, ne'z ai
 	'categorytree-collapse' => 'Serriñ',
 	'categorytree-expand' => 'Dispakañ',
 	'categorytree-member-counts' => 'ennañ {{PLURAL:$1|1 isrummad|$1 isrummad}}, {{PLURAL:$2|1 bajenn|$2 pajenn}}, ha {{PLURAL:$3|1 restr|$3 restr}}',
+	'categorytree-num-categories' => '$1 Rum.',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'goullo',
 	'categorytree-load' => 'kargañ',
 	'categorytree-loading' => 'o kargañ',
 	'categorytree-nothing-found' => "N'eus bet kavet netra",
@@ -3845,6 +3849,7 @@ $messages['sh'] = array(
 /** Sinhala (සිංහල)
  * @author Singhalawap
  * @author නන්දිමිතුරු
+ * @author බිඟුවා
  */
 $messages['si'] = array(
 	'categorytree' => 'ප්‍රවර්ග ගස',
@@ -3863,6 +3868,10 @@ AJAX නමින් හැඳින්වෙන ප්‍රගත ජාවා
 	'categorytree-collapse' => 'හකුලන්න',
 	'categorytree-expand' => 'විදහාලන්න',
 	'categorytree-member-counts' => '{{PLURAL:$1|එක් උපප්‍රවර්ගයක්|උපප්‍රවර්ග $1 ක්}}, {{PLURAL:$2|එක් පිටුවක්|පිටු $2 ක්}}, සහ {{PLURAL:$3|එක් ගොනුවක්|ගොනු $3 ක්}} අඩංගුය',
+	'categorytree-num-categories' => '$1 සී',
+	'categorytree-num-pages' => '$1 පී',
+	'categorytree-num-files' => '$1 එෆ්',
+	'categorytree-num-empty' => 'හිස්',
 	'categorytree-load' => 'බාගන්න',
 	'categorytree-loading' => 'බාගනිමින්…',
 	'categorytree-nothing-found' => 'කිසිවක් හමුනොවිනි',
@@ -4444,6 +4453,7 @@ $messages['tpi'] = array(
 /** Turkish (Türkçe)
  * @author Joseph
  * @author Karduelis
+ * @author Khutuck
  * @author Mach
  * @author Runningfridgesrule
  */
@@ -4462,6 +4472,10 @@ $messages['tr'] = array(
 	'categorytree-collapse' => 'aç/kapat',
 	'categorytree-expand' => 'genişlet',
 	'categorytree-member-counts' => '{{PLURAL:$1|1 altkategori|$1 altkategori}}, {{PLURAL:$2|1 sayfa|$2 sayfa}}, ve {{PLURAL:$3|1 dosya|$3 dosya}} içeriyor',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 M',
+	'categorytree-num-files' => '$1 D',
+	'categorytree-num-empty' => 'boş',
 	'categorytree-load' => 'yükle',
 	'categorytree-loading' => 'yükleniyor',
 	'categorytree-nothing-found' => 'maalesef, sonuç yok',
