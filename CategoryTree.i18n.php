@@ -2418,6 +2418,10 @@ $messages['ksh'] = array(
 	'categorytree-collapse' => 'zosammefallde',
 	'categorytree-expand' => 'opfallde',
 	'categorytree-member-counts' => 'do dren {{PLURAL:$1|{{PLURAL:$4|sin|es|es}} ein Ungerjrupp|sin $1 Ungerjruppe|es kein Ungerjrupp}}, {{PLURAL:$2|ein Sigg|$2 Sigge|kein Sigg}}, un {{PLURAL:$3|ein Datei|$3 Dateie|kein Dateie}}, zosamme {{PLURAL:$4|ein Saach|$4 Saache|och nix}}',
+	'categorytree-num-categories' => '$1 J',
+	'categorytree-num-pages' => '$1 S',
+	'categorytree-num-files' => '$1 D',
+	'categorytree-num-empty' => 'leddisch',
 	'categorytree-load' => 'lade',
 	'categorytree-loading' => 'am lade…',
 	'categorytree-nothing-found' => 'nix jefonge',
@@ -2716,6 +2720,7 @@ $messages['ltg'] = array(
 /** Latvian (Latviešu)
  * @author GreenZeb
  * @author Marozols
+ * @author Papuass
  * @author Xil
  * @author Yyy
  */
@@ -2736,6 +2741,10 @@ Ja tev ir veca interneta pārlūkprogramma vai arī JavaScript ir atslēgts, š�
 	'categorytree-collapse' => 'sakļaut',
 	'categorytree-expand' => 'izplest',
 	'categorytree-member-counts' => 'satur {{PLURAL:$1|1 apakškategoriju|$1 apakškategorijas}}, {{PLURAL:$2|1 lapu|$2 lapas}}, un {{PLURAL:$3|1 failu|$3 failus}}',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 L',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'tukšs',
 	'categorytree-load' => 'ielādēt',
 	'categorytree-loading' => 'ielādējas...',
 	'categorytree-nothing-found' => 'neko neatrada',
@@ -3156,6 +3165,7 @@ $messages['nn'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Audun
+ * @author Event
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
@@ -3173,6 +3183,10 @@ $messages['no'] = array(
 	'categorytree-collapse' => 'skjul',
 	'categorytree-expand' => 'vis',
 	'categorytree-member-counts' => 'inneholder {{PLURAL:$1|én underkategori|$1 underkategorier}}, {{PLURAL:$2|én side|$2 sider}} og {{PLURAL:$3|én fil|$3 filer}}',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 S',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'tom',
 	'categorytree-load' => 'last',
 	'categorytree-loading' => 'laster...',
 	'categorytree-nothing-found' => 'Ingen resultater funnet.',
