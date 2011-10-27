@@ -1359,15 +1359,34 @@ $messages['fi'] = array(
 
 /** Faroese (Føroyskt)
  * @author Diupwijk
+ * @author EileenSanda
  * @author Spacebirdy
  */
 $messages['fo'] = array(
 	'categorytree' => 'BólkaTræ',
+	'categorytree-portlet' => 'Bólkar',
+	'categorytree-legend' => 'Vís bólka træið',
+	'categorytree-header' => 'Skriva heiti á einum bólki fyri at síggja innihaldið sum træ strukturur.
+Legg til merkis, at hetta krevur víðarikomið JacaScript virksemi (funktionalitet), sum er kent sum AJAX.
+Um tú hevur ein sera gamlan kaga (brovsara), ella hevur gjørt JavaScript óvirkið, so fer tað ikki at virka.',
 	'categorytree-category' => 'Bólkur:',
 	'categorytree-go' => 'Vís træ',
+	'categorytree-parents' => 'Foreldur',
 	'categorytree-mode-categories' => 'bert bólkar',
+	'categorytree-mode-pages' => 'Síður uttan fílur',
 	'categorytree-mode-all' => 'allar síður',
+	'categorytree-collapse' => 'samanbrot',
+	'categorytree-expand' => 'víðka',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-empty' => 'tómur',
 	'categorytree-loading' => 'lesur inn',
+	'categorytree-nothing-found' => 'onki funnið',
+	'categorytree-no-subcategories' => 'ongir undirbólkar',
+	'categorytree-no-parent-categories' => 'ongir foreldra bólkar',
+	'categorytree-no-pages' => 'ongar síður ella undirbólkar',
+	'categorytree-not-found' => 'Bólkur <i>$1</i> ikki funnin',
+	'categorytree-error' => 'Trupulleikar við at taka niður dáta.',
+	'categorytree-retry' => 'Vinarliga bíða eitt bil og royn so aftur.',
 );
 
 /** French (Français)
@@ -2015,6 +2034,41 @@ $messages['ig'] = array(
 	'categorytree-loading' => 'ó byáwálá...',
 	'categorytree-no-subcategories' => 'ébéonọr-ime àdíghị',
 	'categorytree-no-pages' => 'ihü ma ébéonọr-ímé àdíghị',
+);
+
+/** Iloko (Ilokano)
+ * @author Lam-ang
+ */
+$messages['ilo'] = array(
+	'categorytree' => 'Kategoria a kayo',
+	'categorytree-portlet' => 'Dagiti kategoria',
+	'categorytree-legend' => 'Ipakita ti kategoria a kayo',
+	'categorytree-desc' => 'Pagdaliasatan a dinamik iti [[Special:CategoryTree|pinakatakder ti kategoria]]',
+	'categorytree-header' => 'Ikabil ti nagan ti kategoria tapno makita dagiti nagyan na akasla kayo nga pinakatakder .
+Kitaem nga  daytoy ket masapul na ti JavaScript a mangpabalin nga ti nagan na ket AJAX.
+No adda daan nga browsermo, wenno naiddep ti JavaScript mo, saan daytoy nga agbalin.',
+	'categorytree-category' => 'Kategoria:',
+	'categorytree-go' => 'Ipakita ti kayo',
+	'categorytree-parents' => 'Naggapuan na',
+	'categorytree-mode-categories' => 'kategoria laeng',
+	'categorytree-mode-pages' => 'dagiti panid ngem saan a file',
+	'categorytree-mode-all' => 'amin a panid',
+	'categorytree-collapse' => 'agpabassit',
+	'categorytree-expand' => 'agpadakkel',
+	'categorytree-member-counts' => 'nagyan nga {{PLURAL:$1|1 subkategoria|$1 dagiti subkategoria}}, {{PLURAL:$2|1 panid|$2 dagiti panid}}, wenno {{PLURAL:$3|1 file|$3 dagiti file}}',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'awan ti nagyan na',
+	'categorytree-load' => 'agkarga',
+	'categorytree-loading' => 'agkarkarga...',
+	'categorytree-nothing-found' => 'awan ti nabirokan',
+	'categorytree-no-subcategories' => 'awan ti subkategoria',
+	'categorytree-no-parent-categories' => 'awan ti naggapuan na a kategoria',
+	'categorytree-no-pages' => 'awan dagiti panid wenno dagiti subkategoria',
+	'categorytree-not-found' => 'Kategoria <i>$1</i> saan a nabirokan',
+	'categorytree-error' => 'Problema ti pinagkarga ti data.',
+	'categorytree-retry' => 'Pangaasi ta aguray ti madamdama ken ipadas mo manen.',
 );
 
 /** Ingush (ГІалгІай Ğalğaj)
