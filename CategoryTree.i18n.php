@@ -2433,6 +2433,7 @@ $messages['ko'] = array(
 	'categorytree-collapse' => '접기',
 	'categorytree-expand' => '펼치기',
 	'categorytree-member-counts' => '하위 분류 $1개, 문서 $2개, 파일 $3개를 포함하고 있습니다.',
+	'categorytree-num-empty' => '비었음',
 	'categorytree-load' => '불러오기',
 	'categorytree-loading' => '불러오는 중',
 	'categorytree-nothing-found' => '결과 없음',
