@@ -1297,6 +1297,7 @@ $messages['ext'] = array(
 /** Persian (فارسی)
  * @author Ebraminio
  * @author Huji
+ * @author Leyth
  * @author ZxxZxxZ
  */
 $messages['fa'] = array(
@@ -1314,6 +1315,10 @@ $messages['fa'] = array(
 	'categorytree-collapse' => 'مچالش',
 	'categorytree-expand' => 'گسترش',
 	'categorytree-member-counts' => 'شامل {{PLURAL:$1|یک زیررده|$1 زیررده}}، {{PLURAL:$2|یک صفحه|$2 صفحه}} و {{PLURAL:$3|یک پرونده|$3 پرونده است}}',
+	'categorytree-num-categories' => '$1 ر',
+	'categorytree-num-pages' => '$1 ص',
+	'categorytree-num-files' => '$1 پ',
+	'categorytree-num-empty' => 'خالی',
 	'categorytree-load' => 'بارگذاری',
 	'categorytree-loading' => 'در حال بارگیری',
 	'categorytree-nothing-found' => 'هیچ‌چیز یافت نشد.',
@@ -1901,6 +1906,9 @@ Ha túlságosan régi böngésződ van, vagy a JavaScript le van tiltva, akkor n
 	'categorytree-collapse' => 'összecsuk',
 	'categorytree-expand' => 'kinyit',
 	'categorytree-member-counts' => '{{PLURAL:$1|egy|$1}} alkategóriát, {{PLURAL:$2|egy|$2}} lapot, és {{PLURAL:$3|egy|$3}} fájlt tartalmaz',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 L',
+	'categorytree-num-files' => '$1 F',
 	'categorytree-load' => 'betöltés',
 	'categorytree-loading' => 'betöltés…',
 	'categorytree-nothing-found' => 'nincs találat',
@@ -2433,6 +2441,9 @@ $messages['ko'] = array(
 	'categorytree-collapse' => '접기',
 	'categorytree-expand' => '펼치기',
 	'categorytree-member-counts' => '하위 분류 $1개, 문서 $2개, 파일 $3개를 포함하고 있습니다.',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
 	'categorytree-num-empty' => '비었음',
 	'categorytree-load' => '불러오기',
 	'categorytree-loading' => '불러오는 중',
@@ -2492,9 +2503,10 @@ $messages['ksh'] = array(
 	'categorytree-retry' => 'Bess_esu joot un donn et noh enem Moment norr_ens probeere',
 );
 
-/** Kurdish (Latin) (Kurdî (Latin))
+/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
  * @author Erdal Ronahi
  * @author George Animal
+ * @author Gomada
  * @author Welathêja
  */
 $messages['ku-latn'] = array(
@@ -2507,7 +2519,7 @@ $messages['ku-latn'] = array(
 	'categorytree-mode-all' => 'hemû rûpel',
 	'categorytree-load' => 'bar bike',
 	'categorytree-loading' => 'tê barkirin',
-	'categorytree-nothing-found' => 'Tu tişt nehat dîtin',
+	'categorytree-nothing-found' => 'Ti tişt nehate dîtin',
 	'categorytree-no-subcategories' => 'binekategorî tune',
 	'categorytree-no-pages' => 'ti rûpel û binkategorî tinin',
 	'categorytree-not-found' => 'Kategoriya <i>$1</i> nehate dîtin',
