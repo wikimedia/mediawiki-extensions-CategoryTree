@@ -118,6 +118,17 @@ Status message shown while loading content',
 	'categorytree-retry' => 'Instruction to try again later',
 );
 
+/** толышә зывон (толышә зывон)
+ * @author Гусейн
+ */
+$messages['tly'] = array(
+	'categorytree-portlet' => 'Категоријон',
+	'categorytree-category' => 'Категоријә:',
+	'categorytree-mode-all' => 'Һәммәј сәһифон',
+	'categorytree-load' => 'бо жәј',
+	'categorytree-no-subcategories' => 'категоријон жинтон ни',
+);
+
 /** Meänkieli (Meänkieli)
  * @author Mestos
  */
@@ -1351,6 +1362,7 @@ $messages['fi'] = array(
 	'categorytree-collapse' => 'piilota',
 	'categorytree-expand' => 'näytä',
 	'categorytree-member-counts' => 'sisältää {{PLURAL:$1|1 alaluokan|$1 alaluokkaa}}, {{PLURAL:$2|1 sivun|$2 sivua}} ja {{PLURAL:$3|1 tiedoston|$3 tiedostoa}}',
+	'categorytree-num-empty' => 'tyhjä',
 	'categorytree-load' => 'näytä',
 	'categorytree-loading' => 'etsitään',
 	'categorytree-nothing-found' => 'ei alaluokkia',
