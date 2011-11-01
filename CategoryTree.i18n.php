@@ -767,6 +767,7 @@ $messages['bs'] = array(
  * @author Aleator
  * @author Paucabot
  * @author SMP
+ * @author Toniher
  * @author Vriullop
  */
 $messages['ca'] = array(
@@ -784,6 +785,10 @@ $messages['ca'] = array(
 	'categorytree-collapse' => 'Tancar',
 	'categorytree-expand' => 'Expandir',
 	'categorytree-member-counts' => 'conté {{PLURAL:$1|1 subcategoria|$1 subcategories}}, {{PLURAL:$2|1 pàgina|$2 pàgines}}, i {{PLURAL:$3|1 fitxer|$3 fitxers}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'buit',
 	'categorytree-load' => 'Carrega',
 	'categorytree-loading' => 'carregant',
 	'categorytree-nothing-found' => 'no hi ha sub-categories',
@@ -1102,6 +1107,10 @@ Jolic maš wjelgin stary browser abo jolic JavaScript jo wótšaltowane, toś te
 	'categorytree-collapse' => 'złožyś',
 	'categorytree-expand' => 'rozłožyś',
 	'categorytree-member-counts' => 'wopśimujo {{PLURAL:$1|1 pódkategoriju|$1 pódkategoriji|$1 pódkategorije|$1 pódkategorijow}}, {{PLURAL:$2|1 bok|$2 boka|$2 boki|$2 bokow}} a {{PLURAL:$3|1 dataju|$3 dataji|$3 dataje|$3 datajow}}',
+	'categorytree-num-categories' => '$1 k',
+	'categorytree-num-pages' => '$1 b',
+	'categorytree-num-files' => '$1 d',
+	'categorytree-num-empty' => 'prozny',
 	'categorytree-load' => 'lodowaś',
 	'categorytree-loading' => 'lodujo se...',
 	'categorytree-nothing-found' => 'Nic namakany',
