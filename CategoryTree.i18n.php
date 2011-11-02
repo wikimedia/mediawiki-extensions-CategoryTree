@@ -4249,6 +4249,7 @@ Lamun Anjeun ngagunakeun panyungsi nu lila, atawa maehan fungsi Javascript Anjeu
 
 /** Swedish (Svenska)
  * @author Boivie
+ * @author Diupwijk
  * @author Jon Harald Søby
  * @author Lejonel
  * @author M.M.S.
@@ -4271,6 +4272,10 @@ Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript
 	'categorytree-collapse' => 'göm',
 	'categorytree-expand' => 'expandera',
 	'categorytree-member-counts' => 'innehåller {{PLURAL:$1|1 underkategori|$1 underkategorier}}, {{PLURAL:$2|1 sida|$2 sidor}}, och {{PLURAL:$3|1 fil|$3 filer}}',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 S',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'tom',
 	'categorytree-load' => 'ladda',
 	'categorytree-loading' => 'laddar',
 	'categorytree-nothing-found' => 'hittade inget',
