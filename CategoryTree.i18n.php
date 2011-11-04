@@ -2015,6 +2015,7 @@ Si tu ha un navigator multo vetule, o ha disactivate JavaScript, isto non functi
 
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
+ * @author Farras
  * @author IvanLanin
  * @author Rex
  */
@@ -2035,6 +2036,10 @@ Jika Anda menggunakan penjelajah web lama, atau mematikan fungsi JavaScript Anda
 	'categorytree-collapse' => 'tutup',
 	'categorytree-expand' => 'buka',
 	'categorytree-member-counts' => 'memiliki {{PLURAL:$1|1 subkategori|$1 subkategori}}, {{PLURAL:$2|1 halaman|$2 halaman}}, dan {{PLURAL:$3|1 berkas|$3 berkas}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'kosong',
 	'categorytree-load' => 'muatkan',
 	'categorytree-loading' => 'memuat...',
 	'categorytree-nothing-found' => 'tidak ditemukan',
@@ -2088,11 +2093,11 @@ No adda daan nga browsermo, wenno naiddep ti JavaScript mo, saan daytoy nga agba
 	'categorytree-go' => 'Ipakita ti kayo',
 	'categorytree-parents' => 'Naggapuan na',
 	'categorytree-mode-categories' => 'kategoria laeng',
-	'categorytree-mode-pages' => 'dagiti panid ngem saan a file',
+	'categorytree-mode-pages' => 'dagiti panid ngem saan a papeles',
 	'categorytree-mode-all' => 'amin a panid',
 	'categorytree-collapse' => 'agpabassit',
 	'categorytree-expand' => 'agpadakkel',
-	'categorytree-member-counts' => 'nagyan nga {{PLURAL:$1|1 subkategoria|$1 dagiti subkategoria}}, {{PLURAL:$2|1 panid|$2 dagiti panid}}, wenno {{PLURAL:$3|1 file|$3 dagiti file}}',
+	'categorytree-member-counts' => 'dagiti nagyan nga {{PLURAL:$1|1 apo ti kategoria|$1 dagiti apo ti kategoria}}, {{PLURAL:$2|1 panid|$2 dagiti panid}}, wenno {{PLURAL:$3|1 papeles|$3 dagiti papeles}}',
 	'categorytree-num-categories' => '$1 K',
 	'categorytree-num-pages' => '$1 P',
 	'categorytree-num-files' => '$1 F',
@@ -2100,9 +2105,9 @@ No adda daan nga browsermo, wenno naiddep ti JavaScript mo, saan daytoy nga agba
 	'categorytree-load' => 'agkarga',
 	'categorytree-loading' => 'agkarkarga...',
 	'categorytree-nothing-found' => 'awan ti nabirokan',
-	'categorytree-no-subcategories' => 'awan ti subkategoria',
+	'categorytree-no-subcategories' => 'awan dagiti apo ti kategoria',
 	'categorytree-no-parent-categories' => 'awan ti naggapuan na a kategoria',
-	'categorytree-no-pages' => 'awan dagiti panid wenno dagiti subkategoria',
+	'categorytree-no-pages' => 'awan dagiti panid wenno dagiti apo ti kategoria',
 	'categorytree-not-found' => 'Kategoria <i>$1</i> saan a nabirokan',
 	'categorytree-error' => 'Problema ti pinagkarga ti data.',
 	'categorytree-retry' => 'Pangaasi ta aguray ti madamdama ken ipadas mo manen.',
