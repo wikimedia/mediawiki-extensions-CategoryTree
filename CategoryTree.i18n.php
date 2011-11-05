@@ -118,6 +118,13 @@ Status message shown while loading content',
 	'categorytree-retry' => 'Instruction to try again later',
 );
 
+/** Magyar (magázó) (Magyar (magázó))
+ * @author Dani
+ */
+$messages['hu-formal'] = array(
+	'categorytree-retry' => 'Várjon egy kicsit, majd próbálja újra!',
+);
+
 /** толышә зывон (толышә зывон)
  * @author Гусейн
  */
@@ -1922,13 +1929,13 @@ $messages['hu'] = array(
 	'categorytree-header' => 'Add meg annak a kategóriának a nevét, amelynek meg szeretnéd tekinteni
 a fastruktúráját. Ehhez egy, AJAX nevű JavaScript-technológia szükséges.
 Ha túlságosan régi böngésződ van, vagy a JavaScript le van tiltva, akkor nem fog működni.',
-	'categorytree-category' => 'Kategória',
+	'categorytree-category' => 'Kategória:',
 	'categorytree-go' => 'Mehet',
-	'categorytree-parents' => 'Szülő kategóriák',
+	'categorytree-parents' => 'Szülőkategóriák',
 	'categorytree-mode-categories' => 'csak kategóriák',
-	'categorytree-mode-pages' => 'lapok a fájlok nélkül',
-	'categorytree-mode-all' => 'Az összes oldal',
-	'categorytree-collapse' => 'összecsuk',
+	'categorytree-mode-pages' => 'lapok fájlok nélkül',
+	'categorytree-mode-all' => 'az összes oldal',
+	'categorytree-collapse' => 'becsuk',
 	'categorytree-expand' => 'kinyit',
 	'categorytree-member-counts' => '{{PLURAL:$1|egy|$1}} alkategóriát, {{PLURAL:$2|egy|$2}} lapot, és {{PLURAL:$3|egy|$3}} fájlt tartalmaz',
 	'categorytree-num-categories' => '$1 K',
@@ -1937,12 +1944,12 @@ Ha túlságosan régi böngésződ van, vagy a JavaScript le van tiltva, akkor n
 	'categorytree-load' => 'betöltés',
 	'categorytree-loading' => 'betöltés…',
 	'categorytree-nothing-found' => 'nincs találat',
-	'categorytree-no-subcategories' => 'nincs alkategória.',
+	'categorytree-no-subcategories' => 'nincsenek alkategóriák',
 	'categorytree-no-parent-categories' => 'nincsenek szülőkategóriái',
-	'categorytree-no-pages' => 'nincs cikk vagy alkategória.',
-	'categorytree-not-found' => 'Kategória <i>$1</i> nem található',
-	'categorytree-error' => 'Probélma a betöltődő adattal',
-	'categorytree-retry' => 'Kérlek várj egy pillanatot és próbáld újra.',
+	'categorytree-no-pages' => 'nincsenek lapok és alkategóriák',
+	'categorytree-not-found' => 'A következő kategória nem található: <i>$1</i>',
+	'categorytree-error' => 'Hiba történt az adatok betöltése közben.',
+	'categorytree-retry' => 'Várj egy kicsit, majd próbáld újra!',
 );
 
 /** Armenian (Հայերեն)
