@@ -2124,7 +2124,21 @@ No adda daan nga browsermo, wenno naiddep ti JavaScript mo, saan daytoy nga agba
  * @author Sapral Mikail
  */
 $messages['inh'] = array(
+	'categorytree' => 'Цатегий гаьн',
 	'categorytree-portlet' => 'Цатегаш',
+	'categorytree-legend' => 'Цатегий гаьн хьахьокха',
+	'categorytree-category' => 'Цатег:',
+	'categorytree-go' => 'Га хьокха',
+	'categorytree-parents' => 'Даь-ноаной цатегаш',
+	'categorytree-mode-categories' => 'Алха цатегаш',
+	'categorytree-mode-all' => 'eррига оагIувнаш',
+	'categorytree-num-empty' => 'яьсса',
+	'categorytree-load' => 'чуяьккха',
+	'categorytree-loading' => 'чуяьккхаш латт...',
+	'categorytree-nothing-found' => 'Укх цатего цхьаккха чурацатега чу ца лоац',
+	'categorytree-no-subcategories' => 'чурацатегаш яц',
+	'categorytree-no-parent-categories' => 'даь-ноаной чурацатегаш яц',
+	'categorytree-no-pages' => 'чурацатегашеи йоазувнашеи яц',
 );
 
 /** Ido (Ido)
@@ -3167,6 +3181,10 @@ NB: veur disse funksie he'j de JavaScript-funksionaliteit AJAX neudig. A'j n hel
 	'categorytree-collapse' => 'inklappen',
 	'categorytree-expand' => 'uutklappen',
 	'categorytree-member-counts' => "bevat {{PLURAL:$1|één onderkategorie|$1 onderkategorieën}}, {{PLURAL:$2|één pagina|$2 pagina's}} en {{PLURAL:$3|één bestaand|$3 bestaanden}}",
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 B',
+	'categorytree-num-empty' => 'leeg',
 	'categorytree-load' => 'laojen',
 	'categorytree-loading' => 'bezig mit laojen...',
 	'categorytree-nothing-found' => 'niks evunnen',
