@@ -2878,6 +2878,16 @@ Ja tev ir veca interneta pārlūkprogramma vai arī JavaScript ir atslēgts, š�
 	'categorytree-retry' => 'Pagaidi mazliet un mēģini vēlreiz.',
 );
 
+/** Basa Banyumasan (Basa Banyumasan)
+ * @author StefanusRA
+ */
+$messages['map-bms'] = array(
+	'categorytree' => 'uwit kategori',
+	'categorytree-portlet' => 'Kategori',
+	'categorytree-legend' => 'Tidhokna uwit kategori',
+	'categorytree-desc' => 'Gadget sing dasare AJAX nggo nidhokna [[Special:CategoryTree|category structure]] salah siji wiki',
+);
+
 /** Malagasy (Malagasy)
  * @author Jagwar
  */
@@ -3388,6 +3398,10 @@ $messages['or'] = array(
 	'categorytree-collapse' => 'ଚାପିଦେବେ',
 	'categorytree-expand' => 'ବଢ଼ାଇବେ',
 	'categorytree-member-counts' => 'ଏହା ଭିତରେ {{PLURAL:$1|1ଟି ଶ୍ରେଣୀ|$1 ଟି ସାନଶ୍ରେଣୀ}}, {{PLURAL:$2|1 ପୃଷ୍ଠା|$2 ଟି ପୃଷ୍ଠା}} ଓ {{PLURAL:$3|1 ଟି ଫାଇଲ|$3 ଟି ଫାଇଲ}} ଅଛି ।',
+	'categorytree-num-categories' => '$1 ଶ୍ରେଣୀ',
+	'categorytree-num-pages' => '$1 ପୃଷ୍ଠା',
+	'categorytree-num-files' => '$1 ଫାଇଲ',
+	'categorytree-num-empty' => 'ଖାଲି',
 	'categorytree-load' => 'ଖୋଲିବେ',
 	'categorytree-loading' => 'ଖୋଲୁଛି...',
 	'categorytree-nothing-found' => 'କିଛି ମିଳିଲା ନାହିଁ',
@@ -3408,8 +3422,15 @@ $messages['os'] = array(
 	'categorytree-portlet' => 'Категоритæ',
 	'categorytree-category' => 'Категори:',
 	'categorytree-go' => 'Равдис бæлас',
+	'categorytree-mode-categories' => 'æрмæст категоритæ',
+	'categorytree-mode-pages' => 'фæрстæ, æнæ файлтæ',
 	'categorytree-mode-all' => 'æппæт фæрстæ',
+	'categorytree-num-categories' => '$1 К',
+	'categorytree-num-pages' => '$1 Ф',
+	'categorytree-num-files' => '$1 ф',
+	'categorytree-num-empty' => 'афтид',
 	'categorytree-nothing-found' => 'Ацы категорийы мидæг дæлкатегоритæ нæ разынд',
+	'categorytree-no-subcategories' => 'дæлкатегоритæ нæй',
 	'categorytree-no-pages' => 'фæрстæ æмæ дæлкатегоритæ нæй',
 	'categorytree-not-found' => 'Категори «$1» не ссардæуы.',
 );
