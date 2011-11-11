@@ -4711,6 +4711,7 @@ $messages['tyv'] = array(
 /** Ukrainian (Українська)
  * @author AS
  * @author Ahonc
+ * @author Sodmy
  */
 $messages['uk'] = array(
 	'categorytree' => 'Дерево категорій',
@@ -4729,6 +4730,10 @@ $messages['uk'] = array(
 	'categorytree-collapse' => 'згорнути',
 	'categorytree-expand' => 'розгорнути',
 	'categorytree-member-counts' => 'містить $1 {{PLURAL:$1|підкатегорію|підкатегорії|підкатегорій}}, $2 {{PLURAL:$2|сторінку|сторінки|сторінок}} та $3 {{PLURAL:$3|файл|файли|файлів}}',
+	'categorytree-num-categories' => '$1 К',
+	'categorytree-num-pages' => '$1 С',
+	'categorytree-num-files' => '$1 Ф',
+	'categorytree-num-empty' => 'порожній',
 	'categorytree-load' => 'завантажити',
 	'categorytree-loading' => 'завантаження…',
 	'categorytree-nothing-found' => 'нема підкатегорій',
