@@ -1918,6 +1918,7 @@ Si ou genyen yon ansyen navigatè entènèt, oubyen JavaScript pa aktive, li pap
 
 /** Hungarian (Magyar)
  * @author Dani
+ * @author Dj
  * @author Glanthor Reviol
  * @author KossuthRad
  */
@@ -1941,6 +1942,7 @@ Ha túlságosan régi böngésződ van, vagy a JavaScript le van tiltva, akkor n
 	'categorytree-num-categories' => '$1 K',
 	'categorytree-num-pages' => '$1 L',
 	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'üres',
 	'categorytree-load' => 'betöltés',
 	'categorytree-loading' => 'betöltés…',
 	'categorytree-nothing-found' => 'nincs találat',
