@@ -593,6 +593,8 @@ class CategoryTree {
 		$attr = array( 'class' => 'CategoryTreeBullet' );
 
 		# Get counts, with conversion to integer so === works
+		# Note: $pageCount is the total number of cat members,
+		# not the count of how many members are normal pages.
 		$pageCount = $cat ? intval( $cat->getPageCount() ) : 0;
 		$subcatCount = $cat ? intval( $cat->getSubcatCount() ) : 0;
 		$fileCount = $cat ? intval( $cat->getFileCount() ) : 0;
@@ -664,7 +666,7 @@ class CategoryTree {
 				$memberNums[] = wfMessage( 'categorytree-num-categories', $wgLang->formatNum( $subcatCount ) )->text();
 			}
 			if ( $pageCount ) {
-				$memberNums[] = wfMessage( 'categorytree-num-pages', $wgLang->formatNum( $pageCount ) )->text();
+				$memberNums[] = wfMessage( 'categorytree-num-pages', $wgLang->formatNum( $pages ) )->text();
 			}
 			if ( $fileCount ) {
 				$memberNums[] = wfMessage( 'categorytree-num-files', $wgLang->formatNum( $fileCount ) )->text();
