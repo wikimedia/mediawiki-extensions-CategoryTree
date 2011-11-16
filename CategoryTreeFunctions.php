@@ -593,9 +593,9 @@ class CategoryTree {
 		$attr = array( 'class' => 'CategoryTreeBullet' );
 
 		# Get counts, with conversion to integer so === works
-		# Note: $pageCount is the total number of cat members,
+		# Note: $allCount is the total number of cat members,
 		# not the count of how many members are normal pages.
-		$pageCount = $cat ? intval( $cat->getPageCount() ) : 0;
+		$allCount = $cat ? intval( $cat->getPageCount() ) : 0;
 		$subcatCount = $cat ? intval( $cat->getSubcatCount() ) : 0;
 		$fileCount = $cat ? intval( $cat->getFileCount() ) : 0;
 
@@ -605,9 +605,9 @@ class CategoryTree {
 				if ( $mode == CT_MODE_CATEGORIES ) {
 					$count = $subcatCount;
 				} elseif ( $mode == CT_MODE_PAGES ) {
-					$count = $pageCount - $fileCount;
+					$count = $allCount - $fileCount;
 				} else {
-					$count = $pageCount;
+					$count = $allCount;
 				}
 			}
 			if ( $count === 0 ) {
@@ -650,11 +650,11 @@ class CategoryTree {
 		$s .= Xml::openElement( 'a', array( 'class' => $labelClass, 'href' => $wikiLink ) ) . $label . Xml::closeElement( 'a' );
 
 		if ( $count !== false && $this->getOption( 'showcount' ) ) {
-			$pages = $pageCount - $subcatCount - $fileCount;
+			$pages = $allCount - $subcatCount - $fileCount;
 
 			global $wgContLang, $wgLang;
 			$attr = array(
-				'title' => wfMsgExt( 'categorytree-member-counts', 'parsemag', $subcatCount, $pages , $fileCount, $pageCount, $count ),
+				'title' => wfMsgExt( 'categorytree-member-counts', 'parsemag', $subcatCount, $pages , $fileCount, $allCount, $count ),
 				'dir' => $wgLang->getDir() # numbers and commas get messed up in a mixed dir env
 			);
 
@@ -665,7 +665,7 @@ class CategoryTree {
 			if ( $subcatCount ) {
 				$memberNums[] = wfMessage( 'categorytree-num-categories', $wgLang->formatNum( $subcatCount ) )->text();
 			}
-			if ( $pageCount ) {
+			if ( $pages ) {
 				$memberNums[] = wfMessage( 'categorytree-num-pages', $wgLang->formatNum( $pages ) )->text();
 			}
 			if ( $fileCount ) {
@@ -683,7 +683,7 @@ class CategoryTree {
 					$subcatCount,
 					$pages,
 					$fileCount,
-					$pageCount,
+					$allCount,
 					$memberNumsShort ) );
 		}
 
