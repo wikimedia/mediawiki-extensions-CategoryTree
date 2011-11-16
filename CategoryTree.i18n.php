@@ -2609,6 +2609,7 @@ $messages['la'] = array(
 	'categorytree-collapse' => 'collabi',
 	'categorytree-expand' => 'dilatare',
 	'categorytree-member-counts' => 'continet {{PLURAL:$1|1 subcategoriam|$1 subcategorias}}, {{PLURAL:$2|1 paginam|$2 paginas}} et {{PLURAL:$3|1 fasciculum|$3 fasciculos}}',
+	'categorytree-num-empty' => 'vacua',
 	'categorytree-load' => 'depromere',
 	'categorytree-loading' => 'depromens…',
 	'categorytree-nothing-found' => 'nullum inventum',
@@ -2888,10 +2889,35 @@ Ja tev ir veca interneta pārlūkprogramma vai arī JavaScript ir atslēgts, š�
  * @author StefanusRA
  */
 $messages['map-bms'] = array(
-	'categorytree' => 'uwit kategori',
+	'categorytree' => 'Uwit kategori',
 	'categorytree-portlet' => 'Kategori',
 	'categorytree-legend' => 'Tidhokna uwit kategori',
 	'categorytree-desc' => 'Gadget sing dasare AJAX nggo nidhokna [[Special:CategoryTree|category structure]] salah siji wiki',
+	'categorytree-header' => 'Lebokna jeneng kategori kanggo deleng isiné minangka sawijining wujud uwit.
+Mangga diwigatèkaké nek fitur kiye merlokna fungsionalitas JavaScript canggih sing diarani AJAX.
+Angger Rika panjlajah wèbé kalebu vèrsi lawas, utawa fitur JavaScript dipatèni, fungsi kiye ora teyeng dilakokna.',
+	'categorytree-category' => 'Kategori:',
+	'categorytree-go' => 'Tuduhna uwit',
+	'categorytree-parents' => 'Kategori sing luwih dhuwur',
+	'categorytree-mode-categories' => 'kategori thok',
+	'categorytree-mode-pages' => 'kaca kajaba gambar',
+	'categorytree-mode-all' => 'kabèh kaca',
+	'categorytree-collapse' => 'umpetna',
+	'categorytree-expand' => 'tidhokna',
+	'categorytree-member-counts' => 'ngandhut {{PLURAL:$1|1 subkategori|$1 subkategori}}, {{PLURAL:$2|1 kaca|$2 kaca}}, lan {{PLURAL:$3|1 gambar|$3 gambar}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'kosong',
+	'categorytree-load' => 'unggah',
+	'categorytree-loading' => 'lagi ngunggahna…',
+	'categorytree-nothing-found' => 'ora ketemu',
+	'categorytree-no-subcategories' => 'ora ana subkategori',
+	'categorytree-no-parent-categories' => 'ora ana kategori indhuk',
+	'categorytree-no-pages' => 'ora ana kaca utawa subkategori',
+	'categorytree-not-found' => 'Kategori <i>$1</i> ora ketemu',
+	'categorytree-error' => 'Ana masalah dong lagi ngunggahna data.',
+	'categorytree-retry' => 'Tulung dienteni sedela lan dijajal maning.',
 );
 
 /** Malagasy (Malagasy)
@@ -3077,7 +3103,21 @@ Jika anda menggunakan pelayar web yang sudah ketinggalan, atau mematikan JavaScr
  */
 $messages['mt'] = array(
 	'categorytree' => 'Siġra tal-kategoriji',
+	'categorytree-legend' => 'Uri s-siġra tal-kategoriji',
+	'categorytree-header' => "Daħħal isem ta' kategorija biex tara l-kontenuti taħt struttura ta' siġra. Kun af li din għandha bżonn funzjonalità avvanzata ta' JavaScript magħrufa bħala AJAX. Jekk tuża' browser antik ħafna, jew għandek il-JavaScript diżattivat, din ma tistax taħdem.",
+	'categorytree-category' => 'Kategorija:',
+	'categorytree-go' => 'Uri s-siġra',
+	'categorytree-parents' => 'Parenti',
+	'categorytree-mode-categories' => 'il-kategoriji biss',
+	'categorytree-mode-pages' => 'il-paġni esklużi l-fajls',
 	'categorytree-mode-all' => 'il-paġni kollha',
+	'categorytree-collapse' => 'niżżel',
+	'categorytree-expand' => 'espandi',
+	'categorytree-member-counts' => 'għandha {{PLURAL:$1|sottokategorija waħda|$1 sottokategoriji}}, {{PLURAL:$2|paġna waħda|$2 paġna}}, u {{PLURAL:$3|1 fajl|$3 fajls}}',
+	'categorytree-load' => "tella'",
+	'categorytree-loading' => 'tiela',
+	'categorytree-nothing-found' => 'ma nstab xejn',
+	'categorytree-no-parent-categories' => 'l-ebda kategorija parenti',
 );
 
 /** Erzya (Эрзянь)
@@ -3658,6 +3698,7 @@ $messages['ps'] = array(
  * @author 555
  * @author Giro720
  * @author Hamilton Abreu
+ * @author João Sousa
  */
 $messages['pt'] = array(
 	'categorytree' => 'Árvore de categorias',
@@ -3676,6 +3717,10 @@ Caso o seu browser seja razoavelmente antigo ou o JavaScript esteja desactivado,
 	'categorytree-collapse' => 'ocultar',
 	'categorytree-expand' => 'expandir',
 	'categorytree-member-counts' => 'possui {{PLURAL:$1|$1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|$2 página|$2 páginas}} e {{PLURAL:$3|$3 ficheiro|$3 ficheiros}}',
+	'categorytree-num-categories' => '$1C',
+	'categorytree-num-pages' => '$1P',
+	'categorytree-num-files' => '$1F',
+	'categorytree-num-empty' => 'vazia',
 	'categorytree-load' => 'carregar',
 	'categorytree-loading' => 'carregando',
 	'categorytree-nothing-found' => 'não foi encontrado nada',
@@ -3770,6 +3815,10 @@ $messages['ro'] = array(
 	'categorytree-collapse' => 'restrânge',
 	'categorytree-expand' => 'extinde',
 	'categorytree-member-counts' => 'conține {{PLURAL:$1|1 subcategorie|$1 subcategorii}}, {{PLURAL:$2|1 pagină|$2 pagini}} și {{PLURAL:$3|1 fișier|$3 fișiere}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'fără conținut',
 	'categorytree-load' => 'încarcă',
 	'categorytree-loading' => 'încărcare…',
 	'categorytree-nothing-found' => 'fără rezultat',
