@@ -1218,6 +1218,7 @@ $messages['eo'] = array(
  * @author Remember the dot
  * @author Sanbec
  * @author Spacebirdy
+ * @author Vivaelcelta
  */
 $messages['es'] = array(
 	'categorytree' => 'Árbol de categorías',
@@ -1236,6 +1237,10 @@ Si tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no fu
 	'categorytree-collapse' => 'ocultar',
 	'categorytree-expand' => 'mostrar',
 	'categorytree-member-counts' => 'contiene {{PLURAL:$1|una subcategoría|$1 subcategorías}}, {{PLURAL:$2|una página|$2 páginas}}, y {{PLURAL:$3|un archivo|$3 archivos}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'vacía',
 	'categorytree-load' => 'cargar',
 	'categorytree-loading' => 'cargando',
 	'categorytree-nothing-found' => 'Lo sentimos, no se ha encontrado nada',
@@ -4961,6 +4966,7 @@ $messages['yi'] = array(
 	'categorytree' => 'קאַטעגאריע בוים',
 	'categorytree-portlet' => 'קאַטעגאריעס',
 	'categorytree-legend' => 'ווײַזן קאַטעגאריע בוים',
+	'categorytree-desc' => 'נאוויגיקן דינאמיש דעם [[Special:CategoryTree|קאטעגאריע סטרוקטור]]',
 	'categorytree-header' => 'לייגט אריין א קאטעגאריע נאמען צו זען איר אינהאלט אלס א בוים סטרוקטור.
 באמערקט אז דאס פארלאנגט פארגעשריטענע JavaScript מעגליכקייטן, באקאנט אלס AJAX.
 אויב איר ניצט אן אלטן בלעטערער, אדער איר ערלויבט נישט קיין JavaScript, וועט דאס נישט ווירקן.',
@@ -4972,6 +4978,10 @@ $messages['yi'] = array(
 	'categorytree-mode-all' => 'אַלע בלעטער',
 	'categorytree-collapse' => 'אײַנציען',
 	'categorytree-expand' => 'פֿאַרברייטערן',
+	'categorytree-member-counts' => 'אנטהאלט {{PLURAL:$1|1 אונטערקאטעגאריע|$1 אונטערקאטעגאריעס}}, {{PLURAL:$2|1 בלאט|$2 בלעטער}}, און {{PLURAL:$3|1 טעקע|$3 טעקעס}}',
+	'categorytree-num-categories' => '$1 קאַט',
+	'categorytree-num-pages' => '$1 ב',
+	'categorytree-num-empty' => 'ליידיק',
 	'categorytree-load' => 'לאָדן',
 	'categorytree-loading' => 'לאָדנדיק…',
 	'categorytree-nothing-found' => 'גארנישט געפֿונען',
