@@ -4942,6 +4942,22 @@ $messages['vo'] = array(
 	'categorytree-retry' => 'Stebedolös, begö! timüli e steifülolös dönu.',
 );
 
+/** Walloon (Walon)
+ * @author Lucyin
+ */
+$messages['wa'] = array(
+	'categorytree-mode-all' => 'Totes les pådjes',
+	'categorytree-num-empty' => 'vude',
+	'categorytree-loading' => "dji so k' eberwete...",
+	'categorytree-nothing-found' => 'rén trové',
+	'categorytree-no-subcategories' => 'Nole dizo-categoreye',
+	'categorytree-no-parent-categories' => 'Nole dizeu-categoreye',
+	'categorytree-no-pages' => 'Nole pådje ou categoreye',
+	'categorytree-not-found' => 'Categoreye <i>$1</i> nén trovêye',
+	'categorytree-error' => "Aroke d' eberwetaedje",
+	'categorytree-retry' => 'Tårdjîz ene miete eyet rsayî',
+);
+
 /** Wu (吴语)
  * @author Wtzdj
  */
@@ -4981,6 +4997,7 @@ $messages['yi'] = array(
 	'categorytree-member-counts' => 'אנטהאלט {{PLURAL:$1|1 אונטערקאטעגאריע|$1 אונטערקאטעגאריעס}}, {{PLURAL:$2|1 בלאט|$2 בלעטער}}, און {{PLURAL:$3|1 טעקע|$3 טעקעס}}',
 	'categorytree-num-categories' => '$1 קאַט',
 	'categorytree-num-pages' => '$1 ב',
+	'categorytree-num-files' => '$1 ט',
 	'categorytree-num-empty' => 'ליידיק',
 	'categorytree-load' => 'לאָדן',
 	'categorytree-loading' => 'לאָדנדיק…',
