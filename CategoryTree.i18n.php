@@ -4573,6 +4573,7 @@ Agar az mururgari xele kūhna istifoda mekuned jo ÇavaSkriptro ƣajrifa'ol kard
 );
 
 /** Thai (ไทย)
+ * @author Horus
  * @author Manop
  * @author Octahedron80
  * @author Passawuth
@@ -4594,6 +4595,7 @@ $messages['th'] = array(
 	'categorytree-collapse' => 'ย่อ',
 	'categorytree-expand' => 'ขยาย',
 	'categorytree-member-counts' => 'มี {{PLURAL:$1|1 หมวดหมู่ย่อย|$1 หมวดหมู่ย่อย}}, {{PLURAL:$2|1 หน้า|$2 หน้า}}, และ {{PLURAL:$3|1 ไฟล์|$3 ไฟล์}}',
+	'categorytree-num-empty' => 'ว่าง',
 	'categorytree-load' => 'โหลด',
 	'categorytree-loading' => 'กำลังโหลด...',
 	'categorytree-nothing-found' => 'ไม่พบที่ต้องการ',
