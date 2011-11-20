@@ -4809,11 +4809,16 @@ $messages['uk'] = array(
 	'categorytree-retry' => 'Будь ласка, зачекайте і спробуйте ще раз.',
 );
 
-/** Urdu (اردو) */
+/** Urdu (اردو)
+ * @author Istabani
+ */
 $messages['ur'] = array(
 	'categorytree' => 'شجر ِزمرہ',
+	'categorytree-portlet' => 'زمرہ',
+	'categorytree-legend' => 'مختلف اقسام دکھائیں',
 	'categorytree-category' => 'زمرہ',
 	'categorytree-go' => 'بہ ترتیب شجر',
+	'categorytree-parents' => 'والدین',
 	'categorytree-mode-all' => 'تمام صفحات',
 	'categorytree-load' => 'اثقال',
 	'categorytree-loading' => 'دوران اثقال',
@@ -4949,6 +4954,7 @@ $messages['vo'] = array(
  */
 $messages['wa'] = array(
 	'categorytree-mode-all' => 'Totes les pådjes',
+	'categorytree-member-counts' => 'gn a $1 dizo-categoreye{{PLURAL:$1||s}}, $2 pådje{{PLURAL:$2||s}} et $3 fitchî{{PLURAL:$3||s}}',
 	'categorytree-num-empty' => 'vude',
 	'categorytree-loading' => "dji so k' eberwete...",
 	'categorytree-nothing-found' => 'rén trové',
