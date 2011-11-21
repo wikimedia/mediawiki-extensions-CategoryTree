@@ -4990,7 +4990,7 @@ $messages['yi'] = array(
 	'categorytree' => 'קאַטעגאריע בוים',
 	'categorytree-portlet' => 'קאַטעגאריעס',
 	'categorytree-legend' => 'ווײַזן קאַטעגאריע בוים',
-	'categorytree-desc' => 'נאוויגיקן דינאמיש דעם [[Special:CategoryTree|קאטעגאריע סטרוקטור]]',
+	'categorytree-desc' => 'נאוויגירן דינאמיש דעם [[Special:CategoryTree|קאטעגאריע סטרוקטור]]',
 	'categorytree-header' => 'לייגט אריין א קאטעגאריע נאמען צו זען איר אינהאלט אלס א בוים סטרוקטור.
 באמערקט אז דאס פארלאנגט פארגעשריטענע JavaScript מעגליכקייטן, באקאנט אלס AJAX.
 אויב איר ניצט אן אלטן בלעטערער, אדער איר ערלויבט נישט קיין JavaScript, וועט דאס נישט ווירקן.',
