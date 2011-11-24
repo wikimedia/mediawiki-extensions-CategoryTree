@@ -1694,6 +1694,7 @@ Des brucht fortgschritteneri JavaScript-Funktione (Ajax). Wänn JavaScript abgsc
 );
 
 /** Gujarati (ગુજરાતી)
+ * @author Ankit
  * @author Ashok modhvadia
  * @author Dsvyas
  */
@@ -1714,6 +1715,10 @@ $messages['gu'] = array(
 	'categorytree-collapse' => 'સંકેલો',
 	'categorytree-expand' => 'વિસ્તારો',
 	'categorytree-member-counts' => 'સમાવિષ્ટ {{PLURAL:$1|૧ ઉપશ્રેણી|$1 ઉપશ્રેણીઓ}}, {{PLURAL:$2|૧ પાનું|$2 પાનાંઓ}}, અને {{PLURAL:$3|૧ ફાઇલ|$3 ફાઇલો}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'ખાલી',
 	'categorytree-load' => 'ભારાક્રાન્ત',
 	'categorytree-loading' => 'ભારાક્રાન્તિત...',
 	'categorytree-nothing-found' => 'કઈ ન મળ્યું',
@@ -3491,6 +3496,7 @@ $messages['os'] = array(
  * @author Gman124
  */
 $messages['pa'] = array(
+	'categorytree' => 'ਕੈਟਾਗਰੀ ਲੜੀ',
 	'categorytree-portlet' => 'ਕੈਟਾਗਰੀਆਂ',
 	'categorytree-legend' => 'ਕੈਟਾਗਰੀ ਲੜੀ ਵੇਖੋ',
 	'categorytree-category' => 'ਸ਼੍ਰੇਣੀ:',
@@ -3501,8 +3507,17 @@ $messages['pa'] = array(
 	'categorytree-mode-all' => 'ਸਭ ਪੇਜ',
 	'categorytree-collapse' => 'ਸਮੇਟੋ',
 	'categorytree-expand' => 'ਫੈਲਾਓ',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'ਖਾਲੀ',
 	'categorytree-load' => 'ਲੋਡ ਕਰੋ',
 	'categorytree-loading' => 'ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...',
+	'categorytree-nothing-found' => 'ਕੁਝ ਨਹੀਂ ਲੱਭਾ',
+	'categorytree-no-subcategories' => 'ਕੋਈ ਸਬ-ਕੈਟਾਗਰੀ ਨਹੀਂ',
+	'categorytree-no-parent-categories' => 'ਕੋਈ ਮੁੱਢਲੀ ਕੈਟਾਗਰੀ ਨਹੀਂ',
+	'categorytree-error' => 'ਡਾਟਾ ਲੋਡ ਕਰਨ ਦੌਰਾਨ ਸਮੱਸਿਆ।',
+	'categorytree-retry' => 'ਕੁਝ ਪਲ ਉਡੀਕੋ ਅਤੇ ਫੇਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ।',
 );
 
 /** Pangasinan (Pangasinan) */
