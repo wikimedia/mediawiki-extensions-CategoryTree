@@ -1772,6 +1772,7 @@ $messages['haw'] = array(
 );
 
 /** Hebrew (עברית)
+ * @author Amire80
  * @author Rotem Liss
  */
 $messages['he'] = array(
@@ -1789,7 +1790,7 @@ $messages['he'] = array(
 	'categorytree-collapse' => 'כיווץ',
 	'categorytree-expand' => 'הרחבה',
 	'categorytree-member-counts' => 'כוללת {{PLURAL:$1|קטגוריית משנה אחת|$1 קטגוריות משנה}}, {{PLURAL:$2|דף אחד|$2 דפים}}, ו{{PLURAL:$3|קובץ אחד|־$3 קבצים}}',
-	'categorytree-num-categories' => '{{PLURAL:$1|קט אחת|$1 קט}}',
+	'categorytree-num-categories' => "{{PLURAL:$1|קט' אחת|$1 קט}}",
 	'categorytree-num-pages' => '{{PLURAL:$1|דף אחד|$1 דפים}}',
 	'categorytree-num-files' => '{{PLURAL:$1|קובץ אחד|$1 קב}}',
 	'categorytree-num-empty' => 'ריקה',
