@@ -328,6 +328,9 @@ $messages['arz'] = array(
 	'categorytree-collapse' => 'اضغط',
 	'categorytree-expand' => 'اتوسع',
 	'categorytree-member-counts' => 'فيه {{PLURAL:$1|1 تصنيف فرعي|$1 تصنيف فرعي}}، {{PLURAL:$2|1 صفحة|$2 صفحة}}، و {{PLURAL:$3|1 ملف|$3 ملف}}',
+	'categorytree-num-categories' => '$1 ت',
+	'categorytree-num-pages' => ' $1 ص',
+	'categorytree-num-files' => ' $1 م',
 	'categorytree-load' => 'تحميل',
 	'categorytree-loading' => 'بيحمل',
 	'categorytree-nothing-found' => 'مالقيناش حاجة',
@@ -1806,11 +1809,13 @@ $messages['he'] = array(
 );
 
 /** Hindi (हिन्दी)
+ * @author Kannankumar
  * @author Kaustubh
  * @author Shyam123.ckp
  */
 $messages['hi'] = array(
 	'categorytree' => 'श्रेणीवृक्ष',
+	'categorytree-portlet' => 'श्रेणियाँ',
 	'categorytree-legend' => 'श्रेणीवृक्ष दिखायें',
 	'categorytree-desc' => 'विकिकी [[Special:CategoryTree|श्रेणीयाँ]] दिखानेके लिये AJAX से बना औज़ार',
 	'categorytree-header' => 'एक श्रेणीके कन्टेन्ट्स वृक्ष के रूपमें देखने के लिये उसका नाम दें।
@@ -1824,10 +1829,13 @@ $messages['hi'] = array(
 	'categorytree-mode-all' => 'सभी पन्ने',
 	'categorytree-collapse' => 'छोटा करें',
 	'categorytree-expand' => 'बडा करें',
+	'categorytree-member-counts' => 'इसमे {{PLURAL:$1| 1 श्रेणि | $1  श्रेणियाँ}},  {{PLURAL:$2| 1 पृष्ठ| $2  पृष्ठों}}, और  {{PLURAL:$3| 1 फाइल | $3  फ़ाइलें}} हे ।',
+	'categorytree-num-empty' => 'खाली',
 	'categorytree-load' => 'लोड करें',
 	'categorytree-loading' => 'लोड कर रहें हैं...',
 	'categorytree-nothing-found' => 'कुछ भी मिला नहीं',
 	'categorytree-no-subcategories' => 'उपश्रेणीयाँ नहीं हैं',
+	'categorytree-no-parent-categories' => 'कोई उपर् कि श्रेणियाँ नहि हे',
 	'categorytree-no-pages' => 'लेख या उपश्रेणीयाँ नहीं हैं',
 	'categorytree-not-found' => 'श्रेणी <i>$1</i> मिली नहीं',
 	'categorytree-error' => 'डाटा लोड करने में समस्या।',
@@ -3043,12 +3051,15 @@ $messages['mn'] = array(
 );
 
 /** Marathi (मराठी)
+ * @author Balaji
+ * @author Evision
  * @author Htt
  * @author Kaustubh
  * @author Mahitgar
  */
 $messages['mr'] = array(
 	'categorytree' => 'वर्गवृक्ष',
+	'categorytree-portlet' => 'विभाग',
 	'categorytree-legend' => 'वर्गवृक्ष दाखवा',
 	'categorytree-desc' => 'एखाद्या विकिची [[Special:CategoryTree|वर्गीकरण मांडणी]] दाखवण्याकरिता AJAX वापरून बनवलेले उपकरण',
 	'categorytree-header' => 'एखाद्या वर्गीकरणातील मसुदा वृक्ष स्वरूपात पहाण्याकरिता  त्या वर्गाचे नाव भरा.
@@ -3061,6 +3072,7 @@ $messages['mr'] = array(
 	'categorytree-mode-all' => 'सर्व पाने',
 	'categorytree-collapse' => 'कोलॅप्स',
 	'categorytree-expand' => 'विस्तार',
+	'categorytree-num-empty' => 'रिकामे',
 	'categorytree-load' => 'चढवा',
 	'categorytree-loading' => 'चढवत आहे',
 	'categorytree-nothing-found' => 'काहीच गवसले नाही',
@@ -3268,17 +3280,32 @@ NB: veur disse funksie he'j de JavaScript-funksionaliteit AJAX neudig. A'j n hel
  * @author Bhawani Gautam Rhk
  */
 $messages['ne'] = array(
+	'categorytree' => 'श्रेणी वृक्ष',
+	'categorytree-portlet' => 'श्रेणीहरू',
+	'categorytree-legend' => 'श्रेणी वृक्ष हेर्ने',
+	'categorytree-desc' => '[[Special:CategoryTree|श्रेणी संरचना]]को  गतिशील अन्वेषण गर्ने',
 	'categorytree-category' => 'श्रेणी:',
+	'categorytree-go' => 'वृक्ष हेर्ने',
+	'categorytree-parents' => 'जनक',
 	'categorytree-mode-categories' => 'श्रेणी मात्र',
 	'categorytree-mode-pages' => 'पृष्ठहरु फ़ाइलहरुका अतिरिक्त',
 	'categorytree-mode-all' => 'सबै पृष्ठहरु',
 	'categorytree-collapse' => 'खुम्च्याउनु',
 	'categorytree-expand' => 'फैलाउनु',
+	'categorytree-member-counts' => 'मा {{PLURAL:$1|1 श्रेणी छ|$1 श्रेणीहरु छन्}}, {{PLURAL:$2|1 पृष्ठ छ|$2 पृष्ठहरु छन्}}, तथा {{PLURAL:$3|1 फाइल छ|$3 फाइलहरु छन्}}',
+	'categorytree-num-categories' => '$1 C (श्रे)',
+	'categorytree-num-pages' => '$1 P (पृ)',
+	'categorytree-num-files' => '$1 F (फा)',
+	'categorytree-num-empty' => 'रित्तो',
+	'categorytree-load' => 'चढाउने',
 	'categorytree-loading' => 'खोलिंदै…',
 	'categorytree-nothing-found' => 'केहीपनि फेला परेन',
 	'categorytree-no-subcategories' => 'उपश्रेणीहरू छैनन्',
+	'categorytree-no-parent-categories' => 'जनक श्रेणीहरु नभएको',
 	'categorytree-no-pages' => 'पृष्ठहरू वा उपश्रेणीहरू छैनन्',
 	'categorytree-not-found' => 'श्रेणी <i>$1</i> फेला परेन',
+	'categorytree-error' => 'आँकडा (data) चढाउनमा समस्या',
+	'categorytree-retry' => 'कृपया केही क्षण पर्खेर त्यसपछि पुनः प्रयास गर्नुहोस्',
 );
 
 /** Dutch (Nederlands)
