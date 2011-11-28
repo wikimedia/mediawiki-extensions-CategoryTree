@@ -2251,6 +2251,7 @@ $messages['it'] = array(
  * @author Fryed-peach
  * @author JtFuruhata
  * @author Kahusi
+ * @author Whym
  */
 $messages['ja'] = array(
 	'categorytree' => 'カテゴリツリー',
@@ -2267,6 +2268,10 @@ $messages['ja'] = array(
 	'categorytree-collapse' => '下位カテゴリを非表示',
 	'categorytree-expand' => '下位カテゴリを表示',
 	'categorytree-member-counts' => '$1{{PLURAL:$1|サブカテゴリ}}、$2{{PLURAL:$2|ページ}}、$3{{PLURAL:$3|ファイル}}を含んでいます',
+	'categorytree-num-categories' => '$1C',
+	'categorytree-num-pages' => '$1頁',
+	'categorytree-num-files' => '$1F',
+	'categorytree-num-empty' => '空',
 	'categorytree-load' => '下位カテゴリを表示',
 	'categorytree-loading' => '読み込み中…',
 	'categorytree-nothing-found' => '存在しません',
