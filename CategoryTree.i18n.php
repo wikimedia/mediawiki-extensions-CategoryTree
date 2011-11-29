@@ -1783,7 +1783,9 @@ $messages['he'] = array(
 	'categorytree-portlet' => 'קטגוריות',
 	'categorytree-legend' => 'הצגת עץ קטגוריות',
 	'categorytree-desc' => 'כלי מבוסס AJAX להצגת [[Special:CategoryTree|מבנה הקטגוריות]] של אתר ויקי',
-	'categorytree-header' => 'הקלידו שם קטגוריה כדי לראות את תכניה במבנה עץ. שימו לב שהדבר דורש תכונת JavaScript מתקדמת, הידועה בשם AJAX. אם יש לכם דפדפן ישן מאוד, או ש־JavaScript מנוטרלת אצלכם בדפדפן, הוא לא יעבוד.',
+	'categorytree-header' => 'הקלידו שם קטגוריה כדי לראות את תכניה במבנה עץ.
+שימו לב שהדבר דורש יכולת JavaScript מתקדמת, הידועה בשם AJAX.
+אם יש לכם דפדפן ישן מאוד, או שהתמיכה ב־JavaScript כבויה אצלכם בדפדפן, זה לא יעבוד.',
 	'categorytree-category' => 'קטגוריה:',
 	'categorytree-go' => 'הצגת העץ',
 	'categorytree-parents' => 'הורים',
@@ -1793,9 +1795,9 @@ $messages['he'] = array(
 	'categorytree-collapse' => 'כיווץ',
 	'categorytree-expand' => 'הרחבה',
 	'categorytree-member-counts' => 'כוללת {{PLURAL:$1|קטגוריית משנה אחת|$1 קטגוריות משנה}}, {{PLURAL:$2|דף אחד|$2 דפים}}, ו{{PLURAL:$3|קובץ אחד|־$3 קבצים}}',
-	'categorytree-num-categories' => "{{PLURAL:$1|קט' אחת|$1 קט}}",
+	'categorytree-num-categories' => "{{PLURAL:$1|קט' אחת|$1 קט'}}",
 	'categorytree-num-pages' => '{{PLURAL:$1|דף אחד|$1 דפים}}',
-	'categorytree-num-files' => '{{PLURAL:$1|קובץ אחד|$1 קב}}',
+	'categorytree-num-files' => "{{PLURAL:$1|קובץ אחד|$1 קב'}}",
 	'categorytree-num-empty' => 'ריקה',
 	'categorytree-load' => 'טעינה',
 	'categorytree-loading' => 'בטעינה',
@@ -1803,8 +1805,8 @@ $messages['he'] = array(
 	'categorytree-no-subcategories' => 'אין קטגוריות משנה',
 	'categorytree-no-parent-categories' => 'אין קטגוריות הורה',
 	'categorytree-no-pages' => 'אין דפים או קטגוריות משנה',
-	'categorytree-not-found' => "הקטגוריה '''$1''' לא נמצאה",
-	'categorytree-error' => 'בעיה בטעינת המידע.',
+	'categorytree-not-found' => 'הקטגוריה <i>$1</i> לא נמצאה',
+	'categorytree-error' => 'בעיה בטעינת הנתונים.',
 	'categorytree-retry' => 'אנא המתינו מעט ונסו שנית.',
 );
 
