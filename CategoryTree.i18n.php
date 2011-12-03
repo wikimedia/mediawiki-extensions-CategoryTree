@@ -3063,6 +3063,7 @@ $messages['mn'] = array(
  * @author Htt
  * @author Kaustubh
  * @author Mahitgar
+ * @author Rahuldeshmukh101
  */
 $messages['mr'] = array(
 	'categorytree' => 'वर्गवृक्ष',
@@ -3079,11 +3080,16 @@ $messages['mr'] = array(
 	'categorytree-mode-all' => 'सर्व पाने',
 	'categorytree-collapse' => 'कोलॅप्स',
 	'categorytree-expand' => 'विस्तार',
+	'categorytree-member-counts' => '{{PLURAL:$1|1 उपवर्ग|$1 उपवर्ग}}, {{PLURAL:$2|1 पान |$2 पाने}}, आणि  {{PLURAL:$3|1 संचिका |$3 संचिका}} उपलब्ध आहेत',
+	'categorytree-num-categories' => '$1 क',
+	'categorytree-num-pages' => '$1 प',
+	'categorytree-num-files' => '$1 फ',
 	'categorytree-num-empty' => 'रिकामे',
 	'categorytree-load' => 'चढवा',
 	'categorytree-loading' => 'चढवत आहे',
 	'categorytree-nothing-found' => 'काहीच गवसले नाही',
 	'categorytree-no-subcategories' => 'उपवर्ग नाहीत',
+	'categorytree-no-parent-categories' => 'वर्गास मुळवर्गीकरण उपलब्ध नाही',
 	'categorytree-no-pages' => 'पाने अथवा उपवर्ग नाहीत',
 	'categorytree-not-found' => 'वर्ग <i>$1</i> आढळला नाही',
 	'categorytree-error' => 'विदा चढवताना त्रूटी.',
@@ -3838,6 +3844,10 @@ Musyariy, kaytaqa AJAX nisqa sapaq JavaScript ruranallawanmi llamk'achiyta atink
 	'categorytree-collapse' => 'pakay',
 	'categorytree-expand' => 'rikuchiy',
 	'categorytree-member-counts' => "{{PLURAL:$1|huk urin katiguriyayuqmi|$1 urin katiguriyayuqmi}}, {{PLURAL:$2|huk p'anqayuqmi|$2 p'anqayuqmi}}, {{PLURAL:$3|huk willañiqiyuqmi|$3 willañiqiyuqmi}}",
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 W',
+	'categorytree-num-empty' => "ch'usaq",
 	'categorytree-load' => 'chaqnay',
 	'categorytree-loading' => 'chaqnaspa',
 	'categorytree-nothing-found' => 'manam imapas tarisqachu',
