@@ -1813,6 +1813,7 @@ $messages['he'] = array(
 /** Hindi (हिन्दी)
  * @author Kannankumar
  * @author Kaustubh
+ * @author Pooja.srivastava
  * @author Shyam123.ckp
  */
 $messages['hi'] = array(
@@ -1832,6 +1833,9 @@ $messages['hi'] = array(
 	'categorytree-collapse' => 'छोटा करें',
 	'categorytree-expand' => 'बडा करें',
 	'categorytree-member-counts' => 'इसमे {{PLURAL:$1| 1 श्रेणि | $1  श्रेणियाँ}},  {{PLURAL:$2| 1 पृष्ठ| $2  पृष्ठों}}, और  {{PLURAL:$3| 1 फाइल | $3  फ़ाइलें}} हे ।',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
 	'categorytree-num-empty' => 'खाली',
 	'categorytree-load' => 'लोड करें',
 	'categorytree-loading' => 'लोड कर रहें हैं...',
