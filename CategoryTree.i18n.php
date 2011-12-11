@@ -1311,6 +1311,9 @@ $messages['eu'] = array(
 	'categorytree-collapse' => 'itxi',
 	'categorytree-expand' => 'zabaldu',
 	'categorytree-member-counts' => '{{PLURAL:$1|azpikategoria 1|$1 azpikategoria}}, {{PLURAL:$2|orrialde 1|$2 orrialde}} eta {{PLURALK:$3|fitxategi 1|$3 fitxategi}} ditu',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 O',
+	'categorytree-num-files' => '$1 F',
 	'categorytree-num-empty' => 'hutsik',
 	'categorytree-load' => 'kargatu',
 	'categorytree-loading' => 'kargatzen',
@@ -4319,7 +4322,7 @@ $messages['sr-ec'] = array(
 	'categorytree-no-pages' => 'нема страница или поткатегорија',
 	'categorytree-not-found' => 'Категорија <i>$1</i> није пронађена',
 	'categorytree-error' => 'Проблем при учитавању података.',
-	'categorytree-retry' => 'Молимо, сачекајте тренутак и покушајте поново.',
+	'categorytree-retry' => 'Сачекајте неколико тренутака и покушајте поново.',
 );
 
 /** Serbian (Latin script) (‪Srpski (latinica)‬)
