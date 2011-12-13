@@ -2123,7 +2123,7 @@ $messages['ilo'] = array(
 	'categorytree' => 'Kategoria a kayo',
 	'categorytree-portlet' => 'Dagiti kategoria',
 	'categorytree-legend' => 'Ipakita ti kategoria a kayo',
-	'categorytree-desc' => 'Pagdaliasatan a dinamik iti [[Special:CategoryTree|pinakatakder ti kategoria]]',
+	'categorytree-desc' => 'Pagdaliasatan a dinamik iti [[Special:CategoryTree|pinakapatakder ti kategoria]]',
 	'categorytree-header' => 'Ikabil ti nagan ti kategoria tapno makita dagiti nagyan na akasla kayo nga pinakatakder .
 Kitaem nga  daytoy ket masapul na ti JavaScript a mangpabalin nga ti nagan na ket AJAX.
 No adda daan nga browsermo, wenno naiddep ti JavaScript mo, saan daytoy nga agbalin.',
