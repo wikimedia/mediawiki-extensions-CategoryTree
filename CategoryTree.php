@@ -109,7 +109,7 @@ $wgExtensionCredits['specialpage'][] = $wgExtensionCredits['parserhook'][] = arr
 	'path' => __FILE__,
 	'name' => 'CategoryTree',
 	'author' => 'Daniel Kinzler',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:CategoryTree',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:CategoryTree',
 	'descriptionmsg' => 'categorytree-desc',
 );
 
