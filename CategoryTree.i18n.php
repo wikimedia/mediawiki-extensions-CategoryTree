@@ -2124,9 +2124,9 @@ $messages['ilo'] = array(
 	'categorytree-portlet' => 'Dagiti kategoria',
 	'categorytree-legend' => 'Ipakita ti kategoria a kayo',
 	'categorytree-desc' => 'Pagdaliasatan a dinamik iti [[Special:CategoryTree|pinakapatakder ti kategoria]]',
-	'categorytree-header' => 'Ikabil ti nagan ti kategoria tapno makita dagiti nagyan na akasla kayo nga pinakatakder .
-Kitaem nga  daytoy ket masapul na ti JavaScript a mangpabalin nga ti nagan na ket AJAX.
-No adda daan nga browsermo, wenno naiddep ti JavaScript mo, saan daytoy nga agbalin.',
+	'categorytree-header' => 'Ikabil ti nagan ti kategoria tapno makita dagiti nagyan na a kasla kayo a pinakatakder .
+Kitaem a  daytoy ket masapul na ti JavaScript nga opisio a ti nagan nga AJAX.
+No adda daan a pagbasasam, wenno nabaldado ti JavaScript mo, saan daytoy nga agbalin.',
 	'categorytree-category' => 'Kategoria:',
 	'categorytree-go' => 'Ipakita ti kayo',
 	'categorytree-parents' => 'Naggapuan na',
@@ -2146,9 +2146,9 @@ No adda daan nga browsermo, wenno naiddep ti JavaScript mo, saan daytoy nga agba
 	'categorytree-no-subcategories' => 'awan dagiti apo ti kategoria',
 	'categorytree-no-parent-categories' => 'awan ti naggapuan na a kategoria',
 	'categorytree-no-pages' => 'awan dagiti panid wenno dagiti apo ti kategoria',
-	'categorytree-not-found' => 'Kategoria <i>$1</i> saan a nabirokan',
-	'categorytree-error' => 'Problema ti pinagkarga ti data.',
-	'categorytree-retry' => 'Pangaasi ta aguray ti madamdama ken ipadas mo manen.',
+	'categorytree-not-found' => 'Kategoria <i>$1</i> saan a nabirukan',
+	'categorytree-error' => 'Parikut ti pinagkarga ti data.',
+	'categorytree-retry' => 'Pangaasi ti aguray ti madamdama ken ipadas mo manen.',
 );
 
 /** Ingush (ГІалгІай Ğalğaj)
