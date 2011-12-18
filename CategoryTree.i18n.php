@@ -2223,6 +2223,7 @@ Ef þú notast við gamlan vafra eða hefur slökkt á JavaScript mun þetta ekk
 
 /** Italian (Italiano)
  * @author .anaconda
+ * @author Beta16
  * @author BrokenArrow
  * @author Cruccone
  * @author Darth Kule
@@ -2244,6 +2245,7 @@ $messages['it'] = array(
 	'categorytree-collapse' => 'comprimi',
 	'categorytree-expand' => 'espandi',
 	'categorytree-member-counts' => 'contiene {{PLURAL:$1|1 sottocategoria|$1 sottocategorie}}, {{PLURAL:$2|1 pagina|$2 pagine}} e {{PLURAL:$3|1 file|$3 file}}',
+	'categorytree-num-empty' => 'vuota',
 	'categorytree-load' => 'carica',
 	'categorytree-loading' => 'caricamento in corso',
 	'categorytree-nothing-found' => 'nessun risultato',
