@@ -1204,6 +1204,7 @@ $messages['eo'] = array(
 	'categorytree-collapse' => 'kaŝi',
 	'categorytree-expand' => 'montri',
 	'categorytree-member-counts' => 'enhavas {{PLURAL:$1|1 subkategorion|$1 subkategoriojn}}, {{PLURAL:$2|1 paĝon|$2 paĝojn}}, kaj {{PLURAL:$3|1 dosieron|$3 dosierojn}}',
+	'categorytree-num-empty' => 'malplena',
 	'categorytree-load' => 'elŝuti',
 	'categorytree-loading' => 'ŝarĝante...',
 	'categorytree-nothing-found' => 'nenio trovita',
@@ -3344,7 +3345,7 @@ $messages['nl'] = array(
 Let op: deze functie gebruikt JavaScript-functionaliteit die bekend staat als AJAX.
 Als u een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze functie niet.',
 	'categorytree-category' => 'Categorie:',
-	'categorytree-go' => 'Laden',
+	'categorytree-go' => 'Structuur weergeven',
 	'categorytree-parents' => 'Bovenliggende categorieën',
 	'categorytree-mode-categories' => 'alleen categorieën',
 	'categorytree-mode-pages' => 'geen afbeeldingen',
@@ -3362,7 +3363,7 @@ Als u een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze
 	'categorytree-no-subcategories' => 'Geen ondercategorieën.',
 	'categorytree-no-parent-categories' => 'geen bovencategorieën',
 	'categorytree-no-pages' => "Geen pagina's of ondercategorieën.",
-	'categorytree-not-found' => "Categorie ''$1'' niet gevonden",
+	'categorytree-not-found' => 'Categorie <i>$1</i> is niet gevonden',
 	'categorytree-error' => 'Probleem bij het laden van de gegevens.',
 	'categorytree-retry' => 'Wacht even en probeer het dan opnieuw.',
 );
