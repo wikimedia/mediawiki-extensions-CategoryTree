@@ -184,6 +184,10 @@ $messages['af'] = array(
 	'categorytree-collapse' => 'vou toe',
 	'categorytree-expand' => 'vou oop',
 	'categorytree-member-counts' => 'bevat {{PLURAL:$1|een subkategorie|$1 subkategorieë}}, {{PLURAL:$2|een bladsy|$2 blaaie}} en {{PLURAL:$3|een lêer|$3 lêers}}',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 B',
+	'categorytree-num-files' => '$1 L',
+	'categorytree-num-empty' => 'leeg',
 	'categorytree-load' => 'laai',
 	'categorytree-loading' => 'laai tans',
 	'categorytree-nothing-found' => 'niks gevind nie',
@@ -2224,6 +2228,7 @@ Ef þú notast við gamlan vafra eða hefur slökkt á JavaScript mun þetta ekk
 
 /** Italian (Italiano)
  * @author .anaconda
+ * @author Aushulz
  * @author Beta16
  * @author BrokenArrow
  * @author Cruccone
@@ -2246,6 +2251,9 @@ $messages['it'] = array(
 	'categorytree-collapse' => 'comprimi',
 	'categorytree-expand' => 'espandi',
 	'categorytree-member-counts' => 'contiene {{PLURAL:$1|1 sottocategoria|$1 sottocategorie}}, {{PLURAL:$2|1 pagina|$2 pagine}} e {{PLURAL:$3|1 file|$3 file}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
 	'categorytree-num-empty' => 'vuota',
 	'categorytree-load' => 'carica',
 	'categorytree-loading' => 'caricamento in corso',
@@ -4330,24 +4338,29 @@ $messages['sr-ec'] = array(
 
 /** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
+ * @author Rancher
  */
 $messages['sr-el'] = array(
-	'categorytree' => 'Drvo kategorija',
+	'categorytree' => 'Stablo kategorija',
 	'categorytree-portlet' => 'kategorije',
-	'categorytree-legend' => 'Prikaži drvo kategorija',
-	'categorytree-desc' => 'Dinamička navigacija [[Special:CategoryTree|strukture kategorija]].',
-	'categorytree-header' => 'Unesite ime kategoriji čiji sadržaj želite da vidite kao drvo.
-Ovo zahteva naprednu JavaSkrip funkciju poznatu kao AJAX.
-Ukoliko imate veoma stari brauzer, ili se isključili JavaSkript, drvo kategorija neće raditi.',
+	'categorytree-legend' => 'Prikaz stabla kategorija',
+	'categorytree-desc' => 'Dinamička navigacija kroz [[Special:CategoryTree|strukturu kategorija]]',
+	'categorytree-header' => 'Unesite naziv kategorije čiji sadržaj želite da vidite u stablastoj strukturi.
+Ovo zahteva naprednu funkciju javaskripta poznatu kao ajaks.
+Ako imate stariji pregledač ili ste onemogućili javaskript, stablasti prikaz neće raditi.',
 	'categorytree-category' => 'Kategorija:',
-	'categorytree-go' => 'Prikaži drvo',
+	'categorytree-go' => 'Prikaži stablo',
 	'categorytree-parents' => 'nadređene kategorije',
 	'categorytree-mode-categories' => 'samo kategorije',
-	'categorytree-mode-pages' => 'stranoce koje nisu slike',
+	'categorytree-mode-pages' => 'stranice izuzevši datoteke',
 	'categorytree-mode-all' => 'sve stranice',
 	'categorytree-collapse' => 'sakrij',
 	'categorytree-expand' => 'prikaži',
-	'categorytree-member-counts' => 'sadrži {{PLURAL:$1|1 potkategoriju|$1 potkategorija}}, {{PLURAL:$2|1 stranicu|$2 stranica}}, i {{PLURAL:$3|1 fajl|$3 fajlova}}',
+	'categorytree-member-counts' => 'sadrži {{PLURAL:$1|jednu potkategoriju|$1 potkategorije|$1 potkategorija}}, {{PLURAL:$2|jednu stranicu|$2 stranice|$2 stranica}} i {{PLURAL:$3|jednu datoteku|$3 datoteke|$3 datoteka}}',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 S',
+	'categorytree-num-files' => '$1 D',
+	'categorytree-num-empty' => 'prazna',
 	'categorytree-load' => 'učitaj',
 	'categorytree-loading' => 'učitavanje',
 	'categorytree-nothing-found' => 'ništa nije pronađeno',
@@ -4356,7 +4369,7 @@ Ukoliko imate veoma stari brauzer, ili se isključili JavaSkript, drvo kategorij
 	'categorytree-no-pages' => 'nema stranica ili potkategorija',
 	'categorytree-not-found' => 'Kategorija <i>$1</i> nije pronađena',
 	'categorytree-error' => 'Problem pri učitavanju podataka.',
-	'categorytree-retry' => 'Molimo sačekajte trenutak i pokušajte ponovo',
+	'categorytree-retry' => 'Sačekajte nekoliko trenutaka i pokušajte ponovo.',
 );
 
 /** Southern Sotho (Sesotho) */
@@ -5151,6 +5164,8 @@ $messages['yue'] = array(
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author Breawycker
+ * @author Liangent
  * @author PhiLiP
  * @author Shinjiman
  * @author Xiaomingyan
@@ -5172,6 +5187,10 @@ $messages['zh-hans'] = array(
 	'categorytree-collapse' => '折叠',
 	'categorytree-expand' => '展开',
 	'categorytree-member-counts' => '包含$1个子分类，$2个页面和$3个文件',
+	'categorytree-num-categories' => '$1字节',
+	'categorytree-num-pages' => '$1页面',
+	'categorytree-num-files' => '$1文件',
+	'categorytree-num-empty' => '空',
 	'categorytree-load' => '载入',
 	'categorytree-loading' => '正在载入...',
 	'categorytree-nothing-found' => '无结果',
@@ -5205,6 +5224,10 @@ $messages['zh-hant'] = array(
 	'categorytree-collapse' => '摺疊',
 	'categorytree-expand' => '展開',
 	'categorytree-member-counts' => '含有$1個子分類、$2個頁面和$3個檔案',
+	'categorytree-num-categories' => '$1字節',
+	'categorytree-num-pages' => '$1頁面',
+	'categorytree-num-files' => '$1文件',
+	'categorytree-num-empty' => '空',
 	'categorytree-load' => '載入',
 	'categorytree-loading' => '載入中…',
 	'categorytree-nothing-found' => '找不到任何項目',
