@@ -122,7 +122,7 @@ $magicWords['nl'] = array(
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$magicWords['no'] = array(
+$magicWords['nb'] = array(
 	'categorytree' => array( 0, 'kategoritre' ),
 );
 

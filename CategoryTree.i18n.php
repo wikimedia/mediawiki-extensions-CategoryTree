@@ -3420,7 +3420,7 @@ $messages['nn'] = array(
  * @author Event
  * @author Jon Harald Søby
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'categorytree' => 'Kategoritre',
 	'categorytree-portlet' => 'Kategorier',
 	'categorytree-legend' => 'Vis kategoritre',
