@@ -271,6 +271,11 @@ $specialPageAliases['myv'] = array(
 	'CategoryTree' => array( 'КатегорияньЧувто' ),
 );
 
+/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+$specialPageAliases['nb'] = array(
+	'CategoryTree' => array( 'Kategoritre' ),
+);
+
 /** Low German (Plattdüütsch) */
 $specialPageAliases['nds'] = array(
 	'CategoryTree' => array( 'Kategorieboom' ),
@@ -288,11 +293,6 @@ $specialPageAliases['nl'] = array(
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬) */
 $specialPageAliases['nn'] = array(
-	'CategoryTree' => array( 'Kategoritre' ),
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$specialPageAliases['nb'] = array(
 	'CategoryTree' => array( 'Kategoritre' ),
 );
 
@@ -326,7 +326,7 @@ $specialPageAliases['ro'] = array(
 	'CategoryTree' => array( 'Arborele_categoriilor' ),
 );
 
-/** Sanskrit (संस्कृत) */
+/** Sanskrit (संस्कृतम्) */
 $specialPageAliases['sa'] = array(
 	'CategoryTree' => array( 'वर्गवृक्ष:' ),
 );
@@ -376,7 +376,7 @@ $specialPageAliases['vec'] = array(
 	'CategoryTree' => array( 'ÀlbaroCategorie' ),
 );
 
-/** Veps (Vepsan kel') */
+/** Veps (Vepsän kel') */
 $specialPageAliases['vep'] = array(
 	'CategoryTree' => array( 'KategorijoidenPu' ),
 );
@@ -405,8 +405,3 @@ $specialPageAliases['zh-hant'] = array(
 $specialPageAliases['zh-tw'] = array(
 	'CategoryTree' => array( '分類樹' ),
 );
-
-/**
- * For backwards compatibility with MediaWiki 1.15 and earlier.
- */
-$aliases =& $specialPageAliases;
