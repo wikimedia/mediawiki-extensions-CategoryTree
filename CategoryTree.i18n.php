@@ -496,6 +496,10 @@ $messages['ba'] = array(
 	'categorytree-collapse' => 'төрөргә',
 	'categorytree-expand' => 'асырға',
 	'categorytree-member-counts' => '{{PLURAL:$1|$1 эске категорияһы}}, {{PLURAL:$2|$2 бите}} һәм {{PLURAL:$3|$3 файлы}} бар',
+	'categorytree-num-categories' => '$1 К',
+	'categorytree-num-pages' => '$1 Б',
+	'categorytree-num-files' => '$1 Ф',
+	'categorytree-num-empty' => 'буш',
 	'categorytree-load' => 'сығарырға',
 	'categorytree-loading' => 'сығарыу бара...',
 	'categorytree-nothing-found' => 'бер ни ҙә табылманы',
@@ -1156,6 +1160,7 @@ $messages['ee'] = array(
 );
 
 /** Greek (Ελληνικά)
+ * @author AK
  * @author Badseed
  * @author Consta
  * @author Dead3y3
@@ -1178,6 +1183,10 @@ $messages['el'] = array(
 	'categorytree-collapse' => 'κατάρρευση',
 	'categorytree-expand' => 'επέκτεινε',
 	'categorytree-member-counts' => 'περιέχει {{PLURAL:$1|1 υποκατηγορία|$1 υποκατηγορίες}}, {{PLURAL:$2|1 σελίδα|$2 σελίδες}} και {{PLURAL:$3|1 αρχείο|$3 αρχεία}}',
+	'categorytree-num-categories' => '$1 Κ',
+	'categorytree-num-pages' => '$1 Σ',
+	'categorytree-num-files' => '$1 Α',
+	'categorytree-num-empty' => 'κενή',
 	'categorytree-load' => 'φορτώστε',
 	'categorytree-loading' => 'φόρτωση',
 	'categorytree-nothing-found' => 'δεν βρέθηκε τίποτα',
@@ -1381,6 +1390,7 @@ $messages['fa'] = array(
 /** Finnish (Suomi)
  * @author Agony
  * @author Crt
+ * @author Nedergard
  * @author Nike
  * @author Str4nd
  */
@@ -1399,6 +1409,9 @@ $messages['fi'] = array(
 	'categorytree-collapse' => 'piilota',
 	'categorytree-expand' => 'näytä',
 	'categorytree-member-counts' => 'sisältää {{PLURAL:$1|1 alaluokan|$1 alaluokkaa}}, {{PLURAL:$2|1 sivun|$2 sivua}} ja {{PLURAL:$3|1 tiedoston|$3 tiedostoa}}',
+	'categorytree-num-categories' => '$1 L',
+	'categorytree-num-pages' => '$1 S',
+	'categorytree-num-files' => '$1 T',
 	'categorytree-num-empty' => 'tyhjä',
 	'categorytree-load' => 'näytä',
 	'categorytree-loading' => 'etsitään',
@@ -3244,6 +3257,41 @@ $messages['nan'] = array(
 	'categorytree-no-subcategories' => 'bô ē-lūi-pia̍t',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Audun
+ * @author Event
+ * @author Jon Harald Søby
+ */
+$messages['nb'] = array(
+	'categorytree' => 'Kategoritre',
+	'categorytree-portlet' => 'Kategorier',
+	'categorytree-legend' => 'Vis kategoritre',
+	'categorytree-desc' => 'AJAX-basert verktøy som viser [[Special:CategoryTree|kategoristrukturen]] til en wiki',
+	'categorytree-header' => 'Skriv inn et kategorinavn for å se dens innhold som en trestruktur. Merk at dette trenger en avansert type Javascript-funksjonalitet kjent som AJAX. Dersom du har en gammel nettleser eller har slått av JavaScript vil ikke dette fungere.',
+	'categorytree-category' => 'Kategori:',
+	'categorytree-go' => 'Vis',
+	'categorytree-parents' => 'Overkategorier',
+	'categorytree-mode-categories' => 'bare kategorier',
+	'categorytree-mode-pages' => 'sider utenom bilder',
+	'categorytree-mode-all' => 'alle sider',
+	'categorytree-collapse' => 'skjul',
+	'categorytree-expand' => 'vis',
+	'categorytree-member-counts' => 'inneholder {{PLURAL:$1|én underkategori|$1 underkategorier}}, {{PLURAL:$2|én side|$2 sider}} og {{PLURAL:$3|én fil|$3 filer}}',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 S',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'tom',
+	'categorytree-load' => 'last',
+	'categorytree-loading' => 'laster...',
+	'categorytree-nothing-found' => 'Ingen resultater funnet.',
+	'categorytree-no-subcategories' => 'Ingen underkategorier.',
+	'categorytree-no-parent-categories' => 'ingen foreldrekategorier',
+	'categorytree-no-pages' => 'Ingen artikler eller underkategorier.',
+	'categorytree-not-found' => 'Kategorien <i>$1</i> ikke funnet',
+	'categorytree-error' => 'problem under datalasting.',
+	'categorytree-retry' => 'Vent en stund og prøv igjen.',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -3413,41 +3461,6 @@ $messages['nn'] = array(
 	'categorytree-not-found' => 'Fann ikkje kategorien <i>$1</i>',
 	'categorytree-error' => 'Problem med innlasting av data.',
 	'categorytree-retry' => 'Ver venleg og vent litt før du prøver ein gong til.',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Audun
- * @author Event
- * @author Jon Harald Søby
- */
-$messages['nb'] = array(
-	'categorytree' => 'Kategoritre',
-	'categorytree-portlet' => 'Kategorier',
-	'categorytree-legend' => 'Vis kategoritre',
-	'categorytree-desc' => 'AJAX-basert verktøy som viser [[Special:CategoryTree|kategoristrukturen]] til en wiki',
-	'categorytree-header' => 'Skriv inn et kategorinavn for å se dens innhold som en trestruktur. Merk at dette trenger en avansert type Javascript-funksjonalitet kjent som AJAX. Dersom du har en gammel nettleser eller har slått av JavaScript vil ikke dette fungere.',
-	'categorytree-category' => 'Kategori:',
-	'categorytree-go' => 'Vis',
-	'categorytree-parents' => 'Overkategorier',
-	'categorytree-mode-categories' => 'bare kategorier',
-	'categorytree-mode-pages' => 'sider utenom bilder',
-	'categorytree-mode-all' => 'alle sider',
-	'categorytree-collapse' => 'skjul',
-	'categorytree-expand' => 'vis',
-	'categorytree-member-counts' => 'inneholder {{PLURAL:$1|én underkategori|$1 underkategorier}}, {{PLURAL:$2|én side|$2 sider}} og {{PLURAL:$3|én fil|$3 filer}}',
-	'categorytree-num-categories' => '$1 K',
-	'categorytree-num-pages' => '$1 S',
-	'categorytree-num-files' => '$1 F',
-	'categorytree-num-empty' => 'tom',
-	'categorytree-load' => 'last',
-	'categorytree-loading' => 'laster...',
-	'categorytree-nothing-found' => 'Ingen resultater funnet.',
-	'categorytree-no-subcategories' => 'Ingen underkategorier.',
-	'categorytree-no-parent-categories' => 'ingen foreldrekategorier',
-	'categorytree-no-pages' => 'Ingen artikler eller underkategorier.',
-	'categorytree-not-found' => 'Kategorien <i>$1</i> ikke funnet',
-	'categorytree-error' => 'problem under datalasting.',
-	'categorytree-retry' => 'Vent en stund og prøv igjen.',
 );
 
 /** Northern Sotho (Sesotho sa Leboa)
@@ -3696,6 +3709,10 @@ $messages['pms'] = array(
 	'categorytree-collapse' => 'sëré',
 	'categorytree-expand' => 'deurbe',
 	'categorytree-member-counts' => 'a conten {{PLURAL:$1|1 sotcategorìa|$1 sotcategorìe}}, {{PLURAL:$2|1 pàgina|$2 pàgine}}, e {{PLURAL:$3|1 file|$3 file}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'veuid',
 	'categorytree-load' => 'carié',
 	'categorytree-loading' => "antramentr ch'as carìa",
 	'categorytree-nothing-found' => 'pa trovà gnente',
@@ -3763,6 +3780,9 @@ $messages['ps'] = array(
 	'categorytree-mode-all' => 'ټول مخونه',
 	'categorytree-collapse' => 'پرځول',
 	'categorytree-expand' => 'غځول',
+	'categorytree-num-categories' => '$1 و',
+	'categorytree-num-pages' => '$1 م',
+	'categorytree-num-files' => '$1 د',
 	'categorytree-num-empty' => 'تش',
 	'categorytree-load' => 'برسېرول',
 	'categorytree-loading' => 'د برسېرېدلو په حال کې...',
@@ -4286,6 +4306,10 @@ $messages['sq'] = array(
 	'categorytree-collapse' => 'mbylle',
 	'categorytree-expand' => 'hape',
 	'categorytree-member-counts' => 'përmban $1 nënkategori, $2 faqe, dhe {{PLURAL:$3|1 skedë|$3 skeda}}',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 F',
+	'categorytree-num-files' => '$1 S',
+	'categorytree-num-empty' => 'bosh',
 	'categorytree-load' => 'hape',
 	'categorytree-loading' => 'duke plotësuar',
 	'categorytree-nothing-found' => 'Ju kërkoj ndjesë, nuk u gjet asgjë.',
