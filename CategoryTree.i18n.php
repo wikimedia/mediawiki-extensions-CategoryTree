@@ -1445,7 +1445,10 @@ Um tú hevur ein sera gamlan kaga (brovsara), ella hevur gjørt JavaScript óvir
 	'categorytree-collapse' => 'samanbrot',
 	'categorytree-expand' => 'víðka',
 	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 S',
+	'categorytree-num-files' => '$1 F',
 	'categorytree-num-empty' => 'tómur',
+	'categorytree-load' => 'heinta',
 	'categorytree-loading' => 'lesur inn',
 	'categorytree-nothing-found' => 'onki funnið',
 	'categorytree-no-subcategories' => 'ongir undirbólkar',
@@ -4087,6 +4090,7 @@ $messages['sc'] = array(
 );
 
 /** Sicilian (Sicilianu)
+ * @author Aushulz
  * @author Santu
  */
 $messages['scn'] = array(
@@ -4104,6 +4108,10 @@ $messages['scn'] = array(
 	'categorytree-collapse' => 'cumprimi',
 	'categorytree-expand' => 'spanni',
 	'categorytree-member-counts' => 'cunteni {{PLURAL:$1|1 suttacatigurìa|$1 suttacatigurìi}}, {{PLURAL:$2|1 pàggina|$2 pàggini}} e {{PLURAL:$3|1 file|$3 file}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'vacanti',
 	'categorytree-load' => 'càrica',
 	'categorytree-loading' => 'sta caricannu...',
 	'categorytree-nothing-found' => 'nuddu risurtatu',
