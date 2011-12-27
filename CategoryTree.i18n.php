@@ -464,6 +464,10 @@ $messages['az'] = array(
 	'categorytree-collapse' => 'gizlə',
 	'categorytree-expand' => 'genişləndir',
 	'categorytree-member-counts' => '{{PLURAL:$1|1 altkategoriya|$1 altkategoriya}}, {{PLURAL:$2|1 səhifə|$2 səhifə}}, ve {{PLURAL:$3|1 şəkil|$3 şəkil}}dən ibarətdir',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'boş',
 	'categorytree-load' => 'yüklə',
 	'categorytree-loading' => 'yüklənir…',
 	'categorytree-nothing-found' => 'Təəsüf edirik, nəticə yoxdur.',
@@ -682,6 +686,13 @@ $messages['bho'] = array(
 	'categorytree-portlet' => 'श्रेणी',
 );
 
+/** Banjar (Bahasa Banjar)
+ * @author Riemogerz
+ */
+$messages['bjn'] = array(
+	'categorytree-category' => 'Tumbung',
+);
+
 /** Bengali (বাংলা)
  * @author Bellayet
  * @author Zaheen
@@ -702,6 +713,7 @@ $messages['bn'] = array(
 	'categorytree-mode-all' => 'সব পাতা',
 	'categorytree-collapse' => 'গুটিয়ে ফেলা হোক',
 	'categorytree-expand' => 'প্রসারিত করা হোক',
+	'categorytree-num-empty' => 'খালি',
 	'categorytree-load' => 'নিয়ে আসা হোক',
 	'categorytree-loading' => 'নিয়ে আসা হচ্ছে',
 	'categorytree-nothing-found' => 'কিছু পাওয়া যায়নি',
@@ -1217,6 +1229,9 @@ $messages['eo'] = array(
 	'categorytree-collapse' => 'kaŝi',
 	'categorytree-expand' => 'montri',
 	'categorytree-member-counts' => 'enhavas {{PLURAL:$1|1 subkategorion|$1 subkategoriojn}}, {{PLURAL:$2|1 paĝon|$2 paĝojn}}, kaj {{PLURAL:$3|1 dosieron|$3 dosierojn}}',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 D',
 	'categorytree-num-empty' => 'malplena',
 	'categorytree-load' => 'elŝuti',
 	'categorytree-loading' => 'ŝarĝante...',
@@ -2144,32 +2159,32 @@ $messages['ilo'] = array(
 	'categorytree' => 'Kategoria a kayo',
 	'categorytree-portlet' => 'Dagiti kategoria',
 	'categorytree-legend' => 'Ipakita ti kategoria a kayo',
-	'categorytree-desc' => 'Pagdaliasatan a dinamik iti [[Special:CategoryTree|pinakapatakder ti kategoria]]',
+	'categorytree-desc' => 'Agpadaliasat a dinamik ti [[Special:CategoryTree|pinakapatakder ti kategoria]]',
 	'categorytree-header' => 'Ikabil ti nagan ti kategoria tapno makita dagiti nagyan na a kasla kayo a pinakatakder .
-Kitaem a  daytoy ket masapul na ti JavaScript nga opisio a ti nagan nga AJAX.
-No adda daan a pagbasasam, wenno nabaldado ti JavaScript mo, saan daytoy nga agbalin.',
+Kitaem a  daytoy ket masapul na ti JavaScript nga opisio a makunkuna nga AJAX.
+No adda daan a pagbasabasam, wenno nabaldado ti JavaScript mo, saan daytoy nga agbalin.',
 	'categorytree-category' => 'Kategoria:',
 	'categorytree-go' => 'Ipakita ti kayo',
 	'categorytree-parents' => 'Naggapuan na',
-	'categorytree-mode-categories' => 'kategoria laeng',
-	'categorytree-mode-pages' => 'dagiti panid ngem saan a papeles',
-	'categorytree-mode-all' => 'amin a panid',
-	'categorytree-collapse' => 'agpabassit',
-	'categorytree-expand' => 'agpadakkel',
-	'categorytree-member-counts' => 'dagiti nagyan nga {{PLURAL:$1|1 apo ti kategoria|$1 dagiti apo ti kategoria}}, {{PLURAL:$2|1 panid|$2 dagiti panid}}, wenno {{PLURAL:$3|1 papeles|$3 dagiti papeles}}',
+	'categorytree-mode-categories' => 'dagiti kategoria laeng',
+	'categorytree-mode-pages' => 'dagiti panid mailaksid dagiti papeles',
+	'categorytree-mode-all' => 'amin a pampanid',
+	'categorytree-collapse' => 'marba',
+	'categorytree-expand' => 'palawaen',
+	'categorytree-member-counts' => 'Dagiti nagyan a/nga {{PLURAL:$1|1 apo ti kategoria|$1 dagiti apo ti kategoria}}, {{PLURAL:$2|1 panid|$2 dagiti panid}}, ken {{PLURAL:$3|1 papeles|$3 dagiti papeles}}',
 	'categorytree-num-categories' => '$1 K',
 	'categorytree-num-pages' => '$1 P',
 	'categorytree-num-files' => '$1 F',
 	'categorytree-num-empty' => 'awan ti nagyan na',
 	'categorytree-load' => 'agkarga',
 	'categorytree-loading' => 'agkarkarga...',
-	'categorytree-nothing-found' => 'awan ti nabirokan',
+	'categorytree-nothing-found' => 'awan ti nabirukan',
 	'categorytree-no-subcategories' => 'awan dagiti apo ti kategoria',
 	'categorytree-no-parent-categories' => 'awan ti naggapuan na a kategoria',
 	'categorytree-no-pages' => 'awan dagiti panid wenno dagiti apo ti kategoria',
 	'categorytree-not-found' => 'Kategoria <i>$1</i> saan a nabirukan',
-	'categorytree-error' => 'Parikut ti pinagkarga ti data.',
-	'categorytree-retry' => 'Pangaasi ti aguray ti madamdama ken ipadas mo manen.',
+	'categorytree-error' => 'Parikut ti pinagkarga ti linaon.',
+	'categorytree-retry' => 'Pangngaasi ti aguray ti madamdama ken ipadas mo manen.',
 );
 
 /** Ingush (ГІалгІай Ğalğaj)
@@ -3838,6 +3853,7 @@ Caso o seu browser seja razoavelmente antigo ou o JavaScript esteja desactivado,
 /** Brazilian Portuguese (Português do Brasil)
  * @author Carla404
  * @author Eduardo.mps
+ * @author Rafael Vargas
  */
 $messages['pt-br'] = array(
 	'categorytree' => 'Árvore de categorias',
@@ -3856,6 +3872,10 @@ Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desab
 	'categorytree-collapse' => 'ocultar',
 	'categorytree-expand' => 'expandir',
 	'categorytree-member-counts' => 'contém {{PLURAL:$1|1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|1 página|$2 páginas}} e {{PLURAL:$3|1 arquivo|$3 arquivos}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 A',
+	'categorytree-num-empty' => 'vazia',
 	'categorytree-load' => 'carregar',
 	'categorytree-loading' => 'carregando',
 	'categorytree-nothing-found' => 'Sentimos muito, não se encontrou nada',
@@ -4556,6 +4576,7 @@ $messages['sw'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Shanmugamp7
  * @author Surya Prakash.S.A.
  * @author TRYPPN
  * @author Trengarasu
@@ -4572,6 +4593,7 @@ $messages['ta'] = array(
 	'categorytree-mode-all' => 'எல்லா பக்கங்களும்',
 	'categorytree-collapse' => 'சுருக்கு',
 	'categorytree-expand' => 'விரிவாக்கு',
+	'categorytree-num-empty' => 'காலி',
 	'categorytree-load' => 'ஏற்று',
 	'categorytree-loading' => 'ஏற்றப்படுகிறது...',
 	'categorytree-nothing-found' => 'ஒன்றும் காணப்படவில்லை',
@@ -4605,6 +4627,10 @@ $messages['te'] = array(
 	'categorytree-collapse' => 'మూసివేయి',
 	'categorytree-expand' => 'విస్తరించు',
 	'categorytree-member-counts' => '{{PLURAL:$1|1 ఉపవర్గం|$1 ఉపవర్గాలూ}}, {{PLURAL:$2|1 పేజీ|$2 పేజీలూ}}, మరియు {{PLURAL:$3|1 ఫైలూ|$3 ఫైళ్ళూ}} ఉన్నాయి',
+	'categorytree-num-categories' => '$1 వ',
+	'categorytree-num-pages' => '$1 పే',
+	'categorytree-num-files' => '$1 ద',
+	'categorytree-num-empty' => 'ఖాళీ',
 	'categorytree-load' => 'లోడు',
 	'categorytree-loading' => 'లోడవుతోంది...',
 	'categorytree-nothing-found' => 'ఏమీ లేవు',
