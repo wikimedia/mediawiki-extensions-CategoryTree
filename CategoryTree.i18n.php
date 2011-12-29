@@ -125,6 +125,17 @@ $messages['hu-formal'] = array(
 	'categorytree-retry' => 'Várjon egy kicsit, majd próbálja újra!',
 );
 
+/** Emiliàn (Emiliàn)
+ * @author Reder
+ */
+$messages['egl'] = array(
+	'categorytree-portlet' => 'Categorie',
+	'categorytree-category' => 'Categorie:',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+);
+
 /** толышә зывон (толышә зывон)
  * @author Гусейн
  */
@@ -2863,6 +2874,7 @@ $messages['lo'] = array(
 );
 
 /** Lithuanian (Lietuvių)
+ * @author Eitvys200
  * @author Garas
  * @author Hugo.arg
  */
@@ -2883,6 +2895,10 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
 	'categorytree-collapse' => 'suskleisti',
 	'categorytree-expand' => 'išskleisti',
 	'categorytree-member-counts' => 'turi $1 {{PLURAL:$1|subkategoriją|subkategorijas|subkategorijų}}, $2 {{PLURAL:$2|puslapį|puslapius|puslapių}}, ir $3 {{PLURAL:$3|failą|failus|failų}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'tuščia',
 	'categorytree-load' => 'įkelti',
 	'categorytree-loading' => 'įkeliama',
 	'categorytree-nothing-found' => 'nieko nerasta',
@@ -3185,6 +3201,7 @@ Jika anda menggunakan pelayar web yang sudah ketinggalan, atau mematikan JavaScr
 );
 
 /** Maltese (Malti)
+ * @author Chrisportelli
  * @author Roderick Mallia
  */
 $messages['mt'] = array(
@@ -3200,10 +3217,15 @@ $messages['mt'] = array(
 	'categorytree-collapse' => 'niżżel',
 	'categorytree-expand' => 'espandi',
 	'categorytree-member-counts' => 'għandha {{PLURAL:$1|sottokategorija waħda|$1 sottokategoriji}}, {{PLURAL:$2|paġna waħda|$2 paġna}}, u {{PLURAL:$3|1 fajl|$3 fajls}}',
+	'categorytree-num-empty' => 'vojta',
 	'categorytree-load' => "tella'",
 	'categorytree-loading' => 'tiela',
 	'categorytree-nothing-found' => 'ma nstab xejn',
 	'categorytree-no-parent-categories' => 'l-ebda kategorija parenti',
+	'categorytree-no-pages' => 'l-ebda paġna jew sottokategorija',
+	'categorytree-not-found' => 'Il-kategorija <i>$1</i> ma nstabitx',
+	'categorytree-error' => 'Problema fit-tlugħ tal-informazzjoni.',
+	'categorytree-retry' => "Jekk jogħġbok stenna ftit u erġa' pprova.",
 );
 
 /** Erzya (Эрзянь)
@@ -5004,7 +5026,7 @@ $messages['vec'] = array(
 	'categorytree-retry' => "Speta n'atimo e dopo próa de novo.",
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel')
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
@@ -5017,6 +5039,13 @@ $messages['vep'] = array(
 	'categorytree-mode-categories' => 'vaiše kategorijad',
 	'categorytree-mode-pages' => 'lehtpoled failoita',
 	'categorytree-mode-all' => 'kaik lehtpoled',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 L',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => "pall'az",
+	'categorytree-load' => 'jügutoitta',
+	'categorytree-loading' => 'jügudoitmine...',
+	'categorytree-nothing-found' => 'ei voi löuta',
 	'categorytree-no-subcategories' => 'ei ole alakategorijoid',
 );
 
