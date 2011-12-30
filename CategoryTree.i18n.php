@@ -2405,6 +2405,7 @@ Menawa panjenengan panjlajah wèbé kalebu vèrsi lawa, utawa fitur JavaScript d
 
 /** Georgian (ქართული)
  * @author BRUTE
+ * @author ITshnik
  * @author Malafaya
  */
 $messages['ka'] = array(
@@ -2423,6 +2424,7 @@ $messages['ka'] = array(
 	'categorytree-collapse' => 'ჩაკეცვა',
 	'categorytree-expand' => 'გაშლა',
 	'categorytree-member-counts' => 'შეიცავს {{PLURAL:$1|1 ქვეკატეგორიას|$1 ქვეკატეგორიას}},  {{PLURAL:$2|1 გვერდს|$2 გვერდს}},  და {{PLURAL:$3|1 ფაილს|$3 ფაილს}}',
+	'categorytree-num-empty' => 'ცარიელი',
 	'categorytree-load' => 'ჩატვირთვა',
 	'categorytree-loading' => 'იტვირთება…',
 	'categorytree-nothing-found' => 'ვერაფერი მოიძებნა',
@@ -5208,6 +5210,10 @@ Tó bá ṣe pé agbétàkùn yín jẹ́ tàti pípẹ́, tàbí JavaScript j�
 	'categorytree-collapse' => 'kálura',
 	'categorytree-expand' => 'fẹ̀hàn',
 	'categorytree-member-counts' => 'ní {{PLURAL:$1|ẹ̀kaabẹ́ 1|àwọn ẹ̀kaabẹ́ $1}}, {{PLURAL:$2|ojúewé 1 page|àwọn ojúewé $2}}, àti {{PLURAL:$3|fáìlì 1|àwọn fáìlì $3}} nínú',
+	'categorytree-num-categories' => 'Ẹ̀k. $1',
+	'categorytree-num-pages' => 'Oj. $1',
+	'categorytree-num-files' => 'Fá. $1',
+	'categorytree-num-empty' => 'olófo',
 	'categorytree-load' => 'ìgbéyọ',
 	'categorytree-loading' => 'úngbéyọ...',
 	'categorytree-nothing-found' => 'kò sí ùnkankan',
