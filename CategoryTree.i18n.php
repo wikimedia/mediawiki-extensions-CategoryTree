@@ -698,10 +698,34 @@ $messages['bho'] = array(
 );
 
 /** Banjar (Bahasa Banjar)
+ * @author J Subhi
  * @author Riemogerz
  */
 $messages['bjn'] = array(
+	'categorytree' => 'Puhun tumbung',
+	'categorytree-portlet' => 'Tutumbung',
+	'categorytree-legend' => 'Tampaiakan tumbung puhun',
+	'categorytree-desc' => 'Napigasi dinamis [[Special:CategoryTree|struktur tumbung]]',
 	'categorytree-category' => 'Tumbung',
+	'categorytree-go' => 'Tampaiakan puhun',
+	'categorytree-parents' => 'Kuitan',
+	'categorytree-mode-categories' => 'Tutumbung haja',
+	'categorytree-mode-pages' => 'tutungkaran kacuali barakas',
+	'categorytree-mode-all' => 'samunyaan tutungkaran',
+	'categorytree-expand' => 'Singkai',
+	'categorytree-num-categories' => '$1 T',
+	'categorytree-num-pages' => '$1 T',
+	'categorytree-num-files' => '$1 B',
+	'categorytree-num-empty' => 'kusung',
+	'categorytree-load' => 'muatakan',
+	'categorytree-loading' => 'mamuat...',
+	'categorytree-nothing-found' => 'Kada taugai',
+	'categorytree-no-subcategories' => 'kada sub-tutumbung',
+	'categorytree-no-parent-categories' => 'kada kuitan tutumbung',
+	'categorytree-no-pages' => 'kadada tutungkaran atawa sub-tutumbung',
+	'categorytree-not-found' => 'Tumbung <i>$1</i> kada taugai',
+	'categorytree-error' => 'Masalah mamuat data.',
+	'categorytree-retry' => 'Muhun hadangi satumat wan cubai pulang.',
 );
 
 /** Bengali (বাংলা)
@@ -1459,6 +1483,7 @@ $messages['fo'] = array(
 	'categorytree' => 'BólkaTræ',
 	'categorytree-portlet' => 'Bólkar',
 	'categorytree-legend' => 'Vís bólka træið',
+	'categorytree-desc' => 'Dynamisk stýring í [[Special:CategoryTree|bólka strukturinum]]',
 	'categorytree-header' => 'Skriva heiti á einum bólki fyri at síggja innihaldið sum træ strukturur.
 Legg til merkis, at hetta krevur víðarikomið JacaScript virksemi (funktionalitet), sum er kent sum AJAX.
 Um tú hevur ein sera gamlan kaga (brovsara), ella hevur gjørt JavaScript óvirkið, so fer tað ikki at virka.',
@@ -1470,6 +1495,7 @@ Um tú hevur ein sera gamlan kaga (brovsara), ella hevur gjørt JavaScript óvir
 	'categorytree-mode-all' => 'allar síður',
 	'categorytree-collapse' => 'samanbrot',
 	'categorytree-expand' => 'víðka',
+	'categorytree-member-counts' => 'Inniheldur {{PLURAL:$1|1 undirbólk|$1 undirbólkar}}, {{PLURAL:$2|1 síðu|$2 síður}}, og {{PLURAL:$3|1 fílu|$3 fílur}}',
 	'categorytree-num-categories' => '$1 C',
 	'categorytree-num-pages' => '$1 S',
 	'categorytree-num-files' => '$1 F',
@@ -1539,7 +1565,7 @@ Se vos avéd un rudo viely navigator ou ben se vos éd pas activâ la fonccional
 	'categorytree-category' => 'Catègorie :',
 	'categorytree-go' => 'Fâre vêre la structura d’âbro',
 	'categorytree-parents' => 'Sur-catègorie(s) ',
-	'categorytree-mode-categories' => 'ren que les catègories',
+	'categorytree-mode-categories' => 'solament les catègories',
 	'categorytree-mode-pages' => 'pâges sen los fichiérs',
 	'categorytree-mode-all' => 'totes les pâges',
 	'categorytree-collapse' => 'recllôre',
@@ -4627,6 +4653,20 @@ $messages['ta'] = array(
 	'categorytree-not-found' => '<i>$1</i> பகுப்பு காணப்படவில்லை',
 	'categorytree-error' => 'குறிப்புகளை ஏற்றுவதில் சிக்கல்',
 	'categorytree-retry' => 'கொஞ்ச நேரம் பொறுத்திருந்தபின் மீண்டும் முயற்சி செய்யுங்கள்.',
+);
+
+/** Tulu (ತುಳು)
+ * @author VASANTH S.N.
+ */
+$messages['tcy'] = array(
+	'categorytree-mode-all' => 'ಮಾತಾ ಪುಟೊಲು',
+	'categorytree-collapse' => 'ಕುಗ್ಗಿಸಾಲ',
+	'categorytree-expand' => 'ವಿಸ್ತಾರ ಮಲ್ಪುಲೆ',
+	'categorytree-num-empty' => 'ಖಾಲಿ',
+	'categorytree-load' => 'ದಿಂಜಾಲೆ',
+	'categorytree-loading' => 'ದಿಂಜಾವೊಂದು ಉಂಡು.......',
+	'categorytree-error' => 'ದತ್ತಾಂಶ ದಿಂಜಾನಗ ದೋಷ',
+	'categorytree-retry' => 'ದಯದೀದ್ ಒಂತೆ ಕಾತ್‘ದ್ ಪಿರ ಪ್ರಯತ್ನ ಮಲ್ಪುಲೆ',
 );
 
 /** Telugu (తెలుగు)
