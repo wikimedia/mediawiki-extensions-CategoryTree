@@ -2583,11 +2583,25 @@ $messages['km'] = array(
 );
 
 /** Kannada (ಕನ್ನಡ)
+ * @author Abhirama
  * @author Nayvik
  */
 $messages['kn'] = array(
 	'categorytree-portlet' => 'ವರ್ಗಗಳು',
 	'categorytree-category' => 'ವರ್ಗ:',
+	'categorytree-num-categories' => '$1 ವ',
+	'categorytree-num-pages' => '$1 ಪು',
+	'categorytree-num-files' => '$1 ಕ',
+	'categorytree-num-empty' => 'ಖಾಲಿ',
+	'categorytree-load' => 'ಉತ್ಪೂರಿಸು',
+	'categorytree-loading' => 'ಉತ್ಪೂರಿತವಾಗುತ್ತಿದೆ...',
+	'categorytree-nothing-found' => 'ಏನೂ ಸಿಗಲಿಲ್ಲ',
+	'categorytree-no-subcategories' => 'ಉಪವರ್ಗಗಳಿಲ್ಲ',
+	'categorytree-no-parent-categories' => 'ಪೋಷಕ ವರ್ಗಗಳಿಲ್ಲ',
+	'categorytree-no-pages' => 'ಪುಟಗಳು ಅಥವಾ ಉಪವರ್ಗಗಳಿಲ್ಲ',
+	'categorytree-not-found' => 'ಈ <i>$1</i> ವರ್ಗವು ಕಾಣಿಸುತ್ತಿಲ್ಲ',
+	'categorytree-error' => 'ಮಾಹಿತಿ ಉತ್ಪೂರಣೆಯಲ್ಲಿ ತೊಂದರೆಯಾಗಿದೆ.',
+	'categorytree-retry' => 'ಒಂದು ಕ್ಷಣ ಕಾದು ಅನಂತರ ಪ್ರಯತ್ನಿಸಿ.',
 );
 
 /** Korean (한국어)
