@@ -729,6 +729,7 @@ $messages['bjn'] = array(
 );
 
 /** Bengali (বাংলা)
+ * @author Ansumang
  * @author Bellayet
  * @author Zaheen
  */
@@ -748,6 +749,9 @@ $messages['bn'] = array(
 	'categorytree-mode-all' => 'সব পাতা',
 	'categorytree-collapse' => 'গুটিয়ে ফেলা হোক',
 	'categorytree-expand' => 'প্রসারিত করা হোক',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
 	'categorytree-num-empty' => 'খালি',
 	'categorytree-load' => 'নিয়ে আসা হোক',
 	'categorytree-loading' => 'নিয়ে আসা হচ্ছে',
@@ -2587,8 +2591,17 @@ $messages['km'] = array(
  * @author Nayvik
  */
 $messages['kn'] = array(
+	'categorytree' => 'ವರ್ಗವೃಕ್ಷ',
 	'categorytree-portlet' => 'ವರ್ಗಗಳು',
+	'categorytree-legend' => 'ವರ್ಗವೃಕ್ಷವನ್ನು ತೋರ್ಪಡಿಸಿ',
 	'categorytree-category' => 'ವರ್ಗ:',
+	'categorytree-go' => 'ವೃಕ್ಷವನ್ನು ತೋರ್ಪಡಿಸಿ',
+	'categorytree-parents' => 'ಪೋಷಕರು',
+	'categorytree-mode-categories' => 'ಕೇವಲ ವರ್ಗಗಳು',
+	'categorytree-mode-pages' => 'ಕಡತಗಳಿಲ್ಲದಿರುವ ಪುಟಗಳು',
+	'categorytree-mode-all' => 'ಎಲ್ಲಾ ಪುಟಗಳು',
+	'categorytree-collapse' => 'ಕುಸಿಯಲಿ',
+	'categorytree-expand' => 'ವಿಸ್ತರಿಸಿ',
 	'categorytree-num-categories' => '$1 ವ',
 	'categorytree-num-pages' => '$1 ಪು',
 	'categorytree-num-files' => '$1 ಕ',
@@ -4126,9 +4139,16 @@ $messages['rue'] = array(
 );
 
 /** Sanskrit (संस्कृतम्)
+ * @author Ansumang
  * @author Vibhijain
  */
 $messages['sa'] = array(
+	'categorytree-category' => 'वर्ग:',
+	'categorytree-mode-all' => 'सर्बे पृष्ठ',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'शुन्य',
 	'categorytree-load' => 'लोड',
 	'categorytree-loading' => 'भारारोपण',
 );
@@ -5308,6 +5328,36 @@ $messages['yue'] = array(
 	'categorytree-not-found' => '搵唔到<i>$1</i>分類',
 	'categorytree-error' => '載入資料嗰陣發生咗錯誤。',
 	'categorytree-retry' => '請等多一陣再試過。',
+);
+
+/** Zeeuws (Zeêuws)
+ * @author Ooswesthoesbes
+ */
+$messages['zea'] = array(
+	'categorytree' => 'Catehorieboôm',
+	'categorytree-portlet' => 'Categorieën',
+	'categorytree-category' => 'Categorie:',
+	'categorytree-go' => 'Structuur weerheven',
+	'categorytree-parents' => 'Bovenliggende categorieën',
+	'categorytree-mode-categories' => 'alleên categorieën',
+	'categorytree-mode-pages' => 'hin aofbildiengen',
+	'categorytree-mode-all' => 'aolle bladzies',
+	'categorytree-collapse' => "inklapp'n",
+	'categorytree-expand' => "uutvaow'n",
+	'categorytree-member-counts' => "bevat {{PLURAL:$1|eên ondercategorie|$1 ondercategorieën}}, {{PLURAL:$2|eên pagina|$2 pagina's}} en {{PLURAL:$3|eên bestand|$3 bestanden}}",
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 B',
+	'categorytree-num-empty' => 'leeh',
+	'categorytree-load' => "laed'n",
+	'categorytree-loading' => "an 't laed'n...",
+	'categorytree-nothing-found' => "niks hevaond'n",
+	'categorytree-no-subcategories' => 'Hin ondercategorieën',
+	'categorytree-no-parent-categories' => 'hin bovencategorieën',
+	'categorytree-no-pages' => 'Hin bladzies of ondercategorieën',
+	'categorytree-not-found' => "Categorie <i>$1</i> is nie hevond'n",
+	'categorytree-error' => "Probleem bie 't laed'n von de hehevens.",
+	'categorytree-retry' => "Wacht even en probeer 't dan opnuuw.",
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
