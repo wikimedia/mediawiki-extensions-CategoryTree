@@ -254,6 +254,10 @@ $messages['an'] = array(
 	'categorytree-collapse' => 'amagar',
 	'categorytree-expand' => 'amostrar',
 	'categorytree-member-counts' => 'contiene {{PLURAL:$1|1 sucategoría|$1 subcategorías}}, {{PLURAL:$2|1 pachina|$2 pachinas}}, y {{PLURAL:$3|1 fichero|$3 ficheros}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'vueda',
 	'categorytree-load' => 'cargar',
 	'categorytree-loading' => 'cargando',
 	'categorytree-nothing-found' => "No s'ha trobato cosa",
@@ -4291,10 +4295,11 @@ $messages['sh'] = array(
 /** Sinhala (සිංහල)
  * @author Singhalawap
  * @author නන්දිමිතුරු
+ * @author පසිඳු කාවින්ද
  * @author බිඟුවා
  */
 $messages['si'] = array(
-	'categorytree' => 'ප්‍රවර්ග ගස',
+	'categorytree' => 'ප්‍රවර්ග වෘක්ෂය',
 	'categorytree-portlet' => 'ප්‍රවර්ග',
 	'categorytree-legend' => 'ප්‍රවර්ග ගස පෙන්වන්න',
 	'categorytree-desc' => '[[Special:CategoryTree|ප්‍රවර්ග ව්‍යුහය]] ගතික වශයෙන් සංචලනය කරන්න',
