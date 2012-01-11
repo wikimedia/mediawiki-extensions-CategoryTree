@@ -4299,7 +4299,7 @@ $messages['sh'] = array(
  * @author බිඟුවා
  */
 $messages['si'] = array(
-	'categorytree' => 'ප්‍රවර්ග වෘක්ෂය',
+	'categorytree' => 'ප්‍රවර්ග බෙදීම් සටහන',
 	'categorytree-portlet' => 'ප්‍රවර්ග',
 	'categorytree-legend' => 'ප්‍රවර්ග ගස පෙන්වන්න',
 	'categorytree-desc' => '[[Special:CategoryTree|ප්‍රවර්ග ව්‍යුහය]] ගතික වශයෙන් සංචලනය කරන්න',
