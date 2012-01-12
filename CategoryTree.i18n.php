@@ -4177,6 +4177,7 @@ $messages['sah'] = array(
 	'categorytree-collapse' => 'сап',
 	'categorytree-expand' => 'тэнит',
 	'categorytree-member-counts' => '$1 {{PLURAL:$1|субкатегориялаах|субкатегориялардаах}}, $2 {{PLURAL:$2|сирэйдээх|сирэйдэрдээх}} уонна $3 {{PLURAL:$3|билэлээх|билэлэрдээх}}',
+	'categorytree-num-empty' => 'кураанах',
 	'categorytree-load' => 'киллэр',
 	'categorytree-loading' => 'киллэрии',
 	'categorytree-nothing-found' => 'бу категория подкатегорията суох',
