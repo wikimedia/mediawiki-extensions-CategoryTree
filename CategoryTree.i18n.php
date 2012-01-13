@@ -3188,6 +3188,7 @@ $messages['mn'] = array(
  * @author Htt
  * @author Kaustubh
  * @author Mahitgar
+ * @author Mvkulkarni23
  * @author Rahuldeshmukh101
  */
 $messages['mr'] = array(
@@ -3212,7 +3213,7 @@ $messages['mr'] = array(
 	'categorytree-num-empty' => 'रिकामे',
 	'categorytree-load' => 'चढवा',
 	'categorytree-loading' => 'चढवत आहे',
-	'categorytree-nothing-found' => 'काहीच गवसले नाही',
+	'categorytree-nothing-found' => 'काहीच सापडले नाही',
 	'categorytree-no-subcategories' => 'उपवर्ग नाहीत',
 	'categorytree-no-parent-categories' => 'वर्गास मुळवर्गीकरण उपलब्ध नाही',
 	'categorytree-no-pages' => 'पाने अथवा उपवर्ग नाहीत',
