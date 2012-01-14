@@ -165,6 +165,9 @@ class CategoryTree {
 		$outputPage->addModules( 'ext.categoryTree' );
 	}
 
+	/**
+	 * @return Services_JSON
+	 */
 	static function getJsonCodec() {
 		static $json = null;
 
@@ -290,9 +293,16 @@ class CategoryTree {
 	}
 
 	/**
-	* Custom tag implementation. This is called by efCategoryTreeParserHook, which is used to
-	* load CategoryTreeFunctions.php on demand.
-	*/
+	 * Custom tag implementation. This is called by efCategoryTreeParserHook, which is used to
+	 * load CategoryTreeFunctions.php on demand.
+	 * @param $parser Parser
+	 * @param $category
+	 * @param $hideroot bool
+	 * @param $attr
+	 * @param $depth int
+	 * @param $allowMissing bool
+	 * @return bool|string
+	 */
 	function getTag( $parser, $category, $hideroot = false, $attr, $depth = 1, $allowMissing = false ) {
 		global $wgCategoryTreeDisableCache, $wgCategoryTreeDynamicTag;
 		static $uniq = 0;
@@ -343,7 +353,9 @@ class CategoryTree {
 				$load = 'ct-' . $uniq . '-' . mt_rand( 1, 100000 );
 
 				$html .= Xml::openElement( 'script', array( 'type' => 'text/javascript', 'id' => $load ) );
-				$html .= 'categoryTreeLoadChildren("' . Xml::escapeJsString( $title->getDBkey() ) . '", ' . $this->getOptionsAsJsStructure( $depth ) . ', document.getElementById("' . $load . '").parentNode);';
+				$html .= 'categoryTreeLoadChildren("' . Xml::escapeJsString( $title->getDBkey() ) . '", '
+						. $this->getOptionsAsJsStructure( $depth )
+						. ', document.getElementById("' . $load . '").parentNode);';
 				$html .= Xml::closeElement( 'script' );
 			}
 		}
@@ -356,7 +368,7 @@ class CategoryTree {
 
 	/**
 	* Returns a string with an HTML representation of the children of the given category.
-	* $title must be a Title object
+	* @param $title Title
 	*/
 	function renderChildren( $title, $depth = 1 ) {
 		global $wgCategoryTreeMaxChildren, $wgCategoryTreeUseCategoryTable;
