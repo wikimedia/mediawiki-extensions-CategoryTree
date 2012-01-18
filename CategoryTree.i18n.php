@@ -1134,6 +1134,7 @@ $messages['de-formal'] = array(
 );
 
 /** Zazaki (Zazaki)
+ * @author Erdemaslancan
  * @author Xoser
  */
 $messages['diq'] = array(
@@ -1153,6 +1154,7 @@ Eka browseyê tu kihanî ya zi tu JavaScript qefilmayiyo, program nihebitiyeno.'
 	'categorytree-collapse' => 'qic bike',
 	'categorytree-expand' => 'gird bike',
 	'categorytree-member-counts' => ' {{PLURAL:$1|1 subkategorî|$1 subkategorîyan}}, {{PLURAL:$2|1 pel|$2 pelan}} u {{PLURAL:$3|1 dosya|$3 dosyayn}} esto',
+	'categorytree-num-categories' => 'K $1',
 	'categorytree-load' => 'bar bike',
 	'categorytree-loading' => 'Bar keno...',
 	'categorytree-nothing-found' => 'çik çini yo',
