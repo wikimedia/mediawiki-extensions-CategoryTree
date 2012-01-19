@@ -4451,7 +4451,7 @@ $messages['sq'] = array(
  */
 $messages['sr-ec'] = array(
 	'categorytree' => 'Стабло категорија',
-	'categorytree-portlet' => 'категорије',
+	'categorytree-portlet' => 'Категорије',
 	'categorytree-legend' => 'Приказ стабла категорија',
 	'categorytree-desc' => 'Динамичка навигација кроз [[Special:CategoryTree|структуру категорија]]',
 	'categorytree-header' => 'Унесите назив категорије чији садржај желите да видите у стабластој структури.
@@ -4459,7 +4459,7 @@ $messages['sr-ec'] = array(
 Ако имате старији прегледач или сте онемогућили јаваскрипт, стабласти приказ неће радити.',
 	'categorytree-category' => 'Категорија:',
 	'categorytree-go' => 'Прикажи стабло',
-	'categorytree-parents' => 'надређене категорије',
+	'categorytree-parents' => 'Наткатегорије',
 	'categorytree-mode-categories' => 'само категорије',
 	'categorytree-mode-pages' => 'странице изузевши датотеке',
 	'categorytree-mode-all' => 'све странице',
@@ -4471,12 +4471,12 @@ $messages['sr-ec'] = array(
 	'categorytree-num-files' => '$1 Д',
 	'categorytree-num-empty' => 'празна',
 	'categorytree-load' => 'учитај',
-	'categorytree-loading' => 'учитавање',
+	'categorytree-loading' => 'учитавам…',
 	'categorytree-nothing-found' => 'ништа није пронађено',
 	'categorytree-no-subcategories' => 'нема поткатегорија',
-	'categorytree-no-parent-categories' => 'без наткатегорије',
+	'categorytree-no-parent-categories' => 'нема наткатегорија',
 	'categorytree-no-pages' => 'нема страница или поткатегорија',
-	'categorytree-not-found' => 'Категорија <i>$1</i> није пронађена',
+	'categorytree-not-found' => 'Не могу да пронађем категорију <i>$1</i>',
 	'categorytree-error' => 'Проблем при учитавању података.',
 	'categorytree-retry' => 'Сачекајте неколико тренутака и покушајте поново.',
 );
