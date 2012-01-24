@@ -7,9 +7,6 @@
  * @author Daniel Kinzler, brightbyte.de
  * @copyright © 2006 Daniel Kinzler
  * @licence GNU General Public Licence 2.0 or later
- *
- * NOTE: if you change this, increment $wgCategoryTreeVersion
- *       in CategoryTree.php to avoid users getting stale copies from cache.
  */
 
 (function( $, mw ) {
