@@ -611,11 +611,24 @@ $messages['bcl'] = array(
 
 /** Belarusian (Беларуская)
  * @author Тест
+ * @author Чаховіч Уладзіслаў
  */
 $messages['be'] = array(
+	'categorytree' => 'Дрэва катэгорый',
 	'categorytree-portlet' => 'Катэгорыі',
+	'categorytree-legend' => 'Паказаць дрэва катэгорый',
+	'categorytree-desc' => 'AJAX-кампанент для адлюстравання [[Special:CategoryTree|структуры катэгорый]] вікі',
+	'categorytree-header' => 'Увядзіце імя катэгорыі, і яна будзе паказана ў выглядзе дрэва.
+Гэта магчымасць даступная, толькі калі ваш браўзер падтрымлівае AJAX.
+Калі ў вас старая версія браўзера ці адключаны JavaScript, паказ падкатэгорый у выглядзе дрэва недаступны.',
 	'categorytree-category' => 'Катэгорыя:',
+	'categorytree-go' => 'Загрузіць',
+	'categorytree-parents' => 'Бацькоўскія катэгорыі',
+	'categorytree-mode-categories' => 'толькі катэгорыі',
+	'categorytree-mode-pages' => 'акрамя файлаў',
 	'categorytree-mode-all' => 'усе старонкі',
+	'categorytree-collapse' => 'схаваць',
+	'categorytree-expand' => 'паказаць',
 );
 
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
@@ -3220,7 +3233,7 @@ $messages['mr'] = array(
 	'categorytree-no-parent-categories' => 'वर्गास मुळवर्गीकरण उपलब्ध नाही',
 	'categorytree-no-pages' => 'पाने अथवा उपवर्ग नाहीत',
 	'categorytree-not-found' => 'वर्ग <i>$1</i> आढळला नाही',
-	'categorytree-error' => 'विदा चढवताना त्रूटी.',
+	'categorytree-error' => 'विदा (डाटा) चढवताना अडचणी आहेत.',
 	'categorytree-retry' => 'कृपया,क्षणभर थांबा आणि पुन्हा प्रयत्न करा.',
 );
 
