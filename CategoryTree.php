@@ -139,10 +139,12 @@ $wgAjaxExportList[] = 'efCategoryTreeAjaxWrapper';
 /**
  * Register ResourceLoader modules
  */
-$wgResourceModules['ext.categoryTree'] = array(
+$commonModuleInfo = array(
 	'localBasePath' => dirname( __FILE__ ) . '/modules',
 	'remoteExtPath' => 'CategoryTree/modules',
-	'styles' => 'ext.categoryTree.css',
+);
+
+$wgResourceModules['ext.categoryTree'] = array(
 	'scripts' => 'ext.categoryTree.js',
 	'messages' => array(
 		'categorytree-collapse',
@@ -158,7 +160,11 @@ $wgResourceModules['ext.categoryTree'] = array(
 		'categorytree-error',
 		'categorytree-retry',
 	),
-);
+) + $commonModuleInfo;
+
+$wgResourceModules['ext.categoryTree.css'] = array(
+	'styles' => 'ext.categoryTree.css',
+) + $commonModuleInfo;
 
 /**
  * Hook it up
