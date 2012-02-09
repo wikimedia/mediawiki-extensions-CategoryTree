@@ -217,6 +217,10 @@ function efCategoryTree() {
 	$wgHooks['ResourceLoaderGetConfigVars'][] = 'efCategoryTreeGetConfigVars';
 }
 
+/**
+ * @param $parser Parser
+ * @return bool
+ */
 function efCategoryTreeSetHooks( $parser ) {
 	$parser->setHook( 'categorytree' , 'efCategoryTreeParserHook' );
 	$parser->setFunctionHook( 'categorytree' , 'efCategoryTreeParserFunction' );
@@ -229,6 +233,10 @@ function efCategoryTreeSetHooks( $parser ) {
  * If $enc is not given, '' is asumed, which simulates the old call interface,
  * namely, only providing the mode name or number.
  * This loads CategoryTreeFunctions.php and calls CategoryTree::ajax()
+ * @param $category
+ * @param $options array
+ * @param $enc string
+ * @return AjaxResponse|bool
  */
 function efCategoryTreeAjaxWrapper( $category, $options = array(), $enc = '' ) {
 	global $wgCategoryTreeHTTPCache, $wgSquidMaxage, $wgUseSquid;
@@ -254,8 +262,10 @@ function efCategoryTreeAjaxWrapper( $category, $options = array(), $enc = '' ) {
 
 /**
  * Internal function to cap depth
+ * @param $mode
+ * @param $depth
+ * @return int|mixed
  */
-
 function efCategoryTreeCapDepth( $mode, $depth ) {
 	global $wgCategoryTreeMaxDepth;
 
@@ -280,6 +290,8 @@ function efCategoryTreeCapDepth( $mode, $depth ) {
 /**
  * Entry point for the {{#categorytree}} tag parser function.
  * This is a wrapper around efCategoryTreeParserHook
+ * @param $parser Parser
+ * @return array|string
  */
 function efCategoryTreeParserFunction( $parser ) {
 	$params = func_get_args();
@@ -297,8 +309,7 @@ function efCategoryTreeParserFunction( $parser ) {
 		if ( preg_match( '/^\s*(\S.*?)\s*=\s*(.*?)\s*$/', $p, $m ) ) {
 			$k = $m[1];
 			$v = preg_replace( '/^"\s*(.*?)\s*"$/', '$1', $m[2] ); // strip any quotes enclusing the value
-		}
-		else {
+		} else {
 			$k = trim( $p );
 			$v = true;
 		}
@@ -314,13 +325,16 @@ function efCategoryTreeParserFunction( $parser ) {
 /**
  * Hook implementation for injecting a category tree into the sidebar.
  * Registered automatically if $wgCategoryTreeSidebarRoot is set to a category name.
+ * @param $skin
+ * @param $tpl SkinTemplate
+ * @return bool
  */
 function efCategoryTreeSkinTemplateOutputPageBeforeExec( $skin, $tpl ) {
 	global $wgCategoryTreeSidebarRoot, $wgCategoryTreeSidebarOptions;
 
 	$html = efCategoryTreeParserHook( $wgCategoryTreeSidebarRoot, $wgCategoryTreeSidebarOptions );
 	if ( $html ) {
-		$tpl->data['sidebar']['categorytree-portlet'] = $html; // requires MW 1.13, r36917
+		$tpl->data['sidebar']['categorytree-portlet'] = $html;
 	}
 
 	return true;
@@ -329,6 +343,11 @@ function efCategoryTreeSkinTemplateOutputPageBeforeExec( $skin, $tpl ) {
 /**
  * Entry point for the <categorytree> tag parser hook.
  * This loads CategoryTreeFunctions.php and calls CategoryTree::getTag()
+ * @param $cat
+ * @param $argv
+ * @param $parser Parser
+ * @param $allowMissing bool
+ * @return bool|string
  */
 function efCategoryTreeParserHook( $cat, $argv, $parser = null, $allowMissing = false ) {
 	global $wgOut;
@@ -356,9 +375,12 @@ function efCategoryTreeParserHook( $cat, $argv, $parser = null, $allowMissing = 
 }
 
 /**
-* Hook callback that injects messages and things into the <head> tag
-* Does nothing if $parserOutput->mCategoryTreeTag is not set
-*/
+ * Hook callback that injects messages and things into the <head> tag
+ * Does nothing if $parserOutput->mCategoryTreeTag is not set
+ * @param $outputPage OutputPage
+ * @param $parserOutput ParserOutput
+ * @return bool
+ */
 function efCategoryTreeParserOutput( $outputPage, $parserOutput )  {
 	if ( !empty( $parserOutput->mCategoryTreeTag ) ) {
 		CategoryTree::setHeaders( $outputPage );
@@ -371,6 +393,7 @@ function efCategoryTreeParserOutput( $outputPage, $parserOutput )  {
  *
  * @param $title Title
  * @param $article Article
+ * @return bool
  */
 function efCategoryTreeArticleFromTitle( $title, &$article ) {
 	if ( $title->getNamespace() == NS_CATEGORY ) {
@@ -381,6 +404,10 @@ function efCategoryTreeArticleFromTitle( $title, &$article ) {
 
 /**
  * OutputPageMakeCategoryLinks hook, override category links
+ * @param $out
+ * @param $categories
+ * @param $links
+ * @return bool
  */
 function efCategoryTreeOutputPageMakeCategoryLinks( $out, &$categories, &$links ) {
 	global $wgCategoryTreePageCategoryOptions;
@@ -392,6 +419,12 @@ function efCategoryTreeOutputPageMakeCategoryLinks( $out, &$categories, &$links 
 	return false;
 }
 
+/**
+ * @param $skin
+ * @param $links
+ * @param $result
+ * @return bool
+ */
 function efCategoryTreeSkinJoinCategoryLinks( $skin, &$links, &$result ) {
 	$embed = '<div class="CategoryTreeCategoryBarItem">';
 	$pop = '</div>';
@@ -402,6 +435,10 @@ function efCategoryTreeSkinJoinCategoryLinks( $skin, &$links, &$result ) {
 	return false;
 }
 
+/**
+ * @param $vars
+ * @return bool
+ */
 function efCategoryTreeGetConfigVars( &$vars ) {
 	global $wgCategoryTreeCategoryPageOptions;
 

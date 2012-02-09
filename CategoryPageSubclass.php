@@ -7,11 +7,21 @@ class CategoryTreeCategoryPage extends CategoryPage {
 class CategoryTreeCategoryViewer extends CategoryViewer {
 	var $child_cats;
 
+	/**
+	 * @var CategoryTree
+	 */
+	var $categorytree;
+
+	/**
+	 * @return CategoryTree
+	 */
 	function getCategoryTree() {
 		global $wgOut, $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeForceHeaders;
 
-		if ( ! isset( $this->categorytree ) ) {
-			if ( !$wgCategoryTreeForceHeaders ) CategoryTree::setHeaders( $wgOut );
+		if ( !isset( $this->categorytree ) ) {
+			if ( !$wgCategoryTreeForceHeaders ) {
+				CategoryTree::setHeaders( $wgOut );
+			}
 
 			$this->categorytree = new CategoryTree( $wgCategoryTreeCategoryPageOptions );
 		}
@@ -21,6 +31,10 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 	/**
 	 * Add a subcategory to the internal lists
+	 * @param $cat Category
+	 * @param $sortkey
+	 * @param $pageLength
+	 * @return
 	 */
 	function addSubcategoryObject( Category $cat, $sortkey, $pageLength ) {
 		global $wgRequest;
@@ -28,7 +42,8 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		$title = $cat->getTitle();
 
 		if ( $wgRequest->getCheck( 'notree' ) ) {
-			return parent::addSubcategoryObject( $cat, $sortkey, $pageLength );
+			parent::addSubcategoryObject( $cat, $sortkey, $pageLength );
+			return;
 		}
 
 		$tree = $this->getCategoryTree();

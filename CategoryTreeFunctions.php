@@ -19,6 +19,10 @@ class CategoryTree {
 	var $mIsAjaxRequest = false;
 	var $mOptions = array();
 
+	/**
+	 * @param $options array
+	 * @param $ajax bool
+	 */
 	function __construct( $options, $ajax = false ) {
 		global $wgCategoryTreeDefaultOptions;
 
@@ -56,38 +60,56 @@ class CategoryTree {
 		}
 	}
 
+	/**
+	 * @param $name string
+	 * @return mixed
+	 */
 	function getOption( $name ) {
 		return $this->mOptions[$name];
 	}
 
+	/**
+	 * @return bool
+	 */
 	function isInverse( ) {
 		return $this->getOption( 'mode' ) == CT_MODE_PARENTS;
 	}
 
+	/**
+	 * @param $nn
+	 * @return array|bool
+	 */
 	static function decodeNamespaces( $nn ) {
 		global $wgContLang;
 
-		if ( !$nn )
+		if ( !$nn ) {
 			return false;
+		}
 
-		if ( !is_array( $nn ) )
+		if ( !is_array( $nn ) ) {
 			$nn = preg_split( '![\s#:|]+!', $nn );
+		}
 
 		$namespaces = array();
 
 		foreach ( $nn as $n ) {
 			if ( is_int( $n ) ) {
 				$ns = $n;
-			}
-			else {
+			} else {
 				$n = trim( $n );
-				if ( $n === '' ) continue;
+				if ( $n === '' ) {
+					continue;
+				}
 
 				$lower = strtolower( $n );
 
-				if ( is_numeric( $n ) )  $ns = (int)$n;
-				elseif ( $n == '-' || $n == '_' || $n == '*' || $lower == 'main' ) $ns = NS_MAIN;
-				else $ns = $wgContLang->getNsIndex( $n );
+				if ( is_numeric( $n ) ) {
+					$ns = (int)$n;
+				} elseif ( $n == '-' || $n == '_' || $n == '*' || $lower == 'main' ) {
+					$ns = NS_MAIN;
+				} else {
+					$ns = $wgContLang->getNsIndex( $n );
+				}
 			}
 
 			if ( is_int( $ns ) ) {
@@ -99,61 +121,111 @@ class CategoryTree {
 		return $namespaces;
 	}
 
+	/**
+	 * @param $mode
+	 * @return int|string
+	 */
 	static function decodeMode( $mode ) {
 		global $wgCategoryTreeDefaultOptions;
 
-		if ( is_null( $mode ) ) return $wgCategoryTreeDefaultOptions['mode'];
-		if ( is_int( $mode ) ) return $mode;
+		if ( is_null( $mode ) ) {
+			return $wgCategoryTreeDefaultOptions['mode'];
+		}
+		if ( is_int( $mode ) ) {
+			return $mode;
+		}
 
 		$mode = trim( strtolower( $mode ) );
 
-		if ( is_numeric( $mode ) ) return (int)$mode;
+		if ( is_numeric( $mode ) ) {
+			return (int)$mode;
+		}
 
-		if ( $mode == 'all' ) $mode = CT_MODE_ALL;
-		elseif ( $mode == 'pages' ) $mode = CT_MODE_PAGES;
-		elseif ( $mode == 'categories' || $mode == 'sub' ) $mode = CT_MODE_CATEGORIES;
-		elseif ( $mode == 'parents' || $mode == 'super' || $mode == 'inverse' ) $mode = CT_MODE_PARENTS;
-		elseif ( $mode == 'default' ) $mode = $wgCategoryTreeDefaultOptions['mode'];
+		if ( $mode == 'all' ) {
+			$mode = CT_MODE_ALL;
+		} elseif ( $mode == 'pages' ) {
+			$mode = CT_MODE_PAGES;
+		} elseif ( $mode == 'categories' || $mode == 'sub' ) {
+			$mode = CT_MODE_CATEGORIES;
+		} elseif ( $mode == 'parents' || $mode == 'super' || $mode == 'inverse' ) {
+			$mode = CT_MODE_PARENTS;
+		} elseif ( $mode == 'default' ) {
+			$mode = $wgCategoryTreeDefaultOptions['mode'];
+		}
 
 		return (int)$mode;
 	}
 
 	/**
-	* Helper function to convert a string to a boolean value.
-	* Perhaps make this a global function in MediaWiki proper
-	*/
+	 * Helper function to convert a string to a boolean value.
+	 * Perhaps make this a global function in MediaWiki proper
+	 * @param $value
+	 * @return bool|null|string
+	 */
 	static function decodeBoolean( $value ) {
-		if ( is_null( $value ) ) return null;
-		if ( is_bool( $value ) ) return $value;
-		if ( is_int( $value ) ) return ( $value > 0 );
+		if ( is_null( $value ) ) {
+			return null;
+		}
+		if ( is_bool( $value ) ) {
+			return $value;
+		}
+		if ( is_int( $value ) ) {
+			return ( $value > 0 );
+		}
 
 		$value = trim( strtolower( $value ) );
-		if ( is_numeric( $value ) ) return ( (int)$value > 0 );
+		if ( is_numeric( $value ) ) {
+			return ( (int)$value > 0 );
+		}
 
-		if ( $value == 'yes' || $value == 'y' || $value == 'true' || $value == 't' || $value == 'on' ) return true;
-		elseif ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) return false;
-		elseif ( $value == 'null' || $value == 'default' || $value == 'none' || $value == 'x' ) return null;
-		else return false;
+		if ( $value == 'yes' || $value == 'y' || $value == 'true' || $value == 't' || $value == 'on' ) {
+			return true;
+		} elseif ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) {
+			return false;
+		} elseif ( $value == 'null' || $value == 'default' || $value == 'none' || $value == 'x' ) {
+			return null;
+		} else {
+			return false;
+		}
 	}
 
+	/**
+	 * @param $value
+	 * @return int|string
+	 */
 	static function decodeHidePrefix( $value ) {
 		global $wgCategoryTreeDefaultOptions;
 
-		if ( is_null( $value ) ) return $wgCategoryTreeDefaultOptions['hideprefix'];
-		if ( is_int( $value ) ) return $value;
-		if ( $value === true ) return CT_HIDEPREFIX_ALWAYS;
-		if ( $value === false ) return CT_HIDEPREFIX_NEVER;
+		if ( is_null( $value ) ) {
+			return $wgCategoryTreeDefaultOptions['hideprefix'];
+		}
+		if ( is_int( $value ) ) {
+			return $value;
+		}
+		if ( $value === true ) {
+			return CT_HIDEPREFIX_ALWAYS;
+		}
+		if ( $value === false ) {
+			return CT_HIDEPREFIX_NEVER;
+		}
 
 		$value = trim( strtolower( $value ) );
 
-		if ( $value == 'yes' || $value == 'y' || $value == 'true' || $value == 't' || $value == 'on' ) return CT_HIDEPREFIX_ALWAYS;
-		elseif ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) return CT_HIDEPREFIX_NEVER;
-		// elseif ( $value == 'null' || $value == 'default' || $value == 'none' || $value == 'x' ) return $wgCategoryTreeDefaultOptions['hideprefix'];
-		elseif ( $value == 'always' ) return CT_HIDEPREFIX_ALWAYS;
-		elseif ( $value == 'never' ) return CT_HIDEPREFIX_NEVER;
-		elseif ( $value == 'auto' ) return CT_HIDEPREFIX_AUTO;
-		elseif ( $value == 'categories' || $value == 'category' || $value == 'smart' ) return CT_HIDEPREFIX_CATEGORIES;
-		else return $wgCategoryTreeDefaultOptions['hideprefix'];
+		if ( $value == 'yes' || $value == 'y' || $value == 'true' || $value == 't' || $value == 'on' ) {
+			return CT_HIDEPREFIX_ALWAYS;
+		} elseif ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) {
+			return CT_HIDEPREFIX_NEVER;
+		} elseif ( $value == 'always' ) {
+			return CT_HIDEPREFIX_ALWAYS;
+		} elseif ( $value == 'never' ) {
+			return CT_HIDEPREFIX_NEVER;
+		} elseif ( $value == 'auto' ) {
+			return CT_HIDEPREFIX_AUTO;
+		} elseif ( $value == 'categories' || $value == 'category' || $value == 'smart' ) {
+			return CT_HIDEPREFIX_CATEGORIES;
+		} else {
+			return $wgCategoryTreeDefaultOptions['hideprefix'];
+		}
 	}
 
 	/**
@@ -179,6 +251,12 @@ class CategoryTree {
 		return $json;
 	}
 
+	/**
+	 * @param $options
+	 * @param $enc
+	 * @return mixed
+	 * @throws MWException
+	 */
 	static function encodeOptions( $options, $enc ) {
 		if ( $enc == 'mode' || $enc == '' ) {
 			$opt = $options['mode'];
@@ -192,6 +270,12 @@ class CategoryTree {
 		return $opt;
 	}
 
+	/**
+	 * @param $options
+	 * @param $enc
+	 * @return array|mixed
+	 * @throws MWException
+	 */
 	static function decodeOptions( $options, $enc ) {
 		if ( $enc == 'mode' || $enc == '' ) {
 			$opt = array( "mode" => $options );
@@ -206,6 +290,10 @@ class CategoryTree {
 		return $opt;
 	}
 
+	/**
+	 * @param $depth null
+	 * @return string
+	 */
 	function getOptionsAsCacheKey( $depth = null ) {
 		$key = "";
 
@@ -214,10 +302,16 @@ class CategoryTree {
 			$key .= $k . ':' . $v . ';';
 		}
 
-		if ( !is_null( $depth ) ) $key .= ";depth=" . $depth;
+		if ( !is_null( $depth ) ) {
+			$key .= ";depth=" . $depth;
+		}
 		return $key;
 	}
 
+	/**
+	 * @param $depthnull
+	 * @return mixed
+	 */
 	function getOptionsAsJsStructure( $depth = null ) {
 		if ( !is_null( $depth ) ) {
 			$opt = $this->mOptions;
@@ -230,10 +324,17 @@ class CategoryTree {
 		return $s;
 	}
 
-	function getOptionsAsJsString( $depth = NULL ) {
+	/**
+	 * @param $depth null
+	 * @return String
+	 */
+	function getOptionsAsJsString( $depth = null ) {
 		return Xml::escapeJsString( $this->getOptionsAsJsStructure( $depth ) );
 	}
 
+	/**
+	 * @return string
+	 */
 	function getOptionsAsUrlParameters() {
 		$u = '';
 
@@ -246,9 +347,12 @@ class CategoryTree {
 	}
 
 	/**
-	* Ajax call. This is called by efCategoryTreeAjaxWrapper, which is used to
-	* load CategoryTreeFunctions.php on demand.
-	*/
+	 * Ajax call. This is called by efCategoryTreeAjaxWrapper, which is used to
+	 * load CategoryTreeFunctions.php on demand.
+	 * @param $category
+	 * @param $depth int
+	 * @return AjaxResponse|bool
+	 */
 	function ajax( $category, $depth = 1 ) {
 		global $wgLang, $wgContLang, $wgRenderHashAppend;
 		$title = self::makeTitle( $category );
@@ -266,7 +370,12 @@ class CategoryTree {
 				'page_title' => $dbkey,
 			), __METHOD__ );
 
-		$mckey = wfMemcKey( "categorytree(" . $this->getOptionsAsCacheKey( $depth ) . ")", $dbkey, $wgLang->getCode(), $wgContLang->getExtraHashOptions(), $wgRenderHashAppend );
+		$mckey = wfMemcKey(
+			"categorytree(" . $this->getOptionsAsCacheKey( $depth ) . ")",
+			$dbkey, $wgLang->getCode(),
+			$wgContLang->getExtraHashOptions(),
+			$wgRenderHashAppend
+		);
 
 		$response = new AjaxResponse();
 
@@ -368,9 +477,11 @@ class CategoryTree {
 	}
 
 	/**
-	* Returns a string with an HTML representation of the children of the given category.
-	* @param $title Title
-	*/
+	 * Returns a string with an HTML representation of the children of the given category.
+	 * @param $title Title
+	 * @param $depth int
+	 * @return string
+	 */
 	function renderChildren( $title, $depth = 1 ) {
 		global $wgCategoryTreeMaxChildren, $wgCategoryTreeUseCategoryTable;
 
@@ -459,9 +570,10 @@ class CategoryTree {
 	}
 
 	/**
-	* Returns a string with an HTML representation of the parents of the given category.
-	* @var $title Title
-	*/
+	 * Returns a string with an HTML representation of the parents of the given category.
+	 * @param $title Title
+	 * @return string
+	 */
 	function renderParents( $title ) {
 		global $wgCategoryTreeMaxChildren;
 
@@ -513,9 +625,12 @@ class CategoryTree {
 	}
 
 	/**
-	* Returns a string with a HTML represenation of the given page.
-	* $title must be a Title object
-	*/
+	 * Returns a string with a HTML represenation of the given page.
+	 * @param $title Title
+	 * @param int $children
+	 * @param bool $loadchildren
+	 * @return string
+	 */
 	function renderNode( $title, $children = 0, $loadchildren = false ) {
 		global $wgCategoryTreeUseCategoryTable;
 
@@ -529,9 +644,14 @@ class CategoryTree {
 	}
 
 	/**
-	* Returns a string with a HTML represenation of the given page.
-	* $info must be an associative array, containing at least a Title object under the 'title' key.
-	*/
+	 * Returns a string with a HTML represenation of the given page.
+	 * $info must be an associative array, containing at least a Title object under the 'title' key.
+	 * @param $title Title
+	 * @param $cat Category
+	 * @param $children int
+	 * @param $loadchildren bool
+	 * @return string
+	 */
 	function renderNodeInfo( $title, $cat, $children = 0, $loadchildren = false ) {
 		static $uniq = 0;
 
@@ -739,8 +859,10 @@ class CategoryTree {
 	}
 
 	/**
-	* Creates a Title object from a user provided (and thus unsafe) string
-	*/
+	 * Creates a Title object from a user provided (and thus unsafe) string
+	 * @param $title string
+	 * @return null|Title
+	 */
 	static function makeTitle( $title ) {
 		$title = trim( $title );
 
