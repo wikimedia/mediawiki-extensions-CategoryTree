@@ -1800,6 +1800,7 @@ Des brucht fortgschritteneri JavaScript-Funktione (Ajax). Wänn JavaScript abgsc
  * @author Ankit
  * @author Ashok modhvadia
  * @author Dsvyas
+ * @author KartikMistry
  */
 $messages['gu'] = array(
 	'categorytree' => 'શ્રેણીવૃક્ષ',
@@ -1822,8 +1823,8 @@ $messages['gu'] = array(
 	'categorytree-num-pages' => '$1 P',
 	'categorytree-num-files' => '$1 F',
 	'categorytree-num-empty' => 'ખાલી',
-	'categorytree-load' => 'ભારાક્રાન્ત',
-	'categorytree-loading' => 'ભારાક્રાન્તિત...',
+	'categorytree-load' => 'લાવો',
+	'categorytree-loading' => 'લાવે છે...',
 	'categorytree-nothing-found' => 'કઈ ન મળ્યું',
 	'categorytree-no-subcategories' => 'ઉપશ્રેણીઓ નથી',
 	'categorytree-no-parent-categories' => 'પૈતૃકશ્રેણીઓ નથી',
