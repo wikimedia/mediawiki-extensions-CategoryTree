@@ -170,7 +170,7 @@ $wgResourceModules['ext.categoryTree.css'] = array(
  * Hook it up
  */
 function efCategoryTree() {
-	global $wgUseAjax, $wgHooks, $wgOut;
+	global $wgUseAjax, $wgHooks, $wgOut, $wgRequest;
 	global $wgCategoryTreeDefaultOptions, $wgCategoryTreeDefaultMode, $wgCategoryTreeOmitNamespace;
 	global $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeCategoryPageMode, $wgCategoryTreeAllowTag;
 	global $wgCategoryTreeSidebarRoot, $wgCategoryTreeForceHeaders, $wgCategoryTreeHijackPageCategories;
@@ -204,8 +204,8 @@ function efCategoryTree() {
 		$wgCategoryTreeDefaultOptions['hideprefix'] = $wgCategoryTreeOmitNamespace;
 	}
 
-	if ( !isset( $wgCategoryTreeCategoryPageOptions['mode'] ) || is_null( $wgCategoryTreeCategoryPageOptions['mode'] ) ) {
-		$wgCategoryTreeCategoryPageOptions['mode'] = $wgCategoryTreeCategoryPageMode;
+	if ( !isset( $wgCategoryTreeCategoryPageOptions['mode'] ) || is_null( $wgCategoryTreeCategoryPageOptions['mode'] ) ) {	
+		$wgCategoryTreeCategoryPageOptions['mode'] = ( $mode = $wgRequest->getVal( 'mode' ) ) ? CategoryTree::decodeMode( $mode ) : $wgCategoryTreeCategoryPageMode;
 	}
 
 	if ( $wgCategoryTreeForceHeaders ) {
@@ -214,7 +214,7 @@ function efCategoryTree() {
 		$wgHooks['OutputPageParserOutput'][] = 'efCategoryTreeParserOutput';
 	}
 
-	$wgHooks['ResourceLoaderGetConfigVars'][] = 'efCategoryTreeGetConfigVars';
+	$wgHooks['MakeGlobalVariablesScript'][] = 'efCategoryTreeGetConfigVars';
 }
 
 /**
