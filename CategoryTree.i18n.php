@@ -5432,6 +5432,7 @@ $messages['zh-hans'] = array(
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Alexsh
  * @author Mark85296341
+ * @author Oapbtommy
  * @author Shinjiman
  */
 $messages['zh-hant'] = array(
@@ -5442,7 +5443,7 @@ $messages['zh-hant'] = array(
 	'categorytree-header' => '在此可以查詢以分類的樹狀結構。
 注意： 本特殊頁面使用AJAX技術。
 如果您的瀏覽器非常老舊，或者是關閉了JavaScript，本頁面將會無法正常運作。',
-	'categorytree-category' => '分類：',
+	'categorytree-category' => '類別：',
 	'categorytree-go' => '顯示樹狀結構',
 	'categorytree-parents' => '父分類',
 	'categorytree-mode-categories' => '只顯示分類',
