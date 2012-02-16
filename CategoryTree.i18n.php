@@ -1457,7 +1457,7 @@ $messages['fa'] = array(
 	'categorytree-no-pages' => 'هیچ صفحه یا زیررده‌ای ندارد.',
 	'categorytree-not-found' => 'ردهٔ <i>$1</i> یافت نشد',
 	'categorytree-error' => 'اشکال در دریافت اطلاعات.',
-	'categorytree-retry' => 'لطفاً کمی صبر و دوباره امتحان کنید.',
+	'categorytree-retry' => 'لطفاً کمی صبر کنید و دوباره امتحان کنید.',
 );
 
 /** Finnish (Suomi)
