@@ -366,6 +366,7 @@ $messages['arz'] = array(
  * @author Gitartha.bordoloi
  * @author Psneog
  * @author Rajuonline
+ * @author Simbu123
  */
 $messages['as'] = array(
 	'categorytree' => 'শ্ৰেণীবৃক্ষ',
@@ -379,6 +380,7 @@ $messages['as'] = array(
 	'categorytree-mode-all' => 'সকলো পৃষ্ঠা',
 	'categorytree-collapse' => 'সৰু কৰক',
 	'categorytree-expand' => 'বহলাওক',
+	'categorytree-num-empty' => 'খালি',
 	'categorytree-load' => "ল'ড কৰক",
 	'categorytree-loading' => "ল'ড কৰি থকা হৈছে...",
 	'categorytree-nothing-found' => "একো পোৱা নগ'ল",
