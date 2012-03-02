@@ -89,12 +89,13 @@ var categoryTree = {
 			$retryLink = $( '<a>' )
 				.text( mw.msg( 'categorytree-retry' ) )
 				.attr( 'href', '#' )
-				.click( function() {
+				.click( function ( e ) {
+					e.preventDefault();
 					categoryTree.loadChildren( $link, $children );
 				} );
 
 			$children
-				.text( mw.msg( 'categorytree-error' ) )
+				.text( mw.msg( 'categorytree-error' ) + ' ' )
 				.append( $retryLink );
 		}
 
