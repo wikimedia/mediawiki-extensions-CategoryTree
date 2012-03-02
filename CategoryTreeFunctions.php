@@ -424,19 +424,19 @@ class CategoryTree {
 		}
 
 		$attr['data-ct-mode'] = $this->mOptions['mode'];
-		$attr['data-ct-options'] = Xml::escapeTagsOnly( $this->getOptionsAsJsStructure() );
+		$attr['data-ct-options'] = $this->getOptionsAsJsStructure();
 
 		$html = '';
-		$html .= Xml::openElement( 'div', $attr );
+		$html .= Html::openElement( 'div', $attr );
 
 		if ( !$allowMissing && !$title->getArticleID() ) {
-			$html .= Xml::openElement( 'span', array( 'class' => 'CategoryTreeNotice' ) );
+			$html .= Html::openElement( 'span', array( 'class' => 'CategoryTreeNotice' ) );
 			if ( $parser ) {
 				$html .= $parser->recursiveTagParse( wfMsgNoTrans( 'categorytree-not-found', $category ) );
 			} else {
 				$html .= wfMsgExt( 'categorytree-not-found', 'parseinline', htmlspecialchars( $category ) );
 			}
-			$html .= Xml::closeElement( 'span' );
+			$html .= Html::closeElement( 'span' );
 			}
 		else {
 			if ( !$hideroot ) {
