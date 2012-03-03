@@ -827,6 +827,7 @@ M'eo kozh-mat stumm ho merdeer pe m'eo diweredekaet JavaScript ganeoc'h, ne'z ai
 
 /** Bosnian (Bosanski)
  * @author CERminator
+ * @author DzWiki
  * @author editors of bs.wikipedia
  */
 $messages['bs'] = array(
@@ -844,6 +845,8 @@ $messages['bs'] = array(
 	'categorytree-collapse' => 'sakrij',
 	'categorytree-expand' => 'proširi',
 	'categorytree-member-counts' => 'sadrži {{PLURAL:$1|jednu podkategoriju|$1 podkategorije|$1 podkategorija}}, {{PLURAL:$2|jednu stranicu|$2 stranice|$2 stranica}} i {{PLURAL:$3|jednu datoteku|$3 datoteke|$3 datoteka}}',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-empty' => 'prazno',
 	'categorytree-load' => 'učitaj',
 	'categorytree-loading' => 'učitavam…',
 	'categorytree-nothing-found' => 'nema podkategorija',
