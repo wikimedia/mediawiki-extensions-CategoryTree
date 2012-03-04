@@ -2694,6 +2694,11 @@ $messages['krj'] = array(
 	'categorytree-category' => 'Kategorya:',
 );
 
+/** Kashmiri (Arabic script) (کٲشُر) */
+$messages['ks-arab'] = array(
+	'categorytree-category' => 'زٲژ:',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
