@@ -1445,7 +1445,7 @@ $messages['fa'] = array(
 	'categorytree-go' => 'نمایش درخت',
 	'categorytree-parents' => 'ریشه',
 	'categorytree-mode-categories' => 'فقط رده‌ها',
-	'categorytree-mode-pages' => 'صفحه‌های جز تصویر',
+	'categorytree-mode-pages' => 'صفحه‌ها به جز تصاویر',
 	'categorytree-mode-all' => 'همهٔ صفحه‌ها',
 	'categorytree-collapse' => 'نهفتن',
 	'categorytree-expand' => 'گسترش',
@@ -2614,13 +2614,14 @@ $messages['km'] = array(
 /** Kannada (ಕನ್ನಡ)
  * @author Abhirama
  * @author Nayvik
+ * @author VASANTH S.N.
  */
 $messages['kn'] = array(
 	'categorytree' => 'ವರ್ಗವೃಕ್ಷ',
 	'categorytree-portlet' => 'ವರ್ಗಗಳು',
-	'categorytree-legend' => 'ವರ್ಗವೃಕ್ಷವನ್ನು ತೋರ್ಪಡಿಸಿ',
+	'categorytree-legend' => 'ವರ್ಗವೃಕ್ಷವನ್ನು ತೋರಿಸಿ',
 	'categorytree-category' => 'ವರ್ಗ:',
-	'categorytree-go' => 'ವೃಕ್ಷವನ್ನು ತೋರ್ಪಡಿಸಿ',
+	'categorytree-go' => 'ವೃಕ್ಷವನ್ನು ತೋರಿಸಿ',
 	'categorytree-parents' => 'ಪೋಷಕರು',
 	'categorytree-mode-categories' => 'ಕೇವಲ ವರ್ಗಗಳು',
 	'categorytree-mode-pages' => 'ಕಡತಗಳಿಲ್ಲದಿರುವ ಪುಟಗಳು',
@@ -2631,8 +2632,8 @@ $messages['kn'] = array(
 	'categorytree-num-pages' => '$1 ಪು',
 	'categorytree-num-files' => '$1 ಕ',
 	'categorytree-num-empty' => 'ಖಾಲಿ',
-	'categorytree-load' => 'ಉತ್ಪೂರಿಸು',
-	'categorytree-loading' => 'ಉತ್ಪೂರಿತವಾಗುತ್ತಿದೆ...',
+	'categorytree-load' => 'ತುಂಬಿಸು',
+	'categorytree-loading' => 'ತುಂಬಿಸಲ್ಪಡುತ್ತಿದೆ.......',
 	'categorytree-nothing-found' => 'ಏನೂ ಸಿಗಲಿಲ್ಲ',
 	'categorytree-no-subcategories' => 'ಉಪವರ್ಗಗಳಿಲ್ಲ',
 	'categorytree-no-parent-categories' => 'ಪೋಷಕ ವರ್ಗಗಳಿಲ್ಲ',
