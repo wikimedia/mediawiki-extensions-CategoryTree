@@ -2460,6 +2460,7 @@ Menawa panjenengan panjlajah wèbé kalebu vèrsi lawa, utawa fitur JavaScript d
 
 /** Georgian (ქართული)
  * @author BRUTE
+ * @author David1010
  * @author ITshnik
  * @author Malafaya
  */
@@ -2479,6 +2480,9 @@ $messages['ka'] = array(
 	'categorytree-collapse' => 'ჩაკეცვა',
 	'categorytree-expand' => 'გაშლა',
 	'categorytree-member-counts' => 'შეიცავს {{PLURAL:$1|1 ქვეკატეგორიას|$1 ქვეკატეგორიას}},  {{PLURAL:$2|1 გვერდს|$2 გვერდს}},  და {{PLURAL:$3|1 ფაილს|$3 ფაილს}}',
+	'categorytree-num-categories' => '$1 კ',
+	'categorytree-num-pages' => '$1 გ',
+	'categorytree-num-files' => '$1 ფ',
 	'categorytree-num-empty' => 'ცარიელი',
 	'categorytree-load' => 'ჩატვირთვა',
 	'categorytree-loading' => 'იტვირთება…',
@@ -2846,10 +2850,16 @@ Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da
 );
 
 /** Lezghian (Лезги)
+ * @author Migraghvi
  * @author Namik
  */
 $messages['lez'] = array(
 	'categorytree-category' => 'Klватlалар:',
+	'categorytree-num-categories' => '$1 К',
+	'categorytree-num-pages' => 'Ч',
+	'categorytree-num-files' => '$1 Ф',
+	'categorytree-num-empty' => 'ичIи',
+	'categorytree-load' => 'ппарун',
 );
 
 /** Lingua Franca Nova (Lingua Franca Nova)
