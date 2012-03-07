@@ -125,6 +125,18 @@ $messages['hu-formal'] = array(
 	'categorytree-retry' => 'Várjon egy kicsit, majd próbálja újra!',
 );
 
+/** Lushai (Mizo ţawng)
+ * @author RMizo
+ */
+$messages['lus'] = array(
+	'categorytree-portlet' => 'Pawlte',
+	'categorytree-category' => 'Pawl',
+	'categorytree-mode-all' => 'phek zawng zawngte',
+	'categorytree-collapse' => 'thlehna',
+	'categorytree-expand' => 'pharhna',
+	'categorytree-loading' => 'nghak lawks...',
+);
+
 /** Emiliàn (Emiliàn)
  * @author Reder
  */
