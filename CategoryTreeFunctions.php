@@ -491,7 +491,7 @@ class CategoryTree {
 
 		if ( $inverse ) {
 			$joins['categorylinks'] = array( 'RIGHT JOIN', array( 'cl_to = page_title', 'page_namespace' => NS_CATEGORY ) );
-			$where['cl_from'] = $title->getArticleId();
+			$where['cl_from'] = $title->getArticleID();
 		} else {
 			$joins['categorylinks'] = array( 'JOIN', 'cl_from = page_id' );
 			$where['cl_to'] = $title->getDBkey();
@@ -681,7 +681,7 @@ class CategoryTree {
 
 		$labelClass = 'CategoryTreeLabel ' . ' CategoryTreeLabelNs' . $ns;
 
-		if ( !$title->getArticleId() ) {
+		if ( !$title->getArticleID() ) {
 			$labelClass .= ' new';
 			$wikiLink = $title->getLocalURL( 'action=edit&redlink=1' );
 		} else {
