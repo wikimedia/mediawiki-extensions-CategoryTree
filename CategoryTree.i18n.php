@@ -125,18 +125,6 @@ $messages['hu-formal'] = array(
 	'categorytree-retry' => 'Várjon egy kicsit, majd próbálja újra!',
 );
 
-/** Lushai (Mizo ţawng)
- * @author RMizo
- */
-$messages['lus'] = array(
-	'categorytree-portlet' => 'Pawlte',
-	'categorytree-category' => 'Pawl',
-	'categorytree-mode-all' => 'phek zawng zawngte',
-	'categorytree-collapse' => 'thlehna',
-	'categorytree-expand' => 'pharhna',
-	'categorytree-loading' => 'nghak lawks...',
-);
-
 /** Emiliàn (Emiliàn)
  * @author Reder
  */
@@ -3046,6 +3034,18 @@ $messages['ltg'] = array(
 	'categorytree-retry' => 'Lyudzams drupeit pagaidi i raugi vēļ.',
 );
 
+/** Lushai (Mizo ţawng)
+ * @author RMizo
+ */
+$messages['lus'] = array(
+	'categorytree-portlet' => 'Pawlte',
+	'categorytree-category' => 'Pawl',
+	'categorytree-mode-all' => 'phek zawng zawngte',
+	'categorytree-collapse' => 'thlehna',
+	'categorytree-expand' => 'pharhna',
+	'categorytree-loading' => 'nghak lawks...',
+);
+
 /** Latvian (Latviešu)
  * @author GreenZeb
  * @author Marozols
@@ -4390,6 +4390,7 @@ AJAX නමින් හැඳින්වෙන ප්‍රගත ජාවා
 
 /** Slovak (Slovenčina)
  * @author Helix84
+ * @author Teslaton
  */
 $messages['sk'] = array(
 	'categorytree' => 'Strom kategórií',
@@ -4408,6 +4409,10 @@ Ak máte veľmi starý prehliadač alebo máte vypnutý JavaScrpt, nebude fungov
 	'categorytree-collapse' => 'zbaliť',
 	'categorytree-expand' => 'rozbaliť',
 	'categorytree-member-counts' => 'obsahuje {{PLURAL:$1|1 podkategóriu|$1 podkategórie|$1 podkategórií}}, {{PLURAL:$2|1 stránku|$2 stránky|$2 stránok}} a {{PLURAL:$3|1 súbor|$3 súbory|$3 súborov}}',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 S',
+	'categorytree-num-files' => '$1 B',
+	'categorytree-num-empty' => 'prázdna',
 	'categorytree-load' => 'načítať',
 	'categorytree-loading' => 'načítava sa',
 	'categorytree-nothing-found' => 'nebolo nič nájdené',
