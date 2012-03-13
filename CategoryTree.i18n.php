@@ -3038,12 +3038,31 @@ $messages['ltg'] = array(
  * @author RMizo
  */
 $messages['lus'] = array(
+	'categorytree' => 'Pawl küng',
 	'categorytree-portlet' => 'Pawlte',
-	'categorytree-category' => 'Pawl',
+	'categorytree-legend' => 'Pawl kung tihlanna',
+	'categorytree-category' => 'Pawl:',
+	'categorytree-go' => 'Küng tihlanna',
+	'categorytree-parents' => 'Pawlpui',
+	'categorytree-mode-categories' => 'pawlte chauh',
+	'categorytree-mode-pages' => 'taksa tiam loh phekte chauh',
 	'categorytree-mode-all' => 'phek zawng zawngte',
 	'categorytree-collapse' => 'thlehna',
 	'categorytree-expand' => 'pharhna',
+	'categorytree-member-counts' => 'Hetah hian {{PLURAL:$1|pawlpeng 1|pawlpeng $1}}, {{PLURAL:$2|phek 1|phek $2}}, leh {{PLURAL:$3|taksa 1|taksa $3}} a awm',
+	'categorytree-num-categories' => 'P $1',
+	'categorytree-num-pages' => 'Ph $1',
+	'categorytree-num-files' => 'Tks $1',
+	'categorytree-num-empty' => 'ruak',
+	'categorytree-load' => 'hlankaina',
 	'categorytree-loading' => 'nghak lawks...',
+	'categorytree-nothing-found' => 'engmah hmuh a ni lo',
+	'categorytree-no-subcategories' => 'pawlpeng awm lo',
+	'categorytree-no-parent-categories' => 'pawlpui awm lo',
+	'categorytree-no-pages' => 'phek leh pawlpeng awm lo',
+	'categorytree-not-found' => 'Pawl  <i>$1</i> hmuh a ni lo',
+	'categorytree-error' => 'Hriatna hlankai hlawhchham',
+	'categorytree-retry' => 'Nghak lawk la tum nawn leh rawh',
 );
 
 /** Latvian (Latviešu)
