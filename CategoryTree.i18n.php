@@ -3041,6 +3041,10 @@ $messages['lus'] = array(
 	'categorytree' => 'Pawl küng',
 	'categorytree-portlet' => 'Pawlte',
 	'categorytree-legend' => 'Pawl kung tihlanna',
+	'categorytree-desc' => '[[Special:CategoryTree|Pawl inkungkaihdàn]] fankualna',
+	'categorytree-header' => 'Thingzar anga tihlan i duh chuan pawl hming zawnah hmet rawh.
+Hei hian JavaScript hnathawh changkang AJAX a mamawh tih hria ang che.
+Rangpuifanna hlui tak i hma emaw, JavaScript tihthih a nih emaw chuan a en theih loh vang.',
 	'categorytree-category' => 'Pawl:',
 	'categorytree-go' => 'Küng tihlanna',
 	'categorytree-parents' => 'Pawlpui',
@@ -3952,6 +3956,7 @@ $messages['ps'] = array(
 	'categorytree-mode-all' => 'ټول مخونه',
 	'categorytree-collapse' => 'پرځول',
 	'categorytree-expand' => 'غځول',
+	'categorytree-member-counts' => '{{PLURAL:$1|1 څېرمه وېشنيزه|$1 څېرمه وېشنيزې}}، {{PLURAL:$2|1 مخ|$2 مخونه}} او {{PLURAL:$3|1 دوتنه|$3 دوتنې}} لري',
 	'categorytree-num-categories' => '$1 و',
 	'categorytree-num-pages' => '$1 م',
 	'categorytree-num-files' => '$1 د',
