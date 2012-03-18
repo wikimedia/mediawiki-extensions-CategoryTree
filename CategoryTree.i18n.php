@@ -2854,12 +2854,21 @@ Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da
  * @author Namik
  */
 $messages['lez'] = array(
+	'categorytree-portlet' => 'Категорияр',
 	'categorytree-category' => 'Klватlалар:',
+	'categorytree-go' => 'Ппарун',
+	'categorytree-parents' => 'Вини категорияр',
+	'categorytree-mode-all' => 'Вири ччинар',
+	'categorytree-collapse' => 'Алчудрун',
+	'categorytree-expand' => 'Гегьеншрун',
 	'categorytree-num-categories' => '$1 К',
-	'categorytree-num-pages' => 'Ч',
+	'categorytree-num-pages' => '$1 Ч',
 	'categorytree-num-files' => '$1 Ф',
 	'categorytree-num-empty' => 'ичIи',
 	'categorytree-load' => 'ппарун',
+	'categorytree-loading' => 'ппарзава',
+	'categorytree-nothing-found' => 'затIни жагъурнавач',
+	'categorytree-no-subcategories' => 'агъакатегорияр авайд ттуш',
 );
 
 /** Lingua Franca Nova (Lingua Franca Nova)
