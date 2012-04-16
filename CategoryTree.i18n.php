@@ -136,17 +136,6 @@ $messages['egl'] = array(
 	'categorytree-num-files' => '$1 F',
 );
 
-/** толышә зывон (толышә зывон)
- * @author Гусейн
- */
-$messages['tly'] = array(
-	'categorytree-portlet' => 'Категоријон',
-	'categorytree-category' => 'Категоријә:',
-	'categorytree-mode-all' => 'Һәммәј сәһифон',
-	'categorytree-load' => 'бо жәј',
-	'categorytree-no-subcategories' => 'категоријон жинтон ни',
-);
-
 /** Meänkieli (Meänkieli)
  * @author Mestos
  */
@@ -3229,8 +3218,8 @@ $messages['ml'] = array(
 	'categorytree-no-parent-categories' => 'മാതൃവർഗ്ഗങ്ങൾ ഇല്ല',
 	'categorytree-no-pages' => 'താളുകളോ ഉപവർഗ്ഗങ്ങളോ ഇല്ല',
 	'categorytree-not-found' => "''$1'' എന്ന വർഗ്ഗം കണ്ടില്ല",
-	'categorytree-error' => 'ഡാറ്റ ശേഖരിക്കുന്നതിൽ പിഴവുണ്ടായി.',
-	'categorytree-retry' => 'കുറച്ചു നേരം കഴിഞ്ഞ് വീണ്ടും പരിശ്രമിക്കുക',
+	'categorytree-error' => 'വിവരം ശേഖരിക്കുന്നതിൽ പിഴവുണ്ടായി.',
+	'categorytree-retry' => 'ദയവായി അല്പസമയത്തിനു ശേഷം വീണ്ടും ശ്രമിക്കുക.',
 );
 
 /** Mongolian (Монгол)
@@ -3432,10 +3421,39 @@ Intlà molwi yi wêkàuhkáyòtl in monetzànìltzòwîkàuh, nòso tiksewîtok 
 	'categorytree-retry' => 'Timitztlatlauhtiä, ximochia chîtòn kàn oksepa xikyêyeko.',
 );
 
-/** Min Nan Chinese (Bân-lâm-gú) */
+/** Min Nan Chinese (Bân-lâm-gú)
+ * @author Ianbu
+ */
 $messages['nan'] = array(
+	'categorytree' => '類別樹',
+	'categorytree-portlet' => '類別',
+	'categorytree-legend' => '顯示類別樹',
+	'categorytree-desc' => '動態遊覽[[Special:CategoryTree|類別結構]]',
+	'categorytree-header' => '拍入類別名，去看伊的內容佮結構，
+注意： 這需要AJAX技術（加強版的JavaScript功能），
+若你的瀏覽器較舊，抑是共JavaScript關掉，彼就袂當用。',
+	'categorytree-category' => '類別',
+	'categorytree-go' => '顯示樹結構',
+	'categorytree-parents' => '父類別',
+	'categorytree-mode-categories' => '干焦顯示類別',
+	'categorytree-mode-pages' => '徙掉圖相的頁面',
+	'categorytree-mode-all' => '所有的頁',
+	'categorytree-collapse' => '收',
+	'categorytree-expand' => '開',
+	'categorytree-member-counts' => '包括{{PLURAL:$1|一个|$个}}子分類、{{PLURAL:$2|一面|$面}}頁面佮{{PLURAL:$3|一个|$3个}}檔案',
+	'categorytree-num-categories' => '$1節',
+	'categorytree-num-pages' => '$1頁',
+	'categorytree-num-files' => '$1檔',
+	'categorytree-num-empty' => '空的',
+	'categorytree-load' => '載入',
 	'categorytree-loading' => 'teh ji̍p',
+	'categorytree-nothing-found' => '揣無物件',
 	'categorytree-no-subcategories' => 'bô ē-lūi-pia̍t',
+	'categorytree-no-parent-categories' => '無父類別',
+	'categorytree-no-pages' => '無頁面抑是子類別',
+	'categorytree-not-found' => '揣無類別<i>$1</i>',
+	'categorytree-error' => '佇載入資料的時陣有問題。',
+	'categorytree-retry' => '請小等一下才閣試。',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -5008,6 +5026,17 @@ Kapag mayroon kang isang napakatandang/napakalumang pantingin-tingin (''browser'
 	'categorytree-not-found' => 'Hindi natagpuan ang kauriang <i>$1</i>',
 	'categorytree-error' => 'May suliranin sa pagkakarga ng dato.',
 	'categorytree-retry' => 'Maghintay lamang ng isang sandali at subuking muli.',
+);
+
+/** толышә зывон (толышә зывон)
+ * @author Гусейн
+ */
+$messages['tly'] = array(
+	'categorytree-portlet' => 'Категоријон',
+	'categorytree-category' => 'Категоријә:',
+	'categorytree-mode-all' => 'Һәммәј сәһифон',
+	'categorytree-load' => 'бо жәј',
+	'categorytree-no-subcategories' => 'категоријон жинтон ни',
 );
 
 /** Tongan (lea faka-Tonga) */
