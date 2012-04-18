@@ -4107,6 +4107,19 @@ Musyariy, kaytaqa AJAX nisqa sapaq JavaScript ruranallawanmi llamk'achiyta atink
 	'categorytree-retry' => 'Asllata suyaspa musuqmanta ruraykachay.',
 );
 
+/** Romansh (Rumantsch)
+ * @author Kazu89
+ */
+$messages['rm'] = array(
+	'categorytree-portlet' => 'Categorias',
+	'categorytree-category' => 'Categoria:',
+	'categorytree-mode-all' => 'Tut las paginas',
+	'categorytree-collapse' => 'cumprimer',
+	'categorytree-expand' => 'extender',
+	'categorytree-num-empty' => 'vid',
+	'categorytree-loading' => 'chargiar…',
+);
+
 /** Romanian (Română)
  * @author Cin
  * @author KlaudiuMihaila
@@ -5205,6 +5218,7 @@ $messages['uz'] = array(
 
 /** Vèneto (Vèneto)
  * @author Candalua
+ * @author GatoSelvadego
  */
 $messages['vec'] = array(
 	'categorytree' => 'Strutura ad àlbaro de le categorie',
@@ -5222,7 +5236,7 @@ $messages['vec'] = array(
 	'categorytree-expand' => 'espandi',
 	'categorytree-member-counts' => 'la contien {{PLURAL:$1|1 sotocategoria|$1 sotocategorie}}, {{PLURAL:$2|1 pagina|$2 pagine}} e {{PLURAL:$3|1 file|$3 file}}',
 	'categorytree-load' => 'carga',
-	'categorytree-loading' => 'sto cargando…',
+	'categorytree-loading' => "so' drio cargar…",
 	'categorytree-nothing-found' => 'nissun risultato',
 	'categorytree-no-subcategories' => 'nissuna sotocategoria',
 	'categorytree-no-parent-categories' => 'nissuna categoria superior',
