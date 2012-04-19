@@ -2491,6 +2491,15 @@ $messages['kaa'] = array(
 	'categorytree' => 'Kategoriyalar teregi',
 );
 
+/** Kabyle (Taqbaylit)
+ * @author Mmistmurt
+ */
+$messages['kab'] = array(
+	'categorytree-portlet' => 'Tiggayin',
+	'categorytree-category' => 'Taggayt :',
+	'categorytree-mode-all' => 'Akk isebtaren',
+);
+
 /** Khowar (کھوار)
  * @author Rachitrali
  */
@@ -4111,6 +4120,7 @@ Musyariy, kaytaqa AJAX nisqa sapaq JavaScript ruranallawanmi llamk'achiyta atink
  * @author Kazu89
  */
 $messages['rm'] = array(
+	'categorytree' => 'Structura da las categorias',
 	'categorytree-portlet' => 'Categorias',
 	'categorytree-category' => 'Categoria:',
 	'categorytree-mode-all' => 'Tut las paginas',
@@ -5517,32 +5527,30 @@ $messages['zh-hans'] = array(
 	'categorytree' => '分类树',
 	'categorytree-portlet' => '分类',
 	'categorytree-legend' => '显示分类树',
-	'categorytree-desc' => '以AJAX技术显示[[Special:CategoryTree|分类结构]]',
-	'categorytree-header' => '在此可以查询以分类的树形结构。
-注意： 本特殊页面使用AJAX技术。
-如果您的浏览器非常老旧，或者是关闭了JavaScript，本页面将会无法正常运作。',
+	'categorytree-desc' => '动态导航[[Special:CategoryTree|分类结构]]',
+	'categorytree-header' => '请输入一个分类名称，以树形结构查看其内容。请注意，本功能需要JavaScript高级功能AJAX。如果你的浏览器过旧或停用了JavaScript，本功能无法正常工作。',
 	'categorytree-category' => '分类：',
 	'categorytree-go' => '显示分类树',
 	'categorytree-parents' => '父分类',
-	'categorytree-mode-categories' => '只显示分类',
-	'categorytree-mode-pages' => '排除文件页面',
+	'categorytree-mode-categories' => '仅分类',
+	'categorytree-mode-pages' => '除文件外的页面',
 	'categorytree-mode-all' => '所有页面',
 	'categorytree-collapse' => '折叠',
 	'categorytree-expand' => '展开',
-	'categorytree-member-counts' => '包含$1个子分类，$2个页面和$3个文件',
-	'categorytree-num-categories' => '$1字节',
+	'categorytree-member-counts' => '含有$1个子分类，$2个页面和$3个文件',
+	'categorytree-num-categories' => '$1分类',
 	'categorytree-num-pages' => '$1页面',
 	'categorytree-num-files' => '$1文件',
 	'categorytree-num-empty' => '空',
 	'categorytree-load' => '载入',
 	'categorytree-loading' => '正在载入...',
-	'categorytree-nothing-found' => '无结果',
+	'categorytree-nothing-found' => '没找到',
 	'categorytree-no-subcategories' => '无子分类',
 	'categorytree-no-parent-categories' => '无父分类',
 	'categorytree-no-pages' => '无页面或子分类',
 	'categorytree-not-found' => '找不到分类<i>$1</i>',
-	'categorytree-error' => '载入数据时出错。',
-	'categorytree-retry' => '请片刻后再次尝试。',
+	'categorytree-error' => '载入数据出错。',
+	'categorytree-retry' => '请稍后重试。',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
