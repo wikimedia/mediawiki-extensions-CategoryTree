@@ -2381,14 +2381,14 @@ $messages['ja'] = array(
 	'categorytree-num-files' => '$1F',
 	'categorytree-num-empty' => '空',
 	'categorytree-load' => '下位カテゴリを表示',
-	'categorytree-loading' => '読み込み中…',
+	'categorytree-loading' => '読み込み中...',
 	'categorytree-nothing-found' => '存在しません',
 	'categorytree-no-subcategories' => 'サブカテゴリはありません',
 	'categorytree-no-parent-categories' => '親カテゴリなし',
 	'categorytree-no-pages' => 'ページやサブカテゴリはありません',
 	'categorytree-not-found' => 'カテゴリ " <i>$1</i> " はありません',
 	'categorytree-error' => 'データの読み込み中に問題が発生しました',
-	'categorytree-retry' => '暫く経った後に再度試してください。',
+	'categorytree-retry' => '時間をおいてからもう一度試してください。',
 );
 
 /** Jutish (Jysk)
