@@ -4050,6 +4050,7 @@ Caso o seu browser seja razoavelmente antigo ou o JavaScript esteja desactivado,
  * @author Carla404
  * @author Eduardo.mps
  * @author Rafael Vargas
+ * @author 555
  */
 $messages['pt-br'] = array(
 	'categorytree' => 'Árvore de categorias',
@@ -4060,14 +4061,14 @@ $messages['pt-br'] = array(
 Note que isso requer funcionalidades avançadas de JavaScript (como, por exemplo, AJAX).
 Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desabilitado em seu navegador, isto não funcionará.',
 	'categorytree-category' => 'Categoria:',
-	'categorytree-go' => 'Exibir Árvore',
+	'categorytree-go' => 'Exibir árvore',
 	'categorytree-parents' => 'Categorias superiores',
-	'categorytree-mode-categories' => 'mostrar apenas as categorias',
-	'categorytree-mode-pages' => 'páginas, exceto imagens',
+	'categorytree-mode-categories' => 'apenas as categorias',
+	'categorytree-mode-pages' => 'páginas, exceto arquivos',
 	'categorytree-mode-all' => 'todas as páginas',
 	'categorytree-collapse' => 'ocultar',
 	'categorytree-expand' => 'expandir',
-	'categorytree-member-counts' => 'contém {{PLURAL:$1|1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|1 página|$2 páginas}} e {{PLURAL:$3|1 arquivo|$3 arquivos}}',
+	'categorytree-member-counts' => 'Contém {{PLURAL:$1|1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|1 página|$2 páginas}} e {{PLURAL:$3|1 arquivo|$3 arquivos}}',
 	'categorytree-num-categories' => '$1 C',
 	'categorytree-num-pages' => '$1 P',
 	'categorytree-num-files' => '$1 A',
