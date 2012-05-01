@@ -1158,10 +1158,13 @@ Eka browseyê tu kihanî ya zi tu JavaScript qefilmayiyo, program nihebitiyeno.'
 	'categorytree-mode-categories' => 'teyna kategoriyan',
 	'categorytree-mode-pages' => 'Teyna pelan, dosyayan hesab meke',
 	'categorytree-mode-all' => 'pelanê hemî',
-	'categorytree-collapse' => 'qic bike',
-	'categorytree-expand' => 'gird bike',
+	'categorytree-collapse' => 'Kılmever ke',
+	'categorytree-expand' => 'Hera ke',
 	'categorytree-member-counts' => ' {{PLURAL:$1|1 subkategorî|$1 subkategorîyan}}, {{PLURAL:$2|1 pel|$2 pelan}} u {{PLURAL:$3|1 dosya|$3 dosyayn}} esto',
 	'categorytree-num-categories' => 'K $1',
+	'categorytree-num-pages' => '$1 W',
+	'categorytree-num-files' => '$1 D',
+	'categorytree-num-empty' => 'Vengo',
 	'categorytree-load' => 'bar bike',
 	'categorytree-loading' => 'Bar keno...',
 	'categorytree-nothing-found' => 'çik çini yo',
@@ -4047,10 +4050,10 @@ Caso o seu browser seja razoavelmente antigo ou o JavaScript esteja desactivado,
 );
 
 /** Brazilian Portuguese (Português do Brasil)
+ * @author 555
  * @author Carla404
  * @author Eduardo.mps
  * @author Rafael Vargas
- * @author 555
  */
 $messages['pt-br'] = array(
 	'categorytree' => 'Árvore de categorias',
