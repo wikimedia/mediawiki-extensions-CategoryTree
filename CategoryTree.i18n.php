@@ -164,6 +164,24 @@ $messages['fit'] = array(
 	'categorytree-retry' => 'Oota vähän aikaa ja yritä uuesti',
 );
 
+/** Santali (Santali)
+ * @author Albinus
+ */
+$messages['sat'] = array(
+	'categorytree-go' => 'Dare uduḱme',
+	'categorytree-parents' => 'Gogo baba',
+	'categorytree-mode-all' => 'Sanam sakamko',
+	'categorytree-collapse' => 'Murchạo caba',
+	'categorytree-expand' => 'Phaylaote',
+	'categorytree-num-categories' => 'C',
+	'categorytree-num-pages' => 'P',
+	'categorytree-num-files' => 'Ph',
+	'categorytree-num-empty' => 'Khạligea',
+	'categorytree-load' => 'Rakaṕ',
+	'categorytree-loading' => 'Rakaṕkana',
+	'categorytree-nothing-found' => 'Cet́ hõ baṅ ńamlena',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author Naudefj
@@ -4059,17 +4077,17 @@ $messages['pt-br'] = array(
 	'categorytree' => 'Árvore de categorias',
 	'categorytree-portlet' => 'Categorias',
 	'categorytree-legend' => 'Exibir a árvore de categorias',
-	'categorytree-desc' => 'Acessório (gadget) baseado em AJAX que apresenta a [[Special:CategoryTree|estrutura]] de um wiki',
+	'categorytree-desc' => 'Navegação dinâmica pela [[Special:CategoryTree|estrutura de categorias]]',
 	'categorytree-header' => 'Insira o nome de uma categoria para ver seu conteúdo como uma estrutura de "árvore".
-Note que isso requer funcionalidades avançadas de JavaScript (como, por exemplo, AJAX).
-Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desabilitado em seu navegador, isto não funcionará.',
+Note que isso requer funcionalidades avançadas de JavaScript conhecidas como AJAX.
+Caso o seu navegador seja razoavelmente antigo ou tenha o JavaScript desativado, isto não funcionará.',
 	'categorytree-category' => 'Categoria:',
 	'categorytree-go' => 'Exibir árvore',
 	'categorytree-parents' => 'Categorias superiores',
 	'categorytree-mode-categories' => 'apenas as categorias',
 	'categorytree-mode-pages' => 'páginas, exceto arquivos',
 	'categorytree-mode-all' => 'todas as páginas',
-	'categorytree-collapse' => 'ocultar',
+	'categorytree-collapse' => 'recolher',
 	'categorytree-expand' => 'expandir',
 	'categorytree-member-counts' => 'Contém {{PLURAL:$1|1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|1 página|$2 páginas}} e {{PLURAL:$3|1 arquivo|$3 arquivos}}',
 	'categorytree-num-categories' => '$1 C',
@@ -4077,14 +4095,14 @@ Caso o seu navegador seja razoavelmente antigo, ou, caso JavaScript esteja desab
 	'categorytree-num-files' => '$1 A',
 	'categorytree-num-empty' => 'vazia',
 	'categorytree-load' => 'carregar',
-	'categorytree-loading' => 'carregando',
-	'categorytree-nothing-found' => 'Sentimos muito, não se encontrou nada',
+	'categorytree-loading' => 'carregando...',
+	'categorytree-nothing-found' => 'nada foi encontrado',
 	'categorytree-no-subcategories' => 'sem subcategorias',
 	'categorytree-no-parent-categories' => 'não há categorias superiores',
 	'categorytree-no-pages' => 'sem páginas nem subcategorias',
 	'categorytree-not-found' => 'A categoria <i>$1</i> não foi encontrada',
-	'categorytree-error' => 'Problema ao carregar os dados.',
-	'categorytree-retry' => 'Por gentileza, aguarde um momento e tente novamente.',
+	'categorytree-error' => 'Problema ao acessar os dados.',
+	'categorytree-retry' => 'Aguarde um momento e tente novamente.',
 );
 
 /** Quechua (Runa Simi)
