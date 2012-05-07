@@ -5074,15 +5074,38 @@ Kapag mayroon kang isang napakatandang/napakalumang pantingin-tingin (''browser'
 	'categorytree-retry' => 'Maghintay lamang ng isang sandali at subuking muli.',
 );
 
-/** толышә зывон (толышә зывон)
+/** Толышә зывон (Толышә зывон)
  * @author Гусейн
  */
 $messages['tly'] = array(
+	'categorytree' => 'Категоријон до',
 	'categorytree-portlet' => 'Категоријон',
+	'categorytree-legend' => 'Категоријон до нишо дој',
+	'categorytree-header' => 'Категоријә номи бынывыштән, ијән ав нишо бәбе бәнә до.
+Ым мымкуне, гирәм шымә браузерәдә AJAX һесте.
+Гирәм шымәку браузери канә рәвојәте ја JavaScript быријә быә, жинә категоријон нишо дој бәнә до әбыни.',
 	'categorytree-category' => 'Категоријә:',
+	'categorytree-go' => 'Бо жәј',
+	'categorytree-parents' => 'Пыә-моә категоријон',
+	'categorytree-mode-categories' => 'әнҹәх категоријон',
+	'categorytree-mode-pages' => 'сывој фајлон',
 	'categorytree-mode-all' => 'Һәммәј сәһифон',
+	'categorytree-collapse' => 'бурмә кардеј',
+	'categorytree-expand' => 'һовуж кардеј',
+	'categorytree-member-counts' => 'Дыләдә һестыше {{PLURAL:$1|1 жинә категоријә|$1 жинә категоријә}}, {{PLURAL:$2|1 сәһифә|$2 сәһифә}}, ијән {{PLURAL:$3|1 фајл|$3 фајл}}',
+	'categorytree-num-categories' => '$1 К',
+	'categorytree-num-pages' => '$1 С',
+	'categorytree-num-files' => '$1 Ф',
+	'categorytree-num-empty' => 'тәј',
 	'categorytree-load' => 'бо жәј',
+	'categorytree-loading' => 'бо карде...',
+	'categorytree-nothing-found' => 'Ым категоријәдә жинә категоријә ни.',
 	'categorytree-no-subcategories' => 'категоријон жинтон ни',
+	'categorytree-no-parent-categories' => 'пыә-моә категоријә ни',
+	'categorytree-no-pages' => 'нә мәғолә һесте, нә жинә категоријон',
+	'categorytree-not-found' => 'Категоријә «$1» пәјдо быәни.',
+	'categorytree-error' => 'Мәлумоти бо карде сәһве.',
+	'categorytree-retry' => 'Быһамијән, и тикә чәш быкан ијән икәрән осә быкан.',
 );
 
 /** Tongan (lea faka-Tonga) */
