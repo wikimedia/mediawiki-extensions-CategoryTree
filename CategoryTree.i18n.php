@@ -164,24 +164,6 @@ $messages['fit'] = array(
 	'categorytree-retry' => 'Oota vähän aikaa ja yritä uuesti',
 );
 
-/** Santali (Santali)
- * @author Albinus
- */
-$messages['sat'] = array(
-	'categorytree-go' => 'Dare uduḱme',
-	'categorytree-parents' => 'Gogo baba',
-	'categorytree-mode-all' => 'Sanam sakamko',
-	'categorytree-collapse' => 'Murchạo caba',
-	'categorytree-expand' => 'Phaylaote',
-	'categorytree-num-categories' => 'C',
-	'categorytree-num-pages' => 'P',
-	'categorytree-num-files' => 'Ph',
-	'categorytree-num-empty' => 'Khạligea',
-	'categorytree-load' => 'Rakaṕ',
-	'categorytree-loading' => 'Rakaṕkana',
-	'categorytree-nothing-found' => 'Cet́ hõ baṅ ńamlena',
-);
-
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author Naudefj
@@ -4341,6 +4323,24 @@ $messages['sah'] = array(
 	'categorytree-not-found' => '<i>$1</i> категория көстүбэтэ',
 	'categorytree-error' => 'Билэни суруйарга алҕас таҕыста',
 	'categorytree-retry' => 'Кыратык кэтэһэ түһэн баран өссө боруобалаа',
+);
+
+/** Santali (Santali)
+ * @author Albinus
+ */
+$messages['sat'] = array(
+	'categorytree-go' => 'Dare uduḱme',
+	'categorytree-parents' => 'Gogo baba',
+	'categorytree-mode-all' => 'Sanam sakamko',
+	'categorytree-collapse' => 'Murchạo caba',
+	'categorytree-expand' => 'Phaylaote',
+	'categorytree-num-categories' => 'C',
+	'categorytree-num-pages' => 'P',
+	'categorytree-num-files' => 'Ph',
+	'categorytree-num-empty' => 'Khạligea',
+	'categorytree-load' => 'Rakaṕ',
+	'categorytree-loading' => 'Rakaṕkana',
+	'categorytree-nothing-found' => 'Cet́ hõ baṅ ńamlena',
 );
 
 /** Sardinian (Sardu)
