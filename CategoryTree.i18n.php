@@ -2245,7 +2245,7 @@ No adda daan a pagbasabasam, wenno nabaldado ti JavaScript mo, saan daytoy nga a
 	'categorytree-retry' => 'Pangngaasi ti aguray ti madamdama ken ipadas mo manen.',
 );
 
-/** Ingush (ГІалгІай Ğalğaj)
+/** Ingush (ГӀалгӀай)
  * @author Sapral Mikail
  */
 $messages['inh'] = array(
@@ -2288,6 +2288,7 @@ $messages['io'] = array(
 
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
+ * @author Snævar
  * @author Spacebirdy
  */
 $messages['is'] = array(
@@ -2299,16 +2300,22 @@ Hafðu í huga að þetta krefst þróaðra virkni JavaScript sem nefnist AJAX.
 Ef þú notast við gamlan vafra eða hefur slökkt á JavaScript mun þetta ekki virka.',
 	'categorytree-category' => 'Flokkur:',
 	'categorytree-go' => 'Sýna tré',
-	'categorytree-parents' => 'Undirrætur',
+	'categorytree-parents' => 'Yfirþræðir',
 	'categorytree-mode-categories' => 'bara flokka',
 	'categorytree-mode-pages' => 'síður að myndum undanskildum',
 	'categorytree-mode-all' => 'allar síður',
 	'categorytree-collapse' => 'fela',
 	'categorytree-expand' => 'sýna',
+	'categorytree-member-counts' => 'Inniheldur {{PLURAL:$1|einn undirflokk|$1 undirflokka}}, {{PLURAL:$2|eina síðu|$2 síður}}, og {{PLURAL:$3|eina mynd|$3 myndir}}',
+	'categorytree-num-categories' => '$1 F',
+	'categorytree-num-pages' => '$1 S',
+	'categorytree-num-files' => '$1 M',
+	'categorytree-num-empty' => 'tómur',
 	'categorytree-load' => 'hlaða',
 	'categorytree-loading' => 'hleð',
 	'categorytree-nothing-found' => 'ekkert fannst',
 	'categorytree-no-subcategories' => 'engir undirflokkar',
+	'categorytree-no-parent-categories' => 'engir yfirflokkar',
 	'categorytree-no-pages' => 'engar síður eða undirflokkar',
 	'categorytree-not-found' => 'Flokkurinn <i>$1</i> fannst ekki',
 	'categorytree-error' => 'Villa við hleðslu gagna.',
@@ -2461,6 +2468,7 @@ $messages['ka'] = array(
 	'categorytree' => 'კატეგორიების სქემა',
 	'categorytree-portlet' => 'კატეგორიები',
 	'categorytree-legend' => 'კატეგორიების სქემის ჩვენება',
+	'categorytree-desc' => '[[Special:CategoryTree|კატეგორიის სტრუქტურის]] დინამიური ნავიგაცია',
 	'categorytree-header' => 'შეიყვანეთ კატეგორიის სახელი, რომ დაინახოთ მისი შიგთავსი ხის სტრუქტურის მსგავსად.
 გაითვალისწინეთ, რომ ამისთვის საჭიროა რთული ჯავასკრიპტის ფუნქციონალობა, რომელიც ცნობილია AJAX სახელით.
 თუ ძალიან ძველი ბრაუზერი გაქვთ, ან ჯავასკრიპტი გაუქმებულია, მაშინ ის არ იმუშავებს.',
@@ -2764,11 +2772,12 @@ $messages['ku-latn'] = array(
 /** Cornish (Kernowek)
  * @author Kernoweger
  * @author Kw-Moon
+ * @author Nrowe
  */
 $messages['kw'] = array(
-	'categorytree-portlet' => 'Classys',
-	'categorytree-category' => 'Class:',
-	'categorytree-mode-all' => 'oll folennow',
+	'categorytree-portlet' => 'Klassys',
+	'categorytree-category' => 'Klass:',
+	'categorytree-mode-all' => 'an oll folednow',
 );
 
 /** Latin (Latina)
@@ -2856,10 +2865,14 @@ Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da
  * @author Namik
  */
 $messages['lez'] = array(
-	'categorytree-portlet' => 'Категорияр',
+	'categorytree' => 'Категориядин ттар',
+	'categorytree-portlet' => 'Тlаб',
+	'categorytree-legend' => 'Категориядин ттар къалурун',
 	'categorytree-category' => 'Klватlалар:',
 	'categorytree-go' => 'Ппарун',
 	'categorytree-parents' => 'Вини категорияр',
+	'categorytree-mode-categories' => 'анжах категорияр',
+	'categorytree-mode-pages' => 'файлар галачиз ччинар',
 	'categorytree-mode-all' => 'Вири ччинар',
 	'categorytree-collapse' => 'Алчудрун',
 	'categorytree-expand' => 'Гегьеншрун',
@@ -3621,6 +3634,7 @@ Als je een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt dez
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Eirik
  * @author Harald Khan
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'categorytree' => 'Kategoritre',
@@ -3830,11 +3844,26 @@ $messages['pdc'] = array(
 );
 
 /** Pälzisch (Pälzisch)
+ * @author Manuae
  * @author Xqt
  */
 $messages['pfl'] = array(
+	'categorytree' => 'Kadegorijeboom',
+	'categorytree-portlet' => 'Kadegorije',
+	'categorytree-legend' => 'Kadegorijeboom zaische',
 	'categorytree-category' => 'Kadegorie:',
+	'categorytree-go' => 'Lade',
+	'categorytree-parents' => 'Owakadegorije',
 	'categorytree-mode-all' => 'alle Saide',
+	'categorytree-collapse' => 'zuglabbe',
+	'categorytree-expand' => 'uffglabbe',
+	'categorytree-nothing-found' => 'nix gfunne',
+	'categorytree-no-subcategories' => 'Kä Unakadegorije',
+	'categorytree-no-parent-categories' => 'Kä Owakadegorije',
+	'categorytree-no-pages' => 'Kä Saide oda Unakadegorije',
+	'categorytree-not-found' => 'Kadegorie „$1“ hods ned',
+	'categorytree-error' => 'Daade kennen ned gelade were.',
+	'categorytree-retry' => 'Waad ä bissl un brobias nomol',
 );
 
 /** Polish (Polski)
@@ -4920,7 +4949,7 @@ $messages['tg-cyrl'] = array(
 	'categorytree-retry' => 'Лутфан чанд лаҳза сабр кунед ва дубора имтиҳон кунед.',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -5181,7 +5210,11 @@ $messages['tt-cyrl'] = array(
  * @author Sborsody
  */
 $messages['tyv'] = array(
+	'categorytree-portlet' => 'Чергелер',
+	'categorytree-category' => 'Черге:',
 	'categorytree-mode-all' => 'шупту арыннар',
+	'categorytree-collapse' => 'кызырары',
+	'categorytree-expand' => 'чазар',
 );
 
 /** Ukrainian (Українська)
@@ -5209,7 +5242,7 @@ $messages['uk'] = array(
 	'categorytree-num-categories' => '$1 К',
 	'categorytree-num-pages' => '$1 С',
 	'categorytree-num-files' => '$1 Ф',
-	'categorytree-num-empty' => 'порожній',
+	'categorytree-num-empty' => 'порожня',
 	'categorytree-load' => 'завантажити',
 	'categorytree-loading' => 'завантаження…',
 	'categorytree-nothing-found' => 'нема підкатегорій',
@@ -5238,7 +5271,7 @@ $messages['ur'] = array(
 	'categorytree-no-subcategories' => 'کوئی ذیلی زمرہ نہیں',
 );
 
-/** Uzbek (O'zbek)
+/** Uzbek (Oʻzbek)
  * @author Abdulla
  */
 $messages['uz'] = array(
@@ -5275,7 +5308,7 @@ $messages['vec'] = array(
 	'categorytree-retry' => "Speta n'atimo e dopo próa de novo.",
 );
 
-/** Veps (Vepsän kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
