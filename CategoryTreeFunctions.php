@@ -267,6 +267,9 @@ class CategoryTree {
 			$opt = array( "mode" => $options );
 		} elseif ( $enc == 'json' ) {
 			$opt = FormatJson::decode( $options );
+			if ( !$opt ) {
+				throw new MWException( 'JSON cannot decode CategoryTree options' );
+			}
 			$opt = get_object_vars( $opt );
 		} else {
 			throw new MWException( 'Unknown encoding for CategoryTree options: ' . $enc );
