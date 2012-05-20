@@ -369,11 +369,15 @@ $messages['as'] = array(
 	'categorytree-mode-all' => 'সকলো পৃষ্ঠা',
 	'categorytree-collapse' => 'সৰু কৰক',
 	'categorytree-expand' => 'বহলাওক',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
 	'categorytree-num-empty' => 'খালি',
 	'categorytree-load' => "ল'ড কৰক",
 	'categorytree-loading' => "ল'ড কৰি থকা হৈছে...",
 	'categorytree-nothing-found' => "একো পোৱা নগ'ল",
 	'categorytree-no-subcategories' => 'উপশ্ৰেণী নাই',
+	'categorytree-no-parent-categories' => 'কোনো মূল বিষয়শ্ৰেণী নাই',
 	'categorytree-no-pages' => 'এনে কোনো পৃষ্ঠা বা উপশ্ৰেণী নাই',
 	'categorytree-not-found' => '<i>$1</i> শ্ৰেণীটো বিচাৰি পোৱা নগল',
 	'categorytree-error' => "তথ্য ল'ড কৰাত সমস্যা হৈছে।",
@@ -739,6 +743,7 @@ $messages['bjn'] = array(
 /** Bengali (বাংলা)
  * @author Ansumang
  * @author Bellayet
+ * @author Nasir8891
  * @author Zaheen
  */
 $messages['bn'] = array(
@@ -757,6 +762,7 @@ $messages['bn'] = array(
 	'categorytree-mode-all' => 'সব পাতা',
 	'categorytree-collapse' => 'গুটিয়ে ফেলা হোক',
 	'categorytree-expand' => 'প্রসারিত করা হোক',
+	'categorytree-member-counts' => '{{PLURAL:$1|১রি উপবিষয়শ্রেণী|$1টি উপবিষয়শ্রেণী}}, {{PLURAL:$2|১টি পাতা|$2টি পাতা}}, এবং {{PLURAL:$3|১টি ফাইল|$3টি ফাইল}} রয়েছে',
 	'categorytree-num-categories' => '$1 C',
 	'categorytree-num-pages' => '$1 P',
 	'categorytree-num-files' => '$1 F',
