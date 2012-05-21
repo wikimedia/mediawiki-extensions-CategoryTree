@@ -718,13 +718,18 @@ $messages['bjn'] = array(
 	'categorytree-portlet' => 'Tutumbung',
 	'categorytree-legend' => 'Tampaiakan tumbung puhun',
 	'categorytree-desc' => 'Napigasi dinamis [[Special:CategoryTree|struktur tumbung]]',
+	'categorytree-header' => 'Masukakan sabuah ngaran tumbung gasan malihat isinya di bantuk puhun.
+Tulung diitihi bahwa pitur naya mamarluakan dukungan JavaScript lanjutan nang dipinandui sabagai AJAX.
+Amun Pian mamakai panjalajah web lawas, atawa mamatiakan pungsi JavaScript Pian, pitur naya kada kawa dijalanakan.',
 	'categorytree-category' => 'Tumbung',
 	'categorytree-go' => 'Tampaiakan puhun',
 	'categorytree-parents' => 'Kuitan',
 	'categorytree-mode-categories' => 'Tutumbung haja',
 	'categorytree-mode-pages' => 'tutungkaran kacuali barakas',
 	'categorytree-mode-all' => 'samunyaan tutungkaran',
+	'categorytree-collapse' => 'tutup',
 	'categorytree-expand' => 'Singkai',
+	'categorytree-member-counts' => 'baisi {{PLURAL:$1|1 subtumbung|$1 subtumbung}}, {{PLURAL:$2|1 tungkaran|$2 tungkaran}}, dan {{PLURAL:$3|1 barakas|$3 barakas}}',
 	'categorytree-num-categories' => '$1 T',
 	'categorytree-num-pages' => '$1 T',
 	'categorytree-num-files' => '$1 B',
@@ -2869,10 +2874,11 @@ Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da
 /** Lezghian (Лезги)
  * @author Migraghvi
  * @author Namik
+ * @author Soul Train
  */
 $messages['lez'] = array(
 	'categorytree' => 'Категориядин ттар',
-	'categorytree-portlet' => 'Тlаб',
+	'categorytree-portlet' => 'Категорияр',
 	'categorytree-legend' => 'Категориядин ттар къалурун',
 	'categorytree-category' => 'Klватlалар:',
 	'categorytree-go' => 'Ппарун',
