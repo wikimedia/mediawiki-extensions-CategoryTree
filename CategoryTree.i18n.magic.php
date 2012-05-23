@@ -46,6 +46,11 @@ $magicWords['de'] = array(
 	'categorytree' => array( 0, 'kategorienbaum', 'kategoriebaum' ),
 );
 
+/** Zazaki (Zazaki) */
+$magicWords['diq'] = array(
+	'categorytree' => array( 0, 'darakategoriye' ),
+);
+
 /** Esperanto (Esperanto) */
 $magicWords['eo'] = array(
 	'categorytree' => array( 0, 'kategoriarbo' ),
@@ -59,6 +64,11 @@ $magicWords['es'] = array(
 /** Estonian (Eesti) */
 $magicWords['et'] = array(
 	'categorytree' => array( 0, 'kategooriapuu' ),
+);
+
+/** Persian (فارسی) */
+$magicWords['fa'] = array(
+	'categorytree' => array( 0, 'درخت‌رده', 'درخت_رده' ),
 );
 
 /** Igbo (Igbo) */
@@ -131,6 +141,11 @@ $magicWords['pl'] = array(
 	'categorytree' => array( 0, 'drzewokategorii' ),
 );
 
+/** Romanian (Română) */
+$magicWords['ro'] = array(
+	'categorytree' => array( 0, 'arborecategorie' ),
+);
+
 /** Russian (Русский) */
 $magicWords['ru'] = array(
 	'categorytree' => array( 0, 'деревокатегорий' ),
@@ -163,7 +178,7 @@ $magicWords['tt-cyrl'] = array(
 
 /** Ukrainian (Українська) */
 $magicWords['uk'] = array(
-	'categorytree' => array( 0, 'деревокатегорій', 'деревокатегорий', 'categorytree' ),
+	'categorytree' => array( 0, 'деревокатегорій', 'деревокатегорий' ),
 );
 
 /** Vietnamese (Tiếng Việt) */
