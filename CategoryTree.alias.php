@@ -51,6 +51,11 @@ $specialPageAliases['bg'] = array(
 	'CategoryTree' => array( 'Дърво_на_категориите' ),
 );
 
+/** Banjar (Bahasa Banjar) */
+$specialPageAliases['bjn'] = array(
+	'CategoryTree' => array( 'Puhun_tumbung' ),
+);
+
 /** Breton (Brezhoneg) */
 $specialPageAliases['br'] = array(
 	'CategoryTree' => array( 'GwezennadurRummad' ),
@@ -63,7 +68,7 @@ $specialPageAliases['bs'] = array(
 
 /** Catalan (Català) */
 $specialPageAliases['ca'] = array(
-	'CategoryTree' => array( 'Categories en arbre', 'Arbre de categories' ),
+	'CategoryTree' => array( 'Categories_en_arbre', 'Arbre_de_categories' ),
 );
 
 /** Czech (Česky) */
@@ -79,6 +84,11 @@ $specialPageAliases['da'] = array(
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'CategoryTree' => array( 'Kategorienbaum', 'Kategoriebaum' ),
+);
+
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'CategoryTree' => array( 'DaraKategoriye' ),
 );
 
 /** Lower Sorbian (Dolnoserbski) */
@@ -151,6 +161,11 @@ $specialPageAliases['he'] = array(
 	'CategoryTree' => array( 'עץ_קטגוריות' ),
 );
 
+/** Hindi (हिन्दी) */
+$specialPageAliases['hi'] = array(
+	'CategoryTree' => array( 'श्रेणी_वृक्ष', 'श्रेणीवृक्ष' ),
+);
+
 /** Upper Sorbian (Hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'CategoryTree' => array( 'Kategorijowy_štom' ),
@@ -219,6 +234,11 @@ $specialPageAliases['ksh'] = array(
 /** Kurdish (Kurdî) */
 $specialPageAliases['ku'] = array(
 	'CategoryTree' => array( 'Dara_kategoriyan' ),
+);
+
+/** Cornish (Kernowek) */
+$specialPageAliases['kw'] = array(
+	'CategoryTree' => array( 'GwedhenGlassys' ),
 );
 
 /** Latin (Latina) */
@@ -326,6 +346,11 @@ $specialPageAliases['ro'] = array(
 	'CategoryTree' => array( 'Arborele_categoriilor' ),
 );
 
+/** Russian (Русский) */
+$specialPageAliases['ru'] = array(
+	'CategoryTree' => array( 'Дерево_категорий' ),
+);
+
 /** Sanskrit (संस्कृतम्) */
 $specialPageAliases['sa'] = array(
 	'CategoryTree' => array( 'वर्गवृक्ष:' ),
@@ -376,7 +401,7 @@ $specialPageAliases['vec'] = array(
 	'CategoryTree' => array( 'ÀlbaroCategorie' ),
 );
 
-/** Veps (Vepsän kel') */
+/** Veps (Vepsän kel’) */
 $specialPageAliases['vep'] = array(
 	'CategoryTree' => array( 'KategorijoidenPu' ),
 );
