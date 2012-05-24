@@ -2528,6 +2528,7 @@ $messages['kab'] = array(
  */
 $messages['khw'] = array(
 	'categorytree-portlet' => 'زمرہ جات',
+	'categorytree-category' => 'زمرہ',
 );
 
 /** Kazakh (Arabic script) (‫قازاقشا (تٴوتە)‬) */
