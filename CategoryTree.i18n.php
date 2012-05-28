@@ -1548,6 +1548,7 @@ Um tú hevur ein sera gamlan kaga (brovsara), ella hevur gjørt JavaScript óvir
 );
 
 /** French (Français)
+ * @author DavidL
  * @author Gomoko
  * @author Grondin
  * @author IAlex
@@ -1578,10 +1579,10 @@ $messages['fr'] = array(
 	'categorytree-num-empty' => 'vide',
 	'categorytree-load' => 'charger',
 	'categorytree-loading' => 'chargement...',
-	'categorytree-nothing-found' => 'Aucune trouvée',
-	'categorytree-no-subcategories' => 'Aucune sous-catégorie',
-	'categorytree-no-parent-categories' => 'Aucune catégorie parente',
-	'categorytree-no-pages' => 'Aucune page ou sous-catégorie',
+	'categorytree-nothing-found' => 'rien trouvé',
+	'categorytree-no-subcategories' => 'aucune sous-catégorie',
+	'categorytree-no-parent-categories' => 'aucune catégorie parente',
+	'categorytree-no-pages' => 'aucune page ou sous-catégorie',
 	'categorytree-not-found' => 'Catégorie <tt>$1</tt> introuvable',
 	'categorytree-error' => 'Problème de chargement des données.',
 	'categorytree-retry' => 'Veuillez attendre un instant puis réessayer.',
