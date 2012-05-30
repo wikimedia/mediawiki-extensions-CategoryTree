@@ -1145,7 +1145,7 @@ Eka browseyê tu kihanî ya zi tu JavaScript qefilmayiyo, program nihebitiyeno.'
 	'categorytree-parents' => 'Ebeveynî',
 	'categorytree-mode-categories' => 'teyna kategoriyan',
 	'categorytree-mode-pages' => 'Teyna pelan, dosyayan hesab meke',
-	'categorytree-mode-all' => 'pelanê hemî',
+	'categorytree-mode-all' => 'peli pêro',
 	'categorytree-collapse' => 'Kılmever ke',
 	'categorytree-expand' => 'Hera ke',
 	'categorytree-member-counts' => ' {{PLURAL:$1|1 subkategorî|$1 subkategorîyan}}, {{PLURAL:$2|1 pel|$2 pelan}} u {{PLURAL:$3|1 dosya|$3 dosyayn}} esto',
