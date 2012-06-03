@@ -1547,7 +1547,7 @@ Um tú hevur ein sera gamlan kaga (brovsara), ella hevur gjørt JavaScript óvir
 	'categorytree-retry' => 'Vinarliga bíða eitt bil og royn so aftur.',
 );
 
-/** French (Français)
+/** French (français)
  * @author DavidL
  * @author Gomoko
  * @author Grondin
