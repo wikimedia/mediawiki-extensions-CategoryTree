@@ -323,6 +323,7 @@ $messages['arz'] = array(
 );
 
 /** Assamese (অসমীয়া)
+ * @author Bishnu Saikia
  * @author Chaipau
  * @author Gitartha.bordoloi
  * @author Psneog
@@ -343,7 +344,7 @@ $messages['as'] = array(
 	'categorytree-mode-categories' => 'কেৱল শ্ৰেণী',
 	'categorytree-mode-pages' => 'ফাইল বাদে পৃষ্ঠাসমুহ',
 	'categorytree-mode-all' => 'সকলো পৃষ্ঠা',
-	'categorytree-collapse' => 'সৰু কৰক',
+	'categorytree-collapse' => 'সংকোচন',
 	'categorytree-expand' => 'বহলাওক',
 	'categorytree-member-counts' => '{{PLURAL:$1|এটা উপশ্ৰেণী|$1টা উপশ্ৰেণী}}, {{PLURAL:$2|এখন পৃষ্ঠা|$2খন পৃষ্ঠা}}, আৰু {{PLURAL:$3|এটা ফাইল|$3টা ফাইল}} আছে',
 	'categorytree-num-categories' => '$1 C',
