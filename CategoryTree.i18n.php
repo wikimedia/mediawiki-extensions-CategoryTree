@@ -1090,7 +1090,7 @@ $messages['de'] = array(
 	'categorytree-legend' => 'Zeige Kategorienbaum',
 	'categorytree-desc' => 'Ergänzt eine [[Special:CategoryTree|Spezialseite]], welche die dynamische Navigation durch die Kategoriestruktur ermöglicht',
 	'categorytree-header' => 'Zeigt für die angegebene Kategorie die Unterkategorien in einer Baumstruktur.
-Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert möglicherweise nicht, wenn JavaScript ausgeschaltet ist oder ein sehr alter Browser verwendet wird.',
+Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert möglicherweise nicht, sofern JavaScript ausgeschaltet ist oder ein sehr alter Browser verwendet wird.',
 	'categorytree-category' => 'Kategorie:',
 	'categorytree-go' => 'Laden',
 	'categorytree-parents' => 'Oberkategorien',
@@ -2393,8 +2393,10 @@ $messages['ja'] = array(
 	'categorytree' => 'カテゴリツリー',
 	'categorytree-portlet' => 'カテゴリ',
 	'categorytree-legend' => 'カテゴリツリーを表示',
-	'categorytree-desc' => 'ウィキの[[Special:CategoryTree|カテゴリの構造]]をツリー形式で表示',
-	'categorytree-header' => 'カテゴリの中身をツリー形式で表示するために、そのカテゴリ名を入力してください。この機能は Ajax という高度な JavaScript 機能を使用していることに注意してください。もしあなたが使っているブラウザが非常に古かったり、JavaScript を有効にしていない場合は、動作しません。',
+	'categorytree-desc' => 'ウィキの[[Special:CategoryTree|カテゴリの構造]]をツリー形式で動的に表示する',
+	'categorytree-header' => 'カテゴリの内容をツリー形式で表示するために、そのカテゴリ名を入力してください。
+この機能は Ajax という高度な JavaScript 機能を使用していることに注意してください。
+ご使用中のブラウザーが非常に古い場合や、JavaScript を有効にしていない場合は、動作しません。',
 	'categorytree-category' => 'カテゴリ名:',
 	'categorytree-go' => 'ツリーを見る',
 	'categorytree-parents' => '上位カテゴリ',
@@ -5089,6 +5091,10 @@ Kapag mayroon kang isang napakatandang/napakalumang pantingin-tingin (''browser'
 	'categorytree-collapse' => 'tiklupin',
 	'categorytree-expand' => 'palaparin',
 	'categorytree-member-counts' => 'naglalaman ng {{PLURAL:$1|1 subcategory|$1 kabahaging mga kaurian}}, {{PLURAL:$2|1 pahina|$2 mga pahina}}, at {{PLURAL:$3|1 talaksan|$3 mga talaksan}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'walang laman',
 	'categorytree-load' => 'ikarga',
 	'categorytree-loading' => 'ikinakarga…',
 	'categorytree-nothing-found' => 'walang natagpuan',
@@ -5241,7 +5247,7 @@ $messages['tyv'] = array(
 	'categorytree-expand' => 'чазар',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author AS
  * @author Ahonc
  * @author Sodmy
