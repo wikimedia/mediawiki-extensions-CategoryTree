@@ -2771,6 +2771,7 @@ $messages['ksh'] = array(
 /** Kurdish (Latin script) (‪Kurdî (latînî)‬)
  * @author Erdal Ronahi
  * @author George Animal
+ * @author Ghybu
  * @author Gomada
  * @author Welathêja
  */
@@ -2782,11 +2783,13 @@ $messages['ku-latn'] = array(
 	'categorytree-go' => 'Darê nîşan bide',
 	'categorytree-mode-categories' => 'tenê kategoriyan',
 	'categorytree-mode-all' => 'hemû rûpel',
+	'categorytree-collapse' => 'bigre',
+	'categorytree-expand' => 'veke',
 	'categorytree-load' => 'bar bike',
 	'categorytree-loading' => 'tê barkirin',
 	'categorytree-nothing-found' => 'Ti tişt nehate dîtin',
 	'categorytree-no-subcategories' => 'binekategorî tune',
-	'categorytree-no-pages' => 'ti rûpel û binkategorî tinin',
+	'categorytree-no-pages' => 'ne rûpelek an jî binkategoriyek',
 	'categorytree-not-found' => 'Kategoriya <i>$1</i> nehate dîtin',
 );
 
