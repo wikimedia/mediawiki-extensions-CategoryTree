@@ -362,7 +362,7 @@ $messages['as'] = array(
 	'categorytree-retry' => 'অনুগ্ৰহ কৰি কিছু সময় অপেক্ষা কৰি তাৰ পিছত চেষ্টা কৰক।',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Esbardu
  * @author Xuacu
  */
@@ -431,7 +431,7 @@ $messages['ay'] = array(
 	'categorytree-category' => 'Patawi:',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  * @author PPerviz
  * @author Vugar 1981
@@ -582,7 +582,7 @@ $messages['bcl'] = array(
 	'categorytree-retry' => 'Paki halat mûna tapos probaran giraray.',
 );
 
-/** Belarusian (Беларуская)
+/** Belarusian (беларуская)
  * @author Тест
  * @author Чаховіч Уладзіслаў
  */
@@ -642,7 +642,7 @@ $messages['be-tarask'] = array(
 	'categorytree-retry' => 'Калі ласка, пачакайце і паспрабуйце яшчэ раз.',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author Borislav
  * @author DCLXVI
  * @author Spiritia
@@ -768,7 +768,7 @@ $messages['bo'] = array(
 	'categorytree-portlet' => 'རྣམ་གྲངས།',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  */
 $messages['br'] = array(
@@ -803,7 +803,7 @@ M'eo kozh-mat stumm ho merdeer pe m'eo diweredekaet JavaScript ganeoc'h, ne'z ai
 	'categorytree-retry' => 'Gortozit un tamm ha klaskit en-dro.',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  * @author DzWiki
  * @author editors of bs.wikipedia
@@ -836,7 +836,7 @@ $messages['bs'] = array(
 	'categorytree-retry' => 'Molimo pričekate trenutak i pokušajte ponovno.',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Aleator
  * @author Paucabot
  * @author SMP
@@ -926,7 +926,7 @@ $messages['ceb'] = array(
 	'categorytree-category' => 'Kategoriya:',
 );
 
-/** Sorani (کوردی)
+/** Sorani Kurdish (کوردی)
  * @author Asoxor
  */
 $messages['ckb'] = array(
@@ -952,14 +952,14 @@ $messages['ckb'] = array(
 	'categorytree-retry' => 'تکایە دەمێک ڕاوەستە و دیسان تاقیبکەوە.',
 );
 
-/** Corsican (Corsu) */
+/** Corsican (corsu) */
 $messages['co'] = array(
 	'categorytree-category' => 'Categuria:',
 	'categorytree-mode-pages' => 'pagine senza imagin',
 	'categorytree-mode-all' => 'tutte e pagine',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Danny B.
  * @author Li-sung
  * @author Mormegil
@@ -1041,7 +1041,7 @@ Ni lwydda'r gofyniad os yw'ch porwr yn hen iawn neu os nad yw Sgript Java wedi e
 	'categorytree-retry' => 'Arhoswch ennyd, yna ceisiwch eto.',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Barklund
  * @author Byrial
  * @author Fredelige
@@ -1210,7 +1210,7 @@ $messages['dtp'] = array(
 	'categorytree-no-subcategories' => 'Ingaa kawo do kalas',
 );
 
-/** Ewe (Eʋegbe) */
+/** Ewe (eʋegbe) */
 $messages['ee'] = array(
 	'categorytree-mode-all' => 'axawo katã',
 );
@@ -1288,7 +1288,7 @@ $messages['eo'] = array(
 	'categorytree-retry' => 'Bonvolu atendi momenton kaj provi denove.',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Locos epraix
  * @author Muro de Aguas
  * @author Remember the dot
@@ -1328,7 +1328,7 @@ Si tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no fu
 	'categorytree-retry' => 'Por favor, espera un momento y vuelve a intentarlo.',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  * @author Jaan513
  * @author Pikne
@@ -1365,7 +1365,7 @@ Kui sul on väga vana veebilehitseja või JavaScrip keelatud, see ei toimi.',
 	'categorytree-retry' => 'Palun oota hetk ja proovi uuesti.',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  * @author Theklan
  */
@@ -1399,7 +1399,7 @@ $messages['eu'] = array(
 	'categorytree-retry' => 'Itxaron pixka bat eta saiatu berriz.',
 );
 
-/** Extremaduran (Estremeñu)
+/** Extremaduran (estremeñu)
  * @author Better
  */
 $messages['ext'] = array(
@@ -1446,7 +1446,7 @@ $messages['fa'] = array(
 	'categorytree-retry' => 'لطفاً کمی صبر کنید و دوباره امتحان کنید.',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Agony
  * @author Crt
  * @author Nedergard
@@ -1483,7 +1483,7 @@ $messages['fi'] = array(
 	'categorytree-retry' => 'Odota hetki ja yritä uudelleen.',
 );
 
-/** Meänkieli (Meänkieli)
+/** meänkieli (meänkieli)
  * @author Mestos
  */
 $messages['fit'] = array(
@@ -1511,7 +1511,7 @@ $messages['fit'] = array(
 	'categorytree-retry' => 'Oota vähän aikaa ja yritä uuesti',
 );
 
-/** Faroese (Føroyskt)
+/** Faroese (føroyskt)
  * @author Diupwijk
  * @author EileenSanda
  * @author Spacebirdy
@@ -1589,7 +1589,7 @@ $messages['fr'] = array(
 	'categorytree-retry' => 'Veuillez attendre un instant puis réessayer.',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -1624,7 +1624,7 @@ Se vos avéd un rudo viely navigator ou ben se vos éd pas activâ la fonccional
 	'categorytree-retry' => 'Atendéd un moment et pués tornâd èprovar.',
 );
 
-/** Friulian (Furlan)
+/** Friulian (furlan)
  * @author Klenje
  * @author MF-Warburg
  */
@@ -1964,7 +1964,7 @@ $messages['hi'] = array(
 	'categorytree-retry' => 'कृपया थोडे समय के बाद फिरसे यत्न करें।',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author Ex13
  * @author SpeedyGonsales
@@ -2057,7 +2057,7 @@ Si ou genyen yon ansyen navigatè entènèt, oubyen JavaScript pa aktive, li pap
 	'categorytree-retry' => 'Tanpri, tann yon moman epi eseye ankò.',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Dj
  * @author Glanthor Reviol
@@ -2127,7 +2127,7 @@ $messages['hy'] = array(
 	'categorytree-retry' => 'Խնդրում ենք սպասել մեկ ակնթարթ և փորձել կրկին։',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author Malafaya
  * @author McDutchie
  */
@@ -2304,7 +2304,7 @@ $messages['io'] = array(
 	'categorytree-not-found' => 'Kategorio <i>$1</i> ne trovita',
 );
 
-/** Icelandic (Íslenska)
+/** Icelandic (íslenska)
  * @author S.Örvarr.S
  * @author Snævar
  * @author Spacebirdy
@@ -2340,7 +2340,7 @@ Ef þú notast við gamlan vafra eða hefur slökkt á JavaScript mun þetta ekk
 	'categorytree-retry' => 'Gjörðu svo vel og reyndu síðar.',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author .anaconda
  * @author Aushulz
  * @author Beta16
@@ -2421,7 +2421,7 @@ $messages['ja'] = array(
 	'categorytree-retry' => '時間をおいてからもう一度試してください。',
 );
 
-/** Jutish (Jysk)
+/** Jutish (jysk)
  * @author Huslåke
  */
 $messages['jut'] = array(
@@ -2793,7 +2793,7 @@ $messages['ku-latn'] = array(
 	'categorytree-not-found' => 'Kategoriya <i>$1</i> nehate dîtin',
 );
 
-/** Cornish (Kernowek)
+/** Cornish (kernowek)
  * @author Kernoweger
  * @author Kw-Moon
  * @author Nrowe
@@ -2957,7 +2957,7 @@ Esse 'ne erg verajerdje browser höbs of JavaScript steit oet, den werk dees fun
 	'categorytree-retry' => "Wach estebleef effe en perbeer 't den opnuuj.",
 );
 
-/** Lumbaart (Lumbaart)
+/** lumbaart (lumbaart)
  * @author Dakrismeno
  */
 $messages['lmo'] = array(
@@ -2983,7 +2983,7 @@ $messages['lmo'] = array(
 	'categorytree-retry' => 'Per piasè, specia un mument e pö pröva ancamò.',
 );
 
-/** Lingala (Lingála)
+/** Lingala (lingála)
  * @author Eruedin
  */
 $messages['ln'] = array(
@@ -3018,7 +3018,7 @@ $messages['lo'] = array(
 	'categorytree-retry' => 'ກະລຸນາຮອສັກຄູ່ ແລ້ວລອງໂຫຼດໃໝ່',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Eitvys200
  * @author Garas
  * @author Hugo.arg
@@ -3055,7 +3055,7 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
 	'categorytree-retry' => 'Palaukite šiek tiek, ir bandykite iš naujo.',
 );
 
-/** Latgalian (Latgaļu)
+/** Latgalian (latgaļu)
  * @author Dark Eagle
  */
 $messages['ltg'] = array(
@@ -3118,7 +3118,7 @@ Rangpuifanna hlui tak i hma emaw, JavaScript tihthih a nih emaw chuan a en theih
 	'categorytree-retry' => 'Nghak lawk la tum nawn leh rawh',
 );
 
-/** Latvian (Latviešu)
+/** Latvian (latviešu)
  * @author GreenZeb
  * @author Marozols
  * @author Papuass
@@ -3200,7 +3200,7 @@ $messages['mg'] = array(
 	'categorytree-portlet' => 'Sokajy',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  * @author Brest
  * @author Brest2008
@@ -3273,7 +3273,7 @@ $messages['ml'] = array(
 	'categorytree-retry' => 'ദയവായി അല്പസമയത്തിനു ശേഷം വീണ്ടും ശ്രമിക്കുക.',
 );
 
-/** Mongolian (Монгол)
+/** Mongolian (монгол)
  * @author Chinneeb
  */
 $messages['mn'] = array(
@@ -3656,7 +3656,7 @@ Let op: deze functie gebruikt JavaScript-functionaliteit die bekend staat als AJ
 Als je een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze functie niet.',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Eirik
  * @author Harald Khan
  * @author Njardarlogar
@@ -3705,7 +3705,7 @@ $messages['nso'] = array(
 	'categorytree-not-found' => 'Sehlopha <i>$1</i> ga se humanege',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -3895,7 +3895,7 @@ $messages['pfl'] = array(
 	'categorytree-retry' => 'Waad ä bissl un brobias nomol',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Airwolf
  * @author Derbeth
  * @author Matma Rex
@@ -4042,7 +4042,7 @@ $messages['ps'] = array(
 	'categorytree-retry' => 'مهرباني وکړی لږ څه تم شی او بيا يې وآزمايۍ',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author 555
  * @author Giro720
  * @author Hamilton Abreu
@@ -4080,7 +4080,7 @@ Caso o seu browser seja razoavelmente antigo ou o JavaScript esteja desactivado,
 	'categorytree-retry' => 'Por favor, aguarde um momento e tente novamente.',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author 555
  * @author Carla404
  * @author Eduardo.mps
@@ -4152,7 +4152,7 @@ Musyariy, kaytaqa AJAX nisqa sapaq JavaScript ruranallawanmi llamk'achiyta atink
 	'categorytree-retry' => 'Asllata suyaspa musuqmanta ruraykachay.',
 );
 
-/** Romansh (Rumantsch)
+/** Romansh (rumantsch)
  * @author Kazu89
  */
 $messages['rm'] = array(
@@ -4166,7 +4166,7 @@ $messages['rm'] = array(
 	'categorytree-loading' => 'chargiar…',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author Cin
  * @author KlaudiuMihaila
  * @author Mihai
@@ -4202,7 +4202,7 @@ $messages['ro'] = array(
 	'categorytree-retry' => 'Vă rugăm să așteptați câteva momente și să încercați din nou.',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -4237,7 +4237,7 @@ Ce tu è 'nu browser assaije vecchie, o tìne 'u JavaScript disabbilitate, non g
 	'categorytree-retry' => "Aspitte 'nu mumende e pruève 'n'otra vote.",
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Ahonc
  * @author Lockal
  * @author Putnik
@@ -4321,7 +4321,7 @@ $messages['sa'] = array(
 	'categorytree-loading' => 'भारारोपण',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -4374,7 +4374,7 @@ $messages['sat'] = array(
 	'categorytree-nothing-found' => 'Cet́ hõ baṅ ńamlena',
 );
 
-/** Sardinian (Sardu)
+/** Sardinian (sardu)
  * @author Marzedu
  */
 $messages['sc'] = array(
@@ -4383,7 +4383,7 @@ $messages['sc'] = array(
 	'categorytree-mode-all' => 'totu is pàginas',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Aushulz
  * @author Santu
  */
@@ -4450,7 +4450,7 @@ $messages['sgs'] = array(
 	'categorytree-mode-all' => 'vėsė poslapē',
 );
 
-/** Serbo-Croatian (Srpskohrvatski)
+/** Serbo-Croatian (srpskohrvatski / српскохрватски)
  * @author OC Ripper
  */
 $messages['sh'] = array(
@@ -4516,7 +4516,7 @@ AJAX නමින් හැඳින්වෙන ප්‍රගත ජාවා
 	'categorytree-retry' => 'කරුණාකර බිඳක් සිට යළි උත්සාහ කරන්න.',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  * @author Teslaton
  */
@@ -4552,7 +4552,7 @@ Ak máte veľmi starý prehliadač alebo máte vypnutý JavaScrpt, nebude fungov
 	'categorytree-retry' => 'Prosím, chvíľu počkajte a skúste to znova.',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  * @author Freakolowsky
  * @author editors of sl.wikipedia
@@ -4595,7 +4595,7 @@ $messages['so'] = array(
 	'categorytree-not-found' => 'Qeybta  <i>$1</i> lama helin',
 );
 
-/** Albanian (Shqip)
+/** Albanian (shqip)
  * @author Eagleal
  * @author Olsi
  */
@@ -4629,7 +4629,7 @@ $messages['sq'] = array(
 	'categorytree-retry' => 'Ju lutemi prisni një moment dhe provojeni përsëri.',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Millosh
  * @author Rancher
  * @author Sasa Stefanovic
@@ -4668,7 +4668,7 @@ $messages['sr-ec'] = array(
 	'categorytree-retry' => 'Сачекајте неколико тренутака и покушајте поново.',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  * @author Rancher
  */
@@ -4784,7 +4784,7 @@ Lamun Anjeun ngagunakeun panyungsi nu lila, atawa maehan fungsi Javascript Anjeu
 	'categorytree-retry' => 'Dago sakedap, lajeng coba deui.',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Boivie
  * @author Diupwijk
  * @author Jon Harald Søby
@@ -4936,7 +4936,7 @@ $messages['te'] = array(
 	'categorytree-retry' => 'కాస్త ఆగి మళ్ళీ ప్రయత్నించండి.',
 );
 
-/** Tetum (Tetun)
+/** Tetum (tetun)
  * @author MF-Warburg
  */
 $messages['tet'] = array(
@@ -4948,7 +4948,7 @@ $messages['tet'] = array(
 	'categorytree-mode-all' => 'pájina hotu',
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -4978,7 +4978,7 @@ $messages['tg-cyrl'] = array(
 	'categorytree-retry' => 'Лутфан чанд лаҳза сабр кунед ва дубора имтиҳон кунед.',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -5109,7 +5109,7 @@ Kapag mayroon kang isang napakatandang/napakalumang pantingin-tingin (''browser'
 	'categorytree-retry' => 'Maghintay lamang ng isang sandali at subuking muli.',
 );
 
-/** Толышә зывон (Толышә зывон)
+/** толышә зывон (толышә зывон)
  * @author Гусейн
  */
 $messages['tly'] = array(
@@ -5208,7 +5208,7 @@ $messages['ts'] = array(
 	'categorytree-category' => 'Xiyenge:',
 );
 
-/** Tatar (Cyrillic script) (Татарча)
+/** Tatar (Cyrillic script) (татарча)
  * @author Ильнар
  */
 $messages['tt-cyrl'] = array(
@@ -5304,14 +5304,14 @@ $messages['ur'] = array(
 	'categorytree-no-subcategories' => 'کوئی ذیلی زمرہ نہیں',
 );
 
-/** Uzbek (Oʻzbek)
+/** Uzbek (Oʻzbekcha)
  * @author Abdulla
  */
 $messages['uz'] = array(
 	'categorytree-category' => 'Turkum:',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  * @author GatoSelvadego
  */
@@ -5604,7 +5604,7 @@ $messages['zea'] = array(
 	'categorytree-retry' => "Wacht even en probeer 't dan opnuuw.",
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Breawycker
  * @author Liangent
  * @author PhiLiP
@@ -5641,7 +5641,7 @@ $messages['zh-hans'] = array(
 	'categorytree-retry' => '请稍后重试。',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Alexsh
  * @author Mark85296341
  * @author Oapbtommy
