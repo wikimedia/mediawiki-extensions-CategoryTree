@@ -5437,10 +5437,13 @@ $messages['vo'] = array(
 	'categorytree-retry' => 'Stebedolös, begö! timüli e steifülolös dönu.',
 );
 
-/** Walloon (Walon)
+/** Walloon (walon)
  * @author Lucyin
+ * @author Srtxg
  */
 $messages['wa'] = array(
+	'categorytree' => 'Coxhlaedje des categoreyes',
+	'categorytree-portlet' => 'Categoreyes',
 	'categorytree-mode-all' => 'Totes les pådjes',
 	'categorytree-member-counts' => 'gn a $1 dizo-categoreye{{PLURAL:$1||s}}, $2 pådje{{PLURAL:$2||s}} et $3 fitchî{{PLURAL:$3||s}}',
 	'categorytree-num-empty' => 'vude',
