@@ -470,16 +470,17 @@ $messages['az'] = array(
 /** Bashkir (Башҡортса)
  * @author Assele
  * @author Haqmar
+ * @author ҒатаУлла
  */
 $messages['ba'] = array(
-	'categorytree' => 'Категориялар ағасы',
-	'categorytree-portlet' => 'Категориялар',
-	'categorytree-legend' => 'Категориялар ағасын күрһәтергә',
+	'categorytree' => 'Төркөмдәр ағасы',
+	'categorytree-portlet' => 'Төркөмдәр',
+	'categorytree-legend' => 'Төркөмдәр ағасын күрһәтергә',
 	'categorytree-desc' => '[[Special:CategoryTree|Категориялар төҙөлөшө]] буйлап динамик йөрөү мөмкинлеге',
-	'categorytree-header' => 'Категорияның исемен керетегеҙ, һәм ул ағас төҙөлөшөндә күрһәтеләсәк.
+	'categorytree-header' => 'Төркөмдең исемен керетегеҙ, һәм ул ағас төҙөлөшөндә күрһәтеләсәк.
 Иғтибар итегеҙ — был JavaScript-тың AJAX мөмкинлеген талап итә.
 Әгәр һеҙҙә браузерҙың бик иҫке өлгөһө булһа, йәки JavaScript һүндерелгән булһа,  ул эшләмәйәсәк.',
-	'categorytree-category' => 'Категория:',
+	'categorytree-category' => 'Төркөм:',
 	'categorytree-go' => 'Тейәү',
 	'categorytree-parents' => 'Төп категориялар',
 	'categorytree-mode-categories' => 'категориялар ғына',
