@@ -114,9 +114,13 @@ $wgExtensionCredits['specialpage'][] = $wgExtensionCredits['parserhook'][] = arr
 );
 
 /**
- * Register files and hooks
+ * Register the special page
  */
 $dir = dirname( __FILE__ ) . '/';
+
+if ( $wgUseAjax && $wgCategoryTreeAllowTag ) {
+	$wgExtensionMessagesFiles['CategoryTreeMagic'] = $dir . 'CategoryTree.i18n.magic.php';
+}
 
 $wgExtensionMessagesFiles['CategoryTree'] = $dir . 'CategoryTree.i18n.php';
 $wgAutoloadClasses['CategoryTreePage'] = $dir . 'CategoryTreePage.php';
@@ -166,7 +170,7 @@ $wgResourceModules['ext.categoryTree.css'] = array(
  * Hook it up
  */
 function efCategoryTree() {
-	global $wgUseAjax, $wgHooks, $wgOut, $wgRequest, $wgExtensionMessagesFiles;
+	global $wgUseAjax, $wgHooks, $wgOut, $wgRequest;
 	global $wgCategoryTreeDefaultOptions, $wgCategoryTreeDefaultMode, $wgCategoryTreeOmitNamespace;
 	global $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeCategoryPageMode, $wgCategoryTreeAllowTag;
 	global $wgCategoryTreeSidebarRoot, $wgCategoryTreeForceHeaders, $wgCategoryTreeHijackPageCategories;
@@ -175,12 +179,6 @@ function efCategoryTree() {
 	if ( !$wgUseAjax ) {
 		wfDebug( 'efCategoryTree: $wgUseAjax is not enabled, aborting extension setup.' );
 		return;
-	}
-
-	$dir = dirname( __FILE__ ) . '/';
-
-	if ( $wgUseAjax && $wgCategoryTreeAllowTag ) {
-		$wgExtensionMessagesFiles['CategoryTreeMagic'] = $dir . 'CategoryTree.i18n.magic.php';
 	}
 
 	if ( $wgCategoryTreeSidebarRoot ) {
