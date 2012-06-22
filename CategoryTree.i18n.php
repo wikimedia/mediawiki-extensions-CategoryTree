@@ -2805,6 +2805,34 @@ $messages['kw'] = array(
 	'categorytree-mode-all' => 'an oll folednow',
 );
 
+/** Kirghiz (Кыргызча)
+ * @author Chorobek
+ */
+$messages['ky'] = array(
+	'categorytree' => 'Категориялар бутагы',
+	'categorytree-portlet' => 'Категориялар',
+	'categorytree-legend' => 'Категориялардын бутагын көргөз',
+	'categorytree-desc' => '[[Special:CategoryTree|category structure]]динамикада көрсөт',
+	'categorytree-category' => 'Категория:',
+	'categorytree-go' => 'Бутакты көргөз',
+	'categorytree-parents' => 'Башкы категория',
+	'categorytree-mode-categories' => 'Категориялар гана',
+	'categorytree-mode-pages' => 'файлдардан тышкары',
+	'categorytree-mode-all' => 'баардык барактар',
+	'categorytree-collapse' => 'бүктө',
+	'categorytree-expand' => 'жай',
+	'categorytree-member-counts' => '{{PLURAL:$1|1 ички категорияны|$1 ички категорияларды}}, {{PLURAL:$2|1 баракты|$2 баракты }}, жана {{PLURAL:$3|1 файлды|$3 файлды}} камтыйт',
+	'categorytree-num-categories' => '$1 К',
+	'categorytree-num-pages' => '$1 Б',
+	'categorytree-num-files' => '$1 Ф',
+	'categorytree-num-empty' => 'бош',
+	'categorytree-load' => 'жүктө',
+	'categorytree-loading' => 'жүктөлүүдөө',
+	'categorytree-nothing-found' => 'эч нерсе табылган жок',
+	'categorytree-no-subcategories' => 'ички категориялар табылган жок',
+	'categorytree-no-parent-categories' => 'Башкы категориялар табылган жок',
+);
+
 /** Latin (Latina)
  * @author UV
  */
