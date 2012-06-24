@@ -3263,7 +3263,7 @@ $messages['mk'] = array(
 	'categorytree-no-pages' => 'нема страници или поткатегории',
 	'categorytree-not-found' => 'Не е пронајдена категорија <i>$1</i>',
 	'categorytree-error' => 'Проблеми со вчитување на податоците.',
-	'categorytree-retry' => 'Ве молиме почекајте неколку моменти и обидетесе повторно.',
+	'categorytree-retry' => 'Почекајте малку, па обидете се пак.',
 );
 
 /** Malayalam (മലയാളം)
