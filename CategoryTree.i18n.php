@@ -3227,6 +3227,11 @@ Angger Rika panjlajah wèbé kalebu vèrsi lawas, utawa fitur JavaScript dipatè
 $messages['mg'] = array(
 	'categorytree' => "Fisampanan'ny sokajy",
 	'categorytree-portlet' => 'Sokajy',
+	'categorytree-category' => 'Sokajy :',
+	'categorytree-go' => 'hijery ny hazon-tsokajy',
+	'categorytree-parents' => 'renisokajy',
+	'categorytree-mode-categories' => 'sokajy ihany',
+	'categorytree-mode-pages' => 'pejy tsy misy sary',
 );
 
 /** Macedonian (македонски)
