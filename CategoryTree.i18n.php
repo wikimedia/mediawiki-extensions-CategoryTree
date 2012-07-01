@@ -197,7 +197,7 @@ $messages['am'] = array(
 	'categorytree-retry' => 'ትንሽ ቆይተው እንደገና ይሞክሩ',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -605,7 +605,7 @@ $messages['be'] = array(
 	'categorytree-expand' => 'паказаць',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author Cesco
  * @author EugeneZelenko
  * @author Jim-by
@@ -997,7 +997,7 @@ $messages['cs'] = array(
 	'categorytree-retry' => 'Počkejte chvilku a zkuste to znova.',
 );
 
-/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
@@ -1166,7 +1166,7 @@ Eka browseyê tu kihanî ya zi tu JavaScript qefilmayiyo, program nihebitiyeno.'
 	'categorytree-retry' => 'Şıma ra reca tenekê pıpawê, bahdo fına bıcerbnê.',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -1716,7 +1716,7 @@ Má tá do bhrabhsálaí róshean, nó má dhíchumasaigh tú JavaScript, ní oi
 	'categorytree-retry' => 'Fan nóiméad, le do thoil, roimh triail eile a bhaint as.',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Toliño
  * @author Xosé
@@ -1996,7 +1996,7 @@ $messages['hr'] = array(
 	'categorytree-retry' => 'Pričekajte trenutak pa pokušajte opet.',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -2779,7 +2779,7 @@ $messages['ksh'] = array(
 $messages['ku-latn'] = array(
 	'categorytree' => 'Dara kategoriyan',
 	'categorytree-portlet' => 'Kategorî',
-	'categorytree-legend' => 'Dara kategoriyan şanî bide',
+	'categorytree-legend' => 'Dara kategoriyan nîşan bide',
 	'categorytree-category' => 'Kategorî',
 	'categorytree-go' => 'Darê nîşan bide',
 	'categorytree-mode-categories' => 'tenê kategoriyan',
@@ -4309,7 +4309,7 @@ $messages['ru'] = array(
 	'categorytree-retry' => 'Пожалуйста, подождите и попробуйте ещё раз.',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
@@ -4475,7 +4475,7 @@ $messages['sdc'] = array(
 	'categorytree-retry' => "Pa piazeri aisetta un'àttimu e poi torra a prubà.",
 );
 
-/** Samogitian (Žemaitėška)
+/** Samogitian (žemaitėška)
  * @author Hugo.arg
  */
 $messages['sgs'] = array(
