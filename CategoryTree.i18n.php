@@ -1841,7 +1841,7 @@ $messages['gu'] = array(
 	'categorytree-num-empty' => 'ખાલી',
 	'categorytree-load' => 'લાવો',
 	'categorytree-loading' => 'લાવે છે...',
-	'categorytree-nothing-found' => 'કઈ ન મળ્યું',
+	'categorytree-nothing-found' => 'કંઈ ન મળ્યું',
 	'categorytree-no-subcategories' => 'ઉપશ્રેણીઓ નથી',
 	'categorytree-no-parent-categories' => 'પૈતૃકશ્રેણીઓ નથી',
 	'categorytree-no-pages' => 'પાનાઓ કે ઉપશ્રેણીઓ નથી',
@@ -2789,7 +2789,7 @@ $messages['ku-latn'] = array(
 	'categorytree-load' => 'bar bike',
 	'categorytree-loading' => 'tê barkirin',
 	'categorytree-nothing-found' => 'Ti tişt nehate dîtin',
-	'categorytree-no-subcategories' => 'binekategorî tune',
+	'categorytree-no-subcategories' => 'binkategorî tune',
 	'categorytree-no-pages' => 'ne rûpelek an jî binkategoriyek',
 	'categorytree-not-found' => 'Kategoriya <i>$1</i> nehate dîtin',
 );
