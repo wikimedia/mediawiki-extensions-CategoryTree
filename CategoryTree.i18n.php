@@ -1132,6 +1132,7 @@ $messages['de-formal'] = array(
 
 /** Zazaki (Zazaki)
  * @author Erdemaslancan
+ * @author Mirzali
  * @author Xoser
  */
 $messages['diq'] = array(
@@ -1142,7 +1143,7 @@ $messages['diq'] = array(
 	'categorytree-header' => 'Qe vînayîşê structureyê darî, yew nameyê kategorîyî binuse.
 Qe hebitnayiş, komputer de gani JavaScriptê AJAXî bibi.
 Eka browseyê tu kihanî ya zi tu JavaScript qefilmayiyo, program nihebitiyeno.',
-	'categorytree-category' => 'Kategori:',
+	'categorytree-category' => 'Kategoriye:',
 	'categorytree-go' => 'Barfi',
 	'categorytree-parents' => 'Ser kategori',
 	'categorytree-mode-categories' => 'kategoriya tenya',
