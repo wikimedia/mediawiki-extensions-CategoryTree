@@ -4203,6 +4203,7 @@ $messages['rm'] = array(
 
 /** Romanian (română)
  * @author Cin
+ * @author Firilacroco
  * @author KlaudiuMihaila
  * @author Mihai
  * @author Minisarm
@@ -4231,7 +4232,7 @@ $messages['ro'] = array(
 	'categorytree-nothing-found' => 'fără rezultat',
 	'categorytree-no-subcategories' => 'nici o subcategorie',
 	'categorytree-no-parent-categories' => 'nici o categorie părinte',
-	'categorytree-no-pages' => 'nici o pagină sau subcategorie',
+	'categorytree-no-pages' => 'nicio pagină sau subcategorie',
 	'categorytree-not-found' => 'Categoria <i>$1</i> nu a fost găsită',
 	'categorytree-error' => 'Problemă la încărcarea datelor',
 	'categorytree-retry' => 'Vă rugăm să așteptați câteva momente și să încercați din nou.',
