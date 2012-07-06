@@ -1966,6 +1966,16 @@ $messages['hi'] = array(
 	'categorytree-retry' => 'कृपया थोडे समय के बाद फिरसे यत्न करें।',
 );
 
+/** Fiji Hindi (Latin script) (Fiji Hindi)
+ * @author Girmitya
+ */
+$messages['hif-latn'] = array(
+	'categorytree-category' => 'Vibhag:',
+	'categorytree-go' => 'Perr dekhao',
+	'categorytree-parents' => '
+Parents',
+);
+
 /** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author Ex13
