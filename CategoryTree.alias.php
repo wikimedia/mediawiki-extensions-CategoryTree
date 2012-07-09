@@ -393,7 +393,7 @@ $specialPageAliases['th'] = array(
 
 /** Tagalog (Tagalog) */
 $specialPageAliases['tl'] = array(
-	'CategoryTree' => array( 'Puno ng kaurian' ),
+	'CategoryTree' => array( 'Puno_ng_kaurian' ),
 );
 
 /** толышә зывон (толышә зывон) */
