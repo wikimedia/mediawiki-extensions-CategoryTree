@@ -36,7 +36,7 @@ $magicWords['br'] = array(
 	'categorytree' => array( 0, 'GwezennadurRummad' ),
 );
 
-/** Chechen (Нохчийн) */
+/** Chechen (нохчийн) */
 $magicWords['ce'] = array(
 	'categorytree' => array( 0, 'кадегардит', 'деревокатегорий', 'categorytree' ),
 );

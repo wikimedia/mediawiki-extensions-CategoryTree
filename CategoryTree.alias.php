@@ -291,7 +291,7 @@ $specialPageAliases['mt'] = array(
 	'CategoryTree' => array( 'SiġraKategorija' ),
 );
 
-/** Erzya (Эрзянь) */
+/** Erzya (эрзянь) */
 $specialPageAliases['myv'] = array(
 	'CategoryTree' => array( 'КатегорияньЧувто' ),
 );
@@ -416,7 +416,7 @@ $specialPageAliases['vec'] = array(
 	'CategoryTree' => array( 'ÀlbaroCategorie' ),
 );
 
-/** Veps (Vepsän kel’) */
+/** Veps (vepsän kel’) */
 $specialPageAliases['vep'] = array(
 	'CategoryTree' => array( 'KategorijoidenPu' ),
 );

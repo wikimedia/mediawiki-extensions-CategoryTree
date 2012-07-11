@@ -467,7 +467,7 @@ $messages['az'] = array(
 	'categorytree-retry' => 'Xahiş edirik bir az gözləyin və yenidən yoxlayın.',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Assele
  * @author Haqmar
  * @author ҒатаУлла
@@ -901,7 +901,7 @@ $messages['cdo'] = array(
 	'categorytree-not-found' => 'Mò̤ tō̤ diŏh lôi-biék <i>$1</i>',
 );
 
-/** Chechen (Нохчийн)
+/** Chechen (нохчийн)
  * @author Sasan700
  */
 $messages['ce'] = array(
@@ -1968,12 +1968,18 @@ $messages['hi'] = array(
 
 /** Fiji Hindi (Latin script) (Fiji Hindi)
  * @author Girmitya
+ * @author Thakurji
  */
 $messages['hif-latn'] = array(
+	'categorytree-portlet' => 'Vibhag',
 	'categorytree-category' => 'Vibhag:',
 	'categorytree-go' => 'Perr dekhao',
 	'categorytree-parents' => '
 Parents',
+	'categorytree-mode-all' => 'Sab panna',
+	'categorytree-collapse' => 'Chhota karo',
+	'categorytree-expand' => 'Barraa karo',
+	'categorytree-num-empty' => 'khaali',
 );
 
 /** Croatian (hrvatski)
@@ -2576,7 +2582,7 @@ $messages['kk-arab'] = array(
 	'categorytree-retry' => 'ٴبىر ٴسات كۇتە تۇرىپ قايتالاڭىز.',
 );
 
-/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬) */
+/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬) */
 $messages['kk-cyrl'] = array(
 	'categorytree' => 'Санат бұтақтары',
 	'categorytree-header' => 'Санат мазмұның бұтақтар түрде көру үшін атауын енгізіңіз.
@@ -2600,7 +2606,7 @@ $messages['kk-cyrl'] = array(
 	'categorytree-retry' => 'Бір сәт күте тұрып қайталаңыз.',
 );
 
-/** Kazakh (Latin script) (‪Qazaqşa (latın)‬) */
+/** Kazakh (Latin script) (‪qazaqşa (latın)‬) */
 $messages['kk-latn'] = array(
 	'categorytree' => 'Sanat butaqtarı',
 	'categorytree-header' => 'Sanat mazmunıñ butaqtar türde körw üşin atawın engiziñiz.
@@ -2728,7 +2734,7 @@ $messages['ko'] = array(
 	'categorytree-retry' => '잠시 후에 다시 시도해주세요.',
 );
 
-/** Karachay-Balkar (Къарачай-Малкъар)
+/** Karachay-Balkar (къарачай-малкъар)
  * @author Iltever
  */
 $messages['krc'] = array(
@@ -2924,7 +2930,7 @@ Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da
 	'categorytree-retry' => 'Waart w.e.g. een Ament a probéiert dann nach eng Kéier.',
 );
 
-/** Lezghian (Лезги)
+/** Lezghian (лезги)
  * @author Migraghvi
  * @author Namik
  * @author Soul Train
@@ -3454,7 +3460,7 @@ $messages['mt'] = array(
 	'categorytree-retry' => "Jekk jogħġbok stenna ftit u erġa' pprova.",
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Amdf
  * @author Botuzhaleny-sodamo
  */
@@ -3525,10 +3531,9 @@ $messages['nan'] = array(
 	'categorytree-no-subcategories' => 'bô ē-lūi-pia̍t',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Audun
  * @author Event
- * @author Jon Harald Søby
  */
 $messages['nb'] = array(
 	'categorytree' => 'Kategoritre',
@@ -3537,9 +3542,9 @@ $messages['nb'] = array(
 	'categorytree-desc' => 'AJAX-basert verktøy som viser [[Special:CategoryTree|kategoristrukturen]] til en wiki',
 	'categorytree-header' => 'Skriv inn et kategorinavn for å se dens innhold som en trestruktur. Merk at dette trenger en avansert type Javascript-funksjonalitet kjent som AJAX. Dersom du har en gammel nettleser eller har slått av JavaScript vil ikke dette fungere.',
 	'categorytree-category' => 'Kategori:',
-	'categorytree-go' => 'Vis',
+	'categorytree-go' => 'Vis tre',
 	'categorytree-parents' => 'Overkategorier',
-	'categorytree-mode-categories' => 'bare kategorier',
+	'categorytree-mode-categories' => 'kun kategorier',
 	'categorytree-mode-pages' => 'sider utenom bilder',
 	'categorytree-mode-all' => 'alle sider',
 	'categorytree-collapse' => 'skjul',
@@ -3551,10 +3556,10 @@ $messages['nb'] = array(
 	'categorytree-num-empty' => 'tom',
 	'categorytree-load' => 'last',
 	'categorytree-loading' => 'laster...',
-	'categorytree-nothing-found' => 'Ingen resultater funnet.',
-	'categorytree-no-subcategories' => 'Ingen underkategorier.',
+	'categorytree-nothing-found' => 'ingenting funnet',
+	'categorytree-no-subcategories' => 'ingen underkategorier',
 	'categorytree-no-parent-categories' => 'ingen foreldrekategorier',
-	'categorytree-no-pages' => 'Ingen artikler eller underkategorier.',
+	'categorytree-no-pages' => 'ingen sider eller underkategorier',
 	'categorytree-not-found' => 'Kategorien <i>$1</i> ikke funnet',
 	'categorytree-error' => 'problem under datalasting.',
 	'categorytree-retry' => 'Vent en stund og prøv igjen.',
@@ -5285,7 +5290,7 @@ $messages['tt-cyrl'] = array(
 	'categorytree-retry' => 'Зинһар бераз көтеп торыгыз һәм тагын бер кат йөкләүне башкарып карагыз.',
 );
 
-/** Tuvinian (Тыва дыл)
+/** Tuvinian (тыва дыл)
  * @author Sborsody
  */
 $messages['tyv'] = array(
@@ -5350,7 +5355,7 @@ $messages['ur'] = array(
 	'categorytree-no-subcategories' => 'کوئی ذیلی زمرہ نہیں',
 );
 
-/** Uzbek (Oʻzbekcha)
+/** Uzbek (oʻzbekcha)
  * @author Abdulla
  */
 $messages['uz'] = array(
@@ -5387,7 +5392,7 @@ $messages['vec'] = array(
 	'categorytree-retry' => "Speta n'atimo e dopo próa de novo.",
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
