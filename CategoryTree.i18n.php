@@ -136,6 +136,23 @@ $messages['egl'] = array(
 	'categorytree-num-files' => '$1 F',
 );
 
+/** Ṫuroyo (Ṫuroyo)
+ * @author Ariyo
+ */
+$messages['tru'] = array(
+	'categorytree' => 'Dawmo daSedre',
+	'categorytree-portlet' => 'Sedre',
+	'categorytree-legend' => 'Maḥway li i Dawmo daSedre',
+	'categorytree-category' => 'Sedro:',
+	'categorytree-go' => 'Maḥway li iDawmo',
+	'categorytree-mode-categories' => 'bes aSedre',
+	'categorytree-num-categories' => '$1 S',
+	'categorytree-num-pages' => '$1 F',
+	'categorytree-num-files' => '$1 M',
+	'categorytree-num-empty' => 'xalyo',
+	'categorytree-not-found' => 'uSedro "$1" lo komaḥwe.',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author Naudefj
@@ -1451,6 +1468,7 @@ $messages['fa'] = array(
 /** Finnish (suomi)
  * @author Agony
  * @author Crt
+ * @author Linnea
  * @author Nedergard
  * @author Nike
  * @author Str4nd
@@ -1465,7 +1483,7 @@ $messages['fi'] = array(
 	'categorytree-go' => 'Näytä puu',
 	'categorytree-parents' => 'Yläluokat',
 	'categorytree-mode-categories' => 'vain luokat',
-	'categorytree-mode-pages' => 'kaikki sivut kuvia lukuun ottamatta',
+	'categorytree-mode-pages' => 'kaikki sivut tiedostoja lukuun ottamatta',
 	'categorytree-mode-all' => 'kaikki sivut',
 	'categorytree-collapse' => 'piilota',
 	'categorytree-expand' => 'näytä',
@@ -4359,9 +4377,13 @@ $messages['rue'] = array(
 
 /** Sanskrit (संस्कृतम्)
  * @author Ansumang
+ * @author Shubha
  * @author Vibhijain
  */
 $messages['sa'] = array(
+	'categorytree' => 'वर्गवृक्षः',
+	'categorytree-portlet' => 'वर्गाः',
+	'categorytree-legend' => 'वर्गवृक्षः दर्श्यताम्',
 	'categorytree-category' => 'वर्ग:',
 	'categorytree-mode-all' => 'सर्बे पृष्ठ',
 	'categorytree-num-categories' => '$1 C',
