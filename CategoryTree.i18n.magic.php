@@ -86,6 +86,11 @@ $magicWords['ja'] = array(
 	'categorytree' => array( 0, 'カテゴリツリー' ),
 );
 
+/** Georgian (ქართული) */
+$magicWords['ka'] = array(
+	'categorytree' => array( 0, 'კატეგორიის_ხე' ),
+);
+
 /** Korean (한국어) */
 $magicWords['ko'] = array(
 	'categorytree' => array( 0, '분류트리' ),
