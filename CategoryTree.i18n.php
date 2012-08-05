@@ -1985,18 +1985,24 @@ $messages['hi'] = array(
 );
 
 /** Fiji Hindi (Latin script) (Fiji Hindi)
+ * @author Brijlal
  * @author Girmitya
  * @author Thakurji
  */
 $messages['hif-latn'] = array(
 	'categorytree-portlet' => 'Vibhag',
+	'categorytree-legend' => 'Category tree ke dekhao',
 	'categorytree-category' => 'Vibhag:',
 	'categorytree-go' => 'Perr dekhao',
 	'categorytree-parents' => '
 Parents',
+	'categorytree-mode-categories' => 'Khaali category',
 	'categorytree-mode-all' => 'Sab panna',
 	'categorytree-collapse' => 'Chhota karo',
 	'categorytree-expand' => 'Barraa karo',
+	'categorytree-member-counts' => 'Isme {{PLURAL:$1|1 subcategory|$1 subcategories}}, {{PLURAL:$2|1 panna|$2 panna}}, and {{PLURAL:$3|1 file|$3 files}} hae.',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
 	'categorytree-num-empty' => 'khaali',
 );
 
