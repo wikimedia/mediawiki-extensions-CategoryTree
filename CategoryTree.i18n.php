@@ -1735,6 +1735,17 @@ Má tá do bhrabhsálaí róshean, nó má dhíchumasaigh tú JavaScript, ní oi
 	'categorytree-retry' => 'Fan nóiméad, le do thoil, roimh triail eile a bhaint as.',
 );
 
+/** Scottish Gaelic (Gàidhlig)
+ * @author Akerbeltz
+ */
+$messages['gd'] = array(
+	'categorytree-go' => "Seall a' chraobh",
+	'categorytree-parents' => 'Pàrantan',
+	'categorytree-mode-all' => 'a h-uile duilleag',
+	'categorytree-collapse' => 'co-theannaich',
+	'categorytree-expand' => 'leudaich',
+);
+
 /** Galician (galego)
  * @author Alma
  * @author Toliño
@@ -2872,6 +2883,10 @@ $messages['ky'] = array(
 	'categorytree-nothing-found' => 'эч нерсе табылган жок',
 	'categorytree-no-subcategories' => 'ички категориялар табылган жок',
 	'categorytree-no-parent-categories' => 'Башкы категориялар табылган жок',
+	'categorytree-no-pages' => 'макалалар же баш ийген категориялар жок',
+	'categorytree-not-found' => '<i>$1</i> Категориясы табылган жок',
+	'categorytree-error' => 'Маалымат жүктөөдө ката кетти',
+	'categorytree-retry' => 'Кичине күтүп туруп, жаңы аракет кылыңыз',
 );
 
 /** Latin (Latina)
@@ -4107,7 +4122,7 @@ $messages['ps'] = array(
 	'categorytree-num-files' => '$1 د',
 	'categorytree-num-empty' => 'تش',
 	'categorytree-load' => 'برسېرول',
-	'categorytree-loading' => 'د برسېرېدلو په حال کې...',
+	'categorytree-loading' => 'برسېرېدنې کې دی...',
 	'categorytree-nothing-found' => 'هېڅ هم و نه موندل شو',
 	'categorytree-no-subcategories' => 'هېڅ وړې-وېشنيزې نشته',
 	'categorytree-no-pages' => 'هېڅ مخ يا وړه-وېشنيزه نشته',
@@ -4370,6 +4385,10 @@ $messages['rue'] = array(
 	'categorytree-collapse' => 'згорнути',
 	'categorytree-expand' => 'розгорнути',
 	'categorytree-member-counts' => 'обсягує {{PLURAL:$1|1 підкатеґорію|$1 підкатеґорії|$1 підкатеґорій}}, {{PLURAL:$2|1 сторінку|$2 сторінкы|$2 сторінок}} і {{PLURAL:$3|1 файл|$3 файлы|$3 файлів}}',
+	'categorytree-num-categories' => '$1 К',
+	'categorytree-num-pages' => '$1 С',
+	'categorytree-num-files' => '$1 Ф',
+	'categorytree-num-empty' => 'порожня',
 	'categorytree-load' => 'начітати',
 	'categorytree-loading' => 'начітавать ся...',
 	'categorytree-nothing-found' => 'ніч не найджене',
