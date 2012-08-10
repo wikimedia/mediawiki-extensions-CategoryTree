@@ -2501,6 +2501,7 @@ $messages['jut'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author NoiX180
  * @author Pras
  */
 $messages['jv'] = array(
@@ -2520,6 +2521,7 @@ Menawa panjenengan panjlajah wèbé kalebu vèrsi lawa, utawa fitur JavaScript d
 	'categorytree-collapse' => 'ciyutna',
 	'categorytree-expand' => 'ambakna',
 	'categorytree-member-counts' => 'ngandhut {{PLURAL:$1|1 subkategori|$1 subkategori}}, {{PLURAL:$2|1 kaca|$2 kaca}}, lan {{PLURAL:$3|1 berkas|$3 berkas}}',
+	'categorytree-num-empty' => 'suwung',
 	'categorytree-load' => 'unggah',
 	'categorytree-loading' => 'ngunggahaké…',
 	'categorytree-nothing-found' => 'ora ditemokaké',
@@ -2917,6 +2919,7 @@ $messages['la'] = array(
 );
 
 /** Ladino (Ladino)
+ * @author Jewbask
  * @author Runningfridgesrule
  * @author Universal Life
  */
@@ -2928,9 +2931,21 @@ $messages['lad'] = array(
 	'categorytree-go' => 'Amostrar el árvole',
 	'categorytree-parents' => 'Parientes',
 	'categorytree-mode-categories' => 'sólo katēggorías',
+	'categorytree-mode-pages' => 'ojas, egzepto dossias',
 	'categorytree-mode-all' => 'todas las hojas',
+	'categorytree-collapse' => 'eskonder',
+	'categorytree-expand' => 'amostrar',
+	'categorytree-member-counts' => 'kontiene {{PLURAL:$1|1 basho-kateggoria|$1 basho-kateggorias}}, {{PLURAL:$2|1 oja|$2 ojas}}, i {{PLURAL:$3|1 dossia|$3 dossias}}',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 O',
+	'categorytree-num-files' => '$1 D',
+	'categorytree-num-empty' => 'vazia',
 	'categorytree-load' => 'cargar',
 	'categorytree-loading' => 'cargando...',
+	'categorytree-nothing-found' => 'Eskuza, no ankontramos nada',
+	'categorytree-no-subcategories' => 'si basho-kateggorias',
+	'categorytree-no-parent-categories' => 'sin kateggorias de enriva',
+	'categorytree-no-pages' => 'sin ojas ni basho-kateggorias',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -3488,10 +3503,14 @@ $messages['mt'] = array(
 	'categorytree-collapse' => 'niżżel',
 	'categorytree-expand' => 'espandi',
 	'categorytree-member-counts' => 'għandha {{PLURAL:$1|sottokategorija waħda|$1 sottokategoriji}}, {{PLURAL:$2|paġna waħda|$2 paġna}}, u {{PLURAL:$3|1 fajl|$3 fajls}}',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
 	'categorytree-num-empty' => 'vojta',
 	'categorytree-load' => "tella'",
 	'categorytree-loading' => 'tiela',
 	'categorytree-nothing-found' => 'ma nstab xejn',
+	'categorytree-no-subcategories' => 'l-ebda sottokategorija',
 	'categorytree-no-parent-categories' => 'l-ebda kategorija parenti',
 	'categorytree-no-pages' => 'l-ebda paġna jew sottokategorija',
 	'categorytree-not-found' => 'Il-kategorija <i>$1</i> ma nstabitx',
@@ -4954,6 +4973,7 @@ $messages['sw'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Karthi.dr
  * @author Shanmugamp7
  * @author Surya Prakash.S.A.
  * @author TRYPPN
@@ -4971,6 +4991,7 @@ $messages['ta'] = array(
 	'categorytree-mode-all' => 'எல்லா பக்கங்களும்',
 	'categorytree-collapse' => 'சுருக்கு',
 	'categorytree-expand' => 'விரிவாக்கு',
+	'categorytree-num-categories' => '$1 பகு',
 	'categorytree-num-empty' => 'காலி',
 	'categorytree-load' => 'ஏற்று',
 	'categorytree-loading' => 'ஏற்றப்படுகிறது...',
