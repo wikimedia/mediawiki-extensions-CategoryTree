@@ -136,7 +136,7 @@ $messages['egl'] = array(
 	'categorytree-num-files' => '$1 F',
 );
 
-/** Ṫuroyo (Ṫuroyo)
+/** Turoyo (Ṫuroyo)
  * @author Ariyo
  */
 $messages['tru'] = array(
@@ -487,17 +487,18 @@ $messages['az'] = array(
 /** Bashkir (башҡортса)
  * @author Assele
  * @author Haqmar
+ * @author Sagan
  * @author ҒатаУлла
  */
 $messages['ba'] = array(
-	'categorytree' => 'Төркөмдәр ағасы',
-	'categorytree-portlet' => 'Төркөмдәр',
-	'categorytree-legend' => 'Төркөмдәр ағасын күрһәтергә',
+	'categorytree' => 'Категориялар картаһы',
+	'categorytree-portlet' => 'Категориялар',
+	'categorytree-legend' => 'Категориялар ағасын күрһәтергә',
 	'categorytree-desc' => '[[Special:CategoryTree|Категориялар төҙөлөшө]] буйлап динамик йөрөү мөмкинлеге',
-	'categorytree-header' => 'Төркөмдең исемен керетегеҙ, һәм ул ағас төҙөлөшөндә күрһәтеләсәк.
+	'categorytree-header' => 'Категорияның исемен керетегеҙ, һәм ул ағас төҙөлөшөндә күрһәтеләсәк.
 Иғтибар итегеҙ — был JavaScript-тың AJAX мөмкинлеген талап итә.
 Әгәр һеҙҙә браузерҙың бик иҫке өлгөһө булһа, йәки JavaScript һүндерелгән булһа,  ул эшләмәйәсәк.',
-	'categorytree-category' => 'Төркөм:',
+	'categorytree-category' => 'Категория:',
 	'categorytree-go' => 'Тейәү',
 	'categorytree-parents' => 'Төп категориялар',
 	'categorytree-mode-categories' => 'категориялар ғына',
@@ -2738,6 +2739,7 @@ $messages['kn'] = array(
  * @author Klutzy
  * @author Kwj2772
  * @author ToePeu
+ * @author 아라
  */
 $messages['ko'] = array(
 	'categorytree' => '분류 트리',
@@ -2766,7 +2768,7 @@ $messages['ko'] = array(
 	'categorytree-no-subcategories' => '하위 분류 없음',
 	'categorytree-no-parent-categories' => '상위 분류가 없습니다.',
 	'categorytree-no-pages' => '문서/하위 분류 없음',
-	'categorytree-not-found' => '‘$1’ 분류가 없습니다',
+	'categorytree-not-found' => '$1 분류가 없습니다',
 	'categorytree-error' => '값을 불러오는 중 오류 발생',
 	'categorytree-retry' => '잠시 후에 다시 시도해주세요.',
 );
@@ -2795,7 +2797,7 @@ $messages['ks-arab'] = array(
  */
 $messages['ksh'] = array(
 	'categorytree' => 'Saachjruppe als Boum',
-	'categorytree-portlet' => 'Saachjruppe',
+	'categorytree-portlet' => 'Saachjroppe',
 	'categorytree-legend' => 'Zeich de Saachjruppe als ene Boum',
 	'categorytree-desc' => 'Jangk dorsch der [[Special:CategoryTree|Saachjruppe-Boum]].',
 	'categorytree-header' => "'''Opjepaßß:'''&nbsp;<small>Dat hee brurr_en JavaSkripp_Aadëijl, dä AJAX häijß. Wänn_De enne besöndoß aale Brauser häß, oddo wänn_De JavaSkripp affjeschalldt häß, dann dëijd_et nit.</small> Jivv_enne Saachjroppe_Name enn, dann krėßß_De fun dä Saachjropp dä iere Ennhalld_alls_enne Boum aanjezëijsch.",
@@ -4428,14 +4430,32 @@ $messages['sa'] = array(
 	'categorytree' => 'वर्गवृक्षः',
 	'categorytree-portlet' => 'वर्गाः',
 	'categorytree-legend' => 'वर्गवृक्षः दर्श्यताम्',
+	'categorytree-desc' => '[[Special:CategoryTree|category structure]] एतत् सक्रियं सञ्चालयतु',
+	'categorytree-header' => 'आधेयं वृक्षरूपेण द्रष्टुं वर्गस्य नाम योजयतु ।
+एतन्निमित्तं AJAX इति निर्दिष्टा सक्रिया परिष्कृता जावालिपिः अपेक्षिता ।
+यदि जालदर्शिका प्राचीना, जावालिपिः निष्क्रिया तर्हि एतत् कार्यं न करोति ।',
 	'categorytree-category' => 'वर्ग:',
+	'categorytree-go' => 'वृक्षं दर्शयतु',
+	'categorytree-parents' => 'पोषकाः',
+	'categorytree-mode-categories' => 'वर्गमात्रम्',
+	'categorytree-mode-pages' => 'सञ्चिकारहितानि पृष्ठानि',
 	'categorytree-mode-all' => 'सर्बे पृष्ठ',
+	'categorytree-collapse' => 'सङ्कोच्यताम्',
+	'categorytree-expand' => 'विस्तीर्यताम्',
+	'categorytree-member-counts' => 'अस्मिन् {{PLURAL:$1| 1 उपवर्गः | $1  उपवर्गाः}},  {{PLURAL:$2| 1 पृष्ठम्| $2  पृष्ठानि}}, {{PLURAL:$3| 1 सञ्चिका | $3  सञ्चिकाः}} च विद्यन्ते ।',
 	'categorytree-num-categories' => '$1 C',
 	'categorytree-num-pages' => '$1 P',
 	'categorytree-num-files' => '$1 F',
 	'categorytree-num-empty' => 'शुन्य',
 	'categorytree-load' => 'लोड',
 	'categorytree-loading' => 'भारारोपण',
+	'categorytree-nothing-found' => 'न किञ्चित् प्राप्तम्',
+	'categorytree-no-subcategories' => 'उपवर्गाः न विद्यन्ते',
+	'categorytree-no-parent-categories' => 'पितृवर्गाः न विद्यन्ते',
+	'categorytree-no-pages' => 'पृष्ठानि उपवर्गाः वा न विद्यन्ते',
+	'categorytree-not-found' => '<i>$1</i> वर्गः न प्राप्तः',
+	'categorytree-error' => 'विषयावतारणे समस्या ।',
+	'categorytree-retry' => 'कृपया क्षणानन्तरं पुनः प्रयतताम् ।',
 );
 
 /** Sakha (саха тыла)
