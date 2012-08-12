@@ -2522,6 +2522,9 @@ Menawa panjenengan panjlajah wèbé kalebu vèrsi lawa, utawa fitur JavaScript d
 	'categorytree-collapse' => 'ciyutna',
 	'categorytree-expand' => 'ambakna',
 	'categorytree-member-counts' => 'ngandhut {{PLURAL:$1|1 subkategori|$1 subkategori}}, {{PLURAL:$2|1 kaca|$2 kaca}}, lan {{PLURAL:$3|1 berkas|$3 berkas}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
 	'categorytree-num-empty' => 'suwung',
 	'categorytree-load' => 'unggah',
 	'categorytree-loading' => 'ngunggahaké…',
@@ -4964,6 +4967,7 @@ Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript
 /** Swahili (Kiswahili)
  * @author Lloffiwr
  * @author Muddyb Blast Producer
+ * @author Stephenwanjau
  */
 $messages['sw'] = array(
 	'categorytree' => 'Mfumo wa jamii',
@@ -4980,6 +4984,7 @@ $messages['sw'] = array(
 	'categorytree-collapse' => 'kunja',
 	'categorytree-expand' => 'kutanua',
 	'categorytree-member-counts' => 'Imo {{PLURAL:$1|kijamii 1|vijamii $1}}, {{PLURAL:$2|ukurasa 1|kurasa $2}}, na {{PLURAL:$3|faili 1|mafaili $3}}',
+	'categorytree-num-files' => '$1 F',
 	'categorytree-num-empty' => 'tupu',
 	'categorytree-load' => 'kupakia',
 	'categorytree-loading' => 'inapakizwa...',
@@ -4998,20 +5003,27 @@ $messages['sw'] = array(
  * @author Surya Prakash.S.A.
  * @author TRYPPN
  * @author Trengarasu
+ * @author மதனாஹரன்
  */
 $messages['ta'] = array(
 	'categorytree' => 'பகுப்பு மரம்',
 	'categorytree-portlet' => 'பகுப்புகள்',
 	'categorytree-legend' => 'பகுப்பு மரத்தைக் காட்டு',
+	'categorytree-header' => 'பகுப்பின் உள்ளடக்கங்களை ஒரு மர வரிப்படமாகப் பார்க்கப் பகுப்பின் பெயரை உள்ளிடவும்.
+இதற்கு ஏசாக்சு என அறியப்படும் மேம்பட்ட யாவாக்கிறிட்டு வசதி தேவை என்பதை நினைவில் கொள்ளவும்.
+நீங்கள் மிகவும் பழைய மேலோடியொன்றைக் கொண்டிருந்தால் அல்லது யாவாக்கிறிட்டை முடக்கியிருந்தால், இது வேலை செய்யாது.',
 	'categorytree-category' => 'பகுப்பு:',
 	'categorytree-go' => 'மரத்தைக் காட்டு',
 	'categorytree-parents' => 'மூலங்கள்',
-	'categorytree-mode-categories' => 'பகுப்புக்கள் மட்டும்',
+	'categorytree-mode-categories' => 'பகுப்புகள் மட்டும்',
 	'categorytree-mode-pages' => 'பக்கங்கள் மட்டும், கோப்புக்கள் தவிர',
 	'categorytree-mode-all' => 'எல்லா பக்கங்களும்',
 	'categorytree-collapse' => 'சுருக்கு',
 	'categorytree-expand' => 'விரிவாக்கு',
+	'categorytree-member-counts' => '{{PLURAL:$1|1 உபபகுப்பையும்|$1 உபபகுப்புகளையும்}} {{PLURAL:$2|1 பக்கத்தையும்|$2 பக்கங்களையும்}} {{PLURAL:$3|1 கோப்பையும்|$3 கோப்புகளையும்}} கொண்டுள்ளது',
 	'categorytree-num-categories' => '$1 பகு',
+	'categorytree-num-pages' => '$1 பக்.',
+	'categorytree-num-files' => '$1 கோப்.',
 	'categorytree-num-empty' => 'காலி',
 	'categorytree-load' => 'ஏற்று',
 	'categorytree-loading' => 'ஏற்றப்படுகிறது...',
