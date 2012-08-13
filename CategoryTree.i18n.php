@@ -3497,7 +3497,9 @@ Jika anda menggunakan pelayar web yang sudah ketinggalan, atau mematikan JavaScr
  */
 $messages['mt'] = array(
 	'categorytree' => 'Siġra tal-kategoriji',
+	'categorytree-portlet' => 'Kategoriji',
 	'categorytree-legend' => 'Uri s-siġra tal-kategoriji',
+	'categorytree-desc' => "Innaviga b'mod dinamiku fl-[[Special:CategoryTree|istruttura tal-kategorija]]",
 	'categorytree-header' => "Daħħal isem ta' kategorija biex tara l-kontenuti taħt struttura ta' siġra. Kun af li din għandha bżonn funzjonalità avvanzata ta' JavaScript magħrufa bħala AJAX. Jekk tuża' browser antik ħafna, jew għandek il-JavaScript diżattivat, din ma tistax taħdem.",
 	'categorytree-category' => 'Kategorija:',
 	'categorytree-go' => 'Uri s-siġra',
