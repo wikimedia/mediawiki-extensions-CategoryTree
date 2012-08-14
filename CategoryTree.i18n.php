@@ -4967,6 +4967,7 @@ Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript
 );
 
 /** Swahili (Kiswahili)
+ * @author Kwisha
  * @author Lloffiwr
  * @author Muddyb Blast Producer
  * @author Stephenwanjau
@@ -4986,6 +4987,8 @@ $messages['sw'] = array(
 	'categorytree-collapse' => 'kunja',
 	'categorytree-expand' => 'kutanua',
 	'categorytree-member-counts' => 'Imo {{PLURAL:$1|kijamii 1|vijamii $1}}, {{PLURAL:$2|ukurasa 1|kurasa $2}}, na {{PLURAL:$3|faili 1|mafaili $3}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
 	'categorytree-num-files' => '$1 F',
 	'categorytree-num-empty' => 'tupu',
 	'categorytree-load' => 'kupakia',
