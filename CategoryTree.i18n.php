@@ -1707,6 +1707,7 @@ $messages['fy'] = array(
  * @author Moilleadóir
  * @author Spacebirdy
  * @author Xosé
+ * @author පසිඳු කාවින්ද
  */
 $messages['ga'] = array(
 	'categorytree' => 'Crann na gCatagóirí',
@@ -1725,6 +1726,9 @@ Má tá do bhrabhsálaí róshean, nó má dhíchumasaigh tú JavaScript, ní oi
 	'categorytree-collapse' => 'dún',
 	'categorytree-expand' => 'oscail',
 	'categorytree-member-counts' => 'tá {{PLURAL:$1|fo-chatagóir amháin|$1 fo-chatagóirí}}, {{PLURAL:$2|leathanach amháin|$2 leathanaigh}}, agus {{PLURAL:$3|comhad amháin|$3 comhaid}} laistigh',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
 	'categorytree-load' => 'lódáil',
 	'categorytree-loading' => 'ag lódáil…',
 	'categorytree-nothing-found' => 'Ní bhfuarthas dada',
