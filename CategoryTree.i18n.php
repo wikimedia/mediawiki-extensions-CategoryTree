@@ -5449,6 +5449,7 @@ $messages['uk'] = array(
 
 /** Urdu (اردو)
  * @author Istabani
+ * @author පසිඳු කාවින්ද
  */
 $messages['ur'] = array(
 	'categorytree' => 'شجر ِزمرہ',
@@ -5457,11 +5458,22 @@ $messages['ur'] = array(
 	'categorytree-category' => 'زمرہ',
 	'categorytree-go' => 'بہ ترتیب شجر',
 	'categorytree-parents' => 'والدین',
+	'categorytree-mode-categories' => 'صرف زمرہ جات',
+	'categorytree-mode-pages' => 'فائلوں کے علاوہ صفحات',
 	'categorytree-mode-all' => 'تمام صفحات',
+	'categorytree-collapse' => 'خاتمے',
+	'categorytree-expand' => 'وسیع کریں',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'خالی',
 	'categorytree-load' => 'اثقال',
 	'categorytree-loading' => 'دوران اثقال',
 	'categorytree-nothing-found' => 'کچھ دستیاب نہیں',
 	'categorytree-no-subcategories' => 'کوئی ذیلی زمرہ نہیں',
+	'categorytree-no-parent-categories' => 'کوئی والدین کے زمرہ جات',
+	'categorytree-error' => 'مسئلہ ڈیٹا لوڈ ہو رہا ہے.',
+	'categorytree-retry' => 'براہ مہربانی ایک لمحے کا انتظار کریں اور دوبارہ کوشش کریں.',
 );
 
 /** Uzbek (oʻzbekcha)
