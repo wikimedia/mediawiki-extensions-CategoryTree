@@ -947,6 +947,7 @@ $messages['ceb'] = array(
 
 /** Sorani Kurdish (کوردی)
  * @author Asoxor
+ * @author Muhammed taha
  */
 $messages['ckb'] = array(
 	'categorytree' => 'درەختی پۆل',
@@ -958,14 +959,20 @@ $messages['ckb'] = array(
 	'categorytree-category' => 'پۆل:',
 	'categorytree-go' => 'دەرختەکە نیشانبدە',
 	'categorytree-mode-categories' => 'تەنیا پۆلەکان',
+	'categorytree-mode-pages' => 'لاپەڕەکان جگە لەپەڕەکان',
 	'categorytree-mode-all' => 'گشت پەڕەکان',
 	'categorytree-collapse' => 'کۆیبکەوە',
 	'categorytree-expand' => 'بڵاویبکەوە',
 	'categorytree-member-counts' => '{{PLURAL:$1|یەک ژێرپۆل|$1 ژێرپۆل}}، {{PLURAL:$2|یەک پەڕە|$2 پەڕە}}، and {{PLURAL:$3|یەک پەڕگە|$3 پەڕگە}} لەبەردەگرێتەوە',
+	'categorytree-num-categories' => '$1 پۆل',
+	'categorytree-num-pages' => '$1 پەڕە',
+	'categorytree-num-files' => '$1 پەڕگە',
+	'categorytree-num-empty' => 'هیچی تێدانیە',
 	'categorytree-load' => 'باربکە',
 	'categorytree-loading' => 'بارکردن...',
 	'categorytree-nothing-found' => 'ھیچ نەدۆزرایەوە',
 	'categorytree-no-subcategories' => 'ھیچ ژێرھاوپۆلێک نییە',
+	'categorytree-no-pages' => 'پەڕە و ژێر پۆل نییە',
 	'categorytree-not-found' => 'پۆلی <i>$1</i> نەدۆزرایەوە',
 	'categorytree-error' => 'کێشە لە بارکردنی داتا.',
 	'categorytree-retry' => 'تکایە دەمێک ڕاوەستە و دیسان تاقیبکەوە.',
