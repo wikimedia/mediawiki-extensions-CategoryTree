@@ -1118,7 +1118,7 @@ $messages['de'] = array(
 	'categorytree-header' => 'Zeigt für die angegebene Kategorie die Unterkategorien in einer Baumstruktur.
 Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert möglicherweise nicht, sofern JavaScript ausgeschaltet ist oder ein sehr alter Browser verwendet wird.',
 	'categorytree-category' => 'Kategorie:',
-	'categorytree-go' => 'Laden',
+	'categorytree-go' => 'Kategorienbaum anzeigen',
 	'categorytree-parents' => 'Oberkategorien',
 	'categorytree-mode-categories' => 'nur Kategorien',
 	'categorytree-mode-pages' => 'Seiten außer Dateien',
@@ -1132,12 +1132,12 @@ Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert m�
 	'categorytree-num-empty' => 'leer',
 	'categorytree-load' => 'laden',
 	'categorytree-loading' => 'lade …',
-	'categorytree-nothing-found' => 'Nichts gefunden',
+	'categorytree-nothing-found' => 'Es wurde nichts gefunden.',
 	'categorytree-no-subcategories' => 'Keine Unterkategorien',
 	'categorytree-no-parent-categories' => 'Keine Oberkategorien',
 	'categorytree-no-pages' => 'Keine Seite oder Unterkategorien',
-	'categorytree-not-found' => 'Kategorie „$1“ nicht gefunden',
-	'categorytree-error' => 'Probleme beim Laden der Daten.',
+	'categorytree-not-found' => 'Kategorie „$1“ wurde nicht nicht gefunden',
+	'categorytree-error' => 'Beim Laden der Daten ist ein Problem aufgetreten.',
 	'categorytree-retry' => 'Bitte warte einen Moment und versuche es dann erneut.',
 );
 
