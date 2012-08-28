@@ -297,7 +297,7 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param $depthnull
+	 * @param $depth int|null
 	 * @return mixed
 	 */
 	function getOptionsAsJsStructure( $depth = null ) {
@@ -435,9 +435,9 @@ class CategoryTree {
 		if ( !$allowMissing && !$title->getArticleID() ) {
 			$html .= Html::openElement( 'span', array( 'class' => 'CategoryTreeNotice' ) );
 			if ( $parser ) {
-				$html .= $parser->recursiveTagParse( wfMsgNoTrans( 'categorytree-not-found', $category ) );
+				$html .= $parser->recursiveTagParse( wfMessage( 'categorytree-not-found', $category )->plain() );
 			} else {
-				$html .= wfMsgExt( 'categorytree-not-found', 'parseinline', htmlspecialchars( $category ) );
+				$html .= wfMessage( 'categorytree-not-found', $category )->parse();
 			}
 			$html .= Html::closeElement( 'span' );
 			}
@@ -600,7 +600,9 @@ class CategoryTree {
 
 			$wikiLink = $special->getLocalURL( 'target=' . $t->getPartialURL() . '&' . $this->getOptionsAsUrlParameters() );
 
-			if ( $s !== '' ) $s .= wfMsgExt( 'pipe-separator' , 'escapenoentities' );
+			if ( $s !== '' ) {
+				$s .= wfMessage( 'pipe-separator' )->escaped();
+			}
 
 			$s .= Xml::openElement( 'span', array( 'class' => 'CategoryTreeItem' ) );
 			$s .= Xml::openElement( 'a', array( 'class' => 'CategoryTreeLabel', 'href' => $wikiLink ) ) . $label . Xml::closeElement( 'a' );
@@ -732,7 +734,7 @@ class CategoryTree {
 				}
 			}
 			if ( $count === 0 ) {
-				$bullet = wfMsgNoTrans( 'categorytree-empty-bullet' ) . ' ';
+				$bullet = wfMessage( 'categorytree-empty-bullet' )->plain() . ' ';
 				$attr['class'] = 'CategoryTreeEmptyBullet';
 			} else {
 				$linkattr = array( );
@@ -746,14 +748,14 @@ class CategoryTree {
 
 				if ( $children == 0 || $loadchildren ) {
 					$tag = 'span';
-					$txt = wfMsgNoTrans( 'categorytree-expand-bullet' );
+					$txt = wfMessage( 'categorytree-expand-bullet' )->plain();
 					# Don't load this message for ajax requests, so that we don't have to initialise $wgLang
-					$linkattr[ 'title' ] = $this->mIsAjaxRequest ? '##LOAD##' : wfMsgNoTrans( 'categorytree-expand' );
+					$linkattr[ 'title' ] = $this->mIsAjaxRequest ? '##LOAD##' : wfMessage( 'categorytree-expand' )->plain();
 					$linkattr[ 'data-ct-state' ] = 'collapsed';
 				} else {
 					$tag = 'span';
-					$txt = wfMsgNoTrans( 'categorytree-collapse-bullet' );
-					$linkattr[ 'title' ] = wfMsgNoTrans( 'categorytree-collapse' );
+					$txt = wfMessage( 'categorytree-collapse-bullet' )->plain();
+					$linkattr[ 'title' ] = wfMessage( 'categorytree-collapse' )->plain();
 					$linkattr[ 'data-ct-loaded' ] = true;
 					$linkattr[ 'data-ct-state' ] = 'expanded';
 				}
@@ -764,7 +766,7 @@ class CategoryTree {
 				$bullet = Xml::openElement( $tag, $linkattr ) . $txt . Xml::closeElement( $tag ) . ' ';
 			}
 		} else {
-			$bullet = wfMsgNoTrans( 'categorytree-page-bullet' );
+			$bullet = wfMessage( 'categorytree-page-bullet' )->plain();
 		}
 		$s .= Xml::tags( 'span', $attr, $bullet ) . ' ';
 
@@ -775,7 +777,8 @@ class CategoryTree {
 
 			global $wgContLang, $wgLang;
 			$attr = array(
-				'title' => wfMsgExt( 'categorytree-member-counts', 'parsemag', $subcatCount, $pages , $fileCount, $allCount, $count ),
+				'title' => wfMessage( 'categorytree-member-counts' )
+					->numParams( $subcatCount, $pages , $fileCount, $allCount, $count )->text(),
 				'dir' => $wgLang->getDir() # numbers and commas get messed up in a mixed dir env
 			);
 
@@ -784,13 +787,15 @@ class CategoryTree {
 			# Create a list of category members with only non-zero member counts
 			$memberNums = array();
 			if ( $subcatCount ) {
-				$memberNums[] = wfMessage( 'categorytree-num-categories', $wgLang->formatNum( $subcatCount ) )->text();
+				$memberNums[] = wfMessage( 'categorytree-num-categories' )
+					->numParams( $subcatCount )->text();
 			}
 			if ( $pages ) {
-				$memberNums[] = wfMessage( 'categorytree-num-pages', $wgLang->formatNum( $pages ) )->text();
+				$memberNums[] = wfMessage( 'categorytree-num-pages' )->numParams( $pages )->text();
 			}
 			if ( $fileCount ) {
-				$memberNums[] = wfMessage( 'categorytree-num-files', $wgLang->formatNum( $fileCount ) )->text();
+				$memberNums[] = wfMessage( 'categorytree-num-files' )
+					->numParams( $fileCount )->text();
 			}
 			$memberNumsShort = $memberNums
 				? $wgLang->commaList( $memberNums )
@@ -798,32 +803,38 @@ class CategoryTree {
 
 			# Only $5 is actually used in the default message.
 			# Other arguments can be used in a customized message.
-			$s .= Xml::tags( 'span', $attr,
-				wfMsgExt( 'categorytree-member-num',
-					array( 'parsemag', 'escapenoentities' ),
-					$subcatCount,
-					$pages,
-					$fileCount,
-					$allCount,
-					$memberNumsShort ) );
+			$s .= Xml::tags(
+				'span',
+				$attr,
+				wfMessage( 'categorytree-member-num' )
+					->numParams( $subcatCount, $pages, $fileCount, $allCount )
+					->params( $memberNumsShort
+				)->escaped()
+			);
 		}
 
 		$s .= Xml::closeElement( 'div' );
 		$s .= "\n\t\t";
-		$s .= Xml::openElement( 'div', array( 'class' => 'CategoryTreeChildren', 'style' => $children > 0 ? "display:block" : "display:none" ) );
+		$s .= Xml::openElement(
+			'div',
+			array(
+				'class' => 'CategoryTreeChildren',
+				'style' => $children > 0 ? "display:block" : "display:none"
+			)
+		);
 
 		if ( $ns == NS_CATEGORY && $children > 0 && !$loadchildren ) {
 			$children = $this->renderChildren( $title, $children );
 			if ( $children == '' ) {
 				$s .= Xml::openElement( 'i', array( 'class' => 'CategoryTreeNotice' ) );
 				if ( $mode == CT_MODE_CATEGORIES ) {
-					$s .= wfMsgExt( 'categorytree-no-subcategories', 'parsemag' );
+					$s .= wfMessage( 'categorytree-no-subcategories' )->text();
 				} elseif ( $mode == CT_MODE_PAGES ) {
-					$s .= wfMsgExt( 'categorytree-no-pages', 'parsemag' );
+					$s .= wfMessage( 'categorytree-no-pages' )->text();
 				} elseif ( $mode == CT_MODE_PARENTS ) {
-					$s .= wfMsgExt( 'categorytree-no-parent-categories', 'parsemag' );
+					$s .= wfMessage( 'categorytree-no-parent-categories' )->text();
 				} else {
-					$s .= wfMsgExt( 'categorytree-nothing-found', 'parsemag' );
+					$s .= wfMessage( 'categorytree-nothing-found' )->text();
 				}
 				$s .= Xml::closeElement( 'i' );
 			} else {

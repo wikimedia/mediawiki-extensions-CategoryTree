@@ -49,7 +49,7 @@ class CategoryTreePage extends SpecialPage {
 		if ( $par ) {
 			$this->target = $par;
 		} else {
-			$this->target = $request->getVal( 'target', wfMsg( 'rootcategory' ) );
+			$this->target = $request->getVal( 'target', wfMessage( 'rootcategory' )->text() );
 		}
 
 		$this->target = trim( $this->target );
@@ -86,13 +86,13 @@ class CategoryTreePage extends SpecialPage {
 
 			if ( $title && $title->getArticleID() ) {
 				$output->addHTML( Xml::openElement( 'div', array( 'class' => 'CategoryTreeParents' ) ) );
-				$output->addHTML( wfMsgExt( 'categorytree-parents', 'parseinline' ) );
-				$output->addHTML( wfMsg( 'colon-separator' ) );
+				$output->addHTML( wfMessage( 'categorytree-parents' )->parse() );
+				$output->addHTML( wfMessage( 'colon-separator' )->escaped() );
 
 				$parents = $this->tree->renderParents( $title );
 
 				if ( $parents == '' ) {
-					$output->addHTML( wfMsgExt( 'categorytree-no-parent-categories', 'parseinline' ) );
+					$output->addHTML( wfMessage( 'categorytree-no-parent-categories' )->parse() );
 				} else {
 					$output->addHTML( $parents );
 				}
@@ -104,7 +104,7 @@ class CategoryTreePage extends SpecialPage {
 				$output->addHTML( Xml::closeElement( 'div' ) );
 			} else {
 				$output->addHTML( Xml::openElement( 'div', array( 'class' => 'CategoryTreeNotice' ) ) );
-				$output->addHTML( wfMsgExt( 'categorytree-not-found', 'parseinline' , $this->target ) );
+				$output->addHTML( wfMessage( 'categorytree-not-found', $this->target )->parse() );
 				$output->addHTML( Xml::closeElement( 'div' ) );
 			}
 		}
@@ -121,15 +121,15 @@ class CategoryTreePage extends SpecialPage {
 		$output = $this->getOutput();
 		$output->addHTML( Xml::openElement( 'form', array( 'name' => 'categorytree', 'method' => 'get', 'action' => $wgScript, 'id' => 'mw-categorytree-form' ) ) );
 		$output->addHTML( Xml::openElement( 'fieldset' ) );
-		$output->addHTML( Xml::element( 'legend', null, wfMsgNoTrans( 'categorytree-legend' ) ) );
+		$output->addHTML( Xml::element( 'legend', null, wfMessage( 'categorytree-legend' )->plain() ) );
 		$output->addHTML( Html::Hidden( 'title', $thisTitle->getPrefixedDbKey() ) );
-		$output->addHTML( Xml::inputLabel( wfMsgNoTrans( 'categorytree-category' ), 'target', 'target', 20, $this->target ) . ' ' );
+		$output->addHTML( Xml::inputLabel( wfMessage( 'categorytree-category' )->plain(), 'target', 'target', 20, $this->target ) . ' ' );
 		$output->addHTML( Xml::openElement( 'select', array( 'name' => 'mode' ) ) );
-		$output->addHTML( Xml::option( wfMsgNoTrans( 'categorytree-mode-categories' ), 'categories', $mode == CT_MODE_CATEGORIES ) );
-		$output->addHTML( Xml::option( wfMsgNoTrans( 'categorytree-mode-pages' ), 'pages', $mode == CT_MODE_PAGES ) );
-		$output->addHTML( Xml::option( wfMsgNoTrans( 'categorytree-mode-all' ), 'all', $mode == CT_MODE_ALL ) );
+		$output->addHTML( Xml::option( wfMessage( 'categorytree-mode-categories' )->plain(), 'categories', $mode == CT_MODE_CATEGORIES ) );
+		$output->addHTML( Xml::option( wfMessage( 'categorytree-mode-pages' )->plain(), 'pages', $mode == CT_MODE_PAGES ) );
+		$output->addHTML( Xml::option( wfMessage( 'categorytree-mode-all' )->plain(), 'all', $mode == CT_MODE_ALL ) );
 		$output->addHTML( Xml::closeElement( 'select' ) . ' ' );
-		$output->addHTML( Xml::submitButton( wfMsgNoTrans( 'categorytree-go' ), array( 'name' => 'dotree' ) ) );
+		$output->addHTML( Xml::submitButton( wfMessage( 'categorytree-go' )->plain(), array( 'name' => 'dotree' ) ) );
 		$output->addHTML( Xml::closeElement( 'fieldset' ) );
 		$output->addHTML( Xml::closeElement( 'form' ) );
 	}
