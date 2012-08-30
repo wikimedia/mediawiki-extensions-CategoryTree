@@ -34,7 +34,6 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	 * @param $cat Category
 	 * @param $sortkey
 	 * @param $pageLength
-	 * @return void
 	 */
 	function addSubcategoryObject( Category $cat, $sortkey, $pageLength ) {
 		global $wgRequest;
