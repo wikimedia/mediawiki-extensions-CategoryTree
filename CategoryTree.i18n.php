@@ -2462,7 +2462,7 @@ $messages['ja'] = array(
 	'categorytree-header' => 'カテゴリの内容をツリー形式で表示するために、そのカテゴリ名を入力してください。
 この機能は Ajax という高度な JavaScript 機能を使用していることに注意してください。
 ご使用中のブラウザーが非常に古い場合や、JavaScript を有効にしていない場合は、動作しません。',
-	'categorytree-category' => 'カテゴリ名:',
+	'categorytree-category' => 'カテゴリ:',
 	'categorytree-go' => 'ツリーを見る',
 	'categorytree-parents' => '上位カテゴリ',
 	'categorytree-mode-categories' => 'カテゴリのみ',
