@@ -98,6 +98,12 @@ Label for the category input field on Special:CategoryTree',
 * $4 = total number of members,
 * $5 = members to be shown in the tree, depending on mode.
 Use with <nowiki>{{PLURAL}}</nowiki>',
+	'categorytree-member-num' => 'This message only uses parameter $5. Other parameters are available for local customisation. Parameters:
+* $1 is the number of subcategories;
+* $2 is the number of pages;
+* $3 is the number of files;
+* $4 is the number of all category members
+* $5 is a text', # do not translate or duplicate this message to other languages
 	'categorytree-num-categories' => 'Number of sub-categories in a category. The word "categories" should be abbreviated. Appears in brackets after a name of an empty category. This message supports PLURAL.',
 	'categorytree-num-pages' => 'Number of pages in a category. The word "pages" should be abbreviated. Appears in brackets after a name of an empty category. This message supports PLURAL.',
 	'categorytree-num-files' => 'Number of files in a category. The word "files" should be abbreviated.  Appears in brackets after a name of an empty category. This message supports PLURAL.',
