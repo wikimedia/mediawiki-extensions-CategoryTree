@@ -3921,6 +3921,7 @@ $messages['os'] = array(
 /** Punjabi (ਪੰਜਾਬੀ)
  * @author Aalam
  * @author Gman124
+ * @author TariButtar
  */
 $messages['pa'] = array(
 	'categorytree' => 'ਕੈਟਾਗਰੀ ਲੜੀ',
@@ -3930,7 +3931,7 @@ $messages['pa'] = array(
 	'categorytree-go' => 'ਲੜੀ ਵੇਖੋ',
 	'categorytree-parents' => 'ਮੁੱਢਲਾ',
 	'categorytree-mode-categories' => 'ਕੇਵਲ ਕੈਟਾਗਰੀ',
-	'categorytree-mode-pages' => 'ਫਾਇਲਾਂ ਤੋਂ ਬਿਨਾਂ ਪੇਜ',
+	'categorytree-mode-pages' => 'ਫ਼ਾਈਲਾਂ ਤੋਂ ਇਲਾਵਾ ਸਫ਼ੇ',
 	'categorytree-mode-all' => 'ਸਭ ਪੇਜ',
 	'categorytree-collapse' => 'ਸਮੇਟੋ',
 	'categorytree-expand' => 'ਫੈਲਾਓ',
