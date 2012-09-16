@@ -807,9 +807,9 @@ class CategoryTree {
 				'span',
 				$attr,
 				wfMessage( 'categorytree-member-num' )
-					->numParams( $subcatCount, $pages, $fileCount, $allCount )
-					->params( $memberNumsShort
-				)->escaped()
+					// Do not use numParams on params 1-4, as they are only used for customisation.
+					->params( $pages, $fileCount, $allCount, $memberNumsShort )
+					->escaped()
 			);
 		}
 
