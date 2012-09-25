@@ -96,7 +96,7 @@ $magicWords['ko'] = array(
 	'categorytree' => array( 0, '분류트리' ),
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬) */
+/** Kurdish (Latin script) (Kurdî (latînî)‎) */
 $magicWords['ku-latn'] = array(
 	'categorytree' => array( 0, 'dara_kategoriyan' ),
 );
@@ -126,7 +126,7 @@ $magicWords['mr'] = array(
 	'categorytree' => array( 0, 'वर्गवृक्ष', 'categorytree' ),
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $magicWords['nb'] = array(
 	'categorytree' => array( 0, 'kategoritre' ),
 );
@@ -156,12 +156,12 @@ $magicWords['ru'] = array(
 	'categorytree' => array( 0, 'деревокатегорий' ),
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬) */
+/** Serbian (Cyrillic script) (српски (ћирилица)‎) */
 $magicWords['sr-ec'] = array(
 	'categorytree' => array( 0, 'стаблокатегорије', 'стабло_категорије' ),
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬) */
+/** Serbian (Latin script) (srpski (latinica)‎) */
 $magicWords['sr-el'] = array(
 	'categorytree' => array( 0, 'stablokategorije', 'stablo_kategorije' ),
 );
@@ -191,7 +191,7 @@ $magicWords['vi'] = array(
 	'categorytree' => array( 0, 'câythểloại' ),
 );
 
-/** Simplified Chinese (‪中文（简体）‬) */
+/** Simplified Chinese (中文（简体）‎) */
 $magicWords['zh-hans'] = array(
 	'categorytree' => array( 0, '分类树' ),
 );

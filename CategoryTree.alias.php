@@ -46,7 +46,7 @@ $specialPageAliases['bcl'] = array(
 	'CategoryTree' => array( 'KahoyNinKategorya' ),
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬) */
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎) */
 $specialPageAliases['be-tarask'] = array(
 	'CategoryTree' => array( 'Дрэва_катэгорыяў' ),
 );
@@ -296,7 +296,7 @@ $specialPageAliases['myv'] = array(
 	'CategoryTree' => array( 'КатегорияньЧувто' ),
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $specialPageAliases['nb'] = array(
 	'CategoryTree' => array( 'Kategoritre' ),
 );
@@ -316,7 +316,7 @@ $specialPageAliases['nl'] = array(
 	'CategoryTree' => array( 'Categorieboom' ),
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬) */
+/** Norwegian Nynorsk (norsk (nynorsk)‎) */
 $specialPageAliases['nn'] = array(
 	'CategoryTree' => array( 'Kategoritre' ),
 );
@@ -431,17 +431,17 @@ $specialPageAliases['yi'] = array(
 	'CategoryTree' => array( 'קאטעגאריע_בוים' ),
 );
 
-/** Simplified Chinese (‪中文（简体）‬) */
+/** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'CategoryTree' => array( '分类树' ),
 );
 
-/** Traditional Chinese (‪中文（繁體）‬) */
+/** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
 	'CategoryTree' => array( '分類樹' ),
 );
 
-/** Chinese (Taiwan) (‪中文（台灣）‬) */
+/** Chinese (Taiwan) (中文（台灣）‎) */
 $specialPageAliases['zh-tw'] = array(
 	'CategoryTree' => array( '分類樹' ),
 );
