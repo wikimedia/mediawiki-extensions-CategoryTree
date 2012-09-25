@@ -26,6 +26,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 	'categorytree-go'               => 'Show tree',
 	'categorytree-parents'          => 'Parents',
 
+	'categorytree-mode-label'         => 'Mode:',
 	'categorytree-mode-categories'  => 'categories only',
 	'categorytree-mode-pages'       => 'pages except files',
 	'categorytree-mode-all'         => 'all pages',

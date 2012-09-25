@@ -82,7 +82,7 @@ class CategoryTree {
 	static function decodeNamespaces( $nn ) {
 		global $wgContLang;
 
-		if ( !$nn ) {
+		if ( $nn === false || is_null( $nn ) ) {
 			return false;
 		}
 
