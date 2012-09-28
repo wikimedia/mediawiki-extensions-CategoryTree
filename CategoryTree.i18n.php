@@ -960,6 +960,7 @@ $messages['ceb'] = array(
 
 /** Sorani Kurdish (کوردی)
  * @author Asoxor
+ * @author Calak
  * @author Muhammed taha
  */
 $messages['ckb'] = array(
@@ -980,7 +981,7 @@ $messages['ckb'] = array(
 	'categorytree-num-categories' => '$1 پۆل',
 	'categorytree-num-pages' => '$1 پەڕە',
 	'categorytree-num-files' => '$1 پەڕگە',
-	'categorytree-num-empty' => 'هیچی تێدانیە',
+	'categorytree-num-empty' => 'واڵا',
 	'categorytree-load' => 'باربکە',
 	'categorytree-loading' => 'بارکردن...',
 	'categorytree-nothing-found' => 'ھیچ نەدۆزرایەوە',

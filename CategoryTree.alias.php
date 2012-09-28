@@ -41,6 +41,11 @@ $specialPageAliases['as'] = array(
 	'CategoryTree' => array( 'শ্ৰেণীবৃক্ষ' ),
 );
 
+/** Bashkir (башҡортса) */
+$specialPageAliases['ba'] = array(
+	'CategoryTree' => array( 'Категория_ағасы' ),
+);
+
 /** Bikol Central (Bikol Central) */
 $specialPageAliases['bcl'] = array(
 	'CategoryTree' => array( 'KahoyNinKategorya' ),
