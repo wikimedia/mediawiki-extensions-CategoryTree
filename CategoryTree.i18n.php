@@ -98,12 +98,6 @@ Label for the category input field on Special:CategoryTree',
 * $4 = total number of members,
 * $5 = members to be shown in the tree, depending on mode.
 Use with <nowiki>{{PLURAL}}</nowiki>',
-	'categorytree-member-num' => 'This message only uses parameter $5. Other parameters are available for local customisation. Parameters:
-* $1 is the number of subcategories;
-* $2 is the number of pages;
-* $3 is the number of files;
-* $4 is the number of all category members
-* $5 is a text', # do not translate or duplicate this message to other languages
 	'categorytree-num-categories' => 'Number of sub-categories in a category. The word "categories" should be abbreviated. Appears in brackets after a name of an empty category. This message supports PLURAL.',
 	'categorytree-num-pages' => 'Number of pages in a category. The word "pages" should be abbreviated. Appears in brackets after a name of an empty category. This message supports PLURAL.',
 	'categorytree-num-files' => 'Number of files in a category. The word "files" should be abbreviated.  Appears in brackets after a name of an empty category. This message supports PLURAL.',
@@ -636,7 +630,7 @@ $messages['be'] = array(
 	'categorytree-expand' => 'паказаць',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Cesco
  * @author EugeneZelenko
  * @author Jim-by
@@ -1162,7 +1156,7 @@ $messages['de-ch'] = array(
 	'categorytree-mode-pages' => 'Seiten ausser Dateien',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Raimond Spekking
  */
 $messages['de-formal'] = array(
@@ -1924,7 +1918,7 @@ $messages['gv'] = array(
 	'categorytree-no-subcategories' => 'gyn fo-ronnaghyn',
 );
 
-/** Hausa (هَوُسَ) */
+/** Hausa (Hausa) */
 $messages['ha'] = array(
 	'categorytree-category' => 'Rukuni:',
 );
@@ -2624,7 +2618,7 @@ $messages['khw'] = array(
 	'categorytree-category' => 'زمرہ',
 );
 
-/** Kazakh (Arabic script) (‫قازاقشا (تٴوتە)‬) */
+/** Kazakh (Arabic script) (قازاقشا (تٴوتە)‏) */
 $messages['kk-arab'] = array(
 	'categorytree' => 'سانات بۇتاقتارى',
 	'categorytree-header' => 'سانات مازمۇنىڭ بۇتاقتار تۇردە كورۋ ٴۇشىن اتاۋىن ەنگىزىڭىز.
@@ -2648,7 +2642,7 @@ $messages['kk-arab'] = array(
 	'categorytree-retry' => 'ٴبىر ٴسات كۇتە تۇرىپ قايتالاڭىز.',
 );
 
-/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬) */
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎) */
 $messages['kk-cyrl'] = array(
 	'categorytree' => 'Санат бұтақтары',
 	'categorytree-header' => 'Санат мазмұның бұтақтар түрде көру үшін атауын енгізіңіз.
@@ -2672,7 +2666,7 @@ $messages['kk-cyrl'] = array(
 	'categorytree-retry' => 'Бір сәт күте тұрып қайталаңыз.',
 );
 
-/** Kazakh (Latin script) (‪qazaqşa (latın)‬) */
+/** Kazakh (Latin script) (qazaqşa (latın)‎) */
 $messages['kk-latn'] = array(
 	'categorytree' => 'Sanat butaqtarı',
 	'categorytree-header' => 'Sanat mazmunıñ butaqtar türde körw üşin atawın engiziñiz.
@@ -2853,7 +2847,7 @@ $messages['ksh'] = array(
 	'categorytree-retry' => 'Bess_esu joot un donn et noh enem Moment norr_ens probeere',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author Erdal Ronahi
  * @author George Animal
  * @author Ghybu
@@ -3621,7 +3615,7 @@ $messages['nan'] = array(
 	'categorytree-no-subcategories' => 'bô ē-lūi-pia̍t',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Audun
  * @author Event
  */
@@ -3787,7 +3781,7 @@ Als u een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze
 	'categorytree-retry' => 'Wacht even en probeer het dan opnieuw.',
 );
 
-/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
  * @author Siebrand
  */
 $messages['nl-informal'] = array(
@@ -3796,7 +3790,7 @@ Let op: deze functie gebruikt JavaScript-functionaliteit die bekend staat als AJ
 Als je een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze functie niet.',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Eirik
  * @author Harald Khan
  * @author Njardarlogar
@@ -4797,7 +4791,7 @@ $messages['sq'] = array(
 	'categorytree-retry' => 'Ju lutemi prisni një moment dhe provojeni përsëri.',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Millosh
  * @author Rancher
  * @author Sasa Stefanovic
@@ -4836,7 +4830,7 @@ $messages['sr-ec'] = array(
 	'categorytree-retry' => 'Сачекајте неколико тренутака и покушајте поново.',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  * @author Rancher
  */
@@ -5802,7 +5796,7 @@ $messages['zea'] = array(
 	'categorytree-retry' => "Wacht even en probeer 't dan opnuuw.",
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Breawycker
  * @author Liangent
  * @author PhiLiP
@@ -5839,7 +5833,7 @@ $messages['zh-hans'] = array(
 	'categorytree-retry' => '请稍后重试。',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Alexsh
  * @author Mark85296341
  * @author Oapbtommy
