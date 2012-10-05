@@ -31,6 +31,11 @@ $specialPageAliases['ar'] = array(
 	'CategoryTree' => array( 'شجرة_تصنيف' ),
 );
 
+/** Aramaic (ܐܪܡܝܐ) */
+$specialPageAliases['arc'] = array(
+	'CategoryTree' => array( 'ܐܝܠܢܐ_ܕܣܕܪܐ' ),
+);
+
 /** Egyptian Spoken Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'CategoryTree' => array( 'شجرة_تصنيف' ),
