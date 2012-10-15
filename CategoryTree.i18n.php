@@ -628,6 +628,20 @@ $messages['be'] = array(
 	'categorytree-mode-all' => 'усе старонкі',
 	'categorytree-collapse' => 'схаваць',
 	'categorytree-expand' => 'паказаць',
+	'categorytree-member-counts' => 'утрымлівае $1 {{PLURAL:$1|падкатэгорыю|падкатэгорыі|падкатэгорый}}, $2 {{PLURAL:$2|старонку|старонкі|старонак}} і $3 {{PLURAL:$3|выяву|выявы|выяў}}',
+	'categorytree-num-categories' => '$1 К',
+	'categorytree-num-pages' => '$1 С',
+	'categorytree-num-files' => '$1 В',
+	'categorytree-num-empty' => 'пуста',
+	'categorytree-load' => 'загрузіць',
+	'categorytree-loading' => 'загрузка…',
+	'categorytree-nothing-found' => 'Гэта катэгорыя не ўтрымлівае падкатэгорый.',
+	'categorytree-no-subcategories' => 'няма падкатэгорый',
+	'categorytree-no-parent-categories' => 'няма бацькоўскіх катэгорый',
+	'categorytree-no-pages' => 'няма артыкулаў і падкатэгорый',
+	'categorytree-not-found' => 'Катэгорыя «$1» не знойдзена.',
+	'categorytree-error' => 'Памылка загрузкі даных.',
+	'categorytree-retry' => 'Калі ласка, пачакайце і паспрабуйце яшчэ раз.',
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
