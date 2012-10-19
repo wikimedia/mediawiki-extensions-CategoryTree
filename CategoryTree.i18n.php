@@ -358,11 +358,11 @@ $messages['as'] = array(
 	'categorytree' => 'শ্ৰেণীবৃক্ষ',
 	'categorytree-portlet' => 'শ্ৰেণী',
 	'categorytree-legend' => 'শ্ৰেণীবৃক্ষ দেখুৱাওক',
-	'categorytree-desc' => '[[Special:CategoryTree|বিষয়শ্ৰেণী গঠন]] পৰিদৰ্শন কৰক',
+	'categorytree-desc' => '[[Special:CategoryTree|শ্ৰেণীবৃক্ষ গঠন]] পৰিদৰ্শন কৰক',
 	'categorytree-header' => "সমলসমূহ বৃক্ষৰূপত চাবলৈ এটা শ্ৰেণীৰ নাম লিখক।
 মন কৰক যে এনে কৰিবলৈ AJAX নামৰ এটা উচ্চস্তৰৰ জাভা কৌশলৰ আৱশ্যক।
 আপোনাৰ ব্ৰাওজাৰ অতি পুৰণি হ'লে বা জাভাস্ক্ৰিপ্ট নিষ্ক্ৰিয় হৈ থাকিলে ই কাম নকৰিব।",
-	'categorytree-category' => 'শ্ৰেণী',
+	'categorytree-category' => 'শ্ৰেণীবৄক্ষ:',
 	'categorytree-go' => 'বৃক্ষ দেখুৱাওক',
 	'categorytree-parents' => 'পালক',
 	'categorytree-mode-categories' => 'কেৱল শ্ৰেণী',
