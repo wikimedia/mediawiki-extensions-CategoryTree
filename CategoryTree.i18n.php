@@ -1800,6 +1800,7 @@ Se o navegador é moi vello ou ten o JavaScript desactivado isto non vai funcion
 	'categorytree-category' => 'Categoría:',
 	'categorytree-go' => 'Mostrar a árbore',
 	'categorytree-parents' => 'Categoría raíz',
+	'categorytree-mode-label' => 'Modo:',
 	'categorytree-mode-categories' => 'só as categorías',
 	'categorytree-mode-pages' => 'páxinas agás os ficheiros',
 	'categorytree-mode-all' => 'todas as páxinas',
