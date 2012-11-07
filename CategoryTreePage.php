@@ -116,21 +116,26 @@ class CategoryTreePage extends SpecialPage {
 	function executeInputForm() {
 		global $wgScript;
 		$thisTitle = SpecialPage::getTitleFor( $this->getName() );
-		$mode = $this->getOption( 'mode' );
-
+		$namespaces = $this->getRequest()->getVal( 'namespaces', '' );
+		//mode may be overriden by namespaces option
+		$mode = ( $namespaces == '' ? $this->getOption( 'mode' ) : CT_MODE_ALL );
+		$modeSelector = Xml::openElement( 'select', array( 'name' => 'mode' ) );
+		$modeSelector .= Xml::option( wfMessage( 'categorytree-mode-categories' )->plain(), 'categories', $mode == CT_MODE_CATEGORIES );
+		$modeSelector .= Xml::option( wfMessage( 'categorytree-mode-pages' )->plain(), 'pages', $mode == CT_MODE_PAGES );
+		$modeSelector .= Xml::option( wfMessage( 'categorytree-mode-all' )->plain(), 'all', $mode == CT_MODE_ALL );
+		$modeSelector .= Xml::closeElement( 'select' );
+		$table = Xml::buildForm( array(
+			'categorytree-category' => Xml::input( 'target', 20, $this->target, array( 'id' => 'target' ) ) ,
+			'categorytree-mode-label' => $modeSelector,
+			'namespace' => Html::namespaceSelector(
+				array( 'selected' => $namespaces, 'all' => '' ),
+				array( 'name' => 'namespaces', 'id' => 'namespaces' )
+			)
+		), 'categorytree-go' );
+		$preTable = Xml::element( 'legend', null, wfMessage( 'categorytree-legend' )->plain() );
+		$preTable .= Html::Hidden( 'title', $thisTitle->getPrefixedDbKey() );
+		$fieldset = Xml::tags( 'fieldset', array(), $preTable . $table );
 		$output = $this->getOutput();
-		$output->addHTML( Xml::openElement( 'form', array( 'name' => 'categorytree', 'method' => 'get', 'action' => $wgScript, 'id' => 'mw-categorytree-form' ) ) );
-		$output->addHTML( Xml::openElement( 'fieldset' ) );
-		$output->addHTML( Xml::element( 'legend', null, wfMessage( 'categorytree-legend' )->plain() ) );
-		$output->addHTML( Html::Hidden( 'title', $thisTitle->getPrefixedDbKey() ) );
-		$output->addHTML( Xml::inputLabel( wfMessage( 'categorytree-category' )->plain(), 'target', 'target', 20, $this->target ) . ' ' );
-		$output->addHTML( Xml::openElement( 'select', array( 'name' => 'mode' ) ) );
-		$output->addHTML( Xml::option( wfMessage( 'categorytree-mode-categories' )->plain(), 'categories', $mode == CT_MODE_CATEGORIES ) );
-		$output->addHTML( Xml::option( wfMessage( 'categorytree-mode-pages' )->plain(), 'pages', $mode == CT_MODE_PAGES ) );
-		$output->addHTML( Xml::option( wfMessage( 'categorytree-mode-all' )->plain(), 'all', $mode == CT_MODE_ALL ) );
-		$output->addHTML( Xml::closeElement( 'select' ) . ' ' );
-		$output->addHTML( Xml::submitButton( wfMessage( 'categorytree-go' )->plain(), array( 'name' => 'dotree' ) ) );
-		$output->addHTML( Xml::closeElement( 'fieldset' ) );
-		$output->addHTML( Xml::closeElement( 'form' ) );
+		$output->addHTML( Xml::tags( 'form', array( 'name' => 'categorytree', 'method' => 'get', 'action' => $wgScript, 'id' => 'mw-categorytree-form' ), $fieldset ) );
 	}
 }
