@@ -640,6 +640,7 @@ $messages['be'] = array(
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
+ * @author Wizardist
  */
 $messages['be-tarask'] = array(
 	'categorytree' => 'Дрэва катэгорыяў',
@@ -652,6 +653,7 @@ $messages['be-tarask'] = array(
 	'categorytree-category' => 'Катэгорыя:',
 	'categorytree-go' => 'Паказаць дрэва',
 	'categorytree-parents' => 'Продкі',
+	'categorytree-mode-label' => 'Рэжым:',
 	'categorytree-mode-categories' => 'толькі катэгорыі',
 	'categorytree-mode-pages' => 'старонкі за выключэньнем файлаў',
 	'categorytree-mode-all' => 'усе старонкі',
@@ -771,6 +773,7 @@ $messages['bn'] = array(
 	'categorytree-category' => 'বিষয়শ্রেণী:',
 	'categorytree-go' => 'বৃক্ষ দেখানো হোক',
 	'categorytree-parents' => 'পিতামাতা',
+	'categorytree-mode-label' => 'মোড:',
 	'categorytree-mode-categories' => 'শুধুমাত্র বিষয়শ্রেণী',
 	'categorytree-mode-pages' => 'ফাইল ব্যতীত পাতাসমূহ',
 	'categorytree-mode-all' => 'সব পাতা',
@@ -1084,6 +1087,7 @@ Ni lwydda'r gofyniad os yw'ch porwr yn hen iawn neu os nad yw Sgript Java wedi e
 /** Danish (dansk)
  * @author Barklund
  * @author Byrial
+ * @author Christian List
  * @author Fredelige
  * @author Jon Harald Søby
  * @author Peter Alberti
@@ -1097,6 +1101,7 @@ $messages['da'] = array(
 	'categorytree-category' => 'Kategori:',
 	'categorytree-go' => 'Vis træ',
 	'categorytree-parents' => 'Overkategorier',
+	'categorytree-mode-label' => 'Tilstand:',
 	'categorytree-mode-categories' => 'kun kategorier',
 	'categorytree-mode-pages' => 'sider med undtagelse af filer',
 	'categorytree-mode-all' => 'alle sider',
@@ -1121,6 +1126,7 @@ $messages['da'] = array(
 /** German (Deutsch)
  * @author Daniel Kinzler, brightbyte.de
  * @author Kghbln
+ * @author Metalhead64
  * @author Raimond Spekking
  * @author SVG
  */
@@ -1134,6 +1140,7 @@ Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert m�
 	'categorytree-category' => 'Kategorie:',
 	'categorytree-go' => 'Kategorienbaum anzeigen',
 	'categorytree-parents' => 'Oberkategorien',
+	'categorytree-mode-label' => 'Modus:',
 	'categorytree-mode-categories' => 'nur Kategorien',
 	'categorytree-mode-pages' => 'Seiten außer Dateien',
 	'categorytree-mode-all' => 'alle Seiten',
@@ -1185,6 +1192,7 @@ Eka browseyê tu kihanî ya zi tu JavaScript qefilmayiyo, program nihebitiyeno.'
 	'categorytree-category' => 'Kategoriye:',
 	'categorytree-go' => 'Barfi',
 	'categorytree-parents' => 'Ser kategoriy',
+	'categorytree-mode-label' => 'Modê cı:',
 	'categorytree-mode-categories' => 'kategoriya tenya',
 	'categorytree-mode-pages' => 'Teyna pelan, dosyayan hesab meke',
 	'categorytree-mode-all' => 'peley pêro',
@@ -1622,6 +1630,7 @@ $messages['fr'] = array(
 	'categorytree-category' => 'Catégorie :',
 	'categorytree-go' => 'voir l’arborescence',
 	'categorytree-parents' => 'super-catégorie(s)',
+	'categorytree-mode-label' => 'Mode:',
 	'categorytree-mode-categories' => 'seulement les catégories',
 	'categorytree-mode-pages' => 'pages sans les images',
 	'categorytree-mode-all' => 'toutes les pages',
@@ -2459,6 +2468,7 @@ $messages['it'] = array(
 	'categorytree-category' => 'Categoria:',
 	'categorytree-go' => 'Carica',
 	'categorytree-parents' => 'Categorie superiori',
+	'categorytree-mode-label' => 'Modalità:',
 	'categorytree-mode-categories' => 'mostra solo le categorie',
 	'categorytree-mode-pages' => 'tutte le pagine, escluse le immagini',
 	'categorytree-mode-all' => 'tutte le pagine',
@@ -2500,6 +2510,7 @@ $messages['ja'] = array(
 	'categorytree-category' => 'カテゴリ:',
 	'categorytree-go' => 'ツリーを表示',
 	'categorytree-parents' => '上位カテゴリ',
+	'categorytree-mode-label' => 'モード:',
 	'categorytree-mode-categories' => 'カテゴリのみ',
 	'categorytree-mode-pages' => 'ファイル以外のページ',
 	'categorytree-mode-all' => 'すべてのページ',
@@ -2642,7 +2653,24 @@ $messages['kab'] = array(
  */
 $messages['khw'] = array(
 	'categorytree-portlet' => 'زمرہ جات',
+	'categorytree-legend' => 'مختلق قسمان پشاوے',
 	'categorytree-category' => 'زمرہ',
+	'categorytree-go' => 'بہ ترتیب شجر(کان)',
+	'categorytree-parents' => 'نن تت',
+	'categorytree-mode-categories' => 'صرف زمرہ جات',
+	'categorytree-mode-pages' => 'فائلار علاوہ صفحات',
+	'categorytree-mode-all' => 'سف صفحات',
+	'categorytree-collapse' => 'خاتمہ',
+	'categorytree-expand' => 'فراخ کورے',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'خالی',
+	'categorytree-load' => 'اثقال/load',
+	'categorytree-loading' => 'دوران اثقال/loading…',
+	'categorytree-nothing-found' => 'کیاغ دستیاب نیکی',
+	'categorytree-no-subcategories' => 'کیہ ذیلی زمرہ نیکی',
+	'categorytree-no-parent-categories' => 'کیہ نن تتان زمرہ جات',
 );
 
 /** Kazakh (Arabic script) (قازاقشا (تٴوتە)‏)
@@ -2804,6 +2832,7 @@ $messages['ko'] = array(
 	'categorytree-category' => '분류:',
 	'categorytree-go' => '트리 보기',
 	'categorytree-parents' => '상위 분류',
+	'categorytree-mode-label' => '모드:',
 	'categorytree-mode-categories' => '분류 문서만 표시',
 	'categorytree-mode-pages' => '파일을 제외한 모든 문서를 표시',
 	'categorytree-mode-all' => '모든 문서를 표시',
@@ -3377,6 +3406,7 @@ $messages['mk'] = array(
 	'categorytree-category' => 'Категорија:',
 	'categorytree-go' => 'Прикажи дрво',
 	'categorytree-parents' => 'Родители',
+	'categorytree-mode-label' => 'Режим:',
 	'categorytree-mode-categories' => 'само категории',
 	'categorytree-mode-pages' => 'страници без податотеки',
 	'categorytree-mode-all' => 'сите страници',
@@ -3413,6 +3443,7 @@ $messages['ml'] = array(
 	'categorytree-category' => 'വർഗ്ഗം:',
 	'categorytree-go' => 'വൃക്ഷം പ്രദർശിപ്പിക്കുക',
 	'categorytree-parents' => 'താവഴി',
+	'categorytree-mode-label' => 'സമ്പ്രദായം:',
 	'categorytree-mode-categories' => 'വർഗ്ഗങ്ങൾ മാത്രം',
 	'categorytree-mode-pages' => 'പ്രമാണങ്ങൾ അല്ലാതെയുള്ള താളുകൾ',
 	'categorytree-mode-all' => 'എല്ലാ താളുകളും',
@@ -5479,6 +5510,13 @@ $messages['tyv'] = array(
 	'categorytree-expand' => 'чазар',
 );
 
+/** Central Atlas Tamazight (ⵜⴰⵎⴰⵣⵉⵖⵜ)
+ * @author Tifinaghes
+ */
+$messages['tzm'] = array(
+	'categorytree-category' => 'ⵜⴰⴳⴳⴰⵢⵜ',
+);
+
 /** Ukrainian (українська)
  * @author AS
  * @author Ahonc
@@ -5622,6 +5660,7 @@ Nếu bạn đang sử dụng trình duyệt rất cũ, hoặc đã tắt JavaSc
 	'categorytree-category' => 'Thể loại:',
 	'categorytree-go' => 'Hiển thị',
 	'categorytree-parents' => 'Các thể loại mẹ',
+	'categorytree-mode-label' => 'Chế độ:',
 	'categorytree-mode-categories' => 'Chỉ liệt kê các thể loại',
 	'categorytree-mode-pages' => 'các trang ngoại trừ trang tập tin',
 	'categorytree-mode-all' => 'tất cả các trang',
@@ -5734,6 +5773,7 @@ $messages['yi'] = array(
 	'categorytree-category' => 'קאטעגאריע:',
 	'categorytree-go' => 'ווײַזן בוים',
 	'categorytree-parents' => 'העכערע קאַטעגאריעס',
+	'categorytree-mode-label' => 'מאדע:',
 	'categorytree-mode-categories' => 'נאר קאַטעגאריעס',
 	'categorytree-mode-pages' => 'בלעטער וואס זענען נישט טעקעס',
 	'categorytree-mode-all' => 'אַלע בלעטער',
