@@ -71,6 +71,11 @@ $magicWords['fa'] = array(
 	'categorytree' => array( 0, 'درخت‌رده', 'درخت_رده' ),
 );
 
+/** Galician (galego) */
+$magicWords['gl'] = array(
+	'categorytree' => array( 0, 'árboredecategorías' ),
+);
+
 /** Igbo (Igbo) */
 $magicWords['ig'] = array(
 	'categorytree' => array( 0, 'óshíshíébéonọr', 'categorytree' ),
@@ -184,6 +189,11 @@ $magicWords['tt-cyrl'] = array(
 /** Ukrainian (українська) */
 $magicWords['uk'] = array(
 	'categorytree' => array( 0, 'деревокатегорій', 'деревокатегорий' ),
+);
+
+/** Uzbek (oʻzbekcha) */
+$magicWords['uz'] = array(
+	'categorytree' => array( 0, 'turkumiyerarxiyasi', 'turkumdaraxti' ),
 );
 
 /** Vietnamese (Tiếng Việt) */
