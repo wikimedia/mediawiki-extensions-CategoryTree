@@ -1229,6 +1229,7 @@ Jolic maš wjelgin stary browser abo jolic JavaScript jo wótšaltowane, toś te
 	'categorytree-category' => 'Kategorija:',
 	'categorytree-go' => 'Bom pokazaś',
 	'categorytree-parents' => 'Wuše kategorije',
+	'categorytree-mode-label' => 'Modus:',
 	'categorytree-mode-categories' => 'jano kategorije',
 	'categorytree-mode-pages' => 'Boki mimo datajow',
 	'categorytree-mode-all' => 'wšykne boki',
@@ -2111,6 +2112,7 @@ $messages['hsb'] = array(
 	'categorytree-category' => 'Kategorija',
 	'categorytree-go' => 'Štom pokazać',
 	'categorytree-parents' => 'Nadkategorije',
+	'categorytree-mode-label' => 'Modus:',
 	'categorytree-mode-categories' => 'jenož kategorije',
 	'categorytree-mode-pages' => 'strony nimo wobrazow',
 	'categorytree-mode-all' => 'wšě strony',
@@ -5516,7 +5518,11 @@ $messages['tyv'] = array(
  * @author Tifinaghes
  */
 $messages['tzm'] = array(
+	'categorytree' => 'ⵜⴰⴷⴷⴰⴳⵜ ⵏ ⵜⴰⴳⴳⴰⵢⵜ',
+	'categorytree-portlet' => 'ⵜⴰⴳⴳⴰⵢⵉⵏ',
 	'categorytree-category' => 'ⵜⴰⴳⴳⴰⵢⵜ',
+	'categorytree-mode-all' => 'ⵎⴰⵕⵕⴰ ⵜⵉⵙⵏⴰⵡⵉⵏ',
+	'categorytree-num-categories' => '$1 C',
 );
 
 /** Ukrainian (українська)
