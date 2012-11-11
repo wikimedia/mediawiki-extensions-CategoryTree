@@ -66,6 +66,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
  * @author Meno25
  * @author Raimond Spekking
  * @author Raymond
+ * @author Shirayuki
  * @author Siebrand
  * @author The Evil IP address
  * @author Umherirrender
@@ -79,7 +80,7 @@ $messages['qqq'] = array(
 
 Title for the CategoryPortlet, when shown in the side bar',
 	'categorytree-legend' => 'Legend of the fieldset around the input form of [[Special:Categorytree]].',
-	'categorytree-desc' => '{{desc}}',
+	'categorytree-desc' => '{{desc|name=Category Tree|url=http://www.mediawiki.org/wiki/Extension:CategoryTree}}',
 	'categorytree-header' => 'Header-text shown on [[Special:CategoryTree]]',
 	'categorytree-category' => '{{Identical|Category}}
 
@@ -392,6 +393,7 @@ un navegador mui antiguu o'l JavaScript desactiváu, nun va funcionar.",
 	'categorytree-category' => 'Categoría:',
 	'categorytree-go' => 'Amosar árbole',
 	'categorytree-parents' => 'Categoríes superiores',
+	'categorytree-mode-label' => 'Mou:',
 	'categorytree-mode-categories' => 'categoríes namái',
 	'categorytree-mode-pages' => 'páxines sacante los archivos',
 	'categorytree-mode-all' => 'toles páxines',
