@@ -1356,6 +1356,7 @@ $messages['eo'] = array(
 /** Spanish (español)
  * @author Locos epraix
  * @author Muro de Aguas
+ * @author Ralgis
  * @author Remember the dot
  * @author Sanbec
  * @author Spacebirdy
@@ -1372,6 +1373,7 @@ Si tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no fu
 	'categorytree-category' => 'Categoría:',
 	'categorytree-go' => 'Cargar',
 	'categorytree-parents' => 'Categorías superiores',
+	'categorytree-mode-label' => 'Modo:',
 	'categorytree-mode-categories' => 'mostrar sólo categorías',
 	'categorytree-mode-pages' => 'páginas excepto imágenes',
 	'categorytree-mode-all' => 'todas las páginas',
@@ -3873,6 +3875,7 @@ $messages['nn'] = array(
 	'categorytree-category' => 'Kategori:',
 	'categorytree-go' => 'Vis kategoritre',
 	'categorytree-parents' => 'Overkategoriar',
+	'categorytree-mode-label' => 'Modus:',
 	'categorytree-mode-categories' => 'berre kategoriane',
 	'categorytree-mode-pages' => 'sider med unntak av filer',
 	'categorytree-mode-all' => 'alle sidene',
