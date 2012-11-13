@@ -3056,6 +3056,7 @@ Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da
 	'categorytree-category' => 'Kategorie:',
 	'categorytree-go' => 'Struktur weisen',
 	'categorytree-parents' => 'Uewerkategorien',
+	'categorytree-mode-label' => 'Modus:',
 	'categorytree-mode-categories' => 'nëmme Kategorien',
 	'categorytree-mode-pages' => 'Säiten ausser Fichieren',
 	'categorytree-mode-all' => 'all Säiten',
@@ -5533,6 +5534,7 @@ $messages['tzm'] = array(
 /** Ukrainian (українська)
  * @author AS
  * @author Ahonc
+ * @author Base
  * @author Sodmy
  */
 $messages['uk'] = array(
@@ -5546,6 +5548,7 @@ $messages['uk'] = array(
 	'categorytree-category' => 'Категорія:',
 	'categorytree-go' => 'Показати дерево',
 	'categorytree-parents' => 'Батьківські категорії',
+	'categorytree-mode-label' => 'Режим:',
 	'categorytree-mode-categories' => 'тільки категорії',
 	'categorytree-mode-pages' => 'окрім зображень',
 	'categorytree-mode-all' => 'усі сторінки',
