@@ -4042,9 +4042,10 @@ $messages['pag'] = array(
 );
 
 /** Pampanga (Kapampangan)
+ * @author Val2397
  */
 $messages['pam'] = array(
-	'categorytree-mode-pages' => 'bulung liban kareng larawan', # Fuzzy
+	'categorytree-mode-pages' => '↓bulung liban kareng simpan',
 	'categorytree-mode-all' => 'Eganaganang bulung',
 	'categorytree-collapse' => 'ilati',
 	'categorytree-expand' => 'paragulan',
