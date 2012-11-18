@@ -2359,6 +2359,7 @@ No adda daan a pagbasabasam, wenno nabaldado ti JavaScript mo, saan daytoy nga a
 	'categorytree-category' => 'Kategoria:',
 	'categorytree-go' => 'Ipakita ti kayo',
 	'categorytree-parents' => 'Nagannak',
+	'categorytree-mode-label' => 'Wagas:',
 	'categorytree-mode-categories' => 'dagiti kategoria laeng',
 	'categorytree-mode-pages' => 'dagiti panid mailaksid dagiti papeles',
 	'categorytree-mode-all' => 'amin a pampanid',
@@ -3818,6 +3819,7 @@ $messages['ne'] = array(
 );
 
 /** Dutch (Nederlands)
+ * @author Kippenvlees1
  * @author SPQRobin
  * @author Siebrand
  */
@@ -3832,6 +3834,7 @@ Als u een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze
 	'categorytree-category' => 'Categorie:',
 	'categorytree-go' => 'Structuur weergeven',
 	'categorytree-parents' => 'Bovenliggende categorieën',
+	'categorytree-mode-label' => 'Modus:',
 	'categorytree-mode-categories' => 'alleen categorieën',
 	'categorytree-mode-pages' => 'geen afbeeldingen',
 	'categorytree-mode-all' => "alle pagina's",
