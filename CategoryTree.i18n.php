@@ -3701,6 +3701,7 @@ $messages['nb'] = array(
 	'categorytree-category' => 'Kategori:',
 	'categorytree-go' => 'Vis tre',
 	'categorytree-parents' => 'Overkategorier',
+	'categorytree-mode-label' => 'Modus:',
 	'categorytree-mode-categories' => 'kun kategorier',
 	'categorytree-mode-pages' => 'sider utenom bilder',
 	'categorytree-mode-all' => 'alle sider',
