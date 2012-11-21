@@ -327,8 +327,15 @@ class CategoryTree {
 		$u = '';
 
 		foreach ( $this->mOptions as $k => $v ) {
-			if ( $u != '' ) $u .= '&';
-			$u .= $k . '=' . urlencode( $v ) ;
+			if ( $u != '' ) {
+				$u .= '&';
+			}
+			if ( is_array( $v ) ) {
+				$v = implode( '|', array_map( 'urlencode', $v ) );
+			} else {
+				$v = urlencode( $v );
+			}
+			$u .= $k . '=' . $v;
 		}
 
 		return $u;
