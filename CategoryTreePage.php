@@ -17,6 +17,10 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 
 class CategoryTreePage extends SpecialPage {
 	var $target = '';
+
+	/**
+	 * @var CategoryTree
+	 */
 	var $tree = null;
 
 	function __construct() {
