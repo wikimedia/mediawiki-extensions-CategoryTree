@@ -191,6 +191,11 @@ $magicWords['uk'] = array(
 	'categorytree' => array( 0, 'деревокатегорій', 'деревокатегорий' ),
 );
 
+/** Urdu (اردو) */
+$magicWords['ur'] = array(
+	'categorytree' => array( 0, 'شجر_زمرہ' ),
+);
+
 /** Uzbek (oʻzbekcha) */
 $magicWords['uz'] = array(
 	'categorytree' => array( 0, 'turkumiyerarxiyasi', 'turkumdaraxti' ),

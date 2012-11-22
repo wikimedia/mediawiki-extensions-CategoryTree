@@ -371,6 +371,11 @@ $specialPageAliases['sa'] = array(
 	'CategoryTree' => array( 'वर्गवृक्ष:' ),
 );
 
+/** Sicilian (sicilianu) */
+$specialPageAliases['scn'] = array(
+	'CategoryTree' => array( 'AlberoCategorie' ),
+);
+
 /** Sinhala (සිංහල) */
 $specialPageAliases['si'] = array(
 	'CategoryTree' => array( 'ප්‍රවර්ගරුක' ),
@@ -419,6 +424,11 @@ $specialPageAliases['tr'] = array(
 /** Ukrainian (українська) */
 $specialPageAliases['uk'] = array(
 	'CategoryTree' => array( 'Дерево_категорій' ),
+);
+
+/** Urdu (اردو) */
+$specialPageAliases['ur'] = array(
+	'CategoryTree' => array( 'شجرہ_زمرہ' ),
 );
 
 /** vèneto (vèneto) */
