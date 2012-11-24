@@ -4808,6 +4808,7 @@ $messages['sl'] = array(
 	'categorytree-category' => 'Kategorija:',
 	'categorytree-go' => 'Pokaži drevo',
 	'categorytree-parents' => 'Starši',
+	'categorytree-mode-label' => 'Način:',
 	'categorytree-mode-categories' => 'samo kategorije',
 	'categorytree-mode-pages' => 'strani z izjemo slik',
 	'categorytree-mode-all' => 'vse strani',
