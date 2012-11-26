@@ -484,6 +484,13 @@ $messages['az'] = array(
 	'categorytree-retry' => 'Xahiş edirik bir az gözləyin və yenidən yoxlayın.',
 );
 
+/** تورکجه (تورکجه)
+ * @author E THP
+ */
+$messages['azb'] = array(
+	'categorytree-mode-all' => 'بوتون صحیفه‌لر',
+);
+
 /** Bashkir (башҡортса)
  * @author Assele
  * @author Haqmar
@@ -681,6 +688,7 @@ $messages['be-tarask'] = array(
  * @author Borislav
  * @author DCLXVI
  * @author Spiritia
+ * @author Stanqo
  */
 $messages['bg'] = array(
 	'categorytree' => 'Дърво на категориите',
@@ -691,12 +699,17 @@ $messages['bg'] = array(
 	'categorytree-category' => 'Категория',
 	'categorytree-go' => 'Показване',
 	'categorytree-parents' => 'Родителски категории',
+	'categorytree-mode-label' => 'Режим:',
 	'categorytree-mode-categories' => 'само категории',
 	'categorytree-mode-pages' => 'страници, без файлове',
 	'categorytree-mode-all' => 'всички страници',
 	'categorytree-collapse' => 'събиране',
 	'categorytree-expand' => 'разпъване',
 	'categorytree-member-counts' => 'съдържа {{PLURAL:$1|една подкатегория|$1 подкатегории}}, {{PLURAL:$2|една страница|$2 страници}} и {{PLURAL:$3|един файл|$3 файла}}',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'празно',
 	'categorytree-load' => 'зареждане',
 	'categorytree-loading' => 'зареждане',
 	'categorytree-nothing-found' => 'няма открити подкатегории',
