@@ -316,7 +316,7 @@ $specialPageAliases['nds'] = array(
 	'CategoryTree' => array( 'Kategorieboom' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
+/** Nedersaksies (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'CategoryTree' => array( 'Kategorieboom' ),
 );

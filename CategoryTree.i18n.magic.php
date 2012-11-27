@@ -136,7 +136,7 @@ $magicWords['nb'] = array(
 	'categorytree' => array( 0, 'kategoritre' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
+/** Nedersaksies (Nedersaksies) */
 $magicWords['nds-nl'] = array(
 	'categorytree' => array( 0, 'kategorieboom', 'categorieboom' ),
 );
