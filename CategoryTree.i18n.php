@@ -484,7 +484,7 @@ $messages['az'] = array(
 	'categorytree-retry' => 'Xahiş edirik bir az gözləyin və yenidən yoxlayın.',
 );
 
-/** تورکجه (تورکجه)
+/** South Azerbaijani (تورکجه)
  * @author E THP
  */
 $messages['azb'] = array(
