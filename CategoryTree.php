@@ -126,6 +126,7 @@ $wgExtensionMessagesFiles['CategoryTree'] = $dir . 'CategoryTree.i18n.php';
 $wgAutoloadClasses['CategoryTreePage'] = $dir . 'CategoryTreePage.php';
 $wgAutoloadClasses['CategoryTree'] = $dir . 'CategoryTreeFunctions.php';
 $wgAutoloadClasses['CategoryTreeCategoryPage'] = $dir . 'CategoryPageSubclass.php';
+$wgAutoloadClasses['CategoryTreeCategoryViewer'] = $dir . 'CategoryPageSubclass.php';
 $wgSpecialPages['CategoryTree'] = 'CategoryTreePage';
 $wgSpecialPageGroups['CategoryTree'] = 'pages';
 # $wgHooks['SkinTemplateTabs'][] = 'efCategoryTreeInstallTabs';
