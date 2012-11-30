@@ -1543,6 +1543,7 @@ $messages['fi'] = array(
 	'categorytree-category' => 'Luokka',
 	'categorytree-go' => 'Näytä puu',
 	'categorytree-parents' => 'Yläluokat',
+	'categorytree-mode-label' => 'Tila',
 	'categorytree-mode-categories' => 'vain luokat',
 	'categorytree-mode-pages' => 'kaikki sivut tiedostoja lukuun ottamatta',
 	'categorytree-mode-all' => 'kaikki sivut',
@@ -4072,6 +4073,13 @@ $messages['pam'] = array(
 	'categorytree-nothing-found' => 'alang meyakit',
 );
 
+/** Picard (Picard)
+ * @author Geoleplubo
+ */
+$messages['pcd'] = array(
+	'categorytree' => 'Grafe des catégories',
+);
+
 /** Deitsch (Deitsch)
  * @author Xqt
  */
@@ -5050,6 +5058,7 @@ Lamun Anjeun ngagunakeun panyungsi nu lila, atawa maehan fungsi Javascript Anjeu
  * @author Lejonel
  * @author M.M.S.
  * @author Sannab
+ * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'categorytree' => 'Kategoriträd',
@@ -5062,6 +5071,7 @@ Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript
 	'categorytree-category' => 'Kategori:',
 	'categorytree-go' => 'Visa träd',
 	'categorytree-parents' => 'Föräldrakategorier',
+	'categorytree-mode-label' => 'Läge:',
 	'categorytree-mode-categories' => 'visa bara kategorier',
 	'categorytree-mode-pages' => 'sidor utom filer',
 	'categorytree-mode-all' => 'alla sidor',
