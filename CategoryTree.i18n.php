@@ -1458,6 +1458,7 @@ $messages['eu'] = array(
 	'categorytree-category' => 'Kategoria',
 	'categorytree-go' => 'Zuhaitza erakutsi',
 	'categorytree-parents' => 'Gurasoak',
+	'categorytree-mode-label' => 'Modua:',
 	'categorytree-mode-categories' => 'kategoriak bakarrik',
 	'categorytree-mode-pages' => 'orrialdeak, irudiak ezik',
 	'categorytree-mode-all' => 'orrialde guztiak',

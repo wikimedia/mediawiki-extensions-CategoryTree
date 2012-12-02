@@ -106,6 +106,11 @@ $magicWords['ku-latn'] = array(
 	'categorytree' => array( 0, 'dara_kategoriyan' ),
 );
 
+/** Cornish (kernowek) */
+$magicWords['kw'] = array(
+	'categorytree' => array( 0, 'gwedhenglass' ),
+);
+
 /** Ladino (Ladino) */
 $magicWords['lad'] = array(
 	'categorytree' => array( 0, 'árvoledekateggorías', 'árboldecategorías', 'arboldecategorias', 'categorytree' ),
