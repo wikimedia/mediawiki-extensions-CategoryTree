@@ -485,10 +485,37 @@ $messages['az'] = array(
 );
 
 /** South Azerbaijani (تورکجه)
+ * @author Amir a57
  * @author E THP
  */
 $messages['azb'] = array(
+	'categorytree' => 'بولمه آغاجی',
+	'categorytree-portlet' => 'بولمه لر',
+	'categorytree-legend' => 'بولمه آغاجین گوستر',
+	'categorytree-desc' => '[[Special:CategoryTree|بولمه لر سیستئمینی]] دینامیک ایداره ائت',
+	'categorytree-header' => 'بولمه آدینی گیریب، ایچئری‌سینی آغاج شکیلده گؤره بیلرسینیز. بو خصوصی ای جکس آدییلا بیلین جاوااسکریپت ایله اوشلیر. اگر اوپئراتورونوز کؤهنه ایسه یا دا جاوااسکریپت ایستیفاده‌سی مومکون دئییلسه، ایشلمز.',
+	'categorytree-category' => 'بؤلمه',
+	'categorytree-go' => 'یوکله',
+	'categorytree-parents' => 'اوست بولمه لر',
+	'categorytree-mode-categories' => 'ساده‌جه بولمه لری گؤستر',
+	'categorytree-mode-pages' => 'فایل‌لاردان علاوه صحیفه‌لر',
 	'categorytree-mode-all' => 'بوتون صحیفه‌لر',
+	'categorytree-collapse' => 'گیزلت',
+	'categorytree-expand' => 'گئنشتیرمه',
+	'categorytree-member-counts' => '{{PLURAL:$1|1 آلت بولمه|$1 آلت بولمه}}، {{PLURAL:$2|1 صهیف|$2 صحیفه}}، و {{PLURAL:$3|1 شکیل|$3 شکیل}}دن عبارت‌دیر',
+	'categorytree-num-categories' => '$1 ر',
+	'categorytree-num-pages' => '$1 ص',
+	'categorytree-num-files' => '$1 ف',
+	'categorytree-num-empty' => 'بوش',
+	'categorytree-load' => 'یوکله',
+	'categorytree-loading' => 'یوکلنیر',
+	'categorytree-nothing-found' => 'تاسوف ائدیریک، نتیجه یوخ‌دور.',
+	'categorytree-no-subcategories' => 'آلت بولمه لر یوخ‌دور',
+	'categorytree-no-parent-categories' => 'اوست بولمه یوخ‌دور.',
+	'categorytree-no-pages' => 'آلت بولمه و مقاله یوخ‌دور.',
+	'categorytree-not-found' => '<i>"$1"</i آدلی بولمه تاپیلمادی.',
+	'categorytree-error' => 'معلومات بازاسیندا پروبلئم وار.',
+	'categorytree-retry' => 'خاهیش ائدیریک بیر آز صبر ائدین و یئنی‌دن ایمتحان ائدین.',
 );
 
 /** Bashkir (башҡортса)
