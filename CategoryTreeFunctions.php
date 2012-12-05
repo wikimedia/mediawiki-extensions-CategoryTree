@@ -578,7 +578,7 @@ class CategoryTree {
 			'categorylinks',
 			array(
 				NS_CATEGORY => 'page_namespace',
-				'cl_title' => 'page_title'
+				'cl_to' => 'page_title'
 			),
 			array( 'cl_from' => $title->getArticleID() ),
 			__METHOD__,
