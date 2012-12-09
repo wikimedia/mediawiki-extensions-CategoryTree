@@ -3605,6 +3605,7 @@ Jika anda menggunakan pelayar web yang sudah ketinggalan, atau mematikan JavaScr
 	'categorytree-category' => 'Kategori:',
 	'categorytree-go' => 'Tunjukkan salasilah',
 	'categorytree-parents' => 'Induk',
+	'categorytree-mode-label' => 'Ragam:',
 	'categorytree-mode-categories' => 'kategori sahaja',
 	'categorytree-mode-pages' => 'laman kecuali imej',
 	'categorytree-mode-all' => 'semua laman',
