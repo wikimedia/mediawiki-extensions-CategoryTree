@@ -487,6 +487,7 @@ $messages['az'] = array(
 /** South Azerbaijani (تورکجه)
  * @author Amir a57
  * @author E THP
+ * @author Mousa
  */
 $messages['azb'] = array(
 	'categorytree' => 'بولمه آغاجی',
@@ -497,6 +498,7 @@ $messages['azb'] = array(
 	'categorytree-category' => 'بؤلمه',
 	'categorytree-go' => 'یوکله',
 	'categorytree-parents' => 'اوست بولمه لر',
+	'categorytree-mode-label' => 'دوروم:',
 	'categorytree-mode-categories' => 'ساده‌جه بولمه لری گؤستر',
 	'categorytree-mode-pages' => 'فایل‌لاردان علاوه صحیفه‌لر',
 	'categorytree-mode-all' => 'بوتون صحیفه‌لر',
