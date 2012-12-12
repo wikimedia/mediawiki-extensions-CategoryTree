@@ -357,6 +357,7 @@ $messages['as'] = array(
 	'categorytree-category' => 'শ্ৰেণীবৄক্ষ:',
 	'categorytree-go' => 'বৃক্ষ দেখুৱাওক',
 	'categorytree-parents' => 'পালক',
+	'categorytree-mode-label' => 'প্ৰণালী:',
 	'categorytree-mode-categories' => 'কেৱল শ্ৰেণী',
 	'categorytree-mode-pages' => 'ফাইল বাদে পৃষ্ঠাসমুহ',
 	'categorytree-mode-all' => 'সকলো পৃষ্ঠা',
