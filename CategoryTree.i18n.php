@@ -5974,6 +5974,7 @@ $messages['zea'] = array(
  * @author Liangent
  * @author PhiLiP
  * @author Shinjiman
+ * @author Shizhao
  * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
@@ -5985,6 +5986,7 @@ $messages['zh-hans'] = array(
 	'categorytree-category' => '分类：',
 	'categorytree-go' => '显示分类树',
 	'categorytree-parents' => '父分类',
+	'categorytree-mode-label' => '模式：',
 	'categorytree-mode-categories' => '仅分类',
 	'categorytree-mode-pages' => '除文件外的页面',
 	'categorytree-mode-all' => '所有页面',
