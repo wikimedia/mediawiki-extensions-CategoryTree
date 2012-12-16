@@ -1328,6 +1328,7 @@ $messages['egl'] = array(
  * @author Badseed
  * @author Consta
  * @author Dead3y3
+ * @author Protnet
  * @author ZaDiak
  */
 $messages['el'] = array(
@@ -1344,7 +1345,7 @@ $messages['el'] = array(
 	'categorytree-mode-categories' => 'μόνο κατηγορίες',
 	'categorytree-mode-pages' => 'Σελίδες εξαιρουμένων αρχείων',
 	'categorytree-mode-all' => 'όλες οι σελίδες',
-	'categorytree-collapse' => 'κατάρρευση',
+	'categorytree-collapse' => 'σύμπτυξη',
 	'categorytree-expand' => 'επέκτεινε',
 	'categorytree-member-counts' => 'περιέχει {{PLURAL:$1|1 υποκατηγορία|$1 υποκατηγορίες}}, {{PLURAL:$2|1 σελίδα|$2 σελίδες}} και {{PLURAL:$3|1 αρχείο|$3 αρχεία}}',
 	'categorytree-num-categories' => '$1 Κ',
