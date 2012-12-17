@@ -3994,6 +3994,7 @@ $messages['oc'] = array(
 );
 
 /** Oriya (ଓଡ଼ିଆ)
+ * @author Jnanaranjan Sahu
  * @author Odisha1
  * @author Psubhashish
  */
@@ -4008,6 +4009,7 @@ $messages['or'] = array(
 	'categorytree-category' => 'ଶ୍ରେଣୀ:',
 	'categorytree-go' => 'ଶ୍ରେଣୀବିଭାଗଗୁଡ଼ିକ ଦେଖାଇବା',
 	'categorytree-parents' => 'ମୂଳ',
+	'categorytree-mode-label' => 'ମୋଡ:',
 	'categorytree-mode-categories' => 'କେବଳ ଶ୍ରେଣୀସମୂହ',
 	'categorytree-mode-pages' => 'ଫାଇଲ ନଥିବା ପୃଷ୍ଠାସବୁ',
 	'categorytree-mode-all' => 'ସବୁ ପୃଷ୍ଠା',
@@ -4032,6 +4034,7 @@ $messages['or'] = array(
 /** Ossetic (Ирон)
  * @author Amikeco
  * @author Amire80
+ * @author Bouron
  */
 $messages['os'] = array(
 	'categorytree' => 'Категориты бæлас',
@@ -4045,8 +4048,11 @@ $messages['os'] = array(
 	'categorytree-num-pages' => '$1 Ф',
 	'categorytree-num-files' => '$1 ф',
 	'categorytree-num-empty' => 'афтид',
+	'categorytree-load' => 'сæвгæнын',
+	'categorytree-loading' => 'æвгæд цæуы...',
 	'categorytree-nothing-found' => 'Ацы категорийы мидæг дæлкатегоритæ нæ разынд',
 	'categorytree-no-subcategories' => 'дæлкатегоритæ нæй',
+	'categorytree-no-parent-categories' => 'хистæр категори нæй',
 	'categorytree-no-pages' => 'фæрстæ æмæ дæлкатегоритæ нæй',
 	'categorytree-not-found' => 'Категори «$1» не ссардæуы.',
 );
