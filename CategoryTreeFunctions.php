@@ -577,8 +577,8 @@ class CategoryTree {
 		$res = $dbr->select(
 			'categorylinks',
 			array(
-				NS_CATEGORY => 'page_namespace',
-				'cl_to' => 'page_title'
+				'page_namespace' => NS_CATEGORY,
+				'page_title' => 'cl_to',
 			),
 			array( 'cl_from' => $title->getArticleID() ),
 			__METHOD__,
