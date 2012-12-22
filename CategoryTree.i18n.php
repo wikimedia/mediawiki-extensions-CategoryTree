@@ -504,7 +504,7 @@ $messages['azb'] = array(
 	'categorytree-mode-pages' => 'فایل‌لاردان علاوه صحیفه‌لر',
 	'categorytree-mode-all' => 'بوتون صحیفه‌لر',
 	'categorytree-collapse' => 'گیزلت',
-	'categorytree-expand' => 'گئنشتیرمه',
+	'categorytree-expand' => 'گئنیشلندیر',
 	'categorytree-member-counts' => '{{PLURAL:$1|1 آلت بولمه|$1 آلت بولمه}}، {{PLURAL:$2|1 صهیف|$2 صحیفه}}، و {{PLURAL:$3|1 شکیل|$3 شکیل}}دن عبارت‌دیر',
 	'categorytree-num-categories' => '$1 ر',
 	'categorytree-num-pages' => '$1 ص',
@@ -1342,6 +1342,7 @@ $messages['el'] = array(
 	'categorytree-category' => 'Κατηγορία:',
 	'categorytree-go' => 'Εμφάνιση δέντρου',
 	'categorytree-parents' => 'Γονείς',
+	'categorytree-mode-label' => 'Λειτουργία:',
 	'categorytree-mode-categories' => 'μόνο κατηγορίες',
 	'categorytree-mode-pages' => 'Σελίδες εξαιρουμένων αρχείων',
 	'categorytree-mode-all' => 'όλες οι σελίδες',
@@ -1376,6 +1377,7 @@ $messages['eo'] = array(
 	'categorytree-category' => 'Kategorio:',
 	'categorytree-go' => 'Montri arbon',
 	'categorytree-parents' => 'praul(ar)o',
+	'categorytree-mode-label' => 'Reĝimo:',
 	'categorytree-mode-categories' => 'nur kategorioj',
 	'categorytree-mode-pages' => 'paĝoj krom dosieroj',
 	'categorytree-mode-all' => 'ĉiuj paĝoj',
@@ -1526,6 +1528,7 @@ $messages['ext'] = array(
  * @author Ebraminio
  * @author Huji
  * @author Leyth
+ * @author Mjbmr
  * @author ZxxZxxZ
  */
 $messages['fa'] = array(
@@ -1537,6 +1540,7 @@ $messages['fa'] = array(
 	'categorytree-category' => 'رده:',
 	'categorytree-go' => 'نمایش درخت',
 	'categorytree-parents' => 'ریشه',
+	'categorytree-mode-label' => 'حالت:',
 	'categorytree-mode-categories' => 'فقط رده‌ها',
 	'categorytree-mode-pages' => 'صفحه‌ها به جز تصاویر',
 	'categorytree-mode-all' => 'همهٔ صفحه‌ها',
@@ -2343,6 +2347,7 @@ Jika Anda menggunakan penjelajah web lama, atau mematikan fungsi JavaScript Anda
 	'categorytree-category' => 'Kategori:',
 	'categorytree-go' => 'Tampilkan',
 	'categorytree-parents' => 'Atasan',
+	'categorytree-mode-label' => 'Mode:',
 	'categorytree-mode-categories' => 'hanya kategori',
 	'categorytree-mode-pages' => 'halaman kecuali berkas',
 	'categorytree-mode-all' => 'semua halaman',
@@ -3276,6 +3281,7 @@ Jei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.',
 	'categorytree-category' => 'Kategorija:',
 	'categorytree-go' => 'Rodyti medį',
 	'categorytree-parents' => 'Aukštesnio lygio kategorija',
+	'categorytree-mode-label' => 'Režimas:',
 	'categorytree-mode-categories' => 'tik kategorijos',
 	'categorytree-mode-pages' => 'puslapiai išskyrus paveikslėlius',
 	'categorytree-mode-all' => 'visi puslapiai',
@@ -4374,6 +4380,7 @@ Caso o seu navegador seja razoavelmente antigo ou tenha o JavaScript desativado,
 	'categorytree-category' => 'Categoria:',
 	'categorytree-go' => 'Exibir árvore',
 	'categorytree-parents' => 'Categorias superiores',
+	'categorytree-mode-label' => 'Modo:',
 	'categorytree-mode-categories' => 'apenas as categorias',
 	'categorytree-mode-pages' => 'páginas, exceto arquivos',
 	'categorytree-mode-all' => 'todas as páginas',
@@ -4799,6 +4806,7 @@ AJAX නමින් හැඳින්වෙන ප්‍රගත ජාවා
 	'categorytree-category' => 'ප්‍රවර්ගය:',
 	'categorytree-go' => 'බෙදීයාම් සටහන පෙන්වන්න',
 	'categorytree-parents' => 'මාපියන්',
+	'categorytree-mode-label' => 'ක්‍රමය:',
 	'categorytree-mode-categories' => 'ප්‍රවර්ග පමණයි',
 	'categorytree-mode-pages' => 'ගොනු හැර ඉතිරි පිටු',
 	'categorytree-mode-all' => 'සියළු පිටු',
