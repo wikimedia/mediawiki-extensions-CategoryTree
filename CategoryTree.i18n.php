@@ -917,6 +917,7 @@ $messages['bs'] = array(
 
 /** Catalan (català)
  * @author Aleator
+ * @author Arnaugir
  * @author Paucabot
  * @author SMP
  * @author Toniher
@@ -931,6 +932,7 @@ $messages['ca'] = array(
 	'categorytree-category' => 'Categoria:',
 	'categorytree-go' => 'Carregueu',
 	'categorytree-parents' => 'Categories superiors',
+	'categorytree-mode-label' => 'Mode:',
 	'categorytree-mode-categories' => 'mostra només categories',
 	'categorytree-mode-pages' => 'mostra categories i pàgines',
 	'categorytree-mode-all' => 'mostra categories, pàgines i imatges',
@@ -4194,6 +4196,7 @@ Jeśli masz bardzo starą przeglądarkę lub wyłączony JavaScript, ta funkcja 
 	'categorytree-category' => 'Kategoria',
 	'categorytree-go' => 'Ładuj kategorię',
 	'categorytree-parents' => 'Kategorie główne',
+	'categorytree-mode-label' => 'Tryb:',
 	'categorytree-mode-categories' => 'tylko kategorie',
 	'categorytree-mode-pages' => 'strony oprócz plików',
 	'categorytree-mode-all' => 'wszystkie strony',
