@@ -496,7 +496,7 @@ $messages['azb'] = array(
 	'categorytree-legend' => 'بولمه آغاجین گوستر',
 	'categorytree-desc' => '[[Special:CategoryTree|بولمه لر سیستئمینی]] دینامیک ایداره ائت',
 	'categorytree-header' => 'بولمه آدینی گیریب، ایچئری‌سینی آغاج شکیلده گؤره بیلرسینیز. بو خصوصی ای جکس آدییلا بیلین جاوااسکریپت ایله اوشلیر. اگر اوپئراتورونوز کؤهنه ایسه یا دا جاوااسکریپت ایستیفاده‌سی مومکون دئییلسه، ایشلمز.',
-	'categorytree-category' => 'بؤلمه',
+	'categorytree-category' => 'بؤلمه:',
 	'categorytree-go' => 'یوکله',
 	'categorytree-parents' => 'اوست بولمه لر',
 	'categorytree-mode-label' => 'دوروم:',
@@ -2392,8 +2392,8 @@ $messages['ig'] = array(
 	'categorytree-mode-all' => 'Ihü nílé',
 	'categorytree-collapse' => 'zekpùdo',
 	'categorytree-expand' => 'Sá àsáá',
-	'categorytree-load' => 'mẹ kó byá',
-	'categorytree-loading' => 'ó byáwálá...',
+	'categorytree-load' => 'mmẹ̀wẹ́òbú',
+	'categorytree-loading' => 'ọ byáwálá...',
 	'categorytree-no-subcategories' => 'ébéonọr-ime àdíghị',
 	'categorytree-no-pages' => 'ihü ma ébéonọr-ímé àdíghị',
 );
@@ -2949,6 +2949,7 @@ $messages['ksh'] = array(
 	'categorytree-category' => 'Saachjrupp:',
 	'categorytree-go' => 'dä Boum zeije',
 	'categorytree-parents' => 'Övverjeoodnete Jruppe',
+	'categorytree-mode-label' => 'Aat:',
 	'categorytree-mode-categories' => 'nor Saachjruppe',
 	'categorytree-mode-pages' => 'nomaal Sigge un Saachjruppe, kein Medie',
 	'categorytree-mode-all' => 'alles: nomaal Sigge, Saachjruppe, un Medije',
@@ -4459,6 +4460,7 @@ $messages['rm'] = array(
  * @author KlaudiuMihaila
  * @author Mihai
  * @author Minisarm
+ * @author Stelistcristi
  */
 $messages['ro'] = array(
 	'categorytree' => 'Arborele categoriilor',
@@ -4469,6 +4471,7 @@ $messages['ro'] = array(
 	'categorytree-category' => 'Categorie:',
 	'categorytree-go' => 'Arată arborele',
 	'categorytree-parents' => 'Părinți',
+	'categorytree-mode-label' => 'Mod:',
 	'categorytree-mode-categories' => 'doar categorii',
 	'categorytree-mode-pages' => 'pagini fără imagini',
 	'categorytree-mode-all' => 'toate paginile',
@@ -4527,6 +4530,7 @@ Ce tu è 'nu browser assaije vecchie, o tìne 'u JavaScript disabbilitate, non g
 
 /** Russian (русский)
  * @author Ahonc
+ * @author Kaganer
  * @author Lockal
  * @author Putnik
  * @author Александр Сигачёв
@@ -4542,6 +4546,7 @@ $messages['ru'] = array(
 	'categorytree-category' => 'Категория:',
 	'categorytree-go' => 'Загрузить',
 	'categorytree-parents' => 'Родительские категории',
+	'categorytree-mode-label' => 'Режим:',
 	'categorytree-mode-categories' => 'только категории',
 	'categorytree-mode-pages' => 'кроме файлов',
 	'categorytree-mode-all' => 'все страницы',
