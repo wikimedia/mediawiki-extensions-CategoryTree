@@ -492,7 +492,7 @@ $messages['az'] = array(
  */
 $messages['azb'] = array(
 	'categorytree' => 'بولمه آغاجی',
-	'categorytree-portlet' => 'بولمه لر',
+	'categorytree-portlet' => 'بؤلمه‌لر',
 	'categorytree-legend' => 'بولمه آغاجین گوستر',
 	'categorytree-desc' => '[[Special:CategoryTree|بولمه لر سیستئمینی]] دینامیک ایداره ائت',
 	'categorytree-header' => 'بولمه آدینی گیریب، ایچئری‌سینی آغاج شکیلده گؤره بیلرسینیز. بو خصوصی ای جکس آدییلا بیلین جاوااسکریپت ایله اوشلیر. اگر اوپئراتورونوز کؤهنه ایسه یا دا جاوااسکریپت ایستیفاده‌سی مومکون دئییلسه، ایشلمز.',
