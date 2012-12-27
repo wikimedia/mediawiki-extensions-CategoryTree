@@ -2236,6 +2236,7 @@ Ha túlságosan régi böngésződ van, vagy a JavaScript le van tiltva, akkor n
 	'categorytree-category' => 'Kategória:',
 	'categorytree-go' => 'Mehet',
 	'categorytree-parents' => 'Szülőkategóriák',
+	'categorytree-mode-label' => 'Mód:',
 	'categorytree-mode-categories' => 'csak kategóriák',
 	'categorytree-mode-pages' => 'lapok fájlok nélkül',
 	'categorytree-mode-all' => 'az összes oldal',
