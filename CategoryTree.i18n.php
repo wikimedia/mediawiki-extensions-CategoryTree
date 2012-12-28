@@ -3392,7 +3392,7 @@ Ja tev ir veca interneta pārlūkprogramma vai arī JavaScript ir atslēgts, š�
 	'categorytree-mode-pages' => 'lapas (bez attēlu lapām)',
 	'categorytree-mode-all' => 'visas lapas',
 	'categorytree-collapse' => 'sakļaut',
-	'categorytree-expand' => 'izplest',
+	'categorytree-expand' => 'izvērst',
 	'categorytree-member-counts' => 'satur {{PLURAL:$1|1 apakškategoriju|$1 apakškategorijas}}, {{PLURAL:$2|1 lapu|$2 lapas}}, un {{PLURAL:$3|1 failu|$3 failus}}',
 	'categorytree-num-categories' => '$1 K',
 	'categorytree-num-pages' => '$1 L',
