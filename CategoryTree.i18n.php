@@ -3423,6 +3423,7 @@ Angger Rika panjlajah wèbé kalebu vèrsi lawas, utawa fitur JavaScript dipatè
 	'categorytree-category' => 'Kategori:',
 	'categorytree-go' => 'Tuduhna uwit',
 	'categorytree-parents' => 'Kategori sing luwih dhuwur',
+	'categorytree-mode-label' => 'Mode:',
 	'categorytree-mode-categories' => 'kategori thok',
 	'categorytree-mode-pages' => 'kaca kajaba gambar',
 	'categorytree-mode-all' => 'kabèh kaca',
