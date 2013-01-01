@@ -5461,7 +5461,7 @@ $messages['tly'] = array(
 	'categorytree-header' => 'Категоријә номи бынывыштән, ијән ав нишо бәбе бәнә до.
 Ым мымкуне, гирәм шымә браузерәдә AJAX һесте.
 Гирәм шымәку браузери канә рәвојәте ја JavaScript быријә быә, жинә категоријон нишо дој бәнә до әбыни.',
-	'categorytree-category' => 'Категоријә:',
+	'categorytree-category' => 'Тиспир:',
 	'categorytree-go' => 'Бо жәј',
 	'categorytree-parents' => 'Пыә-моә категоријон',
 	'categorytree-mode-categories' => 'әнҹәх категоријон',
