@@ -6073,6 +6073,7 @@ $messages['zh-hans'] = array(
  * @author Mark85296341
  * @author Oapbtommy
  * @author Shinjiman
+ * @author Simon Shek
  */
 $messages['zh-hant'] = array(
 	'categorytree' => '分類樹',
@@ -6085,6 +6086,7 @@ $messages['zh-hant'] = array(
 	'categorytree-category' => '類別：',
 	'categorytree-go' => '顯示樹狀結構',
 	'categorytree-parents' => '父分類',
+	'categorytree-mode-label' => '模式：',
 	'categorytree-mode-categories' => '只顯示分類',
 	'categorytree-mode-pages' => '除去圖片頁面',
 	'categorytree-mode-all' => '所有頁面',
