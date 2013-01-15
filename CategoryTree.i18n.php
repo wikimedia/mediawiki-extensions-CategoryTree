@@ -242,6 +242,7 @@ $messages['an'] = array(
 /** Arabic (العربية)
  * @author AwamerT
  * @author Meno25
+ * @author Mido
  * @author OsamaK
  * @author زكريا
  */
@@ -256,6 +257,7 @@ $messages['ar'] = array(
 	'categorytree-category' => ':تصنيف',
 	'categorytree-go' => 'عرض الشجرة',
 	'categorytree-parents' => 'مصنف تحت',
+	'categorytree-mode-label' => 'الوضع:',
 	'categorytree-mode-categories' => 'تصنيفات فقط',
 	'categorytree-mode-pages' => 'الصفحات ماعدا الملفات',
 	'categorytree-mode-all' => 'كل الصفحات',
