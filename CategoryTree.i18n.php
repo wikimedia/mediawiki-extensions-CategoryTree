@@ -753,13 +753,6 @@ $messages['bg'] = array(
 	'categorytree-retry' => 'Изчакайте малко и опитайте отново.',
 );
 
-/** bh (भोजपुरी)
- * @author Ganesh
- */
-$messages['bh'] = array(
-	'categorytree-portlet' => 'श्रेणी',
-);
-
 /** Bhojpuri (भोजपुरी)
  * @author Ganesh
  */
