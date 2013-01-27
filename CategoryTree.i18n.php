@@ -753,7 +753,7 @@ $messages['bg'] = array(
 	'categorytree-retry' => 'Изчакайте малко и опитайте отново.',
 );
 
-/** Bihari (भोजपुरी)
+/** bh (भोजपुरी)
  * @author Ganesh
  */
 $messages['bh'] = array(
@@ -3815,7 +3815,7 @@ $messages['nds'] = array(
 	'categorytree-retry' => 'Tööv en beten un denn versöök dat noch wedder.',
 );
 
-/** Nedersaksisch (Nedersaksisch)
+/** Nedersaksies (Nedersaksies)
  * @author Servien
  */
 $messages['nds-nl'] = array(
@@ -4080,6 +4080,7 @@ $messages['os'] = array(
 /** Punjabi (ਪੰਜਾਬੀ)
  * @author Aalam
  * @author Gman124
+ * @author Raj Singh
  * @author TariButtar
  */
 $messages['pa'] = array(
@@ -4103,6 +4104,7 @@ $messages['pa'] = array(
 	'categorytree-nothing-found' => 'ਕੁਝ ਨਹੀਂ ਲੱਭਾ',
 	'categorytree-no-subcategories' => 'ਕੋਈ ਸਬ-ਕੈਟਾਗਰੀ ਨਹੀਂ',
 	'categorytree-no-parent-categories' => 'ਕੋਈ ਮੁੱਢਲੀ ਕੈਟਾਗਰੀ ਨਹੀਂ',
+	'categorytree-not-found' => 'ਸ਼੍ਰੇਣੀ <i>$1</i> ਮਿਲੀ ਨਹੀਂ',
 	'categorytree-error' => 'ਡਾਟਾ ਲੋਡ ਕਰਨ ਦੌਰਾਨ ਸਮੱਸਿਆ।',
 	'categorytree-retry' => 'ਕੁਝ ਪਲ ਉਡੀਕੋ ਅਤੇ ਫੇਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ।',
 );
