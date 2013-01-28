@@ -141,7 +141,7 @@ $magicWords['nb'] = array(
 	'categorytree' => array( 0, 'kategoritre' ),
 );
 
-/** Nedersaksies (Nedersaksies) */
+/** Low Saxon (Netherlands) (Nedersaksies) */
 $magicWords['nds-nl'] = array(
 	'categorytree' => array( 0, 'kategorieboom', 'categorieboom' ),
 );
