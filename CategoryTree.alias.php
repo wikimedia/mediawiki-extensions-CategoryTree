@@ -138,7 +138,7 @@ $specialPageAliases['eu'] = array(
 
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
-	'CategoryTree' => array( 'درخت_رده' ),
+	'CategoryTree' => array( 'درخت_دسته' ),
 );
 
 /** Finnish (suomi) */
