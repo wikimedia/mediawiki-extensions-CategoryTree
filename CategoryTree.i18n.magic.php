@@ -136,7 +136,7 @@ $magicWords['mr'] = array(
 	'categorytree' => array( 0, 'वर्गवृक्ष', 'categorytree' ),
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk bokmål) */
 $magicWords['nb'] = array(
 	'categorytree' => array( 0, 'kategoritre' ),
 );
@@ -189,6 +189,11 @@ $magicWords['tr'] = array(
 /** Tatar (Cyrillic script) (татарча) */
 $magicWords['tt-cyrl'] = array(
 	'categorytree' => array( 0, 'төркемнәр_шәҗәрәсе' ),
+);
+
+/** Tuvinian (тыва дыл) */
+$magicWords['tyv'] = array(
+	'categorytree' => array( 0, 'аңгылал_ыяжы' ),
 );
 
 /** Ukrainian (українська) */
