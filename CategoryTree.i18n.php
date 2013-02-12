@@ -4336,6 +4336,7 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (português)
+ * @author Dicionarista
  * @author Giro720
  * @author Hamilton Abreu
  * @author João Sousa
@@ -4344,7 +4345,7 @@ $messages['ps'] = array(
 $messages['pt'] = array(
 	'categorytree' => 'Árvore de categorias',
 	'categorytree-portlet' => 'Categorias',
-	'categorytree-legend' => 'Mostrar a árvore de categorias',
+	'categorytree-legend' => 'Mostrar árvore de categorias',
 	'categorytree-desc' => "Acessório ''(gadget)'' baseado em AJAX que apresenta a [[Special:CategoryTree|estrutura]] de uma wiki",
 	'categorytree-header' => 'Introduza o nome de uma categoria para ver o seu conteúdo numa estrutura de árvore.
 Note que isto requer uma funcionalidade avançada do JavaScript, conhecida por AJAX.
@@ -4363,7 +4364,7 @@ Caso o seu browser seja razoavelmente antigo ou o JavaScript esteja desactivado,
 	'categorytree-num-files' => '$1 F',
 	'categorytree-num-empty' => 'vazia',
 	'categorytree-load' => 'carregar',
-	'categorytree-loading' => 'carregando',
+	'categorytree-loading' => 'carregando...',
 	'categorytree-nothing-found' => 'não foi encontrado nada',
 	'categorytree-no-subcategories' => 'sem subcategorias',
 	'categorytree-no-parent-categories' => 'não há categorias superiores',
@@ -4375,6 +4376,7 @@ Caso o seu browser seja razoavelmente antigo ou o JavaScript esteja desactivado,
 
 /** Brazilian Portuguese (português do Brasil)
  * @author Carla404
+ * @author Dicionarista
  * @author Eduardo.mps
  * @author Rafael Vargas
  * @author 555
@@ -4382,7 +4384,7 @@ Caso o seu browser seja razoavelmente antigo ou o JavaScript esteja desactivado,
 $messages['pt-br'] = array(
 	'categorytree' => 'Árvore de categorias',
 	'categorytree-portlet' => 'Categorias',
-	'categorytree-legend' => 'Exibir a árvore de categorias',
+	'categorytree-legend' => 'Mostrar árvore de categorias',
 	'categorytree-desc' => 'Navegação dinâmica pela [[Special:CategoryTree|estrutura de categorias]]',
 	'categorytree-header' => 'Insira o nome de uma categoria para ver seu conteúdo como uma estrutura de "árvore".
 Note que isso requer funcionalidades avançadas de JavaScript conhecidas como AJAX.
@@ -4396,7 +4398,7 @@ Caso o seu navegador seja razoavelmente antigo ou tenha o JavaScript desativado,
 	'categorytree-mode-all' => 'todas as páginas',
 	'categorytree-collapse' => 'recolher',
 	'categorytree-expand' => 'expandir',
-	'categorytree-member-counts' => 'Contém {{PLURAL:$1|1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|1 página|$2 páginas}} e {{PLURAL:$3|1 arquivo|$3 arquivos}}',
+	'categorytree-member-counts' => 'possui {{PLURAL:$1|1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|1 página|$2 páginas}} e {{PLURAL:$3|1 arquivo|$3 arquivos}}',
 	'categorytree-num-categories' => '$1 C',
 	'categorytree-num-pages' => '$1 P',
 	'categorytree-num-files' => '$1 A',
