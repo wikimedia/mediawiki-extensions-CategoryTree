@@ -86,7 +86,8 @@ Title for the CategoryPortlet, when shown in the side bar',
 
 Label for the category input field on Special:CategoryTree',
 	'categorytree-go' => 'Label for the submit button on [[Special:CategoryTree]]',
-	'categorytree-parents' => 'Label for the list of parent categories on [[Special:CategoryTree]]',
+	'categorytree-parents' => 'Label for the list of parent categories on [[Special:CategoryTree]].
+{{Identical|Parent}}',
 	'categorytree-mode-categories' => 'Item for the mode choice on [[Special:CategoryTree]], indicating that only categories are listed',
 	'categorytree-mode-pages' => 'Item for the mode choice on [[Special:CategoryTree]], indicating that no images in categories are listed',
 	'categorytree-mode-all' => 'Item for the mode choice on [[Special:CategoryTree]], indicating that all pages are listed.
