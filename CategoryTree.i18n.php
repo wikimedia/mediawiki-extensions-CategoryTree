@@ -82,9 +82,8 @@ Title for the CategoryPortlet, when shown in the side bar',
 	'categorytree-legend' => 'Legend of the fieldset around the input form of [[Special:Categorytree]].',
 	'categorytree-desc' => '{{desc|name=Category Tree|url=http://www.mediawiki.org/wiki/Extension:CategoryTree}}',
 	'categorytree-header' => 'Header-text shown on [[Special:CategoryTree]]',
-	'categorytree-category' => '{{Identical|Category}}
-
-Label for the category input field on Special:CategoryTree',
+	'categorytree-category' => 'Label for the category input field on Special:CategoryTree.
+{{Identical|Category}}',
 	'categorytree-go' => 'Label for the submit button on [[Special:CategoryTree]]',
 	'categorytree-parents' => 'Label for the list of parent categories on [[Special:CategoryTree]].
 {{Identical|Parent}}',
