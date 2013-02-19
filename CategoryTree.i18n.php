@@ -1106,6 +1106,7 @@ Ni lwydda'r gofyniad os yw'ch porwr yn hen iawn neu os nad yw Sgript Java wedi e
 	'categorytree-category' => 'Categori:',
 	'categorytree-go' => 'Dangos y Goeden',
 	'categorytree-parents' => 'Rhieni',
+	'categorytree-mode-label' => 'Modd:',
 	'categorytree-mode-categories' => 'categorïau yn unig',
 	'categorytree-mode-pages' => 'tudalennau ag eithrio ffeiliau',
 	'categorytree-mode-all' => 'pob tudalen',
