@@ -76,9 +76,8 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
  */
 $messages['qqq'] = array(
 	'categorytree' => 'Title of [[Special:CategoryTree]]',
-	'categorytree-portlet' => '{{Identical|Categories}}
-
-Title for the CategoryPortlet, when shown in the side bar',
+	'categorytree-portlet' => 'Title for the CategoryPortlet, when shown in the side bar.
+{{Identical|Categories}}',
 	'categorytree-legend' => 'Legend of the fieldset around the input form of [[Special:Categorytree]].',
 	'categorytree-desc' => '{{desc|name=Category Tree|url=http://www.mediawiki.org/wiki/Extension:CategoryTree}}',
 	'categorytree-header' => 'Header-text shown on [[Special:CategoryTree]]',
@@ -130,12 +129,10 @@ Tip: Use the ParserFunctions extension (http://www.mediawiki.org/wiki/Help:Exten
 	'categorytree-num-files' => 'Number of files in a category. The word "files" should be abbreviated.  Appears in brackets after a name of an empty category. This message supports PLURAL.',
 	'categorytree-num-empty' => 'The word "empty", as in "empty category". Appears in brackets after a name of an empty category.
 {{Identical|Empty}}',
-	'categorytree-load' => '{{Identical|Load}}
-
-Tooltip for the "expand" button, if the content was not yet loaded',
-	'categorytree-loading' => '{{Identical|Loading}}
-
-Status message shown while loading content',
+	'categorytree-load' => 'Tooltip for the "expand" button, if the content was not yet loaded.
+{{Identical|Load}}',
+	'categorytree-loading' => 'Status message shown while loading content.
+{{Identical|Loading}}',
 	'categorytree-nothing-found' => 'Indicates items with matching criteria have been found',
 	'categorytree-no-subcategories' => 'Indicates that there are no subcategories to be shown',
 	'categorytree-no-parent-categories' => 'Indicates that there are no parent categories to be shown',
