@@ -110,7 +110,7 @@ By default, when listing subcategories on a category page, each subcategory is f
 <pre>
 My category name (5)
 </pre>
-You can change this behaviour by overriding this system message. It receives five parameters:
+You can change this behavior by overriding this system message. It receives five parameters:
 
 * $1 	Number of subcategories
 * $2 	Number of articles (not including category pages or file pages)
