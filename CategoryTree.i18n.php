@@ -92,7 +92,8 @@ $messages['qqq'] = array(
 
 {{Identical|All pages}}',
 	'categorytree-collapse' => 'Tooltip for the "collapse" button',
-	'categorytree-expand' => 'Tooltip for the "expand" button',
+	'categorytree-expand' => 'Tooltip for the "expand" button.
+{{Identical|Expand}}',
 	'categorytree-collapse-bullet' => '{{notranslate}}',
 	'categorytree-expand-bullet' => '{{notranslate}}',
 	'categorytree-empty-bullet' => '{{notranslate}}',
