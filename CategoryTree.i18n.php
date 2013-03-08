@@ -91,7 +91,8 @@ $messages['qqq'] = array(
 	'categorytree-mode-all' => 'Item for the mode choice on [[Special:CategoryTree]], indicating that all pages are listed.
 
 {{Identical|All pages}}',
-	'categorytree-collapse' => 'Tooltip for the "collapse" button',
+	'categorytree-collapse' => 'Tooltip for the "collapse" button.
+{{Identical|Collapse}}',
 	'categorytree-expand' => 'Tooltip for the "expand" button.
 {{Identical|Expand}}',
 	'categorytree-collapse-bullet' => '{{notranslate}}',
