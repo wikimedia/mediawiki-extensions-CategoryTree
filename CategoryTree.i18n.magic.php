@@ -76,6 +76,11 @@ $magicWords['gl'] = array(
 	'categorytree' => array( 0, 'árboredecategorías' ),
 );
 
+/** Hebrew (עברית) */
+$magicWords['he'] = array(
+	'categorytree' => array( 0, 'עץ_קטגוריה' ),
+);
+
 /** Igbo (Igbo) */
 $magicWords['ig'] = array(
 	'categorytree' => array( 0, 'óshíshíébéonọr', 'categorytree' ),
@@ -198,7 +203,7 @@ $magicWords['tyv'] = array(
 
 /** Ukrainian (українська) */
 $magicWords['uk'] = array(
-	'categorytree' => array( 0, 'деревокатегорій', 'деревокатегорий' ),
+	'categorytree' => array( 0, 'деревокатегорій' ),
 );
 
 /** Urdu (اردو) */
