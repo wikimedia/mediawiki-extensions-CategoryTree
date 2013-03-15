@@ -595,6 +595,23 @@ De Seiten braucht bstimmte JavaScript-Funkzionen (Ajax) und funkzionird meeglich
 	'categorytree-retry' => 'Bittschee wort a Momenterl und vasuachs dånn nuamoi.',
 );
 
+/** Batak Toba (Batak Toba)
+ * @author Stephensuleeman
+ */
+$messages['bbc-latn'] = array(
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'rumar',
+	'categorytree-load' => 'mangisi',
+	'categorytree-loading' => 'mangisi...',
+	'categorytree-nothing-found' => 'ndang adong jumpang',
+	'categorytree-no-subcategories' => 'ndang adong subkategori',
+	'categorytree-no-parent-categories' => 'ndang adong kategori na tumimbo',
+	'categorytree-no-pages' => 'ndang adong alaman manang subkategori',
+	'categorytree-not-found' => 'Kategori <i>$1</i> ndang jumpang',
+);
+
 /** Southern Balochi (بلوچی مکرانی)
  * @author Mostafadaneshvar
  */
