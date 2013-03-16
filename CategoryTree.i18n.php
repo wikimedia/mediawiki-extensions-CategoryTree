@@ -100,11 +100,11 @@ $messages['qqq'] = array(
 	'categorytree-empty-bullet' => '{{notranslate}}',
 	'categorytree-page-bullet' => '{{notranslate}}',
 	'categorytree-member-counts' => 'Tooltip showing a detailed summary of subcategory member counts. Parameters:
-* $1 = number of subcategories,
-* $2 = number of pages (without subcategories and files),
-* $3 = number of files,
-* $4 = total number of members,
-* $5 = members to be shown in the tree, depending on mode.
+* $1 - number of subcategories
+* $2 - number of pages (without subcategories and files)
+* $3 - number of files
+* $4 - total number of members
+* $5 - members to be shown in the tree, depending on mode
 Use with <nowiki>{{PLURAL}}</nowiki>',
 	'categorytree-member-num' => '{{notranslate}}
 (From http://www.mediawiki.org/wiki/Extension:CategoryTree#categorytree-member-num):
@@ -139,7 +139,8 @@ Tip: Use the ParserFunctions extension (http://www.mediawiki.org/wiki/Help:Exten
 	'categorytree-no-subcategories' => 'Indicates that there are no subcategories to be shown',
 	'categorytree-no-parent-categories' => 'Indicates that there are no parent categories to be shown',
 	'categorytree-no-pages' => 'Indicates that there are no pages or subcategories to be shown',
-	'categorytree-not-found' => 'Indicates that the given category ($1) was not found',
+	'categorytree-not-found' => 'Indicates that the given category ($1) was not found. Parameters:
+* $1 - category name',
 	'categorytree-error' => "Indicates that an error has occurred while loading the node's content",
 	'categorytree-retry' => 'Instruction to try again later',
 );
