@@ -1003,9 +1003,12 @@ $messages['ce'] = array(
 	'categorytree-category' => 'Кадегар:',
 	'categorytree-go' => 'Чуйаккха',
 	'categorytree-parents' => 'Кхолламан кадегарш',
+	'categorytree-mode-label' => 'РогӀехь:',
+	'categorytree-mode-categories' => 'екъ кадегарш',
 	'categorytree-mode-all' => 'массо агlонаш',
 	'categorytree-collapse' => 'къайла яккха',
 	'categorytree-expand' => 'хьайаста',
+	'categorytree-load' => 'чуяккха',
 	'categorytree-loading' => 'чуйолуш…',
 	'categorytree-no-subcategories' => 'йац бухаркадегарш',
 	'categorytree-not-found' => 'Кадегар «$1» ца карийна.',
@@ -4936,10 +4939,12 @@ $messages['sl'] = array(
 );
 
 /** Somali (Soomaaliga)
+ * @author Abshirdheere
  * @author Maax
  */
 $messages['so'] = array(
 	'categorytree-category' => 'Qeybta:',
+	'categorytree-no-subcategories' => 'Ma jiraan wax laamaha qaybaha ah',
 	'categorytree-not-found' => 'Qeybta  <i>$1</i> lama helin',
 );
 
