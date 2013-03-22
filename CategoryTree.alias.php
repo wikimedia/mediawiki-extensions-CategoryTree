@@ -118,7 +118,7 @@ $specialPageAliases['el'] = array(
 
 /** Esperanto (Esperanto) */
 $specialPageAliases['eo'] = array(
-	'CategoryTree' => array( 'Kategorio-arbo' ),
+	'CategoryTree' => array( 'Arbo_de_kategorioj', 'Kategorio-arbo' ),
 );
 
 /** Spanish (español) */
