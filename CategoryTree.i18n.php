@@ -86,6 +86,11 @@ $messages['qqq'] = array(
 	'categorytree-go' => 'Label for the submit button on [[Special:CategoryTree]]',
 	'categorytree-parents' => 'Label for the list of parent categories on [[Special:CategoryTree]].
 {{Identical|Parent}}',
+	'categorytree-mode-label' => 'Used as label for "Mode" select box.
+
+This message follows the input box {{msg-mw|categorytree-category}}.
+
+This message is followed by the select box {{msg-mw|namespace}}.',
 	'categorytree-mode-categories' => 'Item for the mode choice on [[Special:CategoryTree]], indicating that only categories are listed',
 	'categorytree-mode-pages' => 'Item for the mode choice on [[Special:CategoryTree]], indicating that no images in categories are listed',
 	'categorytree-mode-all' => 'Item for the mode choice on [[Special:CategoryTree]], indicating that all pages are listed.
@@ -1257,7 +1262,7 @@ Eka browseyê tu kihanî ya zi tu JavaScript qefilmayiyo, program nihebitiyeno.'
 	'categorytree-go' => 'Barfi',
 	'categorytree-parents' => 'Ser kategoriy',
 	'categorytree-mode-label' => 'Modê cı:',
-	'categorytree-mode-categories' => 'kategoriya tenya',
+	'categorytree-mode-categories' => 'tenya kategoriy',
 	'categorytree-mode-pages' => 'Teyna pelan, dosyayan hesab meke',
 	'categorytree-mode-all' => 'peley pêro',
 	'categorytree-collapse' => 'ake/racne',
@@ -1475,6 +1480,7 @@ Kui sul on väga vana veebilehitseja või JavaScrip keelatud, see ei toimi.',
 	'categorytree-category' => 'Kategooria:',
 	'categorytree-go' => 'Näita puud',
 	'categorytree-parents' => 'Ülemkategooriad',
+	'categorytree-mode-label' => 'Moodus:',
 	'categorytree-mode-categories' => 'ainult kategooriad',
 	'categorytree-mode-pages' => 'failideta',
 	'categorytree-mode-all' => 'kõik leheküljed',
@@ -4448,6 +4454,7 @@ Musyariy, kaytaqa AJAX nisqa sapaq JavaScript ruranallawanmi llamk'achiyta atink
 	'categorytree-category' => 'Katiguriya:',
 	'categorytree-go' => "Sach'ata rikuchiy",
 	'categorytree-parents' => 'Mama katiguriyakuna',
+	'categorytree-mode-label' => 'Hina:',
 	'categorytree-mode-categories' => 'Katiguriyakunalla',
 	'categorytree-mode-pages' => "p'anqakuna amataq rikchakuna",
 	'categorytree-mode-all' => "tukuy p'anqakuna",
