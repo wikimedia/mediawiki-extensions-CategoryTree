@@ -75,7 +75,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
  * @author פוילישער
  */
 $messages['qqq'] = array(
-	'categorytree' => 'Title of [[Special:CategoryTree]]',
+	'categorytree' => '{{doc-special|CategoryTree}}',
 	'categorytree-portlet' => 'Title for the CategoryPortlet, when shown in the side bar.
 {{Identical|Categories}}',
 	'categorytree-legend' => 'Legend of the fieldset around the input form of [[Special:Categorytree]].',
