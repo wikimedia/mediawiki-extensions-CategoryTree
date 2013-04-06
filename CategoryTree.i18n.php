@@ -3771,6 +3771,25 @@ $messages['nan'] = array(
 	'categorytree-no-subcategories' => 'bô ē-lūi-pia̍t',
 );
 
+/** Neapolitan (Nnapulitano)
+ * @author Chelin
+ */
+$messages['nap'] = array(
+	'categorytree-portlet' => 'Categurìe',
+	'categorytree-category' => 'Categurìa:',
+	'categorytree-parents' => 'Categurìe superiore',
+	'categorytree-mode-label' => 'Modalità:',
+	'categorytree-mode-categories' => "mostra solo 'e categurìe",
+	'categorytree-mode-all' => "Tutte 'e paggene",
+	'categorytree-collapse' => 'annascune',
+	'categorytree-expand' => 'fa vede',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'vuota',
+	'categorytree-load' => 'careca',
+);
+
 /** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Audun
  * @author Event
