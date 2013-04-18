@@ -2955,7 +2955,7 @@ $messages['ko'] = array(
 	'categorytree-go' => '트리 보기',
 	'categorytree-parents' => '상위 분류',
 	'categorytree-mode-label' => '모드:',
-	'categorytree-mode-categories' => '분류 문서만 표시',
+	'categorytree-mode-categories' => '분류 문서만 보기',
 	'categorytree-mode-pages' => '파일을 제외한 모든 문서를 표시',
 	'categorytree-mode-all' => '모든 문서를 표시',
 	'categorytree-collapse' => '접기',
@@ -2970,10 +2970,10 @@ $messages['ko'] = array(
 	'categorytree-nothing-found' => '결과 없음',
 	'categorytree-no-subcategories' => '하위 분류 없음',
 	'categorytree-no-parent-categories' => '상위 분류가 없습니다.',
-	'categorytree-no-pages' => '문서/하위 분류 없음',
+	'categorytree-no-pages' => '문서나 하위 분류 없음',
 	'categorytree-not-found' => '$1 분류가 없습니다',
 	'categorytree-error' => '값을 불러오는 중 오류 발생',
-	'categorytree-retry' => '잠시 후에 다시 시도해주세요.',
+	'categorytree-retry' => '잠시 기다리고 나서 다시 시도하세요.',
 );
 
 /** Karachay-Balkar (къарачай-малкъар)
