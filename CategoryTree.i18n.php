@@ -1000,12 +1000,13 @@ $messages['cdo'] = array(
 
 /** Chechen (нохчийн)
  * @author Sasan700
+ * @author Умар
  */
 $messages['ce'] = array(
 	'categorytree' => 'Кадегарши дит',
 	'categorytree-portlet' => 'Кадегарш',
 	'categorytree-legend' => 'Гайта кадегарши дит',
-	'categorytree-category' => 'Кадегар:',
+	'categorytree-category' => 'Категори:',
 	'categorytree-go' => 'Чуйаккха',
 	'categorytree-parents' => 'Кхолламан кадегарш',
 	'categorytree-mode-label' => 'РогӀехь:',
@@ -1016,7 +1017,7 @@ $messages['ce'] = array(
 	'categorytree-load' => 'чуяккха',
 	'categorytree-loading' => 'чуйолуш…',
 	'categorytree-no-subcategories' => 'йац бухаркадегарш',
-	'categorytree-not-found' => 'Кадегар «$1» ца карийна.',
+	'categorytree-not-found' => 'Категори «$1» ца карийна.',
 );
 
 /** Cebuano (Cebuano)
