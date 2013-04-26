@@ -3517,6 +3517,28 @@ $messages['mg'] = array(
 	'categorytree-mode-pages' => 'pejy tsy misy sary',
 );
 
+/** Minangkabau (Baso Minangkabau)
+ * @author Iwan Novirion
+ */
+$messages['min'] = array(
+	'categorytree' => 'Pohon kategori',
+	'categorytree-portlet' => 'Kategori',
+	'categorytree-legend' => 'Tunjuakan pohon kategori',
+	'categorytree-header' => 'Masuakan suatu kategori untuak mancaliak isinyo dalam bantuak sruktur pohon.
+Paralu diparatian koq fitur ko haruih ado dukuangan JavaScript tingkek lanjuik nan dikenal sabagai AJAX.
+Jikok Sanak manggunoan paramban web versi lamo, atau mamatian fungsi JavaScript, fitur ko indak dapek bajalan.',
+	'categorytree-category' => 'Kategori:',
+	'categorytree-go' => 'Tunjuakan',
+	'categorytree-mode-label' => 'Mode:',
+	'categorytree-mode-categories' => 'hanyo kategori',
+	'categorytree-mode-pages' => 'laman salain berkas',
+	'categorytree-mode-all' => 'kasado laman',
+	'categorytree-collapse' => 'tutuik',
+	'categorytree-expand' => 'bukak',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 L',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  * @author Brest

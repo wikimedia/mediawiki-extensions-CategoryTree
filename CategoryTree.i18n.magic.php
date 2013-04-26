@@ -225,3 +225,8 @@ $magicWords['vi'] = array(
 $magicWords['zh-hans'] = array(
 	'categorytree' => array( 0, '分类树' ),
 );
+
+/** Traditional Chinese (中文（繁體）‎) */
+$magicWords['zh-hant'] = array(
+	'categorytree' => array( 0, '分類樹' ),
+);
