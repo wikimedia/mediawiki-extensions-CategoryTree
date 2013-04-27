@@ -2396,6 +2396,7 @@ Si tu ha un navigator multo vetule, o ha disactivate JavaScript, isto non functi
  * @author Bennylin
  * @author Farras
  * @author IvanLanin
+ * @author Iwan Novirion
  * @author Rex
  */
 $messages['id'] = array(
@@ -2416,9 +2417,9 @@ Jika Anda menggunakan penjelajah web lama, atau mematikan fungsi JavaScript Anda
 	'categorytree-collapse' => 'tutup',
 	'categorytree-expand' => 'buka',
 	'categorytree-member-counts' => 'memiliki {{PLURAL:$1|1 subkategori|$1 subkategori}}, {{PLURAL:$2|1 halaman|$2 halaman}}, dan {{PLURAL:$3|1 berkas|$3 berkas}}',
-	'categorytree-num-categories' => '$1 C',
-	'categorytree-num-pages' => '$1 P',
-	'categorytree-num-files' => '$1 F',
+	'categorytree-num-categories' => '$1 K',
+	'categorytree-num-pages' => '$1 H',
+	'categorytree-num-files' => '$1 B',
 	'categorytree-num-empty' => 'kosong',
 	'categorytree-load' => 'muatkan',
 	'categorytree-loading' => 'memuat...',
@@ -3535,8 +3536,19 @@ Jikok Sanak manggunoan paramban web versi lamo, atau mamatian fungsi JavaScript,
 	'categorytree-mode-all' => 'kasado laman',
 	'categorytree-collapse' => 'tutuik',
 	'categorytree-expand' => 'bukak',
+	'categorytree-member-counts' => 'Barisi {{PLURAL:$1|$1 subkategori}}, {{PLURAL:$2|$2 laman}}, jo {{PLURAL:$3|$3 berkas}}',
 	'categorytree-num-categories' => '$1 K',
 	'categorytree-num-pages' => '$1 L',
+	'categorytree-num-files' => '$1 B',
+	'categorytree-num-empty' => 'kosong',
+	'categorytree-load' => 'muek',
+	'categorytree-loading' => 'mamuek...',
+	'categorytree-nothing-found' => 'indak basobok',
+	'categorytree-no-subcategories' => 'indak ado subkategori',
+	'categorytree-no-pages' => 'indak ado laman atau subkategori',
+	'categorytree-not-found' => 'Kategori <i>$1</i> indak basobok',
+	'categorytree-error' => 'Problem mamuek data.',
+	'categorytree-retry' => 'Tunggu sabanta dan cubo lai.',
 );
 
 /** Macedonian (македонски)
@@ -3559,7 +3571,7 @@ $messages['mk'] = array(
 	'categorytree-mode-categories' => 'само категории',
 	'categorytree-mode-pages' => 'страници без податотеки',
 	'categorytree-mode-all' => 'сите страници',
-	'categorytree-collapse' => 'затвори',
+	'categorytree-collapse' => 'собери',
 	'categorytree-expand' => 'отвори',
 	'categorytree-member-counts' => 'содржи {{PLURAL:$1|една поткатегорија|$1 поткатегории}}, {{PLURAL:$2|една страница|$2 страници}} и {{PLURAL:$3|една податотека|$3 податотеки}}',
 	'categorytree-num-categories' => '$1 К',
