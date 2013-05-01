@@ -6204,6 +6204,7 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎)
  * @author Alexsh
+ * @author Liangent
  * @author Mark85296341
  * @author Oapbtommy
  * @author Shinjiman
