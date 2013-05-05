@@ -61,6 +61,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
  * @author Aotake
  * @author EugeneZelenko
  * @author Jon Harald Søby
+ * @author Lloffiwr
  * @author Malafaya
  * @author McDutchie
  * @author Meno25
@@ -112,6 +113,8 @@ This message is followed by the select box {{msg-mw|namespace}}.',
 * $5 - members to be shown in the tree, depending on mode
 Use with <nowiki>{{PLURAL}}</nowiki>',
 	'categorytree-member-num' => '{{notranslate}}
+However, if needed, you can localise the parentheses.
+
 (From http://www.mediawiki.org/wiki/Extension:CategoryTree#categorytree-member-num):
 By default, when listing subcategories on a category page, each subcategory is followed by an integer indicating how many subcategories lie beneath it:
 <pre>
