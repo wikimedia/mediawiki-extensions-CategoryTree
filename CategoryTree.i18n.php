@@ -3528,6 +3528,7 @@ $messages['min'] = array(
 	'categorytree' => 'Pohon kategori',
 	'categorytree-portlet' => 'Kategori',
 	'categorytree-legend' => 'Tunjuakan pohon kategori',
+	'categorytree-desc' => 'Manavigasi sacaro dinamih [[Special:CategoryTree|struktur kategori]]',
 	'categorytree-header' => 'Masuakan suatu kategori untuak mancaliak isinyo dalam bantuak sruktur pohon.
 Paralu diparatian koq fitur ko haruih ado dukuangan JavaScript tingkek lanjuik nan dikenal sabagai AJAX.
 Jikok Sanak manggunoan paramban web versi lamo, atau mamatian fungsi JavaScript, fitur ko indak dapek bajalan.',
