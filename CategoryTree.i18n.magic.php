@@ -138,7 +138,7 @@ $magicWords['ml'] = array(
 
 /** Marathi (मराठी) */
 $magicWords['mr'] = array(
-	'categorytree' => array( 0, 'वर्गवृक्ष', 'categorytree' ),
+	'categorytree' => array( 0, 'वर्गवृक्ष' ),
 );
 
 /** Norwegian Bokmål (norsk bokmål) */
