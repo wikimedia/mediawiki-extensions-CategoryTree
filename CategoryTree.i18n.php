@@ -1007,13 +1007,13 @@ $messages['cdo'] = array(
  */
 $messages['ce'] = array(
 	'categorytree' => 'Кадегарши дит',
-	'categorytree-portlet' => 'Кадегарш',
+	'categorytree-portlet' => 'Категореш',
 	'categorytree-legend' => 'Гайта кадегарши дит',
 	'categorytree-category' => 'Категори:',
 	'categorytree-go' => 'Чуйаккха',
-	'categorytree-parents' => 'Кхолламан кадегарш',
+	'categorytree-parents' => 'Кхолламан категореш',
 	'categorytree-mode-label' => 'РогӀехь:',
-	'categorytree-mode-categories' => 'екъ кадегарш',
+	'categorytree-mode-categories' => 'екъ категореш',
 	'categorytree-mode-all' => 'массо агlонаш',
 	'categorytree-collapse' => 'къайла яккха',
 	'categorytree-expand' => 'хьайаста',
