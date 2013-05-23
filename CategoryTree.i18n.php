@@ -1006,9 +1006,9 @@ $messages['cdo'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
-	'categorytree' => 'Кадегарши дит',
+	'categorytree' => 'Категореши дит',
 	'categorytree-portlet' => 'Категореш',
-	'categorytree-legend' => 'Гайта кадегарши дит',
+	'categorytree-legend' => 'Гайта категореши дит',
 	'categorytree-category' => 'Категори:',
 	'categorytree-go' => 'Чуйаккха',
 	'categorytree-parents' => 'Кхолламан категореш',

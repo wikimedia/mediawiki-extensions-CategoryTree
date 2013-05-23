@@ -258,7 +258,7 @@ $specialPageAliases['kw'] = array(
 
 /** Latin (Latina) */
 $specialPageAliases['la'] = array(
-	'CategoryTree' => array( 'Categoriarum arbor' ),
+	'CategoryTree' => array( 'Categoriarum_arbor' ),
 );
 
 /** Ladino (Ladino) */
