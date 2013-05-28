@@ -78,7 +78,7 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 $messages['qqq'] = array(
 	'categorytree' => '{{doc-special|CategoryTree}}',
 	'categorytree-portlet' => 'Title for the CategoryPortlet, when shown in the side bar.
-{{Identical|Categories}}',
+{{Identical|Category}}',
 	'categorytree-legend' => 'Legend of the fieldset around the input form of [[Special:Categorytree]].',
 	'categorytree-desc' => '{{desc|name=Category Tree|url=http://www.mediawiki.org/wiki/Extension:CategoryTree}}',
 	'categorytree-header' => 'Header-text shown on [[Special:CategoryTree]]',
