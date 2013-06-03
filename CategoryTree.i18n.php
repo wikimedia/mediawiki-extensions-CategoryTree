@@ -348,7 +348,7 @@ $messages['arz'] = array(
 	'categorytree-retry' => 'لو سمحت تستنا لحظة و بعدين حاول تاني',
 );
 
-/** Assamese (অসমীয়া)
+/** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  * @author Chaipau
  * @author Gitartha.bordoloi
@@ -454,6 +454,7 @@ Ede va guazafi exulesiki favel oke ede JavaScript fliaceem tir metegis, batcoba 
 
 /** Aymara (Aymar aru)
  * @author Dferg
+ * @author MarcoAurelio
  */
 $messages['ay'] = array(
 	'categorytree-category' => 'Patawi:',
@@ -3884,7 +3885,7 @@ $messages['nap'] = array(
 	'categorytree-load' => 'careca',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Audun
  * @author Event
  */
@@ -3948,7 +3949,7 @@ $messages['nds'] = array(
 	'categorytree-retry' => 'Tööv en beten un denn versöök dat noch wedder.',
 );
 
-/** Nedersaksies (Nedersaksies)
+/** Low Saxon (Netherlands) (Nedersaksies)
  * @author Servien
  */
 $messages['nds-nl'] = array(
@@ -4062,7 +4063,7 @@ Let op: deze functie gebruikt JavaScript-functionaliteit die bekend staat als AJ
 Als je een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze functie niet.',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Eirik
  * @author Harald Khan
  * @author Njardarlogar
@@ -4146,7 +4147,7 @@ $messages['oc'] = array(
 	'categorytree-retry' => 'Esperatz un moment puèi tornatz ensajar.',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Jnanaranjan Sahu
  * @author Odisha1
  * @author Psubhashish
