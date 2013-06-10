@@ -3090,7 +3090,7 @@ $messages['ku-latn'] = array(
 $messages['kw'] = array(
 	'categorytree-portlet' => 'Klassys',
 	'categorytree-category' => 'Klass:',
-	'categorytree-mode-all' => 'an oll folednow',
+	'categorytree-mode-all' => 'keniver folen',
 );
 
 /** Kirghiz (Кыргызча)
