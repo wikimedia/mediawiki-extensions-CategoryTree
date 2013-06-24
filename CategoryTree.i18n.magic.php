@@ -38,7 +38,7 @@ $magicWords['br'] = array(
 
 /** Chechen (нохчийн) */
 $magicWords['ce'] = array(
-	'categorytree' => array( 0, 'кадегардит', 'деревокатегорий' ),
+	'categorytree' => array( 0, 'категоридит', 'деревокатегорий' ),
 );
 
 /** German (Deutsch) */
