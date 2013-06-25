@@ -86,6 +86,11 @@ $specialPageAliases['ca'] = array(
 	'CategoryTree' => array( 'Categories_en_arbre', 'Arbre_de_categories' ),
 );
 
+/** Chechen (нохчийн) */
+$specialPageAliases['ce'] = array(
+	'CategoryTree' => array( 'Категореши_дит' ),
+);
+
 /** Czech (česky) */
 $specialPageAliases['cs'] = array(
 	'CategoryTree' => array( 'Strom_kategorií' ),
