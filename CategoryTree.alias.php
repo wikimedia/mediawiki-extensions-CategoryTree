@@ -108,7 +108,7 @@ $specialPageAliases['de'] = array(
 
 /** Zazaki (Zazaki) */
 $specialPageAliases['diq'] = array(
-	'CategoryTree' => array( 'DaraKategoriye' ),
+	'CategoryTree' => array( 'DaraKategoriya' ),
 );
 
 /** Lower Sorbian (dolnoserbski) */
