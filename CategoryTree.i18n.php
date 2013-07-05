@@ -1008,19 +1008,20 @@ $messages['cbk-zam'] = array(
 
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄)
  * @author GnuDoyng
+ * @author Yejianfei
  */
 $messages['cdo'] = array(
-	'categorytree' => 'Lôi-biék chéu',
+	'categorytree' => '類別樹',
 	'categorytree-header' => 'Sṳ̆-ĭk lôi-biék miàng-chĭng, káng ĭ gì chéu-hìng giék-gáiu. Chiāng cé̤ṳ-é, ciā hiĕk-miêng sāi-ê̤ṳng siŏh cṳ̄ng gŏ̤-gék JavaScript gé-sŭk, giéu lō̤ AJAX. Nṳ̄ nâ sāi-ê̤ṳng guó-sì gì báuk-lāng-ké, hĕ̤k-ciā cĕk lâi JavaScript, cêu mâ̤ ciáng-siòng gĕ̤ng-cáuk.',
-	'categorytree-category' => 'Hŭng-lôi',
-	'categorytree-go' => 'Hiēng-sê chéu',
-	'categorytree-mode-categories' => 'nâ ô lôi-biék',
-	'categorytree-mode-pages' => 'dù-piéng ī-nguôi gì hiĕk-miêng',
-	'categorytree-mode-all' => 'tĕ̤k-chṳ̄',
-	'categorytree-loading' => 'tĕ̤k-chṳ̄',
-	'categorytree-no-subcategories' => 'mò̤ cṳ̄-lôi-biék',
-	'categorytree-no-pages' => 'mò̤ hiĕk-miêng hĕ̤k cṳ̄-lôi-biék',
-	'categorytree-not-found' => 'Mò̤ tō̤ diŏh lôi-biék <i>$1</i>',
+	'categorytree-category' => '分類：',
+	'categorytree-go' => '顯示樹',
+	'categorytree-mode-categories' => '囇有類別',
+	'categorytree-mode-pages' => '無文件其頁面',
+	'categorytree-mode-all' => '全部頁面',
+	'categorytree-loading' => '載入…',
+	'categorytree-no-subcategories' => '無子類別',
+	'categorytree-no-pages' => '無頁面或者子類別',
+	'categorytree-not-found' => '無處討類別<i>$1</i>',
 );
 
 /** Chechen (нохчийн)
