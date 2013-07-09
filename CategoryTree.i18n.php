@@ -3963,6 +3963,7 @@ NB: veur disse funksie he'j de JavaScript-funksionaliteit AJAX neudig. A'j n hel
 	'categorytree-category' => 'Kategorie:',
 	'categorytree-go' => 'Laojen',
 	'categorytree-parents' => 'Ouwerkategorieën',
+	'categorytree-mode-label' => 'Modus:',
 	'categorytree-mode-categories' => 'allinnig kategorieën',
 	'categorytree-mode-pages' => 'ziejen, gien aofbeeldingen',
 	'categorytree-mode-all' => 'alle ziejen',
