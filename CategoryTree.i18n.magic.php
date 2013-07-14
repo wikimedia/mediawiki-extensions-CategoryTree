@@ -71,6 +71,11 @@ $magicWords['fa'] = array(
 	'categorytree' => array( 0, 'درخت‌رده', 'درخت_رده' ),
 );
 
+/** French (français) */
+$magicWords['fr'] = array(
+	'categorytree' => array( 0, 'arbrecatégories', 'arbrecats' ),
+);
+
 /** Galician (galego) */
 $magicWords['gl'] = array(
 	'categorytree' => array( 0, 'árboredecategorías' ),
