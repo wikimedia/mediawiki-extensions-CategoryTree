@@ -4245,7 +4245,7 @@ $messages['pa'] = array(
 	'categorytree-no-subcategories' => 'ਕੋਈ ਉਪ-ਸ਼੍ਰੇਣੀਆਂ ਨਹੀਂ',
 	'categorytree-no-parent-categories' => 'ਕੋਈ ਮੁਢਲੀ ਸ਼੍ਰੇਣੀਆਂ ਨਹੀਂ',
 	'categorytree-no-pages' => 'ਕੋਈ ਸਫ਼ੇ ਜਾਂ ਉਪ-ਸ਼੍ਰੇਣੀਆਂ ਨਹੀਂ',
-	'categorytree-not-found' => 'ਸ਼੍ਰੇਣੀ <i>$1</i> ਲੱਭੀ ਨਹੀਂ',
+	'categorytree-not-found' => 'ਸ਼੍ਰੇਣੀ <i>$1</i> ਨਹੀਂ ਲੱਭੀ',
 	'categorytree-error' => 'ਸਮੱਗਰੀ ਲੋਡ ਕਰਨ ਮੌਕੇ ਔਕੜ।',
 	'categorytree-retry' => 'ਕੁਝ ਪਲ ਉਡੀਕੋ ਅਤੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।',
 );
