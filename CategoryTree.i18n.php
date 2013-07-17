@@ -662,7 +662,7 @@ $messages['bcl'] = array(
 	'categorytree-legend' => 'Ipatanaw an kahoy nin kategoriya',
 	'categorytree-desc' => 'Dinamikong dumanan an [[Special:CategoryTree|estruktura nin kategoriya]]',
 	'categorytree-header' => 'Ikaag an sarong pangaran nin kategoriya tanganing mahiling an kalamnan kaini bilang sarong estruktura nin kahoy. Tandai na ini minahagad nin abantidong JavaScript na punksyonalidad na bisto bilang AJAX. Kun ika igwa nin grabe kagurang na pangilyaw, o pinag-untok an JavaScript, ini dae maandar.',
-	'categorytree-category' => 'Kategorya:',
+	'categorytree-category' => 'Kategoriya',
 	'categorytree-go' => 'Ipatanaw an kahoy',
 	'categorytree-parents' => 'Kamagurangan',
 	'categorytree-mode-label' => 'Moda:',
@@ -678,13 +678,13 @@ $messages['bcl'] = array(
 	'categorytree-num-empty' => 'bokya',
 	'categorytree-load' => 'ikarga',
 	'categorytree-loading' => 'pigkakarga',
-	'categorytree-nothing-found' => 'mayong nahanap',
+	'categorytree-nothing-found' => 'mayong nanumpungan',
 	'categorytree-no-subcategories' => 'mayong mga sub-kategorya',
 	'categorytree-no-parent-categories' => 'mayong ginikanang mga kategoriya',
 	'categorytree-no-pages' => 'mayong mga pahina o sub-kategorya',
 	'categorytree-not-found' => 'Kategoriya <i>$1</i> dae nanagboan',
 	'categorytree-error' => 'Problema sa pagkakarga nin datos.',
-	'categorytree-retry' => 'Paki halat mûna tapos probaran giraray.',
+	'categorytree-retry' => 'Pakihalat ngûna tapos probaran giraray.',
 );
 
 /** Belarusian (беларуская)
@@ -4996,6 +4996,7 @@ AJAX නමින් හැඳින්වෙන ප්‍රගත ජාවා
 
 /** Slovak (slovenčina)
  * @author Helix84
+ * @author Sudo77(new)
  * @author Teslaton
  */
 $messages['sk'] = array(
@@ -5009,6 +5010,7 @@ Ak máte veľmi starý prehliadač alebo máte vypnutý JavaScrpt, nebude fungov
 	'categorytree-category' => 'Kategória:',
 	'categorytree-go' => 'Zobraziť strom',
 	'categorytree-parents' => 'Nadradené kategórie',
+	'categorytree-mode-label' => 'Režim:',
 	'categorytree-mode-categories' => 'iba kategórie',
 	'categorytree-mode-pages' => 'stránky okrem obrázkov',
 	'categorytree-mode-all' => 'všetky stránky',
