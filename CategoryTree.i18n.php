@@ -2851,25 +2851,36 @@ $messages['kk-arab'] = array(
 );
 
 /** Kazakh (Cyrillic script) (қазақша (кирил)‎)
+ * @author Arystanbek
  */
 $messages['kk-cyrl'] = array(
 	'categorytree' => 'Санат бұтақтары',
+	'categorytree-portlet' => 'Санаттар',
+	'categorytree-legend' => 'Санат бұтағын көрсету',
+	'categorytree-desc' => '[[Special:CategoryTree|Санат құрылымын]] серпінді шарлау',
 	'categorytree-header' => 'Санат мазмұның бұтақтар түрде көру үшін атауын енгізіңіз.
 Аңғарпта: Бұл іске JavaScript құралының AJAX деген кеңейтілген қабілеті қажет болады.
 Егер шолғышыңыз өте ескі, немесе JavaScript өшірілген болса, бұл іске асырылмайды.',
 	'categorytree-category' => 'Санат:',
 	'categorytree-go' => 'Бұтақтарын көрсет',
 	'categorytree-parents' => 'Жоғарғылар',
+	'categorytree-mode-label' => 'Режим:',
 	'categorytree-mode-categories' => 'тек санаттар',
 	'categorytree-mode-pages' => 'беттер (суреттерді санамай)',
-	'categorytree-mode-all' => 'барлық бет',
+	'categorytree-mode-all' => 'барлық беттер',
 	'categorytree-collapse' => 'тарылту',
 	'categorytree-expand' => 'кеңейту',
+	'categorytree-member-counts' => 'Қамтылғандар {{PLURAL:$1|1 санатша|$1 санатша}}, {{PLURAL:$2|1 бет|$2 бет}}, және {{PLURAL:$3|1 файл|$3 файл}}',
+	'categorytree-num-categories' => '$1 С',
+	'categorytree-num-pages' => '$1 Б',
+	'categorytree-num-files' => '$1 Ф',
+	'categorytree-num-empty' => 'бос',
 	'categorytree-load' => 'жүктеу',
-	'categorytree-loading' => 'жүктеуде',
+	'categorytree-loading' => 'жүктеуде...',
 	'categorytree-nothing-found' => 'ештеңе табылмады',
 	'categorytree-no-subcategories' => 'санатшалары жоқ',
-	'categorytree-no-pages' => 'беттері не санатшалары жоқ',
+	'categorytree-no-parent-categories' => 'аталық санаттар жоқ',
+	'categorytree-no-pages' => 'беттері немесе санатшалары жоқ',
 	'categorytree-not-found' => '<i>$1</i> деген санат табылмады',
 	'categorytree-error' => 'Деректерді жүктеу кезінде шатақ шықты.',
 	'categorytree-retry' => 'Бір сәт күте тұрып қайталаңыз.',
@@ -4488,6 +4499,7 @@ $messages['ps'] = array(
  * @author Giro720
  * @author Hamilton Abreu
  * @author João Sousa
+ * @author Luckas
  * @author 555
  */
 $messages['pt'] = array(
@@ -4497,7 +4509,7 @@ $messages['pt'] = array(
 	'categorytree-desc' => "Acessório ''(gadget)'' baseado em AJAX que apresenta a [[Special:CategoryTree|estrutura]] de uma wiki",
 	'categorytree-header' => 'Introduza o nome de uma categoria para ver o seu conteúdo numa estrutura de árvore.
 Note que isto requer uma funcionalidade avançada do JavaScript, conhecida por AJAX.
-Caso o seu browser seja razoavelmente antigo ou o JavaScript esteja desactivado, não funcionará.',
+Caso o seu browser seja razoavelmente antigo ou o JavaScript esteja desativado, não funcionará.',
 	'categorytree-category' => 'Categoria:',
 	'categorytree-go' => 'Mostrar árvore',
 	'categorytree-parents' => 'Categorias superiores',
