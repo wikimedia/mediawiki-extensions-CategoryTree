@@ -2399,6 +2399,7 @@ Si tu ha un navigator multo vetule, o ha disactivate JavaScript, isto non functi
 	'categorytree-category' => 'Categoria:',
 	'categorytree-go' => 'Monstrar arbore',
 	'categorytree-parents' => 'Categorias superior',
+	'categorytree-mode-label' => 'Modo:',
 	'categorytree-mode-categories' => 'categorias solmente',
 	'categorytree-mode-pages' => 'paginas excepte files',
 	'categorytree-mode-all' => 'tote le paginas',
