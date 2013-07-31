@@ -281,6 +281,11 @@ $specialPageAliases['mg'] = array(
 	'CategoryTree' => array( 'Hazon-tsokajy' ),
 );
 
+/** Minangkabau (Baso Minangkabau) */
+$specialPageAliases['min'] = array(
+	'CategoryTree' => array( 'BatangKategori' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'CategoryTree' => array( 'ДрвоНаКатегории' ),
