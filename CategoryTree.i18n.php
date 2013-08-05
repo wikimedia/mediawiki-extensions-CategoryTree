@@ -1754,7 +1754,7 @@ $messages['fr'] = array(
 	'categorytree-no-subcategories' => 'aucune sous-catégorie',
 	'categorytree-no-parent-categories' => 'aucune catégorie parente',
 	'categorytree-no-pages' => 'aucune page ou sous-catégorie',
-	'categorytree-not-found' => 'Catégorie <tt>$1</tt> introuvable',
+	'categorytree-not-found' => 'Catégorie <i>$1</i> introuvable',
 	'categorytree-error' => 'Problème de chargement des données.',
 	'categorytree-retry' => 'Veuillez attendre un instant puis réessayer.',
 );
@@ -1790,7 +1790,7 @@ Se vos avéd un rudo viely navigator ou ben se vos éd pas activâ la fonccional
 	'categorytree-no-subcategories' => 'Gins de sot-catègorie.',
 	'categorytree-no-parent-categories' => 'gins de catègorie parenta',
 	'categorytree-no-pages' => 'Gins d’articllo ou de sot-catègorie.',
-	'categorytree-not-found' => 'La catègorie <tt>$1</tt> at pas étâ trovâ.',
+	'categorytree-not-found' => 'La catègorie <i>$1</i> at pas étâ trovâ.',
 	'categorytree-error' => 'Problèmo de chargement de les balyês.',
 	'categorytree-retry' => 'Atendéd un moment et pués tornâd èprovar.',
 );
