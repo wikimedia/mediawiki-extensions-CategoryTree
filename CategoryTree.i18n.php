@@ -3707,6 +3707,7 @@ $messages['mn'] = array(
  * @author Mahitgar
  * @author Mvkulkarni23
  * @author Rahuldeshmukh101
+ * @author V.narsikar
  */
 $messages['mr'] = array(
 	'categorytree' => 'वर्गवृक्ष',
@@ -3718,6 +3719,7 @@ $messages['mr'] = array(
 	'categorytree-category' => 'वर्ग:',
 	'categorytree-go' => 'वृक्ष दाखवा',
 	'categorytree-parents' => 'पालक',
+	'categorytree-mode-label' => 'पद्धति:',
 	'categorytree-mode-categories' => 'केवळ वर्ग',
 	'categorytree-mode-pages' => 'चित्रे नसलेली पाने',
 	'categorytree-mode-all' => 'सर्व पाने',

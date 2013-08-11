@@ -86,6 +86,11 @@ $specialPageAliases['ca'] = array(
 	'CategoryTree' => array( 'Categories_en_arbre', 'Arbre_de_categories' ),
 );
 
+/** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
+$specialPageAliases['cdo'] = array(
+	'CategoryTree' => array( '分類樹' ),
+);
+
 /** Chechen (нохчийн) */
 $specialPageAliases['ce'] = array(
 	'CategoryTree' => array( 'Категореши_дит' ),
