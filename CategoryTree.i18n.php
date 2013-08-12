@@ -5744,6 +5744,7 @@ $messages['ts'] = array(
 );
 
 /** Tatar (Cyrillic script) (татарча)
+ * @author Ajdar
  * @author Ильнар
  */
 $messages['tt-cyrl'] = array(
@@ -5757,12 +5758,17 @@ $messages['tt-cyrl'] = array(
 	'categorytree-category' => 'Төркем:',
 	'categorytree-go' => 'Йөкләү',
 	'categorytree-parents' => 'Төп төркемнәр',
+	'categorytree-mode-label' => 'Режим:',
 	'categorytree-mode-categories' => 'бары тик төркемнәр генә урнаштырылган',
 	'categorytree-mode-pages' => 'файллардан башка',
 	'categorytree-mode-all' => 'барлык битләр',
 	'categorytree-collapse' => 'яшерү',
 	'categorytree-expand' => 'ачарга',
 	'categorytree-member-counts' => '$1 {{PLURAL:$1|тәркемчәне|тәркемчәләрне|тәркемчәләрдән}}, $2 {{PLURAL:$2|битне|битләрне|битләрдән}} и $3 {{PLURAL:$3|файл|файл|файллар}} ны үз эченә ала',
+	'categorytree-num-categories' => '$1 К',
+	'categorytree-num-pages' => '$1 С',
+	'categorytree-num-files' => '$1 Ф',
+	'categorytree-num-empty' => 'буш',
 	'categorytree-load' => 'йөкләү',
 	'categorytree-loading' => 'йөкләү бара…',
 	'categorytree-nothing-found' => 'бернидә табылмады',
