@@ -2991,7 +2991,7 @@ $messages['ko'] = array(
 	'categorytree' => '분류 트리',
 	'categorytree-portlet' => '분류',
 	'categorytree-legend' => '분류 트리 보기',
-	'categorytree-desc' => '[[Special:CategoryTree|분류 구조]]를 동적으로 볼 수 있는 AJAX 도구',
+	'categorytree-desc' => '[[Special:CategoryTree|분류 구조]]를 동적으로 둘러볼 수 있습니다',
 	'categorytree-header' => '트리 구조로 볼 분류 이름을 입력해주세요.
 이 기능을 사용하려면 웹 브라우저에서 AJAX를 지원해야 합니다.
 오래 된 브라우저를 사용하거나, 브라우저에서 자바스크립트를 사용하지 않도록 설정했다면 트리 기능이 동작하지 않습니다.',
