@@ -134,9 +134,27 @@ Tip: Use the ParserFunctions extension (http://www.mediawiki.org/wiki/Help:Exten
 <pre>
 {{#ifeq:$1|0||$1 categories}}
 </pre>',
-	'categorytree-num-categories' => 'Number of sub-categories in a category. The word "categories" should be abbreviated. Appears in brackets after a name of an empty category. This message supports PLURAL.',
-	'categorytree-num-pages' => 'Number of pages in a category. The word "pages" should be abbreviated. Appears in brackets after a name of an empty category. This message supports PLURAL.',
-	'categorytree-num-files' => 'Number of files in a category. The word "files" should be abbreviated.  Appears in brackets after a name of an empty category. This message supports PLURAL.',
+	'categorytree-num-categories' => 'Number of sub-categories in a category. Appears in brackets after a name of an empty category.
+
+The word "categories" should be abbreviated.
+
+Parameters:
+* $1 - number of sub-categories. Can be used for PLURAL.
+{{Related|Categorytree-num}}',
+	'categorytree-num-pages' => 'Number of pages in a category. Appears in brackets after a name of an empty category.
+
+The word "pages" should be abbreviated.
+
+Parameters:
+* $1 - number of pages. Can be used for PLURAL.
+{{Related|Categorytree-num}}',
+	'categorytree-num-files' => 'Number of files in a category. Appears in brackets after a name of an empty category.
+
+The word "files" should be abbreviated.
+
+Parameters:
+* $1 - number of files. Can be used for PLURAL.
+{{Related|Categorytree-num}}',
 	'categorytree-num-empty' => 'The word "empty", as in "empty category". Appears in brackets after a name of an empty category.
 {{Identical|Empty}}',
 	'categorytree-load' => 'Tooltip for the "expand" button, if the content was not yet loaded.
