@@ -2512,36 +2512,36 @@ $messages['ig'] = array(
  * @author Lam-ang
  */
 $messages['ilo'] = array(
-	'categorytree' => 'Kategoria a kayo',
-	'categorytree-portlet' => 'Dagiti kategoria',
-	'categorytree-legend' => 'Ipakita ti kategoria a kayo',
-	'categorytree-desc' => 'Agpadaliasat a dinamik ti [[Special:CategoryTree|pinakapatakder ti kategoria]]',
-	'categorytree-header' => 'Ikabil ti nagan ti kategoria tapno makita dagiti nagyan na a kasla kayo a pinakatakder .
-Kitaem a  daytoy ket masapul na ti JavaScript nga opisio a makunkuna nga AJAX.
-No adda daan a pagbasabasam, wenno nabaldado ti JavaScript mo, saan daytoy nga agbalin.',
+	'categorytree' => 'Kayo ti kategoria',
+	'categorytree-portlet' => 'Katkategoria',
+	'categorytree-legend' => 'Ipakita ti kayo ti kategoria',
+	'categorytree-desc' => 'Dinamik nga agdaliasat iti [[Special:CategoryTree|estrukrura ti kategoria]]',
+	'categorytree-header' => 'Ikabil ti nagan ti kategoria tapno makita dagiti nagyanna a kasla estruktura ti kayo.
+Laglagipem a daytoy ket makasapul ti JavaScript nga opisio a makunkuna a kas AJAX.
+No addaanka ti daan a pagbasabasam, wenno nabaldado ti JavaScript, saan daytoy a mabalin.',
 	'categorytree-category' => 'Kategoria:',
 	'categorytree-go' => 'Ipakita ti kayo',
 	'categorytree-parents' => 'Nagannak',
 	'categorytree-mode-label' => 'Wagas:',
-	'categorytree-mode-categories' => 'dagiti kategoria laeng',
+	'categorytree-mode-categories' => 'katkategoria laeng',
 	'categorytree-mode-pages' => 'dagiti panid mailaksid dagiti papeles',
 	'categorytree-mode-all' => 'amin a pampanid',
-	'categorytree-collapse' => 'parbaen',
+	'categorytree-collapse' => 'rebbaen',
 	'categorytree-expand' => 'palawaen',
-	'categorytree-member-counts' => 'Naglaon {{PLURAL:$1|1 ti apo ti kategoria|$1 dagiti apo ti kategoria}}, {{PLURAL:$2|1 panid|$2 dagiti panid}}, ken {{PLURAL:$3|1 papeles|$3 dagiti papeles}}',
+	'categorytree-member-counts' => 'Naglaon ti {{PLURAL:$1|1 a subkategoria|$1 a subkatkategoria}}, {{PLURAL:$2|1 a panid|$2 a pampanid}}, ken {{PLURAL:$3|1 a papeles|$3 a pappapeles}}',
 	'categorytree-num-categories' => '$1 K',
 	'categorytree-num-pages' => '$1 P',
 	'categorytree-num-files' => '$1 F',
-	'categorytree-num-empty' => 'awan ti nagyan na',
+	'categorytree-num-empty' => 'awan ti nagyanna',
 	'categorytree-load' => 'agkarga',
 	'categorytree-loading' => 'agkarkarga...',
 	'categorytree-nothing-found' => 'awan ti nabirukan',
-	'categorytree-no-subcategories' => 'awan dagiti apo ti kategoria',
-	'categorytree-no-parent-categories' => 'awan ti nagannak a kategoria',
-	'categorytree-no-pages' => 'awan dagiti panid wenno dagiti apo ti kategoria',
-	'categorytree-not-found' => 'Kategoria <i>$1</i> saan a nabirukan',
+	'categorytree-no-subcategories' => 'awan dagiti subkategoria',
+	'categorytree-no-parent-categories' => 'awan ti nagannak a katkategoria',
+	'categorytree-no-pages' => 'awan ti pampanid wenno dagiti subkategoria',
+	'categorytree-not-found' => 'Ti kategoria <i>$1</i> ket saan a nabirukan',
 	'categorytree-error' => 'Parikut ti pinagkarga ti linaon.',
-	'categorytree-retry' => 'Pangngaasi ti aguray ti madamdama ken ipadas mo manen.',
+	'categorytree-retry' => 'Pangngaasi nga aguray iti madamdama ken ipadas manen.',
 );
 
 /** Ingush (ГӀалгӀай)
