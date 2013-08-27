@@ -5827,6 +5827,13 @@ $messages['tzm'] = array(
 	'categorytree-nothing-found' => 'ⵓⵔ ⵉⵍⵍⴰ ⵓⵎⵢⴰ',
 );
 
+/** Udmurt (удмурт)
+ * @author Kaganer
+ */
+$messages['udm'] = array(
+	'categorytree-collapse' => 'ватоно',
+);
+
 /** Uyghur (Arabic script) (ئۇيغۇرچە)
  * @author Sahran
  */
