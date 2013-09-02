@@ -120,15 +120,12 @@ By default, when listing subcategories on a category page, each subcategory is f
 <pre>
 My category name (5)
 </pre>
-You can change this behavior by overriding this system message. It receives five parameters:
-
-* $1 	Number of subcategories
-* $2 	Number of articles (not including category pages or file pages)
-* $3 	Number of uploaded files
-* $4 	Total number of member pages, including category pages and file pages
-* $5 	(Varies depending on CategoryTree mode....Can someone describe it?)
-
-The default value is ($5).
+You can change this behavior by overriding this system message. Parameters:
+* $1 - (Unused) number of subcategories
+* $2 - (Unused) number of articles (not including category pages or file pages)
+* $3 - (Unused) number of uploaded files
+* $4 - (Unused) total number of member pages, including category pages and file pages
+* $5 - (Varies depending on CategoryTree mode....Can someone describe it?)
 
 Tip: Use the ParserFunctions extension (http://www.mediawiki.org/wiki/Help:Extension:ParserFunctions) to provide if/then/else logic to display different parts conditionally. For example:
 <pre>
@@ -908,6 +905,7 @@ $messages['bo'] = array(
 );
 
 /** Breton (brezhoneg)
+ * @author Fohanno
  * @author Fulup
  */
 $messages['br'] = array(
@@ -921,6 +919,7 @@ M'eo kozh-mat stumm ho merdeer pe m'eo diweredekaet JavaScript ganeoc'h, ne'z ai
 	'categorytree-category' => 'Rummad :',
 	'categorytree-go' => 'Diskouez ar gwezennadur',
 	'categorytree-parents' => 'Usrummadoù',
+	'categorytree-mode-label' => 'Mod :',
 	'categorytree-mode-categories' => 'Rummadoù hepken',
 	'categorytree-mode-pages' => 'pajennoù hep ar skeudennoù',
 	'categorytree-mode-all' => 'an holl bajennoù',
@@ -3508,6 +3507,7 @@ Ja tev ir veca interneta pārlūkprogramma vai arī JavaScript ir atslēgts, š�
 	'categorytree-category' => 'Kategorija:',
 	'categorytree-go' => 'Parādīt koku',
 	'categorytree-parents' => 'Augšējā līmeņa kategorijas',
+	'categorytree-mode-label' => 'Režīms:',
 	'categorytree-mode-categories' => 'tikai kategorijas',
 	'categorytree-mode-pages' => 'lapas (bez attēlu lapām)',
 	'categorytree-mode-all' => 'visas lapas',
@@ -4541,7 +4541,7 @@ Caso o seu browser seja razoavelmente antigo ou o JavaScript esteja desativado, 
 	'categorytree-mode-all' => 'todas as páginas',
 	'categorytree-collapse' => 'ocultar',
 	'categorytree-expand' => 'expandir',
-	'categorytree-member-counts' => 'possui {{PLURAL:$1|$1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|$2 página|$2 páginas}} e {{PLURAL:$3|$3 ficheiro|$3 ficheiros}}',
+	'categorytree-member-counts' => 'possui {{PLURAL:$1|$1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|$2 página|$2 páginas}} e {{PLURAL:$3|$3 arquivo|$3 arquivos}}',
 	'categorytree-num-categories' => '$1 C',
 	'categorytree-num-pages' => '$1 P',
 	'categorytree-num-files' => '$1 F',
