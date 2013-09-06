@@ -109,8 +109,8 @@ This message is followed by the select box {{msg-mw|namespace}}.',
 * $1 - number of subcategories
 * $2 - number of pages (without subcategories and files)
 * $3 - number of files
-* $4 - total number of members
-* $5 - members to be shown in the tree, depending on mode
+* $4 - (Unused) total number of members
+* $5 - (Unused) members to be shown in the tree, depending on mode
 Use with <nowiki>{{PLURAL}}</nowiki>',
 	'categorytree-member-num' => '{{notranslate}}
 However, if needed, you can localise the parentheses.
