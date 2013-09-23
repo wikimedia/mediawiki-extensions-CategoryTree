@@ -12,16 +12,22 @@
  *       in CategoryTree.php to avoid users getting stale copies from cache.
 */
 
-.CategoryTreeChildren {
-	margin-left: 1.5ex;
+#mw-subcategories ul {
+	list-style: none none;
+	margin-left: 0.25em;
 }
 
+.CategoryTreeChildren {
+	margin-left: 1.25em;
+}
 
 .CategoryTreeBullet {
 	cursor: pointer;
 }
+
 .CategoryTreeEmptyBullet {
 	cursor: default;
+	color: #C0C0C0;
 }
 
 .CategoryTreeBullet a,
@@ -31,6 +37,10 @@
 	text-decoration: none;
 	color: inherit;
 	speak: none;
+}
+
+.CategoryTreeToggle {
+	color: #0645AD;
 }
 
 .CategoryTreeLabelPage {
