@@ -104,7 +104,7 @@ This message is followed by the select box {{msg-mw|namespace}}.',
 	'categorytree-collapse-bullet' => '{{notranslate}}',
 	'categorytree-expand-bullet' => 'For right-to-left scripts, set this message to the single character ◄ . Otherwise, do not translate this message.
 {{optional}}',
-	'categorytree-empty-bullet' => '{{identical|categorytree-expand-bullet}}',
+	'categorytree-empty-bullet' => 'Used if number of subcategories (or something) is 0.',
 	'categorytree-page-bullet' => '{{notranslate}}',
 	'categorytree-member-counts' => 'Tooltip showing a detailed summary of subcategory member counts. Parameters:
 * $1 - number of subcategories
@@ -287,8 +287,6 @@ $messages['ar'] = array(
 	'categorytree-mode-all' => 'كل الصفحات',
 	'categorytree-collapse' => 'اطو',
 	'categorytree-expand' => 'فرد',
-	'categorytree-expand-bullet' => '◄',
-	'categorytree-empty-bullet' => '◄',
 	'categorytree-member-counts' => 'يحتوي على {{PLURAL:$1|1 تصنيف فرعي|$1 تصنيف فرعي}}، {{PLURAL:$2|1 صفحة|$2 صفحة}}، و {{PLURAL:$3|1 ملف|$3 ملف}}',
 	'categorytree-num-categories' => '$1 ت',
 	'categorytree-num-pages' => ' $1 ص',
@@ -319,8 +317,6 @@ $messages['arc'] = array(
 	'categorytree-mode-all' => 'ܟܠ ܦܐܬܬ̈ܐ',
 	'categorytree-collapse' => 'ܐܟܪܟ',
 	'categorytree-expand' => 'ܐܪܘܚ',
-	'categorytree-expand-bullet' => '◄',
-	'categorytree-empty-bullet' => '◄',
 	'categorytree-member-counts' => 'ܚܒܫ ܥܠ {{PLURAL:$1|1 ܣܕܪܐ ܦܪܥܝܐ|$1 ܣܕܪ̈ ܦܪ̈ܥܝܐ}}، {{PLURAL:$2|1 ܦܐܬܐ|$2 ܦܐܬܬ̈ܐ}}، ܘ{{PLURAL:$3|1 ܠܦܦܐ|$3 ܠܦܦ̈ܐ}}',
 	'categorytree-num-categories' => '$1 ܣ',
 	'categorytree-num-pages' => ' $1 ܦ',
@@ -353,8 +349,6 @@ $messages['arz'] = array(
 	'categorytree-mode-all' => 'كل الصفحات',
 	'categorytree-collapse' => 'اضغط',
 	'categorytree-expand' => 'اتوسع',
-	'categorytree-expand-bullet' => '◄',
-	'categorytree-empty-bullet' => '◄',
 	'categorytree-member-counts' => 'فيه {{PLURAL:$1|1 تصنيف فرعي|$1 تصنيف فرعي}}، {{PLURAL:$2|1 صفحة|$2 صفحة}}، و {{PLURAL:$3|1 ملف|$3 ملف}}',
 	'categorytree-num-categories' => '$1 ت',
 	'categorytree-num-pages' => ' $1 ص',
@@ -538,8 +532,6 @@ $messages['azb'] = array(
 	'categorytree-mode-all' => 'بوتون صحیفه‌لر',
 	'categorytree-collapse' => 'گیزلت',
 	'categorytree-expand' => 'گئنیشلندیر',
-	'categorytree-expand-bullet' => '◄',
-	'categorytree-empty-bullet' => '◄',
 	'categorytree-member-counts' => '{{PLURAL:$1|1 آلت بولمه|$1 آلت بولمه}}، {{PLURAL:$2|1 صهیف|$2 صحیفه}}، و {{PLURAL:$3|1 شکیل|$3 شکیل}}دن عبارت‌دیر',
 	'categorytree-num-categories' => '$1 ر',
 	'categorytree-num-pages' => '$1 ص',
@@ -665,8 +657,6 @@ $messages['bcc'] = array(
 	'categorytree-mode-all' => 'کل صفحات',
 	'categorytree-collapse' => 'سقوط',
 	'categorytree-expand' => 'پچ',
-	'categorytree-expand-bullet' => '◄',
-	'categorytree-empty-bullet' => '◄',
 	'categorytree-load' => 'لود',
 	'categorytree-loading' => 'لودبیت...',
 	'categorytree-nothing-found' => 'هچی در نه بوت',
@@ -1101,8 +1091,6 @@ $messages['ckb'] = array(
 	'categorytree-mode-all' => 'ھەموو پەڕەکان',
 	'categorytree-collapse' => 'کۆیبکەوە',
 	'categorytree-expand' => 'بڵاویبکەوە',
-	'categorytree-expand-bullet' => '◄',
-	'categorytree-empty-bullet' => '◄',
 	'categorytree-member-counts' => '{{PLURAL:$1|یەک ژێرپۆل|$1 ژێرپۆل}}، {{PLURAL:$2|یەک پەڕە|$2 پەڕە}}، and {{PLURAL:$3|یەک پەڕگە|$3 پەڕگە}} لەبەردەگرێتەوە',
 	'categorytree-num-categories' => '$1 پۆل',
 	'categorytree-num-pages' => '$1 پەڕە',
@@ -1627,8 +1615,6 @@ $messages['fa'] = array(
 	'categorytree-mode-all' => 'همهٔ صفحه‌ها',
 	'categorytree-collapse' => 'نهفتن',
 	'categorytree-expand' => 'گسترش',
-	'categorytree-expand-bullet' => '◄',
-	'categorytree-empty-bullet' => '◄',
 	'categorytree-member-counts' => 'شامل {{PLURAL:$1|یک زیررده|$1 زیررده}}، {{PLURAL:$2|یک صفحه|$2 صفحه}} و {{PLURAL:$3|یک پرونده|$3 پرونده است}}',
 	'categorytree-num-categories' => '$1 ر',
 	'categorytree-num-pages' => '$1 ص',
@@ -2165,8 +2151,6 @@ $messages['he'] = array(
 	'categorytree-mode-all' => 'כל הדפים',
 	'categorytree-collapse' => 'כיווץ',
 	'categorytree-expand' => 'הרחבה',
-	'categorytree-expand-bullet' => '◄',
-	'categorytree-empty-bullet' => '◄',
 	'categorytree-member-counts' => 'כוללת {{PLURAL:$1|קטגוריית משנה אחת|$1 קטגוריות משנה}}, {{PLURAL:$2|דף אחד|$2 דפים}}, ו{{PLURAL:$3|קובץ אחד|־$3 קבצים}}',
 	'categorytree-num-categories' => "{{PLURAL:$1|קט' אחת|$1 קט'}}",
 	'categorytree-num-pages' => '{{PLURAL:$1|דף אחד|$1 דפים}}',
@@ -3072,8 +3056,6 @@ $messages['krj'] = array(
  */
 $messages['ks-arab'] = array(
 	'categorytree-category' => 'زٲژ:',
-	'categorytree-expand-bullet' => '◄',
-	'categorytree-empty-bullet' => '◄',
 );
 
 /** Colognian (Ripoarisch)
@@ -3239,6 +3221,7 @@ $messages['lad'] = array(
 /** Luxembourgish (Lëtzebuergesch)
  * @author Kaffi
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'categorytree' => 'Struktur vun de Kategorien',
@@ -3246,8 +3229,8 @@ $messages['lb'] = array(
 	'categorytree-legend' => 'Weis Kategoriestruktur',
 	'categorytree-desc' => "Gadget deen op Ajax opgebaut ass fir d'[[Special:CategoryTree|Kategorie-Struktur]] vun enger Wiki duerzestellen",
 	'categorytree-header' => 'Gitt den Numm vun enger Kategorie an, fir hiren Inhalt als Bam-Struktur ze gesinn.
-Bedenkt, datt dës Fonctioun Java Script Funktioune benotzt, déi als AJAX bekannt sinn.
-Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da fonktionnéiert dëst bei Iech net.',
+Bedenkt, datt dës Funktioun Java Script Funktioune benotzt, déi als AJAX bekannt sinn.
+Wann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da funktionéiert dëst bei Iech net.',
 	'categorytree-category' => 'Kategorie:',
 	'categorytree-go' => 'Struktur weisen',
 	'categorytree-parents' => 'Uewerkategorien',
@@ -4480,8 +4463,6 @@ If you have a very old browser, or have JavaScript disabled, it will not work.',
 	'categorytree-mode-all' => 'سارے صفے',
 	'categorytree-collapse' => 'مک گیا',
 	'categorytree-expand' => 'ودھاؤ',
-	'categorytree-expand-bullet' => '◄',
-	'categorytree-empty-bullet' => '◄',
 	'categorytree-member-counts' => 'ایدے چ  {{PLURAL:$1|1 نکی گٹھ|$1 گٹھاں}}, {{PLURAL:$2|1 صفحہ|$2 صفحے}}, تے {{PLURAL:$3|1 فائل|$3 فائلاں}} ہیگیاں نیں۔',
 	'categorytree-num-categories' => '$1 سی',
 	'categorytree-num-pages' => '$1 پی',
@@ -4523,8 +4504,6 @@ $messages['ps'] = array(
 	'categorytree-mode-all' => 'ټول مخونه',
 	'categorytree-collapse' => 'پرځول',
 	'categorytree-expand' => 'غځول',
-	'categorytree-expand-bullet' => '◄',
-	'categorytree-empty-bullet' => '◄',
 	'categorytree-member-counts' => '{{PLURAL:$1|1 څېرمه وېشنيزه|$1 څېرمه وېشنيزې}}، {{PLURAL:$2|1 مخ|$2 مخونه}} او {{PLURAL:$3|1 دوتنه|$3 دوتنې}} لري',
 	'categorytree-num-categories' => '$1 و',
 	'categorytree-num-pages' => '$1 م',
@@ -5874,8 +5853,6 @@ $messages['ug-arab'] = array(
 	'categorytree-mode-all' => 'ھەممە بەتلەر',
 	'categorytree-collapse' => 'قاتلا',
 	'categorytree-expand' => 'ياي',
-	'categorytree-expand-bullet' => '◄',
-	'categorytree-empty-bullet' => '◄',
 	'categorytree-num-categories' => '$1 تۈر',
 	'categorytree-num-pages' => '$1 بەت',
 	'categorytree-num-files' => '$1 ھۆججەت',
@@ -5946,8 +5923,6 @@ $messages['ur'] = array(
 	'categorytree-mode-all' => 'تمام صفحات',
 	'categorytree-collapse' => 'خاتمے',
 	'categorytree-expand' => 'وسیع کریں',
-	'categorytree-expand-bullet' => '◄',
-	'categorytree-empty-bullet' => '◄',
 	'categorytree-num-categories' => '$1 C',
 	'categorytree-num-pages' => '$1 P',
 	'categorytree-num-files' => '$1 F',
@@ -6162,8 +6137,6 @@ $messages['yi'] = array(
 	'categorytree-mode-all' => 'אַלע בלעטער',
 	'categorytree-collapse' => 'אײַנציען',
 	'categorytree-expand' => 'פֿאַרברייטערן',
-	'categorytree-expand-bullet' => '◄',
-	'categorytree-empty-bullet' => '◄',
 	'categorytree-member-counts' => 'אנטהאלט {{PLURAL:$1|1 אונטערקאטעגאריע|$1 אונטערקאטעגאריעס}}, {{PLURAL:$2|1 בלאט|$2 בלעטער}}, און {{PLURAL:$3|1 טעקע|$3 טעקעס}}',
 	'categorytree-num-categories' => '$1 קאַט',
 	'categorytree-num-pages' => '$1 ב',
