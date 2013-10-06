@@ -8,6 +8,7 @@
  * @copyright © 2006-2008 Daniel Kinzler and others
  * @license GNU General Public Licence 2.0 or later
  */
+// @codingStandardsIgnoreFile
 
 $specialPageAliases = array();
 
