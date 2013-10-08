@@ -2113,7 +2113,7 @@ $messages['ha'] = array(
 	'categorytree-category' => 'Rukuni:',
 );
 
-/** Hakka (Hak-kâ-fa)
+/** Hakka (客家語/Hak-kâ-ngî)
  * @author Hakka
  */
 $messages['hak'] = array(
@@ -3129,7 +3129,7 @@ $messages['kw'] = array(
 	'categorytree-mode-all' => 'keniver folen',
 );
 
-/** Kirghiz (Кыргызча)
+/** Kyrgyz (Кыргызча)
  * @author Chorobek
  */
 $messages['ky'] = array(
@@ -3906,7 +3906,7 @@ $messages['nan'] = array(
 	'categorytree-no-subcategories' => 'bô ē-lūi-pia̍t',
 );
 
-/** Neapolitan (Nnapulitano)
+/** Neapolitan (Napulitano)
  * @author Chelin
  */
 $messages['nap'] = array(
