@@ -1,16 +1,12 @@
-/*
- * Stylesheet for the CategoryTree extension, an AJAX based gadget
- * to display the category structure of a wiki
+/**
+ * Stylesheet for the CategoryTree extension.
  *
  * @file
  * @ingroup Extensions
  * @author Daniel Kinzler, brightbyte.de
  * @copyright © 2006 Daniel Kinzler
  * @licence GNU General Public Licence 2.0 or later
- *
- * NOTE: if you change this, increment $wgCategoryTreeVersion
- *       in CategoryTree.php to avoid users getting stale copies from cache.
-*/
+ */
 
 #mw-subcategories ul {
 	list-style: none none;
@@ -65,16 +61,12 @@
 	font-style: italic;
 }
 
-/*
-div.CategoryTreeInlineNode,
-div.CategoryTreeInlineNode div {
-	display: table-cell;
-}
-*/
-
 .CategoryTreeCategoryBarItem {
-	display:-moz-inline-box; display:inline-block; /* yes, specify display twice! quirk for FF2 */
-	margin:-0.5ex 0 0 1ex; /* why is the -0.5ex needed? */
+	/* yes, specify display twice! quirk for FF2 */
+	display: -moz-inline-box;
+	display: inline-block;
+	/* why is the -0.5ex needed? */
+	margin: -0.5ex 0 0 1ex;
 	padding:0;
 	vertical-align: top;
 	/* IE6-7 Hack for display: inline-block */
