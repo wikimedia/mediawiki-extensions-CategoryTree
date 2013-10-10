@@ -1061,7 +1061,7 @@ $messages['ce'] = array(
 	'categorytree-expand' => 'хьайаста',
 	'categorytree-load' => 'чуяккха',
 	'categorytree-loading' => 'чуйолуш…',
-	'categorytree-no-subcategories' => 'йац бухаркадегарш',
+	'categorytree-no-subcategories' => 'бухара категореш яц',
 	'categorytree-not-found' => 'Категори «$1» ца карийна.',
 );
 
