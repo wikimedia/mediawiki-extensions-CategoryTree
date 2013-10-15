@@ -3409,6 +3409,22 @@ $messages['lo'] = array(
 	'categorytree-retry' => 'ກະລຸນາຮອສັກຄູ່ ແລ້ວລອງໂຫຼດໃໝ່',
 );
 
+/** لوری (لوری)
+ * @author Mogoeilor
+ */
+$messages['lrc'] = array(
+	'categorytree-collapse' => 'جم كردن',
+	'categorytree-expand' => 'وا كردن',
+	'categorytree-num-categories' => '$1 س',
+	'categorytree-num-pages' => ' $1 پ',
+	'categorytree-num-files' => ' $1 ف',
+	'categorytree-num-empty' => 'حالی',
+	'categorytree-load' => 'سوار كرد',
+	'categorytree-loading' => 'د حالت سوار كرد',
+	'categorytree-nothing-found' => 'هيچی پيدا نبی',
+	'categorytree-no-subcategories' => 'بی زيردسه يا',
+);
+
 /** Lithuanian (lietuvių)
  * @author Eitvys200
  * @author Garas
