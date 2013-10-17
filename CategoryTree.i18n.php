@@ -3413,6 +3413,10 @@ $messages['lo'] = array(
  * @author Mogoeilor
  */
 $messages['lrc'] = array(
+	'categorytree-category' => 'دسه:',
+	'categorytree-go' => 'وه شلك دار نشون بيه',
+	'categorytree-parents' => 'حونواديا',
+	'categorytree-mode-label' => 'مد:',
 	'categorytree-collapse' => 'جم كردن',
 	'categorytree-expand' => 'وا كردن',
 	'categorytree-num-categories' => '$1 س',
