@@ -1061,11 +1061,15 @@ $messages['ce'] = array(
 	'categorytree' => 'Категореши дит',
 	'categorytree-portlet' => 'Категореш',
 	'categorytree-legend' => 'Гайта категореши дит',
+	'categorytree-header' => 'Язъе категорин цӀе тӀакха иза гойтур ю диттан кепара.
+ХӀара таро ю хьан браузеро AJAX ловш елахь.
+ХӀан браузер шира ела елахь я JavaScript дӀаяйина елахь, бухара категореш диттан кепара гойтур яц.',
 	'categorytree-category' => 'Категори:',
 	'categorytree-go' => 'Чуйаккха',
 	'categorytree-parents' => 'Кхолламан категореш',
 	'categorytree-mode-label' => 'РогӀехь:',
 	'categorytree-mode-categories' => 'екъ категореш',
+	'categorytree-mode-pages' => 'файлийн совнаха',
 	'categorytree-mode-all' => 'массо агlонаш',
 	'categorytree-collapse' => 'къайлаяккха',
 	'categorytree-expand' => 'хьайаста',
