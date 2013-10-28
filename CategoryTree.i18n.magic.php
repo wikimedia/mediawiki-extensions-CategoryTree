@@ -223,7 +223,7 @@ $magicWords['uz'] = array(
 
 /** Vietnamese (Tiếng Việt) */
 $magicWords['vi'] = array(
-	'categorytree' => array( 0, 'câythểloại' ),
+	'categorytree' => array( 0, 'cây_thể_loại', 'câythểloại' ),
 );
 
 /** Simplified Chinese (中文（简体）‎) */
