@@ -1640,7 +1640,7 @@ $messages['fa'] = array(
 	'categorytree-num-files' => '$1 پ',
 	'categorytree-num-empty' => 'خالی',
 	'categorytree-load' => 'بارگیری',
-	'categorytree-loading' => 'در حال بارگیری',
+	'categorytree-loading' => 'در حال بارگیری...',
 	'categorytree-nothing-found' => 'هیچ‌چیز یافت نشد.',
 	'categorytree-no-subcategories' => 'هیچ زیررده‌ای ندارد.',
 	'categorytree-no-parent-categories' => 'فاقد ردهٔ بالاتر',
@@ -3421,6 +3421,7 @@ $messages['lrc'] = array(
 	'categorytree-go' => 'وه شلك دار نشون بيه',
 	'categorytree-parents' => 'حونواديا',
 	'categorytree-mode-label' => 'مد:',
+	'categorytree-mode-all' => 'همه بلگيا',
 	'categorytree-collapse' => 'جم كردن',
 	'categorytree-expand' => 'وا كردن',
 	'categorytree-num-categories' => '$1 س',
@@ -3431,6 +3432,8 @@ $messages['lrc'] = array(
 	'categorytree-loading' => 'د حالت سوار كرد',
 	'categorytree-nothing-found' => 'هيچی پيدا نبی',
 	'categorytree-no-subcategories' => 'بی زيردسه يا',
+	'categorytree-error' => 'مشگل د سواركرد داديا',
+	'categorytree-retry' => 'لطفا يه دم صبر بكيد و هنی تلاش بكيد',
 );
 
 /** Lithuanian (lietuvių)
