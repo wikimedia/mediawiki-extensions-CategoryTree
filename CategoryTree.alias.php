@@ -97,7 +97,7 @@ $specialPageAliases['ce'] = array(
 	'CategoryTree' => array( 'Категорешин_дит' ),
 );
 
-/** Czech (česky) */
+/** Czech (čeština) */
 $specialPageAliases['cs'] = array(
 	'CategoryTree' => array( 'Strom_kategorií' ),
 );
