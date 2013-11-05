@@ -3417,10 +3417,15 @@ $messages['lo'] = array(
  * @author Mogoeilor
  */
 $messages['lrc'] = array(
+	'categorytree' => 'دار دسه',
+	'categorytree-portlet' => 'دسه یا',
+	'categorytree-legend' => 'دار دسه نه نشو بیئه',
 	'categorytree-category' => 'دسه:',
 	'categorytree-go' => 'وه شلك دار نشون بيه',
 	'categorytree-parents' => 'حونواديا',
 	'categorytree-mode-label' => 'مد:',
+	'categorytree-mode-categories' => 'فقط دسه یا',
+	'categorytree-mode-pages' => 'بلگیا وه جؤز فایلیا',
 	'categorytree-mode-all' => 'همه بلگيا',
 	'categorytree-collapse' => 'جم كردن',
 	'categorytree-expand' => 'وا كردن',
@@ -3432,6 +3437,8 @@ $messages['lrc'] = array(
 	'categorytree-loading' => 'د حالت سوار كرد',
 	'categorytree-nothing-found' => 'هيچی پيدا نبی',
 	'categorytree-no-subcategories' => 'بی زيردسه يا',
+	'categorytree-no-parent-categories' => 'نه دسه یا ایسنی',
+	'categorytree-no-pages' => 'نه بلگه ای نه زیر دسه ای',
 	'categorytree-error' => 'مشگل د سواركرد داديا',
 	'categorytree-retry' => 'لطفا يه دم صبر بكيد و هنی تلاش بكيد',
 );
