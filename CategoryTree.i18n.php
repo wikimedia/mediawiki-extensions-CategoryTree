@@ -3439,6 +3439,7 @@ $messages['lrc'] = array(
 	'categorytree-no-subcategories' => 'بی زيردسه يا',
 	'categorytree-no-parent-categories' => 'نه دسه یا ایسنی',
 	'categorytree-no-pages' => 'نه بلگه ای نه زیر دسه ای',
+	'categorytree-not-found' => 'دسه <i>$1</i> دیاری نکرد',
 	'categorytree-error' => 'مشگل د سواركرد داديا',
 	'categorytree-retry' => 'لطفا يه دم صبر بكيد و هنی تلاش بكيد',
 );
@@ -6164,11 +6165,12 @@ $messages['wa'] = array(
 
 /** Wu (吴语)
  * @author Wtzdj
+ * @author Xiaomingyan
  */
 $messages['wuu'] = array(
 	'categorytree' => '分类树',
 	'categorytree-category' => '分类',
-	'categorytree-go' => '显示树形',
+	'categorytree-go' => '显示分类树',
 	'categorytree-mode-categories' => '仅分类',
 	'categorytree-mode-pages' => '除脱图片以外个页面',
 	'categorytree-mode-all' => '所有页面',
@@ -6325,7 +6327,7 @@ $messages['zh-hans'] = array(
 	'categorytree-portlet' => '分类',
 	'categorytree-legend' => '显示分类树',
 	'categorytree-desc' => '动态导航[[Special:CategoryTree|分类结构]]',
-	'categorytree-header' => '请输入一个分类名称，以树形结构查看其内容。请注意，本功能需要JavaScript高级功能AJAX。如果你的浏览器过旧或停用了JavaScript，本功能无法正常工作。',
+	'categorytree-header' => '请输入一个分类名称以使用树形结构查看其内容。请注意，这需要高级JavaScript功能AJAX。如果你的浏览器过旧或停用了JavaScript，它将无法工作。',
 	'categorytree-category' => '分类：',
 	'categorytree-go' => '显示分类树',
 	'categorytree-parents' => '父分类',
