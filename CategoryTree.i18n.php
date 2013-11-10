@@ -2536,7 +2536,7 @@ $messages['ilo'] = array(
 	'categorytree' => 'Kayo ti kategoria',
 	'categorytree-portlet' => 'Katkategoria',
 	'categorytree-legend' => 'Ipakita ti kayo ti kategoria',
-	'categorytree-desc' => 'Dinamik nga agdaliasat iti [[Special:CategoryTree|estrukrura ti kategoria]]',
+	'categorytree-desc' => 'Dinamiko nga agdaliasat iti [[Special:CategoryTree|estrukrura ti kategoria]]',
 	'categorytree-header' => 'Ikabil ti nagan ti kategoria tapno makita dagiti nagyanna a kasla estruktura ti kayo.
 Laglagipem a daytoy ket makasapul ti JavaScript nga opisio a makunkuna a kas AJAX.
 No addaanka ti daan a pagbasabasam, wenno nabaldado ti JavaScript, saan daytoy a mabalin.',
