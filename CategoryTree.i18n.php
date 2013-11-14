@@ -1863,7 +1863,7 @@ $messages['frr'] = array(
 	'categorytree-no-pages' => 'Nian sidjen of onerkategoriin',
 	'categorytree-not-found' => 'Det kategorii „$1“ as ei fünjen wurden.',
 	'categorytree-error' => "Bi't loosin faan dooten as wat skiaf gingen.",
-	'categorytree-retry' => 'Teew en uugenblak an fersjük det do noch ans.',
+	'categorytree-retry' => 'Teew en uugenblak an ferschük det do noch ans.',
 );
 
 /** Friulian (furlan)
