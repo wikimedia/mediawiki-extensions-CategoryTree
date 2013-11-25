@@ -1451,6 +1451,7 @@ $messages['el'] = array(
 );
 
 /** Esperanto (Esperanto)
+ * @author KuboF
  * @author Tlustulimu
  * @author Yekrats
  */
@@ -1459,7 +1460,7 @@ $messages['eo'] = array(
 	'categorytree-portlet' => 'Kategorioj',
 	'categorytree-legend' => 'Montri kategorian arbon',
 	'categorytree-desc' => 'AJAX-bazita aldonaĵo por montri la [[Special:CategoryTree|kategorian strukturon]] de vikio',
-	'categorytree-header' => 'Tajpu kategorinomon por vidi ties entenon en arbforma strukturo. Notu ke tio postulas javaskripatajn funkciojn nomitajn AJAX. Se via foliumilo estas tre malnova au se Javaskripto estas malaktivigita, tio ne funkcios.',
+	'categorytree-header' => 'Tajpu kategorinomon por vidi ties enhavon en arboforma strukturo. Notu ke tio postulas progresajn javaskripatajn funkciojn nomitajn AJAX. Se via foliumilo estas tre malnova aŭ se Javaskripto estas malaktivigita, tio ne funkcios.',
 	'categorytree-category' => 'Kategorio:',
 	'categorytree-go' => 'Montri arbon',
 	'categorytree-parents' => 'praul(ar)o',
