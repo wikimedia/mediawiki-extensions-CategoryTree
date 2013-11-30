@@ -3747,10 +3747,11 @@ $messages['ml'] = array(
 
 /** Mongolian (монгол)
  * @author Chinneeb
+ * @author MongolWiki
  */
 $messages['mn'] = array(
 	'categorytree' => 'Ангиллын мод',
-	'categorytree-portlet' => 'Ангиллууд',
+	'categorytree-portlet' => 'Ангилал',
 	'categorytree-legend' => 'Ангиллын модыг үзүүлэх',
 	'categorytree-header' => 'Ангиллын нэрийг бичиж модны бүтэц байдлаар агуулгыг нь харна уу.
 Үүнийг ашиглахын тулд AJAX гэгдэх ЖаваСкрипт функц хэрэгтэй.
@@ -3763,7 +3764,7 @@ $messages['mn'] = array(
 	'categorytree-mode-all' => 'бүх хуудас',
 	'categorytree-collapse' => 'буулгах',
 	'categorytree-expand' => 'дэлгэх',
-	'categorytree-member-counts' => '{{PLURAL:$1|1 дэд ангилал|$1 дэд ангилал}}, {{PLURAL:$2|1 хуудас|$2 хуудас}}, {{PLURAL:$3|1 файл|$3 файл}} агуулагдаж байна',
+	'categorytree-member-counts' => '{{PLURAL:$1|1 бүлэг|$1 бүлэг}}, {{PLURAL:$2|1 хуудас|$2 хуудас}}, {{PLURAL:$3|1 файл|$3 файл}} агуулагдаж байна',
 	'categorytree-load' => 'унших',
 	'categorytree-loading' => 'уншиж байна...',
 	'categorytree-nothing-found' => 'юу ч олдсонгүй',
