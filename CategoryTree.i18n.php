@@ -3751,12 +3751,12 @@ $messages['ml'] = array(
  */
 $messages['mn'] = array(
 	'categorytree' => 'Ангиллын мод',
-	'categorytree-portlet' => 'Ангилал',
+	'categorytree-portlet' => 'Анги',
 	'categorytree-legend' => 'Ангиллын модыг үзүүлэх',
 	'categorytree-header' => 'Ангиллын нэрийг бичиж модны бүтэц байдлаар агуулгыг нь харна уу.
 Үүнийг ашиглахын тулд AJAX гэгдэх ЖаваСкрипт функц хэрэгтэй.
 Та маш хуучин вэб хөтөчтэй, эсвэл ЖаваСкриптыг хориглосон байвал ажиллахгүй болохыг анхаарна уу.',
-	'categorytree-category' => 'Ангилал:',
+	'categorytree-category' => 'Анги:',
 	'categorytree-go' => 'Модыг үзүүлэх',
 	'categorytree-parents' => 'Эх ангиллууд',
 	'categorytree-mode-categories' => 'Зөвхөн ангиллууд',
