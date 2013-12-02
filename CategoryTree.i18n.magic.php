@@ -28,7 +28,7 @@ $magicWords['ar'] = array(
 
 /** Egyptian Spoken Arabic (مصرى) */
 $magicWords['arz'] = array(
-	'categorytree' => array( 0, 'شجرة_تصنيف', 'categorytree' ),
+	'categorytree' => array( 0, 'شجرة_تصنيف' ),
 );
 
 /** Breton (brezhoneg) */
