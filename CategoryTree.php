@@ -170,7 +170,7 @@ $wgResourceModules['ext.categoryTree.css'] = array(
  * Hook it up
  */
 function efCategoryTree() {
-	global $wgUseAjax, $wgHooks, $wgOut, $wgRequest;
+	global $wgUseAjax, $wgHooks, $wgRequest;
 	global $wgCategoryTreeDefaultOptions, $wgCategoryTreeDefaultMode, $wgCategoryTreeOmitNamespace;
 	global $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeCategoryPageMode, $wgCategoryTreeAllowTag;
 	global $wgCategoryTreeSidebarRoot, $wgCategoryTreeForceHeaders, $wgCategoryTreeHijackPageCategories;
@@ -209,7 +209,7 @@ function efCategoryTree() {
 	}
 
 	if ( $wgCategoryTreeForceHeaders ) {
-		CategoryTree::setHeaders( $wgOut );
+		$wgHooks['BeforePageDisplay'][] = 'efCategoryTreeAddHeaders';
 	} else {
 		$wgHooks['OutputPageParserOutput'][] = 'efCategoryTreeParserOutput';
 	}
@@ -375,7 +375,8 @@ function efCategoryTreeParserHook( $cat, $argv, $parser = null, $allowMissing = 
 }
 
 /**
- * Hook callback that injects messages and things into the <head> tag
+ * Hook callback that injects messages and things into the <head> tag,
+ * if needed in the current page.
  * Does nothing if $parserOutput->mCategoryTreeTag is not set
  * @param $outputPage OutputPage
  * @param $parserOutput ParserOutput
@@ -385,6 +386,19 @@ function efCategoryTreeParserOutput( $outputPage, $parserOutput )  {
 	if ( !empty( $parserOutput->mCategoryTreeTag ) ) {
 		CategoryTree::setHeaders( $outputPage );
 	}
+	return true;
+}
+
+/**
+ * BeforePageDisplay hook. This hook is set when $wgCategoryTreeForceHeaders
+ * is set.
+ * Otherwise similar to efCategoryTreeParserOutput.
+ * @param $out OutputPage
+ * @param $skin Skin
+ * @return bool
+ */
+function efCategoryTreeAddHeaders( OutputPage $out, Skin $skin )  {
+	CategoryTree::setHeaders( $out );
 	return true;
 }
 
