@@ -1131,7 +1131,7 @@ $messages['co'] = array(
 	'categorytree-mode-all' => 'tutte e pagine',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Danny B.
  * @author Li-sung
  * @author Mormegil
@@ -1169,7 +1169,7 @@ $messages['cs'] = array(
 	'categorytree-retry' => 'Počkejte chvilku a zkuste to znova.',
 );
 
-/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
@@ -2711,6 +2711,7 @@ $messages['ja'] = array(
 	'categorytree-mode-all' => 'すべてのページ',
 	'categorytree-collapse' => '折り畳む',
 	'categorytree-expand' => '展開する',
+	'categorytree-empty-bullet' => '►',
 	'categorytree-member-counts' => '$1 {{PLURAL:$1|下位カテゴリ}}、$2 {{PLURAL:$2|ページ}}、$3 {{PLURAL:$3|ファイル}}を含んでいます',
 	'categorytree-num-categories' => '$1C',
 	'categorytree-num-pages' => '$1頁',
@@ -3692,6 +3693,8 @@ $messages['mk'] = array(
 	'categorytree-mode-all' => 'сите страници',
 	'categorytree-collapse' => 'собери',
 	'categorytree-expand' => 'отвори',
+	'categorytree-expand-bullet' => '[<b>+</b>]',
+	'categorytree-empty-bullet' => '[<b>×</b>]',
 	'categorytree-member-counts' => 'содржи {{PLURAL:$1|една поткатегорија|$1 поткатегории}}, {{PLURAL:$2|една страница|$2 страници}} и {{PLURAL:$3|една податотека|$3 податотеки}}',
 	'categorytree-num-categories' => '$1 К',
 	'categorytree-num-pages' => '$1 С',
@@ -4977,6 +4980,8 @@ $messages['scn'] = array(
 	'categorytree-mode-all' => 'tutti li pàggini',
 	'categorytree-collapse' => 'cumprimi',
 	'categorytree-expand' => 'spanni',
+	'categorytree-expand-bullet' => '[<b>+</b>]',
+	'categorytree-empty-bullet' => '[<b>×</b>]',
 	'categorytree-member-counts' => 'cunteni {{PLURAL:$1|1 suttacatigurìa|$1 suttacatigurìi}}, {{PLURAL:$2|1 pàggina|$2 pàggini}} e {{PLURAL:$3|1 file|$3 file}}',
 	'categorytree-num-categories' => '$1 C',
 	'categorytree-num-pages' => '$1 P',
@@ -5692,6 +5697,8 @@ Kapag mayroon kang isang napakatandang/napakalumang pantingin-tingin (''browser'
 	'categorytree-mode-all' => 'lahat ng mga pahina',
 	'categorytree-collapse' => 'tiklupin',
 	'categorytree-expand' => 'palaparin',
+	'categorytree-expand-bullet' => '[<b>+</b>]',
+	'categorytree-empty-bullet' => '[<b>×</b>]',
 	'categorytree-member-counts' => 'naglalaman ng {{PLURAL:$1|1 subcategory|$1 kabahaging mga kaurian}}, {{PLURAL:$2|1 pahina|$2 mga pahina}}, at {{PLURAL:$3|1 talaksan|$3 mga talaksan}}',
 	'categorytree-num-categories' => '$1 C',
 	'categorytree-num-pages' => '$1 P',
