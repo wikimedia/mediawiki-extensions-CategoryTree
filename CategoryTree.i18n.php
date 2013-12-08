@@ -1058,14 +1058,14 @@ $messages['cdo'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
-	'categorytree' => 'Категореши дит',
+	'categorytree' => 'Категорешан дит',
 	'categorytree-portlet' => 'Категореш',
-	'categorytree-legend' => 'Гайта категореши дит',
+	'categorytree-legend' => 'Гайта категорешан дит',
 	'categorytree-header' => 'Язъе категорин цӀе тӀакха иза гойтур ю диттан кепара.
 ХӀара таро ю хьан браузеро AJAX ловш елахь.
 ХӀан браузер шира ела елахь я JavaScript дӀаяйина елахь, бухара категореш диттан кепара гойтур яц.',
 	'categorytree-category' => 'Категори:',
-	'categorytree-go' => 'Чуйаккха',
+	'categorytree-go' => 'Чуяккха',
 	'categorytree-parents' => 'Кхолламан категореш',
 	'categorytree-mode-label' => 'РогӀехь:',
 	'categorytree-mode-categories' => 'екъ категореш',
@@ -5785,6 +5785,7 @@ $messages['tr'] = array(
 	'categorytree-category' => 'Kategori',
 	'categorytree-go' => 'Yükle',
 	'categorytree-parents' => 'Üst kategoriler',
+	'categorytree-mode-label' => 'Mod:',
 	'categorytree-mode-categories' => 'sadece kategorileri göster',
 	'categorytree-mode-pages' => 'dosyalar dışındaki sayfalar',
 	'categorytree-mode-all' => 'tüm sayfalar',
