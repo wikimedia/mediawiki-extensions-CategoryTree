@@ -48,7 +48,7 @@ $magicWords['de'] = array(
 
 /** Zazaki (Zazaki) */
 $magicWords['diq'] = array(
-	'categorytree' => array( 0, 'darakategoriye' ),
+	'categorytree' => array( 0, 'darakategori' ),
 );
 
 /** Esperanto (Esperanto) */
@@ -159,6 +159,11 @@ $magicWords['nds-nl'] = array(
 /** Dutch (Nederlands) */
 $magicWords['nl'] = array(
 	'categorytree' => array( 0, 'categorieboom' ),
+);
+
+/** Norwegian Nynorsk (norsk nynorsk) */
+$magicWords['nn'] = array(
+	'categorytree' => array( 0, 'kategoritre' ),
 );
 
 /** Polish (polski) */
