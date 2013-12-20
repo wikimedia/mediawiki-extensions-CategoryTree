@@ -1073,6 +1073,7 @@ $messages['ce'] = array(
 	'categorytree-mode-all' => 'массо агlонаш',
 	'categorytree-collapse' => 'къайлаяккха',
 	'categorytree-expand' => 'хьайаста',
+	'categorytree-member-counts' => 'чохь ю $1 {{PLURAL:$1|бухара категори|бухара категореш}}, $2 {{PLURAL:$2|агӀо|агӀонаш}} а $3 {{PLURAL:$3|файл|файлаш}} а',
 	'categorytree-load' => 'чуяккха',
 	'categorytree-loading' => 'чуйолуш…',
 	'categorytree-no-subcategories' => 'бухара категореш яц',
@@ -1399,11 +1400,12 @@ $messages['ee'] = array(
 );
 
 /** Emiliàn (Emiliàn)
+ * @author Lévi
  * @author Reder
  */
 $messages['egl'] = array(
-	'categorytree-portlet' => 'Categorie',
-	'categorytree-category' => 'Categorie:',
+	'categorytree-portlet' => 'Categoréi',
+	'categorytree-category' => 'Categoréi:',
 	'categorytree-num-categories' => '$1 C',
 	'categorytree-num-pages' => '$1 P',
 	'categorytree-num-files' => '$1 F',
