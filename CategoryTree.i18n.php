@@ -396,7 +396,7 @@ $messages['as'] = array(
 	'categorytree-mode-all' => 'সকলো পৃষ্ঠা',
 	'categorytree-collapse' => 'সংকোচন',
 	'categorytree-expand' => 'বহলাওক',
-	'categorytree-member-counts' => '{{PLURAL:$1|এটা উপশ্ৰেণী|$1টা উপশ্ৰেণী}}, {{PLURAL:$2|এখন পৃষ্ঠা|$2খন পৃষ্ঠা}}, আৰু {{PLURAL:$3|এটা ফাইল|$3টা ফাইল}} আছে',
+	'categorytree-member-counts' => '{{PLURAL:$1|এটা উপশ্ৰেণী|$1টা উপশ্ৰেণী}}, {{PLURAL:$2|এটা পৃষ্ঠা|$2টা পৃষ্ঠা}}, আৰু {{PLURAL:$3|এটা ফাইল|$3টা ফাইল}} আছে',
 	'categorytree-num-categories' => '$1 C',
 	'categorytree-num-pages' => '$1 P',
 	'categorytree-num-files' => '$1 F',
@@ -5002,22 +5002,30 @@ $messages['scn'] = array(
 
 /** Sassaresu (Sassaresu)
  * @author Felis
+ * @author Jun Misugi
  */
 $messages['sdc'] = array(
 	'categorytree' => "Sthruttura ad'àiburu di li categuri",
+	'categorytree-portlet' => 'Categuri',
+	'categorytree-legend' => "Musthrà sthruttura ad'àiburu di li categuri",
 	'categorytree-header' => "Insirì l'innommu di la categuria di la quari si vó vidé lu cuntinuddu attrabessu la sthruttura ad'àiburu. Amminta chi la pàgina vó li funzionariddai abanzaddi di JavaScript ciamaddi AJAX; s'ài un nabiggddori vécciu o cu' li funzioni JavaScript disàbiritaddi, chistha pàgina nò funziunerà.",
 	'categorytree-category' => 'Categuria:',
-	'categorytree-go' => 'Carrigga',
+	'categorytree-go' => "Musthrà l'àiburu di categuri",
 	'categorytree-parents' => 'Categuri superiori',
 	'categorytree-mode-categories' => 'musthra soru li categuri',
 	'categorytree-mode-pages' => "tutti li pàgini, eschrusi l'immàgini", # Fuzzy
 	'categorytree-mode-all' => 'tutti li pàgini',
 	'categorytree-collapse' => 'cumprimi',
 	'categorytree-expand' => 'ippaglia',
+	'categorytree-num-categories' => '$1 C',
+	'categorytree-num-pages' => '$1 P',
+	'categorytree-num-files' => '$1 F',
+	'categorytree-num-empty' => 'biodda',
 	'categorytree-load' => 'carrigga',
 	'categorytree-loading' => 'carrigghendi...',
 	'categorytree-nothing-found' => 'nisciun risulthaddu',
 	'categorytree-no-subcategories' => 'nisciuna sottucateguria.',
+	'categorytree-no-parent-categories' => 'nisciuni sottucateguri',
 	'categorytree-no-pages' => 'nisciuna bozi ni sottucateguria.',
 	'categorytree-not-found' => "Categuria ''$1'' nò acciappadda",
 	'categorytree-error' => "Probrema i' lu carriggamentu di li dati.",
