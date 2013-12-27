@@ -1078,6 +1078,7 @@ $messages['ce'] = array(
 	'categorytree-loading' => 'чуйолуш…',
 	'categorytree-no-subcategories' => 'бухара категореш яц',
 	'categorytree-not-found' => 'Категори «$1» ца карийна.',
+	'categorytree-retry' => 'Дехар до, собар а дийна юха кхин гӀорта.',
 );
 
 /** Cebuano (Cebuano)
