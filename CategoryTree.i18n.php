@@ -3045,8 +3045,8 @@ $messages['ko'] = array(
 	'categorytree-parents' => '상위 분류',
 	'categorytree-mode-label' => '모드:',
 	'categorytree-mode-categories' => '분류 문서만 보기',
-	'categorytree-mode-pages' => '파일을 제외한 모든 문서를 표시',
-	'categorytree-mode-all' => '모든 문서를 표시',
+	'categorytree-mode-pages' => '파일을 제외한 문서',
+	'categorytree-mode-all' => '모든 문서',
 	'categorytree-collapse' => '접기',
 	'categorytree-expand' => '펼치기',
 	'categorytree-member-counts' => '{{PLURAL:$1|하위 분류 1개|하위 분류 $1개}}, {{PLURAL:$2|문서 1개|문서 $2개}}, {{PLURAL:$3|파일 1개|파일 $3개}}를 포함하고 있습니다',
@@ -5228,6 +5228,7 @@ $messages['sq'] = array(
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
+ * @author Milicevic01
  * @author Millosh
  * @author Rancher
  * @author Sasa Stefanovic
@@ -5261,7 +5262,7 @@ $messages['sr-ec'] = array(
 	'categorytree-no-subcategories' => 'нема поткатегорија',
 	'categorytree-no-parent-categories' => 'нема наткатегорија',
 	'categorytree-no-pages' => 'нема страница или поткатегорија',
-	'categorytree-not-found' => 'Не могу да пронађем категорију <i>$1</i>',
+	'categorytree-not-found' => 'Категорија <i>$1</i> није пронађена',
 	'categorytree-error' => 'Проблем при учитавању података.',
 	'categorytree-retry' => 'Сачекајте неколико тренутака и покушајте поново.',
 );
