@@ -916,6 +916,15 @@ $messages['bo'] = array(
 	'categorytree-portlet' => 'རྣམ་གྲངས།',
 );
 
+/** Bakhtiari (بختياري)
+ * @author Bonevarluri
+ */
+$messages['bqi'] = array(
+	'categorytree-mode-all' => 'همه بلگه آ',
+	'categorytree-collapse' => 'جم كردن',
+	'categorytree-expand' => 'وا كردن',
+);
+
 /** Breton (brezhoneg)
  * @author Fohanno
  * @author Fulup
