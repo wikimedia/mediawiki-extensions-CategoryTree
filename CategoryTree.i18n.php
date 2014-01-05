@@ -2767,6 +2767,7 @@ $messages['jut'] = array(
 );
 
 /** Javanese (Basa Jawa)
+ * @author Bennylin
  * @author Meursault2004
  * @author NoiX180
  * @author Pras
@@ -2782,6 +2783,7 @@ Menawa panjenengan panjlajah wèbé kalebu vèrsi lawa, utawa fitur JavaScript d
 	'categorytree-category' => 'Kategori:',
 	'categorytree-go' => 'Tuduhna uwit',
 	'categorytree-parents' => 'Kategori sing luwih dhuwur',
+	'categorytree-mode-label' => 'Mode:',
 	'categorytree-mode-categories' => 'kategori waé',
 	'categorytree-mode-pages' => 'kaca kajaba berkas',
 	'categorytree-mode-all' => 'kabèh kaca',
@@ -4803,6 +4805,7 @@ Ce tu è 'nu browser assaije vecchie, o tìne 'u JavaScript disabbilitate, non g
 
 /** Russian (русский)
  * @author Ahonc
+ * @author Amire80
  * @author Kaganer
  * @author Lockal
  * @author Putnik
@@ -4825,7 +4828,7 @@ $messages['ru'] = array(
 	'categorytree-mode-all' => 'все страницы',
 	'categorytree-collapse' => 'свернуть',
 	'categorytree-expand' => 'развернуть',
-	'categorytree-member-counts' => 'содержит $1 {{PLURAL:$1|подкатегорию|подкатегорий|подкатегории}}, $2 {{PLURAL:$2|страницу|страниц|страницы}} и $3 {{PLURAL:$3|файл|файлов|файла}}', # Fuzzy
+	'categorytree-member-counts' => 'Содержит $1 {{PLURAL:$1|подкатегорию|подкатегорий|подкатегории}}, $2 {{PLURAL:$2|страницу|страниц|страницы}} и $3 {{PLURAL:$3|файл|файлов|файла}}',
 	'categorytree-num-categories' => '$1 К',
 	'categorytree-num-pages' => '$1 С',
 	'categorytree-num-files' => '$1 Ф',
