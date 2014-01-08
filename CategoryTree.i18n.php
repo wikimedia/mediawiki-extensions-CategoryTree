@@ -2976,6 +2976,7 @@ Eger şolğışıñız öte eski, nemese JavaScript öşirilgen bolsa, bul iske 
  * @author Lovekhmer
  * @author Thearith
  * @author គីមស៊្រុន
+ * @author វ័ណថារិទ្ធ
  */
 $messages['km'] = array(
 	'categorytree' => 'មែកធាងនៃចំណាត់ថ្នាក់ក្រុម',
@@ -2984,6 +2985,7 @@ $messages['km'] = array(
 	'categorytree-category' => 'ចំណាត់ថ្នាក់ក្រុម:',
 	'categorytree-go' => 'បង្ហាញមែកធាង',
 	'categorytree-parents' => 'ចំណាត់ថ្នាក់ក្រុមកម្រិតខ្ពស់',
+	'categorytree-mode-label' => 'Mode:',
 	'categorytree-mode-categories' => 'សម្រាប់តែចំណាត់ថ្នាក់ក្រុមប៉ុណ្ណោះ',
 	'categorytree-mode-pages' => 'ទំព័រលើកលែងតែរូបភាព',
 	'categorytree-mode-all' => 'គ្រប់ទំព័រ',
