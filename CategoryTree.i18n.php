@@ -3440,6 +3440,10 @@ $messages['lrc'] = array(
 	'categorytree' => 'دار دسه',
 	'categorytree-portlet' => 'دسه یا',
 	'categorytree-legend' => 'دار دسه نه نشو بیئه',
+	'categorytree-desc' => 'وه شلک جمشدار [[ویجه:دار دسه|ساختار دسه]] بگردیت', # Fuzzy
+	'categorytree-header' => 'یه گل نوم دسه سی دیئن چیا مئن وه شکل یه سازه داری وارد بکید.
+بنیسید که که یه تاوع جاوا اسکریپت پیشکرده که چی آجاکس اشناخته با میها.
+ار جاگردتو فره قدیمیه،یا جاوا اسکریپت فعال نئ،وه کار نمی که.',
 	'categorytree-category' => 'دسه:',
 	'categorytree-go' => 'وه شلك دار نشون بيه',
 	'categorytree-parents' => 'حونواديا',
@@ -3449,6 +3453,7 @@ $messages['lrc'] = array(
 	'categorytree-mode-all' => 'همه بلگيا',
 	'categorytree-collapse' => 'جم كردن',
 	'categorytree-expand' => 'وا كردن',
+	'categorytree-member-counts' => 'وه شامل {{جمی:$1|1 زیردسه|$1 زیردسه یا}}, {{PLURAL:$2|1 بلگه|$2 بلگه}}, و {{جمی:$3|1 فایل|$3 فایلیا}} هئ',
 	'categorytree-num-categories' => '$1 س',
 	'categorytree-num-pages' => ' $1 پ',
 	'categorytree-num-files' => ' $1 ف',
