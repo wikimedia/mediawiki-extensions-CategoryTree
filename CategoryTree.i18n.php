@@ -2641,7 +2641,7 @@ Ef þú notast við gamlan vafra eða hefur slökkt á JavaScript mun þetta ekk
 	'categorytree-mode-all' => 'allar síður',
 	'categorytree-collapse' => 'fela',
 	'categorytree-expand' => 'sýna',
-	'categorytree-member-counts' => 'Inniheldur {{PLURAL:$1|einn undirflokk|$1 undirflokka}}, {{PLURAL:$2|eina síðu|$2 síður}}, og {{PLURAL:$3|eina mynd|$3 myndir}}',
+	'categorytree-member-counts' => 'Inniheldur $1 {{PLURAL:$1|undirflokk|undirflokka}}, $2 {{PLURAL:$2|síðu|síður}}, og $3 {{PLURAL:$3|mynd|myndir}}',
 	'categorytree-num-categories' => '$1 F',
 	'categorytree-num-pages' => '$1 S',
 	'categorytree-num-files' => '$1 M',
