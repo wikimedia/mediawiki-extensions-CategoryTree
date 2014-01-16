@@ -1333,7 +1333,7 @@ $messages['diq'] = array(
 	'categorytree-header' => 'Qe vînayîşê structureyê darî, yew nameyê kategorîyî binuse.
 Qe hebitnayiş, komputer de gani JavaScriptê AJAXî bibi.
 Eka browseyê tu kihanî ya zi tu JavaScript qefilmayiyo, program nihebitiyeno.',
-	'categorytree-category' => 'Kategori:',
+	'categorytree-category' => 'Kategoriye:',
 	'categorytree-go' => 'Barfi',
 	'categorytree-parents' => 'Ser kategoriy',
 	'categorytree-mode-label' => 'Modê cı:',
@@ -1342,7 +1342,7 @@ Eka browseyê tu kihanî ya zi tu JavaScript qefilmayiyo, program nihebitiyeno.'
 	'categorytree-mode-all' => 'peley pêro',
 	'categorytree-collapse' => 'ake/racne',
 	'categorytree-expand' => 'Hera ke',
-	'categorytree-member-counts' => '{{PLURAL:$1|1 bın kategori|$1 bın kategoriy}}, {{PLURAL:$2|1 pele|$2 pelay}} u {{PLURAL:$3|1 dosya|$3 dosyey}} estê',
+	'categorytree-member-counts' => 'Tede {{PLURAL:$1|1 bınkategoriye|$1 bınkategoriy}}, {{PLURAL:$2|1 pele|$2 peli}} û {{PLURAL:$3|1 dosya|$3 dosyey}} estê',
 	'categorytree-num-categories' => '$1 K',
 	'categorytree-num-pages' => '$1 W',
 	'categorytree-num-files' => '$1 D',
@@ -1350,10 +1350,10 @@ Eka browseyê tu kihanî ya zi tu JavaScript qefilmayiyo, program nihebitiyeno.'
 	'categorytree-load' => 'Barfi',
 	'categorytree-loading' => 'Barêno...',
 	'categorytree-nothing-found' => 'maalesef netice çınyo',
-	'categorytree-no-subcategories' => 'bın kategori cı çınyo',
+	'categorytree-no-subcategories' => 'bınkategoriy çıniyê',
 	'categorytree-no-parent-categories' => 'ser kategoriye cı çınyo',
-	'categorytree-no-pages' => 'bın kategori yana wesiqe çınyo',
-	'categorytree-not-found' => 'Name dê <i>$1</i> kategori nêvineyê',
+	'categorytree-no-pages' => 'peli ya zi bınkategoriy çıniyê',
+	'categorytree-not-found' => 'Kategoriya <i>$1</i> nêvêniye',
 	'categorytree-error' => 'Barkerdış de malumati dı problem esta.',
 	'categorytree-retry' => 'Şıma ra reca tenekê pıpawê, bahdo fına bıcerbnê.',
 );
@@ -4108,6 +4108,7 @@ NB: veur disse funksie he'j de JavaScript-funksionaliteit AJAX neudig. A'j n hel
 /** Nepali (नेपाली)
  * @author Bhawani Gautam
  * @author Bhawani Gautam Rhk
+ * @author Krish Dulal
  */
 $messages['ne'] = array(
 	'categorytree' => 'श्रेणी वृक्ष',
@@ -4118,11 +4119,11 @@ $messages['ne'] = array(
 	'categorytree-go' => 'वृक्ष हेर्ने',
 	'categorytree-parents' => 'जनक',
 	'categorytree-mode-categories' => 'श्रेणी मात्र',
-	'categorytree-mode-pages' => 'पृष्ठहरु फ़ाइलहरुका अतिरिक्त',
-	'categorytree-mode-all' => 'सबै पृष्ठहरु',
+	'categorytree-mode-pages' => 'फाइलहरू बाहेकका पृष्ठहरू',
+	'categorytree-mode-all' => 'सबै पृष्ठहरू',
 	'categorytree-collapse' => 'खुम्च्याउनु',
 	'categorytree-expand' => 'फैलाउनु',
-	'categorytree-member-counts' => 'मा {{PLURAL:$1|1 श्रेणी छ|$1 श्रेणीहरु छन्}}, {{PLURAL:$2|1 पृष्ठ छ|$2 पृष्ठहरु छन्}}, तथा {{PLURAL:$3|1 फाइल छ|$3 फाइलहरु छन्}}',
+	'categorytree-member-counts' => 'मा {{PLURAL:$1|1 श्रेणी छ|$1 श्रेणीहरू छन्}}, {{PLURAL:$2|1 पृष्ठ छ|$2 पृष्ठहरू छन्}}, तथा {{PLURAL:$3|1 फाइल छ|$3 फाइलहरू छन्}}',
 	'categorytree-num-categories' => '$1 C (श्रे)',
 	'categorytree-num-pages' => '$1 P (पृ)',
 	'categorytree-num-files' => '$1 F (फा)',
@@ -4131,7 +4132,7 @@ $messages['ne'] = array(
 	'categorytree-loading' => 'खोलिंदै…',
 	'categorytree-nothing-found' => 'केहीपनि फेला परेन',
 	'categorytree-no-subcategories' => 'उपश्रेणीहरू छैनन्',
-	'categorytree-no-parent-categories' => 'जनक श्रेणीहरु नभएको',
+	'categorytree-no-parent-categories' => 'अभिभावक श्रेणीहरू नभएको',
 	'categorytree-no-pages' => 'पृष्ठहरू वा उपश्रेणीहरू छैनन्',
 	'categorytree-not-found' => 'श्रेणी <i>$1</i> फेला परेन',
 	'categorytree-error' => 'आँकडा (data) चढाउनमा समस्या',
