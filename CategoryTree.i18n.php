@@ -5064,6 +5064,7 @@ $messages['sgs'] = array(
 );
 
 /** Serbo-Croatian (srpskohrvatski / српскохрватски)
+ * @author Kolega2357
  * @author OC Ripper
  */
 $messages['sh'] = array(
@@ -5074,10 +5075,10 @@ $messages['sh'] = array(
 	'categorytree-header' => 'Unesite ime kategorije da vidite njen sadržaj kao strukturno stablo. Ovo zahtijeva proširenu JavaScript funkcionalnost kao AJAX. Ako imate neki stariji preglednik, ili ste isključili JavaScript, ovo neće raditi.',
 	'categorytree-category' => 'Kategorija:',
 	'categorytree-go' => 'Prikaži stablo',
-	'categorytree-parents' => 'Nadkategorije',
-	'categorytree-mode-categories' => 'samo kategorije',
-	'categorytree-mode-pages' => 'stranice bez datoteka',
-	'categorytree-mode-all' => 'sve stranice',
+	'categorytree-parents' => 'Nadkategorije - Наткатегорије',
+	'categorytree-mode-categories' => 'samo kategorije - само категорије',
+	'categorytree-mode-pages' => 'stranice bez slika - странице без слика',
+	'categorytree-mode-all' => 'sve stranice - све странице',
 	'categorytree-collapse' => 'sakrij',
 	'categorytree-expand' => 'proširi',
 	'categorytree-member-counts' => 'sadrži {{PLURAL:$1|jednu podkategoriju|$1 podkategorije|$1 podkategorija}}, {{PLURAL:$2|jednu stranicu|$2 stranice|$2 stranica}} i {{PLURAL:$3|jednu datoteku|$3 datoteke|$3 datoteka}}',
