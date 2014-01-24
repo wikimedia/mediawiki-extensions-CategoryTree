@@ -3434,6 +3434,7 @@ $messages['lo'] = array(
 );
 
 /** لوری (لوری)
+ * @author Bonevarluri
  * @author Mogoeilor
  */
 $messages['lrc'] = array(
@@ -3446,7 +3447,7 @@ $messages['lrc'] = array(
 ار جاگردتو فره قدیمیه،یا جاوا اسکریپت فعال نئ،وه کار نمی که.',
 	'categorytree-category' => 'دسه:',
 	'categorytree-go' => 'وه شلك دار نشون بيه',
-	'categorytree-parents' => 'حونواديا',
+	'categorytree-parents' => 'ریشه',
 	'categorytree-mode-label' => 'مد:',
 	'categorytree-mode-categories' => 'فقط دسه یا',
 	'categorytree-mode-pages' => 'بلگیا وه جؤز فایلیا',
