@@ -1136,11 +1136,13 @@ $messages['ckb'] = array(
 );
 
 /** Corsican (corsu)
+ * @author Paulu
  */
 $messages['co'] = array(
 	'categorytree-category' => 'Categuria:',
 	'categorytree-mode-pages' => 'pagine senza imagin', # Fuzzy
 	'categorytree-mode-all' => 'tutte e pagine',
+	'categorytree-collapse' => 'cumprime',
 );
 
 /** Czech (čeština)
