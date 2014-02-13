@@ -1272,6 +1272,7 @@ $messages['da'] = array(
  * @author Daniel Kinzler, brightbyte.de
  * @author Kghbln
  * @author Metalhead64
+ * @author Purodha
  * @author Raimond Spekking
  * @author SVG
  */
@@ -1279,7 +1280,7 @@ $messages['de'] = array(
 	'categorytree' => 'Kategorienbaum',
 	'categorytree-portlet' => 'Kategorien',
 	'categorytree-legend' => 'Zeige Kategorienbaum',
-	'categorytree-desc' => 'Ergänzt eine [[Special:CategoryTree|Spezialseite]], welche die dynamische Navigation durch die Kategoriestruktur ermöglicht',
+	'categorytree-desc' => '[[Special:CategoryTree|Spezialseite]], welche die dynamische Navigation durch die Kategoriestruktur ermöglicht',
 	'categorytree-header' => 'Zeigt für die angegebene Kategorie die Unterkategorien in einer Baumstruktur.
 Diese Seite benötigt bestimmte JavaScript-Funktionen (Ajax) und funktioniert möglicherweise nicht, sofern JavaScript ausgeschaltet ist oder ein sehr alter Browser verwendet wird.',
 	'categorytree-category' => 'Kategorie:',
@@ -3045,6 +3046,7 @@ $messages['kn'] = array(
  * @author Ficell
  * @author Klutzy
  * @author Kwj2772
+ * @author Priviet
  * @author ToePeu
  * @author 아라
  */
@@ -3055,7 +3057,7 @@ $messages['ko'] = array(
 	'categorytree-desc' => '[[Special:CategoryTree|분류 구조]]를 동적으로 둘러볼 수 있습니다',
 	'categorytree-header' => '트리 구조로 볼 분류 이름을 입력해주세요.
 이 기능을 사용하려면 웹 브라우저에서 AJAX를 지원해야 합니다.
-오래 된 브라우저를 사용하거나, 브라우저에서 자바스크립트를 사용하지 않도록 설정했다면 트리 기능이 동작하지 않습니다.',
+오래된 브라우저를 사용하거나, 브라우저에서 자바스크립트를 사용하지 않도록 설정했다면 트리 기능이 동작하지 않습니다.',
 	'categorytree-category' => '분류:',
 	'categorytree-go' => '트리 보기',
 	'categorytree-parents' => '상위 분류',
