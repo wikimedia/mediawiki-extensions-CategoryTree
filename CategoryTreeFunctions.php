@@ -395,16 +395,19 @@ class CategoryTree {
 	 * @return bool|string
 	 */
 	function getTag( $parser, $category, $hideroot = false, $attr, $depth = 1, $allowMissing = false ) {
-		global $wgCategoryTreeDisableCache, $wgCategoryTreeDynamicTag;
-		static $uniq = 0;
+		global $wgCategoryTreeDisableCache;
 
 		$category = trim( $category );
 		if ( $category === '' ) {
 			return false;
 		}
 
-		if ( $parser && $wgCategoryTreeDisableCache && !$wgCategoryTreeDynamicTag ) {
-			$parser->disableCache();
+		if ( $parser ) {
+			if ( is_bool( $wgCategoryTreeDisableCache ) && $wgCategoryTreeDisableCache === true ) {
+				$parser->disableCache();
+			} elseif ( is_int( $wgCategoryTreeDisableCache ) ) {
+				$parser->getOutput()->updateCacheExpiry( $wgCategoryTreeDisableCache );
+			}
 		}
 
 		$title = self::makeTitle( $category );
@@ -436,18 +439,9 @@ class CategoryTree {
 			}
 		else {
 			if ( !$hideroot ) {
-				$html .= $this->renderNode( $title, $depth, $wgCategoryTreeDynamicTag );
-			} elseif ( !$wgCategoryTreeDynamicTag ) {
-				$html .= $this->renderChildren( $title, $depth );
+				$html .= $this->renderNode( $title, $depth, false );
 			} else {
-				$uniq += 1;
-				$load = 'ct-' . $uniq . '-' . mt_rand( 1, 100000 );
-
-				$html .= Xml::openElement( 'script', array( 'type' => 'text/javascript', 'id' => $load ) );
-				$html .= 'categoryTreeLoadChildren("' . Xml::escapeJsString( $title->getDBkey() ) . '", '
-						. $this->getOptionsAsJsStructure( $depth )
-						. ', document.getElementById("' . $load . '").parentNode);';
-				$html .= Xml::closeElement( 'script' );
+				$html .= $this->renderChildren( $title, $depth );
 			}
 		}
 
@@ -537,7 +531,7 @@ class CategoryTree {
 				$cat = Category::newFromRow( $row, $t );
 			}
 
-			$s = $this->renderNodeInfo( $t, $cat, $depth - 1, false );
+			$s = $this->renderNodeInfo( $t, $cat, $depth - 1 );
 			$s .= "\n\t\t";
 
 			if ( $row->page_namespace == NS_CATEGORY ) {
@@ -612,10 +606,9 @@ class CategoryTree {
 	 * Returns a string with a HTML represenation of the given page.
 	 * @param $title Title
 	 * @param int $children
-	 * @param bool $loadchildren
 	 * @return string
 	 */
-	function renderNode( $title, $children = 0, $loadchildren = false ) {
+	function renderNode( $title, $children = 0 ) {
 		global $wgCategoryTreeUseCategoryTable;
 
 		if ( $wgCategoryTreeUseCategoryTable && $title->getNamespace() == NS_CATEGORY && !$this->isInverse() ) {
@@ -624,7 +617,7 @@ class CategoryTree {
 			$cat = null;
 		}
 
-		return $this->renderNodeInfo( $title, $cat, $children, $loadchildren );
+		return $this->renderNodeInfo( $title, $cat, $children );
 	}
 
 	/**
@@ -633,20 +626,11 @@ class CategoryTree {
 	 * @param $title Title
 	 * @param $cat Category
 	 * @param $children int
-	 * @param $loadchildren bool
 	 * @return string
 	 */
-	function renderNodeInfo( $title, $cat, $children = 0, $loadchildren = false ) {
-		static $uniq = 0;
-
+	function renderNodeInfo( $title, $cat, $children = 0 ) {
 		$mode = $this->getOption( 'mode' );
 		$load = false;
-
-		if ( $children > 0 && $loadchildren ) {
-			$uniq += 1;
-
-			$load = 'ct-' . $uniq . '-' . mt_rand( 1, 100000 );
-		}
 
 		$ns = $title->getNamespace();
 		$key = $title->getDBkey();
@@ -740,7 +724,7 @@ class CategoryTree {
 				$linkattr['style'] = 'display: none;'; // Unhidden by JS
 				$linkattr['data-ct-title'] = $key;
 
-				if ( $children == 0 || $loadchildren ) {
+				if ( $children == 0 ) {
 					$tag = 'span';
 					$txt = wfMessage( 'categorytree-expand-bullet' )->plain();
 					# Don't load this message for ajax requests, so that we don't have to initialise $wgLang
@@ -818,7 +802,7 @@ class CategoryTree {
 			)
 		);
 
-		if ( $ns == NS_CATEGORY && $children > 0 && !$loadchildren ) {
+		if ( $ns == NS_CATEGORY && $children > 0 ) {
 			$children = $this->renderChildren( $title, $children );
 			if ( $children == '' ) {
 				$s .= Xml::openElement( 'i', array( 'class' => 'CategoryTreeNotice' ) );

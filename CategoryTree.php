@@ -38,9 +38,8 @@ define( 'CT_HIDEPREFIX_AUTO', 30 );
  *
  * $wgCategoryTreeMaxChildren - maximum number of children shown in a tree node. Default is 200
  * $wgCategoryTreeAllowTag - enable <categorytree> tag. Default is true.
- * $wgCategoryTreeDynamicTag - loads the first level of the tree in a <categorytag> dynamically.
- *                             This way, the cache does not need to be disabled. Default is false.
- * $wgCategoryTreeDisableCache - disabled the parser cache for pages with a <categorytree> tag. Default is true.
+ * $wgCategoryTreeDisableCache - disable the parser cache for pages with a <categorytree> tag or provide
+ *	                         max cache time in seconds. Default is 6 hours.
  * $wgCategoryTreeUseCache - enable HTTP cache for anon users. Default is false.
  * $wgCategoryTreeMaxDepth - maximum value for depth argument; An array that maps mode values to
  *                           the maximum depth acceptable for the depth option.
@@ -53,8 +52,7 @@ define( 'CT_HIDEPREFIX_AUTO', 30 );
 
 $wgCategoryTreeMaxChildren = 200;
 $wgCategoryTreeAllowTag = true;
-$wgCategoryTreeDisableCache = true;
-$wgCategoryTreeDynamicTag = false;
+$wgCategoryTreeDisableCache = 6*60*60;
 $wgCategoryTreeHTTPCache = false;
 # $wgCategoryTreeUnifiedView = true;
 $wgCategoryTreeMaxDepth = array( CT_MODE_PAGES => 1, CT_MODE_ALL => 1, CT_MODE_CATEGORIES => 2 );
