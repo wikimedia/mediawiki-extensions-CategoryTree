@@ -1082,7 +1082,7 @@ $messages['ce'] = array(
 	'categorytree-mode-pages' => 'файлийн совнаха',
 	'categorytree-mode-all' => 'массо агlонаш',
 	'categorytree-collapse' => 'къайлаяккха',
-	'categorytree-expand' => 'хьайаста',
+	'categorytree-expand' => 'схьаяста',
 	'categorytree-member-counts' => 'чохь ю $1 {{PLURAL:$1|1=бухара категори|бухара категореш}}, $2 {{PLURAL:$2|1=агӀо|агӀонаш}} а $3 {{PLURAL:$3|1=файл|файлаш}} а', # Fuzzy
 	'categorytree-load' => 'чуяккха',
 	'categorytree-loading' => 'чуйолуш…',
