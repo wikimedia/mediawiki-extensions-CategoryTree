@@ -123,6 +123,9 @@ var categoryTree = {
 
 		$.get(
 			mw.util.wikiScript(), {
+				skin: mw.config.get( 'skin' ),
+				uselang: mw.config.get( 'wgUserLanguage' ),
+				debug: mw.config.get( 'debug' ),
 				action: 'ajax',
 				rs: 'efCategoryTreeAjaxWrapper',
 				rsargs: [ctTitle, ctOptions, 'json'] // becomes &rsargs[]=arg1&rsargs[]=arg2...
