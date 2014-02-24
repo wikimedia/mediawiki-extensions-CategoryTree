@@ -5268,8 +5268,8 @@ $messages['sr-ec'] = array(
 	'categorytree-legend' => 'Приказ стабла категорија',
 	'categorytree-desc' => 'Динамичка навигација кроз [[Special:CategoryTree|структуру категорија]]',
 	'categorytree-header' => 'Унесите назив категорије чији садржај желите да видите у стабластој структури.
-Ово захтева напредну функцију јаваскрипта познату као ајакс.
-Ако имате старији прегледач или сте онемогућили јаваскрипт, стабласти приказ неће радити.',
+Ово захтева напредну функцију JavaScript-а познату као AJAX.
+Ако имате старији прегледач или сте онемогућили JavaScript, стабласти приказ неће радити.',
 	'categorytree-category' => 'Категорија:',
 	'categorytree-go' => 'Прикажи стабло',
 	'categorytree-parents' => 'Наткатегорије',
@@ -5296,6 +5296,7 @@ $messages['sr-ec'] = array(
 
 /** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
+ * @author Milicevic01
  * @author Rancher
  */
 $messages['sr-el'] = array(
@@ -5304,8 +5305,8 @@ $messages['sr-el'] = array(
 	'categorytree-legend' => 'Prikaz stabla kategorija',
 	'categorytree-desc' => 'Dinamička navigacija kroz [[Special:CategoryTree|strukturu kategorija]]',
 	'categorytree-header' => 'Unesite naziv kategorije čiji sadržaj želite da vidite u stablastoj strukturi.
-Ovo zahteva naprednu funkciju javaskripta poznatu kao ajaks.
-Ako imate stariji pregledač ili ste onemogućili javaskript, stablasti prikaz neće raditi.',
+Ovo zahteva naprednu funkciju JavaScript-a poznatu kao AJAX.
+Ako imate stariji pregledač ili ste onemogućili JavaScript, stablasti prikaz neće raditi.',
 	'categorytree-category' => 'Kategorija:',
 	'categorytree-go' => 'Prikaži stablo',
 	'categorytree-parents' => 'nadređene kategorije',
@@ -5416,6 +5417,7 @@ Lamun Anjeun ngagunakeun panyungsi nu lila, atawa maehan fungsi Javascript Anjeu
  * @author Diupwijk
  * @author Jon Harald Søby
  * @author Lejonel
+ * @author Lokal Profil
  * @author M.M.S.
  * @author Sannab
  * @author WikiPhoenix
@@ -5424,7 +5426,7 @@ $messages['sv'] = array(
 	'categorytree' => 'Kategoriträd',
 	'categorytree-portlet' => 'Kategorier',
 	'categorytree-legend' => 'Visa kategoriträd',
-	'categorytree-desc' => 'AJAX-baserat verktyg som visar [[Special:CategoryTree|kategoristrukturen]] på en wiki',
+	'categorytree-desc' => 'Dynamisk navigation av [[Special:CategoryTree|kategoristrukturen]]',
 	'categorytree-header' => 'Fyll i ett kategorinamn för att se dess innehåll som en trädstruktur.
 Notera att detta kräver stöd för AJAX, en avancerad form av JavaScript.
 Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript är avaktiverat.',
@@ -5432,7 +5434,7 @@ Därför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript
 	'categorytree-go' => 'Visa träd',
 	'categorytree-parents' => 'Föräldrakategorier',
 	'categorytree-mode-label' => 'Läge:',
-	'categorytree-mode-categories' => 'visa bara kategorier',
+	'categorytree-mode-categories' => 'endast kategorier',
 	'categorytree-mode-pages' => 'sidor utom filer',
 	'categorytree-mode-all' => 'alla sidor',
 	'categorytree-collapse' => 'göm',
