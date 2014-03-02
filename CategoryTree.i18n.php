@@ -3794,7 +3794,7 @@ $messages['mn'] = array(
 	'categorytree-mode-all' => 'бүх хуудас',
 	'categorytree-collapse' => 'буулгах',
 	'categorytree-expand' => 'дэлгэх',
-	'categorytree-member-counts' => '{{PLURAL:$1|1 бүлэг|$1 бүлэг}}, {{PLURAL:$2|1 хуудас|$2 хуудас}}, {{PLURAL:$3|1 файл|$3 файл}} агуулагдаж байна',
+	'categorytree-member-counts' => '{{PLURAL:$1|1 дэд анги|$1 дэд анги}}, {{PLURAL:$2|1 хуудас|$2 хуудас}}, {{PLURAL:$3|1 файл|$3 файл}} агуулагдаж байна.',
 	'categorytree-load' => 'унших',
 	'categorytree-loading' => 'уншиж байна...',
 	'categorytree-nothing-found' => 'юу ч олдсонгүй',
@@ -5548,6 +5548,7 @@ $messages['tcy'] = array(
  * @author C.Chandra Kanth Rao
  * @author Kiranmayee
  * @author Mpradeep
+ * @author Ravichandra
  * @author Veeven
  * @author వైజాసత్య
  */
@@ -5560,6 +5561,7 @@ $messages['te'] = array(
 	'categorytree-category' => 'వర్గం:',
 	'categorytree-go' => 'వృక్షాన్ని చూపించు',
 	'categorytree-parents' => 'మాతృవర్గాలు',
+	'categorytree-mode-label' => 'విధం:',
 	'categorytree-mode-categories' => 'వర్గాలు మాత్రమే',
 	'categorytree-mode-pages' => 'ఫైళ్ళను మినహాయించి మిగిలిన పేజీలు',
 	'categorytree-mode-all' => 'అన్ని పేజీలు',
