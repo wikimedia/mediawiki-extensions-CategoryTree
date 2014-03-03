@@ -1773,6 +1773,7 @@ Um tú hevur ein sera gamlan kaga (brovsara), ella hevur gjørt JavaScript óvir
 );
 
 /** French (français)
+ * @author Darkdadaah
  * @author DavidL
  * @author Gomoko
  * @author Grondin
@@ -1790,7 +1791,7 @@ $messages['fr'] = array(
 	'categorytree-desc' => 'Visite dynamiquement la [[Special:CategoryTree|structure des catégories]]',
 	'categorytree-header' => 'Entrez un nom de catégorie pour voir son contenu en structure arborescente. Ceci utilise des fonctionnalités JavaScript avancées connues sous le nom d’AJAX. Si vous avez un très vieux navigateur Web ou si vous n’avez pas activé la fonctionnalité JavaScript, cela ne fonctionnera pas.',
 	'categorytree-category' => 'Catégorie :',
-	'categorytree-go' => 'voir l’arborescence',
+	'categorytree-go' => 'Voir l’arborescence',
 	'categorytree-parents' => 'super-catégorie(s)',
 	'categorytree-mode-label' => 'Mode:',
 	'categorytree-mode-categories' => 'seulement les catégories',

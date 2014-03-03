@@ -86,6 +86,11 @@ $magicWords['he'] = array(
 	'categorytree' => array( 0, 'עץ_קטגוריה' ),
 );
 
+/** Hindi (हिन्दी) */
+$magicWords['hi'] = array(
+	'categorytree' => array( 0, 'श्रेणी_वृक्ष' ),
+);
+
 /** Igbo (Igbo) */
 $magicWords['ig'] = array(
 	'categorytree' => array( 0, 'óshíshíébéonọr', 'categorytree' ),
