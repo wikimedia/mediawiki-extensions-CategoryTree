@@ -5879,10 +5879,11 @@ $messages['ts'] = array(
 
 /** Tatar (Cyrillic script) (татарча)
  * @author Ajdar
+ * @author Ilnur efende
  * @author Ильнар
  */
 $messages['tt-cyrl'] = array(
-	'categorytree' => 'Тәркемнәр "агачы".',
+	'categorytree' => 'Төркемнәр "агачы".',
 	'categorytree-portlet' => 'Төркемнәр',
 	'categorytree-legend' => 'Төркемнәрнең шәҗәрәсен ачарга',
 	'categorytree-desc' => '[[Special:CategoryTree|Төркемнәрнең асылы]]н аңлату өчен төзелгән AJAX-бит',
