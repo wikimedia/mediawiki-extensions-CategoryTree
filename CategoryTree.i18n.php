@@ -2213,6 +2213,7 @@ $messages['he'] = array(
  * @author Pooja.srivastava
  * @author Shyam123.ckp
  * @author Siddhartha Ghai
+ * @author Wikiuser13
  */
 $messages['hi'] = array(
 	'categorytree' => 'श्रेणीवृक्ष',
@@ -2240,7 +2241,7 @@ $messages['hi'] = array(
 	'categorytree-loading' => 'लोड हो रहा है...',
 	'categorytree-nothing-found' => 'कुछ भी नहीं मिला',
 	'categorytree-no-subcategories' => 'उपश्रेणीयाँ नहीं हैं',
-	'categorytree-no-parent-categories' => 'कोई उपर् कि श्रेणियाँ नहि हे',
+	'categorytree-no-parent-categories' => 'कोई जनक श्रेणियों नहीं है',
 	'categorytree-no-pages' => 'कोई पृष्ठ या उपश्रेणीयाँ नहीं हैं',
 	'categorytree-not-found' => 'श्रेणी <i>$1</i> नहीं मिली',
 	'categorytree-error' => 'डाटा लोड करने में समस्या।',
