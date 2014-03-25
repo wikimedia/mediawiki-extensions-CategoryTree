@@ -1,0 +1,26 @@
+{
+    "@metadata": {
+        "authors": [
+            "Erdal Ronahi",
+            "George Animal",
+            "Ghybu",
+            "Gomada",
+            "Welathêja"
+        ]
+    },
+    "categorytree": "Dara kategoriyan",
+    "categorytree-portlet": "Kategorî",
+    "categorytree-legend": "Dara kategoriyan nîşan bide",
+    "categorytree-category": "Kategorî",
+    "categorytree-go": "Darê nîşan bide",
+    "categorytree-mode-categories": "tenê kategoriyan",
+    "categorytree-mode-all": "hemû rûpel",
+    "categorytree-collapse": "bigre",
+    "categorytree-expand": "veke",
+    "categorytree-load": "bar bike",
+    "categorytree-loading": "tê barkirin",
+    "categorytree-nothing-found": "Ti tişt nehate dîtin",
+    "categorytree-no-subcategories": "binkategorî tune",
+    "categorytree-no-pages": "ne rûpelek an jî binkategoriyek",
+    "categorytree-not-found": "Kategoriya <i>$1</i> nehate dîtin"
+}

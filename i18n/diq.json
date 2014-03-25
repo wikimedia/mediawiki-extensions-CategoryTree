@@ -1,0 +1,38 @@
+{
+    "@metadata": {
+        "authors": [
+            "Erdemaslancan",
+            "Marmase",
+            "Mirzali",
+            "Xoser"
+        ]
+    },
+    "categorytree": "Dara Kategoriye",
+    "categorytree-portlet": "Kategoriy",
+    "categorytree-legend": "Leya kategorîya bımocne",
+    "categorytree-desc": "[[Special:CategoryTree|Babeta kategoriya]] dinamikey sera idare ke",
+    "categorytree-header": "Qe vînayîşê structureyê darî, yew nameyê kategorîyî binuse.\nQe hebitnayiş, komputer de gani JavaScriptê AJAXî bibi.\nEka browseyê tu kihanî ya zi tu JavaScript qefilmayiyo, program nihebitiyeno.",
+    "categorytree-category": "Kategoriye:",
+    "categorytree-go": "Barfi",
+    "categorytree-parents": "Ser kategoriy",
+    "categorytree-mode-label": "Modê cı:",
+    "categorytree-mode-categories": "tenya kategoriy",
+    "categorytree-mode-pages": "Teyna pelan, dosyayan hesab meke",
+    "categorytree-mode-all": "peley pêro",
+    "categorytree-collapse": "ake/racne",
+    "categorytree-expand": "Hera ke",
+    "categorytree-member-counts": "Tede {{PLURAL:$1|1 bınkategoriye|$1 bınkategoriy}}, {{PLURAL:$2|1 pele|$2 peli}} û {{PLURAL:$3|1 dosya|$3 dosyey}} estê",
+    "categorytree-num-categories": "$1 K",
+    "categorytree-num-pages": "$1 W",
+    "categorytree-num-files": "$1 D",
+    "categorytree-num-empty": "'''Venga'''",
+    "categorytree-load": "Barfi",
+    "categorytree-loading": "Barêno...",
+    "categorytree-nothing-found": "maalesef netice çınyo",
+    "categorytree-no-subcategories": "bınkategoriy çıniyê",
+    "categorytree-no-parent-categories": "ser kategoriye cı çınyo",
+    "categorytree-no-pages": "peli ya zi bınkategoriy çıniyê",
+    "categorytree-not-found": "Kategoriya <i>$1</i> nêvêniye",
+    "categorytree-error": "Barkerdış de malumati dı problem esta.",
+    "categorytree-retry": "Şıma ra reca tenekê pıpawê, bahdo fına bıcerbnê."
+}

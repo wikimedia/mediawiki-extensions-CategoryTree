@@ -1,0 +1,37 @@
+{
+    "@metadata": {
+        "authors": [
+            "Ajdar",
+            "Ilnur efende",
+            "Ильнар"
+        ]
+    },
+    "categorytree": "Төркемнәр \"агачы\".",
+    "categorytree-portlet": "Төркемнәр",
+    "categorytree-legend": "Төркемнәрнең шәҗәрәсен ачарга",
+    "categorytree-desc": "[[Special:CategoryTree|Төркемнәрнең асылы]]н аңлату өчен төзелгән AJAX-бит",
+    "categorytree-header": "Төркемнең исемен кертегез һәм ул шәҗәрә рәвешендә күрсәтеләчәк.\nБу мөмкинчелек сезнең браузерның AJAX ны тәэмин итүдән генә торырга мөмкин.\nӘгәр дә сезнең браузерыгыз иске яки JavaScript сүндерелгән булса, бу мөмкинчелек эшләмәячәк.",
+    "categorytree-category": "Төркем:",
+    "categorytree-go": "Йөкләү",
+    "categorytree-parents": "Төп төркемнәр",
+    "categorytree-mode-label": "Режим:",
+    "categorytree-mode-categories": "бары тик төркемнәр генә урнаштырылган",
+    "categorytree-mode-pages": "файллардан башка",
+    "categorytree-mode-all": "барлык битләр",
+    "categorytree-collapse": "яшерү",
+    "categorytree-expand": "ачарга",
+    "categorytree-member-counts": "$1 {{PLURAL:$1|тәркемчәне|тәркемчәләрдән|тәркемчәләрне}}, $2 {{PLURAL:$2|битне|битләрдән|битләрне}} и $3 {{PLURAL:$3|файл|файллар|файл}} ны үз эченә ала",
+    "categorytree-num-categories": "$1 К",
+    "categorytree-num-pages": "$1 С",
+    "categorytree-num-files": "$1 Ф",
+    "categorytree-num-empty": "буш",
+    "categorytree-load": "йөкләү",
+    "categorytree-loading": "йөкләү бара…",
+    "categorytree-nothing-found": "бернидә табылмады",
+    "categorytree-no-subcategories": "мондый төркемчәләр юк",
+    "categorytree-no-parent-categories": "төп бүлекләр юк",
+    "categorytree-no-pages": "мондый бит яки төркемчә юк",
+    "categorytree-not-found": "<i>$1</i> бүлеге табылмады",
+    "categorytree-error": "Хата",
+    "categorytree-retry": "Зинһар бераз көтеп торыгыз һәм тагын бер кат йөкләүне башкарып карагыз."
+}

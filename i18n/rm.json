@@ -1,0 +1,15 @@
+{
+    "@metadata": {
+        "authors": [
+            "Kazu89"
+        ]
+    },
+    "categorytree": "Structura da las categorias",
+    "categorytree-portlet": "Categorias",
+    "categorytree-category": "Categoria:",
+    "categorytree-mode-all": "Tut las paginas",
+    "categorytree-collapse": "cumprimer",
+    "categorytree-expand": "extender",
+    "categorytree-num-empty": "vid",
+    "categorytree-loading": "chargiar…"
+}

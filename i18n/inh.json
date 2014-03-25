@@ -1,0 +1,22 @@
+{
+    "@metadata": {
+        "authors": [
+            "Sapral Mikail"
+        ]
+    },
+    "categorytree": "Цатегий гаьн",
+    "categorytree-portlet": "Цатегаш",
+    "categorytree-legend": "Цатегий гаьн хьахьокха",
+    "categorytree-category": "Цатег:",
+    "categorytree-go": "Га хьокха",
+    "categorytree-parents": "Даь-ноаной цатегаш",
+    "categorytree-mode-categories": "Алха цатегаш",
+    "categorytree-mode-all": "eррига оагIувнаш",
+    "categorytree-num-empty": "яьсса",
+    "categorytree-load": "чуяьккха",
+    "categorytree-loading": "чуяьккхаш латт...",
+    "categorytree-nothing-found": "Укх цатего цхьаккха чурацатега чу ца лоац",
+    "categorytree-no-subcategories": "чурацатегаш яц",
+    "categorytree-no-parent-categories": "даь-ноаной чурацатегаш яц",
+    "categorytree-no-pages": "чурацатегашеи йоазувнашеи яц"
+}

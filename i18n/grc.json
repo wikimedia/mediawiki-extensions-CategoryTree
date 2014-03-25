@@ -1,0 +1,24 @@
+{
+    "@metadata": {
+        "authors": [
+            "LeighvsOptimvsMaximvs",
+            "Omnipaedista"
+        ]
+    },
+    "categorytree": "Δένδρον κατηγοριῶν",
+    "categorytree-portlet": "Κατηγορίαι",
+    "categorytree-category": "Κατηγορία:",
+    "categorytree-go": "Ἐμφανίζειν δένδρον",
+    "categorytree-parents": "Γονεῖς",
+    "categorytree-mode-categories": "Κατηγορίαι μόνον",
+    "categorytree-mode-all": "πᾶσαι αἱ δέλτοι",
+    "categorytree-collapse": "συστέλλειν",
+    "categorytree-expand": "διαστέλλειν",
+    "categorytree-load": "φορτίζειν",
+    "categorytree-loading": "φορτίζειν...",
+    "categorytree-nothing-found": "οὐδὲν εὑρεθέν",
+    "categorytree-no-subcategories": "οὐδεμία ὑποκατηγορία",
+    "categorytree-no-parent-categories": "οὐδεμία γονεικὴ κατηγορία",
+    "categorytree-not-found": "Κατηγορία <i>$1</i> μὴ εὑρεθεῖσα",
+    "categorytree-error": "Πρόβλημα τοῦ φορτίζειν δεδομένα"
+}
