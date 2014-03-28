@@ -31,7 +31,7 @@
     "categorytree-no-subcategories": "мондый төркемчәләр юк",
     "categorytree-no-parent-categories": "төп бүлекләр юк",
     "categorytree-no-pages": "мондый бит яки төркемчә юк",
-    "categorytree-not-found": "<i>$1</i> бүлеге табылмады",
+    "categorytree-not-found": "\u003Ci\u003E$1\u003C/i\u003E бүлеге табылмады",
     "categorytree-error": "Хата",
     "categorytree-retry": "Зинһар бераз көтеп торыгыз һәм тагын бер кат йөкләүне башкарып карагыз."
 }

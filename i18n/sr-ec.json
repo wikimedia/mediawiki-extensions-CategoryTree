@@ -34,7 +34,7 @@
     "categorytree-no-subcategories": "нема поткатегорија",
     "categorytree-no-parent-categories": "нема наткатегорија",
     "categorytree-no-pages": "нема страница или поткатегорија",
-    "categorytree-not-found": "Категорија <i>$1</i> није пронађена",
+    "categorytree-not-found": "Категорија \u003Ci\u003E$1\u003C/i\u003E није пронађена",
     "categorytree-error": "Проблем при учитавању података.",
     "categorytree-retry": "Сачекајте неколико тренутака и покушајте поново."
 }

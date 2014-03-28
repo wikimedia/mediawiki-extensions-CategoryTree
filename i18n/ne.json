@@ -29,7 +29,7 @@
     "categorytree-no-subcategories": "उपश्रेणीहरू छैनन्",
     "categorytree-no-parent-categories": "अभिभावक श्रेणीहरू नभएको",
     "categorytree-no-pages": "पृष्ठहरू वा उपश्रेणीहरू छैनन्",
-    "categorytree-not-found": "श्रेणी <i>$1</i> फेला परेन",
+    "categorytree-not-found": "श्रेणी \u003Ci\u003E$1\u003C/i\u003E फेला परेन",
     "categorytree-error": "आँकडा (data) चढाउनमा समस्या",
     "categorytree-retry": "कृपया केही क्षण पर्खेर त्यसपछि पुनः प्रयास गर्नुहोस्"
 }

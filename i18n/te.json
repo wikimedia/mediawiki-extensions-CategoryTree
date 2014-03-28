@@ -34,7 +34,7 @@
     "categorytree-no-subcategories": "ఉపవర్గాలు లేవు",
     "categorytree-no-parent-categories": "మాతృవర్గం లేదు",
     "categorytree-no-pages": "పేజీలు గానీ, ఉపవర్గాలు గానీ లేవు",
-    "categorytree-not-found": "<i>$1</i> అనే వర్గం కనపడలేదు",
+    "categorytree-not-found": "\u003Ci\u003E$1\u003C/i\u003E అనే వర్గం కనపడలేదు",
     "categorytree-error": "డేటా లోడు చెయ్యడంలో లోపం దొర్లింది",
     "categorytree-retry": "కాస్త ఆగి మళ్ళీ ప్రయత్నించండి."
 }

@@ -25,6 +25,6 @@
     "categorytree-no-subcategories": "nema potkategorija",
     "categorytree-no-parent-categories": "nema nadkategorija",
     "categorytree-no-pages": "nema ni stranica ni podkategorija",
-    "categorytree-not-found": "Kategorija <i>$1</i> nije nađena",
+    "categorytree-not-found": "Kategorija \u003Ci\u003E$1\u003C/i\u003E nije nađena",
     "categorytree-error": "Problem pri učitavanju podataka."
 }

@@ -34,7 +34,7 @@
     "categorytree-no-subcategories": "无子分类",
     "categorytree-no-parent-categories": "无父分类",
     "categorytree-no-pages": "无页面或子分类",
-    "categorytree-not-found": "找不到分类<i>$1</i>",
+    "categorytree-not-found": "找不到分类\u003Ci\u003E$1\u003C/i\u003E",
     "categorytree-error": "载入数据出错。",
     "categorytree-retry": "请稍后重试。"
 }

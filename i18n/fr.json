@@ -38,7 +38,7 @@
     "categorytree-no-subcategories": "aucune sous-catégorie",
     "categorytree-no-parent-categories": "aucune catégorie parente",
     "categorytree-no-pages": "aucune page ou sous-catégorie",
-    "categorytree-not-found": "Catégorie <i>$1</i> introuvable",
+    "categorytree-not-found": "Catégorie \u003Ci\u003E$1\u003C/i\u003E introuvable",
     "categorytree-error": "Problème de chargement des données.",
     "categorytree-retry": "Veuillez attendre un instant puis réessayer."
 }

@@ -24,7 +24,7 @@
     "categorytree-no-subcategories": "дэд ангилалгүй байна",
     "categorytree-no-parent-categories": "эх ангилал байхгүй байна",
     "categorytree-no-pages": "хуудас буюу дэд ангилалгүй байна",
-    "categorytree-not-found": "<i>$1</i> ангилал олдсонгүй",
+    "categorytree-not-found": "\u003Ci\u003E$1\u003C/i\u003E ангилал олдсонгүй",
     "categorytree-error": "Өгөгдлийг ачааллахад асуудал үүсэв.",
     "categorytree-retry": "Түр хүлээгээд дахин оролдоно уу."
 }

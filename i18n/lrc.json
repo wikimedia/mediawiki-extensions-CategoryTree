@@ -30,7 +30,7 @@
     "categorytree-no-subcategories": "بی زيردسه يا",
     "categorytree-no-parent-categories": "نه دسه یا ایسنی",
     "categorytree-no-pages": "نه بلگه ای نه زیر دسه ای",
-    "categorytree-not-found": "دسه <i>$1</i> دیاری نکرد",
+    "categorytree-not-found": "دسه \u003Ci\u003E$1\u003C/i\u003E دیاری نکرد",
     "categorytree-error": "مشگل د سواركرد داديا",
     "categorytree-retry": "لطفا يه دم صبر بكيد و هنی تلاش بكيد"
 }

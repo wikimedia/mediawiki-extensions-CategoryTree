@@ -31,7 +31,7 @@
     "categorytree-no-subcategories": "មិនមានចំណាត់ថ្នាក់ក្រុមរងទេ",
     "categorytree-no-parent-categories": "មិនមានចំណាត់ថ្នាក់ក្រុមមេទេ",
     "categorytree-no-pages": "មិនមានទំព័រឬចំណាត់ថ្នាក់ក្រុមរងទេ",
-    "categorytree-not-found": "រកមិនឃើញចំណាត់ថ្នាក់ក្រុម <i>$1</i> ទេ",
+    "categorytree-not-found": "រកមិនឃើញចំណាត់ថ្នាក់ក្រុម \u003Ci\u003E$1\u003C/i\u003E ទេ",
     "categorytree-error": "មានបញ្ហាក្នុងផ្ទុកទិន្នន័យ។",
     "categorytree-retry": "សូម​រង់ចាំ​មួយភ្លែត​រួច​ព្យាយាម​ម្តងទៀត​។"
 }
