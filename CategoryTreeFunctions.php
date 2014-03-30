@@ -724,23 +724,19 @@ class CategoryTree {
 				$linkattr['style'] = 'display: none;'; // Unhidden by JS
 				$linkattr['data-ct-title'] = $key;
 
+				$tag = 'span';
 				if ( $children == 0 ) {
-					$tag = 'span';
 					$txt = wfMessage( 'categorytree-expand-bullet' )->plain();
 					# Don't load this message for ajax requests, so that we don't have to initialise $wgLang
 					$linkattr[ 'title' ] = $this->mIsAjaxRequest ? '##LOAD##' : wfMessage( 'categorytree-expand' )->plain();
 					$linkattr[ 'data-ct-state' ] = 'collapsed';
 				} else {
-					$tag = 'span';
 					$txt = wfMessage( 'categorytree-collapse-bullet' )->plain();
 					$linkattr[ 'title' ] = wfMessage( 'categorytree-collapse' )->plain();
 					$linkattr[ 'data-ct-loaded' ] = true;
 					$linkattr[ 'data-ct-state' ] = 'expanded';
 				}
 
-				if ( $tag == 'a' ) {
-					$linkattr[ 'href' ] = $wikiLink;
-				}
 				$bullet = Xml::openElement( $tag, $linkattr ) . $txt . Xml::closeElement( $tag ) . ' ';
 			}
 		} else {
