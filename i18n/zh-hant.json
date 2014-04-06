@@ -6,7 +6,8 @@
             "Mark85296341",
             "Oapbtommy",
             "Shinjiman",
-            "Simon Shek"
+            "Simon Shek",
+            "Liuxinyu970226"
         ]
     },
     "categorytree": "分類樹",
@@ -14,7 +15,7 @@
     "categorytree-legend": "顯示分類樹",
     "categorytree-desc": "以AJAX技術顯示[[Special:CategoryTree|分類結構]]",
     "categorytree-header": "在此可以查詢以分類的樹狀結構。\n注意： 本特殊頁面使用AJAX技術。\n如果您的瀏覽器非常老舊，或者是關閉了JavaScript，本頁面將會無法正常運作。",
-    "categorytree-category": "類別：",
+    "categorytree-category": "分類：",
     "categorytree-go": "顯示樹狀結構",
     "categorytree-parents": "父分類",
     "categorytree-mode-label": "模式：",
