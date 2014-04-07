@@ -97,7 +97,7 @@ $wgCategoryTreePageCategoryOptions['namespaces'] = false;
 $wgCategoryTreePageCategoryOptions['depth'] = 0;
 # $wgCategoryTreePageCategoryOptions['class'] = 'CategoryTreeInlineNode';
 
-$wgExtensionMessagesFiles['CategoryTreeAlias'] = dirname( __FILE__ ) . '/CategoryTree.alias.php';
+$wgExtensionMessagesFiles['CategoryTreeAlias'] = __DIR__ . '/CategoryTree.alias.php';
 
 /**
  * Register extension setup hook and credits
@@ -114,14 +114,12 @@ $wgExtensionCredits['specialpage'][] = $wgExtensionCredits['parserhook'][] = arr
 /**
  * Register the special page
  */
-$dir = dirname( __FILE__ ) . '/';
-
 $wgMessagesDirs['CategoryTree'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['CategoryTree'] = $dir . 'CategoryTree.i18n.php';
-$wgAutoloadClasses['CategoryTreePage'] = $dir . 'CategoryTreePage.php';
-$wgAutoloadClasses['CategoryTree'] = $dir . 'CategoryTreeFunctions.php';
-$wgAutoloadClasses['CategoryTreeCategoryPage'] = $dir . 'CategoryPageSubclass.php';
-$wgAutoloadClasses['CategoryTreeCategoryViewer'] = $dir . 'CategoryPageSubclass.php';
+$wgExtensionMessagesFiles['CategoryTree'] = __DIR__ . '/CategoryTree.i18n.php';
+$wgAutoloadClasses['CategoryTreePage'] = __DIR__ . '/CategoryTreePage.php';
+$wgAutoloadClasses['CategoryTree'] = __DIR__ . '/CategoryTreeFunctions.php';
+$wgAutoloadClasses['CategoryTreeCategoryPage'] = __DIR__ . '/CategoryPageSubclass.php';
+$wgAutoloadClasses['CategoryTreeCategoryViewer'] = __DIR__ . '/CategoryPageSubclass.php';
 $wgSpecialPages['CategoryTree'] = 'CategoryTreePage';
 $wgSpecialPageGroups['CategoryTree'] = 'pages';
 # $wgHooks['SkinTemplateTabs'][] = 'efCategoryTreeInstallTabs';
@@ -136,7 +134,7 @@ $wgAjaxExportList[] = 'efCategoryTreeAjaxWrapper';
  * Register ResourceLoader modules
  */
 $commonModuleInfo = array(
-	'localBasePath' => dirname( __FILE__ ) . '/modules',
+	'localBasePath' => __DIR__ . '/modules',
 	'remoteExtPath' => 'CategoryTree/modules',
 );
 
@@ -191,7 +189,7 @@ function efCategoryTree() {
 	if ( $wgCategoryTreeAllowTag ) {
 		global $wgExtensionMessagesFiles;
 		$wgHooks['ParserFirstCallInit'][] = 'efCategoryTreeSetHooks';
-		$wgExtensionMessagesFiles['CategoryTreeMagic'] = $dir . 'CategoryTree.i18n.magic.php';
+		$wgExtensionMessagesFiles['CategoryTreeMagic'] = __DIR__ . '/CategoryTree.i18n.magic.php';
 	}
 
 	if ( !isset( $wgCategoryTreeDefaultOptions['mode'] ) || is_null( $wgCategoryTreeDefaultOptions['mode'] ) ) {
