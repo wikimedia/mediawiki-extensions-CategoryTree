@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "VASANTH S.N."
-        ]
-    },
-    "categorytree-mode-all": "ಮಾತಾ ಪುಟೊಲು",
-    "categorytree-collapse": "ಕುಗ್ಗಿಸಾಲ",
-    "categorytree-expand": "ವಿಸ್ತಾರ ಮಲ್ಪುಲೆ",
-    "categorytree-num-empty": "ಖಾಲಿ",
-    "categorytree-load": "ದಿಂಜಾಲೆ",
-    "categorytree-loading": "ದಿಂಜಾವೊಂದು ಉಂಡು.......",
-    "categorytree-error": "ದತ್ತಾಂಶ ದಿಂಜಾನಗ ದೋಷ",
-    "categorytree-retry": "ದಯದೀದ್ ಒಂತೆ ಕಾತ್‘ದ್ ಪಿರ ಪ್ರಯತ್ನ ಮಲ್ಪುಲೆ"
+	"@metadata": {
+		"authors": [
+			"VASANTH S.N."
+		]
+	},
+	"categorytree-mode-all": "ಮಾತಾ ಪುಟೊಲು",
+	"categorytree-collapse": "ಕುಗ್ಗಿಸಾಲ",
+	"categorytree-expand": "ವಿಸ್ತಾರ ಮಲ್ಪುಲೆ",
+	"categorytree-num-empty": "ಖಾಲಿ",
+	"categorytree-load": "ದಿಂಜಾಲೆ",
+	"categorytree-loading": "ದಿಂಜಾವೊಂದು ಉಂಡು.......",
+	"categorytree-error": "ದತ್ತಾಂಶ ದಿಂಜಾನಗ ದೋಷ",
+	"categorytree-retry": "ದಯದೀದ್ ಒಂತೆ ಕಾತ್‘ದ್ ಪಿರ ಪ್ರಯತ್ನ ಮಲ್ಪುಲೆ"
 }

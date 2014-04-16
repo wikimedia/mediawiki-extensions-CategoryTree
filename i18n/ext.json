@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Better"
-        ]
-    },
-    "categorytree": "Arbu e categorias",
-    "categorytree-category": "Categoria:",
-    "categorytree-load": "cargal",
-    "categorytree-loading": "cargandu",
-    "categorytree-no-pages": "nu ai ni páhinas ni sucategorias"
+	"@metadata": {
+		"authors": [
+			"Better"
+		]
+	},
+	"categorytree": "Arbu e categorias",
+	"categorytree-category": "Categoria:",
+	"categorytree-load": "cargal",
+	"categorytree-loading": "cargandu",
+	"categorytree-no-pages": "nu ai ni páhinas ni sucategorias"
 }

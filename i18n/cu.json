@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "ОйЛ"
-        ]
-    },
-    "categorytree": "катигорїи дрѣво",
-    "categorytree-portlet": "катигорїѩ",
-    "categorytree-category": "катигорїꙗ :",
-    "categorytree-mode-all": "вьсѩ страницѧ"
+	"@metadata": {
+		"authors": [
+			"ОйЛ"
+		]
+	},
+	"categorytree": "катигорїи дрѣво",
+	"categorytree-portlet": "катигорїѩ",
+	"categorytree-category": "катигорїꙗ :",
+	"categorytree-mode-all": "вьсѩ страницѧ"
 }

@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Akerbeltz"
-        ]
-    },
-    "categorytree-go": "Seall a' chraobh",
-    "categorytree-parents": "Pàrantan",
-    "categorytree-mode-all": "a h-uile duilleag",
-    "categorytree-collapse": "co-theannaich",
-    "categorytree-expand": "leudaich"
+	"@metadata": {
+		"authors": [
+			"Akerbeltz"
+		]
+	},
+	"categorytree-go": "Seall a' chraobh",
+	"categorytree-parents": "Pàrantan",
+	"categorytree-mode-all": "a h-uile duilleag",
+	"categorytree-collapse": "co-theannaich",
+	"categorytree-expand": "leudaich"
 }

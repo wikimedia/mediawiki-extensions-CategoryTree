@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bonevarluri"
-        ]
-    },
-    "categorytree-mode-all": "همه بلگه آ",
-    "categorytree-collapse": "جم كردن",
-    "categorytree-expand": "وا كردن"
+	"@metadata": {
+		"authors": [
+			"Bonevarluri"
+		]
+	},
+	"categorytree-mode-all": "همه بلگه آ",
+	"categorytree-collapse": "جم كردن",
+	"categorytree-expand": "وا كردن"
 }

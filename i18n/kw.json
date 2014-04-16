@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Kernoweger",
-            "Kw-Moon",
-            "Nrowe"
-        ]
-    },
-    "categorytree-portlet": "Klassys",
-    "categorytree-category": "Klass:",
-    "categorytree-mode-all": "keniver folen"
+	"@metadata": {
+		"authors": [
+			"Kernoweger",
+			"Kw-Moon",
+			"Nrowe"
+		]
+	},
+	"categorytree-portlet": "Klassys",
+	"categorytree-category": "Klass:",
+	"categorytree-mode-all": "keniver folen"
 }

@@ -1,25 +1,25 @@
 {
-    "@metadata": {
-        "authors": [
-            "Amdf",
-            "Botuzhaleny-sodamo"
-        ]
-    },
-    "categorytree": "Явкс чувто",
-    "categorytree-portlet": "Категорият",
-    "categorytree-legend": "Невтемс явкс чувтонть",
-    "categorytree-category": "Категория:",
-    "categorytree-go": "Невтемс чувтонзо",
-    "categorytree-parents": "Тетянзо-аванзо",
-    "categorytree-mode-categories": "ансяк категорият",
-    "categorytree-mode-all": "весе лопатне",
-    "categorytree-collapse": "теингавтомс",
-    "categorytree-expand": "келемтемс",
-    "categorytree-load": "Йовкстамс",
-    "categorytree-loading": "йовкстамозо моли...",
-    "categorytree-nothing-found": "мезеяк а муеви",
-    "categorytree-no-subcategories": "алкс категорият арасть",
-    "categorytree-no-parent-categories": "верькс категорият арасть",
-    "categorytree-no-pages": "кодамояк лопат эли алкс категорият арасть",
-    "categorytree-not-found": "«$1» категориясь а муеви."
+	"@metadata": {
+		"authors": [
+			"Amdf",
+			"Botuzhaleny-sodamo"
+		]
+	},
+	"categorytree": "Явкс чувто",
+	"categorytree-portlet": "Категорият",
+	"categorytree-legend": "Невтемс явкс чувтонть",
+	"categorytree-category": "Категория:",
+	"categorytree-go": "Невтемс чувтонзо",
+	"categorytree-parents": "Тетянзо-аванзо",
+	"categorytree-mode-categories": "ансяк категорият",
+	"categorytree-mode-all": "весе лопатне",
+	"categorytree-collapse": "теингавтомс",
+	"categorytree-expand": "келемтемс",
+	"categorytree-load": "Йовкстамс",
+	"categorytree-loading": "йовкстамозо моли...",
+	"categorytree-nothing-found": "мезеяк а муеви",
+	"categorytree-no-subcategories": "алкс категорият арасть",
+	"categorytree-no-parent-categories": "верькс категорият арасть",
+	"categorytree-no-pages": "кодамояк лопат эли алкс категорият арасть",
+	"categorytree-not-found": "«$1» категориясь а муеви."
 }
