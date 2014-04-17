@@ -7,7 +7,8 @@
 			"Remember the dot",
 			"Sanbec",
 			"Spacebirdy",
-			"Vivaelcelta"
+			"Vivaelcelta",
+			"Fitoschido"
 		]
 	},
 	"categorytree": "Árbol de categorías",
@@ -19,7 +20,7 @@
 	"categorytree-go": "Cargar",
 	"categorytree-parents": "Categorías superiores",
 	"categorytree-mode-label": "Modo:",
-	"categorytree-mode-categories": "mostrar sólo categorías",
+	"categorytree-mode-categories": "solo categorías",
 	"categorytree-mode-pages": "páginas excepto imágenes",
 	"categorytree-mode-all": "todas las páginas",
 	"categorytree-collapse": "ocultar",
