@@ -236,6 +236,11 @@ $magicWords['vi'] = array(
 	'categorytree' => array( 0, 'cây_thể_loại', 'câythểloại' ),
 );
 
+/** Yiddish (ייִדיש) */
+$magicWords['yi'] = array(
+	'categorytree' => array( 0, 'קאטעגאריע_בוים' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $magicWords['zh-hans'] = array(
 	'categorytree' => array( 0, '分类树' ),
