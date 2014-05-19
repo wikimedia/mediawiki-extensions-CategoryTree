@@ -8,14 +8,15 @@
 			"Cruccone",
 			"Darth Kule",
 			"Gianfranco",
-			"Nemo bis"
+			"Nemo bis",
+			"Lucas2"
 		]
 	},
 	"categorytree": "Albero delle categorie",
 	"categorytree-portlet": "Categorie",
 	"categorytree-legend": "Mostra l'albero delle categorie",
 	"categorytree-desc": "Accessorio AJAX per visualizzare la [[Special:CategoryTree|struttura delle categorie]] del sito",
-	"categorytree-header": "Inserire il nome della categoria di cui si desidera vedere il contenuto sotto forma di struttura ad albero. Si noti che la pagina richiede le funzionalità avanzate di JavaScript chiamate AJAX; qualora si stia usando un browser molto vecchio o le funzioni JavaScript siano disabilitate, questa pagina non funzionerà.",
+	"categorytree-header": "Inserire il nome di una categoria per vederne i contenuti sotto forma di struttura ad albero. Nota: questa pagina richiede una funzionalità JavaScript avanzata nota come AJAX; qualora si stia utilizzando un browser molto vecchio o le funzioni JavaScript siano disabilitate, non funzionerà.",
 	"categorytree-category": "Categoria:",
 	"categorytree-go": "Mostra albero",
 	"categorytree-parents": "Categorie superiori",
