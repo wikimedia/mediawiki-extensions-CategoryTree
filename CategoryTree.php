@@ -116,6 +116,7 @@ $wgExtensionCredits['specialpage'][] = $wgExtensionCredits['parserhook'][] = arr
  */
 $wgMessagesDirs['CategoryTree'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['CategoryTree'] = __DIR__ . '/CategoryTree.i18n.php';
+$wgExtensionMessagesFiles['CategoryTreeMagic'] = __DIR__ . '/CategoryTree.i18n.magic.php';
 $wgAutoloadClasses['CategoryTreePage'] = __DIR__ . '/CategoryTreePage.php';
 $wgAutoloadClasses['CategoryTree'] = __DIR__ . '/CategoryTreeFunctions.php';
 $wgAutoloadClasses['CategoryTreeCategoryPage'] = __DIR__ . '/CategoryPageSubclass.php';
@@ -187,9 +188,7 @@ function efCategoryTree() {
 	}
 
 	if ( $wgCategoryTreeAllowTag ) {
-		global $wgExtensionMessagesFiles;
 		$wgHooks['ParserFirstCallInit'][] = 'efCategoryTreeSetHooks';
-		$wgExtensionMessagesFiles['CategoryTreeMagic'] = __DIR__ . '/CategoryTree.i18n.magic.php';
 	}
 
 	if ( !isset( $wgCategoryTreeDefaultOptions['mode'] ) || is_null( $wgCategoryTreeDefaultOptions['mode'] ) ) {
