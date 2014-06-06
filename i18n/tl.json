@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"AnakngAraw"
+			"AnakngAraw",
+			"Lam-ang"
 		]
 	},
 	"categorytree": "Puno ng kaurian",
@@ -17,8 +18,8 @@
 	"categorytree-mode-all": "lahat ng mga pahina",
 	"categorytree-collapse": "tiklupin",
 	"categorytree-expand": "palaparin",
-	"categorytree-expand-bullet": "[<b>+</b>]",
-	"categorytree-empty-bullet": "[<b>×</b>]",
+	"categorytree-expand-bullet": "►",
+	"categorytree-empty-bullet": "►",
 	"categorytree-member-counts": "naglalaman ng {{PLURAL:$1|1 subcategory|$1 kabahaging mga kaurian}}, {{PLURAL:$2|1 pahina|$2 mga pahina}}, at {{PLURAL:$3|1 talaksan|$3 mga talaksan}}",
 	"categorytree-num-categories": "$1 C",
 	"categorytree-num-pages": "$1 P",
