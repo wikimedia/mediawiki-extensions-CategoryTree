@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mostafadaneshvar"
+			"Mostafadaneshvar",
+			"RigiMahnoor"
 		]
 	},
 	"categorytree": "درچک دسته",
@@ -12,6 +13,7 @@
 	"categorytree-category": "دسته:",
 	"categorytree-go": "پیش دار درچکء",
 	"categorytree-parents": "پت و مات آن",
+	"categorytree-mode-label": "حالت:",
 	"categorytree-mode-categories": "فقط دسته جات",
 	"categorytree-mode-pages": "صفحات بجر فایلان",
 	"categorytree-mode-all": "کل صفحات",
@@ -19,6 +21,11 @@
 	"categorytree-expand": "پچ",
 	"categorytree-expand-bullet": "◄",
 	"categorytree-empty-bullet": "◄",
+	"categorytree-member-counts": "شامل چه {{PLURAL:$1|یک چیررده|$1 چیررده}}، {{PLURAL:$2|یک تاک|$2 تاک}} ءُ {{PLURAL:$3|یک فایل|$3 فایل انت}}",
+	"categorytree-num-categories": "$1 س",
+	"categorytree-num-pages": "$1 پ",
+	"categorytree-num-files": "$1 ف",
+	"categorytree-num-empty": "هالیگ",
 	"categorytree-load": "لود",
 	"categorytree-loading": "لودبیت...",
 	"categorytree-nothing-found": "هچی در نه بوت",
