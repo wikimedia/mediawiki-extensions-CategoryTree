@@ -26,7 +26,7 @@
 	"categorytree-num-files": "$1 D",
 	"categorytree-num-empty": "prazna",
 	"categorytree-load": "učitaj",
-	"categorytree-loading": "učitavanje",
+	"categorytree-loading": "učitavam…",
 	"categorytree-nothing-found": "ništa nije pronađeno",
 	"categorytree-no-subcategories": "nema potkategorija",
 	"categorytree-no-parent-categories": "bez natkategorije",
