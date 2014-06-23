@@ -13,7 +13,7 @@
 	"categorytree-header": "Tajpu kategorinomon por vidi ties enhavon en arboforma strukturo. Notu ke tio postulas progresajn javaskripatajn funkciojn nomitajn AJAX. Se via foliumilo estas tre malnova aŭ se Javaskripto estas malaktivigita, tio ne funkcios.",
 	"categorytree-category": "Kategorio:",
 	"categorytree-go": "Montri arbon",
-	"categorytree-parents": "praul(ar)o",
+	"categorytree-parents": "Patraj kategorioj",
 	"categorytree-mode-label": "Reĝimo:",
 	"categorytree-mode-categories": "nur kategorioj",
 	"categorytree-mode-pages": "paĝoj krom dosieroj",
