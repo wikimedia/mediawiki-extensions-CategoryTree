@@ -4,7 +4,8 @@
 			"Ansumang",
 			"Bellayet",
 			"Nasir8891",
-			"Zaheen"
+			"Zaheen",
+			"Aftab1995"
 		]
 	},
 	"categorytree": "বিষয়শ্রেণীবৃক্ষ",
@@ -21,7 +22,7 @@
 	"categorytree-mode-all": "সব পাতা",
 	"categorytree-collapse": "গুটিয়ে ফেলা হোক",
 	"categorytree-expand": "প্রসারিত করা হোক",
-	"categorytree-member-counts": "{{PLURAL:$1|১রি উপবিষয়শ্রেণী|$1টি উপবিষয়শ্রেণী}}, {{PLURAL:$2|১টি পাতা|$2টি পাতা}}, এবং {{PLURAL:$3|১টি ফাইল|$3টি ফাইল}} রয়েছে",
+	"categorytree-member-counts": "{{PLURAL:$1|১টি উপবিষয়শ্রেণী|$1টি উপবিষয়শ্রেণী}}, {{PLURAL:$2|১টি পাতা|$2টি পাতা}}, এবং {{PLURAL:$3|১টি ফাইল|$3টি ফাইল}} রয়েছে",
 	"categorytree-num-categories": "$1 C",
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 F",
