@@ -8,7 +8,8 @@
 			"Shinjiman",
 			"Simon Shek",
 			"Liuxinyu970226",
-			"Cwlin0416"
+			"Cwlin0416",
+			"Duolaimi"
 		]
 	},
 	"categorytree": "分類樹",
@@ -26,9 +27,9 @@
 	"categorytree-collapse": "合併",
 	"categorytree-expand": "展開",
 	"categorytree-member-counts": "包含 $1 個子分類、$2 個頁面和 $3 個檔案",
-	"categorytree-num-categories": "$1 字元",
-	"categorytree-num-pages": "$1 頁面",
-	"categorytree-num-files": "$1 文件",
+	"categorytree-num-categories": "$1分類",
+	"categorytree-num-pages": "$1頁面",
+	"categorytree-num-files": "$1檔案",
 	"categorytree-num-empty": "空",
 	"categorytree-load": "讀取",
 	"categorytree-loading": "讀取中…",
