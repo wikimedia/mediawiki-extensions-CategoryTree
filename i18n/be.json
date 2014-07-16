@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Тест",
-			"Чаховіч Уладзіслаў"
+			"Чаховіч Уладзіслаў",
+			"Mikalai Udodau"
 		]
 	},
 	"categorytree": "Дрэва катэгорый",
@@ -13,6 +14,7 @@
 	"categorytree-category": "Катэгорыя:",
 	"categorytree-go": "Загрузіць",
 	"categorytree-parents": "Бацькоўскія катэгорыі",
+	"categorytree-mode-label": "Рэжым:",
 	"categorytree-mode-categories": "толькі катэгорыі",
 	"categorytree-mode-pages": "акрамя файлаў",
 	"categorytree-mode-all": "усе старонкі",
