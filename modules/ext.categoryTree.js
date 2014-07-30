@@ -10,7 +10,6 @@
 
 ( function ( $, mw ) {
 
-	// Register click events and show toggle buttons
 	mw.hook( 'wikipage.content' ).add( function ( $content ) {
 
 		/**
@@ -169,6 +168,7 @@
 			.fail( error );
 		}
 
+		// Register click events and show toggle buttons
 		$content.find( '.CategoryTreeToggle' ).click( handleNode );
 		showToggles();
 	} );
