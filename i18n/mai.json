@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"बिप्लब आनन्द"
+		]
+	},
+	"categorytree-category": "संवर्ग",
+	"categorytree-go": "वृक्ष देखाउ",
+	"categorytree-parents": "पालक",
+	"categorytree-mode-label": "मोड:",
+	"categorytree-mode-categories": "मात्र संवर्ग",
+	"categorytree-mode-pages": "फाइलसभ के अतिरिक्त पृष्ठ",
+	"categorytree-mode-all": "सभटा पन्ना",
+	"categorytree-collapse": "भखड़ाउ",
+	"categorytree-expand": "बढ़ाउ",
+	"categorytree-member-counts": "एई म {{PLURAL:$1|एकटा उपश्रेणी|$1 उपश्रेणिसभ}}, {{PLURAL:$2|एकटा पृष्ठ|$2 पृष्ठ}}, आर {{PLURAL:$3|एकटा फाइल|$3 फाइलसभ}} अछि।",
+	"categorytree-num-categories": "$1 श्र",
+	"categorytree-num-pages": "$1 पृ",
+	"categorytree-num-files": "$1 फा",
+	"categorytree-num-empty": "खाली",
+	"categorytree-load": "लादू",
+	"categorytree-loading": "उपारोपण भऽ रहल अछि...",
+	"categorytree-nothing-found": "कुछो नै भेटल",
+	"categorytree-no-subcategories": "उपसंवर्ग नै अछि",
+	"categorytree-no-parent-categories": "कोनो जनक श्रेणिसभ नै अछि",
+	"categorytree-no-pages": "कोनो पृष्ठ आ उपसंवर्ग नै अछि",
+	"categorytree-not-found": "श्रेणी <i>$1</i> नै भेटल",
+	"categorytree-error": "डाटा लोड करए मे समस्या।",
+	"categorytree-retry": "कृपया किछु समय पश्चात पुनः प्रयास करु।"
+}
