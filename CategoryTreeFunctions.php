@@ -16,8 +16,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 class CategoryTree {
-	var $mIsAjaxRequest = false;
-	var $mOptions = array();
+	public $mIsAjaxRequest = false;
+	public $mOptions = array();
 
 	/**
 	 * @param $options array

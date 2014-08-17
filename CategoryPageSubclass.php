@@ -5,12 +5,12 @@ class CategoryTreeCategoryPage extends CategoryPage {
 }
 
 class CategoryTreeCategoryViewer extends CategoryViewer {
-	var $child_cats;
+	public $child_cats;
 
 	/**
 	 * @var CategoryTree
 	 */
-	var $categorytree;
+	public $categorytree;
 
 	/**
 	 * @return CategoryTree

@@ -16,12 +16,12 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 class CategoryTreePage extends SpecialPage {
-	var $target = '';
+	public $target = '';
 
 	/**
 	 * @var CategoryTree
 	 */
-	var $tree = null;
+	public $tree = null;
 
 	function __construct() {
 		parent::__construct( 'CategoryTree', '', true );
