@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chelin"
+			"Chelin",
+			"C.R."
 		]
 	},
 	"categorytree-portlet": "Categurìe",
@@ -10,7 +11,7 @@
 	"categorytree-mode-label": "Modalità:",
 	"categorytree-mode-categories": "mostra solo 'e categurìe",
 	"categorytree-mode-all": "Tutte 'e paggene",
-	"categorytree-collapse": "annascune",
+	"categorytree-collapse": "annascunne",
 	"categorytree-expand": "fa vede",
 	"categorytree-num-categories": "$1 C",
 	"categorytree-num-pages": "$1 P",
