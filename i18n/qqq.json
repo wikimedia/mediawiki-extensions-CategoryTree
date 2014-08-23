@@ -28,7 +28,7 @@
 	"categorytree-category": "Label for the category input field on Special:CategoryTree.\n{{Identical|Category}}",
 	"categorytree-go": "Label for the submit button on [[Special:CategoryTree]]",
 	"categorytree-parents": "Label for the list of parent categories on [[Special:CategoryTree]].\n{{Identical|Parent}}",
-	"categorytree-mode-label": "Used as label for \"Mode\" select box.\n\nThis message follows the input box {{msg-mw|categorytree-category}}.\n\nThis message is followed by the select box {{msg-mw|namespace}}.",
+	"categorytree-mode-label": "Used as label for \"Mode\" select box.\n\nThis message follows the input box {{msg-mw|categorytree-category}}.\n\nThis message is followed by the select box {{msg-mw|namespace}}.\n{{Identical|Mode}}",
 	"categorytree-mode-categories": "Item for the mode choice on [[Special:CategoryTree]], indicating that only categories are listed",
 	"categorytree-mode-pages": "Item for the mode choice on [[Special:CategoryTree]], indicating that no images in categories are listed",
 	"categorytree-mode-all": "Item for the mode choice on [[Special:CategoryTree]], indicating that all pages are listed.\n\n{{Identical|All pages}}",
