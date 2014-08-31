@@ -5,7 +5,8 @@
 			"Huji",
 			"Leyth",
 			"Mjbmr",
-			"ZxxZxxZ"
+			"ZxxZxxZ",
+			"Alirezaaa"
 		]
 	},
 	"categorytree": "درخت رده",
@@ -18,8 +19,8 @@
 	"categorytree-parents": "ریشه",
 	"categorytree-mode-label": "حالت:",
 	"categorytree-mode-categories": "فقط رده‌ها",
-	"categorytree-mode-pages": "صفحه‌ها به جز تصاویر",
-	"categorytree-mode-all": "همهٔ صفحه‌ها",
+	"categorytree-mode-pages": "صفحات به جز تصاویر",
+	"categorytree-mode-all": "همهٔ صفحات",
 	"categorytree-collapse": "نهفتن",
 	"categorytree-expand": "گسترش",
 	"categorytree-expand-bullet": "◄",
