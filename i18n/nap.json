@@ -9,7 +9,7 @@
 	"categorytree-portlet": "Categurìe",
 	"categorytree-legend": "Fà veré ll'arvero d' 'e categurìe",
 	"categorytree-desc": "Navigà dinamicamente dint' 'a [[Special:CategoryTree|struttura d' 'e categurìe]]",
-	"categorytree-header": "Nzèrta 'o nomme 'e na categurìa pe' ne vedé 'e cuntenute comme na struttura d'arvero. Nota: sta paggena aúsa na funziunalità spiciale JavaScript anummenata AJAX. Si 'o navigatóre d' 'o tuojo è vicchiariello, o tiene 'o JavaScript stutato, chesto nun funziona.",
+	"categorytree-header": "Nzertate 'o nomme 'e na categurìa pe' ne vedé 'e cuntenute comme na struttura d'arvero. Nota: sta paggena aúsa na funziunalità spiciale JavaScript anummenata AJAX. Si 'o navigatóre d' 'o vuosto è vicchiariello, o tiene 'o JavaScript stutato, chesto nun funziona.",
 	"categorytree-category": "Categurìa:",
 	"categorytree-go": "Fà vedé ll'arvero",
 	"categorytree-parents": "Categurìe superiore",
