@@ -284,7 +284,7 @@ $specialPageAliases['lb'] = array(
 
 /** Malagasy (Malagasy) */
 $specialPageAliases['mg'] = array(
-	'CategoryTree' => array( 'Hazon-tsokajy' ),
+	'CategoryTree' => array( 'Hazon-tsokajy', 'Hazontsokajy' ),
 );
 
 /** Minangkabau (Baso Minangkabau) */
