@@ -197,7 +197,7 @@ $specialPageAliases['hsb'] = array(
 	'CategoryTree' => array( 'Kategorijowy_štom' ),
 );
 
-/** 湘语 (湘语) */
+/** Xiang Chinese (湘语) */
 $specialPageAliases['hsn'] = array(
 	'CategoryTree' => array( '类别树' ),
 );
@@ -427,7 +427,7 @@ $specialPageAliases['tl'] = array(
 	'CategoryTree' => array( 'Puno_ng_kaurian' ),
 );
 
-/** толышә зывон (толышә зывон) */
+/** Talysh (толышә зывон) */
 $specialPageAliases['tly'] = array(
 	'CategoryTree' => array( 'Категоријон_до' ),
 );
@@ -447,7 +447,7 @@ $specialPageAliases['ur'] = array(
 	'CategoryTree' => array( 'شجرہ_زمرہ' ),
 );
 
-/** vèneto (vèneto) */
+/** Venetian (vèneto) */
 $specialPageAliases['vec'] = array(
 	'CategoryTree' => array( 'ÀlbaroCategorie' ),
 );
