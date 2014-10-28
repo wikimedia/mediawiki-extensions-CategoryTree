@@ -23,7 +23,7 @@
 	"categorytree-mode-all": "все страницы",
 	"categorytree-collapse": "свернуть",
 	"categorytree-expand": "развернуть",
-	"categorytree-member-counts": "Содержит $1 {{PLURAL:$1|подкатегорию|подкатегорий|подкатегории}}, $2 {{PLURAL:$2|страницу|страниц|страницы}} и $3 {{PLURAL:$3|файл|файлов|файла}}",
+	"categorytree-member-counts": "Содержит $1 {{PLURAL:$1|подкатегорию|подкатегории|подкатегорий}}, $2 {{PLURAL:$2|страницу|страницы|страниц}} и $3 {{PLURAL:$3|файл|файла|файлов}}",
 	"categorytree-num-categories": "$1 К",
 	"categorytree-num-pages": "$1 С",
 	"categorytree-num-files": "$1 Ф",
