@@ -229,7 +229,7 @@ class CategoryTree {
 	}
 
 	/**
-	 * Set the script tags in an OutputPage object
+	 * Add ResourceLoader modules to the OutputPage object
 	 * @param OutputPage $outputPage
 	 */
 	static function setHeaders( $outputPage ) {
@@ -310,14 +310,6 @@ class CategoryTree {
 		}
 
 		return $s;
-	}
-
-	/**
-	 * @param $depth null
-	 * @return String
-	 */
-	function getOptionsAsJsString( $depth = null ) {
-		return Xml::escapeJsString( $this->getOptionsAsJsStructure( $depth ) );
 	}
 
 	/**
@@ -630,7 +622,6 @@ class CategoryTree {
 	 */
 	function renderNodeInfo( $title, $cat, $children = 0 ) {
 		$mode = $this->getOption( 'mode' );
-		$load = false;
 
 		$ns = $title->getNamespace();
 		$key = $title->getDBkey();
@@ -716,9 +707,6 @@ class CategoryTree {
 				$attr['class'] = 'CategoryTreeEmptyBullet';
 			} else {
 				$linkattr = array( );
-				if ( $load ) {
-					$linkattr[ 'id' ] = $load;
-				}
 
 				$linkattr[ 'class' ] = "CategoryTreeToggle";
 				$linkattr['style'] = 'display: none;'; // Unhidden by JS
@@ -819,14 +807,6 @@ class CategoryTree {
 
 		$s .= Xml::closeElement( 'div' );
 		$s .= Xml::closeElement( 'div' );
-
-		if ( $load ) {
-			$s .= "\n\t\t";
-			$s .= Xml::openElement( 'script', array( 'type' => 'text/javascript' ) );
-			$s .= 'categoryTreeExpandNode("' . Xml::escapeJsString( $key ) . '", '
-				. $this->getOptionsAsJsStructure( $children ) . ', document.getElementById("' . $load . '"));';
-			$s .= Xml::closeElement( 'script' );
-		}
 
 		$s .= "\n\t\t";
 
