@@ -8,7 +8,7 @@
 	"categorytree-portlet": "Katkategoria",
 	"categorytree-legend": "Ipakita ti kayo ti kategoria",
 	"categorytree-desc": "Dinamiko nga agdaliasat iti [[Special:CategoryTree|estrukrura ti kategoria]]",
-	"categorytree-header": "Ikabil ti nagan ti kategoria tapno makita dagiti nagyanna a kasla estruktura ti kayo.\nLaglagipem a daytoy ket makasapul ti JavaScript nga opisio a makunkuna a kas AJAX.\nNo addaanka ti daan a pagbasabasam, wenno nabaldado ti JavaScript, saan daytoy a mabalin.",
+	"categorytree-header": "Ikabil ti nagan ti kategoria tapno makita dagiti linaon a kasla estruktura ti kayo.\nLaglagipem a daytoy ket makasapul ti JavaScript nga opisio a makunkuna a kas AJAX.\nNo addaanka ti daan a pagbasabasam, wenno nabaldado ti JavaScript, saan daytoy a mabalin.",
 	"categorytree-category": "Kategoria:",
 	"categorytree-go": "Ipakita ti kayo",
 	"categorytree-parents": "Nagannak",
@@ -22,7 +22,7 @@
 	"categorytree-num-categories": "$1 K",
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 F",
-	"categorytree-num-empty": "awan ti nagyanna",
+	"categorytree-num-empty": "awan linaon",
 	"categorytree-load": "agkarga",
 	"categorytree-loading": "agkarkarga...",
 	"categorytree-nothing-found": "awan ti nabirukan",
@@ -30,6 +30,6 @@
 	"categorytree-no-parent-categories": "awan ti nagannak a katkategoria",
 	"categorytree-no-pages": "awan ti pampanid wenno dagiti subkategoria",
 	"categorytree-not-found": "Ti kategoria <i>$1</i> ket saan a nabirukan",
-	"categorytree-error": "Parikut ti pinagkarga ti linaon.",
-	"categorytree-retry": "Pangngaasi nga aguray iti madamdama ken ipadas manen."
+	"categorytree-error": "Parikut ti panagikarga ti linaon.",
+	"categorytree-retry": "Pangngaasi nga aguray intono madamdama ken ipadas manen."
 }
