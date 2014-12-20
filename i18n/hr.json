@@ -3,7 +3,8 @@
 		"authors": [
 			"Dalibor Bosits",
 			"Ex13",
-			"SpeedyGonsales"
+			"SpeedyGonsales",
+			"MaGa"
 		]
 	},
 	"categorytree": "Stablasti prikaz hijerarhije kategorija",
@@ -20,6 +21,9 @@
 	"categorytree-collapse": "sklopi stablo",
 	"categorytree-expand": "raširi stablo",
 	"categorytree-member-counts": "sadrži {{PLURAL:$1|1 podkategoriju|$1 podkategorija}}, {{PLURAL:$2|1 stranicu|$2 stranica}}, i {{PLURAL:$3|1 datoteku|$3 datoteka}}",
+	"categorytree-num-categories": "$1 kat.",
+	"categorytree-num-pages": "$1 str.",
+	"categorytree-num-files": "$1 dat.",
 	"categorytree-num-empty": "prazna",
 	"categorytree-load": "učitaj",
 	"categorytree-loading": "učitavam",
