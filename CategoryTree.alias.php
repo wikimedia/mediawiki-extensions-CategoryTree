@@ -94,7 +94,7 @@ $specialPageAliases['cdo'] = array(
 
 /** Chechen (нохчийн) */
 $specialPageAliases['ce'] = array(
-	'CategoryTree' => array( 'Категорешан_дит' ),
+	'CategoryTree' => array( 'Категорийн_дит' ),
 );
 
 /** Czech (čeština) */
