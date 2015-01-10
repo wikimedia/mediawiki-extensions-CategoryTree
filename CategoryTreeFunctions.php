@@ -242,7 +242,7 @@ class CategoryTree {
 	 * @param $options
 	 * @param $enc
 	 * @return mixed
-	 * @throws MWException
+	 * @throws Exception
 	 */
 	static function encodeOptions( $options, $enc ) {
 		if ( $enc == 'mode' || $enc == '' ) {
@@ -250,7 +250,7 @@ class CategoryTree {
 		} elseif ( $enc == 'json' ) {
 			$opt = FormatJson::encode( $options );
 		} else {
-			throw new MWException( 'Unknown encoding for CategoryTree options: ' . $enc );
+			throw new Exception( 'Unknown encoding for CategoryTree options: ' . $enc );
 		}
 
 		return $opt;
@@ -260,7 +260,7 @@ class CategoryTree {
 	 * @param $options
 	 * @param $enc
 	 * @return array|mixed
-	 * @throws MWException
+	 * @throws Exception
 	 */
 	static function decodeOptions( $options, $enc ) {
 		if ( $enc == 'mode' || $enc == '' ) {
@@ -268,11 +268,11 @@ class CategoryTree {
 		} elseif ( $enc == 'json' ) {
 			$opt = FormatJson::decode( $options );
 			if ( !$opt ) {
-				throw new MWException( 'JSON cannot decode CategoryTree options' );
+				throw new Exception( 'JSON cannot decode CategoryTree options' );
 			}
 			$opt = get_object_vars( $opt );
 		} else {
-			throw new MWException( 'Unknown encoding for CategoryTree options: ' . $enc );
+			throw new Exception( 'Unknown encoding for CategoryTree options: ' . $enc );
 		}
 
 		return $opt;
