@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Aushulz",
-			"Santu"
+			"Santu",
+			"C.R."
 		]
 	},
 	"categorytree": "Àrvulu  di li catigurìi",
@@ -13,6 +14,7 @@
 	"categorytree-category": "Catigurìa:",
 	"categorytree-go": "Càrica",
 	"categorytree-parents": "Catigurìi cchiù àuti",
+	"categorytree-mode-label": "Modu:",
 	"categorytree-mode-categories": "ammustra sulu li catigurìi",
 	"categorytree-mode-pages": "tutti li pàggini, lassannu fora li mmàggini",
 	"categorytree-mode-all": "tutti li pàggini",
