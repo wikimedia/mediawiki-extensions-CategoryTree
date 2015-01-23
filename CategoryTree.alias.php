@@ -47,6 +47,11 @@ $specialPageAliases['as'] = array(
 	'CategoryTree' => array( 'শ্ৰেণীবৃক্ষ' ),
 );
 
+/** Avaric (авар) */
+$specialPageAliases['av'] = array(
+	'CategoryTree' => array( 'Категориязул_гъветІ' ),
+);
+
 /** Bashkir (башҡортса) */
 $specialPageAliases['ba'] = array(
 	'CategoryTree' => array( 'Категория_ағасы' ),
