@@ -4,7 +4,15 @@
 			"Baloch Afghanistan"
 		]
 	},
+	"categorytree": "تهرئ درخت یا درچگ",
 	"categorytree-portlet": "تهرئان",
+	"categorytree-legend": "تهرئ درخت ئی نشان داتین",
+	"categorytree-desc": "مبتنی وسایل بئ AJAX په [[Special:CategoryTree|تهرهانی جوڑ بوتینگ]] نشان داتین بئ یک ویکی تا",
+	"categorytree-category": "تهر:",
+	"categorytree-go": "درختئ نمایش داتین",
+	"categorytree-parents": "ریشگ",
+	"categorytree-mode-label": "حالت:",
+	"categorytree-mode-categories": "فقط تهرهان",
 	"categorytree-mode-all": "موچین تاکدیمان",
 	"categorytree-num-categories": "$1 ر",
 	"categorytree-num-pages": "$1 ص",
