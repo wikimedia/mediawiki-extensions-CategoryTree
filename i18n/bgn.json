@@ -14,6 +14,8 @@
 	"categorytree-mode-label": "حالت:",
 	"categorytree-mode-categories": "فقط تهرهان",
 	"categorytree-mode-all": "موچین تاکدیمان",
+	"categorytree-expand": "پراخ کورتین",
+	"categorytree-member-counts": "شامل {{PLURAL:$1|یک گۆنڈ تهر|$1 گۆنڈ تهر}}، {{PLURAL:$2|یک دیم|$2 دیم}} و {{PLURAL:$3|یک فایل|$3 فایل اینت}}",
 	"categorytree-num-categories": "$1 ر",
 	"categorytree-num-pages": "$1 ص",
 	"categorytree-num-files": "$1 پ",
