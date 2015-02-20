@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Chaojoker",
-			"Teak"
+			"Teak",
+			"Xelgen"
 		]
 	},
 	"categorytree": "Կատեգորիաների ծառ",
@@ -21,6 +22,7 @@
 	"categorytree-member-counts": "պարունակում է {{PLURAL:$1|1 ենթակատեգորիա|$1 ենթակատեգորիա}}, {{PLURAL:$2|1 էջ|$2 էջ}} և {{PLURAL:$3|1 նիշք|$3 նիշք}}",
 	"categorytree-num-categories": "$1 Կ",
 	"categorytree-num-pages": "$1 Է",
+	"categorytree-num-files": "$1 Ն",
 	"categorytree-load": "բեռնել",
 	"categorytree-loading": "բեռնվում է",
 	"categorytree-nothing-found": "ոչինչ չի գտնվել",

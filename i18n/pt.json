@@ -6,7 +6,8 @@
 			"Hamilton Abreu",
 			"João Sousa",
 			"Luckas",
-			"555"
+			"555",
+			"Vitorvicentevalente"
 		]
 	},
 	"categorytree": "Árvore de categorias",
@@ -23,7 +24,7 @@
 	"categorytree-mode-all": "todas as páginas",
 	"categorytree-collapse": "ocultar",
 	"categorytree-expand": "expandir",
-	"categorytree-member-counts": "possui {{PLURAL:$1|$1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|$2 página|$2 páginas}} e {{PLURAL:$3|$3 ficheiro|$3 ficheiros}}",
+	"categorytree-member-counts": "Contém {{PLURAL:$1|$1 subcategoria|$1 subcategorias}}, {{PLURAL:$2|$2 página|$2 páginas}} e {{PLURAL:$3|$3 ficheiro|$3 ficheiros}}",
 	"categorytree-num-categories": "$1 C",
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 F",
