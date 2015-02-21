@@ -9,13 +9,14 @@
 			"Darth Kule",
 			"Gianfranco",
 			"Nemo bis",
-			"Lucas2"
+			"Lucas2",
+			"FRacco"
 		]
 	},
 	"categorytree": "Albero delle categorie",
 	"categorytree-portlet": "Categorie",
 	"categorytree-legend": "Mostra l'albero delle categorie",
-	"categorytree-desc": "Accessorio AJAX per visualizzare la [[Special:CategoryTree|struttura delle categorie]] del sito",
+	"categorytree-desc": "Visualizza in modo dinamico la [[Special:CategoryTree|struttura delle categorie]]",
 	"categorytree-header": "Inserire il nome di una categoria per vederne i contenuti sotto forma di struttura ad albero. Nota: questa pagina richiede una funzionalità JavaScript avanzata nota come AJAX; qualora si stia utilizzando un browser molto vecchio o le funzioni JavaScript siano disabilitate, non funzionerà.",
 	"categorytree-category": "Categoria:",
 	"categorytree-go": "Mostra albero",
@@ -34,10 +35,10 @@
 	"categorytree-load": "carica",
 	"categorytree-loading": "caricamento in corso…",
 	"categorytree-nothing-found": "nessun risultato",
-	"categorytree-no-subcategories": "nessuna sottocategoria.",
+	"categorytree-no-subcategories": "nessuna sottocategoria",
 	"categorytree-no-parent-categories": "nessuna categoria superiore",
-	"categorytree-no-pages": "nessuna pagina né sottocategoria.",
-	"categorytree-not-found": "Categoria  ''$1'' non trovata",
+	"categorytree-no-pages": "nessuna pagina né sottocategoria",
+	"categorytree-not-found": "Categoria <i>$1</i> non trovata",
 	"categorytree-error": "Problema nel caricamento dei dati.",
 	"categorytree-retry": "Attendere un momento e riprovare."
 }
