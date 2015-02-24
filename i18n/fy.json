@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"SK-luuut",
-			"Snakesteuben"
+			"Snakesteuben",
+			"Robin0van0der0vliet"
 		]
 	},
 	"categorytree": "Kategorybeam",
@@ -16,6 +17,10 @@
 	"categorytree-mode-all": "alle siden",
 	"categorytree-collapse": "ticht",
 	"categorytree-expand": "iepen",
+	"categorytree-member-counts": "befettet {{PLURAL:$1|1 subkategory|$1 subkategoryen}}, {{PLURAL:$2|1 side|$2 siden}} en {{PLURAL:$3|1 triem|$3 triemmen}}",
+	"categorytree-num-categories": "$1 K",
+	"categorytree-num-pages": "$1 S",
+	"categorytree-num-files": "$1 T",
 	"categorytree-load": "ynlade",
 	"categorytree-loading": "ynlade...",
 	"categorytree-nothing-found": "neat fûn",
