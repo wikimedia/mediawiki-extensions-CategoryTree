@@ -14,6 +14,7 @@
 	"categorytree-mode-all": "alle Saide",
 	"categorytree-collapse": "zuglabbe",
 	"categorytree-expand": "uffglabbe",
+	"categorytree-member-counts": "Hodd {{PLURAL:$1|1 Sachgrubb|$1 Sachgrubbe}}, {{PLURAL:$2|1 Said|$2 Saide}} unn {{PLURAL:$3|1 Dadai|$3 Dadaije}}",
 	"categorytree-num-categories": "$1 K",
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 K",
