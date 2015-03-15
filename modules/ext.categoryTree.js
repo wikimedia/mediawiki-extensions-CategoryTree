@@ -25,7 +25,7 @@
 		 * @context {Element} CategoryTreeToggle
 		 * @param e {jQuery.Event}
 		 */
-		function handleNode( e ) {
+		function handleNode( /*e*/ ) {
 			var $link = $( this );
 			if ( $link.data( 'ct-state' ) === 'collapsed' ) {
 				expandNode( $link );
