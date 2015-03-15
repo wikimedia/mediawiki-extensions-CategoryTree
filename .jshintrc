@@ -20,7 +20,6 @@
 
 	"globals": {
 		"mediaWiki": true,
-		"jQuery": false,
-		"QUnit": false
+		"jQuery": false
 	}
 }
