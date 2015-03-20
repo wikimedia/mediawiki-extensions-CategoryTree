@@ -3,7 +3,8 @@
 		"authors": [
 			"Ajdar",
 			"Ilnur efende",
-			"Ильнар"
+			"Ильнар",
+			"Derslek"
 		]
 	},
 	"categorytree": "Төркемнәр \"агачы\".",
@@ -20,7 +21,7 @@
 	"categorytree-mode-all": "барлык битләр",
 	"categorytree-collapse": "яшерү",
 	"categorytree-expand": "ачарга",
-	"categorytree-member-counts": "$1 {{PLURAL:$1|тәркемчәне|тәркемчәләрне|тәркемчәләрдән}}, $2 {{PLURAL:$2|битне|битләрне|битләрдән}} и $3 {{PLURAL:$3|файл|файл|файллар}} ны үз эченә ала",
+	"categorytree-member-counts": "$1 {{PLURAL:$1|1 тәркемчәне|$1 тәркемчәләрне|$1 тәркемчәләрдән}}, $2 {{PLURAL:$2|1 битне|$2 битләрне|$2 битләрдән}} и {{PLURAL:$3|1 файл|$3 файлны}}ны үз эченә ала",
 	"categorytree-num-categories": "$1 К",
 	"categorytree-num-pages": "$1 С",
 	"categorytree-num-files": "$1 Ф",
