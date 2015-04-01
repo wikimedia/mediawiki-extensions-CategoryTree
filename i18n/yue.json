@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shinjiman"
+			"Shinjiman",
+			"CRCHF"
 		]
 	},
 	"categorytree": "分類樹",
@@ -12,12 +13,17 @@
 	"categorytree-category": "分類",
 	"categorytree-go": "載入",
 	"categorytree-parents": "父分類",
+	"categorytree-mode-label": "模式：",
 	"categorytree-mode-categories": "只顯示分類",
 	"categorytree-mode-pages": "除咗圖像之外嘅版",
 	"categorytree-mode-all": "全版",
 	"categorytree-collapse": "收埋",
 	"categorytree-expand": "打開",
 	"categorytree-member-counts": "有$1個細分類、$2版同$3個檔案",
+	"categorytree-num-categories": "$1 C",
+	"categorytree-num-pages": "$1 P",
+	"categorytree-num-files": "$1 F",
+	"categorytree-num-empty": "空",
 	"categorytree-load": "載入",
 	"categorytree-loading": "載入緊…",
 	"categorytree-nothing-found": "搵唔到任何嘢",
