@@ -287,6 +287,11 @@ $specialPageAliases['lb'] = array(
 	'CategoryTree' => array( 'Struktur_vun_de_Kategorien' ),
 );
 
+/** لوری (لوری) */
+$specialPageAliases['lrc'] = array(
+	'CategoryTree' => array( 'دار_دسه' ),
+);
+
 /** Malagasy (Malagasy) */
 $specialPageAliases['mg'] = array(
 	'CategoryTree' => array( 'Hazon-tsokajy', 'Hazontsokajy' ),
