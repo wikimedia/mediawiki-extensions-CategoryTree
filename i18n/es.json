@@ -25,7 +25,7 @@
 	"categorytree-mode-categories": "solo categorías",
 	"categorytree-mode-pages": "páginas excepto imágenes",
 	"categorytree-mode-all": "todas las páginas",
-	"categorytree-collapse": "ocultar",
+	"categorytree-collapse": "contraer",
 	"categorytree-expand": "expandir",
 	"categorytree-expand-bullet": "►",
 	"categorytree-empty-bullet": "►",
