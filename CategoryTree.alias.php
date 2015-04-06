@@ -72,6 +72,11 @@ $specialPageAliases['bg'] = array(
 	'CategoryTree' => array( 'Дърво_на_категориите' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'CategoryTree' => array( 'تهری_درچّگ_یا_درخت' ),
+);
+
 /** Banjar (Bahasa Banjar) */
 $specialPageAliases['bjn'] = array(
 	'CategoryTree' => array( 'Puhun_tumbung' ),
