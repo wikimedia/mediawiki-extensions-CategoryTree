@@ -76,6 +76,11 @@ $magicWords['fr'] = array(
 	'categorytree' => array( 0, 'arbrecatégories', 'arbrecats' ),
 );
 
+/** Western Frisian (Frysk) */
+$magicWords['fy'] = array(
+	'categorytree' => array( 0, 'kategorybeam' ),
+);
+
 /** Galician (galego) */
 $magicWords['gl'] = array(
 	'categorytree' => array( 0, 'árboredecategorías' ),

@@ -177,6 +177,11 @@ $specialPageAliases['frp'] = array(
 	'CategoryTree' => array( 'Structura_d\'âbro_de_les_catègories', 'StructuraDÂbroDeLesCatègories' ),
 );
 
+/** Western Frisian (Frysk) */
+$specialPageAliases['fy'] = array(
+	'CategoryTree' => array( 'Kategorybeam' ),
+);
+
 /** Galician (galego) */
 $specialPageAliases['gl'] = array(
 	'CategoryTree' => array( 'Árbore_de_categorías' ),

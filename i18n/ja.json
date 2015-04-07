@@ -26,7 +26,7 @@
 	"categorytree-collapse": "折り畳む",
 	"categorytree-expand": "展開する",
 	"categorytree-empty-bullet": "►",
-	"categorytree-member-counts": "{{PLURAL:$1|下位カテゴリ $1 件}}、{{PLURAL:$2|ページ　$2 件}}、{{PLURAL:$3|ファイル $3 件}}を含んでいます",
+	"categorytree-member-counts": "{{PLURAL:$1|下位カテゴリ $1 件}}、{{PLURAL:$2|ページ $2 件}}、{{PLURAL:$3|ファイル $3 件}}を含んでいます",
 	"categorytree-num-categories": "$1C",
 	"categorytree-num-pages": "$1頁",
 	"categorytree-num-files": "$1F",
