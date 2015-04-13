@@ -14,6 +14,7 @@
 	"categorytree-mode-all": "سف صفحات",
 	"categorytree-collapse": "خاتمہ",
 	"categorytree-expand": "فراخ کورے",
+	"categorytree-member-counts": "Contains {{PLURAL:$1|1 subcategory|$1 subcategories}}, {{PLURAL:$2|1 page|$2 pages}}, and {{PLURAL:$3|1 file|$3 files}}",
 	"categorytree-num-categories": "$1 C",
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 F",
