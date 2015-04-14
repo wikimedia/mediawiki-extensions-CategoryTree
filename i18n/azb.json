@@ -3,7 +3,8 @@
 		"authors": [
 			"Amir a57",
 			"E THP",
-			"Mousa"
+			"Mousa",
+			"Koroğlu"
 		]
 	},
 	"categorytree": "بولمه آغاجی",
@@ -19,7 +20,7 @@
 	"categorytree-mode-pages": "فایل‌لاردان علاوه صحیفه‌لر",
 	"categorytree-mode-all": "بوتون صحیفه‌لر",
 	"categorytree-collapse": "گیزلت",
-	"categorytree-expand": "گئنیشلندیر",
+	"categorytree-expand": "گنیشلندیر",
 	"categorytree-expand-bullet": "◄",
 	"categorytree-empty-bullet": "◄",
 	"categorytree-member-counts": "{{PLURAL:$1|1 آلت بولمه|$1 آلت بولمه}}، {{PLURAL:$2|1 صهیف|$2 صحیفه}}، و {{PLURAL:$3|1 شکیل|$3 شکیل}}دن عبارت‌دیر",
