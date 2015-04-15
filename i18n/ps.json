@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"عثمان خان شاہ"
 		]
 	},
 	"categorytree": "د وېشنيزو ونه",
@@ -25,6 +26,7 @@
 	"categorytree-loading": "برسېرېدنې کې دی...",
 	"categorytree-nothing-found": "هېڅ هم و نه موندل شو",
 	"categorytree-no-subcategories": "هېڅ وړې-وېشنيزې نشته",
+	"categorytree-no-parent-categories": "مورنۍ وېشنيزه نشته",
 	"categorytree-no-pages": "هېڅ مخ يا وړه-وېشنيزه نشته",
 	"categorytree-not-found": "د <i>$1</i> وېشنيزه و نه موندل شوه",
 	"categorytree-error": "د مالوماتو د برسېرېدلو ستونزه.",
