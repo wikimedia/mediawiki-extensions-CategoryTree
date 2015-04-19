@@ -1,9 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ganesh"
+			"Ganesh",
+			"Nepaboy"
 		]
 	},
 	"categorytree-portlet": "श्रेणी",
-	"categorytree-member-counts": "{{PLURAL:$1|1 उप श्रेणी|$1 उप श्रेणी कुल}}, {{PLURAL:$2|1 पन्ना|$2 पन्ना कुल}}, आ {{PLURAL:$3|1 फाईल|$3 फाईल कुल}} शामिल बाड़ें"
+	"categorytree-expand": "फैलाईं",
+	"categorytree-member-counts": "{{PLURAL:$1|1 उप श्रेणी|$1 उप श्रेणी कुल}}, {{PLURAL:$2|1 पन्ना|$2 पन्ना कुल}}, आ {{PLURAL:$3|1 फाईल|$3 फाईल कुल}} शामिल बाड़ें",
+	"categorytree-num-categories": "$1 श्रे",
+	"categorytree-num-pages": "$1 प",
+	"categorytree-num-files": "$1 फा"
 }
