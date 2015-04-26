@@ -4,7 +4,8 @@
 			"Ankit",
 			"Ashok modhvadia",
 			"Dsvyas",
-			"KartikMistry"
+			"KartikMistry",
+			"Arbhatt"
 		]
 	},
 	"categorytree": "શ્રેણીવૃક્ષ",
@@ -22,8 +23,8 @@
 	"categorytree-collapse": "સંકેલો",
 	"categorytree-expand": "વિસ્તારો",
 	"categorytree-member-counts": "સમાવિષ્ટ {{PLURAL:$1|૧ ઉપશ્રેણી|$1 ઉપશ્રેણીઓ}}, {{PLURAL:$2|૧ પાનું|$2 પાનાંઓ}}, અને {{PLURAL:$3|૧ ફાઇલ|$3 ફાઇલો}}",
-	"categorytree-num-categories": "$1 C",
-	"categorytree-num-pages": "$1 P",
+	"categorytree-num-categories": "$1 શ્રેણી",
+	"categorytree-num-pages": "$1 પાના",
 	"categorytree-num-files": "$1 F",
 	"categorytree-num-empty": "ખાલી",
 	"categorytree-load": "લાવો",
