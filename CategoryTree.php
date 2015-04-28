@@ -158,6 +158,7 @@ $wgResourceModules['ext.categoryTree'] = array(
 ) + $commonModuleInfo;
 
 $wgResourceModules['ext.categoryTree.css'] = array(
+	'position' => 'top',
 	'styles' => 'ext.categoryTree.css',
 ) + $commonModuleInfo;
 
