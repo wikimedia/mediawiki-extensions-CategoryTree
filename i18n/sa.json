@@ -3,7 +3,8 @@
 		"authors": [
 			"Ansumang",
 			"Shubha",
-			"Vibhijain"
+			"Vibhijain",
+			"NehalDaveND"
 		]
 	},
 	"categorytree": "वर्गवृक्षः",
@@ -20,8 +21,8 @@
 	"categorytree-collapse": "सङ्कोच्यताम्",
 	"categorytree-expand": "विस्तीर्यताम्",
 	"categorytree-member-counts": "अस्मिन् {{PLURAL:$1| 1 उपवर्गः | $1  उपवर्गाः}},  {{PLURAL:$2| 1 पृष्ठम्| $2  पृष्ठानि}}, {{PLURAL:$3| 1 सञ्चिका | $3  सञ्चिकाः}} च विद्यन्ते ।",
-	"categorytree-num-categories": "$1 C",
-	"categorytree-num-pages": "$1 P",
+	"categorytree-num-categories": "$1 व",
+	"categorytree-num-pages": "$1 पृ",
 	"categorytree-num-files": "$1 F",
 	"categorytree-num-empty": "शुन्य",
 	"categorytree-load": "लोड",
