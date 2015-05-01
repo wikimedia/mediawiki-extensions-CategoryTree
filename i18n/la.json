@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"UV"
+			"UV",
+			"Lesgles"
 		]
 	},
 	"categorytree": "Categoriarum arbor",
@@ -17,6 +18,9 @@
 	"categorytree-collapse": "collabi",
 	"categorytree-expand": "dilatare",
 	"categorytree-member-counts": "continet {{PLURAL:$1|1 subcategoriam|$1 subcategorias}}, {{PLURAL:$2|1 paginam|$2 paginas}} et {{PLURAL:$3|1 fasciculum|$3 fasciculos}}",
+	"categorytree-num-categories": "$1 cat.",
+	"categorytree-num-pages": "$1 {{PLURAL:$1|p.|pp.}}",
+	"categorytree-num-files": "$1 fasc.",
 	"categorytree-num-empty": "vacua",
 	"categorytree-load": "depromere",
 	"categorytree-loading": "depromens…",
