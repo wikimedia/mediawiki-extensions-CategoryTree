@@ -5,7 +5,8 @@
 			"George Animal",
 			"Ghybu",
 			"Gomada",
-			"Welathêja"
+			"Welathêja",
+			"Bikarhêner"
 		]
 	},
 	"categorytree": "Dara kategoriyan",
@@ -17,6 +18,9 @@
 	"categorytree-mode-all": "hemû rûpel",
 	"categorytree-collapse": "bigre",
 	"categorytree-expand": "veke",
+	"categorytree-num-categories": "$1 K",
+	"categorytree-num-pages": "$1 R",
+	"categorytree-num-files": "$1 D",
 	"categorytree-load": "bar bike",
 	"categorytree-loading": "tê barkirin",
 	"categorytree-nothing-found": "Ti tişt nehate dîtin",
