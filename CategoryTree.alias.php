@@ -37,7 +37,7 @@ $specialPageAliases['arc'] = array(
 	'CategoryTree' => array( 'ܐܝܠܢܐ_ܕܣܕܪܐ' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'CategoryTree' => array( 'شجرة_تصنيف' ),
 );
@@ -172,7 +172,7 @@ $specialPageAliases['fr'] = array(
 	'CategoryTree' => array( 'ArbreCatégorie', 'ArbreCategorie', 'Arbre_catégorie' ),
 );
 
-/** Franco-Provençal (arpetan) */
+/** Arpitan (arpetan) */
 $specialPageAliases['frp'] = array(
 	'CategoryTree' => array( 'Structura_d\'âbro_de_les_catègories', 'StructuraDÂbroDeLesCatègories' ),
 );
@@ -297,7 +297,7 @@ $specialPageAliases['lb'] = array(
 	'CategoryTree' => array( 'Struktur_vun_de_Kategorien' ),
 );
 
-/** لوری (لوری) */
+/** لوری مینجایی (لوری مینجایی) */
 $specialPageAliases['lrc'] = array(
 	'CategoryTree' => array( 'دار_دسه' ),
 );

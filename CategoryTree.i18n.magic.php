@@ -26,7 +26,7 @@ $magicWords['ar'] = array(
 	'categorytree' => array( 0, 'شجرة_تصنيف' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $magicWords['arz'] = array(
 	'categorytree' => array( 0, 'شجرة_تصنيف' ),
 );
