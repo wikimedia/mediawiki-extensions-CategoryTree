@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Boukman",
-			"Masterches"
+			"Masterches",
+			"Tisave"
 		]
 	},
 	"categorytree": "Òganizasyon kategori yo",
@@ -17,6 +18,9 @@
 	"categorytree-mode-all": "tout paj yo",
 	"categorytree-collapse": "redui",
 	"categorytree-expand": "etann",
+	"categorytree-num-categories": "$1 C",
+	"categorytree-num-pages": "$1 P",
+	"categorytree-num-files": "$1 F",
 	"categorytree-load": "Chaje",
 	"categorytree-loading": "ap chaje...",
 	"categorytree-nothing-found": "nou pa jwenn anyen",
