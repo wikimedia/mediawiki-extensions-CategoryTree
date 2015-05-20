@@ -33,6 +33,8 @@ define( 'CT_HIDEPREFIX_ALWAYS', 10 );
 define( 'CT_HIDEPREFIX_CATEGORIES', 20 );
 define( 'CT_HIDEPREFIX_AUTO', 30 );
 
+$wgConfigRegistry['categorytree'] = 'GlobalVarConfig::newInstance';
+
 /**
  * Options:
  *
@@ -122,14 +124,12 @@ $wgAutoloadClasses['CategoryTreePage'] = __DIR__ . '/CategoryTreePage.php';
 $wgAutoloadClasses['CategoryTree'] = __DIR__ . '/CategoryTreeFunctions.php';
 $wgAutoloadClasses['CategoryTreeCategoryPage'] = __DIR__ . '/CategoryPageSubclass.php';
 $wgAutoloadClasses['CategoryTreeCategoryViewer'] = __DIR__ . '/CategoryPageSubclass.php';
+$wgAutoloadClasses['ApiCategoryTree'] = __DIR__ . '/ApiCategoryTree.php';
 $wgSpecialPages['CategoryTree'] = 'CategoryTreePage';
 # $wgHooks['SkinTemplateTabs'][] = 'efCategoryTreeInstallTabs';
 $wgHooks['ArticleFromTitle'][] = 'efCategoryTreeArticleFromTitle';
 
-/**
- * register Ajax function
- */
-$wgAjaxExportList[] = 'efCategoryTreeAjaxWrapper';
+$wgAPIModules['categorytree'] = 'ApiCategoryTree';
 
 /**
  * Register ResourceLoader modules
@@ -221,39 +221,6 @@ function efCategoryTreeSetHooks( $parser ) {
 	$parser->setHook( 'categorytree' , 'efCategoryTreeParserHook' );
 	$parser->setFunctionHook( 'categorytree' , 'efCategoryTreeParserFunction' );
 	return true;
-}
-
-/**
- * Entry point for Ajax, registered in $wgAjaxExportList.
- * The $enc parameter determins how the $options is decoded into a PHP array.
- * If $enc is not given, '' is asumed, which simulates the old call interface,
- * namely, only providing the mode name or number.
- * This loads CategoryTreeFunctions.php and calls CategoryTree::ajax()
- * @param $category
- * @param $options array
- * @param $enc string
- * @return AjaxResponse|bool
- */
-function efCategoryTreeAjaxWrapper( $category, $options = array(), $enc = '' ) {
-	global $wgCategoryTreeHTTPCache, $wgSquidMaxage, $wgUseSquid;
-
-	if ( is_string( $options ) ) {
-		$options = CategoryTree::decodeOptions( $options, $enc );
-	}
-
-	$depth = isset( $options['depth'] ) ? (int)$options['depth'] : 1;
-
-	$ct = new CategoryTree( $options, true );
-	$depth = efCategoryTreeCapDepth( $ct->getOption( 'mode' ), $depth );
-	$response = $ct->ajax( $category, $depth );
-
-	if ( $wgCategoryTreeHTTPCache && $wgSquidMaxage && $wgUseSquid ) {
-		$response->setCacheDuration( $wgSquidMaxage );
-		$response->setVary( 'Accept-Encoding, Cookie' ); # cache for anons only
-		# TODO: purge the squid cache when a category page is invalidated
-	}
-
-	return $response;
 }
 
 /**

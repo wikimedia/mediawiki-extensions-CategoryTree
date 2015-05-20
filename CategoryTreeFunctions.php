@@ -257,28 +257,6 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param $options
-	 * @param $enc
-	 * @return array|mixed
-	 * @throws Exception
-	 */
-	static function decodeOptions( $options, $enc ) {
-		if ( $enc == 'mode' || $enc == '' ) {
-			$opt = array( "mode" => $options );
-		} elseif ( $enc == 'json' ) {
-			$opt = FormatJson::decode( $options );
-			if ( !$opt ) {
-				throw new Exception( 'JSON cannot decode CategoryTree options' );
-			}
-			$opt = get_object_vars( $opt );
-		} else {
-			throw new Exception( 'Unknown encoding for CategoryTree options: ' . $enc );
-		}
-
-		return $opt;
-	}
-
-	/**
 	 * @param $depth null
 	 * @return string
 	 */
@@ -317,64 +295,6 @@ class CategoryTree {
 	 */
 	function getOptionsAsUrlParameters() {
 		return http_build_query( $this->mOptions );
-	}
-
-	/**
-	 * Ajax call. This is called by efCategoryTreeAjaxWrapper, which is used to
-	 * load CategoryTreeFunctions.php on demand.
-	 * @param $category
-	 * @param $depth int
-	 * @return AjaxResponse|bool
-	 */
-	function ajax( $category, $depth = 1 ) {
-		global $wgLang, $wgContLang, $wgRenderHashAppend;
-		$title = self::makeTitle( $category );
-
-		if ( !$title ) {
-			return false; # TODO: error message?
-		}
-
-		# Retrieve page_touched for the category
-		$dbkey = $title->getDBkey();
-		$dbr = wfGetDB( DB_SLAVE );
-		$touched = $dbr->selectField( 'page', 'page_touched',
-			array(
-				'page_namespace' => NS_CATEGORY,
-				'page_title' => $dbkey,
-			), __METHOD__ );
-
-		$mckey = wfMemcKey(
-			'ajax-categorytree',
-			md5( $dbkey ),
-			md5( $this->getOptionsAsCacheKey( $depth ) ),
-			$wgLang->getCode(),
-			$wgContLang->getExtraHashOptions(),
-			$wgRenderHashAppend
-		);
-
-		$response = new AjaxResponse();
-
-		if ( $response->checkLastModified( $touched ) ) {
-			return $response;
-		}
-
-		if ( $response->loadFromMemcached( $mckey, $touched ) ) {
-			return $response;
-		}
-
-		$html = $this->renderChildren( $title, $depth );
-
-		if ( $html == '' ) {
-			# HACK: Safari doesn't like empty responses.
-			# see Bug 7219 and http://bugzilla.opendarwin.org/show_bug.cgi?id=10716
-			$html = ' ';
-		}
-
-		$response->addText( $html );
-
-		$response->storeInMemcached( $mckey, 86400 );
-
-		return $response;
 	}
 
 	/**

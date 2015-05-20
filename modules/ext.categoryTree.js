@@ -113,7 +113,10 @@
 			ctTitle = $link.data( 'ct-title' );
 			ctMode = $linkParentCTTag.data( 'ct-mode' );
 			ctMode = typeof ctMode === 'number' ? ctMode : undefined;
-			ctOptions = $linkParentCTTag.data( 'ct-options' ) || mw.config.get( 'wgCategoryTreePageCategoryOptions' );
+			ctOptions = JSON.stringify( $linkParentCTTag.data( 'ct-options' ) );
+			if ( !ctOptions ) {
+				ctOptions = mw.config.get( 'wgCategoryTreePageCategoryOptions' );
+			}
 
 			// Mode and options have defaults or fallbacks, title does not.
 			// Don't make a request if there is no title.
@@ -122,18 +125,14 @@
 				return;
 			}
 
-			$.get(
-				mw.util.wikiScript(), {
-					skin: mw.config.get( 'skin' ),
-					uselang: mw.config.get( 'wgUserLanguage' ),
-					debug: mw.config.get( 'debug' ),
-					action: 'ajax',
-					rs: 'efCategoryTreeAjaxWrapper',
-					rsargs: [ctTitle, ctOptions, 'json'] // becomes &rsargs[]=arg1&rsargs[]=arg2...
-				}
-			)
-			.done( function ( data ) {
-				data = data.replace( /^\s+|\s+$/, '' );
+			new mw.Api().get( {
+				action: 'categorytree',
+				category: ctTitle,
+				options: ctOptions,
+				uselang: mw.config.get( 'wgUserLanguage' ),
+				formatversion: 2
+			} ).done( function ( data ) {
+				data = data.categorytree.html.replace( /^\s+|\s+$/, '' );
 				data = data.replace( /##LOAD##/g, mw.msg( 'categorytree-expand' ) );
 
 				if ( data === '' ) {
