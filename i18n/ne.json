@@ -3,7 +3,8 @@
 		"authors": [
 			"Bhawani Gautam",
 			"Bhawani Gautam Rhk",
-			"Krish Dulal"
+			"Krish Dulal",
+			"NehalDaveND"
 		]
 	},
 	"categorytree": "श्रेणी वृक्ष",
@@ -13,6 +14,7 @@
 	"categorytree-category": "श्रेणी:",
 	"categorytree-go": "वृक्ष हेर्ने",
 	"categorytree-parents": "जनक",
+	"categorytree-mode-label": "मोड",
 	"categorytree-mode-categories": "श्रेणी मात्र",
 	"categorytree-mode-pages": "फाइलहरू बाहेकका पृष्ठहरू",
 	"categorytree-mode-all": "सबै पृष्ठहरू",
