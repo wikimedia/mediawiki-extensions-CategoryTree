@@ -10,5 +10,10 @@
 	"categorytree-go": "hijery ny hazon-tsokajy",
 	"categorytree-parents": "renisokajy",
 	"categorytree-mode-categories": "sokajy ihany",
-	"categorytree-mode-pages": "pejy tsy misy sary"
+	"categorytree-mode-pages": "pejy tsy misy sary",
+	"categorytree-expand": "hanitatra",
+	"categorytree-member-counts": "Ahitana{{PLURAL:$1||}}{{PLURAL:$2||}}{{PLURAL:$3||}} zana-tsokajy $1, pejy $2 ary rakitra $3",
+	"categorytree-num-categories": "$1 Skj",
+	"categorytree-num-pages": "$1 Pj",
+	"categorytree-num-files": "$1 Rkt"
 }
