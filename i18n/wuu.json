@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Wtzdj",
-			"Xiaomingyan"
+			"Xiaomingyan",
+			"Poiuyt"
 		]
 	},
 	"categorytree": "分类树",
@@ -13,6 +14,10 @@
 	"categorytree-mode-all": "所有页面",
 	"categorytree-collapse": "抈出来",
 	"categorytree-expand": "放开来",
+	"categorytree-member-counts": "包括$1个子分类，$2个页面搭$3只文件",
+	"categorytree-num-categories": "$1分类",
+	"categorytree-num-pages": "$1页面",
+	"categorytree-num-files": "$1文件",
 	"categorytree-nothing-found": "一样也朆寻着",
 	"categorytree-no-subcategories": "呒拨子分类",
 	"categorytree-no-pages": "呒拨页面或者子分类"
