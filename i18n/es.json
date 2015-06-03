@@ -35,12 +35,12 @@
 	"categorytree-num-files": "$1 F",
 	"categorytree-num-empty": "vacía",
 	"categorytree-load": "cargar",
-	"categorytree-loading": "cargando",
-	"categorytree-nothing-found": "Lo sentimos, no se ha encontrado nada",
+	"categorytree-loading": "cargando…",
+	"categorytree-nothing-found": "no se ha encontrado nada",
 	"categorytree-no-subcategories": "sin subcategorías",
 	"categorytree-no-parent-categories": "no hay categorías superiores",
-	"categorytree-no-pages": "sin artículos ni subcategorías.",
+	"categorytree-no-pages": "sin páginas ni subcategorías",
 	"categorytree-not-found": "Categoría <i>$1</i> no encontrada",
-	"categorytree-error": "Error al cargar los datos",
-	"categorytree-retry": "Por favor, espera un momento y vuelve a intentarlo."
+	"categorytree-error": "Error al cargar los datos.",
+	"categorytree-retry": "Espera un momento y vuelve a intentarlo."
 }
