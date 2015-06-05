@@ -299,7 +299,7 @@ $specialPageAliases['lb'] = array(
 
 /** Northern Luri (لوری مینجایی) */
 $specialPageAliases['lrc'] = array(
-	'CategoryTree' => array( 'دار_دسه' ),
+	'CategoryTree' => array( 'دار_دأسە' ),
 );
 
 /** Malagasy (Malagasy) */
