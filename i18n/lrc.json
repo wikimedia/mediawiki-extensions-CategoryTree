@@ -19,7 +19,7 @@
 	"categorytree-mode-all": "همه بلگيا",
 	"categorytree-collapse": "جم كردن",
 	"categorytree-expand": "گپ کلون کردن",
-	"categorytree-member-counts": "وه د ور گرته {{جمی:$1|1 زیردسه|$1 زیردسه یا}}, {{PLURAL:$2|1 بلگه|$2 بلگه}}, و {{جمی:$3|1 جانیا|$3 جانیایا}} ئه",
+	"categorytree-member-counts": "وه د ور گرته {{PLURAL:$1|1 زیردسه|$1 زیردسه یا}}, {{PLURAL:$2|1 بلگه|$2 بلگه}}, و {{PLURAL:$3|1 جانیا|$3 جانیایا}} ئه",
 	"categorytree-num-categories": "$1 س",
 	"categorytree-num-pages": " $1 پ",
 	"categorytree-num-files": " $1 ف",
