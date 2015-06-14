@@ -297,7 +297,7 @@ $specialPageAliases['lb'] = array(
 	'CategoryTree' => array( 'Struktur_vun_de_Kategorien' ),
 );
 
-/** Northern Luri (لوری مینجایی) */
+/** Northern Luri (لۊری شومالی) */
 $specialPageAliases['lrc'] = array(
 	'CategoryTree' => array( 'دار_دأسە' ),
 );
