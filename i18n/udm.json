@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kaganer"
+			"Kaganer",
+			"AlnashPiyash2"
 		]
 	},
-	"categorytree-collapse": "ватоно"
+	"categorytree-collapse": "ватоно",
+	"categorytree-num-categories": "$1 К"
 }
