@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Chinneeb",
-			"MongolWiki"
+			"MongolWiki",
+			"Sembuk"
 		]
 	},
 	"categorytree": "Ангиллын мод",
@@ -18,6 +19,9 @@
 	"categorytree-collapse": "буулгах",
 	"categorytree-expand": "дэлгэх",
 	"categorytree-member-counts": "{{PLURAL:$1|1 дэд анги|$1 дэд анги}}, {{PLURAL:$2|1 хуудас|$2 хуудас}}, {{PLURAL:$3|1 файл|$3 файл}} агуулагдаж байна.",
+	"categorytree-num-categories": "$1 А",
+	"categorytree-num-pages": "$1 Б",
+	"categorytree-num-files": "$1 Ф",
 	"categorytree-load": "унших",
 	"categorytree-loading": "уншиж байна...",
 	"categorytree-nothing-found": "юу ч олдсонгүй",
