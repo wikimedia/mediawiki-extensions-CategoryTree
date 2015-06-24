@@ -5,7 +5,7 @@
 		]
 	},
 	"categorytree-expand": "وا كردن",
-	"categorytree-member-counts": "شامل {{PLURAL:$1|1 دومن شاخه|$1 دومن شاخه یل}}, {{PLURAL:$2|1 بلگه|$2 بلگل}}, و {{PLURAL:$3|1 فایل|$3 فایلل}}",
+	"categorytree-member-counts": "شامل {{PLURAL:$1|1 دۉمن شاخه|$1 دۉمن شاخه یل}}, {{PLURAL:$2|1 بلگه|$2 بلگل}}, و {{PLURAL:$3|1 فایل|$3 فایلل}}",
 	"categorytree-num-categories": "$1 د",
 	"categorytree-num-pages": "$1 ب",
 	"categorytree-num-files": "$1 ف"
