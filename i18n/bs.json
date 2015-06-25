@@ -4,7 +4,8 @@
 			"CERminator",
 			"DzWiki",
 			"editors of bs.wikipedia",
-			"Palapa"
+			"Palapa",
+			"KWiki"
 		]
 	},
 	"categorytree": "Stablo kategorije",
@@ -20,17 +21,17 @@
 	"categorytree-mode-all": "sve stranice",
 	"categorytree-collapse": "sakrij",
 	"categorytree-expand": "proširi",
-	"categorytree-member-counts": "sadrži {{PLURAL:$1|jednu podkategoriju|$1 podkategorije|$1 podkategorija}}, {{PLURAL:$2|jednu stranicu|$2 stranice|$2 stranica}} i {{PLURAL:$3|jednu datoteku|$3 datoteke|$3 datoteka}}",
+	"categorytree-member-counts": "sadrži {{PLURAL:$1|jednu potkategoriju|$1 potkategorije|$1 potkategorija}}, {{PLURAL:$2|jednu stranicu|$2 stranice|$2 stranica}} i {{PLURAL:$3|jednu datoteku|$3 datoteke|$3 datoteka}}",
 	"categorytree-num-categories": "$1 K",
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 F",
 	"categorytree-num-empty": "prazno",
 	"categorytree-load": "učitaj",
 	"categorytree-loading": "učitavam…",
-	"categorytree-nothing-found": "nema podkategorija",
-	"categorytree-no-subcategories": "nema podkategorija",
+	"categorytree-nothing-found": "nema potkategorija",
+	"categorytree-no-subcategories": "nema potkategorija",
 	"categorytree-no-parent-categories": "nema nadređene kategorije",
-	"categorytree-no-pages": "nema ni stranica ni podkategorija",
+	"categorytree-no-pages": "nema ni stranica ni potkategorija",
 	"categorytree-not-found": "Kategorija <i>$1</i> nije nađena",
 	"categorytree-error": "Problem pri punjenju podataka.",
 	"categorytree-retry": "Molimo pričekate trenutak i pokušajte ponovno."
