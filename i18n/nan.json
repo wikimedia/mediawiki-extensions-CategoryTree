@@ -4,7 +4,9 @@
 			"Ianbu"
 		]
 	},
-	"categorytree-member-counts": "包括 $1 个下分類、$2 个頁佮 $3 个檔案",
+	"categorytree-expand": "Khui",
+	"categorytree-member-counts": "包括{{PLURAL:$1|个下分類}}、{{PLURAL:$2|个頁}}佮 {{PLURAL:$3|个檔案}}",
+	"categorytree-num-categories": "$1 分類",
 	"categorytree-num-pages": "$1頁",
 	"categorytree-loading": "teh ji̍p",
 	"categorytree-no-subcategories": "bô ē-lūi-pia̍t"
