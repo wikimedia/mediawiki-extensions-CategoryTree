@@ -4,7 +4,7 @@
 			"The Discoverer"
 		]
 	},
-	"categorytree-expand": "Vistarit kor",
+	"categorytree-expand": "vistarit kor",
 	"categorytree-member-counts": "Hantunt asat {{PLURAL:$1|1 upvorg|$1 upvorg}}, {{PLURAL:$2|1 pan|$2 panam}}, ani {{PLURAL:$3|1 fail|$3 faili}}",
 	"categorytree-num-categories": "$1 V",
 	"categorytree-num-pages": "$1 P",
