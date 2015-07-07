@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bedynokue.nart"
+			"Bedynokue.nart",
+			"Highlander45temp"
 		]
 	},
-	"categorytree-expand": "зэхэщ"
+	"categorytree-expand": "зэхэщ",
+	"categorytree-num-pages": "$1 Н",
+	"categorytree-num-files": "$1 Ф"
 }
