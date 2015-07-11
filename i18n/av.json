@@ -4,5 +4,8 @@
 			"Gazimagomedov"
 		]
 	},
-	"categorytree-expand": "рагьизе"
+	"categorytree-expand": "рагьизе",
+	"categorytree-num-categories": "$1 К",
+	"categorytree-num-pages": "$1 Гь",
+	"categorytree-num-files": "$1 Ф"
 }
