@@ -7,7 +7,7 @@
 	},
 	"categorytree": "Категорийн дит",
 	"categorytree-portlet": "Категореш",
-	"categorytree-legend": "Гайта категорешан дит",
+	"categorytree-legend": "Гайта категорийн дит",
 	"categorytree-desc": "AJAX [[Special:CategoryTree|категори дӀахӀоттаран]] компонент ю",
 	"categorytree-header": "Язъе категорин цӀе тӀакха иза гойтур ю диттан кепара.\nХӀара таро ю хьан браузеро AJAX ловш елахь.\nХӀан браузер шира ела елахь я JavaScript дӀаяйина елахь, бухара категореш диттан кепара гойтур яц.",
 	"categorytree-category": "Категори:",
