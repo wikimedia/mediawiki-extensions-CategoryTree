@@ -3,7 +3,8 @@
 		"authors": [
 			"Boukman",
 			"Masterches",
-			"Tisave"
+			"Tisave",
+			"Bfpage"
 		]
 	},
 	"categorytree": "Òganizasyon kategori yo",
@@ -18,6 +19,7 @@
 	"categorytree-mode-all": "tout paj yo",
 	"categorytree-collapse": "redui",
 	"categorytree-expand": "etann",
+	"categorytree-member-counts": "Gen {{PLURAL:$1|1 subcategory|$1 subcategories}},{{PLURAL:$2|1 page|$2 pages}},ak {{PLURAL:$3|1 file|$3 files}}",
 	"categorytree-num-categories": "$1 C",
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 F",
