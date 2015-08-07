@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Bedynokue.nart",
-			"Highlander45temp"
+			"Highlander45temp",
+			"SamGamgee"
 		]
 	},
 	"categorytree-expand": "зэхэщ",
+	"categorytree-num-categories": "$1 К",
 	"categorytree-num-pages": "$1 Н",
 	"categorytree-num-files": "$1 Ф"
 }
