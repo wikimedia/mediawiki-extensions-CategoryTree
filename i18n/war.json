@@ -4,5 +4,8 @@
 			"JinJian"
 		]
 	},
-	"categorytree-num-categories": "$1 K"
+	"categorytree-expand": "iglatag",
+	"categorytree-num-categories": "$1 K",
+	"categorytree-num-pages": "$1 P",
+	"categorytree-num-files": "$1 F"
 }
