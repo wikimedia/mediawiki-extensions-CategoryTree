@@ -19,7 +19,7 @@
 	"categorytree-mode-all": "alle bladsye",
 	"categorytree-collapse": "vou toe",
 	"categorytree-expand": "vou oop",
-	"categorytree-member-counts": "bevat {{PLURAL:$1|een subkategorie|$1 subkategorieë}}, {{PLURAL:$2|een bladsy|$2 blaaie}} en {{PLURAL:$3|een lêer|$3 lêers}}",
+	"categorytree-member-counts": "bevat {{PLURAL:$1|een subkategorie|$1 subkategorieë}}, {{PLURAL:$2|een bladsy|$2 bladsye}} en {{PLURAL:$3|een lêer|$3 lêers}}",
 	"categorytree-num-categories": "$1 K",
 	"categorytree-num-pages": "$1 B",
 	"categorytree-num-files": "$1 L",
