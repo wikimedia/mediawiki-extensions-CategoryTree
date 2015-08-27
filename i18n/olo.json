@@ -5,7 +5,8 @@
 			"Ilja.mos"
 		]
 	},
-	"categorytree-expand": "Avata",
+	"categorytree-expand": "avata",
 	"categorytree-num-categories": "$1 C",
-	"categorytree-num-pages": "$1 S"
+	"categorytree-num-pages": "$1 S",
+	"categorytree-num-files": "$1 F"
 }
