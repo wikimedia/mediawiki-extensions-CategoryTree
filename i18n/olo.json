@@ -6,6 +6,7 @@
 		]
 	},
 	"categorytree-expand": "avata",
+	"categorytree-member-counts": "Täh kuuluu {{PLURAL:$1|1 alakategourii|$1 alakategouriedu}}, {{PLURAL:$2|1 sivu|$2 sivuu}}, and {{PLURAL:$3|1 failu|$3 failua}}",
 	"categorytree-num-categories": "$1 C",
 	"categorytree-num-pages": "$1 S",
 	"categorytree-num-files": "$1 F"
