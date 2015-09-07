@@ -13,7 +13,7 @@
 	"categorytree-header": "Unesite naziv kategorije čiji sadržaj želite da vidite u stablastoj strukturi.\nOvo zahteva naprednu funkciju JavaScript-a poznatu kao AJAX.\nAko imate stariji pregledač ili ste onemogućili JavaScript, stablasti prikaz neće raditi.",
 	"categorytree-category": "Kategorija:",
 	"categorytree-go": "Prikaži stablo",
-	"categorytree-parents": "nadređene kategorije",
+	"categorytree-parents": "Natkategorije",
 	"categorytree-mode-label": "Režim:",
 	"categorytree-mode-categories": "samo kategorije",
 	"categorytree-mode-pages": "stranice izuzevši datoteke",
