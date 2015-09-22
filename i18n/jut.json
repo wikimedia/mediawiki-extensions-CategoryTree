@@ -1,26 +1,31 @@
 {
 	"@metadata": {
 		"authors": [
-			"Huslåke"
+			"Huslåke",
+			"Jyllanj"
 		]
 	},
-	"categorytree": "Klyngetræ",
-	"categorytree-desc": "AJAX based gadget til display a [[Special:CategoryTree|klynge struktur]] ener wiki",
-	"categorytree-header": "Indtast navnet på en kategori for at se indholdet som et træ. Bemærk at dette kræver avanceret JavaScript-funktionalitet kendt som AJAX, det verker ig'n hves du harst en meget gammel browser zller hves du harst slået JavaScript frå.",
-	"categorytree-category": "Klynge:",
-	"categorytree-go": "Henter",
-	"categorytree-parents": "Åverklynger",
-	"categorytree-mode-categories": "ves kun klynger",
+	"categorytree": "Kategoriträj",
+	"categorytree-desc": "Dynamisk navigasjon i [[Special:CategoryTree|kategoristrukturen]]",
+	"categorytree-header": "Intast naune på en kategori for å sietj inholje som e träj. Bemærk å detj kräwe avanciirtje JavaScript-funksjonalitiet tjentj som AJAX, dä wirke ett hwes du hår i møj gammel browser elle hwes du hår slotj JavaScript fra.",
+	"categorytree-category": "Kategori:",
+	"categorytree-go": "Wis træj",
+	"categorytree-parents": "Öwekategorie",
+	"categorytree-mode-categories": "kons kategorie",
 	"categorytree-mode-pages": "sider undtaget billeter",
-	"categorytree-mode-all": "ål sider",
-	"categorytree-collapse": "fold sammen",
-	"categorytree-expand": "fold ud",
-	"categorytree-load": "hent",
-	"categorytree-loading": "endlæser",
-	"categorytree-nothing-found": "Ig'n funder, desvære.",
-	"categorytree-no-subcategories": "Ig'n underklynger.",
-	"categorytree-no-pages": "Ig'n ertikler æller underklynger.",
-	"categorytree-not-found": "Æ klynge ''$1'' blev ekke fundet",
-	"categorytree-error": "Der åpstød et pråblæm under endlæsnenge åf data.",
-	"categorytree-retry": "Vent et øjeblek og prøv egen."
+	"categorytree-mode-all": "åll side",
+	"categorytree-collapse": "folj sammel",
+	"categorytree-expand": "folj ut",
+	"categorytree-member-counts": "inholje {{PLURAL:$1|jen unjekategori|$1 unjekategorie}}, {{PLURAL:$2|jen siid|$2 side}} å {{PLURAL:$3|jej fil|$3 file}}",
+	"categorytree-num-categories": "$1 K",
+	"categorytree-num-pages": "$1 S",
+	"categorytree-num-files": "$1 F",
+	"categorytree-load": "hentj",
+	"categorytree-loading": "inläse",
+	"categorytree-nothing-found": "ienting funjen",
+	"categorytree-no-subcategories": "ien unjekategorie",
+	"categorytree-no-pages": "ien side elle unjekategorie",
+	"categorytree-not-found": "Kategorien ''$1'' bløw ett funjen",
+	"categorytree-error": "Där opstue e problem unje inläsneng å data.",
+	"categorytree-retry": "Wentj e yeblikk å prööw idjen."
 }
