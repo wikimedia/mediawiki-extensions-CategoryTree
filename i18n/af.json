@@ -3,7 +3,8 @@
 		"authors": [
 			"Arnobarnard",
 			"Naudefj",
-			"SPQRobin"
+			"SPQRobin",
+			"Fwolff"
 		]
 	},
 	"categorytree": "Kategorieboom",
@@ -25,7 +26,7 @@
 	"categorytree-num-files": "$1 L",
 	"categorytree-num-empty": "leeg",
 	"categorytree-load": "laai",
-	"categorytree-loading": "laai tans",
+	"categorytree-loading": "laai tans…",
 	"categorytree-nothing-found": "niks gevind nie",
 	"categorytree-no-subcategories": "geen subkategorieë nie",
 	"categorytree-no-parent-categories": "geen kategorieë boontoe",
