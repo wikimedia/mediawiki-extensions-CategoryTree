@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fluence",
-			"Teòtlalili"
+			"Teòtlalili",
+			"Taresi"
 		]
 	},
 	"categorytree": "Tlaìxmatkàtlàlilòmàmàyòtl",
@@ -19,6 +20,7 @@
 	"categorytree-collapse": "motlàtis",
 	"categorytree-expand": "monèxtis",
 	"categorytree-member-counts": "kipia {{PLURAL:$1|sè tlaìxmatkàtlàlilòpilòtl|$1 tlaìxmatkàtlàlilòpilòmë}}, {{PLURAL:$2|tlaìxtlapalli|$2 tlaìxtlapaltin}}, y {{PLURAL:$3|sè èwalli|$3 èwaltin}}",
+	"categorytree-num-files": "$1 Ihcu",
 	"categorytree-load": "motémòwis",
 	"categorytree-loading": "wàltémòtíkä...",
 	"categorytree-nothing-found": "âmò tlen òmâsik",
