@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"VASANTH S.N.",
-			"Vishwanatha Badikana"
+			"Vishwanatha Badikana",
+			"రహ్మానుద్దీన్"
 		]
 	},
 	"categorytree-mode-all": "ಮಾತಾ ಪುಟೊಲು",
 	"categorytree-collapse": "ಕುಗ್ಗಿಸಾಲ",
 	"categorytree-expand": "ವಿಸ್ತಾರ ಮಲ್ಪುಲೆ",
-	"categorytree-member-counts": "ಹೊಂದ್‍ದ್ಂಡ್ {{ಬಹುವಚನೊ:$1|1 ಉಪವಿಭಾಗೊ|$1 ಉಪವರ್ಗೊಲು}}, {{ಬಹುವಚನೊ:$2|1ಪುಟೊ|$2 ಪುಟೊಕುಲು}}, ಬುಕ್ಕೊ {{ಬಹುವಚನೊ:$3|1 ಕಡತೊ|$ 3 ಕಡತೊಲೆನ್}}",
+	"categorytree-member-counts": "ಹೊಂದ್‍ದ್ಂಡ್ {{PLURAL:$1|1 ಉಪವಿಭಾಗೊ|$1 ಉಪವರ್ಗೊಲು}}, {{PLURAL:$2|1ಪುಟೊ|$2 ಪುಟೊಕುಲು}}, ಬುಕ್ಕೊ {{PLURAL:$3|1 ಕಡತೊ|$ 3 ಕಡತೊಲೆನ್}}",
 	"categorytree-num-categories": "$1 ಸಿ",
 	"categorytree-num-pages": "$1 ಪು",
 	"categorytree-num-files": "$1 ಎಫ್",
