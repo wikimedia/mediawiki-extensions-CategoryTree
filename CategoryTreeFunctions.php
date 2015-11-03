@@ -344,8 +344,10 @@ class CategoryTree {
 			), __METHOD__ );
 
 		$mckey = wfMemcKey(
-			"categorytree(" . $this->getOptionsAsCacheKey( $depth ) . ")",
-			$dbkey, $wgLang->getCode(),
+			'ajax-categorytree',
+			md5( $dbkey ),
+			md5( $this->getOptionsAsCacheKey( $depth ) ),
+			$wgLang->getCode(),
 			$wgContLang->getExtraHashOptions(),
 			$wgRenderHashAppend
 		);
