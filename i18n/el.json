@@ -6,7 +6,8 @@
 			"Consta",
 			"Dead3y3",
 			"Protnet",
-			"ZaDiak"
+			"ZaDiak",
+			"SucreRouge"
 		]
 	},
 	"categorytree": "Δέντρο κατηγορίας",
@@ -23,7 +24,7 @@
 	"categorytree-mode-all": "όλες οι σελίδες",
 	"categorytree-collapse": "σύμπτυξη",
 	"categorytree-expand": "επέκτεινε",
-	"categorytree-member-counts": "περιέχει {{PLURAL:$1|1 υποκατηγορία|$1 υποκατηγορίες}}, {{PLURAL:$2|1 σελίδα|$2 σελίδες}} και {{PLURAL:$3|1 αρχείο|$3 αρχεία}}",
+	"categorytree-member-counts": "Περιέχει {{PLURAL:$1|1 υποκατηγορία|$1 υποκατηγορίες}}, {{PLURAL:$2|1 σελίδα|$2 σελίδες}} και {{PLURAL:$3|1 αρχείο|$3 αρχεία}}",
 	"categorytree-num-categories": "$1 Κ",
 	"categorytree-num-pages": "$1 Σ",
 	"categorytree-num-files": "$1 Α",
