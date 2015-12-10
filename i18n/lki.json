@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hosseinblue"
+			"Hosseinblue",
+			"Lakzon"
 		]
 	},
+	"categorytree": " دار رده/ڕِزگ",
 	"categorytree-expand": "کلنگاکردن/گسترش",
 	"categorytree-member-counts": " شامل {{PLURAL:$1|1 ژئر رده$1 |ژئر رده}}, {{PLURAL:$2|1وۀلگۀ$2|وۀلگۀ}},\n وۀ {{PLURAL:$3|1 فایل $3| فایل}}",
 	"categorytree-num-categories": "$1 ر",
