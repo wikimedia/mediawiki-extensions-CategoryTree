@@ -3,7 +3,8 @@
 		"authors": [
 			"Wtzdj",
 			"Xiaomingyan",
-			"Poiuyt"
+			"Poiuyt",
+			"飞舞回堂前"
 		]
 	},
 	"categorytree": "分类树",
@@ -20,5 +21,7 @@
 	"categorytree-num-files": "$1文件",
 	"categorytree-nothing-found": "一样也朆寻着",
 	"categorytree-no-subcategories": "呒拨子分类",
-	"categorytree-no-pages": "呒拨页面或者子分类"
+	"categorytree-no-pages": "呒拨页面或者子分类",
+	"categorytree-not-found": "寻弗着分类<i>$1</i>",
+	"categorytree-retry": "请等歇再试。"
 }
