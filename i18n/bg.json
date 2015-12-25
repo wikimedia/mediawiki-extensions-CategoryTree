@@ -4,7 +4,8 @@
 			"Borislav",
 			"DCLXVI",
 			"Spiritia",
-			"Stanqo"
+			"Stanqo",
+			"Vodnokon4e"
 		]
 	},
 	"categorytree": "Дърво на категориите",
@@ -20,7 +21,7 @@
 	"categorytree-mode-pages": "страници, без файлове",
 	"categorytree-mode-all": "всички страници",
 	"categorytree-collapse": "събиране",
-	"categorytree-expand": "разпъване",
+	"categorytree-expand": "разгръщане",
 	"categorytree-member-counts": "съдържа {{PLURAL:$1|една подкатегория|$1 подкатегории}}, {{PLURAL:$2|една страница|$2 страници}} и {{PLURAL:$3|един файл|$3 файла}}",
 	"categorytree-num-categories": "$1 К",
 	"categorytree-num-pages": "$1 Стр",
