@@ -143,6 +143,34 @@ class CategoryTreePage extends SpecialPage {
 		$output->addHTML( Xml::tags( 'form', array( 'name' => 'categorytree', 'method' => 'get', 'action' => $wgScript, 'id' => 'mw-categorytree-form' ), $fieldset ) );
 	}
 
+	/**
+	 * Return an array of subpages beginning with $search that this special page will accept.
+	 *
+	 * @param string $search Prefix to search for
+	 * @param int $limit Maximum number of results to return (usually 10)
+	 * @param int $offset Number of results to skip (usually 0)
+	 * @return string[] Matching subpages
+	 */
+	public function prefixSearchSubpages( $search, $limit, $offset ) {
+		$title = Title::newFromText( $search, NS_CATEGORY );
+		if ( $title && $title->getNamespace() !== NS_CATEGORY ) {
+			// Someone searching for something like "Wikipedia:Foo"
+			$title = Title::makeTitleSafe( NS_CATEGORY, $search );
+		}
+		if ( !$title ) {
+			// No prefix suggestion outside of category namespace
+			return array();
+		}
+		// Autocomplete subpage the same as a normal search, but just for categories
+		$prefixSearcher = new TitlePrefixSearch;
+		$result = $prefixSearcher->search( $title->getPrefixedText(), $limit, array( NS_CATEGORY ), $offset );
+
+		return array_map( function ( Title $t ) {
+			// Remove namespace in search suggestion
+			return $t->getText();
+		}, $result );
+	}
+
 	protected function getGroupName() {
 		return 'pages';
 	}
