@@ -8,6 +8,8 @@
 		]
 	},
 	"categorytree": "分类树",
+	"categorytree-portlet": "分类",
+	"categorytree-legend": "显示分类树",
 	"categorytree-category": "分类",
 	"categorytree-go": "显示分类树",
 	"categorytree-mode-categories": "仅分类",
@@ -20,8 +22,8 @@
 	"categorytree-num-pages": "$1页面",
 	"categorytree-num-files": "$1文件",
 	"categorytree-nothing-found": "一样也朆寻着",
-	"categorytree-no-subcategories": "呒拨子分类",
-	"categorytree-no-pages": "呒拨页面或者子分类",
+	"categorytree-no-subcategories": "呒不子分类",
+	"categorytree-no-pages": "呒不页面或者子分类",
 	"categorytree-not-found": "寻弗着分类<i>$1</i>",
 	"categorytree-retry": "请等歇再试。"
 }
