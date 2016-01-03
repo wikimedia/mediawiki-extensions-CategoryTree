@@ -17,6 +17,7 @@
 	"categorytree-mode-all": "ҳамаи саҳифаҳо",
 	"categorytree-collapse": "фурукаш",
 	"categorytree-expand": "густариш",
+	"categorytree-num-pages": "$1 P",
 	"categorytree-load": "бор кардан",
 	"categorytree-loading": "дар ҳоли бор шудан…",
 	"categorytree-nothing-found": "ҳеҷчиз ёфт нашуд",
