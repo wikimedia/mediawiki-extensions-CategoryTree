@@ -4,7 +4,8 @@
 			"Cekli829",
 			"PPerviz",
 			"Vugar 1981",
-			"Wertuose"
+			"Wertuose",
+			"Dağlı95"
 		]
 	},
 	"categorytree": "Kateqoriya ağacı",
@@ -20,9 +21,9 @@
 	"categorytree-mode-all": "bütün səhifələr",
 	"categorytree-collapse": "gizlə",
 	"categorytree-expand": "genişləndir",
-	"categorytree-member-counts": "{{PLURAL:$1|1 altkategoriya|$1 altkategoriya}}, {{PLURAL:$2|1 səhifə|$2 səhifə}}, ve {{PLURAL:$3|1 şəkil|$3 şəkil}}dən ibarətdir",
-	"categorytree-num-categories": "$1 C",
-	"categorytree-num-pages": "$1 P",
+	"categorytree-member-counts": "Bu kateqoriya, {{PLURAL:$1|1 altkategoriya|$1 altkategoriya}}, {{PLURAL:$2|1 səhifə|$2 səhifə}} və {{PLURAL:$3|1 şəkil|$3 şəkil}}dən ibarətdir.",
+	"categorytree-num-categories": "$1 K",
+	"categorytree-num-pages": "$1 S",
 	"categorytree-num-files": "$1 F",
 	"categorytree-num-empty": "boş",
 	"categorytree-load": "yüklə",
