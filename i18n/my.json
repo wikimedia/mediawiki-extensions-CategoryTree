@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ninjastrikers"
+		]
+	},
+	"categorytree-expand": "ချဲ့ကား",
+	"categorytree-member-counts": "{{PLURAL:$1|ကဏ္ဍခွဲ ၁ ခု|$1 ကဏ္ဍခွဲများ}}၊ {{PLURAL:$2|စာမျက်နှာ ၁ ခု|$2 စာမျက်နှာများ}}၊ နှင့် {{PLURAL:$3|ဖိုင် ၁ ခု|$3 ဖိုင်များ}} ပါဝင်သည်",
+	"categorytree-num-categories": "$1 ကဏ္ဍ",
+	"categorytree-num-pages": "$1 နှာ",
+	"categorytree-num-files": "$1 ဖိုင်"
+}
