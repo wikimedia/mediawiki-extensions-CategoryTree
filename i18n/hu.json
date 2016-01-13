@@ -4,7 +4,8 @@
 			"Dani",
 			"Dj",
 			"Glanthor Reviol",
-			"KossuthRad"
+			"KossuthRad",
+			"Tacsipacsi"
 		]
 	},
 	"categorytree": "Kategóriafa",
@@ -21,7 +22,7 @@
 	"categorytree-mode-all": "az összes oldal",
 	"categorytree-collapse": "becsuk",
 	"categorytree-expand": "kinyit",
-	"categorytree-member-counts": "{{PLURAL:$1|egy|$1}} alkategóriát, {{PLURAL:$2|egy|$2}} lapot, és {{PLURAL:$3|egy|$3}} fájlt tartalmaz",
+	"categorytree-member-counts": "$1 alkategóriát, $2 lapot és $3 fájlt tartalmaz",
 	"categorytree-num-categories": "$1 K",
 	"categorytree-num-pages": "$1 L",
 	"categorytree-num-files": "$1 F",
