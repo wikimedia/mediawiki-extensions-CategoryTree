@@ -15,7 +15,7 @@
 	"categorytree-expand": "واتينادأن",
 	"categorytree-member-counts": "{{PLURAL:$1|ىکته جيرجرگه|$1 جيرجرگه}}، {{PLURAL:$2|ىکته ولگ|$2 ولگ}} ؤ {{PLURAL:$3|ىکته فاىل|$3 فاىل}} اينˇ مئن دره.",
 	"categorytree-num-categories": "$1 ج",
-	"categorytree-num-pages": "$1 ص",
+	"categorytree-num-pages": "$1 و",
 	"categorytree-num-files": "$1 ف",
 	"categorytree-num-empty": "خالي",
 	"categorytree-nothing-found": "هيچي ىاته نۊبؤ"
