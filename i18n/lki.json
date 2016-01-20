@@ -16,7 +16,7 @@
 	"categorytree-mode-label": "حالت:",
 	"categorytree-mode-categories": "فقط رده‌ها/ڕِزگةل",
 	"categorytree-mode-pages": "صفحات به جز تصاویر",
-	"categorytree-mode-all": "کۆل وةڵگةل",
+	"categorytree-mode-all": "کؤل(گشت)وەڵگەل",
 	"categorytree-collapse": "آشاردِن",
 	"categorytree-expand": "کلنگاکردن/گسترش",
 	"categorytree-member-counts": " شامل {{PLURAL:$1|1 ژئر رده$1 |ژئر رده}}, {{PLURAL:$2|1وۀلگۀ$2|وۀلگۀ}},\n وۀ {{PLURAL:$3|1 فایل $3| فایل}}",
