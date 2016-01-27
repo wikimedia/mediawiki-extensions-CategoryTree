@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Klenje",
-			"MF-Warburg"
+			"MF-Warburg",
+			"Tocaibon"
 		]
 	},
 	"categorytree": "Arbul des categoriis",
@@ -19,6 +20,9 @@
 	"categorytree-collapse": "strenç",
 	"categorytree-expand": "slargje",
 	"categorytree-member-counts": "e à dentri {{PLURAL:$1|1 sotcategorie|$1 sotcategoriis}}, {{PLURAL:$2|1 pagjine|$2 pagjinis}} e {{PLURAL:$3|1 file|$3 files}}",
+	"categorytree-num-categories": "$1 C",
+	"categorytree-num-pages": "$1 P",
+	"categorytree-num-files": "$1 F",
 	"categorytree-load": "cjame",
 	"categorytree-loading": "daûr a cjamâ",
 	"categorytree-nothing-found": "nissun risultât",
