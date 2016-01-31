@@ -96,7 +96,7 @@ class ApiCategoryTree extends ApiBase {
 				86400
 			);
 		}
-		return $html;
+		return trim( $html );
 	}
 
 	public function getAllowedParams() {

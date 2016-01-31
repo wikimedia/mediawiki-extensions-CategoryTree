@@ -132,7 +132,7 @@
 				uselang: mw.config.get( 'wgUserLanguage' ),
 				formatversion: 2
 			} ).done( function ( data ) {
-				data = data.categorytree.html.replace( /^\s+|\s+$/, '' );
+				data = data.categorytree.html;
 				data = data.replace( /##LOAD##/g, mw.msg( 'categorytree-expand' ) );
 
 				if ( data === '' ) {
