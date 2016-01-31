@@ -637,8 +637,7 @@ class CategoryTree {
 				$tag = 'span';
 				if ( $children == 0 ) {
 					$txt = wfMessage( 'categorytree-expand-bullet' )->plain();
-					# Don't load this message for ajax requests, so that we don't have to initialise $wgLang
-					$linkattr[ 'title' ] = $this->mIsAjaxRequest ? '##LOAD##' : wfMessage( 'categorytree-expand' )->plain();
+					$linkattr[ 'title' ] = wfMessage( 'categorytree-expand' )->plain();
 					$linkattr[ 'data-ct-state' ] = 'collapsed';
 				} else {
 					$txt = wfMessage( 'categorytree-collapse-bullet' )->plain();
