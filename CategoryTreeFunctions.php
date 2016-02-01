@@ -624,7 +624,6 @@ class CategoryTree {
 				$linkattr = [];
 
 				$linkattr[ 'class' ] = "CategoryTreeToggle";
-				$linkattr['style'] = 'display: none;'; // Unhidden by JS
 				$linkattr['data-ct-title'] = $key;
 
 				$tag = 'span';

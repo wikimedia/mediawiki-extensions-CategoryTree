@@ -8,7 +8,7 @@
  * @licence GNU General Public Licence 2.0 or later
  */
 
-#mw-subcategories ul {
+.client-js #mw-subcategories ul {
 	list-style: none none;
 	margin-left: 0.25em;
 }
@@ -27,12 +27,20 @@
 	margin-left: 1.25em;
 }
 
-.CategoryTreeBullet {
+.CategoryTreeBullet,
+.CategoryTreeEmptyBullet {
+	cursor: default;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.CategoryTreeToggleHandlerAttached {
 	cursor: pointer;
 }
 
 .CategoryTreeEmptyBullet {
-	cursor: default;
 	color: #c0c0c0;
 }
 
@@ -43,6 +51,12 @@
 	text-decoration: none;
 	color: inherit;
 	speak: none;
+}
+
+/* Hide toggle buttons for clients without JavaScript */
+.client-nojs .CategoryTreeBullet,
+.client-nojs .CategoryTreeEmptyBullet {
+	display: none;
 }
 
 .CategoryTreeToggle {

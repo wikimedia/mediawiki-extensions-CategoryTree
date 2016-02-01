@@ -15,13 +15,6 @@
 	mw.hook( 'wikipage.content' ).add( function ( $content ) {
 
 		/**
-		 * Sets display inline to tree toggle
-		 */
-		function showToggles() {
-			$content.find( 'span.CategoryTreeToggle' ).css( 'display', 'inline' );
-		}
-
-		/**
 		 * Handles clicks on the expand buttons, and calls the appropriate function
 		 *
 		 * @context {Element} CategoryTreeToggle
@@ -160,16 +153,17 @@
 				$children
 					.html( data )
 					.find( '.CategoryTreeToggle' )
-						.click( handleNode );
+						.click( handleNode )
+						.addClass( 'CategoryTreeToggleHandlerAttached' );
 
-				showToggles();
 			} )
 			.fail( error );
 		}
 
-		// Register click events and show toggle buttons
-		$content.find( '.CategoryTreeToggle' ).click( handleNode );
-		showToggles();
+		// Register click events
+		$content.find( '.CategoryTreeToggle' )
+		.click( handleNode )
+		.addClass( 'CategoryTreeToggleHandlerAttached' );
 	} );
 
 }( jQuery, mediaWiki ) );
