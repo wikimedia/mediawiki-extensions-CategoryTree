@@ -38,5 +38,6 @@
 	"categorytree-no-pages": "inga artiklar eller underkategorier",
 	"categorytree-not-found": "Kategori ''$1'' hittades ej",
 	"categorytree-error": "Problem med att ladda data.",
-	"categorytree-retry": "Vänta en stund och försök igen."
+	"categorytree-retry": "Vänta en stund och försök igen.",
+	"apihelp-categorytree-description": "Intern modul för tillägget CategoryTree."
 }
