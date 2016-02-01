@@ -118,7 +118,7 @@
 
 		$link.data( 'ct-loaded', true );
 
-		$children.append(
+		$children.empty().append(
 			$( '<i class="CategoryTreeNotice"></i>' )
 				.text( mw.msg( 'categorytree-loading' ) )
 		);
