@@ -6,7 +6,8 @@
 			"Kaganer",
 			"Lockal",
 			"Putnik",
-			"Александр Сигачёв"
+			"Александр Сигачёв",
+			"Okras"
 		]
 	},
 	"categorytree": "Дерево категорий",
@@ -36,5 +37,6 @@
 	"categorytree-no-pages": "нет статей и подкатегорий",
 	"categorytree-not-found": "Категория «$1» не найдена.",
 	"categorytree-error": "Ошибка загрузки данных.",
-	"categorytree-retry": "Пожалуйста, подождите и попробуйте ещё раз."
+	"categorytree-retry": "Пожалуйста, подождите и попробуйте ещё раз.",
+	"apihelp-categorytree-description": "Внутренний модуль для расширения CategoryTree."
 }
