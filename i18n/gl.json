@@ -3,7 +3,8 @@
 		"authors": [
 			"Alma",
 			"Toliño",
-			"Xosé"
+			"Xosé",
+			"Elisardojm"
 		]
 	},
 	"categorytree": "Árbore de categorías",
@@ -33,5 +34,6 @@
 	"categorytree-no-pages": "non hai páxinas nin subcategorías",
 	"categorytree-not-found": "A categoría \"<i>$1</i>\" non foi atopada",
 	"categorytree-error": "Problema coa carga de datos.",
-	"categorytree-retry": "Agarde un momento e inténteo de novo."
+	"categorytree-retry": "Agarde un momento e inténteo de novo.",
+	"apihelp-categorytree-description": "Módulo interno para a extensión CategoryTree."
 }
