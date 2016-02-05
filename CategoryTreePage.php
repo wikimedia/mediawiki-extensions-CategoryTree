@@ -122,11 +122,11 @@ class CategoryTreePage extends SpecialPage {
 		$thisTitle = SpecialPage::getTitleFor( $this->getName() );
 		$namespaces = $this->getRequest()->getVal( 'namespaces', '' );
 		//mode may be overriden by namespaces option
-		$mode = ( $namespaces == '' ? $this->getOption( 'mode' ) : CT_MODE_ALL );
+		$mode = ( $namespaces == '' ? $this->getOption( 'mode' ) : CategoryTreeMode::ALL );
 		$modeSelector = Xml::openElement( 'select', array( 'name' => 'mode' ) );
-		$modeSelector .= Xml::option( wfMessage( 'categorytree-mode-categories' )->plain(), 'categories', $mode == CT_MODE_CATEGORIES );
-		$modeSelector .= Xml::option( wfMessage( 'categorytree-mode-pages' )->plain(), 'pages', $mode == CT_MODE_PAGES );
-		$modeSelector .= Xml::option( wfMessage( 'categorytree-mode-all' )->plain(), 'all', $mode == CT_MODE_ALL );
+		$modeSelector .= Xml::option( wfMessage( 'categorytree-mode-categories' )->plain(), 'categories', $mode == CategoryTreeMode::CATEGORIES );
+		$modeSelector .= Xml::option( wfMessage( 'categorytree-mode-pages' )->plain(), 'pages', $mode == CategoryTreeMode::PAGES );
+		$modeSelector .= Xml::option( wfMessage( 'categorytree-mode-all' )->plain(), 'all', $mode == CategoryTreeMode::ALL );
 		$modeSelector .= Xml::closeElement( 'select' );
 		$table = Xml::buildForm( array(
 			'categorytree-category' => Xml::input( 'target', 20, $this->target, array( 'id' => 'target' ) ) ,

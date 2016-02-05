@@ -136,19 +136,19 @@
 
 				if ( data === '' ) {
 					switch ( ctMode ) {
-						// CT_MODE_CATEGORIES = 0
+						// CategoryTreeMode::CATEGORIES = 0
 						case 0:
 							data = mw.msg( 'categorytree-no-subcategories' );
 							break;
-						// CT_MODE_PAGES = 10
+						// CategoryTreeMode::PAGES = 10
 						case 10:
 							data = mw.msg( 'categorytree-no-pages' );
 							break;
-						// CT_MODE_PARENTS = 100
+						// CategoryTreeMode::PARENTS = 100
 						case 100:
 							data = mw.msg( 'categorytree-no-parent-categories' );
 							break;
-						// CT_MODE_ALL = 20
+						// CategoryTreeMode::ALL = 20
 						default:
 							data = mw.msg( 'categorytree-nothing-found' );
 					}
