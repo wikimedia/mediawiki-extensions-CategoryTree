@@ -35,5 +35,7 @@
 	"categorytree-not-found": "A categoría \"<i>$1</i>\" non foi atopada",
 	"categorytree-error": "Problema coa carga de datos.",
 	"categorytree-retry": "Agarde un momento e inténteo de novo.",
-	"apihelp-categorytree-description": "Módulo interno para a extensión CategoryTree."
+	"apihelp-categorytree-description": "Módulo interno para a extensión CategoryTree.",
+	"apihelp-categorytree-param-category": "Título no espazo de nomes Categoría, o prefixo será ignorado se se indica.",
+	"apihelp-categorytree-param-options": "Opción para o construtor CategoryTree como un obxecto JSON. A opción de profundidade vale 1 por defecto."
 }
