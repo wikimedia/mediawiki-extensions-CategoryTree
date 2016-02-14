@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"AnakngAraw",
-			"Lam-ang"
+			"Lam-ang",
+			"Stranger195"
 		]
 	},
 	"categorytree": "Puno ng kaurian",
@@ -20,7 +21,7 @@
 	"categorytree-expand": "palaparin",
 	"categorytree-expand-bullet": "►",
 	"categorytree-empty-bullet": "►",
-	"categorytree-member-counts": "naglalaman ng {{PLURAL:$1|1 subcategory|$1 kabahaging mga kaurian}}, {{PLURAL:$2|1 pahina|$2 mga pahina}}, at {{PLURAL:$3|1 talaksan|$3 mga talaksan}}",
+	"categorytree-member-counts": "Naglalaman ng {{PLURAL:$1|1 subkategorya|$1 subkategorya}}, {{PLURAL:$2|1 pahina|$2 mga pahina}}, at {{PLURAL:$3|1 talaksan|$3 mga talaksan}}",
 	"categorytree-num-categories": "$1 C",
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 F",
