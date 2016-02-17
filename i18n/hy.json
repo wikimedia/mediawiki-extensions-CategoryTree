@@ -3,7 +3,8 @@
 		"authors": [
 			"Chaojoker",
 			"Teak",
-			"Xelgen"
+			"Xelgen",
+			"Աշոտ1997"
 		]
 	},
 	"categorytree": "Կատեգորիաների ծառ",
@@ -23,6 +24,7 @@
 	"categorytree-num-categories": "$1 Կ",
 	"categorytree-num-pages": "$1 Է",
 	"categorytree-num-files": "$1 Ն",
+	"categorytree-num-empty": "դատարկ",
 	"categorytree-load": "բեռնել",
 	"categorytree-loading": "բեռնվում է",
 	"categorytree-nothing-found": "ոչինչ չի գտնվել",
