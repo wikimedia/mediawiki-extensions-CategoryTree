@@ -4,14 +4,15 @@
 			"AS",
 			"Ahonc",
 			"Base",
-			"Sodmy"
+			"Sodmy",
+			"Piramidion"
 		]
 	},
 	"categorytree": "Дерево категорій",
 	"categorytree-portlet": "Категорії",
 	"categorytree-legend": "Показати дерево категорій",
 	"categorytree-desc": "AJAX-компонент для відображення [[Special:CategoryTree|структури категорій]] вікі",
-	"categorytree-header": "Уведіть назву категорії, і вона буде показана у вигляді дерева.\nЦя можливість доступна, тільки якщо ваш браузер підтримує AJAX.\nЯкщо у вас стара версія браузера або відключений JavaScript, відображення підкатегорій у вигляді дерева недоступне.",
+	"categorytree-header": "Уведіть назву категорії, і вона буде показана у вигляді дерева.\nЦя можливість доступна, тільки якщо Ваш браузер підтримує AJAX.\nЯкщо у Вас стара версія браузера або відключений JavaScript, відображення підкатегорій у вигляді дерева не працюватиме.",
 	"categorytree-category": "Категорія:",
 	"categorytree-go": "Показати дерево",
 	"categorytree-parents": "Батьківські категорії",
@@ -34,5 +35,8 @@
 	"categorytree-no-pages": "нема статей і підкатегорій",
 	"categorytree-not-found": "Категорія «$1» не знайдена.",
 	"categorytree-error": "Помилка завантаження даних.",
-	"categorytree-retry": "Будь ласка, зачекайте і спробуйте ще раз."
+	"categorytree-retry": "Будь ласка, зачекайте і спробуйте ще раз.",
+	"apihelp-categorytree-description": "Внутрішній модуль для розширення CategoryTree.",
+	"apihelp-categorytree-param-category": "Назва в просторі назв категорій. Якщо буде вказаний префікс, він буде проігнорований.",
+	"apihelp-categorytree-param-options": "Опції для конструктора CategoryTree як об'єкта JSON. Параметр глибини (depth) за замовчуванням встановлений як 1."
 }
