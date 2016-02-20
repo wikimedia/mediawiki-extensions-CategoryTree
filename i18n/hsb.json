@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Michawiki"
+			"Michawiki",
+			"J budissin"
 		]
 	},
 	"categorytree": "Kategorijowy štom",
@@ -22,7 +23,7 @@
 	"categorytree-num-categories": "$1 k",
 	"categorytree-num-pages": "$1 s",
 	"categorytree-num-files": "$1 d",
-	"categorytree-num-empty": "prózdny",
+	"categorytree-num-empty": "prózdna",
 	"categorytree-load": "začitać",
 	"categorytree-loading": "čita so…",
 	"categorytree-nothing-found": "ničo namakane",
