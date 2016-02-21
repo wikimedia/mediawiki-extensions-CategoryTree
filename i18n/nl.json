@@ -18,7 +18,7 @@
 	"categorytree-mode-categories": "alleen categorieën",
 	"categorytree-mode-pages": "geen afbeeldingen",
 	"categorytree-mode-all": "alle pagina's",
-	"categorytree-collapse": "inklappen",
+	"categorytree-collapse": "samenvouwen",
 	"categorytree-expand": "uitvouwen",
 	"categorytree-member-counts": "bevat {{PLURAL:$1|één ondercategorie|$1 ondercategorieën}}, {{PLURAL:$2|één pagina|$2 pagina's}} en {{PLURAL:$3|één bestand|$3 bestanden}}",
 	"categorytree-num-categories": "$1 C",

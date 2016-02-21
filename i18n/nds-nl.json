@@ -16,7 +16,7 @@
 	"categorytree-mode-categories": "allinnig kategorieën",
 	"categorytree-mode-pages": "ziejen, gien aofbeeldingen",
 	"categorytree-mode-all": "alle ziejen",
-	"categorytree-collapse": "inklappen",
+	"categorytree-collapse": "samenvouwen",
 	"categorytree-expand": "uutklappen",
 	"categorytree-member-counts": "bevat {{PLURAL:$1|één onderkategorie|$1 onderkategorieën}}, {{PLURAL:$2|één zied|$2 ziejen}} en {{PLURAL:$3|één bestaand|$3 bestaanden}}",
 	"categorytree-num-categories": "$1 C",
