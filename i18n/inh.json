@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Sapral Mikail",
-			"Исмаил Садуев"
+			"Исмаил Садуев",
+			"ElizaMag"
 		]
 	},
 	"categorytree": "Цатегий гаьн",
@@ -13,6 +14,7 @@
 	"categorytree-parents": "Даь-ноаной цатегаш",
 	"categorytree-mode-categories": "Алха цатегаш",
 	"categorytree-mode-all": "eррига оагIувнаш",
+	"categorytree-expand": "хьадоаржаде",
 	"categorytree-num-empty": "яьсса",
 	"categorytree-load": "чуяьккха",
 	"categorytree-loading": "доттар...",
