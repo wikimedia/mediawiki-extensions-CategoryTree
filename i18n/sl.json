@@ -33,5 +33,8 @@
 	"categorytree-no-pages": "ni strani ali podkategorij",
 	"categorytree-not-found": "Kategorije <i>$1</i> ni moč najti",
 	"categorytree-error": "Težava pri nalaganju podatkov.",
-	"categorytree-retry": "Prosimo, počakajte trenutek in poskusite znova."
+	"categorytree-retry": "Prosimo, počakajte trenutek in poskusite znova.",
+	"apihelp-categorytree-description": "Notranji modul za razširitev CategoryTree.",
+	"apihelp-categorytree-param-category": "Naslov v imenskem prostoru kategorij; če navedete predpono, jo bomo prezrli.",
+	"apihelp-categorytree-param-options": "Možnosti konstruktorja CategoryTree kot objekt JSON. Možnost globine je privzeto 1."
 }
