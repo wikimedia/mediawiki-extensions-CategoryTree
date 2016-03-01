@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"LeighvsOptimvsMaximvs",
-			"Omnipaedista"
+			"Omnipaedista",
+			"Gts-tg"
 		]
 	},
 	"categorytree": "Δένδρον κατηγοριῶν",
@@ -14,6 +15,10 @@
 	"categorytree-mode-all": "πᾶσαι αἱ δέλτοι",
 	"categorytree-collapse": "συστέλλειν",
 	"categorytree-expand": "διαστέλλειν",
+	"categorytree-member-counts": "Περιέχει{{PLURAL:$1|1 ὑποκατηγορία|$1 ὑποκατηγορίαi}}, {{PLURAL:$2|1 δέλτος|$2 δέλτοι}}, καἰ {{PLURAL:$3|1 ἀρχείον|$3 ἀρχεία}}",
+	"categorytree-num-categories": "$1 Κ",
+	"categorytree-num-pages": "$1 Δ",
+	"categorytree-num-files": "$1 Ἀ",
 	"categorytree-load": "φορτίζειν",
 	"categorytree-loading": "φορτίζειν...",
 	"categorytree-nothing-found": "οὐδὲν εὑρεθέν",
