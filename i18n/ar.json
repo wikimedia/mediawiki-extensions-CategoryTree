@@ -6,7 +6,8 @@
 			"Mido",
 			"OsamaK",
 			"زكريا",
-			"Abanima"
+			"Abanima",
+			"Maroen1990"
 		]
 	},
 	"categorytree": "شجرة تصنيفات",
@@ -38,5 +39,6 @@
 	"categorytree-no-pages": "لا صفحات ولا تصنيفات فرعية",
 	"categorytree-not-found": "التصنيف «$1» لم يتم العثور عليه",
 	"categorytree-error": "مشكلة في تحميل البيانات.",
-	"categorytree-retry": "من فضلك انتظر لحظة وحاول مرة أخرى."
+	"categorytree-retry": "من فضلك انتظر لحظة وحاول مرة أخرى.",
+	"apihelp-categorytree-description": "الوحدة لداخلية للتصنيفات الصحيحة."
 }
