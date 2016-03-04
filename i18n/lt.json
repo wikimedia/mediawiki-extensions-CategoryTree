@@ -4,7 +4,8 @@
 			"Eitvys200",
 			"Garas",
 			"Hugo.arg",
-			"Tomasdd"
+			"Tomasdd",
+			"Zygimantus"
 		]
 	},
 	"categorytree": "Kategorijų medis",
@@ -27,7 +28,7 @@
 	"categorytree-num-files": "$1 F",
 	"categorytree-num-empty": "tuščia",
 	"categorytree-load": "įkelti",
-	"categorytree-loading": "įkeliama",
+	"categorytree-loading": "įkeliama...",
 	"categorytree-nothing-found": "nieko nerasta",
 	"categorytree-no-subcategories": "nėra jokių subkategorijų",
 	"categorytree-no-parent-categories": "jokių aukštesniojo lygio kategorijų",
