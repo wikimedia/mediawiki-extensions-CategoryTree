@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Sasan700",
-			"Умар"
+			"Умар",
+			"Исмаил Садуев"
 		]
 	},
 	"categorytree": "Категорийн дит",
@@ -17,7 +18,7 @@
 	"categorytree-mode-categories": "екъ категореш",
 	"categorytree-mode-pages": "файлийн совнаха",
 	"categorytree-mode-all": "массо агӀонаш",
-	"categorytree-collapse": "къайлаяккха",
+	"categorytree-collapse": "дӀахьарчо",
 	"categorytree-expand": "схьаяста",
 	"categorytree-member-counts": "чохь ю $1 {{PLURAL:$1|1=бухара категори|бухара категореш}}, $2 {{PLURAL:$2|1=агӀо|агӀонаш}} а $3 {{PLURAL:$3|1=файл|файлаш}} а",
 	"categorytree-num-categories": "$1 К",
