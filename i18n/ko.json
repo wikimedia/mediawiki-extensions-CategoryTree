@@ -37,6 +37,6 @@
 	"categorytree-no-pages": "문서나 하위 분류 없음",
 	"categorytree-not-found": "$1 분류가 없습니다",
 	"categorytree-error": "값을 불러오는 중 오류 발생",
-	"categorytree-retry": "잠시 기다리고 나서 다시 시도하세요.",
+	"categorytree-retry": "잠시 후에 다시 해보세요.",
 	"apihelp-categorytree-description": "CategoryTree 확장 기능을 위한 내부 모듈"
 }
