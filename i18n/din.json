@@ -5,6 +5,7 @@
 		]
 	},
 	"categorytree-expand": "cuotyic",
+	"categorytree-member-counts": "Aleŋic {{PLURAL:$1|1 këcïtatëkthok|$1 käcïtatëkthuɔk}}, {{PLURAL:$2|1 apäm|$2 apääm}}, ku {{PLURAL:$3|1 wëtmät|$3  wëlmät}}",
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 F"
 }
