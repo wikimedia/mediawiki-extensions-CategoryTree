@@ -34,5 +34,8 @@
 	"categorytree-no-pages": "мондый бит яки төркемчә юк",
 	"categorytree-not-found": "<i>$1</i> бүлеге табылмады",
 	"categorytree-error": "Хата",
-	"categorytree-retry": "Зинһар бераз көтеп торыгыз һәм тагын бер кат йөкләүне башкарып карагыз."
+	"categorytree-retry": "Зинһар бераз көтеп торыгыз һәм тагын бер кат йөкләүне башкарып карагыз.",
+	"apihelp-categorytree-description": "CategoryTree кушымтасы өчен эчке модуль.",
+	"apihelp-categorytree-param-category": "Төркемнәр мәйданы исемлеге, куелган очракта префикс кулланылмый.",
+	"apihelp-categorytree-param-options": "JSON-җисемнәр сыман CategoryTree тәзүчесе төрләре. Тирәнлек параметры 1 итеп куелган."
 }
