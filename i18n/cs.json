@@ -3,7 +3,8 @@
 		"authors": [
 			"Danny B.",
 			"Li-sung",
-			"Mormegil"
+			"Mormegil",
+			"LordMsz"
 		]
 	},
 	"categorytree": "Strom kategorií",
@@ -19,7 +20,7 @@
 	"categorytree-mode-pages": "stránky kromě souborů",
 	"categorytree-mode-all": "všechny stránky",
 	"categorytree-collapse": "zavřít",
-	"categorytree-expand": "otevřít",
+	"categorytree-expand": "rozbalit",
 	"categorytree-member-counts": "obsahuje {{PLURAL:$1|1 podkategorii|$1 podkategorie|$1 podkategorií}}, {{PLURAL:$2|1 stránku|$2 stránky|$2 stránek}} a {{PLURAL:$3|1 soubor|$3 soubory|$3 souborů}}",
 	"categorytree-num-categories": "$1 kat.",
 	"categorytree-num-pages": "$1 str.",
