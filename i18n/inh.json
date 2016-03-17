@@ -3,7 +3,8 @@
 		"authors": [
 			"Sapral Mikail",
 			"Исмаил Садуев",
-			"ElizaMag"
+			"ElizaMag",
+			"Adam-Yourist"
 		]
 	},
 	"categorytree": "Цатегий гаьн",
@@ -15,6 +16,7 @@
 	"categorytree-mode-categories": "Алха цатегаш",
 	"categorytree-mode-all": "eррига оагIувнаш",
 	"categorytree-expand": "хьадоаржаде",
+	"categorytree-member-counts": "Чу йоала $1 {{PLURAL:$1|1=лохера категори|лохера категореш}}, $2 {{PLURAL:$2|1=оагӀо|оагӀонаш}} а $3 {{PLURAL:$3|1=файл|файлаш}} а",
 	"categorytree-num-empty": "яьсса",
 	"categorytree-load": "чуяьккха",
 	"categorytree-loading": "доттар...",
