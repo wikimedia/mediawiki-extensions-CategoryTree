@@ -6,7 +6,8 @@
 			"Pooja.srivastava",
 			"Shyam123.ckp",
 			"Siddhartha Ghai",
-			"Wikiuser13"
+			"Wikiuser13",
+			"Sfic"
 		]
 	},
 	"categorytree": "श्रेणीवृक्ष",
@@ -36,5 +37,6 @@
 	"categorytree-no-pages": "कोई पृष्ठ या उपश्रेणीयाँ नहीं हैं",
 	"categorytree-not-found": "श्रेणी <i>$1</i> नहीं मिली",
 	"categorytree-error": "डाटा लोड करने में समस्या।",
-	"categorytree-retry": "कृपया थोड़े समय पश्चात पुनः यत्न करें।"
+	"categorytree-retry": "कृपया थोड़े समय पश्चात पुनः यत्न करें।",
+	"apihelp-categorytree-description": "श्रेणीवृक्ष एक्सटेन्सन के लिए अंतर का मॉड्यूल"
 }
