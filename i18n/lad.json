@@ -4,16 +4,17 @@
 			"Jewbask",
 			"Maor X",
 			"Runningfridgesrule",
-			"Universal Life"
+			"Universal Life",
+			"StevenJ81"
 		]
 	},
-	"categorytree": "Árvole de katēggorías",
+	"categorytree": "Árvole de katēgorías",
 	"categorytree-portlet": "Katēggorías",
 	"categorytree-legend": "Amostrar el árvole de katēggorías",
 	"categorytree-category": "Kategoría:",
 	"categorytree-go": "Amostrar el árvole",
 	"categorytree-parents": "Parientes",
-	"categorytree-mode-categories": "sólo katēggorías",
+	"categorytree-mode-categories": "sólo kategorías",
 	"categorytree-mode-pages": "ojas, egzepto dossias",
 	"categorytree-mode-all": "todas las hojas",
 	"categorytree-collapse": "eskonder",
@@ -27,6 +28,6 @@
 	"categorytree-loading": "cargando...",
 	"categorytree-nothing-found": "Eskuza, no ankontramos nada",
 	"categorytree-no-subcategories": "si basho-kateggorias",
-	"categorytree-no-parent-categories": "sin kateggorias de enriva",
+	"categorytree-no-parent-categories": "sin kategorias de enriva",
 	"categorytree-no-pages": "sin ojas ni basho-kateggorias"
 }
