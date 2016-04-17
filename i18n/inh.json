@@ -16,7 +16,7 @@
 	"categorytree-mode-categories": "Алха цатегаш",
 	"categorytree-mode-all": "eррига оагIувнаш",
 	"categorytree-expand": "хьадоаржаде",
-	"categorytree-member-counts": "Чу йоала $1 {{PLURAL:$1|1=лохера категори|лохера категореш}}, $2 {{PLURAL:$2|1=оагӀо|оагӀонаш}} а $3 {{PLURAL:$3|1=файл|файлаш}} а",
+	"categorytree-member-counts": "Чу йоала $1 {{PLURAL:$1|1=лохера категори|лохера категореш}}, $2 {{PLURAL:$2|1=оагӀув|оагӀонаш}} а $3 {{PLURAL:$3|1=файл|файлаш}} а",
 	"categorytree-num-categories": "$1 К",
 	"categorytree-num-pages": "$1 Оа",
 	"categorytree-num-files": "$1 Ф",
