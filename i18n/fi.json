@@ -6,7 +6,8 @@
 			"Linnea",
 			"Nedergard",
 			"Nike",
-			"Str4nd"
+			"Str4nd",
+			"01miki10"
 		]
 	},
 	"categorytree": "Luokkapuu",
@@ -36,5 +37,7 @@
 	"categorytree-no-pages": "ei sivuja eikä alaluokkia",
 	"categorytree-not-found": "Luokkaa <i>$1</i> ei löytynyt",
 	"categorytree-error": "Ongelma tietojen latauksessa.",
-	"categorytree-retry": "Odota hetki ja yritä uudelleen."
+	"categorytree-retry": "Odota hetki ja yritä uudelleen.",
+	"apihelp-categorytree-description": "Sisäinen moduuli CategoryTree-laajennukselle.",
+	"apihelp-categorytree-param-category": "Otsikko luokkanimiavaruudessa, etuliitettä ei huomioida, jos se on annettu."
 }

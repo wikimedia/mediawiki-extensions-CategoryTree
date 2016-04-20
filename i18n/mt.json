@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Chrisportelli",
-			"Roderick Mallia"
+			"Roderick Mallia",
+			"MTSap"
 		]
 	},
 	"categorytree": "Siġra tal-kategoriji",
@@ -18,7 +19,7 @@
 	"categorytree-mode-all": "il-paġni kollha",
 	"categorytree-collapse": "niżżel",
 	"categorytree-expand": "espandi",
-	"categorytree-member-counts": "għandha {{PLURAL:$1|sottokategorija waħda|$1 sottokategoriji}}, {{PLURAL:$2|paġna waħda|$2 paġna}}, u {{PLURAL:$3|1 fajl|$3 fajls}}",
+	"categorytree-member-counts": "Għandha {{PLURAL:$1|sottokategorija waħda|$1 sottokategoriji}}, {{PLURAL:$2|paġna waħda|$2 paġna}}, u {{PLURAL:$3|1 fajl|$3 fajls}}",
 	"categorytree-num-categories": "$1 K",
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 F",
