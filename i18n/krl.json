@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mashoi7"
+			"Mashoi7",
+			"Varvana"
 		]
 	},
 	"categorytree-expand": "avua",
+	"categorytree-member-counts": "Täh kuuluu {{PLURAL:$1|1 alaluokan|$1 alaluokkua}}, {{PLURAL:$2|1 šivun|$2 sivuo}}, ta {{PLURAL:$3|1 failin|$3 failie}}",
 	"categorytree-num-categories": "$1 K",
 	"categorytree-num-pages": "$1 S",
 	"categorytree-num-files": "$1 T"

@@ -31,5 +31,7 @@
 	"categorytree-no-pages": "kein Sigge un kein Ungerjruppe",
 	"categorytree-not-found": "Han di Saachjropp „<strong>$1</strong>“ nit jefonge.",
 	"categorytree-error": "Problem beim Date Lade",
-	"categorytree-retry": "Bess_esu joot un donn et noh enem Moment norr_ens probeere"
+	"categorytree-retry": "Bess_esu joot un donn et noh enem Moment norr_ens probeere",
+	"apihelp-categorytree-description": "Enträhne Moduhl för et Zohsazprojramm !!FUZZYY!!CategoryTree",
+	"apihelp-categorytree-param-category": "De Övverschreff, em Appachtemanng vun de Saachjroppe. Wann de Saachjropp aanjejovve es, övverjom_mer se."
 }
