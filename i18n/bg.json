@@ -5,7 +5,8 @@
 			"DCLXVI",
 			"Spiritia",
 			"Stanqo",
-			"Vodnokon4e"
+			"Vodnokon4e",
+			"V111P"
 		]
 	},
 	"categorytree": "Дърво на категориите",
@@ -26,7 +27,7 @@
 	"categorytree-num-categories": "$1 К",
 	"categorytree-num-pages": "$1 Стр",
 	"categorytree-num-files": "$1 Ф",
-	"categorytree-num-empty": "празно",
+	"categorytree-num-empty": "празна",
 	"categorytree-load": "зареждане",
 	"categorytree-loading": "зареждане",
 	"categorytree-nothing-found": "няма открити подкатегории",
