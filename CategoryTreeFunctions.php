@@ -487,16 +487,9 @@ class CategoryTree {
 		$s = '';
 
 		foreach ( $res as $row ) {
-			# TODO: translation support; ideally added to Title object
 			$t = Title::newFromRow( $row );
 
-			# $trans = $title->getLocalizedText();
-			$trans = ''; # place holder for when translated titles are available
-
 			$label = htmlspecialchars( $t->getText() );
-			if ( $trans && $trans != $label ) {
-				$label .= ' ' . Xml::element( 'i', array( 'class' => 'translation' ), $trans );
-			}
 
 			$wikiLink = $special->getLocalURL( 'target=' . $t->getPartialURL() .
 				'&' . $this->getOptionsAsUrlParameters() );
@@ -548,9 +541,6 @@ class CategoryTree {
 		$ns = $title->getNamespace();
 		$key = $title->getDBkey();
 
-		# $trans = $title->getLocalizedText();
-		$trans = ''; # place holder for when translated titles are available
-
 		$hideprefix = $this->getOption( 'hideprefix' );
 
 		if ( $hideprefix == CT_HIDEPREFIX_ALWAYS ) {
@@ -569,10 +559,6 @@ class CategoryTree {
 			$label = htmlspecialchars( $title->getText() );
 		} else {
 			$label = htmlspecialchars( $title->getPrefixedText() );
-		}
-
-		if ( $trans && $trans != $label ) {
-			$label .= ' ' . Xml::element( 'i', array( 'class' => 'translation' ), $trans );
 		}
 
 		$labelClass = 'CategoryTreeLabel ' . ' CategoryTreeLabelNs' . $ns;
