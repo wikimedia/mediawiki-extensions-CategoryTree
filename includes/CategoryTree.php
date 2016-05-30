@@ -21,7 +21,7 @@
  * @ingroup Extensions
  * @author Daniel Kinzler, brightbyte.de
  */
-
+use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
 
 /**
@@ -30,6 +30,10 @@ use MediaWiki\MediaWikiServices;
  */
 class CategoryTree {
 	public $mOptions = [];
+
+	/**
+	 * @var LinkRenderer
+	 */
 	private $linkRenderer;
 
 	/**
@@ -314,13 +318,6 @@ class CategoryTree {
 	}
 
 	/**
-	 * @return string
-	 */
-	private function getOptionsAsUrlParameters() {
-		return http_build_query( $this->mOptions );
-	}
-
-	/**
 	 * Custom tag implementation. This is called by CategoryTreeHooks::parserHook, which is used to
 	 * load CategoryTreeFunctions.php on demand.
 	 * @suppress PhanParamReqAfterOpt $parser is not optional but nullable
@@ -501,10 +498,7 @@ class CategoryTree {
 
 		$res = $dbr->select(
 			'categorylinks',
-			[
-				'page_namespace' => NS_CATEGORY,
-				'page_title' => 'cl_to',
-			],
+			[ 'cl_to' ],
 			[ 'cl_from' => $title->getArticleID() ],
 			__METHOD__,
 			[
@@ -518,19 +512,19 @@ class CategoryTree {
 		$s = '';
 
 		foreach ( $res as $row ) {
-			$t = Title::newFromRow( $row );
-
-			$label = $t->getText();
-
-			$wikiLink = $special->getLocalURL( 'target=' . $t->getPartialURL() .
-				'&' . $this->getOptionsAsUrlParameters() );
+			$t = Title::makeTitle( NS_CATEGORY, $row->cl_to );
 
 			if ( $s !== '' ) {
 				$s .= wfMessage( 'pipe-separator' )->escaped();
 			}
 
 			$s .= Xml::openElement( 'span', [ 'class' => 'CategoryTreeItem' ] );
-			$s .= Xml::element( 'a', [ 'class' => 'CategoryTreeLabel', 'href' => $wikiLink ], $label );
+			$s .= $this->linkRenderer->makeLink(
+				$special,
+				$t->getText(),
+				[ 'class' => 'CategoryTreeLabel' ],
+				[ 'target' => $t->getPartialURL() ] + $this->mOptions
+			);
 			$s .= Xml::closeElement( 'span' );
 		}
 
