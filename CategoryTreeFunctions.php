@@ -39,8 +39,8 @@ class CategoryTree {
 
 		$this->mOptions['mode'] = self::decodeMode( $this->mOptions['mode'] );
 
-		if ( $this->mOptions['mode'] == CT_MODE_PARENTS ) {
-			 $this->mOptions['namespaces'] = false; # namespace filter makes no sense with CT_MODE_PARENTS
+		if ( $this->mOptions['mode'] == CategoryTreeMode::PARENTS ) {
+			 $this->mOptions['namespaces'] = false; # namespace filter makes no sense with CategoryTreeMode::PARENTS
 		}
 
 		$this->mOptions['hideprefix'] = self::decodeHidePrefix( $this->mOptions['hideprefix'] );
@@ -51,11 +51,11 @@ class CategoryTree {
 			# automatically adjust mode to match namespace filter
 			if ( sizeof( $this->mOptions['namespaces'] ) === 1
 				&& $this->mOptions['namespaces'][0] == NS_CATEGORY ) {
-				$this->mOptions['mode'] = CT_MODE_CATEGORIES;
+				$this->mOptions['mode'] = CategoryTreeMode::CATEGORIES;
 			} elseif ( !in_array( NS_IMAGE, $this->mOptions['namespaces'] ) ) {
-				$this->mOptions['mode'] = CT_MODE_PAGES;
+				$this->mOptions['mode'] = CategoryTreeMode::PAGES;
 			} else {
-				$this->mOptions['mode'] = CT_MODE_ALL;
+				$this->mOptions['mode'] = CategoryTreeMode::ALL;
 			}
 		}
 	}
@@ -72,7 +72,7 @@ class CategoryTree {
 	 * @return bool
 	 */
 	function isInverse( ) {
-		return $this->getOption( 'mode' ) == CT_MODE_PARENTS;
+		return $this->getOption( 'mode' ) == CategoryTreeMode::PARENTS;
 	}
 
 	/**
@@ -142,13 +142,13 @@ class CategoryTree {
 		}
 
 		if ( $mode == 'all' ) {
-			$mode = CT_MODE_ALL;
+			$mode = CategoryTreeMode::ALL;
 		} elseif ( $mode == 'pages' ) {
-			$mode = CT_MODE_PAGES;
+			$mode = CategoryTreeMode::PAGES;
 		} elseif ( $mode == 'categories' || $mode == 'sub' ) {
-			$mode = CT_MODE_CATEGORIES;
+			$mode = CategoryTreeMode::CATEGORIES;
 		} elseif ( $mode == 'parents' || $mode == 'super' || $mode == 'inverse' ) {
-			$mode = CT_MODE_PARENTS;
+			$mode = CategoryTreeMode::PARENTS;
 		} elseif ( $mode == 'default' ) {
 			$mode = $wgCategoryTreeDefaultOptions['mode'];
 		}
@@ -203,26 +203,26 @@ class CategoryTree {
 			return $value;
 		}
 		if ( $value === true ) {
-			return CT_HIDEPREFIX_ALWAYS;
+			return CategoryTreeHidePrefix::ALWAYS;
 		}
 		if ( $value === false ) {
-			return CT_HIDEPREFIX_NEVER;
+			return CategoryTreeHidePrefix::NEVER;
 		}
 
 		$value = trim( strtolower( $value ) );
 
 		if ( $value == 'yes' || $value == 'y' || $value == 'true' || $value == 't' || $value == 'on' ) {
-			return CT_HIDEPREFIX_ALWAYS;
+			return CategoryTreeHidePrefix::ALWAYS;
 		} elseif ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) {
-			return CT_HIDEPREFIX_NEVER;
+			return CategoryTreeHidePrefix::NEVER;
 		} elseif ( $value == 'always' ) {
-			return CT_HIDEPREFIX_ALWAYS;
+			return CategoryTreeHidePrefix::ALWAYS;
 		} elseif ( $value == 'never' ) {
-			return CT_HIDEPREFIX_NEVER;
+			return CategoryTreeHidePrefix::NEVER;
 		} elseif ( $value == 'auto' ) {
-			return CT_HIDEPREFIX_AUTO;
+			return CategoryTreeHidePrefix::AUTO;
 		} elseif ( $value == 'categories' || $value == 'category' || $value == 'smart' ) {
-			return CT_HIDEPREFIX_CATEGORIES;
+			return CategoryTreeHidePrefix::CATEGORIES;
 		} else {
 			return $wgCategoryTreeDefaultOptions['hideprefix'];
 		}
@@ -405,8 +405,8 @@ class CategoryTree {
 			if ( $namespaces ) {
 				# NOTE: we assume that the $namespaces array contains only integers! decodeNamepsaces makes it so.
 				$where['page_namespace'] = $namespaces;
-			} elseif ( $mode != CT_MODE_ALL ) {
-				if ( $mode == CT_MODE_PAGES ) {
+			} elseif ( $mode != CategoryTreeMode::ALL ) {
+				if ( $mode == CategoryTreeMode::PAGES ) {
 					$where['cl_type'] = array( 'page', 'subcat' );
 				} else {
 					$where['cl_type'] = 'subcat';
@@ -553,11 +553,11 @@ class CategoryTree {
 
 		$hideprefix = $this->getOption( 'hideprefix' );
 
-		if ( $hideprefix == CT_HIDEPREFIX_ALWAYS ) {
+		if ( $hideprefix == CategoryTreeHidePrefix::ALWAYS ) {
 			$hideprefix = true;
-		} elseif ( $hideprefix == CT_HIDEPREFIX_AUTO ) {
-			$hideprefix = ( $mode == CT_MODE_CATEGORIES );
-		} elseif ( $hideprefix == CT_HIDEPREFIX_CATEGORIES ) {
+		} elseif ( $hideprefix == CategoryTreeHidePrefix::AUTO ) {
+			$hideprefix = ( $mode == CategoryTreeMode::CATEGORIES );
+		} elseif ( $hideprefix == CategoryTreeHidePrefix::CATEGORIES ) {
 			$hideprefix = ( $ns == NS_CATEGORY );
 		} else {
 			$hideprefix = true;
@@ -616,9 +616,9 @@ class CategoryTree {
 		if ( $ns == NS_CATEGORY ) {
 
 			if ( $cat ) {
-				if ( $mode == CT_MODE_CATEGORIES ) {
+				if ( $mode == CategoryTreeMode::CATEGORIES ) {
 					$count = $subcatCount;
-				} elseif ( $mode == CT_MODE_PAGES ) {
+				} elseif ( $mode == CategoryTreeMode::PAGES ) {
 					$count = $allCount - $fileCount;
 				} else {
 					$count = $allCount;
@@ -711,11 +711,11 @@ class CategoryTree {
 			$children = $this->renderChildren( $title, $children );
 			if ( $children == '' ) {
 				$s .= Xml::openElement( 'i', array( 'class' => 'CategoryTreeNotice' ) );
-				if ( $mode == CT_MODE_CATEGORIES ) {
+				if ( $mode == CategoryTreeMode::CATEGORIES ) {
 					$s .= wfMessage( 'categorytree-no-subcategories' )->text();
-				} elseif ( $mode == CT_MODE_PAGES ) {
+				} elseif ( $mode == CategoryTreeMode::PAGES ) {
 					$s .= wfMessage( 'categorytree-no-pages' )->text();
-				} elseif ( $mode == CT_MODE_PARENTS ) {
+				} elseif ( $mode == CategoryTreeMode::PARENTS ) {
 					$s .= wfMessage( 'categorytree-no-parent-categories' )->text();
 				} else {
 					$s .= wfMessage( 'categorytree-nothing-found' )->text();
