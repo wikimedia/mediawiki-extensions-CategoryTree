@@ -298,7 +298,7 @@ class CategoryTree {
 	}
 
 	/**
-	 * Custom tag implementation. This is called by efCategoryTreeParserHook, which is used to
+	 * Custom tag implementation. This is called by CategoryTreeHooks::parserHook, which is used to
 	 * load CategoryTreeFunctions.php on demand.
 	 * @param $parser Parser
 	 * @param $category
@@ -756,5 +756,32 @@ class CategoryTree {
 			$t = Title::newFromText( $title );
 		}
 		return $t;
+	}
+
+	/**
+	 * Internal function to cap depth
+	 * @param $mode
+	 * @param $depth
+	 * @return int|mixed
+	 */
+	static function capDepth( $mode, $depth ) {
+		global $wgCategoryTreeMaxDepth;
+
+		if ( is_numeric( $depth ) ) {
+			$depth = intval( $depth );
+		} else {
+			return 1;
+		}
+
+		if ( is_array( $wgCategoryTreeMaxDepth ) ) {
+			$max = isset( $wgCategoryTreeMaxDepth[$mode] ) ? $wgCategoryTreeMaxDepth[$mode] : 1;
+		} elseif ( is_numeric( $wgCategoryTreeMaxDepth ) ) {
+			$max = $wgCategoryTreeMaxDepth;
+		} else {
+			wfDebug( 'CategoryTree::capDepth: $wgCategoryTreeMaxDepth is invalid.' );
+			$max = 1;
+		}
+
+		return min( $depth, $max );
 	}
 }
