@@ -29,12 +29,12 @@ namespace MediaWiki\Extension\CategoryTree;
  */
 class CategoryTreeMode {
 
-	public const CATEGORIES = 0;
+	public const CATEGORIES = 'categories';
 
-	public const PAGES = 10;
+	public const PAGES = 'pages';
 
-	public const ALL = 20;
+	public const ALL = 'all';
 
-	public const PARENTS = 100;
+	public const PARENTS = 'parents';
 
 }

@@ -33,6 +33,29 @@ use MediaWiki\MediaWikiServices;
  * Core functions to handle the options
  */
 class OptionManager {
+	/**
+	 * Maps the numeric mode values used before MediaWiki 1.47 to the current
+	 * string constants. They may still occur in site configuration and in the
+	 * options attribute of parser cached HTML.
+	 */
+	private const LEGACY_MODE_VALUES = [
+		0 => CategoryTreeMode::CATEGORIES,
+		10 => CategoryTreeMode::PAGES,
+		20 => CategoryTreeMode::ALL,
+		100 => CategoryTreeMode::PARENTS,
+	];
+
+	/**
+	 * Maps the numeric hideprefix values used before MediaWiki 1.47 to the
+	 * current string constants.
+	 */
+	private const LEGACY_HIDE_PREFIX_VALUES = [
+		0 => CategoryTreeHidePrefix::NEVER,
+		10 => CategoryTreeHidePrefix::ALWAYS,
+		20 => CategoryTreeHidePrefix::CATEGORIES,
+		30 => CategoryTreeHidePrefix::AUTO,
+	];
+
 	private array $mOptions = [];
 
 	public function __construct(
@@ -132,37 +155,37 @@ class OptionManager {
 
 	/**
 	 * @param mixed $mode
-	 * @return int|string
+	 * @return string One of the CategoryTreeMode constants
 	 */
-	private function decodeMode( $mode ) {
+	private function decodeMode( $mode ): string {
 		$defaultOptions = $this->config->get( 'CategoryTreeDefaultOptions' );
 
-		if ( $mode === null ) {
-			return $defaultOptions['mode'];
-		}
-		if ( is_int( $mode ) ) {
-			return $mode;
+		if ( is_string( $mode ) ) {
+			$mode = trim( strtolower( $mode ) );
 		}
 
-		$mode = trim( strtolower( $mode ) );
+		if ( $mode === null || $mode === 'default' ) {
+			$mode = $defaultOptions['mode'];
+			if ( is_string( $mode ) ) {
+				$mode = trim( strtolower( $mode ) );
+			}
+		}
 
 		if ( is_numeric( $mode ) ) {
-			return (int)$mode;
+			return self::LEGACY_MODE_VALUES[(int)$mode] ?? CategoryTreeMode::CATEGORIES;
 		}
 
-		if ( $mode === 'all' ) {
-			$mode = CategoryTreeMode::ALL;
-		} elseif ( $mode === 'pages' ) {
-			$mode = CategoryTreeMode::PAGES;
+		if ( $mode === CategoryTreeMode::ALL || $mode === CategoryTreeMode::PAGES ) {
+			// already normalized
 		} elseif ( $mode === 'categories' || $mode === 'sub' ) {
 			$mode = CategoryTreeMode::CATEGORIES;
 		} elseif ( $mode === 'parents' || $mode === 'super' || $mode === 'inverse' ) {
 			$mode = CategoryTreeMode::PARENTS;
-		} elseif ( $mode === 'default' ) {
-			$mode = $defaultOptions['mode'];
+		} else {
+			$mode = CategoryTreeMode::CATEGORIES;
 		}
 
-		return (int)$mode;
+		return $mode;
 	}
 
 	/**
@@ -193,21 +216,24 @@ class OptionManager {
 
 	/**
 	 * @param mixed $value
-	 * @return int|string
+	 * @return string One of the CategoryTreeHidePrefix constants
 	 */
-	private function decodeHidePrefix( $value ) {
+	private function decodeHidePrefix( $value ): string {
 		$defaultOptions = $this->config->get( 'CategoryTreeDefaultOptions' );
 
 		if ( $value === null ) {
-			return $defaultOptions['hideprefix'];
-		}
-		if ( is_int( $value ) ) {
-			return $value;
+			$value = $defaultOptions['hideprefix'];
 		}
 		if ( $value === true ) {
 			return CategoryTreeHidePrefix::ALWAYS;
 		}
 		if ( $value === false ) {
+			return CategoryTreeHidePrefix::NEVER;
+		}
+		if ( is_numeric( $value ) ) {
+			return self::LEGACY_HIDE_PREFIX_VALUES[(int)$value] ?? CategoryTreeHidePrefix::NEVER;
+		}
+		if ( !is_string( $value ) ) {
 			return CategoryTreeHidePrefix::NEVER;
 		}
 
@@ -230,7 +256,12 @@ class OptionManager {
 		} elseif ( $value === 'categories' || $value === 'category' || $value === 'smart' ) {
 			return CategoryTreeHidePrefix::CATEGORIES;
 		} else {
-			return $defaultOptions['hideprefix'];
+			$default = $defaultOptions['hideprefix'];
+			if ( is_string( $default ) && trim( strtolower( $default ) ) === $value ) {
+				// The configured default itself is invalid
+				return CategoryTreeHidePrefix::NEVER;
+			}
+			return $this->decodeHidePrefix( $default );
 		}
 	}
 
@@ -289,6 +320,11 @@ class OptionManager {
 
 		if ( is_array( $maxDepth ) ) {
 			$max = $maxDepth[$mode] ?? 1;
+			$legacyMode = array_search( $mode, self::LEGACY_MODE_VALUES, true );
+			if ( $legacyMode !== false && isset( $maxDepth[$legacyMode] ) ) {
+				// Site config may still use the legacy numeric mode values as keys.
+				$max = $maxDepth[$legacyMode];
+			}
 		} elseif ( is_numeric( $maxDepth ) ) {
 			$max = $maxDepth;
 		} else {

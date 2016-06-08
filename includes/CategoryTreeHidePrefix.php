@@ -30,12 +30,12 @@ namespace MediaWiki\Extension\CategoryTree;
  */
 class CategoryTreeHidePrefix {
 
-	public const NEVER = 0;
+	public const NEVER = 'never';
 
-	public const ALWAYS = 10;
+	public const ALWAYS = 'always';
 
-	public const CATEGORIES = 20;
+	public const CATEGORIES = 'categories';
 
-	public const AUTO = 30;
+	public const AUTO = 'auto';
 
 }

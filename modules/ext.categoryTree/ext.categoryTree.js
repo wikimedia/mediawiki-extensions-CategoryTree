@@ -173,6 +173,11 @@ function loadChildren( $link, $children ) {
 			$data = $( '<i>' ).addClass( 'CategoryTreeNotice' )
 
 				.text( mw.msg( {
+					categories: 'categorytree-no-subcategories',
+					pages: 'categorytree-no-pages',
+					parents: 'categorytree-no-parent-categories',
+					// Numeric values used before MediaWiki 1.47, which may
+					// still occur in parser cached HTML
 					0: 'categorytree-no-subcategories',
 					10: 'categorytree-no-pages',
 					100: 'categorytree-no-parent-categories'

@@ -116,9 +116,9 @@
 		},
 		"CategoryTreeMaxDepth": {
 			"value": {
-				"10": 1,
-				"20": 1,
-				"0": 2
+				"pages": 1,
+				"all": 1,
+				"categories": 2
 			},
 			"merge_strategy": "array_plus"
 		},
@@ -132,10 +132,10 @@
 			"value": true
 		},
 		"CategoryTreeOmitNamespace": {
-			"value": 20
+			"value": "categories"
 		},
 		"CategoryTreeDefaultMode": {
-			"value": 0
+			"value": "categories"
 		},
 		"CategoryTreeDefaultOptions": {
 			"value": {
@@ -147,7 +147,7 @@
 			}
 		},
 		"CategoryTreeCategoryPageMode": {
-			"value": 0
+			"value": "categories"
 		},
 		"CategoryTreeCategoryPageOptions": {
 			"value": {
@@ -162,8 +162,8 @@
 		},
 		"CategoryTreeSidebarOptions": {
 			"value": {
-				"mode": 0,
-				"hideprefix": 20,
+				"mode": "categories",
+				"hideprefix": "categories",
 				"showcount": false,
 				"hideroot": true,
 				"namespaces": false,
@@ -172,8 +172,8 @@
 		},
 		"CategoryTreePageCategoryOptions": {
 			"value": {
-				"mode": 100,
-				"hideprefix": 20,
+				"mode": "parents",
+				"hideprefix": "categories",
 				"showcount": false,
 				"hideroot": false,
 				"namespaces": false,
