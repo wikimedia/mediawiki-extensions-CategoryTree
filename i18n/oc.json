@@ -17,7 +17,7 @@
 	"categorytree-mode-pages": "paginas sens los imatges",
 	"categorytree-mode-all": "totas las paginas",
 	"categorytree-collapse": "Rebatre",
-	"categorytree-expand": "Desplegar",
+	"categorytree-expand": "desvolopar",
 	"categorytree-member-counts": "conten {{PLURAL:$1|1 soscategoria|$1 soscategorias}}, {{PLURAL:$2|1 pagina|$2 paginas}}, e {{PLURAL:$3|1 fichièr|$3 fichièrs}}",
 	"categorytree-num-categories": "$1 C",
 	"categorytree-num-pages": "$1 P",
