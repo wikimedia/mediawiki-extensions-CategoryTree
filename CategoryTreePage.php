@@ -118,29 +118,51 @@ class CategoryTreePage extends SpecialPage {
 	 * Input form for entering a category
 	 */
 	function executeInputForm() {
-		global $wgScript;
-		$thisTitle = SpecialPage::getTitleFor( $this->getName() );
 		$namespaces = $this->getRequest()->getVal( 'namespaces', '' );
-		//mode may be overriden by namespaces option
 		$mode = ( $namespaces == '' ? $this->getOption( 'mode' ) : CategoryTreeMode::ALL );
-		$modeSelector = Xml::openElement( 'select', array( 'name' => 'mode' ) );
-		$modeSelector .= Xml::option( wfMessage( 'categorytree-mode-categories' )->plain(), 'categories', $mode == CategoryTreeMode::CATEGORIES );
-		$modeSelector .= Xml::option( wfMessage( 'categorytree-mode-pages' )->plain(), 'pages', $mode == CategoryTreeMode::PAGES );
-		$modeSelector .= Xml::option( wfMessage( 'categorytree-mode-all' )->plain(), 'all', $mode == CategoryTreeMode::ALL );
-		$modeSelector .= Xml::closeElement( 'select' );
-		$table = Xml::buildForm( array(
-			'categorytree-category' => Xml::input( 'target', 20, $this->target, array( 'id' => 'target' ) ) ,
-			'categorytree-mode-label' => $modeSelector,
-			'namespace' => Html::namespaceSelector(
-				array( 'selected' => $namespaces, 'all' => '' ),
-				array( 'name' => 'namespaces', 'id' => 'namespaces' )
-			)
-		), 'categorytree-go' );
-		$preTable = Xml::element( 'legend', null, wfMessage( 'categorytree-legend' )->plain() );
-		$preTable .= Html::Hidden( 'title', $thisTitle->getPrefixedDbKey() );
-		$fieldset = Xml::tags( 'fieldset', array(), $preTable . $table );
-		$output = $this->getOutput();
-		$output->addHTML( Xml::tags( 'form', array( 'name' => 'categorytree', 'method' => 'get', 'action' => $wgScript, 'id' => 'mw-categorytree-form' ), $fieldset ) );
+		if ( $mode == CategoryTreeMode::CATEGORIES ) {
+			$modeDefault = 'categories';
+		} elseif( $mode == CategoryTreeMode::PAGES ) {
+			$modeDefault = 'pages';
+		} else {
+			$modeDefault = 'all';
+		}
+
+		$formDescriptor = [
+			'category' => [
+				'type' => 'title',
+				'name' => 'target',
+				'label-message' => 'categorytree-category',
+				'namespace' => NS_CATEGORY,
+			],
+
+			'mode' => [
+				'type' => 'select',
+				'name' => 'mode',
+				'label-message' => 'categorytree-mode-label',
+				'options-messages' => [
+					'categorytree-mode-categories' => 'categories',
+					'categorytree-mode-pages' => 'pages',
+					'categorytree-mode-all' => 'all',
+				],
+				'default' => $modeDefault
+			],
+
+			'namespace' => [
+				'type' => 'namespaceselect',
+				'name' => 'namespaces',
+				'label-message' => 'namespace',
+				'all' => '',
+			],
+		];
+
+		$form = HTMLForm::factory( 'ooui', $formDescriptor, $this->getContext() )
+			->addHiddenFields( [ 'title' => $this->getPageTitle()->getPrefixedDbKey() ] )
+			->setWrapperLegendMsg( 'categorytree-legend' )
+			->setSubmitTextMsg( 'categorytree-go' )
+			->setMethod( 'get' )
+			->prepareForm()
+			->displayForm( false );
 	}
 
 	/**
