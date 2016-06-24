@@ -119,6 +119,7 @@ class CategoryTreePage extends SpecialPage {
 	 */
 	function executeInputForm() {
 		$namespaces = $this->getRequest()->getVal( 'namespaces', '' );
+		//mode may be overriden by namespaces option
 		$mode = ( $namespaces == '' ? $this->getOption( 'mode' ) : CategoryTreeMode::ALL );
 		if ( $mode == CategoryTreeMode::CATEGORIES ) {
 			$modeDefault = 'categories';
@@ -145,7 +146,8 @@ class CategoryTreePage extends SpecialPage {
 					'categorytree-mode-pages' => 'pages',
 					'categorytree-mode-all' => 'all',
 				],
-				'default' => $modeDefault
+				'default' => $modeDefault,
+				'nodata' => true,
 			],
 
 			'namespace' => [
