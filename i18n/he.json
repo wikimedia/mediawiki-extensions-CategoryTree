@@ -10,7 +10,7 @@
 	"categorytree-portlet": "קטגוריות",
 	"categorytree-legend": "הצגת עץ קטגוריות",
 	"categorytree-desc": "ניווט דינמי ב[[Special:CategoryTree|מבנה הקטגוריות]]",
-	"categorytree-header": "נא להקליד שם קטגוריה כדי לראות את תוכנה במבנה עץ.\nנא לשים לב לכך שזה דורש יכולת JavaScript מתקדמת, הידועה בשם AJAX.\nאם יש לכם דפדפן ישן מאוד, או שהתמיכה ב־JavaScript כבויה אצלך בדפדפן, זה לא יעבוד.",
+	"categorytree-header": "{{GENDER:|הקלד|הקלידי|הקלידו}} את שם הקטגוריה כדי לראות את התוכן שלה במבנה עץ.\n{{GENDER:|שים|שימי|שימו}} לב שתכונה זו דורשת פונקציית JavaScript מתקדמת, הידועה בשם AJAX.\nאם {{GENDER:|אתה משתמש|את משתמשת|אתם משתמשים}} בדפדפן ישן מאוד, או ש־JavaScript אינו מופעל בדפדפן {{GENDER:|שלך|שלך|שלכם}}, זה לא יעבוד.",
 	"categorytree-category": "קטגוריה:",
 	"categorytree-go": "הצגת העץ",
 	"categorytree-parents": "הורים",
