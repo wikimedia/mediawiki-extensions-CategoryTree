@@ -8,7 +8,7 @@
 	"categorytree-portlet": "Categories",
 	"categorytree-legend": "Show category tree",
 	"categorytree-desc": "Dynamically navigate the [[Special:CategoryTree|category structure]]",
-	"categorytree-header": "Enter a category name to see its contents as a tree structure.\nNote that this requires advanced JavaScript functionality known as AJAX.\nIf you have a very old browser, or have JavaScript disabled, it will not work.",
+	"categorytree-header": "Enter a category name to see its contents as a tree structure. (Requires JavaScript.)",
 	"categorytree-category": "Category:",
 	"categorytree-go": "Show tree",
 	"categorytree-parents": "Parents",
