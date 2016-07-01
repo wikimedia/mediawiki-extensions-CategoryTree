@@ -6,7 +6,7 @@
 		]
 	},
 	"categorytree-expand": "avua",
-	"categorytree-member-counts": "Täh kuuluu {{PLURAL:$1|1 alaluokan|$1 alaluokkua}}, {{PLURAL:$2|1 šivun|$2 šivuo}}, ta {{PLURAL:$3|1 failin|$3 failie}}",
+	"categorytree-member-counts": "Täh kuuluu {{PLURAL:$1|1 alaluokka|$1 alaluokkua}}, {{PLURAL:$2|1 šivu|$2 šivuo}}, ta {{PLURAL:$3|1 faili|$3 failie}}",
 	"categorytree-num-categories": "$1 K",
 	"categorytree-num-pages": "$1 S",
 	"categorytree-num-files": "$1 T"
