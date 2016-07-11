@@ -6,5 +6,6 @@
 		]
 	},
 	"categorytree-collapse": "ватоно",
-	"categorytree-num-categories": "$1 К"
+	"categorytree-num-categories": "$1 К",
+	"categorytree-num-files": "$1 Ф"
 }
