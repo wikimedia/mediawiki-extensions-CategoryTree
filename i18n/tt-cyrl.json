@@ -37,5 +37,5 @@
 	"categorytree-retry": "Зинһар бераз көтеп торыгыз һәм тагын бер кат йөкләүне башкарып карагыз.",
 	"apihelp-categorytree-description": "CategoryTree кушымтасы өчен эчке модуль.",
 	"apihelp-categorytree-param-category": "Төркемнәр мәйданы исемлеге, куелган очракта префикс кулланылмый.",
-	"apihelp-categorytree-param-options": "JSON-җисемнәр сыман CategoryTree тәзүчесе төрләре. Тирәнлек параметры 1 итеп куелган."
+	"apihelp-categorytree-param-options": "JSON-җисемнәр сыман CategoryTree тәзүчесе төрләре. Тирәнлек параметры <kbd>1</kbd> итеп куелган."
 }
