@@ -10,7 +10,8 @@
 			"Peter17",
 			"Sherbrooke",
 			"Urhixidur",
-			"Verdy p"
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"categorytree": "Arborescence des catégories",
@@ -43,5 +44,5 @@
 	"categorytree-retry": "Veuillez attendre un instant puis réessayer.",
 	"apihelp-categorytree-description": "Module interne pour l’extension CategoryTree.",
 	"apihelp-categorytree-param-category": "Titre dans l’espace de noms Catégorie, le préfixe sera ignoré s’il est fourni.",
-	"apihelp-categorytree-param-options": "Options pour le constructeur CategoryTree comme objet JSON. L’option profondeur par défaut vaut <kbd>1</kbd>."
+	"apihelp-categorytree-param-options": "Options pour le constructeur CategoryTree comme objet JSON. L’option <var>profondeur</var> par défaut vaut <kbd>1</kbd>."
 }

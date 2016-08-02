@@ -38,5 +38,5 @@
 	"categorytree-retry": "Калі ласка, пачакайце і паспрабуйце яшчэ раз.",
 	"apihelp-categorytree-description": "Унутраны модуль для пашырэньня CategoryTree.",
 	"apihelp-categorytree-param-category": "Назва ў прасторы назваў катэгорыяў, прэфікс будзе ігнаравацца ў выпадку, калі будзе пададзены.",
-	"apihelp-categorytree-param-options": "Налады для канструктару CategoryTree як JSON-аб’екту. Парамэтар глыбіні па змоўчаньні роўны <kbd>1</kbd>."
+	"apihelp-categorytree-param-options": "Налады для канструктару CategoryTree як JSON-аб’екту. Парамэтар <var>depth</var> па змоўчаньні роўны <kbd>1</kbd>."
 }
