@@ -43,5 +43,5 @@
 	"categorytree-retry": "Attendere un momento e riprovare.",
 	"apihelp-categorytree-description": "Modulo interno per l'estensione CategoryTree.",
 	"apihelp-categorytree-param-category": "Titolo nel namespace categoria, il prefisso verrà ignorato se dato.",
-	"apihelp-categorytree-param-options": "Opzioni per il costruttore CategoryTree come oggetto JSON. Opzione profondità predefinita è <kbd>1</kbd>."
+	"apihelp-categorytree-param-options": "Opzioni per il costruttore CategoryTree come oggetto JSON. L'opzione <var>depth</var> predefinita è <kbd>1</kbd>."
 }
