@@ -5,7 +5,8 @@
 			"Haqmar",
 			"Sagan",
 			"ҒатаУлла",
-			"Янмурза Баки"
+			"Янмурза Баки",
+			"Ләйсән"
 		]
 	},
 	"categorytree": "Категориялар картаһы",
@@ -38,5 +39,5 @@
 	"categorytree-retry": "Зинһар, бер аҙ көткәндән һуң яңынан ҡабатлап ҡарағыҙ.",
 	"apihelp-categorytree-description": "CategoryTree ҡушымтаһы өсөн эске модуль.",
 	"apihelp-categorytree-param-category": "Исемдәр категориялары аралығындағы атама, ҡулланылған осраҡта префикс күрһәтелмәй.",
-	"apihelp-categorytree-param-options": "JSON-объектар һымаҡ CategoryTree төҙөүсе төрҙәре. Тәрәнлек параметры <kbd>1</kbd> итеп куйыған."
+	"apihelp-categorytree-param-options": "JSON объектары кеүек CategoryTree төҙөүсе төрҙәре. Тәрәнлек параметры <kbd>1</kbd> итеп куйылған."
 }
