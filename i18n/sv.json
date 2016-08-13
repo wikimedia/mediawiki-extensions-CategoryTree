@@ -8,7 +8,8 @@
 			"Lokal Profil",
 			"M.M.S.",
 			"Sannab",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Jopparn"
 		]
 	},
 	"categorytree": "Kategoriträd",
@@ -39,5 +40,7 @@
 	"categorytree-not-found": "Kategori ''$1'' hittades ej",
 	"categorytree-error": "Problem med att ladda data.",
 	"categorytree-retry": "Vänta en stund och försök igen.",
-	"apihelp-categorytree-description": "Intern modul för tillägget CategoryTree."
+	"apihelp-categorytree-description": "Intern modul för tillägget CategoryTree.",
+	"apihelp-categorytree-param-category": "Titel i kategorinamnrymden, prefix kommer att ignoreras om de anges.",
+	"apihelp-categorytree-param-options": "Alternativ för CategoryTree-konstruktören som ett JSON-objekt. Den <var>fördjupade</var> alternativa standardvärdet är <kbd>1</kbd>."
 }
