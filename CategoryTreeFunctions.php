@@ -16,17 +16,13 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 class CategoryTree {
-	public $mIsAjaxRequest = false;
 	public $mOptions = array();
 
 	/**
 	 * @param $options array
-	 * @param $ajax bool
 	 */
-	function __construct( $options, $ajax = false ) {
+	function __construct( $options ) {
 		global $wgCategoryTreeDefaultOptions;
-
-		$this->mIsAjaxRequest = $ajax;
 
 		# ensure default values and order of options. Order may become important, it may influence the cache key!
 		foreach ( $wgCategoryTreeDefaultOptions as $option => $default ) {
