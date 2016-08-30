@@ -14,7 +14,7 @@ class ApiCategoryTree extends ApiBase {
 		}
 		$depth = isset( $options['depth'] ) ? (int)$options['depth'] : 1;
 
-		$ct = new CategoryTree( $options, true );
+		$ct = new CategoryTree( $options );
 		$depth = CategoryTree::capDepth( $ct->getOption( 'mode' ), $depth );
 		$title = CategoryTree::makeTitle( $params['category'] );
 		$config = $this->getConfig();
