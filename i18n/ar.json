@@ -7,7 +7,8 @@
 			"OsamaK",
 			"زكريا",
 			"Abanima",
-			"Maroen1990"
+			"Maroen1990",
+			"Moud hosny"
 		]
 	},
 	"categorytree": "شجرة تصنيفات",
@@ -40,5 +41,6 @@
 	"categorytree-not-found": "التصنيف «$1» لم يتم العثور عليه",
 	"categorytree-error": "مشكلة في تحميل البيانات.",
 	"categorytree-retry": "من فضلك انتظر لحظة وحاول مرة أخرى.",
-	"apihelp-categorytree-description": "الوحدة لداخلية للتصنيفات الصحيحة."
+	"apihelp-categorytree-description": "الوحدة لداخلية للتصنيفات الصحيحة.",
+	"apihelp-categorytree-param-category": "العنوان في مساحة اسم الفئة. يتم تجاهل البادئة إذا كان محدد."
 }
