@@ -17,7 +17,7 @@
 	"categorytree-portlet": "Categorie",
 	"categorytree-legend": "Mostra l'albero delle categorie",
 	"categorytree-desc": "Visualizza in modo dinamico la [[Special:CategoryTree|struttura delle categorie]]",
-	"categorytree-header": "Inserire il nome di una categoria per vederne i contenuti sotto forma di struttura ad albero. Nota: questa pagina richiede una funzionalità JavaScript avanzata nota come AJAX; qualora si stia utilizzando un browser molto vecchio o le funzioni JavaScript siano disabilitate, non funzionerà.",
+	"categorytree-header": "Inserisci il nome di una categoria per vederne i contenuti in una struttura ad albero. (richiede JavaScript)",
 	"categorytree-category": "Categoria:",
 	"categorytree-go": "Mostra albero",
 	"categorytree-parents": "Categorie superiori",

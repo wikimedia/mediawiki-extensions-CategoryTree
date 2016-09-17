@@ -4,14 +4,15 @@
 			"Airwolf",
 			"Derbeth",
 			"Matma Rex",
-			"Sp5uhe"
+			"Sp5uhe",
+			"Chrumps"
 		]
 	},
 	"categorytree": "Drzewo kategorii",
 	"categorytree-portlet": "Kategorie",
 	"categorytree-legend": "Pokaż drzewo kategorii",
 	"categorytree-desc": "Gadżet oparty na technologii AJAX, wyświetlający [[Special:CategoryTree|drzewo kategorii]]",
-	"categorytree-header": "Wpisz nazwę kategorii, by zobaczyć jej zawartość w postaci drzewa.\nTa funkcja używa zaawansowanego JavaScriptu, korzystającego z technologii AJAX.\nJeśli masz bardzo starą przeglądarkę lub wyłączony JavaScript, ta funkcja nie zadziała.",
+	"categorytree-header": "Wpisz nazwę kategorii, by zobaczyć jej zawartość w postaci drzewa (wymagany JavaScript).",
 	"categorytree-category": "Kategoria",
 	"categorytree-go": "Ładuj kategorię",
 	"categorytree-parents": "Kategorie główne",

@@ -12,7 +12,7 @@
 	"categorytree-portlet": "Kategorijas",
 	"categorytree-legend": "Rādīt kategoriju koku",
 	"categorytree-desc": "AJAX bāzēts ''gadget'', kuru lieto lai attēlotu wiki [[Special:CategoryTree|kategoriju struktūru]]",
-	"categorytree-header": "Ievadi kategorijas nosaukumu, lai apskatītos tās saturu kā koka veida struktūru.\nTam ir nepieciešama JavaScript (AJAX) funkcionalitāte.\nJa tev ir veca interneta pārlūkprogramma vai arī JavaScript ir atslēgts, šī iespēja nedarbosies.",
+	"categorytree-header": "Ievadi kategorijas nosaukumu, lai apskatītu tās saturu kā kokveida struktūru (nepieciešams JavaScript).",
 	"categorytree-category": "Kategorija:",
 	"categorytree-go": "Parādīt koku",
 	"categorytree-parents": "Augšējā līmeņa kategorijas",

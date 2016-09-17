@@ -11,7 +11,7 @@
 	"categorytree-portlet": "Categorías",
 	"categorytree-legend": "Mostrar a árbore de categorías",
 	"categorytree-desc": "Trebello baseado no AJAX para mostrar a [[Special:CategoryTree|estrutura das categorías]] dun wiki",
-	"categorytree-header": "Introduza o nome dunha categoría para ver o seu contido nunha estrutura da árbore.\nTeña en conta que é necesaria a funcionalidade avanzada do JavaScript coñecida como AJAX.\nSe o navegador é moi vello ou ten o JavaScript desactivado isto non vai funcionar.",
+	"categorytree-header": "Introduza o nome dunha categoría para ver o seu contido nunha estrutura da árbore. (Require JavaScript.)",
 	"categorytree-category": "Categoría:",
 	"categorytree-go": "Mostrar a árbore",
 	"categorytree-parents": "Categoría raíz",

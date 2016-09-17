@@ -12,7 +12,7 @@
 	"categorytree-portlet": "Катэгорыі",
 	"categorytree-legend": "Паказаць дрэва катэгорыяў",
 	"categorytree-desc": "Заснаваная на AJAX прылада для паказу [[Special:CategoryTree|структуры катэгорыяў]] {{GRAMMAR:родны|{{SITENAME}}}}",
-	"categorytree-header": "Увядзіце назву катэгорыі, каб пабачыць яе ў выглядзе дрэва.\nЗаўважце, што гэта патрабуе функцыянальнасьці JavaScript, вядомай як AJAX.\nКалі ў Вас вельмі стары браўзэр, ці адключаны JavaScript, гэтая функцыя працаваць ня будзе.",
+	"categorytree-header": "Увядзіце назву катэгорыі, каб пабачыць яе ў выглядзе дрэва (патрабуе JavaScript).",
 	"categorytree-category": "Катэгорыя:",
 	"categorytree-go": "Паказаць дрэва",
 	"categorytree-parents": "Продкі",

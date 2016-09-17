@@ -16,7 +16,7 @@
 	"categorytree-portlet": "分类",
 	"categorytree-legend": "显示分类树",
 	"categorytree-desc": "动态导航[[Special:CategoryTree|分类结构]]",
-	"categorytree-header": "请输入一个分类名称以使用树形结构查看其内容。请注意，这需要高级JavaScript功能AJAX。如果你的浏览器过旧或停用了JavaScript，它将无法工作。",
+	"categorytree-header": "请输入一个分类名称以使用树形结构查看其内容。（需要JavaScript。）",
 	"categorytree-category": "分类：",
 	"categorytree-go": "显示分类树",
 	"categorytree-parents": "父分类",

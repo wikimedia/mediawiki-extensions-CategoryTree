@@ -15,7 +15,7 @@
 	"categorytree-portlet": "تصنيفات",
 	"categorytree-legend": "عرض شجرة التصنيفات",
 	"categorytree-desc": "إضافة معتمدة على الأجاكس لعرض [[Special:CategoryTree|هيكل التصنيف]] لويكي",
-	"categorytree-header": "أدخل اسم تصنيف لترى محتوياته كتركيب شجري.\nلاحظ أن هذا يتطلب خاصية جافاسكريبت متقدمة معروفة كأجاكس.\nلو كنت تمتلك متصفحا قديما جدا، أو لديك الجافاسكريبت معطلة، فلن تعمل.",
+	"categorytree-header": "أدخل اسم تصنيف لترى محتوياته كتركيب شجري. (يتطلب جافا سكريبت.)",
 	"categorytree-category": "تصنيف:",
 	"categorytree-go": "عرض الشجرة",
 	"categorytree-parents": "مصنف تحت",
