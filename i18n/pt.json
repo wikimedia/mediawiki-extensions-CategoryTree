@@ -7,14 +7,15 @@
 			"João Sousa",
 			"Luckas",
 			"555",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Mansil"
 		]
 	},
 	"categorytree": "Árvore de categorias",
 	"categorytree-portlet": "Categorias",
 	"categorytree-legend": "Mostrar árvore de categorias",
 	"categorytree-desc": "Acessório ''(gadget)'' baseado em AJAX que apresenta a [[Special:CategoryTree|estrutura]] de uma wiki",
-	"categorytree-header": "Introduza o nome de uma categoria para ver o seu conteúdo numa estrutura de árvore. (Requer JavaScript).",
+	"categorytree-header": "Insira o nome de uma categoria para ver os seus conteúdos numa estrutura de árvore. (Requer JavaScript).",
 	"categorytree-category": "Categoria:",
 	"categorytree-go": "Mostrar árvore",
 	"categorytree-parents": "Categorias superiores",

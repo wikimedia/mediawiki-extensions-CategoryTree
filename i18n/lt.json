@@ -12,7 +12,7 @@
 	"categorytree-portlet": "Kategorijos",
 	"categorytree-legend": "Rodyti kategorijų medį",
 	"categorytree-desc": "Dinamiškai naršykite [[Special:CategoryTree|kategorijų struktūroje]]",
-	"categorytree-header": "Įveskite kategorijos pavadinimą, kad pamatytumėte jos turinį kaip medžio struktūrą.\nPrimename, kad tam reikia išplėstinis JavaScript fukcionalumas, kitaip žinomas kaip AJAX.\nJei turi labai seną naršyklę, arba esate išjungę JavaScript, tai neveiks.",
+	"categorytree-header": "Įveskite kategorijos pavadinimą, kad pamatytumėte jos turinį kaip medžio struktūrą. (Reikia JavaScript.)",
 	"categorytree-category": "Kategorija:",
 	"categorytree-go": "Rodyti medį",
 	"categorytree-parents": "Aukštesnio lygio kategorija",

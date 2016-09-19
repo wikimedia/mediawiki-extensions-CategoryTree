@@ -4,14 +4,15 @@
 			"Danny B.",
 			"Li-sung",
 			"Mormegil",
-			"LordMsz"
+			"LordMsz",
+			"Matěj Suchánek"
 		]
 	},
 	"categorytree": "Strom kategorií",
 	"categorytree-portlet": "Kategorie",
 	"categorytree-legend": "Zobrazí strom kategorie",
 	"categorytree-desc": "Ajaxový nástroj zobrazující [[Special:CategoryTree|stromovou strukturu kategorií]] na této wiki",
-	"categorytree-header": "Zadejte název kategorie k&nbsp;zobrazení jejího obsahu jako stromové struktury.\n\n(Tato funkce vyžaduje pokročilé funkce JavaScriptu známé jako Ajax. Jestliže máte velmi starý prohlížeč nebo vypnutý JavaScript, nezobrazí se strom správně nebo vůbec.)",
+	"categorytree-header": "Zadejte název kategorie pro zobrazení jejího obsahu jako stromové struktury. (Vyžaduje JavaScript.)",
 	"categorytree-category": "Kategorie:",
 	"categorytree-go": "Zobrazit",
 	"categorytree-parents": "Nadřazené kategorie",

@@ -10,7 +10,7 @@
 	"categorytree-portlet": "Kategorien",
 	"categorytree-legend": "Weis Kategoriestruktur",
 	"categorytree-desc": "Gadget deen op Ajax opgebaut ass fir d'[[Special:CategoryTree|Kategorie-Struktur]] vun enger Wiki duerzestellen",
-	"categorytree-header": "Gitt den Numm vun enger Kategorie an, fir hiren Inhalt als Bam-Struktur ze gesinn.\nBedenkt, datt dës Funktioun Java Script Funktioune benotzt, déi als AJAX bekannt sinn.\nWann Dir ee ganz ale Browser hutt, oder wann Dir JavaScript ausgeschalt hutt, da funktionéiert dëst bei Iech net.",
+	"categorytree-header": "Gitt den Numm vun enger Kategorie an, fir hiren Inhalt als Bam-Struktur ze gesinn. (Benotzt JavaScript,)",
 	"categorytree-category": "Kategorie:",
 	"categorytree-go": "Struktur weisen",
 	"categorytree-parents": "Uewerkategorien",
