@@ -48,7 +48,7 @@ class CategoryTree {
 			if ( sizeof( $this->mOptions['namespaces'] ) === 1
 				&& $this->mOptions['namespaces'][0] == NS_CATEGORY ) {
 				$this->mOptions['mode'] = CategoryTreeMode::CATEGORIES;
-			} elseif ( !in_array( NS_IMAGE, $this->mOptions['namespaces'] ) ) {
+			} elseif ( !in_array( NS_FILE, $this->mOptions['namespaces'] ) ) {
 				$this->mOptions['mode'] = CategoryTreeMode::PAGES;
 			} else {
 				$this->mOptions['mode'] = CategoryTreeMode::ALL;
