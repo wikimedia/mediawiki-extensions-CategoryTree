@@ -10,7 +10,7 @@
 	"categorytree-portlet": "Categorieë",
 	"categorytree-legend": "Categorieboum laote zeen",
 	"categorytree-desc": "AJAX-gebaseerde oetbreijing óm de [[Special:CategoryTree|categoriestructuur]] van 'ne wiki te toeane",
-	"categorytree-header": "Gaef 'ne categorienaam in om de inhoud es 'ne boumstructuur te bekieke.\nLet op: deze functie gebroek JavaScript-functionaliteit dae bekindj steit es AJAX.\nEsse 'ne erg verajerdje browser höbs of JavaScript steit oet, den werk dees functie neet.",
+	"categorytree-header": "Gaef 'ne categorienaam in om de inhaud es 'ne boumstructuur te betrachte. (JavaScript nudig)",
 	"categorytree-category": "Categorie:",
 	"categorytree-go": "Laje",
 	"categorytree-parents": "Baoveligkendje categorië",
