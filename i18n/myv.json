@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Amdf",
-			"Botuzhaleny-sodamo"
+			"Botuzhaleny-sodamo",
+			"Rueter"
 		]
 	},
 	"categorytree": "Явкс чувто",
@@ -15,6 +16,9 @@
 	"categorytree-mode-all": "весе лопатне",
 	"categorytree-collapse": "теингавтомс",
 	"categorytree-expand": "келемтемс",
+	"categorytree-num-categories": "К-тнеде $1",
+	"categorytree-num-pages": "Лл-тнеде $1",
+	"categorytree-num-files": "Ф-тнеде $1",
 	"categorytree-load": "Йовкстамс",
 	"categorytree-loading": "йовкстамозо моли...",
 	"categorytree-nothing-found": "мезеяк а муеви",
