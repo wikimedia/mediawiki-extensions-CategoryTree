@@ -10,11 +10,6 @@
  * @license GNU General Public Licence 2.0 or later
  */
 
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo( "This file is part of an extension to the MediaWiki software and cannot be used standalone.\n" );
-	die( 1 );
-}
-
 class CategoryTree {
 	public $mOptions = array();
 
