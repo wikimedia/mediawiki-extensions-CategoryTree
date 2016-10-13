@@ -53,7 +53,7 @@ class CategoryTreePage extends SpecialPage {
 		if ( $par ) {
 			$this->target = $par;
 		} else {
-			$this->target = $request->getVal( 'target', wfMessage( 'rootcategory' )->text() );
+			$this->target = $request->getVal( 'target', $this->msg( 'rootcategory' )->text() );
 		}
 
 		$this->target = trim( $this->target );
@@ -90,13 +90,13 @@ class CategoryTreePage extends SpecialPage {
 
 			if ( $title && $title->getArticleID() ) {
 				$output->addHTML( Xml::openElement( 'div', array( 'class' => 'CategoryTreeParents' ) ) );
-				$output->addHTML( wfMessage( 'categorytree-parents' )->parse() );
-				$output->addHTML( wfMessage( 'colon-separator' )->escaped() );
+				$output->addHTML( $this->msg( 'categorytree-parents' )->parse() );
+				$output->addHTML( $this->msg( 'colon-separator' )->escaped() );
 
 				$parents = $this->tree->renderParents( $title );
 
 				if ( $parents == '' ) {
-					$output->addHTML( wfMessage( 'categorytree-no-parent-categories' )->parse() );
+					$output->addHTML( $this->msg( 'categorytree-no-parent-categories' )->parse() );
 				} else {
 					$output->addHTML( $parents );
 				}
@@ -108,7 +108,7 @@ class CategoryTreePage extends SpecialPage {
 				$output->addHTML( Xml::closeElement( 'div' ) );
 			} else {
 				$output->addHTML( Xml::openElement( 'div', array( 'class' => 'CategoryTreeNotice' ) ) );
-				$output->addHTML( wfMessage( 'categorytree-not-found', $this->target )->parse() );
+				$output->addHTML( $this->msg( 'categorytree-not-found', $this->target )->parse() );
 				$output->addHTML( Xml::closeElement( 'div' ) );
 			}
 		}
