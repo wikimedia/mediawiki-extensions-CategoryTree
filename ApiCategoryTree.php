@@ -3,7 +3,7 @@
 class ApiCategoryTree extends ApiBase {
 	public function execute() {
 		$params = $this->extractRequestParams();
-		$options = array();
+		$options = [];
 		if ( isset( $params['options'] ) ) {
 			$options = FormatJson::decode( $params['options'] );
 			if ( !is_object( $options ) ) {
@@ -46,10 +46,10 @@ class ApiCategoryTree extends ApiBase {
 			$params = $this->extractRequestParams();
 			$title = CategoryTree::makeTitle( $params['category'] );
 			return wfGetDB( DB_SLAVE )->selectField( 'page', 'page_touched',
-				array(
+				[
 					'page_namespace' => NS_CATEGORY,
 					'page_title' => $title->getDBkey(),
-				),
+				],
 				__METHOD__
 			);
 		}
@@ -89,10 +89,10 @@ class ApiCategoryTree extends ApiBase {
 
 			$wgMemc->set(
 				$mckey,
-				array(
+				[
 					'timestamp' => wfTimestampNow(),
 					'value' => $html
-				),
+				],
 				86400
 			);
 		}
@@ -100,15 +100,15 @@ class ApiCategoryTree extends ApiBase {
 	}
 
 	public function getAllowedParams() {
-		return array(
-			'category' => array(
+		return [
+			'category' => [
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_REQUIRED => true,
-			),
-			'options' => array(
+			],
+			'options' => [
 				ApiBase::PARAM_TYPE => 'string',
-			),
-		);
+			],
+		];
 	}
 
 	public function isInternal() {

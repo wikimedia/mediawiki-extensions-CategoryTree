@@ -11,7 +11,7 @@
  */
 
 class CategoryTree {
-	public $mOptions = array();
+	public $mOptions = [];
 
 	/**
 	 * @param $options array
@@ -81,7 +81,7 @@ class CategoryTree {
 			$nn = preg_split( '![\s#:|]+!', $nn );
 		}
 
-		$namespaces = array();
+		$namespaces = [];
 
 		foreach ( $nn as $n ) {
 			if ( is_int( $n ) ) {
@@ -334,7 +334,7 @@ class CategoryTree {
 		$html .= Html::openElement( 'div', $attr );
 
 		if ( !$allowMissing && !$title->getArticleID() ) {
-			$html .= Html::openElement( 'span', array( 'class' => 'CategoryTreeNotice' ) );
+			$html .= Html::openElement( 'span', [ 'class' => 'CategoryTreeNotice' ] );
 			if ( $parser ) {
 				$html .= $parser->recursiveTagParse( wfMessage( 'categorytree-not-found', $category )->plain() );
 			} else {
@@ -376,19 +376,19 @@ class CategoryTree {
 		$mode = $this->getOption( 'mode' );
 		$namespaces = $this->getOption( 'namespaces' );
 
-		$tables = array( 'page', 'categorylinks' );
-		$fields = array( 'page_id', 'page_namespace', 'page_title',
+		$tables = [ 'page', 'categorylinks' ];
+		$fields = [ 'page_id', 'page_namespace', 'page_title',
 			'page_is_redirect', 'page_len', 'page_latest', 'cl_to',
-			'cl_from' );
-		$where = array();
-		$joins = array();
-		$options = array( 'ORDER BY' => 'cl_type, cl_sortkey', 'LIMIT' => $wgCategoryTreeMaxChildren );
+			'cl_from' ];
+		$where = [];
+		$joins = [];
+		$options = [ 'ORDER BY' => 'cl_type, cl_sortkey', 'LIMIT' => $wgCategoryTreeMaxChildren ];
 
 		if ( $inverse ) {
-			$joins['categorylinks'] = array( 'RIGHT JOIN', array( 'cl_to = page_title', 'page_namespace' => NS_CATEGORY ) );
+			$joins['categorylinks'] = [ 'RIGHT JOIN', [ 'cl_to = page_title', 'page_namespace' => NS_CATEGORY ] ];
 			$where['cl_from'] = $title->getArticleID();
 		} else {
-			$joins['categorylinks'] = array( 'JOIN', 'cl_from = page_id' );
+			$joins['categorylinks'] = [ 'JOIN', 'cl_from = page_id' ];
 			$where['cl_to'] = $title->getDBkey();
 			$options['USE INDEX']['categorylinks'] = 'cl_sortkey';
 
@@ -398,7 +398,7 @@ class CategoryTree {
 				$where['page_namespace'] = $namespaces;
 			} elseif ( $mode != CategoryTreeMode::ALL ) {
 				if ( $mode == CategoryTreeMode::PAGES ) {
-					$where['cl_type'] = array( 'page', 'subcat' );
+					$where['cl_type'] = [ 'page', 'subcat' ];
 				} else {
 					$where['cl_type'] = 'subcat';
 				}
@@ -409,9 +409,9 @@ class CategoryTree {
 		$doCount = !$inverse && $wgCategoryTreeUseCategoryTable;
 
 		if ( $doCount ) {
-			$tables = array_merge( $tables, array( 'category' ) );
-			$fields = array_merge( $fields, array( 'cat_id', 'cat_title', 'cat_subcats', 'cat_pages', 'cat_files' ) );
-			$joins['category'] = array( 'LEFT JOIN', array( 'cat_title = page_title', 'page_namespace' => NS_CATEGORY ) );
+			$tables = array_merge( $tables, [ 'category' ] );
+			$fields = array_merge( $fields, [ 'cat_id', 'cat_title', 'cat_subcats', 'cat_pages', 'cat_files' ] );
+			$joins['category'] = [ 'LEFT JOIN', [ 'cat_title = page_title', 'page_namespace' => NS_CATEGORY ] ];
 		}
 
 		$res = $dbr->select( $tables, $fields, $where, __METHOD__, $options, $joins );
@@ -461,16 +461,16 @@ class CategoryTree {
 
 		$res = $dbr->select(
 			'categorylinks',
-			array(
+			[
 				'page_namespace' => NS_CATEGORY,
 				'page_title' => 'cl_to',
-			),
-			array( 'cl_from' => $title->getArticleID() ),
+			],
+			[ 'cl_from' => $title->getArticleID() ],
 			__METHOD__,
-			array(
+			[
 				'LIMIT' => $wgCategoryTreeMaxChildren,
 				'ORDER BY' => 'cl_to'
-			)
+			]
 		);
 
 		$special = SpecialPage::getTitleFor( 'CategoryTree' );
@@ -489,8 +489,8 @@ class CategoryTree {
 				$s .= wfMessage( 'pipe-separator' )->escaped();
 			}
 
-			$s .= Xml::openElement( 'span', array( 'class' => 'CategoryTreeItem' ) );
-			$s .= Xml::openElement( 'a', array( 'class' => 'CategoryTreeLabel', 'href' => $wikiLink ) )
+			$s .= Xml::openElement( 'span', [ 'class' => 'CategoryTreeItem' ] );
+			$s .= Xml::openElement( 'a', [ 'class' => 'CategoryTreeLabel', 'href' => $wikiLink ] )
 				. $label . Xml::closeElement( 'a' );
 			$s .= Xml::closeElement( 'span' );
 
@@ -578,10 +578,10 @@ class CategoryTree {
 		#      Specifically, the CategoryTreeChildren div must be the first
 		#      sibling with nodeName = DIV of the grandparent of the expland link.
 
-		$s .= Xml::openElement( 'div', array( 'class' => 'CategoryTreeSection' ) );
-		$s .= Xml::openElement( 'div', array( 'class' => 'CategoryTreeItem' ) );
+		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeSection' ] );
+		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeItem' ] );
 
-		$attr = array( 'class' => 'CategoryTreeBullet' );
+		$attr = [ 'class' => 'CategoryTreeBullet' ];
 
 		# Get counts, with conversion to integer so === works
 		# Note: $allCount is the total number of cat members,
@@ -605,7 +605,7 @@ class CategoryTree {
 				$bullet = wfMessage( 'categorytree-empty-bullet' )->plain() . ' ';
 				$attr['class'] = 'CategoryTreeEmptyBullet';
 			} else {
-				$linkattr = array( );
+				$linkattr = [];
 
 				$linkattr[ 'class' ] = "CategoryTreeToggle";
 				$linkattr['style'] = 'display: none;'; // Unhidden by JS
@@ -630,23 +630,23 @@ class CategoryTree {
 		}
 		$s .= Xml::tags( 'span', $attr, $bullet ) . ' ';
 
-		$s .= Xml::openElement( 'a', array( 'class' => $labelClass, 'href' => $wikiLink ) )
+		$s .= Xml::openElement( 'a', [ 'class' => $labelClass, 'href' => $wikiLink ] )
 			. $label . Xml::closeElement( 'a' );
 
 		if ( $count !== false && $this->getOption( 'showcount' ) ) {
 			$pages = $allCount - $subcatCount - $fileCount;
 
 			global $wgContLang, $wgLang;
-			$attr = array(
+			$attr = [
 				'title' => wfMessage( 'categorytree-member-counts' )
 					->numParams( $subcatCount, $pages , $fileCount, $allCount, $count )->text(),
 				'dir' => $wgLang->getDir() # numbers and commas get messed up in a mixed dir env
-			);
+			];
 
 			$s .= $wgContLang->getDirMark() . ' ';
 
 			# Create a list of category members with only non-zero member counts
-			$memberNums = array();
+			$memberNums = [];
 			if ( $subcatCount ) {
 				$memberNums[] = wfMessage( 'categorytree-num-categories' )
 					->numParams( $subcatCount )->text();
@@ -678,16 +678,16 @@ class CategoryTree {
 		$s .= "\n\t\t";
 		$s .= Xml::openElement(
 			'div',
-			array(
+			[
 				'class' => 'CategoryTreeChildren',
 				'style' => $children > 0 ? "display:block" : "display:none"
-			)
+			]
 		);
 
 		if ( $ns == NS_CATEGORY && $children > 0 ) {
 			$children = $this->renderChildren( $title, $children );
 			if ( $children == '' ) {
-				$s .= Xml::openElement( 'i', array( 'class' => 'CategoryTreeNotice' ) );
+				$s .= Xml::openElement( 'i', [ 'class' => 'CategoryTreeNotice' ] );
 				if ( $mode == CategoryTreeMode::CATEGORIES ) {
 					$s .= wfMessage( 'categorytree-no-subcategories' )->text();
 				} elseif ( $mode == CategoryTreeMode::PAGES ) {
