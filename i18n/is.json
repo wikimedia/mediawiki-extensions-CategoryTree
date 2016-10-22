@@ -10,7 +10,7 @@
 	"categorytree": "Flokkatré",
 	"categorytree-portlet": "Flokkar",
 	"categorytree-legend": "Sýna flokkatré",
-	"categorytree-header": "Sláðu inn heiti flokks til að sjá innihald hans sem tré.\nHafðu í huga að þetta krefst þróaðra virkni JavaScript sem nefnist AJAX.\nEf þú notast við gamlan vafra eða hefur slökkt á JavaScript mun þetta ekki virka.",
+	"categorytree-header": "Sláðu inn heiti flokks til að sjá innihald hans sem tré. (Þarfnast JavaScript)",
 	"categorytree-category": "Flokkur:",
 	"categorytree-go": "Sýna tré",
 	"categorytree-parents": "Yfirþræðir",
