@@ -42,5 +42,6 @@
 	"categorytree-no-pages": "sin páginas ni subcategorías",
 	"categorytree-not-found": "Categoría <i>$1</i> no encontrada",
 	"categorytree-error": "Error al cargar los datos.",
-	"categorytree-retry": "Espera un momento y vuelve a intentarlo."
+	"categorytree-retry": "Espera un momento y vuelve a intentarlo.",
+	"apihelp-categorytree-description": "Módulo interno para la extensión CategoryTree."
 }
