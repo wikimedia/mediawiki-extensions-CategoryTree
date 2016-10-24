@@ -5,7 +5,8 @@
 			"Derbeth",
 			"Matma Rex",
 			"Sp5uhe",
-			"Chrumps"
+			"Chrumps",
+			"Woytecr"
 		]
 	},
 	"categorytree": "Drzewo kategorii",
@@ -35,5 +36,8 @@
 	"categorytree-no-pages": "brak artykułów lub podkategorii.",
 	"categorytree-not-found": "Kategoria <i>$1</i> nie została znaleziona",
 	"categorytree-error": "Problem z ładowaniem danych.",
-	"categorytree-retry": "Poczekaj chwilę i spróbuj ponownie – kliknij ten napis."
+	"categorytree-retry": "Poczekaj chwilę i spróbuj ponownie – kliknij ten napis.",
+	"apihelp-categorytree-description": "Wewnętrzny moduł rozszerzenia CategoryTree.",
+	"apihelp-categorytree-param-category": "Tytuł w przestrzeni nazw kategorii, prefiks będzie ignorowany jeżeli podany.",
+	"apihelp-categorytree-param-options": "Opcje dla konstruktora CategoryTree w postaci obiektu JSON. Opcja <var>depth</var> domyślnie wynosi <kbd>1</kbd>."
 }
