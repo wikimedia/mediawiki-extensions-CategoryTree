@@ -58,7 +58,7 @@ class CategoryTreePage extends SpecialPage {
 			$this->target = null;
 		}
 
-		$options = array();
+		$options = [];
 
 		# grab all known options from the request. Normalization is done by the CategoryTree class
 		foreach ( $wgCategoryTreeDefaultOptions as $option => $default ) {
@@ -84,7 +84,7 @@ class CategoryTreePage extends SpecialPage {
 			$title = CategoryTree::makeTitle( $this->target );
 
 			if ( $title && $title->getArticleID() ) {
-				$output->addHTML( Xml::openElement( 'div', array( 'class' => 'CategoryTreeParents' ) ) );
+				$output->addHTML( Xml::openElement( 'div', [ 'class' => 'CategoryTreeParents' ] ) );
 				$output->addHTML( $this->msg( 'categorytree-parents' )->parse() );
 				$output->addHTML( $this->msg( 'colon-separator' )->escaped() );
 
@@ -98,11 +98,11 @@ class CategoryTreePage extends SpecialPage {
 
 				$output->addHTML( Xml::closeElement( 'div' ) );
 
-				$output->addHTML( Xml::openElement( 'div', array( 'class' => 'CategoryTreeResult' ) ) );
+				$output->addHTML( Xml::openElement( 'div', [ 'class' => 'CategoryTreeResult' ] ) );
 				$output->addHTML( $this->tree->renderNode( $title, 1 ) );
 				$output->addHTML( Xml::closeElement( 'div' ) );
 			} else {
-				$output->addHTML( Xml::openElement( 'div', array( 'class' => 'CategoryTreeNotice' ) ) );
+				$output->addHTML( Xml::openElement( 'div', [ 'class' => 'CategoryTreeNotice' ] ) );
 				$output->addHTML( $this->msg( 'categorytree-not-found', $this->target )->parse() );
 				$output->addHTML( Xml::closeElement( 'div' ) );
 			}
@@ -178,11 +178,11 @@ class CategoryTreePage extends SpecialPage {
 		}
 		if ( !$title ) {
 			// No prefix suggestion outside of category namespace
-			return array();
+			return [];
 		}
 		// Autocomplete subpage the same as a normal search, but just for categories
 		$prefixSearcher = new TitlePrefixSearch;
-		$result = $prefixSearcher->search( $title->getPrefixedText(), $limit, array( NS_CATEGORY ), $offset );
+		$result = $prefixSearcher->search( $title->getPrefixedText(), $limit, [ NS_CATEGORY ], $offset );
 
 		return array_map( function ( Title $t ) {
 			// Remove namespace in search suggestion

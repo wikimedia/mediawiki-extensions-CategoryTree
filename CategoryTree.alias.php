@@ -10,494 +10,494 @@
  */
 // @codingStandardsIgnoreFile
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English (English) */
-$specialPageAliases['en'] = array(
-	'CategoryTree' => array( 'CategoryTree' ),
-);
+$specialPageAliases['en'] = [
+	'CategoryTree' => [ 'CategoryTree' ],
+];
 
 /** Afrikaans (Afrikaans) */
-$specialPageAliases['af'] = array(
-	'CategoryTree' => array( 'KategorieBoom' ),
-);
+$specialPageAliases['af'] = [
+	'CategoryTree' => [ 'KategorieBoom' ],
+];
 
 /** Aragonese (aragonés) */
-$specialPageAliases['an'] = array(
-	'CategoryTree' => array( 'Árbol_de_categorías' ),
-);
+$specialPageAliases['an'] = [
+	'CategoryTree' => [ 'Árbol_de_categorías' ],
+];
 
 /** Arabic (العربية) */
-$specialPageAliases['ar'] = array(
-	'CategoryTree' => array( 'شجرة_تصنيف' ),
-);
+$specialPageAliases['ar'] = [
+	'CategoryTree' => [ 'شجرة_تصنيف' ],
+];
 
 /** Aramaic (ܐܪܡܝܐ) */
-$specialPageAliases['arc'] = array(
-	'CategoryTree' => array( 'ܐܝܠܢܐ_ܕܣܕܪܐ' ),
-);
+$specialPageAliases['arc'] = [
+	'CategoryTree' => [ 'ܐܝܠܢܐ_ܕܣܕܪܐ' ],
+];
 
 /** Egyptian Arabic (مصرى) */
-$specialPageAliases['arz'] = array(
-	'CategoryTree' => array( 'شجرة_تصنيف' ),
-);
+$specialPageAliases['arz'] = [
+	'CategoryTree' => [ 'شجرة_تصنيف' ],
+];
 
 /** Assamese (অসমীয়া) */
-$specialPageAliases['as'] = array(
-	'CategoryTree' => array( 'শ্ৰেণীবৃক্ষ' ),
-);
+$specialPageAliases['as'] = [
+	'CategoryTree' => [ 'শ্ৰেণীবৃক্ষ' ],
+];
 
 /** Avaric (авар) */
-$specialPageAliases['av'] = array(
-	'CategoryTree' => array( 'Категориязул_гъветІ' ),
-);
+$specialPageAliases['av'] = [
+	'CategoryTree' => [ 'Категориязул_гъветІ' ],
+];
 
 /** Bashkir (башҡортса) */
-$specialPageAliases['ba'] = array(
-	'CategoryTree' => array( 'Категория_ағасы' ),
-);
+$specialPageAliases['ba'] = [
+	'CategoryTree' => [ 'Категория_ағасы' ],
+];
 
 /** Bikol Central (Bikol Central) */
-$specialPageAliases['bcl'] = array(
-	'CategoryTree' => array( 'KahoyNinKategorya' ),
-);
+$specialPageAliases['bcl'] = [
+	'CategoryTree' => [ 'KahoyNinKategorya' ],
+];
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎) */
-$specialPageAliases['be-tarask'] = array(
-	'CategoryTree' => array( 'Дрэва_катэгорыяў' ),
-);
+$specialPageAliases['be-tarask'] = [
+	'CategoryTree' => [ 'Дрэва_катэгорыяў' ],
+];
 
 /** Bulgarian (български) */
-$specialPageAliases['bg'] = array(
-	'CategoryTree' => array( 'Дърво_на_категориите' ),
-);
+$specialPageAliases['bg'] = [
+	'CategoryTree' => [ 'Дърво_на_категориите' ],
+];
 
 /** Western Balochi (بلوچی رخشانی) */
-$specialPageAliases['bgn'] = array(
-	'CategoryTree' => array( 'تهری_درچّگ_یا_درخت' ),
-);
+$specialPageAliases['bgn'] = [
+	'CategoryTree' => [ 'تهری_درچّگ_یا_درخت' ],
+];
 
 /** Banjar (Bahasa Banjar) */
-$specialPageAliases['bjn'] = array(
-	'CategoryTree' => array( 'Puhun_tumbung' ),
-);
+$specialPageAliases['bjn'] = [
+	'CategoryTree' => [ 'Puhun_tumbung' ],
+];
 
 /** Breton (brezhoneg) */
-$specialPageAliases['br'] = array(
-	'CategoryTree' => array( 'GwezennadurRummad' ),
-);
+$specialPageAliases['br'] = [
+	'CategoryTree' => [ 'GwezennadurRummad' ],
+];
 
 /** Bosnian (bosanski) */
-$specialPageAliases['bs'] = array(
-	'CategoryTree' => array( 'StabloKategorija' ),
-);
+$specialPageAliases['bs'] = [
+	'CategoryTree' => [ 'StabloKategorija' ],
+];
 
 /** Catalan (català) */
-$specialPageAliases['ca'] = array(
-	'CategoryTree' => array( 'Categories_en_arbre', 'Arbre_de_categories' ),
-);
+$specialPageAliases['ca'] = [
+	'CategoryTree' => [ 'Categories_en_arbre', 'Arbre_de_categories' ],
+];
 
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
-$specialPageAliases['cdo'] = array(
-	'CategoryTree' => array( '分類樹' ),
-);
+$specialPageAliases['cdo'] = [
+	'CategoryTree' => [ '分類樹' ],
+];
 
 /** Chechen (нохчийн) */
-$specialPageAliases['ce'] = array(
-	'CategoryTree' => array( 'Категорийн_дит' ),
-);
+$specialPageAliases['ce'] = [
+	'CategoryTree' => [ 'Категорийн_дит' ],
+];
 
 /** Czech (čeština) */
-$specialPageAliases['cs'] = array(
-	'CategoryTree' => array( 'Strom_kategorií' ),
-);
+$specialPageAliases['cs'] = [
+	'CategoryTree' => [ 'Strom_kategorií' ],
+];
 
 /** Danish (dansk) */
-$specialPageAliases['da'] = array(
-	'CategoryTree' => array( 'Kategoritræ' ),
-);
+$specialPageAliases['da'] = [
+	'CategoryTree' => [ 'Kategoritræ' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'CategoryTree' => array( 'Kategorienbaum', 'Kategoriebaum' ),
-);
+$specialPageAliases['de'] = [
+	'CategoryTree' => [ 'Kategorienbaum', 'Kategoriebaum' ],
+];
 
 /** Zazaki (Zazaki) */
-$specialPageAliases['diq'] = array(
-	'CategoryTree' => array( 'DaraKategoriye' ),
-);
+$specialPageAliases['diq'] = [
+	'CategoryTree' => [ 'DaraKategoriye' ],
+];
 
 /** Lower Sorbian (dolnoserbski) */
-$specialPageAliases['dsb'] = array(
-	'CategoryTree' => array( 'Bom_kategorijow' ),
-);
+$specialPageAliases['dsb'] = [
+	'CategoryTree' => [ 'Bom_kategorijow' ],
+];
 
 /** Greek (Ελληνικά) */
-$specialPageAliases['el'] = array(
-	'CategoryTree' => array( 'ΔέντροΚατηγορίας' ),
-);
+$specialPageAliases['el'] = [
+	'CategoryTree' => [ 'ΔέντροΚατηγορίας' ],
+];
 
 /** Esperanto (Esperanto) */
-$specialPageAliases['eo'] = array(
-	'CategoryTree' => array( 'Arbo_de_kategorioj', 'Kategorio-arbo' ),
-);
+$specialPageAliases['eo'] = [
+	'CategoryTree' => [ 'Arbo_de_kategorioj', 'Kategorio-arbo' ],
+];
 
 /** Spanish (español) */
-$specialPageAliases['es'] = array(
-	'CategoryTree' => array( 'ÁrbolDeCategorías', 'Árbol_de_categorías' ),
-);
+$specialPageAliases['es'] = [
+	'CategoryTree' => [ 'ÁrbolDeCategorías', 'Árbol_de_categorías' ],
+];
 
 /** Estonian (eesti) */
-$specialPageAliases['et'] = array(
-	'CategoryTree' => array( 'Kategooriapuu' ),
-);
+$specialPageAliases['et'] = [
+	'CategoryTree' => [ 'Kategooriapuu' ],
+];
 
 /** Basque (euskara) */
-$specialPageAliases['eu'] = array(
-	'CategoryTree' => array( 'KategoriaZuhaitza' ),
-);
+$specialPageAliases['eu'] = [
+	'CategoryTree' => [ 'KategoriaZuhaitza' ],
+];
 
 /** Persian (فارسی) */
-$specialPageAliases['fa'] = array(
-	'CategoryTree' => array( 'درخت_رده' ),
-);
+$specialPageAliases['fa'] = [
+	'CategoryTree' => [ 'درخت_رده' ],
+];
 
 /** Finnish (suomi) */
-$specialPageAliases['fi'] = array(
-	'CategoryTree' => array( 'Luokkapuu' ),
-);
+$specialPageAliases['fi'] = [
+	'CategoryTree' => [ 'Luokkapuu' ],
+];
 
 /** French (français) */
-$specialPageAliases['fr'] = array(
-	'CategoryTree' => array( 'ArbreCatégorie', 'ArbreCategorie', 'Arbre_catégorie' ),
-);
+$specialPageAliases['fr'] = [
+	'CategoryTree' => [ 'ArbreCatégorie', 'ArbreCategorie', 'Arbre_catégorie' ],
+];
 
 /** Arpitan (arpetan) */
-$specialPageAliases['frp'] = array(
-	'CategoryTree' => array( 'Structura_d\'âbro_de_les_catègories', 'StructuraDÂbroDeLesCatègories' ),
-);
+$specialPageAliases['frp'] = [
+	'CategoryTree' => [ 'Structura_d\'âbro_de_les_catègories', 'StructuraDÂbroDeLesCatègories' ],
+];
 
 /** Western Frisian (Frysk) */
-$specialPageAliases['fy'] = array(
-	'CategoryTree' => array( 'Kategorybeam' ),
-);
+$specialPageAliases['fy'] = [
+	'CategoryTree' => [ 'Kategorybeam' ],
+];
 
 /** Galician (galego) */
-$specialPageAliases['gl'] = array(
-	'CategoryTree' => array( 'Árbore_de_categorías' ),
-);
+$specialPageAliases['gl'] = [
+	'CategoryTree' => [ 'Árbore_de_categorías' ],
+];
 
 /** Swiss German (Alemannisch) */
-$specialPageAliases['gsw'] = array(
-	'CategoryTree' => array( 'Kategoriebaum' ),
-);
+$specialPageAliases['gsw'] = [
+	'CategoryTree' => [ 'Kategoriebaum' ],
+];
 
 /** Gujarati (ગુજરાતી) */
-$specialPageAliases['gu'] = array(
-	'CategoryTree' => array( 'શ્રેણીવૃક્ષ' ),
-);
+$specialPageAliases['gu'] = [
+	'CategoryTree' => [ 'શ્રેણીવૃક્ષ' ],
+];
 
 /** Hebrew (עברית) */
-$specialPageAliases['he'] = array(
-	'CategoryTree' => array( 'עץ_קטגוריות' ),
-);
+$specialPageAliases['he'] = [
+	'CategoryTree' => [ 'עץ_קטגוריות' ],
+];
 
 /** Hindi (हिन्दी) */
-$specialPageAliases['hi'] = array(
-	'CategoryTree' => array( 'श्रेणी_वृक्ष', 'श्रेणीवृक्ष' ),
-);
+$specialPageAliases['hi'] = [
+	'CategoryTree' => [ 'श्रेणी_वृक्ष', 'श्रेणीवृक्ष' ],
+];
 
 /** Upper Sorbian (hornjoserbsce) */
-$specialPageAliases['hsb'] = array(
-	'CategoryTree' => array( 'Kategorijowy_štom' ),
-);
+$specialPageAliases['hsb'] = [
+	'CategoryTree' => [ 'Kategorijowy_štom' ],
+];
 
 /** Xiang Chinese (湘语) */
-$specialPageAliases['hsn'] = array(
-	'CategoryTree' => array( '类别树' ),
-);
+$specialPageAliases['hsn'] = [
+	'CategoryTree' => [ '类别树' ],
+];
 
 /** Haitian (Kreyòl ayisyen) */
-$specialPageAliases['ht'] = array(
-	'CategoryTree' => array( 'NivoKategori' ),
-);
+$specialPageAliases['ht'] = [
+	'CategoryTree' => [ 'NivoKategori' ],
+];
 
 /** Hungarian (magyar) */
-$specialPageAliases['hu'] = array(
-	'CategoryTree' => array( 'Kategóriafa' ),
-);
+$specialPageAliases['hu'] = [
+	'CategoryTree' => [ 'Kategóriafa' ],
+];
 
 /** Interlingua (interlingua) */
-$specialPageAliases['ia'] = array(
-	'CategoryTree' => array( 'Arbore_de_categorias' ),
-);
+$specialPageAliases['ia'] = [
+	'CategoryTree' => [ 'Arbore_de_categorias' ],
+];
 
 /** Indonesian (Bahasa Indonesia) */
-$specialPageAliases['id'] = array(
-	'CategoryTree' => array( 'Pohon_kategori', 'PohonKategori' ),
-);
+$specialPageAliases['id'] = [
+	'CategoryTree' => [ 'Pohon_kategori', 'PohonKategori' ],
+];
 
 /** Ido (Ido) */
-$specialPageAliases['io'] = array(
-	'CategoryTree' => array( 'KategorioArboro' ),
-);
+$specialPageAliases['io'] = [
+	'CategoryTree' => [ 'KategorioArboro' ],
+];
 
 /** Italian (italiano) */
-$specialPageAliases['it'] = array(
-	'CategoryTree' => array( 'AlberoCategorie' ),
-);
+$specialPageAliases['it'] = [
+	'CategoryTree' => [ 'AlberoCategorie' ],
+];
 
 /** Japanese (日本語) */
-$specialPageAliases['ja'] = array(
-	'CategoryTree' => array( 'カテゴリツリー' ),
-);
+$specialPageAliases['ja'] = [
+	'CategoryTree' => [ 'カテゴリツリー' ],
+];
 
 /** Georgian (ქართული) */
-$specialPageAliases['ka'] = array(
-	'CategoryTree' => array( 'კატეგორიის_ხე' ),
-);
+$specialPageAliases['ka'] = [
+	'CategoryTree' => [ 'კატეგორიის_ხე' ],
+];
 
 /** Khmer (ភាសាខ្មែរ) */
-$specialPageAliases['km'] = array(
-	'CategoryTree' => array( 'មែកធាងចំណាត់ថ្នាក់ក្រុម' ),
-);
+$specialPageAliases['km'] = [
+	'CategoryTree' => [ 'មែកធាងចំណាត់ថ្នាក់ក្រុម' ],
+];
 
 /** Korean (한국어) */
-$specialPageAliases['ko'] = array(
-	'CategoryTree' => array( '분류트리' ),
-);
+$specialPageAliases['ko'] = [
+	'CategoryTree' => [ '분류트리' ],
+];
 
 /** Colognian (Ripoarisch) */
-$specialPageAliases['ksh'] = array(
-	'CategoryTree' => array( 'Saachjruppeboum' ),
-);
+$specialPageAliases['ksh'] = [
+	'CategoryTree' => [ 'Saachjruppeboum' ],
+];
 
 /** Kurdish (Kurdî) */
-$specialPageAliases['ku'] = array(
-	'CategoryTree' => array( 'Dara_kategoriyan' ),
-);
+$specialPageAliases['ku'] = [
+	'CategoryTree' => [ 'Dara_kategoriyan' ],
+];
 
 /** Cornish (kernowek) */
-$specialPageAliases['kw'] = array(
-	'CategoryTree' => array( 'GwedhenGlassys' ),
-);
+$specialPageAliases['kw'] = [
+	'CategoryTree' => [ 'GwedhenGlassys' ],
+];
 
 /** Latin (Latina) */
-$specialPageAliases['la'] = array(
-	'CategoryTree' => array( 'Categoriarum_arbor' ),
-);
+$specialPageAliases['la'] = [
+	'CategoryTree' => [ 'Categoriarum_arbor' ],
+];
 
 /** Ladino (Ladino) */
-$specialPageAliases['lad'] = array(
-	'CategoryTree' => array( 'Árvole_de_Kateggorías' ),
-);
+$specialPageAliases['lad'] = [
+	'CategoryTree' => [ 'Árvole_de_Kateggorías' ],
+];
 
 /** Luxembourgish (Lëtzebuergesch) */
-$specialPageAliases['lb'] = array(
-	'CategoryTree' => array( 'Struktur_vun_de_Kategorien' ),
-);
+$specialPageAliases['lb'] = [
+	'CategoryTree' => [ 'Struktur_vun_de_Kategorien' ],
+];
 
 /** Northern Luri (لۊری شومالی) */
-$specialPageAliases['lrc'] = array(
-	'CategoryTree' => array( 'دار_دأسە' ),
-);
+$specialPageAliases['lrc'] = [
+	'CategoryTree' => [ 'دار_دأسە' ],
+];
 
 /** Malagasy (Malagasy) */
-$specialPageAliases['mg'] = array(
-	'CategoryTree' => array( 'Hazon-tsokajy', 'Hazontsokajy' ),
-);
+$specialPageAliases['mg'] = [
+	'CategoryTree' => [ 'Hazon-tsokajy', 'Hazontsokajy' ],
+];
 
 /** Minangkabau (Baso Minangkabau) */
-$specialPageAliases['min'] = array(
-	'CategoryTree' => array( 'BatangKategori' ),
-);
+$specialPageAliases['min'] = [
+	'CategoryTree' => [ 'BatangKategori' ],
+];
 
 /** Macedonian (македонски) */
-$specialPageAliases['mk'] = array(
-	'CategoryTree' => array( 'ДрвоНаКатегории' ),
-);
+$specialPageAliases['mk'] = [
+	'CategoryTree' => [ 'ДрвоНаКатегории' ],
+];
 
 /** Malayalam (മലയാളം) */
-$specialPageAliases['ml'] = array(
-	'CategoryTree' => array( 'വർഗ്ഗവൃക്ഷം' ),
-);
+$specialPageAliases['ml'] = [
+	'CategoryTree' => [ 'വർഗ്ഗവൃക്ഷം' ],
+];
 
 /** Marathi (मराठी) */
-$specialPageAliases['mr'] = array(
-	'CategoryTree' => array( 'वर्गवृक्ष' ),
-);
+$specialPageAliases['mr'] = [
+	'CategoryTree' => [ 'वर्गवृक्ष' ],
+];
 
 /** Malay (Bahasa Melayu) */
-$specialPageAliases['ms'] = array(
-	'CategoryTree' => array( 'Salasilah_kategori' ),
-);
+$specialPageAliases['ms'] = [
+	'CategoryTree' => [ 'Salasilah_kategori' ],
+];
 
 /** Maltese (Malti) */
-$specialPageAliases['mt'] = array(
-	'CategoryTree' => array( 'SiġraKategorija' ),
-);
+$specialPageAliases['mt'] = [
+	'CategoryTree' => [ 'SiġraKategorija' ],
+];
 
 /** Erzya (эрзянь) */
-$specialPageAliases['myv'] = array(
-	'CategoryTree' => array( 'КатегорияньЧувто' ),
-);
+$specialPageAliases['myv'] = [
+	'CategoryTree' => [ 'КатегорияньЧувто' ],
+];
 
 /** Norwegian Bokmål (norsk bokmål) */
-$specialPageAliases['nb'] = array(
-	'CategoryTree' => array( 'Kategoritre' ),
-);
+$specialPageAliases['nb'] = [
+	'CategoryTree' => [ 'Kategoritre' ],
+];
 
 /** Low German (Plattdüütsch) */
-$specialPageAliases['nds'] = array(
-	'CategoryTree' => array( 'Kategorieboom' ),
-);
+$specialPageAliases['nds'] = [
+	'CategoryTree' => [ 'Kategorieboom' ],
+];
 
 /** Low Saxon (Netherlands) (Nedersaksies) */
-$specialPageAliases['nds-nl'] = array(
-	'CategoryTree' => array( 'Kategorieboom' ),
-);
+$specialPageAliases['nds-nl'] = [
+	'CategoryTree' => [ 'Kategorieboom' ],
+];
 
 /** Dutch (Nederlands) */
-$specialPageAliases['nl'] = array(
-	'CategoryTree' => array( 'Categorieboom' ),
-);
+$specialPageAliases['nl'] = [
+	'CategoryTree' => [ 'Categorieboom' ],
+];
 
 /** Norwegian Nynorsk (norsk nynorsk) */
-$specialPageAliases['nn'] = array(
-	'CategoryTree' => array( 'Kategoritre' ),
-);
+$specialPageAliases['nn'] = [
+	'CategoryTree' => [ 'Kategoritre' ],
+];
 
 /** Occitan (occitan) */
-$specialPageAliases['oc'] = array(
-	'CategoryTree' => array( 'ArbreCategoria', 'Arbre_categoria' ),
-);
+$specialPageAliases['oc'] = [
+	'CategoryTree' => [ 'ArbreCategoria', 'Arbre_categoria' ],
+];
 
 /** Polish (polski) */
-$specialPageAliases['pl'] = array(
-	'CategoryTree' => array( 'Drzewo_kategorii' ),
-);
+$specialPageAliases['pl'] = [
+	'CategoryTree' => [ 'Drzewo_kategorii' ],
+];
 
 /** Pashto (پښتو) */
-$specialPageAliases['ps'] = array(
-	'CategoryTree' => array( 'د_وېشنيزو_ونه' ),
-);
+$specialPageAliases['ps'] = [
+	'CategoryTree' => [ 'د_وېشنيزو_ونه' ],
+];
 
 /** Portuguese (português) */
-$specialPageAliases['pt'] = array(
-	'CategoryTree' => array( 'Árvore_de_categorias' ),
-);
+$specialPageAliases['pt'] = [
+	'CategoryTree' => [ 'Árvore_de_categorias' ],
+];
 
 /** Brazilian Portuguese (português do Brasil) */
-$specialPageAliases['pt-br'] = array(
-	'CategoryTree' => array( 'Árvore_de_categorias', 'Árvore_de_categoria' ),
-);
+$specialPageAliases['pt-br'] = [
+	'CategoryTree' => [ 'Árvore_de_categorias', 'Árvore_de_categoria' ],
+];
 
 /** Romanian (română) */
-$specialPageAliases['ro'] = array(
-	'CategoryTree' => array( 'Arborele_categoriilor' ),
-);
+$specialPageAliases['ro'] = [
+	'CategoryTree' => [ 'Arborele_categoriilor' ],
+];
 
 /** Russian (русский) */
-$specialPageAliases['ru'] = array(
-	'CategoryTree' => array( 'Дерево_категорий' ),
-);
+$specialPageAliases['ru'] = [
+	'CategoryTree' => [ 'Дерево_категорий' ],
+];
 
 /** Sanskrit (संस्कृतम्) */
-$specialPageAliases['sa'] = array(
-	'CategoryTree' => array( 'वर्गवृक्ष:' ),
-);
+$specialPageAliases['sa'] = [
+	'CategoryTree' => [ 'वर्गवृक्ष:' ],
+];
 
 /** Sicilian (sicilianu) */
-$specialPageAliases['scn'] = array(
-	'CategoryTree' => array( 'AlberoCategorie' ),
-);
+$specialPageAliases['scn'] = [
+	'CategoryTree' => [ 'AlberoCategorie' ],
+];
 
 /** Sinhala (සිංහල) */
-$specialPageAliases['si'] = array(
-	'CategoryTree' => array( 'ප්‍රවර්ගරුක' ),
-);
+$specialPageAliases['si'] = [
+	'CategoryTree' => [ 'ප්‍රවර්ගරුක' ],
+];
 
 /** Slovak (slovenčina) */
-$specialPageAliases['sk'] = array(
-	'CategoryTree' => array( 'StromKategórií' ),
-);
+$specialPageAliases['sk'] = [
+	'CategoryTree' => [ 'StromKategórií' ],
+];
 
 /** Swedish (svenska) */
-$specialPageAliases['sv'] = array(
-	'CategoryTree' => array( 'Kategoriträd' ),
-);
+$specialPageAliases['sv'] = [
+	'CategoryTree' => [ 'Kategoriträd' ],
+];
 
 /** Swahili (Kiswahili) */
-$specialPageAliases['sw'] = array(
-	'CategoryTree' => array( 'SafuyaJamii' ),
-);
+$specialPageAliases['sw'] = [
+	'CategoryTree' => [ 'SafuyaJamii' ],
+];
 
 /** Telugu (తెలుగు) */
-$specialPageAliases['te'] = array(
-	'CategoryTree' => array( 'వర్గవృక్షం' ),
-);
+$specialPageAliases['te'] = [
+	'CategoryTree' => [ 'వర్గవృక్షం' ],
+];
 
 /** Thai (ไทย) */
-$specialPageAliases['th'] = array(
-	'CategoryTree' => array( 'หมวดหมู่แบบผังต้นไม้' ),
-);
+$specialPageAliases['th'] = [
+	'CategoryTree' => [ 'หมวดหมู่แบบผังต้นไม้' ],
+];
 
 /** Tagalog (Tagalog) */
-$specialPageAliases['tl'] = array(
-	'CategoryTree' => array( 'Puno_ng_kaurian' ),
-);
+$specialPageAliases['tl'] = [
+	'CategoryTree' => [ 'Puno_ng_kaurian' ],
+];
 
 /** Talysh (толышә зывон) */
-$specialPageAliases['tly'] = array(
-	'CategoryTree' => array( 'Категоријон_до' ),
-);
+$specialPageAliases['tly'] = [
+	'CategoryTree' => [ 'Категоријон_до' ],
+];
 
 /** Turkish (Türkçe) */
-$specialPageAliases['tr'] = array(
-	'CategoryTree' => array( 'KategoriAğacı', 'KategoriHiyerarşisi', 'UlamAğacı', 'UlamHiyerarşisi' ),
-);
+$specialPageAliases['tr'] = [
+	'CategoryTree' => [ 'KategoriAğacı', 'KategoriHiyerarşisi', 'UlamAğacı', 'UlamHiyerarşisi' ],
+];
 
 /** Ukrainian (українська) */
-$specialPageAliases['uk'] = array(
-	'CategoryTree' => array( 'Дерево_категорій' ),
-);
+$specialPageAliases['uk'] = [
+	'CategoryTree' => [ 'Дерево_категорій' ],
+];
 
 /** Urdu (اردو) */
-$specialPageAliases['ur'] = array(
-	'CategoryTree' => array( 'شجرہ_زمرہ' ),
-);
+$specialPageAliases['ur'] = [
+	'CategoryTree' => [ 'شجرہ_زمرہ' ],
+];
 
 /** Venetian (vèneto) */
-$specialPageAliases['vec'] = array(
-	'CategoryTree' => array( 'ÀlbaroCategorie' ),
-);
+$specialPageAliases['vec'] = [
+	'CategoryTree' => [ 'ÀlbaroCategorie' ],
+];
 
 /** Veps (vepsän kel’) */
-$specialPageAliases['vep'] = array(
-	'CategoryTree' => array( 'KategorijoidenPu' ),
-);
+$specialPageAliases['vep'] = [
+	'CategoryTree' => [ 'KategorijoidenPu' ],
+];
 
 /** Vietnamese (Tiếng Việt) */
-$specialPageAliases['vi'] = array(
-	'CategoryTree' => array( 'Cây_thể_loại' ),
-);
+$specialPageAliases['vi'] = [
+	'CategoryTree' => [ 'Cây_thể_loại' ],
+];
 
 /** Yiddish (ייִדיש) */
-$specialPageAliases['yi'] = array(
-	'CategoryTree' => array( 'קאטעגאריע_בוים' ),
-);
+$specialPageAliases['yi'] = [
+	'CategoryTree' => [ 'קאטעגאריע_בוים' ],
+];
 
 /** Simplified Chinese (中文（简体）‎) */
-$specialPageAliases['zh-hans'] = array(
-	'CategoryTree' => array( '分类树' ),
-);
+$specialPageAliases['zh-hans'] = [
+	'CategoryTree' => [ '分类树' ],
+];
 
 /** Traditional Chinese (中文（繁體）‎) */
-$specialPageAliases['zh-hant'] = array(
-	'CategoryTree' => array( '分類樹' ),
-);
+$specialPageAliases['zh-hant'] = [
+	'CategoryTree' => [ '分類樹' ],
+];
 
 /** Chinese (Taiwan) (中文（台灣）‎) */
-$specialPageAliases['zh-tw'] = array(
-	'CategoryTree' => array( '分類樹' ),
-);
+$specialPageAliases['zh-tw'] = [
+	'CategoryTree' => [ '分類樹' ],
+];

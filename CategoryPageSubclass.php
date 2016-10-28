@@ -53,7 +53,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	}
 
 	function clearCategoryState() {
-		$this->child_cats = array();
+		$this->child_cats = [];
 		parent::clearCategoryState();
 	}
 

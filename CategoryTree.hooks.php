@@ -90,7 +90,7 @@ class CategoryTreeHooks {
 		$cat = array_shift( $params );
 
 		// build associative arguments from flat parameter list
-		$argv = array();
+		$argv = [];
 		foreach ( $params as $p ) {
 			if ( preg_match( '/^\s*(\S.*?)\s*=\s*(.*?)\s*$/', $p, $m ) ) {
 				$k = $m[1];
@@ -105,7 +105,7 @@ class CategoryTreeHooks {
 
 		// now handle just like a <categorytree> tag
 		$html = self::parserHook( $cat, $argv, $parser );
-		return array( $html, 'noparse' => true, 'isHTML' => true );
+		return [ $html, 'noparse' => true, 'isHTML' => true ];
 	}
 
 	/**
