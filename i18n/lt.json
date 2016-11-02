@@ -35,5 +35,6 @@
 	"categorytree-no-pages": "jokių puslapių ar subkategorijų",
 	"categorytree-not-found": "Kategorija <i>$1</i> nerasta",
 	"categorytree-error": "Duomenų įkėlimo problema.",
-	"categorytree-retry": "Palaukite šiek tiek ir bandykite iš naujo."
+	"categorytree-retry": "Palaukite šiek tiek ir bandykite iš naujo.",
+	"apihelp-categorytree-description": "CategoryTree plėtinio vidinis modulis."
 }
