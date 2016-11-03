@@ -7,7 +7,11 @@ class ApiCategoryTree extends ApiBase {
 		if ( isset( $params['options'] ) ) {
 			$options = FormatJson::decode( $params['options'] );
 			if ( !is_object( $options ) ) {
-				$this->dieUsage( 'Options must be valid a JSON object', 'invalidjson' );
+				if ( is_callable( [ $this, 'dieWithError' ] ) ) {
+					$this->dieWithError( 'apierror-categorytree-invalidjson', 'invalidjson' );
+				} else {
+					$this->dieUsage( 'Options must be valid a JSON object', 'invalidjson' );
+				}
 				return;
 			}
 			$options = get_object_vars( $options );
