@@ -16,11 +16,11 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	 * @return CategoryTree
 	 */
 	function getCategoryTree() {
-		global $wgOut, $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeForceHeaders;
+		global $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeForceHeaders;
 
 		if ( !isset( $this->categorytree ) ) {
 			if ( !$wgCategoryTreeForceHeaders ) {
-				CategoryTree::setHeaders( $wgOut );
+				CategoryTree::setHeaders( $this->getOutput() );
 			}
 
 			$this->categorytree = new CategoryTree( $wgCategoryTreeCategoryPageOptions );
@@ -36,11 +36,9 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	 * @param $pageLength
 	 */
 	function addSubcategoryObject( Category $cat, $sortkey, $pageLength ) {
-		global $wgRequest;
-
 		$title = $cat->getTitle();
 
-		if ( $wgRequest->getCheck( 'notree' ) ) {
+		if ( $this->getRequest()->getCheck( 'notree' ) ) {
 			parent::addSubcategoryObject( $cat, $sortkey, $pageLength );
 			return;
 		}
