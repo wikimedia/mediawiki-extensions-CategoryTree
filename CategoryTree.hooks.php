@@ -247,4 +247,55 @@ class CategoryTreeHooks {
 		$vars['wgCategoryTreePageCategoryOptions'] = $ct->getOptionsAsJsStructure();
 		return true;
 	}
+
+	/**
+	 * Hook handler for the SpecialTrackingCategories::preprocess hook
+	 * @param SpecialPage $specialPage SpecialTrackingCategories object
+	 * @param array $trackingCategories [ 'msg' => Title, 'cats' => Title[] ]
+	 */
+	public static function onSpecialTrackingCategoriesPreprocess(
+		$specialPage, $trackingCategories
+	) {
+		$categoryDbKeys = [];
+		foreach ( $trackingCategories as $catMsg => $data ) {
+			foreach ( $data['cats'] as $catTitle ) {
+				$categoryDbKeys[] = $catTitle->getDbKey();
+			}
+		}
+		$categories = [];
+		if ( $categoryDbKeys ) {
+			$dbr = wfGetDB( DB_REPLICA );
+			$res = $dbr->select(
+				'category',
+				[ 'cat_id', 'cat_title', 'cat_pages', 'cat_subcats', 'cat_files' ],
+				[ 'cat_title' => array_unique( $categoryDbKeys ) ],
+				__METHOD__
+			);
+			foreach ( $res as $row ) {
+				$categories[$row->cat_title] = Category::newFromRow( $row );
+			}
+		}
+		$specialPage->categoryTreeCategories = $categories;
+	}
+
+	/**
+	 * Hook handler for the SpecialTrackingCategories::generateCatLink hook
+	 * @param SpecialPage $specialPage SpecialTrackingCategories object
+	 * @param Title $catTitle Title object of the linked category
+	 * @param string &$html Result html
+	 */
+	public static function onSpecialTrackingCategoriesGenerateCatLink(
+		$specialPage, $catTitle, &$html
+	) {
+		if ( !isset( $specialPage->categoryTreeCategories ) ) {
+			return;
+		}
+
+		$cat = null;
+		if ( isset( $specialPage->categoryTreeCategories[$catTitle->getDbKey()] ) ) {
+			$cat = $specialPage->categoryTreeCategories[$catTitle->getDbKey()];
+		}
+
+		$html .= CategoryTree::createCountString( $specialPage->getContext(), $cat, 0 );
+	}
 }
