@@ -66,6 +66,12 @@
 	"Hooks": {
 		"ArticleFromTitle": [
 			"CategoryTreeHooks::articleFromTitle"
+		],
+		"SpecialTrackingCategories::preprocess": [
+			"CategoryTreeHooks::onSpecialTrackingCategoriesPreprocess"
+		],
+		"SpecialTrackingCategories::generateCatLink": [
+			"CategoryTreeHooks::onSpecialTrackingCategoriesGenerateCatLink"
 		]
 	},
 	"config": {

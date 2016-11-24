@@ -583,22 +583,14 @@ class CategoryTree {
 
 		$attr = [ 'class' => 'CategoryTreeBullet' ];
 
-		# Get counts, with conversion to integer so === works
-		# Note: $allCount is the total number of cat members,
-		# not the count of how many members are normal pages.
-		$allCount = $cat ? intval( $cat->getPageCount() ) : 0;
-		$subcatCount = $cat ? intval( $cat->getSubcatCount() ) : 0;
-		$fileCount = $cat ? intval( $cat->getFileCount() ) : 0;
-
 		if ( $ns == NS_CATEGORY ) {
-
 			if ( $cat ) {
 				if ( $mode == CategoryTreeMode::CATEGORIES ) {
-					$count = $subcatCount;
+					$count = intval( $cat->getSubcatCount() );
 				} elseif ( $mode == CategoryTreeMode::PAGES ) {
-					$count = $allCount - $fileCount;
+					$count = intval( $cat->getPageCount() ) - intval( $cat->getFileCount() );
 				} else {
-					$count = $allCount;
+					$count = intval( $cat->getPageCount() );
 				}
 			}
 			if ( $count === 0 ) {
@@ -634,44 +626,7 @@ class CategoryTree {
 			. $label . Xml::closeElement( 'a' );
 
 		if ( $count !== false && $this->getOption( 'showcount' ) ) {
-			$pages = $allCount - $subcatCount - $fileCount;
-
-			global $wgContLang, $wgLang;
-			$attr = [
-				'title' => wfMessage( 'categorytree-member-counts' )
-					->numParams( $subcatCount, $pages , $fileCount, $allCount, $count )->text(),
-				'dir' => $wgLang->getDir() # numbers and commas get messed up in a mixed dir env
-			];
-
-			$s .= $wgContLang->getDirMark() . ' ';
-
-			# Create a list of category members with only non-zero member counts
-			$memberNums = [];
-			if ( $subcatCount ) {
-				$memberNums[] = wfMessage( 'categorytree-num-categories' )
-					->numParams( $subcatCount )->text();
-			}
-			if ( $pages ) {
-				$memberNums[] = wfMessage( 'categorytree-num-pages' )->numParams( $pages )->text();
-			}
-			if ( $fileCount ) {
-				$memberNums[] = wfMessage( 'categorytree-num-files' )
-					->numParams( $fileCount )->text();
-			}
-			$memberNumsShort = $memberNums
-				? $wgLang->commaList( $memberNums )
-				: wfMessage( 'categorytree-num-empty' )->text();
-
-			# Only $5 is actually used in the default message.
-			# Other arguments can be used in a customized message.
-			$s .= Xml::tags(
-				'span',
-				$attr,
-				wfMessage( 'categorytree-member-num' )
-					// Do not use numParams on params 1-4, as they are only used for customisation.
-					->params( $subcatCount, $pages, $fileCount, $allCount, $memberNumsShort )
-					->escaped()
-			);
+			$s .= CategoryTree::createCountString( RequestContext::getMain(), $cat, $count );
 		}
 
 		$s .= Xml::closeElement( 'div' );
@@ -707,6 +662,63 @@ class CategoryTree {
 		$s .= Xml::closeElement( 'div' );
 
 		$s .= "\n\t\t";
+
+		return $s;
+	}
+
+	/**
+	 * Create a string which format the page, subcat and file counts of a category
+	 * @param IContextSource $context
+	 * @param Category|null $cat
+	 * @param int $countMode
+	 * @return string
+	 */
+	public static function createCountString( IContextSource $context, $cat, $countMode ) {
+		global $wgContLang;
+
+		# Get counts, with conversion to integer so === works
+		# Note: $allCount is the total number of cat members,
+		# not the count of how many members are normal pages.
+		$allCount = $cat ? intval( $cat->getPageCount() ) : 0;
+		$subcatCount = $cat ? intval( $cat->getSubcatCount() ) : 0;
+		$fileCount = $cat ? intval( $cat->getFileCount() ) : 0;
+		$pages = $allCount - $subcatCount - $fileCount;
+
+		$attr = [
+			'title' => $context->msg( 'categorytree-member-counts' )
+				->numParams( $subcatCount, $pages , $fileCount, $allCount, $countMode )->text(),
+			'dir' => $context->getLanguage()->getDir() # numbers and commas get messed up in a mixed dir env
+		];
+
+		$s = $wgContLang->getDirMark() . ' ';
+
+		# Create a list of category members with only non-zero member counts
+		$memberNums = [];
+		if ( $subcatCount ) {
+			$memberNums[] = $context->msg( 'categorytree-num-categories' )
+				->numParams( $subcatCount )->text();
+		}
+		if ( $pages ) {
+			$memberNums[] = $context->msg( 'categorytree-num-pages' )->numParams( $pages )->text();
+		}
+		if ( $fileCount ) {
+			$memberNums[] = $context->msg( 'categorytree-num-files' )
+				->numParams( $fileCount )->text();
+		}
+		$memberNumsShort = $memberNums
+			? $context->getLanguage()->commaList( $memberNums )
+			: $context->msg( 'categorytree-num-empty' )->text();
+
+		# Only $5 is actually used in the default message.
+		# Other arguments can be used in a customized message.
+		$s .= Xml::tags(
+			'span',
+			$attr,
+			$context->msg( 'categorytree-member-num' )
+				// Do not use numParams on params 1-4, as they are only used for customisation.
+				->params( $subcatCount, $pages, $fileCount, $allCount, $memberNumsShort )
+				->escaped()
+		);
 
 		return $s;
 	}
