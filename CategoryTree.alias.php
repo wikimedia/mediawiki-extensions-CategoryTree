@@ -459,7 +459,7 @@ $specialPageAliases['tr'] = [
 
 /** Ukrainian (українська) */
 $specialPageAliases['uk'] = [
-	'CategoryTree' => [ 'Дерево_категорій' ],
+	'CategoryTree' => [ 'Дерево_категорій', 'Дерево_категорий' ],
 ];
 
 /** Urdu (اردو) */

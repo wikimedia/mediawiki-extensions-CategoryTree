@@ -223,7 +223,7 @@ $magicWords['tyv'] = [
 
 /** Ukrainian (українська) */
 $magicWords['uk'] = [
-	'categorytree' => [ 0, 'деревокатегорій' ],
+	'categorytree' => [ 0, 'деревокатегорій', 'деревокатегорий' ],
 ];
 
 /** Urdu (اردو) */
