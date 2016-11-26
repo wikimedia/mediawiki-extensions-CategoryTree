@@ -31,6 +31,11 @@ $magicWords['arz'] = [
 	'categorytree' => [ 0, 'شجرة_تصنيف' ],
 ];
 
+/** Bengali (বাংলা) */
+$magicWords['bn'] = [
+	'categorytree' => [ 0, 'বিষয়শ্রেণী_বৃক্ষ', 'বিষয়শ্রেণীবৃক্ষ', 'categorytree' ],
+];
+
 /** Breton (brezhoneg) */
 $magicWords['br'] = [
 	'categorytree' => [ 0, 'GwezennadurRummad' ],
