@@ -9,7 +9,7 @@
 	"categorytree-portlet": "Thể loại",
 	"categorytree-legend": "Hiển thị cây thể loại",
 	"categorytree-desc": "Công cụ AJAX để hiển thị [[Special:CategoryTree|cấu trúc thể loại]] của một wiki",
-	"categorytree-header": "Gõ vào tên thể loại để xem nội dung của nó theo cấu trúc cây.\nChú ý rằng chức năng này sử dụng chức năng JavaScript, với tên AJAX.\nNếu bạn đang sử dụng trình duyệt rất cũ, hoặc đã tắt JavaScript, nó sẽ không hoạt động.",
+	"categorytree-header": "Gõ vào tên thể loại để xem nội dung của nó theo cấu trúc cây. (Yêu cầu JavaScript.)",
 	"categorytree-category": "Thể loại:",
 	"categorytree-go": "Hiển thị",
 	"categorytree-parents": "Các thể loại mẹ",
