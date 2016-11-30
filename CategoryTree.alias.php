@@ -82,6 +82,11 @@ $specialPageAliases['bjn'] = [
 	'CategoryTree' => [ 'Puhun_tumbung' ],
 ];
 
+/** Bengali (বাংলা) */
+$specialPageAliases['bn'] = [
+	'CategoryTree' => [ 'বিষয়শ্রেণী_বৃক্ষ' ],
+];
+
 /** Breton (brezhoneg) */
 $specialPageAliases['br'] = [
 	'CategoryTree' => [ 'GwezennadurRummad' ],
