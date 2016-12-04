@@ -7,7 +7,8 @@
 			"Purodha",
 			"Raimond Spekking",
 			"SVG",
-			"MGChecker"
+			"MGChecker",
+			"Umherirrender"
 		]
 	},
 	"categorytree": "Kategorienbaum",
@@ -25,9 +26,9 @@
 	"categorytree-collapse": "einklappen",
 	"categorytree-expand": "ausklappen",
 	"categorytree-member-counts": "enthält {{PLURAL:$1|1 Unterkategorie|$1 Unterkategorien}}, {{PLURAL:$2|1 Seite|$2 Seiten}} und {{PLURAL:$3|1 Datei|$3 Dateien}}",
-	"categorytree-num-categories": "$1 K",
-	"categorytree-num-pages": "$1 S",
-	"categorytree-num-files": "$1 D",
+	"categorytree-num-categories": "$1&nbsp;K",
+	"categorytree-num-pages": "$1&nbsp;S",
+	"categorytree-num-files": "$1&nbsp;D",
 	"categorytree-num-empty": "leer",
 	"categorytree-load": "laden",
 	"categorytree-loading": "lade …",
