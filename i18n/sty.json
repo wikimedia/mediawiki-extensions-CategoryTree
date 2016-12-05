@@ -4,5 +4,8 @@
 			"Khanmarat"
 		]
 	},
+	"categorytree-expand": "ацҡалы",
+	"categorytree-member-counts": "$1 {{PLURAL:$1|1 төргөннө|$1 төргөннәрне|$1 төргөннәртәнн}}, $2 {{PLURAL:$2|1 питне|$2 питләрне|$2 питләртән}} әм {{PLURAL:$3|1 файл|$3 файлны}}ны үс эценә алаты",
+	"categorytree-num-categories": "$1 К",
 	"categorytree-num-pages": "$1 П"
 }

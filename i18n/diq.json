@@ -6,14 +6,15 @@
 			"Mirzali",
 			"Xoser",
 			"Kumkumuk",
-			"1917 Ekim Devrimi"
+			"1917 Ekim Devrimi",
+			"Gırd"
 		]
 	},
 	"categorytree": "Dara Kategoriya",
 	"categorytree-portlet": "Kategoriy",
 	"categorytree-legend": "Leya kategoriya bıasne",
 	"categorytree-desc": "[[Special:CategoryTree|Babeta kategoriya]] dinamikey sera idare ke",
-	"categorytree-header": "Zerrekê dara kategori vıraşten dı namey kategori de kerdışi bıvin. \n(Javaskript lazıma)",
+	"categorytree-header": "Yew namey kategori bınuse kı zerrekê ey zey vıraştışê dare bıvêne. (Javaskript lazımo)",
 	"categorytree-category": "Kategori:",
 	"categorytree-go": "Bar ke",
 	"categorytree-parents": "Kategoriyê serêni",
