@@ -57,5 +57,6 @@
 	"categorytree-retry": "Instruction to try again later",
 	"apihelp-categorytree-description": "{{doc-apihelp-description|categorytree}}",
 	"apihelp-categorytree-param-category": "{{doc-apihelp-param|categorytree|category}}",
-	"apihelp-categorytree-param-options": "{{doc-apihelp-param|categorytree|options}}"
+	"apihelp-categorytree-param-options": "{{doc-apihelp-param|categorytree|options}}",
+	"apierror-categorytree-invalidjson": "{{doc-apierror}}"
 }
