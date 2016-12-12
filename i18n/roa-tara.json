@@ -31,5 +31,6 @@
 	"categorytree-no-pages": "nisciune pàgene o sotte categorije",
 	"categorytree-not-found": "Categorije <i>$1</i> non acchiate",
 	"categorytree-error": "Probbleme carecanne le date.",
-	"categorytree-retry": "Aspitte 'nu mumende e pruève 'n'otra vote."
+	"categorytree-retry": "Aspitte 'nu mumende e pruève 'n'otra vote.",
+	"apierror-categorytree-invalidjson": "Opziune onna essere valide pe 'n'oggette JSON."
 }

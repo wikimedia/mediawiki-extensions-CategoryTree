@@ -9,7 +9,7 @@
 	"categorytree-portlet": "Categoríes",
 	"categorytree-legend": "Amosar l'árbole de categoríes",
 	"categorytree-desc": "Accesoriu basáu n'AJAX qu'amuesa la [[Special:CategoryTree|estructura de categoríes]] d'una wiki",
-	"categorytree-header": "Escribi un nome de categoría pa ver el so conteníu estructuráu en forma\nd'árbole. Fíxate en qu'esto requier la erbía AJAX de JavaScript. Si tienes\nun navegador mui antiguu o'l JavaScript desactiváu, nun va funcionar.",
+	"categorytree-header": "Escribe un nome de categoría pa ver el so conteníu con estructura d'árbole. (Rique JavaScript)",
 	"categorytree-category": "Categoría:",
 	"categorytree-go": "Amosar árbole",
 	"categorytree-parents": "Categoríes superiores",
@@ -35,5 +35,6 @@
 	"categorytree-retry": "Por favor, espera unos momentos y inténtalo otra vuelta.",
 	"apihelp-categorytree-description": "Módulu internu pa la estensión CategoryTree.",
 	"apihelp-categorytree-param-category": "Títulu nel espaciu de nomes de categoríes, inoraráse'l prefixu si se da.",
-	"apihelp-categorytree-param-options": "Opciones pal constructor de CategoryTree como oxetu JSON. La opción predeterminada pa la fondura (Depth) ye de <kbd>1</kbd>."
+	"apihelp-categorytree-param-options": "Opciones pal constructor de CategoryTree como oxetu JSON. La opción <var>depth</var> (fondura) tien el valor predetermináu de <kbd>1</kbd>.",
+	"apierror-categorytree-invalidjson": "Les opciones tienen de ser un oxetu JSON válidu."
 }

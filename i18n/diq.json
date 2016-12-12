@@ -40,5 +40,6 @@
 	"categorytree-retry": "Şıma ra reca tenekê pıpawê, bahdo fına bıcerbnê.",
 	"apihelp-categorytree-description": "Derganiya zerre de Module Categorytree.",
 	"apihelp-categorytree-param-category": "Serekê canameya kategori,  verole grotış do nê gêriyeno",
-	"apihelp-categorytree-param-options": "İnşaya weçeneganê Categorytree JSON objeyan vıraziya.\nHesıbyaye xoriyeya weçena <kbd>1</kbd> a."
+	"apihelp-categorytree-param-options": "İnşaya weçeneganê Categorytree JSON objeyan vıraziya.\nHesıbyaye xoriyeya weçena <kbd>1</kbd> a.",
+	"apierror-categorytree-invalidjson": "Weçenegê objeyê JSON'i ravêreno"
 }

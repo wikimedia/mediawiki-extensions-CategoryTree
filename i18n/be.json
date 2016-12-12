@@ -3,14 +3,15 @@
 		"authors": [
 			"Тест",
 			"Чаховіч Уладзіслаў",
-			"Mikalai Udodau"
+			"Mikalai Udodau",
+			"Mechanizatar"
 		]
 	},
 	"categorytree": "Дрэва катэгорый",
 	"categorytree-portlet": "Катэгорыі",
 	"categorytree-legend": "Паказаць дрэва катэгорый",
 	"categorytree-desc": "AJAX-кампанент для адлюстравання [[Special:CategoryTree|структуры катэгорый]] вікі",
-	"categorytree-header": "Увядзіце імя катэгорыі, і яна будзе паказана ў выглядзе дрэва.\nГэта магчымасць даступная, толькі калі ваш браўзер падтрымлівае AJAX.\nКалі ў вас старая версія браўзера ці адключаны JavaScript, паказ падкатэгорый у выглядзе дрэва недаступны.",
+	"categorytree-header": "Увядзіце назву катэгорыі, каб пабачыць яе змесціва ў выглядзе дрэва (патрабуе JavaScript).",
 	"categorytree-category": "Катэгорыя:",
 	"categorytree-go": "Загрузіць",
 	"categorytree-parents": "Бацькоўскія катэгорыі",
@@ -33,5 +34,6 @@
 	"categorytree-no-pages": "няма артыкулаў і падкатэгорый",
 	"categorytree-not-found": "Катэгорыя «$1» не знойдзена.",
 	"categorytree-error": "Памылка загрузкі даных.",
-	"categorytree-retry": "Калі ласка, пачакайце і паспрабуйце яшчэ раз."
+	"categorytree-retry": "Калі ласка, пачакайце і паспрабуйце яшчэ раз.",
+	"apierror-categorytree-invalidjson": "Опцыі павінны быць дапушчальнымі JSON-аб’ектамі."
 }

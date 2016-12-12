@@ -11,7 +11,7 @@
 	"categorytree-portlet": "Төркемнәр",
 	"categorytree-legend": "Төркемнәрнең шәҗәрәсен ачарга",
 	"categorytree-desc": "[[Special:CategoryTree|Төркемнәрнең асылы]]н аңлату өчен төзелгән AJAX-бит",
-	"categorytree-header": "Төркемнең исемен кертегез һәм ул шәҗәрә рәвешендә күрсәтеләчәк.\nБу мөмкинчелек сезнең браузерның AJAX ны тәэмин итүдән генә торырга мөмкин.\nӘгәр дә сезнең браузерыгыз иске яки JavaScript сүндерелгән булса, бу мөмкинчелек эшләмәячәк.",
+	"categorytree-header": "Төркемнең исемен кертегез һәм ул шәҗәрә рәвешендә күрсәтеләчәк (JavaScript кирәк булачак).",
 	"categorytree-category": "Төркем:",
 	"categorytree-go": "Йөкләү",
 	"categorytree-parents": "Төп төркемнәр",
@@ -37,5 +37,5 @@
 	"categorytree-retry": "Зинһар бераз көтеп торыгыз һәм тагын бер кат йөкләүне башкарып карагыз.",
 	"apihelp-categorytree-description": "CategoryTree кушымтасы өчен эчке модуль.",
 	"apihelp-categorytree-param-category": "Төркемнәр мәйданы исемлеге, куелган очракта префикс кулланылмый.",
-	"apihelp-categorytree-param-options": "JSON-җисемнәр сыман CategoryTree тәзүчесе төрләре. Тирәнлек параметры <kbd>1</kbd> итеп куелган."
+	"apihelp-categorytree-param-options": "JSON-җисемнәр сыман CategoryTree төзүчесе төрләре. <var>depth</var> (тирәнлек) параметры <kbd>1</kbd> итеп куелган."
 }
