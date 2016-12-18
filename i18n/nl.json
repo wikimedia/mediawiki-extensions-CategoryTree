@@ -3,14 +3,15 @@
 		"authors": [
 			"Kippenvlees1",
 			"SPQRobin",
-			"Siebrand"
+			"Siebrand",
+			"Mainframe98"
 		]
 	},
 	"categorytree": "Categorieboom",
 	"categorytree-portlet": "Categorieën",
 	"categorytree-legend": "Categorieboom weergeven",
 	"categorytree-desc": "AJAX-gebaseerde uitbreiding om de [[Special:CategoryTree|categoriestructuur]] van een wiki te bekijken",
-	"categorytree-header": "Geef een categorienaam in om de inhoud als een boomstructuur te bekijken.\nLet op: deze functie gebruikt JavaScript-functionaliteit die bekend staat als AJAX.\nAls u een verouderde browser hebt of JavaScript uitgeschakeld is, dan werkt deze functie niet.",
+	"categorytree-header": "Geef een categorienaam in om de inhoud als een boomstructuur te bekijken. (Vereist JavaScript.)",
 	"categorytree-category": "Categorie:",
 	"categorytree-go": "Structuur weergeven",
 	"categorytree-parents": "Bovenliggende categorieën",
