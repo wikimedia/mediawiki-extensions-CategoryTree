@@ -9,7 +9,7 @@
 	"categorytree-portlet": "Categorias",
 	"categorytree-legend": "Monstrar arbore de categorias",
 	"categorytree-desc": "Navigar dynamicamente per le [[Special:CategoryTree|structura de categorias]]",
-	"categorytree-header": "Entra le nomine de un categoria pro vider su contento como un structura arboree.\nNota que isto require un functionalitate de JavaScript avantiate cognoscite como AJAX.\nSi tu ha un navigator multo vetule, o ha disactivate JavaScript, isto non functionara.",
+	"categorytree-header": "Entra le nomine de un categoria pro vider su contento como un structura arboree.\n(Require JavaScript.)",
 	"categorytree-category": "Categoria:",
 	"categorytree-go": "Monstrar arbore",
 	"categorytree-parents": "Categorias superior",
