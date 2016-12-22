@@ -10,14 +10,15 @@
 			"Vivaelcelta",
 			"Fitoschido",
 			"Themasterriot",
-			"Macofe"
+			"Macofe",
+			"Dgstranz"
 		]
 	},
 	"categorytree": "Árbol de categorías",
 	"categorytree-portlet": "Categorías",
 	"categorytree-legend": "Mostrar árbol de categorías",
 	"categorytree-desc": "Navegar dinámicamente por la [[Special:CategoryTree|estructura de categorías]]",
-	"categorytree-header": "Escribe un nombre de categoría para ver su contenido con una estructura en árbol.\nTen en cuenta que esto requiere funciones JavaScript avanzadas conocidas como AJAX.\nSi tienes un navegador antiguo, o tienes deshabilitado el JavaScript, esto no funcionará.",
+	"categorytree-header": "Escribe un nombre de categoría para ver su contenido con una estructura de árbol. (Requiere JavaScript.)",
 	"categorytree-category": "Categoría:",
 	"categorytree-go": "Cargar",
 	"categorytree-parents": "Categorías superiores",
