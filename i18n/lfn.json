@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Malafaya"
+			"Malafaya",
+			"Katxis"
 		]
 	},
 	"categorytree": "Arbor de categorias",
 	"categorytree-portlet": "Categorias",
-	"categorytree-category": "Categoria:"
+	"categorytree-category": "Categoria:",
+	"categorytree-expand": "estende",
+	"categorytree-num-pages": "$1 P"
 }
