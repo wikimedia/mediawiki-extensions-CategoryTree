@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Malafaya"
+			"Malafaya",
+			"Joao Xavier"
 		]
 	},
 	"categorytree": "Kategorio-arboro",
@@ -12,7 +13,11 @@
 	"categorytree-mode-categories": "nur kategorii",
 	"categorytree-mode-pages": "pagini ecepte arkivi",
 	"categorytree-mode-all": "omna pagini",
+	"categorytree-expand": "Montrar la listo",
 	"categorytree-member-counts": "kontenas {{PLURAL:$1|1 subkategorio|$1 subkategorii}}, {{PLURAL:$2|1 pagino|$2 pagini}}, ed {{PLURAL:$3|1 arkivo|$3 arkivi}}",
+	"categorytree-num-categories": "$1 C",
+	"categorytree-num-pages": "$1 P",
+	"categorytree-num-files": "$1 P",
 	"categorytree-load": "kargar",
 	"categorytree-nothing-found": "nulo trovita",
 	"categorytree-no-subcategories": "nula subkategorii",
