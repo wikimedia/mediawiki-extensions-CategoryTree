@@ -1,0 +1,6 @@
+{
+    "name": "mediawiki/CategoryTree",
+    "type": "mediawiki-extension",
+    "require": {
+    }
+}
