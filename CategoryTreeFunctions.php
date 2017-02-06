@@ -597,10 +597,15 @@ class CategoryTree {
 				$bullet = wfMessage( 'categorytree-empty-bullet' )->plain() . ' ';
 				$attr['class'] = 'CategoryTreeEmptyBullet';
 			} else {
+				global $wgCategoryTreeSidebarOptions;
 				$linkattr = [];
 
 				$linkattr[ 'class' ] = "CategoryTreeToggle";
-				$linkattr['style'] = 'display: none;'; // Unhidden by JS
+				if ($wgCategoryTreeSidebarOptions["hideroot"]) {
+					$linkattr['style'] = 'display: inline;';
+				} else {
+					$linkattr['style'] = 'display: none;';
+				}
 				$linkattr['data-ct-title'] = $key;
 
 				$tag = 'span';
