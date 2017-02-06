@@ -56,9 +56,10 @@ class CategoryTreeHooks {
 
 		if ( $wgCategoryTreeForceHeaders ) {
 			$wgHooks['BeforePageDisplay'][] = 'CategoryTreeHooks::addHeaders';
-		} else {
-			$wgHooks['OutputPageParserOutput'][] = 'CategoryTreeHooks::parserOutput';
+			$wgHooks['BeforePageDisplayMobile'][] = 'CategoryTreeHooks::addHeaders';
 		}
+		$wgHooks['OutputPageParserOutput'][] = 'CategoryTreeHooks::parserOutput';
+
 
 		$wgHooks['MakeGlobalVariablesScript'][] = 'CategoryTreeHooks::getConfigVars';
 	}
@@ -183,7 +184,7 @@ class CategoryTreeHooks {
 	 * @param $skin Skin
 	 * @return bool
 	 */
-	public static function addHeaders( OutputPage $out, Skin $skin )  {
+	public static function addHeaders( OutputPage $out, $skin )  {
 		CategoryTree::setHeaders( $out );
 		return true;
 	}
