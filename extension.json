@@ -39,6 +39,7 @@
 	"ResourceModules": {
 		"ext.categoryTree": {
 			"scripts": "ext.categoryTree.js",
+			"position": "top",
 			"targets" : [
         "desktop",
         "mobile"
