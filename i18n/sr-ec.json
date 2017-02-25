@@ -6,14 +6,15 @@
 			"Rancher",
 			"Sasa Stefanovic",
 			"Slaven Kosanovic",
-			"Михајло Анђелковић"
+			"Михајло Анђелковић",
+			"Сербијана"
 		]
 	},
 	"categorytree": "Стабло категорија",
 	"categorytree-portlet": "Категорије",
 	"categorytree-legend": "Приказ стабла категорија",
 	"categorytree-desc": "Динамичка навигација кроз [[Special:CategoryTree|структуру категорија]]",
-	"categorytree-header": "Унесите назив категорије чији садржај желите да видите у стабластој структури.\nОво захтева напредну функцију JavaScript-а познату као AJAX.\nАко имате старији прегледач или сте онемогућили JavaScript, стабласти приказ неће радити.",
+	"categorytree-header": "Унесите назив категорије чији садржај желите да видите у стабластој структури (захтева Јаваскрипту).",
 	"categorytree-category": "Категорија:",
 	"categorytree-go": "Прикажи стабло",
 	"categorytree-parents": "Наткатегорије",
