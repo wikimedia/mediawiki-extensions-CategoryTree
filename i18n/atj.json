@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amqui"
+			"Amqui",
+			"Jean-paul echaquan"
 		]
 	},
+	"categorytree-expand": "Otamirota",
 	"categorytree-num-categories": "$1 M",
-	"categorytree-num-pages": "$1 M"
+	"categorytree-num-pages": "$1 M",
+	"categorytree-num-files": "$1 M"
 }
