@@ -694,7 +694,7 @@ class CategoryTree {
 
 		# Create a list of category members with only non-zero member counts
 		$memberNums = [];
-		if ( $subcatCount ) {
+		if ( $subcatCount ) { 
 			$memberNums[] = $context->msg( 'categorytree-num-categories' )
 				->numParams( $subcatCount )->text();
 		}

@@ -65,6 +65,8 @@
 .CategoryTreeTag {
 	margin-top: 0.5ex;
 	margin-bottom: 0.5ex;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .CategoryTreeNotice {
@@ -83,7 +85,149 @@
 	zoom: 1;
 	*display: inline;
 }
-
+.
 .CategoryTreeSection {
 	direction: ltr;
 }
+
+.dokit-cat {
+    float:left;
+    width:100%;
+    overflow: hidden;
+    max-height: 106px;
+    margin-bottom: 45px;
+}
+
+.dokit-cat .CategoryTreeSection {
+    width: 25%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dokit-cat .CategoryTreeSection .CategoryTreeItem {
+    border: 1px solid #ddd;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.dokit-cat .CategoryTreeSection .CategoryTreeItem:hover {
+    border-color:#bbb;
+}
+
+.dokit-cat .CategoryTreeBullet, .dokit-cat .CategoryTreeEmptyBullet {
+	display:none;
+}
+
+.dokit-cat .CategoryTreeSection .CategoryTreeChildren .CategoryTreeSection {
+    width: 100%;
+    float: left;
+    margin: 0%;
+    border: none;
+    padding: 0px;
+  }
+
+body[class^='page-Category_'] .contentHeader, body[class*='page-Category_'] .contentHeader,
+body[class^='page-Catégorie_'] .contentHeader, body[class*='page-Catégorie_'] .contentHeader,
+body[class^='page-Category_'] .mw-indicators, body[class*='page-Category_'] .mw-indicators,
+body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] .mw-indicators {
+	display: none;
+}
+
+/*********************
+ * Category Tree Standard Page
+ *********************/
+
+.mw-category-generated #mw-subcategories ul {
+    margin-left: 0;
+    padding-left: 0px;
+    width: 100%;
+    float: left;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 40px;
+}
+
+.mw-category-generated h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top:10px;
+}
+
+.mw-category-generated #mw-subcategories .CategoryTreeChildren {
+    margin-left:0px;
+}
+
+.mw-category-generated #mw-subcategories .CategoryTreeEmptyBullet, .mw-category-generated #mw-subcategories .CategoryTreeBullet {
+	display:none;
+}
+
+.mw-category-generated #mw-subcategories .CategoryTreeChildren .CategoryTreeSection {
+    text-align: center;
+    border: 0px;
+    padding: 0px;
+}
+
+.table-edit-form ul.dynatree-container {
+    border: 1px solid #bbb;
+    overflow: auto;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.table-edit-form .pfTreeInput {
+    height: 106px;
+	width: 100%;
+}
+
+.mw-category-generated #mw-pages p {
+	display:none;
+}
+
+.mw-category-generated #mw-subcategories h3 {
+	display:none;
+}
+
+.mw-category-generated #mw-subcategories li {
+    width: 25%;
+    float: left;
+    padding-left: 15px;
+	padding-right: 15px;
+}
+
+.mw-category-generated #mw-subcategories .CategoryTreeSection {
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.CategoryTreeSection a.CategoryTreeLabel {
+    padding: 30px 5px 26px;
+    float: left;
+    width: 100%;
+}
+
+.dokit-cat .CategoryTreeSection a.CategoryTreeLabel {
+    font-size: 17px;
+}
+
+.dokit-cat-tree-hp .CategoryTreeTag {
+    line-height: 25px;
+}
+
+.dokit-cat-tree-hp .CategoryTreeTag {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.dokit-cat-tree-hp .CategoryTreeSection a.CategoryTreeLabel {
+    padding: 0px;
+    float: inherit;
+}
+
