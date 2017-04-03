@@ -10,13 +10,13 @@
 
 ( function ( $, mw ) {
 
-	mw.hook( 'wikipage.content' ).add( function ( $content ) {
+	$( function () {
 
 		/**
 		 * Sets display inline to tree toggle
 		 */
 		function showToggles() {
-			$content.find( 'span.CategoryTreeToggle' ).css( 'display', 'inline' );
+			$('span.CategoryTreeToggle' ).css( 'display', 'inline' );
 		}
 
 		/**
@@ -167,7 +167,7 @@
 		}
 
 		// Register click events and show toggle buttons
-		$content.find( '.CategoryTreeToggle' ).click( handleNode );
+		$('.CategoryTreeToggle' ).click( handleNode );
 		showToggles();
 	} );
 
