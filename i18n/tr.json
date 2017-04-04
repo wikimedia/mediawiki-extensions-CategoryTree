@@ -6,7 +6,8 @@
 			"Khutuck",
 			"Mach",
 			"Runningfridgesrule",
-			"Stultiwikia"
+			"Stultiwikia",
+			"Vito Genovese"
 		]
 	},
 	"categorytree": "Kategori hiyerarşisi",
@@ -15,7 +16,7 @@
 	"categorytree-desc": "[[Special:CategoryTree|Kategori yapısını]] dinamik olarak idare et",
 	"categorytree-header": "Kategori ismini girip, içeriğini hiyerarşik şekilde görebilirsiniz. Bu özellik AJAX adıyla bilinen gelişmiş JavaScript ile çalışabilir. Eğer tarayıcınız eski ise ya da JavaScript kullanımı kapalı ise, çalışmaz.",
 	"categorytree-category": "Kategori",
-	"categorytree-go": "Yükle",
+	"categorytree-go": "Ağacı göster",
 	"categorytree-parents": "Üst kategoriler",
 	"categorytree-mode-label": "Mod:",
 	"categorytree-mode-categories": "sadece kategorileri göster",
@@ -30,7 +31,7 @@
 	"categorytree-num-empty": "boş",
 	"categorytree-load": "yükle",
 	"categorytree-loading": "yükleniyor",
-	"categorytree-nothing-found": "maalesef, sonuç yok",
+	"categorytree-nothing-found": "hiçbir şey bulunamadı",
 	"categorytree-no-subcategories": "alt kategori yok.",
 	"categorytree-no-parent-categories": "üst kategori yok",
 	"categorytree-no-pages": "alt kategori veya madde yok.",
