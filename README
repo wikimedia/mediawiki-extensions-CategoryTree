@@ -16,3 +16,7 @@ for his contributions.
 
 Instructions on installing and using this extension are available at
 <http://www.mediawiki.org/wiki/Extension:CategoryTree>
+
+
+In addition, there is the mode 'breadcrumb', by using the tage such as : 
+  <categorytree mode=breadcrumbs>categoryName</categorytree>

@@ -29,6 +29,7 @@
 	"AutoloadClasses": {
 		"CategoryTreePage": "CategoryTreePage.php",
 		"CategoryTree": "CategoryTreeFunctions.php",
+		"CategoryTreeCore": "CategoryTreeCore.php",
 		"CategoryTreeCategoryPage": "CategoryPageSubclass.php",
 		"CategoryTreeCategoryViewer": "CategoryPageSubclass.php",
 		"CategoryTreeHooks": "CategoryTree.hooks.php",
@@ -80,6 +81,7 @@
 		"CategoryTreeDisableCache": 21600,
 		"CategoryTreeHTTPCache": false,
 		"CategoryTreeMaxDepth": {
+			"102": 4,
 			"10": 1,
 			"20": 1,
 			"0": 2
