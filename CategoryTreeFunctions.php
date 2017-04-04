@@ -694,30 +694,41 @@ class CategoryTree {
 
 		# Create a list of category members with only non-zero member counts
 		$memberNums = [];
-		if ( $subcatCount ) { 
-			$memberNums[] = $context->msg( 'categorytree-num-categories' )
+		if ( $subcatCount ) {
+			$memberNums[] = "<i class='fa fa-folder-o' aria-hidden='true'></i> " . $context->msg( 'categorytree-num-categories' )
 				->numParams( $subcatCount )->text();
 		}
 		if ( $pages ) {
-			$memberNums[] = $context->msg( 'categorytree-num-pages' )->numParams( $pages )->text();
+			$memberNums[] = "<i class='fa fa-file-text-o' aria-hidden='true'></i> " .  $context->msg( 'categorytree-num-pages' )->numParams( $pages )->text();
 		}
 		if ( $fileCount ) {
 			$memberNums[] = $context->msg( 'categorytree-num-files' )
 				->numParams( $fileCount )->text();
 		}
-		$memberNumsShort = $memberNums
-			? $context->getLanguage()->commaList( $memberNums )
-			: $context->msg( 'categorytree-num-empty' )->text();
+		//$memberNumsShort = $memberNums
+		//	? $context->getLanguage()->commaList( $memberNums )
+		//	: $context->msg( 'categorytree-num-empty' )->text();
 
-		# Only $5 is actually used in the default message.
-		# Other arguments can be used in a customized message.
+		$messageSpans = '';
+		foreach ($memberNums as $memberNum) {
+			$messageSpans .= Xml::tags(
+					'span',
+					['class' => 'subcontent-label'],
+					$memberNum
+			).' ';
+		}
+		if( ! $memberNums) {
+			$messageSpans = Xml::tags(
+					'span',
+					['class' => 'empty-label'],
+					$context->msg( 'categorytree-num-empty' )->text()
+			);
+		}
+
 		$s .= Xml::tags(
 			'span',
 			$attr,
-			$context->msg( 'categorytree-member-num' )
-				// Do not use numParams on params 1-4, as they are only used for customisation.
-				->params( $subcatCount, $pages, $fileCount, $allCount, $memberNumsShort )
-				->escaped()
+			$messageSpans
 		);
 
 		return $s;
