@@ -2,14 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Eagleal",
-			"Olsi"
+			"Olsi",
+			"Arianit"
 		]
 	},
 	"categorytree": "Pema e kategorive",
 	"categorytree-portlet": "Kategoritë",
 	"categorytree-legend": "Shfaqni pemën e kategorive",
 	"categorytree-desc": "Lundroni shpejt [[Special:CategoryTree|strukturën e kategorisë]]",
-	"categorytree-header": "Fusni emrin e Kategorisë për të parë Nënkategoritë si Pemë kategorish. Këtij funksioni i nevoiten JavaScript dhe AJAX për të funksionuar si duhet. Nëse keni një shfletues të vjetër, ose nëse i keni deaktivuar JavaScript kjo nuk do të funksionoj.",
+	"categorytree-header": "Fusni emrin e kategorisë për të parë përmbajtjen si pemë kategorish. (Kërkon JavaScript.)",
 	"categorytree-category": "Kategoria:",
 	"categorytree-go": "Plotëso",
 	"categorytree-parents": "Kryekategoritë",
