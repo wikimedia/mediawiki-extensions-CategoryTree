@@ -193,6 +193,12 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
     width: 100%;
 }
 
+.mw-category-generated .load-more, .mw-category-generated .load-more-previous {
+    margin: 10px auto 50px;
+    padding: 11px;
+    font-size: 16px;
+}
+
 .mw-category-generated #mw-subcategories .CategoryTreeChildren {
     margin-left:0px;
 }
