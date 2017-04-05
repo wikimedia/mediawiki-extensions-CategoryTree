@@ -294,7 +294,7 @@ class CategoryTree {
 	 * return array of html data to display breadcrumbs, according to data passed in params
 	 * @param array $nodesInfo
 	 */
-	protected function getHtmlBreadcrumbs($nodesInfo) {
+	protected function getHtmlBreadcrumbs($nodesInfo,$index =0) {
 
 		$hideprefix = $this->getOption( 'hideprefix' );
 		$ns = $nodesInfo['title']->getNamespace();
@@ -319,6 +319,13 @@ class CategoryTree {
 			$label = htmlspecialchars( $nodesInfo['title']->getPrefixedText() );
 		}
 
+		if( $index > 0) {
+			$label = Xml::tags(
+						'a',
+						['href' => $nodesInfo['title']->getLocalURL()],
+						$label);
+		}
+
 		$label = Xml::tags(
 					'span',
 					['class' => 'breadcrum-element'],
@@ -333,12 +340,12 @@ class CategoryTree {
 
 		$separator = Xml::tags(
 					'span',
-					['class' => 'breadcrum-separator'],
+					['class' => 'breadcrum-separator fa fa-chevron-right'],
 					''
 		).' ';
 
 		foreach ($nodesInfo['categories'] as $parentBreadcrumbData) {
-			$parentBreadcrumbs = $this->getHtmlBreadcrumbs($parentBreadcrumbData);
+			$parentBreadcrumbs = $this->getHtmlBreadcrumbs($parentBreadcrumbData, $index +1);
 			foreach ($parentBreadcrumbs as $parentBreadcrumb) {
 				$result[] = $parentBreadcrumb . $separator . $label;
 			}
