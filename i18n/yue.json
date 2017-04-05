@@ -10,7 +10,7 @@
 	"categorytree-portlet": "分類",
 	"categorytree-legend": "顯示分類樹",
 	"categorytree-desc": "一個以AJAX為主嘅小工具去顯示響一個wiki嘅[[Special:CategoryTree|分類架構]]",
-	"categorytree-header": "輸入分類名去睇佢嘅樹形結構內容。\n請留意呢個係需要進階嘅JavaScript功能叫做AJAX。\n如果你係有一個好舊嘅瀏覽器，又或者停用咗JavaScript，咁就會用唔到。",
+	"categorytree-header": "輸入分類名去睇佢嘅樹形結構內容。（需要JavaScript）",
 	"categorytree-category": "分類",
 	"categorytree-go": "載入",
 	"categorytree-parents": "父分類",
@@ -36,5 +36,6 @@
 	"categorytree-retry": "請等多一陣再試過。",
 	"apihelp-categorytree-description": "CategoryTree嘅內部模組",
 	"apihelp-categorytree-param-category": "類空間名嘅標題，如果有字頭會忽略",
-	"apihelp-categorytree-param-options": "將CategoryTree構造器當做JSON物件嘅選項。<var>depth</var>選項預設值係<kbd>1</kbd>。"
+	"apihelp-categorytree-param-options": "將CategoryTree構造器當做JSON物件嘅選項。<var>depth</var>選項預設值係<kbd>1</kbd>。",
+	"apierror-categorytree-invalidjson": "選項一定要係個有效JSON物件。"
 }

@@ -16,7 +16,7 @@
 	"categorytree-portlet": "Kategorier",
 	"categorytree-legend": "Visa kategoriträd",
 	"categorytree-desc": "Dynamisk navigation av [[Special:CategoryTree|kategoristrukturen]]",
-	"categorytree-header": "Fyll i ett kategorinamn för att se dess innehåll som en trädstruktur.\nNotera att detta kräver stöd för AJAX, en avancerad form av JavaScript.\nDärför fungerar funktionen inte i mycket gamla webbläsare eller om JavaScript är avaktiverat.",
+	"categorytree-header": "Fyll i ett kategorinamn för att se dess innehåll som en trädstruktur. (Kräver JavaScript.)",
 	"categorytree-category": "Kategori:",
 	"categorytree-go": "Visa träd",
 	"categorytree-parents": "Föräldrakategorier",
@@ -42,5 +42,6 @@
 	"categorytree-retry": "Vänta en stund och försök igen.",
 	"apihelp-categorytree-description": "Intern modul för tillägget CategoryTree.",
 	"apihelp-categorytree-param-category": "Titel i kategorinamnrymden, prefix kommer att ignoreras om de anges.",
-	"apihelp-categorytree-param-options": "Alternativ för CategoryTree-konstruktören som ett JSON-objekt. Den <var>fördjupade</var> alternativa standardvärdet är <kbd>1</kbd>."
+	"apihelp-categorytree-param-options": "Alternativ för CategoryTree-konstruktören som ett JSON-objekt. Den <var>fördjupade</var> alternativa standardvärdet är <kbd>1</kbd>.",
+	"apierror-categorytree-invalidjson": "Alternativ måste vara ett giltigt JSON-objekt."
 }
