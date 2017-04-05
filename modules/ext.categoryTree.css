@@ -93,13 +93,11 @@
 .dokit-cat {
     float:left;
     width:100%;
-    overflow: hidden;
-    max-height: 106px;
     margin-bottom: 45px;
 }
 
 .dokit-cat .CategoryTreeSection {
-    width: 25%;
+    width: 100%;
     float: left;
     position: relative;
     min-height: 1px;
@@ -108,15 +106,18 @@
 }
 
 .dokit-cat .CategoryTreeSection .CategoryTreeItem {
-    border: 1px solid #ddd;
     text-align: center;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    padding:7px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 20px;
 }
 
-.dokit-cat .CategoryTreeSection .CategoryTreeItem:hover {
-    border-color:#bbb;
+.dokit-cat .CategoryTreeSection .CategoryTreeItem:hover, .mw-category-generated #mw-subcategories .CategoryTreeSection:hover {
+    box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.36);
 }
 
 .dokit-cat .CategoryTreeBullet, .dokit-cat .CategoryTreeEmptyBullet {
@@ -225,25 +226,66 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
 }
 
 .mw-category-generated #mw-subcategories li {
-    width: 25%;
+    width: 100%;
     float: left;
     padding-left: 15px;
 	padding-right: 15px;
 }
 
+@media (min-width: 630px) {
+.mw-category-generated #mw-subcategories li {
+    width: 50%;
+}
+.dokit-cat .CategoryTreeSection {
+    width: 50%;
+}
+}
+
+@media (min-width: 992px) {
+.mw-category-generated #mw-subcategories li {
+    width: 33.33%;
+}
+.dokit-cat .CategoryTreeSection {
+    width: 33.33%;
+}
+}
+
+@media (min-width: 1200px) {
+.mw-category-generated #mw-subcategories li {
+    width: 25%;
+}
+.dokit-cat .CategoryTreeSection {
+    width: 25%;
+}
+}
+
+
+.CategoryTreeItem .subcontent-label, .CategoryTreeItem .empty-label {
+    font-size:13px;
+    color: #999;
+    margin:0 5px;
+}
+
 .mw-category-generated #mw-subcategories .CategoryTreeSection {
     text-align: center;
     border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    padding:7px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 .CategoryTreeSection a.CategoryTreeLabel {
-    padding: 30px 5px 26px;
+    padding: 30px 5px 20px;
     float: left;
+    font-size: 17px;
     width: 100%;
 }
 
-.dokit-cat .CategoryTreeSection a.CategoryTreeLabel {
-    font-size: 17px;
+.CategoryTreeSection a.CategoryTreeLabel:hover {
+    text-decoration: none;
 }
 
 .dokit-cat-tree-hp .CategoryTreeTag {
@@ -258,5 +300,6 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
 .dokit-cat-tree-hp .CategoryTreeSection a.CategoryTreeLabel {
     padding: 0px;
     float: inherit;
+    font-size:14px;
 }
 
