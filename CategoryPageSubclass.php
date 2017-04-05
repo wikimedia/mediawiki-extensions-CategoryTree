@@ -102,19 +102,25 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		// print Tutorials parts
 		if(count($this->articlesTitles) > 0) {
 
-			$limit = 4;
+			$limit = 8;
 
 			$wgOut->addModules( 'ext.wikifab.wfExplore.js');
-
 			$WfExploreCore = new WfExploreCore();
 
 			$params = array();
-			$params['limit'] = intval($limit);
+			$WfExploreCore->setPageResultsLimit($limit);
 			$params['query'] = '[[Category:'.$this->title->getText().']]' ;;
+
+			if(isset($_GET['page'])) {
+				$params['page'] = $_GET['page'];
+			}
 
 			$WfExploreCore->executeSearch( $request = null , $params);
 
 			$r = "";
+
+			$out = '';
+			//$out .= $WfExploreCore->getHtmlForm();
 
 			$paramsOutput = [
 					'showPreviousButton' => true,
@@ -126,7 +132,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 			$ti = wfEscapeWikiText( $this->title->getText() );
 
-			$out = "<div id=\"mw-pages\">\n";
+			$out .= "<div id=\"mw-pages\">\n";
 			$out .= '<h2>' . $this->msg( 'category_tutoriels_header', $ti )->parse() . "</h2>\n";
 			$out .= $r;
 			$out .= "\n</div>";
