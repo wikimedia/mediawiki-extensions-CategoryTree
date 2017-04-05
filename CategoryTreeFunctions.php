@@ -140,6 +140,8 @@ class CategoryTree {
 			$mode = CategoryTreeMode::CATEGORIES;
 		} elseif ( $mode == 'parents' || $mode == 'super' || $mode == 'inverse' ) {
 			$mode = CategoryTreeMode::PARENTS;
+		} elseif ( $mode == 'breadcrumbs' ) {
+			$mode = CategoryTreeMode::BREADCRUMBS;
 		} elseif ( $mode == 'default' ) {
 			$mode = $wgCategoryTreeDefaultOptions['mode'];
 		}
@@ -289,6 +291,78 @@ class CategoryTree {
 	}
 
 	/**
+	 * return array of html data to display breadcrumbs, according to data passed in params
+	 * @param array $nodesInfo
+	 */
+	protected function getHtmlBreadcrumbs($nodesInfo) {
+
+		$hideprefix = $this->getOption( 'hideprefix' );
+		$ns = $nodesInfo['title']->getNamespace();
+
+		if ( $hideprefix == CategoryTreeHidePrefix::ALWAYS ) {
+			$hideprefix = true;
+		} elseif ( $hideprefix == CategoryTreeHidePrefix::AUTO ) {
+			$hideprefix = ( $mode == CategoryTreeMode::CATEGORIES );
+		} elseif ( $hideprefix == CategoryTreeHidePrefix::CATEGORIES ) {
+			$hideprefix = ( $ns == NS_CATEGORY );
+		} else {
+			$hideprefix = true;
+		}
+
+		# when showing only categories, omit namespace in label unless we explicitely defined the configuration setting
+		# patch contributed by Manuel Schneider <manuel.schneider@wikimedia.ch>, Bug 8011
+		if( ! $nodesInfo['title']) {
+			$label = 'Error no title';
+		} else if ( $hideprefix ) {
+			$label = htmlspecialchars( $nodesInfo['title']->getText() );
+		} else {
+			$label = htmlspecialchars( $nodesInfo['title']->getPrefixedText() );
+		}
+
+		$label = Xml::tags(
+					'span',
+					['class' => 'breadcrum-element'],
+					$label
+			).' ';
+
+		if (count($nodesInfo['categories']) == 0) {
+			return [ $label];
+		}
+
+		$result = [];
+
+		$separator = Xml::tags(
+					'span',
+					['class' => 'breadcrum-separator'],
+					''
+		).' ';
+
+		foreach ($nodesInfo['categories'] as $parentBreadcrumbData) {
+			$parentBreadcrumbs = $this->getHtmlBreadcrumbs($parentBreadcrumbData);
+			foreach ($parentBreadcrumbs as $parentBreadcrumb) {
+				$result[] = $parentBreadcrumb . $separator . $label;
+			}
+		}
+		return $result;
+	}
+
+	protected function renderBreadcrumbs($nodeData) {
+		$htmlBreadCrumbs = $this->getHtmlBreadcrumbs($nodeData);
+
+		$r = '';
+		$r .= Xml::openElement('div', ['class' => 'breadcrums-container']);
+		foreach ($htmlBreadCrumbs as $htmlBreadCrumb) {
+			$r .= Xml::tags(
+					'div',
+					['class' => 'breadcrum'],
+					$htmlBreadCrumb
+			).' ';
+		}
+		$r .= Xml::closeElement('div');
+		return $r;
+	}
+
+	/**
 	 * Custom tag implementation. This is called by CategoryTreeHooks::parserHook, which is used to
 	 * load CategoryTreeFunctions.php on demand.
 	 * @param $parser Parser
@@ -330,6 +404,21 @@ class CategoryTree {
 		$attr['data-ct-mode'] = $this->mOptions['mode'];
 		$attr['data-ct-options'] = $this->getOptionsAsJsStructure();
 
+		if ($attr['data-ct-mode'] == CategoryTreeMode::BREADCRUMBS) {
+			// for now only for breadCrumbs, but we should migrate other modes...
+
+			$param = ['mode' => $attr['data-ct-mode']];
+			$categoryTreeCore = new CategoryTreeCore($param);
+
+			$nodeData = $categoryTreeCore->getNodeData( $title, $depth);
+
+			$html = $this->renderBreadcrumbs($nodeData);
+			return $html;
+		}
+
+
+
+
 		$html = '';
 		$html .= Html::openElement( 'div', $attr );
 
@@ -341,8 +430,7 @@ class CategoryTree {
 				$html .= wfMessage( 'categorytree-not-found', $category )->parse();
 			}
 			$html .= Html::closeElement( 'span' );
-			}
-		else {
+		} else {
 			if ( !$hideroot ) {
 				$html .= $this->renderNode( $title, $depth, false );
 			} else {
@@ -769,6 +857,8 @@ class CategoryTree {
 
 		if ( is_numeric( $depth ) ) {
 			$depth = intval( $depth );
+		} else if ($mode == CategoryTreeMode::BREADCRUMBS ) {
+			$depth = isset( $wgCategoryTreeMaxDepth[$mode] ) ? $wgCategoryTreeMaxDepth[$mode] : 1;
 		} else {
 			return 1;
 		}

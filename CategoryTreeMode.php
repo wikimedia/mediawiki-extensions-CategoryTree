@@ -19,4 +19,6 @@ class CategoryTreeMode {
 
     const PARENTS = 100;
 
+    const BREADCRUMBS = 102;
+
 }
