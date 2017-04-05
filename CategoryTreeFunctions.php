@@ -369,6 +369,15 @@ class CategoryTree {
 		return $r;
 	}
 
+	public function getHtmlBreadcrumb($title) {
+		$param = ['mode' => CategoryTreeMode::BREADCRUMBS];
+		$categoryTreeCore = new CategoryTreeCore($param);
+
+		$nodeData = $categoryTreeCore->getNodeData( $title, 10);
+
+		return $this->renderBreadcrumbs($nodeData);
+	}
+
 	/**
 	 * Custom tag implementation. This is called by CategoryTreeHooks::parserHook, which is used to
 	 * load CategoryTreeFunctions.php on demand.

@@ -91,6 +91,22 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	}
 
 
+	/**
+	 * add breadcrumb on top of categories pages
+	 *
+	 * {@inheritDoc}
+	 * @see CategoryViewer::getSubcategorySection()
+	 */
+	function  getSubcategorySection() {
+		$out = '';
+
+		$categoryTree = new CategoryTree([]);
+		$out .= $categoryTree->getHtmlBreadcrumb($this->title);
+
+		$out .= parent::getSubcategorySection();
+		return $out;
+	}
+
 
 	/**
 	 * @return string
