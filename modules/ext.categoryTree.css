@@ -145,7 +145,7 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
 
 .breadcrums-container .breadcrum {
     font-size:19px;
-    margin: 25px 0;
+    margin: 25px 0px 15px -5px;
  }
 
  .breadcrums-container .breadcrum-separator {
@@ -154,7 +154,7 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
     color: #ccc;
  }
 
-.breadcrums-container .breadcrum-element {
+.breadcrums-container .breadcrum-element a {
     padding: 5px;
  }
 
