@@ -14,13 +14,13 @@
 }
 
 #mw-panel div.portal div.body .CategoryTreeTag {
-        margin: 0;
-        font-size: 0.75em;
-        line-height: 1.125em;
+	margin: 0;
+	font-size: 0.75em;
+	line-height: 1.125em;
 }
 
 #mw-panel div.portal div.body .CategoryTreeItem {
-        padding: 0.25em 0;
+	padding: 0.25em 0;
 }
 
 .CategoryTreeChildren {
@@ -33,7 +33,7 @@
 
 .CategoryTreeEmptyBullet {
 	cursor: default;
-	color: #C0C0C0;
+	color: #c0c0c0;
 }
 
 .CategoryTreeBullet a,
@@ -46,7 +46,7 @@
 }
 
 .CategoryTreeToggle {
-	color: #0645AD;
+	color: #0645ad;
 }
 
 .CategoryTreeLabelPage {
@@ -77,11 +77,11 @@
 	display: inline-block;
 	/* why is the -0.5ex needed? */
 	margin: -0.5ex 0 0 1ex;
-	padding:0;
+	padding: 0;
 	vertical-align: top;
 	/* IE6-7 Hack for display: inline-block */
 	zoom: 1;
-	*display: inline;
+	*display: inline; /* stylelint-disable-line declaration-block-no-duplicate-properties */
 }
 
 .CategoryTreeSection {
