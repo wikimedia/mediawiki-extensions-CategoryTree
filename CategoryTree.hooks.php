@@ -168,7 +168,7 @@ class CategoryTreeHooks {
 	 * @param $parserOutput ParserOutput
 	 * @return bool
 	 */
-	public static function parserOutput( $outputPage, $parserOutput )  {
+	public static function parserOutput( $outputPage, $parserOutput ) {
 		if ( !empty( $parserOutput->mCategoryTreeTag ) ) {
 			CategoryTree::setHeaders( $outputPage );
 		}
@@ -183,7 +183,7 @@ class CategoryTreeHooks {
 	 * @param $skin Skin
 	 * @return bool
 	 */
-	public static function addHeaders( OutputPage $out, Skin $skin )  {
+	public static function addHeaders( OutputPage $out, Skin $skin ) {
 		CategoryTree::setHeaders( $out );
 		return true;
 	}

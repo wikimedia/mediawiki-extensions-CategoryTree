@@ -31,12 +31,12 @@ class CategoryTree {
 		$this->mOptions['mode'] = self::decodeMode( $this->mOptions['mode'] );
 
 		if ( $this->mOptions['mode'] == CategoryTreeMode::PARENTS ) {
-			 $this->mOptions['namespaces'] = false; # namespace filter makes no sense with CategoryTreeMode::PARENTS
+			$this->mOptions['namespaces'] = false; # namespace filter makes no sense with CategoryTreeMode::PARENTS
 		}
 
 		$this->mOptions['hideprefix'] = self::decodeHidePrefix( $this->mOptions['hideprefix'] );
-		$this->mOptions['showcount']  = self::decodeBoolean( $this->mOptions['showcount'] );
-		$this->mOptions['namespaces']  = self::decodeNamespaces( $this->mOptions['namespaces'] );
+		$this->mOptions['showcount'] = self::decodeBoolean( $this->mOptions['showcount'] );
+		$this->mOptions['namespaces'] = self::decodeNamespaces( $this->mOptions['namespaces'] );
 
 		if ( $this->mOptions['namespaces'] ) {
 			# automatically adjust mode to match namespace filter

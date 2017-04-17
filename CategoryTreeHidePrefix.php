@@ -12,12 +12,12 @@
  */
 class CategoryTreeHidePrefix {
 
-    const NEVER = 0;
+	const NEVER = 0;
 
-    const ALWAYS = 10;
+	const ALWAYS = 10;
 
-    const CATEGORIES = 20;
+	const CATEGORIES = 20;
 
-    const AUTO = 30;
+	const AUTO = 30;
 
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * Special page for the  CategoryTree extension, an AJAX based gadget
+ * Special page for the CategoryTree extension, an AJAX based gadget
  * to display the category structure of a wiki
  *
  * @file
