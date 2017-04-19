@@ -3,11 +3,12 @@
 		"authors": [
 			"Amqui",
 			"Jean-paul echaquan",
-			"Nehirowisiw"
+			"Nehirowisiw",
+			"Ninmeka"
 		]
 	},
 	"categorytree-expand": "Otamirota",
-	"categorytree-member-counts": "Kahicteki{{PLURAL:$1|1 subcategory|$1 subcategories}} $1 {{PLURAL:$1|Ka tatwenikateki}}, {{PLURAL:$2|1 page|$2 pages}} $2 {{PLURAL:$2|masinahikana}}, kaie {{PLURAL:$3|1 file|$3 files}} $3 {{PLURAL:$3|Masinhikaniwoc}}",
+	"categorytree-member-counts": "Ka acteki{{PLURAL:$1|1 subcategory|$1 subcategories}} $1 {{PLURAL:$1|Ka tatwenikateki}}, {{PLURAL:$2|1 page|$2 pages}} $2 {{PLURAL:$2|masinahikana}}, kaie {{PLURAL:$3|1 file|$3 files}} $3 {{PLURAL:$3|Masinahikaniwoc}}",
 	"categorytree-num-categories": "$1 M",
 	"categorytree-num-pages": "$1 M",
 	"categorytree-num-files": "$1 M"
