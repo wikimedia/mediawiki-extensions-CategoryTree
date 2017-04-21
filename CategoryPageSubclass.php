@@ -103,6 +103,8 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		$categoryTree = new CategoryTree([]);
 		$out .= $categoryTree->getHtmlBreadcrumb($this->title);
 
+		CategoryTree::setHeaders($this->getOutput());
+
 		$out .= parent::getSubcategorySection();
 		return $out;
 	}
