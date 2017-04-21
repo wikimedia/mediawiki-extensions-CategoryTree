@@ -145,6 +145,7 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
 
 .breadcrums-container .breadcrum {
     font-size:19px;
+    margin: 25px 0px 15px -5px;
  }
 
  .breadcrums-container .breadcrum-separator {
@@ -185,9 +186,17 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
 .mw-category-generated h2 {
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
-    font-size: 28px;
+    font-size: 25px;
     margin-bottom: 20px;
-    margin-top:10px;
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.mw-category-generated .load-more, .mw-category-generated .load-more-previous {
+    margin: 10px auto 50px;
+    padding: 11px;
+    font-size: 16px;
 }
 
 .mw-category-generated #mw-subcategories .CategoryTreeChildren {
@@ -215,10 +224,6 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
 .table-edit-form .pfTreeInput {
     height: 106px;
 	width: 100%;
-}
-
-.mw-category-generated #mw-pages p {
-	display:none;
 }
 
 .mw-category-generated #mw-subcategories h3 {
