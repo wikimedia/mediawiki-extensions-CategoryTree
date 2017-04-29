@@ -13,7 +13,7 @@
 	"categorytree-portlet": "Kategorije",
 	"categorytree-legend": "Prikazuje stablo kategorija",
 	"categorytree-desc": "Dinamičko pregledavanje [[Special:CategoryTree|strukture kategorija]]",
-	"categorytree-header": "Unesite ime kategorije da vidite njen sadržaj kao strukturno stablo. Ovo zahtijeva proširenu JavaScript funkcionalnost kao AJAX. Ako imate neki stariji preglednik, ili ste isključili JavaScript, ovo neće raditi.",
+	"categorytree-header": "Upišite ime kategorije da biste vidjeli njen sadržaj u stablastoj strukturi (zahtijeva JavaScript).",
 	"categorytree-category": "Kategorija:",
 	"categorytree-go": "Prikaži stablo",
 	"categorytree-parents": "Nadkategorije",
