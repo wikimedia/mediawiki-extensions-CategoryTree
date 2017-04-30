@@ -4,22 +4,21 @@
  * @package CategoryTree
  */
 
-/*jshint node:true */
+/* eslint-env node */
 module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-jsonlint' );
-	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
+	grunt.loadNpmTasks( 'grunt-eslint' );
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
 	grunt.loadNpmTasks( 'grunt-stylelint' );
 
 	grunt.initConfig( {
 		banana: {
-			all: ['i18n/']
+			all: [ 'i18n/' ]
 		},
-		jshint: {
+		eslint: {
 			all: [
 				'**/*.js',
-				'!node_modules/**',
-				'!vendor/**'
+				'!node_modules/**'
 			]
 		},
 		jsonlint: {
@@ -37,6 +36,6 @@ module.exports = function ( grunt ) {
 		}
 	} );
 
-	grunt.registerTask( 'test', [ 'jsonlint', 'banana', 'jshint', 'stylelint' ] );
+	grunt.registerTask( 'test', [ 'jsonlint', 'banana', 'eslint', 'stylelint' ] );
 	grunt.registerTask( 'default', 'test' );
 };

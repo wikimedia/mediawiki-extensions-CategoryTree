@@ -8,6 +8,8 @@
  * @licence GNU General Public Licence 2.0 or later
  */
 
+/* eslint no-use-before-define: ["error", { "functions": false }] */
+
 ( function ( $, mw ) {
 
 	mw.hook( 'wikipage.content' ).add( function ( $content ) {
@@ -23,9 +25,8 @@
 		 * Handles clicks on the expand buttons, and calls the appropriate function
 		 *
 		 * @context {Element} CategoryTreeToggle
-		 * @param e {jQuery.Event}
 		 */
-		function handleNode( /*e*/ ) {
+		function handleNode() {
 			var $link = $( this );
 			if ( $link.data( 'ct-state' ) === 'collapsed' ) {
 				expandNode( $link );
