@@ -9,7 +9,7 @@
 	"categorytree": "Дрво на категории",
 	"categorytree-portlet": "Категории",
 	"categorytree-legend": "Прикажи дрво на категории",
-	"categorytree-desc": "Динамички прегледник низ [[Special:CategoryTree|структурата на категориите]]",
+	"categorytree-desc": "Динамичка навигација низ [[Special:CategoryTree|структурата на категориите]]",
 	"categorytree-header": "Внесете назив на категорија за да ја видите нејзината содржина во облик на дрво (бара JavaScript).",
 	"categorytree-category": "Категорија:",
 	"categorytree-go": "Прикажи дрво",
