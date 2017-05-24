@@ -40,7 +40,7 @@ class CategoryTree {
 
 		if ( $this->mOptions['namespaces'] ) {
 			# automatically adjust mode to match namespace filter
-			if ( sizeof( $this->mOptions['namespaces'] ) === 1
+			if ( count( $this->mOptions['namespaces'] ) === 1
 				&& $this->mOptions['namespaces'][0] == NS_CATEGORY ) {
 				$this->mOptions['mode'] = CategoryTreeMode::CATEGORIES;
 			} elseif ( !in_array( NS_FILE, $this->mOptions['namespaces'] ) ) {
