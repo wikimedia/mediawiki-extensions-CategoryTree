@@ -19,7 +19,8 @@ class CategoryTree {
 	function __construct( $options ) {
 		global $wgCategoryTreeDefaultOptions;
 
-		# ensure default values and order of options. Order may become important, it may influence the cache key!
+		// ensure default values and order of options.
+		// Order may become important, it may influence the cache key!
 		foreach ( $wgCategoryTreeDefaultOptions as $option => $default ) {
 			if ( isset( $options[$option] ) && !is_null( $options[$option] ) ) {
 				$this->mOptions[$option] = $options[$option];
@@ -31,7 +32,8 @@ class CategoryTree {
 		$this->mOptions['mode'] = self::decodeMode( $this->mOptions['mode'] );
 
 		if ( $this->mOptions['mode'] == CategoryTreeMode::PARENTS ) {
-			$this->mOptions['namespaces'] = false; # namespace filter makes no sense with CategoryTreeMode::PARENTS
+			// namespace filter makes no sense with CategoryTreeMode::PARENTS
+			$this->mOptions['namespaces'] = false;
 		}
 
 		$this->mOptions['hideprefix'] = self::decodeHidePrefix( $this->mOptions['hideprefix'] );
@@ -62,7 +64,7 @@ class CategoryTree {
 	/**
 	 * @return bool
 	 */
-	function isInverse( ) {
+	function isInverse() {
 		return $this->getOption( 'mode' ) == CategoryTreeMode::PARENTS;
 	}
 
@@ -169,9 +171,13 @@ class CategoryTree {
 			return ( (int)$value > 0 );
 		}
 
-		if ( $value == 'yes' || $value == 'y' || $value == 'true' || $value == 't' || $value == 'on' ) {
+		if ( $value == 'yes' || $value == 'y'
+			|| $value == 'true' || $value == 't' || $value == 'on'
+		) {
 			return true;
-		} elseif ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) {
+		} elseif ( $value == 'no' || $value == 'n'
+			|| $value == 'false' || $value == 'f' || $value == 'off'
+		) {
 			return false;
 		} elseif ( $value == 'null' || $value == 'default' || $value == 'none' || $value == 'x' ) {
 			return null;
@@ -202,9 +208,13 @@ class CategoryTree {
 
 		$value = trim( strtolower( $value ) );
 
-		if ( $value == 'yes' || $value == 'y' || $value == 'true' || $value == 't' || $value == 'on' ) {
+		if ( $value == 'yes' || $value == 'y'
+			|| $value == 'true' || $value == 't' || $value == 'on'
+		) {
 			return CategoryTreeHidePrefix::ALWAYS;
-		} elseif ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) {
+		} elseif ( $value == 'no' || $value == 'n'
+			|| $value == 'false' || $value == 'f' || $value == 'off'
+		) {
 			return CategoryTreeHidePrefix::NEVER;
 		} elseif ( $value == 'always' ) {
 			return CategoryTreeHidePrefix::ALWAYS;
@@ -255,7 +265,9 @@ class CategoryTree {
 		$key = "";
 
 		foreach ( $this->mOptions as $k => $v ) {
-			if ( is_array( $v ) ) $v = implode( '|', $v );
+			if ( is_array( $v ) ) {
+				$v = implode( '|', $v );
+			}
 			$key .= $k . ':' . $v . ';';
 		}
 
@@ -299,7 +311,9 @@ class CategoryTree {
 	 * @param $allowMissing bool
 	 * @return bool|string
 	 */
-	function getTag( $parser, $category, $hideroot = false, $attr, $depth = 1, $allowMissing = false ) {
+	function getTag( $parser, $category, $hideroot = false, $attr, $depth = 1,
+		$allowMissing = false
+	) {
 		global $wgCategoryTreeDisableCache;
 
 		$category = trim( $category );
@@ -336,13 +350,13 @@ class CategoryTree {
 		if ( !$allowMissing && !$title->getArticleID() ) {
 			$html .= Html::openElement( 'span', [ 'class' => 'CategoryTreeNotice' ] );
 			if ( $parser ) {
-				$html .= $parser->recursiveTagParse( wfMessage( 'categorytree-not-found', $category )->plain() );
+				$html .= $parser->recursiveTagParse(
+					wfMessage( 'categorytree-not-found', $category )->plain() );
 			} else {
 				$html .= wfMessage( 'categorytree-not-found', $category )->parse();
 			}
 			$html .= Html::closeElement( 'span' );
-			}
-		else {
+		} else {
 			if ( !$hideroot ) {
 				$html .= $this->renderNode( $title, $depth, false );
 			} else {
@@ -385,7 +399,9 @@ class CategoryTree {
 		$options = [ 'ORDER BY' => 'cl_type, cl_sortkey', 'LIMIT' => $wgCategoryTreeMaxChildren ];
 
 		if ( $inverse ) {
-			$joins['categorylinks'] = [ 'RIGHT JOIN', [ 'cl_to = page_title', 'page_namespace' => NS_CATEGORY ] ];
+			$joins['categorylinks'] = [ 'RIGHT JOIN', [
+				'cl_to = page_title', 'page_namespace' => NS_CATEGORY
+			] ];
 			$where['cl_from'] = $title->getArticleID();
 		} else {
 			$joins['categorylinks'] = [ 'JOIN', 'cl_from = page_id' ];
@@ -394,7 +410,8 @@ class CategoryTree {
 
 			# namespace filter.
 			if ( $namespaces ) {
-				# NOTE: we assume that the $namespaces array contains only integers! decodeNamepsaces makes it so.
+				// NOTE: we assume that the $namespaces array contains only integers!
+				// decodeNamepsaces makes it so.
 				$where['page_namespace'] = $namespaces;
 			} elseif ( $mode != CategoryTreeMode::ALL ) {
 				if ( $mode == CategoryTreeMode::PAGES ) {
@@ -410,8 +427,12 @@ class CategoryTree {
 
 		if ( $doCount ) {
 			$tables = array_merge( $tables, [ 'category' ] );
-			$fields = array_merge( $fields, [ 'cat_id', 'cat_title', 'cat_subcats', 'cat_pages', 'cat_files' ] );
-			$joins['category'] = [ 'LEFT JOIN', [ 'cat_title = page_title', 'page_namespace' => NS_CATEGORY ] ];
+			$fields = array_merge( $fields, [
+				'cat_id', 'cat_title', 'cat_subcats', 'cat_pages', 'cat_files'
+			] );
+			$joins['category'] = [ 'LEFT JOIN', [
+				'cat_title = page_title', 'page_namespace' => NS_CATEGORY ]
+			];
 		}
 
 		$res = $dbr->select( $tables, $fields, $where, __METHOD__, $options, $joins );
@@ -509,7 +530,9 @@ class CategoryTree {
 	function renderNode( $title, $children = 0 ) {
 		global $wgCategoryTreeUseCategoryTable;
 
-		if ( $wgCategoryTreeUseCategoryTable && $title->getNamespace() == NS_CATEGORY && !$this->isInverse() ) {
+		if ( $wgCategoryTreeUseCategoryTable && $title->getNamespace() == NS_CATEGORY
+			&& !$this->isInverse()
+		) {
 			$cat = Category::newFromTitle( $title );
 		} else {
 			$cat = null;
@@ -544,8 +567,9 @@ class CategoryTree {
 			$hideprefix = true;
 		}
 
-		# when showing only categories, omit namespace in label unless we explicitely defined the configuration setting
-		# patch contributed by Manuel Schneider <manuel.schneider@wikimedia.ch>, Bug 8011
+		// when showing only categories, omit namespace in label unless we explicitely defined the
+		// configuration setting
+		// patch contributed by Manuel Schneider <manuel.schneider@wikimedia.ch>, Bug 8011
 		if ( $hideprefix ) {
 			$label = htmlspecialchars( $title->getText() );
 		} else {
@@ -686,7 +710,7 @@ class CategoryTree {
 
 		$attr = [
 			'title' => $context->msg( 'categorytree-member-counts' )
-				->numParams( $subcatCount, $pages , $fileCount, $allCount, $countMode )->text(),
+				->numParams( $subcatCount, $pages, $fileCount, $allCount, $countMode )->text(),
 			'dir' => $context->getLanguage()->getDir() # numbers and commas get messed up in a mixed dir env
 		];
 

@@ -41,7 +41,8 @@ class CategoryTreePage extends SpecialPage {
 	 * @param $par array Parameters passed to the page
 	 */
 	function execute( $par ) {
-		global $wgCategoryTreeDefaultOptions, $wgCategoryTreeSpecialPageOptions, $wgCategoryTreeForceHeaders;
+		global $wgCategoryTreeDefaultOptions, $wgCategoryTreeSpecialPageOptions,
+			$wgCategoryTreeForceHeaders;
 
 		$this->setHeaders();
 		$request = $this->getRequest();
@@ -114,11 +115,11 @@ class CategoryTreePage extends SpecialPage {
 	 */
 	function executeInputForm() {
 		$namespaces = $this->getRequest()->getVal( 'namespaces', '' );
-		//mode may be overriden by namespaces option
+		// mode may be overriden by namespaces option
 		$mode = ( $namespaces == '' ? $this->getOption( 'mode' ) : CategoryTreeMode::ALL );
 		if ( $mode == CategoryTreeMode::CATEGORIES ) {
 			$modeDefault = 'categories';
-		} elseif( $mode == CategoryTreeMode::PAGES ) {
+		} elseif ( $mode == CategoryTreeMode::PAGES ) {
 			$modeDefault = 'pages';
 		} else {
 			$modeDefault = 'all';

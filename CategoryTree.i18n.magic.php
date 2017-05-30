@@ -138,7 +138,8 @@ $magicWords['kw'] = [
 
 /** Ladino (Ladino) */
 $magicWords['lad'] = [
-	'categorytree' => [ 0, 'árvoledekateggorías', 'árboldecategorías', 'arboldecategorias', 'categorytree' ],
+	'categorytree' => [ 0, 'árvoledekateggorías', 'árboldecategorías', 'arboldecategorias',
+		'categorytree' ],
 ];
 
 /** Malagasy (Malagasy) */

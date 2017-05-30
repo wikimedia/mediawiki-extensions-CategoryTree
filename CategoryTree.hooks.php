@@ -17,9 +17,10 @@ class CategoryTreeHooks {
 	 */
 	public static function initialize() {
 		global $wgUseAjax, $wgHooks, $wgRequest;
-		global $wgCategoryTreeDefaultOptions, $wgCategoryTreeDefaultMode, $wgCategoryTreeOmitNamespace;
-		global $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeCategoryPageMode, $wgCategoryTreeAllowTag;
-		global $wgCategoryTreeSidebarRoot, $wgCategoryTreeForceHeaders, $wgCategoryTreeHijackPageCategories;
+		global $wgCategoryTreeDefaultOptions, $wgCategoryTreeDefaultMode, $wgCategoryTreeAllowTag;
+		global $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeCategoryPageMode;
+		global $wgCategoryTreeSidebarRoot, $wgCategoryTreeForceHeaders;
+		global $wgCategoryTreeHijackPageCategories, $wgCategoryTreeOmitNamespace;
 
 		# Abort if AJAX is not enabled
 		if ( !$wgUseAjax ) {
@@ -29,7 +30,8 @@ class CategoryTreeHooks {
 
 		if ( $wgCategoryTreeSidebarRoot ) {
 			$wgCategoryTreeForceHeaders = true; # needed on every page anyway
-			$wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'CategoryTreeHooks::skinTemplateOutputPageBeforeExec';
+			$wgHooks['SkinTemplateOutputPageBeforeExec'][] =
+				'CategoryTreeHooks::skinTemplateOutputPageBeforeExec';
 		}
 
 		if ( $wgCategoryTreeHijackPageCategories ) {
@@ -42,16 +44,23 @@ class CategoryTreeHooks {
 			$wgHooks['ParserFirstCallInit'][] = 'CategoryTreeHooks::setHooks';
 		}
 
-		if ( !isset( $wgCategoryTreeDefaultOptions['mode'] ) || is_null( $wgCategoryTreeDefaultOptions['mode'] ) ) {
+		if ( !isset( $wgCategoryTreeDefaultOptions['mode'] )
+			|| is_null( $wgCategoryTreeDefaultOptions['mode'] )
+		) {
 			$wgCategoryTreeDefaultOptions['mode'] = $wgCategoryTreeDefaultMode;
 		}
 
-		if ( !isset( $wgCategoryTreeDefaultOptions['hideprefix'] ) || is_null( $wgCategoryTreeDefaultOptions['hideprefix'] ) ) {
+		if ( !isset( $wgCategoryTreeDefaultOptions['hideprefix'] )
+			|| is_null( $wgCategoryTreeDefaultOptions['hideprefix'] )
+		) {
 			$wgCategoryTreeDefaultOptions['hideprefix'] = $wgCategoryTreeOmitNamespace;
 		}
 
-		if ( !isset( $wgCategoryTreeCategoryPageOptions['mode'] ) || is_null( $wgCategoryTreeCategoryPageOptions['mode'] ) ) {
-			$wgCategoryTreeCategoryPageOptions['mode'] = ( $mode = $wgRequest->getVal( 'mode' ) ) ? CategoryTree::decodeMode( $mode ) : $wgCategoryTreeCategoryPageMode;
+		if ( !isset( $wgCategoryTreeCategoryPageOptions['mode'] )
+			|| is_null( $wgCategoryTreeCategoryPageOptions['mode'] )
+		) {
+			$wgCategoryTreeCategoryPageOptions['mode'] = ( $mode = $wgRequest->getVal( 'mode' ) )
+				? CategoryTree::decodeMode( $mode ) : $wgCategoryTreeCategoryPageMode;
 		}
 
 		if ( $wgCategoryTreeForceHeaders ) {
@@ -68,8 +77,8 @@ class CategoryTreeHooks {
 	 * @return bool
 	 */
 	public static function setHooks( $parser ) {
-		$parser->setHook( 'categorytree' , 'CategoryTreeHooks::parserHook' );
-		$parser->setFunctionHook( 'categorytree' , 'CategoryTreeHooks::parserFunction' );
+		$parser->setHook( 'categorytree', 'CategoryTreeHooks::parserHook' );
+		$parser->setFunctionHook( 'categorytree', 'CategoryTreeHooks::parserFunction' );
 		return true;
 	}
 
@@ -148,9 +157,11 @@ class CategoryTreeHooks {
 
 		$attr = Sanitizer::validateTagAttributes( $argv, 'div' );
 
-		$hideroot = isset( $argv[ 'hideroot' ] ) ? CategoryTree::decodeBoolean( $argv[ 'hideroot' ] ) : null;
-		$onlyroot = isset( $argv[ 'onlyroot' ] ) ? CategoryTree::decodeBoolean( $argv[ 'onlyroot' ] ) : null;
-		$depthArg = isset( $argv[ 'depth' ] ) ? (int)$argv[ 'depth' ] : null;
+		$hideroot = isset( $argv['hideroot'] )
+			? CategoryTree::decodeBoolean( $argv['hideroot'] ) : null;
+		$onlyroot = isset( $argv['onlyroot'] )
+			? CategoryTree::decodeBoolean( $argv['onlyroot'] ) : null;
+		$depthArg = isset( $argv['depth'] ) ? (int)$argv['depth'] : null;
 
 		$depth = CategoryTree::capDepth( $ct->getOption( 'mode' ), $depthArg );
 		if ( $onlyroot ) {
@@ -230,7 +241,7 @@ class CategoryTreeHooks {
 		$pop = '</div>';
 		$sep = ' ';
 
-		$result = $embed . implode ( "{$pop} {$sep} {$embed}" , $links ) . $pop;
+		$result = $embed . implode( "{$pop} {$sep} {$embed}", $links ) . $pop;
 
 		return false;
 	}
