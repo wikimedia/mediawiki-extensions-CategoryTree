@@ -1,7 +1,7 @@
 <?php
 
 class CategoryTreeCategoryPage extends CategoryPage {
-	protected $mCategoryViewerClass = 'CategoryTreeCategoryViewer';
+	public $mCategoryViewerClass = 'CategoryTreeCategoryViewer';
 }
 
 class CategoryTreeCategoryViewer extends CategoryViewer {
