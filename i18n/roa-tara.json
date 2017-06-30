@@ -8,7 +8,7 @@
 	"categorytree-portlet": "Categorije",
 	"categorytree-legend": "Fa vedè l'arvule de le categorije",
 	"categorytree-desc": "Dinamicamende naveghesce 'a [[Special:CategoryTree|struttura de le categorije]]",
-	"categorytree-header": "'Nzerisce 'nu nome de categorije pe vedè 'u condenute sue cumme a 'na strutture a arvule.<br />\nNote ca quiste richiede funzionalità de JavaScript avanzate canusciute cumme AJAX.<br />\nCe tu è 'nu browser assaije vecchie, o tìne 'u JavaScript disabbilitate, non ge pò fatijà.",
+	"categorytree-header": "'Nzerisce 'nu nome de categorije pe 'ndrucà 'u condenute sue cumme a 'na strutture a arvule. (Vole 'u JavaScript.)",
 	"categorytree-category": "Categorije:",
 	"categorytree-go": "Fa vedè l'arvule",
 	"categorytree-parents": "Attane",
@@ -32,5 +32,9 @@
 	"categorytree-not-found": "Categorije <i>$1</i> non acchiate",
 	"categorytree-error": "Probbleme carecanne le date.",
 	"categorytree-retry": "Aspitte 'nu mumende e pruève 'n'otra vote.",
+	"apihelp-categorytree-description": "Module 'nderne de l'estenzione CategoryTree.",
+	"apihelp-categorytree-summary": "Module 'nderne de l'estenzione CategoryTree.",
+	"apihelp-categorytree-param-category": "Titole jndr'à 'u namespace categorije, 'u prefisse avène cacate ce mise.",
+	"apihelp-categorytree-param-options": "Opziune pu costruttore CategoryTree cumme 'n'oggette JSON. L'opzione <var>depth</var> avène mise de base a <kbd>1</kbd>.",
 	"apierror-categorytree-invalidjson": "Opziune onna essere valide pe 'n'oggette JSON."
 }
