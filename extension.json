@@ -52,6 +52,9 @@
 				"categorytree-no-pages",
 				"categorytree-error",
 				"categorytree-retry"
+			],
+			"dependencies": [
+				"mediawiki.api"
 			]
 		},
 		"ext.categoryTree.css": {
