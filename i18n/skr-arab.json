@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"categorytree-expand": "ودھاؤ",
+	"categorytree-member-counts": "ایندے وچ {{PLURAL:$1|1 ذیلی زمرہ|$1 ذیلی زمرہ جات}}، {{PLURAL:$2|1 ورقہ|$2 ورقے}} تے {{PLURAL:$3|1 فائل|$3 فائلیں}} موجود ہن/ہے۔",
+	"categorytree-num-categories": "$1 ز",
+	"categorytree-num-pages": "$1 پی",
+	"categorytree-num-files": "$1 ایف",
+	"categorytree-num-empty": "خالی"
+}
