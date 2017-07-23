@@ -650,7 +650,7 @@ class CategoryTree {
 			. $label . Xml::closeElement( 'a' );
 
 		if ( $count !== false && $this->getOption( 'showcount' ) ) {
-			$s .= CategoryTree::createCountString( RequestContext::getMain(), $cat, $count );
+			$s .= self::createCountString( RequestContext::getMain(), $cat, $count );
 		}
 
 		$s .= Xml::closeElement( 'div' );
