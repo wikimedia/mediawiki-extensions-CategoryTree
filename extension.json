@@ -39,6 +39,10 @@
 	"ResourceModules": {
 		"ext.categoryTree": {
 			"scripts": "ext.categoryTree.js",
+			"targets": [
+				"desktop",
+				"mobile"
+			],
 			"messages": [
 				"categorytree-collapse",
 				"categorytree-expand",
@@ -59,6 +63,10 @@
 		},
 		"ext.categoryTree.css": {
 			"position": "top",
+			"targets": [
+				"desktop",
+				"mobile"
+			],
 			"styles": "ext.categoryTree.css"
 		}
 	},

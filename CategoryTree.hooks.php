@@ -65,6 +65,7 @@ class CategoryTreeHooks {
 
 		if ( $wgCategoryTreeForceHeaders ) {
 			$wgHooks['BeforePageDisplay'][] = 'CategoryTreeHooks::addHeaders';
+			$wgHooks['BeforePageDisplayMobile'][] = 'CategoryTreeHooks::addHeaders';
 		} else {
 			$wgHooks['OutputPageParserOutput'][] = 'CategoryTreeHooks::parserOutput';
 		}
@@ -187,14 +188,13 @@ class CategoryTreeHooks {
 	}
 
 	/**
-	 * BeforePageDisplay hook. This hook is set when $wgCategoryTreeForceHeaders
-	 * is set.
+	 * BeforePageDisplay and BeforePageDisplayMobile hooks.
+	 * These hooks are used when $wgCategoryTreeForceHeaders is set.
 	 * Otherwise similar to CategoryTreeHooks::parserOutput.
 	 * @param OutputPage $out
-	 * @param Skin $skin
 	 * @return bool
 	 */
-	public static function addHeaders( OutputPage $out, Skin $skin ) {
+	public static function addHeaders( OutputPage $out ) {
 		CategoryTree::setHeaders( $out );
 		return true;
 	}
