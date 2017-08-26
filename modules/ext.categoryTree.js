@@ -98,10 +98,17 @@
 
 			$retryLink = $( '<a>' )
 				.text( mw.msg( 'categorytree-retry' ) )
-				.attr( 'href', '#' )
-				.click( function ( e ) {
-					e.preventDefault();
-					loadChildren( $link, $children );
+				.attr( {
+					role: 'button',
+					tabindex: 0
+				} )
+				.on( 'click keypress', function ( e ) {
+					if (
+						e.type === 'click' ||
+						e.type === 'keypress' && e.which === 13
+					) {
+						loadChildren( $link, $children );
+					}
 				} );
 
 			$children
