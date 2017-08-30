@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Benel"
+			"Benel",
+			"Bunukwiki"
 		]
 	},
+	"categorytree-portlet": "kakuniza",
+	"categorytree-category": "kakuniza:",
+	"categorytree-mode-all": "hamin nu kasabelih",
 	"categorytree-expand": "micuwat",
 	"categorytree-member-counts": "yamalyilu {{PLURAL:$1|$1 iluc-kasasizuma}}, {{PLURAL:$2|$2 kasabelih}}, atu {{PLURAL:$3|$3 tangan}}",
 	"categorytree-num-categories": "$1 kakuniza",
