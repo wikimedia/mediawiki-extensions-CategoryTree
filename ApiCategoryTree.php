@@ -50,7 +50,7 @@ class ApiCategoryTree extends ApiBase {
 		if ( $condition === 'last-modified' ) {
 			$params = $this->extractRequestParams();
 			$title = CategoryTree::makeTitle( $params['category'] );
-			return wfGetDB( DB_SLAVE )->selectField( 'page', 'page_touched',
+			return wfGetDB( DB_REPLICA )->selectField( 'page', 'page_touched',
 				[
 					'page_namespace' => NS_CATEGORY,
 					'page_title' => $title->getDBkey(),

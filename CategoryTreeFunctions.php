@@ -384,7 +384,7 @@ class CategoryTree {
 			return '';
 		}
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		$inverse = $this->isInverse();
 		$mode = $this->getOption( 'mode' );
@@ -478,7 +478,7 @@ class CategoryTree {
 	function renderParents( $title ) {
 		global $wgCategoryTreeMaxChildren;
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		$res = $dbr->select(
 			'categorylinks',
