@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Benel",
-			"Bunukwiki"
+			"Bunukwiki",
+			"Tokoabibi"
 		]
 	},
+	"categorytree": "kakuniza a kilang",
 	"categorytree-portlet": "kakuniza",
 	"categorytree-category": "kakuniza:",
 	"categorytree-mode-all": "hamin nu kasabelih",
