@@ -9,5 +9,6 @@
 	"categorytree-member-counts": "Kwara’ kin na{{PLURAL:$1| $1 uzyuk na pintbcyan}}, {{PLURAL:$2|$2 gnyahan lpgan ruw}}, {{PLURAL:$3|$3  biru’ na zayzyuwaw}}",
 	"categorytree-num-categories": "$1 pintbcyan na mlmlamu’",
 	"categorytree-num-pages": "$1 qutux qutux gnyahan",
-	"categorytree-num-files": "$1 biru’ na zayzyuwaw"
+	"categorytree-num-files": "$1 biru’ na zayzyuwaw",
+	"categorytree-nothing-found": "Ktan ga ungat ana nanu’ mlmlamu’ na binkgan"
 }
