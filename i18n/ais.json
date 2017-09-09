@@ -9,6 +9,8 @@
 	"categorytree": "kakuniza a kilang",
 	"categorytree-portlet": "kakuniza",
 	"categorytree-category": "kakuniza:",
+	"categorytree-parents": "ipabaway a kakuniza",
+	"categorytree-mode-categories": "paazih kakuniza a cacay",
 	"categorytree-mode-all": "hamin nu kasabelih",
 	"categorytree-expand": "micuwat",
 	"categorytree-member-counts": "yamalyilu {{PLURAL:$1|$1 iluc-kasasizuma}}, {{PLURAL:$2|$2 kasabelih}}, atu {{PLURAL:$3|$3 tangan}}",
@@ -16,5 +18,8 @@
 	"categorytree-num-pages": "$1 kasabelih",
 	"categorytree-num-files": "$1 tangan",
 	"categorytree-num-empty": "inayi’",
-	"categorytree-load": "maasip"
+	"categorytree-load": "maasip",
+	"categorytree-loading": "miasip henay ayza…",
+	"categorytree-no-subcategories": "inayi’ sailuc-kasasizuma",
+	"categorytree-no-parent-categories": "inayi’ pabaway a kakuniza"
 }
