@@ -8,8 +8,11 @@
 	},
 	"categorytree": "kakuniza a kilang",
 	"categorytree-portlet": "kakuniza",
+	"categorytree-legend": "paazih kakuniza a kilang",
 	"categorytree-category": "kakuniza:",
+	"categorytree-go": "paazih sakilang zunga a kulit",
 	"categorytree-parents": "ipabaway a kakuniza",
+	"categorytree-mode-label": "muse:",
 	"categorytree-mode-categories": "paazih kakuniza a cacay",
 	"categorytree-mode-all": "hamin nu kasabelih",
 	"categorytree-expand": "micuwat",
@@ -20,6 +23,7 @@
 	"categorytree-num-empty": "inayi’",
 	"categorytree-load": "maasip",
 	"categorytree-loading": "miasip henay ayza…",
+	"categorytree-nothing-found": "caykatepa amahicahica tu kasacacay",
 	"categorytree-no-subcategories": "inayi’ sailuc-kasasizuma",
 	"categorytree-no-parent-categories": "inayi’ pabaway a kakuniza"
 }
