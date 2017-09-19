@@ -5,8 +5,11 @@
 			"Hitaypayan"
 		]
 	},
+	"categorytree": "Pintbcyan na mlmlamu’ qhuniq",
 	"categorytree-portlet": "Ptbcyun",
 	"categorytree-category": "Ptbcyun:",
+	"categorytree-mode-label": "Yaya’ na kkbalay:",
+	"categorytree-collapse": "qmuzyup",
 	"categorytree-expand": "cankay",
 	"categorytree-member-counts": "Kwara’ kin na{{PLURAL:$1| $1 uzyuk na pintbcyan}}, {{PLURAL:$2|$2 gnyahan lpgan ruw}}, {{PLURAL:$3|$3  biru’ na zayzyuwaw}}",
 	"categorytree-num-categories": "$1 pintbcyan na mlmlamu’",
