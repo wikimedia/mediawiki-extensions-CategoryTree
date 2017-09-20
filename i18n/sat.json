@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Albinus"
+			"Albinus",
+			"Manik Soren"
 		]
 	},
 	"categorytree-go": "Dare uduḱme",
@@ -9,6 +10,7 @@
 	"categorytree-mode-all": "Sanam sakamko",
 	"categorytree-collapse": "Murchạo caba",
 	"categorytree-expand": "Phaylaote",
+	"categorytree-member-counts": "Contains {{PLURAL:$1|1 ᱥᱟᱵ ᱠᱮᱴᱟᱜᱳᱨᱤ|$1 ᱥᱟᱵ ᱠᱮᱴᱟᱜᱳᱨᱤᱥ}}, {{PLURAL:$2|1 ᱥᱟᱦᱴᱟ|$2 ᱥᱟᱦᱴᱟᱠᱩ}}, and {{PLURAL:$3|1 ᱯᱷᱟᱭᱤᱞ|$3 ᱯᱷᱟᱭᱤᱞᱥ}}",
 	"categorytree-num-categories": "$1C",
 	"categorytree-num-pages": "P\n$1P",
 	"categorytree-num-files": "$1 Ph",

@@ -8,7 +8,9 @@
 	"categorytree": "Pintbcyan na mlmlamu’ qhuniq",
 	"categorytree-portlet": "Ptbcyun",
 	"categorytree-category": "Ptbcyun:",
+	"categorytree-parents": "Pintbcyan na tay mkraya’",
 	"categorytree-mode-label": "Yaya’ na kkbalay:",
+	"categorytree-mode-all": "kwara’ zzngayan",
 	"categorytree-collapse": "qmuzyup",
 	"categorytree-expand": "cankay",
 	"categorytree-member-counts": "Kwara’ kin na{{PLURAL:$1| $1 uzyuk na pintbcyan}}, {{PLURAL:$2|$2 gnyahan lpgan ruw}}, {{PLURAL:$3|$3  biru’ na zayzyuwaw}}",
@@ -17,5 +19,6 @@
 	"categorytree-num-files": "$1 biru’ na zayzyuwaw",
 	"categorytree-num-empty": "ungat ana nanu’",
 	"categorytree-load": "lpgun",
-	"categorytree-nothing-found": "Ktan ga ungat ana nanu’ mlmlamu’ na binkgan"
+	"categorytree-nothing-found": "Ktan ga ungat ana nanu’ mlmlamu’ na binkgan",
+	"categorytree-no-subcategories": "ungat quw pintbcyan sinlalu’"
 }
