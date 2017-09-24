@@ -27,6 +27,7 @@
 	"categorytree-nothing-found": "caykatepa amahicahica tu kasacacay",
 	"categorytree-no-subcategories": "inayi’ sailuc-kasasizuma",
 	"categorytree-no-parent-categories": "inayi’ pabaway a kakuniza",
+	"categorytree-not-found": "inayi’ kakuniza <i>$1</i>",
 	"categorytree-error": "imahini miasip kalunasulitan mungangaw.",
 	"categorytree-retry": "pihalhal’i pitaneng henay ku cacay."
 }
