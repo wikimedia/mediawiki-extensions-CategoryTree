@@ -198,4 +198,9 @@
 	// Register click events
 	mw.hook( 'wikipage.content' ).add( attachHandler );
 
+	$( function () {
+		// Attach click handler for sidebar
+		attachHandler( $( '#p-categorytree-portlet' ) );
+	} );
+
 }( jQuery, mediaWiki ) );
