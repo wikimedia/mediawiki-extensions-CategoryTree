@@ -49,15 +49,16 @@ class CategoryTreePage extends SpecialPage {
 		if ( $par ) {
 			$this->target = $par;
 		} else {
-			$this->target = $request->getVal( 'target', $this->msg( 'rootcategory' )->text() );
+			$this->target = $request->getVal( 'target' );
+			if ( $this->target === null ) {
+				$rootcategory = $this->msg( 'rootcategory' );
+				if ( $rootcategory->exists() ) {
+					$this->target = $rootcategory->text();
+				}
+			}
 		}
 
 		$this->target = trim( $this->target );
-
-		# HACK for undefined root category
-		if ( $this->target == '<rootcategory>' || $this->target == '&lt;rootcategory&gt;' ) {
-			$this->target = null;
-		}
 
 		$options = [];
 
