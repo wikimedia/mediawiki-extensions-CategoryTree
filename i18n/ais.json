@@ -14,6 +14,7 @@
 	"categorytree-parents": "ipabaway a kakuniza",
 	"categorytree-mode-label": "muse:",
 	"categorytree-mode-categories": "paazih kakuniza a cacay",
+	"categorytree-mode-pages": "kasabelih caay yamalyilu tangan",
 	"categorytree-mode-all": "hamin nu kasabelih",
 	"categorytree-collapse": "piked",
 	"categorytree-expand": "micuwat",
@@ -29,5 +30,6 @@
 	"categorytree-no-parent-categories": "inayi’ pabaway a kakuniza",
 	"categorytree-not-found": "inayi’ kakuniza <i>$1</i>",
 	"categorytree-error": "imahini miasip kalunasulitan mungangaw.",
-	"categorytree-retry": "pihalhal’i pitaneng henay ku cacay."
+	"categorytree-retry": "pihalhal’i pitaneng henay ku cacay.",
+	"apierror-categorytree-invalidjson": "mapiliay kanca ku kapahay a JSON tuutuud."
 }
