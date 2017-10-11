@@ -23,7 +23,7 @@ class CategoryTreePage extends SpecialPage {
 	}
 
 	/**
-	 * @param $name
+	 * @param string $name
 	 * @return mixed
 	 */
 	function getOption( $name ) {
@@ -38,7 +38,7 @@ class CategoryTreePage extends SpecialPage {
 
 	/**
 	 * Main execution function
-	 * @param $par array Parameters passed to the page
+	 * @param string|null $par Parameters passed to the page
 	 */
 	function execute( $par ) {
 		global $wgCategoryTreeDefaultOptions, $wgCategoryTreeSpecialPageOptions,

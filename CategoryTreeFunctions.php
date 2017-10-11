@@ -14,7 +14,7 @@ class CategoryTree {
 	public $mOptions = [];
 
 	/**
-	 * @param $options array
+	 * @param array $options
 	 */
 	function __construct( $options ) {
 		global $wgCategoryTreeDefaultOptions;
@@ -54,7 +54,7 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param $name string
+	 * @param string $name
 	 * @return mixed
 	 */
 	function getOption( $name ) {
@@ -69,7 +69,7 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param $nn
+	 * @param mixed $nn
 	 * @return array|bool
 	 */
 	static function decodeNamespaces( $nn ) {
@@ -115,7 +115,7 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param $mode
+	 * @param mixed $mode
 	 * @return int|string
 	 */
 	static function decodeMode( $mode ) {
@@ -152,7 +152,7 @@ class CategoryTree {
 	/**
 	 * Helper function to convert a string to a boolean value.
 	 * Perhaps make this a global function in MediaWiki proper
-	 * @param $value
+	 * @param mixed $value
 	 * @return bool|null|string
 	 */
 	static function decodeBoolean( $value ) {
@@ -187,7 +187,7 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param $value
+	 * @param mixed $value
 	 * @return int|string
 	 */
 	static function decodeHidePrefix( $value ) {
@@ -240,8 +240,8 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param $options
-	 * @param $enc
+	 * @param array $options
+	 * @param string $enc
 	 * @return mixed
 	 * @throws Exception
 	 */
@@ -258,7 +258,7 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param $depth null
+	 * @param string|null $depth
 	 * @return string
 	 */
 	function getOptionsAsCacheKey( $depth = null ) {
@@ -278,7 +278,7 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param $depth int|null
+	 * @param int|null $depth
 	 * @return mixed
 	 */
 	function getOptionsAsJsStructure( $depth = null ) {
@@ -303,12 +303,12 @@ class CategoryTree {
 	/**
 	 * Custom tag implementation. This is called by CategoryTreeHooks::parserHook, which is used to
 	 * load CategoryTreeFunctions.php on demand.
-	 * @param $parser Parser
-	 * @param $category
-	 * @param $hideroot bool
-	 * @param $attr
-	 * @param $depth int
-	 * @param $allowMissing bool
+	 * @param Parser $parser
+	 * @param string $category
+	 * @param bool $hideroot
+	 * @param string $attr
+	 * @param int $depth
+	 * @param bool $allowMissing
 	 * @return bool|string
 	 */
 	function getTag( $parser, $category, $hideroot = false, $attr, $depth = 1,
@@ -372,8 +372,8 @@ class CategoryTree {
 
 	/**
 	 * Returns a string with an HTML representation of the children of the given category.
-	 * @param $title Title
-	 * @param $depth int
+	 * @param Title $title
+	 * @param int $depth
 	 * @return string
 	 */
 	function renderChildren( $title, $depth = 1 ) {
@@ -472,7 +472,7 @@ class CategoryTree {
 
 	/**
 	 * Returns a string with an HTML representation of the parents of the given category.
-	 * @param $title Title
+	 * @param Title $title
 	 * @return string
 	 */
 	function renderParents( $title ) {
@@ -523,7 +523,7 @@ class CategoryTree {
 
 	/**
 	 * Returns a string with a HTML represenation of the given page.
-	 * @param $title Title
+	 * @param Title $title
 	 * @param int $children
 	 * @return string
 	 */
@@ -544,9 +544,9 @@ class CategoryTree {
 	/**
 	 * Returns a string with a HTML represenation of the given page.
 	 * $info must be an associative array, containing at least a Title object under the 'title' key.
-	 * @param $title Title
-	 * @param $cat Category
-	 * @param $children int
+	 * @param Title $title
+	 * @param Category $cat
+	 * @param int $children
 	 * @return string
 	 */
 	function renderNodeInfo( $title, $cat, $children = 0 ) {
@@ -746,7 +746,7 @@ class CategoryTree {
 
 	/**
 	 * Creates a Title object from a user provided (and thus unsafe) string
-	 * @param $title string
+	 * @param string $title
 	 * @return null|Title
 	 */
 	static function makeTitle( $title ) {
@@ -770,8 +770,8 @@ class CategoryTree {
 
 	/**
 	 * Internal function to cap depth
-	 * @param $mode
-	 * @param $depth
+	 * @param string $mode
+	 * @param int $depth
 	 * @return int|mixed
 	 */
 	static function capDepth( $mode, $depth ) {

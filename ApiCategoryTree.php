@@ -63,10 +63,10 @@ class ApiCategoryTree extends ApiBase {
 	/**
 	 * Get category tree HTML for the given tree, title, depth and config
 	 *
-	 * @param $ct CategoryTree
-	 * @param $title Title
-	 * @param $depth int
-	 * @param $ctConfig Config Config for CategoryTree
+	 * @param CategoryTree $ct
+	 * @param Title $title
+	 * @param int $depth
+	 * @param Config $ctConfig Config for CategoryTree
 	 * @return string HTML
 	 */
 	private function getHTML( $ct, $title, $depth, $ctConfig ) {

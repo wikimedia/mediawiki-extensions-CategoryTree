@@ -73,7 +73,7 @@ class CategoryTreeHooks {
 	}
 
 	/**
-	 * @param $parser Parser
+	 * @param Parser $parser
 	 * @return bool
 	 */
 	public static function setHooks( $parser ) {
@@ -85,7 +85,7 @@ class CategoryTreeHooks {
 	/**
 	 * Entry point for the {{#categorytree}} tag parser function.
 	 * This is a wrapper around CategoryTreeHooks::parserHook
-	 * @param $parser Parser
+	 * @param Parser $parser
 	 * @return array|string
 	 */
 	public static function parserFunction( $parser ) {
@@ -120,8 +120,8 @@ class CategoryTreeHooks {
 	/**
 	 * Hook implementation for injecting a category tree into the sidebar.
 	 * Registered automatically if $wgCategoryTreeSidebarRoot is set to a category name.
-	 * @param $skin
-	 * @param $tpl SkinTemplate
+	 * @param Skin $skin
+	 * @param SkinTemplate $tpl
 	 * @return bool
 	 */
 	public static function skinTemplateOutputPageBeforeExec( $skin, $tpl ) {
@@ -138,10 +138,10 @@ class CategoryTreeHooks {
 	/**
 	 * Entry point for the <categorytree> tag parser hook.
 	 * This loads CategoryTreeFunctions.php and calls CategoryTree::getTag()
-	 * @param $cat
-	 * @param $argv
-	 * @param $parser Parser
-	 * @param $allowMissing bool
+	 * @param string $cat
+	 * @param array $argv
+	 * @param Parser $parser
+	 * @param bool $allowMissing
 	 * @return bool|string
 	 */
 	public static function parserHook( $cat, $argv, $parser = null, $allowMissing = false ) {
@@ -175,8 +175,8 @@ class CategoryTreeHooks {
 	 * Hook callback that injects messages and things into the <head> tag,
 	 * if needed in the current page.
 	 * Does nothing if $parserOutput->mCategoryTreeTag is not set
-	 * @param $outputPage OutputPage
-	 * @param $parserOutput ParserOutput
+	 * @param OutputPage $outputPage
+	 * @param ParserOutput $parserOutput
 	 * @return bool
 	 */
 	public static function parserOutput( $outputPage, $parserOutput ) {
@@ -190,8 +190,8 @@ class CategoryTreeHooks {
 	 * BeforePageDisplay hook. This hook is set when $wgCategoryTreeForceHeaders
 	 * is set.
 	 * Otherwise similar to CategoryTreeHooks::parserOutput.
-	 * @param $out OutputPage
-	 * @param $skin Skin
+	 * @param OutputPage $out
+	 * @param Skin $skin
 	 * @return bool
 	 */
 	public static function addHeaders( OutputPage $out, Skin $skin ) {
@@ -202,8 +202,8 @@ class CategoryTreeHooks {
 	/**
 	 * ArticleFromTitle hook, override category page handling
 	 *
-	 * @param $title Title
-	 * @param $article Article
+	 * @param Title $title
+	 * @param Article &$article
 	 * @return bool
 	 */
 	public static function articleFromTitle( $title, &$article ) {
@@ -215,9 +215,9 @@ class CategoryTreeHooks {
 
 	/**
 	 * OutputPageMakeCategoryLinks hook, override category links
-	 * @param $out
-	 * @param $categories
-	 * @param $links
+	 * @param OutputPage $out
+	 * @param array &$categories
+	 * @param array &$links
 	 * @return bool
 	 */
 	public static function outputPageMakeCategoryLinks( $out, &$categories, &$links ) {
@@ -231,9 +231,9 @@ class CategoryTreeHooks {
 	}
 
 	/**
-	 * @param $skin
-	 * @param $links
-	 * @param $result
+	 * @param Skin $skin
+	 * @param array &$links
+	 * @param string &$result
 	 * @return bool
 	 */
 	public static function skinJoinCategoryLinks( $skin, &$links, &$result ) {
@@ -247,7 +247,7 @@ class CategoryTreeHooks {
 	}
 
 	/**
-	 * @param $vars
+	 * @param array &$vars
 	 * @return bool
 	 */
 	public static function getConfigVars( &$vars ) {
