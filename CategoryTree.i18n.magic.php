@@ -234,7 +234,7 @@ $magicWords['uk'] = [
 
 /** Urdu (اردو) */
 $magicWords['ur'] = [
-	'categorytree' => [ 0, 'شجر_زمرہ' ],
+	'categorytree' => [ 0, 'شجرہ_زمرہ', 'شجر_زمرہ' ],
 ];
 
 /** Uzbek (oʻzbekcha/ўзбекча) */
