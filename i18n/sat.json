@@ -2,11 +2,17 @@
 	"@metadata": {
 		"authors": [
 			"Albinus",
-			"Manik Soren"
+			"Manik Soren",
+			"Ramjit Tudu"
 		]
 	},
+	"categorytree": "ᱫᱟᱨᱮ ᱛᱷᱚᱠ",
+	"categorytree-portlet": "ᱛᱷᱚᱠ ᱠᱚ",
+	"categorytree-legend": "ᱥᱚᱫᱚᱨᱢᱮ ᱫᱟᱨᱮ ᱛᱷᱚᱠ",
+	"categorytree-category": "ᱛᱷᱚᱠ:",
 	"categorytree-go": "Dare uduḱme",
 	"categorytree-parents": "Gogo baba",
+	"categorytree-mode-categories": "ᱛᱷᱚᱠ ᱠᱚ ᱥᱩᱢᱩᱝ",
 	"categorytree-mode-all": "Sanam sakamko",
 	"categorytree-collapse": "Murchạo caba",
 	"categorytree-expand": "Phaylaote",
@@ -17,5 +23,6 @@
 	"categorytree-num-empty": "Khạligea",
 	"categorytree-load": "Rakaṕ",
 	"categorytree-loading": "Rakaṕkana",
-	"categorytree-nothing-found": "Cet́ hõ baṅ ńamlena"
+	"categorytree-nothing-found": "Cet́ hõ baṅ ńamlena",
+	"categorytree-not-found": "ᱛᱷᱚᱠ <i>$1</i> ᱵᱟᱭ ᱧᱟᱢᱞᱮᱱᱟ"
 }
