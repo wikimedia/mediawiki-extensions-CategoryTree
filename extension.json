@@ -29,8 +29,8 @@
 	"AutoloadClasses": {
 		"CategoryTreePage": "CategoryTreePage.php",
 		"CategoryTree": "CategoryTreeFunctions.php",
-		"CategoryTreeCategoryPage": "CategoryPageSubclass.php",
-		"CategoryTreeCategoryViewer": "CategoryPageSubclass.php",
+		"CategoryTreeCategoryPage": "CategoryTreeCategoryPage.php",
+		"CategoryTreeCategoryViewer": "CategoryTreeCategoryViewer.php",
 		"CategoryTreeHooks": "CategoryTree.hooks.php",
 		"CategoryTreeMode": "CategoryTreeMode.php",
 		"CategoryTreeHidePrefix": "CategoryTreeHidePrefix.php",
