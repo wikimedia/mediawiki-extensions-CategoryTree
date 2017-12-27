@@ -7,7 +7,8 @@
 			"SMP",
 			"Toniher",
 			"Vriullop",
-			"Qllach"
+			"Qllach",
+			"Fitoschido"
 		]
 	},
 	"categorytree": "Categories en arbre",
@@ -30,12 +31,12 @@
 	"categorytree-num-files": "$1 F",
 	"categorytree-num-empty": "buit",
 	"categorytree-load": "Carrega",
-	"categorytree-loading": "carregant",
-	"categorytree-nothing-found": "no hi ha sub-categories",
+	"categorytree-loading": "s’està carregant…",
+	"categorytree-nothing-found": "no s’ha trobat res",
 	"categorytree-no-subcategories": "no hi ha subcategories.",
 	"categorytree-no-parent-categories": "cap categoria superior",
 	"categorytree-no-pages": "no hi ha articles o subcategories.",
-	"categorytree-not-found": "No s'ha trobat la categoria ''$1''.",
+	"categorytree-not-found": "No s’ha trobat la categoria <i>$1</i>",
 	"categorytree-error": "Problema en la càrrega de dades.",
 	"categorytree-retry": "Torneu-ho a intentar en uns moments."
 }
