@@ -3,7 +3,7 @@
 	"author": "Daniel Kinzler",
 	"url": "https://www.mediawiki.org/wiki/Extension:CategoryTree",
 	"descriptionmsg": "categorytree-desc",
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-2.0-or-later",
 	"type": "parserhook",
 	"ConfigRegistry": {
 		"categorytree": "GlobalVarConfig::newInstance"
