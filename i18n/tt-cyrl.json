@@ -4,7 +4,8 @@
 			"Ajdar",
 			"Ilnur efende",
 			"Ильнар",
-			"Derslek"
+			"Derslek",
+			"Don Alessandro"
 		]
 	},
 	"categorytree": "Төркемнәр \"агачы\".",
@@ -20,7 +21,7 @@
 	"categorytree-mode-pages": "файллардан башка",
 	"categorytree-mode-all": "барлык битләр",
 	"categorytree-collapse": "яшерү",
-	"categorytree-expand": "ачарга",
+	"categorytree-expand": "ачу",
 	"categorytree-member-counts": "$1 {{PLURAL:$1|1 тәркемчәне|$1 тәркемчәләрне|$1 тәркемчәләрдән}}, $2 {{PLURAL:$2|1 битне|$2 битләрне|$2 битләрдән}} һәм {{PLURAL:$3|1 файл|$3 файлны}}ны үз эченә ала",
 	"categorytree-num-categories": "$1 Т",
 	"categorytree-num-pages": "$1 Б",

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Giromin Cangiaxo"
+			"Giromin Cangiaxo",
+			"S4b1nuz E.656"
 		]
 	},
 	"categorytree": "Ærbo de categorie",
@@ -24,7 +25,7 @@
 	"categorytree-num-files": "$1 F",
 	"categorytree-num-empty": "voeua",
 	"categorytree-load": "carega",
-	"categorytree-loading": "caregamento in corso…",
+	"categorytree-loading": "caregaménto in córso…",
 	"categorytree-nothing-found": "nisciun risultou",
 	"categorytree-no-subcategories": "nisciun-a sottocategoria",
 	"categorytree-no-parent-categories": "nisciun-a soviacategoria",
