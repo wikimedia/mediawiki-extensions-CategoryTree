@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Kolega2357",
-			"OC Ripper"
+			"OC Ripper",
+			"Acamicamacaraca"
 		]
 	},
 	"categorytree": "Stablasti prikaz hijerarhije kategorija",
@@ -23,7 +24,7 @@
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 F",
 	"categorytree-load": "učitaj - учитај",
-	"categorytree-loading": "učitavanje - учитавање",
+	"categorytree-loading": "učitavam - учитавам",
 	"categorytree-nothing-found": "ništa nije pronađeno",
 	"categorytree-no-subcategories": "nema potkategorija",
 	"categorytree-no-parent-categories": "nema nadkategorija",
