@@ -7,7 +7,8 @@
 			"Nedergard",
 			"Nike",
 			"Str4nd",
-			"01miki10"
+			"01miki10",
+			"Pyscowicz"
 		]
 	},
 	"categorytree": "Luokkapuu",
@@ -39,5 +40,6 @@
 	"categorytree-error": "Ongelma tietojen latauksessa.",
 	"categorytree-retry": "Odota hetki ja yritä uudelleen.",
 	"apihelp-categorytree-description": "Sisäinen moduuli CategoryTree-laajennukselle.",
+	"apihelp-categorytree-summary": "Sisäinen moduuli CategoryTree-laajennukselle.",
 	"apihelp-categorytree-param-category": "Otsikko luokkanimiavaruudessa, etuliitettä ei huomioida, jos se on annettu."
 }
