@@ -6,5 +6,6 @@
 	},
 	"categorytree-expand": "𐌿𐍆𐌸𐌰𐌽𐌴𐌹",
 	"categorytree-num-categories": "$1 𐌺",
-	"categorytree-num-pages": "$1 𐌻"
+	"categorytree-num-pages": "$1 𐌻",
+	"categorytree-num-files": "$1 𐍆"
 }
