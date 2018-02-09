@@ -27,14 +27,14 @@
 		"CategoryTreeMagic": "CategoryTree.i18n.magic.php"
 	},
 	"AutoloadClasses": {
-		"CategoryTreePage": "CategoryTreePage.php",
-		"CategoryTree": "CategoryTreeFunctions.php",
-		"CategoryTreeCategoryPage": "CategoryTreeCategoryPage.php",
-		"CategoryTreeCategoryViewer": "CategoryTreeCategoryViewer.php",
-		"CategoryTreeHooks": "CategoryTree.hooks.php",
-		"CategoryTreeMode": "CategoryTreeMode.php",
-		"CategoryTreeHidePrefix": "CategoryTreeHidePrefix.php",
-		"ApiCategoryTree": "ApiCategoryTree.php"
+		"CategoryTreePage": "includes/CategoryTreePage.php",
+		"CategoryTree": "includes/CategoryTree.php",
+		"CategoryTreeCategoryPage": "includes/CategoryTreeCategoryPage.php",
+		"CategoryTreeCategoryViewer": "includes/CategoryTreeCategoryViewer.php",
+		"CategoryTreeHooks": "includes/CategoryTreeHooks.php",
+		"CategoryTreeMode": "includes/CategoryTreeMode.php",
+		"CategoryTreeHidePrefix": "includes/CategoryTreeHidePrefix.php",
+		"ApiCategoryTree": "includes/ApiCategoryTree.php"
 	},
 	"ResourceModules": {
 		"ext.categoryTree": {
