@@ -62,7 +62,6 @@
 			]
 		},
 		"ext.categoryTree.css": {
-			"position": "top",
 			"targets": [
 				"desktop",
 				"mobile"
