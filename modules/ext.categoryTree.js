@@ -23,8 +23,8 @@
 			.attr( 'title', function () {
 				return mw.msg(
 					$( this ).data( 'ct-state' ) === 'collapsed' ?
-					'categorytree-expand' :
-					'categorytree-collapse'
+						'categorytree-expand' :
+						'categorytree-collapse'
 				);
 			} )
 			.addClass( 'CategoryTreeToggleHandlerAttached' );
@@ -52,7 +52,7 @@
 	function expandNode( $link ) {
 		// Show the children node
 		var $children = $link.parents( '.CategoryTreeItem' )
-				.siblings( '.CategoryTreeChildren' );
+			.siblings( '.CategoryTreeChildren' );
 		$children.show();
 
 		$link
@@ -170,7 +170,7 @@
 			attachHandler( $children );
 
 		} )
-		.fail( error );
+			.fail( error );
 	}
 
 	// Register click events
