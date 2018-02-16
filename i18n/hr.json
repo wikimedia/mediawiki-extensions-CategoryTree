@@ -31,11 +31,14 @@
 	"categorytree-num-empty": "prazna",
 	"categorytree-load": "učitaj",
 	"categorytree-loading": "učitavam...",
-	"categorytree-nothing-found": "Nije pronađena nijedna stavka.",
-	"categorytree-no-subcategories": "Nema podkategorija.",
+	"categorytree-nothing-found": "nije pronađena nijedna stavka",
+	"categorytree-no-subcategories": "nema podkategorija",
 	"categorytree-no-parent-categories": "nema viših kategorija",
 	"categorytree-no-pages": "Nema članaka ili podkategorija.",
 	"categorytree-not-found": "Kategorija <i>$1</i> nije pronađena",
 	"categorytree-error": "Problem s učitavanjem podataka.",
-	"categorytree-retry": "Pričekajte trenutak pa pokušajte opet."
+	"categorytree-retry": "Pričekajte trenutak pa pokušajte opet.",
+	"apihelp-categorytree-description": "Interni modul za proširenje CategoryTree.",
+	"apihelp-categorytree-summary": "Interni modul za proširenje CategoryTree.",
+	"apihelp-categorytree-param-category": "Naziv u imenskom prostoru kategorija. Ako je prefiks naveden, biti će zanemaren."
 }
