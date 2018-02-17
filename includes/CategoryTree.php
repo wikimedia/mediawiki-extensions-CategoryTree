@@ -245,7 +245,7 @@ class CategoryTree {
 	 * @return mixed
 	 * @throws Exception
 	 */
-	static function encodeOptions( $options, $enc ) {
+	protected static function encodeOptions( $options, $enc ) {
 		if ( $enc == 'mode' || $enc == '' ) {
 			$opt = $options['mode'];
 		} elseif ( $enc == 'json' ) {
@@ -281,8 +281,8 @@ class CategoryTree {
 	 * @param int|null $depth
 	 * @return mixed
 	 */
-	function getOptionsAsJsStructure( $depth = null ) {
-		if ( !is_null( $depth ) ) {
+	public function getOptionsAsJsStructure( $depth = null ) {
+		if ( $depth !== null ) {
 			$opt = $this->mOptions;
 			$opt['depth'] = $depth;
 			$s = self::encodeOptions( $opt, 'json' );

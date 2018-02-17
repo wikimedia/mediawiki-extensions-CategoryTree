@@ -59,7 +59,8 @@ class CategoryTreeHooks {
 		if ( !isset( $wgCategoryTreeCategoryPageOptions['mode'] )
 			|| is_null( $wgCategoryTreeCategoryPageOptions['mode'] )
 		) {
-			$wgCategoryTreeCategoryPageOptions['mode'] = ( $mode = $wgRequest->getVal( 'mode' ) )
+			$mode = $wgRequest->getVal( 'mode' );
+			$wgCategoryTreeCategoryPageOptions['mode'] = ( $mode )
 				? CategoryTree::decodeMode( $mode ) : $wgCategoryTreeCategoryPageMode;
 		}
 
