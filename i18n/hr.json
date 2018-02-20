@@ -5,7 +5,8 @@
 			"Ex13",
 			"SpeedyGonsales",
 			"MaGa",
-			"Srdjan m"
+			"Srdjan m",
+			"Bugoslav"
 		]
 	},
 	"categorytree": "Stablasti prikaz hijerarhije kategorija",
@@ -31,8 +32,8 @@
 	"categorytree-num-empty": "prazna",
 	"categorytree-load": "učitaj",
 	"categorytree-loading": "učitavam...",
-	"categorytree-nothing-found": "nije pronađena nijedna stavka",
-	"categorytree-no-subcategories": "nema podkategorija",
+	"categorytree-nothing-found": "nije pronađena ijedna stavka",
+	"categorytree-no-subcategories": "nema potkategorija",
 	"categorytree-no-parent-categories": "nema viših kategorija",
 	"categorytree-no-pages": "Nema članaka ili podkategorija.",
 	"categorytree-not-found": "Kategorija <i>$1</i> nije pronađena",
@@ -40,5 +41,5 @@
 	"categorytree-retry": "Pričekajte trenutak pa pokušajte opet.",
 	"apihelp-categorytree-description": "Interni modul za proširenje CategoryTree.",
 	"apihelp-categorytree-summary": "Interni modul za proširenje CategoryTree.",
-	"apihelp-categorytree-param-category": "Naziv u imenskom prostoru kategorija. Ako je prefiks naveden, biti će zanemaren."
+	"apihelp-categorytree-param-category": "Naziv u imenskom prostoru kategorija. Ako je prefiks naveden, bit će zanemaren."
 }
