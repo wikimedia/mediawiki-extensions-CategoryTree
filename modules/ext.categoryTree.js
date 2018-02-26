@@ -123,7 +123,7 @@
 		ctTitle = $link.data( 'ct-title' );
 		ctMode = $linkParentCTTag.data( 'ct-mode' );
 		ctMode = typeof ctMode === 'number' ? ctMode : undefined;
-		ctOptions = JSON.stringify( $linkParentCTTag.data( 'ct-options' ) );
+		ctOptions = $linkParentCTTag.attr( 'data-ct-options' );
 		if ( !ctOptions ) {
 			ctOptions = mw.config.get( 'wgCategoryTreePageCategoryOptions' );
 		}
