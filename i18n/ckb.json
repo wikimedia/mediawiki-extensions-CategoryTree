@@ -3,7 +3,8 @@
 		"authors": [
 			"Asoxor",
 			"Calak",
-			"Muhammed taha"
+			"Muhammed taha",
+			"Épine"
 		]
 	},
 	"categorytree": "درەختی پۆل",
@@ -12,6 +13,7 @@
 	"categorytree-header": "ناوی پۆلێک بنووسە بۆ بینینی ناوەرۆک و پێکھاتە درەختییەکەی.\nئاگادار بە کە ئەمە پێویستی بە کارگێڕییەکی پێشکەوتووی JavaScript ھەیە کە بە AJAX ناسراوە.\nئەگەر وێبگەڕێکی زۆر کۆنت ھەیە یان JavaScriptت لەکارخستووە، کار ناکات.",
 	"categorytree-category": "پۆل:",
 	"categorytree-go": "دەرختەکە نیشانبدە",
+	"categorytree-parents": "باوانەکان",
 	"categorytree-mode-categories": "تەنیا پۆلەکان",
 	"categorytree-mode-pages": "لاپەڕەکان جگە لەپەڕەکان",
 	"categorytree-mode-all": "ھەموو پەڕەکان",
@@ -28,6 +30,7 @@
 	"categorytree-loading": "بارکردن...",
 	"categorytree-nothing-found": "ھیچ نەدۆزرایەوە",
 	"categorytree-no-subcategories": "ھیچ ژێرھاوپۆلێک نییە",
+	"categorytree-no-parent-categories": "پۆلی باوان نییە",
 	"categorytree-no-pages": "پەڕە و ژێر پۆل نییە",
 	"categorytree-not-found": "پۆلی <i>$1</i> نەدۆزرایەوە",
 	"categorytree-error": "کێشە لە بارکردنی داتا.",
