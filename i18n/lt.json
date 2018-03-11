@@ -5,7 +5,8 @@
 			"Garas",
 			"Hugo.arg",
 			"Tomasdd",
-			"Zygimantus"
+			"Zygimantus",
+			"Manvydasz"
 		]
 	},
 	"categorytree": "Kategorijų medis",
@@ -16,7 +17,7 @@
 	"categorytree-category": "Kategorija:",
 	"categorytree-go": "Rodyti medį",
 	"categorytree-parents": "Aukštesnio lygio kategorija",
-	"categorytree-mode-label": "Rėžimas:",
+	"categorytree-mode-label": "Režimas:",
 	"categorytree-mode-categories": "tik kategorijos",
 	"categorytree-mode-pages": "puslapiai išskyrus paveikslėlius",
 	"categorytree-mode-all": "visi puslapiai",
