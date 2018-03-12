@@ -13,7 +13,7 @@
 	"categorytree-portlet": "Категориялар",
 	"categorytree-legend": "Категориялар ағасын күрһәтергә",
 	"categorytree-desc": "[[Special:CategoryTree|Категориялар төҙөлөшө]] буйлап динамик йөрөү мөмкинлеге",
-	"categorytree-header": "Категорияның исемен керетегеҙ, һәм ул ағас төҙөлөшөндә күрһәтеләсәк.\nИғтибар итегеҙ — был JavaScript-тың AJAX мөмкинлеген талап итә.\nӘгәр һеҙҙә браузерҙың бик иҫке өлгөһө булһа, йәки JavaScript һүндерелгән булһа,  ул эшләмәйәсәк.",
+	"categorytree-header": "Категорияның исемен керетегеҙ, ул ағас төҙөлөшөндә күрһәтеләсәк\n(JavaScript кәрәк буласаҡ).",
 	"categorytree-category": "Категория:",
 	"categorytree-go": "Тейәү",
 	"categorytree-parents": "Төп категориялар",

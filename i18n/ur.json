@@ -4,14 +4,15 @@
 			"Istabani",
 			"පසිඳු කාවින්ද",
 			"Obaid Raza",
-			"Muhammad Shuaib"
+			"Muhammad Shuaib",
+			"BukhariSaeed"
 		]
 	},
 	"categorytree": "شجرہ زمرہ جات",
 	"categorytree-portlet": "زمرہ",
 	"categorytree-legend": "مختلف اقسام دکھائیں",
-	"categorytree-desc": "[[خاص:شجرہ زمرہ|زمرہ جات کی متحرک ساخت]]",
-	"categorytree-header": "ایک زمرہ کا نام لکھ کے اس کا مکمل ڈھانچہ/ساخت کو [[شجرہ نسب|شجرہ]] کی صورت دیکھیے۔\nیادہانی! اس کے لیے جدید تر [[جاوا سکرپٹ]] کی ضرورت ہے، جس میں یہ  کام کرتا ہے، جسے عام طور پر AJAX کہا جاتا ہے۔\nاگر آپ کوئی پرانا [[ویب براؤزر]] استعمال کر رہے ہیں یا آپ کے پاس [[جاوا سکرپٹ|جاوا]] غیر فعال (ڈس ایبل) ہے، تو یہ کام نہیں کرے گا۔",
+	"categorytree-desc": "[[Special:CategoryTree|زمرہ جات کی متحرک ساخت]]",
+	"categorytree-header": "ایک زمرہ کا نام لکھ کے اس کا مکمل ساخت کو [[شجرہ نسب|شجرہ]] کی صورت میں دیکھیے۔ (جاوا اسکرپٹ کی ضرورت ہے)",
 	"categorytree-category": "زمرہ",
 	"categorytree-go": "بہ ترتیب شجر",
 	"categorytree-parents": "والدین",

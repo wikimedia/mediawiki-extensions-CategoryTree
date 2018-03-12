@@ -20,6 +20,8 @@
 	"categorytree-mode-all": "allar síður",
 	"categorytree-collapse": "fela",
 	"categorytree-expand": "sýna",
+	"categorytree-expand-bullet": "►",
+	"categorytree-empty-bullet": "►",
 	"categorytree-member-counts": "Inniheldur $1 {{PLURAL:$1|undirflokk|undirflokka}}, $2 {{PLURAL:$2|síðu|síður}}, og $3 {{PLURAL:$3|mynd|myndir}}",
 	"categorytree-num-categories": "$1 F",
 	"categorytree-num-pages": "$1 S",
@@ -34,5 +36,6 @@
 	"categorytree-not-found": "Flokkurinn <i>$1</i> fannst ekki",
 	"categorytree-error": "Villa við hleðslu gagna.",
 	"categorytree-retry": "Gjörðu svo vel og reyndu síðar.",
-	"apihelp-categorytree-description": "Innri kerfiseining fyrir CategoryTree-viðbótina."
+	"apihelp-categorytree-description": "Innri kerfiseining fyrir CategoryTree-viðbótina.",
+	"apihelp-categorytree-summary": "Innri kerfiseining fyrir CategoryTree-viðbótina."
 }

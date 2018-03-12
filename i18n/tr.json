@@ -7,7 +7,8 @@
 			"Mach",
 			"Runningfridgesrule",
 			"Stultiwikia",
-			"Vito Genovese"
+			"Vito Genovese",
+			"Superyetkin"
 		]
 	},
 	"categorytree": "Kategori hiyerarşisi",
@@ -24,7 +25,7 @@
 	"categorytree-mode-all": "tüm sayfalar",
 	"categorytree-collapse": "aç/kapat",
 	"categorytree-expand": "genişlet",
-	"categorytree-member-counts": "{{PLURAL:$1|1 alt kategori|$1 alt kategori}}, {{PLURAL:$2|1 sayfa|$2 sayfa}}, ve {{PLURAL:$3|1 dosya|$3 dosya}} içeriyor",
+	"categorytree-member-counts": "{{PLURAL:$1|1 alt kategori|$1 alt kategori}}, {{PLURAL:$2|1 sayfa|$2 sayfa}} ve {{PLURAL:$3|1 dosya|$3 dosya}} içeriyor",
 	"categorytree-num-categories": "$1 K",
 	"categorytree-num-pages": "$1 M",
 	"categorytree-num-files": "$1 D",

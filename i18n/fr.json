@@ -23,7 +23,7 @@
 	"categorytree-category": "Catégorie :",
 	"categorytree-go": "Voir l’arborescence",
 	"categorytree-parents": "super-catégorie(s)",
-	"categorytree-mode-label": "Mode:",
+	"categorytree-mode-label": "Mode :",
 	"categorytree-mode-categories": "seulement les catégories",
 	"categorytree-mode-pages": "pages sans les images",
 	"categorytree-mode-all": "toutes les pages",
@@ -46,7 +46,8 @@
 	"categorytree-retry": "Veuillez attendre un instant puis réessayer.",
 	"category_tutoriels_header": "Tutoriels dans la catégorie « $1 »",
 	"apihelp-categorytree-description": "Module interne pour l’extension CategoryTree.",
-	"apihelp-categorytree-param-category": "Titre dans l’espace de noms Catégorie, le préfixe sera ignoré s’il est fourni.",
+	"apihelp-categorytree-summary": "Module interne pour l’extension CategoryTree.",
+	"apihelp-categorytree-param-category": "Titre dans l’espace de noms des catégories, le préfixe sera ignoré s’il est fourni.",
 	"apihelp-categorytree-param-options": "Options pour le constructeur CategoryTree comme objet JSON. L’option <var>depth</var> par défaut vaut <kbd>1</kbd>.",
 	"apierror-categorytree-invalidjson": "Les options doivent être un objet JSON valide."
 }

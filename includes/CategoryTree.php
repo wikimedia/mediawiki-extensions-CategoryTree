@@ -14,12 +14,13 @@ class CategoryTree {
 	public $mOptions = [];
 
 	/**
-	 * @param $options array
+	 * @param array $options
 	 */
 	function __construct( $options ) {
 		global $wgCategoryTreeDefaultOptions;
 
-		# ensure default values and order of options. Order may become important, it may influence the cache key!
+		// ensure default values and order of options.
+		// Order may become important, it may influence the cache key!
 		foreach ( $wgCategoryTreeDefaultOptions as $option => $default ) {
 			if ( isset( $options[$option] ) && !is_null( $options[$option] ) ) {
 				$this->mOptions[$option] = $options[$option];
@@ -31,16 +32,17 @@ class CategoryTree {
 		$this->mOptions['mode'] = self::decodeMode( $this->mOptions['mode'] );
 
 		if ( $this->mOptions['mode'] == CategoryTreeMode::PARENTS ) {
-			 $this->mOptions['namespaces'] = false; # namespace filter makes no sense with CategoryTreeMode::PARENTS
+			// namespace filter makes no sense with CategoryTreeMode::PARENTS
+			$this->mOptions['namespaces'] = false;
 		}
 
 		$this->mOptions['hideprefix'] = self::decodeHidePrefix( $this->mOptions['hideprefix'] );
-		$this->mOptions['showcount']  = self::decodeBoolean( $this->mOptions['showcount'] );
-		$this->mOptions['namespaces']  = self::decodeNamespaces( $this->mOptions['namespaces'] );
+		$this->mOptions['showcount'] = self::decodeBoolean( $this->mOptions['showcount'] );
+		$this->mOptions['namespaces'] = self::decodeNamespaces( $this->mOptions['namespaces'] );
 
 		if ( $this->mOptions['namespaces'] ) {
 			# automatically adjust mode to match namespace filter
-			if ( sizeof( $this->mOptions['namespaces'] ) === 1
+			if ( count( $this->mOptions['namespaces'] ) === 1
 				&& $this->mOptions['namespaces'][0] == NS_CATEGORY ) {
 				$this->mOptions['mode'] = CategoryTreeMode::CATEGORIES;
 			} elseif ( !in_array( NS_FILE, $this->mOptions['namespaces'] ) ) {
@@ -52,7 +54,7 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param $name string
+	 * @param string $name
 	 * @return mixed
 	 */
 	function getOption( $name ) {
@@ -62,12 +64,12 @@ class CategoryTree {
 	/**
 	 * @return bool
 	 */
-	function isInverse( ) {
+	function isInverse() {
 		return $this->getOption( 'mode' ) == CategoryTreeMode::PARENTS;
 	}
 
 	/**
-	 * @param $nn
+	 * @param mixed $nn
 	 * @return array|bool
 	 */
 	static function decodeNamespaces( $nn ) {
@@ -113,7 +115,7 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param $mode
+	 * @param mixed $mode
 	 * @return int|string
 	 */
 	static function decodeMode( $mode ) {
@@ -152,7 +154,7 @@ class CategoryTree {
 	/**
 	 * Helper function to convert a string to a boolean value.
 	 * Perhaps make this a global function in MediaWiki proper
-	 * @param $value
+	 * @param mixed $value
 	 * @return bool|null|string
 	 */
 	static function decodeBoolean( $value ) {
@@ -171,9 +173,13 @@ class CategoryTree {
 			return ( (int)$value > 0 );
 		}
 
-		if ( $value == 'yes' || $value == 'y' || $value == 'true' || $value == 't' || $value == 'on' ) {
+		if ( $value == 'yes' || $value == 'y'
+			|| $value == 'true' || $value == 't' || $value == 'on'
+		) {
 			return true;
-		} elseif ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) {
+		} elseif ( $value == 'no' || $value == 'n'
+			|| $value == 'false' || $value == 'f' || $value == 'off'
+		) {
 			return false;
 		} elseif ( $value == 'null' || $value == 'default' || $value == 'none' || $value == 'x' ) {
 			return null;
@@ -183,7 +189,7 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param $value
+	 * @param mixed $value
 	 * @return int|string
 	 */
 	static function decodeHidePrefix( $value ) {
@@ -204,9 +210,13 @@ class CategoryTree {
 
 		$value = trim( strtolower( $value ) );
 
-		if ( $value == 'yes' || $value == 'y' || $value == 'true' || $value == 't' || $value == 'on' ) {
+		if ( $value == 'yes' || $value == 'y'
+			|| $value == 'true' || $value == 't' || $value == 'on'
+		) {
 			return CategoryTreeHidePrefix::ALWAYS;
-		} elseif ( $value == 'no' || $value == 'n' || $value == 'false' || $value == 'f' || $value == 'off' ) {
+		} elseif ( $value == 'no' || $value == 'n'
+			|| $value == 'false' || $value == 'f' || $value == 'off'
+		) {
 			return CategoryTreeHidePrefix::NEVER;
 		} elseif ( $value == 'always' ) {
 			return CategoryTreeHidePrefix::ALWAYS;
@@ -232,12 +242,12 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param $options
-	 * @param $enc
+	 * @param array $options
+	 * @param string $enc
 	 * @return mixed
 	 * @throws Exception
 	 */
-	static function encodeOptions( $options, $enc ) {
+	protected static function encodeOptions( $options, $enc ) {
 		if ( $enc == 'mode' || $enc == '' ) {
 			$opt = $options['mode'];
 		} elseif ( $enc == 'json' ) {
@@ -250,14 +260,16 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param $depth null
+	 * @param string|null $depth
 	 * @return string
 	 */
 	function getOptionsAsCacheKey( $depth = null ) {
 		$key = "";
 
 		foreach ( $this->mOptions as $k => $v ) {
-			if ( is_array( $v ) ) $v = implode( '|', $v );
+			if ( is_array( $v ) ) {
+				$v = implode( '|', $v );
+			}
 			$key .= $k . ':' . $v . ';';
 		}
 
@@ -268,11 +280,11 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param $depth int|null
+	 * @param int|null $depth
 	 * @return mixed
 	 */
-	function getOptionsAsJsStructure( $depth = null ) {
-		if ( !is_null( $depth ) ) {
+	public function getOptionsAsJsStructure( $depth = null ) {
+		if ( $depth !== null ) {
 			$opt = $this->mOptions;
 			$opt['depth'] = $depth;
 			$s = self::encodeOptions( $opt, 'json' );
@@ -381,15 +393,17 @@ class CategoryTree {
 	/**
 	 * Custom tag implementation. This is called by CategoryTreeHooks::parserHook, which is used to
 	 * load CategoryTreeFunctions.php on demand.
-	 * @param $parser Parser
-	 * @param $category
-	 * @param $hideroot bool
-	 * @param $attr
-	 * @param $depth int
-	 * @param $allowMissing bool
+	 * @param Parser $parser
+	 * @param string $category
+	 * @param bool $hideroot
+	 * @param string $attr
+	 * @param int $depth
+	 * @param bool $allowMissing
 	 * @return bool|string
 	 */
-	function getTag( $parser, $category, $hideroot = false, $attr, $depth = 1, $allowMissing = false ) {
+	function getTag( $parser, $category, $hideroot = false, $attr, $depth = 1,
+		$allowMissing = false
+	) {
 		global $wgCategoryTreeDisableCache;
 
 		$category = trim( $category );
@@ -441,7 +455,8 @@ class CategoryTree {
 		if ( !$allowMissing && !$title->getArticleID() ) {
 			$html .= Html::openElement( 'span', [ 'class' => 'CategoryTreeNotice' ] );
 			if ( $parser ) {
-				$html .= $parser->recursiveTagParse( wfMessage( 'categorytree-not-found', $category )->plain() );
+				$html .= $parser->recursiveTagParse(
+					wfMessage( 'categorytree-not-found', $category )->plain() );
 			} else {
 				$html .= wfMessage( 'categorytree-not-found', $category )->parse();
 			}
@@ -462,8 +477,8 @@ class CategoryTree {
 
 	/**
 	 * Returns a string with an HTML representation of the children of the given category.
-	 * @param $title Title
-	 * @param $depth int
+	 * @param Title $title
+	 * @param int $depth
 	 * @return string
 	 */
 	function renderChildren( $title, $depth = 1 ) {
@@ -474,7 +489,7 @@ class CategoryTree {
 			return '';
 		}
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		$inverse = $this->isInverse();
 		$mode = $this->getOption( 'mode' );
@@ -489,7 +504,9 @@ class CategoryTree {
 		$options = [ 'ORDER BY' => 'cl_type, cl_sortkey', 'LIMIT' => $wgCategoryTreeMaxChildren ];
 
 		if ( $inverse ) {
-			$joins['categorylinks'] = [ 'RIGHT JOIN', [ 'cl_to = page_title', 'page_namespace' => NS_CATEGORY ] ];
+			$joins['categorylinks'] = [ 'RIGHT JOIN', [
+				'cl_to = page_title', 'page_namespace' => NS_CATEGORY
+			] ];
 			$where['cl_from'] = $title->getArticleID();
 		} else {
 			$joins['categorylinks'] = [ 'JOIN', 'cl_from = page_id' ];
@@ -498,7 +515,8 @@ class CategoryTree {
 
 			# namespace filter.
 			if ( $namespaces ) {
-				# NOTE: we assume that the $namespaces array contains only integers! decodeNamepsaces makes it so.
+				// NOTE: we assume that the $namespaces array contains only integers!
+				// decodeNamepsaces makes it so.
 				$where['page_namespace'] = $namespaces;
 			} elseif ( $mode != CategoryTreeMode::ALL ) {
 				if ( $mode == CategoryTreeMode::PAGES ) {
@@ -514,8 +532,12 @@ class CategoryTree {
 
 		if ( $doCount ) {
 			$tables = array_merge( $tables, [ 'category' ] );
-			$fields = array_merge( $fields, [ 'cat_id', 'cat_title', 'cat_subcats', 'cat_pages', 'cat_files' ] );
-			$joins['category'] = [ 'LEFT JOIN', [ 'cat_title = page_title', 'page_namespace' => NS_CATEGORY ] ];
+			$fields = array_merge( $fields, [
+				'cat_id', 'cat_title', 'cat_subcats', 'cat_pages', 'cat_files'
+			] );
+			$joins['category'] = [ 'LEFT JOIN', [
+				'cat_title = page_title', 'page_namespace' => NS_CATEGORY ]
+			];
 		}
 
 		$res = $dbr->select( $tables, $fields, $where, __METHOD__, $options, $joins );
@@ -555,13 +577,13 @@ class CategoryTree {
 
 	/**
 	 * Returns a string with an HTML representation of the parents of the given category.
-	 * @param $title Title
+	 * @param Title $title
 	 * @return string
 	 */
 	function renderParents( $title ) {
 		global $wgCategoryTreeMaxChildren;
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		$res = $dbr->select(
 			'categorylinks',
@@ -606,14 +628,16 @@ class CategoryTree {
 
 	/**
 	 * Returns a string with a HTML represenation of the given page.
-	 * @param $title Title
+	 * @param Title $title
 	 * @param int $children
 	 * @return string
 	 */
 	function renderNode( $title, $children = 0 ) {
 		global $wgCategoryTreeUseCategoryTable;
 
-		if ( $wgCategoryTreeUseCategoryTable && $title->getNamespace() == NS_CATEGORY && !$this->isInverse() ) {
+		if ( $wgCategoryTreeUseCategoryTable && $title->getNamespace() == NS_CATEGORY
+			&& !$this->isInverse()
+		) {
 			$cat = Category::newFromTitle( $title );
 		} else {
 			$cat = null;
@@ -625,9 +649,9 @@ class CategoryTree {
 	/**
 	 * Returns a string with a HTML represenation of the given page.
 	 * $info must be an associative array, containing at least a Title object under the 'title' key.
-	 * @param $title Title
-	 * @param $cat Category
-	 * @param $children int
+	 * @param Title $title
+	 * @param Category $cat
+	 * @param int $children
 	 * @return string
 	 */
 	function renderNodeInfo( $title, $cat, $children = 0 ) {
@@ -648,8 +672,9 @@ class CategoryTree {
 			$hideprefix = true;
 		}
 
-		# when showing only categories, omit namespace in label unless we explicitely defined the configuration setting
-		# patch contributed by Manuel Schneider <manuel.schneider@wikimedia.ch>, Bug 8011
+		// when showing only categories, omit namespace in label unless we explicitely defined the
+		// configuration setting
+		// patch contributed by Manuel Schneider <manuel.schneider@wikimedia.ch>, Bug 8011
 		if ( $hideprefix ) {
 			$label = htmlspecialchars( $title->getText() );
 		} else {
@@ -704,17 +729,14 @@ class CategoryTree {
 				$linkattr = [];
 
 				$linkattr[ 'class' ] = "CategoryTreeToggle";
-				$linkattr['style'] = 'display: none;'; // Unhidden by JS
 				$linkattr['data-ct-title'] = $key;
 
 				$tag = 'span';
 				if ( $children == 0 ) {
 					$txt = wfMessage( 'categorytree-expand-bullet' )->plain();
-					$linkattr[ 'title' ] = wfMessage( 'categorytree-expand' )->plain();
 					$linkattr[ 'data-ct-state' ] = 'collapsed';
 				} else {
 					$txt = wfMessage( 'categorytree-collapse-bullet' )->plain();
-					$linkattr[ 'title' ] = wfMessage( 'categorytree-collapse' )->plain();
 					$linkattr[ 'data-ct-loaded' ] = true;
 					$linkattr[ 'data-ct-state' ] = 'expanded';
 				}
@@ -730,7 +752,7 @@ class CategoryTree {
 			. $label . Xml::closeElement( 'a' );
 
 		if ( $count !== false && $this->getOption( 'showcount' ) ) {
-			$s .= CategoryTree::createCountString( RequestContext::getMain(), $cat, $count );
+			$s .= self::createCountString( RequestContext::getMain(), $cat, $count );
 		}
 
 		$s .= Xml::closeElement( 'div' );
@@ -790,7 +812,7 @@ class CategoryTree {
 
 		$attr = [
 			'title' => $context->msg( 'categorytree-member-counts' )
-				->numParams( $subcatCount, $pages , $fileCount, $allCount, $countMode )->text(),
+				->numParams( $subcatCount, $pages, $fileCount, $allCount, $countMode )->text(),
 			'dir' => $context->getLanguage()->getDir() # numbers and commas get messed up in a mixed dir env
 		];
 
@@ -840,7 +862,7 @@ class CategoryTree {
 
 	/**
 	 * Creates a Title object from a user provided (and thus unsafe) string
-	 * @param $title string
+	 * @param string $title
 	 * @return null|Title
 	 */
 	static function makeTitle( $title ) {
@@ -864,8 +886,8 @@ class CategoryTree {
 
 	/**
 	 * Internal function to cap depth
-	 * @param $mode
-	 * @param $depth
+	 * @param string $mode
+	 * @param int $depth
 	 * @return int|mixed
 	 */
 	static function capDepth( $mode, $depth ) {

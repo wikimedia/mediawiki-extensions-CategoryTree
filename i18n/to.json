@@ -1,8 +1,13 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": [
+			"Fanjiayi"
+		]
+	},
 	"categorytree": "Fuʻuʻakau faʻahinga",
 	"categorytree-category": "Faʻahinga:",
 	"categorytree-go": "ʻAsi mai",
 	"categorytree-collapse": "holo",
-	"categorytree-expand": "fano"
+	"categorytree-expand": "fano",
+	"categorytree-num-pages": "$1 P"
 }

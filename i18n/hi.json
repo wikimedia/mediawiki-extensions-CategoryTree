@@ -7,14 +7,15 @@
 			"Shyam123.ckp",
 			"Siddhartha Ghai",
 			"Wikiuser13",
-			"Sfic"
+			"Sfic",
+			"Anamdas"
 		]
 	},
 	"categorytree": "श्रेणीवृक्ष",
 	"categorytree-portlet": "श्रेणियाँ",
 	"categorytree-legend": "श्रेणीवृक्ष दिखायें",
 	"categorytree-desc": "विकि की [[Special:CategoryTree|श्रेणी संरचना]] देखें",
-	"categorytree-header": "किसी श्रेणी की सामग्री वृक्ष के रूप में देखने के लिये उसका नाम दें।\nध्यान रखें कि इस सुविधा के लिये AJAX नाम की जावास्क्रिप्ट सुविधा की ज़रूरत होती है।\nअगर आपका ब्राउज़र बहुत पुराना है, या जावास्क्रिप्ट अक्षम है, तो यह काम नहीं करेगा।",
+	"categorytree-header": "किसी श्रेणी की सामग्री वृक्ष के रूप में देखने के लिये उसका नाम दें। (जावास्क्रिप्ट अनिवार्य है)",
 	"categorytree-category": "श्रेणी:",
 	"categorytree-go": "वृक्ष दिखायें",
 	"categorytree-parents": "पालक",
@@ -39,6 +40,8 @@
 	"categorytree-error": "डाटा लोड करने में समस्या।",
 	"categorytree-retry": "कृपया थोड़े समय पश्चात पुनः यत्न करें।",
 	"apihelp-categorytree-description": "श्रेणीवृक्ष एक्सटेन्सन के लिए अंतर का मॉड्यूल",
+	"apihelp-categorytree-summary": "श्रेणीवृक्ष एक्सटेन्सन के लिए आंतरिक मॉड्यूल",
 	"apihelp-categorytree-param-category": "श्रेणी नामस्थान में उपसर्ग डालने पर उसे नजरअंदाज कर दिया जाएगा।",
-	"apihelp-categorytree-param-options": "गहराई विकल्प मूल रूप से <kbd>1</kbd> है। श्रेणीवृक्ष जेसन के विकल्प के रूप में है।"
+	"apihelp-categorytree-param-options": "<var>गहराई</var> विकल्प मूल रूप से <kbd>1</kbd> है। श्रेणीवृक्ष जेसन के विकल्प के रूप में है।",
+	"apierror-categorytree-invalidjson": "विकल्प मान्य जेसन वस्तु होना चाहिए"
 }

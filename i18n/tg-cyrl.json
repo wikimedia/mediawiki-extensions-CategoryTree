@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ibrahim"
+			"Ibrahim",
+			"ToJack"
 		]
 	},
 	"categorytree": "ГурӯҳДарахт",
@@ -18,6 +19,7 @@
 	"categorytree-collapse": "фурукаш",
 	"categorytree-expand": "густариш",
 	"categorytree-num-pages": "$1 P",
+	"categorytree-num-empty": "холӣ",
 	"categorytree-load": "бор кардан",
 	"categorytree-loading": "дар ҳоли бор шудан…",
 	"categorytree-nothing-found": "ҳеҷчиз ёфт нашуд",

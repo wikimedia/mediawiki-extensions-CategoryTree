@@ -1,6 +1,6 @@
 <?php
 /**
- * Special page for the  CategoryTree extension, an AJAX based gadget
+ * Special page for the CategoryTree extension, an AJAX based gadget
  * to display the category structure of a wiki
  *
  * @file
@@ -23,7 +23,7 @@ class CategoryTreePage extends SpecialPage {
 	}
 
 	/**
-	 * @param $name
+	 * @param string $name
 	 * @return mixed
 	 */
 	function getOption( $name ) {
@@ -38,25 +38,27 @@ class CategoryTreePage extends SpecialPage {
 
 	/**
 	 * Main execution function
-	 * @param $par array Parameters passed to the page
+	 * @param string|null $par Parameters passed to the page
 	 */
 	function execute( $par ) {
-		global $wgCategoryTreeDefaultOptions, $wgCategoryTreeSpecialPageOptions, $wgCategoryTreeForceHeaders;
+		global $wgCategoryTreeDefaultOptions, $wgCategoryTreeSpecialPageOptions,
+			$wgCategoryTreeForceHeaders;
 
 		$this->setHeaders();
 		$request = $this->getRequest();
 		if ( $par ) {
 			$this->target = $par;
 		} else {
-			$this->target = $request->getVal( 'target', $this->msg( 'rootcategory' )->text() );
+			$this->target = $request->getVal( 'target' );
+			if ( $this->target === null ) {
+				$rootcategory = $this->msg( 'rootcategory' );
+				if ( $rootcategory->exists() ) {
+					$this->target = $rootcategory->text();
+				}
+			}
 		}
 
 		$this->target = trim( $this->target );
-
-		# HACK for undefined root category
-		if ( $this->target == '<rootcategory>' || $this->target == '&lt;rootcategory&gt;' ) {
-			$this->target = null;
-		}
 
 		$options = [];
 
@@ -114,11 +116,11 @@ class CategoryTreePage extends SpecialPage {
 	 */
 	function executeInputForm() {
 		$namespaces = $this->getRequest()->getVal( 'namespaces', '' );
-		//mode may be overriden by namespaces option
+		// mode may be overriden by namespaces option
 		$mode = ( $namespaces == '' ? $this->getOption( 'mode' ) : CategoryTreeMode::ALL );
 		if ( $mode == CategoryTreeMode::CATEGORIES ) {
 			$modeDefault = 'categories';
-		} elseif( $mode == CategoryTreeMode::PAGES ) {
+		} elseif ( $mode == CategoryTreeMode::PAGES ) {
 			$modeDefault = 'pages';
 		} else {
 			$modeDefault = 'all';

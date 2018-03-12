@@ -5,7 +5,8 @@
 			"E THP",
 			"Mousa",
 			"Koroğlu",
-			"Alp Er Tunqa"
+			"Alp Er Tunqa",
+			"ییلماز"
 		]
 	},
 	"categorytree": "بولمه آغاجی",
@@ -21,7 +22,7 @@
 	"categorytree-mode-pages": "فایل‌لاردان علاوه صحیفه‌لر",
 	"categorytree-mode-all": "بوتون صفحه‌لر",
 	"categorytree-collapse": "گیزلت",
-	"categorytree-expand": "گنیشلندیر",
+	"categorytree-expand": "گئنیشلندیر",
 	"categorytree-expand-bullet": "◄",
 	"categorytree-empty-bullet": "◄",
 	"categorytree-member-counts": "{{PLURAL:$1|1 آلت بولمه|$1 آلت بولمه}}، {{PLURAL:$2|1 صفحه|$2 صفحه}}، و {{PLURAL:$3|1 فایل|$3 فایل}} واریدیر",

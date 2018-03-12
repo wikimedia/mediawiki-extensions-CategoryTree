@@ -138,7 +138,8 @@ $magicWords['kw'] = [
 
 /** Ladino (Ladino) */
 $magicWords['lad'] = [
-	'categorytree' => [ 0, 'árvoledekateggorías', 'árboldecategorías', 'arboldecategorias', 'categorytree' ],
+	'categorytree' => [ 0, 'árvoledekateggorías', 'árboldecategorías', 'arboldecategorias',
+		'categorytree' ],
 ];
 
 /** Malagasy (Malagasy) */
@@ -233,7 +234,7 @@ $magicWords['uk'] = [
 
 /** Urdu (اردو) */
 $magicWords['ur'] = [
-	'categorytree' => [ 0, 'شجر_زمرہ' ],
+	'categorytree' => [ 0, 'شجرہ_زمرہ', 'شجر_زمرہ' ],
 ];
 
 /** Uzbek (oʻzbekcha/ўзбекча) */

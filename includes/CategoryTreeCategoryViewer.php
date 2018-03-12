@@ -1,9 +1,5 @@
 <?php
 
-class CategoryTreeCategoryPage extends CategoryPage {
-	protected $mCategoryViewerClass = 'CategoryTreeCategoryViewer';
-}
-
 class CategoryTreeCategoryViewer extends CategoryViewer {
 	public $child_cats;
 
@@ -31,9 +27,9 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 	/**
 	 * Add a subcategory to the internal lists
-	 * @param $cat Category
-	 * @param $sortkey
-	 * @param $pageLength
+	 * @param Category $cat
+	 * @param string $sortkey
+	 * @param int $pageLength
 	 */
 	function addSubcategoryObject( Category $cat, $sortkey, $pageLength ) {
 		$title = $cat->getTitle();

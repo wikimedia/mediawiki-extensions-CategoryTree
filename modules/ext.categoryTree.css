@@ -8,32 +8,40 @@
  * @licence GNU General Public Licence 2.0 or later
  */
 
-#mw-subcategories ul {
+.client-js #mw-subcategories ul {
 	list-style: none none;
 	margin-left: 0.25em;
 }
 
 #mw-panel div.portal div.body .CategoryTreeTag {
-        margin: 0;
-        font-size: 0.75em;
-        line-height: 1.125em;
+	margin: 0;
+	font-size: 0.75em;
+	line-height: 1.125em;
 }
 
 #mw-panel div.portal div.body .CategoryTreeItem {
-        padding: 0.25em 0;
+	padding: 0.25em 0;
 }
 
 .CategoryTreeChildren {
 	margin-left: 1.25em;
 }
 
-.CategoryTreeBullet {
+.CategoryTreeBullet,
+.CategoryTreeEmptyBullet {
+	cursor: default;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.CategoryTreeToggleHandlerAttached {
 	cursor: pointer;
 }
 
 .CategoryTreeEmptyBullet {
-	cursor: default;
-	color: #C0C0C0;
+	color: #c0c0c0;
 }
 
 .CategoryTreeBullet a,
@@ -45,8 +53,14 @@
 	speak: none;
 }
 
+/* Hide toggle buttons for clients without JavaScript */
+.client-nojs .CategoryTreeBullet,
+.client-nojs .CategoryTreeEmptyBullet {
+	display: none;
+}
+
 .CategoryTreeToggle {
-	color: #0645AD;
+	color: #0645ad;
 }
 
 .CategoryTreeLabelPage {
@@ -79,11 +93,11 @@
 	display: inline-block;
 	/* why is the -0.5ex needed? */
 	margin: -0.5ex 0 0 1ex;
-	padding:0;
+	padding: 0;
 	vertical-align: top;
 	/* IE6-7 Hack for display: inline-block */
 	zoom: 1;
-	*display: inline;
+	*display: inline; /* stylelint-disable-line declaration-block-no-duplicate-properties */
 }
 .
 .CategoryTreeSection {

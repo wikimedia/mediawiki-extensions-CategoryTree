@@ -9,7 +9,7 @@
 	"categorytree": "Дрво на категории",
 	"categorytree-portlet": "Категории",
 	"categorytree-legend": "Прикажи дрво на категории",
-	"categorytree-desc": "Динамичка навигација низ [[Special:CategoryTree|структурата на категориите]]",
+	"categorytree-desc": "Динамички прегледник низ [[Special:CategoryTree|структурата на категориите]]",
 	"categorytree-header": "Внесете назив на категорија за да ја видите нејзината содржина во облик на дрво (бара JavaScript).",
 	"categorytree-category": "Категорија:",
 	"categorytree-go": "Прикажи дрво",
@@ -37,6 +37,7 @@
 	"categorytree-error": "Проблеми со вчитување на податоците.",
 	"categorytree-retry": "Почекајте малку, па обидете се пак.",
 	"apihelp-categorytree-description": "Внатрешен модул на додатокот „Дрво на категории“.",
+	"apihelp-categorytree-summary": "Внатрешен модул на додатокот „Дрво на категории“.",
 	"apihelp-categorytree-param-category": "Наслов во категорискиот именски простор. Ако се внесе претставка, истата ќе биде занемарена.",
 	"apihelp-categorytree-param-options": "Можности за конструкторот на „Дрво на категории“ како JSON-објект. Продорноста (<var>depth</var>) по основно е <kbd>1</kbd>.",
 	"apierror-categorytree-invalidjson": "Можностите мора да бидат важечки JSON-објект."
