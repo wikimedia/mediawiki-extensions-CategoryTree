@@ -27,17 +27,6 @@
 		"CategoryTreeMagic": "CategoryTree.i18n.magic.php"
 	},
 	"AutoloadClasses": {
-<<<<<<< HEAD
-		"CategoryTreePage": "CategoryTreePage.php",
-		"CategoryTree": "CategoryTreeFunctions.php",
-		"CategoryTreeCore": "CategoryTreeCore.php",
-		"CategoryTreeCategoryPage": "CategoryPageSubclass.php",
-		"CategoryTreeCategoryViewer": "CategoryPageSubclass.php",
-		"CategoryTreeHooks": "CategoryTree.hooks.php",
-		"CategoryTreeMode": "CategoryTreeMode.php",
-		"CategoryTreeHidePrefix": "CategoryTreeHidePrefix.php",
-		"ApiCategoryTree": "ApiCategoryTree.php"
-=======
 		"CategoryTreePage": "includes/CategoryTreePage.php",
 		"CategoryTree": "includes/CategoryTree.php",
 		"CategoryTreeCategoryPage": "includes/CategoryTreeCategoryPage.php",
@@ -46,7 +35,6 @@
 		"CategoryTreeMode": "includes/CategoryTreeMode.php",
 		"CategoryTreeHidePrefix": "includes/CategoryTreeHidePrefix.php",
 		"ApiCategoryTree": "includes/ApiCategoryTree.php"
->>>>>>> wikimedia/master
 	},
 	"ResourceModules": {
 		"ext.categoryTree": {
