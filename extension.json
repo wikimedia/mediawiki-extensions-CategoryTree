@@ -31,6 +31,7 @@
 		"CategoryTree": "includes/CategoryTree.php",
 		"CategoryTreeCategoryPage": "includes/CategoryTreeCategoryPage.php",
 		"CategoryTreeCategoryViewer": "includes/CategoryTreeCategoryViewer.php",
+		"CategoryTreeCore": "includes/CategoryTreeCore.php",
 		"CategoryTreeHooks": "includes/CategoryTreeHooks.php",
 		"CategoryTreeMode": "includes/CategoryTreeMode.php",
 		"CategoryTreeHidePrefix": "includes/CategoryTreeHidePrefix.php",
