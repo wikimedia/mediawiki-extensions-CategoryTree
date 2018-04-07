@@ -4,7 +4,8 @@
 			"Alma",
 			"Toliño",
 			"Xosé",
-			"Elisardojm"
+			"Elisardojm",
+			"Navhy"
 		]
 	},
 	"categorytree": "Árbore de categorías",
@@ -13,7 +14,7 @@
 	"categorytree-desc": "Navegación dinámica a través da [[Special:CategoryTree|estrutura de categorías]]",
 	"categorytree-header": "Introduza o nome dunha categoría para ver o seu contido nunha estrutura de árbore. (Require JavaScript.)",
 	"categorytree-category": "Categoría:",
-	"categorytree-go": "Mostrar a árbore",
+	"categorytree-go": "Amosar a árbore",
 	"categorytree-parents": "Categoría raíz",
 	"categorytree-mode-label": "Modo:",
 	"categorytree-mode-categories": "só as categorías",
