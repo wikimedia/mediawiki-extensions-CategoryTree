@@ -46,6 +46,11 @@ class ApiCategoryTree extends ApiBase {
 		$this->getResult()->addContentValue( $this->getModuleName(), 'html', $html );
 	}
 
+	/**
+	 * @param string $condition
+	 *
+	 * @return bool|null|string
+	 */
 	public function getConditionalRequestData( $condition ) {
 		if ( $condition === 'last-modified' ) {
 			$params = $this->extractRequestParams();
