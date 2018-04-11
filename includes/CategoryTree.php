@@ -306,12 +306,12 @@ class CategoryTree {
 	 * @param Parser $parser
 	 * @param string $category
 	 * @param bool $hideroot
-	 * @param string $attr
+	 * @param array $attr
 	 * @param int $depth
 	 * @param bool $allowMissing
 	 * @return bool|string
 	 */
-	function getTag( $parser, $category, $hideroot = false, $attr, $depth = 1,
+	function getTag( $parser, $category, $hideroot = false, $attr = [], $depth = 1,
 		$allowMissing = false
 	) {
 		global $wgCategoryTreeDisableCache;
@@ -358,7 +358,7 @@ class CategoryTree {
 			$html .= Html::closeElement( 'span' );
 		} else {
 			if ( !$hideroot ) {
-				$html .= $this->renderNode( $title, $depth, false );
+				$html .= $this->renderNode( $title, $depth );
 			} else {
 				$html .= $this->renderChildren( $title, $depth );
 			}
