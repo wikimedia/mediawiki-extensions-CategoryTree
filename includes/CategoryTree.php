@@ -322,7 +322,7 @@ class CategoryTree {
 		}
 
 		if ( $parser ) {
-			if ( is_bool( $wgCategoryTreeDisableCache ) && $wgCategoryTreeDisableCache === true ) {
+			if ( $wgCategoryTreeDisableCache === true ) {
 				$parser->disableCache();
 			} elseif ( is_int( $wgCategoryTreeDisableCache ) ) {
 				$parser->getOutput()->updateCacheExpiry( $wgCategoryTreeDisableCache );
