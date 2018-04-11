@@ -22,7 +22,7 @@ class CategoryTree {
 		// ensure default values and order of options.
 		// Order may become important, it may influence the cache key!
 		foreach ( $wgCategoryTreeDefaultOptions as $option => $default ) {
-			if ( isset( $options[$option] ) && !is_null( $options[$option] ) ) {
+			if ( isset( $options[$option] ) ) {
 				$this->mOptions[$option] = $options[$option];
 			} else {
 				$this->mOptions[$option] = $default;
