@@ -16,7 +16,7 @@ class CategoryTree {
 	/**
 	 * @param array $options
 	 */
-	function __construct( $options ) {
+	public function __construct( $options ) {
 		global $wgCategoryTreeDefaultOptions;
 
 		// ensure default values and order of options.
@@ -57,14 +57,14 @@ class CategoryTree {
 	 * @param string $name
 	 * @return mixed
 	 */
-	function getOption( $name ) {
+	public function getOption( $name ) {
 		return $this->mOptions[$name];
 	}
 
 	/**
 	 * @return bool
 	 */
-	function isInverse() {
+	private function isInverse() {
 		return $this->getOption( 'mode' ) == CategoryTreeMode::PARENTS;
 	}
 
@@ -72,7 +72,7 @@ class CategoryTree {
 	 * @param mixed $nn
 	 * @return array|bool
 	 */
-	static function decodeNamespaces( $nn ) {
+	private static function decodeNamespaces( $nn ) {
 		global $wgContLang;
 
 		if ( $nn === false || is_null( $nn ) ) {
@@ -118,7 +118,7 @@ class CategoryTree {
 	 * @param mixed $mode
 	 * @return int|string
 	 */
-	static function decodeMode( $mode ) {
+	public static function decodeMode( $mode ) {
 		global $wgCategoryTreeDefaultOptions;
 
 		if ( is_null( $mode ) ) {
@@ -155,7 +155,7 @@ class CategoryTree {
 	 * @param mixed $value
 	 * @return bool|null|string
 	 */
-	static function decodeBoolean( $value ) {
+	public static function decodeBoolean( $value ) {
 		if ( is_null( $value ) ) {
 			return null;
 		}
@@ -190,7 +190,7 @@ class CategoryTree {
 	 * @param mixed $value
 	 * @return int|string
 	 */
-	static function decodeHidePrefix( $value ) {
+	public static function decodeHidePrefix( $value ) {
 		global $wgCategoryTreeDefaultOptions;
 
 		if ( is_null( $value ) ) {
@@ -233,7 +233,7 @@ class CategoryTree {
 	 * Add ResourceLoader modules to the OutputPage object
 	 * @param OutputPage $outputPage
 	 */
-	static function setHeaders( $outputPage ) {
+	public static function setHeaders( $outputPage ) {
 		# Add the modules
 		$outputPage->addModuleStyles( 'ext.categoryTree.css' );
 		$outputPage->addModules( 'ext.categoryTree' );
@@ -261,7 +261,7 @@ class CategoryTree {
 	 * @param string|null $depth
 	 * @return string
 	 */
-	function getOptionsAsCacheKey( $depth = null ) {
+	public function getOptionsAsCacheKey( $depth = null ) {
 		$key = "";
 
 		foreach ( $this->mOptions as $k => $v ) {
@@ -296,7 +296,7 @@ class CategoryTree {
 	/**
 	 * @return string
 	 */
-	function getOptionsAsUrlParameters() {
+	private function getOptionsAsUrlParameters() {
 		return http_build_query( $this->mOptions );
 	}
 
@@ -311,7 +311,7 @@ class CategoryTree {
 	 * @param bool $allowMissing
 	 * @return bool|string
 	 */
-	function getTag( $parser, $category, $hideroot = false, $attr = [], $depth = 1,
+	public function getTag( $parser, $category, $hideroot = false, $attr = [], $depth = 1,
 		$allowMissing = false
 	) {
 		global $wgCategoryTreeDisableCache;
@@ -376,7 +376,7 @@ class CategoryTree {
 	 * @param int $depth
 	 * @return string
 	 */
-	function renderChildren( $title, $depth = 1 ) {
+	public function renderChildren( $title, $depth = 1 ) {
 		global $wgCategoryTreeMaxChildren, $wgCategoryTreeUseCategoryTable;
 
 		if ( $title->getNamespace() != NS_CATEGORY ) {
@@ -475,7 +475,7 @@ class CategoryTree {
 	 * @param Title $title
 	 * @return string
 	 */
-	function renderParents( $title ) {
+	public function renderParents( $title ) {
 		global $wgCategoryTreeMaxChildren;
 
 		$dbr = wfGetDB( DB_REPLICA );
@@ -527,7 +527,7 @@ class CategoryTree {
 	 * @param int $children
 	 * @return string
 	 */
-	function renderNode( $title, $children = 0 ) {
+	public function renderNode( $title, $children = 0 ) {
 		global $wgCategoryTreeUseCategoryTable;
 
 		if ( $wgCategoryTreeUseCategoryTable && $title->getNamespace() == NS_CATEGORY
@@ -549,7 +549,7 @@ class CategoryTree {
 	 * @param int $children
 	 * @return string
 	 */
-	function renderNodeInfo( $title, $cat, $children = 0 ) {
+	public function renderNodeInfo( $title, $cat, $children = 0 ) {
 		$mode = $this->getOption( 'mode' );
 
 		$ns = $title->getNamespace();
@@ -749,7 +749,7 @@ class CategoryTree {
 	 * @param string $title
 	 * @return null|Title
 	 */
-	static function makeTitle( $title ) {
+	public static function makeTitle( $title ) {
 		$title = trim( $title );
 
 		if ( strval( $title ) === '' ) {
@@ -774,7 +774,7 @@ class CategoryTree {
 	 * @param int $depth
 	 * @return int|mixed
 	 */
-	static function capDepth( $mode, $depth ) {
+	public static function capDepth( $mode, $depth ) {
 		global $wgCategoryTreeMaxDepth;
 
 		if ( is_numeric( $depth ) ) {

@@ -18,7 +18,7 @@ class CategoryTreePage extends SpecialPage {
 	 */
 	public $tree = null;
 
-	function __construct() {
+	public function __construct() {
 		parent::__construct( 'CategoryTree' );
 	}
 
@@ -26,7 +26,7 @@ class CategoryTreePage extends SpecialPage {
 	 * @param string $name
 	 * @return mixed
 	 */
-	function getOption( $name ) {
+	private function getOption( $name ) {
 		global $wgCategoryTreeDefaultOptions;
 
 		if ( $this->tree ) {
@@ -40,7 +40,7 @@ class CategoryTreePage extends SpecialPage {
 	 * Main execution function
 	 * @param string|null $par Parameters passed to the page
 	 */
-	function execute( $par ) {
+	public function execute( $par ) {
 		global $wgCategoryTreeDefaultOptions, $wgCategoryTreeSpecialPageOptions,
 			$wgCategoryTreeForceHeaders;
 
@@ -114,7 +114,7 @@ class CategoryTreePage extends SpecialPage {
 	/**
 	 * Input form for entering a category
 	 */
-	function executeInputForm() {
+	private function executeInputForm() {
 		$namespaces = $this->getRequest()->getVal( 'namespaces', '' );
 		// mode may be overriden by namespaces option
 		$mode = ( $namespaces == '' ? $this->getOption( 'mode' ) : CategoryTreeMode::ALL );

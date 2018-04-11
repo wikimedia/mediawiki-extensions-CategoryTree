@@ -11,7 +11,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	/**
 	 * @return CategoryTree
 	 */
-	function getCategoryTree() {
+	private function getCategoryTree() {
 		global $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeForceHeaders;
 
 		if ( !isset( $this->categorytree ) ) {
@@ -31,7 +31,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	 * @param string $sortkey
 	 * @param int $pageLength
 	 */
-	function addSubcategoryObject( Category $cat, $sortkey, $pageLength ) {
+	public function addSubcategoryObject( Category $cat, $sortkey, $pageLength ) {
 		$title = $cat->getTitle();
 
 		if ( $this->getRequest()->getCheck( 'notree' ) ) {
@@ -46,12 +46,12 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		$this->children_start_char[] = $this->getSubcategorySortChar( $title, $sortkey );
 	}
 
-	function clearCategoryState() {
+	public function clearCategoryState() {
 		$this->child_cats = [];
 		parent::clearCategoryState();
 	}
 
-	function finaliseCategoryState() {
+	public function finaliseCategoryState() {
 		if ( $this->flip ) {
 			$this->child_cats = array_reverse( $this->child_cats );
 		}
