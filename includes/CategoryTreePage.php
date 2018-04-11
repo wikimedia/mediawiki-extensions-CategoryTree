@@ -19,7 +19,7 @@ class CategoryTreePage extends SpecialPage {
 	public $tree = null;
 
 	function __construct() {
-		parent::__construct( 'CategoryTree', '', true );
+		parent::__construct( 'CategoryTree' );
 	}
 
 	/**
