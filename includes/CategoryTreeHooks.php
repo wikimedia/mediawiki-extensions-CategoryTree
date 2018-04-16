@@ -12,37 +12,22 @@
 
 class CategoryTreeHooks {
 
+	public static function shouldForceHeaders() {
+		global $wgCategoryTreeSidebarRoot, $wgCategoryTreeHijackPageCategories,
+			$wgCategoryTreeForceHeaders;
+		return $wgCategoryTreeForceHeaders || $wgCategoryTreeSidebarRoot
+			|| $wgCategoryTreeHijackPageCategories;
+	}
+
 	/**
-	 * Adds hooks and adjusts the config once MediaWiki is fully initialised
+	 * Adjusts config once MediaWiki is fully initialised
+	 * TODO: Don't do this, lazy initialize the config
 	 */
 	public static function initialize() {
-		global $wgUseAjax, $wgHooks, $wgRequest;
-		global $wgCategoryTreeDefaultOptions, $wgCategoryTreeDefaultMode, $wgCategoryTreeAllowTag;
+		global $wgRequest;
+		global $wgCategoryTreeDefaultOptions, $wgCategoryTreeDefaultMode;
 		global $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeCategoryPageMode;
-		global $wgCategoryTreeSidebarRoot, $wgCategoryTreeForceHeaders;
-		global $wgCategoryTreeHijackPageCategories, $wgCategoryTreeOmitNamespace;
-
-		# Abort if AJAX is not enabled
-		if ( !$wgUseAjax ) {
-			wfDebug( 'CategoryTreeHooks::initialize: $wgUseAjax is not enabled, aborting extension setup.' );
-			return;
-		}
-
-		if ( $wgCategoryTreeSidebarRoot ) {
-			$wgCategoryTreeForceHeaders = true; # needed on every page anyway
-			$wgHooks['SkinTemplateOutputPageBeforeExec'][] =
-				'CategoryTreeHooks::skinTemplateOutputPageBeforeExec';
-		}
-
-		if ( $wgCategoryTreeHijackPageCategories ) {
-			$wgCategoryTreeForceHeaders = true; # needed on almost every page anyway
-			$wgHooks['OutputPageMakeCategoryLinks'][] = 'CategoryTreeHooks::outputPageMakeCategoryLinks';
-			$wgHooks['SkinJoinCategoryLinks'][] = 'CategoryTreeHooks::skinJoinCategoryLinks';
-		}
-
-		if ( $wgCategoryTreeAllowTag ) {
-			$wgHooks['ParserFirstCallInit'][] = 'CategoryTreeHooks::setHooks';
-		}
+		global $wgCategoryTreeOmitNamespace;
 
 		if ( !isset( $wgCategoryTreeDefaultOptions['mode'] )
 			|| is_null( $wgCategoryTreeDefaultOptions['mode'] )
@@ -63,25 +48,18 @@ class CategoryTreeHooks {
 			$wgCategoryTreeCategoryPageOptions['mode'] = ( $mode )
 				? CategoryTree::decodeMode( $mode ) : $wgCategoryTreeCategoryPageMode;
 		}
-
-		if ( $wgCategoryTreeForceHeaders ) {
-			$wgHooks['BeforePageDisplay'][] = 'CategoryTreeHooks::addHeaders';
-			$wgHooks['BeforePageDisplayMobile'][] = 'CategoryTreeHooks::addHeaders';
-		} else {
-			$wgHooks['OutputPageParserOutput'][] = 'CategoryTreeHooks::parserOutput';
-		}
-
-		$wgHooks['MakeGlobalVariablesScript'][] = 'CategoryTreeHooks::getConfigVars';
 	}
 
 	/**
 	 * @param Parser $parser
-	 * @return bool
 	 */
 	public static function setHooks( $parser ) {
+		global $wgCategoryTreeAllowTag;
+		if ( !$wgCategoryTreeAllowTag ) {
+			return;
+		}
 		$parser->setHook( 'categorytree', 'CategoryTreeHooks::parserHook' );
 		$parser->setFunctionHook( 'categorytree', 'CategoryTreeHooks::parserFunction' );
-		return true;
 	}
 
 	/**
@@ -121,20 +99,21 @@ class CategoryTreeHooks {
 
 	/**
 	 * Hook implementation for injecting a category tree into the sidebar.
-	 * Registered automatically if $wgCategoryTreeSidebarRoot is set to a category name.
+	 * Only does anything if $wgCategoryTreeSidebarRoot is set to a category name.
 	 * @param Skin $skin
 	 * @param SkinTemplate $tpl
-	 * @return bool
 	 */
 	public static function skinTemplateOutputPageBeforeExec( $skin, $tpl ) {
 		global $wgCategoryTreeSidebarRoot, $wgCategoryTreeSidebarOptions;
+
+		if ( !$wgCategoryTreeSidebarRoot ) {
+			return;
+		}
 
 		$html = self::parserHook( $wgCategoryTreeSidebarRoot, $wgCategoryTreeSidebarOptions );
 		if ( $html ) {
 			$tpl->data['sidebar']['categorytree-portlet'] = $html;
 		}
-
-		return true;
 	}
 
 	/**
@@ -179,13 +158,15 @@ class CategoryTreeHooks {
 	 * Does nothing if $parserOutput->mCategoryTreeTag is not set
 	 * @param OutputPage $outputPage
 	 * @param ParserOutput $parserOutput
-	 * @return bool
 	 */
 	public static function parserOutput( $outputPage, $parserOutput ) {
+		if ( self::shouldForceHeaders() ) {
+			// Skip, we've already set the headers unconditionally
+			return;
+		}
 		if ( !empty( $parserOutput->mCategoryTreeTag ) ) {
 			CategoryTree::setHeaders( $outputPage );
 		}
-		return true;
 	}
 
 	/**
@@ -193,11 +174,12 @@ class CategoryTreeHooks {
 	 * These hooks are used when $wgCategoryTreeForceHeaders is set.
 	 * Otherwise similar to CategoryTreeHooks::parserOutput.
 	 * @param OutputPage $out
-	 * @return bool
 	 */
 	public static function addHeaders( OutputPage $out ) {
+		if ( !self::shouldForceHeaders() ) {
+			return;
+		}
 		CategoryTree::setHeaders( $out );
-		return true;
 	}
 
 	/**
@@ -216,13 +198,18 @@ class CategoryTreeHooks {
 
 	/**
 	 * OutputPageMakeCategoryLinks hook, override category links
-	 * @param OutputPage $out
-	 * @param array &$categories
+	 * @param OutputPage &$out
+	 * @param array $categories
 	 * @param array &$links
 	 * @return bool
 	 */
-	public static function outputPageMakeCategoryLinks( $out, &$categories, &$links ) {
-		global $wgCategoryTreePageCategoryOptions;
+	public static function outputPageMakeCategoryLinks( &$out, $categories, &$links ) {
+		global $wgCategoryTreePageCategoryOptions, $wgCategoryTreeHijackPageCategories;
+
+		if ( !$wgCategoryTreeHijackPageCategories ) {
+			// Not enabled, don't do anything
+			return true;
+		}
 
 		foreach ( $categories as $category => $type ) {
 			$links[$type][] = self::parserHook( $category, $wgCategoryTreePageCategoryOptions, null, true );
@@ -238,6 +225,11 @@ class CategoryTreeHooks {
 	 * @return bool
 	 */
 	public static function skinJoinCategoryLinks( $skin, &$links, &$result ) {
+		global $wgCategoryTreeHijackPageCategories;
+		if ( !$wgCategoryTreeHijackPageCategories ) {
+			// Not enabled, don't do anything.
+			return true;
+		}
 		$embed = '<div class="CategoryTreeCategoryBarItem">';
 		$pop = '</div>';
 		$sep = ' ';
