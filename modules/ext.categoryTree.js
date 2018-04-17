@@ -23,41 +23,8 @@
  * @author Daniel Kinzler, brightbyte.de
  */
 
-/* eslint no-use-before-define: ["error", { "functions": false }] */
-
 ( function ( $, mw ) {
-
-	/**
-	 * Attach click handler to buttons
-	 *
-	 * @param {jQuery} $content
-	 */
-	function attachHandler( $content ) {
-		$content.find( '.CategoryTreeToggle' )
-			.click( handleNode )
-			.attr( 'title', function () {
-				return mw.msg(
-					$( this ).data( 'ct-state' ) === 'collapsed' ?
-						'categorytree-expand' :
-						'categorytree-collapse'
-				);
-			} )
-			.addClass( 'CategoryTreeToggleHandlerAttached' );
-	}
-
-	/**
-	 * Handles clicks on the expand buttons, and calls the appropriate function
-	 *
-	 * @context {Element} CategoryTreeToggle
-	 */
-	function handleNode() {
-		var $link = $( this );
-		if ( $link.data( 'ct-state' ) === 'collapsed' ) {
-			expandNode( $link );
-		} else {
-			collapseNode( $link );
-		}
-	}
+	var loadChildren;
 
 	/**
 	 * Expands a given node (loading it's children if not loaded)
@@ -97,12 +64,44 @@
 	}
 
 	/**
+	 * Handles clicks on the expand buttons, and calls the appropriate function
+	 *
+	 * @context {Element} CategoryTreeToggle
+	 */
+	function handleNode() {
+		var $link = $( this );
+		if ( $link.data( 'ct-state' ) === 'collapsed' ) {
+			expandNode( $link );
+		} else {
+			collapseNode( $link );
+		}
+	}
+
+	/**
+	 * Attach click handler to buttons
+	 *
+	 * @param {jQuery} $content
+	 */
+	function attachHandler( $content ) {
+		$content.find( '.CategoryTreeToggle' )
+			.click( handleNode )
+			.attr( 'title', function () {
+				return mw.msg(
+					$( this ).data( 'ct-state' ) === 'collapsed' ?
+						'categorytree-expand' :
+						'categorytree-collapse'
+				);
+			} )
+			.addClass( 'CategoryTreeToggleHandlerAttached' );
+	}
+
+	/**
 	 * Loads children for a node via an HTTP call
 	 *
 	 * @param {jQuery} $link
 	 * @param {jQuery} $children
 	 */
-	function loadChildren( $link, $children ) {
+	loadChildren = function ( $link, $children ) {
 		var $linkParentCTTag, ctTitle, ctMode, ctOptions;
 
 		/**
@@ -193,7 +192,7 @@
 
 		} )
 			.fail( error );
-	}
+	};
 
 	// Register click events
 	mw.hook( 'wikipage.content' ).add( attachHandler );
