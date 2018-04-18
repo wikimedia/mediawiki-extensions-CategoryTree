@@ -517,7 +517,7 @@ class CategoryTree {
 		foreach ( $res as $row ) {
 			$t = Title::newFromRow( $row );
 
-			$label = htmlspecialchars( $t->getText() );
+			$label = $t->getText();
 
 			$wikiLink = $special->getLocalURL( 'target=' . $t->getPartialURL() .
 				'&' . $this->getOptionsAsUrlParameters() );
@@ -527,8 +527,7 @@ class CategoryTree {
 			}
 
 			$s .= Xml::openElement( 'span', [ 'class' => 'CategoryTreeItem' ] );
-			$s .= Xml::openElement( 'a', [ 'class' => 'CategoryTreeLabel', 'href' => $wikiLink ] )
-				. $label . Xml::closeElement( 'a' );
+			$s .= Xml::element( 'a', [ 'class' => 'CategoryTreeLabel', 'href' => $wikiLink ], $label );
 			$s .= Xml::closeElement( 'span' );
 
 			$s .= "\n\t\t";
@@ -587,9 +586,9 @@ class CategoryTree {
 		// configuration setting
 		// patch contributed by Manuel Schneider <manuel.schneider@wikimedia.ch>, Bug 8011
 		if ( $hideprefix ) {
-			$label = htmlspecialchars( $title->getText() );
+			$label = $title->getText();
 		} else {
-			$label = htmlspecialchars( $title->getPrefixedText() );
+			$label = $title->getPrefixedText();
 		}
 
 		$labelClass = 'CategoryTreeLabel ' . ' CategoryTreeLabelNs' . $ns;
@@ -662,8 +661,7 @@ class CategoryTree {
 		}
 		$s .= Xml::tags( 'span', $attr, $bullet ) . ' ';
 
-		$s .= Xml::openElement( 'a', [ 'class' => $labelClass, 'href' => $wikiLink ] )
-			. $label . Xml::closeElement( 'a' );
+		$s .= Xml::element( 'a', [ 'class' => $labelClass, 'href' => $wikiLink ], $label );
 
 		if ( $count !== false && $this->getOption( 'showcount' ) ) {
 			$s .= self::createCountString( RequestContext::getMain(), $cat, $count );
