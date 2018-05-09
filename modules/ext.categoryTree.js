@@ -141,7 +141,7 @@
 
 		// Element may not have a .CategoryTreeTag parent, fallback to defauls
 		// Probably a CategoryPage (@todo: based on what?)
-		ctTitle = $link.data( 'ct-title' );
+		ctTitle = $link.attr( 'data-ct-title' );
 		ctMode = $linkParentCTTag.data( 'ct-mode' );
 		ctMode = typeof ctMode === 'number' ? ctMode : undefined;
 		ctOptions = $linkParentCTTag.attr( 'data-ct-options' );
@@ -151,7 +151,7 @@
 
 		// Mode and options have defaults or fallbacks, title does not.
 		// Don't make a request if there is no title.
-		if ( typeof ctTitle !== 'string' ) {
+		if ( !ctTitle ) {
 			error();
 			return;
 		}
