@@ -163,6 +163,8 @@
 			uselang: mw.config.get( 'wgUserLanguage' ),
 			formatversion: 2
 		} ).done( function ( data ) {
+			var $data;
+
 			data = data.categorytree.html;
 
 			if ( data === '' ) {
@@ -184,12 +186,13 @@
 						data = mw.msg( 'categorytree-nothing-found' );
 				}
 
-				data = $( '<i class="CategoryTreeNotice"></i>' ).text( data );
+				$data = $( '<i class="CategoryTreeNotice"></i>' ).text( data );
+			} else {
+				$data = $( $.parseHTML( data ) );
+				attachHandler( $data );
 			}
 
-			$children.html( data );
-			attachHandler( $children );
-
+			$children.empty().append( $data );
 		} )
 			.fail( error );
 	};
