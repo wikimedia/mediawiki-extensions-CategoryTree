@@ -381,7 +381,6 @@ class CategoryTree {
 		}
 
 		$html .= Xml::closeElement( 'div' );
-		$html .= "\n\t\t";
 
 		return $html;
 	}
@@ -474,7 +473,6 @@ class CategoryTree {
 			}
 
 			$s = $this->renderNodeInfo( $t, $cat, $depth - 1 );
-			$s .= "\n\t\t";
 
 			if ( $row->page_namespace == NS_CATEGORY ) {
 				$categories .= $s;
@@ -529,8 +527,6 @@ class CategoryTree {
 			$s .= Xml::openElement( 'span', [ 'class' => 'CategoryTreeItem' ] );
 			$s .= Xml::element( 'a', [ 'class' => 'CategoryTreeLabel', 'href' => $wikiLink ], $label );
 			$s .= Xml::closeElement( 'span' );
-
-			$s .= "\n\t\t";
 		}
 
 		return $s;
@@ -665,7 +661,6 @@ class CategoryTree {
 		}
 
 		$s .= Xml::closeElement( 'div' );
-		$s .= "\n\t\t";
 		$s .= Xml::openElement(
 			'div',
 			[
@@ -695,8 +690,6 @@ class CategoryTree {
 
 		$s .= Xml::closeElement( 'div' );
 		$s .= Xml::closeElement( 'div' );
-
-		$s .= "\n\t\t";
 
 		return $s;
 	}
