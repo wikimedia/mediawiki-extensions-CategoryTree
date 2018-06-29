@@ -3,7 +3,8 @@
 		"authors": [
 			"Albinus",
 			"Manik Soren",
-			"Ramjit Tudu"
+			"Ramjit Tudu",
+			"Fagunkoyel Hansdah"
 		]
 	},
 	"categorytree": "ᱫᱟᱨᱮ ᱛᱷᱚᱠ",
@@ -14,6 +15,7 @@
 	"categorytree-parents": "Gogo baba",
 	"categorytree-mode-label": "ᱰᱷᱚᱝ",
 	"categorytree-mode-categories": "ᱛᱷᱚᱠ ᱠᱚ ᱥᱩᱢᱩᱝ",
+	"categorytree-mode-pages": "ᱵᱮᱜᱚᱨ ᱨᱮᱫ ᱥᱟᱦᱴᱟᱠᱚ",
 	"categorytree-mode-all": "Sanam sakamko",
 	"categorytree-collapse": "Murchạo caba",
 	"categorytree-expand": "ᱯᱷᱟᱭᱞᱟᱣ",
@@ -25,5 +27,8 @@
 	"categorytree-load": "Rakaṕ",
 	"categorytree-loading": "Rakaṕkana",
 	"categorytree-nothing-found": "Cet́ hõ baṅ ńamlena",
+	"categorytree-no-subcategories": "ᱡᱚᱜᱚᱼᱛᱷᱚᱠ ᱠᱚ ᱵᱟᱹᱱᱩᱜᱼᱟ",
+	"categorytree-no-parent-categories": "ᱢᱩᱬ ᱛᱷᱚᱠ ᱵᱟᱹᱱᱩᱜᱼᱟ",
+	"categorytree-no-pages": "ᱥᱟᱦᱴᱟᱠᱚ ᱟᱨᱵᱟᱝ ᱡᱚᱜᱚᱼᱛᱷᱚᱠ ᱠᱚ ᱵᱟᱹᱱᱩᱜᱼᱟ",
 	"categorytree-not-found": "ᱛᱷᱚᱠ <i>$1</i> ᱵᱟᱭ ᱧᱟᱢᱞᱮᱱᱟ"
 }
