@@ -5,5 +5,7 @@
 		]
 	},
 	"categorytree-expand": "tinimirisäx",
-	"categorytree-num-pages": "$1 R"
+	"categorytree-num-categories": "$1 R",
+	"categorytree-num-pages": "$1 R",
+	"categorytree-num-files": "$1 R"
 }
