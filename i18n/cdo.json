@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"GnuDoyng",
-			"Yejianfei"
+			"Yejianfei",
+			"Davidzdh"
 		]
 	},
 	"categorytree": "類別樹",
-	"categorytree-header": "Sṳ̆-ĭk lôi-biék miàng-chĭng, káng ĭ gì chéu-hìng giék-gáiu. Chiāng cé̤ṳ-é, ciā hiĕk-miêng sāi-ê̤ṳng siŏh cṳ̄ng gŏ̤-gék JavaScript gé-sŭk, giéu lō̤ AJAX. Nṳ̄ nâ sāi-ê̤ṳng guó-sì gì báuk-lāng-ké, hĕ̤k-ciā cĕk lâi JavaScript, cêu mâ̤ ciáng-siòng gĕ̤ng-cáuk.",
+	"categorytree-header": "Sṳ̆-ĭk lôi-biék mìng-chĭng, káng ĭ gì chéu-hìng giék-gáiu. Chiāng cé̤ṳ-é, ciā hiĕk-miêng sāi-ê̤ṳng siŏh cṳ̄ng gŏ̤-gék JavaScript gé-sŭk, giéu lō̤ AJAX. Nṳ̄ nâ sāi-ê̤ṳng guó-sì gì báuk-lāng-ké, hĕ̤k-ciā cĕk lâi JavaScript, cêu mâ̤ ciáng-siòng gĕ̤ng-cáuk.",
 	"categorytree-category": "分類：",
 	"categorytree-go": "顯示樹",
 	"categorytree-mode-categories": "囇有類別",
