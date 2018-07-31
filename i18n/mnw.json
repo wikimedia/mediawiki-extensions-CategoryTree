@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Htawmonzel"
+		]
+	},
+	"categorytree-expand": "သၠဲ",
+	"categorytree-member-counts": "အရာမပါလုပ်ဂမၠိုင် {{PLURAL:$1|1 ကဏ္ဍလစှ်ေ|$1 ကဏ္ဍလစှ်ေဂမၠိုင်}}, {{PLURAL:$2|1 မုက်လိက်|$2 မုက်လိက်ဂမၠိုင်}}, ကေုာံ {{PLURAL:$3|1 ဝှာင်|$3 ဝှာင်ဂမၠိုင်}}",
+	"categorytree-num-categories": "$1 C",
+	"categorytree-num-pages": "$1 P"
+}
