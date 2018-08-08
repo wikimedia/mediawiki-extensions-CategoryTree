@@ -24,5 +24,6 @@
 	"categorytree-nothing-found": "ဘာတစ်ခုမှ မတွေ့ပါ",
 	"categorytree-no-subcategories": "ကဏ္ဍခွဲများ မရှိပါ",
 	"categorytree-no-parent-categories": "မိခင်ကဏ္ဍများ မတွေ့ပါ",
-	"categorytree-not-found": "ကဏ္ဍ <i>$1</i> မတွေ့ပါ"
+	"categorytree-not-found": "ကဏ္ဍ <i>$1</i> မတွေ့ပါ",
+	"categorytree-retry": "ခေတ္တခဏစောင့်ဆိုင်းပြီး ထပ်မံကြိုးစားကြည့်ပါ။"
 }
