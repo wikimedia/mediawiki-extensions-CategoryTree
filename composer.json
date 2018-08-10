@@ -1,5 +1,5 @@
 {
-    "name": "mediawiki/category-tree",
+    "name": "wikifab/category-tree",
     "type": "mediawiki-extension",
     "require": {
     },
