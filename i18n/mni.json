@@ -4,6 +4,8 @@
 			"Awangba Mangang"
 		]
 	},
+	"categorytree-portlet": "ꯃꯆꯥꯈꯥꯏꯕꯁꯤꯡ",
+	"categorytree-category": "ꯃꯆꯥꯈꯥꯏꯕ:",
 	"categorytree-expand": "ꯄꯥꯛꯊꯣꯛꯄꯥ",
 	"categorytree-member-counts": "Contains {{PLURAL:$1|1 subcategory|$1 subcategories}}, {{PLURAL:$2|1 page|$2 pages}}, and {{PLURAL:$3|1 file|$3 files}}",
 	"categorytree-num-categories": "$1 C",
