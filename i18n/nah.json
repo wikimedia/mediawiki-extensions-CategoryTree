@@ -15,6 +15,7 @@
 	"categorytree-category": "Neneuhcayotl:",
 	"categorytree-go": "Monextiz cuammayotl",
 	"categorytree-parents": "Achcauhcaneneuhcayotl",
+	"categorytree-mode-label": "Quenamihcan",
 	"categorytree-mode-categories": "Zan neneuhcayomeh monextizqueh",
 	"categorytree-mode-pages": "zan tlahcuilolamameh ahmo ixiptin",
 	"categorytree-mode-all": "Nochtin in tlahcuilolamameh",
@@ -36,5 +37,7 @@
 	"categorytree-retry": "Timitztlatlauhtiah, ximochiya chihton niman occepa xicyehyeco.",
 	"apihelp-categorytree-description": "Tlahtic inoncuahquizaliz itech ixeliuhca CategoryTree.",
 	"apihelp-categorytree-summary": "Tlahtic inoncuahquizaliz itech ixeliuhca CategoryTree.",
-	"apihelp-categorytree-param-category": "Itoca ipan tocatlacauhtli ihtic neneuhcayotl; in tepiton tlamantli, intla motenehua, ahmo motequitiz."
+	"apihelp-categorytree-param-category": "Itoca ipan tocatlacauhtli ihtic neneuhcayotl; in tepiton tlamantli, intla motenehua, ahmo motequitiz.",
+	"apihelp-categorytree-param-options": "In pehpenaliztli itlocpa quichihuani CategoryTree iuhqui tlamantli itlocpa JSON. In pehpenaliztli <var>depth</var> zan icel quicui in machiyotl <kbd>1</kbd>.",
+	"apierror-categorytree-invalidjson": "In pehpenaliztli monequi ce yectli machiyotl JSON."
 }
