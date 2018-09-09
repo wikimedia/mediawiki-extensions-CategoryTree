@@ -5,6 +5,7 @@
 		]
 	},
 	"categorytree-expand": "လဝ်လဲာ",
+	"categorytree-member-counts": "{{PLURAL:$1|အ်ုဆုဂ်ကါင်ဖါ ၁ ၮါင်း|$1 အ်ုဆုဂ်ကါင်ဖါလ်ုဖး}}၊ {{PLURAL:$2|လိက်မေံသး ၁ ၮါင်း| လိက်မေံသး $2 ၮါင်း}}၊ လ်ု {{PLURAL:$3|ဖိုင်ႋ ၁ ၮါင်း| ဖိုင်ႋ $3 ၮါင်း }} အွးလင်ထဆေဝ်ႋ",
 	"categorytree-num-categories": "$1 ကဏ္ဍ",
 	"categorytree-num-pages": "$1 လိက်မေံသး",
 	"categorytree-num-files": "$1 ဖိုင်"
