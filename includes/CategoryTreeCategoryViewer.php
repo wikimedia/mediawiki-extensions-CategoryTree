@@ -160,7 +160,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 		$this->children[] = $tree->renderNodeInfo( $title, $cat, 0, $image );
 
-		$this->children_start_char[] = $this->getSubcategorySortChar( $title, $sortkey );
+		// $this->children_start_char[] = $this->getSubcategorySortChar( $title, $sortkey );
 	}
 
 	function clearCategoryState() {
@@ -305,6 +305,41 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
         }
 
         return $data;
+    }
+
+    function formatList( $articles, $articles_start_char, $cutoff = 6 ) {
+
+        $list = '';
+        if ( count( $articles ) > $cutoff ) {
+            $list = self::columnList( $articles, $articles_start_char );
+        } elseif ( count( $articles ) > 0 ) {
+            // for short lists of articles in categories.
+            $list = self::shortList( $articles, $articles_start_char );
+        }
+
+        $pageLang = $this->title->getPageLanguage();
+        $attribs = [ 'lang' => $pageLang->getHtmlCode(), 'dir' => $pageLang->getDir(),
+            'class' => 'mw-content-' . $pageLang->getDir() ];
+        $list = Html::rawElement( 'div', $attribs, $list );
+
+        return $list;
+    }
+
+    /**
+     * Method used to sort articles by letter
+     * A letter is added before articles where there title begin by this letter
+     * but letters have been DELETED since.
+     * @param string[] $articles HTML links to each article
+     * @param string[] $articles_start_char The header characters for each article
+     * @return string HTML to output
+     * @private
+     */
+    static function shortList( $articles, $articles_start_char ) {
+        $r = '<ul>';
+        foreach ($articles as $article)
+            $r .= $article;
+        $r .= '</ul>';
+        return $r;
     }
 
 }

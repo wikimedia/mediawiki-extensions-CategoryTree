@@ -390,17 +390,18 @@ class CategoryTree {
 		return $this->renderBreadcrumbs($nodeData);
 	}
 
-	/**
-	 * Custom tag implementation. This is called by CategoryTreeHooks::parserHook, which is used to
-	 * load CategoryTreeFunctions.php on demand.
-	 * @param Parser $parser
-	 * @param string $category
-	 * @param bool $hideroot
-	 * @param string $attr
-	 * @param int $depth
-	 * @param bool $allowMissing
-	 * @return bool|string
-	 */
+    /**
+     * Custom tag implementation. This is called by CategoryTreeHooks::parserHook, which is used to
+     * load CategoryTreeFunctions.php on demand.
+     * @param Parser $parser
+     * @param string $category
+     * @param bool $hideroot
+     * @param string $attr
+     * @param int $depth
+     * @param bool $allowMissing
+     * @return bool|string
+     * @throws MWException
+     */
 	function getTag( $parser, $category, $hideroot = false, $attr, $depth = 1,
 		$allowMissing = false
 	) {
@@ -462,7 +463,6 @@ class CategoryTree {
 			if ( !$hideroot ) {
 				$html .= $this->renderNode( $title, $depth, false );
 			} else {
-
 				$html .= $this->renderChildren( $title, $depth );
 			}
 		}
@@ -573,11 +573,12 @@ class CategoryTree {
 		return $categories . $other;
 	}
 
-	/**
-	 * Returns a string with an HTML representation of the parents of the given category.
-	 * @param Title $title
-	 * @return string
-	 */
+    /**
+     * Returns a string with an HTML representation of the parents of the given category.
+     * @param Title $title
+     * @return string
+     * @throws MWException
+     */
 	function renderParents( $title ) {
 		global $wgCategoryTreeMaxChildren;
 
@@ -706,63 +707,67 @@ class CategoryTree {
 		#      Specifically, the CategoryTreeChildren div must be the first
 		#      sibling with nodeName = DIV of the grandparent of the expland link.
 
-		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeSection' ] );
-		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeItem' ] );
+        # Open the category section
+		$s .= Xml::openElement( 'a', [ 'class' => 'CategoryTreeSection', 'href' => $wikiLink] );
 
-		// Category can have images
-		if ( $ns == NS_CATEGORY && $image !== null ){
+		# Open the image div if there is one
+        if ( $ns == NS_CATEGORY && $image !== null ){
             $file = wfFindFile( $image );
 
             if($file instanceof File){
-                $imgClass = [
-                    'src' => $file->getFullUrl(),
-                    'class' => 'CategoryTreeMainPicture'
-                ];
-
-                $s .= Xml::element('img', $imgClass);
+                $s .= Xml::openElement('div', ['class' => 'CategoryTreeImage']);
+                $s .= Xml::element('img', ['src' => $file->getFullUrl()]);
+                $s .= Xml::closeElement('div');
             }
         }
+        # ... and close the image div
+
+        # Open the category item where all textual informations are located
+		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeItem' ] );
 
 		$attr = [ 'class' => 'CategoryTreeBullet' ];
 
-		if ( $ns == NS_CATEGORY ) {
-			if ( $cat ) {
-				if ( $mode == CategoryTreeMode::CATEGORIES ) {
-					$count = intval( $cat->getSubcatCount() );
-				} elseif ( $mode == CategoryTreeMode::PAGES ) {
-					$count = intval( $cat->getPageCount() ) - intval( $cat->getFileCount() );
-				} else {
-					$count = intval( $cat->getPageCount() );
-				}
-			}
-			if ( $count === 0 ) {
-				$bullet = wfMessage( 'categorytree-empty-bullet' )->plain() . ' ';
-				$attr['class'] = 'CategoryTreeEmptyBullet';
-			} else {
-				$linkattr = [];
 
-				$linkattr[ 'class' ] = "CategoryTreeToggle";
-				$linkattr['data-ct-title'] = $key;
+//		if ( $ns == NS_CATEGORY ) {
+//			if ( $cat ) {
+//				if ( $mode == CategoryTreeMode::CATEGORIES ) {
+//					$count = intval( $cat->getSubcatCount() );
+//				} elseif ( $mode == CategoryTreeMode::PAGES ) {
+//					$count = intval( $cat->getPageCount() ) - intval( $cat->getFileCount() );
+//				} else {
+//					$count = intval( $cat->getPageCount() );
+//				}
+//			}
+//
+//			if ( $count === 0 ) {
+//				$bullet = wfMessage( 'categorytree-empty-bullet' )->plain() . ' ';
+//				$attr['class'] = 'CategoryTreeEmptyBullet';
+//			} else {
+//				$linkattr = [];
+//
+//				$linkattr[ 'class' ] = "CategoryTreeToggle";
+//				$linkattr['data-ct-title'] = $key;
+//
+//				$tag = 'span';
+//				if ( $children == 0 ) {
+//					$txt = wfMessage( 'categorytree-expand-bullet' )->plain();
+//					$linkattr[ 'data-ct-state' ] = 'collapsed';
+//				} else {
+//					$txt = wfMessage( 'categorytree-collapse-bullet' )->plain();
+//					$linkattr[ 'data-ct-loaded' ] = true;
+//					$linkattr[ 'data-ct-state' ] = 'expanded';
+//				}
+//
+//				$bullet = Xml::openElement( $tag, $linkattr ) . $txt . Xml::closeElement( $tag ) . ' ';
+//			}
+//		} else {
+//			$bullet = wfMessage( 'categorytree-page-bullet' )->plain();
+//		}
+//		$s .= Xml::tags( 'span', $attr, $bullet ) . ' ';
 
-				$tag = 'span';
-				if ( $children == 0 ) {
-					$txt = wfMessage( 'categorytree-expand-bullet' )->plain();
-					$linkattr[ 'data-ct-state' ] = 'collapsed';
-				} else {
-					$txt = wfMessage( 'categorytree-collapse-bullet' )->plain();
-					$linkattr[ 'data-ct-loaded' ] = true;
-					$linkattr[ 'data-ct-state' ] = 'expanded';
-				}
-
-				$bullet = Xml::openElement( $tag, $linkattr ) . $txt . Xml::closeElement( $tag ) . ' ';
-			}
-		} else {
-			$bullet = wfMessage( 'categorytree-page-bullet' )->plain();
-		}
-		$s .= Xml::tags( 'span', $attr, $bullet ) . ' ';
-
-		$s .= Xml::openElement( 'a', [ 'class' => $labelClass, 'href' => $wikiLink ] )
-			. $label . Xml::closeElement( 'a' );
+		$s .= Xml::openElement( 'h3', ['class' => $labelClass] );
+		$s .= $label;
+		$s .= Xml::closeElement( 'h3' );
 
 		if ( $count !== false && $this->getOption( 'showcount' ) ) {
 			$s .= self::createCountString( RequestContext::getMain(), $cat, $count );
@@ -798,7 +803,7 @@ class CategoryTree {
 		}
 
 		$s .= Xml::closeElement( 'div' );
-		$s .= Xml::closeElement( 'div' );
+		$s .= Xml::closeElement( 'a' );
 
 		$s .= "\n\t\t";
 
