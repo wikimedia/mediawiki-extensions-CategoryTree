@@ -284,6 +284,11 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
     width: 100%;
 }
 
+.CategoryTreeImage {
+    height: 50px;
+    overflow: hidden;
+}
+
 a.CategoryTreeSection {
     text-align: center;
     border: 1px solid #ccc;
