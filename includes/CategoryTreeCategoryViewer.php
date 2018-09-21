@@ -98,6 +98,9 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
             Hooks::run( 'CategoryViewer::doCategoryQuery', [ $type, $res ] );
             $linkCache = MediaWikiServices::getInstance()->getLinkCache();
 
+            // Get subcategories image
+            $images = CategoryTreeImageList::fromCategory($this->title);
+
             $count = 0;
             foreach ( $res as $row ) {
                 $title = Title::newFromRow( $row );
@@ -124,8 +127,10 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
                 if ( $title->getNamespace() == NS_CATEGORY ) {
                     $cat = Category::newFromRow( $row, $title );
+                    // Get image category
+                    $image = $images->getImage($title);
                     // Add category
-                    $this->addSubcategoryObject( $cat, $humanSortkey, $row->page_len );
+                    $this->addSubcategoryObject( $cat, $humanSortkey, $row->page_len, $image );
                 } elseif ( $title->getNamespace() == NS_FILE ) {
                     $this->addImage( $title, $humanSortkey, $row->page_len, $row->page_is_redirect );
                 } else {
@@ -142,7 +147,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
      * @param int $pageLength
      * @param null $image
      */
-	function addSubcategoryObject( Category $cat, $sortkey, $pageLength ) {
+	function addSubcategoryObject( Category $cat, $sortkey, $pageLength, $image = null ) {
 		$title = $cat->getTitle();
 
 		if ( $this->getRequest()->getCheck( 'notree' ) ) {
@@ -152,7 +157,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 		$tree = $this->getCategoryTree();
 
-		$this->children[] = $tree->renderNodeInfo( $title, $cat, 0 );
+		$this->children[] = $tree->renderNodeInfo( $title, $cat, 0, $image);
 
 		// $this->children_start_char[] = $this->getSubcategorySortChar( $title, $sortkey );
 	}
@@ -271,13 +276,13 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	}
 
     function formatList( $articles, $articles_start_char, $cutoff = 6 ) {
-        $list = '';
-        if ( count( $articles ) > $cutoff ) {
-            $list = self::columnList( $articles, $articles_start_char );
-        } elseif ( count( $articles ) > 0 ) {
-            // for short lists of articles in categories.
-            $list = self::shortList( $articles, $articles_start_char );
-        }
+	    # All articles are in a Bootstrap row div
+	    $list = '<div class="row">';
+	    # For each article, encapsulate it in a diw
+        foreach ($articles as $article)
+            $list .= '<div class="col-md-3 col-sm-6 col-xs-6">'.$article.'</div>';
+        # Close the bootstrap div
+        $list .= '</div>';
 
         $pageLang = $this->title->getPageLanguage();
         $attribs = [ 'lang' => $pageLang->getHtmlCode(), 'dir' => $pageLang->getDir(),
@@ -285,23 +290,6 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
         $list = Html::rawElement( 'div', $attribs, $list );
 
         return $list;
-    }
-
-    /**
-     * Method used to sort articles by letter
-     * A letter is added before articles where there title begin by this letter
-     * but letters have been DELETED since.
-     * @param string[] $articles HTML links to each article
-     * @param string[] $articles_start_char The header characters for each article
-     * @return string HTML to output
-     * @private
-     */
-    static function shortList( $articles, $articles_start_char ) {
-        $r = '<div class="row">';
-        foreach ($articles as $article)
-            $r .= '<div class="col-md-3 col-sm-6 col-xs-6">'.$article.'</div>';
-        $r .= '</div>';
-        return $r;
     }
 
 }

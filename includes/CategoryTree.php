@@ -427,9 +427,9 @@ class CategoryTree {
 		}
 
 		if ( isset( $attr['class'] ) ) {
-			$attr['class'] .= ' CategoryTreeTag';
+			$attr['class'] .= ' CategoryTreeTag row';
 		} else {
-			$attr['class'] = ' CategoryTreeTag';
+			$attr['class'] = ' CategoryTreeTag row';
 		}
 
 		$attr['data-ct-mode'] = $this->mOptions['mode'];
@@ -461,7 +461,7 @@ class CategoryTree {
 			$html .= Html::closeElement( 'span' );
 		} else {
 			if ( !$hideroot ) {
-				$html .= $this->renderNode( $title, $depth, false );
+				$html .= $this->renderNode( $title, $depth );
 			} else {
 				$html .= $this->renderChildren( $title, $depth );
 			}
@@ -473,12 +473,13 @@ class CategoryTree {
 		return $html;
 	}
 
-	/**
-	 * Returns a string with an HTML representation of the children of the given category.
-	 * @param Title $title
-	 * @param int $depth
-	 * @return string
-	 */
+    /**
+     * Returns a string with an HTML representation of the children of the given category.
+     * @param Title $title
+     * @param int $depth
+     * @return string
+     * @throws MWException
+     */
 	function renderChildren( $title, $depth = 1 ) {
 		global $wgCategoryTreeMaxChildren, $wgCategoryTreeUseCategoryTable;
 
@@ -544,6 +545,9 @@ class CategoryTree {
 		$categories = '';
 		$other = '';
 
+		// Fetch all subcategories image from this title
+		$images = CategoryTreeImageList::fromCategory($title);
+
 		foreach ( $res as $row ) {
 			# NOTE: in inverse mode, the page record may be null, because we use a right join.
 			#      happens for categories with no category page (red cat links)
@@ -560,7 +564,10 @@ class CategoryTree {
 				$cat = Category::newFromRow( $row, $t );
 			}
 
-			$s = $this->renderNodeInfo( $t, $cat, $depth - 1 );
+			// Get image of this category
+            $image = $images->getImage($t);
+
+			$s = $this->renderNodeInfo( $t, $cat, $depth - 1, $image);
 			$s .= "\n\t\t";
 
 			if ( $row->page_namespace == NS_CATEGORY ) {
@@ -625,13 +632,14 @@ class CategoryTree {
 		return $s;
 	}
 
-	/**
-	 * Returns a string with a HTML represenation of the given page.
-	 * @param Title $title
-	 * @param int $children
-	 * @return string
-	 */
-	function renderNode( $title, $children = 0 ) {
+    /**
+     * Returns a string with a HTML representation of the given page.
+     * @param Title $title
+     * @param int $children
+     * @param $image
+     * @return string
+     */
+	function renderNode( $title, $children = 0, $image = null) {
 		global $wgCategoryTreeUseCategoryTable;
 
 		if ( $wgCategoryTreeUseCategoryTable && $title->getNamespace() == NS_CATEGORY
@@ -642,7 +650,7 @@ class CategoryTree {
 			$cat = null;
 		}
 
-		return $this->renderNodeInfo( $title, $cat, $children );
+		return $this->renderNodeInfo( $title, $cat, $children, $image );
 	}
 
     /**
@@ -651,10 +659,10 @@ class CategoryTree {
      * @param Title $title
      * @param Category $cat
      * @param int $children
-     * @param null $image
+     * @param File $image
      * @return string
      */
-	function renderNodeInfo( $title, $cat, $children = 0 ) {
+	function renderNodeInfo( $title, $cat, $children = 0, File $image = null) {
 		$mode = $this->getOption( 'mode' );
 
 		$ns = $title->getNamespace();
@@ -712,13 +720,9 @@ class CategoryTree {
 
 		# Open the image div if there is one
         if ( $ns == NS_CATEGORY && $image !== null ){
-            $file = wfFindFile( $image );
-
-            if($file instanceof File){
-                $s .= Xml::openElement('div', ['class' => 'CategoryTreeImage']);
-                $s .= Xml::element('img', ['src' => $file->getFullUrl()]);
-                $s .= Xml::closeElement('div');
-            }
+            $s .= Xml::openElement('div', ['class' => 'CategoryTreeImage']);
+            $s .= Xml::element('img', ['src' => $image->getFullUrl()]);
+            $s .= Xml::closeElement('div');
         }
         # ... and close the image div
 

@@ -35,6 +35,7 @@
 		"CategoryTreeHooks": "includes/CategoryTreeHooks.php",
 		"CategoryTreeMode": "includes/CategoryTreeMode.php",
 		"CategoryTreeHidePrefix": "includes/CategoryTreeHidePrefix.php",
+        "CategoryTreeImageList": "includes/CategoryTreeImageList.php",
 		"ApiCategoryTree": "includes/ApiCategoryTree.php"
 	},
 	"ResourceModules": {

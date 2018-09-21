@@ -167,15 +167,16 @@ class CategoryTreeHooks {
 		return true;
 	}
 
-	/**
-	 * Entry point for the <categorytree> tag parser hook.
-	 * This loads CategoryTreeFunctions.php and calls CategoryTree::getTag()
-	 * @param string $cat
-	 * @param array $argv
-	 * @param Parser $parser
-	 * @param bool $allowMissing
-	 * @return bool|string
-	 */
+    /**
+     * Entry point for the <categorytree> tag parser hook.
+     * This loads CategoryTreeFunctions.php and calls CategoryTree::getTag()
+     * @param string $cat
+     * @param array $argv
+     * @param Parser $parser
+     * @param bool $allowMissing
+     * @return bool|string
+     * @throws MWException
+     */
 	public static function parserHook( $cat, $argv, $parser = null, $allowMissing = false ) {
 		global $wgOut;
 
