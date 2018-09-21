@@ -81,6 +81,7 @@ class CategoryTreeHooks {
 	public static function setHooks( $parser ) {
 		$parser->setHook( 'categorytree', 'CategoryTreeHooks::parserHook' );
 		$parser->setFunctionHook( 'categorytree', 'CategoryTreeHooks::parserFunction' );
+		$parser->setFunctionHook( 'breadcrumb', 'CategoryTreeHooks::breadcrumbParserFunction' );
 		return true;
 	}
 
@@ -93,6 +94,8 @@ class CategoryTreeHooks {
 	public static function parserFunction( $parser ) {
 		$params = func_get_args();
 		array_shift( $params ); // first is $parser, strip it
+
+        $parser->mOutput->updateCacheExpiry(0);
 
 		// first user-supplied parameter must be category name
 		if ( !$params ) {
@@ -118,6 +121,33 @@ class CategoryTreeHooks {
 		$html = self::parserHook( $cat, $argv, $parser );
 		return [ $html, 'noparse' => true, 'isHTML' => true ];
 	}
+
+    /**
+     * Entry point for the {{#breadcrumb}} tag parser function.
+     * This is a wrapper around CategoryTreeHooks::parserHook
+     * @param Parser $parser
+     * @return array
+     */
+	public static function breadcrumbParserFunction( Parser $parser ) {
+	    $args = func_get_args();
+	    // Drop first result because it's parser
+        array_shift($args);
+        // Get the title in parameter
+        $titleText = array_shift($args);
+
+        if(!empty($titleText)){
+            // If title is not empty, get Title instance of specified title
+            $title = Title::makeTitleSafe(NS_CATEGORY, array_shift($args));
+        }else{
+            // Else, get page title of current request
+            $title = $parser->getTitle();
+        }
+
+	    $ct = new CategoryTree([]);
+	    $html = $ct->getHtmlBreadcrumb($title);
+
+	    return [ $html, 'noparse' => true, 'isHTML' => true ];
+    }
 
 	/**
 	 * Hook implementation for injecting a category tree into the sidebar.

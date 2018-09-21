@@ -88,7 +88,7 @@
 	"config": {
 		"CategoryTreeMaxChildren": 200,
 		"CategoryTreeAllowTag": true,
-		"CategoryTreeDisableCache": 21600,
+		"CategoryTreeDisableCache": 0,
 		"CategoryTreeHTTPCache": false,
 		"CategoryTreeMaxDepth": {
 			"102": 4,
@@ -106,12 +106,14 @@
 			"mode": null,
 			"hideprefix": null,
 			"showcount": false,
-			"namespaces": false
+			"namespaces": false,
+            "hidebreadcrumb": false
 		},
 		"CategoryTreeCategoryPageMode": 0,
 		"CategoryTreeCategoryPageOptions": {
 			"mode": null,
-			"showcount": true
+			"showcount": true,
+            "hidebreadcrumb": false
 		},
 		"CategoryTreeSpecialPageOptions": {
 			"showcount": true

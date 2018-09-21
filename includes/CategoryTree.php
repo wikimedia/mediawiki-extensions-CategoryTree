@@ -446,9 +446,6 @@ class CategoryTree {
 			return $html;
 		}
 
-
-
-
 		$html = '';
 		$html .= Html::openElement( 'div', $attr );
 
@@ -465,6 +462,7 @@ class CategoryTree {
 			if ( !$hideroot ) {
 				$html .= $this->renderNode( $title, $depth, false );
 			} else {
+
 				$html .= $this->renderChildren( $title, $depth );
 			}
 		}
@@ -646,15 +644,16 @@ class CategoryTree {
 		return $this->renderNodeInfo( $title, $cat, $children );
 	}
 
-	/**
-	 * Returns a string with a HTML represenation of the given page.
-	 * $info must be an associative array, containing at least a Title object under the 'title' key.
-	 * @param Title $title
-	 * @param Category $cat
-	 * @param int $children
-	 * @return string
-	 */
-	function renderNodeInfo( $title, $cat, $children = 0 ) {
+    /**
+     * Returns a string with a HTML represenation of the given page.
+     * $info must be an associative array, containing at least a Title object under the 'title' key.
+     * @param Title $title
+     * @param Category $cat
+     * @param int $children
+     * @param null $image
+     * @return string
+     */
+	function renderNodeInfo( $title, $cat, $children = 0, $image = null ) {
 		$mode = $this->getOption( 'mode' );
 
 		$ns = $title->getNamespace();
@@ -709,6 +708,20 @@ class CategoryTree {
 
 		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeSection' ] );
 		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeItem' ] );
+
+		// Category can have images
+		if ( $ns == NS_CATEGORY && $image !== null ){
+            $file = wfFindFile( $image );
+
+            if($file instanceof File){
+                $imgClass = [
+                    'src' => $file->getFullUrl(),
+                    'class' => 'CategoryTreeMainPicture'
+                ];
+
+                $s .= Xml::element('img', $imgClass);
+            }
+        }
 
 		$attr = [ 'class' => 'CategoryTreeBullet' ];
 
