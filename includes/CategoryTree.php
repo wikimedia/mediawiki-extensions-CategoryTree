@@ -460,11 +460,7 @@ class CategoryTree {
 			}
 			$html .= Html::closeElement( 'span' );
 		} else {
-			if ( !$hideroot ) {
-				$html .= $this->renderNode( $title, $depth );
-			} else {
-				$html .= $this->renderChildren( $title, $depth );
-			}
+		    $html .= $this->renderChildren( $title, $depth );
 		}
 
 		$html .= Xml::closeElement( 'div' );
@@ -709,7 +705,7 @@ class CategoryTree {
 		}
 
 		$count = false;
-		$s = '';
+		$s = Xml::openElement('div', ['class' => 'col-md-3 col-sm-6 col-xs-6']);
 
 		# NOTE: things in CategoryTree.js rely on the exact order of tags!
 		#      Specifically, the CategoryTreeChildren div must be the first
@@ -718,12 +714,12 @@ class CategoryTree {
         # Open the category section
 		$s .= Xml::openElement( 'a', [ 'class' => 'CategoryTreeSection', 'href' => $wikiLink] );
 
-		# Open the image div if there is one
+        # Open the image div
+        $s .= Xml::openElement('div', ['class' => 'CategoryTreeImage tagpattern-'.rand(0, 32)]);
         if ( $ns == NS_CATEGORY && $image !== null ){
-            $s .= Xml::openElement('div', ['class' => 'CategoryTreeImage']);
             $s .= Xml::element('img', ['src' => $image->getFullUrl()]);
-            $s .= Xml::closeElement('div');
         }
+        $s .= Xml::closeElement('div');
         # ... and close the image div
 
         # Open the category item where all textual informations are located
@@ -780,6 +776,8 @@ class CategoryTree {
 
 		$s .= Xml::closeElement( 'div' );
 		$s .= Xml::closeElement( 'a' );
+
+		$s .= Xml::closeElement( 'div' );
 
 		$s .= "\n\t\t";
 

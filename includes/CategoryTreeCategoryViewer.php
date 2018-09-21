@@ -286,7 +286,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
         $list = '';
         if ( count( $articles_start_char ) === 0){
-            $list = self::formatSubcategories( $articles );
+            $list = self::tileList( $articles );
         } elseif ( count( $articles ) > $cutoff ) {
             $list = self::columnList( $articles, $articles_start_char );
         } elseif ( count( $articles ) > 0 ) {
@@ -303,17 +303,12 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
     }
 
     /**
-     * @param $categories
+     * @param $articles
      * @return string
      */
-    function formatSubcategories($categories ) {
+    function tileList($articles) {
         # All articles are in a Bootstrap row div
-        $list = '<div class="row">';
-        # For each article, encapsulate it in a diw
-        foreach ($categories as $category)
-            $list .= '<div class="col-md-3 col-sm-6 col-xs-6">'.$category.'</div>';
-        # Close the bootstrap div
-        $list .= '</div>';
+        $list = '<div class="row">'.implode('', $articles).'</div>';
 
         $pageLang = $this->title->getPageLanguage();
         $attribs = [ 'lang' => $pageLang->getHtmlCode(), 'dir' => $pageLang->getDir(),
