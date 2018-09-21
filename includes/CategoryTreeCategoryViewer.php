@@ -275,12 +275,43 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		return $out . ' ' . parent::getPagesSection();
 	}
 
-    function formatList( $articles, $articles_start_char, $cutoff = 6 ) {
-	    # All articles are in a Bootstrap row div
-	    $list = '<div class="row">';
-	    # For each article, encapsulate it in a diw
-        foreach ($articles as $article)
-            $list .= '<div class="col-md-3 col-sm-6 col-xs-6">'.$article.'</div>';
+    /**
+     * @param array $articles
+     * @param array $articles_start_char
+     * @param int $cutoff
+     * @return string
+     */
+    function formatList($articles, $articles_start_char, $cutoff = 6)
+    {
+
+        $list = '';
+        if ( count( $articles_start_char ) === 0){
+            $list = self::formatSubcategories( $articles );
+        } elseif ( count( $articles ) > $cutoff ) {
+            $list = self::columnList( $articles, $articles_start_char );
+        } elseif ( count( $articles ) > 0 ) {
+            // for short lists of articles in categories.
+            $list = self::shortList( $articles, $articles_start_char );
+        }
+
+        $pageLang = $this->title->getPageLanguage();
+        $attribs = [ 'lang' => $pageLang->getHtmlCode(), 'dir' => $pageLang->getDir(),
+            'class' => 'mw-content-' . $pageLang->getDir() ];
+        $list = Html::rawElement( 'div', $attribs, $list );
+
+        return $list;
+    }
+
+    /**
+     * @param $categories
+     * @return string
+     */
+    function formatSubcategories($categories ) {
+        # All articles are in a Bootstrap row div
+        $list = '<div class="row">';
+        # For each article, encapsulate it in a diw
+        foreach ($categories as $category)
+            $list .= '<div class="col-md-3 col-sm-6 col-xs-6">'.$category.'</div>';
         # Close the bootstrap div
         $list .= '</div>';
 
