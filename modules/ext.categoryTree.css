@@ -280,6 +280,10 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
     margin:0 5px;
 }
 
+.CategoryTreeImage img {
+    max-width: 100%;
+}
+
 a.CategoryTreeSection {
     text-align: center;
     border: 1px solid #ccc;
