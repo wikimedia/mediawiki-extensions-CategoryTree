@@ -25,5 +25,6 @@
 	"categorytree-loading": "ပတိုန်ဒၟံၚ်...",
 	"categorytree-nothing-found": "မုမွဲမှဟွံဆဵု",
 	"categorytree-no-subcategories": "ကဏ္ဍလစှ်ေဂမၠိုင် ဟွံမွဲ",
-	"categorytree-no-parent-categories": "ကဏ္ဍမိဂမၠိုၚ်ဟွံသေၚ်"
+	"categorytree-no-parent-categories": "ကဏ္ဍမိဂမၠိုၚ်ဟွံသေၚ်",
+	"categorytree-not-found": "ကဏ္ဍ <i>$1</i> ဟွံဆဵု"
 }
