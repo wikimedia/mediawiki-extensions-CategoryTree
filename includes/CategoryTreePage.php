@@ -36,10 +36,11 @@ class CategoryTreePage extends SpecialPage {
 		}
 	}
 
-	/**
-	 * Main execution function
-	 * @param string|null $par Parameters passed to the page
-	 */
+    /**
+     * Main execution function
+     * @param string|null $par Parameters passed to the page
+     * @throws MWException
+     */
 	function execute( $par ) {
 		global $wgCategoryTreeDefaultOptions, $wgCategoryTreeSpecialPageOptions,
 			$wgCategoryTreeForceHeaders;

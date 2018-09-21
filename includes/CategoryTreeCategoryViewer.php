@@ -48,9 +48,6 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
         $this->flip = [ 'page' => false, 'subcat' => false, 'file' => false ];
 
-        # Categories can have image
-        $images = $this->doImageQuery($this->getTitle());
-
         foreach ( [ 'page', 'subcat', 'file' ] as $type ) {
             # Get the sortkeys for start/end, if applicable.  Note that if
             # the collation in the database differs from the one
@@ -127,11 +124,8 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
                 if ( $title->getNamespace() == NS_CATEGORY ) {
                     $cat = Category::newFromRow( $row, $title );
-                    // Get category image
-                    if(isset($images[$title->getFullText()])) $image = $images[$title->getFullText()]['Main_Picture'];
-                    else $image = null;
                     // Add category
-                    $this->addSubcategoryObject( $cat, $humanSortkey, $row->page_len, $image );
+                    $this->addSubcategoryObject( $cat, $humanSortkey, $row->page_len );
                 } elseif ( $title->getNamespace() == NS_FILE ) {
                     $this->addImage( $title, $humanSortkey, $row->page_len, $row->page_is_redirect );
                 } else {
@@ -148,7 +142,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
      * @param int $pageLength
      * @param null $image
      */
-	function addSubcategoryObject( Category $cat, $sortkey, $pageLength, $image = null ) {
+	function addSubcategoryObject( Category $cat, $sortkey, $pageLength ) {
 		$title = $cat->getTitle();
 
 		if ( $this->getRequest()->getCheck( 'notree' ) ) {
@@ -158,7 +152,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 		$tree = $this->getCategoryTree();
 
-		$this->children[] = $tree->renderNodeInfo( $title, $cat, 0, $image );
+		$this->children[] = $tree->renderNodeInfo( $title, $cat, 0 );
 
 		// $this->children_start_char[] = $this->getSubcategorySortChar( $title, $sortkey );
 	}
@@ -276,39 +270,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		return $out . ' ' . parent::getPagesSection();
 	}
 
-    /**
-     * Make a semantic request to fetch images
-     * @param $title
-     * @return mixed
-     * @throws MWException
-     */
-    private function doImageQuery(Title $title)
-    {
-        $request = new FauxRequest([
-            'action' => 'ask',
-            'query' => '[[Subcategory of::'.$title->getText().']]|?Main_Picture'
-        ], false, null);
-
-        $api = new ApiMain($request);
-        $api->execute();
-
-        // Get result data
-        $data = $api->getResult()->getResultData(['query', 'results']);
-
-        // Reformat results
-        foreach($data as $n => $row){
-            // Set printouts to array root
-            if(isset($row['printouts']['Main Picture'][0]))
-                $data[$n]["Main_Picture"] = $row['printouts']['Main Picture'][0];
-            else
-                $data[$n]["Main_Picture"] = null;
-        }
-
-        return $data;
-    }
-
     function formatList( $articles, $articles_start_char, $cutoff = 6 ) {
-
         $list = '';
         if ( count( $articles ) > $cutoff ) {
             $list = self::columnList( $articles, $articles_start_char );
@@ -335,10 +297,10 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
      * @private
      */
     static function shortList( $articles, $articles_start_char ) {
-        $r = '<ul>';
+        $r = '<div class="row">';
         foreach ($articles as $article)
-            $r .= $article;
-        $r .= '</ul>';
+            $r .= '<div class="col-md-3 col-sm-6 col-xs-6">'.$article.'</div>';
+        $r .= '</div>';
         return $r;
     }
 

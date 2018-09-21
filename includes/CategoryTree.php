@@ -654,7 +654,7 @@ class CategoryTree {
      * @param null $image
      * @return string
      */
-	function renderNodeInfo( $title, $cat, $children = 0, $image = null ) {
+	function renderNodeInfo( $title, $cat, $children = 0 ) {
 		$mode = $this->getOption( 'mode' );
 
 		$ns = $title->getNamespace();
@@ -725,45 +725,17 @@ class CategoryTree {
         # Open the category item where all textual informations are located
 		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeItem' ] );
 
-		$attr = [ 'class' => 'CategoryTreeBullet' ];
-
-
-//		if ( $ns == NS_CATEGORY ) {
-//			if ( $cat ) {
-//				if ( $mode == CategoryTreeMode::CATEGORIES ) {
-//					$count = intval( $cat->getSubcatCount() );
-//				} elseif ( $mode == CategoryTreeMode::PAGES ) {
-//					$count = intval( $cat->getPageCount() ) - intval( $cat->getFileCount() );
-//				} else {
-//					$count = intval( $cat->getPageCount() );
-//				}
-//			}
-//
-//			if ( $count === 0 ) {
-//				$bullet = wfMessage( 'categorytree-empty-bullet' )->plain() . ' ';
-//				$attr['class'] = 'CategoryTreeEmptyBullet';
-//			} else {
-//				$linkattr = [];
-//
-//				$linkattr[ 'class' ] = "CategoryTreeToggle";
-//				$linkattr['data-ct-title'] = $key;
-//
-//				$tag = 'span';
-//				if ( $children == 0 ) {
-//					$txt = wfMessage( 'categorytree-expand-bullet' )->plain();
-//					$linkattr[ 'data-ct-state' ] = 'collapsed';
-//				} else {
-//					$txt = wfMessage( 'categorytree-collapse-bullet' )->plain();
-//					$linkattr[ 'data-ct-loaded' ] = true;
-//					$linkattr[ 'data-ct-state' ] = 'expanded';
-//				}
-//
-//				$bullet = Xml::openElement( $tag, $linkattr ) . $txt . Xml::closeElement( $tag ) . ' ';
-//			}
-//		} else {
-//			$bullet = wfMessage( 'categorytree-page-bullet' )->plain();
-//		}
-//		$s .= Xml::tags( 'span', $attr, $bullet ) . ' ';
+		if ( $ns == NS_CATEGORY ) {
+			if ( $cat ) {
+				if ( $mode == CategoryTreeMode::CATEGORIES ) {
+					$count = intval( $cat->getSubcatCount() );
+				} elseif ( $mode == CategoryTreeMode::PAGES ) {
+					$count = intval( $cat->getPageCount() ) - intval( $cat->getFileCount() );
+				} else {
+					$count = intval( $cat->getPageCount() );
+				}
+			}
+        }
 
 		$s .= Xml::openElement( 'h3', ['class' => $labelClass] );
 		$s .= $label;
