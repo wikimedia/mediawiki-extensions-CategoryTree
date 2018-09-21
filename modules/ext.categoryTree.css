@@ -240,10 +240,6 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
 	width: 100%;
 }
 
-.mw-category-generated #mw-subcategories h3 {
-	display:none;
-}
-
 .mw-category-generated #mw-subcategories li {
     width: 100%;
     float: left;
@@ -278,14 +274,13 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
 }
 }
 
-
 .CategoryTreeItem .subcontent-label, .CategoryTreeItem .empty-label {
     font-size:13px;
     color: #999;
     margin:0 5px;
 }
 
-.mw-category-generated #mw-subcategories .CategoryTreeSection {
+a.CategoryTreeSection {
     text-align: center;
     border: 1px solid #ccc;
     -webkit-border-radius: 4px;
@@ -294,17 +289,8 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
     font-size: 16px;
     border-radius: 4px;
     margin-bottom: 20px;
-}
-
-.CategoryTreeSection a.CategoryTreeLabel {
-    padding: 30px 5px 20px;
-    float: left;
-    font-size: 19px;
+    float:left;
     width: 100%;
-}
-
-.CategoryTreeSection a.CategoryTreeLabel:hover {
-    text-decoration: none;
 }
 
 .dokit-cat-tree-hp .CategoryTreeTag {
