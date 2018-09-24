@@ -331,7 +331,7 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
 
 a.CategoryTreeSection {
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     padding-bottom:10px;
