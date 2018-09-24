@@ -296,15 +296,16 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
     background-position: center;
 }
 
-.CategoryTreeImage.tagpattern-01 {background-image: url('tagpatterns/tagpattern_01.jpg');}
-.CategoryTreeImage.tagpattern-02 {background-image: url('tagpatterns/tagpattern_02.jpg');}
-.CategoryTreeImage.tagpattern-03 {background-image: url('tagpatterns/tagpattern_03.jpg');}
-.CategoryTreeImage.tagpattern-04 {background-image: url('tagpatterns/tagpattern_04.jpg');}
-.CategoryTreeImage.tagpattern-05 {background-image: url('tagpatterns/tagpattern_05.jpg');}
-.CategoryTreeImage.tagpattern-06 {background-image: url('tagpatterns/tagpattern_06.jpg');}
-.CategoryTreeImage.tagpattern-07 {background-image: url('tagpatterns/tagpattern_07.jpg');}
-.CategoryTreeImage.tagpattern-08 {background-image: url('tagpatterns/tagpattern_08.jpg');}
-.CategoryTreeImage.tagpattern-09 {background-image: url('tagpatterns/tagpattern_09.jpg');}
+.CategoryTreeImage.tagpattern-0 {background-image: url('tagpatterns/tagpattern_00.jpg');}
+.CategoryTreeImage.tagpattern-1 {background-image: url('tagpatterns/tagpattern_01.jpg');}
+.CategoryTreeImage.tagpattern-2 {background-image: url('tagpatterns/tagpattern_02.jpg');}
+.CategoryTreeImage.tagpattern-3 {background-image: url('tagpatterns/tagpattern_03.jpg');}
+.CategoryTreeImage.tagpattern-4 {background-image: url('tagpatterns/tagpattern_04.jpg');}
+.CategoryTreeImage.tagpattern-5 {background-image: url('tagpatterns/tagpattern_05.jpg');}
+.CategoryTreeImage.tagpattern-6 {background-image: url('tagpatterns/tagpattern_06.jpg');}
+.CategoryTreeImage.tagpattern-7 {background-image: url('tagpatterns/tagpattern_07.jpg');}
+.CategoryTreeImage.tagpattern-8 {background-image: url('tagpatterns/tagpattern_08.jpg');}
+.CategoryTreeImage.tagpattern-9 {background-image: url('tagpatterns/tagpattern_09.jpg');}
 .CategoryTreeImage.tagpattern-10 {background-image: url('tagpatterns/tagpattern_10.jpg');}
 .CategoryTreeImage.tagpattern-11 {background-image: url('tagpatterns/tagpattern_11.jpg');}
 .CategoryTreeImage.tagpattern-12 {background-image: url('tagpatterns/tagpattern_12.jpg');}
@@ -341,6 +342,7 @@ a.CategoryTreeSection {
     float:left;
     width: 100%;
     overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
 }
 
 a.CategoryTreeSection h3 {
