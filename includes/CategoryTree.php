@@ -390,17 +390,18 @@ class CategoryTree {
 		return $this->renderBreadcrumbs($nodeData);
 	}
 
-	/**
-	 * Custom tag implementation. This is called by CategoryTreeHooks::parserHook, which is used to
-	 * load CategoryTreeFunctions.php on demand.
-	 * @param Parser $parser
-	 * @param string $category
-	 * @param bool $hideroot
-	 * @param string $attr
-	 * @param int $depth
-	 * @param bool $allowMissing
-	 * @return bool|string
-	 */
+    /**
+     * Custom tag implementation. This is called by CategoryTreeHooks::parserHook, which is used to
+     * load CategoryTreeFunctions.php on demand.
+     * @param Parser $parser
+     * @param string $category
+     * @param bool $hideroot
+     * @param string $attr
+     * @param int $depth
+     * @param bool $allowMissing
+     * @return bool|string
+     * @throws MWException
+     */
 	function getTag( $parser, $category, $hideroot = false, $attr, $depth = 1,
 		$allowMissing = false
 	) {
@@ -426,9 +427,9 @@ class CategoryTree {
 		}
 
 		if ( isset( $attr['class'] ) ) {
-			$attr['class'] .= ' CategoryTreeTag';
+			$attr['class'] .= ' CategoryTreeTag row';
 		} else {
-			$attr['class'] = ' CategoryTreeTag';
+			$attr['class'] = ' CategoryTreeTag row';
 		}
 
 		$attr['data-ct-mode'] = $this->mOptions['mode'];
@@ -446,9 +447,6 @@ class CategoryTree {
 			return $html;
 		}
 
-
-
-
 		$html = '';
 		$html .= Html::openElement( 'div', $attr );
 
@@ -462,11 +460,7 @@ class CategoryTree {
 			}
 			$html .= Html::closeElement( 'span' );
 		} else {
-			if ( !$hideroot ) {
-				$html .= $this->renderNode( $title, $depth, false );
-			} else {
-				$html .= $this->renderChildren( $title, $depth );
-			}
+		    $html .= $this->renderChildren( $title, $depth );
 		}
 
 		$html .= Xml::closeElement( 'div' );
@@ -475,12 +469,13 @@ class CategoryTree {
 		return $html;
 	}
 
-	/**
-	 * Returns a string with an HTML representation of the children of the given category.
-	 * @param Title $title
-	 * @param int $depth
-	 * @return string
-	 */
+    /**
+     * Returns a string with an HTML representation of the children of the given category.
+     * @param Title $title
+     * @param int $depth
+     * @return string
+     * @throws MWException
+     */
 	function renderChildren( $title, $depth = 1 ) {
 		global $wgCategoryTreeMaxChildren, $wgCategoryTreeUseCategoryTable;
 
@@ -546,6 +541,9 @@ class CategoryTree {
 		$categories = '';
 		$other = '';
 
+		// Fetch all subcategories image from this title
+		$images = CategoryTreeImageList::fromCategory($title);
+
 		foreach ( $res as $row ) {
 			# NOTE: in inverse mode, the page record may be null, because we use a right join.
 			#      happens for categories with no category page (red cat links)
@@ -562,7 +560,10 @@ class CategoryTree {
 				$cat = Category::newFromRow( $row, $t );
 			}
 
-			$s = $this->renderNodeInfo( $t, $cat, $depth - 1 );
+			// Get image of this category
+            $image = $images->getImage($t);
+
+			$s = $this->renderNodeInfo( $t, $cat, $depth - 1, $image);
 			$s .= "\n\t\t";
 
 			if ( $row->page_namespace == NS_CATEGORY ) {
@@ -575,11 +576,12 @@ class CategoryTree {
 		return $categories . $other;
 	}
 
-	/**
-	 * Returns a string with an HTML representation of the parents of the given category.
-	 * @param Title $title
-	 * @return string
-	 */
+    /**
+     * Returns a string with an HTML representation of the parents of the given category.
+     * @param Title $title
+     * @return string
+     * @throws MWException
+     */
 	function renderParents( $title ) {
 		global $wgCategoryTreeMaxChildren;
 
@@ -626,13 +628,14 @@ class CategoryTree {
 		return $s;
 	}
 
-	/**
-	 * Returns a string with a HTML represenation of the given page.
-	 * @param Title $title
-	 * @param int $children
-	 * @return string
-	 */
-	function renderNode( $title, $children = 0 ) {
+    /**
+     * Returns a string with a HTML representation of the given page.
+     * @param Title $title
+     * @param int $children
+     * @param $image
+     * @return string
+     */
+	function renderNode( $title, $children = 0, $image = null) {
 		global $wgCategoryTreeUseCategoryTable;
 
 		if ( $wgCategoryTreeUseCategoryTable && $title->getNamespace() == NS_CATEGORY
@@ -643,18 +646,19 @@ class CategoryTree {
 			$cat = null;
 		}
 
-		return $this->renderNodeInfo( $title, $cat, $children );
+		return $this->renderNodeInfo( $title, $cat, $children, $image );
 	}
 
-	/**
-	 * Returns a string with a HTML represenation of the given page.
-	 * $info must be an associative array, containing at least a Title object under the 'title' key.
-	 * @param Title $title
-	 * @param Category $cat
-	 * @param int $children
-	 * @return string
-	 */
-	function renderNodeInfo( $title, $cat, $children = 0 ) {
+    /**
+     * Returns a string with a HTML represenation of the given page.
+     * $info must be an associative array, containing at least a Title object under the 'title' key.
+     * @param Title $title
+     * @param Category $cat
+     * @param int $children
+     * @param File $image
+     * @return string
+     */
+	function renderNodeInfo( $title, $cat, $children = 0, File $image = null) {
 		$mode = $this->getOption( 'mode' );
 
 		$ns = $title->getNamespace();
@@ -701,16 +705,25 @@ class CategoryTree {
 		}
 
 		$count = false;
-		$s = '';
+		$s = Xml::openElement('div', ['class' => 'col-md-3 col-sm-6 col-xs-6']);
 
 		# NOTE: things in CategoryTree.js rely on the exact order of tags!
 		#      Specifically, the CategoryTreeChildren div must be the first
 		#      sibling with nodeName = DIV of the grandparent of the expland link.
 
-		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeSection' ] );
-		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeItem' ] );
+        # Open the category section
+		$s .= Xml::openElement( 'a', [ 'class' => 'CategoryTreeSection', 'href' => $wikiLink] );
 
-		$attr = [ 'class' => 'CategoryTreeBullet' ];
+        # Open the image div
+        $s .= Xml::openElement('div', ['class' => 'CategoryTreeImage tagpattern-'.rand(0, 32)]);
+        if ( $ns == NS_CATEGORY && $image !== null ){
+            $s .= Xml::element('img', ['src' => $image->getFullUrl()]);
+        }
+        $s .= Xml::closeElement('div');
+        # ... and close the image div
+
+        # Open the category item where all textual informations are located
+		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeItem' ] );
 
 		if ( $ns == NS_CATEGORY ) {
 			if ( $cat ) {
@@ -722,34 +735,11 @@ class CategoryTree {
 					$count = intval( $cat->getPageCount() );
 				}
 			}
-			if ( $count === 0 ) {
-				$bullet = wfMessage( 'categorytree-empty-bullet' )->plain() . ' ';
-				$attr['class'] = 'CategoryTreeEmptyBullet';
-			} else {
-				$linkattr = [];
+        }
 
-				$linkattr[ 'class' ] = "CategoryTreeToggle";
-				$linkattr['data-ct-title'] = $key;
-
-				$tag = 'span';
-				if ( $children == 0 ) {
-					$txt = wfMessage( 'categorytree-expand-bullet' )->plain();
-					$linkattr[ 'data-ct-state' ] = 'collapsed';
-				} else {
-					$txt = wfMessage( 'categorytree-collapse-bullet' )->plain();
-					$linkattr[ 'data-ct-loaded' ] = true;
-					$linkattr[ 'data-ct-state' ] = 'expanded';
-				}
-
-				$bullet = Xml::openElement( $tag, $linkattr ) . $txt . Xml::closeElement( $tag ) . ' ';
-			}
-		} else {
-			$bullet = wfMessage( 'categorytree-page-bullet' )->plain();
-		}
-		$s .= Xml::tags( 'span', $attr, $bullet ) . ' ';
-
-		$s .= Xml::openElement( 'a', [ 'class' => $labelClass, 'href' => $wikiLink ] )
-			. $label . Xml::closeElement( 'a' );
+		$s .= Xml::openElement( 'h3', ['class' => $labelClass] );
+		$s .= $label;
+		$s .= Xml::closeElement( 'h3' );
 
 		if ( $count !== false && $this->getOption( 'showcount' ) ) {
 			$s .= self::createCountString( RequestContext::getMain(), $cat, $count );
@@ -785,6 +775,8 @@ class CategoryTree {
 		}
 
 		$s .= Xml::closeElement( 'div' );
+		$s .= Xml::closeElement( 'a' );
+
 		$s .= Xml::closeElement( 'div' );
 
 		$s .= "\n\t\t";

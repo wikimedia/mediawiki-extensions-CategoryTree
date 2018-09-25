@@ -14,6 +14,7 @@ $magicWords = [];
 /** English (English) */
 $magicWords['en'] = [
 	'categorytree' => [ 0, 'categorytree' ],
+    'breadcrumb' => [ 0, 'breadcrumb' ]
 ];
 
 /** Afrikaans (Afrikaans) */
