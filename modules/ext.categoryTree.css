@@ -154,8 +154,8 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
  *********************/
 
 .breadcrums-container .breadcrum {
-    font-size:19px;
-    margin: 25px 0px 15px -5px;
+    font-size: 21px;
+    margin: 0px 0px 12px -5px;
  }
 
  .breadcrums-container .breadcrum-separator {
@@ -379,5 +379,40 @@ a.CategoryTreeSection:hover {
     padding: 0px;
     float: inherit;
     font-size:14px;
+}
+
+.category-banner {
+    height: 130px;
+    width:100%;
+    overflow: hidden;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+    top: 0;
+}
+
+.category-banner img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    opacity: 0.30;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+}
+
+.category-header {
+    position: relative;
+    color: #fff;
+    padding: 33px 15px 17px;
+    margin-bottom: 30px;
+}
+
+.category-header p.category-subtitle {
+    opacity: 0.5;
+    font-size: 1.1em;
 }
 
