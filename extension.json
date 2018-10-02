@@ -108,13 +108,13 @@
 			"hideprefix": null,
 			"showcount": false,
 			"namespaces": false,
-            "hidebreadcrumb": false
+            "hidebreadcrumb": true
 		},
 		"CategoryTreeCategoryPageMode": 0,
 		"CategoryTreeCategoryPageOptions": {
 			"mode": null,
 			"showcount": true,
-            "hidebreadcrumb": false
+            "hidebreadcrumb": true
 		},
 		"CategoryTreeSpecialPageOptions": {
 			"showcount": true
