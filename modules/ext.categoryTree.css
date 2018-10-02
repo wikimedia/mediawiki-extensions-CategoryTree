@@ -130,10 +130,6 @@
     margin-bottom: 20px;
 }
 
-.dokit-cat .CategoryTreeSection .CategoryTreeItem:hover, .mw-category-generated #mw-subcategories .CategoryTreeSection:hover {
-    box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.36);
-}
-
 .dokit-cat .CategoryTreeBullet, .dokit-cat .CategoryTreeEmptyBullet {
 	display:none;
 }
@@ -281,25 +277,93 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
 }
 
 .CategoryTreeImage img {
-    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    min-width: 100%;
+    min-height: 50px;
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
 .CategoryTreeImage {
     height: 50px;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
 }
+
+.CategoryTreeImage.tagpattern-0 {background-image: url('tagpatterns/tagpattern_00.jpg');}
+.CategoryTreeImage.tagpattern-1 {background-image: url('tagpatterns/tagpattern_01.jpg');}
+.CategoryTreeImage.tagpattern-2 {background-image: url('tagpatterns/tagpattern_02.jpg');}
+.CategoryTreeImage.tagpattern-3 {background-image: url('tagpatterns/tagpattern_03.jpg');}
+.CategoryTreeImage.tagpattern-4 {background-image: url('tagpatterns/tagpattern_04.jpg');}
+.CategoryTreeImage.tagpattern-5 {background-image: url('tagpatterns/tagpattern_05.jpg');}
+.CategoryTreeImage.tagpattern-6 {background-image: url('tagpatterns/tagpattern_06.jpg');}
+.CategoryTreeImage.tagpattern-7 {background-image: url('tagpatterns/tagpattern_07.jpg');}
+.CategoryTreeImage.tagpattern-8 {background-image: url('tagpatterns/tagpattern_08.jpg');}
+.CategoryTreeImage.tagpattern-9 {background-image: url('tagpatterns/tagpattern_09.jpg');}
+.CategoryTreeImage.tagpattern-10 {background-image: url('tagpatterns/tagpattern_10.jpg');}
+.CategoryTreeImage.tagpattern-11 {background-image: url('tagpatterns/tagpattern_11.jpg');}
+.CategoryTreeImage.tagpattern-12 {background-image: url('tagpatterns/tagpattern_12.jpg');}
+.CategoryTreeImage.tagpattern-13 {background-image: url('tagpatterns/tagpattern_13.jpg');}
+.CategoryTreeImage.tagpattern-14 {background-image: url('tagpatterns/tagpattern_14.jpg');}
+.CategoryTreeImage.tagpattern-15 {background-image: url('tagpatterns/tagpattern_15.jpg');}
+.CategoryTreeImage.tagpattern-16 {background-image: url('tagpatterns/tagpattern_16.jpg');}
+.CategoryTreeImage.tagpattern-17 {background-image: url('tagpatterns/tagpattern_17.jpg');}
+.CategoryTreeImage.tagpattern-18 {background-image: url('tagpatterns/tagpattern_18.jpg');}
+.CategoryTreeImage.tagpattern-19 {background-image: url('tagpatterns/tagpattern_19.jpg');}
+.CategoryTreeImage.tagpattern-20 {background-image: url('tagpatterns/tagpattern_20.jpg');}
+.CategoryTreeImage.tagpattern-21 {background-image: url('tagpatterns/tagpattern_21.jpg');}
+.CategoryTreeImage.tagpattern-22 {background-image: url('tagpatterns/tagpattern_22.jpg');}
+.CategoryTreeImage.tagpattern-23 {background-image: url('tagpatterns/tagpattern_23.jpg');}
+.CategoryTreeImage.tagpattern-24 {background-image: url('tagpatterns/tagpattern_24.jpg');}
+.CategoryTreeImage.tagpattern-25 {background-image: url('tagpatterns/tagpattern_25.jpg');}
+.CategoryTreeImage.tagpattern-26 {background-image: url('tagpatterns/tagpattern_26.jpg');}
+.CategoryTreeImage.tagpattern-27 {background-image: url('tagpatterns/tagpattern_27.jpg');}
+.CategoryTreeImage.tagpattern-28 {background-image: url('tagpatterns/tagpattern_28.jpg');}
+.CategoryTreeImage.tagpattern-29 {background-image: url('tagpatterns/tagpattern_29.jpg');}
+.CategoryTreeImage.tagpattern-30 {background-image: url('tagpatterns/tagpattern_30.jpg');}
+.CategoryTreeImage.tagpattern-31 {background-image: url('tagpatterns/tagpattern_31.jpg');}
+.CategoryTreeImage.tagpattern-32 {background-image: url('tagpatterns/tagpattern_32.jpg');}
 
 a.CategoryTreeSection {
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    padding:7px;
+    padding-bottom:10px;
     font-size: 16px;
     border-radius: 4px;
     margin-bottom: 20px;
     float:left;
     width: 100%;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
+}
+
+a.CategoryTreeSection h3 {
+    font-size: 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    vertical-align: baseline;
+    padding: 0 15px;
+}
+
+a.CategoryTreeSection:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a.CategoryTreeSection:hover {
+    text-decoration: none;
+    transform: translate3d(0px, -5px, 0px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 15px;
 }
 
 .dokit-cat-tree-hp .CategoryTreeTag {
