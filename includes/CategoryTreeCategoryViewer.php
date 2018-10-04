@@ -162,6 +162,58 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		// $this->children_start_char[] = $this->getSubcategorySortChar( $title, $sortkey );
 	}
 
+	/**
+	 * Format the category data list.
+	 *
+	 * @return string HTML output
+	 */
+	public function getHTML() {
+
+		$this->showGallery = $this->getConfig()->get( 'CategoryMagicGallery' )
+			&& !$this->getOutput()->mNoGallery;
+
+		$this->clearCategoryState();
+		$this->doCategoryQuery();
+		$this->finaliseCategoryState();
+
+		$r = '';
+
+		$r = $this->getSubcategorySection() .
+			$this->getManualsSection() .
+			$this->getPagesSection() .
+			$this->getImageSection()
+		;
+
+		if ( $r == '' ) {
+			// If there is no category content to display, only
+			// show the top part of the navigation links.
+			// @todo FIXME: Cannot be completely suppressed because it
+			//        is unknown if 'until' or 'from' makes this
+			//        give 0 results.
+			$r = $r . $this->getCategoryTop();
+		} else {
+			$r = $this->getCategoryTop() .
+				$r .
+				$this->getCategoryBottom();
+		}
+
+		// Give a proper message if category is empty
+		if ( $r == '' ) {
+			$r = $this->msg( 'category-empty' )->parseAsBlock();
+		}
+
+		$lang = $this->getLanguage();
+		$attribs = [
+			'class' => 'mw-category-generated',
+			'lang' => $lang->getHtmlCode(),
+			'dir' => $lang->getDir()
+		];
+		# put a div around the headings which are in the user language
+		$r = Html::openElement( 'div', $attribs ) . $r . '</div>';
+
+		return $r;
+	}
+
 	function clearCategoryState() {
 		$this->articlesTitles = [];
 		$this->child_cats = [];
@@ -242,7 +294,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 			$params = array();
 			$WfExploreCore->setPageResultsLimit($limit);
-			$params['query'] = '[[Category:'.$this->title->getText().']]' ;;
+			$params['query'] = '[[Category:'.$this->title->getText().']]' ;
 
 			if(isset($_GET['page'])) {
 				$params['page'] = $_GET['page'];
@@ -273,6 +325,46 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 		// if there is no tutorial, display default category page :
 		return $out . ' ' . parent::getPagesSection();
+	}
+
+	/**
+	 *
+	 */
+	function getManualsSection(){
+		$limit = 8;
+
+		$WfExploreCore = new \WfExploreCore();
+
+		$WfExploreCore->setNamespace(array('Group'));
+		$WfExploreCore->setPageResultsLimit($limit);
+		$WfExploreCore->setFilters(array());
+
+		$formatter = new \WikifabExploreResultFormatter();
+		$formatter->setTemplate(__DIR__ . '/../../GroupsPage/layout/layout-group-search-result.html');
+
+		$WfExploreCore->setFormatter($formatter);
+
+		$params = [
+			'query' => '[[Category:'.$this->title->getText().']]',
+			'nolang' => true
+		];
+
+		$results = $WfExploreCore->executeSearch( $request = null , $params);
+
+		$paramsOutput = [
+			'showPreviousButton' => true,
+			'isEmbed' => true
+		];
+
+		$ti = wfEscapeWikiText( $this->title->getText() );
+
+		$out = "<div id=\"mw-manuals\">\n";
+		$out .= '<h2>' . $this->msg( 'category-manuals-header', $ti )->parse() . '</h2>';
+		$out .= $WfExploreCore->getSearchResultsHtml($paramsOutput);
+		$out .= "\n</div>";
+
+
+		return $out;
 	}
 
     /**

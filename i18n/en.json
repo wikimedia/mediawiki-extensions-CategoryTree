@@ -37,6 +37,7 @@
 	"categorytree-not-found": "Category <i>$1</i> not found",
 	"categorytree-error": "Problem loading data.",
 	"categorytree-retry": "Please wait a moment and try again.",
+	"category-manuals-header": "Manuals in « $1 » category",
 	"apihelp-categorytree-description": "Internal module for the CategoryTree extension.",
 	"apihelp-categorytree-summary": "Internal module for the CategoryTree extension.",
 	"apihelp-categorytree-param-category": "Title in the category namespace, prefix will be ignored if given.",

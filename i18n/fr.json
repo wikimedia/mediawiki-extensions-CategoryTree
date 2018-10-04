@@ -45,6 +45,7 @@
 	"categorytree-error": "Problème de chargement des données.",
 	"categorytree-retry": "Veuillez attendre un instant puis réessayer.",
 	"category_tutoriels_header": "Tutoriels dans la catégorie « $1 »",
+	"category-manuals-header": "Manuels dans la catégorie « $1 »",
 	"apihelp-categorytree-description": "Module interne pour l’extension CategoryTree.",
 	"apihelp-categorytree-summary": "Module interne pour l’extension CategoryTree.",
 	"apihelp-categorytree-param-category": "Titre dans l’espace de noms des catégories, le préfixe sera ignoré s’il est fourni.",
