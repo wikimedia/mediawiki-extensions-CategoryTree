@@ -182,6 +182,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			$this->getManualsSection() .
 			$this->getPagesSection() .
 			$this->getLatestDiscussionsSection() .
+			parent::getPagesSection() .
 			$this->getImageSection()
 		;
 
@@ -318,7 +319,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		}
 
 		// if there is no tutorial, display default category page :
-		return $out . ' ' . parent::getPagesSection();
+		return $out;
 	}
 
 	/**
@@ -378,7 +379,9 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 		$out = "<div id=\"mw-latest-discussions\">\n";
 		$out .= '<h2>' . $this->msg( 'category-latestdiscussions-header', $ti)->parse() . '</h2>';
+		$out .= '<div class="container">';
 		$out .= $ld->renderDiscussionsFromCategory($this->getTitle(), 10, 0);
+		$out .= '</div>';
 		$out .= "\n</div>";
 
 		return $out;
