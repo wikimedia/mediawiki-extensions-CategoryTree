@@ -326,13 +326,14 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	 *
 	 */
 	function getManualsSection(){
-		$limit = 8;
-
 		global $IP;
+
 		// Stop if GroupsPage extension doesn't exists, do not generate Manuals list
-		if(!file_exists("$IP/extensions/ParserFunctions/ParserFunctions.php")){
+		if(!file_exists("$IP/extensions/GroupsPage/GroupsPage.php")){
 			return '';
 		}
+
+		$limit = 8;
 
 		$WfExploreCore = new \WfExploreCore();
 
@@ -372,6 +373,12 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	 *
 	 */
 	function getLatestDiscussionsSection(){
+		global $IP;
+
+		// Stop if LatestDiscussions extension doesn't exists, do not generate list
+		if(!file_exists("$IP/extensions/LatestDiscussions/extension.json")){
+			return '';
+		}
 
 		$ti = wfEscapeWikiText( $this->title->getText() );
 
