@@ -386,9 +386,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 		$out = "<div id=\"mw-latest-discussions\">\n";
 		$out .= '<h2>' . $this->msg( 'category-latestdiscussions-header', $ti)->parse() . '</h2>';
-		$out .= '<div class="container">';
 		$out .= $ld->renderDiscussionsFromCategory($this->getTitle(), 10, 0);
-		$out .= '</div>';
 		$out .= "\n</div>";
 
 		return $out;
