@@ -181,6 +181,8 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		$r = $this->getSubcategorySection() .
 			$this->getManualsSection() .
 			$this->getPagesSection() .
+			$this->getLatestDiscussionsSection() .
+			parent::getPagesSection() .
 			$this->getImageSection()
 		;
 
@@ -225,13 +227,6 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			$this->child_cats = array_reverse( $this->child_cats );
 		}
 		parent::finaliseCategoryState();
-	}
-
-	/**
-	 * return true if given article is a page using tutorial forms
-	 */
-	private function isTutorial($article) {
-
 	}
 
 
@@ -324,13 +319,20 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		}
 
 		// if there is no tutorial, display default category page :
-		return $out . ' ' . parent::getPagesSection();
+		return $out;
 	}
 
 	/**
 	 *
 	 */
 	function getManualsSection(){
+		global $IP;
+
+		// Stop if GroupsPage extension doesn't exists, do not generate Manuals list
+		if(!file_exists("$IP/extensions/GroupsPage/GroupsPage.php")){
+			return '';
+		}
+
 		$limit = 8;
 
 		$WfExploreCore = new \WfExploreCore();
@@ -349,7 +351,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			'nolang' => true
 		];
 
-		$results = $WfExploreCore->executeSearch( $request = null , $params);
+		$WfExploreCore->executeSearch( $request = null , $params);
 
 		$paramsOutput = [
 			'showPreviousButton' => true,
@@ -367,6 +369,29 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		return $out;
 	}
 
+	/**
+	 *
+	 */
+	function getLatestDiscussionsSection(){
+		global $IP;
+
+		// Stop if LatestDiscussions extension doesn't exists, do not generate list
+		if(!file_exists("$IP/extensions/LatestDiscussions/extension.json")){
+			return '';
+		}
+
+		$ti = wfEscapeWikiText( $this->title->getText() );
+
+		$ld = new LatestDiscussions();
+
+		$out = "<div id=\"mw-latest-discussions\">\n";
+		$out .= '<h2>' . $this->msg( 'category-latestdiscussions-header', $ti)->parse() . '</h2>';
+		$out .= $ld->renderDiscussionsFromCategory($this->getTitle(), 10, 0);
+		$out .= "\n</div>";
+
+		return $out;
+	}
+
     /**
      * @param array $articles
      * @param array $articles_start_char
@@ -375,7 +400,6 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
      */
     function formatList($articles, $articles_start_char, $cutoff = 6)
     {
-
         $list = '';
         if ( count( $articles_start_char ) === 0){
             $list = self::tileList( $articles );
