@@ -153,10 +153,16 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
  * breadcrumbs
  *********************/
 
+
+
 .breadcrums-container .breadcrum {
-    font-size: 21px;
+    font-size: 23px;
     margin: 0px 0px 12px -5px;
  }
+
+.category-header-root .breadcrums-container .breadcrum {
+    margin-left:0;
+}
 
  .breadcrums-container .breadcrum-separator {
     margin: 0px 5px;
