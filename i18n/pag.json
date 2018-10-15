@@ -11,6 +11,7 @@
 	"categorytree-num-categories": "$1 K",
 	"categorytree-num-pages": "$1 B",
 	"categorytree-load": "I-lugan",
+	"categorytree-loading": "ilulugan…",
 	"categorytree-nothing-found": "anggapoy naanap",
 	"categorytree-no-pages": "Anggapoy bolong odino subcategory"
 }
