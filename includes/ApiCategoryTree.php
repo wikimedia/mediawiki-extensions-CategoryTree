@@ -23,23 +23,14 @@ class ApiCategoryTree extends ApiBase {
 		if ( isset( $params['options'] ) ) {
 			$options = FormatJson::decode( $params['options'] );
 			if ( !is_object( $options ) ) {
-				if ( is_callable( [ $this, 'dieWithError' ] ) ) {
-					$this->dieWithError( 'apierror-categorytree-invalidjson', 'invalidjson' );
-				} else {
-					$this->dieUsage( 'Options must be valid a JSON object', 'invalidjson' );
-				}
-				return;
+				$this->dieWithError( 'apierror-categorytree-invalidjson', 'invalidjson' );
 			}
 			$options = get_object_vars( $options );
 		}
 
 		$title = CategoryTree::makeTitle( $params['category'] );
 		if ( !$title || $title->isExternal() ) {
-			if ( is_callable( [ $this, 'dieWithError' ] ) ) {
-				$this->dieWithError( [ 'apierror-invalidtitle', wfEscapeWikiText( $params['category'] ) ] );
-			} else {
-				$this->dieUsageMsg( [ 'invalidtitle', wfEscapeWikiText( $params['category'] ) ] );
-			}
+			$this->dieWithError( [ 'apierror-invalidtitle', wfEscapeWikiText( $params['category'] ) ] );
 		}
 
 		$depth = isset( $options['depth'] ) ? (int)$options['depth'] : 1;
