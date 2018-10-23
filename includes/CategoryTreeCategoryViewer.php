@@ -380,12 +380,19 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			return '';
 		}
 
+		// Get category title
 		$ti = wfEscapeWikiText( $this->title->getText() );
+
+		// Get Special::NewDiscussion title instance to generate link
+		$newDiscussionTitle = Title::makeTitleSafe(NS_SPECIAL, "NewDiscussion");
 
 		$ld = new LatestDiscussions();
 
 		$out = "<div id=\"mw-latest-discussions\">\n";
-		$out .= '<h2>' . $this->msg( 'category-latestdiscussions-header', $ti)->parse() . '</h2>';
+		$out .= '<h2>';
+		$out .= $this->msg( 'category-latestdiscussions-header', $ti)->parse();
+		$out .= '<a class="btn btn-default pull-right" href="'.$newDiscussionTitle->getLinkURL(['page_title' => $ti]).'">'.wfMessage('category-latestdiscussions-btn-askquestion').'</a>';
+		$out .= '</h2>';
 		$out .= $ld->renderDiscussionsFromCategory($this->getTitle(), 10, 0);
 		$out .= "\n</div>";
 
