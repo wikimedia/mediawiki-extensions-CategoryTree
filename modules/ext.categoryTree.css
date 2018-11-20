@@ -299,7 +299,7 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
 }
 
 .CategoryTreeImage {
-    height: 50px;
+    height: 30px;
     overflow: hidden;
     position: relative;
     z-index: 1;
