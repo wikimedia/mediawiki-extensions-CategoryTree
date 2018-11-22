@@ -17,6 +17,7 @@
 	"categorytree-expand": "divatcera",
 	"categorytree-num-categories": "$1 P",
 	"categorytree-num-pages": "$1 P",
+	"categorytree-num-files": "$1 iy-",
 	"categorytree-load": "vajara",
 	"categorytree-loading": "vajas",
 	"categorytree-nothing-found": "mek trasiks",
