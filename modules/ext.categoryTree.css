@@ -186,7 +186,7 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
  * Category Tree Standard Page
  *********************/
 
-#mw-subcategories h2
+#mw-subcategories h2,
 #mw-subcategories h2 + p {
     display: none;
 }
@@ -194,7 +194,6 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
 .mw-category-generated #mw-subcategories {
     width: 100%;
     float: left;
-    margin-bottom: 40px;
 }
 
 .mw-category-generated #mw-subcategories ul {
