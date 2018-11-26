@@ -298,7 +298,7 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
 }
 
 .CategoryTreeImage {
-    height: 35px;
+    height: 30px;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -353,7 +353,7 @@ a.CategoryTreeSection {
     float:left;
     width: 100%;
     overflow: hidden;
-    transition: all 0.3s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
+    transition: all 0.2s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
 }
 
 a.CategoryTreeSection h3 {
