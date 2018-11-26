@@ -37,6 +37,7 @@
 	"categorytree-not-found": "Category <i>$1</i> not found",
 	"categorytree-error": "Problem loading data.",
 	"categorytree-retry": "Please wait a moment and try again.",
+	"category_tutoriels_header": "Pages in « $1 » category",
 	"category-manuals-header": "Manuals in « $1 » category",
 	"category-latestdiscussions-header": "Last discussions in « $1 » category",
 	"category-latestdiscussions-btn-askquestion": "Ask a question",

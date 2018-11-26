@@ -44,7 +44,7 @@
 	"categorytree-not-found": "Catégorie <i>$1</i> introuvable",
 	"categorytree-error": "Problème de chargement des données.",
 	"categorytree-retry": "Veuillez attendre un instant puis réessayer.",
-	"category_tutoriels_header": "Tutoriels dans la catégorie « $1 »",
+	"category_tutoriels_header": "Pages dans la catégorie « $1 »",
 	"category-manuals-header": "Manuels dans la catégorie « $1 »",
 	"category-latestdiscussions-header": "Les dernières discussions dans la catégorie « $1 »",
 	"category-latestdiscussions-btn-askquestion": "Poser une question",
