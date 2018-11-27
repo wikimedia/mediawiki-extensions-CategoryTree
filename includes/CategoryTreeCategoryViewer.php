@@ -313,7 +313,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			$ti = wfEscapeWikiText( $this->title->getText() );
 
 			$out .= "<div id=\"mw-pages\">\n";
-			$out .= '<h2>' . $this->msg( 'category_tutoriels_header', $ti )->parse() . "</h2>\n";
+			$out .= '<h2>' . $this->msg( 'category_tutoriels_header' )->parse() . "</h2>\n";
 			$out .= $r;
 			$out .= "\n</div>";
 		}
@@ -337,7 +337,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 		$WfExploreCore = new \WfExploreCore();
 
-		$WfExploreCore->setNamespace(array('Group'));
+		$WfExploreCore->setNamespace(array('Manual'));
 		$WfExploreCore->setPageResultsLimit($limit);
 		$WfExploreCore->setFilters(array());
 
@@ -353,18 +353,20 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 		$WfExploreCore->executeSearch( $request = null , $params);
 
-		$paramsOutput = [
-			'showPreviousButton' => true,
-			'isEmbed' => true
-		];
+		if ($WfExploreCore->getNbResults()) {
 
-		$ti = wfEscapeWikiText( $this->title->getText() );
+			$paramsOutput = [
+				'showPreviousButton' => true,
+				'isEmbed' => true
+			];
 
-		$out = "<div id=\"mw-manuals\">\n";
-		$out .= '<h2>' . $this->msg( 'category-manuals-header', $ti )->parse() . '</h2>';
-		$out .= $WfExploreCore->getSearchResultsHtml($paramsOutput);
-		$out .= "\n</div>";
+			$ti = wfEscapeWikiText( $this->title->getText() );
 
+			$out = "<div id=\"mw-manuals\">\n";
+			$out .= '<h2>' . $this->msg( 'category-manuals-header' )->parse() . '</h2>';
+			$out .= $WfExploreCore->getSearchResultsHtml($paramsOutput);
+			$out .= "\n</div>";
+		}
 
 		return $out;
 	}
@@ -390,7 +392,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 		$out = "<div id=\"mw-latest-discussions\">\n";
 		$out .= '<h2>';
-		$out .= $this->msg( 'category-latestdiscussions-header', $ti)->parse();
+		$out .= $this->msg( 'category-latestdiscussions-header' )->parse();
 		$out .= '<a class="btn btn-default pull-right" href="'.$newDiscussionTitle->getLinkURL(['page_title' => $ti]).'">'.wfMessage('category-latestdiscussions-btn-askquestion').'</a>';
 		$out .= '</h2>';
 		$out .= $ld->renderDiscussionsFromCategory($this->getTitle(), 10, 0);
