@@ -312,7 +312,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 			$ti = wfEscapeWikiText( $this->title->getText() );
 
-			$out .= "<div id=\"mw-pages\">\n";
+			$out .= "<div id=\"mw-dokit-pages\">\n";
 			$out .= '<h2>' . $this->msg( 'category_tutoriels_header', $ti )->parse() . "</h2>\n";
 			$out .= $r;
 			$out .= "\n</div>";
