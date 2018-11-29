@@ -366,9 +366,10 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			$out .= '<h2>' . $this->msg( 'category-manuals-header' )->parse() . '</h2>';
 			$out .= $WfExploreCore->getSearchResultsHtml($paramsOutput);
 			$out .= "\n</div>";
-		}
 
-		return $out;
+			return $out;
+		}
+		
 	}
 
 	/**
