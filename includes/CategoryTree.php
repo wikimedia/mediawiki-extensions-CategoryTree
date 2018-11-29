@@ -715,7 +715,7 @@ class CategoryTree {
 		$s .= Xml::openElement( 'a', [ 'class' => 'CategoryTreeSection', 'href' => $wikiLink] );
 
         # Open the image div
-        $s .= Xml::openElement('div', ['class' => 'CategoryTreeImage tagpattern-' . (hexdec(substr(md5(strtolower($tag)), 0, 6)) % 33)]);
+        $s .= Xml::openElement('div', ['class' => 'CategoryTreeImage tagpattern-' . (hexdec(substr(md5(strtolower($label)), 0, 6)) % 33)]);
         if ( $ns == NS_CATEGORY && $image !== null ){
             $s .= Xml::element('img', ['src' => $image->getFullUrl()]);
         }
