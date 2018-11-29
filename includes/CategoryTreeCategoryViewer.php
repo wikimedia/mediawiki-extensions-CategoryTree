@@ -353,7 +353,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 		$WfExploreCore->executeSearch( $request = null , $params);
 
-		if ($WfExploreCore->getNbResults()) {
+		if ($WfExploreCore->getNbResults() > 0) {
 
 			$paramsOutput = [
 				'showPreviousButton' => true,
