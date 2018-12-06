@@ -23,7 +23,7 @@
  * @author Daniel Kinzler, brightbyte.de
  */
 
-( function ( $, mw ) {
+( function () {
 	var loadChildren;
 
 	/**
@@ -205,4 +205,4 @@
 		attachHandler( $( '#p-categorytree-portlet' ) );
 	} );
 
-}( jQuery, mediaWiki ) );
+}() );
