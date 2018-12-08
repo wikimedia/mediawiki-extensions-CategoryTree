@@ -41,7 +41,8 @@
 	},
 	"ResourceModules": {
 		"ext.categoryTree": {
-			"scripts": "ext.categoryTree.js",
+			"scripts": "ext.categoryTree/ext.categoryTree.js",
+			"styles": "ext.categoryTree/ext.categoryTree.css",
 			"targets": [
 				"desktop",
 				"mobile"
@@ -64,12 +65,20 @@
 				"mediawiki.api"
 			]
 		},
-		"ext.categoryTree.css": {
+		"ext.categoryTree.styles": {
 			"targets": [
 				"desktop",
 				"mobile"
 			],
-			"styles": "ext.categoryTree.css"
+			"styles": "ext.categoryTree.styles.css"
+		},
+		"ext.categoryTree.css": {
+			"deprecated": "Use \"ext.categoryTree.styles\" instead.",
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": "ext.categoryTree.styles.css"
 		}
 	},
 	"ResourceFileModulePaths": {

@@ -251,7 +251,7 @@ class CategoryTree {
 	 */
 	public static function setHeaders( $outputPage ) {
 		# Add the modules
-		$outputPage->addModuleStyles( 'ext.categoryTree.css' );
+		$outputPage->addModuleStyles( 'ext.categoryTree.styles' );
 		$outputPage->addModules( 'ext.categoryTree' );
 	}
 

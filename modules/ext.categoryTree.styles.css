@@ -51,10 +51,6 @@
 	user-select: none;
 }
 
-.CategoryTreeToggleHandlerAttached {
-	cursor: pointer;
-}
-
 .CategoryTreeEmptyBullet {
 	color: #c0c0c0;
 }
