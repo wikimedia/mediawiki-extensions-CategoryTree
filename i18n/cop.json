@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"ⲁϩⲙⲉⲧ",
-			"Ⲁϩⲙⲉⲧ"
+			"Ⲁϩⲙⲉⲧ",
+			"Bloomaround"
 		]
 	},
 	"categorytree-expand": "ⲟⲩⲱϣⲥ",
-	"categorytree-num-pages": "$1 `ⲛⲥ"
+	"categorytree-num-pages": "$1 `ⲛⲥ",
+	"categorytree-num-files": "$1 `ⲛⲥ"
 }
