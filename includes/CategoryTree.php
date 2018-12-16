@@ -32,7 +32,7 @@ class CategoryTree {
 	/**
 	 * @param array $options
 	 */
-	public function __construct( $options ) {
+	public function __construct( array $options ) {
 		global $wgCategoryTreeDefaultOptions;
 
 		// ensure default values and order of options.
@@ -249,7 +249,7 @@ class CategoryTree {
 	 * Add ResourceLoader modules to the OutputPage object
 	 * @param OutputPage $outputPage
 	 */
-	public static function setHeaders( $outputPage ) {
+	public static function setHeaders( OutputPage $outputPage ) {
 		# Add the modules
 		$outputPage->addModuleStyles( 'ext.categoryTree.styles' );
 		$outputPage->addModules( 'ext.categoryTree' );
@@ -261,7 +261,7 @@ class CategoryTree {
 	 * @return mixed
 	 * @throws Exception
 	 */
-	protected static function encodeOptions( $options, $enc ) {
+	protected static function encodeOptions( array $options, $enc ) {
 		if ( $enc == 'mode' || $enc == '' ) {
 			$opt = $options['mode'];
 		} elseif ( $enc == 'json' ) {
@@ -319,7 +319,7 @@ class CategoryTree {
 	/**
 	 * Custom tag implementation. This is called by CategoryTreeHooks::parserHook, which is used to
 	 * load CategoryTreeFunctions.php on demand.
-	 * @param Parser $parser
+	 * @param Parser|null $parser
 	 * @param string $category
 	 * @param bool $hideroot
 	 * @param array $attr
@@ -327,8 +327,8 @@ class CategoryTree {
 	 * @param bool $allowMissing
 	 * @return bool|string
 	 */
-	public function getTag( $parser, $category, $hideroot = false, $attr = [], $depth = 1,
-		$allowMissing = false
+	public function getTag( Parser $parser = null, $category, $hideroot = false, array $attr = [],
+		$depth = 1, $allowMissing = false
 	) {
 		global $wgCategoryTreeDisableCache;
 
@@ -391,7 +391,7 @@ class CategoryTree {
 	 * @param int $depth
 	 * @return string
 	 */
-	public function renderChildren( $title, $depth = 1 ) {
+	public function renderChildren( Title $title, $depth = 1 ) {
 		global $wgCategoryTreeMaxChildren, $wgCategoryTreeUseCategoryTable;
 
 		if ( $title->getNamespace() != NS_CATEGORY ) {
@@ -489,7 +489,7 @@ class CategoryTree {
 	 * @param Title $title
 	 * @return string
 	 */
-	public function renderParents( $title ) {
+	public function renderParents( Title $title ) {
 		global $wgCategoryTreeMaxChildren;
 
 		$dbr = wfGetDB( DB_REPLICA );
@@ -538,7 +538,7 @@ class CategoryTree {
 	 * @param int $children
 	 * @return string
 	 */
-	public function renderNode( $title, $children = 0 ) {
+	public function renderNode( Title $title, $children = 0 ) {
 		global $wgCategoryTreeUseCategoryTable;
 
 		if ( $wgCategoryTreeUseCategoryTable && $title->getNamespace() == NS_CATEGORY
@@ -556,11 +556,11 @@ class CategoryTree {
 	 * Returns a string with a HTML represenation of the given page.
 	 * $info must be an associative array, containing at least a Title object under the 'title' key.
 	 * @param Title $title
-	 * @param Category $cat
+	 * @param Category|null $cat
 	 * @param int $children
 	 * @return string
 	 */
-	public function renderNodeInfo( $title, $cat, $children = 0 ) {
+	public function renderNodeInfo( Title $title, Category $cat = null, $children = 0 ) {
 		$mode = $this->getOption( 'mode' );
 
 		$ns = $title->getNamespace();
@@ -704,7 +704,9 @@ class CategoryTree {
 	 * @param int $countMode
 	 * @return string
 	 */
-	public static function createCountString( IContextSource $context, $cat, $countMode ) {
+	public static function createCountString( IContextSource $context, Category $cat = null,
+		$countMode
+	) {
 		global $wgContLang;
 
 		# Get counts, with conversion to integer so === works

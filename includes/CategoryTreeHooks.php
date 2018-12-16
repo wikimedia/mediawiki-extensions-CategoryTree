@@ -71,7 +71,7 @@ class CategoryTreeHooks {
 	/**
 	 * @param Parser $parser
 	 */
-	public static function setHooks( $parser ) {
+	public static function setHooks( Parser $parser ) {
 		global $wgCategoryTreeAllowTag;
 		if ( !$wgCategoryTreeAllowTag ) {
 			return;
@@ -86,7 +86,7 @@ class CategoryTreeHooks {
 	 * @param Parser $parser
 	 * @return array|string
 	 */
-	public static function parserFunction( $parser ) {
+	public static function parserFunction( Parser $parser ) {
 		$params = func_get_args();
 		array_shift( $params ); // first is $parser, strip it
 
@@ -144,7 +144,12 @@ class CategoryTreeHooks {
 	 * @param bool $allowMissing
 	 * @return bool|string
 	 */
-	public static function parserHook( $cat, $argv, $parser = null, $allowMissing = false ) {
+	public static function parserHook(
+		$cat,
+		array $argv,
+		Parser $parser = null,
+		$allowMissing = false
+	) {
 		if ( $parser ) {
 			$parser->mOutput->mCategoryTreeTag = true; # flag for use by CategoryTreeHooks::parserOutput
 		}
@@ -174,7 +179,7 @@ class CategoryTreeHooks {
 	 * @param OutputPage $outputPage
 	 * @param ParserOutput $parserOutput
 	 */
-	public static function parserOutput( $outputPage, $parserOutput ) {
+	public static function parserOutput( OutputPage $outputPage, ParserOutput $parserOutput ) {
 		if ( self::shouldForceHeaders() ) {
 			// Skip, we've already set the headers unconditionally
 			return;
@@ -201,10 +206,10 @@ class CategoryTreeHooks {
 	 * ArticleFromTitle hook, override category page handling
 	 *
 	 * @param Title $title
-	 * @param Article &$article
+	 * @param Article|null &$article Article (object) that will be returned
 	 * @return bool
 	 */
-	public static function articleFromTitle( $title, &$article ) {
+	public static function articleFromTitle( Title $title, Article &$article = null ) {
 		if ( $title->getNamespace() == NS_CATEGORY ) {
 			$article = new CategoryTreeCategoryPage( $title );
 		}
@@ -218,7 +223,11 @@ class CategoryTreeHooks {
 	 * @param array &$links
 	 * @return bool
 	 */
-	public static function outputPageMakeCategoryLinks( &$out, $categories, &$links ) {
+	public static function outputPageMakeCategoryLinks(
+		OutputPage &$out,
+		array $categories,
+		array &$links
+	) {
 		global $wgCategoryTreePageCategoryOptions, $wgCategoryTreeHijackPageCategories;
 
 		if ( !$wgCategoryTreeHijackPageCategories ) {
@@ -238,7 +247,7 @@ class CategoryTreeHooks {
 	 * @param array &$vars
 	 * @return bool
 	 */
-	public static function getConfigVars( &$vars ) {
+	public static function getConfigVars( array &$vars ) {
 		global $wgCategoryTreeCategoryPageOptions;
 
 		// Look this is pretty bad but Category tree is just whacky, it needs to be rewritten
@@ -253,7 +262,7 @@ class CategoryTreeHooks {
 	 * @param array $trackingCategories [ 'msg' => Title, 'cats' => Title[] ]
 	 */
 	public static function onSpecialTrackingCategoriesPreprocess(
-		$specialPage, $trackingCategories
+		SpecialPage $specialPage, array $trackingCategories
 	) {
 		$categoryDbKeys = [];
 		foreach ( $trackingCategories as $catMsg => $data ) {
@@ -284,7 +293,7 @@ class CategoryTreeHooks {
 	 * @param string &$html Result html
 	 */
 	public static function onSpecialTrackingCategoriesGenerateCatLink(
-		$specialPage, $catTitle, &$html
+		SpecialPage $specialPage, Title $catTitle, &$html
 	) {
 		if ( !isset( $specialPage->categoryTreeCategories ) ) {
 			return;

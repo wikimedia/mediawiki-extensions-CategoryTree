@@ -90,7 +90,7 @@ class ApiCategoryTree extends ApiBase {
 	 * @param Config $ctConfig Config for CategoryTree
 	 * @return string HTML
 	 */
-	private function getHTML( $ct, $title, $depth, $ctConfig ) {
+	private function getHTML( CategoryTree $ct, Title $title, $depth, Config $ctConfig ) {
 		global $wgContLang, $wgMemc;
 
 		$mckey = wfMemcKey(
