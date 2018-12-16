@@ -97,16 +97,11 @@
 }
 
 .CategoryTreeCategoryBarItem {
-	/* yes, specify display twice! quirk for FF2 */
-	display: -moz-inline-box;
 	display: inline-block;
 	/* why is the -0.5ex needed? */
 	margin: -0.5ex 0 0 1ex;
 	padding: 0;
 	vertical-align: top;
-	/* IE6-7 Hack for display: inline-block */
-	zoom: 1;
-	*display: inline; /* stylelint-disable-line declaration-block-no-duplicate-properties */
 }
 
 .CategoryTreeSection {
