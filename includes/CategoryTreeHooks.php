@@ -117,9 +117,9 @@ class CategoryTreeHooks {
 	 * Hook implementation for injecting a category tree into the sidebar.
 	 * Only does anything if $wgCategoryTreeSidebarRoot is set to a category name.
 	 * @param Skin $skin
-	 * @param SkinTemplate $tpl
+	 * @param array &$sidebar
 	 */
-	public static function skinTemplateOutputPageBeforeExec( $skin, $tpl ) {
+	public static function onSkinBuildSidebar( Skin $skin, array &$sidebar ) {
 		global $wgCategoryTreeSidebarRoot, $wgCategoryTreeSidebarOptions;
 
 		if ( !$wgCategoryTreeSidebarRoot ) {
@@ -128,7 +128,7 @@ class CategoryTreeHooks {
 
 		$html = self::parserHook( $wgCategoryTreeSidebarRoot, $wgCategoryTreeSidebarOptions );
 		if ( $html ) {
-			$tpl->data['sidebar']['categorytree-portlet'] = $html;
+			$sidebar['categorytree-portlet'] = $html;
 		}
 	}
 

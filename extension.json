@@ -95,7 +95,7 @@
 		"SpecialTrackingCategories::generateCatLink": [
 			"CategoryTreeHooks::onSpecialTrackingCategoriesGenerateCatLink"
 		],
-		"SkinTemplateOutputPageBeforeExec": "CategoryTreeHooks::skinTemplateOutputPageBeforeExec",
+		"SkinBuildSidebar": "CategoryTreeHooks::onSkinBuildSidebar",
 		"MakeGlobalVariablesScript": "CategoryTreeHooks::getConfigVars",
 		"ParserFirstCallInit": "CategoryTreeHooks::setHooks",
 		"OutputPageMakeCategoryLinks": "CategoryTreeHooks::outputPageMakeCategoryLinks",
