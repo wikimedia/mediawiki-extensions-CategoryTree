@@ -28,11 +28,13 @@
  */
 class CategoryTreeHooks {
 
+	/**
+	 * @internal For use by CategoryTreeCategoryViewer and CategoryTreePage only!
+	 * @return bool
+	 */
 	public static function shouldForceHeaders() {
-		global $wgCategoryTreeSidebarRoot, $wgCategoryTreeHijackPageCategories,
-			$wgCategoryTreeForceHeaders;
-		return $wgCategoryTreeForceHeaders || $wgCategoryTreeSidebarRoot
-			|| $wgCategoryTreeHijackPageCategories;
+		global $wgCategoryTreeForceHeaders;
+		return $wgCategoryTreeForceHeaders;
 	}
 
 	/**
@@ -129,6 +131,7 @@ class CategoryTreeHooks {
 		$html = self::parserHook( $wgCategoryTreeSidebarRoot, $wgCategoryTreeSidebarOptions );
 		if ( $html ) {
 			$sidebar['categorytree-portlet'] = $html;
+			CategoryTree::setHeaders( $skin->getOutput() );
 		}
 	}
 
@@ -142,12 +145,8 @@ class CategoryTreeHooks {
 	 * @return bool|string
 	 */
 	public static function parserHook( $cat, $argv, $parser = null, $allowMissing = false ) {
-		global $wgOut;
-
 		if ( $parser ) {
 			$parser->mOutput->mCategoryTreeTag = true; # flag for use by CategoryTreeHooks::parserOutput
-		} else {
-			CategoryTree::setHeaders( $wgOut );
 		}
 
 		$ct = new CategoryTree( $argv );
@@ -229,6 +228,7 @@ class CategoryTreeHooks {
 
 		foreach ( $categories as $category => $type ) {
 			$links[$type][] = self::parserHook( $category, $wgCategoryTreePageCategoryOptions, null, true );
+			CategoryTree::setHeaders( $out );
 		}
 
 		return false;
