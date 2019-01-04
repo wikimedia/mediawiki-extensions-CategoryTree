@@ -235,27 +235,6 @@ class CategoryTreeHooks {
 	}
 
 	/**
-	 * @param Skin $skin
-	 * @param array &$links
-	 * @param string &$result
-	 * @return bool
-	 */
-	public static function skinJoinCategoryLinks( $skin, &$links, &$result ) {
-		global $wgCategoryTreeHijackPageCategories;
-		if ( !$wgCategoryTreeHijackPageCategories ) {
-			// Not enabled, don't do anything.
-			return true;
-		}
-		$embed = '<div class="CategoryTreeCategoryBarItem">';
-		$pop = '</div>';
-		$sep = ' ';
-
-		$result = $embed . implode( "{$pop} {$sep} {$embed}", $links ) . $pop;
-
-		return false;
-	}
-
-	/**
 	 * @param array &$vars
 	 * @return bool
 	 */

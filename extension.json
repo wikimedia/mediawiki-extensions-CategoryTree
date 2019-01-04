@@ -99,7 +99,6 @@
 		"MakeGlobalVariablesScript": "CategoryTreeHooks::getConfigVars",
 		"ParserFirstCallInit": "CategoryTreeHooks::setHooks",
 		"OutputPageMakeCategoryLinks": "CategoryTreeHooks::outputPageMakeCategoryLinks",
-		"SkinJoinCategoryLinks": "CategoryTreeHooks::skinJoinCategoryLinks",
 		"BeforePageDisplay": "CategoryTreeHooks::addHeaders",
 		"BeforePageDisplayMobile": "CategoryTreeHooks::addHeaders",
 		"OutputPageParserOutput": "CategoryTreeHooks::parserOutput"
