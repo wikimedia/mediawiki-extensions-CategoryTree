@@ -327,6 +327,8 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	 */
 	function getManualsSection(){
 		global $IP;
+		global $wgExploreResultsLayouts ;
+
 
 		// Stop if GroupsPage extension doesn't exists, do not generate Manuals list
 		if(!file_exists("$IP/extensions/GroupsPage/GroupsPage.php")){
@@ -342,7 +344,13 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		$WfExploreCore->setFilters(array());
 
 		$formatter = new \WikifabExploreResultFormatter();
-		$formatter->setTemplate(__DIR__ . '/../../GroupsPage/layout/layout-group-search-result.html');
+
+		$layout = __DIR__ . '/../../GroupsPage/layout/layout-group-search-result.html';
+		if(isset($wgExploreResultsLayouts['group'])) {
+			$layout = $wgExploreResultsLayouts['group'];
+		}
+		// $wgExploreResultsLayouts = ['group' => __DIR__ . '/extensions/WfextStyle/templates/layout-group-search-result.html'];
+		$formatter->setTemplate($layout);
 
 		$WfExploreCore->setFormatter($formatter);
 
@@ -369,7 +377,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 
 			return $out;
 		}
-		
+
 	}
 
 	/**
