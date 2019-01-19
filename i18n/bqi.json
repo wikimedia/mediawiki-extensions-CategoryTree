@@ -7,8 +7,8 @@
 	},
 	"categorytree-mode-all": "همه بلگه آ",
 	"categorytree-collapse": "جم كردن",
-	"categorytree-expand": "وا كردن",
-	"categorytree-member-counts": "هو د ڤر گرهڌإ {{PLURAL:$1|1 زیردسدأ|$1 زيردسدأ آ}}, {{PLURAL:$2|1 بألگأ|$2 بألگإیل}}, و {{PLURAL:$3|1 جانيا|$3 جانيایل}} إ",
+	"categorytree-expand": "گٱپ کلۊن کردن",
+	"categorytree-member-counts": "هو ز ڤٱر گرهڌاْ {{PLURAL:$1|1 زیردٱسداْ|$1 زيردٱسداْیٱل}}, {{PLURAL:$2|1 بٱلگاْ|$2 بٱلگاْیٱل}}, و {{PLURAL:$3|1 جانيا|$3 جانيایٱل}} اْ",
 	"categorytree-num-categories": "$1 س",
 	"categorytree-num-pages": " $1 پ",
 	"categorytree-num-files": " $1 ف"
