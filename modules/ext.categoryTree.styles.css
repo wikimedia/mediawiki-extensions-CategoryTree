@@ -96,14 +96,6 @@
 	font-style: italic;
 }
 
-.CategoryTreeCategoryBarItem {
-	display: inline-block;
-	/* why is the -0.5ex needed? */
-	margin: -0.5ex 0 0 1ex;
-	padding: 0;
-	vertical-align: top;
-}
-
 .CategoryTreeSection {
 	direction: ltr;
 }
