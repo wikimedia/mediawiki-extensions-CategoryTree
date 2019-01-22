@@ -200,6 +200,10 @@
 	// Register click events
 	mw.hook( 'wikipage.content' ).add( attachHandler );
 
+	// Attach click handler for categories.
+	// This is needed when wgCategoryTreeHijackPageCategories is enabled.
+	mw.hook( 'wikipage.categories' ).add( attachHandler );
+
 	$( function () {
 		// Attach click handler for sidebar
 		attachHandler( $( '#p-categorytree-portlet' ) );
