@@ -335,7 +335,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			return '';
 		}
 
-		$limit = 8;
+		$limit = 6;
 
 		$WfExploreCore = new \WfExploreCore();
 
@@ -364,8 +364,10 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		if ($WfExploreCore->getNbResults() > 0) {
 
 			$paramsOutput = [
-				'showPreviousButton' => true,
-				'isEmbed' => true
+				'showPreviousButton' => false,
+				'isEmbed' => true,
+				'loadMoreLabel' => $this->msg( 'categorytree-loadmoremanuals-label' )->parse(),
+				'noAutoLoadOnScroll' => true
 			];
 
 			$ti = wfEscapeWikiText( $this->title->getText() );
