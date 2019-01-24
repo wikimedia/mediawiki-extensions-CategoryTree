@@ -359,6 +359,10 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			'nolang' => true
 		];
 
+		if(isset($_GET['page'])) {
+			$params['page'] = $_GET['page'];
+		}
+
 		$WfExploreCore->executeSearch( $request = null , $params);
 
 		if ($WfExploreCore->getNbResults() > 0) {
