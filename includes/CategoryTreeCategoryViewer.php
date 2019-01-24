@@ -303,10 +303,9 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 			//$out .= $WfExploreCore->getHtmlForm();
 
 			$paramsOutput = [
-					'showPreviousButton' => true,
-					//'noLoadMoreButton' => true,
-					//'replaceClass' => 'exploreQueryResult',
-					'isEmbed' => true
+					'showPreviousButton' => false,
+					'isEmbed' => true,
+					'noAutoLoadOnScroll' => true
 			];
 			$r .= $WfExploreCore->getSearchResultsHtml($paramsOutput);
 
