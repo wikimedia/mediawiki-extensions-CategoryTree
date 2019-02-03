@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Bonevarluri",
-			"Mogoeilor"
+			"Mogoeilor",
+			"Lorestani"
 		]
 	},
 	"categorytree": "دار دسه",
@@ -12,8 +13,8 @@
 	"categorytree-header": "یه گل نوم دسه سی دیئن چیا مئن وه شکل یه سازه داری وارد بکید.\nبنیسید که که یه تاوع جاوا اسکریپت پیشکرده که چی آجاکس اشناخته با میها.\nار جاگردتو فره قدیمیه،یا جاوا اسکریپت فعال نئ،وه کار نمی که.",
 	"categorytree-category": "دسه:",
 	"categorytree-go": "وه شلك دار نشون بيه",
-	"categorytree-parents": "ریشه",
-	"categorytree-mode-label": "مد:",
+	"categorytree-parents": "ریشٱ",
+	"categorytree-mode-label": "مود:",
 	"categorytree-mode-categories": "فقط دسه یا",
 	"categorytree-mode-pages": "بلگیا وه جؤز فایلیا",
 	"categorytree-mode-all": "همه بلگيا",
@@ -23,9 +24,9 @@
 	"categorytree-num-categories": "$1 س",
 	"categorytree-num-pages": " $1 پ",
 	"categorytree-num-files": " $1 ف",
-	"categorytree-num-empty": "حالی",
-	"categorytree-load": "سوۋار كرد",
-	"categorytree-loading": "د حالت سوار كرد",
+	"categorytree-num-empty": "هالٛی",
+	"categorytree-load": "سڤار كرد",
+	"categorytree-loading": "د هال ۉ بال سڤار كرد",
 	"categorytree-nothing-found": "هيچی پيدا نبی",
 	"categorytree-no-subcategories": "بی زيردسه يا",
 	"categorytree-no-parent-categories": "نه دسه یا ایسنی",
