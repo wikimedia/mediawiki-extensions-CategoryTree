@@ -207,13 +207,11 @@ class CategoryTreeHooks {
 	 *
 	 * @param Title $title
 	 * @param Article|null &$article Article (object) that will be returned
-	 * @return bool
 	 */
 	public static function articleFromTitle( Title $title, Article &$article = null ) {
 		if ( $title->getNamespace() == NS_CATEGORY ) {
 			$article = new CategoryTreeCategoryPage( $title );
 		}
-		return true;
 	}
 
 	/**
@@ -244,8 +242,8 @@ class CategoryTreeHooks {
 	}
 
 	/**
+	 * MakeGlobalVariablesScript hook
 	 * @param array &$vars
-	 * @return bool
 	 */
 	public static function getConfigVars( array &$vars ) {
 		global $wgCategoryTreeCategoryPageOptions;
@@ -253,7 +251,6 @@ class CategoryTreeHooks {
 		// Look this is pretty bad but Category tree is just whacky, it needs to be rewritten
 		$ct = new CategoryTree( $wgCategoryTreeCategoryPageOptions );
 		$vars['wgCategoryTreePageCategoryOptions'] = $ct->getOptionsAsJsStructure();
-		return true;
 	}
 
 	/**
