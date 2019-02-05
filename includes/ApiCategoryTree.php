@@ -17,6 +17,9 @@
  */
 
 class ApiCategoryTree extends ApiBase {
+	/**
+	 * @inheritDoc
+	 */
 	public function execute() {
 		$params = $this->extractRequestParams();
 		$options = [];
@@ -125,6 +128,9 @@ class ApiCategoryTree extends ApiBase {
 		return trim( $html );
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	public function getAllowedParams() {
 		return [
 			'category' => [
@@ -137,6 +143,9 @@ class ApiCategoryTree extends ApiBase {
 		];
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	public function isInternal() {
 		return true;
 	}

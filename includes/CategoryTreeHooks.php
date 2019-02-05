@@ -88,11 +88,13 @@ class CategoryTreeHooks {
 	 */
 	public static function parserFunction( Parser $parser ) {
 		$params = func_get_args();
-		array_shift( $params ); // first is $parser, strip it
+		// first is $parser, strip it
+		array_shift( $params );
 
 		// first user-supplied parameter must be category name
 		if ( !$params ) {
-			return ''; // no category specified, return nothing
+			// no category specified, return nothing
+			return '';
 		}
 		$cat = array_shift( $params );
 
@@ -101,7 +103,8 @@ class CategoryTreeHooks {
 		foreach ( $params as $p ) {
 			if ( preg_match( '/^\s*(\S.*?)\s*=\s*(.*?)\s*$/', $p, $m ) ) {
 				$k = $m[1];
-				$v = preg_replace( '/^"\s*(.*?)\s*"$/', '$1', $m[2] ); // strip any quotes enclusing the value
+				// strip any quotes enclusing the value
+				$v = preg_replace( '/^"\s*(.*?)\s*"$/', '$1', $m[2] );
 			} else {
 				$k = trim( $p );
 				$v = true;
@@ -151,7 +154,8 @@ class CategoryTreeHooks {
 		$allowMissing = false
 	) {
 		if ( $parser ) {
-			$parser->mOutput->mCategoryTreeTag = true; # flag for use by CategoryTreeHooks::parserOutput
+			# flag for use by CategoryTreeHooks::parserOutput
+			$parser->mOutput->mCategoryTreeTag = true;
 		}
 
 		$ct = new CategoryTree( $argv );
