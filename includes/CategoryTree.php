@@ -126,7 +126,8 @@ class CategoryTree {
 			}
 		}
 
-		sort( $namespaces ); # get elements into canonical order
+		# get elements into canonical order
+		sort( $namespaces );
 		return $namespaces;
 	}
 
@@ -720,7 +721,8 @@ class CategoryTree {
 		$attr = [
 			'title' => $context->msg( 'categorytree-member-counts' )
 				->numParams( $subcatCount, $pages, $fileCount, $allCount, $countMode )->text(),
-			'dir' => $context->getLanguage()->getDir() # numbers and commas get messed up in a mixed dir env
+			# numbers and commas get messed up in a mixed dir env
+			'dir' => $context->getLanguage()->getDir()
 		];
 
 		$s = $wgContLang->getDirMark() . ' ';

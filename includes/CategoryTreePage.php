@@ -207,6 +207,9 @@ class CategoryTreePage extends SpecialPage {
 		}, $result );
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function getGroupName() {
 		return 'pages';
 	}
