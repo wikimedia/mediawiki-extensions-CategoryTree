@@ -108,6 +108,38 @@
 	color: #0645ad;
 }
 
+/* The :empty selector in the following selectors prevents the cached HTML
+ * that includes a bullet in the HTML from showing two bullets. After the cache
+ * has expired the :empty selectors can be removed.
+ */
+/* @noflip */
+body.ltr .CategoryTreeEmptyBullet:empty:before,
+body.ltr .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty:before,
+body.mediawiki .mw-content-ltr .CategoryTreeEmptyBullet:empty:before,
+body.mediawiki .mw-content-ltr .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty:before,
+body.mediawiki .mw-content-rtl .mw-content-ltr .CategoryTreeEmptyBullet:empty:before,
+body.mediawiki .mw-content-rtl .mw-content-ltr .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty:before {
+	content: '►';
+}
+
+/* @noflip */
+body.rtl .CategoryTreeEmptyBullet:empty:before,
+body.rtl .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty:before,
+body.mediawiki .mw-content-rtl .CategoryTreeEmptyBullet:empty:before,
+body.mediawiki .mw-content-rtl .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty:before,
+body.mediawiki .mw-content-ltr .mw-content-rtl .CategoryTreeEmptyBullet:empty:before,
+body.mediawiki .mw-content-ltr .mw-content-rtl .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty:before {
+	content: '◄';
+}
+
+.CategoryTreeToggle[ data-ct-state='expanded' ]:empty:before {
+	content: '▼';
+}
+
+.CategoryTreePageBullet:before {
+	content: '\A0';
+}
+
 .CategoryTreeLabelPage {
 	font-style: italic;
 }

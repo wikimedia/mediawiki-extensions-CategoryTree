@@ -39,9 +39,8 @@
 		$children.show();
 
 		$link
-			.text( mw.msg( 'categorytree-collapse-bullet' ) )
 			.attr( 'title', mw.msg( 'categorytree-collapse' ) )
-			.data( 'ct-state', 'expanded' );
+			.attr( 'data-ct-state', 'expanded' );
 
 		if ( !$link.data( 'ct-loaded' ) ) {
 			loadChildren( $link, $children );
@@ -59,9 +58,8 @@
 			.siblings( '.CategoryTreeChildren' ).hide();
 
 		$link
-			.text( mw.msg( 'categorytree-expand-bullet' ) )
 			.attr( 'title', mw.msg( 'categorytree-expand' ) )
-			.data( 'ct-state', 'collapsed' );
+			.attr( 'data-ct-state', 'collapsed' );
 	}
 
 	/**
@@ -71,7 +69,7 @@
 	 */
 	function handleNode() {
 		var $link = $( this );
-		if ( $link.data( 'ct-state' ) === 'collapsed' ) {
+		if ( $link.attr( 'data-ct-state' ) === 'collapsed' ) {
 			expandNode( $link );
 		} else {
 			collapseNode( $link );
@@ -88,7 +86,7 @@
 			.on( 'click', handleNode )
 			.attr( 'title', function () {
 				return mw.msg(
-					$( this ).data( 'ct-state' ) === 'collapsed' ?
+					$( this ).attr( 'data-ct-state' ) === 'collapsed' ?
 						'categorytree-expand' :
 						'categorytree-collapse'
 				);

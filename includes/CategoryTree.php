@@ -656,7 +656,7 @@ class CategoryTree {
 				}
 			}
 			if ( $count === 0 ) {
-				$bullet = wfMessage( 'categorytree-empty-bullet' )->escaped() . ' ';
+				$bullet = '';
 				$attr['class'] = 'CategoryTreeEmptyBullet';
 			} else {
 				$linkattr = [];
@@ -665,21 +665,17 @@ class CategoryTree {
 				$linkattr['data-ct-title'] = $key;
 
 				if ( $children == 0 ) {
-					// Use ->plain() to ensure identical result as JS,
-					// which does:
-					// $link.text( mw.msg( 'categorytree-expand-bullet' ) );
-					$txt = wfMessage( 'categorytree-expand-bullet' )->plain();
 					$linkattr[ 'data-ct-state' ] = 'collapsed';
 				} else {
-					$txt = wfMessage( 'categorytree-collapse-bullet' )->plain();
 					$linkattr[ 'data-ct-loaded' ] = true;
 					$linkattr[ 'data-ct-state' ] = 'expanded';
 				}
 
-				$bullet = Html::element( 'span', $linkattr, $txt ) . ' ';
+				$bullet = Html::element( 'span', $linkattr ) . ' ';
 			}
 		} else {
-			$bullet = wfMessage( 'categorytree-page-bullet' )->escaped();
+			$bullet = '';
+			$attr['class'] = 'CategoryTreePageBullet';
 		}
 		$s .= Xml::tags( 'span', $attr, $bullet ) . ' ';
 
