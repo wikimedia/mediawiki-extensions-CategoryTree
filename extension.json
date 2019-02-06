@@ -71,14 +71,6 @@
 				"mobile"
 			],
 			"styles": "ext.categoryTree.styles.css"
-		},
-		"ext.categoryTree.css": {
-			"deprecated": "Use \"ext.categoryTree.styles\" instead.",
-			"targets": [
-				"desktop",
-				"mobile"
-			],
-			"styles": "ext.categoryTree.styles.css"
 		}
 	},
 	"ResourceFileModulePaths": {
