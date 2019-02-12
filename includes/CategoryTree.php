@@ -638,20 +638,19 @@ class CategoryTree {
 				$linkattr[ 'class' ] = "CategoryTreeToggle";
 				$linkattr['data-ct-title'] = $key;
 
-				$tag = 'span';
 				if ( $children == 0 ) {
-					// Use ->plain() and htmlspecialchars() to ensure
-					// identical to what is done by JS, which does:
-					// $link.text( mw.msg( 'categorytree-expand-bullet' ) )
-					$txt = htmlspecialchars( wfMessage( 'categorytree-expand-bullet' )->plain() );
+					// Use ->plain() to ensure identical result as JS,
+					// which does:
+					// $link.text( mw.msg( 'categorytree-expand-bullet' ) );
+					$txt = wfMessage( 'categorytree-expand-bullet' )->plain();
 					$linkattr[ 'data-ct-state' ] = 'collapsed';
 				} else {
-					$txt = htmlspecialchars( wfMessage( 'categorytree-collapse-bullet' )->plain() );
+					$txt = wfMessage( 'categorytree-collapse-bullet' )->plain();
 					$linkattr[ 'data-ct-loaded' ] = true;
 					$linkattr[ 'data-ct-state' ] = 'expanded';
 				}
 
-				$bullet = Xml::openElement( $tag, $linkattr ) . $txt . Xml::closeElement( $tag ) . ' ';
+				$bullet = Html::element( 'span', $linkattr, $txt ) . ' ';
 			}
 		} else {
 			$bullet = wfMessage( 'categorytree-page-bullet' )->escaped();
