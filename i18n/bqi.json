@@ -5,6 +5,7 @@
 			"Mogoeilor"
 		]
 	},
+	"categorytree-portlet": "دٱسداْیٱل",
 	"categorytree-category": "دٱسداْ:",
 	"categorytree-parents": "دا بڤۊ",
 	"categorytree-mode-label": "مود:",
@@ -14,5 +15,8 @@
 	"categorytree-member-counts": "هو ز ڤٱر گرهڌاْ {{PLURAL:$1|1 زیردٱسداْ|$1 زيردٱسداْیٱل}}, {{PLURAL:$2|1 بٱلگاْ|$2 بٱلگاْیٱل}}, و {{PLURAL:$3|1 جانيا|$3 جانيایٱل}} اْ",
 	"categorytree-num-categories": "$1 س",
 	"categorytree-num-pages": " $1 پ",
-	"categorytree-num-files": " $1 ف"
+	"categorytree-num-files": " $1 ف",
+	"categorytree-num-empty": "هالی",
+	"categorytree-load": "سوڤار كرد",
+	"categorytree-loading": "ب هال و بال سوڤار كرد"
 }
