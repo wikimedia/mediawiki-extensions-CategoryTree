@@ -301,7 +301,6 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
     height: 30px;
     overflow: hidden;
     position: relative;
-    z-index: 1;
     background-size: cover;
     background-position: center;
 }
@@ -357,7 +356,7 @@ a.CategoryTreeSection {
 }
 
 a.CategoryTreeSection h3 {
-    font-size: 22px;
+    font-size: 18px;
     text-overflow: ellipsis;
     overflow: hidden;
     width: 100%;
