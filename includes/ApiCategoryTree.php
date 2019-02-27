@@ -40,27 +40,10 @@ class ApiCategoryTree extends ApiBase {
 
 		$ct = new CategoryTree( $options );
 		$depth = CategoryTree::capDepth( $ct->getOption( 'mode' ), $depth );
-		$config = $this->getConfig();
 		$ctConfig = ConfigFactory::getDefaultInstance()->makeConfig( 'categorytree' );
 		$html = $this->getHTML( $ct, $title, $depth, $ctConfig );
 
-		if (
-			$ctConfig->get( 'CategoryTreeHTTPCache' ) &&
-			$config->get( 'SquidMaxage' ) &&
-			$config->get( 'UseSquid' )
-		) {
-			if ( $config->get( 'UseESI' ) ) {
-				$this->getRequest()->response()->header(
-					'Surrogate-Control: max-age=' . $config->get( 'SquidMaxage' ) . ', content="ESI/1.0"'
-				);
-				$this->getMain()->setCacheMaxAge( 0 );
-			} else {
-				$this->getMain()->setCacheMaxAge( $config->get( 'SquidMaxage' ) );
-			}
-			// cache for anons only
-			$this->getRequest()->response()->header( 'Vary: Accept-Encoding, Cookie' );
-			// TODO: purge the squid cache when a category page is invalidated
-		}
+		$this->getMain()->setCacheMode( 'public' );
 
 		$this->getResult()->addContentValue( $this->getModuleName(), 'html', $html );
 	}
