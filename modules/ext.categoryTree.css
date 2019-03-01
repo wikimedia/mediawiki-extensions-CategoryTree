@@ -204,10 +204,8 @@ body[class^='page-Catégorie_'] .mw-indicators, body[class*='page-Catégorie_'] 
 }
 
 .mw-category-generated h2 {
-    border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
     font-size: 25px;
-    margin-bottom: 20px;
     float: left;
     margin-top: 20px;
     width: 100%;
