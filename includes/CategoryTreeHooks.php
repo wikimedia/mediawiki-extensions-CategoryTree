@@ -84,13 +84,10 @@ class CategoryTreeHooks {
 	 * Entry point for the {{#categorytree}} tag parser function.
 	 * This is a wrapper around CategoryTreeHooks::parserHook
 	 * @param Parser $parser
+	 * @param string ...$params
 	 * @return array|string
 	 */
-	public static function parserFunction( Parser $parser ) {
-		$params = func_get_args();
-		// first is $parser, strip it
-		array_shift( $params );
-
+	public static function parserFunction( Parser $parser, ...$params ) {
 		// first user-supplied parameter must be category name
 		if ( !$params ) {
 			// no category specified, return nothing
