@@ -138,6 +138,7 @@ class CategoryTreeHooks {
 	/**
 	 * Entry point for the <categorytree> tag parser hook.
 	 * This loads CategoryTreeFunctions.php and calls CategoryTree::getTag()
+	 * @suppress PhanUndeclaredProperty ParserOutput->mCategoryTreeTag
 	 * @param string $cat
 	 * @param array $argv
 	 * @param Parser|null $parser
@@ -177,6 +178,7 @@ class CategoryTreeHooks {
 	 * Hook callback that injects messages and things into the <head> tag,
 	 * if needed in the current page.
 	 * Does nothing if $parserOutput->mCategoryTreeTag is not set
+	 * @suppress PhanUndeclaredProperty ParserOutput->mCategoryTreeTag
 	 * @param OutputPage $outputPage
 	 * @param ParserOutput $parserOutput
 	 */
@@ -256,6 +258,7 @@ class CategoryTreeHooks {
 
 	/**
 	 * Hook handler for the SpecialTrackingCategories::preprocess hook
+	 * @suppress PhanUndeclaredProperty SpecialPage->categoryTreeCategories
 	 * @param SpecialPage $specialPage SpecialTrackingCategories object
 	 * @param array $trackingCategories [ 'msg' => Title, 'cats' => Title[] ]
 	 */
@@ -286,6 +289,7 @@ class CategoryTreeHooks {
 
 	/**
 	 * Hook handler for the SpecialTrackingCategories::generateCatLink hook
+	 * @suppress PhanUndeclaredProperty SpecialPage->categoryTreeCategories
 	 * @param SpecialPage $specialPage SpecialTrackingCategories object
 	 * @param Title $catTitle Title object of the linked category
 	 * @param string &$html Result html

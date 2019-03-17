@@ -30,6 +30,7 @@ class CategoryTree {
 	public $mOptions = [];
 
 	/**
+	 * @suppress PhanTypeInvalidDimOffset
 	 * @param array $options
 	 */
 	public function __construct( array $options ) {
@@ -320,6 +321,7 @@ class CategoryTree {
 	/**
 	 * Custom tag implementation. This is called by CategoryTreeHooks::parserHook, which is used to
 	 * load CategoryTreeFunctions.php on demand.
+	 * @suppress PhanParamReqAfterOpt $parser is not optional but nullable
 	 * @param Parser|null $parser
 	 * @param string $category
 	 * @param bool $hideroot
@@ -707,6 +709,7 @@ class CategoryTree {
 
 	/**
 	 * Create a string which format the page, subcat and file counts of a category
+	 * @suppress PhanParamReqAfterOpt $cat is not optional but nullable
 	 * @param IContextSource $context
 	 * @param Category|null $cat
 	 * @param int $countMode
@@ -791,6 +794,7 @@ class CategoryTree {
 
 	/**
 	 * Internal function to cap depth
+	 * @suppress PhanPluginDuplicateConditionalNullCoalescing until PHP7 is required
 	 * @param string $mode
 	 * @param int $depth
 	 * @return int|mixed
