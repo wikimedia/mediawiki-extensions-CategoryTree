@@ -45,5 +45,10 @@
 	"apihelp-categorytree-description": "Modulo interno per l'estensione CategoryTree.",
 	"apihelp-categorytree-param-category": "Titolo nel namespace categoria, il prefisso verrà ignorato se dato.",
 	"apihelp-categorytree-param-options": "Opzioni per il costruttore CategoryTree come oggetto JSON. L'opzione <var>depth</var> predefinita è <kbd>1</kbd>.",
-	"apierror-categorytree-invalidjson": "Le opzioni devono essere fornite come un oggetto JSON valido."
+	"apierror-categorytree-invalidjson": "Le opzioni devono essere fornite come un oggetto JSON valido.",
+	"category_tutoriels_header": "Pagine",
+	"category-manuals-header": "Manuali",
+	"category-latestdiscussions-header": "Discussioni",
+	"category-latestdiscussions-btn-askquestion": "Fai una domanda",
+	"dokit-category-title-Categories":"Categorie"
 }

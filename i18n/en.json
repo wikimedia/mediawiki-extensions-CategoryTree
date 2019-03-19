@@ -46,5 +46,6 @@
 	"apihelp-categorytree-param-category": "Title in the category namespace, prefix will be ignored if given.",
 	"apihelp-categorytree-param-options": "Options for the CategoryTree constructor as a JSON object. The <var>depth</var> option defaults to <kbd>1</kbd>.",
 	"apierror-categorytree-invalidjson": "Options must be valid a JSON object.",
-	"categorytree-loadmoremanuals-label": "See more manuals"
+	"categorytree-loadmoremanuals-label": "Load more manuals",
+	"dokit-category-title-Categories":"Categories"
 }
