@@ -307,6 +307,7 @@ class CategoryTree {
 	 * @param array $nodesInfo
 	 */
 	protected function getHtmlBreadcrumbs($nodesInfo,$index =0) {
+	    global $wgEnableCategoryInternationalization;
 
 		$hideprefix = $this->getOption( 'hideprefix' );
 		$ns = $nodesInfo['title']->getNamespace();
@@ -326,8 +327,14 @@ class CategoryTree {
 		if( ! $nodesInfo['title']) {
 			$label = 'Error no title';
 		} else if ( $hideprefix ) {
-			$label = htmlspecialchars( $nodesInfo['title']->getText() );
-		} else {
+		    if($wgEnableCategoryInternationalization){
+                $key = $nodesInfo['title']->getText();
+                $key = self::clean($key);
+                $label = wfMessage('dokit-category-title-' . $key);
+            } else {
+                $label = htmlspecialchars($nodesInfo['title']->getText());
+            }
+        } else {
 			$label = htmlspecialchars( $nodesInfo['title']->getPrefixedText() );
 		}
 
@@ -335,16 +342,17 @@ class CategoryTree {
 			$label = Xml::tags(
 						'a',
 						['href' => $nodesInfo['title']->getLocalURL()],
-						$label);
-		}
+						$label
+            );
+        }
 
-		$label = Xml::tags(
+        $label = Xml::tags(
 					'span',
 					['class' => 'breadcrum-element'],
 					$label
-			).' ';
+        ).' ';
 
-		if (count($nodesInfo['categories']) == 0) {
+        if (count($nodesInfo['categories']) == 0) {
 			return [ $label];
 		}
 
@@ -659,6 +667,8 @@ class CategoryTree {
      * @return string
      */
 	function renderNodeInfo( $title, $cat, $children = 0, File $image = null) {
+        global $wgEnableCategoryInternationalization;
+
 		$mode = $this->getOption( 'mode' );
 
 		$ns = $title->getNamespace();
@@ -680,12 +690,18 @@ class CategoryTree {
 		// configuration setting
 		// patch contributed by Manuel Schneider <manuel.schneider@wikimedia.ch>, Bug 8011
 		if ( $hideprefix ) {
-			$label = htmlspecialchars( $title->getText() );
+            if ($wgEnableCategoryInternationalization) {
+                $key = $title->getText();
+                $key = self::clean($key);
+                $label = wfMessage('dokit-category-title-' . $key);
+            } else {
+                $label = htmlspecialchars($title->getText());
+            }
 		} else {
 			$label = htmlspecialchars( $title->getPrefixedText() );
 		}
 
-		$labelClass = 'CategoryTreeLabel ' . ' CategoryTreeLabelNs' . $ns;
+        $labelClass = 'CategoryTreeLabel ' . ' CategoryTreeLabelNs' . $ns;
 
 		if ( !$title->getArticleID() ) {
 			$labelClass .= ' new';
@@ -904,4 +920,17 @@ class CategoryTree {
 
 		return min( $depth, $max );
 	}
+
+    /**
+     * Clean the $string of special characters
+     * @param $string
+     * @return mixed|string|string[]|null cleand string
+     */
+    public static function clean($string)
+    {
+        $accents = 'ŠšŽžÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûýþÿ';
+        $string = str_replace ( " ", '_', $string ); // Replaces all spaces with underscores.
+
+        return preg_replace ( '/[^'.$accents.'A-Za-z0-9\-_]/', '', $string ); // Removes special chars.
+    }
 }
