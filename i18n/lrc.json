@@ -11,7 +11,7 @@
 	"categorytree-legend": "دار دسه نه نشو بیئه",
 	"categorytree-desc": "وه شلک جمشدار [[ویجه:دار دسه|ساختار دسه]] ناوجوری بک",
 	"categorytree-header": "یه گل نوم دسه سی دیئن چیا مئن وه شکل یه سازه داری وارد بکید.\nبنیسید که که یه تاوع جاوا اسکریپت پیشکرده که چی آجاکس اشناخته با میها.\nار جاگردتو فره قدیمیه،یا جاوا اسکریپت فعال نئ،وه کار نمی که.",
-	"categorytree-category": "دسه:",
+	"categorytree-category": "دٱسٱ:",
 	"categorytree-go": "وه شلك دار نشون بيه",
 	"categorytree-parents": "ریشٱ",
 	"categorytree-mode-label": "مود:",
@@ -31,7 +31,7 @@
 	"categorytree-no-subcategories": "بی زيردسه يا",
 	"categorytree-no-parent-categories": "نه دسه یا ایسنی",
 	"categorytree-no-pages": "نه بلگه ای نه زیر دسه ای",
-	"categorytree-not-found": "دسه <i>$1</i> دیاری نکرد",
+	"categorytree-not-found": "دٱسٱ<i>$1</i> دیاری نکرد",
 	"categorytree-error": "مشگل د سواركرد داديا",
 	"categorytree-retry": "لطفا يه دم صبر بكيد و هنی تلاش بكيد"
 }
