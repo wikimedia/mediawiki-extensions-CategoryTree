@@ -617,7 +617,7 @@ class CategoryTree {
 		#      sibling with nodeName = DIV of the grandparent of the expland link.
 
 		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeSection' ] );
-		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeItem' ] );
+		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeItem CategoryTreeItemNs' . $ns ] );
 
 		$attr = [ 'class' => 'CategoryTreeBullet' ];
 
