@@ -24,7 +24,8 @@
  */
 
 ( function () {
-	var loadChildren;
+	var loadChildren,
+		data = require( './data.json' );
 
 	/**
 	 * Expands a given node (loading it's children if not loaded)
@@ -144,10 +145,7 @@
 		ctTitle = $link.attr( 'data-ct-title' );
 		ctMode = $linkParentCTTag.data( 'ct-mode' );
 		ctMode = typeof ctMode === 'number' ? ctMode : undefined;
-		ctOptions = $linkParentCTTag.attr( 'data-ct-options' );
-		if ( !ctOptions ) {
-			ctOptions = mw.config.get( 'wgCategoryTreePageCategoryOptions' );
-		}
+		ctOptions = $linkParentCTTag.attr( 'data-ct-options' ) || data.defaultCtOptions;
 
 		// Mode and options have defaults or fallbacks, title does not.
 		// Don't make a request if there is no title.

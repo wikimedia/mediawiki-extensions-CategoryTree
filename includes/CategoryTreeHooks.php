@@ -245,15 +245,20 @@ class CategoryTreeHooks {
 	}
 
 	/**
-	 * MakeGlobalVariablesScript hook
-	 * @param array &$vars
+	 * Get exported data for the "ext.categoryTree" ResourceLoader module.
+	 *
+	 * @internal For use in extension.json only.
+	 * @return array Data to be serialised as data.json
 	 */
-	public static function getConfigVars( array &$vars ) {
+	public static function getDataForJs() {
 		global $wgCategoryTreeCategoryPageOptions;
 
-		// Look this is pretty bad but Category tree is just whacky, it needs to be rewritten
+		// Look, this is pretty bad but CategoryTree is just whacky, it needs to be rewritten
 		$ct = new CategoryTree( $wgCategoryTreeCategoryPageOptions );
-		$vars['wgCategoryTreePageCategoryOptions'] = $ct->getOptionsAsJsStructure();
+
+		return [
+			'defaultCtOptions' => $ct->getOptionsAsJsStructure(),
+		];
 	}
 
 	/**

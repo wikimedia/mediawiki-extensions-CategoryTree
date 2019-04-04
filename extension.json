@@ -6,7 +6,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.33.0"
 	},
 	"ConfigRegistry": {
 		"categorytree": "GlobalVarConfig::newInstance"
@@ -41,8 +41,16 @@
 	},
 	"ResourceModules": {
 		"ext.categoryTree": {
-			"scripts": "ext.categoryTree/ext.categoryTree.js",
-			"styles": "ext.categoryTree/ext.categoryTree.css",
+			"localBasePath": "modules/ext.categoryTree",
+			"remoteExtPath": "CategoryTree/modules/ext.categoryTree",
+			"styles": "ext.categoryTree.css",
+			"packageFiles": [
+				"ext.categoryTree.js",
+				{
+					"name": "data.json",
+					"callback": "CategoryTreeHooks::getDataForJs"
+				}
+			],
 			"targets": [
 				"desktop",
 				"mobile"
@@ -78,17 +86,10 @@
 		"remoteExtPath": "CategoryTree/modules"
 	},
 	"Hooks": {
-		"ArticleFromTitle": [
-			"CategoryTreeHooks::articleFromTitle"
-		],
-		"SpecialTrackingCategories::preprocess": [
-			"CategoryTreeHooks::onSpecialTrackingCategoriesPreprocess"
-		],
-		"SpecialTrackingCategories::generateCatLink": [
-			"CategoryTreeHooks::onSpecialTrackingCategoriesGenerateCatLink"
-		],
+		"ArticleFromTitle": "CategoryTreeHooks::articleFromTitle",
+		"SpecialTrackingCategories::preprocess": "CategoryTreeHooks::onSpecialTrackingCategoriesPreprocess",
+		"SpecialTrackingCategories::generateCatLink": "CategoryTreeHooks::onSpecialTrackingCategoriesGenerateCatLink",
 		"SkinBuildSidebar": "CategoryTreeHooks::onSkinBuildSidebar",
-		"MakeGlobalVariablesScript": "CategoryTreeHooks::getConfigVars",
 		"ParserFirstCallInit": "CategoryTreeHooks::setHooks",
 		"OutputPageMakeCategoryLinks": "CategoryTreeHooks::outputPageMakeCategoryLinks",
 		"BeforePageDisplay": "CategoryTreeHooks::addHeaders",
