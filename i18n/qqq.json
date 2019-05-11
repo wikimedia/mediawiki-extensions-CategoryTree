@@ -54,10 +54,5 @@
 	"categorytree-no-pages": "Indicates that there are no pages or subcategories to be shown",
 	"categorytree-not-found": "Indicates that the given category ($1) was not found. Parameters:\n* $1 - category name",
 	"categorytree-error": "Indicates that an error has occurred while loading the node's content",
-	"categorytree-retry": "Instruction to try again later",
-	"apihelp-categorytree-description": "{{doc-apihelp-description|categorytree}}",
-	"apihelp-categorytree-summary": "{{doc-apihelp-summary|categorytree}}",
-	"apihelp-categorytree-param-category": "{{doc-apihelp-param|categorytree|category}}",
-	"apihelp-categorytree-param-options": "{{doc-apihelp-param|categorytree|options}}",
-	"apierror-categorytree-invalidjson": "{{doc-apierror}}"
+	"categorytree-retry": "Instruction to try again later"
 }
