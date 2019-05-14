@@ -36,9 +36,7 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 	 */
 	private function getCategoryTree() {
 		if ( !isset( $this->categorytree ) ) {
-			if ( !Hooks::shouldForceHeaders() ) {
-				CategoryTree::setHeaders( $this->getOutput() );
-			}
+			CategoryTree::setHeaders( $this->getOutput() );
 
 			$options = $this->getConfig()->get( 'CategoryTreeCategoryPageOptions' );
 
