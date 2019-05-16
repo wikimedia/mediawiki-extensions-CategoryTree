@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\MediaWikiServices;
+
 /**
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -40,7 +43,7 @@ class ApiCategoryTree extends ApiBase {
 
 		$ct = new CategoryTree( $options );
 		$depth = CategoryTree::capDepth( $ct->getOption( 'mode' ), $depth );
-		$ctConfig = ConfigFactory::getDefaultInstance()->makeConfig( 'categorytree' );
+		$ctConfig = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'categorytree' );
 		$html = $this->getHTML( $ct, $title, $depth, $ctConfig );
 
 		$this->getMain()->setCacheMode( 'public' );
@@ -79,7 +82,7 @@ class ApiCategoryTree extends ApiBase {
 	private function getHTML( CategoryTree $ct, Title $title, $depth, Config $ctConfig ) {
 		global $wgContLang, $wgMemc;
 
-		$mckey = wfMemcKey(
+		$mckey = ObjectCache::getLocalClusterInstance()->makeKey(
 			'ajax-categorytree',
 			md5( $title->getDBkey() ),
 			md5( $ct->getOptionsAsCacheKey( $depth ) ),
