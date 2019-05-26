@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Carma citrawati"
+			"Carma citrawati",
+			"NoiX180"
 		]
 	},
 	"categorytree-expand": "buka",
 	"categorytree-member-counts": "madué{{PLURAL:$1|$1 subkategori}}, {{PLURAL:$2|$2 halaman}}, miwah {{PLURAL:$3|$3 berkas}}",
-	"categorytree-num-categories": "$1 C",
+	"categorytree-num-categories": "$1 K",
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 F"
 }
