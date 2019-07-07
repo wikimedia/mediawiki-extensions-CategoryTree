@@ -34,7 +34,5 @@
 	"categorytree-no-pages": "Keng Säiten oder Ënnerkategorien",
 	"categorytree-not-found": "Kategorie ''$1'' net fonnt",
 	"categorytree-error": "Problem beim luede vun den Donneeën.",
-	"categorytree-retry": "Waart w.e.g. een Ament a probéiert dann nach eng Kéier.",
-	"apihelp-categorytree-description": "Interne Modul fir d'Erweiderung \"CategoryTree\".",
-	"apierror-categorytree-invalidjson": "D'Optioune mussen e gëltege JSON-Objet sinn"
+	"categorytree-retry": "Waart w.e.g. een Ament a probéiert dann nach eng Kéier."
 }
