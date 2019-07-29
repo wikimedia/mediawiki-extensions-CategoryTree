@@ -390,6 +390,7 @@ class CategoryTree {
 	 * Returns a string with an HTML representation of the children of the given category.
 	 * @param Title $title
 	 * @param int $depth
+	 * @suppress PhanUndeclaredClassMethod,PhanUndeclaredClassInstanceof
 	 * @return string
 	 */
 	public function renderChildren( Title $title, $depth = 1 ) {
@@ -456,8 +457,38 @@ class CategoryTree {
 		# collect categories separately from other pages
 		$categories = '';
 		$other = '';
+		$suppressTranslations = self::decodeBoolean(
+			$this->getOption( 'notranslations' )
+		) && ExtensionRegistry::getInstance()->isLoaded( 'Translate' );
+
+		if ( $suppressTranslations ) {
+			$lb = new LinkBatch();
+			foreach ( $res as $row ) {
+				$title = Title::newFromText( $row->page_title, $row->page_namespace );
+				// Page name could have slashes, check the subpage for valid language built-in codes
+				$isValidLangCode = $title->getSubpageText();
+
+				if ( $title !== null && $isValidLangCode ) {
+					$lb->addObj( $title->getBaseTitle() );
+				}
+			}
+
+			$lb->execute();
+		}
 
 		foreach ( $res as $row ) {
+			if ( $suppressTranslations ) {
+				$title = Title::newFromRow( $row );
+				$baseTitle = $title->getBaseTitle();
+				$page = \TranslatablePage::isTranslationPage( $title );
+
+				if ( ( $page instanceof \TranslatablePage ) && $baseTitle->exists() ) {
+					// T229265: Render only the default pages created and ignore their
+					// translations.
+					continue;
+				}
+			}
+
 			# NOTE: in inverse mode, the page record may be null, because we use a right join.
 			#      happens for categories with no category page (red cat links)
 			if ( $inverse && $row->page_title === null ) {
