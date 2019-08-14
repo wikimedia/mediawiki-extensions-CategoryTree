@@ -22,12 +22,15 @@
  * @author Daniel Kinzler, brightbyte.de
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * Core functions for the CategoryTree extension, an AJAX based gadget
  * to display the category structure of a wiki
  */
 class CategoryTree {
 	public $mOptions = [];
+	private $linkRenderer;
 
 	/**
 	 * @suppress PhanTypeInvalidDimOffset
@@ -35,6 +38,7 @@ class CategoryTree {
 	 */
 	public function __construct( array $options ) {
 		global $wgCategoryTreeDefaultOptions;
+		$this->linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
 
 		// ensure default values and order of options.
 		// Order may become important, it may influence the cache key!
@@ -590,24 +594,7 @@ class CategoryTree {
 			$label = $title->getPrefixedText();
 		}
 
-		$labelClass = 'CategoryTreeLabel ' . ' CategoryTreeLabelNs' . $ns;
-
-		if ( !$title->getArticleID() ) {
-			$labelClass .= ' new';
-			$wikiLink = $title->getLocalURL( 'action=edit&redlink=1' );
-		} else {
-			$wikiLink = $title->getLocalURL();
-		}
-
-		if ( $ns == NS_CATEGORY ) {
-			$labelClass .= ' CategoryTreeLabelCategory';
-		} else {
-			$labelClass .= ' CategoryTreeLabelPage';
-		}
-
-		if ( ( $ns % 2 ) > 0 ) {
-			$labelClass .= ' CategoryTreeLabelTalk';
-		}
+		$link = $this->linkRenderer->makeLink( $title, $label );
 
 		$count = false;
 		$s = '';
@@ -659,15 +646,7 @@ class CategoryTree {
 		}
 		$s .= Xml::tags( 'span', $attr, $bullet ) . ' ';
 
-		$s .= Xml::element(
-			'a',
-			[
-				'class' => $labelClass,
-				'href' => $wikiLink,
-				'title' => $title->getPrefixedText()
-			],
-			$label
-		);
+		$s .= $link;
 
 		if ( $count !== false && $this->getOption( 'showcount' ) ) {
 			$s .= self::createCountString( RequestContext::getMain(), $cat, $count );
