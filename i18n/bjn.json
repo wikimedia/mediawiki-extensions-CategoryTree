@@ -20,7 +20,7 @@
 	"categorytree-mode-all": "samunyaan tutungkaran",
 	"categorytree-collapse": "tutup",
 	"categorytree-expand": "singkai",
-	"categorytree-member-counts": "baisi {{PLURAL:$1|1 subpilah|$1 subpilah}}, {{PLURAL:$2|1 halaman|$2 halaman}}, wan {{PLURAL:$3|1 barakas|$3 barakas}}",
+	"categorytree-member-counts": "baisi {{PLURAL:$1|1 subpilah|$1 subpilah}}, {{PLURAL:$2|1 tungkaran|$2 tungkaran}}, wan {{PLURAL:$3|1 barakas|$3 barakas}}",
 	"categorytree-num-categories": "$1 T",
 	"categorytree-num-pages": "$1 T",
 	"categorytree-num-files": "$1 B",
