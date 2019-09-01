@@ -94,8 +94,6 @@ class CategoryTree {
 	 * @return array|bool
 	 */
 	private static function decodeNamespaces( $nn ) {
-		global $wgContLang;
-
 		if ( $nn === false || is_null( $nn ) ) {
 			return false;
 		}
@@ -105,7 +103,7 @@ class CategoryTree {
 		}
 
 		$namespaces = [];
-
+		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 		foreach ( $nn as $n ) {
 			if ( is_int( $n ) ) {
 				$ns = $n;
@@ -122,7 +120,7 @@ class CategoryTree {
 				} elseif ( $n == '-' || $n == '_' || $n == '*' || $lower == 'main' ) {
 					$ns = NS_MAIN;
 				} else {
-					$ns = $wgContLang->getNsIndex( $n );
+					$ns = $contLang->getNsIndex( $n );
 				}
 			}
 
@@ -697,8 +695,6 @@ class CategoryTree {
 	public static function createCountString( IContextSource $context, Category $cat = null,
 		$countMode
 	) {
-		global $wgContLang;
-
 		# Get counts, with conversion to integer so === works
 		# Note: $allCount is the total number of cat members,
 		# not the count of how many members are normal pages.
@@ -713,8 +709,8 @@ class CategoryTree {
 			# numbers and commas get messed up in a mixed dir env
 			'dir' => $context->getLanguage()->getDir()
 		];
-
-		$s = $wgContLang->getDirMark() . ' ';
+		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
+		$s = $contLang->getDirMark() . ' ';
 
 		# Create a list of category members with only non-zero member counts
 		$memberNums = [];

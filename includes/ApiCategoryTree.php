@@ -80,14 +80,14 @@ class ApiCategoryTree extends ApiBase {
 	 * @return string HTML
 	 */
 	private function getHTML( CategoryTree $ct, Title $title, $depth, Config $ctConfig ) {
-		global $wgContLang, $wgMemc;
+		global $wgMemc;
 
 		$mckey = ObjectCache::getLocalClusterInstance()->makeKey(
 			'ajax-categorytree',
 			md5( $title->getDBkey() ),
 			md5( $ct->getOptionsAsCacheKey( $depth ) ),
 			$this->getLanguage()->getCode(),
-			$wgContLang->getExtraHashOptions(),
+			MediaWikiServices::getInstance()->getContentLanguage()->getExtraHashOptions(),
 			$ctConfig->get( 'RenderHashAppend' )
 		);
 
