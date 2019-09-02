@@ -18,7 +18,7 @@
 	"categorytree-mode-all": "alle ziejen",
 	"categorytree-collapse": "samenvouwen",
 	"categorytree-expand": "uutklappen",
-	"categorytree-member-counts": "bevat {{PLURAL:$1|één onderkategorie|$1 onderkategorieën}}, {{PLURAL:$2|één zied|$2 ziejen}} en {{PLURAL:$3|één bestaand|$3 bestaanden}}",
+	"categorytree-member-counts": "der {{PLURAL:$1|is eyn underkategory|bint $1 underkategoryen}}, {{PLURAL:$2|eyn syde|$2 syden}} en {{PLURAL:$3|eyn bestand|$3 bestanden}}",
 	"categorytree-num-categories": "$1 C",
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 B",
