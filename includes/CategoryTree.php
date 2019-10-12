@@ -320,8 +320,7 @@ class CategoryTree {
 	/**
 	 * Custom tag implementation. This is called by CategoryTreeHooks::parserHook, which is used to
 	 * load CategoryTreeFunctions.php on demand.
-	 * @suppress PhanParamReqAfterOpt $parser is not optional but nullable
-	 * @param Parser|null $parser
+	 * @param ?Parser $parser
 	 * @param string $category
 	 * @param bool $hideroot
 	 * @param array $attr
@@ -329,7 +328,7 @@ class CategoryTree {
 	 * @param bool $allowMissing
 	 * @return bool|string
 	 */
-	public function getTag( Parser $parser = null, $category, $hideroot = false, array $attr = [],
+	public function getTag( ?Parser $parser, $category, $hideroot = false, array $attr = [],
 		$depth = 1, $allowMissing = false
 	) {
 		global $wgCategoryTreeDisableCache;
@@ -680,13 +679,12 @@ class CategoryTree {
 
 	/**
 	 * Create a string which format the page, subcat and file counts of a category
-	 * @suppress PhanParamReqAfterOpt $cat is not optional but nullable
 	 * @param IContextSource $context
-	 * @param Category|null $cat
+	 * @param ?Category $cat
 	 * @param int $countMode
 	 * @return string
 	 */
-	public static function createCountString( IContextSource $context, Category $cat = null,
+	public static function createCountString( IContextSource $context, ?Category $cat,
 		$countMode
 	) {
 		# Get counts, with conversion to integer so === works
