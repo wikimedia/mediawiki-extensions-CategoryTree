@@ -5,7 +5,8 @@
 			"Ilnur efende",
 			"Ильнар",
 			"Derslek",
-			"Don Alessandro"
+			"Don Alessandro",
+			"Ерней"
 		]
 	},
 	"categorytree": "Төркемнәр шәҗәрәсе",
@@ -14,7 +15,7 @@
 	"categorytree-desc": "[[Special:CategoryTree|Төркемнәрнең асылы]]н аңлату өчен төзелгән AJAX-бит",
 	"categorytree-header": "Төркемнең исемен кертегез һәм ул шәҗәрә рәвешендә күрсәтеләчәк (JavaScript кирәк булачак).",
 	"categorytree-category": "Төркем:",
-	"categorytree-go": "Йөкләү",
+	"categorytree-go": "Төяү",
 	"categorytree-parents": "Төп төркемнәр",
 	"categorytree-mode-label": "Режим:",
 	"categorytree-mode-categories": "бары тик төркемнәр генә урнаштырылган",
@@ -27,8 +28,8 @@
 	"categorytree-num-pages": "$1 Б",
 	"categorytree-num-files": "$1 Ф",
 	"categorytree-num-empty": "буш",
-	"categorytree-load": "йөкләү",
-	"categorytree-loading": "йөкләү бара…",
+	"categorytree-load": "төяү",
+	"categorytree-loading": "төяү бара…",
 	"categorytree-nothing-found": "бернидә табылмады",
 	"categorytree-no-subcategories": "мондый төркемчәләр юк",
 	"categorytree-no-parent-categories": "төп бүлекләр юк",
