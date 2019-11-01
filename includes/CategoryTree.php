@@ -37,7 +37,6 @@ class CategoryTree {
 	private $linkRenderer;
 
 	/**
-	 * @suppress PhanTypeInvalidDimOffset
 	 * @param array $options
 	 */
 	public function __construct( array $options ) {

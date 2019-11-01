@@ -266,6 +266,7 @@ class CategoryTreeHooks {
 	 * @suppress PhanUndeclaredProperty SpecialPage->categoryTreeCategories
 	 * @param SpecialPage $specialPage SpecialTrackingCategories object
 	 * @param array $trackingCategories [ 'msg' => Title, 'cats' => Title[] ]
+	 * @phan-param array<string,array{msg:Title,cats:Title[]}> $trackingCategories
 	 */
 	public static function onSpecialTrackingCategoriesPreprocess(
 		SpecialPage $specialPage, array $trackingCategories
