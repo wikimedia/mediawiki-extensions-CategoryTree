@@ -28,7 +28,7 @@
 	"categorytree-num-pages": "$1 Б",
 	"categorytree-num-files": "$1 Ф",
 	"categorytree-num-empty": "буш",
-	"categorytree-load": "төяү",
+	"categorytree-load": "төяргә",
 	"categorytree-loading": "төяү бара…",
 	"categorytree-nothing-found": "берни дә табылмады",
 	"categorytree-no-subcategories": "төркемчәләр юк",
@@ -36,5 +36,5 @@
 	"categorytree-no-pages": "битләр яки төркемчәләр юк",
 	"categorytree-not-found": "<i>$1</i> бүлеге табылмады",
 	"categorytree-error": "Хата",
-	"categorytree-retry": "Зинһар бераз көтеп торыгыз һәм тагын бер кат йөкләүне башкарып карагыз."
+	"categorytree-retry": "Бераз көтеп торыгыз һәм яңадан тырышып карагыз әле."
 }
