@@ -116,7 +116,8 @@
 			"mode": null,
 			"hideprefix": null,
 			"showcount": false,
-			"namespaces": false
+			"namespaces": false,
+			"notranslations": false
 		},
 		"CategoryTreeCategoryPageMode": 0,
 		"CategoryTreeCategoryPageOptions": {
