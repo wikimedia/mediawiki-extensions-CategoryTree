@@ -27,5 +27,6 @@
 	"categorytree-nothing-found": "Укх оагӀата чу кIалоагӀаташ яц.",
 	"categorytree-no-subcategories": "кIалоагӀаташ яц",
 	"categorytree-no-parent-categories": "ларда оагӀаташ яц",
-	"categorytree-no-pages": "оагӀонаш а яц кIалоагӀаташ а яц"
+	"categorytree-no-pages": "оагӀонаш а яц кIалоагӀаташ а яц",
+	"categorytree-not-found": "ОагIат «$1» кораяьяц."
 }
