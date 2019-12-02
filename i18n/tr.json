@@ -9,15 +9,16 @@
 			"Stultiwikia",
 			"Vito Genovese",
 			"Superyetkin",
-			"Hedda"
+			"Hedda",
+			"BaRaN6161 TURK"
 		]
 	},
-	"categorytree": "Kategori hiyerarşisi",
+	"categorytree": "Kategori ağacı",
 	"categorytree-portlet": "Kategoriler",
 	"categorytree-legend": "Kategori ağacını göster",
 	"categorytree-desc": "[[Special:CategoryTree|Kategori yapısını]] dinamik olarak idare et",
 	"categorytree-header": "İçeriği bir ağaç yapısı olarak görmek için bir kategori adı girin. (JavaScript gerektirir.)",
-	"categorytree-category": "Kategori",
+	"categorytree-category": "Kategori:",
 	"categorytree-go": "Ağacı göster",
 	"categorytree-parents": "Üst kategoriler",
 	"categorytree-mode-label": "Mod:",
@@ -32,7 +33,7 @@
 	"categorytree-num-files": "$1 D",
 	"categorytree-num-empty": "boş",
 	"categorytree-load": "yükle",
-	"categorytree-loading": "yükleniyor",
+	"categorytree-loading": "yükleniyor...",
 	"categorytree-nothing-found": "hiçbir şey bulunamadı",
 	"categorytree-no-subcategories": "alt kategori yok.",
 	"categorytree-no-parent-categories": "üst kategori yok",
