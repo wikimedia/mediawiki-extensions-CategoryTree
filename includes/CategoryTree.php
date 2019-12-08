@@ -281,7 +281,7 @@ class CategoryTree {
 	}
 
 	/**
-	 * @param string|null $depth
+	 * @param int|null $depth
 	 * @return string
 	 */
 	public function getOptionsAsCacheKey( $depth = null ) {
