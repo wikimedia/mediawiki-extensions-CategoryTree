@@ -104,7 +104,8 @@
 		"CategoryTreeMaxDepth": {
 			"10": 1,
 			"20": 1,
-			"0": 2
+			"0": 2,
+			"_merge_strategy": "array_plus"
 		},
 		"CategoryTreeForceHeaders": false,
 		"CategoryTreeSidebarRoot": null,
