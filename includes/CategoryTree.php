@@ -97,7 +97,7 @@ class CategoryTree {
 	 * @return array|bool
 	 */
 	private static function decodeNamespaces( $nn ) {
-		if ( $nn === false || is_null( $nn ) ) {
+		if ( $nn === false || $nn === null ) {
 			return false;
 		}
 
@@ -144,7 +144,7 @@ class CategoryTree {
 	public static function decodeMode( $mode ) {
 		global $wgCategoryTreeDefaultOptions;
 
-		if ( is_null( $mode ) ) {
+		if ( $mode === null ) {
 			return $wgCategoryTreeDefaultOptions['mode'];
 		}
 		if ( is_int( $mode ) ) {
@@ -179,7 +179,7 @@ class CategoryTree {
 	 * @return bool|null|string
 	 */
 	public static function decodeBoolean( $value ) {
-		if ( is_null( $value ) ) {
+		if ( $value === null ) {
 			return null;
 		}
 		if ( is_bool( $value ) ) {
@@ -216,7 +216,7 @@ class CategoryTree {
 	public static function decodeHidePrefix( $value ) {
 		global $wgCategoryTreeDefaultOptions;
 
-		if ( is_null( $value ) ) {
+		if ( $value === null ) {
 			return $wgCategoryTreeDefaultOptions['hideprefix'];
 		}
 		if ( is_int( $value ) ) {
@@ -294,7 +294,7 @@ class CategoryTree {
 			$key .= $k . ':' . $v . ';';
 		}
 
-		if ( !is_null( $depth ) ) {
+		if ( $depth !== null ) {
 			$key .= ";depth=" . $depth;
 		}
 		return $key;
