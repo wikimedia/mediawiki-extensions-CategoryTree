@@ -4,7 +4,8 @@
 			"Bhawani Gautam",
 			"Bhawani Gautam Rhk",
 			"Krish Dulal",
-			"NehalDaveND"
+			"NehalDaveND",
+			"हिमाल सुबेदी"
 		]
 	},
 	"categorytree": "श्रेणी वृक्ष",
@@ -26,7 +27,7 @@
 	"categorytree-num-files": "$1 F (फा)",
 	"categorytree-num-empty": "रित्तो",
 	"categorytree-load": "चढाउने",
-	"categorytree-loading": "खोलिंदै…",
+	"categorytree-loading": "खुल्दै छ…",
 	"categorytree-nothing-found": "केहीपनि फेला परेन",
 	"categorytree-no-subcategories": "उपश्रेणीहरू छैनन्",
 	"categorytree-no-parent-categories": "अभिभावक श्रेणीहरू नभएको",
