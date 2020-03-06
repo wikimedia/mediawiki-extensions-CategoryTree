@@ -2,10 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Abshirdheere",
-			"Maax"
+			"Maax",
+			"Abdullahi"
 		]
 	},
 	"categorytree-category": "Qeybta:",
+	"categorytree-expand": "sii balaari",
+	"categorytree-member-counts": "Waxay ka koobantahay{{PLURAL:$1|1 qayb hoosaad|$1 qaybo hoosaad}}, {{PLURAL:$2|1 bog|$2 boggag}}, iyo {{PLURAL:$3|1 feyl|$3feylal}}",
+	"categorytree-num-pages": "$1 B",
+	"categorytree-num-files": "$1 F",
 	"categorytree-no-subcategories": "Ma jiraan wax laamaha qaybaha ah",
 	"categorytree-not-found": "Qeybta  <i>$1</i> lama helin"
 }
