@@ -46,7 +46,7 @@
 	"categorytree-num-categories": "Number of sub-categories in a category. Appears in brackets after a name of an empty category.\n\nThe word \"categories\" should be abbreviated.\n\nParameters:\n* $1 - number of sub-categories. Can be used for PLURAL.\n{{Related|Categorytree-num}}",
 	"categorytree-num-pages": "Number of pages in a category. Appears in brackets after a name of an empty category.\n\nThe word \"pages\" should be abbreviated.\n\nParameters:\n* $1 - number of pages. Can be used for PLURAL.\n{{Related|Categorytree-num}}",
 	"categorytree-num-files": "Number of files in a category. Appears in brackets after a name of a category.\n\nThe letter \"F\" refers to files. If the word \"File\" in your language begins with a different letter, use a different abbreviation.\n\nParameters:\n* $1 - number of files. Can be used for PLURAL.\n{{Related|Categorytree-num}}",
-	"categorytree-num-empty": "The word \"empty\", as in \"empty category\". Appears in brackets after a name of an empty category.\n{{Identical|Təy}}",
+	"categorytree-num-empty": "The word \"empty\", as in \"empty category\". Appears in brackets after a name of an empty category.\n{{Identical|Empty}}",
 	"categorytree-load": "Tooltip for the \"expand\" button, if the content was not yet loaded.\n{{Identical|Load}}",
 	"categorytree-loading": "Status message shown while loading content.\n{{Identical|Loading}}",
 	"categorytree-nothing-found": "Indicates items with matching criteria have been found",
