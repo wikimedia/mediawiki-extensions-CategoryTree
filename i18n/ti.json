@@ -4,8 +4,8 @@
 			"Joanmp17"
 		]
 	},
-	"categorytree-portlet": "ምድቦት",
-	"categorytree-category": "ምድብ፥",
+	"categorytree-portlet": "መደባት",
+	"categorytree-category": "መደብ፥",
 	"categorytree-mode-all": "ኩሉ ገጻት",
 	"categorytree-collapse": "ኣክብ",
 	"categorytree-expand": "ዘርግሕ",
@@ -13,5 +13,5 @@
 	"categorytree-num-pages": "$1 ገ",
 	"categorytree-num-empty": "ባዶ",
 	"categorytree-load": "ጸዓነ",
-	"categorytree-loading": "ጽዕነት..."
+	"categorytree-loading": "ይጽዕን ኣሎ..."
 }
