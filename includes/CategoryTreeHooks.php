@@ -142,6 +142,7 @@ class CategoryTreeHooks {
 	 * @param string $cat
 	 * @param array $argv
 	 * @param Parser|null $parser
+	 * @param PPFrame|null $frame
 	 * @param bool $allowMissing
 	 * @return bool|string
 	 */
@@ -149,6 +150,7 @@ class CategoryTreeHooks {
 		$cat,
 		array $argv,
 		Parser $parser = null,
+		PPFrame $frame = null,
 		$allowMissing = false
 	) {
 		if ( $parser ) {
@@ -171,7 +173,6 @@ class CategoryTreeHooks {
 			$depth = 0;
 		}
 
-		// @phan-suppress-next-line PhanTypeMismatchArgument
 		return $ct->getTag( $parser, $cat, $hideroot, $attr, $depth, $allowMissing );
 	}
 
@@ -238,7 +239,7 @@ class CategoryTreeHooks {
 		}
 
 		foreach ( $categories as $category => $type ) {
-			$links[$type][] = self::parserHook( $category, $wgCategoryTreePageCategoryOptions, null, true );
+			$links[$type][] = self::parserHook( $category, $wgCategoryTreePageCategoryOptions, null, null, true );
 			CategoryTree::setHeaders( $out );
 		}
 
