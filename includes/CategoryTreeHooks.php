@@ -171,6 +171,7 @@ class CategoryTreeHooks {
 			$depth = 0;
 		}
 
+		// @phan-suppress-next-line PhanTypeMismatchArgument
 		return $ct->getTag( $parser, $cat, $hideroot, $attr, $depth, $allowMissing );
 	}
 
