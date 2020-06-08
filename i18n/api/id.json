@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Diki Ananta",
-			"Rachmat04"
+			"Rachmat04",
+			"Sumbukompor"
 		]
 	},
 	"apihelp-categorytree-description": "Modul internal untuk ekstensi CategoryTree.",
