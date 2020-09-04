@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Boesenbergia"
+			"Boesenbergia",
+			"NoiX180"
 		]
 	},
-	"categorytree-expand": "Bârbâr",
+	"categorytree-expand": "bârbâr",
+	"categorytree-num-pages": "$1 K",
 	"categorytree-num-files": "$1 B"
 }
