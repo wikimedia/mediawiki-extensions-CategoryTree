@@ -8,5 +8,8 @@
 	"globals": {
 		"mw": false,
 		"$": false
+	},
+	"rules": {
+		"no-shadow": "warn"
 	}
 }
