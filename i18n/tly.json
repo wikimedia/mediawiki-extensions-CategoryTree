@@ -26,9 +26,9 @@
 	"categorytree-loading": "бо карде...",
 	"categorytree-nothing-found": "Ым категоријәдә жинә категоријә ни.",
 	"categorytree-no-subcategories": "категоријон жинтон ни",
-	"categorytree-no-parent-categories": "пыә-моә категоријә ни",
+	"categorytree-no-parent-categories": "valideyni katiqoriya ni",
 	"categorytree-no-pages": "нә мәғолә һесте, нә жинә категоријон",
-	"categorytree-not-found": "Категоријә «$1» пәјдо быәни.",
+	"categorytree-not-found": "Katiqoriya «$1» pəydo bıəni",
 	"categorytree-error": "Мәлумоти бо карде сәһве.",
 	"categorytree-retry": "Быһамијән, и тикә чәш быкан ијән икәрән осә быкан."
 }
