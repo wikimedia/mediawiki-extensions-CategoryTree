@@ -6,6 +6,7 @@
 		]
 	},
 	"categorytree-expand": "bârbâr",
+	"categorytree-num-categories": "$1 K",
 	"categorytree-num-pages": "$1 K",
 	"categorytree-num-files": "$1 B"
 }
