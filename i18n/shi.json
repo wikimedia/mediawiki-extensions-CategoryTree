@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amara-Amaziɣ"
+			"Amara-Amaziɣ",
+			"Ayour2002"
 		]
 	},
-	"categorytree-expand": "ⵙⵙⵉⵎⵖⵓⵔ",
-	"categorytree-num-categories": "$1 ⴳⵢ",
-	"categorytree-num-pages": "$1 ⵙⵏ",
-	"categorytree-num-files": "$1 ⴼ"
+	"categorytree-expand": "Simɣur",
+	"categorytree-num-categories": "$1 C",
+	"categorytree-num-pages": "$1 S",
+	"categorytree-num-files": "$1 F"
 }
