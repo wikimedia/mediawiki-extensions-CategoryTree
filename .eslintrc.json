@@ -1,13 +1,13 @@
 {
 	"root": true,
-	"extends": "wikimedia",
+	"extends": [
+		"wikimedia",
+		"wikimedia/mediawiki",
+		"wikimedia/jquery"
+	],
 	"env": {
 		"browser": true,
 		"commonjs": true
-	},
-	"globals": {
-		"mw": false,
-		"$": false
 	},
 	"rules": {
 		"no-shadow": "warn"
