@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"ChoiChong",
 			"Chulsu463"
 		]
 	},
 	"categorytree-expand": "nerkimbi",
 	"categorytree-num-categories": "$1 hachilan",
-	"categorytree-num-pages": "$1 fiyelen"
+	"categorytree-num-pages": "$1 fiyelen",
+	"categorytree-num-files": "$1 fiyelen"
 }
