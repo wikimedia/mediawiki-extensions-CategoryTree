@@ -154,7 +154,6 @@ class CategoryTreeHooks {
 	) {
 		if ( $parser ) {
 			# flag for use by CategoryTreeHooks::parserOutput
-			// @phan-suppress-next-line PhanUndeclaredProperty
 			$parser->mOutput->mCategoryTreeTag = true;
 		}
 
@@ -188,7 +187,6 @@ class CategoryTreeHooks {
 			// Skip, we've already set the headers unconditionally
 			return;
 		}
-		// @phan-suppress-next-line PhanUndeclaredProperty
 		if ( !empty( $parserOutput->mCategoryTreeTag ) ) {
 			CategoryTree::setHeaders( $outputPage );
 		}
