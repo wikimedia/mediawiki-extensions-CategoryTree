@@ -28,6 +28,8 @@
  */
 class CategoryTreeHooks {
 
+	private const EXTENSION_DATA_FLAG = 'CategoryTree';
+
 	/**
 	 * @internal For use by CategoryTreeCategoryViewer and CategoryTreePage only!
 	 * @return bool
@@ -154,7 +156,7 @@ class CategoryTreeHooks {
 	) {
 		if ( $parser ) {
 			# flag for use by CategoryTreeHooks::parserOutput
-			$parser->mOutput->mCategoryTreeTag = true;
+			$parser->getOutput()->setExtensionData( self::EXTENSION_DATA_FLAG, true );
 		}
 
 		$ct = new CategoryTree( $argv );
@@ -178,7 +180,7 @@ class CategoryTreeHooks {
 	/**
 	 * Hook callback that injects messages and things into the <head> tag,
 	 * if needed in the current page.
-	 * Does nothing if $parserOutput->mCategoryTreeTag is not set
+	 * Does nothing if self::EXTENSION_DATA_FLAG is not set on $parserOutput extension data.
 	 * @param OutputPage $outputPage
 	 * @param ParserOutput $parserOutput
 	 */
@@ -187,6 +189,11 @@ class CategoryTreeHooks {
 			// Skip, we've already set the headers unconditionally
 			return;
 		}
+		if ( !$parserOutput->getExtensionData( self::EXTENSION_DATA_FLAG ) ) {
+			CategoryTree::setHeaders( $outputPage );
+		}
+
+		// Backwards compatibility for already cached output.
 		if ( !empty( $parserOutput->mCategoryTreeTag ) ) {
 			CategoryTree::setHeaders( $outputPage );
 		}
