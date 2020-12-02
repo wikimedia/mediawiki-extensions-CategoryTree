@@ -192,12 +192,6 @@ class CategoryTreeHooks {
 		if ( !$parserOutput->getExtensionData( self::EXTENSION_DATA_FLAG ) ) {
 			CategoryTree::setHeaders( $outputPage );
 		}
-
-		// Backwards compatibility for already cached output.
-		// @phan-suppress-next-line PhanUndeclaredProperty
-		if ( !empty( $parserOutput->mCategoryTreeTag ) ) {
-			CategoryTree::setHeaders( $outputPage );
-		}
 	}
 
 	/**
