@@ -9,7 +9,7 @@
 	"categorytree-portlet": "گٹھاں",
 	"categorytree-legend": "گٹھ لین وکھاؤ",
 	"categorytree-desc": "ویکھ کے [[Special:CategoryTree|گٹھاں]] دی کھوج کرو",
-	"categorytree-header": "کسی گٹھ دا ناں لکھو تاکے ایدا مال رکھ ورگی مورت چ ویکھو۔\nNote that this requires advanced JavaScript functionality known as AJAX.\nIf you have a very old browser, or have JavaScript disabled, it will not work.",
+	"categorytree-header": "کسی گٹھ دا ناں لکھو تاکے ایہدا مال رکھ ورگی مورت وچ ویکھو۔\nNote that this requires advanced JavaScript functionality known as AJAX.\nIf you have a very old browser, or have JavaScript disabled, it will not work.",
 	"categorytree-category": "گٹھ:",
 	"categorytree-go": "لین وکھاؤ",
 	"categorytree-parents": "وڈوڈیرے",
