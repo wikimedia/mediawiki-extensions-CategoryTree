@@ -194,6 +194,7 @@ class CategoryTreeHooks {
 		}
 
 		// Backwards compatibility for already cached output.
+		// @phan-suppress-next-line PhanUndeclaredProperty
 		if ( !empty( $parserOutput->mCategoryTreeTag ) ) {
 			CategoryTree::setHeaders( $outputPage );
 		}
