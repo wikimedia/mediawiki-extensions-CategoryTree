@@ -16,6 +16,9 @@ module.exports = function ( grunt ) {
 			all: [ 'i18n/' ]
 		},
 		eslint: {
+			options: {
+				cache: true
+			},
 			all: [
 				'**/*.js',
 				'!node_modules/**',
