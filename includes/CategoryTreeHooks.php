@@ -189,7 +189,7 @@ class CategoryTreeHooks {
 			// Skip, we've already set the headers unconditionally
 			return;
 		}
-		if ( !$parserOutput->getExtensionData( self::EXTENSION_DATA_FLAG ) ) {
+		if ( $parserOutput->getExtensionData( self::EXTENSION_DATA_FLAG ) ) {
 			CategoryTree::setHeaders( $outputPage );
 		}
 
