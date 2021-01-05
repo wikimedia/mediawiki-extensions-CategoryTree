@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Borichèt",
 			"Bèrto 'd Sèra",
 			"Dragonòt"
 		]
@@ -9,7 +10,7 @@
 	"categorytree-portlet": "Categorìe",
 	"categorytree-legend": "Mosta l'erbo dle categorìe",
 	"categorytree-desc": "Nàviga dinamicament la [[Special:CategoryTree|strutura dle categorìe]]",
-	"categorytree-header": "Ch'a buta ël nòm ëd na categorìa për ës-ciairene ij contnù com na strutura a erbo. (A veul JavaScript).",
+	"categorytree-header": "Ch'a buta ël nòm ëd na categorìa për ës-ciairene ij contnù com na strutura a erbo. (A-i é da manca ëd JavaScript).",
 	"categorytree-category": "Categorìa:",
 	"categorytree-go": "Deurbe l'erbo",
 	"categorytree-parents": "Cé",
