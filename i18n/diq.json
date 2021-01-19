@@ -3,6 +3,7 @@
 		"authors": [
 			"1917 Ekim Devrimi",
 			"Erdemaslancan",
+			"Ghybu",
 			"Gırd",
 			"Kumkumuk",
 			"Marmase",
@@ -29,7 +30,7 @@
 	"categorytree-num-categories": "$1 Kategoriy",
 	"categorytree-num-pages": "$1 Peli",
 	"categorytree-num-files": "$1 Dosya",
-	"categorytree-num-empty": "'''Venga'''",
+	"categorytree-num-empty": "venga",
 	"categorytree-load": "Bar ke",
 	"categorytree-loading": "bar beno...",
 	"categorytree-nothing-found": "maalesef netice çınyo",
