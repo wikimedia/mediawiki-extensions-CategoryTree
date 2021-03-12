@@ -22,8 +22,6 @@
  * @author Daniel Kinzler, brightbyte.de
  */
 
-use MediaWiki\MediaWikiServices;
-
 /**
  * Special page for the CategoryTree extension, an AJAX based gadget
  * to display the category structure of a wiki
@@ -31,13 +29,22 @@ use MediaWiki\MediaWikiServices;
 class CategoryTreePage extends SpecialPage {
 	public $target = '';
 
+	/** @var SearchEngineFactory */
+	private $searchEngineFactory;
+
 	/**
 	 * @var CategoryTree
 	 */
 	public $tree = null;
 
-	public function __construct() {
+	/**
+	 * @param SearchEngineFactory $searchEngineFactory
+	 */
+	public function __construct(
+		SearchEngineFactory $searchEngineFactory
+	) {
 		parent::__construct( 'CategoryTree' );
+		$this->searchEngineFactory = $searchEngineFactory;
 	}
 
 	/**
@@ -199,7 +206,7 @@ class CategoryTreePage extends SpecialPage {
 			// No prefix suggestion outside of category namespace
 			return [];
 		}
-		$searchEngine = MediaWikiServices::getInstance()->newSearchEngine();
+		$searchEngine = $this->searchEngineFactory->create();
 		$searchEngine->setLimitOffset( $limit, $offset );
 		// Autocomplete subpage the same as a normal search, but just for categories
 		$searchEngine->setNamespaces( [ NS_CATEGORY ] );
