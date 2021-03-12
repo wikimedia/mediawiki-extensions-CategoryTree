@@ -45,12 +45,10 @@ class CategoryTreePage extends SpecialPage {
 	 * @return mixed
 	 */
 	private function getOption( $name ) {
-		global $wgCategoryTreeDefaultOptions;
-
 		if ( $this->tree ) {
 			return $this->tree->getOption( $name );
 		} else {
-			return $wgCategoryTreeDefaultOptions[$name];
+			return $this->getConfig()->get( 'CategoryTreeDefaultOptions' )[$name];
 		}
 	}
 
@@ -59,8 +57,6 @@ class CategoryTreePage extends SpecialPage {
 	 * @param string|null $par Parameters passed to the page
 	 */
 	public function execute( $par ) {
-		global $wgCategoryTreeDefaultOptions, $wgCategoryTreeSpecialPageOptions;
-
 		$this->setHeaders();
 		$this->addHelpLink( 'Extension:CategoryTree' );
 		$request = $this->getRequest();
@@ -79,11 +75,14 @@ class CategoryTreePage extends SpecialPage {
 		$this->target = trim( $this->target );
 
 		$options = [];
+		$config = $this->getConfig();
 
 		# grab all known options from the request. Normalization is done by the CategoryTree class
-		foreach ( $wgCategoryTreeDefaultOptions as $option => $default ) {
-			if ( isset( $wgCategoryTreeSpecialPageOptions[$option] ) ) {
-				$default = $wgCategoryTreeSpecialPageOptions[$option];
+		$categoryTreeDefaultOptions = $config->get( 'CategoryTreeDefaultOptions' );
+		$categoryTreeSpecialPageOptions = $config->get( 'CategoryTreeSpecialPageOptions' );
+		foreach ( $categoryTreeDefaultOptions as $option => $default ) {
+			if ( isset( $categoryTreeSpecialPageOptions[$option] ) ) {
+				$default = $categoryTreeSpecialPageOptions[$option];
 			}
 
 			$options[$option] = $request->getVal( $option, $default );
