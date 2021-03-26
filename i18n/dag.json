@@ -2,8 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
+			"Dnshitobu",
 			"Shahadusadik"
 		]
 	},
-	"categorytree-expand": "yelgibu"
+	"categorytree-expand": "yelgima",
+	"categorytree-num-categories": "$1 C",
+	"categorytree-num-pages": "$1 P",
+	"categorytree-num-files": "$1 F"
 }
