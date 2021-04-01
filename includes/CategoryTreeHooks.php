@@ -112,9 +112,14 @@ class CategoryTreeHooks {
 			$argv[$k] = $v;
 		}
 
-		// now handle just like a <categorytree> tag
-		$html = self::parserHook( $cat, $argv, $parser );
-		return [ $html, 'noparse' => true, 'isHTML' => true ];
+		if ( $parser->getOutputType() === Parser::OT_PREPROCESS ) {
+			return Html::openElement( 'categorytree', $argv ) .
+				$cat . Html::closeElement( 'categorytree' );
+		} else {
+			// now handle just like a <categorytree> tag
+			$html = self::parserHook( $cat, $argv, $parser );
+			return [ $html, 'noparse' => true, 'isHTML' => true ];
+		}
 	}
 
 	/**
