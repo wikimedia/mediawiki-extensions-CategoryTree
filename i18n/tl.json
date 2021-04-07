@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"AnakngAraw",
+			"GinawaSaHapon",
 			"Lam-ang",
 			"Stranger195",
 			"Yivan000"
@@ -19,12 +20,12 @@
 	"categorytree-mode-pages": "mga pahina maliban sa mga talaksan",
 	"categorytree-mode-all": "lahat ng mga pahina",
 	"categorytree-collapse": "tiklupin",
-	"categorytree-expand": "palaparin",
+	"categorytree-expand": "palawakin",
 	"categorytree-expand-bullet": "►",
 	"categorytree-empty-bullet": "►",
-	"categorytree-member-counts": "Naglalaman ng {{PLURAL:$1|1 subkategorya|$1 subkategorya}}, {{PLURAL:$2|1 pahina|$2 mga pahina}}, at {{PLURAL:$3|1 talaksan|$3 mga talaksan}}",
-	"categorytree-num-categories": "$1 C",
-	"categorytree-num-pages": "$1 P",
+	"categorytree-member-counts": "Naglalaman ng {{PLURAL:$1|1 subkategorya|$1 (na) subkategorya}}, {{PLURAL:$2|1 pahina|$2 (na) pahina}}, at {{PLURAL:$3|1 file|$3 (na) file}}",
+	"categorytree-num-categories": "$1 ka.",
+	"categorytree-num-pages": "$1 pa.",
 	"categorytree-num-files": "$1 F",
 	"categorytree-num-empty": "walang laman",
 	"categorytree-load": "ikarga",
