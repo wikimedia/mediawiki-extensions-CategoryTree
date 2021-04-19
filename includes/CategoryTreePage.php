@@ -22,6 +22,14 @@
  * @author Daniel Kinzler, brightbyte.de
  */
 
+namespace MediaWiki\Extension\CategoryTree;
+
+use HTMLForm;
+use SearchEngineFactory;
+use SpecialPage;
+use Title;
+use Xml;
+
 /**
  * Special page for the CategoryTree extension, an AJAX based gadget
  * to display the category structure of a wiki
@@ -103,7 +111,7 @@ class CategoryTreePage extends SpecialPage {
 		$this->executeInputForm();
 
 		if ( $this->target !== '' && $this->target !== null ) {
-			if ( !CategoryTreeHooks::shouldForceHeaders() ) {
+			if ( !Hooks::shouldForceHeaders() ) {
 				CategoryTree::setHeaders( $output );
 			}
 

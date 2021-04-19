@@ -21,8 +21,24 @@
  * @ingroup Extensions
  * @author Daniel Kinzler, brightbyte.de
  */
+
+namespace MediaWiki\Extension\CategoryTree;
+
+use Category;
+use Exception;
+use ExtensionRegistry;
+use FormatJson;
+use Html;
+use IContextSource;
+use LinkBatch;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
+use OutputPage;
+use Parser;
+use RequestContext;
+use SpecialPage;
+use Title;
+use Xml;
 
 /**
  * Core functions for the CategoryTree extension, an AJAX based gadget
@@ -317,7 +333,7 @@ class CategoryTree {
 	}
 
 	/**
-	 * Custom tag implementation. This is called by CategoryTreeHooks::parserHook, which is used to
+	 * Custom tag implementation. This is called by Hooks::parserHook, which is used to
 	 * load CategoryTreeFunctions.php on demand.
 	 * @param ?Parser $parser
 	 * @param string $category

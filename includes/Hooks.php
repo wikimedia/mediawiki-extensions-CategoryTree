@@ -22,11 +22,25 @@
  * @author Daniel Kinzler, brightbyte.de
  */
 
+namespace MediaWiki\Extension\CategoryTree;
+
+use Article;
+use Category;
+use Html;
+use OutputPage;
+use Parser;
+use ParserOutput;
+use PPFrame;
+use Sanitizer;
+use Skin;
+use SpecialPage;
+use Title;
+
 /**
  * Hooks for the CategoryTree extension, an AJAX based gadget
  * to display the category structure of a wiki
  */
-class CategoryTreeHooks {
+class Hooks {
 
 	private const EXTENSION_DATA_FLAG = 'CategoryTree';
 
@@ -78,13 +92,13 @@ class CategoryTreeHooks {
 		if ( !$wgCategoryTreeAllowTag ) {
 			return;
 		}
-		$parser->setHook( 'categorytree', 'CategoryTreeHooks::parserHook' );
-		$parser->setFunctionHook( 'categorytree', 'CategoryTreeHooks::parserFunction' );
+		$parser->setHook( 'categorytree', [ self::class, 'parserHook' ] );
+		$parser->setFunctionHook( 'categorytree', [ self::class, 'parserFunction' ] );
 	}
 
 	/**
 	 * Entry point for the {{#categorytree}} tag parser function.
-	 * This is a wrapper around CategoryTreeHooks::parserHook
+	 * This is a wrapper around Hooks::parserHook
 	 * @param Parser $parser
 	 * @param string ...$params
 	 * @return array|string
@@ -102,7 +116,7 @@ class CategoryTreeHooks {
 		foreach ( $params as $p ) {
 			if ( preg_match( '/^\s*(\S.*?)\s*=\s*(.*?)\s*$/', $p, $m ) ) {
 				$k = $m[1];
-				// strip any quotes enclusing the value
+				// strip any quotes enclosing the value
 				$v = preg_replace( '/^"\s*(.*?)\s*"$/', '$1', $m[2] );
 			} else {
 				$k = trim( $p );
@@ -160,7 +174,7 @@ class CategoryTreeHooks {
 		$allowMissing = false
 	) {
 		if ( $parser ) {
-			# flag for use by CategoryTreeHooks::parserOutput
+			# flag for use by Hooks::parserOutput
 			$parser->getOutput()->setExtensionData( self::EXTENSION_DATA_FLAG, true );
 		}
 
@@ -202,7 +216,7 @@ class CategoryTreeHooks {
 	/**
 	 * BeforePageDisplay and BeforePageDisplayMobile hooks.
 	 * These hooks are used when $wgCategoryTreeForceHeaders is set.
-	 * Otherwise similar to CategoryTreeHooks::parserOutput.
+	 * Otherwise similar to Hooks::parserOutput.
 	 * @param OutputPage $out
 	 */
 	public static function addHeaders( OutputPage $out ) {
@@ -226,13 +240,13 @@ class CategoryTreeHooks {
 
 	/**
 	 * OutputPageMakeCategoryLinks hook, override category links
-	 * @param OutputPage &$out
+	 * @param OutputPage $out
 	 * @param array $categories
 	 * @param array &$links
 	 * @return bool
 	 */
 	public static function outputPageMakeCategoryLinks(
-		OutputPage &$out,
+		OutputPage $out,
 		array $categories,
 		array &$links
 	) {

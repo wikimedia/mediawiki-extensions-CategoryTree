@@ -1,6 +1,12 @@
 <?php
 
+namespace MediaWiki\Extension\CategoryTree;
+
+use ApiBase;
+use Config;
+use FormatJson;
 use MediaWiki\MediaWikiServices;
+use Title;
 
 /**
  * This program is free software; you can redistribute it and/or modify
