@@ -55,5 +55,5 @@
 	"categorytree-no-pages": "Indicates that there are no pages or subcategories to be shown",
 	"categorytree-not-found": "Indicates that the given category ($1) was not found. Parameters:\n* $1 - category name",
 	"categorytree-error": "Indicates that an error has occurred while loading the node's content",
-	"categorytree-retry": "Instruction to try again later"
+	"categorytree-retry": "Instruction to try again later."
 }
