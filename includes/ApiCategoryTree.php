@@ -101,7 +101,7 @@ class ApiCategoryTree extends ApiBase {
 				$ctConfig->get( 'RenderHashAppend' )
 			),
 			$cache::TTL_DAY,
-			function () use ( $ct, $title, $depth ) {
+			static function () use ( $ct, $title, $depth ) {
 				return trim( $ct->renderChildren( $title, $depth ) );
 			},
 			[
