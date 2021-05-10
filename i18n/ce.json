@@ -9,8 +9,8 @@
 	"categorytree": "Категорийн дит",
 	"categorytree-portlet": "Категореш",
 	"categorytree-legend": "Гайта категорийн дит",
-	"categorytree-desc": "AJAX [[Special:CategoryTree|категори дӀахӀоттаран]] компонент ю",
-	"categorytree-header": "Язъе категорин цӀе тӀакха иза гойтур ю диттан кепара.\nХӀара таро ю хьан браузеро AJAX ловш елахь.\nХӀан браузер шира ела елахь я JavaScript дӀаяйина елахь, бухара категореш диттан кепара гойтур яц.",
+	"categorytree-desc": "AJAX [[Special:CategoryTree|категори дӀахӀоттаран]] компонент йу",
+	"categorytree-header": "Йазйе категорин цӀе тӀакха иза гойтур йу диттан кепара.\nХӀара таро йу хьан браузеро AJAX ловш елахь.\nХӀан браузер шира ела елахь йа JavaScript дӀайайина елахь, бухара категореш диттан кепара гойтур йац.",
 	"categorytree-category": "Категори:",
 	"categorytree-go": "Чуяккха",
 	"categorytree-parents": "Кхолламан категореш",
@@ -33,5 +33,5 @@
 	"categorytree-no-pages": "агӀонаш йа бухара категореш йац",
 	"categorytree-not-found": "Категори «$1» ца карийна.",
 	"categorytree-error": "Хаамаш чубахаран гӀалат.",
-	"categorytree-retry": "Дехар до, собар а дийна юха кхин гӀорта."
+	"categorytree-retry": "Дехар до, собар а дийна, йуха а гӀорта."
 }
