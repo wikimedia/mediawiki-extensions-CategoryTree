@@ -40,7 +40,14 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 				CategoryTree::setHeaders( $this->getOutput() );
 			}
 
-			$this->categorytree = new CategoryTree( $this->getConfig()->get( 'CategoryTreeCategoryPageOptions' ) );
+			$options = $this->getConfig()->get( 'CategoryTreeCategoryPageOptions' );
+
+			$mode = $this->getRequest()->getVal( 'mode' );
+			if ( $mode !== null ) {
+				$options['mode'] = CategoryTree::decodeMode( $mode );
+			}
+
+			$this->categorytree = new CategoryTree( $options );
 		}
 
 		return $this->categorytree;
