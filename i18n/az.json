@@ -3,6 +3,7 @@
 		"authors": [
 			"Cekli829",
 			"Dağlı95",
+			"NMW03",
 			"PPerviz",
 			"Toghrul Rahimli",
 			"Vugar 1981",
@@ -22,7 +23,7 @@
 	"categorytree-mode-all": "bütün səhifələr",
 	"categorytree-collapse": "gizlə",
 	"categorytree-expand": "genişləndir",
-	"categorytree-member-counts": "Bu kateqoriya, {{PLURAL:$1|1 altkategoriya|$1 altkategoriya}}, {{PLURAL:$2|1 səhifə|$2 səhifə}} və {{PLURAL:$3|1 şəkil|$3 şəkil}}dən ibarətdir.",
+	"categorytree-member-counts": "Bu kateqoriya, {{PLURAL:$1|1 altkateqoriya|$1 altkateqoriya}}, {{PLURAL:$2|1 səhifə|$2 səhifə}} və {{PLURAL:$3|1 fayl|$3 fayl}}dan ibarətdir.",
 	"categorytree-num-categories": "$1 K",
 	"categorytree-num-pages": "$1 S",
 	"categorytree-num-files": "$1 F",
