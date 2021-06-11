@@ -11,6 +11,9 @@
 	"ConfigRegistry": {
 		"categorytree": "GlobalVarConfig::newInstance"
 	},
+	"ExtensionFunctions": [
+		"MediaWiki\\Extension\\CategoryTree\\Hooks::initialize"
+	],
 	"SpecialPages": {
 		"CategoryTree": {
 			"class": "MediaWiki\\Extension\\CategoryTree\\CategoryTreePage",
@@ -81,23 +84,16 @@
 		"localBasePath": "modules",
 		"remoteExtPath": "CategoryTree/modules"
 	},
-	"HookHandlers": {
-		"default": {
-			"class": "MediaWiki\\Extension\\CategoryTree\\Hooks",
-			"services": [ "DBLoadBalancer", "MainConfig" ]
-		}
-	},
 	"Hooks": {
-		"MediaWikiServices": "default",
-		"ArticleFromTitle": "default",
-		"SpecialTrackingCategories::preprocess": "default",
-		"SpecialTrackingCategories::generateCatLink": "default",
-		"SkinBuildSidebar": "default",
-		"ParserFirstCallInit": "default",
-		"OutputPageMakeCategoryLinks": "default",
-		"BeforePageDisplay": "default",
-		"OutputPageParserOutput": "default",
-		"BeforePageDisplayMobile": "MediaWiki\\Extension\\CategoryTree\\Hooks::addHeaders"
+		"ArticleFromTitle": "MediaWiki\\Extension\\CategoryTree\\Hooks::articleFromTitle",
+		"SpecialTrackingCategories::preprocess": "MediaWiki\\Extension\\CategoryTree\\Hooks::onSpecialTrackingCategoriesPreprocess",
+		"SpecialTrackingCategories::generateCatLink": "MediaWiki\\Extension\\CategoryTree\\Hooks::onSpecialTrackingCategoriesGenerateCatLink",
+		"SkinBuildSidebar": "MediaWiki\\Extension\\CategoryTree\\Hooks::onSkinBuildSidebar",
+		"ParserFirstCallInit": "MediaWiki\\Extension\\CategoryTree\\Hooks::setHooks",
+		"OutputPageMakeCategoryLinks": "MediaWiki\\Extension\\CategoryTree\\Hooks::outputPageMakeCategoryLinks",
+		"BeforePageDisplay": "MediaWiki\\Extension\\CategoryTree\\Hooks::addHeaders",
+		"BeforePageDisplayMobile": "MediaWiki\\Extension\\CategoryTree\\Hooks::addHeaders",
+		"OutputPageParserOutput": "MediaWiki\\Extension\\CategoryTree\\Hooks::parserOutput"
 	},
 	"config": {
 		"CategoryTreeMaxChildren": {
