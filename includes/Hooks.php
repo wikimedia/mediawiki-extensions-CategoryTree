@@ -30,14 +30,12 @@ use Config;
 use Html;
 use IContextSource;
 use MediaWiki\Hook\BeforePageDisplayHook;
-use MediaWiki\Hook\MediaWikiServicesHook;
 use MediaWiki\Hook\OutputPageMakeCategoryLinksHook;
 use MediaWiki\Hook\OutputPageParserOutputHook;
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Hook\SkinBuildSidebarHook;
 use MediaWiki\Hook\SpecialTrackingCategories__generateCatLinkHook;
 use MediaWiki\Hook\SpecialTrackingCategories__preprocessHook;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Page\Hook\ArticleFromTitleHook;
 use OutputPage;
 use Parser;
@@ -61,7 +59,6 @@ class Hooks implements
 	SpecialTrackingCategories__generateCatLinkHook,
 	BeforePageDisplayHook,
 	OutputPageParserOutputHook,
-	MediaWikiServicesHook,
 	SkinBuildSidebarHook,
 	ParserFirstCallInitHook,
 	OutputPageMakeCategoryLinksHook
@@ -93,29 +90,6 @@ class Hooks implements
 	public static function shouldForceHeaders() {
 		global $wgCategoryTreeForceHeaders;
 		return $wgCategoryTreeForceHeaders;
-	}
-
-	/**
-	 * Adjusts config once MediaWiki is fully initialised
-	 * TODO: Don't do this, lazy initialize the config
-	 * @param MediaWikiServices $services
-	 */
-	public function onMediaWikiServices( $services ) {
-		global $wgCategoryTreeDefaultOptions, $wgCategoryTreeDefaultMode;
-		global $wgCategoryTreeCategoryPageOptions, $wgCategoryTreeCategoryPageMode;
-		global $wgCategoryTreeOmitNamespace;
-
-		if ( !isset( $wgCategoryTreeDefaultOptions['mode'] ) ) {
-			$wgCategoryTreeDefaultOptions['mode'] = $wgCategoryTreeDefaultMode;
-		}
-
-		if ( !isset( $wgCategoryTreeDefaultOptions['hideprefix'] ) ) {
-			$wgCategoryTreeDefaultOptions['hideprefix'] = $wgCategoryTreeOmitNamespace;
-		}
-
-		if ( !isset( $wgCategoryTreeCategoryPageOptions['mode'] ) ) {
-			$wgCategoryTreeCategoryPageOptions['mode'] = $wgCategoryTreeCategoryPageMode;
-		}
 	}
 
 	/**

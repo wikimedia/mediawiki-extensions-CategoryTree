@@ -85,10 +85,13 @@
 		"default": {
 			"class": "MediaWiki\\Extension\\CategoryTree\\Hooks",
 			"services": [ "DBLoadBalancer", "MainConfig" ]
+		},
+		"config": {
+			"class": "MediaWiki\\Extension\\CategoryTree\\ConfigHookHandler"
 		}
 	},
 	"Hooks": {
-		"MediaWikiServices": "default",
+		"MediaWikiServices": "config",
 		"ArticleFromTitle": "default",
 		"SpecialTrackingCategories::preprocess": "default",
 		"SpecialTrackingCategories::generateCatLink": "default",
