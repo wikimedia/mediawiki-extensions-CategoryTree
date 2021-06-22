@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Gadarawamo",
-			"Hunpatinjob"
+			"Hunpatinjob",
+			"Misteld"
 		]
 	},
 	"categorytree-expand": "Hen gblo",
+	"categorytree-member-counts": "E hẹn {{PLURAL:$1|1 subcategory|$1 subcategories}}, {{PLURAL:$2|1 page|$2 pages}}, po{{PLURAL:$3|1 file|$3 files}}",
 	"categorytree-num-categories": "$1 S",
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 F"
