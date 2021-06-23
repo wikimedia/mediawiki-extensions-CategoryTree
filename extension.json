@@ -92,6 +92,7 @@
 		"ArticleFromTitle": "default",
 		"SpecialTrackingCategories::preprocess": "default",
 		"SpecialTrackingCategories::generateCatLink": "default",
+		"SkinAfterPortlet": "default",
 		"SkinBuildSidebar": "default",
 		"ParserFirstCallInit": "default",
 		"OutputPageMakeCategoryLinks": "default",

@@ -170,22 +170,44 @@ class Hooks implements
 	}
 
 	/**
+	 * Obtain a category sidebar link based on config
+	 * @return bool|string of link
+	 */
+	private function getCategorySidebarBox() {
+		global $wgCategoryTreeSidebarRoot, $wgCategoryTreeSidebarOptions;
+		if ( !$wgCategoryTreeSidebarRoot ) {
+			return false;
+		}
+		return self::parserHook( $wgCategoryTreeSidebarRoot, $wgCategoryTreeSidebarOptions );
+	}
+
+	/**
 	 * Hook implementation for injecting a category tree into the sidebar.
 	 * Only does anything if $wgCategoryTreeSidebarRoot is set to a category name.
 	 * @param Skin $skin
 	 * @param array &$sidebar
 	 */
 	public function onSkinBuildSidebar( $skin, &$sidebar ) {
-		global $wgCategoryTreeSidebarRoot, $wgCategoryTreeSidebarOptions;
-
-		if ( !$wgCategoryTreeSidebarRoot ) {
-			return;
-		}
-
-		$html = self::parserHook( $wgCategoryTreeSidebarRoot, $wgCategoryTreeSidebarOptions );
+		$html = $this->getCategorySidebarBox();
 		if ( $html ) {
-			$sidebar['categorytree-portlet'] = $html;
+			$sidebar['categorytree-portlet'] = [];
 			CategoryTree::setHeaders( $skin->getOutput() );
+		}
+	}
+
+	/**
+	 * Hook implementation for injecting a category tree link into the sidebar.
+	 * Only does anything if $wgCategoryTreeSidebarRoot is set to a category name.
+	 * @param Skin $skin
+	 * @param string $portlet
+	 * @param string &$html
+	 */
+	public function onSkinAfterPortlet( $skin, $portlet, &$html ) {
+		if ( $portlet === 'categorytree-portlet' ) {
+			$box = $this->getCategorySidebarBox();
+			if ( $box ) {
+				$html .= $box;
+			}
 		}
 	}
 
