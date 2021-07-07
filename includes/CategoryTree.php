@@ -806,7 +806,6 @@ class CategoryTree {
 
 	/**
 	 * Internal function to cap depth
-	 * @suppress PhanPluginDuplicateConditionalNullCoalescing until PHP7 is required
 	 * @param string $mode
 	 * @param int $depth
 	 * @return int|mixed
@@ -814,14 +813,14 @@ class CategoryTree {
 	public static function capDepth( $mode, $depth ) {
 		global $wgCategoryTreeMaxDepth;
 
-		if ( is_numeric( $depth ) ) {
-			$depth = intval( $depth );
-		} else {
+		if ( !is_numeric( $depth ) ) {
 			return 1;
 		}
 
+		$depth = intval( $depth );
+
 		if ( is_array( $wgCategoryTreeMaxDepth ) ) {
-			$max = isset( $wgCategoryTreeMaxDepth[$mode] ) ? $wgCategoryTreeMaxDepth[$mode] : 1;
+			$max = $wgCategoryTreeMaxDepth[$mode] ?? 1;
 		} elseif ( is_numeric( $wgCategoryTreeMaxDepth ) ) {
 			$max = $wgCategoryTreeMaxDepth;
 		} else {
