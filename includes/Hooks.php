@@ -232,7 +232,7 @@ class Hooks implements
 	 * @param OutputPage $outputPage
 	 * @param ParserOutput $parserOutput
 	 */
-	public function onOutputPageParserOutput( $outputPage, $parserOutput ) : void {
+	public function onOutputPageParserOutput( $outputPage, $parserOutput ): void {
 		if ( self::shouldForceHeaders() ) {
 			// Skip, we've already set the headers unconditionally
 			return;
@@ -249,7 +249,7 @@ class Hooks implements
 	 * @param Skin $skin
 	 * @return void This hook must not abort, it must return no value
 	 */
-	public function onBeforePageDisplay( $out, $skin ) : void {
+	public function onBeforePageDisplay( $out, $skin ): void {
 		self::addHeaders( $out );
 	}
 
