@@ -14,7 +14,7 @@
 	"categorytree-portlet": "Kateqoriyalar",
 	"categorytree-legend": "Kateqoriya ağacını göstər.",
 	"categorytree-desc": "[[Special:CategoryTree|Kategori sistemini]] dinamik idarə et",
-	"categorytree-header": "Kategoriya adını girib, içerisini ierarxik şəkildə görə bilərsiniz. Bu özəllik AJAX adıyla biliən JavaScript ilə oşləyər. əgər operatorunuz köhnə isə ya da JavaScript istifadəsi mümkün deyilsə, işləməz.",
+	"categorytree-header": "Məzmununu ağac strukturunda görmək üçün kateqoriyanın adını daxil edin. (JavaScript tələb edir.)",
 	"categorytree-category": "Kateqoriya:",
 	"categorytree-go": "Yüklə",
 	"categorytree-parents": "Üst kateqoriyalar",
