@@ -134,8 +134,6 @@
 .mw-content-rtl .mw-content-ltr .CategoryTreeEmptyBullet:empty,
 .mw-content-rtl .mw-content-ltr .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty {
 	border-left: 10px solid;
-	/* The following @noflip is necessary to prevent the flipping. (T288943) */
-	/* @noflip */
 	border-right: 0 none;
 }
 
@@ -145,8 +143,6 @@
 .mw-content-ltr .mw-content-rtl .CategoryTreeEmptyBullet:empty,
 .mw-content-ltr .mw-content-rtl .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty {
 	border-right: 10px solid;
-	/* The following @noflip is necessary to prevent the flipping. (T288943) */
-	/* @noflip */
 	border-left: 0 none;
 }
 
