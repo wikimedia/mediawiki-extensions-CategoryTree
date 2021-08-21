@@ -19,13 +19,12 @@
  * http://www.gnu.org/copyleft/gpl.html
  *
  * @file
- * @ingroup Extensions
  * @author Daniel Kinzler, brightbyte.de
  */
 
 ( function () {
 	var loadChildren,
-		data = require( './data.json' );
+		config = require( './data.json' );
 
 	/**
 	 * Expands a given node (loading it's children if not loaded)
@@ -65,7 +64,7 @@
 	/**
 	 * Handles clicks on the expand buttons, and calls the appropriate function
 	 *
-	 * @context {Element} CategoryTreeToggle
+	 * @this {Element} CategoryTreeToggle
 	 */
 	function handleNode() {
 		var $link = $( this );
@@ -144,7 +143,7 @@
 		ctTitle = $link.attr( 'data-ct-title' );
 		ctMode = $linkParentCTTag.data( 'ct-mode' );
 		ctMode = typeof ctMode === 'number' ? ctMode : undefined;
-		ctOptions = $linkParentCTTag.attr( 'data-ct-options' ) || data.defaultCtOptions;
+		ctOptions = $linkParentCTTag.attr( 'data-ct-options' ) || config.defaultCtOptions;
 
 		// Mode and options have defaults or fallbacks, title does not.
 		// Don't make a request if there is no title.

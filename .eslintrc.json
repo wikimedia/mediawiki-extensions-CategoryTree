@@ -8,8 +8,5 @@
 	"env": {
 		"browser": true,
 		"commonjs": true
-	},
-	"rules": {
-		"no-shadow": "warn"
 	}
 }
