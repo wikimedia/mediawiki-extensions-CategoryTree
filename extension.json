@@ -54,8 +54,6 @@
 			"messages": [
 				"categorytree-collapse",
 				"categorytree-expand",
-				"categorytree-collapse-bullet",
-				"categorytree-expand-bullet",
 				"categorytree-load",
 				"categorytree-loading",
 				"categorytree-nothing-found",
