@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Olve Utne"
+		]
+	},
+	"categorytree-num-categories": "$1 K",
+	"categorytree-num-pages": "$1 B",
+	"categorytree-num-files": "$1 F"
+}
