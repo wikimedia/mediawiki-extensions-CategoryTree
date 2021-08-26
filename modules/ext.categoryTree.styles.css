@@ -112,32 +112,52 @@
  * that includes a bullet in the HTML from showing two bullets. After the cache
  * has expired the :empty selectors can be removed.
  */
-/* @noflip */
-body.ltr .CategoryTreeEmptyBullet:empty:before,
-body.ltr .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty:before,
-body.mediawiki .mw-content-ltr .CategoryTreeEmptyBullet:empty:before,
-body.mediawiki .mw-content-ltr .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty:before,
-body.mediawiki .mw-content-rtl .mw-content-ltr .CategoryTreeEmptyBullet:empty:before,
-body.mediawiki .mw-content-rtl .mw-content-ltr .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty:before {
-	content: '►';
+.CategoryTreeEmptyBullet:empty,
+.CategoryTreeToggle:empty,
+.CategoryTreePageBullet {
+	display: inline-block;
+	width: 0;
+	height: 0;
+}
+
+.CategoryTreeEmptyBullet:empty,
+.CategoryTreeToggle[ data-ct-state='collapsed' ]:empty {
+	border-top: 5px solid transparent;
+	border-left: 10px solid;
+	border-bottom: 5px solid transparent;
+	border-right: 0 none;
 }
 
 /* @noflip */
-body.rtl .CategoryTreeEmptyBullet:empty:before,
-body.rtl .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty:before,
-body.mediawiki .mw-content-rtl .CategoryTreeEmptyBullet:empty:before,
-body.mediawiki .mw-content-rtl .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty:before,
-body.mediawiki .mw-content-ltr .mw-content-rtl .CategoryTreeEmptyBullet:empty:before,
-body.mediawiki .mw-content-ltr .mw-content-rtl .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty:before {
-	content: '◄';
+.mw-content-ltr .CategoryTreeEmptyBullet:empty,
+.mw-content-ltr .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty,
+.mw-content-rtl .mw-content-ltr .CategoryTreeEmptyBullet:empty,
+.mw-content-rtl .mw-content-ltr .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty {
+	border-left: 10px solid;
+	/* The following @noflip is necessary to prevent the flipping. (T288943) */
+	/* @noflip */
+	border-right: 0 none;
 }
 
-.CategoryTreeToggle[ data-ct-state='expanded' ]:empty:before {
-	content: '▼';
+/* @noflip */
+.mw-content-rtl .CategoryTreeEmptyBullet:empty,
+.mw-content-rtl .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty,
+.mw-content-ltr .mw-content-rtl .CategoryTreeEmptyBullet:empty,
+.mw-content-ltr .mw-content-rtl .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty {
+	border-right: 10px solid;
+	/* The following @noflip is necessary to prevent the flipping. (T288943) */
+	/* @noflip */
+	border-left: 0 none;
 }
 
-.CategoryTreePageBullet:before {
-	content: '\A0';
+.CategoryTreeToggle[ data-ct-state='expanded' ]:empty {
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid;
+}
+
+.CategoryTreePageBullet {
+	border-left: 10px solid transparent;
 }
 
 .CategoryTreeLabelPage {
