@@ -84,15 +84,6 @@ class Hooks implements
 	}
 
 	/**
-	 * @internal For use by CategoryTreeCategoryViewer and CategoryTreePage only!
-	 * @return bool
-	 */
-	public static function shouldForceHeaders() {
-		global $wgCategoryTreeForceHeaders;
-		return $wgCategoryTreeForceHeaders;
-	}
-
-	/**
 	 * @param Parser $parser
 	 */
 	public function onParserFirstCallInit( $parser ) {
@@ -233,10 +224,6 @@ class Hooks implements
 	 * @param ParserOutput $parserOutput
 	 */
 	public function onOutputPageParserOutput( $outputPage, $parserOutput ): void {
-		if ( self::shouldForceHeaders() ) {
-			// Skip, we've already set the headers unconditionally
-			return;
-		}
 		if ( $parserOutput->getExtensionData( self::EXTENSION_DATA_FLAG ) ) {
 			CategoryTree::setHeaders( $outputPage );
 		}
@@ -260,10 +247,10 @@ class Hooks implements
 	 * @param OutputPage $out
 	 */
 	public static function addHeaders( OutputPage $out ) {
-		if ( !self::shouldForceHeaders() ) {
-			return;
+		global $wgCategoryTreeForceHeaders;
+		if ( $wgCategoryTreeForceHeaders ) {
+			CategoryTree::setHeaders( $out );
 		}
-		CategoryTree::setHeaders( $out );
 	}
 
 	/**

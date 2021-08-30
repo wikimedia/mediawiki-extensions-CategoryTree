@@ -111,9 +111,7 @@ class CategoryTreePage extends SpecialPage {
 		$this->executeInputForm();
 
 		if ( $this->target !== '' && $this->target !== null ) {
-			if ( !Hooks::shouldForceHeaders() ) {
-				CategoryTree::setHeaders( $output );
-			}
+			CategoryTree::setHeaders( $output );
 
 			$title = CategoryTree::makeTitle( $this->target );
 
