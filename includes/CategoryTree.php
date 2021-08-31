@@ -375,26 +375,21 @@ class CategoryTree {
 		$attr['data-ct-mode'] = $this->mOptions['mode'];
 		$attr['data-ct-options'] = $this->getOptionsAsJsStructure();
 
-		$html = '';
-		$html .= Html::openElement( 'div', $attr );
-
 		if ( !$allowMissing && !$title->getArticleID() ) {
-			$html .= Html::openElement( 'span', [ 'class' => 'CategoryTreeNotice' ] );
-			$html .= wfMessage( 'categorytree-not-found' )
-				->plaintextParams( $category )
-				->parse();
-			$html .= Html::closeElement( 'span' );
+			$html = Html::rawElement( 'span', [ 'class' => 'CategoryTreeNotice' ],
+				wfMessage( 'categorytree-not-found' )
+					->plaintextParams( $category )
+					->parse()
+			);
 		} else {
 			if ( !$hideroot ) {
-				$html .= $this->renderNode( $title, $depth );
+				$html = $this->renderNode( $title, $depth );
 			} else {
-				$html .= $this->renderChildren( $title, $depth );
+				$html = $this->renderChildren( $title, $depth );
 			}
 		}
 
-		$html .= Html::closeElement( 'div' );
-
-		return $html;
+		return Html::rawElement( 'div', $attr, $html );
 	}
 
 	/**
@@ -550,26 +545,22 @@ class CategoryTree {
 
 		$special = SpecialPage::getTitleFor( 'CategoryTree' );
 
-		$s = '';
+		$s = [];
 
 		foreach ( $res as $row ) {
 			$t = Title::makeTitle( NS_CATEGORY, $row->cl_to );
 
-			if ( $s !== '' ) {
-				$s .= wfMessage( 'pipe-separator' )->escaped();
-			}
-
-			$s .= Html::openElement( 'span', [ 'class' => 'CategoryTreeItem' ] );
-			$s .= $this->linkRenderer->makeLink(
-				$special,
-				$t->getText(),
-				[ 'class' => 'CategoryTreeLabel' ],
-				[ 'target' => $t->getDBkey() ] + $this->mOptions
+			$s[] = Html::rawElement( 'span', [ 'class' => 'CategoryTreeItem' ],
+				$this->linkRenderer->makeLink(
+					$special,
+					$t->getText(),
+					[ 'class' => 'CategoryTreeLabel' ],
+					[ 'target' => $t->getDBkey() ] + $this->mOptions
+				)
 			);
-			$s .= Html::closeElement( 'span' );
 		}
 
-		return $s;
+		return implode( wfMessage( 'pipe-separator' )->escaped(), $s );
 	}
 
 	/**
@@ -693,20 +684,25 @@ class CategoryTree {
 		if ( $ns == NS_CATEGORY && $children > 0 ) {
 			$children = $this->renderChildren( $title, $children );
 			if ( $children == '' ) {
-				$s .= Html::openElement( 'i', [ 'class' => 'CategoryTreeNotice' ] );
-				if ( $mode == CategoryTreeMode::CATEGORIES ) {
-					$s .= wfMessage( 'categorytree-no-subcategories' )->escaped();
-				} elseif ( $mode == CategoryTreeMode::PAGES ) {
-					$s .= wfMessage( 'categorytree-no-pages' )->escaped();
-				} elseif ( $mode == CategoryTreeMode::PARENTS ) {
-					$s .= wfMessage( 'categorytree-no-parent-categories' )->escaped();
-				} else {
-					$s .= wfMessage( 'categorytree-nothing-found' )->escaped();
+				switch ( $mode ) {
+					case CategoryTreeMode::CATEGORIES:
+						$msg = 'categorytree-no-subcategories';
+						break;
+					case CategoryTreeMode::PAGES:
+						$msg = 'categorytree-no-pages';
+						break;
+					case CategoryTreeMode::PARENTS:
+						$msg = 'categorytree-no-parent-categories';
+						break;
+					default:
+						$msg = 'categorytree-nothing-found';
+						break;
 				}
-				$s .= Html::closeElement( 'i' );
-			} else {
-				$s .= $children;
+				$children = Html::element( 'i', [ 'class' => 'CategoryTreeNotice' ],
+					wfMessage( $msg )->text()
+				);
 			}
+			$s .= $children;
 		}
 
 		$s .= Html::closeElement( 'div' ) . Html::closeElement( 'div' );

@@ -114,34 +114,31 @@ class CategoryTreePage extends SpecialPage {
 			$title = CategoryTree::makeTitle( $this->target );
 
 			if ( $title && $title->getArticleID() ) {
-				$output->addHTML( Html::openElement( 'div', [ 'class' => 'CategoryTreeParents' ] ) );
-				$output->addHTML( $this->msg( 'categorytree-parents' )->parse() );
-				$output->addHTML( $this->msg( 'colon-separator' )->escaped() );
-
 				$parents = $this->tree->renderParents( $title );
-
 				if ( $parents == '' ) {
-					$output->addHTML( $this->msg( 'categorytree-no-parent-categories' )->parse() );
-				} else {
-					$output->addHTML( $parents );
+					$parents = $this->msg( 'categorytree-no-parent-categories' )->parse();
 				}
 
-				$output->addHTML( Html::closeElement( 'div' ) );
+				$output->addHTML( Html::rawElement( 'div', [ 'class' => 'CategoryTreeParents' ],
+					$this->msg( 'categorytree-parents' )->parse() .
+					$this->msg( 'colon-separator' )->escaped() .
+					$parents
+				) );
 
-				$output->addHTML( Html::openElement( 'div', [
-					'class' => 'CategoryTreeResult CategoryTreeTag',
-					'data-ct-mode' => $this->tree->getOption( 'mode' ),
-					'data-ct-options' => $this->tree->getOptionsAsJsStructure(),
-				] ) );
-				$output->addHTML( $this->tree->renderNode( $title, 1 ) );
-				$output->addHTML( Html::closeElement( 'div' ) );
+				$output->addHTML( Html::rawElement( 'div',
+					[
+						'class' => 'CategoryTreeResult CategoryTreeTag',
+						'data-ct-mode' => $this->tree->getOption( 'mode' ),
+						'data-ct-options' => $this->tree->getOptionsAsJsStructure(),
+					],
+					$this->tree->renderNode( $title, 1 )
+				) );
 			} else {
-				$output->addHTML( Html::openElement( 'div', [ 'class' => 'CategoryTreeNotice' ] ) );
-				$output->addHTML( $this->msg( 'categorytree-not-found' )
-					->plaintextParams( $this->target )
-					->parse()
-				);
-				$output->addHTML( Html::closeElement( 'div' ) );
+				$output->addHTML( Html::rawElement( 'div', [ 'class' => 'CategoryTreeNotice' ],
+					$this->msg( 'categorytree-not-found' )
+						->plaintextParams( $this->target )
+						->parse()
+				) );
 			}
 		}
 	}

@@ -123,8 +123,7 @@ class Hooks implements
 		}
 
 		if ( $parser->getOutputType() === Parser::OT_PREPROCESS ) {
-			return Html::openElement( 'categorytree', $argv ) .
-				$cat . Html::closeElement( 'categorytree' );
+			return Html::rawElement( 'categorytree', $argv, $cat );
 		} else {
 			// now handle just like a <categorytree> tag
 			$html = $this->parserHook( $cat, $argv, $parser );
