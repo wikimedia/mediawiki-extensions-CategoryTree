@@ -184,25 +184,11 @@ class Hooks implements
 		$attr = Sanitizer::validateTagAttributes( $argv, 'div' );
 
 		$hideroot = OptionManager::decodeBoolean( $argv['hideroot'] ?? false );
-		$onlyroot = OptionManager::decodeBoolean( $argv['onlyroot'] ?? false );
 		$depthArg = (int)( $argv['depth'] ?? 1 );
 
 		$depth = $ct->optionManager->capDepth( $depthArg );
-		if ( $onlyroot ) {
-			$depth = 0;
-			$message = '<span class="error">'
-				. wfMessage( 'categorytree-onlyroot-message' )->inContentLanguage()->parse()
-				. '</span>';
-			if ( $parser ) {
-				$parser->getOutput()->addWarningMsg( 'categorytree-deprecation-warning' );
-				$parser->addTrackingCategory( 'categorytree-deprecation-category' );
-			}
-		} else {
-			$message = '';
-		}
 
-		return $message .
-			$ct->getTag( $cat ?? '', $hideroot, $attr, $depth );
+		return $ct->getTag( $cat ?? '', $hideroot, $attr, $depth );
 	}
 
 	/**
