@@ -97,9 +97,7 @@
 		"SkinBuildSidebar": "default",
 		"ParserFirstCallInit": "default",
 		"OutputPageMakeCategoryLinks": "default",
-		"BeforePageDisplay": "default",
-		"OutputPageParserOutput": "default",
-		"BeforePageDisplayMobile": "MediaWiki\\Extension\\CategoryTree\\Hooks::addHeaders"
+		"OutputPageParserOutput": "default"
 	},
 	"config": {
 		"CategoryTreeMaxChildren": {
@@ -118,9 +116,6 @@
 				"0": 2
 			},
 			"merge_strategy": "array_plus"
-		},
-		"CategoryTreeForceHeaders": {
-			"value": false
 		},
 		"CategoryTreeSidebarRoot": {
 			"value": null

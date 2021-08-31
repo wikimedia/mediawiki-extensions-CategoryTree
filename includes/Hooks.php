@@ -29,7 +29,6 @@ use Category;
 use Config;
 use Html;
 use IContextSource;
-use MediaWiki\Hook\BeforePageDisplayHook;
 use MediaWiki\Hook\OutputPageMakeCategoryLinksHook;
 use MediaWiki\Hook\OutputPageParserOutputHook;
 use MediaWiki\Hook\ParserFirstCallInitHook;
@@ -57,7 +56,6 @@ class Hooks implements
 	ArticleFromTitleHook,
 	SpecialTrackingCategories__preprocessHook,
 	SpecialTrackingCategories__generateCatLinkHook,
-	BeforePageDisplayHook,
 	OutputPageParserOutputHook,
 	SkinBuildSidebarHook,
 	ParserFirstCallInitHook,
@@ -226,30 +224,6 @@ class Hooks implements
 	public function onOutputPageParserOutput( $outputPage, $parserOutput ): void {
 		if ( $parserOutput->getExtensionData( self::EXTENSION_DATA_FLAG ) ) {
 			CategoryTree::setHeaders( $outputPage );
-		}
-	}
-
-	/**
-	 * This hook is called prior to outputting a page.
-	 *
-	 * @param OutputPage $out
-	 * @param Skin $skin
-	 * @return void This hook must not abort, it must return no value
-	 */
-	public function onBeforePageDisplay( $out, $skin ): void {
-		self::addHeaders( $out );
-	}
-
-	/**
-	 * BeforePageDisplay and BeforePageDisplayMobile hooks.
-	 * These hooks are used when $wgCategoryTreeForceHeaders is set.
-	 * Otherwise similar to Hooks::parserOutput.
-	 * @param OutputPage $out
-	 */
-	public static function addHeaders( OutputPage $out ) {
-		global $wgCategoryTreeForceHeaders;
-		if ( $wgCategoryTreeForceHeaders ) {
-			CategoryTree::setHeaders( $out );
 		}
 	}
 
