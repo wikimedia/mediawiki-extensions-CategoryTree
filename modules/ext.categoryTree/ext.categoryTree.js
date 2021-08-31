@@ -35,7 +35,7 @@
 		// Show the children node
 		var $children = $link.parents( '.CategoryTreeItem' )
 			.siblings( '.CategoryTreeChildren' )
-			.show();
+			.css( 'display', '' );
 
 		$link.attr( {
 			title: mw.msg( 'categorytree-collapse' ),
@@ -56,7 +56,7 @@
 		// Hide the children node
 		$link.parents( '.CategoryTreeItem' )
 			.siblings( '.CategoryTreeChildren' )
-			.hide();
+			.css( 'display', 'none' );
 
 		$link.attr( {
 			title: mw.msg( 'categorytree-expand' ),
