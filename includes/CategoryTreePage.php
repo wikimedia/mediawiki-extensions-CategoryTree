@@ -24,11 +24,11 @@
 
 namespace MediaWiki\Extension\CategoryTree;
 
+use Html;
 use HTMLForm;
 use SearchEngineFactory;
 use SpecialPage;
 use Title;
-use Xml;
 
 /**
  * Special page for the CategoryTree extension, an AJAX based gadget
@@ -114,7 +114,7 @@ class CategoryTreePage extends SpecialPage {
 			$title = CategoryTree::makeTitle( $this->target );
 
 			if ( $title && $title->getArticleID() ) {
-				$output->addHTML( Xml::openElement( 'div', [ 'class' => 'CategoryTreeParents' ] ) );
+				$output->addHTML( Html::openElement( 'div', [ 'class' => 'CategoryTreeParents' ] ) );
 				$output->addHTML( $this->msg( 'categorytree-parents' )->parse() );
 				$output->addHTML( $this->msg( 'colon-separator' )->escaped() );
 
@@ -126,22 +126,22 @@ class CategoryTreePage extends SpecialPage {
 					$output->addHTML( $parents );
 				}
 
-				$output->addHTML( Xml::closeElement( 'div' ) );
+				$output->addHTML( Html::closeElement( 'div' ) );
 
-				$output->addHTML( Xml::openElement( 'div', [
+				$output->addHTML( Html::openElement( 'div', [
 					'class' => 'CategoryTreeResult CategoryTreeTag',
 					'data-ct-mode' => $this->tree->getOption( 'mode' ),
 					'data-ct-options' => $this->tree->getOptionsAsJsStructure(),
 				] ) );
 				$output->addHTML( $this->tree->renderNode( $title, 1 ) );
-				$output->addHTML( Xml::closeElement( 'div' ) );
+				$output->addHTML( Html::closeElement( 'div' ) );
 			} else {
-				$output->addHTML( Xml::openElement( 'div', [ 'class' => 'CategoryTreeNotice' ] ) );
+				$output->addHTML( Html::openElement( 'div', [ 'class' => 'CategoryTreeNotice' ] ) );
 				$output->addHTML( $this->msg( 'categorytree-not-found' )
 					->plaintextParams( $this->target )
 					->parse()
 				);
-				$output->addHTML( Xml::closeElement( 'div' ) );
+				$output->addHTML( Html::closeElement( 'div' ) );
 			}
 		}
 	}

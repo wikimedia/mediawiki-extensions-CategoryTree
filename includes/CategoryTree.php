@@ -38,7 +38,6 @@ use Parser;
 use RequestContext;
 use SpecialPage;
 use Title;
-use Xml;
 
 /**
  * Core functions for the CategoryTree extension, an AJAX based gadget
@@ -393,7 +392,7 @@ class CategoryTree {
 			}
 		}
 
-		$html .= Xml::closeElement( 'div' );
+		$html .= Html::closeElement( 'div' );
 
 		return $html;
 	}
@@ -560,14 +559,14 @@ class CategoryTree {
 				$s .= wfMessage( 'pipe-separator' )->escaped();
 			}
 
-			$s .= Xml::openElement( 'span', [ 'class' => 'CategoryTreeItem' ] );
+			$s .= Html::openElement( 'span', [ 'class' => 'CategoryTreeItem' ] );
 			$s .= $this->linkRenderer->makeLink(
 				$special,
 				$t->getText(),
 				[ 'class' => 'CategoryTreeLabel' ],
 				[ 'target' => $t->getDBkey() ] + $this->mOptions
 			);
-			$s .= Xml::closeElement( 'span' );
+			$s .= Html::closeElement( 'span' );
 		}
 
 		return $s;
@@ -637,8 +636,8 @@ class CategoryTree {
 		#      Specifically, the CategoryTreeChildren div must be the first
 		#      sibling with nodeName = DIV of the grandparent of the expland link.
 
-		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeSection' ] );
-		$s .= Xml::openElement( 'div', [ 'class' => 'CategoryTreeItem' ] );
+		$s .= Html::openElement( 'div', [ 'class' => 'CategoryTreeSection' ] );
+		$s .= Html::openElement( 'div', [ 'class' => 'CategoryTreeItem' ] );
 
 		$attr = [ 'class' => 'CategoryTreeBullet' ];
 
@@ -674,7 +673,7 @@ class CategoryTree {
 			$bullet = '';
 			$attr['class'] = 'CategoryTreePageBullet';
 		}
-		$s .= Xml::tags( 'span', $attr, $bullet ) . ' ';
+		$s .= Html::rawElement( 'span', $attr, $bullet ) . ' ';
 
 		$s .= $link;
 
@@ -682,8 +681,8 @@ class CategoryTree {
 			$s .= self::createCountString( RequestContext::getMain(), $cat, $count );
 		}
 
-		$s .= Xml::closeElement( 'div' );
-		$s .= Xml::openElement(
+		$s .= Html::closeElement( 'div' );
+		$s .= Html::openElement(
 			'div',
 			[
 				'class' => 'CategoryTreeChildren',
@@ -694,7 +693,7 @@ class CategoryTree {
 		if ( $ns == NS_CATEGORY && $children > 0 ) {
 			$children = $this->renderChildren( $title, $children );
 			if ( $children == '' ) {
-				$s .= Xml::openElement( 'i', [ 'class' => 'CategoryTreeNotice' ] );
+				$s .= Html::openElement( 'i', [ 'class' => 'CategoryTreeNotice' ] );
 				if ( $mode == CategoryTreeMode::CATEGORIES ) {
 					$s .= wfMessage( 'categorytree-no-subcategories' )->escaped();
 				} elseif ( $mode == CategoryTreeMode::PAGES ) {
@@ -704,13 +703,13 @@ class CategoryTree {
 				} else {
 					$s .= wfMessage( 'categorytree-nothing-found' )->escaped();
 				}
-				$s .= Xml::closeElement( 'i' );
+				$s .= Html::closeElement( 'i' );
 			} else {
 				$s .= $children;
 			}
 		}
 
-		$s .= Xml::closeElement( 'div' ) . Xml::closeElement( 'div' );
+		$s .= Html::closeElement( 'div' ) . Html::closeElement( 'div' );
 
 		return $s;
 	}
@@ -761,7 +760,7 @@ class CategoryTree {
 
 		# Only $5 is actually used in the default message.
 		# Other arguments can be used in a customized message.
-		$s .= Xml::tags(
+		$s .= Html::rawElement(
 			'span',
 			$attr,
 			$context->msg( 'categorytree-member-num' )
