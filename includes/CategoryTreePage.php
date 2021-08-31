@@ -132,6 +132,7 @@ class CategoryTreePage extends SpecialPage {
 				'name' => 'target',
 				'label-message' => 'categorytree-category',
 				'namespace' => NS_CATEGORY,
+				'default' => str_replace( '_', ' ', $this->target ),
 			],
 
 			'mode' => [
