@@ -185,6 +185,9 @@
 			}
 		}
 	},
+	"TrackingCategories": [
+		"categorytree-deprecation-category"
+	],
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"
 	],
