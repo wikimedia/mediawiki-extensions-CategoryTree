@@ -103,43 +103,12 @@ class CategoryTreePage extends SpecialPage {
 
 		$this->tree = new CategoryTree( $options );
 
-		$output = $this->getOutput();
-		$output->addWikiMsg( 'categorytree-header' );
+		$this->getOutput()->addWikiMsg( 'categorytree-header' );
 
 		$this->executeInputForm();
 
 		if ( $this->target !== '' ) {
-			CategoryTree::setHeaders( $output );
-
-			$title = CategoryTree::makeTitle( $this->target );
-
-			if ( $title && $title->getArticleID() ) {
-				$parents = $this->tree->renderParents( $title );
-				if ( $parents == '' ) {
-					$parents = $this->msg( 'categorytree-no-parent-categories' )->parse();
-				}
-
-				$output->addHTML( Html::rawElement( 'div', [ 'class' => 'CategoryTreeParents' ],
-					$this->msg( 'categorytree-parents' )->parse() .
-					$this->msg( 'colon-separator' )->escaped() .
-					$parents
-				) );
-
-				$output->addHTML( Html::rawElement( 'div',
-					[
-						'class' => 'CategoryTreeResult CategoryTreeTag',
-						'data-ct-mode' => $this->tree->getOption( 'mode' ),
-						'data-ct-options' => $this->tree->getOptionsAsJsStructure(),
-					],
-					$this->tree->renderNode( $title, 1 )
-				) );
-			} else {
-				$output->addHTML( Html::rawElement( 'div', [ 'class' => 'CategoryTreeNotice' ],
-					$this->msg( 'categorytree-not-found' )
-						->plaintextParams( $this->target )
-						->parse()
-				) );
-			}
+			$this->executeCategoryTree();
 		}
 	}
 
@@ -194,6 +163,44 @@ class CategoryTreePage extends SpecialPage {
 			->setMethod( 'get' )
 			->prepareForm()
 			->displayForm( false );
+	}
+
+	/**
+	 * Show the category tree
+	 */
+	private function executeCategoryTree() {
+		$output = $this->getOutput();
+		CategoryTree::setHeaders( $output );
+
+		$title = CategoryTree::makeTitle( $this->target );
+		if ( !$title || !$title->getArticleID() ) {
+			$output->addHTML( Html::rawElement( 'div', [ 'class' => 'CategoryTreeNotice' ],
+				$this->msg( 'categorytree-not-found' )
+					->plaintextParams( $this->target )
+					->parse()
+			) );
+			return;
+		}
+
+		$parents = $this->tree->renderParents( $title );
+		if ( $parents == '' ) {
+			$parents = $this->msg( 'categorytree-no-parent-categories' )->parse();
+		}
+
+		$output->addHTML( Html::rawElement( 'div', [ 'class' => 'CategoryTreeParents' ],
+			$this->msg( 'categorytree-parents' )->parse() .
+			$this->msg( 'colon-separator' )->escaped() .
+			$parents
+		) );
+
+		$output->addHTML( Html::rawElement( 'div',
+			[
+				'class' => 'CategoryTreeResult CategoryTreeTag',
+				'data-ct-mode' => $this->tree->getOption( 'mode' ),
+				'data-ct-options' => $this->tree->getOptionsAsJsStructure(),
+			],
+			$this->tree->renderNode( $title, 1 )
+		) );
 	}
 
 	/**
