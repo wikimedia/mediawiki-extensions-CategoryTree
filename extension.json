@@ -106,8 +106,7 @@
 		"SkinAfterPortlet": "default",
 		"SkinBuildSidebar": "default",
 		"ParserFirstCallInit": "default",
-		"OutputPageMakeCategoryLinks": "default",
-		"OutputPageParserOutput": "default"
+		"OutputPageMakeCategoryLinks": "default"
 	},
 	"config": {
 		"CategoryTreeMaxChildren": {

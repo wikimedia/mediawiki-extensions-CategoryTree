@@ -29,7 +29,6 @@ use Config;
 use Html;
 use IContextSource;
 use MediaWiki\Hook\OutputPageMakeCategoryLinksHook;
-use MediaWiki\Hook\OutputPageParserOutputHook;
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Hook\SkinBuildSidebarHook;
 use MediaWiki\Hook\SpecialTrackingCategories__generateCatLinkHook;
@@ -38,7 +37,6 @@ use MediaWiki\Linker\LinkTarget;
 use MediaWiki\Page\Hook\ArticleFromTitleHook;
 use OutputPage;
 use Parser;
-use ParserOutput;
 use PPFrame;
 use Sanitizer;
 use Skin;
@@ -55,13 +53,10 @@ class Hooks implements
 	ArticleFromTitleHook,
 	SpecialTrackingCategories__preprocessHook,
 	SpecialTrackingCategories__generateCatLinkHook,
-	OutputPageParserOutputHook,
 	SkinBuildSidebarHook,
 	ParserFirstCallInitHook,
 	OutputPageMakeCategoryLinksHook
 {
-
-	private const EXTENSION_DATA_FLAG = 'CategoryTree';
 
 	/** @var CategoryCache */
 	private $categoryCache;
@@ -191,8 +186,6 @@ class Hooks implements
 	) {
 		if ( $parser ) {
 			$parserOutput = $parser->getOutput();
-			# flag for use by Hooks::parserOutput
-			$parserOutput->setExtensionData( self::EXTENSION_DATA_FLAG, true );
 			$parserOutput->addModuleStyles( [ 'ext.categoryTree.styles' ] );
 			$parserOutput->addModules( [ 'ext.categoryTree' ] );
 		}
@@ -213,19 +206,6 @@ class Hooks implements
 		}
 
 		return $ct->getTag( $parser, $cat, $hideroot, $attr, $depth, $allowMissing );
-	}
-
-	/**
-	 * Hook callback that injects messages and things into the <head> tag,
-	 * if needed in the current page.
-	 * Does nothing if self::EXTENSION_DATA_FLAG is not set on $parserOutput extension data.
-	 * @param OutputPage $outputPage
-	 * @param ParserOutput $parserOutput
-	 */
-	public function onOutputPageParserOutput( $outputPage, $parserOutput ): void {
-		if ( $parserOutput->getExtensionData( self::EXTENSION_DATA_FLAG ) ) {
-			CategoryTree::setHeaders( $outputPage );
-		}
 	}
 
 	/**
