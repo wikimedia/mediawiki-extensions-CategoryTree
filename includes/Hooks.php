@@ -191,8 +191,11 @@ class Hooks implements
 		$allowMissing = false
 	) {
 		if ( $parser ) {
+			$parserOutput = $parser->getOutput();
 			# flag for use by Hooks::parserOutput
-			$parser->getOutput()->setExtensionData( self::EXTENSION_DATA_FLAG, true );
+			$parserOutput->setExtensionData( self::EXTENSION_DATA_FLAG, true );
+			$parserOutput->addModuleStyles( [ 'ext.categoryTree.styles' ] );
+			$parserOutput->addModules( [ 'ext.categoryTree' ] );
 		}
 
 		$ct = new CategoryTree( $argv );
