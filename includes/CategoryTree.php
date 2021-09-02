@@ -673,7 +673,7 @@ class CategoryTree {
 			'div',
 			[
 				'class' => 'CategoryTreeChildren',
-				'style' => $children > 0 ? 'display:block' : 'display:none'
+				'style' => $children === 0 ? 'display:none' : null
 			]
 		);
 
