@@ -782,9 +782,9 @@ class CategoryTree {
 	 * @return null|Title
 	 */
 	public static function makeTitle( $title ) {
-		$title = trim( $title );
+		$title = trim( strval( $title ) );
 
-		if ( strval( $title ) === '' ) {
+		if ( $title === '' ) {
 			return null;
 		}
 

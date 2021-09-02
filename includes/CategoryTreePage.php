@@ -76,18 +76,16 @@ class CategoryTreePage extends SpecialPage {
 		$this->addHelpLink( 'Extension:CategoryTree' );
 		$request = $this->getRequest();
 		if ( $par ) {
-			$this->target = $par;
+			$this->target = trim( $par );
 		} else {
-			$this->target = $request->getVal( 'target' );
-			if ( $this->target === null ) {
+			$this->target = trim( $request->getVal( 'target', '' ) );
+			if ( $this->target !== '' ) {
 				$rootcategory = $this->msg( 'rootcategory' );
 				if ( $rootcategory->exists() ) {
 					$this->target = $rootcategory->text();
 				}
 			}
 		}
-
-		$this->target = trim( $this->target );
 
 		$options = [];
 		$config = $this->getConfig();
@@ -110,7 +108,7 @@ class CategoryTreePage extends SpecialPage {
 
 		$this->executeInputForm();
 
-		if ( $this->target !== '' && $this->target !== null ) {
+		if ( $this->target !== '' ) {
 			CategoryTree::setHeaders( $output );
 
 			$title = CategoryTree::makeTitle( $this->target );
