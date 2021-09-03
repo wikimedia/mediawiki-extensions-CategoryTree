@@ -79,7 +79,7 @@ class CategoryTreePage extends SpecialPage {
 			$this->target = trim( $par );
 		} else {
 			$this->target = trim( $request->getVal( 'target', '' ) );
-			if ( $this->target !== '' ) {
+			if ( $this->target === '' ) {
 				$rootcategory = $this->msg( 'rootcategory' );
 				if ( $rootcategory->exists() ) {
 					$this->target = $rootcategory->text();
