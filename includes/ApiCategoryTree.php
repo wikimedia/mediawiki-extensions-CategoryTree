@@ -50,7 +50,6 @@ class ApiCategoryTree extends ApiBase {
 		$ct = new CategoryTree( $options );
 		$depth = CategoryTree::capDepth( $ct->getOption( 'mode' ), $depth );
 		$ctConfig = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'categorytree' );
-		// @phan-suppress-next-line PhanTypeMismatchArgumentNullable T240141
 		$html = $this->getHTML( $ct, $title, $depth, $ctConfig );
 
 		$this->getMain()->setCacheMode( 'public' );
