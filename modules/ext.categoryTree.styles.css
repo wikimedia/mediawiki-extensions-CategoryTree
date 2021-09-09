@@ -108,20 +108,16 @@
 	color: #0645ad;
 }
 
-/* The :empty selector in the following selectors prevents the cached HTML
- * that includes a bullet in the HTML from showing two bullets. After the cache
- * has expired the :empty selectors can be removed.
- */
-.CategoryTreeEmptyBullet:empty,
-.CategoryTreeToggle:empty,
+.CategoryTreeEmptyBullet,
+.CategoryTreeToggle,
 .CategoryTreePageBullet {
 	display: inline-block;
 	width: 0;
 	height: 0;
 }
 
-.CategoryTreeEmptyBullet:empty,
-.CategoryTreeToggle[ data-ct-state='collapsed' ]:empty {
+.CategoryTreeEmptyBullet,
+.CategoryTreeToggle[ data-ct-state='collapsed' ] {
 	border-top: 5px solid transparent;
 	border-left: 10px solid;
 	border-bottom: 5px solid transparent;
@@ -129,24 +125,24 @@
 }
 
 /* @noflip */
-.mw-content-ltr .CategoryTreeEmptyBullet:empty,
-.mw-content-ltr .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty,
-.mw-content-rtl .mw-content-ltr .CategoryTreeEmptyBullet:empty,
-.mw-content-rtl .mw-content-ltr .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty {
+.mw-content-ltr .CategoryTreeEmptyBullet,
+.mw-content-ltr .CategoryTreeToggle[ data-ct-state='collapsed' ],
+.mw-content-rtl .mw-content-ltr .CategoryTreeEmptyBullet,
+.mw-content-rtl .mw-content-ltr .CategoryTreeToggle[ data-ct-state='collapsed' ] {
 	border-left: 10px solid;
 	border-right: 0 none;
 }
 
 /* @noflip */
-.mw-content-rtl .CategoryTreeEmptyBullet:empty,
-.mw-content-rtl .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty,
-.mw-content-ltr .mw-content-rtl .CategoryTreeEmptyBullet:empty,
-.mw-content-ltr .mw-content-rtl .CategoryTreeToggle[ data-ct-state='collapsed' ]:empty {
+.mw-content-rtl .CategoryTreeEmptyBullet,
+.mw-content-rtl .CategoryTreeToggle[ data-ct-state='collapsed' ],
+.mw-content-ltr .mw-content-rtl .CategoryTreeEmptyBullet,
+.mw-content-ltr .mw-content-rtl .CategoryTreeToggle[ data-ct-state='collapsed' ] {
 	border-right: 10px solid;
 	border-left: 0 none;
 }
 
-.CategoryTreeToggle[ data-ct-state='expanded' ]:empty {
+.CategoryTreeToggle[ data-ct-state='expanded' ] {
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 10px solid;
