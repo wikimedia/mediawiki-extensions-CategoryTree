@@ -381,12 +381,9 @@ class CategoryTree {
 
 		if ( !$allowMissing && !$title->getArticleID() ) {
 			$html .= Html::openElement( 'span', [ 'class' => 'CategoryTreeNotice' ] );
-			if ( $parser ) {
-				$html .= $parser->recursiveTagParse(
-					wfMessage( 'categorytree-not-found', $category )->plain() );
-			} else {
-				$html .= wfMessage( 'categorytree-not-found', $category )->parse();
-			}
+			$html .= wfMessage( 'categorytree-not-found' )
+				->plaintextParams( $category )
+				->parse();
 			$html .= Html::closeElement( 'span' );
 		} else {
 			if ( !$hideroot ) {

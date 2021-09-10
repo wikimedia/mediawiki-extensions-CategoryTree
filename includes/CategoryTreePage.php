@@ -137,7 +137,10 @@ class CategoryTreePage extends SpecialPage {
 				$output->addHTML( Xml::closeElement( 'div' ) );
 			} else {
 				$output->addHTML( Xml::openElement( 'div', [ 'class' => 'CategoryTreeNotice' ] ) );
-				$output->addHTML( $this->msg( 'categorytree-not-found', $this->target )->parse() );
+				$output->addHTML( $this->msg( 'categorytree-not-found' )
+					->plaintextParams( $this->target )
+					->parse()
+				);
 				$output->addHTML( Xml::closeElement( 'div' ) );
 			}
 		}
