@@ -235,7 +235,7 @@ class Hooks implements
 	 * @return bool|void True or no return value to continue or false to abort
 	 */
 	public function onArticleFromTitle( $title, &$article, $context ) {
-		if ( $title->getNamespace() == NS_CATEGORY ) {
+		if ( $title->getNamespace() === NS_CATEGORY ) {
 			$article = new CategoryTreeCategoryPage( $title );
 		}
 	}
@@ -327,10 +327,7 @@ class Hooks implements
 			return;
 		}
 
-		$cat = null;
-		if ( isset( $specialPage->categoryTreeCategories[$catTitle->getDBkey()] ) ) {
-			$cat = $specialPage->categoryTreeCategories[$catTitle->getDBkey()];
-		}
+		$cat = $specialPage->categoryTreeCategories[$catTitle->getDBkey()] ?? null;
 
 		$html .= CategoryTree::createCountString( $specialPage->getContext(), $cat, 0 );
 	}

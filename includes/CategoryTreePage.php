@@ -118,10 +118,10 @@ class CategoryTreePage extends SpecialPage {
 	private function executeInputForm() {
 		$namespaces = $this->getRequest()->getVal( 'namespaces', '' );
 		// mode may be overriden by namespaces option
-		$mode = ( $namespaces == '' ? $this->getOption( 'mode' ) : CategoryTreeMode::ALL );
-		if ( $mode == CategoryTreeMode::CATEGORIES ) {
+		$mode = ( $namespaces === '' ? $this->getOption( 'mode' ) : CategoryTreeMode::ALL );
+		if ( $mode === CategoryTreeMode::CATEGORIES ) {
 			$modeDefault = 'categories';
-		} elseif ( $mode == CategoryTreeMode::PAGES ) {
+		} elseif ( $mode === CategoryTreeMode::PAGES ) {
 			$modeDefault = 'pages';
 		} else {
 			$modeDefault = 'all';
@@ -183,7 +183,7 @@ class CategoryTreePage extends SpecialPage {
 		}
 
 		$parents = $this->tree->renderParents( $title );
-		if ( $parents == '' ) {
+		if ( $parents === '' ) {
 			$parents = $this->msg( 'categorytree-no-parent-categories' )->parse();
 		}
 
