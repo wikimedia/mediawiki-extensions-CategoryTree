@@ -16,6 +16,15 @@
 	"categorytree-mode-all": "လိတ်မဲ့ငါ ကားကအဝ်ႏ",
 	"categorytree-collapse": "မာꩻအဲဥ်ႏ",
 	"categorytree-expand": "ခြဲ့ꩻလုဲင်း",
+	"categorytree-num-categories": "$1 ဍ",
+	"categorytree-num-pages": "$1 ငွေꩻ",
+	"categorytree-num-files": "$1 ဖုဲင်",
+	"categorytree-load": "ဒင်ႏဝွန်ႏ",
 	"categorytree-loading": "ဒင်ႏဝွန်ႏကျာꩻ...",
-	"categorytree-nothing-found": "မော့ꩻတဝ်း တမုဲင်ꩻမုဲင်ꩻ"
+	"categorytree-nothing-found": "မော့ꩻတဝ်း တမုဲင်ꩻမုဲင်ꩻ",
+	"categorytree-no-subcategories": "ကဏ္ဍဖြယ်ဖုံႏ အဝ်ႏတဝ်း",
+	"categorytree-no-parent-categories": "ကဏ္ဍမွိုးဖာဖုံႏ မော့ꩻတဝ်း",
+	"categorytree-no-pages": "လိတ်မဲ့ငါ တဝ်းလဲ့ ကဏ္ဍဖြယ်ဖုံႏ အဝ်ႏတဝ်း",
+	"categorytree-not-found": "ထီႏတဝ်း <i>$1</i> ကဏ္ဍ",
+	"categorytree-retry": "အုံပွေားထွူတဆင်ႏ ကျိုꩻစာꩻထဲင်းယင်းဟုဲင်း။"
 }
