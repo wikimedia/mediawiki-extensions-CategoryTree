@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"1233qwer1234qwer4",
+			"Ajeje Brazorf",
 			"Aushulz",
 			"C.R.",
 			"Pippinu",
@@ -27,7 +28,7 @@
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 F",
 	"categorytree-num-empty": "vacanti",
-	"categorytree-load": "càrica",
+	"categorytree-load": "càrrica",
 	"categorytree-loading": "sta caricannu...",
 	"categorytree-nothing-found": "nuddu risurtatu",
 	"categorytree-no-subcategories": "nudda suttacatigurìa.",
