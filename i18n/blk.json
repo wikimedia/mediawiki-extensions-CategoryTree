@@ -1,20 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ninjastrikers",
 			"咽頭べさ"
 		]
 	},
 	"categorytree": "ကဏ္ဍ ဖြွမ်းဗူႏပွုံႏ",
 	"categorytree-portlet": "ကဏ္ဍဖုံႏ",
-	"categorytree-legend": "အွဥ်ႏနယ် ကဏ္ဍဖြွမ်းဗူႏပွုံႏ",
+	"categorytree-legend": "အွဉ်ႏနယ် ကဏ္ဍဖြွမ်းဗူႏပွုံႏ",
 	"categorytree-category": "ကဏ္ဍ:",
-	"categorytree-go": "အွဥ်ႏနယ် အထန်ႏပွုံႏစံႏ",
+	"categorytree-go": "အွဉ်ႏနယ် အထန်ႏပွုံႏစံႏ",
 	"categorytree-parents": "အမွူးနမ်းဖုံႏ",
 	"categorytree-mode-label": "အနယ်ꩻပွုံႏစံႏ:",
 	"categorytree-mode-categories": "ကဏ္ဍဖုံႏလွုမ်ꩻ",
 	"categorytree-mode-pages": "လွိုတဲင်ဖုဲင်ဖုံႏ လိတ်မဲ့ငါဖုံႏ",
 	"categorytree-mode-all": "လိတ်မဲ့ငါ ကားကအဝ်ႏ",
-	"categorytree-collapse": "မာꩻအဲဥ်ႏ",
+	"categorytree-collapse": "မာꩻအဲဉ်ႏ",
 	"categorytree-expand": "ခြဲ့ꩻလုဲင်း",
 	"categorytree-member-counts": "{{PLURAL:$1|ကဏ္ဍဖြယ် ၁ ဗာႏ|$1 ကဏ္ဍဖြယ်ဖုံႏ}}၊ {{PLURAL:$2|လိတ်မဲ့ငါ ၁ ဗာႏ| လိတ်မဲ့ငါ $2 ဗာႏ}}၊ တွမ်ႏ {{PLURAL:$3|ဖုဲင် ၁ ဗာႏ|ဖုဲင် $3 ဗာႏ}} အဝ်ႏပါသွူ။",
 	"categorytree-num-categories": "$1 ဍ",
