@@ -136,11 +136,13 @@ class Hooks implements
 	 * @return bool|string of link
 	 */
 	private function getCategorySidebarBox() {
-		global $wgCategoryTreeSidebarRoot, $wgCategoryTreeSidebarOptions;
-		if ( !$wgCategoryTreeSidebarRoot ) {
+		if ( !$this->config->get( 'CategoryTreeSidebarRoot' ) ) {
 			return false;
 		}
-		return self::parserHook( $wgCategoryTreeSidebarRoot, $wgCategoryTreeSidebarOptions );
+		return $this->parserHook(
+			$this->config->get( 'CategoryTreeSidebarRoot' ),
+			$this->config->get( 'CategoryTreeSidebarOptions' )
+		);
 	}
 
 	/**
@@ -248,15 +250,14 @@ class Hooks implements
 	 * @return bool
 	 */
 	public function onOutputPageMakeCategoryLinks( $out, $categories, &$links ) {
-		global $wgCategoryTreePageCategoryOptions, $wgCategoryTreeHijackPageCategories;
-
-		if ( !$wgCategoryTreeHijackPageCategories ) {
+		if ( !$this->config->get( 'CategoryTreeHijackPageCategories' ) ) {
 			// Not enabled, don't do anything
 			return true;
 		}
 
+		$options = $this->config->get( 'CategoryTreePageCategoryOptions' );
 		foreach ( $categories as $category => $type ) {
-			$links[$type][] = $this->parserHook( $category, $wgCategoryTreePageCategoryOptions, null, null, true );
+			$links[$type][] = $this->parserHook( $category, $options, null, null, true );
 		}
 		CategoryTree::setHeaders( $out );
 
