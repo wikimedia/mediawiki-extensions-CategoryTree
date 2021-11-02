@@ -20,7 +20,14 @@
 		}
 	},
 	"APIModules": {
-		"categorytree": "MediaWiki\\Extension\\CategoryTree\\ApiCategoryTree"
+		"categorytree": {
+			"class": "MediaWiki\\Extension\\CategoryTree\\ApiCategoryTree",
+			"services": [
+				"ConfigFactory",
+				"LanguageConverterFactory",
+				"MainWANObjectCache"
+			]
+		}
 	},
 	"MessagesDirs": {
 		"CategoryTree": [
