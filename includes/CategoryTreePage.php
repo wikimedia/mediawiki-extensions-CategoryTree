@@ -78,7 +78,7 @@ class CategoryTreePage extends SpecialPage {
 		if ( $par ) {
 			$this->target = trim( $par );
 		} else {
-			$this->target = trim( $request->getVal( 'target', '' ) );
+			$this->target = trim( $request->getText( 'target' ) );
 			if ( $this->target === '' ) {
 				$rootcategory = $this->msg( 'rootcategory' );
 				if ( $rootcategory->exists() ) {
@@ -116,9 +116,9 @@ class CategoryTreePage extends SpecialPage {
 	 * Input form for entering a category
 	 */
 	private function executeInputForm() {
-		$namespaces = $this->getRequest()->getVal( 'namespaces', '' );
+		$namespaces = $this->getRequest()->getRawVal( 'namespaces' );
 		// mode may be overriden by namespaces option
-		$mode = ( $namespaces === '' ? $this->getOption( 'mode' ) : CategoryTreeMode::ALL );
+		$mode = ( $namespaces === null ? $this->getOption( 'mode' ) : CategoryTreeMode::ALL );
 		if ( $mode === CategoryTreeMode::CATEGORIES ) {
 			$modeDefault = 'categories';
 		} elseif ( $mode === CategoryTreeMode::PAGES ) {
