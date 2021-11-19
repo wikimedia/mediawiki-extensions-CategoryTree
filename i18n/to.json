@@ -10,5 +10,7 @@
 	"categorytree-go": "ʻAsi mai",
 	"categorytree-collapse": "holo",
 	"categorytree-expand": "fano",
-	"categorytree-num-pages": "$1 P"
+	"categorytree-num-categories": "$1 F",
+	"categorytree-num-pages": "$1 P",
+	"categorytree-num-files": "$1 Fa"
 }
