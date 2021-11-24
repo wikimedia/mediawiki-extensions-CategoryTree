@@ -5,5 +5,7 @@
 		]
 	},
 	"categorytree-portlet": "Kategoriijat",
-	"categorytree-category": "Kategoriija:"
+	"categorytree-category": "Kategoriija:",
+	"categorytree-expand": "čájet",
+	"categorytree-load": "čájet"
 }
