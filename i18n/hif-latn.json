@@ -20,7 +20,7 @@
 	"categorytree-collapse": "Chhota karo",
 	"categorytree-expand": "Barraa karo",
 	"categorytree-member-counts": "Isme {{PLURAL:$1|1 subcategory|$1 subcategories}}, {{PLURAL:$2|1 panna|$2 panna}}, and {{PLURAL:$3|1 file|$3 files}} hae.",
-	"categorytree-num-categories": "$1 C",
+	"categorytree-num-categories": "$1 V",
 	"categorytree-num-pages": "$1 P",
 	"categorytree-num-files": "$1 F",
 	"categorytree-num-empty": "khaali",
