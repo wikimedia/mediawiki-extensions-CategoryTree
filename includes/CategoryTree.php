@@ -631,11 +631,11 @@ class CategoryTree {
 		if ( $ns === NS_CATEGORY ) {
 			if ( $cat ) {
 				if ( $mode === CategoryTreeMode::CATEGORIES ) {
-					$count = intval( $cat->getSubcatCount() );
+					$count = $cat->getSubcatCount();
 				} elseif ( $mode === CategoryTreeMode::PAGES ) {
-					$count = intval( $cat->getPageCount() ) - intval( $cat->getFileCount() );
+					$count = $cat->getMemberCount() - $cat->getFileCount();
 				} else {
-					$count = intval( $cat->getPageCount() );
+					$count = $cat->getMemberCount();
 				}
 			}
 			if ( $count === 0 ) {
@@ -716,13 +716,10 @@ class CategoryTree {
 	public static function createCountString( IContextSource $context, ?Category $cat,
 		$countMode
 	) {
-		# Get counts, with conversion to integer so === works
-		# Note: $allCount is the total number of cat members,
-		# not the count of how many members are normal pages.
-		$allCount = $cat ? intval( $cat->getPageCount() ) : 0;
-		$subcatCount = $cat ? intval( $cat->getSubcatCount() ) : 0;
-		$fileCount = $cat ? intval( $cat->getFileCount() ) : 0;
-		$pages = $allCount - $subcatCount - $fileCount;
+		$allCount = $cat ? $cat->getMemberCount() : 0;
+		$subcatCount = $cat ? $cat->getSubcatCount() : 0;
+		$fileCount = $cat ? $cat->getFileCount() : 0;
+		$pages = $cat ? $cat->getPageCount( Category::COUNT_CONTENT_PAGES ) : 0;
 
 		$attr = [
 			'title' => $context->msg( 'categorytree-member-counts' )
