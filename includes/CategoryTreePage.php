@@ -160,6 +160,8 @@ class CategoryTreePage extends SpecialPage {
 			->setWrapperLegendMsg( 'categorytree-legend' )
 			->setSubmitTextMsg( 'categorytree-go' )
 			->setMethod( 'get' )
+			// Strip subpage
+			->setTitle( $this->getPageTitle() )
 			->prepareForm()
 			->displayForm( false );
 	}
