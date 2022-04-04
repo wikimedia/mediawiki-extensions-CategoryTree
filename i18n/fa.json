@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Alirezaaa",
+			"Beginneruser",
 			"Ebraminio",
 			"Fatemi127",
 			"Huji",
@@ -22,8 +23,8 @@
 	"categorytree-parents": "والدین",
 	"categorytree-mode-label": "حالت:",
 	"categorytree-mode-categories": "فقط رده‌ها",
-	"categorytree-mode-pages": "صفحه‌ها به غیر از پرونده‌ها",
-	"categorytree-mode-all": "تمام صفحه‌ها",
+	"categorytree-mode-pages": "صفحه‌های غیر از پرونده‌ها",
+	"categorytree-mode-all": "تمام صفحات",
 	"categorytree-collapse": "نهفتن",
 	"categorytree-expand": "گسترش",
 	"categorytree-member-counts": "شامل {{PLURAL:$1|یک زیررده|$1 زیررده}}، {{PLURAL:$2|یک صفحه|$2 صفحه}} و {{PLURAL:$3|یک پرونده|$3 پرونده}} است",
