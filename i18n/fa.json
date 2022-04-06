@@ -9,7 +9,8 @@
 			"Leyth",
 			"Mjbmr",
 			"Rtemis",
-			"ZxxZxxZ"
+			"ZxxZxxZ",
+			"Beginneruser"
 		]
 	},
 	"categorytree": "درخت رده",
@@ -22,7 +23,7 @@
 	"categorytree-parents": "والدین",
 	"categorytree-mode-label": "حالت:",
 	"categorytree-mode-categories": "فقط رده‌ها",
-	"categorytree-mode-pages": "صفحه‌ها به غیر از پرونده‌ها",
+	"categorytree-mode-pages": "صفحه‌های غیر از پرونده‌ها",
 	"categorytree-mode-all": "تمام صفحه‌ها",
 	"categorytree-collapse": "نهفتن",
 	"categorytree-expand": "گسترش",
