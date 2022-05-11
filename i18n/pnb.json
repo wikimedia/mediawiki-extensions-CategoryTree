@@ -18,7 +18,7 @@
 	"categorytree-mode-all": "سارے صفحے",
 	"categorytree-collapse": "لُکاؤ",
 	"categorytree-expand": "ودھاؤ",
-	"categorytree-member-counts": "{{پنجابی گنتی}}اس وچ {{PLURAL:$1|1 ذیلی کیٹیگری|$1 ذیلی کیٹیگریاں}}، {{PLURAL:$2|1 صفحہ|$2 صفحے}} تے {{PLURAL:$3|1 فائل|$3 فائلاں}} موجود نیں/اے۔",
+	"categorytree-member-counts": "اس وچ {{PLURAL:$1|1 ذیلی کیٹیگری|$1 ذیلی کیٹیگریاں}}، {{PLURAL:$2|1 صفحہ|$2 صفحے}} تے {{PLURAL:$3|1 فائل|$3 فائلاں}} موجود نیں/اے۔",
 	"categorytree-num-categories": "$1 کیٹیگریاں",
 	"categorytree-num-pages": "$1 صفحے",
 	"categorytree-num-files": "$1 ایف",
