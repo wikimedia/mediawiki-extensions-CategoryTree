@@ -6,7 +6,9 @@
 			"Ex13",
 			"MaGa",
 			"SpeedyGonsales",
-			"Srdjan m"
+			"Srdjan m",
+			"Ponor",
+			"Srđan"
 		]
 	},
 	"categorytree": "Stablasti prikaz hijerarhije kategorija",
@@ -32,7 +34,7 @@
 	"categorytree-num-empty": "prazna",
 	"categorytree-load": "učitaj",
 	"categorytree-loading": "učitavam...",
-	"categorytree-nothing-found": "nije pronađena ijedna stavka",
+	"categorytree-nothing-found": "nije pronađena nijedna stavka",
 	"categorytree-no-subcategories": "nema potkategorija",
 	"categorytree-no-parent-categories": "nema viših kategorija",
 	"categorytree-no-pages": "Nema članaka ili potkategorija.",
