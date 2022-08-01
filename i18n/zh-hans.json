@@ -3,12 +3,14 @@
 		"authors": [
 			"Breawycker",
 			"Impersonator 1",
+			"Lakejason0",
 			"Liangent",
 			"Liuxinyu970226",
 			"Mywood",
 			"PhiLiP",
 			"Shinjiman",
 			"Shizhao",
+			"Stang",
 			"Xiaomingyan"
 		]
 	},
@@ -31,8 +33,8 @@
 	"categorytree-num-pages": "$1个页面",
 	"categorytree-num-files": "$1个文件",
 	"categorytree-num-empty": "空",
-	"categorytree-load": "载入",
-	"categorytree-loading": "正在载入...",
+	"categorytree-load": "加载",
+	"categorytree-loading": "正在加载...",
 	"categorytree-nothing-found": "没找到",
 	"categorytree-no-subcategories": "无子分类",
 	"categorytree-no-parent-categories": "无父分类",
