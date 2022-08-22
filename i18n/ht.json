@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Bfpage",
 			"Boukman",
 			"Masterches",
@@ -14,7 +15,7 @@
 	"categorytree-category": "Kategori:",
 	"categorytree-go": "Montre òganizasyon sou plizyè nivo",
 	"categorytree-parents": "kategori ki gen pi wo nivo",
-	"categorytree-mode-categories": "Kategori yo sèlman",
+	"categorytree-mode-categories": "kategori yo sèlman",
 	"categorytree-mode-pages": "paj yo (pa gen imaj yo)",
 	"categorytree-mode-all": "tout paj yo",
 	"categorytree-collapse": "redui",
