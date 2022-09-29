@@ -10,7 +10,7 @@
 	"categorytree": "Drevo kategorij",
 	"categorytree-portlet": "Kategorije",
 	"categorytree-legend": "Prikaži drevo kategorij",
-	"categorytree-desc": "Dinamično navigiraj po [[Special:CategoryTree|strukturi kategorij]]",
+	"categorytree-desc": "Dinamična navigacija po [[Special:CategoryTree|strukturi kategorij]]",
 	"categorytree-header": "Vnesite ime kategorije, da si ogledate njeno vsebino kot drevesno strukturo. (Zahteva JavaScript.)",
 	"categorytree-category": "Kategorija:",
 	"categorytree-go": "Pokaži drevo",
