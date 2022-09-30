@@ -19,7 +19,7 @@
 	"categorytree-mode-categories": "samo kategorije",
 	"categorytree-mode-pages": "strani razen slik",
 	"categorytree-mode-all": "vse strani",
-	"categorytree-collapse": "skrči",
+	"categorytree-collapse": "strni",
 	"categorytree-expand": "razširi",
 	"categorytree-member-counts": "vsebuje $1 {{PLURAL:$1|podkategorijo|podkategoriji|podkategorije|podkategorij}}, $2 {{PLURAL:$2|stran|strani|strani}} in $3 {{PLURAL:$3|datoteko|datoteki|datoteke|datotek}}",
 	"categorytree-num-categories": "$1 K",
