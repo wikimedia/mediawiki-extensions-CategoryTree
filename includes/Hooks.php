@@ -67,9 +67,7 @@ class Hooks implements
 	/** @var ILoadBalancer */
 	private $loadBalancer;
 
-	/**
-	 * @var Config
-	 */
+	/** @var Config */
 	private $config;
 
 	/**

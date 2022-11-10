@@ -44,11 +44,10 @@ use Title;
  * to display the category structure of a wiki
  */
 class CategoryTree {
+	/** @var array */
 	public $mOptions = [];
 
-	/**
-	 * @var LinkRenderer
-	 */
+	/** @var LinkRenderer */
 	private $linkRenderer;
 
 	/**

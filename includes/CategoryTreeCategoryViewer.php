@@ -24,11 +24,10 @@ use Category;
 use CategoryViewer;
 
 class CategoryTreeCategoryViewer extends CategoryViewer {
+	/** @var array */
 	public $child_cats;
 
-	/**
-	 * @var CategoryTree
-	 */
+	/** @var CategoryTree */
 	public $categorytree;
 
 	/**

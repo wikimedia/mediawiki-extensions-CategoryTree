@@ -35,14 +35,13 @@ use Title;
  * to display the category structure of a wiki
  */
 class CategoryTreePage extends SpecialPage {
+	/** @var string */
 	public $target = '';
 
 	/** @var SearchEngineFactory */
 	private $searchEngineFactory;
 
-	/**
-	 * @var CategoryTree
-	 */
+	/** @var CategoryTree */
 	public $tree = null;
 
 	/**

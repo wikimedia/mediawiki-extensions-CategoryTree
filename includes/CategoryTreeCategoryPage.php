@@ -23,5 +23,6 @@ namespace MediaWiki\Extension\CategoryTree;
 use CategoryPage;
 
 class CategoryTreeCategoryPage extends CategoryPage {
+	/** @var string */
 	public $mCategoryViewerClass = CategoryTreeCategoryViewer::class;
 }
