@@ -468,9 +468,7 @@ class CategoryTree {
 			foreach ( $res as $row ) {
 				$title = Title::newFromText( $row->page_title, $row->page_namespace );
 				// Page name could have slashes, check the subpage for valid language built-in codes
-				$isValidLangCode = $title->getSubpageText();
-
-				if ( $title !== null && $isValidLangCode ) {
+				if ( $title !== null && $title->getSubpageText() ) {
 					$lb->addObj( $title->getBaseTitle() );
 				}
 			}
