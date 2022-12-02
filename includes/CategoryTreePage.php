@@ -213,7 +213,7 @@ class CategoryTreePage extends SpecialPage {
 	 */
 	public function prefixSearchSubpages( $search, $limit, $offset ) {
 		$title = Title::newFromText( $search, NS_CATEGORY );
-		if ( $title && $title->getNamespace() !== NS_CATEGORY ) {
+		if ( $title && !$title->inNamespace( NS_CATEGORY ) ) {
 			// Someone searching for something like "Wikipedia:Foo"
 			$title = Title::makeTitleSafe( NS_CATEGORY, $search );
 		}

@@ -235,7 +235,7 @@ class Hooks implements
 	 * @return bool|void True or no return value to continue or false to abort
 	 */
 	public function onArticleFromTitle( $title, &$article, $context ) {
-		if ( $title->getNamespace() === NS_CATEGORY ) {
+		if ( $title->inNamespace( NS_CATEGORY ) ) {
 			$article = new CategoryTreeCategoryPage( $title );
 		}
 	}
