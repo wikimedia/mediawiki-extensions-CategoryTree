@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Artsiom91",
+			"Maksim L.",
 			"Mechanizatar",
 			"Mikalai Udodau",
 			"Тест",
@@ -22,7 +23,7 @@
 	"categorytree-mode-all": "усе старонкі",
 	"categorytree-collapse": "схаваць",
 	"categorytree-expand": "паказаць",
-	"categorytree-member-counts": "утрымлівае $1 {{PLURAL:$1|падкатэгорыю|падкатэгорыі|падкатэгорый}}, $2 {{PLURAL:$2|старонку|старонкі|старонак}} і $3 {{PLURAL:$3|выяву|выявы|выяў}}",
+	"categorytree-member-counts": "Змяшчае $1 {{PLURAL:$1|падкатэгорыю|падкатэгорыі|падкатэгорый}}, $2 {{PLURAL:$2|старонку|старонкі|старонак}} і $3 {{PLURAL:$3|выяву|выявы|выяў}}",
 	"categorytree-num-categories": "$1 К",
 	"categorytree-num-pages": "$1 С",
 	"categorytree-num-files": "$1 В",
