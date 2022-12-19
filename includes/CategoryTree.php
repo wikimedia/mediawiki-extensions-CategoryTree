@@ -30,7 +30,6 @@ use ExtensionRegistry;
 use FormatJson;
 use Html;
 use IContextSource;
-use LinkBatch;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
 use OutputPage;
@@ -463,7 +462,7 @@ class CategoryTree {
 		) && ExtensionRegistry::getInstance()->isLoaded( 'Translate' );
 
 		if ( $suppressTranslations ) {
-			$lb = new LinkBatch();
+			$lb = MediaWikiServices::getInstance()->getLinkBatchFactory()->newLinkBatch();
 			foreach ( $res as $row ) {
 				$title = Title::newFromText( $row->page_title, $row->page_namespace );
 				// Page name could have slashes, check the subpage for valid language built-in codes
