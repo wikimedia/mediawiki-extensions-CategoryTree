@@ -314,15 +314,12 @@ class CategoryTree {
 	 * @return mixed
 	 */
 	public function getOptionsAsJsStructure( $depth = null ) {
+		$opt = $this->mOptions;
 		if ( $depth !== null ) {
-			$opt = $this->mOptions;
 			$opt['depth'] = $depth;
-			$s = self::encodeOptions( $opt, 'json' );
-		} else {
-			$s = self::encodeOptions( $this->mOptions, 'json' );
 		}
 
-		return $s;
+		return self::encodeOptions( $opt, 'json' );
 	}
 
 	/**
