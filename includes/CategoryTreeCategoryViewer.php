@@ -24,9 +24,6 @@ use Category;
 use CategoryViewer;
 
 class CategoryTreeCategoryViewer extends CategoryViewer {
-	/** @var array */
-	public $child_cats;
-
 	/** @var CategoryTree */
 	public $categorytree;
 
@@ -69,23 +66,5 @@ class CategoryTreeCategoryViewer extends CategoryViewer {
 		$this->children[] = $tree->renderNodeInfo( $title, $cat );
 
 		$this->children_start_char[] = $this->getSubcategorySortChar( $title, $sortkey );
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	public function clearCategoryState() {
-		$this->child_cats = [];
-		parent::clearCategoryState();
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	public function finaliseCategoryState() {
-		if ( $this->flip ) {
-			$this->child_cats = array_reverse( $this->child_cats );
-		}
-		parent::finaliseCategoryState();
 	}
 }
