@@ -100,13 +100,14 @@
 	},
 	"Hooks": {
 		"MediaWikiServices": "config",
-		"ArticleFromTitle": "default",
 		"SpecialTrackingCategories::preprocess": "default",
 		"SpecialTrackingCategories::generateCatLink": "default",
 		"SkinAfterPortlet": "default",
 		"SkinBuildSidebar": "default",
 		"ParserFirstCallInit": "default",
-		"OutputPageMakeCategoryLinks": "default"
+		"OutputPageMakeCategoryLinks": "default",
+		"CategoryViewer::doCategoryQuery": "default",
+		"CategoryViewer::generateLink": "default"
 	},
 	"config": {
 		"CategoryTreeMaxChildren": {
