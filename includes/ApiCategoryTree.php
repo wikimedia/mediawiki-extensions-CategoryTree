@@ -64,14 +64,8 @@ class ApiCategoryTree extends ApiBase {
 	 */
 	public function execute() {
 		$params = $this->extractRequestParams();
-		$options = [];
-		if ( isset( $params['options'] ) ) {
-			$options = FormatJson::decode( $params['options'] );
-			if ( !is_object( $options ) ) {
-				$this->dieWithError( 'apierror-categorytree-invalidjson', 'invalidjson' );
-			}
-			$options = get_object_vars( $options );
-		}
+
+		$options = $this->extractOptions( $params );
 
 		$title = CategoryTree::makeTitle( $params['category'] );
 		if ( !$title || $title->isExternal() ) {
@@ -88,6 +82,47 @@ class ApiCategoryTree extends ApiBase {
 		$this->getMain()->setCacheMode( 'public' );
 
 		$this->getResult()->addContentValue( $this->getModuleName(), 'html', $html );
+	}
+
+	/**
+	 * @param array $params
+	 * @return string[]
+	 */
+	private function extractOptions( $params ): array {
+		if ( !isset( $params['options'] ) ) {
+			return [];
+		}
+
+		$options = FormatJson::decode( $params['options'] );
+		if ( !is_object( $options ) ) {
+			$this->dieWithError( 'apierror-categorytree-invalidjson', 'invalidjson' );
+		}
+
+		$namespaces = $options->namespaces ?? null;
+
+		if ( $namespaces !== null ) {
+			if ( !is_scalar( $namespaces ) && !is_array( $namespaces ) ) {
+				$this->dieWithError(
+					[ 'apierror-categorytree-invalidjson-option', 'namespaces' ], 'invalidjson-option'
+				);
+			}
+			// Don't recheck this in the loop below
+			unset( $options->namespaces );
+		}
+
+		foreach ( $options as $option => $value ) {
+			if ( !is_scalar( $value ) && $value !== null ) {
+				$this->dieWithError(
+					[ 'apierror-categorytree-invalidjson-option', $option ], 'invalidjson-option'
+				);
+			}
+		}
+
+		if ( $namespaces ) {
+			$options->namespaces = $namespaces;
+		}
+
+		return get_object_vars( $options );
 	}
 
 	/**
