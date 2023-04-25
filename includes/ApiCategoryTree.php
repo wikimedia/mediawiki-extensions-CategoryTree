@@ -98,28 +98,16 @@ class ApiCategoryTree extends ApiBase {
 			$this->dieWithError( 'apierror-categorytree-invalidjson', 'invalidjson' );
 		}
 
-		$namespaces = $options->namespaces ?? null;
-
-		if ( $namespaces !== null ) {
-			if ( !is_scalar( $namespaces ) && !is_array( $namespaces ) ) {
-				$this->dieWithError(
-					[ 'apierror-categorytree-invalidjson-option', 'namespaces' ], 'invalidjson-option'
-				);
-			}
-			// Don't recheck this in the loop below
-			unset( $options->namespaces );
-		}
-
 		foreach ( $options as $option => $value ) {
-			if ( !is_scalar( $value ) && $value !== null ) {
-				$this->dieWithError(
-					[ 'apierror-categorytree-invalidjson-option', $option ], 'invalidjson-option'
-				);
+			if ( is_scalar( $value ) || $value === null ) {
+				continue;
 			}
-		}
-
-		if ( $namespaces ) {
-			$options->namespaces = $namespaces;
+			if ( $option === 'namespaces' && is_array( $value ) ) {
+				continue;
+			}
+			$this->dieWithError(
+				[ 'apierror-categorytree-invalidjson-option', $option ], 'invalidjson-option'
+			);
 		}
 
 		return get_object_vars( $options );
