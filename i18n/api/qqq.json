@@ -26,5 +26,6 @@
 	"apihelp-categorytree-summary": "{{doc-apihelp-summary|categorytree}}",
 	"apihelp-categorytree-param-category": "{{doc-apihelp-param|categorytree|category}}",
 	"apihelp-categorytree-param-options": "{{doc-apihelp-param|categorytree|options}}",
-	"apierror-categorytree-invalidjson": "{{doc-apierror}}"
+	"apierror-categorytree-invalidjson": "{{doc-apierror}}",
+	"apierror-categorytree-invalidjson-option": "{{doc-apierror}}\n\nParameters:\n* $1 - Name of API option."
 }
