@@ -20,7 +20,7 @@
 
 namespace MediaWiki\Extension\CategoryTree\Tests;
 
-use Category;
+use MediaWiki\Category\Category;
 use MediaWiki\Extension\CategoryTree\CategoryCache;
 use MediaWikiIntegrationTestCase;
 use TitleValue;

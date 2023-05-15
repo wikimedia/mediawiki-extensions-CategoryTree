@@ -24,12 +24,12 @@
 
 namespace MediaWiki\Extension\CategoryTree;
 
-use Category;
 use Exception;
 use ExtensionRegistry;
 use FormatJson;
 use Html;
 use IContextSource;
+use MediaWiki\Category\Category;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
 use OutputPage;
