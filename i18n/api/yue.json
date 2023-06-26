@@ -5,7 +5,6 @@
 			"Yueman"
 		]
 	},
-	"apihelp-categorytree-description": "CategoryTree嘅內部模組",
 	"apihelp-categorytree-summary": "CategoryTree嘅內部模組",
 	"apihelp-categorytree-param-category": "類空間名嘅標題，如果有字頭會忽略",
 	"apihelp-categorytree-param-options": "將CategoryTree構造器當做JSON物件嘅選項。<var>depth</var>選項預設值係<kbd>1</kbd>。",

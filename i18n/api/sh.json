@@ -4,7 +4,6 @@
 			"Vlad5250"
 		]
 	},
-	"apihelp-categorytree-description": "Interni modul proširenja \"Stablo kategorija\".",
 	"apihelp-categorytree-summary": "Interni modul proširenja \"Stablo kategorija\".",
 	"apihelp-categorytree-param-category": "Naziv u kategorijskom imenskom prostoru. Ako unese se prefiks, isti bit će zanemaren.",
 	"apihelp-categorytree-param-options": "Mogućnosti za konstruktor \"Kategorije stabla\" kao JSON-objekt. Prodornost (<var>depth</var>) po defaultu je <kbd>1</kbd>.",
