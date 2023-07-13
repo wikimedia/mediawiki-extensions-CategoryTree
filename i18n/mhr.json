@@ -1,11 +1,24 @@
 {
 	"@metadata": {
 		"authors": [
+			"Lifeway",
 			"Санюн Вадик"
 		]
 	},
+	"categorytree-portlet": "Категорий-влак",
+	"categorytree-category": "Категорий:",
+	"categorytree-go": "Пушеҥгым ончыкташ",
+	"categorytree-mode-label": "Радам:",
+	"categorytree-mode-categories": "категорий-влак гына",
+	"categorytree-mode-pages": "файл-влак деч посна",
+	"categorytree-mode-all": "чыла велыж",
+	"categorytree-collapse": "вӱдылаш",
 	"categorytree-expand": "почаш",
 	"categorytree-num-categories": "$1 К",
 	"categorytree-num-pages": "$1 С",
-	"categorytree-num-files": "$1 Ф"
+	"categorytree-num-files": "$1 Ф",
+	"categorytree-num-empty": "яра",
+	"categorytree-load": "вераҥдаш",
+	"categorytree-loading": "вераҥдымаш…",
+	"categorytree-nothing-found": "нимом мумо огыл"
 }
