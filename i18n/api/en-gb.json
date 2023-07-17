@@ -6,6 +6,5 @@
 			"Piano1forte2"
 		]
 	},
-	"apierror-categorytree-invalidjson": "Options must be a valid JSON object.",
-	"apierror-categorytree-invalidjson-option": "Option '$1' contains invalid value."
+	"apierror-categorytree-invalidjson": "Options must be a valid JSON object."
 }
