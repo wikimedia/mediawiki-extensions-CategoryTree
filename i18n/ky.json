@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bosogo",
 			"Chorobek",
 			"Janatkg"
 		]
@@ -23,7 +24,7 @@
 	"categorytree-num-files": "$1 Ф",
 	"categorytree-num-empty": "бош",
 	"categorytree-load": "жүктө",
-	"categorytree-loading": "жүктөлүүдөө",
+	"categorytree-loading": "жүктөлүүдө...",
 	"categorytree-nothing-found": "эч нерсе табылган жок",
 	"categorytree-no-subcategories": "ички категориялар табылган жок",
 	"categorytree-no-parent-categories": "Башкы категориялар табылган жок",
