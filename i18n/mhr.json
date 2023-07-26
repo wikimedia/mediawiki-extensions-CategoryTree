@@ -20,5 +20,7 @@
 	"categorytree-num-empty": "яра",
 	"categorytree-load": "вераҥдаш",
 	"categorytree-loading": "вераҥдымаш…",
-	"categorytree-nothing-found": "нимом мумо огыл"
+	"categorytree-nothing-found": "нимом мумо огыл",
+	"categorytree-not-found": "<i>$1</i> категорйым мумо огыл",
+	"categorytree-error": "Данный вераҥдымаште нелылык."
 }

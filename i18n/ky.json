@@ -16,7 +16,7 @@
 	"categorytree-mode-categories": "Категориялар гана",
 	"categorytree-mode-pages": "файлдардан тышкары",
 	"categorytree-mode-all": "баардык барактар",
-	"categorytree-collapse": "бүктө",
+	"categorytree-collapse": "түрүү",
 	"categorytree-expand": "жаюу",
 	"categorytree-member-counts": "{{PLURAL:$1|1 ички категорияны|$1 ички категорияларды}}, {{PLURAL:$2|1 баракты|$2 баракты }}, жана {{PLURAL:$3|1 файлды|$3 файлды}} камтыйт",
 	"categorytree-num-categories": "$1 К",
