@@ -34,6 +34,7 @@ use MediaWiki\Hook\SkinBuildSidebarHook;
 use MediaWiki\Hook\SpecialTrackingCategories__generateCatLinkHook;
 use MediaWiki\Hook\SpecialTrackingCategories__preprocessHook;
 use MediaWiki\Linker\LinkTarget;
+use MediaWiki\Title\Title;
 use OutputPage;
 use Parser;
 use PPFrame;
@@ -41,7 +42,6 @@ use RequestContext;
 use Sanitizer;
 use Skin;
 use SpecialPage;
-use Title;
 use Wikimedia\Rdbms\IResultWrapper;
 
 /**

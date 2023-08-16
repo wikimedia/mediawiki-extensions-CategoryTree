@@ -32,11 +32,11 @@ use IContextSource;
 use MediaWiki\Category\Category;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use OutputPage;
 use Parser;
 use RequestContext;
 use SpecialPage;
-use Title;
 
 /**
  * Core functions for the CategoryTree extension, an AJAX based gadget

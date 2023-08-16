@@ -8,7 +8,7 @@ use Config;
 use ConfigFactory;
 use FormatJson;
 use MediaWiki\Languages\LanguageConverterFactory;
-use Title;
+use MediaWiki\Title\Title;
 use WANObjectCache;
 use Wikimedia\ParamValidator\ParamValidator;
 
