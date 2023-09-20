@@ -401,7 +401,7 @@ class CategoryTree {
 			return '';
 		}
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancerFactory()->getReplicaDatabase();
 
 		$inverse = $this->isInverse();
 		$mode = $this->getOption( 'mode' );
@@ -522,7 +522,7 @@ class CategoryTree {
 	public function renderParents( Title $title ) {
 		global $wgCategoryTreeMaxChildren;
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancerFactory()->getReplicaDatabase();
 
 		$res = $dbr->select(
 			'categorylinks',

@@ -11,6 +11,7 @@ use MediaWiki\Languages\LanguageConverterFactory;
 use MediaWiki\Title\Title;
 use WANObjectCache;
 use Wikimedia\ParamValidator\ParamValidator;
+use Wikimedia\Rdbms\IConnectionProvider;
 
 /**
  * This program is free software; you can redistribute it and/or modify
@@ -36,6 +37,9 @@ class ApiCategoryTree extends ApiBase {
 	/** @var LanguageConverterFactory */
 	private $languageConverterFactory;
 
+	/** @var IConnectionProvider */
+	private $dbProvider;
+
 	/** @var WANObjectCache */
 	private $wanCache;
 
@@ -43,6 +47,7 @@ class ApiCategoryTree extends ApiBase {
 	 * @param ApiMain $main
 	 * @param string $action
 	 * @param ConfigFactory $configFactory
+	 * @param IConnectionProvider $dbProvider
 	 * @param LanguageConverterFactory $languageConverterFactory
 	 * @param WANObjectCache $wanCache
 	 */
@@ -50,12 +55,14 @@ class ApiCategoryTree extends ApiBase {
 		ApiMain $main,
 		$action,
 		ConfigFactory $configFactory,
+		IConnectionProvider $dbProvider,
 		LanguageConverterFactory $languageConverterFactory,
 		WANObjectCache $wanCache
 	) {
 		parent::__construct( $main, $action );
 		$this->configFactory = $configFactory;
 		$this->languageConverterFactory = $languageConverterFactory;
+		$this->dbProvider = $dbProvider;
 		$this->wanCache = $wanCache;
 	}
 
@@ -122,7 +129,7 @@ class ApiCategoryTree extends ApiBase {
 		if ( $condition === 'last-modified' ) {
 			$params = $this->extractRequestParams();
 			$title = CategoryTree::makeTitle( $params['category'] );
-			return wfGetDB( DB_REPLICA )->selectField( 'page', 'page_touched',
+			return $this->dbProvider->getReplicaDatabase()->selectField( 'page', 'page_touched',
 				[
 					'page_namespace' => NS_CATEGORY,
 					'page_title' => $title->getDBkey(),

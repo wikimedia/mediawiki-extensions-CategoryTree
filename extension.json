@@ -24,6 +24,7 @@
 			"class": "MediaWiki\\Extension\\CategoryTree\\ApiCategoryTree",
 			"services": [
 				"ConfigFactory",
+				"DBLoadBalancerFactory",
 				"LanguageConverterFactory",
 				"MainWANObjectCache"
 			]
