@@ -27,16 +27,16 @@ namespace MediaWiki\Extension\CategoryTree;
 use Exception;
 use ExtensionRegistry;
 use FormatJson;
-use Html;
 use IContextSource;
 use MediaWiki\Category\Category;
+use MediaWiki\Html\Html;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Output\OutputPage;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
-use OutputPage;
 use Parser;
 use RequestContext;
-use SpecialPage;
 
 /**
  * Core functions for the CategoryTree extension, an AJAX based gadget

@@ -22,8 +22,8 @@ namespace MediaWiki\Extension\CategoryTree\Tests;
 
 use MediaWiki\Category\Category;
 use MediaWiki\Extension\CategoryTree\CategoryCache;
+use MediaWiki\Title\TitleValue;
 use MediaWikiIntegrationTestCase;
-use TitleValue;
 use Wikimedia\Rdbms\ILoadBalancer;
 use Wikimedia\TestingAccessWrapper;
 

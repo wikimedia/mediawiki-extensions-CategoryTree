@@ -4,9 +4,9 @@ namespace MediaWiki\Extension\CategoryTree;
 
 use ApiBase;
 use ApiMain;
-use Config;
-use ConfigFactory;
 use FormatJson;
+use MediaWiki\Config\Config;
+use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Languages\LanguageConverterFactory;
 use MediaWiki\Title\Title;
 use WANObjectCache;
