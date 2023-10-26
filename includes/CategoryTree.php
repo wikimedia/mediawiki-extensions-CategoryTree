@@ -49,10 +49,14 @@ class CategoryTree {
 
 	/**
 	 * @param array $options
+	 * @param LinkRenderer $linkRenderer
 	 */
-	public function __construct( array $options ) {
+	public function __construct(
+		array $options,
+		LinkRenderer $linkRenderer
+	) {
 		$this->optionManager = new OptionManager( $options );
-		$this->linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
+		$this->linkRenderer = $linkRenderer;
 	}
 
 	/**
