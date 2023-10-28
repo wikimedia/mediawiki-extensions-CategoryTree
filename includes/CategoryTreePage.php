@@ -100,7 +100,7 @@ class CategoryTreePage extends SpecialPage {
 			$options[$option] = $request->getVal( $option, $default );
 		}
 
-		$this->tree = new CategoryTree( $options, $this->getLinkRenderer() );
+		$this->tree = new CategoryTree( $options, $config, $this->getLinkRenderer() );
 
 		$this->getOutput()->addWikiMsg( 'categorytree-header' );
 

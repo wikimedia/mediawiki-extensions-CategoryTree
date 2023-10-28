@@ -27,6 +27,7 @@ namespace MediaWiki\Extension\CategoryTree;
 use ExtensionRegistry;
 use IContextSource;
 use MediaWiki\Category\Category;
+use MediaWiki\Config\Config;
 use MediaWiki\Html\Html;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
@@ -44,18 +45,24 @@ class CategoryTree {
 	/** @var OptionManager */
 	public $optionManager;
 
+	/** @var Config */
+	private $config;
+
 	/** @var LinkRenderer */
 	private $linkRenderer;
 
 	/**
 	 * @param array $options
+	 * @param Config $config
 	 * @param LinkRenderer $linkRenderer
 	 */
 	public function __construct(
 		array $options,
+		Config $config,
 		LinkRenderer $linkRenderer
 	) {
-		$this->optionManager = new OptionManager( $options );
+		$this->optionManager = new OptionManager( $options, $config );
+		$this->config = $config;
 		$this->linkRenderer = $linkRenderer;
 	}
 
@@ -83,7 +90,7 @@ class CategoryTree {
 	public function getTag( ?Parser $parser, $category, $hideroot = false, array $attr = [],
 		$depth = 1, $allowMissing = false
 	) {
-		global $wgCategoryTreeDisableCache;
+		$disableCache = $this->config->get( 'CategoryTreeDisableCache' );
 
 		$category = trim( $category );
 		if ( $category === '' ) {
@@ -91,10 +98,10 @@ class CategoryTree {
 		}
 
 		if ( $parser ) {
-			if ( $wgCategoryTreeDisableCache === true ) {
+			if ( $disableCache === true ) {
 				$parser->getOutput()->updateCacheExpiry( 0 );
-			} elseif ( is_int( $wgCategoryTreeDisableCache ) ) {
-				$parser->getOutput()->updateCacheExpiry( $wgCategoryTreeDisableCache );
+			} elseif ( is_int( $disableCache ) ) {
+				$parser->getOutput()->updateCacheExpiry( $disableCache );
 			}
 		}
 
@@ -138,8 +145,6 @@ class CategoryTree {
 	 * @return string
 	 */
 	public function renderChildren( Title $title, $depth = 1 ) {
-		global $wgCategoryTreeMaxChildren, $wgCategoryTreeUseCategoryTable;
-
 		if ( !$title->inNamespace( NS_CATEGORY ) ) {
 			// Non-categories can't have children. :)
 			return '';
@@ -157,7 +162,10 @@ class CategoryTree {
 			'cl_from' ];
 		$where = [];
 		$joins = [];
-		$options = [ 'ORDER BY' => 'cl_type, cl_sortkey', 'LIMIT' => $wgCategoryTreeMaxChildren ];
+		$options = [
+			'ORDER BY' => 'cl_type, cl_sortkey',
+			'LIMIT' => $this->config->get( 'CategoryTreeMaxChildren' )
+		];
 
 		if ( $inverse ) {
 			$joins['categorylinks'] = [ 'RIGHT JOIN', [
@@ -184,7 +192,7 @@ class CategoryTree {
 		}
 
 		# fetch member count if possible
-		$doCount = !$inverse && $wgCategoryTreeUseCategoryTable;
+		$doCount = !$inverse && $this->config->get( 'CategoryTreeUseCategoryTable' );
 
 		if ( $doCount ) {
 			$tables = array_merge( $tables, [ 'category' ] );
@@ -264,8 +272,6 @@ class CategoryTree {
 	 * @return string
 	 */
 	public function renderParents( Title $title ) {
-		global $wgCategoryTreeMaxChildren;
-
 		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancerFactory()->getReplicaDatabase();
 
 		$res = $dbr->select(
@@ -274,7 +280,7 @@ class CategoryTree {
 			[ 'cl_from' => $title->getArticleID() ],
 			__METHOD__,
 			[
-				'LIMIT' => $wgCategoryTreeMaxChildren,
+				'LIMIT' => $this->config->get( 'CategoryTreeMaxChildren' ),
 				'ORDER BY' => 'cl_to'
 			]
 		);
@@ -306,9 +312,8 @@ class CategoryTree {
 	 * @return string
 	 */
 	public function renderNode( Title $title, $children = 0 ) {
-		global $wgCategoryTreeUseCategoryTable;
-
-		if ( $wgCategoryTreeUseCategoryTable && $title->inNamespace( NS_CATEGORY )
+		if ( $this->config->get( 'CategoryTreeUseCategoryTable' )
+			&& $title->inNamespace( NS_CATEGORY )
 			&& !$this->optionManager->isInverse()
 		) {
 			$cat = Category::newFromTitle( $title );

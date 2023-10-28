@@ -26,6 +26,7 @@ namespace MediaWiki\Extension\CategoryTree;
 
 use Exception;
 use FormatJson;
+use MediaWiki\Config\Config;
 use MediaWiki\MediaWikiServices;
 
 /**
@@ -35,26 +36,30 @@ class OptionManager {
 	/** @var array */
 	private $mOptions = [];
 
+	/** @var Config */
+	private $config;
+
 	/**
 	 * @param array $options
+	 * @param Config $config
 	 */
-	public function __construct( array $options ) {
-		global $wgCategoryTreeDefaultOptions;
+	public function __construct( array $options, Config $config ) {
+		$this->config = $config;
 
 		// ensure default values and order of options.
 		// Order may become important, it may influence the cache key!
-		foreach ( $wgCategoryTreeDefaultOptions as $option => $default ) {
+		foreach ( $config->get( 'CategoryTreeDefaultOptions' ) as $option => $default ) {
 			$this->mOptions[$option] = $options[$option] ?? $default;
 		}
 
-		$this->mOptions['mode'] = self::decodeMode( $this->mOptions['mode'] );
+		$this->mOptions['mode'] = $this->decodeMode( $this->mOptions['mode'] );
 
 		if ( $this->mOptions['mode'] === CategoryTreeMode::PARENTS ) {
 			// namespace filter makes no sense with CategoryTreeMode::PARENTS
 			$this->mOptions['namespaces'] = false;
 		}
 
-		$this->mOptions['hideprefix'] = self::decodeHidePrefix( $this->mOptions['hideprefix'] );
+		$this->mOptions['hideprefix'] = $this->decodeHidePrefix( $this->mOptions['hideprefix'] );
 		$this->mOptions['showcount'] = self::decodeBoolean( $this->mOptions['showcount'] );
 		$this->mOptions['namespaces'] = self::decodeNamespaces( $this->mOptions['namespaces'] );
 
@@ -142,11 +147,11 @@ class OptionManager {
 	 * @param mixed $mode
 	 * @return int|string
 	 */
-	private static function decodeMode( $mode ) {
-		global $wgCategoryTreeDefaultOptions;
+	private function decodeMode( $mode ) {
+		$defaultOptions = $this->config->get( 'CategoryTreeDefaultOptions' );
 
 		if ( $mode === null ) {
-			return $wgCategoryTreeDefaultOptions['mode'];
+			return $defaultOptions['mode'];
 		}
 		if ( is_int( $mode ) ) {
 			return $mode;
@@ -167,7 +172,7 @@ class OptionManager {
 		} elseif ( $mode === 'parents' || $mode === 'super' || $mode === 'inverse' ) {
 			$mode = CategoryTreeMode::PARENTS;
 		} elseif ( $mode === 'default' ) {
-			$mode = $wgCategoryTreeDefaultOptions['mode'];
+			$mode = $defaultOptions['mode'];
 		}
 
 		return (int)$mode;
@@ -214,11 +219,11 @@ class OptionManager {
 	 * @param mixed $value
 	 * @return int|string
 	 */
-	private static function decodeHidePrefix( $value ) {
-		global $wgCategoryTreeDefaultOptions;
+	private function decodeHidePrefix( $value ) {
+		$defaultOptions = $this->config->get( 'CategoryTreeDefaultOptions' );
 
 		if ( $value === null ) {
-			return $wgCategoryTreeDefaultOptions['hideprefix'];
+			return $defaultOptions['hideprefix'];
 		}
 		if ( is_int( $value ) ) {
 			return $value;
@@ -249,7 +254,7 @@ class OptionManager {
 		} elseif ( $value === 'categories' || $value === 'category' || $value === 'smart' ) {
 			return CategoryTreeHidePrefix::CATEGORIES;
 		} else {
-			return $wgCategoryTreeDefaultOptions['hideprefix'];
+			return $defaultOptions['hideprefix'];
 		}
 	}
 
@@ -306,23 +311,22 @@ class OptionManager {
 
 	/**
 	 * Internal function to cap depth
-	 * @param string $mode
 	 * @param int $depth
 	 * @return int|mixed
 	 */
-	public static function capDepth( $mode, $depth ) {
-		global $wgCategoryTreeMaxDepth;
-
+	public function capDepth( $depth ) {
 		if ( !is_numeric( $depth ) ) {
 			return 1;
 		}
 
+		$mode = $this->getOption( 'mode' );
 		$depth = intval( $depth );
+		$maxDepth = $this->config->get( 'CategoryTreeMaxDepth' );
 
-		if ( is_array( $wgCategoryTreeMaxDepth ) ) {
-			$max = $wgCategoryTreeMaxDepth[$mode] ?? 1;
-		} elseif ( is_numeric( $wgCategoryTreeMaxDepth ) ) {
-			$max = $wgCategoryTreeMaxDepth;
+		if ( is_array( $maxDepth ) ) {
+			$max = $maxDepth[$mode] ?? 1;
+		} elseif ( is_numeric( $maxDepth ) ) {
+			$max = $maxDepth;
 		} else {
 			wfDebug( __METHOD__ . ': $wgCategoryTreeMaxDepth is invalid.' );
 			$max = 1;
