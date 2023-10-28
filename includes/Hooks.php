@@ -198,12 +198,12 @@ class Hooks implements
 		$attr = Sanitizer::validateTagAttributes( $argv, 'div' );
 
 		$hideroot = isset( $argv['hideroot'] )
-			? CategoryTree::decodeBoolean( $argv['hideroot'] ) : null;
+			? OptionManager::decodeBoolean( $argv['hideroot'] ) : null;
 		$onlyroot = isset( $argv['onlyroot'] )
-			? CategoryTree::decodeBoolean( $argv['onlyroot'] ) : null;
+			? OptionManager::decodeBoolean( $argv['onlyroot'] ) : null;
 		$depthArg = isset( $argv['depth'] ) ? (int)$argv['depth'] : null;
 
-		$depth = CategoryTree::capDepth( $ct->getOption( 'mode' ), $depthArg );
+		$depth = OptionManager::capDepth( $ct->optionManager->getOption( 'mode' ), $depthArg );
 		if ( $onlyroot ) {
 			$depth = 0;
 		}
@@ -243,10 +243,10 @@ class Hooks implements
 	 */
 	public static function getDataForJs( RL\Context $context, Config $config ) {
 		// Look, this is pretty bad but CategoryTree is just whacky, it needs to be rewritten
-		$ct = new CategoryTree( $config->get( 'CategoryTreeCategoryPageOptions' ) );
+		$optionManager = new OptionManager( $config->get( 'CategoryTreeCategoryPageOptions' ) );
 
 		return [
-			'defaultCtOptions' => $ct->getOptionsAsJsStructure(),
+			'defaultCtOptions' => $optionManager->getOptionsAsJsStructure(),
 		];
 	}
 
