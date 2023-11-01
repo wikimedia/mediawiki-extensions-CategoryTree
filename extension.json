@@ -15,6 +15,7 @@
 		"CategoryTree": {
 			"class": "MediaWiki\\Extension\\CategoryTree\\CategoryTreePage",
 			"services": [
+				"DBLoadBalancerFactory",
 				"SearchEngineFactory"
 			]
 		}
@@ -97,6 +98,7 @@
 			"services": [
 				"CategoryTree.CategoryCache",
 				"MainConfig",
+				"DBLoadBalancerFactory",
 				"LinkRenderer"
 			]
 		},

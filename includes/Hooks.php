@@ -44,6 +44,7 @@ use Parser;
 use PPFrame;
 use RequestContext;
 use Skin;
+use Wikimedia\Rdbms\IConnectionProvider;
 use Wikimedia\Rdbms\IResultWrapper;
 
 /**
@@ -68,21 +69,27 @@ class Hooks implements
 	/** @var Config */
 	private $config;
 
+	/** @var IConnectionProvider */
+	private IConnectionProvider $dbProvider;
+
 	/** @var LinkRenderer */
 	private $linkRenderer;
 
 	/**
 	 * @param CategoryCache $categoryCache
 	 * @param Config $config
+	 * @param IConnectionProvider $dbProvider
 	 * @param LinkRenderer $linkRenderer
 	 */
 	public function __construct(
 		CategoryCache $categoryCache,
 		Config $config,
+		IConnectionProvider $dbProvider,
 		LinkRenderer $linkRenderer
 	) {
 		$this->categoryCache = $categoryCache;
 		$this->config = $config;
+		$this->dbProvider = $dbProvider;
 		$this->linkRenderer = $linkRenderer;
 	}
 
@@ -203,7 +210,7 @@ class Hooks implements
 			$parserOutput->addModules( [ 'ext.categoryTree' ] );
 		}
 
-		$ct = new CategoryTree( $argv, $this->config, $this->linkRenderer );
+		$ct = new CategoryTree( $argv, $this->config, $this->dbProvider, $this->linkRenderer );
 
 		$attr = Sanitizer::validateTagAttributes( $argv, 'div' );
 
@@ -326,7 +333,7 @@ class Hooks implements
 		if ( $mode !== null ) {
 			$options['mode'] = $mode;
 		}
-		$tree = new CategoryTree( $options, $this->config, $this->linkRenderer );
+		$tree = new CategoryTree( $options, $this->config, $this->dbProvider, $this->linkRenderer );
 
 		$cat = $this->categoryCache->getCategory( $title );
 

@@ -36,6 +36,7 @@ use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use Parser;
 use RequestContext;
+use Wikimedia\Rdbms\IConnectionProvider;
 
 /**
  * Core functions for the CategoryTree extension, an AJAX based gadget
@@ -48,21 +49,27 @@ class CategoryTree {
 	/** @var Config */
 	private $config;
 
+	/** @var IConnectionProvider */
+	private $dbProvider;
+
 	/** @var LinkRenderer */
 	private $linkRenderer;
 
 	/**
 	 * @param array $options
 	 * @param Config $config
+	 * @param IConnectionProvider $dbProvider
 	 * @param LinkRenderer $linkRenderer
 	 */
 	public function __construct(
 		array $options,
 		Config $config,
+		IConnectionProvider $dbProvider,
 		LinkRenderer $linkRenderer
 	) {
 		$this->optionManager = new OptionManager( $options, $config );
 		$this->config = $config;
+		$this->dbProvider = $dbProvider;
 		$this->linkRenderer = $linkRenderer;
 	}
 
@@ -150,7 +157,7 @@ class CategoryTree {
 			return '';
 		}
 
-		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancerFactory()->getReplicaDatabase();
+		$dbr = $this->dbProvider->getReplicaDatabase();
 
 		$inverse = $this->optionManager->isInverse();
 		$mode = $this->optionManager->getOption( 'mode' );
@@ -272,7 +279,7 @@ class CategoryTree {
 	 * @return string
 	 */
 	public function renderParents( Title $title ) {
-		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancerFactory()->getReplicaDatabase();
+		$dbr = $this->dbProvider->getReplicaDatabase();
 
 		$res = $dbr->select(
 			'categorylinks',
