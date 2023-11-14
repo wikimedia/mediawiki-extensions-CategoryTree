@@ -60,7 +60,7 @@ class CategoryTreePage extends SpecialPage {
 	 */
 	private function getOption( $name ) {
 		if ( $this->tree ) {
-			return $this->tree->getOption( $name );
+			return $this->tree->optionManager->getOption( $name );
 		} else {
 			return $this->getConfig()->get( 'CategoryTreeDefaultOptions' )[$name];
 		}
@@ -197,8 +197,8 @@ class CategoryTreePage extends SpecialPage {
 		$output->addHTML( Html::rawElement( 'div',
 			[
 				'class' => 'CategoryTreeResult CategoryTreeTag',
-				'data-ct-mode' => $this->tree->getOption( 'mode' ),
-				'data-ct-options' => $this->tree->getOptionsAsJsStructure(),
+				'data-ct-mode' => $this->tree->optionManager->getOption( 'mode' ),
+				'data-ct-options' => $this->tree->optionManager->getOptionsAsJsStructure(),
 			],
 			$this->tree->renderNode( $title, 1 )
 		) );

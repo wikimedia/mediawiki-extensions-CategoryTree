@@ -82,7 +82,7 @@ class ApiCategoryTree extends ApiBase {
 		$depth = isset( $options['depth'] ) ? (int)$options['depth'] : 1;
 
 		$ct = new CategoryTree( $options );
-		$depth = CategoryTree::capDepth( $ct->getOption( 'mode' ), $depth );
+		$depth = OptionManager::capDepth( $ct->optionManager->getOption( 'mode' ), $depth );
 		$ctConfig = $this->configFactory->makeConfig( 'categorytree' );
 		$html = $this->getHTML( $ct, $title, $depth, $ctConfig );
 
@@ -155,7 +155,7 @@ class ApiCategoryTree extends ApiBase {
 			$this->wanCache->makeKey(
 				'categorytree-html-ajax',
 				md5( $title->getDBkey() ),
-				md5( $ct->getOptionsAsCacheKey( $depth ) ),
+				md5( $ct->optionManager->getOptionsAsCacheKey( $depth ) ),
 				$this->getLanguage()->getCode(),
 				$langConv->getExtraHashOptions(),
 				$ctConfig->get( 'RenderHashAppend' )
