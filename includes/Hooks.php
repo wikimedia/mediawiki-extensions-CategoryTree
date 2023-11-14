@@ -33,6 +33,7 @@ use MediaWiki\Hook\SkinBuildSidebarHook;
 use MediaWiki\Hook\SpecialTrackingCategories__generateCatLinkHook;
 use MediaWiki\Hook\SpecialTrackingCategories__preprocessHook;
 use MediaWiki\Html\Html;
+use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Parser\Sanitizer;
@@ -67,13 +68,22 @@ class Hooks implements
 	/** @var Config */
 	private $config;
 
+	/** @var LinkRenderer */
+	private $linkRenderer;
+
 	/**
 	 * @param CategoryCache $categoryCache
 	 * @param Config $config
+	 * @param LinkRenderer $linkRenderer
 	 */
-	public function __construct( CategoryCache $categoryCache, Config $config ) {
+	public function __construct(
+		CategoryCache $categoryCache,
+		Config $config,
+		LinkRenderer $linkRenderer
+	) {
 		$this->categoryCache = $categoryCache;
 		$this->config = $config;
+		$this->linkRenderer = $linkRenderer;
 	}
 
 	/**
@@ -193,7 +203,7 @@ class Hooks implements
 			$parserOutput->addModules( [ 'ext.categoryTree' ] );
 		}
 
-		$ct = new CategoryTree( $argv );
+		$ct = new CategoryTree( $argv, $this->linkRenderer );
 
 		$attr = Sanitizer::validateTagAttributes( $argv, 'div' );
 
@@ -316,7 +326,7 @@ class Hooks implements
 		if ( $mode !== null ) {
 			$options['mode'] = $mode;
 		}
-		$tree = new CategoryTree( $options );
+		$tree = new CategoryTree( $options, $this->linkRenderer );
 
 		$cat = $this->categoryCache->getCategory( $title );
 

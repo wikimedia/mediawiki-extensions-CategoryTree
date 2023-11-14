@@ -26,6 +26,7 @@
 				"ConfigFactory",
 				"DBLoadBalancerFactory",
 				"LanguageConverterFactory",
+				"LinkRenderer",
 				"MainWANObjectCache"
 			]
 		}
@@ -95,7 +96,8 @@
 			"class": "MediaWiki\\Extension\\CategoryTree\\Hooks",
 			"services": [
 				"CategoryTree.CategoryCache",
-				"MainConfig"
+				"MainConfig",
+				"LinkRenderer"
 			]
 		},
 		"config": {

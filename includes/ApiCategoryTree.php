@@ -8,6 +8,7 @@ use FormatJson;
 use MediaWiki\Config\Config;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Languages\LanguageConverterFactory;
+use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Title\Title;
 use WANObjectCache;
 use Wikimedia\ParamValidator\ParamValidator;
@@ -37,6 +38,9 @@ class ApiCategoryTree extends ApiBase {
 	/** @var LanguageConverterFactory */
 	private $languageConverterFactory;
 
+	/** @var LinkRenderer */
+	private $linkRenderer;
+
 	/** @var IConnectionProvider */
 	private $dbProvider;
 
@@ -49,6 +53,7 @@ class ApiCategoryTree extends ApiBase {
 	 * @param ConfigFactory $configFactory
 	 * @param IConnectionProvider $dbProvider
 	 * @param LanguageConverterFactory $languageConverterFactory
+	 * @param LinkRenderer $linkRenderer
 	 * @param WANObjectCache $wanCache
 	 */
 	public function __construct(
@@ -57,11 +62,13 @@ class ApiCategoryTree extends ApiBase {
 		ConfigFactory $configFactory,
 		IConnectionProvider $dbProvider,
 		LanguageConverterFactory $languageConverterFactory,
+		LinkRenderer $linkRenderer,
 		WANObjectCache $wanCache
 	) {
 		parent::__construct( $main, $action );
 		$this->configFactory = $configFactory;
 		$this->languageConverterFactory = $languageConverterFactory;
+		$this->linkRenderer = $linkRenderer;
 		$this->dbProvider = $dbProvider;
 		$this->wanCache = $wanCache;
 	}
@@ -81,7 +88,7 @@ class ApiCategoryTree extends ApiBase {
 
 		$depth = isset( $options['depth'] ) ? (int)$options['depth'] : 1;
 
-		$ct = new CategoryTree( $options );
+		$ct = new CategoryTree( $options, $this->linkRenderer );
 		$depth = OptionManager::capDepth( $ct->optionManager->getOption( 'mode' ), $depth );
 		$ctConfig = $this->configFactory->makeConfig( 'categorytree' );
 		$html = $this->getHTML( $ct, $title, $depth, $ctConfig );
