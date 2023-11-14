@@ -203,7 +203,7 @@ class Hooks implements
 			$parserOutput->addModules( [ 'ext.categoryTree' ] );
 		}
 
-		$ct = new CategoryTree( $argv, $this->linkRenderer );
+		$ct = new CategoryTree( $argv, $this->config, $this->linkRenderer );
 
 		$attr = Sanitizer::validateTagAttributes( $argv, 'div' );
 
@@ -213,7 +213,7 @@ class Hooks implements
 			? OptionManager::decodeBoolean( $argv['onlyroot'] ) : null;
 		$depthArg = isset( $argv['depth'] ) ? (int)$argv['depth'] : null;
 
-		$depth = OptionManager::capDepth( $ct->optionManager->getOption( 'mode' ), $depthArg );
+		$depth = $ct->optionManager->capDepth( $depthArg );
 		if ( $onlyroot ) {
 			$depth = 0;
 		}
@@ -253,7 +253,7 @@ class Hooks implements
 	 */
 	public static function getDataForJs( RL\Context $context, Config $config ) {
 		// Look, this is pretty bad but CategoryTree is just whacky, it needs to be rewritten
-		$optionManager = new OptionManager( $config->get( 'CategoryTreeCategoryPageOptions' ) );
+		$optionManager = new OptionManager( $config->get( 'CategoryTreeCategoryPageOptions' ), $config );
 
 		return [
 			'defaultCtOptions' => $optionManager->getOptionsAsJsStructure(),
@@ -326,7 +326,7 @@ class Hooks implements
 		if ( $mode !== null ) {
 			$options['mode'] = $mode;
 		}
-		$tree = new CategoryTree( $options, $this->linkRenderer );
+		$tree = new CategoryTree( $options, $this->config, $this->linkRenderer );
 
 		$cat = $this->categoryCache->getCategory( $title );
 
