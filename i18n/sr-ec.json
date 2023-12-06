@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01",
+			"Slaven Kosanovic"
+		]
+	},
+	"categorytree-portlet": "Категорије",
+	"categorytree-category": "Категорија:",
+	"categorytree-go": "Прикажи стабло",
+	"categorytree-collapse": "скупи",
+	"categorytree-expand": "развиј",
+	"categorytree-num-categories": "$1 К",
+	"categorytree-num-pages": "$1 С",
+	"categorytree-num-files": "$1 Д",
+	"categorytree-num-empty": "празна",
+	"categorytree-loading": "учитавам...",
+	"categorytree-no-subcategories": "нема поткатегорија",
+	"categorytree-no-pages": "нема страница или поткатегорија"
+}
