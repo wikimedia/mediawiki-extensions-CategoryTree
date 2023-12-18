@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Soumaya"
+			"Soumaya",
+			"Raizkgh"
 		]
 	},
 	"categorytree": "Bõn-ka-toog",
 	"categorytree-portlet": "Sulli-sullisi",
 	"categorytree-legend": "Wilg-y sull tɩɩg",
-	"categorytree-desc": "Sõng-y n ges-y bũmb nins sẽn be[[Special:Category tree|Category structure]]",
+	"categorytree-desc": "Sõng-y n ges-y bũmb nins sẽn be[[Special:CategoryTree|category structure]]",
 	"categorytree-header": "Yãk-y kategori yʋʋr n na n yã a sõssã wa tɩɩg sẽn yaa bũmb ning.  (Tõnd segd n maana JavaScript.)",
 	"categorytree-category": "Sulli",
 	"categorytree-go": "Wilg-y tɩɩgã",
