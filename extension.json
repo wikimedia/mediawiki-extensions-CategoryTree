@@ -60,10 +60,6 @@
 					"callback": "MediaWiki\\Extension\\CategoryTree\\Hooks::getDataForJs"
 				}
 			],
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"messages": [
 				"categorytree-collapse",
 				"categorytree-expand",
@@ -81,10 +77,6 @@
 			]
 		},
 		"ext.categoryTree.styles": {
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"styles": "ext.categoryTree.styles.css"
 		}
 	},
