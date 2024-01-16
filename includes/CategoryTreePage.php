@@ -122,9 +122,9 @@ class CategoryTreePage extends SpecialPage {
 	 * Input form for entering a category
 	 */
 	private function executeInputForm() {
-		$namespaces = $this->getRequest()->getRawVal( 'namespaces' );
+		$namespaces = $this->getRequest()->getRawVal( 'namespaces' ) ?? '';
 		// mode may be overriden by namespaces option
-		$mode = ( $namespaces === null ? $this->getOption( 'mode' ) : CategoryTreeMode::ALL );
+		$mode = ( $namespaces === '' ? $this->getOption( 'mode' ) : CategoryTreeMode::ALL );
 		if ( $mode === CategoryTreeMode::CATEGORIES ) {
 			$modeDefault = 'categories';
 		} elseif ( $mode === CategoryTreeMode::PAGES ) {
