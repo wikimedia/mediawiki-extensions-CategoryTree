@@ -395,18 +395,19 @@ class CategoryTree {
 				$attr['class'] = 'CategoryTreeEmptyBullet';
 			} else {
 				$linkattr = [
+					// href and role will be added client-side
 					'class' => 'CategoryTreeToggle',
 					'data-ct-title' => $key,
 				];
 
 				if ( $children === 0 ) {
-					$linkattr['data-ct-state'] = 'collapsed';
+					$linkattr['aria-expanded'] = 'false';
 				} else {
 					$linkattr['data-ct-loaded'] = true;
-					$linkattr['data-ct-state'] = 'expanded';
+					$linkattr['aria-expanded'] = 'true';
 				}
 
-				$bullet = Html::element( 'span', $linkattr ) . ' ';
+				$bullet = Html::element( 'a', $linkattr ) . ' ';
 			}
 		} else {
 			$bullet = '';

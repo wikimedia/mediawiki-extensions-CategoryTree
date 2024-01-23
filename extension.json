@@ -52,7 +52,6 @@
 		"ext.categoryTree": {
 			"localBasePath": "modules/ext.categoryTree",
 			"remoteExtPath": "CategoryTree/modules/ext.categoryTree",
-			"styles": "ext.categoryTree.css",
 			"packageFiles": [
 				"ext.categoryTree.js",
 				{
