@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Aefgh39622",
+			"Ekminarin",
 			"Horus",
 			"Manop",
 			"Octahedron80",
@@ -18,7 +19,7 @@
 	"categorytree-parents": "หมวดหมู่ใหญ่",
 	"categorytree-mode-label": "โหมด:",
 	"categorytree-mode-categories": "แสดงเฉพาะหมวดหมู่",
-	"categorytree-mode-pages": "หน้าต่างๆ ยกเว้นไฟล์",
+	"categorytree-mode-pages": "หน้าต่าง ๆ ยกเว้นไฟล์",
 	"categorytree-mode-all": "หน้าทุกหน้า",
 	"categorytree-collapse": "ย่อ",
 	"categorytree-expand": "ขยาย",
