@@ -24,8 +24,8 @@
 
 namespace MediaWiki\Extension\CategoryTree;
 
-use Exception;
 use FormatJson;
+use InvalidArgumentException;
 use MediaWiki\Config\Config;
 use MediaWiki\MediaWikiServices;
 
@@ -262,7 +262,6 @@ class OptionManager {
 	 * @param array $options
 	 * @param string $enc
 	 * @return mixed
-	 * @throws Exception
 	 */
 	private static function encodeOptions( array $options, $enc ) {
 		if ( $enc === 'mode' || $enc === '' ) {
@@ -270,7 +269,7 @@ class OptionManager {
 		} elseif ( $enc === 'json' ) {
 			$opt = FormatJson::encode( $options );
 		} else {
-			throw new Exception( 'Unknown encoding for CategoryTree options: ' . $enc );
+			throw new InvalidArgumentException( 'Unknown encoding for CategoryTree options: ' . $enc );
 		}
 
 		return $opt;
