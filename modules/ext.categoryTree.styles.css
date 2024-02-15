@@ -78,7 +78,6 @@
 
 .CategoryTreeBullet,
 .CategoryTreeEmptyBullet {
-	cursor: default;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -89,23 +88,10 @@
 	color: #c0c0c0;
 }
 
-.CategoryTreeBullet a,
-.CategoryTreeBullet a:link,
-.CategoryTreeBullet a:active,
-.CategoryTreeBullet a:visited {
-	text-decoration: none;
-	color: inherit;
-	speak: none;
-}
-
 /* Hide toggle buttons for clients without JavaScript */
 .client-nojs .CategoryTreeBullet,
 .client-nojs .CategoryTreeEmptyBullet {
 	display: none;
-}
-
-.CategoryTreeToggle {
-	color: #0645ad;
 }
 
 .CategoryTreeEmptyBullet,
