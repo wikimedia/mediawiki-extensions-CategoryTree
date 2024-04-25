@@ -136,13 +136,15 @@ class ApiCategoryTree extends ApiBase {
 		if ( $condition === 'last-modified' ) {
 			$params = $this->extractRequestParams();
 			$title = CategoryTree::makeTitle( $params['category'] );
-			return $this->dbProvider->getReplicaDatabase()->selectField( 'page', 'page_touched',
-				[
+			return $this->dbProvider->getReplicaDatabase()->newSelectQueryBuilder()
+				->select( 'page_touched' )
+				->from( 'page' )
+				->where( [
 					'page_namespace' => NS_CATEGORY,
 					'page_title' => $title->getDBkey(),
-				],
-				__METHOD__
-			);
+				] )
+				->caller( __METHOD__ )
+				->fetchField();
 		}
 	}
 

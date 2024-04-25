@@ -163,37 +163,39 @@ class CategoryTree {
 		$mode = $this->optionManager->getOption( 'mode' );
 		$namespaces = $this->optionManager->getOption( 'namespaces' );
 
-		$tables = [ 'page', 'categorylinks' ];
-		$fields = [ 'page_id', 'page_namespace', 'page_title',
-			'page_is_redirect', 'page_len', 'page_latest', 'cl_to',
-			'cl_from' ];
-		$where = [];
-		$joins = [];
-		$options = [
-			'ORDER BY' => 'cl_type, cl_sortkey',
-			'LIMIT' => $this->config->get( 'CategoryTreeMaxChildren' )
-		];
+		$queryBuilder = $dbr->newSelectQueryBuilder()
+			->select( [
+				'page_id', 'page_namespace', 'page_title',
+				'page_is_redirect', 'page_len', 'page_latest', 'cl_to', 'cl_from'
+			] )
+			->orderBy( [ 'cl_type', 'cl_sortkey' ] )
+			->limit( $this->config->get( 'CategoryTreeMaxChildren' ) )
+			->caller( __METHOD__ );
 
 		if ( $inverse ) {
-			$joins['categorylinks'] = [ 'RIGHT JOIN', [
-				'cl_to = page_title', 'page_namespace' => NS_CATEGORY
-			] ];
-			$where['cl_from'] = $title->getArticleID();
+			$queryBuilder
+				->from( 'categorylinks' )
+				->leftJoin( 'page', null, [
+					'cl_to = page_title', 'page_namespace' => NS_CATEGORY
+				] )
+				->where( [ 'cl_from' => $title->getArticleID() ] );
 		} else {
-			$joins['categorylinks'] = [ 'JOIN', 'cl_from = page_id' ];
-			$where['cl_to'] = $title->getDBkey();
-			$options['USE INDEX']['categorylinks'] = 'cl_sortkey';
+			$queryBuilder
+				->from( 'page' )
+				->join( 'categorylinks', null, 'cl_from = page_id' )
+				->where( [ 'cl_to' => $title->getDBkey() ] )
+				->useIndex( 'cl_sortkey' );
 
 			# namespace filter.
 			if ( $namespaces ) {
 				// NOTE: we assume that the $namespaces array contains only integers!
 				// decodeNamepsaces makes it so.
-				$where['page_namespace'] = $namespaces;
+				$queryBuilder->where( [ 'page_namespace' => $namespaces ] );
 			} elseif ( $mode !== CategoryTreeMode::ALL ) {
 				if ( $mode === CategoryTreeMode::PAGES ) {
-					$where['cl_type'] = [ 'page', 'subcat' ];
+					$queryBuilder->where( [ 'cl_type' => [ 'page', 'subcat' ] ] );
 				} else {
-					$where['cl_type'] = 'subcat';
+					$queryBuilder->where( [ 'cl_type' => 'subcat' ] );
 				}
 			}
 		}
@@ -202,16 +204,12 @@ class CategoryTree {
 		$doCount = !$inverse && $this->config->get( 'CategoryTreeUseCategoryTable' );
 
 		if ( $doCount ) {
-			$tables = array_merge( $tables, [ 'category' ] );
-			$fields = array_merge( $fields, [
-				'cat_id', 'cat_title', 'cat_subcats', 'cat_pages', 'cat_files'
-			] );
-			$joins['category'] = [ 'LEFT JOIN', [
-				'cat_title = page_title', 'page_namespace' => NS_CATEGORY ]
-			];
+			$queryBuilder
+				->leftJoin( 'category', null, [ 'cat_title = page_title', 'page_namespace' => NS_CATEGORY ] )
+				->fields( [ 'cat_id', 'cat_title', 'cat_subcats', 'cat_pages', 'cat_files' ] );
 		}
 
-		$res = $dbr->select( $tables, $fields, $where, __METHOD__, $options, $joins );
+		$res = $queryBuilder->fetchResultSet();
 
 		# collect categories separately from other pages
 		$categories = '';
@@ -281,16 +279,14 @@ class CategoryTree {
 	public function renderParents( Title $title ) {
 		$dbr = $this->dbProvider->getReplicaDatabase();
 
-		$res = $dbr->select(
-			'categorylinks',
-			[ 'cl_to' ],
-			[ 'cl_from' => $title->getArticleID() ],
-			__METHOD__,
-			[
-				'LIMIT' => $this->config->get( 'CategoryTreeMaxChildren' ),
-				'ORDER BY' => 'cl_to'
-			]
-		);
+		$res = $dbr->newSelectQueryBuilder()
+			->select( 'cl_to' )
+			->from( 'categorylinks' )
+			->where( [ 'cl_from' => $title->getArticleID() ] )
+			->limit( $this->config->get( 'CategoryTreeMaxChildren' ) )
+			->orderBy( 'cl_to' )
+			->caller( __METHOD__ )
+			->fetchResultSet();
 
 		$special = SpecialPage::getTitleFor( 'CategoryTree' );
 
