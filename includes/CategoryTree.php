@@ -25,17 +25,17 @@
 namespace MediaWiki\Extension\CategoryTree;
 
 use ExtensionRegistry;
-use IContextSource;
 use MediaWiki\Category\Category;
 use MediaWiki\Config\Config;
+use MediaWiki\Context\IContextSource;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Html\Html;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Parser\Parser;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
-use Parser;
-use RequestContext;
 use Wikimedia\Rdbms\IConnectionProvider;
 
 /**

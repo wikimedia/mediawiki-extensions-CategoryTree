@@ -25,6 +25,7 @@
 namespace MediaWiki\Extension\CategoryTree;
 
 use MediaWiki\Config\Config;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Hook\CategoryViewer__doCategoryQueryHook;
 use MediaWiki\Hook\CategoryViewer__generateLinkHook;
 use MediaWiki\Hook\OutputPageMakeCategoryLinksHook;
@@ -36,13 +37,12 @@ use MediaWiki\Html\Html;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\Sanitizer;
 use MediaWiki\ResourceLoader as RL;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
-use Parser;
 use PPFrame;
-use RequestContext;
 use Skin;
 use Wikimedia\Rdbms\IConnectionProvider;
 use Wikimedia\Rdbms\IResultWrapper;
