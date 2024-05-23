@@ -24,8 +24,8 @@
 
 namespace MediaWiki\Extension\CategoryTree;
 
-use HTMLForm;
 use MediaWiki\Html\Html;
+use MediaWiki\HTMLForm\HTMLForm;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use SearchEngineFactory;
