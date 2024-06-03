@@ -223,9 +223,19 @@ class Hooks implements
 		$depth = $ct->optionManager->capDepth( $depthArg );
 		if ( $onlyroot ) {
 			$depth = 0;
+			$message = '<span class="error">'
+				. wfMessage( 'categorytree-onlyroot-message' )->inContentLanguage()->parse()
+				. '</span>';
+			if ( $parser ) {
+				$parser->getOutput()->addWarningMsg( 'categorytree-deprecation-warning' );
+				$parser->addTrackingCategory( 'categorytree-deprecation-category' );
+			}
+		} else {
+			$message = '';
 		}
 
-		return $ct->getTag( $parser, $cat, $hideroot, $attr, $depth, $allowMissing );
+		return $message .
+			$ct->getTag( $parser, $cat, $hideroot, $attr, $depth, $allowMissing );
 	}
 
 	/**
