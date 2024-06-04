@@ -42,5 +42,6 @@
 	"categorytree-no-pages": "nessuna pagina né sottocategoria",
 	"categorytree-not-found": "Categoria <i>$1</i> non trovata",
 	"categorytree-error": "Problema nel caricamento dei dati.",
-	"categorytree-retry": "Attendere un momento e riprovare."
+	"categorytree-retry": "Attendere un momento e riprovare.",
+	"categorytree-onlyroot-message": "Il parametro <code>onlyroot</code> è deprecato. Utilizza invece <code>depth=\"0\"</code> ."
 }
