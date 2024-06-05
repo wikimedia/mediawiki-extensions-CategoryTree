@@ -38,5 +38,9 @@
 	"categorytree-no-pages": "brak artykułów lub podkategorii.",
 	"categorytree-not-found": "Kategoria <i>$1</i> nie została znaleziona",
 	"categorytree-error": "Problem z ładowaniem danych.",
-	"categorytree-retry": "Poczekaj chwilę i spróbuj ponownie – kliknij ten napis."
+	"categorytree-retry": "Poczekaj chwilę i spróbuj ponownie – kliknij ten napis.",
+	"categorytree-onlyroot-message": "Parametr <code>onlyroot</code> jest przestarzały. Zamiast niego użyj <code>depth=\"0\"</code>.",
+	"categorytree-deprecation-warning": "'''Uwaga:''' Strona korzysta z <code>&lt;categorytree&gt;</code> zawierającego przestarzały parametr.",
+	"categorytree-deprecation-category": "Strony korzystające z przestarzałych parametrów drzewa kategorii",
+	"categorytree-deprecation-category-desc": "Strona korzysta z przestarzałego parametru drzewa kategorii takiego jak <code>onlyroot</code>."
 }
