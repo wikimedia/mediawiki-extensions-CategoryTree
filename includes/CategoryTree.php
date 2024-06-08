@@ -29,6 +29,7 @@ use MediaWiki\Category\Category;
 use MediaWiki\Config\Config;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Context\RequestContext;
+use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Html\Html;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
@@ -235,9 +236,9 @@ class CategoryTree {
 			if ( $suppressTranslations ) {
 				$title = Title::newFromRow( $row );
 				$baseTitle = $title->getBaseTitle();
-				$page = \TranslatablePage::isTranslationPage( $title );
+				$page = TranslatablePage::isTranslationPage( $title );
 
-				if ( ( $page instanceof \TranslatablePage ) && $baseTitle->exists() ) {
+				if ( ( $page instanceof TranslatablePage ) && $baseTitle->exists() ) {
 					// T229265: Render only the default pages created and ignore their
 					// translations.
 					continue;
