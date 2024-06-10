@@ -10,6 +10,7 @@
 			"Meithal",
 			"Peter17",
 			"Sherbrooke",
+			"SleaY",
 			"Thibaut120094",
 			"Urhixidur",
 			"Verdy p",
@@ -43,5 +44,6 @@
 	"categorytree-no-pages": "aucune page ou sous-catégorie",
 	"categorytree-not-found": "Catégorie <i>$1</i> introuvable",
 	"categorytree-error": "Problème de chargement des données.",
-	"categorytree-retry": "Veuillez attendre un instant puis réessayer."
+	"categorytree-retry": "Veuillez attendre un instant puis réessayer.",
+	"categorytree-deprecation-warning": "'''Avertissement :''' Cette page utilise <code>&lt;categorytree&gt;</code> avec un paramètre obsolète."
 }
