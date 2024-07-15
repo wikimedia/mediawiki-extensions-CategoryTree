@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Zolgoyo"
+		]
+	},
+	"categorytree": "Ulam ağaşı",
+	"categorytree-portlet": "Ulamlar",
+	"categorytree-legend": "Ulam ağaşını körsetüw",
+	"categorytree-category": "Ulam:",
+	"categorytree-num-categories": "$1 U",
+	"categorytree-num-pages": "$1 B",
+	"categorytree-num-files": "$1 D",
+	"categorytree-num-empty": "boş",
+	"categorytree-load": "cükle",
+	"categorytree-loading": "cüklene...",
+	"categorytree-nothing-found": "bĭrşiy tapılmadı",
+	"categorytree-no-subcategories": "alt ulam yoq"
+}
