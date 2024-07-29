@@ -11,7 +11,7 @@
 	},
 	"categorytree": "Төркемнәр шәҗәрәсе",
 	"categorytree-portlet": "Төркемнәр",
-	"categorytree-legend": "Төркемнәрнең шәҗәрәсен ачарга",
+	"categorytree-legend": "Төркемнәрнең шәҗәрәсен ачу",
 	"categorytree-desc": "[[Special:CategoryTree|Төркемнәрнең асылы]]н аңлату өчен төзелгән AJAX-бит",
 	"categorytree-header": "Төркемнең исемен кертегез һәм ул шәҗәрә рәвешендә күрсәтеләчәк (JavaScript кирәк булачак).",
 	"categorytree-category": "Төркем:",
