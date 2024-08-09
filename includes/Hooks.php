@@ -35,13 +35,15 @@ use MediaWiki\Hook\SpecialTrackingCategories__preprocessHook;
 use MediaWiki\Html\Html;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Linker\LinkTarget;
-use MediaWiki\Output\Hook\OutputPageMakeCategoryLinksHook;
+use MediaWiki\Output\Hook\OutputPageRenderCategoryLinkHook;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Page\ProperPageIdentity;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\Sanitizer;
 use MediaWiki\ResourceLoader as RL;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
+use MediaWiki\Title\TitleFormatter;
 use PPFrame;
 use Skin;
 use Wikimedia\Rdbms\IConnectionProvider;
@@ -58,7 +60,7 @@ class Hooks implements
 	SpecialTrackingCategories__generateCatLinkHook,
 	SkinBuildSidebarHook,
 	ParserFirstCallInitHook,
-	OutputPageMakeCategoryLinksHook,
+	OutputPageRenderCategoryLinkHook,
 	CategoryViewer__doCategoryQueryHook,
 	CategoryViewer__generateLinkHook
 {
@@ -66,17 +68,20 @@ class Hooks implements
 	private Config $config;
 	private IConnectionProvider $dbProvider;
 	private LinkRenderer $linkRenderer;
+	private TitleFormatter $titleFormatter;
 
 	public function __construct(
 		CategoryCache $categoryCache,
 		Config $config,
 		IConnectionProvider $dbProvider,
-		LinkRenderer $linkRenderer
+		LinkRenderer $linkRenderer,
+		TitleFormatter $titleFormatter
 	) {
 		$this->categoryCache = $categoryCache;
 		$this->config = $config;
 		$this->dbProvider = $dbProvider;
 		$this->linkRenderer = $linkRenderer;
+		$this->titleFormatter = $titleFormatter;
 	}
 
 	/**
@@ -225,25 +230,31 @@ class Hooks implements
 	}
 
 	/**
-	 * OutputPageMakeCategoryLinks hook, override category links
+	 * OutputPageRenderCategoryLink hook
 	 * @param OutputPage $out
-	 * @param array $categories
-	 * @param array &$links
-	 * @return bool
+	 * @param ProperPageIdentity $categoryTitle
+	 * @param string $text
+	 * @param ?string &$link
+	 * @return void
 	 */
-	public function onOutputPageMakeCategoryLinks( $out, $categories, &$links ) {
+	public function onOutputPageRenderCategoryLink(
+		OutputPage $out,
+		ProperPageIdentity $categoryTitle,
+		string $text,
+		?string &$link
+	): void {
 		if ( !$this->config->get( 'CategoryTreeHijackPageCategories' ) ) {
 			// Not enabled, don't do anything
-			return true;
+			return;
 		}
 
-		$options = $this->config->get( 'CategoryTreePageCategoryOptions' );
-		foreach ( $categories as $category => $type ) {
-			$links[$type][] = $this->parserHook( $category, $options, null, null, true );
-		}
 		CategoryTree::setHeaders( $out );
 
-		return false;
+		$options = $this->config->get( 'CategoryTreePageCategoryOptions' );
+		$link = $this->parserHook(
+			$this->titleFormatter->getPrefixedText( $categoryTitle ),
+			$options, null, null, true
+		);
 	}
 
 	/**
