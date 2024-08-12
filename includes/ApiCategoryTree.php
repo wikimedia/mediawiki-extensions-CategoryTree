@@ -9,6 +9,7 @@ use MediaWiki\Config\Config;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Languages\LanguageConverterFactory;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\MainConfigNames;
 use MediaWiki\Title\Title;
 use WANObjectCache;
 use Wikimedia\ParamValidator\ParamValidator;
@@ -149,7 +150,7 @@ class ApiCategoryTree extends ApiBase {
 				md5( $ct->optionManager->getOptionsAsCacheKey( $depth ) ),
 				$this->getLanguage()->getCode(),
 				$langConv->getExtraHashOptions(),
-				$ctConfig->get( 'RenderHashAppend' )
+				$ctConfig->get( MainConfigNames::RenderHashAppend )
 			),
 			$this->wanCache::TTL_DAY,
 			static function () use ( $ct, $title, $depth ) {
