@@ -62,25 +62,11 @@ class Hooks implements
 	CategoryViewer__doCategoryQueryHook,
 	CategoryViewer__generateLinkHook
 {
-
-	/** @var CategoryCache */
-	private $categoryCache;
-
-	/** @var Config */
-	private $config;
-
-	/** @var IConnectionProvider */
+	private CategoryCache $categoryCache;
+	private Config $config;
 	private IConnectionProvider $dbProvider;
+	private LinkRenderer $linkRenderer;
 
-	/** @var LinkRenderer */
-	private $linkRenderer;
-
-	/**
-	 * @param CategoryCache $categoryCache
-	 * @param Config $config
-	 * @param IConnectionProvider $dbProvider
-	 * @param LinkRenderer $linkRenderer
-	 */
 	public function __construct(
 		CategoryCache $categoryCache,
 		Config $config,
@@ -215,10 +201,10 @@ class Hooks implements
 		$attr = Sanitizer::validateTagAttributes( $argv, 'div' );
 
 		$hideroot = isset( $argv['hideroot'] )
-			? OptionManager::decodeBoolean( $argv['hideroot'] ) : null;
+			? OptionManager::decodeBoolean( $argv['hideroot'] ) : false;
 		$onlyroot = isset( $argv['onlyroot'] )
-			? OptionManager::decodeBoolean( $argv['onlyroot'] ) : null;
-		$depthArg = isset( $argv['depth'] ) ? (int)$argv['depth'] : null;
+			? OptionManager::decodeBoolean( $argv['onlyroot'] ) : false;
+		$depthArg = isset( $argv['depth'] ) ? (int)$argv['depth'] : 1;
 
 		$depth = $ct->optionManager->capDepth( $depthArg );
 		if ( $onlyroot ) {

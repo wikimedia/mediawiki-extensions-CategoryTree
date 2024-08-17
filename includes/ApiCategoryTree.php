@@ -32,33 +32,15 @@ use Wikimedia\Rdbms\IConnectionProvider;
  */
 
 class ApiCategoryTree extends ApiBase {
-	/** @var ConfigFactory */
-	private $configFactory;
+	private ConfigFactory $configFactory;
+	private LanguageConverterFactory $languageConverterFactory;
+	private LinkRenderer $linkRenderer;
+	private IConnectionProvider $dbProvider;
+	private WANObjectCache $wanCache;
 
-	/** @var LanguageConverterFactory */
-	private $languageConverterFactory;
-
-	/** @var LinkRenderer */
-	private $linkRenderer;
-
-	/** @var IConnectionProvider */
-	private $dbProvider;
-
-	/** @var WANObjectCache */
-	private $wanCache;
-
-	/**
-	 * @param ApiMain $main
-	 * @param string $action
-	 * @param ConfigFactory $configFactory
-	 * @param IConnectionProvider $dbProvider
-	 * @param LanguageConverterFactory $languageConverterFactory
-	 * @param LinkRenderer $linkRenderer
-	 * @param WANObjectCache $wanCache
-	 */
 	public function __construct(
 		ApiMain $main,
-		$action,
+		string $action,
 		ConfigFactory $configFactory,
 		IConnectionProvider $dbProvider,
 		LanguageConverterFactory $languageConverterFactory,
@@ -102,7 +84,7 @@ class ApiCategoryTree extends ApiBase {
 	 * @param array $params
 	 * @return string[]
 	 */
-	private function extractOptions( $params ): array {
+	private function extractOptions( array $params ): array {
 		if ( !isset( $params['options'] ) ) {
 			return [];
 		}
@@ -157,7 +139,7 @@ class ApiCategoryTree extends ApiBase {
 	 * @param Config $ctConfig Config for CategoryTree
 	 * @return string HTML
 	 */
-	private function getHTML( CategoryTree $ct, Title $title, $depth, Config $ctConfig ) {
+	private function getHTML( CategoryTree $ct, Title $title, int $depth, Config $ctConfig ): string {
 		$langConv = $this->languageConverterFactory->getLanguageConverter();
 
 		return $this->wanCache->getWithSetCallback(

@@ -36,22 +36,11 @@ use Wikimedia\Rdbms\IConnectionProvider;
  * to display the category structure of a wiki
  */
 class CategoryTreePage extends SpecialPage {
-	/** @var string */
-	public $target = '';
+	public string $target = '';
+	private IConnectionProvider $dbProvider;
+	private SearchEngineFactory $searchEngineFactory;
+	public ?CategoryTree $tree = null;
 
-	/** @var IConnectionProvider */
-	private $dbProvider;
-
-	/** @var SearchEngineFactory */
-	private $searchEngineFactory;
-
-	/** @var CategoryTree */
-	public $tree = null;
-
-	/**
-	 * @param IConnectionProvider $dbProvider
-	 * @param SearchEngineFactory $searchEngineFactory
-	 */
 	public function __construct(
 		IConnectionProvider $dbProvider,
 		SearchEngineFactory $searchEngineFactory
@@ -65,7 +54,7 @@ class CategoryTreePage extends SpecialPage {
 	 * @param string $name
 	 * @return mixed
 	 */
-	private function getOption( $name ) {
+	private function getOption( string $name ) {
 		if ( $this->tree ) {
 			return $this->tree->optionManager->getOption( $name );
 		} else {

@@ -44,24 +44,11 @@ use Wikimedia\Rdbms\IConnectionProvider;
  * to display the category structure of a wiki
  */
 class CategoryTree {
-	/** @var OptionManager */
-	public $optionManager;
+	public OptionManager $optionManager;
+	private Config $config;
+	private IConnectionProvider $dbProvider;
+	private LinkRenderer $linkRenderer;
 
-	/** @var Config */
-	private $config;
-
-	/** @var IConnectionProvider */
-	private $dbProvider;
-
-	/** @var LinkRenderer */
-	private $linkRenderer;
-
-	/**
-	 * @param array $options
-	 * @param Config $config
-	 * @param IConnectionProvider $dbProvider
-	 * @param LinkRenderer $linkRenderer
-	 */
 	public function __construct(
 		array $options,
 		Config $config,
@@ -76,9 +63,8 @@ class CategoryTree {
 
 	/**
 	 * Add ResourceLoader modules to the OutputPage object
-	 * @param OutputPage $outputPage
 	 */
-	public static function setHeaders( OutputPage $outputPage ) {
+	public static function setHeaders( OutputPage $outputPage ): void {
 		# Add the modules
 		$outputPage->addModuleStyles( 'ext.categoryTree.styles' );
 		$outputPage->addModules( 'ext.categoryTree' );
@@ -95,8 +81,8 @@ class CategoryTree {
 	 * @param bool $allowMissing
 	 * @return bool|string
 	 */
-	public function getTag( ?Parser $parser, $category, $hideroot = false, array $attr = [],
-		$depth = 1, $allowMissing = false
+	public function getTag( ?Parser $parser, string $category, bool $hideroot = false, array $attr = [],
+		int $depth = 1, bool $allowMissing = false
 	) {
 		$disableCache = $this->config->get( 'CategoryTreeDisableCache' );
 
@@ -147,12 +133,9 @@ class CategoryTree {
 
 	/**
 	 * Returns a string with an HTML representation of the children of the given category.
-	 * @param Title $title
-	 * @param int $depth
 	 * @suppress PhanUndeclaredClassMethod,PhanUndeclaredClassInstanceof
-	 * @return string
 	 */
-	public function renderChildren( Title $title, $depth = 1 ) {
+	public function renderChildren( Title $title, int $depth = 1 ): string {
 		if ( !$title->inNamespace( NS_CATEGORY ) ) {
 			// Non-categories can't have children. :)
 			return '';
@@ -274,10 +257,8 @@ class CategoryTree {
 
 	/**
 	 * Returns a string with an HTML representation of the parents of the given category.
-	 * @param Title $title
-	 * @return string
 	 */
-	public function renderParents( Title $title ) {
+	public function renderParents( Title $title ): string {
 		$dbr = $this->dbProvider->getReplicaDatabase();
 
 		$res = $dbr->newSelectQueryBuilder()
@@ -315,7 +296,7 @@ class CategoryTree {
 	 * @param int $children
 	 * @return string
 	 */
-	public function renderNode( Title $title, $children = 0 ) {
+	public function renderNode( Title $title, int $children = 0 ): string {
 		if ( $this->config->get( 'CategoryTreeUseCategoryTable' )
 			&& $title->inNamespace( NS_CATEGORY )
 			&& !$this->optionManager->isInverse()
@@ -331,12 +312,8 @@ class CategoryTree {
 	/**
 	 * Returns a string with a HTML represenation of the given page.
 	 * $info must be an associative array, containing at least a Title object under the 'title' key.
-	 * @param Title $title
-	 * @param Category|null $cat
-	 * @param int $children
-	 * @return string
 	 */
-	public function renderNodeInfo( Title $title, Category $cat = null, $children = 0 ) {
+	public function renderNodeInfo( Title $title, Category $cat = null, int $children = 0 ): string {
 		$mode = $this->optionManager->getOption( 'mode' );
 
 		$isInCatNS = $title->inNamespace( NS_CATEGORY );
@@ -458,14 +435,10 @@ class CategoryTree {
 
 	/**
 	 * Create a string which format the page, subcat and file counts of a category
-	 * @param IContextSource $context
-	 * @param ?Category $cat
-	 * @param int $countMode
-	 * @return string
 	 */
 	public static function createCountString( IContextSource $context, ?Category $cat,
-		$countMode
-	) {
+		int $countMode
+	): string {
 		$allCount = $cat ? $cat->getMemberCount() : 0;
 		$subcatCount = $cat ? $cat->getSubcatCount() : 0;
 		$fileCount = $cat ? $cat->getFileCount() : 0;
@@ -513,11 +486,9 @@ class CategoryTree {
 
 	/**
 	 * Creates a Title object from a user provided (and thus unsafe) string
-	 * @param string $title
-	 * @return null|Title
 	 */
-	public static function makeTitle( $title ) {
-		$title = trim( strval( $title ) );
+	public static function makeTitle( string $title ): ?Title {
+		$title = trim( $title );
 
 		if ( $title === '' ) {
 			return null;
