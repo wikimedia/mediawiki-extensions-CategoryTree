@@ -5,8 +5,6 @@ namespace MediaWiki\Extension\CategoryTree;
 use ApiBase;
 use ApiMain;
 use FormatJson;
-use MediaWiki\Config\Config;
-use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Languages\LanguageConverterFactory;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MainConfigNames;
@@ -33,7 +31,6 @@ use Wikimedia\Rdbms\IConnectionProvider;
  */
 
 class ApiCategoryTree extends ApiBase {
-	private ConfigFactory $configFactory;
 	private LanguageConverterFactory $languageConverterFactory;
 	private LinkRenderer $linkRenderer;
 	private IConnectionProvider $dbProvider;
@@ -42,14 +39,12 @@ class ApiCategoryTree extends ApiBase {
 	public function __construct(
 		ApiMain $main,
 		string $action,
-		ConfigFactory $configFactory,
 		IConnectionProvider $dbProvider,
 		LanguageConverterFactory $languageConverterFactory,
 		LinkRenderer $linkRenderer,
 		WANObjectCache $wanCache
 	) {
 		parent::__construct( $main, $action );
-		$this->configFactory = $configFactory;
 		$this->languageConverterFactory = $languageConverterFactory;
 		$this->linkRenderer = $linkRenderer;
 		$this->dbProvider = $dbProvider;
@@ -73,8 +68,7 @@ class ApiCategoryTree extends ApiBase {
 
 		$ct = new CategoryTree( $options, $this->getConfig(), $this->dbProvider, $this->linkRenderer );
 		$depth = $ct->optionManager->capDepth( $depth );
-		$ctConfig = $this->configFactory->makeConfig( 'categorytree' );
-		$html = $this->getHTML( $ct, $title, $depth, $ctConfig );
+		$html = $this->getHTML( $ct, $title, $depth );
 
 		$this->getMain()->setCacheMode( 'public' );
 
@@ -132,15 +126,14 @@ class ApiCategoryTree extends ApiBase {
 	}
 
 	/**
-	 * Get category tree HTML for the given tree, title, depth and config
+	 * Get category tree HTML for the given tree, title and depth
 	 *
 	 * @param CategoryTree $ct
 	 * @param Title $title
 	 * @param int $depth
-	 * @param Config $ctConfig Config for CategoryTree
 	 * @return string HTML
 	 */
-	private function getHTML( CategoryTree $ct, Title $title, int $depth, Config $ctConfig ): string {
+	private function getHTML( CategoryTree $ct, Title $title, int $depth ): string {
 		$langConv = $this->languageConverterFactory->getLanguageConverter();
 
 		return $this->wanCache->getWithSetCallback(
@@ -150,7 +143,7 @@ class ApiCategoryTree extends ApiBase {
 				md5( $ct->optionManager->getOptionsAsCacheKey( $depth ) ),
 				$this->getLanguage()->getCode(),
 				$langConv->getExtraHashOptions(),
-				$ctConfig->get( MainConfigNames::RenderHashAppend )
+				$this->getConfig()->get( MainConfigNames::RenderHashAppend )
 			),
 			$this->wanCache::TTL_DAY,
 			static function () use ( $ct, $title, $depth ) {

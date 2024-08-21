@@ -8,9 +8,6 @@
 	"requires": {
 		"MediaWiki": ">= 1.42"
 	},
-	"ConfigRegistry": {
-		"categorytree": "GlobalVarConfig::newInstance"
-	},
 	"SpecialPages": {
 		"CategoryTree": {
 			"class": "MediaWiki\\Extension\\CategoryTree\\CategoryTreePage",
@@ -24,7 +21,6 @@
 		"categorytree": {
 			"class": "MediaWiki\\Extension\\CategoryTree\\ApiCategoryTree",
 			"services": [
-				"ConfigFactory",
 				"DBLoadBalancerFactory",
 				"LanguageConverterFactory",
 				"LinkRenderer",
