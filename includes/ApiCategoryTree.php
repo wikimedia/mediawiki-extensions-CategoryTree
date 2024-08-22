@@ -4,7 +4,7 @@ namespace MediaWiki\Extension\CategoryTree;
 
 use ApiBase;
 use ApiMain;
-use FormatJson;
+use MediaWiki\Json\FormatJson;
 use MediaWiki\Languages\LanguageConverterFactory;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MainConfigNames;

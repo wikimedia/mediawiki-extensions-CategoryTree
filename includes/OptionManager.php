@@ -24,9 +24,9 @@
 
 namespace MediaWiki\Extension\CategoryTree;
 
-use FormatJson;
 use InvalidArgumentException;
 use MediaWiki\Config\Config;
+use MediaWiki\Json\FormatJson;
 use MediaWiki\MediaWikiServices;
 
 /**
