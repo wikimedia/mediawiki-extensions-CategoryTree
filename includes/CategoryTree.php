@@ -78,11 +78,10 @@ class CategoryTree {
 	 * @param bool $hideroot
 	 * @param array $attr
 	 * @param int $depth
-	 * @param bool $allowMissing
 	 * @return bool|string
 	 */
 	public function getTag( ?Parser $parser, string $category, bool $hideroot = false, array $attr = [],
-		int $depth = 1, bool $allowMissing = false
+		int $depth = 1
 	) {
 		$disableCache = $this->config->get( 'CategoryTreeDisableCache' );
 
@@ -114,7 +113,7 @@ class CategoryTree {
 		$attr['data-ct-mode'] = $this->optionManager->getOption( 'mode' );
 		$attr['data-ct-options'] = $this->optionManager->getOptionsAsJsStructure();
 
-		if ( !$allowMissing && !$title->getArticleID() ) {
+		if ( !$title->getArticleID() ) {
 			$html = Html::rawElement( 'span', [ 'class' => 'CategoryTreeNotice' ],
 				wfMessage( 'categorytree-not-found' )
 					->plaintextParams( $category )
