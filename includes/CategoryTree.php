@@ -33,7 +33,6 @@ use MediaWiki\Html\Html;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
-use MediaWiki\Parser\Parser;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
@@ -73,29 +72,18 @@ class CategoryTree {
 	/**
 	 * Custom tag implementation. This is called by Hooks::parserHook, which is used to
 	 * load CategoryTreeFunctions.php on demand.
-	 * @param ?Parser $parser
 	 * @param string $category
 	 * @param bool $hideroot
 	 * @param array $attr
 	 * @param int $depth
 	 * @return bool|string
 	 */
-	public function getTag( ?Parser $parser, string $category, bool $hideroot = false, array $attr = [],
+	public function getTag( string $category, bool $hideroot = false, array $attr = [],
 		int $depth = 1
 	) {
-		$disableCache = $this->config->get( 'CategoryTreeDisableCache' );
-
 		$category = trim( $category );
 		if ( $category === '' ) {
 			return false;
-		}
-
-		if ( $parser ) {
-			if ( $disableCache === true ) {
-				$parser->getOutput()->updateCacheExpiry( 0 );
-			} elseif ( is_int( $disableCache ) ) {
-				$parser->getOutput()->updateCacheExpiry( $disableCache );
-			}
 		}
 
 		$title = self::makeTitle( $category );

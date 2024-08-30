@@ -197,6 +197,13 @@ class Hooks implements
 			$parserOutput = $parser->getOutput();
 			$parserOutput->addModuleStyles( [ 'ext.categoryTree.styles' ] );
 			$parserOutput->addModules( [ 'ext.categoryTree' ] );
+
+			$disableCache = $this->config->get( 'CategoryTreeDisableCache' );
+			if ( $disableCache === true ) {
+				$parserOutput->updateCacheExpiry( 0 );
+			} elseif ( is_int( $disableCache ) ) {
+				$parserOutput->updateCacheExpiry( $disableCache );
+			}
 		}
 
 		$ct = new CategoryTree( $argv, $this->config, $this->dbProvider, $this->linkRenderer );
@@ -224,7 +231,7 @@ class Hooks implements
 		}
 
 		return $message .
-			$ct->getTag( $parser, $cat, $hideroot, $attr, $depth );
+			$ct->getTag( $cat, $hideroot, $attr, $depth );
 	}
 
 	/**
