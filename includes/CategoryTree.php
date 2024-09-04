@@ -81,14 +81,8 @@ class CategoryTree {
 	public function getTag( string $category, bool $hideroot = false, array $attr = [],
 		int $depth = 1
 	) {
-		$category = trim( $category );
-		if ( $category === '' ) {
-			return false;
-		}
-
 		$title = self::makeTitle( $category );
-
-		if ( $title === null ) {
+		if ( !$title ) {
 			return false;
 		}
 

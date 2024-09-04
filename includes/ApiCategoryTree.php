@@ -147,7 +147,7 @@ class ApiCategoryTree extends ApiBase {
 			),
 			$this->wanCache::TTL_DAY,
 			static function () use ( $ct, $title, $depth ) {
-				return trim( $ct->renderChildren( $title, $depth ) );
+				return $ct->renderChildren( $title, $depth );
 			},
 			[
 				'touchedCallback' => function () {
