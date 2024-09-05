@@ -86,7 +86,8 @@
 				"CategoryTree.CategoryCache",
 				"MainConfig",
 				"DBLoadBalancerFactory",
-				"LinkRenderer"
+				"LinkRenderer",
+				"TitleFormatter"
 			]
 		},
 		"config": {
@@ -100,7 +101,7 @@
 		"SkinAfterPortlet": "default",
 		"SkinBuildSidebar": "default",
 		"ParserFirstCallInit": "default",
-		"OutputPageMakeCategoryLinks": "default",
+		"OutputPageRenderCategoryLink": "default",
 		"CategoryViewer::doCategoryQuery": "default",
 		"CategoryViewer::generateLink": "default"
 	},
