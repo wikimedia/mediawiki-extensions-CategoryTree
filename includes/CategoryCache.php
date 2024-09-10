@@ -22,7 +22,7 @@ namespace MediaWiki\Extension\CategoryTree;
 
 use MediaWiki\Category\Category;
 use MediaWiki\Linker\LinkTarget;
-use Wikimedia\Rdbms\ILoadBalancer;
+use Wikimedia\Rdbms\IConnectionProvider;
 use Wikimedia\Rdbms\IResultWrapper;
 
 /**
@@ -32,12 +32,12 @@ class CategoryCache {
 	/** @var (?Category)[] Keys are category database names, values are either a Category object or null */
 	private array $cache = [];
 
-	private ILoadBalancer $loadBalancer;
+	private IConnectionProvider $dbProvider;
 
 	public function __construct(
-		ILoadBalancer $loadBalancer
+		IConnectionProvider $dbProvider
 	) {
-		$this->loadBalancer = $loadBalancer;
+		$this->dbProvider = $dbProvider;
 	}
 
 	/**
@@ -78,7 +78,7 @@ class CategoryCache {
 			return;
 		}
 
-		$rows = $this->loadBalancer->getConnection( ILoadBalancer::DB_REPLICA )
+		$rows = $this->dbProvider->getReplicaDatabase()
 			->newSelectQueryBuilder()
 			->select( [ 'cat_id', 'cat_title', 'cat_pages', 'cat_subcats', 'cat_files' ] )
 			->from( 'category' )
