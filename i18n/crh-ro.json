@@ -4,16 +4,16 @@
 			"Zolgoyo"
 		]
 	},
-	"categorytree": "Ulam ağaşı",
+	"categorytree": "Ulam agaşî",
 	"categorytree-portlet": "Ulamlar",
-	"categorytree-legend": "Ulam ağaşını körsetüw",
+	"categorytree-legend": "Ulam agaşînî kórsetúw",
 	"categorytree-category": "Ulam:",
 	"categorytree-num-categories": "$1 U",
 	"categorytree-num-pages": "$1 B",
 	"categorytree-num-files": "$1 D",
 	"categorytree-num-empty": "boş",
-	"categorytree-load": "cükle",
-	"categorytree-loading": "cüklene...",
-	"categorytree-nothing-found": "bĭrşiy tapılmadı",
-	"categorytree-no-subcategories": "alt ulam yoq"
+	"categorytree-load": "ğúkle",
+	"categorytree-loading": "ğúklene...",
+	"categorytree-nothing-found": "bírşiy tapîlamadî",
+	"categorytree-no-subcategories": "alt ulam yok"
 }
