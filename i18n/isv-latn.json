@@ -18,7 +18,7 @@
 	"categorytree-mode-all": "vse stranice",
 	"categorytree-collapse": "svinuti",
 	"categorytree-expand": "razvinuti",
-	"categorytree-member-counts": "Sodrživaje {{PLURAL:$1|1 podkategoriju|$1 podkategorij}}, {{PLURAL:$2|1 stranicu|$2 stranic}} i {{PLURAL:$3|1 fajl|$3 fajlov}}",
+	"categorytree-member-counts": "Sodrživaje {{PLURAL:$1|1 podkategoriju|$1 podkategorije|$1 podkategorij}}, {{PLURAL:$2|1 stranicu|$2 stranice|$2 stranic}} i {{PLURAL:$3|1 fajl|$3 fajly|$3 fajlov}}",
 	"categorytree-num-categories": "$1 kat.",
 	"categorytree-num-pages": "$1 str.",
 	"categorytree-num-files": "$1 f.",
