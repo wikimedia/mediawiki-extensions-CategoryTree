@@ -24,7 +24,6 @@
 
 namespace MediaWiki\Extension\CategoryTree;
 
-use ExtensionRegistry;
 use MediaWiki\Category\Category;
 use MediaWiki\Config\Config;
 use MediaWiki\Context\IContextSource;
@@ -35,6 +34,7 @@ use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Parser\Parser;
+use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use Wikimedia\Rdbms\IConnectionProvider;
