@@ -372,6 +372,7 @@ class CategoryTree {
 					// href and role will be added client-side
 					'class' => 'CategoryTreeToggle',
 					'data-ct-title' => $key,
+					'href' => $title->getLocalURL(),
 				];
 
 				if ( $children === 0 ) {
