@@ -340,7 +340,9 @@ class CategoryTree {
 			$label = $title->getPrefixedText();
 		}
 
-		$link = $this->linkRenderer->makeLink( $title, $label );
+		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
+		$link = Html::rawElement( 'bdi', [ 'dir' => $contLang->getDir() ],
+			$this->linkRenderer->makeLink( $title, $label ) );
 
 		$count = false;
 		$s = '';
@@ -450,8 +452,6 @@ class CategoryTree {
 			# numbers and commas get messed up in a mixed dir env
 			'dir' => $context->getLanguage()->getDir()
 		];
-		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
-		$s = $contLang->getDirMark() . ' ';
 
 		# Create a list of category members with only non-zero member counts
 		$memberNums = [];
@@ -472,7 +472,7 @@ class CategoryTree {
 
 		# Only $5 is actually used in the default message.
 		# Other arguments can be used in a customized message.
-		$s .= Html::rawElement(
+		$s = ' ' . Html::rawElement(
 			'span',
 			$attr,
 			$context->msg( 'categorytree-member-num' )
