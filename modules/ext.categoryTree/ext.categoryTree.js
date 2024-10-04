@@ -90,7 +90,6 @@
 		$content.find( '.CategoryTreeToggle' )
 			.on( 'click', handleNode )
 			.attr( {
-				href: '#',
 				role: 'button',
 				title: function () {
 					return mw.msg(
