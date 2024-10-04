@@ -23,6 +23,9 @@
  * @author Daniel Kinzler, brightbyte.de
  */
 
+@import 'mediawiki.mixins.less';
+@import 'mediawiki.skin.variables.less';
+
 /* On the list of subcategories hide the normal list bullet */
 .client-js #mw-subcategories ul {
 	list-style: none;
@@ -78,14 +81,18 @@
 
 .CategoryTreeBullet,
 .CategoryTreeEmptyBullet {
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+	.user-select( none );
+}
+
+.expandable-arrow( @param-color ) {
+	.cdx-mixin-css-icon(
+		@cdx-icon-down-triangle, @param-color, 14px,
+		false, center, text-top
+	);
 }
 
 .CategoryTreeEmptyBullet {
-	color: #c0c0c0;
+	.expandable-arrow( @color-disabled );
 }
 
 /* Hide toggle buttons for clients without JavaScript */
@@ -102,40 +109,30 @@
 	height: 0;
 }
 
+.CategoryTreeToggle {
+	transition: transform 250ms ease;
+	.expandable-arrow( @color-progressive );
+
+	&:visited {
+		.expandable-arrow( @color-visited );
+	}
+}
+
 .CategoryTreeEmptyBullet,
 .CategoryTreeToggle[ aria-expanded='false' ] {
-	border-top: 5px solid transparent;
-	border-left: 10px solid;
-	border-bottom: 5px solid transparent;
-	border-right: 0 none;
-}
+	.mw-content-ltr &,
+	.mw-content-rtl .mw-content-ltr & {
+		transform: rotate( -90deg );
+	}
 
-/* @noflip */
-.mw-content-ltr .CategoryTreeEmptyBullet,
-.mw-content-ltr .CategoryTreeToggle[ aria-expanded='false' ],
-.mw-content-rtl .mw-content-ltr .CategoryTreeEmptyBullet,
-.mw-content-rtl .mw-content-ltr .CategoryTreeToggle[ aria-expanded='false' ] {
-	border-left: 10px solid;
-	border-right: 0 none;
-}
-
-/* @noflip */
-.mw-content-rtl .CategoryTreeEmptyBullet,
-.mw-content-rtl .CategoryTreeToggle[ aria-expanded='false' ],
-.mw-content-ltr .mw-content-rtl .CategoryTreeEmptyBullet,
-.mw-content-ltr .mw-content-rtl .CategoryTreeToggle[ aria-expanded='false' ] {
-	border-right: 10px solid;
-	border-left: 0 none;
-}
-
-.CategoryTreeToggle[ aria-expanded='true' ] {
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 10px solid;
+	.mw-content-rtl &,
+	.mw-content-ltr .mw-content-rtl & {
+		transform: rotate( 90deg );
+	}
 }
 
 .CategoryTreePageBullet {
-	border-left: 10px solid transparent;
+	margin-left: 14px;
 }
 
 .CategoryTreeLabelPage {

@@ -72,7 +72,7 @@
 			]
 		},
 		"ext.categoryTree.styles": {
-			"styles": "ext.categoryTree.styles.css"
+			"styles": "ext.categoryTree.styles.less"
 		}
 	},
 	"ResourceFileModulePaths": {
