@@ -120,13 +120,13 @@
 
 .CategoryTreeEmptyBullet,
 .CategoryTreeToggle[ aria-expanded='false' ] {
-	.mw-content-ltr &,
-	.mw-content-rtl .mw-content-ltr & {
+	[ dir='ltr' ] &,
+	[ dir='rtl' ] [ dir='ltr' ] & {
 		transform: rotate( -90deg );
 	}
 
-	.mw-content-rtl &,
-	.mw-content-ltr .mw-content-rtl & {
+	[ dir='rtl' ] &,
+	[ dir='ltr' ] [ dir='rtl' ] & {
 		transform: rotate( 90deg );
 	}
 }
