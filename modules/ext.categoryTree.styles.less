@@ -84,9 +84,11 @@
 	.user-select( none );
 }
 
+@arrow-size: 14px;
+
 .expandable-arrow( @param-color ) {
 	.cdx-mixin-css-icon(
-		@cdx-icon-down-triangle, @param-color, 14px,
+		@cdx-icon-down-triangle, @param-color, @arrow-size,
 		false, center, text-top
 	);
 }
@@ -132,7 +134,7 @@
 }
 
 .CategoryTreePageBullet {
-	margin-left: 14px;
+	width: @arrow-size;
 }
 
 .CategoryTreeLabelPage {
