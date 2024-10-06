@@ -26,20 +26,11 @@
 @import 'mediawiki.mixins.less';
 @import 'mediawiki.skin.variables.less';
 
-/* On the list of subcategories hide the normal list bullet */
 .client-js #mw-subcategories ul {
+	/* On the list of subcategories hide the normal list bullet */
 	list-style: none;
-}
-
-/* and reduce the margin on the margin start side. */
-/* @noflip */
-.client-js #mw-subcategories .mw-content-ltr ul {
-	margin-left: 0.25em;
-}
-
-/* @noflip */
-.client-js #mw-subcategories .mw-content-rtl ul {
-	margin-right: 0.25em;
+	/* and reduce the margin on the margin start side. */
+	.margin-inline( 0.25em, 0 );
 }
 
 #mw-panel .portal .body .CategoryTreeTag {
@@ -52,31 +43,9 @@
 	padding: 0.25em 0;
 }
 
-/*
- * Indent the children on each level on margin start side.
- * A category tree in the sidebar is in user interface language therefor
- * a flipped margin-left is the margin start side.
- */
+/* Indent the children on each level on margin start side. */
 .CategoryTreeChildren {
-	margin-left: 1.25em;
-}
-
-/*
- * Category trees in the content are in content language and therefor
- * an unflipped margin-left or margin-right is the margin start side.
- * Use margin: 0 0 0 1.25em instead of margin-left: 1.25em here to
- * overwrite the flipped margin-left from above.
- */
-/* @noflip */
-.mw-content-ltr .CategoryTreeChildren,
-.mw-content-rtl .mw-content-ltr .CategoryTreeChildren {
-	margin: 0 0 0 1.25em;
-}
-
-/* @noflip */
-.mw-content-rtl .CategoryTreeChildren,
-.mw-content-ltr .mw-content-rtl .CategoryTreeChildren {
-	margin: 0 1.25em 0 0;
+	.margin-inline( 1.25em, 0 );
 }
 
 .CategoryTreeBullet,
