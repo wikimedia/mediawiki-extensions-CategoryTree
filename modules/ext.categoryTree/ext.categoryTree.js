@@ -23,8 +23,7 @@
  */
 
 ( function () {
-	var loadChildren,
-		config = require( './data.json' );
+	const config = require( './data.json' );
 
 	/**
 	 * Expands a given node (loading it's children if not loaded)
@@ -33,7 +32,7 @@
 	 */
 	function expandNode( $link ) {
 		// Show the children node
-		var $children = $link.parents( '.CategoryTreeItem' )
+		const $children = $link.parents( '.CategoryTreeItem' )
 			.siblings( '.CategoryTreeChildren' )
 			.css( 'display', '' );
 
@@ -67,13 +66,12 @@
 	/**
 	 * Handles clicks on the expand buttons, and calls the appropriate function
 	 *
-	 * @this {Element} CategoryTreeToggle
 	 * @param {jQuery.Event} e
 	 */
 	function handleNode( e ) {
 		e.preventDefault();
 
-		var $link = $( this );
+		const $link = $( this );
 		if ( $link.attr( 'aria-expanded' ) === 'false' ) {
 			expandNode( $link );
 		} else {
@@ -108,22 +106,18 @@
 	 * @param {jQuery} $link
 	 * @param {jQuery} $children
 	 */
-	loadChildren = function ( $link, $children ) {
-		var $linkParentCTTag, ctTitle, ctMode, ctOptions;
-
+	function loadChildren( $link, $children ) {
 		/**
 		 * Error callback
 		 */
 		function error() {
-			var $retryLink;
-
-			$retryLink = $( '<a>' )
+			const $retryLink = $( '<a>' )
 				.text( mw.msg( 'categorytree-retry' ) )
 				.attr( {
 					role: 'button',
 					tabindex: 0
 				} )
-				.on( 'click keypress', function ( e ) {
+				.on( 'click keypress', ( e ) => {
 					if (
 						e.type === 'click' ||
 						e.type === 'keypress' && e.which === 13
@@ -145,14 +139,14 @@
 				.text( mw.msg( 'categorytree-loading' ) )
 		);
 
-		$linkParentCTTag = $link.parents( '.CategoryTreeTag' );
+		const $linkParentCTTag = $link.parents( '.CategoryTreeTag' );
 
 		// Element may not have a .CategoryTreeTag parent, fallback to defauls
 		// Probably a CategoryPage (@todo: based on what?)
-		ctTitle = $link.attr( 'data-ct-title' );
-		ctMode = $linkParentCTTag.data( 'ct-mode' );
-		ctMode = typeof ctMode === 'number' ? ctMode : undefined;
-		ctOptions = $linkParentCTTag.attr( 'data-ct-options' ) || config.defaultCtOptions;
+		const ctTitle = $link.attr( 'data-ct-title' );
+		const ctMode = $linkParentCTTag.data( 'ct-mode' );
+		const mode = typeof ctMode === 'number' ? ctMode : undefined;
+		const ctOptions = $linkParentCTTag.attr( 'data-ct-options' ) || config.defaultCtOptions;
 
 		// Mode and options have defaults or fallbacks, title does not.
 		// Don't make a request if there is no title.
@@ -167,11 +161,10 @@
 			options: ctOptions,
 			uselang: mw.config.get( 'wgUserLanguage' ),
 			formatversion: 2
-		} ).done( function ( data ) {
-			var $data;
-
+		} ).done( ( data ) => {
 			data = data.categorytree.html;
 
+			let $data;
 			if ( data === '' ) {
 				$data = $( '<i>' ).addClass( 'CategoryTreeNotice' )
 					// eslint-disable-next-line mediawiki/msg-doc
@@ -179,7 +172,7 @@
 						0: 'categorytree-no-subcategories',
 						10: 'categorytree-no-pages',
 						100: 'categorytree-no-parent-categories'
-					}[ ctMode ] || 'categorytree-nothing-found' ) );
+					}[ mode ] || 'categorytree-nothing-found' ) );
 			} else {
 				$data = $( $.parseHTML( data ) );
 				attachHandler( $data );
@@ -187,7 +180,7 @@
 
 			$children.empty().append( $data );
 		} ).fail( error );
-	};
+	}
 
 	// Register click events
 	mw.hook( 'wikipage.content' ).add( attachHandler );
@@ -196,7 +189,7 @@
 	// This is needed when wgCategoryTreeHijackPageCategories is enabled.
 	mw.hook( 'wikipage.categories' ).add( attachHandler );
 
-	$( function () {
+	$( () => {
 		// Attach click handler for sidebar
 		// eslint-disable-next-line no-jquery/no-global-selector
 		attachHandler( $( '#p-categorytree-portlet' ) );
