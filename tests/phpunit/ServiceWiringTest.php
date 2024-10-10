@@ -5,10 +5,14 @@
  * as it could not be included as it's in another extension.
  */
 
+namespace MediaWiki\Extension\CategoryTree\Tests;
+
+use MediaWikiIntegrationTestCase;
+
 /**
  * @coversNothing
  */
-class CategoryTreeServiceWiringTest extends MediaWikiIntegrationTestCase {
+class ServiceWiringTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @dataProvider provideService
 	 */
