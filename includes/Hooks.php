@@ -323,7 +323,6 @@ class Hooks implements
 	public function onCategoryViewer__doCategoryQuery( $type, $res ) {
 		if ( $type === 'subcat' && $res ) {
 			$this->categoryCache->fillFromQuery( $res );
-			CategoryTree::setHeaders( RequestContext::getMain()->getOutput() );
 		}
 	}
 
@@ -354,6 +353,8 @@ class Hooks implements
 		$cat = $this->categoryCache->getCategory( $title );
 
 		$link = $tree->renderNodeInfo( $title, $cat );
+
+		CategoryTree::setHeaders( RequestContext::getMain()->getOutput() );
 		return false;
 	}
 }
