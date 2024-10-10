@@ -185,15 +185,13 @@ class Hooks implements
 	 * @param array $argv
 	 * @param Parser|null $parser
 	 * @param PPFrame|null $frame
-	 * @param bool $allowMissing
 	 * @return bool|string
 	 */
 	public function parserHook(
 		$cat,
 		array $argv,
 		Parser $parser = null,
-		PPFrame $frame = null,
-		$allowMissing = false
+		PPFrame $frame = null
 	) {
 		if ( $parser ) {
 			$parserOutput = $parser->getOutput();
@@ -226,7 +224,7 @@ class Hooks implements
 		}
 
 		return $message .
-			$ct->getTag( $parser, $cat, $hideroot, $attr, $depth, $allowMissing );
+			$ct->getTag( $parser, $cat, $hideroot, $attr, $depth );
 	}
 
 	/**
@@ -247,13 +245,17 @@ class Hooks implements
 			// Not enabled, don't do anything
 			return;
 		}
+		if ( !$categoryTitle->exists() ) {
+			// Category doesn't exist. Let the normal LinkRenderer generate the link.
+			return;
+		}
 
 		CategoryTree::setHeaders( $out );
 
 		$options = $this->config->get( 'CategoryTreePageCategoryOptions' );
 		$link = $this->parserHook(
 			$this->titleFormatter->getPrefixedText( $categoryTitle ),
-			$options, null, null, true
+			$options
 		);
 	}
 
