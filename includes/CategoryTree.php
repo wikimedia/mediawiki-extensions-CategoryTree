@@ -294,7 +294,7 @@ class CategoryTree {
 	 * Returns a string with a HTML represenation of the given page.
 	 * $info must be an associative array, containing at least a Title object under the 'title' key.
 	 */
-	public function renderNodeInfo( Title $title, Category $cat = null, int $children = 0 ): string {
+	public function renderNodeInfo( Title $title, ?Category $cat = null, int $children = 0 ): string {
 		$mode = $this->optionManager->getOption( 'mode' );
 
 		$isInCatNS = $title->inNamespace( NS_CATEGORY );

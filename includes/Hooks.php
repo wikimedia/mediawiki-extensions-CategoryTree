@@ -190,8 +190,8 @@ class Hooks implements
 	public function parserHook(
 		$cat,
 		array $argv,
-		Parser $parser = null,
-		PPFrame $frame = null
+		?Parser $parser = null,
+		?PPFrame $frame = null
 	) {
 		if ( $parser ) {
 			$parserOutput = $parser->getOutput();
