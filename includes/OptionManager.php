@@ -260,7 +260,7 @@ class OptionManager {
 	 * @param int|null $depth
 	 * @return string
 	 */
-	public function getOptionsAsCacheKey( int $depth = null ): string {
+	public function getOptionsAsCacheKey( ?int $depth = null ): string {
 		$key = '';
 
 		foreach ( $this->mOptions as $k => $v ) {
@@ -280,7 +280,7 @@ class OptionManager {
 	 * @param int|null $depth
 	 * @return mixed
 	 */
-	public function getOptionsAsJsStructure( int $depth = null ) {
+	public function getOptionsAsJsStructure( ?int $depth = null ) {
 		$opt = $this->mOptions;
 		if ( $depth !== null ) {
 			$opt['depth'] = $depth;
