@@ -34,7 +34,7 @@
 	"categorytree-not-found": "Kategooriat <i>$1</i> ei leitud.",
 	"categorytree-error": "Probleem andmete laadimisel.",
 	"categorytree-retry": "Palun oota hetk ja proovi uuesti.",
-	"categorytree-onlyroot-message": "Parameeter <code>onlyroot</code> on vananenud. Kasuta selle asemel parameetrit <code>depth=\"0\"</code>.",
+	"categorytree-onlyroot-message": "[https://phabricator.wikimedia.org/T290062 T290062]: parameeter <code>onlyroot</code> on vananenud. Kasuta selle asemel parameetrit <code>depth=\"0\"</code>.",
 	"categorytree-deprecation-warning": "'''Hoiatus:''' See lehekülg kasutab sildi <code>&lt;categorytree&gt;</code> vananenud parameetrit.",
 	"categorytree-deprecation-category": "Kategooriapuu vananenud parameetreid kasutavad leheküljed",
 	"categorytree-deprecation-category-desc": "See lehekülg kasutab kategooriapuu vananenud parameetreid nagu <code>onlyroot</code>."
