@@ -231,7 +231,7 @@ class Hooks implements
 		}
 
 		return $message .
-			$ct->getTag( $cat, $hideroot, $attr, $depth );
+			$ct->getTag( $cat ?? '', $hideroot, $attr, $depth );
 	}
 
 	/**
