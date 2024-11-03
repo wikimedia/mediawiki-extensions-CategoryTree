@@ -92,7 +92,6 @@ class CategoryTree {
 			$attr['class'] = 'CategoryTreeTag';
 		}
 
-		$attr['data-ct-mode'] = $this->optionManager->getOption( 'mode' );
 		$attr['data-ct-options'] = $this->optionManager->getOptionsAsJsStructure();
 
 		if ( !$title->getArticleID() ) {
