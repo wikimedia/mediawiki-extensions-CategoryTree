@@ -181,14 +181,14 @@ class Hooks implements
 	/**
 	 * Entry point for the <categorytree> tag parser hook.
 	 * This loads CategoryTreeFunctions.php and calls CategoryTree::getTag()
-	 * @param string $cat
+	 * @param string|null $cat
 	 * @param array $argv
 	 * @param Parser|null $parser
 	 * @param PPFrame|null $frame
 	 * @return bool|string
 	 */
 	public function parserHook(
-		$cat,
+		?string $cat,
 		array $argv,
 		?Parser $parser = null,
 		?PPFrame $frame = null
