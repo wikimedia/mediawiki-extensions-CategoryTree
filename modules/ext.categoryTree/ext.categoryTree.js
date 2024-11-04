@@ -143,9 +143,8 @@ function loadChildren( $link, $children ) {
 	// Element may not have a .CategoryTreeTag parent, fallback to defauls
 	// Probably a CategoryPage (@todo: based on what?)
 	const ctTitle = $link.attr( 'data-ct-title' );
-	const ctMode = $linkParentCTTag.data( 'ct-mode' );
-	const mode = typeof ctMode === 'number' ? ctMode : undefined;
 	const ctOptions = $linkParentCTTag.attr( 'data-ct-options' ) || config.defaultCtOptions;
+	const mode = JSON.parse( ctOptions ).mode;
 
 	// Mode and options have defaults or fallbacks, title does not.
 	// Don't make a request if there is no title.
