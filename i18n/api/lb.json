@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Les Meloures"
+			"Les Meloures",
+			"Volvox"
 		]
 	},
 	"apihelp-categorytree-description": "Interne Modul fir d'Erweiderung \"CategoryTree\".",
