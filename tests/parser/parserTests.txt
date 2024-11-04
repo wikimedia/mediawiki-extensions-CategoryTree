@@ -159,3 +159,18 @@ Tag with CategoryTree root and two subcategories and showcount=on
 </div>
 </div>
 !! end
+
+!! test
+Tag with CategoryTree root and two subcategories and depth=0
+!! wikitext
+<categorytree depth=0>CategoryTree root</categorytree>
+!! html/php
+<div class="CategoryTreeTag" data-ct-options="{&quot;mode&quot;:0,&quot;hideprefix&quot;:20,&quot;showcount&quot;:false,&quot;namespaces&quot;:false,&quot;notranslations&quot;:false}"><div class="CategoryTreeSection"><div class="CategoryTreeItem"><span class="CategoryTreeBullet"><a class="CategoryTreeToggle" data-ct-title="CategoryTree_root" aria-expanded="false"></a> </span> <bdi dir="ltr"><a href="/wiki/Category:CategoryTree_root" title="Category:CategoryTree root">CategoryTree root</a></bdi></div><div class="CategoryTreeChildren" style="display:none"></div></div></div>
+!! html/parsoid
+<div class="CategoryTreeTag" data-ct-options='{"mode":0,"hideprefix":20,"showcount":false,"namespaces":false,"notranslations":false}' typeof="mw:Extension/categorytree" data-mw='{"name":"categorytree","attrs":{"depth":"0"},"body":{"extsrc":"CategoryTree root"}}'>
+<div class="CategoryTreeSection">
+<div class="CategoryTreeItem"><span class="CategoryTreeBullet"><a class="CategoryTreeToggle" data-ct-title="CategoryTree_root" aria-expanded="false"></a> </span> <bdi dir="ltr"><a href="/wiki/Category:CategoryTree_root" title="Category:CategoryTree root">CategoryTree root</a></bdi></div>
+<div class="CategoryTreeChildren" style="display:none"></div>
+</div>
+</div>
+!! end
