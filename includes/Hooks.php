@@ -39,7 +39,6 @@ use MediaWiki\Output\Hook\OutputPageRenderCategoryLinkHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\ProperPageIdentity;
 use MediaWiki\Parser\Parser;
-use MediaWiki\Parser\PPFrame;
 use MediaWiki\Parser\Sanitizer;
 use MediaWiki\ResourceLoader as RL;
 use MediaWiki\SpecialPage\SpecialPage;
@@ -184,14 +183,12 @@ class Hooks implements
 	 * @param string|null $cat
 	 * @param array $argv
 	 * @param Parser|null $parser
-	 * @param PPFrame|null $frame
 	 * @return bool|string
 	 */
 	public function parserHook(
 		?string $cat,
 		array $argv,
-		?Parser $parser = null,
-		?PPFrame $frame = null
+		?Parser $parser = null
 	) {
 		if ( $parser ) {
 			$parserOutput = $parser->getOutput();
