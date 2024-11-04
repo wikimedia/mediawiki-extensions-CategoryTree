@@ -71,7 +71,7 @@ class CategoryTree {
 
 	/**
 	 * Custom tag implementation. This is called by Hooks::parserHook, which is used to
-	 * load CategoryTreeFunctions.php on demand.
+	 * load CategoryTree on demand.
 	 * @param string $category
 	 * @param bool $hideroot
 	 * @param array $attr
