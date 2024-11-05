@@ -351,7 +351,6 @@ class CategoryTree {
 				$attr['class'] = 'CategoryTreeEmptyBullet';
 			} else {
 				$linkattr = [
-					// href and role will be added client-side
 					'class' => 'CategoryTreeToggle',
 					'data-ct-title' => $key,
 				];
