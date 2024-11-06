@@ -377,6 +377,7 @@ class CategoryTree {
 			} else {
 				$linkattr = [
 					'class' => 'CategoryTreeToggle',
+					'data-mw-interface' => '',
 					'data-ct-title' => $key,
 				];
 
