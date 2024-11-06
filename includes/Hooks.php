@@ -33,7 +33,6 @@ use MediaWiki\Hook\SkinBuildSidebarHook;
 use MediaWiki\Hook\SpecialTrackingCategories__generateCatLinkHook;
 use MediaWiki\Hook\SpecialTrackingCategories__preprocessHook;
 use MediaWiki\Html\Html;
-use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\Output\Hook\OutputPageRenderCategoryLinkHook;
 use MediaWiki\Output\OutputPage;
@@ -45,7 +44,6 @@ use MediaWiki\Skin\Skin;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFormatter;
-use Wikimedia\Rdbms\IConnectionProvider;
 use Wikimedia\Rdbms\IResultWrapper;
 
 /**
@@ -64,22 +62,19 @@ class Hooks implements
 	CategoryViewer__generateLinkHook
 {
 	private CategoryCache $categoryCache;
+	private CategoryTreeFactory $categoryTreeFactory;
 	private Config $config;
-	private IConnectionProvider $dbProvider;
-	private LinkRenderer $linkRenderer;
 	private TitleFormatter $titleFormatter;
 
 	public function __construct(
 		CategoryCache $categoryCache,
+		CategoryTreeFactory $categoryTreeFactory,
 		Config $config,
-		IConnectionProvider $dbProvider,
-		LinkRenderer $linkRenderer,
 		TitleFormatter $titleFormatter
 	) {
 		$this->categoryCache = $categoryCache;
+		$this->categoryTreeFactory = $categoryTreeFactory;
 		$this->config = $config;
-		$this->dbProvider = $dbProvider;
-		$this->linkRenderer = $linkRenderer;
 		$this->titleFormatter = $titleFormatter;
 	}
 
@@ -203,7 +198,7 @@ class Hooks implements
 			}
 		}
 
-		$ct = new CategoryTree( $argv, $this->config, $this->dbProvider, $this->linkRenderer );
+		$ct = $this->categoryTreeFactory->newCategoryTree( $argv );
 
 		$attr = Sanitizer::validateTagAttributes( $argv, 'div' );
 
@@ -345,7 +340,7 @@ class Hooks implements
 		if ( $mode !== null ) {
 			$options['mode'] = $mode;
 		}
-		$tree = new CategoryTree( $options, $this->config, $this->dbProvider, $this->linkRenderer );
+		$tree = $this->categoryTreeFactory->newCategoryTree( $options );
 
 		$cat = $this->categoryCache->getCategory( $title );
 

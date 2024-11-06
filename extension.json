@@ -12,7 +12,7 @@
 		"CategoryTree": {
 			"class": "MediaWiki\\Extension\\CategoryTree\\CategoryTreePage",
 			"services": [
-				"DBLoadBalancerFactory",
+				"CategoryTree.CategoryTreeFactory",
 				"SearchEngineFactory"
 			]
 		}
@@ -21,9 +21,9 @@
 		"categorytree": {
 			"class": "MediaWiki\\Extension\\CategoryTree\\ApiCategoryTree",
 			"services": [
+				"CategoryTree.CategoryTreeFactory",
 				"DBLoadBalancerFactory",
 				"LanguageConverterFactory",
-				"LinkRenderer",
 				"MainWANObjectCache"
 			]
 		}
@@ -84,9 +84,8 @@
 			"class": "MediaWiki\\Extension\\CategoryTree\\Hooks",
 			"services": [
 				"CategoryTree.CategoryCache",
+				"CategoryTree.CategoryTreeFactory",
 				"MainConfig",
-				"DBLoadBalancerFactory",
-				"LinkRenderer",
 				"TitleFormatter"
 			]
 		},
