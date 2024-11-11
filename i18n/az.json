@@ -8,7 +8,8 @@
 			"PPerviz",
 			"Toghrul Rahimli",
 			"Vugar 1981",
-			"Wertuose"
+			"Wertuose",
+			"Əkrəm Cəfər"
 		]
 	},
 	"categorytree": "Kateqoriya ağacı",
@@ -39,7 +40,7 @@
 	"categorytree-not-found": "<i>$1</i> adlı kateqoriya tapılmadı.",
 	"categorytree-error": "Məlumat bazasında problem var.",
 	"categorytree-retry": "Xahiş edirik, bir az gözləyin və yenidən yoxlayın.",
-	"categorytree-onlyroot-message": "<code>onlyroot</code> parametri köhnəlmişdir. Bunun əvəzinə <code>depth=\"0\"</code> istifadə edin.",
+	"categorytree-onlyroot-message": "[https://phabricator.wikimedia.org/T290062 T290062]: <code>onlyroot</code> parametri köhnəlmişdir. Bunun əvəzinə <code>depth=\"0\"</code>-dan istifadə edin.",
 	"categorytree-deprecation-warning": "'''Xəbərdarlıq:''' Bu səhifə köhnəlmiş parametrlə <code><categorytree></code> istifadə edir.",
 	"categorytree-deprecation-category": "Köhnəlmiş categorytree parametrlərindən istifadə edən səhifələr",
 	"categorytree-deprecation-category-desc": "Səhifədə <code>onlyroot</code> kimi köhnəlmiş kateqoriya ağacı parametrlərindən istifadə edilir."
