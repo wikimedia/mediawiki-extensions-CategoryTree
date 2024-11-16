@@ -39,8 +39,7 @@ use MediaWiki\Title\Title;
 use Wikimedia\Rdbms\IConnectionProvider;
 
 /**
- * Core functions for the CategoryTree extension, an AJAX based gadget
- * to display the category structure of a wiki
+ * Core functions for the CategoryTree extension, which displays the category structure of a wiki
  */
 class CategoryTree {
 	public OptionManager $optionManager;
