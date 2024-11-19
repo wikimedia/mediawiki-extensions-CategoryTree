@@ -32,7 +32,6 @@ use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Hook\SkinBuildSidebarHook;
 use MediaWiki\Hook\SpecialTrackingCategories__generateCatLinkHook;
 use MediaWiki\Hook\SpecialTrackingCategories__preprocessHook;
-use MediaWiki\Html\Html;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\Output\Hook\OutputPageRenderCategoryLinkHook;
 use MediaWiki\Output\OutputPage;
@@ -105,13 +104,9 @@ class Hooks implements
 			$argv[$k] = $v;
 		}
 
-		if ( $parser->getOutputType() === Parser::OT_PREPROCESS ) {
-			return Html::rawElement( 'categorytree', $argv, $cat );
-		} else {
-			// now handle just like a <categorytree> tag
-			$html = $this->parserHook( $cat, $argv, $parser );
-			return [ $html, 'noparse' => true, 'isHTML' => true ];
-		}
+		// now handle just like a <categorytree> tag
+		$html = $this->parserHook( $cat, $argv, $parser );
+		return [ $html, 'noparse' => true, 'isHTML' => true ];
 	}
 
 	/**
