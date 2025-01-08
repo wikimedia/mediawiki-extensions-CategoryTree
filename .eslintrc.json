@@ -1,15 +1,6 @@
 {
 	"root": true,
 	"extends": [
-		"wikimedia/client-es6",
-		"wikimedia/mediawiki",
-		"wikimedia/jquery"
-	],
-	"rules": {
-		"no-var": "error"
-	},
-	"env": {
-		"browser": true,
-		"commonjs": true
-	}
+		"wikimedia/server"
+	]
 }
