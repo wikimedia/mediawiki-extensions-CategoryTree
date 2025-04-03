@@ -159,7 +159,7 @@ function loadChildren( $link, $children ) {
 		options: ctOptions,
 		uselang: mw.config.get( 'wgUserLanguage' ),
 		formatversion: 2
-	} ).done( ( data ) => {
+	} ).then( ( data ) => {
 		data = data.categorytree.html;
 
 		let $data;
@@ -177,7 +177,7 @@ function loadChildren( $link, $children ) {
 		}
 
 		$children.empty().append( $data );
-	} ).fail( error );
+	}, error );
 }
 
 // Register click events
