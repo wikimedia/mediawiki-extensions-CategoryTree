@@ -24,15 +24,16 @@
 
 namespace MediaWiki\Extension\CategoryTree;
 
+use MediaWiki\Cache\LinkBatchFactory;
 use MediaWiki\Category\Category;
 use MediaWiki\Config\Config;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Html\Html;
+use MediaWiki\Language\Language;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MainConfigNames;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\SpecialPage\SpecialPage;
@@ -45,18 +46,24 @@ use Wikimedia\Rdbms\IConnectionProvider;
 class CategoryTree {
 	public OptionManager $optionManager;
 	private Config $config;
+	private Language $contLang;
 	private IConnectionProvider $dbProvider;
+	private LinkBatchFactory $linkBatchFactory;
 	private LinkRenderer $linkRenderer;
 
 	public function __construct(
 		array $options,
 		Config $config,
+		Language $contLang,
 		IConnectionProvider $dbProvider,
+		LinkBatchFactory $linkBatchFactory,
 		LinkRenderer $linkRenderer
 	) {
 		$this->optionManager = new OptionManager( $options, $config );
 		$this->config = $config;
+		$this->contLang = $contLang;
 		$this->dbProvider = $dbProvider;
+		$this->linkBatchFactory = $linkBatchFactory;
 		$this->linkRenderer = $linkRenderer;
 	}
 
@@ -197,7 +204,7 @@ class CategoryTree {
 		) && ExtensionRegistry::getInstance()->isLoaded( 'Translate' );
 
 		if ( $suppressTranslations ) {
-			$lb = MediaWikiServices::getInstance()->getLinkBatchFactory()->newLinkBatch();
+			$lb = $this->linkBatchFactory->newLinkBatch();
 			foreach ( $res as $row ) {
 				$title = Title::newFromText( $row->page_title, $row->page_namespace );
 				// Page name could have slashes, check the subpage for valid language built-in codes
@@ -344,8 +351,7 @@ class CategoryTree {
 			$label = $title->getPrefixedText();
 		}
 
-		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
-		$link = Html::rawElement( 'bdi', [ 'dir' => $contLang->getDir() ],
+		$link = Html::rawElement( 'bdi', [ 'dir' => $this->contLang->getDir() ],
 			$this->linkRenderer->makeLink( $title, $label ) );
 
 		$count = false;
