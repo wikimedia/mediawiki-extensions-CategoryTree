@@ -31,6 +31,7 @@ use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Html\Html;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\MainConfigNames;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Registration\ExtensionRegistry;
@@ -129,22 +130,36 @@ class CategoryTree {
 		$queryBuilder = $dbr->newSelectQueryBuilder()
 			->select( [
 				'page_id', 'page_namespace', 'page_title',
-				'page_is_redirect', 'page_len', 'page_latest', 'cl_to', 'cl_from'
+				'page_is_redirect', 'page_len', 'page_latest', 'cl_from'
 			] )
 			->orderBy( [ 'cl_type', 'cl_sortkey' ] )
 			->limit( $this->config->get( 'CategoryTreeMaxChildren' ) )
 			->caller( __METHOD__ );
 
 		if ( $inverse ) {
+			$queryBuilder->from( 'categorylinks' );
+		} else {
+			$queryBuilder->from( 'page' );
+		}
+
+		$migrationStage = $this->config->get( MainConfigNames::CategoryLinksSchemaMigrationStage );
+
+		if ( $migrationStage & SCHEMA_COMPAT_READ_OLD ) {
+			$queryBuilder->select( 'cl_to' );
+		} else {
+			$queryBuilder->select( [ 'cl_to' => 'lt_title' ] );
+			$queryBuilder->where( [ 'lt_namespace' => NS_CATEGORY ] );
+			$queryBuilder->join( 'linktarget', null, [ 'lt_id=cl_target_id' ] );
+		}
+
+		if ( $inverse ) {
 			$queryBuilder
-				->from( 'categorylinks' )
 				->leftJoin( 'page', null, [
 					'cl_to = page_title', 'page_namespace' => NS_CATEGORY
 				] )
 				->where( [ 'cl_from' => $title->getArticleID() ] );
 		} else {
 			$queryBuilder
-				->from( 'page' )
 				->join( 'categorylinks', null, 'cl_from = page_id' )
 				->where( [ 'cl_to' => $title->getDBkey() ] )
 				->useIndex( 'cl_sortkey' );
@@ -240,14 +255,24 @@ class CategoryTree {
 	public function renderParents( Title $title ): string {
 		$dbr = $this->dbProvider->getReplicaDatabase();
 
-		$res = $dbr->newSelectQueryBuilder()
-			->select( 'cl_to' )
+		$migrationStage = $this->config->get( MainConfigNames::CategoryLinksSchemaMigrationStage );
+
+		$qb = $dbr->newSelectQueryBuilder()
 			->from( 'categorylinks' )
 			->where( [ 'cl_from' => $title->getArticleID() ] )
 			->limit( $this->config->get( 'CategoryTreeMaxChildren' ) )
 			->orderBy( 'cl_to' )
-			->caller( __METHOD__ )
-			->fetchResultSet();
+			->caller( __METHOD__ );
+
+		if ( $migrationStage & SCHEMA_COMPAT_READ_OLD ) {
+			$qb->select( 'cl_to' );
+		} else {
+			$qb->select( [ 'cl_to' => 'lt_title' ] );
+			$qb->where( [ 'lt_namespace' => NS_CATEGORY ] );
+			$qb->join( 'linktarget', null, [ 'lt_id=cl_target_id' ] );
+		}
+
+		$res = $qb->fetchResultSet();
 
 		$special = SpecialPage::getTitleFor( 'CategoryTree' );
 
