@@ -139,7 +139,8 @@ class CategoryTree {
 		if ( $inverse ) {
 			$queryBuilder->from( 'categorylinks' );
 		} else {
-			$queryBuilder->from( 'page' );
+			$queryBuilder->from( 'page' )
+				->join( 'categorylinks', null, 'cl_from = page_id' );
 		}
 
 		$migrationStage = $this->config->get( MainConfigNames::CategoryLinksSchemaMigrationStage );
@@ -148,8 +149,8 @@ class CategoryTree {
 			$queryBuilder->select( 'cl_to' );
 		} else {
 			$queryBuilder->select( [ 'cl_to' => 'lt_title' ] );
-			$queryBuilder->where( [ 'lt_namespace' => NS_CATEGORY ] );
 			$queryBuilder->join( 'linktarget', null, [ 'lt_id=cl_target_id' ] );
+			$queryBuilder->where( [ 'lt_namespace' => NS_CATEGORY ] );
 		}
 
 		if ( $inverse ) {
@@ -160,9 +161,8 @@ class CategoryTree {
 				->where( [ 'cl_from' => $title->getArticleID() ] );
 		} else {
 			$queryBuilder
-				->join( 'categorylinks', null, 'cl_from = page_id' )
 				->where( [ 'cl_to' => $title->getDBkey() ] )
-				->useIndex( 'cl_sortkey' );
+				->useIndex( [ 'categorylinks' => 'cl_sortkey' ] );
 
 			# namespace filter.
 			if ( $namespaces ) {
