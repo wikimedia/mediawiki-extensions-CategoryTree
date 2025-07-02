@@ -6,7 +6,6 @@ use MediaWiki\Api\ApiBase;
 use MediaWiki\Api\ApiMain;
 use MediaWiki\Json\FormatJson;
 use MediaWiki\Languages\LanguageConverterFactory;
-use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MainConfigNames;
 use MediaWiki\Title\Title;
 use Wikimedia\ObjectCache\WANObjectCache;
@@ -31,22 +30,22 @@ use Wikimedia\Rdbms\IConnectionProvider;
  */
 
 class ApiCategoryTree extends ApiBase {
+	private CategoryTreeFactory $categoryTreeFactory;
 	private LanguageConverterFactory $languageConverterFactory;
-	private LinkRenderer $linkRenderer;
 	private IConnectionProvider $dbProvider;
 	private WANObjectCache $wanCache;
 
 	public function __construct(
 		ApiMain $main,
 		string $action,
+		CategoryTreeFactory $categoryTreeFactory,
 		IConnectionProvider $dbProvider,
 		LanguageConverterFactory $languageConverterFactory,
-		LinkRenderer $linkRenderer,
 		WANObjectCache $wanCache
 	) {
 		parent::__construct( $main, $action );
+		$this->categoryTreeFactory = $categoryTreeFactory;
 		$this->languageConverterFactory = $languageConverterFactory;
-		$this->linkRenderer = $linkRenderer;
 		$this->dbProvider = $dbProvider;
 		$this->wanCache = $wanCache;
 	}
@@ -66,7 +65,7 @@ class ApiCategoryTree extends ApiBase {
 
 		$depth = isset( $options['depth'] ) ? (int)$options['depth'] : 1;
 
-		$ct = new CategoryTree( $options, $this->getConfig(), $this->dbProvider, $this->linkRenderer );
+		$ct = $this->categoryTreeFactory->newCategoryTree( $options );
 		$depth = $ct->optionManager->capDepth( $depth );
 		$html = $this->getHTML( $ct, $title, $depth );
 

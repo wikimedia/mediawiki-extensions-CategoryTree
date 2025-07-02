@@ -29,7 +29,6 @@ use MediaWiki\HTMLForm\HTMLForm;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use SearchEngineFactory;
-use Wikimedia\Rdbms\IConnectionProvider;
 
 /**
  * Special page for the CategoryTree extension, an AJAX based gadget
@@ -37,16 +36,16 @@ use Wikimedia\Rdbms\IConnectionProvider;
  */
 class CategoryTreePage extends SpecialPage {
 	public string $target = '';
-	private IConnectionProvider $dbProvider;
+	private CategoryTreeFactory $categoryTreeFactory;
 	private SearchEngineFactory $searchEngineFactory;
 	public ?CategoryTree $tree = null;
 
 	public function __construct(
-		IConnectionProvider $dbProvider,
+		CategoryTreeFactory $categoryTreeFactory,
 		SearchEngineFactory $searchEngineFactory
 	) {
 		parent::__construct( 'CategoryTree' );
-		$this->dbProvider = $dbProvider;
+		$this->categoryTreeFactory = $categoryTreeFactory;
 		$this->searchEngineFactory = $searchEngineFactory;
 	}
 
@@ -96,7 +95,7 @@ class CategoryTreePage extends SpecialPage {
 			$options[$option] = $request->getVal( $option, $default );
 		}
 
-		$this->tree = new CategoryTree( $options, $config, $this->dbProvider, $this->getLinkRenderer() );
+		$this->tree = $this->categoryTreeFactory->newCategoryTree( $options );
 
 		$this->getOutput()->addWikiMsg( 'categorytree-header' );
 

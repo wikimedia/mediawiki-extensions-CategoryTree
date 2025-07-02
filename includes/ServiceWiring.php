@@ -30,10 +30,18 @@ use MediaWiki\MediaWikiServices;
 /**
  * CategoryTree wiring for MediaWiki services.
  */
+/** @phpcs-require-sorted-array */
 return [
 	'CategoryTree.CategoryCache' => static function ( MediaWikiServices $services ): CategoryCache {
 		return new CategoryCache(
 			$services->getConnectionProvider()
+		);
+	},
+	'CategoryTree.CategoryTreeFactory' => static function ( MediaWikiServices $services ): CategoryTreeFactory {
+		return new CategoryTreeFactory(
+			$services->getMainConfig(),
+			$services->getConnectionProvider(),
+			$services->getLinkRenderer()
 		);
 	},
 ];
