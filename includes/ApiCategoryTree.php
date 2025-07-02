@@ -30,24 +30,15 @@ use Wikimedia\Rdbms\IConnectionProvider;
  */
 
 class ApiCategoryTree extends ApiBase {
-	private CategoryTreeFactory $categoryTreeFactory;
-	private LanguageConverterFactory $languageConverterFactory;
-	private IConnectionProvider $dbProvider;
-	private WANObjectCache $wanCache;
-
 	public function __construct(
 		ApiMain $main,
 		string $action,
-		CategoryTreeFactory $categoryTreeFactory,
-		IConnectionProvider $dbProvider,
-		LanguageConverterFactory $languageConverterFactory,
-		WANObjectCache $wanCache
+		private readonly CategoryTreeFactory $categoryTreeFactory,
+		private readonly IConnectionProvider $dbProvider,
+		private readonly LanguageConverterFactory $languageConverterFactory,
+		private readonly WANObjectCache $wanCache,
 	) {
 		parent::__construct( $main, $action );
-		$this->categoryTreeFactory = $categoryTreeFactory;
-		$this->languageConverterFactory = $languageConverterFactory;
-		$this->dbProvider = $dbProvider;
-		$this->wanCache = $wanCache;
 	}
 
 	/**

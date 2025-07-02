@@ -44,27 +44,17 @@ use Wikimedia\Rdbms\IConnectionProvider;
  * Core functions for the CategoryTree extension, which displays the category structure of a wiki
  */
 class CategoryTree {
-	public OptionManager $optionManager;
-	private Config $config;
-	private Language $contLang;
-	private IConnectionProvider $dbProvider;
-	private LinkBatchFactory $linkBatchFactory;
-	private LinkRenderer $linkRenderer;
+	public readonly OptionManager $optionManager;
 
 	public function __construct(
 		array $options,
-		Config $config,
-		Language $contLang,
-		IConnectionProvider $dbProvider,
-		LinkBatchFactory $linkBatchFactory,
-		LinkRenderer $linkRenderer
+		private readonly Config $config,
+		private readonly Language $contLang,
+		private readonly IConnectionProvider $dbProvider,
+		private readonly LinkBatchFactory $linkBatchFactory,
+		private readonly LinkRenderer $linkRenderer,
 	) {
 		$this->optionManager = new OptionManager( $options, $config );
-		$this->config = $config;
-		$this->contLang = $contLang;
-		$this->dbProvider = $dbProvider;
-		$this->linkBatchFactory = $linkBatchFactory;
-		$this->linkRenderer = $linkRenderer;
 	}
 
 	/**

@@ -61,21 +61,12 @@ class Hooks implements
 	CategoryViewer__doCategoryQueryHook,
 	CategoryViewer__generateLinkHook
 {
-	private CategoryCache $categoryCache;
-	private CategoryTreeFactory $categoryTreeFactory;
-	private Config $config;
-	private TitleFormatter $titleFormatter;
-
 	public function __construct(
-		CategoryCache $categoryCache,
-		CategoryTreeFactory $categoryTreeFactory,
-		Config $config,
-		TitleFormatter $titleFormatter
+		private readonly CategoryCache $categoryCache,
+		private readonly CategoryTreeFactory $categoryTreeFactory,
+		private readonly Config $config,
+		private readonly TitleFormatter $titleFormatter,
 	) {
-		$this->categoryCache = $categoryCache;
-		$this->categoryTreeFactory = $categoryTreeFactory;
-		$this->config = $config;
-		$this->titleFormatter = $titleFormatter;
 	}
 
 	/**

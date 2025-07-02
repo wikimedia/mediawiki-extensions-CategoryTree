@@ -36,17 +36,13 @@ use SearchEngineFactory;
  */
 class CategoryTreePage extends SpecialPage {
 	public string $target = '';
-	private CategoryTreeFactory $categoryTreeFactory;
-	private SearchEngineFactory $searchEngineFactory;
 	public ?CategoryTree $tree = null;
 
 	public function __construct(
-		CategoryTreeFactory $categoryTreeFactory,
-		SearchEngineFactory $searchEngineFactory
+		private readonly CategoryTreeFactory $categoryTreeFactory,
+		private readonly SearchEngineFactory $searchEngineFactory,
 	) {
 		parent::__construct( 'CategoryTree' );
-		$this->categoryTreeFactory = $categoryTreeFactory;
-		$this->searchEngineFactory = $searchEngineFactory;
 	}
 
 	/**

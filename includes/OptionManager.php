@@ -34,11 +34,11 @@ use MediaWiki\MediaWikiServices;
  */
 class OptionManager {
 	private array $mOptions = [];
-	private Config $config;
 
-	public function __construct( array $options, Config $config ) {
-		$this->config = $config;
-
+	public function __construct(
+		array $options,
+		private readonly Config $config,
+	) {
 		// ensure default values and order of options.
 		// Order may become important, it may influence the cache key!
 		foreach ( $config->get( 'CategoryTreeDefaultOptions' ) as $option => $default ) {
