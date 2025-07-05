@@ -40,7 +40,9 @@ return [
 	'CategoryTree.CategoryTreeFactory' => static function ( MediaWikiServices $services ): CategoryTreeFactory {
 		return new CategoryTreeFactory(
 			$services->getMainConfig(),
+			$services->getContentLanguage(),
 			$services->getConnectionProvider(),
+			$services->getLinkBatchFactory(),
 			$services->getLinkRenderer()
 		);
 	},
