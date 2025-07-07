@@ -167,11 +167,11 @@ class CategoryTree {
 				] )
 				->where( [ 'cl_from' => $title->getArticleID() ] );
 		} else {
-			$queryBuilder->where( [ 'cl_to' => $title->getDBkey() ] );
-
 			if ( $migrationStage & SCHEMA_COMPAT_READ_OLD ) {
+				$queryBuilder->where( [ 'cl_to' => $title->getDBkey() ] );
 				$queryBuilder->useIndex( [ 'categorylinks' => 'cl_sortkey' ] );
 			} else {
+				$queryBuilder->where( [ 'lt_title' => $title->getDBkey() ] );
 				$queryBuilder->useIndex( [ 'categorylinks' => 'cl_sortkey_id' ] );
 			}
 
