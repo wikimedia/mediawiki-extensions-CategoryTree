@@ -84,13 +84,13 @@ class Hooks implements
 	 * Entry point for the {{#categorytree}} tag parser function.
 	 * This is a wrapper around Hooks::parserHook
 	 * @param Parser $parser
+	 * @param string $cat
 	 * @param string ...$params
 	 * @return array|string
 	 */
-	public function parserFunction( Parser $parser, ...$params ) {
+	public function parserFunction( Parser $parser, string $cat, string ...$params ) {
 		// The first user-supplied parameter is the category name.
 		// On `{{#categorytree:}}` $cat is ''.
-		$cat = array_shift( $params );
 
 		// build associative arguments from flat parameter list
 		$argv = [];
