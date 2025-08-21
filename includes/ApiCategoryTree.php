@@ -44,7 +44,7 @@ class ApiCategoryTree extends ApiBase {
 	/**
 	 * @inheritDoc
 	 */
-	public function execute() {
+	public function execute(): void {
 		$params = $this->extractRequestParams();
 
 		$options = $this->extractOptions( $params );
@@ -147,7 +147,7 @@ class ApiCategoryTree extends ApiBase {
 	/**
 	 * @inheritDoc
 	 */
-	public function getAllowedParams() {
+	public function getAllowedParams(): array {
 		return [
 			'category' => [
 				ParamValidator::PARAM_TYPE => 'string',
@@ -162,7 +162,7 @@ class ApiCategoryTree extends ApiBase {
 	/**
 	 * @inheritDoc
 	 */
-	public function isInternal() {
+	public function isInternal(): bool {
 		return true;
 	}
 }

@@ -118,11 +118,11 @@ class Hooks implements
 
 	/**
 	 * Obtain a category sidebar link based on config
-	 * @return bool|string of link
+	 * @return string|null of link
 	 */
-	private function getCategorySidebarBox() {
+	private function getCategorySidebarBox(): ?string {
 		if ( !$this->config->get( 'CategoryTreeSidebarRoot' ) ) {
-			return false;
+			return null;
 		}
 		return $this->parserHook(
 			$this->config->get( 'CategoryTreeSidebarRoot' ),
@@ -166,13 +166,13 @@ class Hooks implements
 	 * @param string|null $cat
 	 * @param array $argv
 	 * @param Parser|null $parser
-	 * @return bool|string
+	 * @return string
 	 */
 	public function parserHook(
 		?string $cat,
 		array $argv,
 		?Parser $parser = null
-	) {
+	): string {
 		if ( $parser ) {
 			$parserOutput = $parser->getOutput();
 			$parserOutput->addModuleStyles( [ 'ext.categoryTree.styles' ] );
@@ -251,7 +251,7 @@ class Hooks implements
 	 * @param Config $config
 	 * @return array Data to be serialised as data.json
 	 */
-	public static function getDataForJs( RL\Context $context, Config $config ) {
+	public static function getDataForJs( RL\Context $context, Config $config ): array {
 		// Look, this is pretty bad but CategoryTree is just whacky, it needs to be rewritten
 		$optionManager = new OptionManager( $config->get( 'CategoryTreeCategoryPageOptions' ), $config );
 
