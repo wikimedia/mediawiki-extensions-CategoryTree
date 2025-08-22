@@ -298,7 +298,7 @@ class Hooks implements
 	 * @param IResultWrapper $res
 	 */
 	public function onCategoryViewer__doCategoryQuery( $type, $res ) {
-		if ( $type === 'subcat' && $res ) {
+		if ( $type === 'subcat' ) {
 			$this->categoryCache->fillFromQuery( $res );
 		}
 	}
