@@ -272,16 +272,10 @@ class OptionManager {
 	}
 
 	/**
-	 * @param int|null $depth
 	 * @return mixed
 	 */
-	public function getOptionsAsJsStructure( ?int $depth = null ) {
-		$opt = $this->mOptions;
-		if ( $depth !== null ) {
-			$opt['depth'] = $depth;
-		}
-
-		return self::encodeOptions( $opt, 'json' );
+	public function getOptionsAsJsStructure() {
+		return self::encodeOptions( $this->mOptions, 'json' );
 	}
 
 	/**
