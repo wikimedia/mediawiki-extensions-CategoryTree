@@ -88,11 +88,8 @@ class Hooks implements
 	 * @return array|string
 	 */
 	public function parserFunction( Parser $parser, ...$params ) {
-		// first user-supplied parameter must be category name
-		if ( !$params ) {
-			// no category specified, return nothing
-			return '';
-		}
+		// The first user-supplied parameter is the category name.
+		// On `{{#categorytree:}}` $cat is ''.
 		$cat = array_shift( $params );
 
 		// build associative arguments from flat parameter list
