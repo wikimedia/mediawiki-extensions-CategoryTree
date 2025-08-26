@@ -33,7 +33,6 @@ use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Html\Html;
 use MediaWiki\Language\Language;
 use MediaWiki\Linker\LinkRenderer;
-use MediaWiki\MainConfigNames;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\SpecialPage\SpecialPage;
@@ -126,8 +125,8 @@ class CategoryTree {
 
 		$queryBuilder = $dbr->newSelectQueryBuilder()
 			->select( [
-				'page_id', 'page_namespace', 'page_title',
-				'page_is_redirect', 'page_len', 'page_latest', 'cl_from'
+				'page_id', 'page_namespace', 'page_title', 'page_is_redirect',
+				'page_len', 'page_latest', 'cl_from', 'lt_title'
 			] )
 			->orderBy( [ 'cl_type', 'cl_sortkey' ] )
 			->limit( $this->config->get( 'CategoryTreeMaxChildren' ) )
@@ -140,30 +139,18 @@ class CategoryTree {
 				->join( 'categorylinks', null, 'cl_from = page_id' );
 		}
 
-		$migrationStage = $this->config->get( MainConfigNames::CategoryLinksSchemaMigrationStage );
-
-		if ( $migrationStage & SCHEMA_COMPAT_READ_OLD ) {
-			$queryBuilder->select( 'cl_to' );
-		} else {
-			$queryBuilder->select( [ 'cl_to' => 'lt_title' ] );
-			$queryBuilder->join( 'linktarget', null, [ 'lt_id=cl_target_id' ] );
-			$queryBuilder->where( [ 'lt_namespace' => NS_CATEGORY ] );
-		}
+		$queryBuilder->join( 'linktarget', null, [ 'lt_id=cl_target_id' ] );
+		$queryBuilder->where( [ 'lt_namespace' => NS_CATEGORY ] );
 
 		if ( $inverse ) {
 			$queryBuilder
 				->leftJoin( 'page', null, [
-					'cl_to = page_title', 'page_namespace' => NS_CATEGORY
+					'lt_title = page_title', 'page_namespace' => NS_CATEGORY
 				] )
 				->where( [ 'cl_from' => $title->getArticleID() ] );
 		} else {
-			if ( $migrationStage & SCHEMA_COMPAT_READ_OLD ) {
-				$queryBuilder->where( [ 'cl_to' => $title->getDBkey() ] );
-				$queryBuilder->useIndex( [ 'categorylinks' => 'cl_sortkey' ] );
-			} else {
-				$queryBuilder->where( [ 'lt_title' => $title->getDBkey() ] );
-				$queryBuilder->useIndex( [ 'categorylinks' => 'cl_sortkey_id' ] );
-			}
+			$queryBuilder->where( [ 'lt_title' => $title->getDBkey() ] );
+			$queryBuilder->useIndex( [ 'categorylinks' => 'cl_sortkey_id' ] );
 
 			# namespace filter.
 			if ( $namespaces ) {
@@ -226,7 +213,7 @@ class CategoryTree {
 			# NOTE: in inverse mode, the page record may be null, because we use a right join.
 			#      happens for categories with no category page (red cat links)
 			if ( $inverse && $row->page_title === null ) {
-				$t = Title::makeTitle( NS_CATEGORY, $row->cl_to );
+				$t = Title::makeTitle( NS_CATEGORY, $row->lt_title );
 			} else {
 				# TODO: translation support; ideally added to Title object
 				$t = Title::newFromRow( $row );
@@ -256,22 +243,15 @@ class CategoryTree {
 	public function renderParents( Title $title ): string {
 		$dbr = $this->dbProvider->getReplicaDatabase();
 
-		$migrationStage = $this->config->get( MainConfigNames::CategoryLinksSchemaMigrationStage );
-
 		$qb = $dbr->newSelectQueryBuilder()
+			->select( [ 'lt_title' ] )
 			->from( 'categorylinks' )
+			->join( 'linktarget', null, [ 'lt_id=cl_target_id' ] )
 			->where( [ 'cl_from' => $title->getArticleID() ] )
+			->andWhere( [ 'lt_namespace' => NS_CATEGORY ] )
 			->limit( $this->config->get( 'CategoryTreeMaxChildren' ) )
-			->orderBy( 'cl_to' )
+			->orderBy( 'lt_title' )
 			->caller( __METHOD__ );
-
-		if ( $migrationStage & SCHEMA_COMPAT_READ_OLD ) {
-			$qb->select( 'cl_to' );
-		} else {
-			$qb->select( [ 'cl_to' => 'lt_title' ] );
-			$qb->where( [ 'lt_namespace' => NS_CATEGORY ] );
-			$qb->join( 'linktarget', null, [ 'lt_id=cl_target_id' ] );
-		}
 
 		$res = $qb->fetchResultSet();
 
@@ -280,7 +260,7 @@ class CategoryTree {
 		$s = [];
 
 		foreach ( $res as $row ) {
-			$t = Title::makeTitle( NS_CATEGORY, $row->cl_to );
+			$t = Title::makeTitle( NS_CATEGORY, $row->lt_title );
 
 			$s[] = Html::rawElement( 'span', [ 'class' => 'CategoryTreeItem' ],
 				$this->linkRenderer->makeLink(
