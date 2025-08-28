@@ -190,11 +190,9 @@ class Hooks implements
 
 		$attr = Sanitizer::validateTagAttributes( $argv, 'div' );
 
-		$hideroot = isset( $argv['hideroot'] )
-			? OptionManager::decodeBoolean( $argv['hideroot'] ) : false;
-		$onlyroot = isset( $argv['onlyroot'] )
-			? OptionManager::decodeBoolean( $argv['onlyroot'] ) : false;
-		$depthArg = isset( $argv['depth'] ) ? (int)$argv['depth'] : 1;
+		$hideroot = OptionManager::decodeBoolean( $argv['hideroot'] ?? false );
+		$onlyroot = OptionManager::decodeBoolean( $argv['onlyroot'] ?? false );
+		$depthArg = (int)( $argv['depth'] ?? 1 );
 
 		$depth = $ct->optionManager->capDepth( $depthArg );
 		if ( $onlyroot ) {
@@ -216,14 +214,13 @@ class Hooks implements
 
 	/**
 	 * OutputPageRenderCategoryLink hook
-	 * @param OutputPage $out
+	 * @param OutputPage $outputPage
 	 * @param ProperPageIdentity $categoryTitle
 	 * @param string $text
 	 * @param ?string &$link
-	 * @return void
 	 */
 	public function onOutputPageRenderCategoryLink(
-		OutputPage $out,
+		OutputPage $outputPage,
 		ProperPageIdentity $categoryTitle,
 		string $text,
 		?string &$link
@@ -237,7 +234,7 @@ class Hooks implements
 			return;
 		}
 
-		CategoryTree::setHeaders( $out );
+		CategoryTree::setHeaders( $outputPage );
 
 		$options = $this->config->get( 'CategoryTreePageCategoryOptions' );
 		$link = $this->parserHook(

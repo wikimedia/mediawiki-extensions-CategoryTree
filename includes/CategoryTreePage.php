@@ -218,10 +218,8 @@ class CategoryTreePage extends SpecialPage {
 		$searchEngine->setNamespaces( [ NS_CATEGORY ] );
 		$result = $searchEngine->defaultPrefixSearch( $search );
 
-		return array_map( static function ( Title $t ) {
-			// Remove namespace in search suggestion
-			return $t->getText();
-		}, $result );
+		// Remove namespace in search suggestion
+		return array_map( static fn ( Title $t ) => $t->getText(), $result );
 	}
 
 	/**

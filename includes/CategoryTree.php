@@ -73,14 +73,14 @@ class CategoryTree {
 	 * @param bool $hideroot
 	 * @param array $attr
 	 * @param int $depth
-	 * @return bool|string
+	 * @return string
 	 */
 	public function getTag( string $category, bool $hideroot = false, array $attr = [],
 		int $depth = 1
-	) {
+	): string {
 		$title = self::makeTitle( $category );
 		if ( !$title ) {
-			return false;
+			return '';
 		}
 
 		if ( isset( $attr['class'] ) ) {
@@ -202,7 +202,7 @@ class CategoryTree {
 			foreach ( $res as $row ) {
 				$title = Title::newFromText( $row->page_title, $row->page_namespace );
 				// Page name could have slashes, check the subpage for valid language built-in codes
-				if ( $title !== null && $title->getSubpageText() ) {
+				if ( $title && $title->getSubpageText() ) {
 					$lb->addObj( $title->getBaseTitle() );
 				}
 			}
@@ -412,20 +412,12 @@ class CategoryTree {
 		if ( $isInCatNS && $children > 0 ) {
 			$children = $this->renderChildren( $title, $children );
 			if ( $children === '' ) {
-				switch ( $mode ) {
-					case CategoryTreeMode::CATEGORIES:
-						$msg = 'categorytree-no-subcategories';
-						break;
-					case CategoryTreeMode::PAGES:
-						$msg = 'categorytree-no-pages';
-						break;
-					case CategoryTreeMode::PARENTS:
-						$msg = 'categorytree-no-parent-categories';
-						break;
-					default:
-						$msg = 'categorytree-nothing-found';
-						break;
-				}
+				$msg = match ( $mode ) {
+					CategoryTreeMode::CATEGORIES => 'categorytree-no-subcategories',
+					CategoryTreeMode::PAGES => 'categorytree-no-pages',
+					CategoryTreeMode::PARENTS => 'categorytree-no-parent-categories',
+					default => 'categorytree-nothing-found',
+				};
 				$children = Html::element( 'i', [ 'class' => 'CategoryTreeNotice' ],
 					wfMessage( $msg )->text()
 				);
@@ -475,7 +467,7 @@ class CategoryTree {
 
 		# Only $5 is actually used in the default message.
 		# Other arguments can be used in a customized message.
-		$s = ' ' . Html::rawElement(
+		return ' ' . Html::rawElement(
 			'span',
 			$attr,
 			$context->msg( 'categorytree-member-num' )
@@ -483,8 +475,6 @@ class CategoryTree {
 				->params( $subcatCount, $pages, $fileCount, $allCount, $memberNumsShort )
 				->escaped()
 		);
-
-		return $s;
 	}
 
 	/**

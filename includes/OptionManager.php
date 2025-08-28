@@ -172,11 +172,8 @@ class OptionManager {
 	 * @return bool
 	 */
 	public static function decodeBoolean( $value ): bool {
-		if ( $value === null ) {
-			return false;
-		}
-		if ( is_bool( $value ) ) {
-			return $value;
+		if ( $value === null || is_bool( $value ) ) {
+			return (bool)$value;
 		}
 		if ( is_int( $value ) ) {
 			return ( $value > 0 );
@@ -187,13 +184,11 @@ class OptionManager {
 			return ( (int)$value > 0 );
 		}
 
-		if ( $value === 'yes' || $value === 'y'
-			|| $value === 'true' || $value === 't' || $value === 'on'
-		) {
-			return true;
-		} else {
-			return false;
-		}
+		return $value === 'yes' ||
+			$value === 'y' ||
+			$value === 'true' ||
+			$value === 't' ||
+			$value === 'on';
 	}
 
 	/**

@@ -94,11 +94,7 @@ class ApiCategoryTree extends ApiBase {
 		return get_object_vars( $options );
 	}
 
-	/**
-	 * @param string $condition
-	 *
-	 * @return bool|null|string
-	 */
+	/** @inheritDoc */
 	public function getConditionalRequestData( $condition ) {
 		if ( $condition === 'last-modified' ) {
 			$params = $this->extractRequestParams();
@@ -113,6 +109,7 @@ class ApiCategoryTree extends ApiBase {
 				->caller( __METHOD__ )
 				->fetchField();
 		}
+		return null;
 	}
 
 	/**
@@ -136,9 +133,7 @@ class ApiCategoryTree extends ApiBase {
 				$this->getConfig()->get( MainConfigNames::RenderHashAppend )
 			),
 			$this->wanCache::TTL_DAY,
-			static function () use ( $ct, $title, $depth ) {
-				return $ct->renderChildren( $title, $depth );
-			},
+			static fn () => $ct->renderChildren( $title, $depth ),
 			[
 				'touchedCallback' => function () {
 					$timestamp = $this->getConditionalRequestData( 'last-modified' );
