@@ -1,17 +1,5 @@
 <?php
 
-namespace MediaWiki\Extension\CategoryTree;
-
-use MediaWiki\Api\ApiBase;
-use MediaWiki\Api\ApiMain;
-use MediaWiki\Json\FormatJson;
-use MediaWiki\Languages\LanguageConverterFactory;
-use MediaWiki\MainConfigNames;
-use MediaWiki\Title\Title;
-use Wikimedia\ObjectCache\WANObjectCache;
-use Wikimedia\ParamValidator\ParamValidator;
-use Wikimedia\Rdbms\IConnectionProvider;
-
 /**
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,6 +16,18 @@ use Wikimedia\Rdbms\IConnectionProvider;
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  * http://www.gnu.org/copyleft/gpl.html
  */
+
+namespace MediaWiki\Extension\CategoryTree;
+
+use MediaWiki\Api\ApiBase;
+use MediaWiki\Api\ApiMain;
+use MediaWiki\Json\FormatJson;
+use MediaWiki\Languages\LanguageConverterFactory;
+use MediaWiki\MainConfigNames;
+use MediaWiki\Title\Title;
+use Wikimedia\ObjectCache\WANObjectCache;
+use Wikimedia\ParamValidator\ParamValidator;
+use Wikimedia\Rdbms\IConnectionProvider;
 
 class ApiCategoryTree extends ApiBase {
 	public function __construct(
