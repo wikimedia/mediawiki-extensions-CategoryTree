@@ -49,8 +49,6 @@ use Wikimedia\Rdbms\IResultWrapper;
 /**
  * Hooks for the CategoryTree extension, an AJAX based gadget
  * to display the category structure of a wiki
- *
- * @phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
  */
 class Hooks implements
 	SpecialTrackingCategories__preprocessHook,
