@@ -9,7 +9,7 @@ Self-closing tag: <categorytree />
 <categorytree />
 !! html/php
 !! html/parsoid
-<p><link typeof="mw:Extension/categorytree" data-mw='{"name":"categorytree","attrs":{}}'/></p>
+<p class="mw-empty-elt"><link typeof="mw:Extension/categorytree" data-mw='{"name":"categorytree","attrs":{}}'/></p>
 !! end
 
 !! test
@@ -18,7 +18,7 @@ Empty tag: <categorytree></categorytree>
 <categorytree></categorytree>
 !! html/php
 !! html/parsoid
-<p><link typeof="mw:Extension/categorytree" data-mw='{"name":"categorytree","attrs":{},"body":{"extsrc":""}}'/></p>
+<p class="mw-empty-elt"><link typeof="mw:Extension/categorytree" data-mw='{"name":"categorytree","attrs":{},"body":{"extsrc":""}}'/></p>
 !! end
 
 !! test
@@ -27,7 +27,7 @@ Empty function: {{#categorytree:}}
 {{#categorytree:}}
 !! html/php
 !! html/parsoid
-<p><link typeof="mw:Extension/categorytree mw:Transclusion" data-mw='{"name":"categorytree","attrs":{},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"#categorytree:","function":"categorytree"},"params":{},"i":0}}]}'/></p>
+<p class="mw-empty-elt"><link typeof="mw:Extension/categorytree mw:Transclusion" data-mw='{"name":"categorytree","attrs":{},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"#categorytree:","function":"categorytree"},"params":{},"i":0}}]}'/></p>
 !! end
 
 !! test
