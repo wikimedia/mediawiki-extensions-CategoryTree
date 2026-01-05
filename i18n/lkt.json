@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Peter57770",
-			"R12ntech"
+			"R12ntech",
+			"AmazingJus"
 		]
 	},
 	"categorytree-category": "Očháže:",
-	"categorytree-expand": "Yutȟáŋka yo/ye",
+	"categorytree-expand": "yutȟáŋka {{GENDER:|yo|ye|yo/ye}}",
 	"categorytree-member-counts": "{{PLURAL:$1|1 subcategory|$1 subcategories}}, {{PLURAL:$2|1 page|$2 pages}}, na {{PLURAL:$3|1 file|$3 files}} yukȟé",
 	"categorytree-num-categories": "$1 O",
 	"categorytree-num-pages": "$1 Oy",
