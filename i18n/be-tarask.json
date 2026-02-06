@@ -6,6 +6,7 @@
 			"Jim-by",
 			"Red Winged Duck",
 			"Renessaince",
+			"Ucukor",
 			"Wizardist"
 		]
 	},
@@ -19,7 +20,7 @@
 	"categorytree-parents": "Продкі",
 	"categorytree-mode-label": "Рэжым:",
 	"categorytree-mode-categories": "толькі катэгорыі",
-	"categorytree-mode-pages": "старонкі за выключэньнем файлаў",
+	"categorytree-mode-pages": "старонкі, акрамя файлаў",
 	"categorytree-mode-all": "усе старонкі",
 	"categorytree-collapse": "згарнуць",
 	"categorytree-expand": "разгарнуць",
