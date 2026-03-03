@@ -20,7 +20,7 @@
 	"categorytree-mode-pages": "pájinas, isétu imájis",
 	"categorytree-mode-all": "tudu pájina",
 	"categorytree-collapse": "sukundi",
-	"categorytree-expand": "alarga",
+	"categorytree-expand": "spandi",
 	"categorytree-member-counts": "Ta konte {{PLURAL:$1|1 subikatiguria|$1 subikatigurias}}, {{PLURAL:$2|1 pájina|$2 pájinas}}, {{PLURAL:$3|1 fixeru|$3 fixerus}}",
 	"categorytree-num-categories": "$1 C",
 	"categorytree-num-pages": "$1 P",
