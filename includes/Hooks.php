@@ -73,8 +73,8 @@ class Hooks implements
 		if ( !$this->config->get( 'CategoryTreeAllowTag' ) ) {
 			return;
 		}
-		$parser->setHook( 'categorytree', [ $this, 'parserHook' ] );
-		$parser->setFunctionHook( 'categorytree', [ $this, 'parserFunction' ] );
+		$parser->setHook( 'categorytree', $this->parserHook( ... ) );
+		$parser->setFunctionHook( 'categorytree', $this->parserFunction( ... ) );
 	}
 
 	/**
