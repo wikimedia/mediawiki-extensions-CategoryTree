@@ -164,7 +164,7 @@ function loadChildren( $link, $children ) {
 		let $data;
 		if ( data === '' ) {
 			$data = $( '<i>' ).addClass( 'CategoryTreeNotice' )
-				// eslint-disable-next-line mediawiki/msg-doc
+
 				.text( mw.msg( {
 					0: 'categorytree-no-subcategories',
 					10: 'categorytree-no-pages',
