@@ -86,8 +86,15 @@ function handleNode( e ) {
 function attachHandler( $content ) {
 	$content.find( '.CategoryTreeToggle' )
 		.on( 'click', handleNode )
+		.on( 'keydown', ( e ) => {
+			if ( e.key === 'Enter' || e.key === ' ' ) {
+				e.preventDefault();
+				handleNode.call( e.currentTarget, e );
+			}
+		} )
 		.attr( {
 			role: 'button',
+			tabindex: 0,
 			title: function () {
 				return mw.msg(
 					$( this ).attr( 'aria-expanded' ) === 'false' ?
