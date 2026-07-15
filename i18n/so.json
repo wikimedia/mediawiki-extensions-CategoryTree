@@ -34,9 +34,5 @@
 	"categorytree-no-pages": "bogag ama qaybo hoosaadyo ma jiraan",
 	"categorytree-not-found": "Qeybta  <i>$1</i> lama helin",
 	"categorytree-error": "Dhibaato ku timid soo dejinta xogta.",
-	"categorytree-retry": "Fadlan sug in yar oo isku day mar kale.",
-	"categorytree-onlyroot-message": "[https://phabricator.wikimedia.org/T290062 T290062]: Parameter <code>onlyroot</code> waa la joojiyay. Isticmaal <code>depth=\"0\"</code> beddelkeeda.",
-	"categorytree-deprecation-warning": "'''Digniin:''' Boggan wuxuu adeegsadaa <code><categorytree></code> oo leh halbeeg aan la isticmaalin.",
-	"categorytree-deprecation-category": "Bogagga isticmaalaya xuduudaha qaybta ee aan la isticmaalin",
-	"categorytree-deprecation-category-desc": "Bogga wuxuu isticmaalaa xuduudaha qaybta ee la joojiyay sida <code>onlyroot</code>."
+	"categorytree-retry": "Fadlan sug in yar oo isku day mar kale."
 }

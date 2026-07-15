@@ -39,9 +39,5 @@
 	"categorytree-no-pages": "ingen sider eller underkategorier",
 	"categorytree-not-found": "Kategorien <i>$1</i> blev ikke fundet",
 	"categorytree-error": "Der opstod et problem under indlæsning af data.",
-	"categorytree-retry": "Vent et øjeblik og prøv igen.",
-	"categorytree-onlyroot-message": "[https://phabricator.wikimedia.org/T290062 T290062]: Parameteren <code>onlyroot</code> er udfaset. Brug <code>depth=\"0\"</code> i stedet.",
-	"categorytree-deprecation-warning": "'''Advarsel:''' Denne side bruger <code><categorytree></code> med en forældet parameter.",
-	"categorytree-deprecation-category": "Sider, der bruger forældede categorytree-parametre",
-	"categorytree-deprecation-category-desc": "Siden bruger forældede categorytree-parametre som <code>onlyroot</code>."
+	"categorytree-retry": "Vent et øjeblik og prøv igen."
 }

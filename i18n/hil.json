@@ -32,9 +32,5 @@
 	"categorytree-no-pages": "wala sing mga pahina ukon mga subkategorya",
 	"categorytree-not-found": "Kategorya <i>$1</i> wala makita",
 	"categorytree-error": "Problema sa pag-load sang datos.",
-	"categorytree-retry": "Palihog hulat kag tilawi liwat.",
-	"categorytree-onlyroot-message": "[https://phabricator.wikimedia.org/T290062 T290062]: Ang parameter <code>onlyroot</code> wala na ginagamit. Gamita <code>depth=\"0\"</code> sa baylo.",
-	"categorytree-deprecation-warning": "'''Paandam:''' Ini nga pahina nagagamit <code><categorytree></code> nga may wala na ginagamit nga parametro.",
-	"categorytree-deprecation-category": "Mga pahina nga nagagamit sang wala na ginagamit nga mga parameter sang categorytree",
-	"categorytree-deprecation-category-desc": "Ang pahina nagagamit sang mga parameter sang categorytree nga wala na ginagamit pareho sang <code>onlyroot</code> ."
+	"categorytree-retry": "Palihog hulat kag tilawi liwat."
 }

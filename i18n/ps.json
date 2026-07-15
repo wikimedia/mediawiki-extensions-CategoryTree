@@ -33,9 +33,5 @@
 	"categorytree-no-pages": "هېڅ مخ يا څېرمه‌وېشنيزې نشته",
 	"categorytree-not-found": "د <i>$1</i> وېشنيزه و نه موندل شوه",
 	"categorytree-error": "د مالوماتو د برسېرېدلو ستونزه.",
-	"categorytree-retry": "مهرباني وکړئ لږ تم شئ او بياځلي هڅه وکړئ.",
-	"categorytree-onlyroot-message": "[https://phabricator.wikimedia.org/T290062 T290062]: <code>onlyroot</code> ازښت د منلووړ نه دی. پرځای يې <code>depth=\"0\"</code> وکاروئ.",
-	"categorytree-deprecation-warning": "'''گواښنه:''' دا مخ  <code>&lt;categorytree&gt;</code> د نه‌منلووړ ارزښت سره کاروي.",
-	"categorytree-deprecation-category": "هغه مخونه چې د نه‌منلووړ وېشنيزې‌ونې ارزښتونه کاروي",
-	"categorytree-deprecation-category-desc": "هغه مخونه چې د <code>onlyroot</code> په څېر د نه‌منلووړ وېشنيزې‌ونې ارزښتونه کاروي."
+	"categorytree-retry": "مهرباني وکړئ لږ تم شئ او بياځلي هڅه وکړئ."
 }
