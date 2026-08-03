@@ -24,13 +24,14 @@
 
 namespace MediaWiki\Extension\CategoryTree;
 
+use MediaWiki\Category\Hook\CategoryViewerGenerateLinkHook;
 use MediaWiki\Config\Config;
-use MediaWiki\Context\RequestContext;
+use MediaWiki\Context\IContextSource;
 use MediaWiki\Hook\CategoryViewer__doCategoryQueryHook;
-use MediaWiki\Hook\CategoryViewer__generateLinkHook;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\Output\Hook\OutputPageRenderCategoryLinkHook;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Page\PageReference;
 use MediaWiki\Page\ProperPageIdentity;
 use MediaWiki\Parser\Hook\ParserFirstCallInitHook;
 use MediaWiki\Parser\Parser;
@@ -41,7 +42,7 @@ use MediaWiki\Skin\Skin;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Specials\Hook\SpecialTrackingCategories__generateCatLinkHook;
 use MediaWiki\Specials\Hook\SpecialTrackingCategories__preprocessHook;
-use MediaWiki\Title\Title;
+use MediaWiki\Title\TitleFactory;
 use MediaWiki\Title\TitleFormatter;
 use Wikimedia\Rdbms\IResultWrapper;
 
@@ -56,12 +57,13 @@ class Hooks implements
 	ParserFirstCallInitHook,
 	OutputPageRenderCategoryLinkHook,
 	CategoryViewer__doCategoryQueryHook,
-	CategoryViewer__generateLinkHook
+	CategoryViewerGenerateLinkHook
 {
 	public function __construct(
 		private readonly CategoryCache $categoryCache,
 		private readonly CategoryTreeFactory $categoryTreeFactory,
 		private readonly Config $config,
+		private readonly TitleFactory $titleFactory,
 		private readonly TitleFormatter $titleFormatter,
 	) {
 	}
@@ -283,18 +285,25 @@ class Hooks implements
 	}
 
 	/**
+	 * @param IContextSource $context
 	 * @param string $type
-	 * @param Title $title
+	 * @param PageReference $page
 	 * @param string $html
-	 * @param string &$link
+	 * @param string|null &$link
 	 * @return bool
 	 */
-	public function onCategoryViewer__generateLink( $type, $title, $html, &$link ) {
+	public function onCategoryViewerGenerateLink(
+		IContextSource $context,
+		string $type,
+		PageReference $page,
+		string $html,
+		?string &$link,
+	) {
 		if ( $type !== 'subcat' || $link !== null ) {
 			return true;
 		}
 
-		$request = RequestContext::getMain()->getRequest();
+		$request = $context->getRequest();
 		if ( $request->getCheck( 'notree' ) ) {
 			return true;
 		}
@@ -306,11 +315,12 @@ class Hooks implements
 		}
 		$tree = $this->categoryTreeFactory->newCategoryTree( $options );
 
+		$title = $this->titleFactory->newFromPageReference( $page );
 		$cat = $this->categoryCache->getCategory( $title );
 
 		$link = $tree->renderNodeInfo( $title, $cat );
 
-		CategoryTree::setHeaders( RequestContext::getMain()->getOutput() );
+		CategoryTree::setHeaders( $context->getOutput() );
 		return false;
 	}
 }
