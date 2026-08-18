@@ -110,7 +110,6 @@ class CategoryTree {
 
 	/**
 	 * Returns a string with an HTML representation of the children of the given category.
-	 * @suppress PhanUndeclaredClassMethod,PhanUndeclaredClassInstanceof
 	 */
 	public function renderChildren( Title $title, int $depth = 1 ): string {
 		if ( !$title->inNamespace( NS_CATEGORY ) ) {
