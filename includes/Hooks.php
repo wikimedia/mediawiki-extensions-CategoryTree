@@ -288,7 +288,7 @@ class Hooks implements
 	 * @param IContextSource $context
 	 * @param string $type
 	 * @param PageReference $page
-	 * @param string $html
+	 * @param string|null $html
 	 * @param string|null &$link
 	 * @return bool
 	 */
@@ -296,7 +296,7 @@ class Hooks implements
 		IContextSource $context,
 		string $type,
 		PageReference $page,
-		string $html,
+		?string $html,
 		?string &$link,
 	) {
 		if ( $type !== 'subcat' || $link !== null ) {
