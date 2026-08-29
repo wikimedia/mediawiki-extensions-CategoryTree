@@ -59,6 +59,8 @@ class Hooks implements
 	CategoryViewer__doCategoryQueryHook,
 	CategoryViewerGenerateLinkHook
 {
+	private const PARSE_SOURCE = 'categorytree';
+
 	public function __construct(
 		private readonly CategoryCache $categoryCache,
 		private readonly CategoryTreeFactory $categoryTreeFactory,
@@ -175,9 +177,9 @@ class Hooks implements
 
 			$disableCache = $this->config->get( 'CategoryTreeDisableCache' );
 			if ( $disableCache === true ) {
-				$parserOutput->updateCacheExpiry( 0 );
+				$parserOutput->updateCacheExpiry( 0, self::PARSE_SOURCE );
 			} elseif ( is_int( $disableCache ) ) {
-				$parserOutput->updateCacheExpiry( $disableCache );
+				$parserOutput->updateCacheExpiry( $disableCache, self::PARSE_SOURCE );
 			}
 		}
 
